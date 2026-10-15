@@ -1,0 +1,382 @@
+{
+  "id": "theophylline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تئوفیلین",
+    "en": "Theophylline"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "متیل‌گزانتین؛ برونکودیلاتور",
+    "en": "Methylxanthine bronchodilator"
+  },
+  "brands": [
+    {
+      "name": "Elixophyllin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "theophyllin",
+    "تئوفیلین جی",
+    "theophylline g"
+  ],
+  "formulations": [
+    {
+      "id": "sol-80-15",
+      "form": "solution",
+      "route": "oral",
+      "label": "80 mg / 15 mL",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perVolumeMl": 15
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-theophylline-sol",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "child-step1",
+      "disease": "asthma",
+      "label": {
+        "fa": "کودکان ۱ تا ۱۵ سال، زیر ۴۵ کیلوگرم — شروع: ۱۲ تا ۱۴ mg/kg/day",
+        "en": "Children 1–15 y, <45 kg — start: 12–14 mg/kg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        },
+        "maxWeightKg": 45
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 12,
+        "perKgPerDayMax": 14,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-theophylline-sol",
+          "section": "Dosage and Administration, Table V"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 300,
+        "refs": [
+          {
+            "source": "fda-theophylline-sol",
+            "section": "Dosage and Administration, Table V"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در عوامل خطر کاهش کلیرانس یا وقتی پایش سطح سرمی ممکن نیست، دوز نهایی کودکان ۱ تا ۱۵ سال از ۱۶ mg/kg/day (حداکثر ۴۰۰ mg/day) بیشتر نشود. حاشیه درمانی باریک؛ پایش سطح سرمی.",
+            "en": "With risk factors for reduced clearance or if serum levels cannot be monitored, the final dose for 1–15 years must not exceed 16 mg/kg/day (max 400 mg/day). Narrow therapeutic index; monitor serum levels."
+          },
+          "refs": [
+            {
+              "source": "fda-theophylline-sol",
+              "section": "Dosage and Administration, Table V"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-step2",
+      "disease": "asthma",
+      "label": {
+        "fa": "کودکان زیر ۴۵ کیلوگرم — پس از ۳ روز: ۱۶ mg/kg/day",
+        "en": "Children <45 kg — after 3 days: 16 mg/kg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        },
+        "maxWeightKg": 45
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 16,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-theophylline-sol",
+          "section": "Dosage and Administration, Table V"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 400,
+        "refs": [
+          {
+            "source": "fda-theophylline-sol",
+            "section": "Dosage and Administration, Table V"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در عوامل خطر کاهش کلیرانس یا وقتی پایش سطح سرمی ممکن نیست، دوز نهایی کودکان ۱ تا ۱۵ سال از ۱۶ mg/kg/day (حداکثر ۴۰۰ mg/day) بیشتر نشود. حاشیه درمانی باریک؛ پایش سطح سرمی.",
+            "en": "With risk factors for reduced clearance or if serum levels cannot be monitored, the final dose for 1–15 years must not exceed 16 mg/kg/day (max 400 mg/day). Narrow therapeutic index; monitor serum levels."
+          },
+          "refs": [
+            {
+              "source": "fda-theophylline-sol",
+              "section": "Dosage and Administration, Table V"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-step3",
+      "disease": "asthma",
+      "label": {
+        "fa": "کودکان زیر ۴۵ کیلوگرم — پس از ۳ روز دیگر: ۲۰ mg/kg/day",
+        "en": "Children <45 kg — after 3 more days: 20 mg/kg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        },
+        "maxWeightKg": 45
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 20,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-theophylline-sol",
+          "section": "Dosage and Administration, Table V"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-theophylline-sol",
+            "section": "Dosage and Administration, Table V"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در عوامل خطر کاهش کلیرانس یا وقتی پایش سطح سرمی ممکن نیست، دوز نهایی کودکان ۱ تا ۱۵ سال از ۱۶ mg/kg/day (حداکثر ۴۰۰ mg/day) بیشتر نشود. حاشیه درمانی باریک؛ پایش سطح سرمی.",
+            "en": "With risk factors for reduced clearance or if serum levels cannot be monitored, the final dose for 1–15 years must not exceed 16 mg/kg/day (max 400 mg/day). Narrow therapeutic index; monitor serum levels."
+          },
+          "refs": [
+            {
+              "source": "fda-theophylline-sol",
+              "section": "Dosage and Administration, Table V"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "asthma",
+      "label": {
+        "fa": "بیش از ۴۵ کیلوگرم و بزرگسال — شروع ۳۰۰ mg/day",
+        "en": ">45 kg and adults — start 300 mg/day"
+      },
+      "population": {
+        "minWeightKg": 45
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 4,
+        "titration": {
+          "start": 300,
+          "increment": 100,
+          "incrementEveryDays": 3,
+          "targetMin": 400,
+          "targetMax": 600,
+          "max": 600
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-theophylline-sol",
+          "section": "Dosage and Administration, Table V"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۳۰۰ ← ۴۰۰ ← ۶۰۰ mg/day هر ۳ روز در صورت تحمل، در دوزهای هر ۶ تا ۸ ساعت. با عوامل خطر یا بالای ۶۰ سال حداکثر ۴۰۰ mg/day.",
+            "en": "300 → 400 → 600 mg/day every 3 days if tolerated, divided every 6–8 h. With risk factors or over 60 years, max 400 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-theophylline-sol",
+              "section": "Dosage and Administration, Table V"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infant",
+      "disease": "asthma",
+      "label": {
+        "fa": "شیرخوار زیر ۱ سال",
+        "en": "Infants under 1 year"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "فرمول برچسب: دوز روزانه (mg) = [(۰٫۲ × سن به هفته) + ۵] × وزن (kg)؛ زیر ۲۶ هفته در ۳ نوبت، ۲۶ هفته به بالا در ۴ نوبت. نوزاد نارس: ۱ تا ۱٫۵ mg/kg هر ۱۲ ساعت. تنظیم با سطح سرمی؛ محاسبه خودکار انجام نمی‌شود.",
+          "en": "Label formula: total daily dose (mg) = [(0.2 × age in weeks) + 5] × kg; <26 weeks in 3 doses, ≥26 weeks in 4 doses. Premature neonates: 1–1.5 mg/kg every 12 h. Titrate to serum level; not auto-calculated."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-theophylline-sol",
+          "section": "Dosage and Administration, Table V"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تئوفیلین یا اجزای فرآورده.",
+        "en": "Hypersensitivity to theophylline or other components."
+      },
+      "refs": [
+        {
+          "source": "fda-theophylline-sol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "با احتیاط شدید در زخم پپتیک فعال، اختلال تشنجی و سایر بیماری‌های همزمان.",
+        "en": "Use with extreme caution in active peptic ulcer disease, seizure disorders and other concurrent illness."
+      },
+      "refs": [
+        {
+          "source": "fda-theophylline-sol",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "child-step1",
+      "formulation": "sol-80-15",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 60,
+        "upperPerDose": 70,
+        "mlPerDose": 11.25
+      }
+    },
+    {
+      "regimen": "child-step2",
+      "formulation": "sol-80-15",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 80,
+        "mlPerDose": 15
+      }
+    },
+    {
+      "regimen": "child-step3",
+      "formulation": "sol-80-15",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100,
+        "perDay": 400
+      }
+    },
+    {
+      "regimen": "child-step3",
+      "formulation": "sol-80-15",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDay": 600
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "sol-80-15",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 75
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "id": "mefenamic-acid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مفنامیک اسید",
+    "en": "Mefenamic acid"
+  },
+  "category": "analgesics",
+  "class": {
+    "fa": "ضدالتهاب غیراستروئیدی (NSAID)",
+    "en": "NSAID"
+  },
+  "brands": [
+    {
+      "name": "Ponstel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ponstan",
+    "پونستان",
+    "مفنامیک"
+  ],
+  "formulations": [
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mefenamic",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pain",
+      "disease": "pain",
+      "label": {
+        "fa": "درد خفیف تا متوسط — ۱۴ سال به بالا",
+        "en": "Mild to moderate pain — 14 years and older"
+      },
+      "population": {
+        "minAge": {
+          "value": 14,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-mefenamic",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-mefenamic",
+          "section": "1.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول ۵۰۰ mg، سپس ۲۵۰ mg هر ۶ ساعت در صورت نیاز؛ حداکثر یک هفته.",
+            "en": "500 mg initial dose, then 250 mg every 6 hours as needed; not more than one week."
+          },
+          "refs": [
+            {
+              "source": "fda-mefenamic",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-mefenamic",
+              "section": "1.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dysmenorrhea",
+      "disease": "dysmenorrhea",
+      "label": {
+        "fa": "قاعدگی دردناک اولیه",
+        "en": "Primary dysmenorrhea"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-mefenamic",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-mefenamic",
+          "section": "8.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول ۵۰۰ mg، سپس ۲۵۰ mg هر ۶ ساعت.",
+            "en": "500 mg initial dose, then 250 mg every 6 hours."
+          },
+          "refs": [
+            {
+              "source": "fda-mefenamic",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-14-pain",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 14,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "بی‌خطری برای درد زیر ۱۴ سال ثابت نشده است.",
+        "en": "Safety and effectiveness for pain not established under 14 years."
+      },
+      "refs": [
+        {
+          "source": "fda-mefenamic",
+          "section": "8.4"
+        }
+      ]
+    },
+    {
+      "id": "nsaid",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مفنامیک اسید؛ سابقه آسم، کهیر یا واکنش آلرژیک پس از آسپرین/NSAID؛ جراحی CABG.",
+        "en": "Hypersensitivity to mefenamic acid; asthma, urticaria or allergic reactions after aspirin/NSAIDs; CABG surgery."
+      },
+      "refs": [
+        {
+          "source": "fda-mefenamic",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pain",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 16,
+        "weightKg": 55
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "pain",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "dysmenorrhea",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 250
+      }
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "id": "metronidazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مترونیدازول",
+    "en": "Metronidazole"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "نیتروایمیدازول؛ ضدتک‌یاخته و ضدبی‌هوازی",
+    "en": "Nitroimidazole antiprotozoal/antibacterial"
+  },
+  "brands": [
+    {
+      "name": "Flagyl",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "فلاژیل",
+    "flagyl",
+    "مترونیدازول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "Description"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "amebiasis-child",
+      "disease": "intestinal-amebiasis",
+      "label": {
+        "fa": "آمیبیاز (روده‌ای و آبسه کبدی) — کودکان: ۳۵ تا ۵۰ mg/kg/day در ۳ نوبت، ۱۰ روز",
+        "en": "Amebiasis — children: 35–50 mg/kg/day in 3 doses, 10 days"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 35,
+        "perKgPerDayMax": 50,
+        "dividedDoses": 3
+      },
+      "refs": [
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "Dosage and Administration"
+        },
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "Pediatric Use"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط برای آمیبیاز در کودکان بی‌خطری ثابت شده است. شکل مایع در این برچسب نیست.",
+            "en": "In children safety is established only for amebiasis. No liquid form in this label."
+          },
+          "refs": [
+            {
+              "source": "fda-metronidazole-tab",
+              "section": "Pediatric Use"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amebiasis-adult",
+      "disease": "intestinal-amebiasis",
+      "label": {
+        "fa": "آمیبیاز روده‌ای حاد — بزرگسال: ۷۵۰ mg سه بار در روز",
+        "en": "Acute intestinal amebiasis — adults: 750 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 750,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 10
+      }
+    },
+    {
+      "id": "anaerobic-adult",
+      "disease": "serious-anaerobic-infection",
+      "label": {
+        "fa": "عفونت بی‌هوازی جدی — بزرگسال: ۷٫۵ mg/kg هر ۶ ساعت",
+        "en": "Serious anaerobic infection — adults: 7.5 mg/kg every 6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 7.5,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4000,
+        "refs": [
+          {
+            "source": "fda-metronidazole-tab",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 7,
+        "max": 10
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مترونیدازول یا سایر نیتروایمیدازول‌ها.",
+        "en": "Hypersensitivity to metronidazole or other nitroimidazoles."
+      },
+      "refs": [
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "disulfiram-alcohol",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف دی‌سولفیرام در ۲ هفته اخیر؛ الکل یا پروپیلن گلیکول تا ۳ روز پس از درمان.",
+        "en": "Disulfiram within the last two weeks; alcohol or propylene glycol during and for 3 days after therapy."
+      },
+      "refs": [
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "cockayne",
+      "severity": "block",
+      "text": {
+        "fa": "سندرم کاکاین (نارسایی کبدی کشنده).",
+        "en": "Cockayne syndrome (fatal hepatotoxicity)."
+      },
+      "refs": [
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: در موش و رت سرطان‌زا؛ از مصرف غیرضروری پرهیز شود.",
+        "en": "Boxed warning: carcinogenic in mice and rats; avoid unnecessary use."
+      },
+      "refs": [
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "WARNING (boxed)"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واکنش‌های شدید پوستی (SJS، TEN، DRESS)؛ انسفالوپاتی و نوروپاتی محیطی؛ تشنج.",
+        "en": "Severe cutaneous reactions (SJS, TEN, DRESS); encephalopathy and peripheral neuropathy; seizures."
+      },
+      "refs": [
+        {
+          "source": "fda-metronidazole-tab",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "amebiasis-child",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "amebiasis-child",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 21.4
+      },
+      "expect": {
+        "perDose": 249.67,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "amebiasis-adult",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "anaerobic-adult",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 525
+      }
+    }
+  ]
+}

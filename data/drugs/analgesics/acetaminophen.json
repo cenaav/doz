@@ -1,0 +1,367 @@
+{
+  "id": "acetaminophen",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "استامینوفن (پاراستامول)",
+    "en": "Acetaminophen (paracetamol)"
+  },
+  "category": "analgesics",
+  "class": {
+    "fa": "ضددرد و ضدتب",
+    "en": "Analgesic and antipyretic"
+  },
+  "brands": [
+    {
+      "name": "Tylenol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "paracetamol",
+    "پاراستامول",
+    "استامینوفن",
+    "tylenol",
+    "تیلنول"
+  ],
+  "formulations": [
+    {
+      "id": "susp-160-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "160 mg / 5 mL",
+      "concentration": {
+        "amount": 160,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "fever",
+      "disease": "fever",
+      "label": {
+        "fa": "تب — ۲ تا ۱۱ سال (جدول OTC)",
+        "en": "Fever — 2 to 11 years (OTC chart)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "intervalHours": 4,
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "perDose": 160,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 240,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 9,
+              "unit": "year"
+            },
+            "perDose": 320,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 9,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 11,
+              "unit": "year"
+            },
+            "perDose": 400,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 11,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 480,
+            "dosesPerDay": 5
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ ساعت تا زمانی که علائم هست؛ بیش از ۵ بار در ۲۴ ساعت نه. در صورت امکان بر اساس وزن (جدول وزن/سن برچسب)؛ زیر ۲ سال با پزشک مشورت شود. دوز mg/kg خوراکی در برچسب FDA نیامده و در انتظار منبع دارای مجوز است.",
+            "en": "Every 4 hours while symptoms last; no more than 5 times in 24 h. Use weight if possible (label weight/age chart); under 2 years ask a doctor. Oral mg/kg dosing is not in the FDA label; pending the licensed reference."
+          },
+          "refs": [
+            {
+              "source": "fda-childrens-tylenol",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pain",
+      "disease": "pain",
+      "label": {
+        "fa": "درد خفیف — ۲ تا ۱۱ سال (جدول OTC)",
+        "en": "Minor aches and pains — 2 to 11 years (OTC chart)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "intervalHours": 4,
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "perDose": 160,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 240,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 9,
+              "unit": "year"
+            },
+            "perDose": 320,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 9,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 11,
+              "unit": "year"
+            },
+            "perDose": 400,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 11,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 480,
+            "dosesPerDay": 5
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ ساعت تا زمانی که علائم هست؛ بیش از ۵ بار در ۲۴ ساعت نه. در صورت امکان بر اساس وزن (جدول وزن/سن برچسب)؛ زیر ۲ سال با پزشک مشورت شود. دوز mg/kg خوراکی در برچسب FDA نیامده و در انتظار منبع دارای مجوز است.",
+            "en": "Every 4 hours while symptoms last; no more than 5 times in 24 h. Use weight if possible (label weight/age chart); under 2 years ask a doctor. Oral mg/kg dosing is not in the FDA label; pending the licensed reference."
+          },
+          "refs": [
+            {
+              "source": "fda-childrens-tylenol",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "other-apap",
+      "severity": "block",
+      "text": {
+        "fa": "همراه هر داروی دیگر حاوی استامینوفن (نسخه‌ای یا بدون نسخه).",
+        "en": "With any other drug containing acetaminophen (prescription or nonprescription)."
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار کبدی: آسیب شدید کبد با بیش از ۵ دوز در ۲۴ ساعت یا همراه داروهای دیگر حاوی استامینوفن.",
+        "en": "Liver warning: severe liver damage with more than 5 doses in 24 hours or with other acetaminophen products."
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Warnings"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واکنش‌های شدید پوستی (قرمزی، تاول، بثورات): فوراً قطع شود.",
+        "en": "Severe skin reactions (reddening, blisters, rash): stop and seek help."
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "fever",
+      "formulation": "susp-160-5",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "perDose": 160,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "fever",
+      "formulation": "susp-160-5",
+      "input": {
+        "ageYears": 7,
+        "weightKg": 22
+      },
+      "expect": {
+        "perDose": 320,
+        "mlPerDose": 10
+      }
+    },
+    {
+      "regimen": "pain",
+      "formulation": "susp-160-5",
+      "input": {
+        "ageYears": 11,
+        "weightKg": 36
+      },
+      "expect": {
+        "perDose": 480,
+        "mlPerDose": 15
+      }
+    },
+    {
+      "regimen": "pain",
+      "formulation": "susp-160-5",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}
