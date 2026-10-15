@@ -1,0 +1,472 @@
+{
+  "id": "levocetirizine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لووسیتیریزین",
+    "en": "Levocetirizine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل دوم",
+    "en": "Second-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Xyzal",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xyzal",
+    "زایزال",
+    "لووسیتیریزین",
+    "لوسیتریزین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "sol-2-5",
+      "form": "solution",
+      "route": "oral",
+      "label": "2.5 mg / 5 mL oral solution",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levocetsol",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ciu-12",
+      "disease": "chronic-urticaria",
+      "label": {
+        "fa": "کهیر مزمن — ۱۲ سال به بالا: ۵ mg یک بار شب",
+        "en": "Chronic urticaria — ≥12 y: 5 mg once in the evening"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بعضی بیماران با ۲٫۵ mg کنترل می‌شوند.",
+            "en": "Some patients are controlled with 2.5 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-levocet",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ciu-6-11",
+      "disease": "chronic-urticaria",
+      "label": {
+        "fa": "کهیر مزمن — ۶ تا ۱۱ سال: ۲٫۵ mg یک بار شب",
+        "en": "Chronic urticaria — 6–11 y: 2.5 mg once in the evening"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "2.2"
+        }
+      ]
+    },
+    {
+      "id": "ciu-6m-5y",
+      "disease": "chronic-urticaria",
+      "label": {
+        "fa": "کهیر مزمن — ۶ ماه تا ۵ سال: ۱٫۲۵ mg (۲٫۵ mL محلول) یک بار شب",
+        "en": "Chronic urticaria — 6 months–5 y: 1.25 mg (2.5 mL solution) once in the evening"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1.25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levocetsol",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1.25,
+        "refs": [
+          {
+            "source": "fda-levocetsol",
+            "section": "2.1"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "sol-2-5"
+      ]
+    },
+    {
+      "id": "par-6m-2y",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک دائمی — ۶ ماه تا ۲ سال: ۱٫۲۵ mg یک بار شب",
+        "en": "Perennial allergic rhinitis — 6 months–2 y: 1.25 mg once in the evening"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1.25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levocetsol",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1.25,
+        "refs": [
+          {
+            "source": "fda-levocetsol",
+            "section": "2.1"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "sol-2-5"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به لووسیتیریزین یا سیتیریزین.",
+        "en": "Hypersensitivity to levocetirizine or cetirizine."
+      },
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "esrd",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی کلیه پیشرفته (کلیرانس زیر ۱۰) یا دیالیز.",
+        "en": "End-stage renal disease (CrCl <10 mL/min) or haemodialysis."
+      },
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child-renal",
+      "severity": "warn",
+      "text": {
+        "fa": "کودک ۶ ماه تا ۱۱ سال با نارسایی کلیه.",
+        "en": "Children 6 months–11 years with renal impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "خواب‌آلودگی؛ رانندگی و الکل پرهیز شود؛ احتیاط در احتباس ادرار.",
+        "en": "Somnolence; avoid driving and alcohol; caution with urinary retention."
+      },
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ciu-12",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "ciu-6-11",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 2.5,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "ciu-6-11",
+      "formulation": "sol-2-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 2.5,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "ciu-6m-5y",
+      "formulation": "sol-2-5",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "perDose": 1.25,
+        "mlPerDose": 2.5
+      }
+    },
+    {
+      "regimen": "par-6m-2y",
+      "formulation": "sol-2-5",
+      "input": {
+        "ageMonths": 12,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 1.25,
+        "mlPerDose": 2.5
+      }
+    }
+  ],
+  "atc": [
+    "R06AE09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09640",
+        "en": "LEVOCETIRIZINE 5MG TAB",
+        "fa": "قرص لووستیریزین ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-805/Levocetirizine",
+        "url": "https://www.darooyab.ir/G-805/Levocetirizine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-levocet",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA090385"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=090385",
+      "label": "ANDA090385"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=60ae7e0e-281c-40a3-a0d3-259b843ddaaa",
+      "label": "FDA Levocetirizine tab"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2965ef46-18db-4615-9dce-bfb0f0b3366a",
+      "label": "FDA Levocetirizine sol."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607056.html",
+      "label": "Levocetirizine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R06AE09",
+      "label": "R06AE09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-805/Levocetirizine",
+      "label": "Levocetirizine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published literature and postmarketing experience with levocetirizine use in pregnant women are insufficient to identify any drug-associated risks of miscarriage, birth defects, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of levocetirizine in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The recommended dose of levocetirizine dihydrochloride for the treatment of the uncomplicated skin manifestations of chronic idiopathic urticaria in patients 6 months to 17 years of age is based on extrapolation of efficacy from adults 18 years of age and older [see Clinical Studies ( 14 )].",
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-levocet",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

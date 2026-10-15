@@ -1,0 +1,279 @@
+{
+  "id": "bilastine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بیلاستین",
+    "en": "Bilastine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل دوم",
+    "en": "Second-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Ilaxten",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "ilaxten",
+    "bilaxten",
+    "بیلاستین",
+    "بیلاکستن"
+  ],
+  "formulations": [
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-ilaxten",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ar",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینوکونژنکتیویت آلرژیک — ۱۲ سال به بالا: ۲۰ mg یک بار در روز",
+        "en": "Allergic rhinoconjunctivitis — ≥12 y: 20 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-ilaxten",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک ساعت قبل یا دو ساعت بعد از غذا یا آب‌میوه.",
+            "en": "One hour before or two hours after food or fruit juice."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-ilaxten",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "urticaria",
+      "disease": "chronic-urticaria",
+      "label": {
+        "fa": "کهیر — ۱۲ سال به بالا: ۲۰ mg یک بار در روز",
+        "en": "Urticaria — ≥12 y: 20 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-ilaxten",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بیلاستین.",
+        "en": "Hypersensitivity to bilastine."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-ilaxten",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "در نارسایی متوسط یا شدید کلیه، مصرف با مهارکننده‌های P-gp (کتوکونازول، اریترومایسین، سیکلوسپورین، ریتوناویر، دیلتیازم) پرهیز شود.",
+        "en": "In moderate/severe renal impairment avoid P-gp inhibitors (ketoconazole, erythromycin, ciclosporin, ritonavir, diltiazem)."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-ilaxten",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ar",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "urticaria",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "R06AX29"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "53442",
+        "en": "BILASTINE 20 MG TABLET",
+        "fa": "قرص بیلاستین ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "53444",
+        "en": "BILASTINE SOLUTION ORAL 2.5 mg/1mL 120 ml",
+        "fa": "محلول خوراکی بیلاستین ۲٫۵ میلی‌گرم / ۱ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5543/Bilastine",
+        "url": "https://www.darooyab.ir/G-5543/Bilastine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R06AX29",
+      "label": "R06AX29"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5543/Bilastine",
+      "label": "Bilastine"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/4551/smpc",
+      "label": "UK SmPC Ilaxten 20mg"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": ": There are no or limited amount of data from the use of bilastine in pregnant women.",
+      "refs": [
+        {
+          "source": "uk-smpc-ilaxten",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": ": The excretion of bilastine in milk has not been studied in humans.",
+      "refs": [
+        {
+          "source": "uk-smpc-ilaxten",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and efficacy of bilastine in renally and hepatically impaired children have not been established.",
+      "refs": [
+        {
+          "source": "uk-smpc-ilaxten",
+          "section": "4.2"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "Elderly No dosage adjustments are required in elderly patients (see sections 5.1 and 5.2).",
+      "refs": [
+        {
+          "source": "uk-smpc-ilaxten",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

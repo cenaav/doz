@@ -40,6 +40,27 @@
           "section": "Active ingredient"
         }
       ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (OTC)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cetirizinetab",
+          "section": "Active Ingredient"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -154,6 +175,61 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "sol-5-5"
+      ]
+    },
+    {
+      "id": "otc-tab",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "آلرژی — ۶ سال به بالا: یک قرص ۱۰ mg روزانه",
+        "en": "Allergy — ≥6 y: one 10 mg tablet daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cetirizinetab",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-cetirizinetab",
+            "section": "Directions"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "tab-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در علائم خفیف‌تر فرآورده ۵ mg کافی است. ۶۵ سال به بالا و بیماری کبد یا کلیه با پزشک.",
+            "en": "A 5 mg product may suit milder symptoms. 65+ or liver/kidney disease: ask a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-cetirizinetab",
+              "section": "Directions"
+            }
+          ]
+        }
       ]
     }
   ],
@@ -253,6 +329,18 @@
       "expect": {
         "status": "blocked"
       }
+    },
+    {
+      "regimen": "otc-tab",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
     }
   ],
   "atc": [
@@ -305,6 +393,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30cbaa91-2216-efd2-e063-6294a90aaaed",
       "label": "FDA Cetirizine OTC"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d55dfce1-acef-3342-e053-2a95a90a4b83",
+      "label": "FDA Cetirizine 10mg tab"
     },
     {
       "kind": "medlineplus",

@@ -1,0 +1,386 @@
+{
+  "id": "terbutaline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تربوتالین",
+    "en": "Terbutaline"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آگونیست بتا-۲",
+    "en": "Beta-2 agonist"
+  },
+  "brands": [
+    {
+      "name": "Bricanyl",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "bricanyl",
+    "بریکانیل",
+    "تربوتالین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet (scored)",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "asthma",
+      "label": {
+        "fa": "برونکواسپاسم — بزرگسال: ۵ mg سه بار در روز (حدود هر ۶ ساعت در بیداری)",
+        "en": "Bronchospasm — adult: 5 mg three times daily (about every 6 h while awake)"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 15,
+        "refs": [
+          {
+            "source": "fda-terbutaline",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر عوارض آزاردهنده بود ۲٫۵ mg سه بار در روز.",
+            "en": "If side effects are troublesome, 2.5 mg three times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-terbutaline",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "teen",
+      "disease": "asthma",
+      "label": {
+        "fa": "برونکواسپاسم — ۱۲ تا ۱۵ سال: ۲٫۵ mg سه بار در روز",
+        "en": "Bronchospasm — 12–15 y: 2.5 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 7.5,
+        "refs": [
+          {
+            "source": "fda-terbutaline",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "toco",
+      "severity": "block",
+      "text": {
+        "fa": "برای جلوگیری از زایمان زودرس (توکولیز) مصرف نشود.",
+        "en": "Not to be used for tocolysis."
+      },
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آمین‌های سمپاتومیمتیک.",
+        "en": "Hypersensitivity to sympathomimetic amines."
+      },
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "lt12",
+      "severity": "block",
+      "text": {
+        "fa": "زیر ۱۲ سال توصیه نمی‌شود.",
+        "en": "Not recommended under 12 years."
+      },
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "Pediatric Use"
+        }
+      ],
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: در بارداری برای توکولیز عوارض جدی و مرگ مادر گزارش شده.",
+        "en": "Boxed warning: serious adverse reactions and maternal deaths when used for tocolysis."
+      },
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "teen",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 13,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 2.5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "R03CC03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01686",
+        "en": "TERBUTALINE SULFATE 0.5MG/ML AMP",
+        "fa": "آمپول تربوتالین سولفات ۰٫۵ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "01198",
+        "en": "TERBUTALINE SULFATE 5MG TAB",
+        "fa": "قرص تربوتالین سولفات ۵ میلی‌گرم"
+      },
+      {
+        "code": "01687",
+        "en": "TERBUTALINE SULFATE SOL FOR NEBULIZATION",
+        "fa": "محلول تربوتالین سولفات نبولیزاشن"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1494/Terbutaline",
+        "url": "https://www.darooyab.ir/G-1494/Terbutaline"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-terbutaline",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA211832"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211832",
+      "label": "ANDA211832"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a4e5046-293c-4616-8679-6da65f31626b",
+      "label": "FDA Terbutaline tab"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682144.html",
+      "label": "Terbutaline"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611026.html",
+      "label": "Terbutaline Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03CC03",
+      "label": "R03CC03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1494/Terbutaline",
+      "label": "Terbutaline"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Terbutaline sulfate should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Therefore, terbutaline sulfate should be used during nursing only if the potential benefit justifies the possible risk to the newborn.",
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Terbutaline sulfate is not recommended for patients under the age of 12 years because of insufficient clinical data to establish safety and effectiveness [see Dosage and Administration] .",
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-terbutaline",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

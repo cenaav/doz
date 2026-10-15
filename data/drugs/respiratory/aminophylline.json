@@ -1,0 +1,274 @@
+{
+  "id": "aminophylline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمینوفیلین (تزریقی)",
+    "en": "Aminophylline (injection)"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "متیل‌گزانتین برونکودیلاتور",
+    "en": "Methylxanthine bronchodilator"
+  },
+  "brands": [
+    {
+      "name": "Aminophylline",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aminophylline",
+    "آمینوفیلین",
+    "آمپول آمینوفیلین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-25",
+      "form": "injection",
+      "route": "iv",
+      "label": "25 mg/mL (250 mg/10 mL) vial",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aminophylline",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "asthma",
+      "label": {
+        "fa": "حمله حاد آسم/COPD — بارگذاری ۵٫۷ mg/kg (وزن ایدئال) وریدی طی ۳۰ دقیقه، فقط اگر در ۲۴ ساعت گذشته تئوفیلین نگرفته",
+        "en": "Acute asthma/COPD — load 5.7 mg/kg (ideal body weight) IV over 30 min, only if no theophylline in the previous 24 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 5.7,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-aminophylline",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با وزن ایدئال حساب شود. سپس انفوزیون طبق جدول سنی برچسب و سطح سرمی تئوفیلین (هدف ۱۰ تا ۲۰ mcg/mL). کودکان و نوزادان: جدول برچسب.",
+            "en": "Use ideal body weight. Then infusion per the label age table and serum theophylline levels (target 10–20 mcg/mL). Children and neonates: label table."
+          },
+          "refs": [
+            {
+              "source": "fda-aminophylline",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تئوفیلین یا اتیلن‌دی‌آمین.",
+        "en": "Hypersensitivity to theophylline or ethylenediamine."
+      },
+      "refs": [
+        {
+          "source": "fda-aminophylline",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سطح سرمی پایش شود؛ سمیت (تشنج، آریتمی) بالای ۲۰ mcg/mL؛ داروهای مهارکننده متابولیسم تئوفیلین (مثل سایمتیدین، اریترومایسین، تاکرین) سطح آن را بالا می‌برند.",
+        "en": "Monitor serum levels; toxicity (seizures, arrhythmia) above 20 mcg/mL; drugs that inhibit theophylline metabolism (e.g. cimetidine, erythromycin, tacrine) raise levels."
+      },
+      "refs": [
+        {
+          "source": "fda-aminophylline",
+          "section": "Warnings"
+        },
+        {
+          "source": "fda-aminophylline",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "vial-25",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 399,
+        "mlPerDose": 15.96
+      }
+    }
+  ],
+  "atc": [
+    "R03DA05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00062",
+        "en": "AMINOPHYLLINE 100MG TAB",
+        "fa": "قرص آمینوفیلین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00059",
+        "en": "AMINOPHYLLINE 125 PED SUPP",
+        "fa": "شیاف کودکان آمینوفیلین ۱۲۵"
+      },
+      {
+        "code": "00060",
+        "en": "AMINOPHYLLINE 250 SUPP",
+        "fa": "شیاف آمینوفیلین ۲۵۰"
+      },
+      {
+        "code": "00061",
+        "en": "AMINOPHYLLINE 250MG/10ML AMP",
+        "fa": "آمپول آمینوفیلین ۲۵۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1450/Aminophylline",
+        "url": "https://www.darooyab.ir/G-1450/Aminophylline"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-aminophylline",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA087242"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=087242",
+      "label": "ANDA087242"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a663ef3-881f-48bd-2689-3713b24545c2",
+      "label": "FDA Aminophylline inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601015.html",
+      "label": "Aminophylline"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03DA05",
+      "label": "R03DA05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1450/Aminophylline",
+      "label": "Aminophylline"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are no adequate and well controlled studies in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-aminophylline",
+          "section": "Pregnancy:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Theophylline is excreted into breast milk and may cause irritability or other signs of mild toxicity in nursing human infants.",
+      "refs": [
+        {
+          "source": "fda-aminophylline",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Theophylline is safe and effective for the approved indications in pediatric patients (see INDICATIONS AND USAGE ).",
+      "refs": [
+        {
+          "source": "fda-aminophylline",
+          "section": "Pediatric Use:"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Theophylline infusion rates greater than 17 mg/hr (21 mg/hr as aminophylline) should be prescribed with caution in elderly patients.",
+      "refs": [
+        {
+          "source": "fda-aminophylline",
+          "section": "Geriatric Use:"
+        }
+      ]
+    }
+  }
+}

@@ -42,6 +42,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "susp-100-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "100 mg / 5 mL suspension",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-carbamazepinesusp",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -252,6 +272,18 @@
       "expect": {
         "tabletsPerDoseRounded": 1
       }
+    },
+    {
+      "regimen": "epi-lt6",
+      "formulation": "susp-100-5",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 5
+      }
     }
   ],
   "atc": [
@@ -314,6 +346,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f3d91cd-a959-4e07-a51b-8a4e9ba9ece2",
       "label": "FDA Carbamazepine"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0526a054-3eda-49b4-b390-7d5d16e30af8",
+      "label": "FDA Carbamazepine susp."
     },
     {
       "kind": "medlineplus",

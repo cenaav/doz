@@ -85,6 +85,46 @@
           "section": "3"
         }
       ]
+    },
+    {
+      "id": "susp-250",
+      "form": "suspension",
+      "route": "oral",
+      "label": "5% (250 mg / 5 mL) oral suspension",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ciprosusp",
+          "section": "Dosage Forms and Strengths"
+        }
+      ]
+    },
+    {
+      "id": "susp-500",
+      "form": "suspension",
+      "route": "oral",
+      "label": "10% (500 mg / 5 mL) oral suspension",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ciprosusp",
+          "section": "Dosage Forms and Strengths"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -117,7 +157,12 @@
       "durationDays": {
         "min": 7,
         "max": 14
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500",
+        "tab-750"
+      ]
     },
     {
       "id": "cystitis",
@@ -147,7 +192,12 @@
       "durationDays": {
         "min": 3,
         "max": 3
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500",
+        "tab-750"
+      ]
     },
     {
       "id": "sssi",
@@ -178,7 +228,12 @@
       "durationDays": {
         "min": 7,
         "max": 14
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500",
+        "tab-750"
+      ]
     },
     {
       "id": "lrti",
@@ -209,7 +264,12 @@
       "durationDays": {
         "min": 7,
         "max": 14
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500",
+        "tab-750"
+      ]
     },
     {
       "id": "sinusitis",
@@ -239,7 +299,12 @@
       "durationDays": {
         "min": 10,
         "max": 10
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500",
+        "tab-750"
+      ]
     },
     {
       "id": "diarrhea",
@@ -269,7 +334,12 @@
       "durationDays": {
         "min": 5,
         "max": 7
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500",
+        "tab-750"
+      ]
     },
     {
       "id": "typhoid",
@@ -299,7 +369,12 @@
       "durationDays": {
         "min": 10,
         "max": 10
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500",
+        "tab-750"
+      ]
     },
     {
       "id": "gonorrhea",
@@ -329,7 +404,12 @@
       "durationDays": {
         "min": 1,
         "max": 1
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500",
+        "tab-750"
+      ]
     },
     {
       "id": "peds-cuti",
@@ -387,6 +467,73 @@
             },
             {
               "source": "fda-ciprofloxacin",
+              "section": "8.4"
+            }
+          ]
+        }
+      ],
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500",
+        "tab-750"
+      ]
+    },
+    {
+      "id": "cuti-child",
+      "disease": "pyelonephritis",
+      "label": {
+        "fa": "عفونت ادراری عارضه‌دار / پیلونفریت — ۱ تا ۱۷ سال: ۱۰ تا ۲۰ mg/kg هر ۱۲ ساعت",
+        "en": "Complicated UTI / pyelonephritis — 1–17 y: 10–20 mg/kg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "perKgPerDoseMax": 20,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-ciprosusp",
+          "section": "Dosage and Administration — Pediatric Dosage Guidelines"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 750,
+        "refs": [
+          {
+            "source": "fda-ciprosusp",
+            "section": "Dosage and Administration — Pediatric Dosage Guidelines"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 21
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر ۷۵۰ mg در هر دوز حتی بالای ۵۱ kg. در کودکان خطر عوارض مفصلی؛ داروی خط اول نیست.",
+            "en": "Max 750 mg per dose even above 51 kg. Joint adverse events in children; not first choice."
+          },
+          "refs": [
+            {
+              "source": "fda-ciprosusp",
+              "section": "Dosage and Administration — Pediatric Dosage Guidelines"
+            },
+            {
+              "source": "fda-ciprosusp",
               "section": "8.4"
             }
           ]
@@ -545,6 +692,19 @@
       "expect": {
         "perDose": 750
       }
+    },
+    {
+      "regimen": "cuti-child",
+      "formulation": "susp-250",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 4,
+        "upperPerDose": 400
+      }
     }
   ],
   "atc": [
@@ -617,6 +777,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14c3bc33-201d-492e-9aee-a4d84c813a3d",
       "label": "FDA Ciprofloxacin"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=888dc7f9-ad9c-4c00-8d50-8ddfd9bd27c0",
+      "label": "FDA Cipro (tab+susp)"
     },
     {
       "kind": "medlineplus",

@@ -1,0 +1,272 @@
+{
+  "id": "loratadine-pseudoephedrine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لوراتادین + سودوافدرین",
+    "en": "Loratadine + pseudoephedrine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین + ضداحتقان",
+    "en": "Antihistamine + decongestant"
+  },
+  "brands": [
+    {
+      "name": "Claritin-D",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "claritin-d",
+    "کلاریتین دی",
+    "لوراتادین دی"
+  ],
+  "formulations": [
+    {
+      "id": "tab",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Loratadine 5 mg + pseudoephedrine sulfate 120 mg ER tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-claritind",
+          "section": "Active ingredient"
+        }
+      ],
+      "components": {
+        "loratadine": {
+          "name": {
+            "fa": "لوراتادین",
+            "en": "Loratadine"
+          },
+          "amount": 5,
+          "unit": "mg"
+        },
+        "pseudoephedrine": {
+          "name": {
+            "fa": "سودوافدرین",
+            "en": "Pseudoephedrine"
+          },
+          "amount": 120,
+          "unit": "mg",
+          "limits": {
+            "maxPerDay": 240,
+            "refs": [
+              {
+                "source": "fda-claritind",
+                "section": "Directions"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ar",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "آلرژی با احتقان بینی — ۱۲ سال به بالا: ۱ قرص هر ۱۲ ساعت",
+        "en": "Allergy with congestion — ≥12 y: 1 tablet every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-claritind",
+          "section": "Directions"
+        }
+      ],
+      "doseComponent": "loratadine",
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-claritind",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "قرص شکسته، خرد یا جویده نشود.",
+            "en": "Do not divide, crush or chew."
+          },
+          "refs": [
+            {
+              "source": "fda-claritind",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف مهارکننده MAO در ۲ هفته اخیر. بیماری قلب، تیروئید، فشار خون، دیابت، بزرگی پروستات: پیش از مصرف با پزشک.",
+        "en": "MAOI within 2 weeks. Heart disease, thyroid disease, high blood pressure, diabetes, enlarged prostate: ask a doctor first."
+      },
+      "refs": [
+        {
+          "source": "fda-claritind",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ar",
+      "formulation": "tab",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "R01BA52"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13066",
+        "en": "LORATADINE 10MG ORO DISP TAB",
+        "fa": "قرص لوراتادین ۱۰ میلی‌گرم ارو دیسپ"
+      },
+      {
+        "code": "20923",
+        "en": "LORATADINE 10MG SOFT GEL CAP",
+        "fa": "کپسول نرم لوراتادین ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "01574",
+        "en": "LORATADINE 10MG TAB",
+        "fa": "قرص لوراتادین ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "02011",
+        "en": "LORATADINE 1MG/ML 60ML SYRUP",
+        "fa": "شربت لوراتادین ۱ میلی‌گرم / میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "52298",
+        "en": "LORATADINE TABLET, ORALLY DISINTEGRATING ORAL 10 mg",
+        "fa": "قرص بازشونده دهانی لوراتادین بازشونده ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-806/Loratadine",
+        "url": "https://www.darooyab.ir/G-806/Loratadine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-claritind",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019670"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019670",
+      "label": "NDA019670"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7125705-01ff-4418-8c53-9209c2bbb484",
+      "label": "FDA Claritin-D 12h"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697038.html",
+      "label": "Loratadine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R01BA52",
+      "label": "R01BA52"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-806/Loratadine",
+      "label": "Loratadine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-claritind",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-claritind",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  }
+}

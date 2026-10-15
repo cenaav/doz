@@ -1,0 +1,291 @@
+{
+  "id": "cetirizine-pseudoephedrine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیتیریزین + سودوافدرین",
+    "en": "Cetirizine + pseudoephedrine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین + ضداحتقان",
+    "en": "Antihistamine + decongestant"
+  },
+  "brands": [
+    {
+      "name": "Zyrtec-D",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zyrtec-d",
+    "زیرتک دی",
+    "سیتریزین دی"
+  ],
+  "formulations": [
+    {
+      "id": "tab",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Cetirizine 5 mg + pseudoephedrine 120 mg ER tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zyrtecd",
+          "section": "Active ingredients"
+        }
+      ],
+      "components": {
+        "cetirizine": {
+          "name": {
+            "fa": "سیتیریزین",
+            "en": "Cetirizine"
+          },
+          "amount": 5,
+          "unit": "mg"
+        },
+        "pseudoephedrine": {
+          "name": {
+            "fa": "سودوافدرین",
+            "en": "Pseudoephedrine"
+          },
+          "amount": 120,
+          "unit": "mg",
+          "limits": {
+            "maxPerDay": 240,
+            "refs": [
+              {
+                "source": "fda-zyrtecd",
+                "section": "Directions"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ar",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "آلرژی با احتقان بینی — ۱۲ سال به بالا: ۱ قرص هر ۱۲ ساعت",
+        "en": "Allergy with congestion — ≥12 y: 1 tablet every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-zyrtecd",
+          "section": "Directions"
+        }
+      ],
+      "doseComponent": "cetirizine",
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-zyrtecd",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کامل بلعیده شود. ۶۵ سال به بالا با پزشک.",
+            "en": "Swallow whole. 65 and over: ask a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-zyrtecd",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف مهارکننده MAO در ۲ هفته اخیر. بیماری قلب، تیروئید، فشار خون، دیابت، بزرگی پروستات: پیش از مصرف با پزشک.",
+        "en": "MAOI within 2 weeks. Heart disease, thyroid disease, high blood pressure, diabetes, enlarged prostate: ask a doctor first."
+      },
+      "refs": [
+        {
+          "source": "fda-zyrtecd",
+          "section": "Warnings"
+        }
+      ]
+    },
+    {
+      "id": "hydroxyzine",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به هیدروکسیزین.",
+        "en": "Allergy to hydroxyzine."
+      },
+      "refs": [
+        {
+          "source": "fda-zyrtecd",
+          "section": "Warnings — Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ar",
+      "formulation": "tab",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "R01BA52"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01424",
+        "en": "CETIRIZINE 2HCl 10MG TAB",
+        "fa": "قرص ستیریزین ۲ هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "02231",
+        "en": "CETIRIZINE 2HCl 5MG TAB",
+        "fa": "قرص ستیریزین ۲ هیدروکلراید ۵ میلی‌گرم"
+      },
+      {
+        "code": "02232",
+        "en": "CETIRIZINE 2HCL 5MG/5ML 60ML SYRUP",
+        "fa": "شربت ستیریزین ۲ هیدروکلراید ۵ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "13923",
+        "en": "CETIRIZINE HCL 10MG CAP(SOFT GEL)",
+        "fa": "کپسول نرم ستیریزین هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "51924",
+        "en": "CETIRIZINE HYDROCHLORIDE SYRUP ORAL 1 mg/1mL 120 mL",
+        "fa": "شربت ستیریزین هیدروکلراید ۱ میلی‌گرم / ۱ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-776/Cetirizine",
+        "url": "https://www.darooyab.ir/G-776/Cetirizine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-zyrtecd",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021150"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021150",
+      "label": "NDA021150"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1ecf9ba-1c03-7fb7-e053-2a95a90a875a",
+      "label": "FDA Zyrtec-D"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a623043.html",
+      "label": "Cetirizine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698026.html",
+      "label": "Cetirizine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R01BA52",
+      "label": "R01BA52"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-776/Cetirizine",
+      "label": "Cetirizine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "If pregnant: ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-zyrtecd",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "If breast-feeding: not recommended.",
+      "refs": [
+        {
+          "source": "fda-zyrtecd",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  }
+}

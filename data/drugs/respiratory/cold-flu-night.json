@@ -1,0 +1,233 @@
+{
+  "id": "cold-flu-night",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "شربت سرماخوردگی شبانه (استامینوفن + دکسترومتورفان + دوکسیلامین)",
+    "en": "Cold & flu night liquid (acetaminophen + dextromethorphan + doxylamine)"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "ترکیب ضدسرماخوردگی",
+    "en": "Cold and flu combination"
+  },
+  "brands": [
+    {
+      "name": "Vicks NyQuil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nyquil",
+    "نای کوئیل",
+    "سرماخوردگی شبانه",
+    "شربت سرماخوردگی شب"
+  ],
+  "formulations": [
+    {
+      "id": "liq",
+      "form": "solution",
+      "route": "oral",
+      "label": "Per 30 mL: acetaminophen 650 mg, dextromethorphan 30 mg, doxylamine 12.5 mg",
+      "concentration": {
+        "amount": 650,
+        "unit": "mg",
+        "perVolumeMl": 30
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nyquil",
+          "section": "Active ingredients"
+        }
+      ],
+      "components": {
+        "acetaminophen": {
+          "name": {
+            "fa": "استامینوفن",
+            "en": "Acetaminophen"
+          },
+          "amount": 650,
+          "unit": "mg"
+        },
+        "dextromethorphan": {
+          "name": {
+            "fa": "دکسترومتورفان",
+            "en": "Dextromethorphan"
+          },
+          "amount": 30,
+          "unit": "mg"
+        },
+        "doxylamine": {
+          "name": {
+            "fa": "دوکسیلامین",
+            "en": "Doxylamine"
+          },
+          "amount": 12.5,
+          "unit": "mg"
+        }
+      }
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "common-cold",
+      "label": {
+        "fa": "سرماخوردگی/آنفلوانزا — ۱۲ سال به بالا: ۳۰ mL هر ۶ ساعت (حداکثر ۴ نوبت)",
+        "en": "Cold/flu — ≥12 y: 30 mL every 6 h (max 4 doses)"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 650,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-nyquil",
+          "section": "Directions"
+        }
+      ],
+      "doseComponent": "acetaminophen",
+      "limits": {
+        "maxPerDay": 2600,
+        "refs": [
+          {
+            "source": "fda-nyquil",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۴ تا زیر ۱۲ سال با پزشک. خواب‌آور است.",
+            "en": "4 to <12 years: ask a doctor. Causes drowsiness."
+          },
+          "refs": [
+            {
+              "source": "fda-nyquil",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "apap",
+      "severity": "block",
+      "text": {
+        "fa": "با هر داروی دیگر حاوی استامینوفن مصرف نشود.",
+        "en": "Do not use with any other acetaminophen-containing drug."
+      },
+      "refs": [
+        {
+          "source": "fda-nyquil",
+          "section": "Warnings — Do not use"
+        }
+      ]
+    },
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف مهارکننده MAO در ۲ هفته اخیر.",
+        "en": "MAOI within 2 weeks."
+      },
+      "refs": [
+        {
+          "source": "fda-nyquil",
+          "section": "Warnings — Do not use"
+        }
+      ]
+    },
+    {
+      "id": "lt4",
+      "severity": "block",
+      "text": {
+        "fa": "زیر ۴ سال مصرف نشود.",
+        "en": "Do not use under 4 years."
+      },
+      "refs": [
+        {
+          "source": "fda-nyquil",
+          "section": "Directions"
+        }
+      ],
+      "rule": {
+        "maxAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "liq",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 650,
+        "mlPerDose": 30
+      }
+    }
+  ],
+  "atc": [
+    "R05X"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Cold%20%26%20flu%20night%20liquid"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-nyquil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M012"
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fc9a6f7e-32c1-9ded-e053-6294a90a9dcc",
+      "label": "FDA NyQuil liquid"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R05X",
+      "label": "R05X"
+    }
+  ]
+}

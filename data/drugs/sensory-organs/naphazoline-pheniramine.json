@@ -1,0 +1,240 @@
+{
+  "id": "naphazoline-pheniramine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی نافازولین + فنیرامین",
+    "en": "Naphazoline + pheniramine eye drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "ضداحتقان + آنتی‌هیستامین چشمی",
+    "en": "Ocular decongestant + antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Naphcon-A",
+      "market": "US"
+    },
+    {
+      "name": "Visine-A",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "naphcon-a",
+    "visine",
+    "نفکن",
+    "قطره قرمزی چشم",
+    "نافازولین"
+  ],
+  "formulations": [
+    {
+      "id": "drops",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "Naphazoline 0.02675% + pheniramine 0.315%",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-naphcon",
+          "section": "Active Ingredients"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ac",
+      "disease": "allergic-conjunctivitis",
+      "label": {
+        "fa": "خارش و قرمزی آلرژیک چشم — ۶ سال به بالا: ۱ تا ۲ قطره تا ۴ بار در روز",
+        "en": "Allergic itch and redness — ≥6 y: 1–2 drops up to 4 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-naphcon",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "glaucoma",
+      "severity": "warn",
+      "text": {
+        "fa": "گلوکوم زاویه بسته، بیماری قلبی، فشار خون، بزرگی پروستات: پیش از مصرف با پزشک.",
+        "en": "Narrow-angle glaucoma, heart disease, high blood pressure, enlarged prostate: ask a doctor first."
+      },
+      "refs": [
+        {
+          "source": "fda-naphcon",
+          "section": "Warnings — Ask a doctor before use"
+        }
+      ]
+    },
+    {
+      "id": "lt6",
+      "severity": "warn",
+      "text": {
+        "fa": "زیر ۶ سال با پزشک.",
+        "en": "Under 6 years: ask a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-naphcon",
+          "section": "Directions"
+        }
+      ],
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "مصرف زیاد قرمزی را بیشتر می‌کند؛ ممکن است مردمک موقتاً گشاد شود.",
+        "en": "Overuse may cause more redness; pupils may dilate temporarily."
+      },
+      "refs": [
+        {
+          "source": "fda-naphcon",
+          "section": "Warnings — When using this product"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ac",
+      "formulation": "drops",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "S01GA51"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00886",
+        "en": "NAPHAZOLINE 0.05% 10ML NASAL DROP",
+        "fa": "قطره بینی نافازولین ۰٫۰۵ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "11861",
+        "en": "NAPHAZOLINE 0.05% NASAL SPRAY",
+        "fa": "اسپری بینی نافازولین ۰٫۰۵ درصد"
+      },
+      {
+        "code": "00887",
+        "en": "NAPHAZOLINE 0.1% 10ML OPH DROP",
+        "fa": "قطره چشمی نافازولین ۰٫۱ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "51887",
+        "en": "NAPHAZOLINE HYDROCHLORIDE SPRAY NASAL 0.05 % 15 mL",
+        "fa": "اسپری بینی نافازولین هیدروکلراید ۰٫۰۵ درصد ۱۵ میلی‌لیتر"
+      },
+      {
+        "code": "52233",
+        "en": "NAPHAZOLINE HYDROCHLORIDE SOLUTION, DROPS OPHTHALMIC 0.1 % 0.5 mL",
+        "fa": "قطره چشمی نافازولین هیدروکلراید ۰٫۱ درصد ۰٫۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2201/Naphazoline",
+        "url": "https://www.darooyab.ir/G-2201/Naphazoline"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-naphcon",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020065"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020065",
+      "label": "NDA020065"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=253130b4-a23b-43a0-b125-0fa5bd01b2b6",
+      "label": "FDA Naphazoline+phenir."
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01GA51",
+      "label": "S01GA51"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2201/Naphazoline",
+      "label": "Naphazoline"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری نفازولین گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-2201/Naphazoline — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-2201/Naphazoline"
+        }
+      ]
+    }
+  }
+}

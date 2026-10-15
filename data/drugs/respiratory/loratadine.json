@@ -41,6 +41,27 @@
           "section": "Active ingredient"
         }
       ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (OTC)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-loratadinetab",
+          "section": "Active Ingredient"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -107,6 +128,47 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "sol-5-5"
+      ]
+    },
+    {
+      "id": "otc-tab",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "آلرژی — ۶ سال به بالا: یک قرص ۱۰ mg روزانه",
+        "en": "Allergy — ≥6 y: one 10 mg tablet daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-loratadinetab",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-loratadinetab",
+            "section": "Directions"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "tab-10"
       ]
     }
   ],
@@ -158,6 +220,18 @@
       "expect": {
         "perDose": 10,
         "mlPerDose": 10
+      }
+    },
+    {
+      "regimen": "otc-tab",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
       }
     }
   ],
@@ -211,6 +285,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=539336e6-7979-47ed-b1ea-fd46ef547aee",
       "label": "FDA Loratadine OTC"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9bae1ba3-c0da-23a2-e053-2a95a90a58ed",
+      "label": "FDA Loratadine 10mg tab"
     },
     {
       "kind": "medlineplus",

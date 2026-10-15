@@ -84,6 +84,26 @@
           "section": "Description"
         }
       ]
+    },
+    {
+      "id": "sol-10-5",
+      "form": "solution",
+      "route": "oral",
+      "label": "10 mg / 5 mL oral solution",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hydroxyzinesol",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -431,6 +451,18 @@
       "expect": {
         "status": "blocked"
       }
+    },
+    {
+      "regimen": "pruritus-under6",
+      "formulation": "sol-10-5",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 12.5,
+        "mlPerDose": 6.25
+      }
     }
   ],
   "atc": [
@@ -483,6 +515,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d73a8d3c-66ed-40af-9f1d-b710672a34fb",
       "label": "FDA Hydroxyzine"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=87d4bbff-0498-4c26-86cb-7ce173afa0b6",
+      "label": "FDA Hydroxyzine solution"
     },
     {
       "kind": "medlineplus",

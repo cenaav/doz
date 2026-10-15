@@ -1,0 +1,421 @@
+{
+  "id": "budesonide-nasal",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اسپری بینی بودزوناید",
+    "en": "Budesonide nasal spray"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "کورتون بینی",
+    "en": "Nasal corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Rhinocort",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rhinocort",
+    "رینوکورت",
+    "بودزوناید بینی"
+  ],
+  "formulations": [
+    {
+      "id": "spray",
+      "form": "nasal-spray",
+      "route": "nasal",
+      "label": "32 mcg per spray",
+      "concentration": {
+        "amount": 1,
+        "unit": "spray",
+        "perUnit": "spray"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rhinocort",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک — ۱۲ سال به بالا: شروع ۱ پاف هر سوراخ یک بار در روز",
+        "en": "Allergic rhinitis — ≥12 y: start 1 spray each nostril once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "spray",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rhinocort",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 8,
+        "refs": [
+          {
+            "source": "fda-rhinocort",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر ۴ پاف هر سوراخ (۲۵۶ mcg) در روز.",
+            "en": "Max 4 sprays per nostril (256 mcg) daily."
+          },
+          "refs": [
+            {
+              "source": "fda-rhinocort",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک — ۶ تا زیر ۱۲ سال: ۱ پاف هر سوراخ یک بار در روز",
+        "en": "Allergic rhinitis — 6 to <12 y: 1 spray each nostril once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "spray",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rhinocort",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4,
+        "refs": [
+          {
+            "source": "fda-rhinocort",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر ۲ پاف هر سوراخ (۱۲۸ mcg). کورتون بینی ممکن است رشد قدی کودک را کند کند.",
+            "en": "Max 2 sprays per nostril (128 mcg). Nasal steroids may slow growth in children."
+          },
+          "refs": [
+            {
+              "source": "fda-rhinocort",
+              "section": "2"
+            },
+            {
+              "source": "fda-rhinocort",
+              "section": "8.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to ingredients."
+      },
+      "refs": [
+        {
+          "source": "fda-rhinocort",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "خون‌دماغ، کاندیدای بینی، سوراخ شدن دیواره؛ پس از جراحی یا زخم اخیر بینی پرهیز.",
+        "en": "Epistaxis, nasal candida, septal perforation; avoid after recent nasal ulcer, surgery or trauma."
+      },
+      "refs": [
+        {
+          "source": "fda-rhinocort",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "spray",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "spray",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "R01AD05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08889",
+        "en": "BUDESONIDE 0.5MG/2ML NEBULISING SUSPENSION",
+        "fa": "بودزوناید ۰٫۵ میلی‌گرم / ۲ میلی‌لیتر نبولیسینگ"
+      },
+      {
+        "code": "08884",
+        "en": "BUDESONIDE 100MCG/DOSE INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید ۱۰۰ میکروگرم / دوز"
+      },
+      {
+        "code": "08891",
+        "en": "BUDESONIDE 1MG/2ML NEBULISING SUSPENSION",
+        "fa": "بودزوناید ۱ میلی‌گرم / ۲ میلی‌لیتر نبولیسینگ"
+      },
+      {
+        "code": "05998",
+        "en": "BUDESONIDE 200MCG/DOSE 100DOSE INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید ۲۰۰ میکروگرم / دوز ۱۰۰ دوز"
+      },
+      {
+        "code": "17793",
+        "en": "BUDESONIDE 200MCG/DOSE 200DOSE INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید ۲۰۰ میکروگرم / دوز ۲۰۰ دوز"
+      },
+      {
+        "code": "07123",
+        "en": "BUDESONIDE 2MG/100ML ENEMA",
+        "fa": "انما بودزوناید ۲ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "06165",
+        "en": "BUDESONIDE 3MG CAP",
+        "fa": "کپسول بودزوناید ۳ میلی‌گرم"
+      },
+      {
+        "code": "13080",
+        "en": "BUDESONIDE 400MCG/DOSE 100DOSE INHALATION POWDER",
+        "fa": "پودر بودزوناید ۴۰۰ میکروگرم / دوز ۱۰۰ دوز"
+      },
+      {
+        "code": "20131",
+        "en": "BUDESONIDE 400MCG/DOSE 200DOSE INHALATION POWDER",
+        "fa": "پودر بودزوناید ۴۰۰ میکروگرم / دوز ۲۰۰ دوز"
+      },
+      {
+        "code": "08887",
+        "en": "BUDESONIDE 400MCG/DOSE 50DOSE INHALATION POWDER",
+        "fa": "پودر بودزوناید ۴۰۰ میکروگرم / دوز ۵۰ دوز"
+      },
+      {
+        "code": "08209",
+        "en": "BUDESONIDE 64MCG NASAL SPRAY",
+        "fa": "اسپری بینی بودزوناید ۶۴ میکروگرم"
+      },
+      {
+        "code": "52638",
+        "en": "BUDESONIDE AEROSOL, METERED RESPIRATORY 100 ug/1{dose} 200 {dose}",
+        "fa": "بودزوناید ۱۰۰ میکروگرم / ۱ { دوز } ۲۰۰ { دوز }"
+      },
+      {
+        "code": "52637",
+        "en": "BUDESONIDE AEROSOL, METERED RESPIRATORY 200 ug/1{dose} 200 {dose}",
+        "fa": "بودزوناید ۲۰۰ میکروگرم / ۱ { دوز } ۲۰۰ { دوز }"
+      },
+      {
+        "code": "52306",
+        "en": "BUDESONIDE SUSPENSION RESPIRATORY 0.5 mg/1mL 2 mL",
+        "fa": "بودزوناید ۰٫۵ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "52308",
+        "en": "BUDESONIDE POWDER, METERED RESPIRATORY 200 ug/1{dose} 100 {dose}",
+        "fa": "پودر بودزوناید ۲۰۰ میکروگرم / ۱ { دوز } ۱۰۰ { دوز }"
+      },
+      {
+        "code": "52458",
+        "en": "BUDESONIDE TABLET, EXTENDED RELEASE ORAL 9 mg",
+        "fa": "قرص آهسته‌رهش بودزوناید ۹ میلی‌گرم"
+      },
+      {
+        "code": "53061",
+        "en": "BUDESONIDE CAPSULE RESPIRATORY 200 ug",
+        "fa": "کپسول بودزوناید ۲۰۰ میکروگرم"
+      },
+      {
+        "code": "53062",
+        "en": "BUDESONIDE CAPSULE RESPIRATORY 400 ug",
+        "fa": "کپسول بودزوناید ۴۰۰ میکروگرم"
+      },
+      {
+        "code": "52635",
+        "en": "BUDESONIDE CAPSULE, EXTENDED RELEASE ORAL 3 mg",
+        "fa": "کپسول آهسته‌رهش بودزوناید ۳ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2077/Budesonide",
+        "url": "https://www.darooyab.ir/G-2077/Budesonide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020746",
+      "label": "NDA020746"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ffca32a2-fbef-40bb-b0f0-73f63e18e747",
+      "label": "FDA Rhinocort Aqua"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601030.html",
+      "label": "Budesonide Nasal Spray"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R01AD05",
+      "label": "R01AD05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2077/Budesonide",
+      "label": "Budesonide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects: Pregnancy Category B.",
+      "refs": [
+        {
+          "source": "fda-rhinocort",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Budesonide is secreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-rhinocort",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness in pediatric patients below 6 years of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-rhinocort",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these subjects and younger subjects, except for an adverse reaction reporting frequency of epistaxis that increased with age.",
+      "refs": [
+        {
+          "source": "fda-rhinocort",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-rhinocort",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020746"
+  }
+}
