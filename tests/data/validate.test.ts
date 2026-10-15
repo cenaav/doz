@@ -34,6 +34,10 @@ describe('validateDataSet', () => {
   test('disease symptoms with unknown source fail', () => {
     expect(errorsOf((ds) => { ds.diseases[0].symptoms = { items: [{ en: 'Fever' }], refs: [{ source: 'nope', section: 'x' }] } }).join()).toMatch(/unknown source nope/)
   })
+  test('source without online link fails (unless license pending)', () => {
+    expect(errorsOf((ds) => { delete (ds.sources[0] as any).url }).join()).toMatch(/fda-x.*url|url.*fda-x/)
+    expect(errorsOf((ds) => { delete (ds.sources[0] as any).url; ds.sources[0].license = 'pending' })).toEqual([])
+  })
   test('unknown source fails', () => {
     expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'nope', section: '1' }] }).join()).toMatch(/unknown source nope/)
   })

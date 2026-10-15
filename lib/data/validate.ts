@@ -23,6 +23,7 @@ export function validateDataSet(ds: DataSet, schemaRoot: string): string[] {
   for (const { path, drug } of ds.drugs) check(path, drugSchema, drug)
   if (errors.length) return errors
 
+  for (const s of ds.sources) if (!s.url && s.license !== 'pending') errors.push(`sources.json: ${s.id} has no online url`)
   const sourceIds = new Set(ds.sources.map((s) => s.id))
   const diseaseIds = new Set(ds.diseases.map((d) => d.id))
   const categoryIds = new Set(ds.categories.map((c) => c.id))

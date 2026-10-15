@@ -36,7 +36,7 @@ CI runs both before every deploy. A pull request with a data error cannot be pub
 | `short` | label shown on citation chips (max 24 characters), e.g. `FDA Zithromax` |
 | `title` | full title |
 | `publisher`, `edition`, `year`, `citation` | as printed by the source. For journal guidelines put `Authors. Journal Year;Vol(Issue):pages` in `citation` |
-| `url` | link to the source (DailyMed: `https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=…`) |
+| `url` | **required** online link to the source (DailyMed: `https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=…`). Validation fails without it unless `license` is `pending` |
 | `accessed` | date you checked it (`YYYY-MM-DD`) |
 | `license` | `public`, `licensed` or `pending` |
 
