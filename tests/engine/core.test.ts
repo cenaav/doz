@@ -127,3 +127,18 @@ describe('input validation and safety', () => {
     expect(r.refs.length).toBeGreaterThan(0)
   })
 })
+
+describe('weight optional when the regimen does not need it', () => {
+  const ab = drug([{ type: 'ageBand', dose: { bands: [{ minAge: { value: 2, unit: 'year' }, maxAge: null, perDose: 5, dosesPerDay: 1 }] } }], [susp('f', 5)])
+  test('ageBand without weight calculates', () => {
+    expect(calculate(ab, 'r0', 'f', { ageDays: yr(4) })).toMatchObject({ status: 'ok', perDose: 5, mlPerDose: 5 })
+  })
+  test('weight-based regimen without weight is invalid input', () => {
+    const wb = drug([{ dose: { perKgPerDay: 30, dividedDoses: 3 } }])
+    expect(calculate(wb, 'r0', 'f', { ageDays: yr(4) }).blocks[0].code).toBe('NEED_WEIGHT')
+  })
+  test('population with weight limits needs weight', () => {
+    const pw = drug([{ type: 'fixed', population: { minWeightKg: 40 }, dose: { perDose: 500, dosesPerDay: 2 } }])
+    expect(calculate(pw, 'r0', 'f', { ageDays: yr(30) }).blocks[0].code).toBe('NEED_WEIGHT')
+  })
+})

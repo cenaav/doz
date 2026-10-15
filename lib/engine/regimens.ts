@@ -11,7 +11,8 @@ export interface BaseDose {
   extraRefs?: Drug['regimens'][number]['refs']
 }
 
-export function baseDose(reg: Regimen, p: Patient): BaseDose {
+export function baseDose(reg: Regimen, pIn: Patient): BaseDose {
+  const p = { ...pIn, weightKg: pIn.weightKg ?? 0 }
   const d = reg.dose
   switch (reg.type) {
     case 'weightBased':

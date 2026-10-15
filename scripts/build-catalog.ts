@@ -11,6 +11,7 @@ const paths = [
   '/about',
   '/settings',
   '/diseases',
+  '/calculator',
   ...ds.categories.map((c) => `/category/${c.id}`),
   ...catalog.map((d) => `/drug/${d.id}`),
   ...ds.diseases.map((d) => `/disease/${d.id}`),

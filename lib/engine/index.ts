@@ -7,7 +7,7 @@ import { baseDose } from './regimens'
 import { schwartzEgfr } from './renal'
 import { r2, roundMl, roundTablets } from './rounding'
 
-export interface Patient { ageDays: number; weightKg: number; heightCm?: number; scrMgDl?: number }
+export interface Patient { ageDays: number; weightKg?: number; heightCm?: number; scrMgDl?: number }
 export interface Msg { code: string; text?: I18nText; refs?: Ref[]; params?: Record<string, string | number> }
 export interface CapHit { kind: 'maxPerKgPerDose' | 'maxPerDose' | 'maxPerKgPerDay' | 'maxPerDay'; limit: number; unit: DoseUnit; refs: Ref[] }
 export interface ScheduleStep { fromDay: number; toDay: number; perDay: number; perDose: number; mlPerDose?: number; mlPerDoseRounded?: number; capped: boolean }
@@ -55,11 +55,13 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
 
   if (!reg) return invalid('UNKNOWN_REGIMEN')
   if (!form) return invalid('UNKNOWN_FORMULATION')
-  if (!Number.isFinite(p.weightKg) || p.weightKg <= 0 || p.weightKg > 300) return invalid('INVALID_WEIGHT')
+  if (p.weightKg == null) {
+    if (needsWeight(drug, reg)) return invalid('NEED_WEIGHT')
+  } else if (!Number.isFinite(p.weightKg) || p.weightKg <= 0 || p.weightKg > 300) return invalid('INVALID_WEIGHT')
   if (!Number.isFinite(p.ageDays) || p.ageDays < 0 || p.ageDays > MAX_AGE_DAYS) return invalid('INVALID_AGE')
 
   const refs: Ref[] = [...reg.refs, ...form.refs]
-  res.warnings.push(...plausibilityWarnings(p))
+  if (p.weightKg != null) res.warnings.push(...plausibilityWarnings(p as Patient & { weightKg: number }))
 
   for (const c of drug.contraindications) {
     if (!c.rule || !inRange(p, c.rule)) continue
@@ -94,7 +96,7 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
   if (reg.limits) refs.push(...reg.limits.refs)
 
   const n = base.dosesPerDay!
-  const capped = applyLimits(base.perDose!, n, p.weightKg, reg.limits, unit)
+  const capped = applyLimits(base.perDose!, n, p.weightKg ?? 0, reg.limits, unit)
   res.capsApplied = capped.hits
   res.perDose = r2(capped.perDose)
   res.perDay = r2(capped.perDay)
@@ -110,7 +112,7 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
       if (key === reg.doseComponent || !comp.limits) continue
       const compPerDay = (capped.perDay * comp.amount) / form.concentration.amount
       const l = comp.limits
-      const over = (l.maxPerKgPerDay != null && compPerDay > l.maxPerKgPerDay * p.weightKg) || (l.maxPerDay != null && compPerDay > l.maxPerDay)
+      const over = (l.maxPerKgPerDay != null && p.weightKg != null && compPerDay > l.maxPerKgPerDay * p.weightKg) || (l.maxPerDay != null && compPerDay > l.maxPerDay)
       if (over) {
         res.blocks.push({ code: 'COMPONENT_LIMIT', text: comp.name, refs: l.refs, params: { perDay: r2(compPerDay), unit: comp.unit } })
         refs.push(...l.refs)
@@ -144,4 +146,12 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
     res.schedule = base.schedule?.map((s) => ({ ...s, perDay: r2(s.perDay), perDose: r2(s.perDose) }))
   }
   return done('ok')
+}
+
+/** True when the dose, its limits, its population or a contraindication depends on body weight. */
+export function needsWeight(drug: Drug, reg: Drug['regimens'][number]): boolean {
+  if (['weightBased', 'bsa', 'loading'].includes(reg.type) || reg.dose.weightBands) return true
+  const hasW = (r?: { minWeightKg?: number | null; maxWeightKg?: number | null }) => r?.minWeightKg != null || r?.maxWeightKg != null
+  if (hasW(reg.population) || drug.contraindications.some((c) => hasW(c.rule))) return true
+  return reg.limits?.maxPerKgPerDay != null || reg.limits?.maxPerKgPerDose != null
 }

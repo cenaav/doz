@@ -32,7 +32,7 @@ const msg = (m: Msg) => (m.text ? lt(m.text) : t(`engine.${m.code}`, m.params ??
           <span v-if="result.tabletsPerDose != null && result.tabletsPerDose !== result.tabletsPerDoseRounded" class="text-slate-500">({{ $t('calc.exact') }}: {{ fmt(result.tabletsPerDose) }})</span>
         </p>
         <p class="mt-2 font-bold">{{ $t('calc.every', { h: fmt(result.intervalHours), n: fmt(result.dosesPerDay) }) }}</p>
-        <p class="text-sm">{{ $t('calc.perDay') }}: {{ fmt(result.perDay) }}<template v-if="result.upper"> – {{ fmt(result.upper.perDay) }}</template> {{ u }}<span v-if="result.mlPerDay != null"> ({{ fmt(result.mlPerDay) }} {{ $t('units.ml') }})</span></p>
+        <p class="text-sm">{{ $t('calc.perDay') }}: {{ fmt(result.perDay) }}<template v-if="result.upper"> – {{ fmt(result.upper.perDay) }}</template> {{ u }}<span v-if="result.mlPerDay != null"> ({{ fmt(result.mlPerDay) }}<template v-if="result.upper?.mlPerDay != null"> – {{ fmt(result.upper.mlPerDay) }}</template> {{ $t('units.ml') }})</span></p>
         <p v-if="result.durationDays" class="text-sm">{{ $t('calc.duration', { min: fmt(result.durationDays.min), max: fmt(result.durationDays.max) }) }}</p>
         <p v-if="result.bsa" class="text-sm">BSA: {{ fmt(result.bsa) }} m²</p>
         <p v-if="result.egfr" class="text-sm">eGFR (bedside Schwartz): {{ fmt(result.egfr) }}</p>

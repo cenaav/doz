@@ -1,23 +1,26 @@
 <script setup lang="ts">
 import type { AgeUnit, Drug } from '../../lib/types'
-import { calculate } from '../../lib/engine'
+import { calculate, needsWeight } from '../../lib/engine'
 import { toDays } from '../../lib/engine/age'
-const props = defineProps<{ drug: Drug }>()
+const props = defineProps<{ drug: Drug; regimenIds?: string[] }>()
+const regimens = computed(() => (props.regimenIds ? props.drug.regimens.filter((r) => props.regimenIds!.includes(r.id)) : props.drug.regimens))
 const route = useRoute()
 const lt = useLocalText()
 const localePath = useLocalePath()
 
 const regimenFromQuery = () => {
   const q = route.query.regimen
-  return typeof q === 'string' && props.drug.regimens.some((r) => r.id === q) ? q : null
+  return typeof q === 'string' && regimens.value.some((r) => r.id === q) ? q : null
 }
-const regimenId = ref(regimenFromQuery() ?? props.drug.regimens[0].id)
+const regimenId = ref(regimenFromQuery() ?? regimens.value[0].id)
 // Pre-rendered HTML is built without the query string, so apply ?regimen= again after hydration.
 onMounted(() => {
   const q = regimenFromQuery()
   if (q) regimenId.value = q
 })
-const regimen = computed(() => props.drug.regimens.find((r) => r.id === regimenId.value)!)
+watch(regimens, (rs) => { if (!rs.some((r) => r.id === regimenId.value)) regimenId.value = rs[0].id })
+const regimen = computed(() => regimens.value.find((r) => r.id === regimenId.value) ?? regimens.value[0])
+const weightNeeded = computed(() => needsWeight(props.drug, regimen.value))
 const formulations = computed(() => props.drug.formulations.filter((f) => !regimen.value.allowedFormulations || regimen.value.allowedFormulations.includes(f.id)))
 const formulationId = ref('')
 watch(formulations, (fs) => { if (!fs.some((f) => f.id === formulationId.value)) formulationId.value = fs[0]?.id ?? '' }, { immediate: true })
@@ -29,10 +32,11 @@ const age = computed(() => parseNumber(ageText.value))
 const weight = computed(() => parseNumber(weightText.value))
 
 const result = computed(() => {
-  if (regimen.value.type === 'notCalculated' || age.value == null || weight.value == null) return null
-  return calculate(props.drug, regimenId.value, formulationId.value, {
+  if (regimen.value.type === 'notCalculated' || age.value == null) return null
+  if (weight.value == null && (weightNeeded.value || weightText.value)) return null
+  return calculate(props.drug, regimen.value.id, formulationId.value, {
     ageDays: toDays({ value: age.value, unit: ageUnit.value }),
-    weightKg: weight.value,
+    weightKg: weight.value ?? undefined,
     heightCm: parseNumber(heightText.value) ?? undefined,
     scrMgDl: parseNumber(scrText.value) ?? undefined,
   })
@@ -40,7 +44,7 @@ const result = computed(() => {
 const disease = computed(() => getDisease(regimen.value.disease))
 const groups = computed(() => {
   const by = new Map<string, typeof props.drug.regimens>()
-  for (const r of props.drug.regimens) by.set(r.disease, [...(by.get(r.disease) ?? []), r])
+  for (const r of regimens.value) by.set(r.disease, [...(by.get(r.disease) ?? []), r])
   return [...by].map(([id, regimens]) => ({ id, name: lt(getDisease(id)?.name), regimens }))
 })
 </script>
@@ -86,7 +90,7 @@ const groups = computed(() => {
           </div>
         </label>
         <label class="block space-y-1">
-          <span class="text-sm font-bold">{{ $t('calc.weight') }} *</span>
+          <span class="text-sm font-bold">{{ $t('calc.weight') }} {{ weightNeeded ? '*' : `(${$t('calc.optionalShort')})` }}</span>
           <input v-model="weightText" class="input" inputmode="decimal" :placeholder="$t('calc.weightPh')" />
         </label>
       </div>
@@ -98,7 +102,7 @@ const groups = computed(() => {
       <p v-if="ageText && age == null" class="text-sm text-red-600">{{ $t('calc.badNumber', { field: $t('calc.age') }) }}</p>
       <p v-if="weightText && weight == null" class="text-sm text-red-600">{{ $t('calc.badNumber', { field: $t('calc.weight') }) }}</p>
       <DoseResult v-if="result" :result="result" :drug="drug" />
-      <p v-else class="text-sm text-slate-500">{{ $t('calc.enterInputs') }}</p>
+      <p v-else class="text-sm text-slate-500">{{ weightNeeded ? $t('calc.enterInputs') : $t('calc.enterAge') }}</p>
     </template>
   </section>
 </template>

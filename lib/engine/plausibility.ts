@@ -6,7 +6,7 @@ const BOUNDS: [number, number, number][] = [
   [8, 15.7, 42.6], [10, 18.7, 55.2], [12, 23, 71.3], [15, 31.5, 92], [18, 35.7, 109],
 ]
 
-export function plausibilityWarnings(p: Patient): Msg[] {
+export function plausibilityWarnings(p: Patient & { weightKg: number }): Msg[] {
   const y = p.ageDays / 365.25
   if (y >= 18) return []
   const i = BOUNDS.findIndex(([a]) => a > y)

@@ -15,6 +15,10 @@ const recentDrugs = computed(() => recent.value.map((id) => catalog.find((d) => 
       <h1 class="text-4xl font-black text-brand-600 sm:text-5xl dark:text-brand-400">Doz</h1>
       <p class="mt-2 text-slate-600 dark:text-slate-400">{{ $t('home.tagline') }}</p>
       <SearchBox class="mt-6" />
+      <NuxtLink :to="localePath('/calculator')" class="mt-4 flex items-center justify-center gap-3 rounded-2xl bg-brand-600 px-4 py-4 text-white shadow hover:bg-brand-700">
+        <span class="text-3xl">🧮</span>
+        <span class="text-start"><b class="block text-lg">{{ $t('quick.cta') }}</b><span class="text-sm opacity-90">{{ $t('quick.ctaSub') }}</span></span>
+      </NuxtLink>
     </section>
     <section v-if="recentDrugs.length" class="mx-auto max-w-3xl">
       <h2 class="mb-2 text-sm font-bold text-slate-500">{{ $t('home.recent') }}</h2>

@@ -124,6 +124,6 @@ export interface CatalogEntry {
   brands: string[]
   synonyms: string[]
   reviewStatus: 'unverified' | 'verified'
-  regimens: { id: string; disease: string; label: I18nText }[]
+  regimens: { id: string; disease: string; label: I18nText; type: RegimenType }[]
 }
 export interface DataSet { sources: Source[]; diseases: Disease[]; categories: Category[]; drugs: { path: string; drug: Drug }[] }

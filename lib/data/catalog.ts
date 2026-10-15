@@ -10,7 +10,7 @@ export function buildCatalog(drugs: Drug[]): CatalogEntry[] {
       brands: d.brands.map((b) => b.name),
       synonyms: d.synonyms,
       reviewStatus: d.review.status,
-      regimens: d.regimens.map((r) => ({ id: r.id, disease: r.disease, label: r.label })),
+      regimens: d.regimens.map((r) => ({ id: r.id, disease: r.disease, label: r.label, type: r.type })),
     }))
     .sort((a, b) => (a.name.en ?? a.id).localeCompare(b.name.en ?? b.id))
 }
