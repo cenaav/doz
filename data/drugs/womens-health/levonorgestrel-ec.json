@@ -1,0 +1,149 @@
+{
+  "id": "levonorgestrel-ec",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لوونورژسترل (قرص اورژانسی)",
+    "en": "Levonorgestrel (emergency contraception)"
+  },
+  "category": "womens-health",
+  "class": {
+    "fa": "پروژستین — پیشگیری اورژانسی",
+    "en": "Progestin — emergency contraception"
+  },
+  "brands": [
+    {
+      "name": "Plan B One-Step",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "plan b",
+    "پلن بی",
+    "قرص اورژانسی",
+    "لوونورژسترل",
+    "LNG",
+    "postinor",
+    "پوستینور"
+  ],
+  "formulations": [
+    {
+      "id": "tab-1-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1.5 mg tablet",
+      "concentration": {
+        "amount": 1.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-planb",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ec",
+      "disease": "emergency-contraception",
+      "label": {
+        "fa": "پیشگیری اورژانسی — ۱٫۵ mg تک‌دوز هر چه زودتر و حداکثر تا ۷۲ ساعت",
+        "en": "Emergency contraception — 1.5 mg once, as soon as possible within 72 h"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-planb",
+          "section": "Directions"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر چه زودتر مؤثرتر. اگر تا ۲ ساعت بعد استفراغ شد با کادر درمان مشورت (شاید تکرار). برای پیشگیری منظم نیست و در بارداری اثری ندارد.",
+            "en": "The sooner the better. If vomiting within 2 h, ask a healthcare professional (may need to repeat). Not for regular birth control; does not work if already pregnant."
+          },
+          "refs": [
+            {
+              "source": "fda-planb",
+              "section": "Directions"
+            },
+            {
+              "source": "fda-planb",
+              "section": "Do not use"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه واکنش آلرژیک به لوونورژسترل.",
+        "en": "Previous allergic reaction to levonorgestrel."
+      },
+      "refs": [
+        {
+          "source": "fda-planb",
+          "section": "Do not use"
+        }
+      ]
+    },
+    {
+      "id": "efavirenz",
+      "severity": "warn",
+      "text": {
+        "fa": "با افاویرنز (داروی HIV) قبل از مصرف با پزشک یا داروساز مشورت شود.",
+        "en": "Taking efavirenz (HIV medicine): ask a doctor or pharmacist first."
+      },
+      "refs": [
+        {
+          "source": "fda-planb",
+          "section": "Ask a doctor or pharmacist before use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ec",
+      "formulation": "tab-1-5",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1.5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ]
+}

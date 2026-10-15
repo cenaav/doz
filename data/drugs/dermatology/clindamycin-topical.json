@@ -1,0 +1,113 @@
+{
+  "id": "clindamycin-topical",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ژل کلیندامایسین",
+    "en": "Clindamycin gel (topical)"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "آنتی‌بیوتیک موضعی آکنه",
+    "en": "Topical acne antibiotic"
+  },
+  "brands": [
+    {
+      "name": "Cleocin T",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cleocin t",
+    "clindagel",
+    "ژل کلیندامایسین",
+    "کلیندامایسین موضعی"
+  ],
+  "formulations": [
+    {
+      "id": "gel-1",
+      "form": "gel",
+      "route": "topical",
+      "label": "1% gel",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clindatop",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acne",
+      "disease": "acne",
+      "label": {
+        "fa": "آکنه — لایه نازک دو بار در روز",
+        "en": "Acne — thin film twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-clindatop",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کلیندامایسین یا لینکومایسین؛ سابقه انتریت ناحیه‌ای، کولیت اولسراتیو یا کولیت ناشی از آنتی‌بیوتیک.",
+        "en": "Hypersensitivity to clindamycin or lincomycin; history of regional enteritis, ulcerative colitis or antibiotic-associated colitis."
+      },
+      "refs": [
+        {
+          "source": "fda-clindatop",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acne",
+      "formulation": "gel-1",
+      "input": {
+        "ageYears": 16,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDay": 2
+      }
+    }
+  ]
+}

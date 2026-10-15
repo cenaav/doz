@@ -1,0 +1,133 @@
+{
+  "id": "adapalene",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ژل آداپالن",
+    "en": "Adapalene gel"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "رتینوئید موضعی",
+    "en": "Topical retinoid"
+  },
+  "brands": [
+    {
+      "name": "Differin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "differin",
+    "دیفرین",
+    "آداپالن",
+    "ژل آکنه"
+  ],
+  "formulations": [
+    {
+      "id": "gel-0-1",
+      "form": "gel",
+      "route": "topical",
+      "label": "0.1% gel",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-adapalene",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acne",
+      "disease": "acne",
+      "label": {
+        "fa": "آکنه — ۱۲ سال به بالا: یک بار در روز لایه نازک",
+        "en": "Acne — ≥12 y: thin layer once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-adapalene",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال: با پزشک مشورت شود.",
+        "en": "Under 12 years: ask a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-adapalene",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "skin",
+      "severity": "warn",
+      "text": {
+        "fa": "روی پوست آسیب‌دیده (زخم، اگزما، آفتاب‌سوختگی) استفاده نشود.",
+        "en": "Do not use on damaged skin (cuts, eczema, sunburn)."
+      },
+      "refs": [
+        {
+          "source": "fda-adapalene",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acne",
+      "formulation": "gel-0-1",
+      "input": {
+        "ageYears": 16,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "id": "tadalafil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تادالافیل",
+    "en": "Tadalafil"
+  },
+  "category": "urology",
+  "class": {
+    "fa": "مهارکننده PDE5",
+    "en": "PDE5 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Cialis",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cialis",
+    "سیالیس",
+    "تادالافیل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ed-prn",
+      "disease": "erectile-dysfunction",
+      "label": {
+        "fa": "اختلال نعوظ (در صورت نیاز) — شروع ۱۰ mg",
+        "en": "ED (as needed) — start 10 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 20,
+        "refs": [
+          {
+            "source": "fda-tadalafil",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۵ تا ۲۰ mg؛ CrCl ۳۰ تا ۵۰: شروع ۵ mg و حداکثر ۱۰ mg هر ۴۸ ساعت.",
+            "en": "5–20 mg; CrCl 30–50: start 5 mg, max 10 mg per 48 h."
+          },
+          "refs": [
+            {
+              "source": "fda-tadalafil",
+              "section": "2"
+            },
+            {
+              "source": "fda-tadalafil",
+              "section": "2.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bph",
+      "disease": "bph",
+      "label": {
+        "fa": "BPH (± اختلال نعوظ) — ۵ mg یک بار در روز",
+        "en": "BPH (± ED) — 5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-tadalafil",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "nitrates",
+      "severity": "block",
+      "text": {
+        "fa": "همراه هر نوع نیترات (نیتروگلیسیرین، ایزوسورباید) یا محرک‌های گوانیلات سیکلاز (ریوسیگوات): افت شدید فشار.",
+        "en": "With any nitrate (nitroglycerin, isosorbide) or guanylate-cyclase stimulators (riociguat): severe hypotension."
+      },
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۸ سال ثابت نشده.",
+        "en": "Not established under 18."
+      },
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ed-prn",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "bph",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ]
+}

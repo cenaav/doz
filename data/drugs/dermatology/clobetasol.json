@@ -1,0 +1,156 @@
+{
+  "id": "clobetasol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کرم کلوبتازول",
+    "en": "Clobetasol cream"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "کورتیکواستروئید موضعی بسیار قوی",
+    "en": "Super-high-potency topical corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Temovate",
+      "market": "US"
+    },
+    {
+      "name": "Dermovate",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "temovate",
+    "dermovate",
+    "درموویت",
+    "کلوبتازول",
+    "کرم کورتون قوی"
+  ],
+  "formulations": [
+    {
+      "id": "cream-0-05",
+      "form": "cream",
+      "route": "topical",
+      "label": "0.05% cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clobetasol",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "psoriasis",
+      "disease": "psoriasis",
+      "label": {
+        "fa": "درماتوز مقاوم/پسوریازیس — دو بار در روز، حداکثر ۲ هفته",
+        "en": "Resistant dermatoses/psoriasis — twice daily, max 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-clobetasol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کورتون بسیار قوی: حداکثر ۲ هفته پیاپی و کمتر از ۵۰ گرم در هفته.",
+            "en": "Super-high potency: max 2 consecutive weeks and less than 50 g per week."
+          },
+          "refs": [
+            {
+              "source": "fda-clobetasol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to any component."
+      },
+      "refs": [
+        {
+          "source": "fda-clobetasol",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال توصیه نمی‌شود.",
+        "en": "Not recommended under 12 years."
+      },
+      "refs": [
+        {
+          "source": "fda-clobetasol",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "psoriasis",
+      "formulation": "cream-0-05",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDay": 2
+      }
+    }
+  ]
+}

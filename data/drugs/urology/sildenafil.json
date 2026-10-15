@@ -1,0 +1,206 @@
+{
+  "id": "sildenafil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیلدنافیل",
+    "en": "Sildenafil"
+  },
+  "category": "urology",
+  "class": {
+    "fa": "مهارکننده PDE5",
+    "en": "PDE5 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Viagra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "viagra",
+    "ویاگرا",
+    "سیلدنافیل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ed",
+      "disease": "erectile-dysfunction",
+      "label": {
+        "fa": "اختلال نعوظ — ۵۰ mg حدود ۱ ساعت قبل در صورت نیاز",
+        "en": "ED — 50 mg about 1 h before, as needed"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 100,
+        "refs": [
+          {
+            "source": "fda-sildenafil",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۵ تا ۱۰۰ mg؛ حداکثر یک بار در روز؛ ۳۰ دقیقه تا ۴ ساعت قبل. بالای ۶۵ سال، نارسایی کبد یا CrCl کمتر از ۳۰: شروع ۲۵ mg. با ریتوناویر حداکثر ۲۵ mg در ۴۸ ساعت.",
+            "en": "25–100 mg; at most once daily; 30 min to 4 h before. Over 65, hepatic impairment or CrCl <30: start 25 mg. With ritonavir max 25 mg per 48 h."
+          },
+          "refs": [
+            {
+              "source": "fda-sildenafil",
+              "section": "2"
+            },
+            {
+              "source": "fda-sildenafil",
+              "section": "2.5"
+            },
+            {
+              "source": "fda-sildenafil",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "nitrates",
+      "severity": "block",
+      "text": {
+        "fa": "همراه هر نوع نیترات (نیتروگلیسیرین، ایزوسورباید) یا محرک‌های گوانیلات سیکلاز (ریوسیگوات): افت شدید فشار.",
+        "en": "With any nitrate (nitroglycerin, isosorbide) or guanylate-cyclase stimulators (riociguat): severe hypotension."
+      },
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای کودکان نیست.",
+        "en": "Not indicated in children."
+      },
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ed",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 50
+      }
+    }
+  ]
+}

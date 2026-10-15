@@ -1,0 +1,151 @@
+{
+  "id": "acyclovir-cream",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کرم آسیکلوویر",
+    "en": "Acyclovir cream"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "ضدویروس موضعی",
+    "en": "Topical antiviral"
+  },
+  "brands": [
+    {
+      "name": "Zovirax cream",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zovirax cream",
+    "کرم زوویراکس",
+    "کرم تبخال",
+    "آسیکلوویر موضعی"
+  ],
+  "formulations": [
+    {
+      "id": "cream-5",
+      "form": "cream",
+      "route": "topical",
+      "label": "5% cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acyclovircream",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cold-sore",
+      "disease": "herpes-labialis",
+      "label": {
+        "fa": "تبخال — ۱۲ سال به بالا: ۵ بار در روز به مدت ۴ روز",
+        "en": "Cold sores — ≥12 y: 5 times daily for 4 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 5
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovircream",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 4,
+        "max": 4
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر چه زودتر (در مرحله پیش‌علامت یا ظهور ضایعه) شروع شود.",
+            "en": "Start as early as possible (prodrome or when lesions appear)."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovircream",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آسیکلوویر، والاسیکلوویر یا اجزا.",
+        "en": "Hypersensitivity to acyclovir, valacyclovir or any component."
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovircream",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال ثابت نشده.",
+        "en": "Not established under 12 years."
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovircream",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cold-sore",
+      "formulation": "cream-5",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDay": 5
+      }
+    }
+  ]
+}

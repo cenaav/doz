@@ -1,0 +1,131 @@
+{
+  "id": "benzoyl-peroxide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بنزوئیل پراکساید",
+    "en": "Benzoyl peroxide"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "ضدآکنه موضعی",
+    "en": "Topical anti-acne"
+  },
+  "brands": [
+    {
+      "name": "PanOxyl",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "panoxyl",
+    "بنزوئیل پروکساید",
+    "بنزوئیل پراکسید",
+    "ژل آکنه"
+  ],
+  "formulations": [
+    {
+      "id": "cream-10",
+      "form": "cream",
+      "route": "topical",
+      "label": "10% cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-benzoyl",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acne",
+      "disease": "acne",
+      "label": {
+        "fa": "آکنه — یک تا سه بار در روز لایه نازک",
+        "en": "Acne — thin layer one to three times daily"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-benzoyl",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 3,
+        "refs": [
+          {
+            "source": "fda-benzoyl",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "به‌علت خشکی پوست با یک بار در روز شروع و به‌تدریج به دو یا سه بار برسانید.",
+            "en": "Because of drying, start once daily and increase gradually to two or three times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-benzoyl",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "پوست بسیار حساس یا حساسیت به بنزوئیل پراکساید.",
+        "en": "Very sensitive skin or sensitivity to benzoyl peroxide."
+      },
+      "refs": [
+        {
+          "source": "fda-benzoyl",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acne",
+      "formulation": "cream-10",
+      "input": {
+        "ageYears": 16,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ]
+}

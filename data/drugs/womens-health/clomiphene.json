@@ -1,0 +1,133 @@
+{
+  "id": "clomiphene",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلومیفن",
+    "en": "Clomiphene citrate"
+  },
+  "category": "womens-health",
+  "class": {
+    "fa": "تعدیل‌کننده انتخابی گیرنده استروژن",
+    "en": "Selective oestrogen receptor modulator"
+  },
+  "brands": [
+    {
+      "name": "Clomid",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "clomid",
+    "کلومید",
+    "کلومیفن",
+    "کلومیفن سیترات",
+    "تخمک گذاری"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clomiphene",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ovulation",
+      "disease": "female-infertility",
+      "label": {
+        "fa": "القای تخمک‌گذاری — ۵۰ mg روزانه به مدت ۵ روز",
+        "en": "Ovulation induction — 50 mg daily for 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-clomiphene",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر تخمک‌گذاری نشد، دوره دوم ۱۰۰ mg روزانه ۵ روز، حداقل ۳۰ روز بعد و پس از رد بارداری.",
+            "en": "If no ovulation, a second course of 100 mg daily for 5 days, at least 30 days later after excluding pregnancy."
+          },
+          "refs": [
+            {
+              "source": "fda-clomiphene",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ بارداری (و سایر موارد بخش منع مصرف).",
+        "en": "Hypersensitivity; pregnancy (and other items in Contraindications)."
+      },
+      "refs": [
+        {
+          "source": "fda-clomiphene",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ovulation",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 50
+      }
+    }
+  ]
+}

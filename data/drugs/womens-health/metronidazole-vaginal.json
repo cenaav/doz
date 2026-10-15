@@ -1,0 +1,151 @@
+{
+  "id": "metronidazole-vaginal",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ژل واژینال مترونیدازول",
+    "en": "Metronidazole vaginal gel"
+  },
+  "category": "womens-health",
+  "class": {
+    "fa": "نیتروایمیدازول موضعی واژن",
+    "en": "Vaginal nitroimidazole"
+  },
+  "brands": [
+    {
+      "name": "MetroGel-Vaginal",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "metrogel",
+    "ژل واژینال",
+    "مترونیدازول واژینال",
+    "واژینوز"
+  ],
+  "formulations": [
+    {
+      "id": "gel-0-75",
+      "form": "gel",
+      "route": "vaginal",
+      "label": "0.75% vaginal gel (5 g applicator)",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metrogel",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bv",
+      "disease": "bacterial-vaginosis",
+      "label": {
+        "fa": "واژینوز باکتریایی — یک اپلیکاتور پر (۵ g) یک یا دو بار در روز، ۵ روز",
+        "en": "Bacterial vaginosis — one applicatorful (5 g) once or twice daily for 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-metrogel",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر اپلیکاتور حدود ۳۷٫۵ mg مترونیدازول.",
+            "en": "Each applicator ≈ 37.5 mg metronidazole."
+          },
+          "refs": [
+            {
+              "source": "fda-metrogel",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مترونیدازول، پارابن‌ها یا سایر نیتروایمیدازول‌ها.",
+        "en": "Hypersensitivity to metronidazole, parabens or other nitroimidazoles."
+      },
+      "refs": [
+        {
+          "source": "fda-metrogel",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان ثابت نشده.",
+        "en": "Not established in children."
+      },
+      "refs": [
+        {
+          "source": "fda-metrogel",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bv",
+      "formulation": "gel-0-75",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ]
+}

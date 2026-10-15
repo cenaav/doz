@@ -1,0 +1,122 @@
+{
+  "id": "nystatin-cream",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کرم نیستاتین",
+    "en": "Nystatin cream"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "ضدقارچ پلی‌ان موضعی",
+    "en": "Topical polyene antifungal"
+  },
+  "brands": [
+    {
+      "name": "Mycostatin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mycostatin",
+    "نیستاتین",
+    "کرم قارچ",
+    "سوختگی پوشک"
+  ],
+  "formulations": [
+    {
+      "id": "cream-100k",
+      "form": "cream",
+      "route": "topical",
+      "label": "100,000 units/g cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nystatincream",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "candida",
+      "disease": "tinea",
+      "label": {
+        "fa": "کاندیدای پوستی (از جمله سوختگی پوشک قارچی) — دو بار در روز",
+        "en": "Cutaneous candidiasis (incl. candidal nappy rash) — twice daily"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-nystatincream",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بزرگسال و کودک (از نوزادی): به‌وفور تا بهبود کامل.",
+            "en": "Adults and children (neonates and older): apply liberally until healing is complete."
+          },
+          "refs": [
+            {
+              "source": "fda-nystatincream",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to any component."
+      },
+      "refs": [
+        {
+          "source": "fda-nystatincream",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "candida",
+      "formulation": "cream-100k",
+      "input": {
+        "ageYears": 0.5,
+        "weightKg": 7
+      },
+      "expect": {
+        "perDay": 2
+      }
+    }
+  ]
+}

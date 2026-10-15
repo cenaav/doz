@@ -1,0 +1,130 @@
+{
+  "id": "triamcinolone-cream",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کرم تریامسینولون",
+    "en": "Triamcinolone cream"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "کورتیکواستروئید موضعی متوسط",
+    "en": "Medium-potency topical corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Kenalog",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "kenalog",
+    "کنالوگ",
+    "تریامسینولون",
+    "کرم کورتون"
+  ],
+  "formulations": [
+    {
+      "id": "cream-0-1",
+      "form": "cream",
+      "route": "topical",
+      "label": "0.1% cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-triamcinolone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "derm",
+      "disease": "dermatitis",
+      "label": {
+        "fa": "درماتوز پاسخ‌ده به کورتون — دو تا سه بار در روز",
+        "en": "Steroid-responsive dermatoses — two to three times daily"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-triamcinolone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 3,
+        "refs": [
+          {
+            "source": "fda-triamcinolone",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to any component."
+      },
+      "refs": [
+        {
+          "source": "fda-triamcinolone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کودکان به سرکوب محور HPA و کوشینگ حساس‌ترند؛ کمترین مقدار مؤثر.",
+        "en": "Children are more susceptible to HPA-axis suppression and Cushing’s; use the least effective amount."
+      },
+      "refs": [
+        {
+          "source": "fda-triamcinolone",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "derm",
+      "formulation": "cream-0-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ]
+}

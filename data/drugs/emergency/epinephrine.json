@@ -1,0 +1,188 @@
+{
+  "id": "epinephrine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اپی‌نفرین (اتو اینجکتور)",
+    "en": "Epinephrine auto-injector"
+  },
+  "category": "emergency",
+  "class": {
+    "fa": "آگونیست آدرنرژیک — اورژانس آنافیلاکسی",
+    "en": "Adrenergic agonist — anaphylaxis emergency"
+  },
+  "brands": [
+    {
+      "name": "EpiPen",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "epipen",
+    "اپی پن",
+    "اپی نفرین",
+    "آدرنالین",
+    "adrenaline",
+    "آنافیلاکسی"
+  ],
+  "formulations": [
+    {
+      "id": "pen-0-3",
+      "form": "injection",
+      "route": "im",
+      "label": "EpiPen 0.3 mg auto-injector",
+      "concentration": {
+        "amount": 0.3,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "jr-0-15",
+      "form": "injection",
+      "route": "im",
+      "label": "EpiPen Jr 0.15 mg auto-injector",
+      "concentration": {
+        "amount": 0.15,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "anaphylaxis",
+      "disease": "anaphylaxis",
+      "label": {
+        "fa": "آنافیلاکسی — بر اساس وزن: ۱۵ تا ۳۰ kg EpiPen Jr؛ ۳۰ kg به بالا EpiPen",
+        "en": "Anaphylaxis — by weight: 15–30 kg EpiPen Jr; ≥30 kg EpiPen"
+      },
+      "population": {
+        "minWeightKg": 15
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 14.99,
+            "maxWeightKg": 29.99,
+            "perDose": 0.15,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 29.99,
+            "maxWeightKg": null,
+            "perDose": 0.3,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عضلانی یا زیرجلدی در قسمت قدامی‌خارجی ران، در صورت لزوم از روی لباس. در آنافیلاکسی شدید مداوم ممکن است تزریق دوم لازم شود؛ بیش از دو دوز فقط زیر نظر پزشک. فوراً اورژانس.",
+            "en": "IM or SC into the anterolateral thigh, through clothing if needed. Severe persistent anaphylaxis may need a second injection; more than two doses only under medical supervision. Seek emergency care immediately."
+          },
+          "refs": [
+            {
+              "source": "fda-epipen",
+              "section": "2"
+            },
+            {
+              "source": "fda-epipen",
+              "section": "8.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-15",
+      "severity": "warn",
+      "rule": {
+        "maxWeightKg": 14.99
+      },
+      "text": {
+        "fa": "زیر ۱۵ kg: دوز ثابت قلم‌ها ممکن است زیاد باشد؛ شکل دیگری از اپی‌نفرین تزریقی در نظر گرفته شود.",
+        "en": "Under 15 kg: fixed pen doses may be too high; consider another injectable epinephrine form."
+      },
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "anaphylaxis",
+      "formulation": "jr-0-15",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 0.15,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "anaphylaxis",
+      "formulation": "pen-0-3",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.3
+      }
+    },
+    {
+      "regimen": "anaphylaxis",
+      "formulation": "pen-0-3",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 18
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

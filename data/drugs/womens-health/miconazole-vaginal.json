@@ -1,0 +1,131 @@
+{
+  "id": "miconazole-vaginal",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "شیاف واژینال میکونازول",
+    "en": "Miconazole vaginal"
+  },
+  "category": "womens-health",
+  "class": {
+    "fa": "ضدقارچ آزول واژینال",
+    "en": "Vaginal azole antifungal"
+  },
+  "brands": [
+    {
+      "name": "Monistat",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "monistat",
+    "مونیستات",
+    "میکونازول",
+    "شیاف قارچ"
+  ],
+  "formulations": [
+    {
+      "id": "supp-200",
+      "form": "pessary",
+      "route": "vaginal",
+      "label": "200 mg vaginal suppository",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-monistat",
+          "section": "Active ingredients"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "vvc",
+      "disease": "vaginal-candidiasis",
+      "label": {
+        "fa": "عفونت قارچی واژن — ۱۲ سال به بالا: ۱ شیاف ۲۰۰ mg هنگام خواب، ۳ شب",
+        "en": "Vaginal yeast infection — ≥12 y: one 200 mg suppository at bedtime for 3 nights"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-monistat",
+          "section": "Directions"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کرم خارجی ۲٪ برای خارش ناحیه خارجی: دو بار در روز تا ۷ روز.",
+            "en": "External 2% cream for vulvar itching: twice daily for up to 7 days."
+          },
+          "refs": [
+            {
+              "source": "fda-monistat",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "first",
+      "severity": "warn",
+      "text": {
+        "fa": "اگر تاکنون عفونت قارچی واژن توسط پزشک تشخیص داده نشده، استفاده نشود.",
+        "en": "Do not use if you have never had a vaginal yeast infection diagnosed by a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-monistat",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "vvc",
+      "formulation": "supp-200",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 200
+      }
+    }
+  ]
+}
