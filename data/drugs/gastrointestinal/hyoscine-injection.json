@@ -1,0 +1,158 @@
+{
+  "id": "hyoscine-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "هیوسین (آمپول بوسکوپان)",
+    "en": "Hyoscine butylbromide (injection)"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "ضداسپاسم آنتی‌کولینرژیک",
+    "en": "Antispasmodic"
+  },
+  "brands": [
+    {
+      "name": "Buscopan",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "buscopan ampoule",
+    "آمپول بوسکوپان",
+    "آمپول هیوسین",
+    "هیوسین آمپول",
+    "قولنج کلیوی"
+  ],
+  "formulations": [
+    {
+      "id": "amp-20",
+      "form": "injection",
+      "route": "im",
+      "label": "20 mg/1 mL ampoule",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "spasm",
+      "disease": "abdominal-cramps",
+      "label": {
+        "fa": "اسپاسم حاد گوارشی یا ادراری — ۲۰ mg عضلانی یا وریدی آهسته",
+        "en": "Acute GI/GU spasm — 20 mg IM or slow IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 100,
+        "refs": [
+          {
+            "source": "uk-smpc-buscopan-amp",
+            "section": "4.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز پس از نیم ساعت تکرار؛ حداکثر ۱۰۰ mg/day. تزریق وریدی آهسته (احتمال افت شدید فشار).",
+            "en": "Repeat after 30 min if needed; max 100 mg/day. Slow IV (risk of marked hypotension)."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-buscopan-amp",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "گلوکوم زاویه بسته؛ هیپرتروفی پروستات با احتباس؛ تنگی مکانیکی گوارش؛ ایلئوس؛ مگاکولون؛ تاکی‌کاردی؛ میاستنی گراویس؛ عضلانی در مصرف‌کنندگان ضدانعقاد.",
+        "en": "Narrow-angle glaucoma; prostatic hypertrophy with retention; mechanical GI stenosis; ileus; megacolon; tachycardia; myasthenia gravis; IM in anticoagulated patients."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای کودکان توصیه نمی‌شود.",
+        "en": "Not recommended for children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "spasm",
+      "formulation": "amp-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 1
+      }
+    }
+  ]
+}

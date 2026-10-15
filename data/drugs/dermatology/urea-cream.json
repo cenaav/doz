@@ -1,0 +1,121 @@
+{
+  "id": "urea-cream",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کرم اوره",
+    "en": "Urea cream"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "کراتولیتیک و مرطوب‌کننده",
+    "en": "Keratolytic and moisturiser"
+  },
+  "brands": [
+    {
+      "name": "Uracin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "urea",
+    "اوره",
+    "کرم اوره",
+    "کرم ترک پا"
+  ],
+  "formulations": [
+    {
+      "id": "cream-20",
+      "form": "cream",
+      "route": "topical",
+      "label": "20% cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-urea",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "dry",
+      "disease": "xerosis",
+      "label": {
+        "fa": "خشکی و پوسته‌ریزی پوست یا ناخن — دو بار در روز",
+        "en": "Dry, scaly skin or nails — twice daily"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-urea",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا؛ برای چشم نیست.",
+        "en": "Hypersensitivity; not for ophthalmic use."
+      },
+      "refs": [
+        {
+          "source": "fda-urea",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "برچسب این محصول از نوع «unapproved» (تأییدنشده FDA) است.",
+        "en": "This product label is an FDA-unapproved drug label."
+      },
+      "refs": [
+        {
+          "source": "fda-urea",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "dry",
+      "formulation": "cream-20",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDay": 2
+      }
+    }
+  ]
+}

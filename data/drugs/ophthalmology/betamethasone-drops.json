@@ -1,0 +1,128 @@
+{
+  "id": "betamethasone-drops",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره بتامتازون (چشم، گوش، بینی)",
+    "en": "Betamethasone eye/ear/nose drops"
+  },
+  "category": "ophthalmology",
+  "class": {
+    "fa": "کورتیکواستروئید موضعی",
+    "en": "Topical corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Betnesol",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "betnesol",
+    "بتنزول",
+    "قطره بتامتازون",
+    "قطره کورتون"
+  ],
+  "formulations": [
+    {
+      "id": "drops-0-1",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.1% eye/ear/nose drops",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-betnesol-drops",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "eye",
+      "disease": "ocular-inflammation",
+      "label": {
+        "fa": "التهاب چشم — ۱ یا ۲ قطره هر ۱ تا ۲ ساعت تا کنترل",
+        "en": "Eye inflammation — 1–2 drops every 1–2 h until controlled"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "perDoseMax": 2,
+        "dosesPerDay": 8
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-betnesol-drops",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سپس کاهش دفعات. اگر ظرف ۷ روز پاسخ نبود قطع شود. گوش: ۲ تا ۳ قطره هر ۲ تا ۳ ساعت. هرگز برای چشم قرمز تشخیص‌داده‌نشده.",
+            "en": "Then reduce frequency. Stop if no response within 7 days. Ear: 2–3 drops every 2–3 h. Never for an undiagnosed red eye."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-betnesol-drops",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-betnesol-drops",
+              "section": "4.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت باکتریایی، ویروسی، قارچی، سلی یا چرکی چشم؛ گلوکوم؛ کراتیت هرپسی؛ پرده گوش سوراخ.",
+        "en": "Bacterial, viral, fungal, tuberculous or purulent eye conditions; glaucoma; herpetic keratitis; perforated eardrum."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-betnesol-drops",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "eye",
+      "formulation": "drops-0-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "upperPerDose": 2
+      }
+    }
+  ]
+}

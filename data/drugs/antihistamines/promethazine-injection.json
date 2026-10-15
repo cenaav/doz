@@ -1,0 +1,149 @@
+{
+  "id": "promethazine-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پرومتازین (آمپول)",
+    "en": "Promethazine (injection)"
+  },
+  "category": "antihistamines",
+  "class": {
+    "fa": "آنتی‌هیستامین فنوتیازینی",
+    "en": "Phenothiazine antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Phenergan injection",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "آمپول پرومتازین",
+    "phenergan"
+  ],
+  "formulations": [
+    {
+      "id": "inj-25",
+      "form": "injection",
+      "route": "im",
+      "label": "25 mg/mL injection",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-promethazineinj",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "nv",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "تهوع و استفراغ — بزرگسال: ۱۲٫۵ تا ۲۵ mg، نه زودتر از هر ۴ ساعت",
+        "en": "Nausea/vomiting — adults: 12.5–25 mg, not more often than every 4 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 12.5,
+        "perDoseMax": 25,
+        "dosesPerDay": 4,
+        "intervalHours": 4
+      },
+      "refs": [
+        {
+          "source": "fda-promethazineinj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "ترجیحاً عضلانی عمیق؛ تزریق وریدی خطر آسیب شدید بافتی دارد.",
+            "en": "Preferably deep IM; IV use risks severe tissue injury."
+          },
+          "refs": [
+            {
+              "source": "fda-promethazineinj",
+              "section": "Boxed Warning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال منع مصرف (دپرسیون تنفسی کشنده).",
+        "en": "Contraindicated under 2 years (fatal respiratory depression)."
+      },
+      "refs": [
+        {
+          "source": "fda-promethazineinj",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: آسیب شدید بافتی و گانگرن با تزریق نادرست؛ دپرسیون تنفسی در کودکان.",
+        "en": "Boxed warning: severe tissue injury and gangrene with improper injection; respiratory depression in children."
+      },
+      "refs": [
+        {
+          "source": "fda-promethazineinj",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "nv",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 12.5,
+        "mlPerDose": 0.5,
+        "upperPerDose": 25
+      }
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "id": "ketoconazole-shampoo",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "شامپو کتوکونازول",
+    "en": "Ketoconazole shampoo"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "ضدقارچ موضعی",
+    "en": "Topical antifungal"
+  },
+  "brands": [
+    {
+      "name": "Nizoral A-D",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nizoral",
+    "نیزورال",
+    "شامپو ضد شوره",
+    "کتوکونازول شامپو"
+  ],
+  "formulations": [
+    {
+      "id": "shampoo-1",
+      "form": "shampoo",
+      "route": "topical",
+      "label": "1% shampoo",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nizoralad",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "dandruff",
+      "disease": "dandruff",
+      "label": {
+        "fa": "شوره سر — ۱۲ سال به بالا: هر ۳ تا ۴ روز تا ۸ هفته",
+        "en": "Dandruff — ≥12 y: every 3–4 days for up to 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nizoralad",
+          "section": "Directions"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 56
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "مو را خیس، کف کامل، آبکشی. سپس فقط در صورت نیاز.",
+            "en": "Wet hair, lather well, rinse. Then only as needed."
+          },
+          "refs": [
+            {
+              "source": "fda-nizoralad",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "skin",
+      "severity": "block",
+      "text": {
+        "fa": "روی پوست سر زخمی یا ملتهب استفاده نشود؛ حساسیت.",
+        "en": "Do not use on broken or inflamed scalp; allergy."
+      },
+      "refs": [
+        {
+          "source": "fda-nizoralad",
+          "section": "Warnings"
+        }
+      ]
+    },
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال: با پزشک مشورت شود.",
+        "en": "Under 12: ask a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-nizoralad",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "dandruff",
+      "formulation": "shampoo-1",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ]
+}

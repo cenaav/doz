@@ -1,0 +1,168 @@
+{
+  "id": "levonorgestrel-ethinylestradiol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قرص ضد بارداری LD (لوونورژسترل + اتینیل استرادیول)",
+    "en": "Levonorgestrel/ethinyl estradiol (LD pill)"
+  },
+  "category": "womens-health",
+  "class": {
+    "fa": "ضدبارداری ترکیبی خوراکی",
+    "en": "Combined oral contraceptive"
+  },
+  "brands": [
+    {
+      "name": "Levora",
+      "market": "US"
+    },
+    {
+      "name": "Microgynon",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "LD",
+    "ال دی",
+    "قرص ال دی",
+    "OCP",
+    "microgynon",
+    "میکروژینون",
+    "قرص ضد بارداری"
+  ],
+  "formulations": [
+    {
+      "id": "tab",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Levonorgestrel 0.15 mg + ethinyl estradiol 0.03 mg",
+      "concentration": {
+        "amount": 0.15,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "components": {
+        "levonorgestrel": {
+          "name": {
+            "fa": "لوونورژسترل",
+            "en": "Levonorgestrel"
+          },
+          "amount": 0.15,
+          "unit": "mg"
+        },
+        "ethinylestradiol": {
+          "name": {
+            "fa": "اتینیل استرادیول",
+            "en": "Ethinyl estradiol"
+          },
+          "amount": 0.03,
+          "unit": "mg"
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levora",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "coc",
+      "disease": "contraception",
+      "label": {
+        "fa": "پیشگیری از بارداری — یک قرص روزانه در ساعت ثابت",
+        "en": "Contraception — one tablet daily at the same time"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levora",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "doseComponent": "levonorgestrel",
+      "notes": [
+        {
+          "text": {
+            "fa": "به ترتیب بسته (۲۱ قرص فعال + ۷ قرص بی‌اثر). قرص فراموش‌شده هر چه زودتر.",
+            "en": "In blister order (21 active + 7 inert). Take a missed pill as soon as possible."
+          },
+          "refs": [
+            {
+              "source": "fda-levora",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "smoke",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: در زنان بالای ۳۵ سال سیگاری منع مصرف (حوادث قلبی‌عروقی).",
+        "en": "Boxed warning: contraindicated in women over 35 who smoke (cardiovascular events)."
+      },
+      "refs": [
+        {
+          "source": "fda-levora",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه ترومبوز وریدی یا شریانی، سرطان پستان، بیماری کبد، بارداری و سایر موارد بخش منع مصرف.",
+        "en": "History of venous or arterial thrombosis, breast cancer, liver disease, pregnancy and others in Contraindications."
+      },
+      "refs": [
+        {
+          "source": "fda-levora",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "coc",
+      "formulation": "tab",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 0.15,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ]
+}

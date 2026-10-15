@@ -1,0 +1,169 @@
+{
+  "id": "bromocriptine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بروموکریپتین",
+    "en": "Bromocriptine"
+  },
+  "category": "endocrine",
+  "class": {
+    "fa": "آگونیست دوپامین",
+    "en": "Dopamine agonist"
+  },
+  "brands": [
+    {
+      "name": "Parlodel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "parlodel",
+    "پارلودل",
+    "بروموکریپتین",
+    "پرولاکتین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet (scored)",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "prl",
+      "disease": "hyperprolactinemia",
+      "label": {
+        "fa": "اختلال ناشی از هیپرپرولاکتینمی — ۱٫۲۵ تا ۲٫۵ mg یک بار با غذا",
+        "en": "Hyperprolactinaemia-associated dysfunction — 1.25–2.5 mg once daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1.25,
+        "perDoseMax": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش تا ۲٫۵ mg هر ۲ تا ۷ روز در صورت تحمل.",
+            "en": "Increase by up to 2.5 mg every 2–7 days as tolerated."
+          },
+          "refs": [
+            {
+              "source": "fda-bromocriptine",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adenoma",
+      "disease": "hyperprolactinemia",
+      "label": {
+        "fa": "آدنوم مترشحه پرولاکتین — ۱۱ سال به بالا: ۱٫۲۵ تا ۲٫۵ mg یک بار",
+        "en": "Prolactin-secreting adenoma — ≥11 y: 1.25–2.5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 11,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1.25,
+        "perDoseMax": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه بیماری دریچه قلب یا فیبروز پریکارد (و سایر موارد بخش ۴).",
+        "en": "History of cardiac valvular disorder or pericardial fibrosis (and others in section 4)."
+      },
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "prl",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1.25,
+        "tabletsPerDoseRounded": 0.5,
+        "upperPerDose": 2.5
+      }
+    },
+    {
+      "regimen": "adenoma",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 1.25
+      }
+    }
+  ]
+}

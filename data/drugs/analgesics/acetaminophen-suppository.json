@@ -1,0 +1,181 @@
+{
+  "id": "acetaminophen-suppository",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "شیاف استامینوفن",
+    "en": "Acetaminophen suppository"
+  },
+  "category": "analgesics",
+  "class": {
+    "fa": "ضددرد و ضدتب",
+    "en": "Analgesic and antipyretic"
+  },
+  "brands": [
+    {
+      "name": "FeverAll",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "feverall",
+    "شیاف استامینوفن",
+    "شیاف تب",
+    "پاراستامول شیاف"
+  ],
+  "formulations": [
+    {
+      "id": "supp-325",
+      "form": "tablet",
+      "route": "rectal",
+      "label": "325 mg rectal suppository",
+      "concentration": {
+        "amount": 325,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-feverall",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "fever",
+      "disease": "fever",
+      "label": {
+        "fa": "تب و درد — شیاف ۳۲۵ mg بر اساس سن",
+        "en": "Fever and pain — 325 mg suppository by age"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 325,
+            "dosesPerDay": 4
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 650,
+            "dosesPerDay": 4
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-feverall",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ تا ۶ ساعت. ۶ تا ۱۲ سال: ۱ شیاف (حداکثر ۵ دوز در ۲۴ ساعت)؛ ۱۲ سال به بالا: ۲ شیاف (حداکثر ۶ دوز). زیر ۶ سال از این قدرت استفاده نشود.",
+            "en": "Every 4–6 h. 6–12 y: 1 suppository (max 5 doses/24 h); ≥12 y: 2 suppositories (max 6 doses). Do not use this strength under 6."
+          },
+          "refs": [
+            {
+              "source": "fda-feverall",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-6",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "این قدرت (۳۲۵ mg) برای زیر ۶ سال نیست.",
+        "en": "This 325 mg strength is not for children under 6."
+      },
+      "refs": [
+        {
+          "source": "fda-feverall",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "liver",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار کبد: از تعداد دوز مجاز بیشتر نشود و با سایر داروهای حاوی استامینوفن همزمان مصرف نشود.",
+        "en": "Liver warning: do not exceed the allowed doses or combine with other acetaminophen products."
+      },
+      "refs": [
+        {
+          "source": "fda-feverall",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "fever",
+      "formulation": "supp-325",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 325,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "fever",
+      "formulation": "supp-325",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 650,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ]
+}

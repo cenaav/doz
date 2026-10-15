@@ -1,0 +1,156 @@
+{
+  "id": "fluorometholone-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی فلورومتولون",
+    "en": "Fluorometholone eye drops"
+  },
+  "category": "ophthalmology",
+  "class": {
+    "fa": "کورتیکواستروئید چشمی",
+    "en": "Ophthalmic corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "FML",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "fml",
+    "اف ام ال",
+    "فلورومتولون",
+    "قطره کورتون چشم"
+  ],
+  "formulations": [
+    {
+      "id": "susp-0-1",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.1% suspension",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "inflam",
+      "disease": "ocular-inflammation",
+      "label": {
+        "fa": "التهاب چشم پاسخ‌ده به کورتون — ۱ قطره دو تا چهار بار",
+        "en": "Steroid-responsive eye inflammation — 1 drop two to four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 6,
+        "refs": [
+          {
+            "source": "fda-fml",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۴ تا ۴۸ ساعت اول می‌توان هر ۴ ساعت. اگر پس از ۲ روز بهبود نیافت، ارزیابی مجدد. قبل از مصرف تکان داده شود.",
+            "en": "First 24–48 h may be every 4 h. Re-evaluate if not improved after 2 days. Shake well."
+          },
+          "refs": [
+            {
+              "source": "fda-fml",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بیشتر بیماری‌های ویروسی قرنیه و ملتحمه (هرپس، واکسینیا، آبله‌مرغان)؛ عفونت مایکوباکتریایی یا قارچی چشم.",
+        "en": "Most viral diseases of cornea/conjunctiva (herpes, vaccinia, varicella); mycobacterial or fungal eye infection."
+      },
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال ثابت نشده.",
+        "en": "Not established under 2 years."
+      },
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "inflam",
+      "formulation": "susp-0-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ]
+}

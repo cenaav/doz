@@ -1,0 +1,131 @@
+{
+  "id": "chloramphenicol-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی کلرامفنیکل",
+    "en": "Chloramphenicol eye drops"
+  },
+  "category": "ophthalmology",
+  "class": {
+    "fa": "آنتی‌بیوتیک موضعی چشم",
+    "en": "Topical ophthalmic antibiotic"
+  },
+  "brands": [
+    {
+      "name": "Minims Chloramphenicol",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "chloramphenicol",
+    "کلرامفنیکل",
+    "قطره چشم"
+  ],
+  "formulations": [
+    {
+      "id": "drops-0-5",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.5% eye drops",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-minims-chloramphenicol",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "conj",
+      "disease": "bacterial-conjunctivitis",
+      "label": {
+        "fa": "عفونت باکتریایی چشم — ۱ تا ۲ قطره تا ۶ بار در روز",
+        "en": "Bacterial eye infection — 1–2 drops up to 6 times daily"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "perDoseMax": 2,
+        "dosesPerDay": 6
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-minims-chloramphenicol",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عفونت شدید: ابتدا هر ۱۵ تا ۲۰ دقیقه. حداکثر ۱۰ تا ۱۴ روز. نوزادان ممکن است تنظیم دوز بخواهند. آنمی آپلاستیک (نادر).",
+            "en": "Severe: initially every 15–20 min. Max 10–14 days. Newborns may need dose adjustment. Aplastic anaemia (rare)."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-minims-chloramphenicol",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-minims-chloramphenicol",
+              "section": "4.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کلرامفنیکل.",
+        "en": "Hypersensitivity to chloramphenicol."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-minims-chloramphenicol",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "conj",
+      "formulation": "drops-0-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 1,
+        "upperPerDose": 2
+      }
+    }
+  ]
+}

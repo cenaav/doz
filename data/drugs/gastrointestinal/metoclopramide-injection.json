@@ -1,0 +1,134 @@
+{
+  "id": "metoclopramide-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متوکلوپرامید (آمپول)",
+    "en": "Metoclopramide (injection)"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "ضدتهوع پروکینتیک",
+    "en": "Prokinetic antiemetic"
+  },
+  "brands": [
+    {
+      "name": "Reglan injection",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "آمپول متوکلوپرامید",
+    "plasil",
+    "پلاسیل",
+    "reglan"
+  ],
+  "formulations": [
+    {
+      "id": "inj-5",
+      "form": "injection",
+      "route": "im",
+      "label": "10 mg/2 mL (5 mg/mL)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ponv",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "پیشگیری از تهوع پس از جراحی — ۱۰ یا ۲۰ mg عضلانی نزدیک پایان جراحی",
+        "en": "Postoperative nausea prevention — 10 or 20 mg IM near end of surgery"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه دیسکینزی تاردیو یا واکنش دیستونیک؛ خونریزی، انسداد یا سوراخ گوارشی؛ فئوکروموسیتوم؛ صرع.",
+        "en": "History of tardive dyskinesia or dystonic reaction; GI haemorrhage, obstruction or perforation; pheochromocytoma; epilepsy."
+      },
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: دیسکینزی تاردیو؛ بیش از ۱۲ هفته مصرف نشود.",
+        "en": "Boxed warning: tardive dyskinesia; avoid use longer than 12 weeks."
+      },
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ponv",
+      "formulation": "inj-5",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 2,
+        "upperPerDose": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "minoxidil-topical",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ماینوکسیدیل موضعی",
+    "en": "Minoxidil (topical)"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "محرک رشد مو",
+    "en": "Hair regrowth agent"
+  },
+  "brands": [
+    {
+      "name": "Rogaine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rogaine",
+    "ماینوکسیدیل",
+    "مینوکسیدیل",
+    "ریزش مو"
+  ],
+  "formulations": [
+    {
+      "id": "foam-5",
+      "form": "gel",
+      "route": "topical",
+      "label": "5% foam",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-minoxidil",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hair",
+      "disease": "alopecia",
+      "label": {
+        "fa": "ریزش موی ارثی (زنان) — نصف درپوش یک بار در روز روی پوست سر",
+        "en": "Female-pattern hair loss — half a capful once daily to the scalp"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-minoxidil",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بیشتر یا مکررتر نتیجه بهتری ندارد؛ برای حفظ اثر باید ادامه یابد.",
+            "en": "More or more often does not improve results; continued use is needed to keep regrowth."
+          },
+          "refs": [
+            {
+              "source": "fda-minoxidil",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "ریزش ناگهانی یا سکه‌ای، بدون سابقه خانوادگی، یا پس از زایمان؛ پوست سر قرمز یا ملتهب.",
+        "en": "Sudden or patchy loss, no family history, or after childbirth; red or inflamed scalp."
+      },
+      "refs": [
+        {
+          "source": "fda-minoxidil",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hair",
+      "formulation": "foam-5",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ]
+}

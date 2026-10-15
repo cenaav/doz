@@ -1,0 +1,130 @@
+{
+  "id": "ciprofloxacin-hydrocortisone-otic",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره گوش سیپروفلوکساسین-هیدروکورتیزون",
+    "en": "Ciprofloxacin/hydrocortisone ear drops"
+  },
+  "category": "ent",
+  "class": {
+    "fa": "آنتی‌بیوتیک + کورتون گوش",
+    "en": "Otic antibiotic + steroid"
+  },
+  "brands": [
+    {
+      "name": "Cipro HC Otic",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cipro hc",
+    "قطره گوش ترکیبی",
+    "سیپرو اچ سی"
+  ],
+  "formulations": [
+    {
+      "id": "susp",
+      "form": "drops",
+      "route": "topical",
+      "label": "Ciprofloxacin 0.2% + hydrocortisone 1% otic suspension",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ciprohc",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oe",
+      "disease": "otitis-externa",
+      "label": {
+        "fa": "عفونت گوش خارجی — ۱ سال به بالا: ۳ قطره دو بار، ۷ روز",
+        "en": "Otitis externa — ≥1 y: 3 drops twice daily for 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 3,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ciprohc",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "قبل از مصرف تکان دهید و گرم کنید.",
+            "en": "Shake well and warm before use."
+          },
+          "refs": [
+            {
+              "source": "fda-ciprohc",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ پرده گوش سوراخ؛ عفونت ویروسی مجرای گوش (آبله‌مرغان، هرپس).",
+        "en": "Hypersensitivity; perforated eardrum; viral infections of the ear canal (varicella, herpes)."
+      },
+      "refs": [
+        {
+          "source": "fda-ciprohc",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oe",
+      "formulation": "susp",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 3
+      }
+    }
+  ]
+}

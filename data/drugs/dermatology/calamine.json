@@ -1,0 +1,111 @@
+{
+  "id": "calamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لوسیون کالامین",
+    "en": "Calamine lotion"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "محافظ پوست",
+    "en": "Skin protectant"
+  },
+  "brands": [
+    {
+      "name": "Calamine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "calamine",
+    "کالامین",
+    "لوسیون کالامین",
+    "خارش"
+  ],
+  "formulations": [
+    {
+      "id": "lotion",
+      "form": "lotion",
+      "route": "topical",
+      "label": "Calamine 8% + zinc oxide 8% lotion",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-calamine",
+          "section": "Active ingredients"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ivy",
+      "disease": "contact-dermatitis-plants",
+      "label": {
+        "fa": "خشک کردن ضایعات آبدار (پیچک سمی و ...) — در صورت نیاز",
+        "en": "Drying oozing poison ivy/oak/sumac lesions — as needed"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-calamine",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "قبل از مصرف تکان دهید؛ در صورت نیاز (تعداد نوبت نمونه است). اگر بدتر شد یا بیش از ۷ روز طول کشید، پزشک.",
+            "en": "Shake well; as needed (count is illustrative). See a doctor if worse or lasting over 7 days."
+          },
+          "refs": [
+            {
+              "source": "fda-calamine",
+              "section": "Directions"
+            },
+            {
+              "source": "fda-calamine",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ivy",
+      "formulation": "lotion",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ]
+}

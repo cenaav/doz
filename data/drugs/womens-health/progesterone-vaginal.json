@@ -1,0 +1,209 @@
+{
+  "id": "progesterone-vaginal",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پروژسترون واژینال",
+    "en": "Progesterone (vaginal)"
+  },
+  "category": "womens-health",
+  "class": {
+    "fa": "پروژستین",
+    "en": "Progestin"
+  },
+  "brands": [
+    {
+      "name": "Crinone",
+      "market": "US"
+    },
+    {
+      "name": "Cyclogest",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "crinone",
+    "cyclogest",
+    "سیکلوژست",
+    "شیاف پروژسترون",
+    "پروژسترون واژینال"
+  ],
+  "formulations": [
+    {
+      "id": "gel-90",
+      "form": "gel",
+      "route": "vaginal",
+      "label": "Crinone 8% (90 mg) applicator",
+      "concentration": {
+        "amount": 90,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "gel-45",
+      "form": "gel",
+      "route": "vaginal",
+      "label": "Crinone 4% (45 mg) applicator",
+      "concentration": {
+        "amount": 45,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "art",
+      "disease": "female-infertility",
+      "label": {
+        "fa": "حمایت لوتئال در ART — کرینون ۸٪ (۹۰ mg) یک بار در روز واژینال",
+        "en": "ART luteal support — Crinone 8% (90 mg) vaginally once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 90,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "gel-90"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نارسایی کامل/نسبی تخمدان: ۹۰ mg دو بار. در صورت بارداری تا ۱۰ تا ۱۲ هفته ادامه.",
+            "en": "Partial or complete ovarian failure: 90 mg twice daily. If pregnant, continue to 10–12 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-crinone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amen",
+      "disease": "secondary-amenorrhea",
+      "label": {
+        "fa": "آمنوره ثانویه — کرینون ۴٪ (۴۵ mg) یک روز در میان، ۶ دوز",
+        "en": "Secondary amenorrhoea — Crinone 4% (45 mg) every other day, 6 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 45,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "gel-45"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پاسخ نداد، ۸٪ یک روز در میان تا ۶ دوز.",
+            "en": "If no response, 8% every other day up to 6 doses."
+          },
+          "refs": [
+            {
+              "source": "fda-crinone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی واژینال تشخیص‌داده‌نشده؛ بیماری کبد؛ سرطان پستان یا دستگاه تناسلی؛ ترومبوآمبولی؛ سقط فراموش‌شده.",
+        "en": "Undiagnosed vaginal bleeding; liver disease; breast or genital cancer; thromboembolism; missed abortion."
+      },
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "art",
+      "formulation": "gel-90",
+      "input": {
+        "ageYears": 32,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 90
+      }
+    },
+    {
+      "regimen": "amen",
+      "formulation": "gel-45",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 45
+      }
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "epinephrine-ampoule",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اپی‌نفرین (آمپول ۱ mg/mL)",
+    "en": "Epinephrine 1 mg/mL (ampoule)"
+  },
+  "category": "emergency",
+  "class": {
+    "fa": "آگونیست آدرنرژیک",
+    "en": "Adrenergic agonist"
+  },
+  "brands": [
+    {
+      "name": "Adrenalin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "adrenaline",
+    "adrenalin",
+    "آدرنالین",
+    "اپی نفرین آمپول",
+    "آنافیلاکسی"
+  ],
+  "formulations": [
+    {
+      "id": "amp-1",
+      "form": "injection",
+      "route": "im",
+      "label": "1 mg/mL ampoule",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-epiamp",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "anaphylaxis",
+      "label": {
+        "fa": "آنافیلاکسی — بزرگسال و بالای ۳۰ kg: ۰٫۳ تا ۰٫۵ mg عضلانی",
+        "en": "Anaphylaxis — adults and >30 kg: 0.3–0.5 mg IM"
+      },
+      "population": {
+        "minWeightKg": 30.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.3,
+        "perDoseMax": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-epiamp",
+          "section": "2"
+        },
+        {
+          "source": "fda-epiamp",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عضلانی یا زیرجلدی در قدامی‌خارجی ران؛ هر ۵ تا ۱۰ دقیقه در صورت نیاز تکرار.",
+            "en": "IM or SC into the anterolateral thigh; repeat every 5–10 min as needed."
+          },
+          "refs": [
+            {
+              "source": "fda-epiamp",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "anaphylaxis",
+      "label": {
+        "fa": "آنافیلاکسی — کودک زیر ۳۰ kg: ۰٫۰۱ mg/kg عضلانی",
+        "en": "Anaphylaxis — child <30 kg: 0.01 mg/kg IM"
+      },
+      "population": {
+        "maxWeightKg": 30
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.01,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-epiamp",
+          "section": "2"
+        },
+        {
+          "source": "fda-epiamp",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 0.3,
+        "refs": [
+          {
+            "source": "fda-epiamp",
+            "section": "2",
+            "note": {
+              "fa": "سقف ۰٫۳ mg (دوز بالای ۳۰ kg) را Doz گذاشته؛ برچسب آن را حداکثر نگفته",
+              "en": "Doz caps at the >30 kg dose (0.3 mg); not stated as a maximum"
+            }
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۵ تا ۱۰ دقیقه در صورت نیاز تکرار. ۰٫۰۱ mL/kg از محلول ۱ mg/mL.",
+            "en": "Repeat every 5–10 min as needed. 0.01 mL/kg of the 1 mg/mL solution."
+          },
+          "refs": [
+            {
+              "source": "fda-epiamp",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "amp-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.3,
+        "mlPerDose": 0.3,
+        "upperPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "amp-1",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 0.15,
+        "mlPerDose": 0.15
+      }
+    }
+  ]
+}

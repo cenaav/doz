@@ -1,0 +1,177 @@
+{
+  "id": "metronidazole-suspension",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سوسپانسیون مترونیدازول",
+    "en": "Metronidazole oral suspension"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "نیتروایمیدازول",
+    "en": "Nitroimidazole"
+  },
+  "brands": [
+    {
+      "name": "Flagyl S",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "flagyl syrup",
+    "شربت مترونیدازول",
+    "مترونیدازول شربت"
+  ],
+  "formulations": [
+    {
+      "id": "susp-200",
+      "form": "suspension",
+      "route": "oral",
+      "label": "200 mg/5 mL suspension",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-metronidazole-susp",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "anaerobic-adult",
+      "disease": "serious-anaerobic-infection",
+      "label": {
+        "fa": "عفونت بی‌هوازی — بزرگسال: ۸۰۰ mg سپس ۴۰۰ mg هر ۸ ساعت",
+        "en": "Anaerobic infection — adults: 800 mg then 400 mg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-metronidazole-susp",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "anaerobic-child",
+      "disease": "serious-anaerobic-infection",
+      "label": {
+        "fa": "عفونت بی‌هوازی — ۸ هفته تا ۱۲ سال: ۷٫۵ mg/kg هر ۸ ساعت",
+        "en": "Anaerobic infection — 8 weeks–12 y: 7.5 mg/kg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 8,
+          "unit": "week"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 7.5,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-metronidazole-susp",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۲۰ تا ۳۰ mg/kg/day یک‌جا؛ بسته به شدت تا ۴۰ mg/kg/day. زیر ۸ هفته: ۱۵ mg/kg/day.",
+            "en": "Or 20–30 mg/kg/day once; up to 40 mg/kg/day by severity. Under 8 weeks: 15 mg/kg/day."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-metronidazole-susp",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مترونیدازول، نیتروایمیدازول‌ها یا هیدروکسی‌بنزوات‌ها.",
+        "en": "Hypersensitivity to metronidazole, nitroimidazoles or hydroxybenzoates."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-metronidazole-susp",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "anaerobic-adult",
+      "formulation": "susp-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 10
+      }
+    },
+    {
+      "regimen": "anaerobic-child",
+      "formulation": "susp-200",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 3.75
+      }
+    }
+  ]
+}

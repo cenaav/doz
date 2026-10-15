@@ -1,0 +1,111 @@
+{
+  "id": "fusidic-hydrocortisone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کرم فوزیدیک-هیدروکورتیزون",
+    "en": "Fusidic acid/hydrocortisone cream"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "آنتی‌بیوتیک + کورتون موضعی",
+    "en": "Topical antibiotic + steroid"
+  },
+  "brands": [
+    {
+      "name": "Fucidin H",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "fucidin h",
+    "فوسیدین اچ",
+    "کرم ترکیبی"
+  ],
+  "formulations": [
+    {
+      "id": "cream",
+      "form": "cream",
+      "route": "topical",
+      "label": "Fusidic acid 2% + hydrocortisone acetate 1% cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-fucidin-h",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ecz",
+      "disease": "dermatitis",
+      "label": {
+        "fa": "اگزمای عفونی — دو بار در روز، حداکثر ۲ هفته",
+        "en": "Infected eczema/dermatitis — twice daily, max 2 weeks"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-fucidin-h",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ عفونت اولیه قارچی، ویروسی یا باکتریایی درمان‌نشده؛ سل پوستی.",
+        "en": "Hypersensitivity; untreated primary fungal, viral or bacterial skin infection; skin tuberculosis."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-fucidin-h",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ecz",
+      "formulation": "cream",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDay": 2
+      }
+    }
+  ]
+}
