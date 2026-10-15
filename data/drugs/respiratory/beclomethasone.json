@@ -1,0 +1,220 @@
+{
+  "id": "beclomethasone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بکلومتازون استنشاقی",
+    "en": "Beclomethasone (inhaled)"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "کورتیکواستروئید استنشاقی",
+    "en": "Inhaled corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "QVAR",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "qvar",
+    "beclomethasone",
+    "بکلومتازون",
+    "اسپری کورتون"
+  ],
+  "formulations": [
+    {
+      "id": "hfa-40",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "40 mcg per actuation",
+      "concentration": {
+        "amount": 40,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-qvar",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "hfa-80",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "80 mcg per actuation",
+      "concentration": {
+        "amount": 80,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-qvar",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم (نگهدارنده) — ۱۲ سال به بالا: شروع ۴۰ تا ۸۰ mcg دو بار",
+        "en": "Asthma maintenance — ≥12 y: start 40–80 mcg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 40,
+        "perDoseMax": 80,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-qvar",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 320,
+        "refs": [
+          {
+            "source": "fda-qvar",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "محدوده ۴۰ تا ۳۲۰ mcg دو بار.",
+            "en": "Range 40–320 mcg twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-qvar",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم (نگهدارنده) — ۴ تا ۱۱ سال: ۴۰ یا ۸۰ mcg دو بار",
+        "en": "Asthma maintenance — 4–11 y: 40 or 80 mcg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 40,
+        "perDoseMax": 80,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-qvar",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "درمان اولیه حمله حاد آسم؛ حساسیت.",
+        "en": "Primary treatment of status asthmaticus; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-qvar",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-4",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۴ سال ثابت نشده.",
+        "en": "Not established under 4 years."
+      },
+      "refs": [
+        {
+          "source": "fda-qvar",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "hfa-40",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 40,
+        "upperPerDose": 80
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "hfa-40",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 40
+      }
+    }
+  ]
+}

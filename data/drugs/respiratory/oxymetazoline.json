@@ -1,0 +1,144 @@
+{
+  "id": "oxymetazoline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اسپری بینی اکسی‌متازولین",
+    "en": "Oxymetazoline nasal spray"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "ضداحتقان بینی",
+    "en": "Nasal decongestant"
+  },
+  "brands": [
+    {
+      "name": "Afrin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "afrin",
+    "افرین",
+    "اکسی متازولین",
+    "اسپری ضد احتقان",
+    "گرفتگی بینی"
+  ],
+  "formulations": [
+    {
+      "id": "spray-0-05",
+      "form": "nasal-spray",
+      "route": "nasal",
+      "label": "0.05% nasal spray",
+      "concentration": {
+        "amount": 1,
+        "unit": "spray",
+        "perUnit": "spray"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-oxymetazoline",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "decongest",
+      "disease": "nasal-congestion",
+      "label": {
+        "fa": "گرفتگی بینی — ۶ سال به بالا: ۲ تا ۳ پاف در هر سوراخ هر ۱۰ تا ۱۲ ساعت",
+        "en": "Nasal congestion — ≥6 y: 2–3 sprays per nostril every 10–12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "spray",
+      "dose": {
+        "perDose": 4,
+        "perDoseMax": 6,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-oxymetazoline",
+          "section": "Directions"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 3
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عدد = مجموع دو سوراخ. حداکثر ۲ نوبت در ۲۴ ساعت؛ بیش از ۳ روز مصرف نشود. ۶ تا ۱۲ سال با نظارت بزرگسال.",
+            "en": "Number = total for both nostrils. Max 2 doses in 24 h; do not use for more than 3 days. 6–12 y with adult supervision."
+          },
+          "refs": [
+            {
+              "source": "fda-oxymetazoline",
+              "section": "Directions"
+            },
+            {
+              "source": "fda-oxymetazoline",
+              "section": "When using this product"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-6",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ سال: با پزشک مشورت شود.",
+        "en": "Under 6 years: ask a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-oxymetazoline",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "decongest",
+      "formulation": "spray-0-05",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4,
+        "upperPerDose": 6
+      }
+    }
+  ]
+}

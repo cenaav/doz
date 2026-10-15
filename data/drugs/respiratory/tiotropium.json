@@ -1,0 +1,192 @@
+{
+  "id": "tiotropium",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تیوتروپیوم (اسپیریوا)",
+    "en": "Tiotropium"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌کولینرژیک طولانی‌اثر (LAMA)",
+    "en": "Long-acting anticholinergic (LAMA)"
+  },
+  "brands": [
+    {
+      "name": "Spiriva Respimat",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "spiriva",
+    "اسپیریوا",
+    "تیوتروپیوم",
+    "LAMA"
+  ],
+  "formulations": [
+    {
+      "id": "respimat-1-25",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "1.25 mcg per actuation (Respimat)",
+      "concentration": {
+        "amount": 1.25,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-spiriva",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "respimat-2-5",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "2.5 mcg per actuation (Respimat)",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-spiriva",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "copd",
+      "disease": "copd",
+      "label": {
+        "fa": "COPD — ۲ پاف ۲٫۵ mcg یک بار در روز",
+        "en": "COPD — 2 puffs of 2.5 mcg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-spiriva",
+          "section": "2.1"
+        }
+      ],
+      "allowedFormulations": [
+        "respimat-2-5"
+      ]
+    },
+    {
+      "id": "asthma",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم — ۶ سال به بالا: ۲ پاف ۱٫۲۵ mcg یک بار در روز",
+        "en": "Asthma — ≥6 y: 2 puffs of 1.25 mcg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-spiriva",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "respimat-1-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر اثر ممکن است ۴ تا ۸ هفته طول بکشد.",
+            "en": "Maximum benefit may take 4–8 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-spiriva",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تیوتروپیوم، ایپراتروپیوم یا اجزا.",
+        "en": "Hypersensitivity to tiotropium, ipratropium or any component."
+      },
+      "refs": [
+        {
+          "source": "fda-spiriva",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "copd",
+      "formulation": "respimat-2-5",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "asthma",
+      "formulation": "respimat-1-25",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 2.5,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ]
+}

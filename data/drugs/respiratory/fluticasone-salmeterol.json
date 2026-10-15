@@ -1,0 +1,356 @@
+{
+  "id": "fluticasone-salmeterol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلوتیکازون-سالمترول (سرتاید)",
+    "en": "Fluticasone/salmeterol"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "ICS + LABA استنشاقی",
+    "en": "Inhaled ICS + LABA"
+  },
+  "brands": [
+    {
+      "name": "Advair Diskus",
+      "market": "US"
+    },
+    {
+      "name": "Seretide",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "advair",
+    "seretide",
+    "سرتاید",
+    "سروتاید",
+    "فلوتیکازون سالمترول",
+    "اسپری آسم"
+  ],
+  "formulations": [
+    {
+      "id": "diskus-100-50",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "100/50 mcg per inhalation (fluticasone/salmeterol)",
+      "concentration": {
+        "amount": 1,
+        "unit": "spray",
+        "perUnit": "actuation"
+      },
+      "components": {
+        "fluticasone": {
+          "name": {
+            "fa": "فلوتیکازون",
+            "en": "Fluticasone"
+          },
+          "amount": 100,
+          "unit": "mcg"
+        },
+        "salmeterol": {
+          "name": {
+            "fa": "سالمترول",
+            "en": "Salmeterol"
+          },
+          "amount": 50,
+          "unit": "mcg"
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-advair",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "diskus-250-50",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "250/50 mcg per inhalation (fluticasone/salmeterol)",
+      "concentration": {
+        "amount": 1,
+        "unit": "spray",
+        "perUnit": "actuation"
+      },
+      "components": {
+        "fluticasone": {
+          "name": {
+            "fa": "فلوتیکازون",
+            "en": "Fluticasone"
+          },
+          "amount": 250,
+          "unit": "mcg"
+        },
+        "salmeterol": {
+          "name": {
+            "fa": "سالمترول",
+            "en": "Salmeterol"
+          },
+          "amount": 50,
+          "unit": "mcg"
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-advair",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "diskus-500-50",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "500/50 mcg per inhalation (fluticasone/salmeterol)",
+      "concentration": {
+        "amount": 1,
+        "unit": "spray",
+        "perUnit": "actuation"
+      },
+      "components": {
+        "fluticasone": {
+          "name": {
+            "fa": "فلوتیکازون",
+            "en": "Fluticasone"
+          },
+          "amount": 500,
+          "unit": "mcg"
+        },
+        "salmeterol": {
+          "name": {
+            "fa": "سالمترول",
+            "en": "Salmeterol"
+          },
+          "amount": 50,
+          "unit": "mcg"
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-advair",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "asthma-12",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم — ۱۲ سال به بالا: ۱ استنشاق دو بار در روز",
+        "en": "Asthma — ≥12 y: 1 inhalation twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "spray",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-advair",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2,
+        "refs": [
+          {
+            "source": "fda-advair",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "قوت ۱۰۰/۵۰، ۲۵۰/۵۰ یا ۵۰۰/۵۰ بر اساس شدت و دوز ICS قبلی. بیش از ۱ استنشاق دو بار توصیه نمی‌شود. برای حمله حاد نیست.",
+            "en": "Strength 100/50, 250/50 or 500/50 by severity and prior ICS dose. More than 1 inhalation twice daily not recommended. Not for acute attacks."
+          },
+          "refs": [
+            {
+              "source": "fda-advair",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-advair",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asthma-4-11",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم — ۴ تا ۱۱ سال: ۱ استنشاق ۱۰۰/۵۰ دو بار",
+        "en": "Asthma — 4–11 y: 1 inhalation of 100/50 twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "spray",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-advair",
+          "section": "2.1"
+        }
+      ],
+      "allowedFormulations": [
+        "diskus-100-50"
+      ]
+    },
+    {
+      "id": "copd",
+      "disease": "copd",
+      "label": {
+        "fa": "COPD — ۱ استنشاق ۲۵۰/۵۰ دو بار",
+        "en": "COPD — 1 inhalation of 250/50 twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "spray",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-advair",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "diskus-250-50"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "درمان اولیه حمله حاد آسم یا COPD؛ حساسیت شدید به پروتئین شیر یا اجزا.",
+        "en": "Primary treatment of status asthmaticus or acute COPD episodes; severe milk-protein or component hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-advair",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-4",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۴ سال ثابت نشده.",
+        "en": "Not established under 4 years."
+      },
+      "refs": [
+        {
+          "source": "fda-advair",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "asthma-12",
+      "formulation": "diskus-250-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 2
+      }
+    },
+    {
+      "regimen": "asthma-4-11",
+      "formulation": "diskus-100-50",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 1
+      }
+    },
+    {
+      "regimen": "asthma-4-11",
+      "formulation": "diskus-250-50",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "copd",
+      "formulation": "diskus-250-50",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ]
+}

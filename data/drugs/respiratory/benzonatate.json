@@ -1,0 +1,180 @@
+{
+  "id": "benzonatate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بنزوناتات",
+    "en": "Benzonatate"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "ضدسرفه غیرمخدر",
+    "en": "Non-opioid antitussive"
+  },
+  "brands": [
+    {
+      "name": "Tessalon",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tessalon",
+    "تسالون",
+    "بنزوناتات",
+    "پرل سرفه"
+  ],
+  "formulations": [
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-benzonatate",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-200",
+      "form": "capsule",
+      "route": "oral",
+      "label": "200 mg capsule",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-benzonatate",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cough",
+      "disease": "cough",
+      "label": {
+        "fa": "سرفه — بالای ۱۰ سال: ۱۰۰ یا ۲۰۰ mg سه بار در روز",
+        "en": "Cough — >10 y: 100 or 200 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "perDoseMax": 200,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-benzonatate",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-benzonatate",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کپسول کامل بلعیده شود: مکیدن یا جویدن آن با واکنش‌های شدید (برونکواسپاسم، لارنگواسپاسم، کلاپس قلبی‌عروقی) همراه بوده است.",
+            "en": "Swallow whole: sucking or chewing the capsule has been linked to severe reactions (bronchospasm, laryngospasm, cardiovascular collapse)."
+          },
+          "refs": [
+            {
+              "source": "fda-benzonatate",
+              "section": "Warnings, Hypersensitivity"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بنزوناتات یا ترکیبات مشابه.",
+        "en": "Hypersensitivity to benzonatate or related compounds."
+      },
+      "refs": [
+        {
+          "source": "fda-benzonatate",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-10",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۰ سال ثابت نشده؛ بلع تصادفی در کودکان کشنده بوده است.",
+        "en": "Not established under 10; accidental ingestion has killed children."
+      },
+      "refs": [
+        {
+          "source": "fda-benzonatate",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cough",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "upperPerDose": 200
+      }
+    }
+  ]
+}

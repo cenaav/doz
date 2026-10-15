@@ -1,0 +1,189 @@
+{
+  "id": "mometasone-nasal",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اسپری بینی مومتازون",
+    "en": "Mometasone nasal spray"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "کورتیکواستروئید داخل بینی",
+    "en": "Intranasal corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Nasonex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nasonex",
+    "ناسونکس",
+    "مومتازون",
+    "اسپری بینی"
+  ],
+  "formulations": [
+    {
+      "id": "spray-50",
+      "form": "nasal-spray",
+      "route": "nasal",
+      "label": "50 mcg per spray",
+      "concentration": {
+        "amount": 50,
+        "unit": "mcg",
+        "perUnit": "spray"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mometasonenasal",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک — ۱۲ سال به بالا: ۲ پاف در هر سوراخ یک بار",
+        "en": "Allergic rhinitis — ≥12 y: 2 sprays per nostril once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mometasonenasal",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "مجموع دو سوراخ (۴ پاف = ۲۰۰ mcg).",
+            "en": "Total for both nostrils (4 sprays = 200 mcg)."
+          },
+          "refs": [
+            {
+              "source": "fda-mometasonenasal",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک — ۲ تا ۱۱ سال: ۱ پاف در هر سوراخ یک بار",
+        "en": "Allergic rhinitis — 2–11 y: 1 spray per nostril once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mometasonenasal",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "مجموع دو سوراخ (۲ پاف = ۱۰۰ mcg). با نظارت بزرگسال؛ کوتاه‌ترین مدت (ممکن است رشد را کند کند).",
+            "en": "Total both nostrils (2 sprays = 100 mcg). Adult supervision; shortest duration (may slow growth)."
+          },
+          "refs": [
+            {
+              "source": "fda-mometasonenasal",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال استفاده نشود.",
+        "en": "Do not use under 2 years."
+      },
+      "refs": [
+        {
+          "source": "fda-mometasonenasal",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "spray-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 4
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "spray-50",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100
+      }
+    }
+  ]
+}
