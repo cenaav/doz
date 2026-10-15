@@ -1,0 +1,363 @@
+{
+  "id": "heparin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "هپارین",
+    "en": "Heparin"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "ضدانعقاد",
+    "en": "Anticoagulant"
+  },
+  "brands": [
+    {
+      "name": "Heparin sodium",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "heparin",
+    "هپارین",
+    "آمپول هپارین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-5000",
+      "form": "injection",
+      "route": "sc",
+      "label": "5,000 USP units/mL vial",
+      "concentration": {
+        "amount": 5000,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-heparin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "proph",
+      "disease": "dvt-prophylaxis",
+      "label": {
+        "fa": "پیشگیری ترومبوز پس از جراحی — ۵۰۰۰ واحد زیرجلدی هر ۸ تا ۱۲ ساعت",
+        "en": "Post-operative prophylaxis — 5,000 units SC every 8–12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "unit",
+      "dose": {
+        "perDose": 5000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-heparin",
+          "section": "2.7"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اولین دوز ۲ ساعت پیش از جراحی؛ ۷ روز یا تا راه افتادن کامل.",
+            "en": "First dose 2 h before surgery; 7 days or until fully ambulatory."
+          },
+          "refs": [
+            {
+              "source": "fda-heparin",
+              "section": "2.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "کودکان — دوز اولیه ۷۵ تا ۱۰۰ واحد/kg وریدی بولوس",
+        "en": "Children — initial 75–100 units/kg IV bolus"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDay": 75,
+        "perKgPerDayMax": 100,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-heparin",
+          "section": "2.5"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سپس انفوزیون بر اساس aPTT. در نوزاد و شیرخوار فقط فرآورده بدون بنزیل الکل.",
+            "en": "Then infusion adjusted to aPTT. In neonates and infants use preservative-free heparin only."
+          },
+          "refs": [
+            {
+              "source": "fda-heparin",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه HIT؛ حساسیت به هپارین یا فرآورده خوکی؛ وقتی پایش انعقادی ممکن نیست (دوز کامل)؛ خونریزی کنترل‌نشده.",
+        "en": "History of HIT; hypersensitivity to heparin or pork products; full-dose use where coagulation tests cannot be done; uncontrolled bleeding."
+      },
+      "refs": [
+        {
+          "source": "fda-heparin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "اشتباه مرگبار با ویال‌های «فلاش کاتتر» یا قدرت دیگر — برچسب ویال دوباره چک شود.",
+        "en": "Fatal errors from confusing with catheter lock-flush vials or other strengths — check the vial label."
+      },
+      "refs": [
+        {
+          "source": "fda-heparin",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "proph",
+      "formulation": "vial-5000",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5000,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-5000",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1500,
+        "mlPerDose": 0.3
+      }
+    }
+  ],
+  "atc": [
+    "B01AB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00625",
+        "en": "HEPARIN SODIUM 10,000U/1ML AMP",
+        "fa": "آمپول هپارین سدیم ۱۰ ۰۰۰ واحد / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01529",
+        "en": "HEPARIN SODIUM 1000 IU/ML AMP",
+        "fa": "آمپول هپارین سدیم ۱۰۰۰ واحد بین‌المللی / میلی‌لیتر"
+      },
+      {
+        "code": "13044",
+        "en": "HEPARIN SODIUM 10000IU/ML 10ML  AMP",
+        "fa": "آمپول هپارین سدیم ۱۰۰۰۰ واحد بین‌المللی / میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "01977",
+        "en": "HEPARIN SODIUM 2,500U/ML VIAL",
+        "fa": "ویال هپارین سدیم ۲ ۵۰۰ واحد / میلی‌لیتر"
+      },
+      {
+        "code": "01978",
+        "en": "HEPARIN SODIUM 25,000U/5ML VIAL",
+        "fa": "ویال هپارین سدیم ۲۵ ۰۰۰ واحد / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00626",
+        "en": "HEPARIN SODIUM 25,000U/ML AMP",
+        "fa": "آمپول هپارین سدیم ۲۵ ۰۰۰ واحد / میلی‌لیتر"
+      },
+      {
+        "code": "00624",
+        "en": "HEPARIN SODIUM 5,000U/1ML AMP",
+        "fa": "آمپول هپارین سدیم ۵ ۰۰۰ واحد / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "13038",
+        "en": "HEPARIN SODIUM 5,000U/1ML PRE FILLED SYRINGE",
+        "fa": "سرنگ از پیش پرشده هپارین سدیم ۵ ۰۰۰ واحد / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "13454",
+        "en": "HEPARIN SODIUM 5000IU/5ML INJ",
+        "fa": "فرآورده تزریقی هپارین سدیم ۵۰۰۰ واحد بین‌المللی / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "10313",
+        "en": "HEPARIN SODIUM 60,000U 100GR AMP",
+        "fa": "آمپول هپارین سدیم ۶۰ ۰۰۰ واحد ۱۰۰ گرم"
+      },
+      {
+        "code": "51851",
+        "en": "HEPARIN SODIUM INJECTION PARENTERAL 5000 [iU]/1mL 5 mL",
+        "fa": "فرآورده تزریقی هپارین سدیم ۵۰۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۵ میلی‌لیتر"
+      },
+      {
+        "code": "52530",
+        "en": "HEPARIN SODIUM INJECTION PARENTERAL 1000 [iU]/1mL 1 mL",
+        "fa": "فرآورده تزریقی هپارین سدیم ۱۰۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      },
+      {
+        "code": "52780",
+        "en": "HEPARIN SODIUM INJECTION PARENTERAL 1000 [iU]/1mL 2 mL",
+        "fa": "فرآورده تزریقی هپارین سدیم ۱۰۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1701/Heparin",
+        "url": "https://www.darooyab.ir/G-1701/Heparin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205323",
+      "label": "ANDA205323"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=301b19bc-21c2-4a35-9d29-569b08d855c4",
+      "label": "FDA Heparin inj."
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AB01",
+      "label": "B01AB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1701/Heparin",
+      "label": "Heparin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-heparin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA205323"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on heparin sodium injection use in pregnant women to inform a drug-associated risk of major birth defects and miscarriage.",
+      "refs": [
+        {
+          "source": "fda-heparin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary If available, preservative-free heparin sodium injection is recommended when heparin therapy is needed during lactation.",
+      "refs": [
+        {
+          "source": "fda-heparin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Do not use benzyl alcohol-preserved drugs in neonates and infants.",
+      "refs": [
+        {
+          "source": "fda-heparin",
+          "section": "2.5"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… gher incidence of bleeding has been reported in patients, particularly women, over 60 years of age [see Warnings and Precautions (5.2) ] .",
+      "refs": [
+        {
+          "source": "fda-heparin",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

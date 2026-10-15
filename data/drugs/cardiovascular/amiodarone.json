@@ -1,0 +1,366 @@
+{
+  "id": "amiodarone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمیودارون",
+    "en": "Amiodarone"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "ضدآریتمی کلاس III",
+    "en": "Class III antiarrhythmic"
+  },
+  "brands": [
+    {
+      "name": "Cordarone",
+      "market": "US"
+    },
+    {
+      "name": "Pacerone",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cordarone",
+    "کوردارون",
+    "آمیودارون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet (scored)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-400",
+      "form": "tablet",
+      "route": "oral",
+      "label": "400 mg tablet (scored)",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "maint",
+      "disease": "ventricular-arrhythmia",
+      "label": {
+        "fa": "آریتمی بطنی — نگهدارنده معمول ۴۰۰ mg در روز",
+        "en": "Ventricular arrhythmia — usual maintenance 400 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع با دوز بارگذاری ۸۰۰ تا ۱۶۰۰ mg در روز (۱ تا ۳ هفته)، سپس ۶۰۰ تا ۸۰۰ mg در روز به مدت ۱ ماه، بعد نگهدارنده. فقط تحت نظر متخصص و در شروع بستری.",
+            "en": "Load 800–1,600 mg/day (1–3 weeks), then 600–800 mg/day for 1 month, then maintenance. Specialist use; start in hospital."
+          },
+          "refs": [
+            {
+              "source": "fda-amiodarone",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "شوک کاردیوژنیک؛ سندرم سینوس بیمار یا بلوک درجه ۲/۳ بدون پیس‌میکر؛ برادی‌کاردی منجر به سنکوپ؛ حساسیت (از جمله ید).",
+        "en": "Cardiogenic shock; sick sinus or 2nd/3rd-degree block without pacemaker; bradycardia causing syncope; hypersensitivity (including iodine)."
+      },
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت ریوی، آسیب کبدی و بدتر شدن آریتمی؛ فقط برای آریتمی‌های تهدیدکننده حیات.",
+        "en": "Boxed warning: pulmonary toxicity, hepatic injury and worsened arrhythmia; only for life-threatening arrhythmias."
+      },
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [
+    {
+      "text": {
+        "fa": "عملکرد تیروئید، کبد، ریه و معاینه چشم.",
+        "en": "Thyroid, liver, lung function and eye examinations."
+      },
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "with": "warfarin",
+      "text": {
+        "fa": "اثر وارفارین را زیاد می‌کند — INR پایش و دوز وارفارین کم شود.",
+        "en": "Potentiates warfarin — monitor INR and reduce warfarin."
+      },
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "7"
+        }
+      ]
+    },
+    {
+      "with": "digoxin",
+      "text": {
+        "fa": "سطح دیگوکسین را بالا می‌برد.",
+        "en": "Raises digoxin levels."
+      },
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "7"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "maint",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C01BD01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18637",
+        "en": "AMIODARONE 30MG/ML 1ML VIAL",
+        "fa": "ویال آمیودارون ۳۰ میلی‌گرم / میلی‌لیتر، ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00064",
+        "en": "AMIODARONE HCL 150MG/3ML AMP",
+        "fa": "آمپول آمیودارون هیدروکلراید ۱۵۰ میلی‌گرم / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "00063",
+        "en": "AMIODARONE HCL 200MG TAB",
+        "fa": "قرص آمیودارون هیدروکلراید ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1521/Amiodarone",
+        "url": "https://www.darooyab.ir/G-1521/Amiodarone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075389",
+      "label": "ANDA075389"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=95cef33b-c0e6-b17c-7cbb-f5c066872705",
+      "label": "FDA Amiodarone tablets"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a687009.html",
+      "label": "Amiodarone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD01",
+      "label": "C01BD01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1521/Amiodarone",
+      "label": "Amiodarone"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-amiodarone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075389"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from postmarketing reports and published case series indicate that amiodarone use in pregnant women may increase the risk for fetal adverse effects including neonatal hypo- and hyperthyroidism, neonatal bradycardia, neurodevelopmental abnormalities, preterm birth and fetal growth …",
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Breastfeeding is not recommended during treatment with amiodarone hydrochloride tablets [see Warnings and Precautions (5.6 , 5.7) ] .",
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of amiodarone hydrochloride tablets in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Based on animal fertility studies, amiodarone hydrochloride tablets may reduce female and male fertility.",
+      "refs": [
+        {
+          "source": "fda-amiodarone",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

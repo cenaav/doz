@@ -1,0 +1,308 @@
+{
+  "id": "isosorbide-mononitrate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایزوسورباید مونونیترات",
+    "en": "Isosorbide mononitrate"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "نیترات",
+    "en": "Nitrate"
+  },
+  "brands": [
+    {
+      "name": "Monoket",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ismn",
+    "monoket",
+    "ایزوسورباید مونو",
+    "مونونیترات"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (scored)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ismn",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (scored)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ismn",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "angina",
+      "disease": "angina",
+      "label": {
+        "fa": "پیشگیری از آنژین — ۲۰ mg دو بار با فاصله ۷ ساعت",
+        "en": "Angina prevention — 20 mg twice daily, 7 h apart"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ismn",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فاصله ۷ ساعته برای جلوگیری از تحمل نیترات. در جثه کوچک شروع ۵ mg و تا روز ۲–۳ به ۱۰ mg.",
+            "en": "The 7-h gap prevents nitrate tolerance. Small stature: start 5 mg, increase to at least 10 mg by day 2–3."
+          },
+          "refs": [
+            {
+              "source": "fda-ismn",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ایزوسورباید مونونیترات.",
+        "en": "Allergy to isosorbide mononitrate."
+      },
+      "refs": [
+        {
+          "source": "fda-ismn",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "pde5",
+      "text": {
+        "fa": "با سیلدنافیل، تادالافیل، واردنافیل و سایر مهارکننده‌های PDE5: افت فشار شدید.",
+        "en": "With sildenafil, tadalafil, vardenafil and other PDE5 inhibitors: severe hypotension."
+      },
+      "refs": [
+        {
+          "source": "fda-ismn",
+          "section": "Precautions — Drug Interactions"
+        },
+        {
+          "source": "fda-verapamil",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "angina",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C01DA14"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "19061",
+        "en": "ISOSORBIDE MONONITRAT 10MG TAB",
+        "fa": "قرص ایزوسورباید مونونیترات ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "19060",
+        "en": "ISOSORBIDE MONONITRAT 20MG TAB",
+        "fa": "قرص ایزوسورباید مونونیترات ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "19064",
+        "en": "ISOSORBIDE MONONITRAT 40MG TAB",
+        "fa": "قرص ایزوسورباید مونونیترات ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "10014",
+        "en": "ISOSORBIDE MONONITRATE SR 50MG CAP",
+        "fa": "کپسول آهسته‌رهش ایزوسورباید مونونیترات ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01560",
+        "en": "ISOSORBIDE MONONITRATE SR 60MG TAB",
+        "fa": "قرص آهسته‌رهش ایزوسورباید مونونیترات ۶۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1722/Isosorbide-Mononitrate",
+        "url": "https://www.darooyab.ir/G-1722/Isosorbide-Mononitrate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075037",
+      "label": "ANDA075037"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d739bf3-0672-4504-9064-b39d6b200b47",
+      "label": "FDA ISMN (Genus)"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e19ab8d8-dae5-489d-9805-7e7407bea06d",
+      "label": "FDA Verapamil ER"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682348.html",
+      "label": "Isosorbide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA14",
+      "label": "C01DA14"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1722/Isosorbide-Mononitrate",
+      "label": "Isosorbide-Mononitrate"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ismn",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075037"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, isosorbide mononitrate should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-ismn",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when isosorbide mononitrate is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-ismn",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of isosorbide mononitrate in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-ismn",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-ismn",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

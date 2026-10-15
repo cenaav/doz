@@ -1,0 +1,309 @@
+{
+  "id": "verapamil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "وراپامیل (آهسته‌رهش)",
+    "en": "Verapamil (extended-release)"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مسدودکننده کانال کلسیم",
+    "en": "Calcium channel blocker"
+  },
+  "brands": [
+    {
+      "name": "Isoptin SR",
+      "market": "US"
+    },
+    {
+      "name": "Calan SR",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "isoptin",
+    "ایزوپتین",
+    "وراپامیل",
+    "calan"
+  ],
+  "formulations": [
+    {
+      "id": "tab-120",
+      "form": "tablet",
+      "route": "oral",
+      "label": "120 mg tablet",
+      "concentration": {
+        "amount": 120,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-verapamil",
+          "section": "Description"
+        }
+      ]
+    },
+    {
+      "id": "tab-180",
+      "form": "tablet",
+      "route": "oral",
+      "label": "180 mg tablet",
+      "concentration": {
+        "amount": 180,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-verapamil",
+          "section": "Description"
+        }
+      ]
+    },
+    {
+      "id": "tab-240",
+      "form": "tablet",
+      "route": "oral",
+      "label": "240 mg tablet (scored)",
+      "concentration": {
+        "amount": 240,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-verapamil",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۱۸۰ mg صبح",
+        "en": "Hypertension — 180 mg in the morning"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 180,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-verapamil",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 480,
+        "refs": [
+          {
+            "source": "fda-verapamil",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در سالمند یا جثه کوچک ۱۲۰ mg. افزایش مرحله‌ای: ۲۴۰ صبح ← ۱۸۰ صبح + ۱۸۰ عصر یا ۲۴۰ + ۱۲۰ ← ۲۴۰ هر ۱۲ ساعت. قرص آهسته‌رهش نشکند جز در خط شکست.",
+            "en": "Elderly or small people 120 mg. Titrate: 240 mg morning → 180 morning + 180 evening or 240 + 120 → 240 every 12 h. Do not crush ER tablets."
+          },
+          "refs": [
+            {
+              "source": "fda-verapamil",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "اختلال شدید عملکرد بطن چپ؛ افت فشار (سیستولیک زیر ۹۰) یا شوک؛ سندرم سینوس بیمار یا بلوک درجه ۲ و ۳ بدون پیس‌میکر؛ فیبریلاسیون دهلیزی با راه فرعی (WPW).",
+        "en": "Severe LV dysfunction; hypotension (SBP <90) or shock; sick sinus or 2nd/3rd-degree AV block without pacemaker; AF/flutter with accessory pathway (WPW)."
+      },
+      "refs": [
+        {
+          "source": "fda-verapamil",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "beta-blockers",
+      "text": {
+        "fa": "با بتابلاکرها خطر برادی‌کاردی، بلوک و نارسایی قلب.",
+        "en": "With beta-blockers: bradycardia, AV block and heart failure."
+      },
+      "refs": [
+        {
+          "source": "fda-verapamil",
+          "section": "Precautions — Drug Interactions"
+        }
+      ]
+    },
+    {
+      "with": "statins",
+      "text": {
+        "fa": "سطح سیمواستاتین/لوواستاتین را بالا می‌برد.",
+        "en": "Raises simvastatin/lovastatin levels."
+      },
+      "refs": [
+        {
+          "source": "fda-verapamil",
+          "section": "Precautions — Drug Interactions"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-180",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 180,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C08DA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01279",
+        "en": "VERAPAMIL HCL 40MG TAB",
+        "fa": "قرص وراپامیل هیدروکلراید ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "01280",
+        "en": "VERAPAMIL HCL 5MG/2ML AMP",
+        "fa": "آمپول وراپامیل هیدروکلراید ۵ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "01706",
+        "en": "VERAPAMIL HCL 80MG TAB",
+        "fa": "قرص وراپامیل هیدروکلراید ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "06755",
+        "en": "VERAPAMIL HCL SR 120MG TAB",
+        "fa": "قرص آهسته‌رهش وراپامیل هیدروکلراید ۱۲۰ میلی‌گرم"
+      },
+      {
+        "code": "01707",
+        "en": "VERAPAMIL HCL SR 180MG TAB",
+        "fa": "قرص آهسته‌رهش وراپامیل هیدروکلراید ۱۸۰ میلی‌گرم"
+      },
+      {
+        "code": "01278",
+        "en": "VERAPAMIL HCL SR 240MG TAB",
+        "fa": "قرص آهسته‌رهش وراپامیل هیدروکلراید ۲۴۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1930/Verapamil",
+        "url": "https://www.darooyab.ir/G-1930/Verapamil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219252",
+      "label": "ANDA219252"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e19ab8d8-dae5-489d-9805-7e7407bea06d",
+      "label": "FDA Verapamil ER"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a684030.html",
+      "label": "Verapamil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08DA01",
+      "label": "C08DA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1930/Verapamil",
+      "label": "Verapamil"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-verapamil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA219252"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-verapamil",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    }
+  }
+}

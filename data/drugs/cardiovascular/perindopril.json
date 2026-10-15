@@ -1,0 +1,364 @@
+{
+  "id": "perindopril",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پریندوپریل",
+    "en": "Perindopril"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مهارکننده ACE",
+    "en": "ACE inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Aceon",
+      "market": "US"
+    },
+    {
+      "name": "Coversyl",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "coversyl",
+    "aceon",
+    "کاورسیل",
+    "پریندوپریل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet (scored)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-4",
+      "form": "tablet",
+      "route": "oral",
+      "label": "4 mg tablet (scored)",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-8",
+      "form": "tablet",
+      "route": "oral",
+      "label": "8 mg tablet (scored)",
+      "concentration": {
+        "amount": 8,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — شروع ۴ mg روزانه",
+        "en": "Hypertension — start 4 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 16,
+        "refs": [
+          {
+            "source": "fda-perindopril",
+            "section": "2.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cad",
+      "disease": "angina",
+      "label": {
+        "fa": "بیماری عروق کرونر پایدار — ۴ mg روزانه ۲ هفته، سپس ۸ mg",
+        "en": "Stable coronary disease — 4 mg daily for 2 weeks, then 8 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بالای ۷۰ سال: ۲ mg هفته اول، ۴ mg هفته دوم، سپس ۸ mg.",
+            "en": "Over 70: 2 mg week 1, 4 mg week 2, then 8 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-perindopril",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت یا آنژیوادم با مهارکننده ACE؛ آنژیوادم ارثی یا ایدیوپاتیک؛ هم‌زمان با آلیسکیرن در دیابت.",
+        "en": "Hypersensitivity or angioedema with any ACE inhibitor; hereditary/idiopathic angioedema; with aliskiren in diabetes."
+      },
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — با تشخیص بارداری قطع شود.",
+        "en": "Boxed warning: fetal toxicity — stop when pregnancy is detected."
+      },
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-4",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 4,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "cad",
+      "formulation": "tab-4",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 4
+      }
+    }
+  ],
+  "atc": [
+    "C09AA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21099",
+        "en": "PERINDOPRIL 2MG TAB",
+        "fa": "قرص پریندوپریل ۲ میلی‌گرم"
+      },
+      {
+        "code": "08345",
+        "en": "PERINDOPRIL 4MG TAB",
+        "fa": "قرص پریندوپریل ۴ میلی‌گرم"
+      },
+      {
+        "code": "08462",
+        "en": "PERINDOPRIL 8MG TAB",
+        "fa": "قرص پریندوپریل ۸ میلی‌گرم"
+      },
+      {
+        "code": "14384",
+        "en": "PERINDOPRIL ARGININE 10MG TAB",
+        "fa": "قرص پریندوپریل آرژینین ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1827/Perindopril",
+        "url": "https://www.darooyab.ir/G-1827/Perindopril"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=079070",
+      "label": "ANDA079070"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=87768fbf-7c63-47da-8925-0316f343d6ef",
+      "label": "FDA Perindopril"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a602017.html",
+      "label": "Perindopril"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA04",
+      "label": "C09AA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1827/Perindopril",
+      "label": "Perindopril"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-perindopril",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA079070"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "WARNING: FETAL TOXICITY See full prescribing information for complete boxed warning.",
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are secreted in human milk, caution should be exercised when perindopril erbumine is given to nursing mothers.",
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of perindopril erbumine in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Monitor for dizziness because of potential for falls.",
+      "refs": [
+        {
+          "source": "fda-perindopril",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

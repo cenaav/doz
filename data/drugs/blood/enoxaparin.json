@@ -1,0 +1,395 @@
+{
+  "id": "enoxaparin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "انوکساپارین",
+    "en": "Enoxaparin"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "هپارین با وزن مولکولی کم",
+    "en": "Low-molecular-weight heparin"
+  },
+  "brands": [
+    {
+      "name": "Lovenox",
+      "market": "US"
+    },
+    {
+      "name": "Clexane",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "clexane",
+    "lovenox",
+    "کلکسان",
+    "انوکساپارین"
+  ],
+  "formulations": [
+    {
+      "id": "syr-40",
+      "form": "injection",
+      "route": "sc",
+      "label": "40 mg/0.4 mL prefilled syringe (100 mg/mL)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "syr-60",
+      "form": "injection",
+      "route": "sc",
+      "label": "60 mg/0.6 mL prefilled syringe (100 mg/mL)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "syr-80",
+      "form": "injection",
+      "route": "sc",
+      "label": "80 mg/0.8 mL prefilled syringe (100 mg/mL)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "proph",
+      "disease": "dvt-prophylaxis",
+      "label": {
+        "fa": "پیشگیری در بیمار بستری بی‌تحرک — ۴۰ mg زیرجلدی روزانه",
+        "en": "Prophylaxis in immobile medical patients — 40 mg SC daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 6,
+        "max": 11
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کلیرانس کراتینین زیر ۳۰: ۳۰ mg روزانه.",
+            "en": "CrCl <30 mL/min: 30 mg once daily."
+          },
+          "refs": [
+            {
+              "source": "fda-enoxaparin",
+              "section": "2.3, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dvt",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "درمان DVT (سرپایی) — ۱ mg/kg زیرجلدی هر ۱۲ ساعت",
+        "en": "DVT treatment (outpatient) — 1 mg/kg SC every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هم‌زمان با وارفارین تا INR ۲ تا ۳ (حداقل ۵ روز). کلیرانس کراتینین زیر ۳۰: ۱ mg/kg یک بار در روز.",
+            "en": "With warfarin until INR 2–3 (at least 5 days). CrCl <30 mL/min: 1 mg/kg once daily."
+          },
+          "refs": [
+            {
+              "source": "fda-enoxaparin",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-enoxaparin",
+              "section": "2.3, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی فعال عمده؛ سابقه HIT در ۱۰۰ روز اخیر؛ حساسیت به انوکساپارین، هپارین یا فرآورده خوکی.",
+        "en": "Active major bleeding; HIT within the past 100 days; hypersensitivity to enoxaparin, heparin or pork products."
+      },
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: هماتوم نخاعی/اپیدورال با بی‌حسی نخاعی یا پونکسیون — خطر فلج.",
+        "en": "Boxed warning: spinal/epidural haematoma with neuraxial anaesthesia or puncture — risk of paralysis."
+      },
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "proph",
+      "formulation": "syr-40",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 0.4
+      }
+    },
+    {
+      "regimen": "dvt",
+      "formulation": "syr-80",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 70,
+        "mlPerDose": 0.7
+      }
+    }
+  ],
+  "atc": [
+    "B01AB05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17725",
+        "en": "ENOXAPARIN 100MG/ML (10,000 U) 1ML AMP",
+        "fa": "آمپول انوکساپارین ۱۰۰ میلی‌گرم / میلی‌لیتر (۱۰۰۰۰ واحد) ۱ میلی‌لیتر"
+      },
+      {
+        "code": "02295",
+        "en": "ENOXAPARIN 100MG/ML (10,000 U) 1ML SYRINGE",
+        "fa": "سرنگ انوکساپارین ۱۰۰ میلی‌گرم / میلی‌لیتر (۱۰۰۰۰ واحد) ۱ میلی‌لیتر"
+      },
+      {
+        "code": "02294",
+        "en": "ENOXAPARIN 100MG/ML (2,000 U) 0.2ML SYRINGE",
+        "fa": "سرنگ انوکساپارین ۱۰۰ میلی‌گرم / میلی‌لیتر (۲۰۰۰ واحد) ۰٫۲ میلی‌لیتر"
+      },
+      {
+        "code": "22180",
+        "en": "ENOXAPARIN 100MG/ML (4,000 U) 0.4ML AMP",
+        "fa": "آمپول انوکساپارین ۱۰۰ میلی‌گرم / میلی‌لیتر (۴۰۰۰ واحد) ۰٫۴ میلی‌لیتر"
+      },
+      {
+        "code": "02043",
+        "en": "ENOXAPARIN 100MG/ML (4,000 U) 0.4ML SYRINGE",
+        "fa": "سرنگ انوکساپارین ۱۰۰ میلی‌گرم / میلی‌لیتر (۴۰۰۰ واحد) ۰٫۴ میلی‌لیتر"
+      },
+      {
+        "code": "17723",
+        "en": "ENOXAPARIN 100MG/ML (6,000 U) 0.6ML AMP",
+        "fa": "آمپول انوکساپارین ۱۰۰ میلی‌گرم / میلی‌لیتر (۶۰۰۰ واحد) ۰٫۶ میلی‌لیتر"
+      },
+      {
+        "code": "02292",
+        "en": "ENOXAPARIN 100MG/ML (6,000 U) 0.6ML SYRINGE",
+        "fa": "سرنگ انوکساپارین ۱۰۰ میلی‌گرم / میلی‌لیتر (۶۰۰۰ واحد) ۰٫۶ میلی‌لیتر"
+      },
+      {
+        "code": "02293",
+        "en": "ENOXAPARIN 100MG/ML (8,000 U) 0.8ML SYRINGE",
+        "fa": "سرنگ انوکساپارین ۱۰۰ میلی‌گرم / میلی‌لیتر (۸۰۰۰ واحد) ۰٫۸ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1661/Enoxaparin-Sodium",
+        "url": "https://www.darooyab.ir/G-1661/Enoxaparin-Sodium"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076684",
+      "label": "ANDA076684"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e2875df-0f0c-46ec-990f-69108f383f58",
+      "label": "FDA Enoxaparin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601210.html",
+      "label": "Enoxaparin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AB05",
+      "label": "B01AB05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1661/Enoxaparin-Sodium",
+      "label": "Enoxaparin-Sodium"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-enoxaparin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076684"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Placental transfer of enoxaparin was observed in the animal studies.",
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "In lactating rats, the passage of enoxaparin or its metabolites in the milk is very limited.",
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of Enoxaparin Sodium Injection in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Monitoring of geriatric patients with low body weight (<45 kg) and those predisposed to decreased renal function should be considered [ see Warnings and Precautions ( 2.6 ) and Clinical Pharmacology ( 12.3 ) ].",
+      "refs": [
+        {
+          "source": "fda-enoxaparin",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

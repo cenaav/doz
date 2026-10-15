@@ -1,0 +1,253 @@
+{
+  "id": "gemfibrozil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "جم‌فیبروزیل",
+    "en": "Gemfibrozil"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "فیبرات",
+    "en": "Fibrate"
+  },
+  "brands": [
+    {
+      "name": "Lopid",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lopid",
+    "لوپید",
+    "جمفیبروزیل",
+    "تری گلیسرید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-600",
+      "form": "tablet",
+      "route": "oral",
+      "label": "600 mg tablet (scored)",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-gemfibrozil",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "tg",
+      "disease": "hypertriglyceridemia",
+      "label": {
+        "fa": "تری‌گلیسرید بالا — ۶۰۰ mg دو بار، ۳۰ دقیقه پیش از صبحانه و شام",
+        "en": "High triglycerides — 600 mg twice daily, 30 min before breakfast and dinner"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-gemfibrozil",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "اختلال کبد یا کلیه شدید (از جمله سیروز صفراوی)؛ بیماری کیسه صفرا؛ حساسیت؛ هم‌زمان با سیمواستاتین، رپاگلینید یا سلکسی‌پاگ.",
+        "en": "Hepatic or severe renal dysfunction (incl. primary biliary cirrhosis); gallbladder disease; hypersensitivity; with simvastatin, repaglinide or selexipag."
+      },
+      "refs": [
+        {
+          "source": "fda-gemfibrozil",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "statins",
+      "text": {
+        "fa": "با استاتین‌ها خطر میوپاتی و رابدومیولیز.",
+        "en": "With statins: myopathy and rhabdomyolysis."
+      },
+      "refs": [
+        {
+          "source": "fda-gemfibrozil",
+          "section": "Warnings"
+        }
+      ]
+    },
+    {
+      "with": "warfarin",
+      "text": {
+        "fa": "اثر وارفارین را زیاد می‌کند.",
+        "en": "Potentiates warfarin."
+      },
+      "refs": [
+        {
+          "source": "fda-gemfibrozil",
+          "section": "Precautions"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "tg",
+      "formulation": "tab-600",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 85
+      },
+      "expect": {
+        "perDose": 600,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C10AB04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00584",
+        "en": "GEMFIBROZIL 300MG CAP",
+        "fa": "کپسول جم‌فیبروزیل ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01520",
+        "en": "GEMFIBROZIL 450MG TAB",
+        "fa": "قرص جم‌فیبروزیل ۴۵۰ میلی‌گرم"
+      },
+      {
+        "code": "12739",
+        "en": "GEMFIBROZIL 600MG  TAB",
+        "fa": "قرص جم‌فیبروزیل ۶۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1692/Gemfibrozil",
+        "url": "https://www.darooyab.ir/G-1692/Gemfibrozil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=079072",
+      "label": "ANDA079072"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=75cac02c-56e3-4dfe-b1e2-4ce166b28833",
+      "label": "FDA Gemfibrozil"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a686002.html",
+      "label": "Gemfibrozil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AB04",
+      "label": "C10AB04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1692/Gemfibrozil",
+      "label": "Gemfibrozil"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-gemfibrozil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA079072"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Gemfibrozil should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-gemfibrozil",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for tumorigenicity shown for gemfibrozil in animal studies, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother. 7.",
+      "refs": [
+        {
+          "source": "fda-gemfibrozil",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and efficacy in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-gemfibrozil",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    }
+  }
+}

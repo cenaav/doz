@@ -1,0 +1,340 @@
+{
+  "id": "methyldopa",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متیل‌دوپا",
+    "en": "Methyldopa"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آگونیست آلفا-۲ مرکزی",
+    "en": "Central alpha-2 agonist"
+  },
+  "brands": [
+    {
+      "name": "Aldomet",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aldomet",
+    "آلدومت",
+    "متیل دوپا",
+    "فشار بارداری"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-methyldopa",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-methyldopa",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — شروع ۲۵۰ mg دو تا سه بار در روز",
+        "en": "Hypertension — start 250 mg two to three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-methyldopa",
+          "section": "Dosage and Administration — Adults"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 3000,
+        "refs": [
+          {
+            "source": "fda-methyldopa",
+            "section": "Dosage and Administration — Maintenance"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده ۵۰۰ mg تا ۲ گرم در ۲ تا ۴ دوز؛ حداکثر ۳ گرم در روز.",
+            "en": "Maintenance 500 mg–2 g in 2–4 doses; max 3 g/day."
+          },
+          "refs": [
+            {
+              "source": "fda-methyldopa",
+              "section": "Dosage and Administration — Maintenance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "hypertension",
+      "label": {
+        "fa": "کودکان — ۱۰ mg/kg/روز در ۲ تا ۴ دوز",
+        "en": "Children — 10 mg/kg/day in 2–4 doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-methyldopa",
+          "section": "Dosage and Administration — Pediatric Patients"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 65,
+        "maxPerDay": 3000,
+        "refs": [
+          {
+            "source": "fda-methyldopa",
+            "section": "Dosage and Administration — Pediatric Patients"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بیماری فعال کبد (هپاتیت حاد، سیروز فعال)؛ اختلال کبدی قبلی با متیل‌دوپا؛ مصرف مهارکننده MAO؛ حساسیت.",
+        "en": "Active liver disease (acute hepatitis, active cirrhosis); previous methyldopa liver disorder; MAO inhibitors; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-methyldopa",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [
+    {
+      "text": {
+        "fa": "آزمون کومبس مثبت و کم‌خونی همولیتیک؛ آزمایش کبد در هفته‌های اول.",
+        "en": "Positive Coombs test and haemolytic anaemia; liver tests in the first weeks."
+      },
+      "refs": [
+        {
+          "source": "fda-methyldopa",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C02AB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11408",
+        "en": "METHYL DOPA 500MG TAB",
+        "fa": "قرص متیل دوپا ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00832",
+        "en": "METHYLDOPA 250MG TAB",
+        "fa": "قرص متیل‌دوپا ۲۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1761/Methyldopa",
+        "url": "https://www.darooyab.ir/G-1761/Methyldopa"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=070076",
+      "label": "ANDA070076"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e22e1d8-04ec-4b67-92ea-b09c706f2703",
+      "label": "FDA Methyldopa"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682242.html",
+      "label": "Methyldopa"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02AB01",
+      "label": "C02AB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1761/Methyldopa",
+      "label": "Methyldopa"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-methyldopa",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA070076"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, methyldopa should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-methyldopa",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Therefore, caution should be exercised when methyldopa is given to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-methyldopa",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "There are no well-controlled clinical trials in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-methyldopa",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-methyldopa",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

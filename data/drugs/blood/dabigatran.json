@@ -1,0 +1,360 @@
+{
+  "id": "dabigatran",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دابیگاتران",
+    "en": "Dabigatran"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مهارکننده مستقیم ترومبین",
+    "en": "Direct thrombin inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Pradaxa",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pradaxa",
+    "پرادکسا",
+    "دابیگاتران"
+  ],
+  "formulations": [
+    {
+      "id": "cap-75",
+      "form": "capsule",
+      "route": "oral",
+      "label": "75 mg capsule",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-110",
+      "form": "capsule",
+      "route": "oral",
+      "label": "110 mg capsule",
+      "concentration": {
+        "amount": 110,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-150",
+      "form": "capsule",
+      "route": "oral",
+      "label": "150 mg capsule",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "af",
+      "disease": "atrial-fibrillation",
+      "label": {
+        "fa": "فیبریلاسیون دهلیزی غیردریچه‌ای — ۱۵۰ mg دو بار در روز",
+        "en": "Non-valvular AF — 150 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 150,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-150"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کلیرانس کراتینین ۱۵ تا ۳۰: ۷۵ mg دو بار؛ زیر ۱۵ یا دیالیز: توصیه‌ای نیست. کپسول باز یا جویده نشود.",
+            "en": "CrCl 15–30: 75 mg twice daily; <15 or dialysis: no recommendation. Do not open or chew capsules."
+          },
+          "refs": [
+            {
+              "source": "fda-dabigatran",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vte",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "درمان DVT/PE — ۱۵۰ mg دو بار در روز پس از ۵ تا ۱۰ روز ضدانعقاد تزریقی",
+        "en": "DVT/PE treatment — 150 mg twice daily after 5–10 days of parenteral anticoagulation"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 150,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-150"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی فعال؛ دریچه مصنوعی مکانیکی قلب؛ حساسیت شدید.",
+        "en": "Active bleeding; mechanical prosthetic heart valve; serious hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: قطع زودهنگام خطر حوادث ترومبوتیک را بالا می‌برد؛ هماتوم نخاعی/اپیدورال.",
+        "en": "Boxed warning: premature discontinuation increases thrombotic events; spinal/epidural haematoma."
+      },
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "af",
+      "formulation": "cap-150",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "vte",
+      "formulation": "cap-150",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 150
+      }
+    }
+  ],
+  "atc": [
+    "B01AE07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13583",
+        "en": "DABIGATRAN 110MG CAP",
+        "fa": "کپسول دابیگاتران ۱۱۰ میلی‌گرم"
+      },
+      {
+        "code": "19438",
+        "en": "DABIGATRAN 150MG CAP",
+        "fa": "کپسول دابیگاتران ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "13584",
+        "en": "DABIGATRAN 75MG CAP",
+        "fa": "کپسول دابیگاتران ۷۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4711/Dabigatran",
+        "url": "https://www.darooyab.ir/G-4711/Dabigatran"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208040",
+      "label": "ANDA208040"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a8ec82a-c367-40dc-9302-e1896fcb05ea",
+      "label": "FDA Dabigatran"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AE07",
+      "label": "B01AE07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4711/Dabigatran",
+      "label": "Dabigatran"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-dabigatran",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA208040"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The limited available data on Dabigatran Etexilate Capsules use in pregnant women are insufficient to determine drug-associated risks for adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Breastfeeding is not recommended during treatment with Dabigatran Etexilate Capsules.",
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Dabigatran Etexilate Capsules for the treatment and the reduction in risk of recurrence of venous thromboembolism have been established in pediatric patients 8 to less than 18 years of age.",
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The risk of stroke and bleeding increases with age, but the risk-benefit profile is favorable in all age groups [see Warnings and Precautions (5), Adverse Reactions (6.1), and Clinical Studies (14.1)] .",
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Females of reproductive potential requiring anticoagulation should discuss pregnancy planning with their physician.",
+      "refs": [
+        {
+          "source": "fda-dabigatran",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "id": "candesartan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کاندسارتان",
+    "en": "Candesartan"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مسدودکننده گیرنده آنژیوتانسین (ARB)",
+    "en": "Angiotensin II receptor blocker"
+  },
+  "brands": [
+    {
+      "name": "Atacand",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "atacand",
+    "آتاکاند",
+    "کاندسارتان"
+  ],
+  "formulations": [
+    {
+      "id": "tab-4",
+      "form": "tablet",
+      "route": "oral",
+      "label": "4 mg tablet (scored)",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-8",
+      "form": "tablet",
+      "route": "oral",
+      "label": "8 mg tablet",
+      "concentration": {
+        "amount": 8,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-16",
+      "form": "tablet",
+      "route": "oral",
+      "label": "16 mg tablet",
+      "concentration": {
+        "amount": 16,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-32",
+      "form": "tablet",
+      "route": "oral",
+      "label": "32 mg tablet",
+      "concentration": {
+        "amount": 32,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — شروع ۱۶ mg روزانه",
+        "en": "Hypertension — start 16 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 16,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 32,
+        "refs": [
+          {
+            "source": "fda-candesartan",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "محدوده ۸ تا ۳۲ mg در روز.",
+            "en": "Range 8–32 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-candesartan",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-lt50",
+      "disease": "hypertension",
+      "label": {
+        "fa": "کودک ۶ تا زیر ۱۷ سال، زیر ۵۰ kg — شروع ۴ تا ۸ mg",
+        "en": "Child 6 to <17 y, <50 kg — start 4–8 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        },
+        "maxWeightKg": 49.99
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4,
+        "perDoseMax": 8,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 16,
+        "refs": [
+          {
+            "source": "fda-candesartan",
+            "section": "2.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "child-gt50",
+      "disease": "hypertension",
+      "label": {
+        "fa": "کودک ۶ تا زیر ۱۷ سال، بالای ۵۰ kg — شروع ۸ تا ۱۶ mg",
+        "en": "Child 6 to <17 y, >50 kg — start 8–16 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        },
+        "minWeightKg": 50
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 8,
+        "perDoseMax": 16,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 32,
+        "refs": [
+          {
+            "source": "fda-candesartan",
+            "section": "2.2"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کاندسارتان.",
+        "en": "Hypersensitivity to candesartan."
+      },
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "lt1",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱ سال نباید بگیرد.",
+        "en": "Children under 1 year must not receive it."
+      },
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — با تشخیص بارداری قطع شود.",
+        "en": "Boxed warning: fetal toxicity — stop as soon as pregnancy is detected."
+      },
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-16",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 16,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child-lt50",
+      "formulation": "tab-4",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 4,
+        "upperPerDose": 8
+      }
+    },
+    {
+      "regimen": "child-gt50",
+      "formulation": "tab-8",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 8,
+        "upperPerDose": 16
+      }
+    }
+  ],
+  "atc": [
+    "C09CA06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08854",
+        "en": "CANDESARTAN 16MG TAB",
+        "fa": "قرص کاندسارتان ۱۶ میلی‌گرم"
+      },
+      {
+        "code": "08851",
+        "en": "CANDESARTAN 2MG TAB",
+        "fa": "قرص کاندسارتان ۲ میلی‌گرم"
+      },
+      {
+        "code": "08855",
+        "en": "CANDESARTAN 32MG TAB",
+        "fa": "قرص کاندسارتان ۳۲ میلی‌گرم"
+      },
+      {
+        "code": "08852",
+        "en": "CANDESARTAN 4MG TAB",
+        "fa": "قرص کاندسارتان ۴ میلی‌گرم"
+      },
+      {
+        "code": "08853",
+        "en": "CANDESARTAN 8MG TAB",
+        "fa": "قرص کاندسارتان ۸ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1578/Candesartan",
+        "url": "https://www.darooyab.ir/G-1578/Candesartan"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=091390",
+      "label": "ANDA091390"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9da86c48-5911-4512-8c71-eca4a6418cf6",
+      "label": "FDA Candesartan"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601033.html",
+      "label": "Candesartan"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA06",
+      "label": "C09CA06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1578/Candesartan",
+      "label": "Candesartan"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-candesartan",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA091390"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "WARNING: FETAL TOXICITY See Full Prescribing Information for complete boxed warning.",
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants, advise a nursing woman that breastfeeding is not recommended during treatment with candesartan cilexetil [see Warnings and Precautions ( 5.2 )] .",
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The antihypertensive effects of candesartan cilexetil were evaluated in hypertensive children 1 to < 17 years of age in randomized, double-blind clinical studies [see Clinical Studies ( 14.1 )].",
+      "refs": [
+        {
+          "source": "fda-candesartan",
+          "section": "8.4"
+        }
+      ]
+    }
+  }
+}
