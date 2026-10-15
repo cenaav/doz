@@ -1,0 +1,240 @@
+{
+  "id": "chlorphenamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلرفنیرامین",
+    "en": "Chlorphenamine (chlorpheniramine)"
+  },
+  "category": "antihistamines",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل اول",
+    "en": "First-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Piriton",
+      "market": "GB"
+    },
+    {
+      "name": "Chlor-Trimeton",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "chlorpheniramine",
+    "کلرفنیرامین",
+    "piriton"
+  ],
+  "formulations": [
+    {
+      "id": "syr-2-5",
+      "form": "syrup",
+      "route": "oral",
+      "label": "2 mg / 5 mL syrup",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergy",
+      "disease": "allergic-conditions",
+      "label": {
+        "fa": "حالات آلرژیک و خارش آبله‌مرغان",
+        "en": "Allergic conditions and chickenpox itch"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "intervalHours": 4,
+        "bands": [
+          {
+            "minAge": {
+              "value": 1,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "perDose": 1,
+            "dosesPerDay": 2
+          },
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 1,
+            "dosesPerDay": 6
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 2,
+            "dosesPerDay": 6
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 4,
+            "dosesPerDay": 6
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.2"
+        },
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ تا ۶ ساعت (۱ تا ۲ سال: دو بار در روز). حداکثر روزانه: ۱–۲ سال ۲ mg؛ ۲–۶ سال ۶ mg؛ ۶–۱۲ سال ۱۲ mg؛ ۱۲ سال به بالا ۲۴ mg. بیش از ۲ هفته بدون مشورت ادامه نیابد. زیر ۱ سال توصیه نمی‌شود.",
+            "en": "Every 4–6 h (1–2 years: twice daily). Daily max: 1–2 y 2 mg; 2–6 y 6 mg; 6–12 y 12 mg; ≥12 y 24 mg. Not continuously >2 weeks without advice. Not recommended under 1 year."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-piriton",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-1",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱ سال توصیه نمی‌شود.",
+        "en": "Not recommended for children below 1 year."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.2"
+        }
+      ]
+    },
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف MAOI در ۱۴ روز گذشته؛ حساسیت به آنتی‌هیستامین‌ها.",
+        "en": "MAOI treatment within the last 14 days; hypersensitivity to antihistamines."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "احتیاط در صرع، گلوکوم، هیپرتروفی پروستات، آسم/برونشیت، نارسایی کبد یا کلیه؛ تحریک متناقض در کودکان.",
+        "en": "Caution in epilepsy, glaucoma, prostatic hypertrophy, asthma/bronchitis, hepatic or renal impairment; paradoxical excitation in children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergy",
+      "formulation": "syr-2-5",
+      "input": {
+        "ageMonths": 18,
+        "weightKg": 11
+      },
+      "expect": {
+        "perDose": 1,
+        "mlPerDose": 2.5,
+        "perDay": 2
+      }
+    },
+    {
+      "regimen": "allergy",
+      "formulation": "syr-2-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 2,
+        "mlPerDose": 5,
+        "perDay": 12
+      }
+    },
+    {
+      "regimen": "allergy",
+      "formulation": "syr-2-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4,
+        "perDay": 24
+      }
+    }
+  ]
+}

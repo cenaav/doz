@@ -1,0 +1,247 @@
+{
+  "id": "desloratadine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دسلوراتادین",
+    "en": "Desloratadine"
+  },
+  "category": "antihistamines",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل دوم",
+    "en": "Second-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Clarinex",
+      "market": "US"
+    },
+    {
+      "name": "Neoclarityn",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "دسلوراتادين",
+    "aerius",
+    "آئریوس"
+  ],
+  "formulations": [
+    {
+      "id": "sol-0-5-1",
+      "form": "solution",
+      "route": "oral",
+      "label": "0.5 mg / mL oral solution",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "2"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-desloratadine-tab",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergic-rhinitis",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک و کهیر",
+        "en": "Allergic rhinitis and urticaria"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 1,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 1.25,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 2.5,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 5,
+            "dosesPerDay": 1,
+            "refs": [
+              {
+                "source": "fda-desloratadine-tab",
+                "section": "2.1"
+              }
+            ]
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "4.2"
+        },
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "4.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بیشتر رینیت‌های زیر ۲ سال عفونی است و برای رینیت عفونی داده‌ای نیست. بی‌خطری زیر ۱ سال ثابت نشده.",
+            "en": "Most rhinitis under 2 years is infectious; no data for infectious rhinitis. Safety below 1 year not established."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-neoclarityn",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دسلوراتادین یا لوراتادین.",
+        "en": "Hypersensitivity to desloratadine or loratadine."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "4.3"
+        },
+        {
+          "source": "fda-desloratadine-tab",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "احتیاط در سابقه تشنج، به‌ویژه کودکان کم‌سن.",
+        "en": "Caution with personal or family history of seizures, mainly young children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "4.4"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "نارسایی شدید کلیه: با احتیاط.",
+        "en": "Severe renal insufficiency: use with caution."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "sol-0-5-1",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "perDose": 1.25,
+        "mlPerDose": 2.5
+      }
+    },
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "sol-0-5-1",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 2.5,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ]
+}

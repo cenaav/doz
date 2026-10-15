@@ -1,0 +1,155 @@
+{
+  "id": "fexofenadine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فکسوفنادین",
+    "en": "Fexofenadine"
+  },
+  "category": "antihistamines",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل دوم",
+    "en": "Second-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Allegra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "فکسو",
+    "allegra",
+    "آلگرا",
+    "telfast",
+    "تلفاست"
+  ],
+  "formulations": [
+    {
+      "id": "susp-30-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "30 mg / 5 mL",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fexofenadine-otc",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergic-rhinitis",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک (برچسب OTC)",
+        "en": "Allergic rhinitis (OTC label)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 65,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 30,
+            "dosesPerDay": 2
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 60,
+            "dosesPerDay": 2
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-fexofenadine-otc",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-fexofenadine-otc",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "زیر ۲ سال، ۶۵ سال به بالا و بیماری کلیه: با پزشک مشورت شود.",
+            "en": "Under 2 years, 65 and older, or kidney disease: ask a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-fexofenadine-otc",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "susp-30-5",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 30,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "susp-30-5",
+      "input": {
+        "ageYears": 13,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 60,
+        "mlPerDose": 10
+      }
+    }
+  ]
+}

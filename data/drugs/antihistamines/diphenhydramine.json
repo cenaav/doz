@@ -1,0 +1,207 @@
+{
+  "id": "diphenhydramine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیفن‌هیدرامین",
+    "en": "Diphenhydramine"
+  },
+  "category": "antihistamines",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل اول",
+    "en": "First-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Benadryl",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "دیفن هیدرامین",
+    "benadryl",
+    "بنادریل"
+  ],
+  "formulations": [
+    {
+      "id": "liq-12-5-5",
+      "form": "solution",
+      "route": "oral",
+      "label": "12.5 mg / 5 mL",
+      "concentration": {
+        "amount": 12.5,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergy",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "علائم آلرژی — ۶ تا ۱۱ سال (برچسب OTC)",
+        "en": "Allergy symptoms — 6 to 11 years (OTC label)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 12.5,
+        "perDoseMax": 25,
+        "dosesPerDay": 6,
+        "intervalHours": 4
+      },
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-benadryl-children",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ تا ۶ ساعت؛ بیش از ۶ نوبت در ۲۴ ساعت نه. زیر ۲ سال مصرف نشود؛ ۲ تا ۵ سال فقط با دستور پزشک.",
+            "en": "Every 4 to 6 hours; not more than 6 doses in 24 h. Under 2 years do not use; 2–5 years only if directed by a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-benadryl-children",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "کودکان زیر ۲ سال: مصرف نشود.",
+        "en": "Children under 2 years: do not use."
+      },
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "2-5",
+      "severity": "warn",
+      "rule": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "۲ تا ۵ سال: فقط با دستور پزشک.",
+        "en": "2 to 5 years: do not use unless directed by a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "severity": "block",
+      "text": {
+        "fa": "برای خواب‌آلود کردن کودک یا همراه هر فرآورده دیگر حاوی دیفن‌هیدرامین (حتی موضعی) مصرف نشود.",
+        "en": "Do not use to make a child sleepy, or with any other diphenhydramine product, even one used on skin."
+      },
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پیش از مصرف با پزشک: مشکل تنفسی مثل برونشیت مزمن، گلوکوم، رژیم کم‌سدیم.",
+        "en": "Ask a doctor first if breathing problem such as chronic bronchitis, glaucoma, or sodium-restricted diet."
+      },
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Ask a doctor before use if the child has"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergy",
+      "formulation": "liq-12-5-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 12.5,
+        "mlPerDose": 5,
+        "upperPerDose": 25,
+        "upperMlPerDose": 10
+      }
+    },
+    {
+      "regimen": "allergy",
+      "formulation": "liq-12-5-5",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}
