@@ -50,10 +50,10 @@ const groups = computed(() => {
 </script>
 <template>
   <section class="card space-y-4">
-    <h2 class="text-lg font-bold">🧮 {{ $t('calc.title') }}</h2>
+    <h2 class="card-title !mb-0">🧮 {{ $t('calc.title') }}</h2>
 
     <label class="block space-y-1">
-      <span class="text-sm font-bold">{{ $t('calc.regimen') }}</span>
+      <span class="text-sm font-medium">{{ $t('calc.regimen') }}</span>
       <select v-model="regimenId" class="input">
         <optgroup v-for="g in groups" :key="g.id" :label="g.name">
           <option v-for="r in g.regimens" :key="r.id" :value="r.id">{{ lt(r.label) }}</option>
@@ -74,14 +74,14 @@ const groups = computed(() => {
 
     <template v-else>
       <label class="block space-y-1">
-        <span class="text-sm font-bold">{{ $t('calc.formulation') }}</span>
+        <span class="text-sm font-medium">{{ $t('calc.formulation') }}</span>
         <select v-model="formulationId" class="input ltr">
           <option v-for="f in formulations" :key="f.id" :value="f.id">{{ f.label }} ({{ $t(`forms.${f.form}`) }})</option>
         </select>
       </label>
       <div class="grid grid-cols-2 gap-3">
         <label class="block space-y-1">
-          <span class="text-sm font-bold">{{ $t('calc.age') }} *</span>
+          <span class="text-sm font-medium">{{ $t('calc.age') }} *</span>
           <div class="flex gap-1">
             <input v-model="ageText" class="input min-w-0" inputmode="decimal" :placeholder="$t('calc.agePh')" />
             <select v-model="ageUnit" class="input w-auto px-2">
@@ -90,7 +90,7 @@ const groups = computed(() => {
           </div>
         </label>
         <label class="block space-y-1">
-          <span class="text-sm font-bold">{{ $t('calc.weight') }} {{ weightNeeded ? '*' : `(${$t('calc.optionalShort')})` }}</span>
+          <span class="text-sm font-medium">{{ $t('calc.weight') }} {{ weightNeeded ? '*' : `(${$t('calc.optionalShort')})` }}</span>
           <input v-model="weightText" class="input" inputmode="decimal" :placeholder="$t('calc.weightPh')" />
         </label>
       </div>

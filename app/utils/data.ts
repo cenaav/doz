@@ -1,16 +1,11 @@
-import type { CatalogEntry, Category, Disease, Drug, Source } from '../../lib/types'
-import sourcesJson from '../../data/sources.json'
-import diseasesJson from '../../data/diseases.json'
+import type { Category, Drug } from '../../lib/types'
 import categoriesJson from '../../data/categories.json'
-import catalogJson from '../generated/catalog.json'
+import categoryCountsJson from '../generated/category-counts.json'
 
-export const sources = sourcesJson as Source[]
-export const diseases = diseasesJson as Disease[]
+// Large datasets live in their own modules (catalog.ts, sources.ts, diseases.ts) so pages
+// that do not need them, like the home page, do not download them.
 export const categories = (categoriesJson as Category[]).slice().sort((a, b) => a.order - b.order)
-export const catalog = catalogJson as CatalogEntry[]
-
-export const getSource = (id: string) => sources.find((s) => s.id === id)
-export const getDisease = (id: string) => diseases.find((d) => d.id === id)
+export const categoryCounts = categoryCountsJson as Record<string, number>
 export const getCategory = (id: string) => categories.find((c) => c.id === id)
 
 const drugLoaders = import.meta.glob<Drug>('../../data/drugs/**/*.json', { import: 'default' })

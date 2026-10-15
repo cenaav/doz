@@ -14,9 +14,7 @@ const isHome = computed(() => route.path.replace(/\/$/, '') === localePath('/').
         <NuxtLink :to="localePath('/diseases')" class="btn-ghost">{{ $t('nav.diseases') }}</NuxtLink>
         <NuxtLink :to="localePath('/sources')" class="btn-ghost hidden sm:inline-flex">{{ $t('nav.sources') }}</NuxtLink>
         <NuxtLink :to="localePath('/about')" class="btn-ghost hidden sm:inline-flex">{{ $t('nav.about') }}</NuxtLink>
-        <NuxtLink :to="localePath('/settings')" class="btn-ghost" :aria-label="$t('settings.title')">⚙️</NuxtLink>
-        <LangSwitch />
-        <ThemeToggle />
+        <SettingsMenu />
       </nav>
     </div>
   </header>

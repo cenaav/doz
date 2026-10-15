@@ -4,6 +4,8 @@ export default defineNuxtPlugin(() => {
   if (import.meta.dev || !('serviceWorker' in navigator)) return
   const base = useRuntimeConfig().app.baseURL
   const register = () => navigator.serviceWorker.register(`${base}sw.js`, { scope: base }).catch(() => {})
-  if (document.readyState === 'complete') register()
-  else window.addEventListener('load', register, { once: true })
+  // Wait until the page is loaded and idle so precaching never competes with the first render.
+  const idle = () => ('requestIdleCallback' in window ? requestIdleCallback(register, { timeout: 10000 }) : setTimeout(register, 5000))
+  if (document.readyState === 'complete') idle()
+  else window.addEventListener('load', idle, { once: true })
 })

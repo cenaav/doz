@@ -2,10 +2,13 @@
 defineProps<{ compact?: boolean }>()
 const q = ref('')
 const focused = ref(false)
-const { search } = useSearch()
+const { search, load } = useSearch()
 const lt = useLocalText()
 const localePath = useLocalePath()
-const results = computed(() => search(q.value))
+const none = { drugs: [], diseases: [], categories: [] }
+const results = computed(() => (search.value ? search.value(q.value) : none))
+// Build the index once the page is idle, or straight away if the user starts typing first.
+onMounted(() => ('requestIdleCallback' in window ? requestIdleCallback(() => load(), { timeout: 3000 }) : setTimeout(load, 1500)))
 const empty = computed(() => !results.value.drugs.length && !results.value.diseases.length && !results.value.categories.length)
 function blur() { setTimeout(() => (focused.value = false), 150) }
 </script>
@@ -13,9 +16,10 @@ function blur() { setTimeout(() => (focused.value = false), 150) }
   <div class="relative" role="search">
     <input v-model="q" type="search" class="input" :class="compact ? 'py-1.5 text-sm' : 'py-3 text-lg'"
       :placeholder="$t('search.placeholder')" :aria-label="$t('search.placeholder')" autocomplete="off"
-      @focus="focused = true" @blur="blur" />
+      @focus="focused = true; load()" @blur="blur" />
     <div v-if="focused && q.trim()" class="card absolute inset-x-0 top-full z-40 mt-1 max-h-[70dvh] space-y-3 overflow-auto p-2 text-start">
-      <p v-if="empty" class="p-2 text-sm text-slate-500">{{ $t('search.noResults') }}</p>
+      <p v-if="!search" class="p-2 text-sm text-slate-500">{{ $t('search.loading') }}</p>
+      <p v-else-if="empty" class="p-2 text-sm text-slate-500">{{ $t('search.noResults') }}</p>
       <p v-else class="px-2 text-[11px] text-slate-400">{{ $t('search.hint') }}</p>
       <section v-if="results.drugs.length">
         <h3 class="px-2 text-xs font-bold uppercase text-slate-500">{{ $t('search.drugs') }}</h3>

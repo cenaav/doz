@@ -3,8 +3,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 const base = process.env.NUXT_APP_BASE_URL || '/'
 
-// Precache every prerendered page under both `/x` and `/x/` so deep links work offline
-// (GitHub Pages serves `/x/`, in-app links use `/x`).
+// Precache the home pages under both `/x` and `/x/` (GitHub Pages serves `/x/`, in-app links use `/x`).
+// Other pages are cached at runtime as they are visited, so a first visit does not download the whole site.
 type PrecacheEntry = { url: string; revision: string | null; size: number }
 const precachePages = async (entries: PrecacheEntry[]) => {
   const manifest = entries.flatMap((e) => {
@@ -60,8 +60,11 @@ export default defineNuxtConfig({
       display: 'standalone',
     },
     workbox: {
-      globPatterns: ['**/*.{js,css,html,json,woff2,png,svg,ico,txt,xml}'],
-      globIgnores: ['**/200.html', '**/404.html'],
+      globPatterns: ['_nuxt/**/*.{js,css,woff2}', '*.{png,svg,ico}', 'index.html', 'en/index.html'],
+      runtimeCaching: [
+        { urlPattern: ({ request }) => request.mode === 'navigate', handler: 'NetworkFirst', options: { cacheName: 'doz-pages', networkTimeoutSeconds: 4 } },
+        { urlPattern: /_payload\.json/, handler: 'StaleWhileRevalidate', options: { cacheName: 'doz-payloads' } },
+      ],
       navigateFallback: undefined,
       manifestTransforms: [precachePages],
       clientsClaim: true,

@@ -13,8 +13,8 @@ const lowConfidence = drugConfidence(props.drug, sources) === 'low'
   <section class="card space-y-2">
     <div class="flex flex-wrap items-start justify-between gap-2">
       <div>
-        <h1 class="text-2xl font-black">{{ lt(drug.name) }}</h1>
-        <p class="text-start text-slate-500">{{ locale === 'fa' ? drug.name.en : drug.name.fa }}</p>
+        <h1 class="text-xl font-bold">{{ lt(drug.name) }}</h1>
+        <p class="text-start text-sm text-slate-500">{{ locale === 'fa' ? drug.name.en : drug.name.fa }}</p>
       </div>
       <ReviewBadge :status="drug.review.status" />
     </div>

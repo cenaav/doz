@@ -13,10 +13,10 @@ const rows = computed(() =>
 
 <template>
   <div class="space-y-4">
-    <h1 class="text-2xl font-black">{{ $t('diseases.title') }}</h1>
+    <h1 class="text-xl font-bold">{{ $t('diseases.title') }}</h1>
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       <NuxtLink v-for="{ d, n } in rows" :key="d.id" :to="localePath(`/disease/${d.id}`)" class="card hover:border-brand-400">
-        <div class="font-bold">{{ lt(d.name) }}</div>
+        <div class="font-semibold">{{ lt(d.name) }}</div>
         <div class="ltr text-start text-xs text-slate-500">{{ d.icd10.join(', ') }}</div>
         <p v-if="d.symptoms" class="mt-1 line-clamp-2 text-sm text-slate-600 dark:text-slate-400">{{ d.symptoms.items.map((s) => lt(s)).join('، ') }}</p>
         <p class="mt-1 text-xs text-brand-700 dark:text-brand-300">{{ $t('diseases.count', { n: fmt(n) }) }}</p>

@@ -7,7 +7,7 @@ const source = computed(() => (current.value ? getSource(current.value.source) :
   <div v-if="current" class="fixed inset-0 z-50 flex items-end justify-center bg-black/50 sm:items-center" @click.self="close">
     <div class="card w-full max-w-lg rounded-b-none sm:rounded-2xl" role="dialog" aria-modal="true">
       <div class="mb-3 flex items-start justify-between gap-3">
-        <h2 class="text-lg font-bold">{{ $t('refs.title') }}</h2>
+        <h2 class="text-base font-semibold">{{ $t('refs.title') }}</h2>
         <button class="btn-ghost" :aria-label="$t('common.close')" @click="close">✕</button>
       </div>
       <dl v-if="source" class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5 text-sm">

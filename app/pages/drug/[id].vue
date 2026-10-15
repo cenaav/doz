@@ -15,12 +15,16 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div v-if="drug" class="grid gap-4 lg:grid-cols-2 2xl:grid-cols-[1.15fr_1fr_0.85fr]">
-    <div class="space-y-4">
-      <DrugHeader :drug="drug" />
+  <!-- Fixed order on every drug page: header, then calculator beside safety, then references beside similar drugs. -->
+  <div v-if="drug" class="space-y-4">
+    <DrugHeader :drug="drug" />
+    <div class="grid items-start gap-4 lg:grid-cols-2">
       <DoseCalculator :drug="drug" />
+      <DrugSafety :drug="drug" />
     </div>
-    <div class="space-y-4"><DrugSafety :drug="drug" /><SimilarDrugs :drug="drug" /></div>
-    <div class="space-y-4 lg:col-span-2 2xl:col-span-1"><ReferenceStatus :drug="drug" /></div>
+    <div class="grid gap-4 lg:grid-cols-2">
+      <ReferenceStatus :drug="drug" class="h-full" />
+      <SimilarDrugs :drug="drug" class="h-full" />
+    </div>
   </div>
 </template>

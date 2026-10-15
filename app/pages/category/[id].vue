@@ -9,7 +9,7 @@ useSeoMeta({ title: () => lt(category.name), description: () => t('category.desc
 </script>
 <template>
   <div class="space-y-4">
-    <h1 class="text-2xl font-black">{{ category!.icon }} {{ lt(category!.name) }}</h1>
+    <h1 class="text-xl font-bold">{{ category!.icon }} {{ lt(category!.name) }}</h1>
     <p v-if="!drugs.length" class="text-slate-500">{{ $t('category.empty') }}</p>
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       <DrugListItem v-for="d in drugs" :key="d.id" :drug="d" />

@@ -14,7 +14,7 @@ Doz is a source-referenced drug dose calculator that helps physicians prescribe 
 - Regimen types: weight-based, fixed, age bands, BSA, loading schedules and titration (psychiatry).
 - Search across drugs, brands, diseases, synonyms and ICD-10 codes in Persian and English, tolerant of typos and Arabic/Persian letter variants.
 - Persian (RTL, Vazirmatn) and English; light and dark themes; responsive from small phones to large monitors.
-- Works offline once opened (PWA). No accounts and no server: patient inputs never leave the device.
+- Installable PWA: the app shell is cached after the first visit and every page you open stays available offline. No accounts and no server: patient inputs never leave the device.
 - Every page is pre-rendered, so drug and disease pages are indexable by search engines.
 
 ## Development
@@ -28,7 +28,7 @@ npm test           # engine, search and data tests (incl. every drug's worked ex
 npm run generate   # validate data, build catalog and pre-render the static site to .output/public
 ```
 
-Stack: Nuxt 4 (static generation), Vue 3, Tailwind CSS 4, @nuxtjs/i18n, @vite-pwa/nuxt, Fuse.js, Ajv, Vitest.
+Stack: Nuxt 4 (static generation), Vue 3, Tailwind CSS 4, @nuxtjs/i18n, @vite-pwa/nuxt, MiniSearch, Ajv, Vitest.
 
 ```
 lib/        dose engine, search, data validation (plain TypeScript, no Vue)
