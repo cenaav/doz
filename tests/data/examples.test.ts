@@ -5,7 +5,7 @@ import { calculate } from '../../lib/engine'
 import { ageDaysFrom } from '../../lib/engine/age'
 
 const ds = loadDataSet(join(__dirname, '../..'))
-for (const { drug } of ds.drugs) {
+for (const { drug } of ds.drugs.filter((d) => d.drug.examples.length)) {
   describe(drug.id, () => {
     drug.examples.forEach((ex, i) => {
       test(`example ${i + 1}: ${ex.regimen} / ${ex.formulation}`, () => {
