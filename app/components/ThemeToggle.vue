@@ -6,8 +6,8 @@ const toggle = () => (mode.preference = isDark.value ? 'light' : 'dark')
 </script>
 <template>
   <ClientOnly>
-    <button type="button" class="grid size-8 place-items-center rounded-full text-base hover:bg-slate-100 dark:hover:bg-slate-800"
+    <button type="button" class="icon-btn text-base"
       :aria-label="$t('settings.theme')" :title="$t(`settings.themes.${isDark ? 'light' : 'dark'}`)" @click="toggle">{{ isDark ? '☀️' : '🌙' }}</button>
-    <template #fallback><span class="size-8" /></template>
+    <template #fallback><span class="icon-btn" /></template>
   </ClientOnly>
 </template>
