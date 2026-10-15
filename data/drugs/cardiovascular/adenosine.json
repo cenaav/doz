@@ -1,0 +1,302 @@
+{
+  "id": "adenosine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آدنوزین (تزریقی)",
+    "en": "Adenosine (injection)"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "ضدآریتمی",
+    "en": "Antiarrhythmic"
+  },
+  "brands": [
+    {
+      "name": "Adenocard",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "adenocard",
+    "آدنوزین",
+    "adenosine"
+  ],
+  "formulations": [
+    {
+      "id": "vial-3",
+      "form": "injection",
+      "route": "iv",
+      "label": "3 mg/mL (6 mg/2 mL, 12 mg/4 mL) vial",
+      "concentration": {
+        "amount": 3,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-adenosine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "svt",
+      "label": {
+        "fa": "PSVT — بزرگسال و کودک ۵۰ kg به بالا: ۶ mg بولوس سریع، در صورت نیاز ۱۲ mg",
+        "en": "PSVT — adults and children ≥50 kg: 6 mg rapid bolus, then 12 mg if needed"
+      },
+      "population": {
+        "minWeightKg": 50
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 6,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-adenosine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بولوس سریع در ۱ تا ۲ ثانیه و فوراً فلاش سالین. اگر ظرف ۱ تا ۲ دقیقه برنگشت: ۱۲ mg؛ همین ۱۲ mg را می‌توان یک بار دیگر تکرار کرد. دوز بالای ۱۲ mg توصیه نمی‌شود.",
+            "en": "Rapid bolus over 1–2 s followed by a rapid saline flush. If no conversion within 1–2 min: 12 mg; the 12 mg dose may be repeated once. Doses over 12 mg not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-adenosine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "svt",
+      "label": {
+        "fa": "PSVT — کودک زیر ۵۰ kg: ۰٫۰۵ تا ۰٫۱ mg/kg بولوس سریع",
+        "en": "PSVT — child <50 kg: 0.05–0.1 mg/kg rapid bolus"
+      },
+      "population": {
+        "maxWeightKg": 49.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.05,
+        "perKgPerDayMax": 0.1,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-adenosine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 12,
+        "refs": [
+          {
+            "source": "fda-adenosine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر ظرف ۱ تا ۲ دقیقه برنگشت، هر بار ۰٫۰۵ تا ۰٫۱ mg/kg بیشتر تا حداکثر یک دوز ۰٫۳ mg/kg (و نه بیش از ۱۲ mg). هر دوز با فلاش سالین.",
+            "en": "If no conversion in 1–2 min, increase each bolus by 0.05–0.1 mg/kg up to a maximum single dose of 0.3 mg/kg (not over 12 mg). Flush after each dose."
+          },
+          "refs": [
+            {
+              "source": "fda-adenosine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بلوک AV درجه ۲ یا ۳ یا بیماری گره سینوسی (بدون پیس‌میکر فعال)؛ حساسیت به آدنوزین.",
+        "en": "Second- or third-degree AV block or sinus node disease (without a functioning pacemaker); hypersensitivity to adenosine."
+      },
+      "refs": [
+        {
+          "source": "fda-adenosine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-3",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 6,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-3",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1,
+        "upperPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "C01EB10"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01836",
+        "en": "ADENOSINE 3MG/ML (2ML) INJ",
+        "fa": "فرآورده تزریقی آدنوزین ۳ میلی‌گرم / میلی‌لیتر، ۲ میلی‌لیتر"
+      },
+      {
+        "code": "16827",
+        "en": "ADENOSINE 5MG/2ML INJ",
+        "fa": "فرآورده تزریقی آدنوزین ۵ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "52364",
+        "en": "ADENOSINE INJECTION PARENTERAL 3 mg/1mL 1 mL",
+        "fa": "فرآورده تزریقی آدنوزین ۳ میلی‌گرم / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      },
+      {
+        "code": "52365",
+        "en": "ADENOSINE INJECTION PARENTERAL 3 mg/1mL 4 mL",
+        "fa": "فرآورده تزریقی آدنوزین ۳ میلی‌گرم / ۱ میلی‌لیتر ۴ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1511/Adenosine",
+        "url": "https://www.darooyab.ir/G-1511/Adenosine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206778",
+      "label": "ANDA206778"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=546642f2-662f-46cf-9d82-5bb3bdcc7677",
+      "label": "FDA Adenosine inj."
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01EB10",
+      "label": "C01EB10"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1511/Adenosine",
+      "label": "Adenosine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects: Pregnancy Category C: Animal reproduction studies have not been conducted with adenosine; nor have studies been performed in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-adenosine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "No controlled studies have been conducted in pediatric patients to establish the safety and efficacy of adenosine injection for the conversion of paroxysmal supraventricular tachycardia (PSVT).",
+      "refs": [
+        {
+          "source": "fda-adenosine",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, adenosine injection in geriatric patients should be used with caution since this population may have a diminished cardiac function, nodal dysfunction, concomitant diseases or drug therapy that may alter hemodynamic function and produce severe bradycardia or AV block.",
+      "refs": [
+        {
+          "source": "fda-adenosine",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-adenosine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA206778"
+  }
+}

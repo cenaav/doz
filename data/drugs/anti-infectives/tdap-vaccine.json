@@ -1,0 +1,287 @@
+{
+  "id": "tdap-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن کزاز، دیفتری و سیاه‌سرفه (Tdap)",
+    "en": "Tdap vaccine (tetanus, diphtheria, pertussis)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن غیرفعال",
+    "en": "Inactivated vaccine"
+  },
+  "brands": [
+    {
+      "name": "Boostrix",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "boostrix",
+    "adacel",
+    "Tdap",
+    "واکسن کزاز",
+    "سه گانه بزرگسال"
+  ],
+  "formulations": [
+    {
+      "id": "syr-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL prefilled syringe / vial",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-boostrix",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "booster",
+      "disease": "immunization",
+      "label": {
+        "fa": "یادآور — ۱۰ سال به بالا: ۰٫۵ mL عضلانی",
+        "en": "Booster — ≥10 y: 0.5 mL IM"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-boostrix",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۵ سال یا بیشتر پس از آخرین DTaP یا Td؛ دوز اضافه ۹ سال یا بیشتر پس از Tdap قبلی. بارداری: یک دوز در سه‌ماهه سوم برای محافظت نوزاد از سیاه‌سرفه.",
+            "en": "≥5 years after the last DTaP or Td; an additional dose ≥9 years after a previous Tdap. Pregnancy: one dose in the third trimester to protect the infant from pertussis."
+          },
+          "refs": [
+            {
+              "source": "fda-boostrix",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wound",
+      "disease": "tetanus-prophylaxis",
+      "label": {
+        "fa": "زخم مستعد کزاز — ۰٫۵ mL اگر ۵ سال یا بیشتر از واکسن قبلی گذشته",
+        "en": "Tetanus-prone wound — 0.5 mL if ≥5 years since the last tetanus vaccine"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-boostrix",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "آنافیلاکسی به دوز قبلی واکسن حاوی کزاز، دیفتری یا سیاه‌سرفه یا اجزای Boostrix.",
+        "en": "Anaphylaxis after a previous tetanus-, diphtheria- or pertussis-containing vaccine or to any Boostrix component."
+      },
+      "refs": [
+        {
+          "source": "fda-boostrix",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "enceph",
+      "severity": "block",
+      "text": {
+        "fa": "انسفالوپاتی ظرف ۷ روز پس از واکسن حاوی سیاه‌سرفه.",
+        "en": "Encephalopathy within 7 days of a previous pertussis-containing vaccine."
+      },
+      "refs": [
+        {
+          "source": "fda-boostrix",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "booster",
+      "formulation": "syr-05",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "wound",
+      "formulation": "syr-05",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07AJ52"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Tdap%20vaccine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125106",
+      "label": "BLA125106"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd98bff9-4602-4268-d68d-029a14a5513b",
+      "label": "FDA Boostrix"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07AJ52",
+      "label": "J07AJ52"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary All pregnancies have a risk of birth defect, loss, or other adverse outcomes.",
+      "refs": [
+        {
+          "source": "fda-boostrix",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Data are not available to assess the effect of administration of BOOSTRIX on breastfed infants or on milk production/excretion.",
+      "refs": [
+        {
+          "source": "fda-boostrix",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "BOOSTRIX is not indicated for use in children aged younger than 10 years.",
+      "refs": [
+        {
+          "source": "fda-boostrix",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In the initial‑dose clinical trials, 1,104 participants aged 65 years and older received BOOSTRIX; of these participants, 299 were aged 75 years and older.",
+      "refs": [
+        {
+          "source": "fda-boostrix",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-boostrix",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125106"
+  }
+}

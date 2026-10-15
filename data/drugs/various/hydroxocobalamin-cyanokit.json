@@ -1,0 +1,222 @@
+{
+  "id": "hydroxocobalamin-cyanokit",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "هیدروکسوکوبالامین (سیانوکیت)",
+    "en": "Hydroxocobalamin (Cyanokit)"
+  },
+  "category": "various",
+  "class": {
+    "fa": "پادزهر سیانید",
+    "en": "Cyanide antidote"
+  },
+  "brands": [
+    {
+      "name": "Cyanokit",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cyanokit",
+    "سیانوکیت",
+    "پادزهر سیانور"
+  ],
+  "formulations": [
+    {
+      "id": "vial-5g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "5 g vial (reconstitute with 200 mL; 25 mg/mL)",
+      "concentration": {
+        "amount": 5000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cyanokit",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "cyanide-poisoning",
+      "label": {
+        "fa": "مسمومیت با سیانید — بزرگسال: ۵ g وریدی در ۱۵ دقیقه",
+        "en": "Cyanide poisoning — adult: 5 g IV over 15 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cyanokit",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت شک بالا بی‌درنگ. بسته به شدت، دوز دوم ۵ g (مجموع ۱۰ g) در ۱۵ دقیقه تا ۲ ساعت. حمایت راه هوایی، اکسیژن و گردش خون نباید به تأخیر بیفتد.",
+            "en": "Give without delay if suspicion is high. Depending on severity, a second 5 g dose (total 10 g) over 15 min to 2 h. Do not delay airway, oxygen and circulatory support."
+          },
+          "refs": [
+            {
+              "source": "fda-cyanokit",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-cyanokit",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-5g",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5000
+      }
+    }
+  ],
+  "atc": [
+    "V03AB33"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Hydroxocobalamin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022041",
+      "label": "NDA022041"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d56fcc8d-bd64-46ab-b0c0-2124bd745a6b",
+      "label": "FDA Cyanokit"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605007.html",
+      "label": "Cyanocobalamin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AB33",
+      "label": "V03AB33"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from cases reported in the published literature and postmarketing surveillance with CYANOKIT use in pregnant women are insufficient to identify a drug-associated risk for major birth defects, miscarriage, or adverse maternal and fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-cyanokit",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Risk Summary Breastfeeding is not recommended during treatment with CYANOKIT.",
+      "refs": [
+        {
+          "source": "fda-cyanokit",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of CYANOKIT have not been established in this population.",
+      "refs": [
+        {
+          "source": "fda-cyanokit",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Approximately 50 known or suspected cyanide poisoning victims aged 65 or older received hydroxocobalamin in clinical studies.",
+      "refs": [
+        {
+          "source": "fda-cyanokit",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-cyanokit",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022041"
+  }
+}

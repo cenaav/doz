@@ -1,0 +1,293 @@
+{
+  "id": "rabies-immune-globulin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایمونوگلوبولین هاری (HRIG)",
+    "en": "Rabies immune globulin (human)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ایمونوگلوبولین اختصاصی",
+    "en": "Specific immune globulin"
+  },
+  "brands": [
+    {
+      "name": "HyperRAB",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "hyperrab",
+    "HRIG",
+    "سرم ضد هاری",
+    "ایمونوگلوبولین هاری"
+  ],
+  "formulations": [
+    {
+      "id": "vial-300",
+      "form": "injection",
+      "route": "im",
+      "label": "300 IU/mL (1, 3, 5 mL vials)",
+      "concentration": {
+        "amount": 300,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hyperrab",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-150",
+      "form": "injection",
+      "route": "im",
+      "label": "150 IU/mL (older/other products, e.g. sold in Iran) — check the vial strength",
+      "concentration": {
+        "amount": 150,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "IR"
+      ],
+      "refs": [
+        {
+          "source": "fda-hyperrab",
+          "section": "2.2"
+        },
+        {
+          "source": "darooyab-generic",
+          "section": "G-3504/Rabies-Immunoglobulins"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pep",
+      "disease": "rabies-exposure",
+      "label": {
+        "fa": "پیشگیری پس از تماس با هاری — ۲۰ IU/kg یک بار (همه سنین)",
+        "en": "Rabies post-exposure prophylaxis — 20 IU/kg once (all ages)"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDay": 20,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hyperrab",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDose": 20,
+        "refs": [
+          {
+            "source": "fda-hyperrab",
+            "section": "2.1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط برای افرادی که قبلاً واکسن نزده‌اند، همراه واکسن (روز ۰ و حداکثر تا روز ۷). تا جای ممکن کل دوز داخل و اطراف زخم تزریق شود؛ باقی‌مانده عضلانی دور از محل واکسن. بیشتر از دوز توصیه‌شده نشود (پاسخ واکسن را کم می‌کند).",
+            "en": "Only for previously unvaccinated people, together with vaccine (day 0, no later than day 7). Infiltrate as much as possible into and around the wound; the rest IM away from the vaccine site. Do not exceed the dose (it blunts the vaccine response)."
+          },
+          "refs": [
+            {
+              "source": "fda-hyperrab",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-hyperrab",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pep",
+      "formulation": "vial-300",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1400,
+        "mlPerDose": 4.67
+      }
+    },
+    {
+      "regimen": "pep",
+      "formulation": "vial-300",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "pep",
+      "formulation": "vial-150",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1400,
+        "mlPerDose": 9.33
+      }
+    }
+  ],
+  "atc": [
+    "J06BB05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01092",
+        "en": "RABIES IMMUNE GLOBULIN 300U VIAL",
+        "fa": "ویال هاری ایمونوگلوبولین ۳۰۰ واحد"
+      },
+      {
+        "code": "01945",
+        "en": "RABIES IMMUNE GLOBULIN FROM PLASMA INF",
+        "fa": "محلول انفوزیون هاری ایمونوگلوبولین فروم پلاسما"
+      },
+      {
+        "code": "50927",
+        "en": "RABIES IMMUNE GLOBULIN INJECTION PARENTERAL 150 [iU]/1mL 5 mL",
+        "fa": "فرآورده تزریقی هاری ایمونوگلوبولین ۱۵۰ واحد بین‌المللی / ۱ میلی‌لیتر ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3504/Rabies-Immunoglobulins",
+        "url": "https://www.darooyab.ir/G-3504/Rabies-Immunoglobulins"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=101144",
+      "label": "BLA101144"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f82880b8-998c-4659-8f20-6dcc81f258e9",
+      "label": "FDA HyperRAB"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J06BB05",
+      "label": "J06BB05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3504/Rabies-Immunoglobulins",
+      "label": "Rabies-Immunoglobulins"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no data with HYPERRAB use in pregnant women to inform a drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-hyperrab",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of HYPERRAB in human milk, the effect on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-hyperrab",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in the pediatric population have not been established.",
+      "refs": [
+        {
+          "source": "fda-hyperrab",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Safety and effectiveness in geriatric population have not been established.",
+      "refs": [
+        {
+          "source": "fda-hyperrab",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-hyperrab",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA101144"
+  }
+}

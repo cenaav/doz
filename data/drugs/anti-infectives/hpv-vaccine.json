@@ -1,0 +1,256 @@
+{
+  "id": "hpv-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن HPV (پاپیلومای انسانی)",
+    "en": "HPV vaccine (9-valent)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن نوترکیب",
+    "en": "Recombinant vaccine"
+  },
+  "brands": [
+    {
+      "name": "Gardasil 9",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "gardasil",
+    "گارداسیل",
+    "واکسن زگیل تناسلی",
+    "HPV"
+  ],
+  "formulations": [
+    {
+      "id": "syr-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL prefilled syringe / vial",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-gardasil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "immunization",
+      "label": {
+        "fa": "۰٫۵ mL عضلانی — ۹ تا ۱۴ سال: ۲ دوز (ماه ۰ و ۶ تا ۱۲)؛ ۱۵ تا ۴۵ سال: ۳ دوز (ماه ۰، ۲ و ۶)",
+        "en": "0.5 mL IM — 9–14 y: 2 doses (0, 6–12 months); 15–45 y: 3 doses (0, 2, 6 months)"
+      },
+      "population": {
+        "minAge": {
+          "value": 9,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 46,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-gardasil",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر دوز دوم زودتر از ۵ ماه پس از اول زده شد، دوز سوم دست‌کم ۴ ماه بعد.",
+            "en": "If the second dose is given less than 5 months after the first, give a third dose at least 4 months later."
+          },
+          "refs": [
+            {
+              "source": "fda-gardasil",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شدید به اجزای واکسن (از جمله مخمر) یا دوز قبلی.",
+        "en": "Severe hypersensitivity to a component (including yeast) or a previous dose."
+      },
+      "refs": [
+        {
+          "source": "fda-gardasil",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "syr-05",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07BM03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "10319",
+        "en": "VACCINE-HUMAN PAPILLOMA VIRUS 4-VALENT VIAL",
+        "fa": "ویال واکسن–انسانی پاپیللوما ویروس ۴–والنت"
+      },
+      {
+        "code": "53081",
+        "en": "VACCINE-HUMAN PAPILLOMA VIRUS 9-VALENT VIAL",
+        "fa": "ویال واکسن–انسانی پاپیللوما ویروس ۹–والنت"
+      },
+      {
+        "code": "53082",
+        "en": "HUMAN PAPILLOMAVIRUS VACCINE (BIVALENT) INJECTION PARENTERAL 0.5 mL",
+        "fa": "فرآورده تزریقی واکسن انسانی پاپیللوماویروس (بیوالنت) ۰٫۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3473/Human-Papilloma-Virus-Vaccines",
+        "url": "https://www.darooyab.ir/G-3473/Human-Papilloma-Virus-Vaccines"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125508",
+      "label": "BLA125508"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a21f4f4b-b891-4f25-b747-cb9ec7d865d6",
+      "label": "FDA Gardasil 9"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BM03",
+      "label": "J07BM03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3473/Human-Papilloma-Virus-Vaccines",
+      "label": "Human-Papilloma-Virus-Vaccines"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary All pregnancies have a risk of birth defect, loss, or other adverse outcomes.",
+      "refs": [
+        {
+          "source": "fda-gardasil",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Available data are not sufficient to assess the effects of GARDASIL 9 on the breastfed infant or on milk production/excretion.",
+      "refs": [
+        {
+          "source": "fda-gardasil",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have not been established in pediatric patients below 9 years of age.",
+      "refs": [
+        {
+          "source": "fda-gardasil",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The safety and effectiveness of GARDASIL 9 have not been evaluated in a geriatric population, defined as individuals aged 65 years and over.",
+      "refs": [
+        {
+          "source": "fda-gardasil",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-gardasil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125508"
+  }
+}

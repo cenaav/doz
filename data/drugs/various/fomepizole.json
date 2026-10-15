@@ -1,0 +1,246 @@
+{
+  "id": "fomepizole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فومپیزول",
+    "en": "Fomepizole"
+  },
+  "category": "various",
+  "class": {
+    "fa": "مهارکننده الکل دهیدروژناز (پادزهر)",
+    "en": "Alcohol dehydrogenase inhibitor (antidote)"
+  },
+  "brands": [
+    {
+      "name": "Antizol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "antizol",
+    "فومپیزول",
+    "پادزهر متانول"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "injection",
+      "route": "iv",
+      "label": "1 g/mL (1.5 g/1.5 mL) vial — dilute before infusion",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fomepizole",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "toxic-alcohol",
+      "label": {
+        "fa": "متانول یا اتیلن گلیکول — بارگذاری ۱۵ mg/kg، سپس ۱۰ mg/kg هر ۱۲ ساعت",
+        "en": "Methanol or ethylene glycol — load 15 mg/kg, then 10 mg/kg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-fomepizole",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول ۱۵ mg/kg؛ سپس ۱۰ mg/kg هر ۱۲ ساعت برای ۴ دوز؛ سپس ۱۵ mg/kg هر ۱۲ ساعت تا سطح متانول یا اتیلن گلیکول غیرقابل‌اندازه‌گیری یا زیر ۲۰ mg/dL، بیمار بی‌علامت و pH طبیعی. هر دوز انفوزیون ۳۰ دقیقه‌ای. در همودیالیز هر ۴ ساعت. سرنگ پلی‌کربنات مصرف نشود. ایمنی در کودکان ثابت نشده.",
+            "en": "First dose 15 mg/kg; then 10 mg/kg every 12 h for 4 doses; then 15 mg/kg every 12 h until methanol or ethylene glycol is undetectable or <20 mg/dL, the patient is asymptomatic and pH normal. Each dose over 30 min. Every 4 h during haemodialysis. Do not use polycarbonate syringes. Safety in children not established."
+          },
+          "refs": [
+            {
+              "source": "fda-fomepizole",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-fomepizole",
+              "section": "Pediatric Use"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی به فومپیزول یا سایر پیرازول‌ها.",
+        "en": "Serious hypersensitivity to fomepizole or other pyrazoles."
+      },
+      "refs": [
+        {
+          "source": "fda-fomepizole",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 700,
+        "mlPerDose": 0.7
+      }
+    }
+  ],
+  "atc": [
+    "V03AB34"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11908",
+        "en": "FOMEPIZOLE 1.5G/1.5ML VIAL",
+        "fa": "ویال فومپیزول ۱٫۵ گرم / ۱٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "53092",
+        "en": "FOMEPIZOLE (AS SULFATE) INJECTION PARENTERAL 5 mg/1mL 20 mL",
+        "fa": "فرآورده تزریقی فومپیزول (معادل سولفات) ۵ میلی‌گرم / ۱ میلی‌لیتر ۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1957/Fomepizole",
+        "url": "https://www.darooyab.ir/G-1957/Fomepizole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078537",
+      "label": "ANDA078537"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=256910fe-91f2-48f6-b0b4-55edc52dacd4",
+      "label": "FDA Fomepizole"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AB34",
+      "label": "V03AB34"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1957/Fomepizole",
+      "label": "Fomepizole"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C: Animal reproduction studies have not been conducted with fomepizole.",
+      "refs": [
+        {
+          "source": "fda-fomepizole",
+          "section": "Pregnancy:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when fomepizole is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-fomepizole",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-fomepizole",
+          "section": "Pediatric Use:"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Safety and effectiveness in geriatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-fomepizole",
+          "section": "Geriatric Use:"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-fomepizole",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078537"
+  }
+}

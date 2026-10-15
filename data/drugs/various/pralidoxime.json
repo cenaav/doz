@@ -1,0 +1,343 @@
+{
+  "id": "pralidoxime",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پرالیدوکسیم",
+    "en": "Pralidoxime"
+  },
+  "category": "various",
+  "class": {
+    "fa": "بازفعال‌کننده کولین‌استراز (پادزهر)",
+    "en": "Cholinesterase reactivator (antidote)"
+  },
+  "brands": [
+    {
+      "name": "Protopam",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "protopam",
+    "پروتوپام",
+    "2-PAM",
+    "پرالیدوکسیم"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g vial (reconstitute; 10–20 mg/mL for IV infusion)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-protopam",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "organophosphate-poisoning",
+      "label": {
+        "fa": "مسمومیت ارگانوفسفره — بزرگسال: ۱۰۰۰ تا ۲۰۰۰ mg وریدی در ۱۵ تا ۳۰ دقیقه",
+        "en": "Organophosphate poisoning — adult: 1,000–2,000 mg IV over 15–30 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "perDoseMax": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-protopam",
+          "section": "Dosage and Administration — Adult intravenous dosing"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از آتروپین (اول هیپوکسی اصلاح شود). در ۱۰۰ mL سالین در ۱۵ تا ۳۰ دقیقه؛ حداکثر ۲۰۰ mg/min. اگر ضعف عضلانی ماند، دوز دوم پس از حدود ۱ ساعت و سپس هر ۱۰ تا ۱۲ ساعت. بیش از ۳۶ ساعت پس از قطع مواجهه فایده کمی دارد؛ ۴۸ تا ۷۲ ساعت مراقبت.",
+            "en": "After atropine (correct hypoxia first). In 100 mL saline over 15–30 min; max 200 mg/min. If weakness persists, second dose after about 1 h, then every 10–12 h. Little benefit beyond 36 h after exposure ends; observe 48–72 h."
+          },
+          "refs": [
+            {
+              "source": "fda-protopam",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "organophosphate-poisoning",
+      "label": {
+        "fa": "مسمومیت ارگانوفسفره — ۱۶ سال و کمتر: ۲۰ تا ۵۰ mg/kg وریدی (حداکثر ۲۰۰۰ mg)",
+        "en": "Organophosphate poisoning — ≤16 y: 20–50 mg/kg IV (max 2,000 mg)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 20,
+        "perKgPerDayMax": 50,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-protopam",
+          "section": "Dosage and Administration — Pediatric intravenous dosing"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 2000,
+        "refs": [
+          {
+            "source": "fda-protopam",
+            "section": "Dosage and Administration — Pediatric intravenous dosing"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در ۱۵ تا ۳۰ دقیقه. ادامه: انفوزیون مداوم ۱۰ تا ۲۰ mg/kg/ساعت، یا دوز دوم پس از ۱ ساعت و تکرار هر ۱۰ تا ۱۲ ساعت.",
+            "en": "Over 15–30 min. Then continuous infusion 10–20 mg/kg/h, or a second dose after 1 h and repeats every 10–12 h."
+          },
+          "refs": [
+            {
+              "source": "fda-protopam",
+              "section": "Dosage and Administration — Pediatric intravenous dosing"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "rel",
+      "severity": "warn",
+      "text": {
+        "fa": "منع مطلق ندارد؛ منع نسبی: حساسیت به دارو.",
+        "en": "No absolute contraindications; relative: hypersensitivity to the drug."
+      },
+      "refs": [
+        {
+          "source": "fda-protopam",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "op",
+      "text": {
+        "fa": "در مسمومیت ارگانوفسفره از مورفین، تئوفیلین، آمینوفیلین، رزرپین و فنوتیازین‌ها پرهیز شود؛ سوکسینیل‌کولین با احتیاط.",
+        "en": "In organophosphate poisoning avoid morphine, theophylline, aminophylline, reserpine and phenothiazines; succinylcholine with caution."
+      },
+      "refs": [
+        {
+          "source": "fda-protopam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "upperPerDose": 2000
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 400,
+        "upperPerDose": 1000
+      }
+    }
+  ],
+  "atc": [
+    "V03AB04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01643",
+        "en": "PRALIDOXIME 1000MG VIAL",
+        "fa": "ویال پرالیدوکسیم ۱۰۰۰ میلی‌گرم"
+      },
+      {
+        "code": "06323",
+        "en": "PRALIDOXIME 200MG/10ML VIAL",
+        "fa": "ویال پرالیدوکسیم ۲۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "21627",
+        "en": "PRALIDOXIME 500MG/10ML VIAL",
+        "fa": "ویال پرالیدوکسیم ۵۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "22075",
+        "en": "PRALIDOXIME 500MG/20 ML AMP",
+        "fa": "آمپول پرالیدوکسیم ۵۰۰ میلی‌گرم / ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "53051",
+        "en": "PRALIDOXIME IODIDE INJECTION, SOLUTION PARENTERAL 25 mg/1 mL 20 mL",
+        "fa": "محلول تزریقی پرالیدوکسیم یداید ۲۵ میلی‌گرم / ۱ میلی‌لیتر ۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1975/Pralidoxime",
+        "url": "https://www.darooyab.ir/G-1975/Pralidoxime"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=014134",
+      "label": "NDA014134"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2741d8fd-51c2-46be-880b-99f2b20a6137",
+      "label": "FDA Protopam"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AB04",
+      "label": "V03AB04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1975/Pralidoxime",
+      "label": "Pralidoxime"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects: Animal reproduction studies have not been conducted with pralidoxime chloride.",
+      "refs": [
+        {
+          "source": "fda-protopam",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when pralidoxime chloride is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-protopam",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "There are no adequate and well-controlled clinical trials that establish the effectiveness of pralidoxime chloride in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-protopam",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-protopam",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-protopam",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA014134"
+  }
+}

@@ -107,6 +107,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "inj-2",
+      "form": "injection",
+      "route": "iv",
+      "label": "2 mg/mL injection (2 mL vial)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ondansetron-inj",
+          "section": "3"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -186,6 +206,12 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-4",
+        "tab-8",
+        "odt-4",
+        "sol-4-5"
       ]
     },
     {
@@ -234,6 +260,12 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-4",
+        "tab-8",
+        "odt-4",
+        "sol-4-5"
       ]
     },
     {
@@ -275,6 +307,169 @@
             {
               "source": "fda-ondansetron-tab",
               "section": "2.1, Table 2"
+            }
+          ]
+        }
+      ],
+      "allowedFormulations": [
+        "tab-4",
+        "tab-8",
+        "odt-4",
+        "sol-4-5"
+      ]
+    },
+    {
+      "id": "ponv-adult",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "پیشگیری از تهوع و استفراغ پس از عمل — بالای ۱۲ سال: ۴ mg وریدی یا عضلانی",
+        "en": "Postoperative nausea/vomiting prevention — >12 y: 4 mg IV or IM"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-inj",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-2"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "وریدی حداقل در ۳۰ ثانیه (ترجیحاً ۲ تا ۵ دقیقه)؛ پیش از القای بیهوشی یا پس از عمل. دوز دوم ۴ mg فایده اضافه ندارد.",
+            "en": "IV over at least 30 s (preferably 2–5 min); before induction or postoperatively. A second 4 mg dose adds no benefit."
+          },
+          "refs": [
+            {
+              "source": "fda-ondansetron-inj",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ponv-child",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "تهوع و استفراغ پس از عمل — ۱ ماه تا ۱۲ سال: ۰٫۱ mg/kg وریدی (بالای ۴۰ kg: ۴ mg)",
+        "en": "Postoperative nausea/vomiting — 1 month to 12 y: 0.1 mg/kg IV (>40 kg: 4 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.1,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-inj",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 4,
+        "refs": [
+          {
+            "source": "fda-ondansetron-inj",
+            "section": "2.2, Table 1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-2"
+      ]
+    },
+    {
+      "id": "cinv-iv",
+      "disease": "cinv",
+      "label": {
+        "fa": "تهوع شیمی‌درمانی — ۶ ماه به بالا: ۰٫۱۵ mg/kg وریدی، ۳ دوز (حداکثر ۱۶ mg در هر دوز)",
+        "en": "Chemotherapy nausea — ≥6 months: 0.15 mg/kg IV, 3 doses (max 16 mg per dose)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.15,
+        "intervalHours": 4
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-inj",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-ondansetron-inj",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 16,
+        "refs": [
+          {
+            "source": "fda-ondansetron-inj",
+            "section": "2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-2"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط ۳ دوز: ۳۰ دقیقه پیش از شیمی‌درمانی و ۴ و ۸ ساعت پس از دوز اول؛ در ۵۰ mL رقیق و در ۱۵ دقیقه انفوزیون. نارسایی شدید کبد: حداکثر ۸ mg در روز.",
+            "en": "Three doses only: 30 min before chemotherapy and 4 and 8 h after the first; dilute in 50 mL and infuse over 15 min. Severe hepatic impairment: max 8 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-ondansetron-inj",
+              "section": "2"
+            },
+            {
+              "source": "fda-ondansetron-inj",
+              "section": "2.3"
             }
           ]
         }
@@ -459,6 +654,42 @@
       "expect": {
         "tabletsPerDoseRounded": 1
       }
+    },
+    {
+      "regimen": "ponv-adult",
+      "formulation": "inj-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "ponv-child",
+      "formulation": "inj-2",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 2,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "cinv-iv",
+      "formulation": "inj-2",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 3,
+        "mlPerDose": 1.5
+      }
     }
   ],
   "atc": [
@@ -531,6 +762,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=674ea285-8f84-4603-9655-82200c523fe5",
       "label": "FDA Ondansetron"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=70437694-0341-4f3b-824c-06843403443f",
+      "label": "FDA Ondansetron inj."
     },
     {
       "kind": "dailymed",

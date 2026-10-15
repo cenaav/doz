@@ -88,6 +88,26 @@
           "section": "3"
         }
       ]
+    },
+    {
+      "id": "inj-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mg/mL injection (dilute in D5W before infusion)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-amiodarone-inj",
+          "section": "3"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -129,6 +149,42 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-100",
+        "tab-200",
+        "tab-400"
+      ]
+    },
+    {
+      "id": "iv-load",
+      "disease": "ventricular-arrhythmia",
+      "label": {
+        "fa": "VF/VT تهدیدکننده حیات — وریدی: حدود ۱۰۰۰ mg در ۲۴ ساعت اول",
+        "en": "Life-threatening VF/VT — IV: about 1,000 mg over the first 24 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: ۱۵۰ mg در ۱۰ دقیقه اول (۱۵ mg/min)، سپس ۳۶۰ mg در ۶ ساعت بعد (۱ mg/min)، سپس ۵۴۰ mg در ۱۸ ساعت باقی‌مانده (۰٫۵ mg/min)؛ پس از ۲۴ ساعت ادامه ۰٫۵ mg/min. در D5W رقیق شود؛ غلظت بالای ۲ mg/mL از ورید مرکزی.",
+          "en": "Label: 150 mg over the first 10 min (15 mg/min), then 360 mg over the next 6 h (1 mg/min), then 540 mg over the remaining 18 h (0.5 mg/min); continue 0.5 mg/min after 24 h. Dilute in D5W; concentrations >2 mg/mL via central line."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-amiodarone-inj",
+          "section": "2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "inj-50"
       ]
     }
   ],
@@ -143,6 +199,20 @@
       "refs": [
         {
           "source": "fda-amiodarone",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "iv-ci",
+      "severity": "block",
+      "text": {
+        "fa": "تزریقی: حساسیت (از جمله به ید)، شوک کاردیوژنیک، برادی‌کاردی سینوسی شدید، بلوک AV درجه ۲ یا ۳ بدون پیس‌میکر.",
+        "en": "Injection: hypersensitivity (including to iodine), cardiogenic shock, marked sinus bradycardia, 2nd/3rd-degree AV block without a pacemaker."
+      },
+      "refs": [
+        {
+          "source": "fda-amiodarone-inj",
           "section": "4"
         }
       ]
@@ -264,6 +334,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=95cef33b-c0e6-b17c-7cbb-f5c066872705",
       "label": "FDA Amiodarone tablets"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a28ae25-7cc4-4ac0-a2ba-7820fb93e25c",
+      "label": "FDA Amiodarone inj."
     },
     {
       "kind": "medlineplus",

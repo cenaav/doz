@@ -1,0 +1,262 @@
+{
+  "id": "influenza-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن آنفلوانزا (غیرفعال)",
+    "en": "Influenza vaccine (inactivated)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن غیرفعال",
+    "en": "Inactivated vaccine"
+  },
+  "brands": [
+    {
+      "name": "Fluzone",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "fluzone",
+    "vaxigrip",
+    "واکسن آنفولانزا",
+    "flu shot"
+  ],
+  "formulations": [
+    {
+      "id": "syr-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL prefilled syringe / multidose vial",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fluzone",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "immunization",
+      "label": {
+        "fa": "سالانه — ۶ ماه به بالا: ۰٫۵ mL عضلانی (۶ تا ۳۵ ماه: ۰٫۲۵ یا ۰٫۵ mL)",
+        "en": "Yearly — ≥6 months: 0.5 mL IM (6–35 months: 0.25 or 0.5 mL)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fluzone",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۶ ماه تا ۸ سال که قبلاً واکسن نزده‌اند: ۲ دوز با فاصله دست‌کم ۴ هفته. ۶ تا ۳۵ ماه: هر دوز ۰٫۲۵ یا ۰٫۵ mL. ۹ سال به بالا: یک دوز ۰٫۵ mL.",
+            "en": "6 months–8 y not previously vaccinated: 2 doses at least 4 weeks apart. 6–35 months: each dose 0.25 or 0.5 mL. ≥9 y: one 0.5 mL dose."
+          },
+          "refs": [
+            {
+              "source": "fda-fluzone",
+              "section": "2.1, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش آلرژیک شدید به اجزای واکسن (از جمله پروتئین تخم‌مرغ) یا دوز قبلی هر واکسن آنفلوانزا.",
+        "en": "Severe allergic reaction to a component (including egg protein) or a previous dose of any influenza vaccine."
+      },
+      "refs": [
+        {
+          "source": "fda-fluzone",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "syr-05",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07BB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "14786",
+        "en": "VACCINE-INFLUENZA A 15MCG 0.5ML VIAL",
+        "fa": "ویال واکسن–آنفلوانزا A ۱۵ میکروگرم ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "14785",
+        "en": "VACCINE-INFLUENZA A 3.8MCG 0.5ML VIAL",
+        "fa": "ویال واکسن–آنفلوانزا A ۳٫۸ میکروگرم ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "00667",
+        "en": "VACCINE-INFLUENZA VIRUS KILLED SYRINGE",
+        "fa": "سرنگ واکسن–آنفلوانزا ویروس کیللد"
+      },
+      {
+        "code": "52695",
+        "en": "INFLUENZA VACCINE, INACTIVATED, TETRAVALENT INJECTION PARENTERAL 1 {dose}",
+        "fa": "فرآورده تزریقی واکسن آنفلوانزا غیرفعال‌شده تتراوالنت ۱ { دوز }"
+      },
+      {
+        "code": "53020",
+        "en": "INFLUENZA VACCINE, RECOMBINANT, TETRAVALENT INJECTION PARENTERAL 1 {dose} 0.5 mL",
+        "fa": "فرآورده تزریقی واکسن آنفلوانزا نوترکیب تتراوالنت ۱ { دوز } ۰٫۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3474/Influenza-Vaccines",
+        "url": "https://www.darooyab.ir/G-3474/Influenza-Vaccines"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103914",
+      "label": "BLA103914"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fe0ce14-bc11-4b43-b002-7efdca0d3003",
+      "label": "FDA Fluzone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BB02",
+      "label": "J07BB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3474/Influenza-Vaccines",
+      "label": "Influenza-Vaccines"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary All pregnancies have a risk of birth defect, loss, or other adverse outcomes.",
+      "refs": [
+        {
+          "source": "fda-fluzone",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "It is not known if Fluzone is excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-fluzone",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of Fluzone in children below the age of 6 months have not been established.",
+      "refs": [
+        {
+          "source": "fda-fluzone",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Safety and immunogenicity of Fluzone were evaluated in adults 65 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-fluzone",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-fluzone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103914"
+  }
+}

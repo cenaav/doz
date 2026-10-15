@@ -1,0 +1,279 @@
+{
+  "id": "varicella-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن آبله‌مرغان",
+    "en": "Varicella vaccine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن زنده ضعیف‌شده",
+    "en": "Live attenuated vaccine"
+  },
+  "brands": [
+    {
+      "name": "Varivax",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "varivax",
+    "واکسن آبله مرغان",
+    "varilrix"
+  ],
+  "formulations": [
+    {
+      "id": "vial-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL dose after reconstitution",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-varivax",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "immunization",
+      "label": {
+        "fa": "دو دوز ۰٫۵ mL — ۱۲ ماه تا ۱۲ سال: ۱۲ تا ۱۵ ماهگی و ۴ تا ۶ سالگی؛ ۱۳ سال به بالا: با فاصله ۴ هفته",
+        "en": "Two 0.5 mL doses — 12 months–12 y: at 12–15 months and 4–6 y; ≥13 y: 4 weeks apart"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-varivax",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کودک: حداقل ۳ ماه فاصله بین دو دوز. عضلانی یا زیرجلدی.",
+            "en": "Children: at least 3 months between doses. IM or SC."
+          },
+          "refs": [
+            {
+              "source": "fda-varivax",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-varivax",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "live",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری، نقص ایمنی، بیماری تب‌دار متوسط تا شدید، سل فعال درمان‌نشده (واکسن زنده).",
+        "en": "Pregnancy, immunosuppression, moderate or severe febrile illness, active untreated tuberculosis (live vaccine)."
+      },
+      "refs": [
+        {
+          "source": "fda-varivax",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش آلرژیک شدید به اجزای واکسن (از جمله ژلاتین و نئومایسین) یا دوز قبلی.",
+        "en": "Severe allergic reaction to a vaccine component (including gelatin and neomycin) or a previous dose."
+      },
+      "refs": [
+        {
+          "source": "fda-varivax",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "vial-05",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07BK01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01704",
+        "en": "VACCINE-VARICELLA (CHICKEN POX) AMP",
+        "fa": "آمپول واکسن–واریسللا (چیکن پوکس)"
+      },
+      {
+        "code": "52630",
+        "en": "ZOSTER VACCINE, LIVE ATTENUATED INJECTION, POWDER, FOR SUSPENSION PARENTERAL 19400 [PFU]/0.65mL",
+        "fa": "پودر برای تهیه سوسپانسیون تزریقی واکسن زوستر زنده تضعیف‌شده ۱۹۴۰۰ PFU / ۰٫۶۵ میلی‌لیتر"
+      },
+      {
+        "code": "53099",
+        "en": "ZOSTER VACCINE, RECOMBINANT INJECTION, POWDER, FOR SUSPENSION PARENTERAL 50 ug/0.5mL",
+        "fa": "پودر برای تهیه سوسپانسیون تزریقی واکسن زوستر نوترکیب ۵۰ میکروگرم / ۰٫۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3537/Varicella-Zoster-Vaccines",
+        "url": "https://www.darooyab.ir/G-3537/Varicella-Zoster-Vaccines"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103552",
+      "label": "BLA103552"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=524cf052-e90e-4595-af0a-608edbe9bd31",
+      "label": "FDA Varivax"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607029.html",
+      "label": "Varicella Vaccine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607025.html",
+      "label": "Zoster Vaccine Live"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BK01",
+      "label": "J07BK01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3537/Varicella-Zoster-Vaccines",
+      "label": "Varicella-Zoster-Vaccines"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "( 4.4 ) Pregnancy.",
+      "refs": [
+        {
+          "source": "fda-varivax",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for VARIVAX, and any potential adverse effects on the breastfed child from VARIVAX or from the underlying maternal condition.",
+      "refs": [
+        {
+          "source": "fda-varivax",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "No clinical data are available on safety or efficacy of VARIVAX in children less than 12 months of age.",
+      "refs": [
+        {
+          "source": "fda-varivax",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of VARIVAX did not include sufficient numbers of seronegative subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-varivax",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-varivax",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103552"
+  }
+}

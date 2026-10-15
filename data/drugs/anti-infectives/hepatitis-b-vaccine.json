@@ -1,0 +1,313 @@
+{
+  "id": "hepatitis-b-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن هپاتیت B",
+    "en": "Hepatitis B vaccine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن نوترکیب",
+    "en": "Recombinant vaccine"
+  },
+  "brands": [
+    {
+      "name": "Engerix-B",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "engerix",
+    "heberbiovac",
+    "واکسن هپاتیت ب"
+  ],
+  "formulations": [
+    {
+      "id": "susp",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL (10 mcg) or 1 mL (20 mcg)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-engerix",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "primary",
+      "disease": "immunization",
+      "label": {
+        "fa": "سری اولیه — تولد تا ۱۹ سال: ۰٫۵ mL؛ ۲۰ سال به بالا: ۱ mL (ماه ۰، ۱ و ۶)",
+        "en": "Primary series — birth to 19 y: 0.5 mL; ≥20 y: 1 mL (months 0, 1, 6)"
+      },
+      "population": {},
+      "type": "ageBand",
+      "unit": "mL",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 0,
+              "unit": "day"
+            },
+            "maxAge": {
+              "value": 20,
+              "unit": "year"
+            },
+            "perDose": 0.5,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 20,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 1,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-engerix",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۳ دوز در ماه ۰، ۱ و ۶. همودیالیز: ۲ mL در ماه ۰، ۱، ۲ و ۶. عضلانی، نه در باسن.",
+            "en": "3 doses at months 0, 1 and 6. Haemodialysis: 2 mL at months 0, 1, 2 and 6. IM, not in the buttock."
+          },
+          "refs": [
+            {
+              "source": "fda-engerix",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-engerix",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "آنافیلاکسی به دوز قبلی واکسن هپاتیت B یا اجزای آن (از جمله مخمر).",
+        "en": "Anaphylaxis to a previous hepatitis B vaccine dose or a component (including yeast)."
+      },
+      "refs": [
+        {
+          "source": "fda-engerix",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "primary",
+      "formulation": "susp",
+      "input": {
+        "ageDays": 1,
+        "weightKg": 3.3
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "primary",
+      "formulation": "susp",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "J07BC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07058",
+        "en": "VACCINE-HEPATITIS B VIRUS 100MCG 10DOSE VIAL",
+        "fa": "ویال واکسن–هپاتیت B ویروس ۱۰۰ میکروگرم ۱۰ دوز"
+      },
+      {
+        "code": "01841",
+        "en": "VACCINE-HEPATITIS B VIRUS 100MCG 1DOSE VIAL",
+        "fa": "ویال واکسن–هپاتیت B ویروس ۱۰۰ میکروگرم ۱ دوز"
+      },
+      {
+        "code": "01715",
+        "en": "VACCINE-HEPATITIS B VIRUS 10MCG 1DOSE VIAL",
+        "fa": "ویال واکسن–هپاتیت B ویروس ۱۰ میکروگرم ۱ دوز"
+      },
+      {
+        "code": "01844",
+        "en": "VACCINE-HEPATITIS B VIRUS 10MCG 20DOSE VIAL",
+        "fa": "ویال واکسن–هپاتیت B ویروس ۱۰ میکروگرم ۲۰ دوز"
+      },
+      {
+        "code": "02690",
+        "en": "VACCINE-HEPATITIS B VIRUS 20MCG 1DOSE AMP",
+        "fa": "آمپول واکسن–هپاتیت B ویروس ۲۰ میکروگرم ۱ دوز"
+      },
+      {
+        "code": "01532",
+        "en": "VACCINE-HEPATITIS B VIRUS 20MCG/ML 10DOSE VIAL",
+        "fa": "ویال واکسن–هپاتیت B ویروس ۲۰ میکروگرم / میلی‌لیتر ۱۰ دوز"
+      },
+      {
+        "code": "51828",
+        "en": "HEPATITIS B VIRUS INJECTION PARENTERAL 1 {dose} 1 mL",
+        "fa": "فرآورده تزریقی هپاتیت B ویروس ۱ { دوز } ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3469/Hepatitis-B-Vaccines",
+        "url": "https://www.darooyab.ir/G-3469/Hepatitis-B-Vaccines"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103239",
+      "label": "BLA103239"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ec65f7e-4aa2-4b41-b578-885ea59d6e9d",
+      "label": "FDA Engerix-B"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607014.html",
+      "label": "Hepatitis B (Recombinant) Vaccine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a626045.html",
+      "label": "Hepatitis B (recombinant) vaccine, Adjuvanted"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BC01",
+      "label": "J07BC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3469/Hepatitis-B-Vaccines",
+      "label": "Hepatitis-B-Vaccines"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های موجود افزایش خطر نقص مادرزادی یا سقط را نشان نمی‌دهد؛ مطالعه کنترل‌شده کافی نیست.",
+        "en": "Label: available data do not suggest an increased risk of major birth defects or miscarriage; no adequate controlled studies."
+      },
+      "quote": "Available data do not suggest an increased risk of major birth defects and miscarriage in women who received ENGERIX-B during pregnancy",
+      "refs": [
+        {
+          "source": "fda-engerix",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of ENGERIX-B in human milk, the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-engerix",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of ENGERIX‑B have been established in all pediatric age-groups.",
+      "refs": [
+        {
+          "source": "fda-engerix",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of ENGERIX‑B used for licensure did not include sufficient numbers of participants aged 65 years and older to determine whether they respond differently from younger participants.",
+      "refs": [
+        {
+          "source": "fda-engerix",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-engerix",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103239"
+  }
+}

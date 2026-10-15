@@ -84,6 +84,46 @@
           "section": "Dosage and Administration"
         }
       ]
+    },
+    {
+      "id": "inj-2",
+      "form": "injection",
+      "route": "iv",
+      "label": "2 mg/mL injection",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lorazepam-inj",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "inj-4",
+      "form": "injection",
+      "route": "iv",
+      "label": "4 mg/mL injection",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lorazepam-inj",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -134,6 +174,11 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-0-5",
+        "tab-1",
+        "tab-2"
       ]
     },
     {
@@ -160,6 +205,59 @@
         {
           "source": "fda-lorazepam",
           "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-0-5",
+        "tab-1",
+        "tab-2"
+      ]
+    },
+    {
+      "id": "se",
+      "disease": "status-epilepticus",
+      "label": {
+        "fa": "صرع پایدار — ۱۸ سال به بالا: ۴ mg وریدی آهسته (۲ mg/min)",
+        "en": "Status epilepticus — ≥18 y: 4 mg IV slowly (2 mg/min)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam-inj",
+          "section": "Dosage and Administration — Status Epilepticus"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-2",
+        "inj-4"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر تشنج پس از ۱۰ تا ۱۵ دقیقه ادامه یافت یا برگشت، یک دوز دیگر ۴ mg آهسته. تجربه با دوزهای بیشتر بسیار محدود. وسایل حفظ راه هوایی در دسترس باشد. ایمنی در کودکان ثابت نشده.",
+            "en": "If seizures continue or recur after 10–15 min, one more 4 mg dose slowly. Very limited experience with further doses. Airway equipment must be at hand. Safety in children not established."
+          },
+          "refs": [
+            {
+              "source": "fda-lorazepam-inj",
+              "section": "Dosage and Administration — Status Epilepticus"
+            }
+          ]
         }
       ]
     }
@@ -212,6 +310,20 @@
           "section": "Boxed Warning"
         }
       ]
+    },
+    {
+      "id": "inj-ci",
+      "severity": "block",
+      "text": {
+        "fa": "تزریقی: گلوکوم زاویه بسته حاد، آپنه خواب، نارسایی شدید تنفسی (جز بیمار تحت تهویه)، تزریق داخل شریانی، نوزاد نارس (بنزیل الکل).",
+        "en": "Injection: acute narrow-angle glaucoma, sleep apnoea, severe respiratory insufficiency (except ventilated patients), intra-arterial injection, premature infants (benzyl alcohol)."
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam-inj",
+          "section": "Contraindications"
+        }
+      ]
     }
   ],
   "warnings": [],
@@ -246,6 +358,18 @@
       "expect": {
         "perDose": 2,
         "upperPerDose": 4
+      }
+    },
+    {
+      "regimen": "se",
+      "formulation": "inj-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4,
+        "mlPerDose": 2
       }
     }
   ],
@@ -294,6 +418,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1009c870-fd98-4e3b-81c8-4184036fb8c2",
       "label": "FDA Lorazepam"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20140b19-846b-425f-b191-670e17809945",
+      "label": "FDA Lorazepam inj."
     },
     {
       "kind": "medlineplus",

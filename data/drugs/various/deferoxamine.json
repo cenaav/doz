@@ -1,0 +1,288 @@
+{
+  "id": "deferoxamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دفروکسامین",
+    "en": "Deferoxamine"
+  },
+  "category": "various",
+  "class": {
+    "fa": "شلاتور آهن",
+    "en": "Iron chelator"
+  },
+  "brands": [
+    {
+      "name": "Desferal",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "desferal",
+    "دسفرال",
+    "دفروکسامین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-500",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "500 mg vial",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-deferoxamine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "vial-2g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "2 g vial",
+      "concentration": {
+        "amount": 2000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-deferoxamine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acute",
+      "disease": "iron-poisoning",
+      "label": {
+        "fa": "مسمومیت حاد آهن — ۱۰۰۰ mg، سپس ۵۰۰ mg هر ۴ تا ۱۲ ساعت (حداکثر ۶ g در ۲۴ ساعت)",
+        "en": "Acute iron poisoning — 1,000 mg, then 500 mg every 4–12 h (max 6 g in 24 h)"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-deferoxamine",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 6000,
+        "refs": [
+          {
+            "source": "fda-deferoxamine",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بزرگسال و کودک. عضلانی برای بیمار بدون شوک؛ وریدی فقط در کلاپس قلبی-عروقی با سرعت حداکثر ۱۵ mg/kg/ساعت (دوزهای بعدی تا ۱۲۵ mg/ساعت). دوزهای بعدی ۵۰۰ mg بر اساس پاسخ بالینی.",
+            "en": "Adults and children. IM for patients not in shock; IV only in cardiovascular collapse at ≤15 mg/kg/h (later doses up to 125 mg/h). Subsequent 500 mg doses by clinical response."
+          },
+          "refs": [
+            {
+              "source": "fda-deferoxamine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-deferoxamine",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دفروکسامین؛ بیماری شدید کلیه یا آنوری.",
+        "en": "Hypersensitivity to deferoxamine; severe renal disease or anuria."
+      },
+      "refs": [
+        {
+          "source": "fda-deferoxamine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acute",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    }
+  ],
+  "atc": [
+    "V03AC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01956",
+        "en": "DEFEROXAMINE MESYLATE 2G VIAL",
+        "fa": "ویال دفروکسامین مزیلات ۲ گرم"
+      },
+      {
+        "code": "00386",
+        "en": "DEFEROXAMINE MESYLATE 500MG VIAL",
+        "fa": "ویال دفروکسامین مزیلات ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1946/Deferoxamine",
+        "url": "https://www.darooyab.ir/G-1946/Deferoxamine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078718",
+      "label": "ANDA078718"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d91e16df-8daa-4cd2-86a2-273eaa2446e0",
+      "label": "FDA Deferoxamine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625110.html",
+      "label": "Deferoxamine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AC01",
+      "label": "V03AC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1946/Deferoxamine",
+      "label": "Deferoxamine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on Deferoxamine Mesylate for Injection use in pregnant women to evaluate for a drug-associated risk of major birth defects, miscarriages or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-deferoxamine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in the breastfed child, advise patients not to breastfeed during treatment with Deferoxamine Mesylate for Injection, and for one week after the last dose.",
+      "refs": [
+        {
+          "source": "fda-deferoxamine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness in pediatric patients 3 years of age and older have been established for the treatment of acute iron intoxication and for the treatment of transfusional iron overload in patients with chronic anemia.",
+      "refs": [
+        {
+          "source": "fda-deferoxamine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-deferoxamine",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Deferoxamine Mesylate for Injection can cause embryo-fetal harm when administered to pregnant women [see Use in Specific Populations ( 8.1 )].",
+      "refs": [
+        {
+          "source": "fda-deferoxamine",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-deferoxamine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078718"
+  }
+}

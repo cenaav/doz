@@ -1,0 +1,276 @@
+{
+  "id": "mmr-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن سرخک، اوریون و سرخجه (MMR)",
+    "en": "MMR vaccine (measles, mumps, rubella)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن زنده ضعیف‌شده",
+    "en": "Live attenuated vaccine"
+  },
+  "brands": [
+    {
+      "name": "M-M-R II",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mmr",
+    "ام ام آر",
+    "واکسن سرخک",
+    "priorix"
+  ],
+  "formulations": [
+    {
+      "id": "vial-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL dose after reconstitution",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mmr",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "immunization",
+      "label": {
+        "fa": "دو دوز ۰٫۵ mL — ۱۲ تا ۱۵ ماهگی و ۴ تا ۶ سالگی",
+        "en": "Two 0.5 mL doses — at 12–15 months and 4–6 years"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mmr",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز دوم پیش از ۴ سالگی هم مجاز است اگر دست‌کم ۱ ماه فاصله باشد. پیشگیری پس از تماس با سرخک: یک دوز ظرف ۷۲ ساعت. عضلانی یا زیرجلدی.",
+            "en": "The second dose may be given before 4 y if at least 1 month apart. Measles post-exposure: one dose within 72 h. IM or SC."
+          },
+          "refs": [
+            {
+              "source": "fda-mmr",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "live",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری، نقص ایمنی، بیماری تب‌دار متوسط تا شدید، سل فعال درمان‌نشده (واکسن زنده).",
+        "en": "Pregnancy, immunosuppression, moderate or severe febrile illness, active untreated tuberculosis (live vaccine)."
+      },
+      "refs": [
+        {
+          "source": "fda-mmr",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش آلرژیک شدید به اجزای واکسن (از جمله ژلاتین و نئومایسین) یا دوز قبلی.",
+        "en": "Severe allergic reaction to a vaccine component (including gelatin and neomycin) or a previous dose."
+      },
+      "refs": [
+        {
+          "source": "fda-mmr",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "vial-05",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07BD52"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01578",
+        "en": "VACCINE-MEASLES+MUMPS+RUBELLA VIRUS 10DOSE VIAL",
+        "fa": "ویال واکسن–سرخک + اوریون + سرخجه ویروس ۱۰ دوز"
+      },
+      {
+        "code": "07629",
+        "en": "VACCINE-MEASLES+MUMPS+RUBELLA VIRUS 1DOSE VIAL",
+        "fa": "ویال واکسن–سرخک + اوریون + سرخجه ویروس ۱ دوز"
+      },
+      {
+        "code": "09575",
+        "en": "VACCINE-MEASLES+MUMPS+RUBELLA VIRUS 2DOSE VIAL",
+        "fa": "ویال واکسن–سرخک + اوریون + سرخجه ویروس ۲ دوز"
+      },
+      {
+        "code": "01990",
+        "en": "VACCINE-MEASLES+RUBELLA (10 dose) VIAL",
+        "fa": "ویال واکسن–سرخک + سرخجه (۱۰ دوز)"
+      },
+      {
+        "code": "50415",
+        "en": "MEASLES / MUMPS / RUBELLA VACCINE INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 5 {dose} 2.5 mL",
+        "fa": "محلول تزریقی واکسن سرخک / اوریون / سرخجه ۵ { دوز } ۲٫۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3486/Measles,-Mumps,-and-Rubella-Vaccines",
+        "url": "https://www.darooyab.ir/G-3486/Measles,-Mumps,-and-Rubella-Vaccines"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=101069",
+      "label": "BLA101069"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a9e384f-e717-436b-b9a0-15e53cef0862",
+      "label": "FDA M-M-R II"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BD52",
+      "label": "J07BD52"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3486/Measles,-Mumps,-and-Rubella-Vaccines",
+      "label": "Measles,-Mumps,-and-Rubella-Vaccines"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "( 4.4 ) Pregnancy.",
+      "refs": [
+        {
+          "source": "fda-mmr",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Studies have shown that lactating postpartum women vaccinated with live attenuated rubella vaccine may secrete the virus in breast milk and transmit it to breast-fed infants. { 17 , 18 } In the breast-fed infants with serological evidence of rubella virus vaccine strain antibodies, none exhibited severe disease; …",
+      "refs": [
+        {
+          "source": "fda-mmr",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of measles vaccine in infants below the age of 6 months have not been established [see Clinical Studies (14) ] .",
+      "refs": [
+        {
+          "source": "fda-mmr",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of M-M-R II did not include sufficient numbers of seronegative subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-mmr",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-mmr",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA101069"
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "id": "hepatitis-a-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن هپاتیت A",
+    "en": "Hepatitis A vaccine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن غیرفعال",
+    "en": "Inactivated vaccine"
+  },
+  "brands": [
+    {
+      "name": "Havrix",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "havrix",
+    "هاوریکس",
+    "واکسن هپاتیت آ"
+  ],
+  "formulations": [
+    {
+      "id": "susp",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL (child) or 1 mL (adult)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-havrix",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "immunization",
+      "label": {
+        "fa": "۱۲ ماه تا ۱۸ سال: ۰٫۵ mL؛ ۱۹ سال به بالا: ۱ mL — دوز یادآور ۶ تا ۱۲ ماه بعد",
+        "en": "12 months–18 y: 0.5 mL; ≥19 y: 1 mL — booster 6–12 months later"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "month"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mL",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "month"
+            },
+            "maxAge": {
+              "value": 19,
+              "unit": "year"
+            },
+            "perDose": 0.5,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 19,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 1,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-havrix",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دست‌کم ۲ هفته پیش از مواجهه احتمالی. عضلانی، نه در باسن.",
+            "en": "At least 2 weeks before expected exposure. IM, not in the buttock."
+          },
+          "refs": [
+            {
+              "source": "fda-havrix",
+              "section": "1"
+            },
+            {
+              "source": "fda-havrix",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "آنافیلاکسی به دوز قبلی واکسن هپاتیت A یا اجزای آن (از جمله نئومایسین).",
+        "en": "Anaphylaxis to a previous hepatitis A vaccine dose or a component (including neomycin)."
+      },
+      "refs": [
+        {
+          "source": "fda-havrix",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "susp",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 12
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "std",
+      "formulation": "susp",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "J07BC02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51974",
+        "en": "HEPATITIS A, INACTIVATED, WHOLE VIRUS INJECTION, SUSPENSION PARENTERAL 50 [iU]/1mL",
+        "fa": "سوسپانسیون تزریقی هپاتیت A غیرفعال‌شده کامل ویروس ۵۰ واحد بین‌المللی / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3467/Hepatitis-A-Vaccines",
+        "url": "https://www.darooyab.ir/G-3467/Hepatitis-A-Vaccines"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103475",
+      "label": "BLA103475"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9499a4d-1288-4bd3-9d59-1d72092c38cd",
+      "label": "FDA Havrix"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BC02",
+      "label": "J07BC02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3467/Hepatitis-A-Vaccines",
+      "label": "Hepatitis-A-Vaccines"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های موجود افزایش خطر نقص مادرزادی یا سقط را نشان نمی‌دهد؛ مطالعه کنترل‌شده کافی نیست.",
+        "en": "Label: available data do not suggest an increased risk of major birth defects or miscarriage; no adequate controlled studies."
+      },
+      "quote": "Available data do not suggest an increased risk of major birth defects and miscarriage in women who received HAVRIX during pregnancy",
+      "refs": [
+        {
+          "source": "fda-havrix",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of HAVRIX in human milk, the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-havrix",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of HAVRIX have not been established in pediatric patients younger than 12 months.",
+      "refs": [
+        {
+          "source": "fda-havrix",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of HAVRIX did not include sufficient numbers of participants aged 65 years and older to determine whether they respond differently from younger participants.",
+      "refs": [
+        {
+          "source": "fda-havrix",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-havrix",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103475"
+  }
+}

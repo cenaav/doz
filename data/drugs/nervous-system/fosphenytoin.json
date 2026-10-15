@@ -1,0 +1,268 @@
+{
+  "id": "fosphenytoin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فوس‌فنی‌توئین (تزریقی)",
+    "en": "Fosphenytoin (injection)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدتشنج (پیش‌داروی فنی‌توئین)",
+    "en": "Anticonvulsant (phenytoin prodrug)"
+  },
+  "brands": [
+    {
+      "name": "Cerebyx",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cerebyx",
+    "سربیکس",
+    "فوس فنی توئین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mg PE/mL (100 mg PE/2 mL; 500 mg PE/10 mL)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cerebyx",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "se",
+      "disease": "status-epilepticus",
+      "label": {
+        "fa": "صرع پایدار — دوز بارگذاری ۱۵ تا ۲۰ mg PE/kg (بزرگسال و کودک)",
+        "en": "Status epilepticus — loading dose 15–20 mg PE/kg (adults and children)"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "perKgPerDayMax": 20,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cerebyx",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-cerebyx",
+          "section": "Highlights — Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همه دوزها بر حسب «معادل فنی‌توئین سدیم» (PE). سرعت: بزرگسال ۱۰۰ تا ۱۵۰ mg PE/min (حداکثر ۱۵۰)؛ کودک ۲ mg PE/kg/min یا ۱۵۰ mg PE/min هر کدام کندتر. پیش از انفوزیون تا ۱٫۵ تا ۲۵ mg PE/mL رقیق شود. پایش مداوم ECG، فشار و تنفس. معمولاً همراه بنزودیازپین وریدی؛ سپس دوز نگهدارنده.",
+            "en": "All doses in phenytoin sodium equivalents (PE). Rate: adults 100–150 mg PE/min (max 150); children 2 mg PE/kg/min or 150 mg PE/min, whichever is slower. Dilute to 1.5–25 mg PE/mL before infusion. Continuous ECG, BP and respiratory monitoring. Usually with an IV benzodiazepine; follow with maintenance dosing."
+          },
+          "refs": [
+            {
+              "source": "fda-cerebyx",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-cerebyx",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فوس‌فنی‌توئین، فنی‌توئین یا هیدانتوئین‌ها؛ برادی‌کاردی سینوسی، بلوک SA، بلوک AV درجه ۲ و ۳، سندرم آدامز-استوکس؛ سابقه سمیت کبدی با فنی‌توئین؛ مصرف همزمان دلاویردین.",
+        "en": "Hypersensitivity to fosphenytoin, phenytoin or hydantoins; sinus bradycardia, SA block, 2nd/3rd-degree AV block, Adams-Stokes syndrome; prior phenytoin hepatotoxicity; coadministration with delavirdine."
+      },
+      "refs": [
+        {
+          "source": "fda-cerebyx",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: انفوزیون سریع خطر افت شدید فشار و آریتمی دارد؛ از سرعت مجاز تجاوز نشود.",
+        "en": "Boxed warning: rapid infusion risks severe hypotension and arrhythmias; do not exceed the rate limits."
+      },
+      "refs": [
+        {
+          "source": "fda-cerebyx",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "se",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1050,
+        "upperPerDose": 1400
+      }
+    },
+    {
+      "regimen": "se",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 300,
+        "upperPerDose": 400
+      }
+    }
+  ],
+  "atc": [
+    "N03AB05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-666/Fosphenytoin",
+        "url": "https://www.darooyab.ir/G-666/Fosphenytoin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020450",
+      "label": "NDA020450"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4c36fad-0ba2-4cd4-9c5e-dcf843f38a5a",
+      "label": "FDA Cerebyx"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a619063.html",
+      "label": "Fosphenytoin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AB05",
+      "label": "N03AB05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-666/Fosphenytoin",
+      "label": "Fosphenytoin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary In humans, prenatal exposure to phenytoin (the active metabolite of CEREBYX) may increase the risks for congenital malformations and other adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-cerebyx",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Following administration of phenytoin (the active metabolite of CEREBYX), phenytoin is secreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-cerebyx",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: برای همه گروه‌های سنی کودکان اندیکاسیون دارد؛ سرعت انفوزیون در کودک حداکثر ۲ mg PE/kg/min یا ۱۵۰ mg PE/min (هر کدام کندتر).",
+        "en": "Label: indicated in all pediatric age groups; pediatric infusion rate max 2 mg PE/kg/min or 150 mg PE/min, whichever is slower."
+      },
+      "quote": "CEREBYX is indicated for the treatment of generalized tonic-clonic status epilepticus and prevention and treatment of seizures occurring during neurosurgery in all pediatric age groups",
+      "refs": [
+        {
+          "source": "fda-cerebyx",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "No systematic studies in geriatric patients have been conducted.",
+      "refs": [
+        {
+          "source": "fda-cerebyx",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-cerebyx",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020450"
+  }
+}

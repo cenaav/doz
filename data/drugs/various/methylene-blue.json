@@ -1,0 +1,281 @@
+{
+  "id": "methylene-blue",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متیلن بلو (تزریقی)",
+    "en": "Methylene blue (injection)"
+  },
+  "category": "various",
+  "class": {
+    "fa": "پادزهر مت‌هموگلوبینمی",
+    "en": "Methaemoglobinaemia antidote"
+  },
+  "brands": [
+    {
+      "name": "ProvayBlue",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "provayblue",
+    "متیلن بلو",
+    "آبی متیلن"
+  ],
+  "formulations": [
+    {
+      "id": "amp-5",
+      "form": "injection",
+      "route": "iv",
+      "label": "5 mg/mL (10 mg/2 mL; 50 mg/10 mL)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-provayblue",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "methemoglobinemia",
+      "label": {
+        "fa": "مت‌هموگلوبینمی اکتسابی — ۱ mg/kg وریدی در ۵ تا ۳۰ دقیقه",
+        "en": "Acquired methaemoglobinaemia — 1 mg/kg IV over 5–30 min"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 1,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-provayblue",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر مت‌هموگلوبین بالای ۳۰٪ ماند یا علائم ادامه یافت، ۱ mg/kg دیگر پس از ۱ ساعت؛ پس از ۲ دوز درمان دیگر. نارسایی متوسط تا شدید کلیه: فقط یک دوز. با D5W رقیق شود نه سالین؛ زیرجلدی نه.",
+            "en": "If methaemoglobin stays >30% or symptoms persist, one more 1 mg/kg after 1 h; after 2 doses use other treatment. Moderate–severe renal impairment: single dose only. Dilute in D5W, not saline; never subcutaneous."
+          },
+          "refs": [
+            {
+              "source": "fda-provayblue",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-provayblue",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-provayblue",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شدید به متیلن بلو یا رنگ‌های تیازینی؛ کمبود G6PD (همولیز).",
+        "en": "Severe hypersensitivity to methylene blue or thiazine dyes; G6PD deficiency (haemolysis)."
+      },
+      "refs": [
+        {
+          "source": "fda-provayblue",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سندرم سروتونین با SSRI، SNRI، MAOI و اپیوئیدها — همزمان مصرف نشود.",
+        "en": "Boxed warning: serotonin syndrome with SSRIs, SNRIs, MAOIs and opioids — avoid concomitant use."
+      },
+      "refs": [
+        {
+          "source": "fda-provayblue",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "serotonergic",
+      "text": {
+        "fa": "SSRI، SNRI، MAOI و اپیوئیدها: سندرم سروتونین جدی یا کشنده.",
+        "en": "SSRIs, SNRIs, MAOIs and opioids: serious or fatal serotonin syndrome."
+      },
+      "refs": [
+        {
+          "source": "fda-provayblue",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "amp-5",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 70,
+        "mlPerDose": 14
+      }
+    }
+  ],
+  "atc": [
+    "V03AB17"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01589",
+        "en": "METHYLENE BLUE 100MG/10ML AMP",
+        "fa": "آمپول متیلن بلو ۱۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "05979",
+        "en": "METHYLENE BLUE 50MG/5ML AMP",
+        "fa": "آمپول متیلن بلو ۵۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "51920",
+        "en": "METHYLENE BLUE INJECTION PARENTERAL 10 mg/1mL 1 mL",
+        "fa": "فرآورده تزریقی متیلن بلو ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1965/Methylene-Blue",
+        "url": "https://www.darooyab.ir/G-1965/Methylene-Blue"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204630",
+      "label": "NDA204630"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f6848e5-35ed-4046-b13c-3032b5ba3232",
+      "label": "FDA ProvayBlue"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AB17",
+      "label": "V03AB17"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1965/Methylene-Blue",
+      "label": "Methylene-Blue"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary PROVAYBLUE may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-provayblue",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of methylene blue in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-provayblue",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of PROVAYBLUE for the treatment of acquired methemoglobinemia have been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-provayblue",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of PROVAYBLUE did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-provayblue",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-provayblue",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204630"
+  }
+}

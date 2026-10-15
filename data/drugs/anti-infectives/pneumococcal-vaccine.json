@@ -1,0 +1,321 @@
+{
+  "id": "pneumococcal-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن پنوموکوک کونژوگه (PCV20)",
+    "en": "Pneumococcal conjugate vaccine (PCV20)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن کونژوگه",
+    "en": "Conjugate vaccine"
+  },
+  "brands": [
+    {
+      "name": "Prevnar 20",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "prevnar",
+    "پرونار",
+    "واکسن پنوموکوک",
+    "PCV"
+  ],
+  "formulations": [
+    {
+      "id": "syr-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL prefilled syringe",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prevnar20",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "child",
+      "disease": "immunization",
+      "label": {
+        "fa": "شیرخوار — ۰٫۵ mL در ۲، ۴، ۶ و ۱۲ تا ۱۵ ماهگی",
+        "en": "Infant — 0.5 mL at 2, 4, 6 and 12–15 months"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "week"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-prevnar20",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول از ۶ هفتگی. جبرانی (بدون واکسن قبلی): ۷ تا ۱۱ ماه ۳ دوز؛ ۱۲ تا ۲۳ ماه ۲ دوز با فاصله ۲ ماه؛ ۲۴ ماه تا ۱۷ سال یک دوز.",
+            "en": "First dose from 6 weeks. Catch-up (no prior PCV): 7–11 months 3 doses; 12–23 months 2 doses 2 months apart; 24 months–17 y one dose."
+          },
+          "refs": [
+            {
+              "source": "fda-prevnar20",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-prevnar20",
+              "section": "2.4, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "immunization",
+      "label": {
+        "fa": "بزرگسال ۱۸ سال به بالا — یک دوز ۰٫۵ mL",
+        "en": "Adults ≥18 y — one 0.5 mL dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-prevnar20",
+          "section": "2.6"
+        },
+        {
+          "source": "fda-prevnar20",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش آلرژیک شدید به اجزای واکسن یا توکسوئید دیفتری.",
+        "en": "Severe allergic reaction to a component or to diphtheria toxoid."
+      },
+      "refs": [
+        {
+          "source": "fda-prevnar20",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "child",
+      "formulation": "syr-05",
+      "input": {
+        "ageMonths": 2,
+        "weightKg": 5
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "syr-05",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07AL02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18819",
+        "en": "VACCINE-PENUMOCOCCAL POLYSACCHARIDE CONJ. 0.5 ML SYRING",
+        "fa": "سرنگ واکسن–پنوموکوککال پولیساکچاراید کونج . ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "18152",
+        "en": "VACCINE-PNEUMOCOCCAL MONOVALENT SYRINGE",
+        "fa": "سرنگ واکسن–پنوموکوکی تک‌ظرفیتی"
+      },
+      {
+        "code": "52315",
+        "en": "PNEUMOCOCCAL VACCINE 10-VALANT INJECTION PARENTERAL  0.5 mL",
+        "fa": "فرآورده تزریقی واکسن پنوموکوکی ۱۰–والانت ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "52316",
+        "en": "PNEUMOCOCCAL VACCINE 10-VALANT INJECTION PARENTERAL  2 mL",
+        "fa": "فرآورده تزریقی واکسن پنوموکوکی ۱۰–والانت ۲ میلی‌لیتر"
+      },
+      {
+        "code": "52708",
+        "en": "PNEUMOCOCCAL VACCINE 10-VALANT INJECTION PARENTERAL  2.5 mL",
+        "fa": "فرآورده تزریقی واکسن پنوموکوکی ۱۰–والانت ۲٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "52215",
+        "en": "PNEUMOCOCCAL VACCINE 23-VALANT INJECTION PARENTERAL  0.5 mL",
+        "fa": "فرآورده تزریقی واکسن پنوموکوکی ۲۳–والانت ۰٫۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3498/Pneumococcal-Vaccines",
+        "url": "https://www.darooyab.ir/G-3498/Pneumococcal-Vaccines"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125731",
+      "label": "BLA125731"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4e2cf51-e6a8-4103-bb1d-6120c6474ff8",
+      "label": "FDA Prevnar 20"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07AL02",
+      "label": "J07AL02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3498/Pneumococcal-Vaccines",
+      "label": "Pneumococcal-Vaccines"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary All pregnancies have a risk of birth defect, loss, or other adverse outcomes.",
+      "refs": [
+        {
+          "source": "fda-prevnar20",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Data are not available to assess the effects of Prevnar 20 on the breastfed infant or on milk production/excretion.",
+      "refs": [
+        {
+          "source": "fda-prevnar20",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The effectiveness of Prevnar 20 for the prevention of otitis media caused by serotypes 4, 6B, 9V, 14, 18C, 19F, and 23F has been established in individuals 6 weeks through 5 years of age [see Clinical Studies (14.1) ] .",
+      "refs": [
+        {
+          "source": "fda-prevnar20",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of Prevnar 20 recipients 18 years of age and older evaluated for safety in the 3 main clinical trials (N=4263), 26.7% (n=1138) were 65 years of age and older and 1.7% (n=72) were 80 years of age and older [see Clinical Studies (14.2) ] .",
+      "refs": [
+        {
+          "source": "fda-prevnar20",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-prevnar20",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125731"
+  }
+}

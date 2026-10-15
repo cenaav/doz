@@ -1,0 +1,344 @@
+{
+  "id": "hepatitis-b-immune-globulin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایمونوگلوبولین هپاتیت B (HBIG)",
+    "en": "Hepatitis B immune globulin (human)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ایمونوگلوبولین اختصاصی",
+    "en": "Specific immune globulin"
+  },
+  "brands": [
+    {
+      "name": "HyperHEP B",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "hyperhep b",
+    "HBIG",
+    "ایمونوگلوبولین هپاتیت"
+  ],
+  "formulations": [
+    {
+      "id": "vial",
+      "form": "injection",
+      "route": "im",
+      "label": "Single-dose syringe or vial (0.5, 1 or 5 mL)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hyperhep",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "exposure",
+      "disease": "hbv-exposure",
+      "label": {
+        "fa": "تماس با خون HBsAg مثبت (سوزن‌زدگی، مخاط) یا تماس جنسی — ۰٫۰۶ mL/kg عضلانی",
+        "en": "Exposure to HBsAg-positive blood (needlestick, mucosa) or sexual exposure — 0.06 mL/kg IM"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mL",
+      "dose": {
+        "perKgPerDay": 0.06,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hyperhep",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هرچه زودتر و ترجیحاً ظرف ۲۴ ساعت (فایده پس از ۷ روز نامشخص؛ در تماس جنسی تا ۲ هفته). همراه شروع یا تکمیل سری واکسن هپاتیت B طبق جدول ۱ برچسب.",
+            "en": "As soon as possible, preferably within 24 h (value after 7 days unclear; within 2 weeks for sexual exposure). Start or complete the hepatitis B vaccine series per label Table 1."
+          },
+          "refs": [
+            {
+              "source": "fda-hyperhep",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "newborn",
+      "disease": "hbv-exposure",
+      "label": {
+        "fa": "نوزاد مادر HBsAg مثبت — ۰٫۵ mL عضلانی ترجیحاً ظرف ۱۲ ساعت از تولد",
+        "en": "Infant of HBsAg-positive mother — 0.5 mL IM, preferably within 12 h of birth"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hyperhep",
+          "section": "Dosage and Administration — Prophylaxis of infants"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اثر پس از ۴۸ ساعت به‌شدت کم می‌شود. همراه واکسن هپاتیت B (۳ دوز ۰٫۵ mL).",
+            "en": "Efficacy falls sharply if delayed beyond 48 h. Give with hepatitis B vaccine (3 doses of 0.5 mL)."
+          },
+          "refs": [
+            {
+              "source": "fda-hyperhep",
+              "section": "Dosage and Administration — Prophylaxis of infants"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "exposure",
+      "formulation": "vial",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4.2,
+        "mlPerDose": 4.2
+      }
+    },
+    {
+      "regimen": "newborn",
+      "formulation": "vial",
+      "input": {
+        "ageDays": 1,
+        "weightKg": 3.3
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J06BB04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01531",
+        "en": "HEPATITIS B IMMUNE GLOBULIN 1000",
+        "fa": "هپاتیت B ایمونوگلوبولین ۱۰۰۰"
+      },
+      {
+        "code": "13930",
+        "en": "HEPATITIS B IMMUNE GLOBULIN 1100IU/5ML VIAL",
+        "fa": "ویال هپاتیت B ایمونوگلوبولین ۱۱۰۰ واحد بین‌المللی / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "13929",
+        "en": "HEPATITIS B IMMUNE GLOBULIN 220IU/1ML SYRINGE",
+        "fa": "سرنگ هپاتیت B ایمونوگلوبولین ۲۲۰ واحد بین‌المللی / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00627",
+        "en": "HEPATITIS B IMMUNE GLOBULIN IM 1250U/5ML VIAL",
+        "fa": "ویال هپاتیت B ایمونوگلوبولین عضلانی ۱۲۵۰ واحد / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "07386",
+        "en": "HEPATITIS B IMMUNE GLOBULIN IM 180IU/1ML VIAL",
+        "fa": "ویال هپاتیت B ایمونوگلوبولین عضلانی ۱۸۰ واحد بین‌المللی / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01530",
+        "en": "HEPATITIS B IMMUNE GLOBULIN IM 200U/ML",
+        "fa": "هپاتیت B ایمونوگلوبولین عضلانی ۲۰۰ واحد / میلی‌لیتر"
+      },
+      {
+        "code": "18065",
+        "en": "HEPATITIS B IMMUNE GLOBULIN IM 2500IU/50 ML",
+        "fa": "هپاتیت B ایمونوگلوبولین عضلانی ۲۵۰۰ واحد بین‌المللی / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00628",
+        "en": "HEPATITIS B IMMUNE GLOBULIN IM 250U/1ML VIAL",
+        "fa": "ویال هپاتیت B ایمونوگلوبولین عضلانی ۲۵۰ واحد / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "02381",
+        "en": "HEPATITIS B IMMUNE GLOBULIN IM 400U/2ML",
+        "fa": "هپاتیت B ایمونوگلوبولین عضلانی ۴۰۰ واحد / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "18064",
+        "en": "HEPATITIS B IMMUNE GLOBULIN IM 500IU/10 ML",
+        "fa": "هپاتیت B ایمونوگلوبولین عضلانی ۵۰۰ واحد بین‌المللی / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "18063",
+        "en": "HEPATITIS B IMMUNE GLOBULIN IM 500IU/50 ML",
+        "fa": "هپاتیت B ایمونوگلوبولین عضلانی ۵۰۰ واحد بین‌المللی / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "07382",
+        "en": "HEPATITIS B IMMUNE GLOBULIN IM 540IU/3ML VIAL",
+        "fa": "ویال هپاتیت B ایمونوگلوبولین عضلانی ۵۴۰ واحد بین‌المللی / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "52060",
+        "en": "HEPATITIS B IMMUNE GLOBULIN INJECTION PARENTERAL 180 [iU]/1mL 3 mL",
+        "fa": "فرآورده تزریقی هپاتیت B ایمونوگلوبولین ۱۸۰ واحد بین‌المللی / ۱ میلی‌لیتر ۳ میلی‌لیتر"
+      },
+      {
+        "code": "52061",
+        "en": "HEPATITIS B IMMUNE GLOBULIN INJECTION PARENTERAL 334 [iU]/1mL 3 mL",
+        "fa": "فرآورده تزریقی هپاتیت B ایمونوگلوبولین ۳۳۴ واحد بین‌المللی / ۱ میلی‌لیتر ۳ میلی‌لیتر"
+      },
+      {
+        "code": "22396",
+        "en": "HEPATITIS B IMMUNE GLOBULIN INJECTION PARENTERAL 50 [iU]/1mL 2 mL",
+        "fa": "فرآورده تزریقی هپاتیت B ایمونوگلوبولین ۵۰ واحد بین‌المللی / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "22398",
+        "en": "HEPATITIS B IMMUNE GLOBULIN INJECTION PARENTERAL 50 [iU]/1mL 40 mL",
+        "fa": "فرآورده تزریقی هپاتیت B ایمونوگلوبولین ۵۰ واحد بین‌المللی / ۱ میلی‌لیتر ۴۰ میلی‌لیتر"
+      },
+      {
+        "code": "52059",
+        "en": "HEPATITIS B IMMUNE GLOBULIN INJECTION PARENTERAL 180 [iU]/1mL 1 mL",
+        "fa": "فرآورده تزریقی هپاتیت B ایمونوگلوبولین ۱۸۰ واحد بین‌المللی / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      },
+      {
+        "code": "52164",
+        "en": "HEPATITIS B IMMUNE GLOBULIN INJECTION PARENTERAL 50 [iU]/1mL 100 mL",
+        "fa": "فرآورده تزریقی هپاتیت B ایمونوگلوبولین ۵۰ واحد بین‌المللی / ۱ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52208",
+        "en": "HEPATITIS B IMMUNE GLOBULIN INJECTION PARENTERAL 500 [iU]/1mL 1 mL",
+        "fa": "فرآورده تزریقی هپاتیت B ایمونوگلوبولین ۵۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3468/Hepatitis-B-Immunoglobulins",
+        "url": "https://www.darooyab.ir/G-3468/Hepatitis-B-Immunoglobulins"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=101146",
+      "label": "BLA101146"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cda35690-672f-46cd-8520-e37f4d66a8d7",
+      "label": "FDA HyperHEP B"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J06BB04",
+      "label": "J06BB04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3468/Hepatitis-B-Immunoglobulins",
+      "label": "Hepatitis-B-Immunoglobulins"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Animal reproduction studies have not been conducted with Hyper HEP B .",
+      "refs": [
+        {
+          "source": "fda-hyperhep",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in the pediatric population have not been established.",
+      "refs": [
+        {
+          "source": "fda-hyperhep",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-hyperhep",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA101146"
+  }
+}

@@ -63,6 +63,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "inj-200",
+      "form": "injection",
+      "route": "iv",
+      "label": "200 mg/mL (6 g/30 mL) vial — dilute before IV infusion",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "3"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -99,6 +119,10 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "sol-20",
+        "sol-10"
       ]
     },
     {
@@ -120,6 +144,181 @@
           "source": "fda-acetadote",
           "section": "Dosage and Administration — Acetaminophen Overdose"
         }
+      ],
+      "allowedFormulations": [
+        "sol-20",
+        "sol-10"
+      ]
+    },
+    {
+      "id": "iv-bag1",
+      "disease": "acetaminophen-overdose",
+      "label": {
+        "fa": "وریدی — کیسه ۱ (بارگذاری): ۱۵۰ mg/kg در ۱ ساعت",
+        "en": "IV — bag 1 (loading): 150 mg/kg over 1 h"
+      },
+      "population": {
+        "minWeightKg": 5
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 150,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "2.5, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 15000,
+        "refs": [
+          {
+            "source": "fda-acetadote",
+            "section": "2.5, Table 2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "رژیم سه‌کیسه‌ای (مجموع ۳۰۰ mg/kg در ۲۱ ساعت): کیسه ۱: ۱۵۰ mg/kg در ۱ ساعت؛ کیسه ۲: ۵۰ mg/kg در ۴ ساعت؛ کیسه ۳: ۱۰۰ mg/kg در ۱۶ ساعت. حجم رقیق‌سازی بر اساس وزن طبق جدول ۲. وزن ۱۰۰ kg و بیشتر: سقف ۱۵۰۰۰ / ۵۰۰۰ / ۱۰۰۰۰ mg. حجم نمایش‌داده‌شده از محلول ۲۰۰ mg/mL پیش از رقیق‌سازی است.",
+            "en": "Three-bag regimen (300 mg/kg over 21 h): bag 1 150 mg/kg over 1 h; bag 2 50 mg/kg over 4 h; bag 3 100 mg/kg over 16 h. Diluent volume by weight per Table 2. 100 kg or more: capped at 15,000 / 5,000 / 10,000 mg. The volume shown is of the 200 mg/mL vial before dilution."
+          },
+          "refs": [
+            {
+              "source": "fda-acetadote",
+              "section": "2.5, Table 2"
+            },
+            {
+              "source": "fda-acetadote",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-bag2",
+      "disease": "acetaminophen-overdose",
+      "label": {
+        "fa": "وریدی — کیسه ۲: ۵۰ mg/kg در ۴ ساعت",
+        "en": "IV — bag 2: 50 mg/kg over 4 h"
+      },
+      "population": {
+        "minWeightKg": 5
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 50,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "2.5, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 5000,
+        "refs": [
+          {
+            "source": "fda-acetadote",
+            "section": "2.5, Table 2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "رژیم سه‌کیسه‌ای (مجموع ۳۰۰ mg/kg در ۲۱ ساعت): کیسه ۱: ۱۵۰ mg/kg در ۱ ساعت؛ کیسه ۲: ۵۰ mg/kg در ۴ ساعت؛ کیسه ۳: ۱۰۰ mg/kg در ۱۶ ساعت. حجم رقیق‌سازی بر اساس وزن طبق جدول ۲. وزن ۱۰۰ kg و بیشتر: سقف ۱۵۰۰۰ / ۵۰۰۰ / ۱۰۰۰۰ mg. حجم نمایش‌داده‌شده از محلول ۲۰۰ mg/mL پیش از رقیق‌سازی است.",
+            "en": "Three-bag regimen (300 mg/kg over 21 h): bag 1 150 mg/kg over 1 h; bag 2 50 mg/kg over 4 h; bag 3 100 mg/kg over 16 h. Diluent volume by weight per Table 2. 100 kg or more: capped at 15,000 / 5,000 / 10,000 mg. The volume shown is of the 200 mg/mL vial before dilution."
+          },
+          "refs": [
+            {
+              "source": "fda-acetadote",
+              "section": "2.5, Table 2"
+            },
+            {
+              "source": "fda-acetadote",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-bag3",
+      "disease": "acetaminophen-overdose",
+      "label": {
+        "fa": "وریدی — کیسه ۳: ۱۰۰ mg/kg در ۱۶ ساعت",
+        "en": "IV — bag 3: 100 mg/kg over 16 h"
+      },
+      "population": {
+        "minWeightKg": 5
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 100,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "2.5, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 10000,
+        "refs": [
+          {
+            "source": "fda-acetadote",
+            "section": "2.5, Table 2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "رژیم سه‌کیسه‌ای (مجموع ۳۰۰ mg/kg در ۲۱ ساعت): کیسه ۱: ۱۵۰ mg/kg در ۱ ساعت؛ کیسه ۲: ۵۰ mg/kg در ۴ ساعت؛ کیسه ۳: ۱۰۰ mg/kg در ۱۶ ساعت. حجم رقیق‌سازی بر اساس وزن طبق جدول ۲. وزن ۱۰۰ kg و بیشتر: سقف ۱۵۰۰۰ / ۵۰۰۰ / ۱۰۰۰۰ mg. حجم نمایش‌داده‌شده از محلول ۲۰۰ mg/mL پیش از رقیق‌سازی است.",
+            "en": "Three-bag regimen (300 mg/kg over 21 h): bag 1 150 mg/kg over 1 h; bag 2 50 mg/kg over 4 h; bag 3 100 mg/kg over 16 h. Diluent volume by weight per Table 2. 100 kg or more: capped at 15,000 / 5,000 / 10,000 mg. The volume shown is of the 200 mg/mL vial before dilution."
+          },
+          "refs": [
+            {
+              "source": "fda-acetadote",
+              "section": "2.5, Table 2"
+            },
+            {
+              "source": "fda-acetadote",
+              "section": "2.3"
+            }
+          ]
+        }
       ]
     }
   ],
@@ -135,6 +334,20 @@
         {
           "source": "fda-acetadote",
           "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "iv-hyper",
+      "severity": "block",
+      "text": {
+        "fa": "تزریقی: سابقه واکنش حساسیتی به استیل‌سیستئین.",
+        "en": "Injection: previous hypersensitivity reaction to acetylcysteine."
+      },
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "4"
         }
       ]
     }
@@ -171,6 +384,42 @@
       "expect": {
         "perDose": 1400,
         "mlPerDose": 7
+      }
+    },
+    {
+      "regimen": "iv-bag1",
+      "formulation": "inj-200",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10500,
+        "mlPerDose": 52.5
+      }
+    },
+    {
+      "regimen": "iv-bag2",
+      "formulation": "inj-200",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 3500,
+        "mlPerDose": 17.5
+      }
+    },
+    {
+      "regimen": "iv-bag3",
+      "formulation": "inj-200",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 7000,
+        "mlPerDose": 35
       }
     }
   ],
