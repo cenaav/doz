@@ -1,0 +1,384 @@
+{
+  "id": "rivastigmine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریواستیگمین",
+    "en": "Rivastigmine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده کولین‌استراز",
+    "en": "Cholinesterase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Exelon",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "exelon",
+    "اکسلون",
+    "ریواستیگمین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-1-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "1.5 mg capsule",
+      "concentration": {
+        "amount": 1.5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rivastigmine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-3",
+      "form": "capsule",
+      "route": "oral",
+      "label": "3 mg capsule",
+      "concentration": {
+        "amount": 3,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rivastigmine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-4-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "4.5 mg capsule",
+      "concentration": {
+        "amount": 4.5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rivastigmine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-6",
+      "form": "capsule",
+      "route": "oral",
+      "label": "6 mg capsule",
+      "concentration": {
+        "amount": 6,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rivastigmine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ad",
+      "disease": "alzheimers",
+      "label": {
+        "fa": "آلزایمر — شروع ۱٫۵ mg دو بار در روز",
+        "en": "Alzheimer’s — start 1.5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1.5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-rivastigmine",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 12,
+        "refs": [
+          {
+            "source": "fda-rivastigmine",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر حداقل ۲ هفته: ۳ ← ۴٫۵ ← ۶ mg دو بار. اگر بیش از ۳ روز قطع شد از ۱٫۵ mg دوباره. با غذا.",
+            "en": "At least every 2 weeks: 3 → 4.5 → 6 mg twice daily. If interrupted >3 days restart at 1.5 mg. With food."
+          },
+          "refs": [
+            {
+              "source": "fda-rivastigmine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-rivastigmine",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ریواستیگمین یا کاربامات‌ها؛ سابقه واکنش محل چسب.",
+        "en": "Hypersensitivity to rivastigmine or carbamates; previous patch-site reaction."
+      },
+      "refs": [
+        {
+          "source": "fda-rivastigmine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ad",
+      "formulation": "cap-1-5",
+      "input": {
+        "ageYears": 75,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 1.5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N06DA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01998",
+        "en": "RIVASTIGMINE 1.5MG CAP",
+        "fa": "کپسول ریواستیگمین ۱٫۵ میلی‌گرم"
+      },
+      {
+        "code": "01902",
+        "en": "RIVASTIGMINE 1.5MG TAB",
+        "fa": "قرص ریواستیگمین ۱٫۵ میلی‌گرم"
+      },
+      {
+        "code": "15859",
+        "en": "RIVASTIGMINE 18MG/10CM2 PATCH",
+        "fa": "پچ پوستی ریواستیگمین ۱۸ میلی‌گرم / ۱۰ سانتی‌متر ۲"
+      },
+      {
+        "code": "09689",
+        "en": "RIVASTIGMINE 2MG/100ML SYRUP",
+        "fa": "شربت ریواستیگمین ۲ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "01999",
+        "en": "RIVASTIGMINE 3MG CAP",
+        "fa": "کپسول ریواستیگمین ۳ میلی‌گرم"
+      },
+      {
+        "code": "01903",
+        "en": "RIVASTIGMINE 3MG TAB",
+        "fa": "قرص ریواستیگمین ۳ میلی‌گرم"
+      },
+      {
+        "code": "02000",
+        "en": "RIVASTIGMINE 4.5MG CAP",
+        "fa": "کپسول ریواستیگمین ۴٫۵ میلی‌گرم"
+      },
+      {
+        "code": "01904",
+        "en": "RIVASTIGMINE 4.5MG TAB",
+        "fa": "قرص ریواستیگمین ۴٫۵ میلی‌گرم"
+      },
+      {
+        "code": "19832",
+        "en": "RIVASTIGMINE 4.6MG/24H PATCH",
+        "fa": "پچ پوستی ریواستیگمین ۴٫۶ میلی‌گرم / ۲۴ H"
+      },
+      {
+        "code": "02738",
+        "en": "RIVASTIGMINE 6MG CAP",
+        "fa": "کپسول ریواستیگمین ۶ میلی‌گرم"
+      },
+      {
+        "code": "01931",
+        "en": "RIVASTIGMINE 6MG TAB",
+        "fa": "قرص ریواستیگمین ۶ میلی‌گرم"
+      },
+      {
+        "code": "15858",
+        "en": "RIVASTIGMINE 9MG/5CM2 PATCH",
+        "fa": "پچ پوستی ریواستیگمین ۹ میلی‌گرم / ۵ سانتی‌متر ۲"
+      },
+      {
+        "code": "52413",
+        "en": "RIVASTIGMINE (AS HYDROGEN TARTRATE) SOLUTION ORAL 2 mg/1mL 120 mL",
+        "fa": "محلول خوراکی ریواستیگمین (معادل هیدروژن تارتارات) ۲ میلی‌گرم / ۱ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3054/Rivastigmine",
+        "url": "https://www.darooyab.ir/G-3054/Rivastigmine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204572",
+      "label": "ANDA204572"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c246a0e5-1e77-41ee-a7b3-384f21f2f2e0",
+      "label": "FDA Rivastigmine caps."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a602009.html",
+      "label": "Rivastigmine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607078.html",
+      "label": "Rivastigmine Transdermal Patch"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06DA03",
+      "label": "N06DA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3054/Rivastigmine",
+      "label": "Rivastigmine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risks associated with the use of rivastigmine tartrate in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-rivastigmine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of rivastigmine in human milk, the effects on the breastfed infant, or the effects of rivastigmine on milk production.",
+      "refs": [
+        {
+          "source": "fda-rivastigmine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-rivastigmine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of patients in clinical studies of rivastigmine tartrate, 86% were 65 years and older while 46% were 75 years and older.",
+      "refs": [
+        {
+          "source": "fda-rivastigmine",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-rivastigmine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA204572"
+  }
+}

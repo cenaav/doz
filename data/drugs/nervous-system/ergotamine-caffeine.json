@@ -1,0 +1,262 @@
+{
+  "id": "ergotamine-caffeine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ارگوتامین + کافئین (کافرگوت)",
+    "en": "Ergotamine + caffeine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آلکالوئید ارگوت",
+    "en": "Ergot alkaloid for migraine"
+  },
+  "brands": [
+    {
+      "name": "Cafergot",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cafergot",
+    "کافرگوت",
+    "ارگوتامین سی",
+    "ارگوتامین"
+  ],
+  "formulations": [
+    {
+      "id": "tab",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Ergotamine tartrate 1 mg + caffeine 100 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cafergot",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "attack",
+      "disease": "migraine-acute",
+      "label": {
+        "fa": "حمله میگرن — ۲ قرص در شروع، سپس ۱ قرص هر نیم ساعت در صورت نیاز",
+        "en": "Migraine attack — 2 tablets at onset, then 1 every 30 min if needed"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cafergot",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 6,
+        "refs": [
+          {
+            "source": "fda-cafergot",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر ۶ قرص در هر حمله و ۱۰ قرص در هفته.",
+            "en": "Max 6 tablets per attack and 10 per week."
+          },
+          "refs": [
+            {
+              "source": "fda-cafergot",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری؛ بیماری عروق محیطی یا کرونر؛ فشار خون بالا؛ اختلال کبد یا کلیه؛ سپسیس؛ حساسیت؛ مهارکننده‌های قوی CYP3A4.",
+        "en": "Pregnancy; peripheral vascular or coronary disease; hypertension; impaired hepatic or renal function; sepsis; hypersensitivity; potent CYP3A4 inhibitors."
+      },
+      "refs": [
+        {
+          "source": "fda-cafergot",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: با مهارکننده‌های قوی CYP3A4 (کلاریترومایسین، اریترومایسین، ریتوناویر، کتوکونازول، ایتراکونازول) ایسکمی شدید مغز یا اندام.",
+        "en": "Boxed warning: with potent CYP3A4 inhibitors (clarithromycin, erythromycin, ritonavir, ketoconazole, itraconazole) serious cerebral or limb ischaemia."
+      },
+      "refs": [
+        {
+          "source": "fda-cafergot",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "attack",
+      "formulation": "tab",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 2,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "N02CA52"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00493",
+        "en": "ERGOTAMINE C TAB",
+        "fa": "قرص ارگوتامین C"
+      },
+      {
+        "code": "00494",
+        "en": "ERGOTAMINE COMPOUND TAB",
+        "fa": "قرص ارگوتامین ترکیبی"
+      },
+      {
+        "code": "02044",
+        "en": "ERGOTAMINE TARTRATE 2MG SUBLINGUAL TAB",
+        "fa": "قرص زیرزبانی ارگوتامین تارتارات ۲ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4523/Ergotamine-C",
+        "url": "https://www.darooyab.ir/G-4523/Ergotamine-C"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=040590",
+      "label": "ANDA040590"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4db7eece-2eef-bc1b-e063-6394a90a98cb",
+      "label": "FDA Cafergot"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601048.html",
+      "label": "Ergotamine and Caffeine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02CA52",
+      "label": "N02CA52"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4523/Ergotamine-C",
+      "label": "Ergotamine-C"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Ergotamine tartrate and caffeine tablets is contraindicated in women who are or may become pregnant.",
+      "refs": [
+        {
+          "source": "fda-cafergot",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Ergot drugs are known to inhibit prolactin but there are no reports of decreased lactation with ergotamine tartrate and caffeine.",
+      "refs": [
+        {
+          "source": "fda-cafergot",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-cafergot",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cafergot",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA040590"
+  }
+}

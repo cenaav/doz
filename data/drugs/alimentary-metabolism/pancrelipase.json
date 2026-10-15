@@ -1,0 +1,272 @@
+{
+  "id": "pancrelipase",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پانکرلیپاز (کرئون)",
+    "en": "Pancrelipase"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنزیم پانکراس",
+    "en": "Pancreatic enzymes"
+  },
+  "brands": [
+    {
+      "name": "Creon",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "creon",
+    "کرئون",
+    "پانکراتین",
+    "pancreatin"
+  ],
+  "formulations": [
+    {
+      "id": "cap-12000",
+      "form": "capsule",
+      "route": "oral",
+      "label": "Creon 12,000 lipase units capsule",
+      "concentration": {
+        "amount": 12000,
+        "unit": "unit",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-creon",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "epi",
+      "disease": "pancreatic-insufficiency",
+      "label": {
+        "fa": "نارسایی پانکراس — ۴ سال به بالا: شروع ۵۰۰ واحد لیپاز/kg در هر وعده",
+        "en": "Pancreatic insufficiency — ≥4 y: start 500 lipase units/kg per meal"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDose": 500,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-creon",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDose": 2500,
+        "maxPerKgPerDay": 10000,
+        "refs": [
+          {
+            "source": "fda-creon",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نصف دوز با میان‌وعده. بیش از ۲۵۰۰ واحد/kg/وعده یا ۱۰٬۰۰۰ واحد/kg/روز بدون بررسی بیشتر نه (خطر فیبروزان کولونوپاتی). کپسول کامل بلعیده شود.",
+            "en": "Half dose with snacks. Do not exceed 2,500 units/kg/meal or 10,000 units/kg/day without investigation (fibrosing colonopathy). Swallow capsules whole."
+          },
+          "refs": [
+            {
+              "source": "fda-creon",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "فیبروزان کولونوپاتی با دوزهای بالا؛ کپسول خرد یا جویده نشود.",
+        "en": "Fibrosing colonopathy with high doses; do not crush or chew."
+      },
+      "refs": [
+        {
+          "source": "fda-creon",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "epi",
+      "formulation": "cap-12000",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 24
+      },
+      "expect": {
+        "perDose": 12000,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A09AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "12312",
+        "en": "PANCREATIN CAP",
+        "fa": "کپسول پانکراتین"
+      },
+      {
+        "code": "00945",
+        "en": "PANCREATIN FORTE 700MG TAB",
+        "fa": "قرص پانکراتین فورت ۷۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00944",
+        "en": "PANCREATIN TAB",
+        "fa": "قرص پانکراتین"
+      },
+      {
+        "code": "50404",
+        "en": "PANCREATIN CAPSULE ORAL 10000 [iU]",
+        "fa": "کپسول پانکراتین ۱۰۰۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "51916",
+        "en": "PANCREATIN CAPSULE ORAL 40000 [iU]",
+        "fa": "کپسول پانکراتین ۴۰۰۰۰ واحد بین‌المللی"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4540/Pancreatin",
+        "url": "https://www.darooyab.ir/G-4540/Pancreatin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020725",
+      "label": "BLA020725"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=073201aa-556d-4a70-918e-84e9616fd88d",
+      "label": "FDA Creon"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604035.html",
+      "label": "Pancrelipase"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A09AA02",
+      "label": "A09AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4540/Pancreatin",
+      "label": "Pancreatin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: جذب سیستمیک ناچیز؛ مواجهه جنین انتظار نمی‌رود.",
+        "en": "Label: minimal systemic absorption; fetal exposure not expected."
+      },
+      "quote": "Pancrelipase is minimally absorbed systematically; therefore, maternal use is not expected to result in fetal exposure to the drug.",
+      "refs": [
+        {
+          "source": "fda-creon",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: مواجهه شیرخوار انتظار نمی‌رود.",
+        "en": "Label: infant exposure not expected."
+      },
+      "quote": "Pancrelipase is minimally absorbed systemically following oral administration; therefore, maternal use is not expected to result in clinically relevant exposure of breastfed infants to the drug.",
+      "refs": [
+        {
+          "source": "fda-creon",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of CREON for the treatment of exocrine pancreatic insufficiency have been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-creon",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of CREON did not include sufficient numbers of patients aged 65 years and over to determine whether they respond differently from younger patients.",
+      "refs": [
+        {
+          "source": "fda-creon",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-creon",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA020725"
+  }
+}

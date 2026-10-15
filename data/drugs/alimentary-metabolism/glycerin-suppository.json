@@ -1,0 +1,217 @@
+{
+  "id": "glycerin-suppository",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "شیاف گلیسیرین",
+    "en": "Glycerin suppository"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ملین اسموتیک",
+    "en": "Osmotic laxative"
+  },
+  "brands": [
+    {
+      "name": "Glycerin suppository",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "glycerin",
+    "شیاف گلیسیرین",
+    "شیاف یبوست"
+  ],
+  "formulations": [
+    {
+      "id": "supp-2g",
+      "form": "suppository",
+      "route": "rectal",
+      "label": "Glycerin 2 g suppository (adult)",
+      "concentration": {
+        "amount": 2,
+        "unit": "g",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-glycerin",
+          "section": "Active Ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "const",
+      "disease": "constipation",
+      "label": {
+        "fa": "یبوست گاه‌به‌گاه — ۶ سال به بالا: ۱ شیاف در روز",
+        "en": "Occasional constipation — ≥6 y: 1 suppository daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "g",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-glycerin",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲ تا زیر ۶ سال: شیاف کودکان؛ زیر ۲ سال با پزشک. بیش از ۱ هفته نه.",
+            "en": "2 to <6 y: children’s suppository; under 2 ask a doctor. Not more than 1 week."
+          },
+          "refs": [
+            {
+              "source": "fda-glycerin",
+              "section": "Directions"
+            },
+            {
+              "source": "fda-glycerin",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "const",
+      "formulation": "supp-2g",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "A06AX01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02054",
+        "en": "GLYCERIN 1G SUPP",
+        "fa": "شیاف گلیسیرین ۱ گرم"
+      },
+      {
+        "code": "02055",
+        "en": "GLYCERIN 2G SUPP",
+        "fa": "شیاف گلیسیرین ۲ گرم"
+      },
+      {
+        "code": "08062",
+        "en": "GLYCERIN 4G SUPP",
+        "fa": "شیاف گلیسیرین ۴ گرم"
+      },
+      {
+        "code": "02662",
+        "en": "GLYCERIN 60ML LIQUID",
+        "fa": "مایع گلیسیرین ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "00600",
+        "en": "GLYCERIN_BULK",
+        "fa": "ماده اولیه گلیسیرین"
+      },
+      {
+        "code": "52077",
+        "en": "GLYCERIN LIQUID NOT APPLICABLE  60 g",
+        "fa": "مایع گلیسیرین غیرقابل‌اعمال ۶۰ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3876/Glycerin",
+        "url": "https://www.darooyab.ir/G-3876/Glycerin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ca6d13db-60e8-4fcc-b7b3-3eb280b8c435",
+      "label": "FDA Glycerin suppository"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A06AX01",
+      "label": "A06AX01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3876/Glycerin",
+      "label": "Glycerin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-glycerin",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-glycerin",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-glycerin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M007"
+  }
+}

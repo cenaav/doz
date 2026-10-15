@@ -1,0 +1,234 @@
+{
+  "id": "amantadine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمانتادین",
+    "en": "Amantadine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدپارکینسون / ضدویروس",
+    "en": "Antiparkinsonian / antiviral"
+  },
+  "brands": [
+    {
+      "name": "Symmetrel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "symmetrel",
+    "آمانتادین",
+    "پی کی مرز"
+  ],
+  "formulations": [
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-amantadine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pd",
+      "disease": "parkinsons",
+      "label": {
+        "fa": "پارکینسونیسم — ۱۰۰ mg دو بار در روز",
+        "en": "Parkinsonism — 100 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-amantadine",
+          "section": "Dosage and Administration — Parkinsonism"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در بیماری‌های همراه جدی یا با سایر داروهای پارکینسون: ۱۰۰ mg روزانه و پس از ۱ تا چند هفته دو بار.",
+            "en": "With serious illness or other antiparkinson drugs: 100 mg daily, after 1–several weeks twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-amantadine",
+              "section": "Dosage and Administration — Parkinsonism"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آمانتادین.",
+        "en": "Hypersensitivity to amantadine."
+      },
+      "refs": [
+        {
+          "source": "fda-amantadine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pd",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N04BB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01823",
+        "en": "AMANTADINE 100MG TAB",
+        "fa": "قرص آمانتادین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00051",
+        "en": "AMANTADINE HCL 100MG CAP",
+        "fa": "کپسول آمانتادین هیدروکلراید ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2481/Amantadine",
+        "url": "https://www.darooyab.ir/G-2481/Amantadine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208278",
+      "label": "ANDA208278"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=547904f3-84a3-1ccb-e063-6294a90a6fb6",
+      "label": "FDA Amantadine caps."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682064.html",
+      "label": "Amantadine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04BB01",
+      "label": "N04BB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2481/Amantadine",
+      "label": "Amantadine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C The effect of amantadine on embryofetal and peri-postnatal development has not been adequately tested, that is, in studies conducted under Good Laboratory Practice (GLP) and according to current recommended methodology.",
+      "refs": [
+        {
+          "source": "fda-amantadine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Amantadine is excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-amantadine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of amantadine in newborn infants and infants below the age of 1 year have not been established.",
+      "refs": [
+        {
+          "source": "fda-amantadine",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-amantadine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA208278"
+  }
+}

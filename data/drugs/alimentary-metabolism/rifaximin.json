@@ -1,0 +1,346 @@
+{
+  "id": "rifaximin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریفاکسیمین",
+    "en": "Rifaximin"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتی‌بیوتیک روده‌ای (ریفامایسین)",
+    "en": "Gut-selective rifamycin antibiotic"
+  },
+  "brands": [
+    {
+      "name": "Xifaxan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xifaxan",
+    "ریفاکسیمین",
+    "نورمیکس"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rifaximin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-550",
+      "form": "tablet",
+      "route": "oral",
+      "label": "550 mg tablet",
+      "concentration": {
+        "amount": 550,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rifaximin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "td",
+      "disease": "travelers-diarrhea",
+      "label": {
+        "fa": "اسهال مسافران — ۱۲ سال به بالا: ۲۰۰ mg سه بار در روز، ۳ روز",
+        "en": "Travellers’ diarrhoea — ≥12 y: 200 mg three times daily for 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-rifaximin",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      },
+      "allowedFormulations": [
+        "tab-200"
+      ]
+    },
+    {
+      "id": "he",
+      "disease": "hepatic-encephalopathy",
+      "label": {
+        "fa": "پیشگیری از عود انسفالوپاتی کبدی — ۵۵۰ mg دو بار در روز",
+        "en": "Hepatic encephalopathy recurrence — 550 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 550,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-rifaximin",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-550"
+      ]
+    },
+    {
+      "id": "ibsd",
+      "disease": "ibs",
+      "label": {
+        "fa": "IBS با اسهال — ۵۵۰ mg سه بار در روز، ۱۴ روز",
+        "en": "IBS-D — 550 mg three times daily for 14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 550,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-rifaximin",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      },
+      "allowedFormulations": [
+        "tab-550"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ریفاکسیمین یا ریفامایسین‌ها.",
+        "en": "Hypersensitivity to rifaximin or rifamycins."
+      },
+      "refs": [
+        {
+          "source": "fda-rifaximin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "td",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "he",
+      "formulation": "tab-550",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 550
+      }
+    },
+    {
+      "regimen": "ibsd",
+      "formulation": "tab-550",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 550
+      }
+    }
+  ],
+  "atc": [
+    "A07AA11"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13992",
+        "en": "RIFAXIMIN 200MG TAB",
+        "fa": "قرص ریفاکسیمین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "22141",
+        "en": "RIFAXIMIN 550MG TAB",
+        "fa": "قرص ریفاکسیمین ۵۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-495/Rifaximin",
+        "url": "https://www.darooyab.ir/G-495/Rifaximin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021361",
+      "label": "NDA021361"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5e8e2fd-7087-4b78-9181-cc259c0be2f1",
+      "label": "FDA Xifaxan"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604027.html",
+      "label": "Rifaximin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07AA11",
+      "label": "A07AA11"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-495/Rifaximin",
+      "label": "Rifaximin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on XIFAXAN use in pregnant women to inform any drug-associated risks.",
+      "refs": [
+        {
+          "source": "fda-rifaximin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of rifaximin in human milk, the effects of rifaximin on the breastfed infant, or the effects of rifaximin on milk production.",
+      "refs": [
+        {
+          "source": "fda-rifaximin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of XIFAXAN has not been established in pediatric patients less than 12 years of age with TD or in patients less than 18 years of age for HE and IBS-D.",
+      "refs": [
+        {
+          "source": "fda-rifaximin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these subjects and younger subjects for either indication.",
+      "refs": [
+        {
+          "source": "fda-rifaximin",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-rifaximin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021361"
+  }
+}

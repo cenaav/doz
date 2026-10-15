@@ -1,0 +1,406 @@
+{
+  "id": "budesonide-formoterol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بودزوناید + فورموترول (سیمبیکورت)",
+    "en": "Budesonide + formoterol"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "کورتون استنشاقی + بتاآگونیست طولانی‌اثر",
+    "en": "ICS + LABA"
+  },
+  "brands": [
+    {
+      "name": "Symbicort",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "symbicort",
+    "سیمبیکورت",
+    "بودزوناید فورموترول"
+  ],
+  "formulations": [
+    {
+      "id": "mdi-80",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "80 mcg budesonide / 4.5 mcg formoterol per actuation",
+      "concentration": {
+        "amount": 1,
+        "unit": "spray",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-symbicort",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "asthma-child",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم ۶ تا زیر ۱۲ سال — ۲ پاف ۸۰/۴٫۵ دو بار در روز",
+        "en": "Asthma 6 to <12 y — 2 puffs 80/4.5 twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "spray",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-symbicort",
+          "section": "2.2"
+        }
+      ]
+    },
+    {
+      "id": "asthma",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم ۱۲ سال به بالا — ۲ پاف (۸۰/۴٫۵ یا ۱۶۰/۴٫۵) دو بار در روز",
+        "en": "Asthma ≥12 y — 2 puffs (80/4.5 or 160/4.5) twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "spray",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-symbicort",
+          "section": "2.2"
+        }
+      ]
+    },
+    {
+      "id": "copd",
+      "disease": "copd",
+      "label": {
+        "fa": "COPD — ۲ پاف ۱۶۰/۴٫۵ دو بار در روز",
+        "en": "COPD — 2 puffs 160/4.5 twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "spray",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-symbicort",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "این فرآورده ۸۰/۴٫۵ است؛ برای COPD قدرت ۱۶۰/۴٫۵.",
+            "en": "This product is 80/4.5; COPD uses 160/4.5."
+          },
+          "refs": [
+            {
+              "source": "fda-symbicort",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-symbicort",
+              "section": "3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "acute",
+      "severity": "block",
+      "text": {
+        "fa": "درمان اولیه حمله حاد آسم یا COPD (استاتوس آسماتیکوس).",
+        "en": "Primary treatment of status asthmaticus or acute asthma/COPD episodes."
+      },
+      "refs": [
+        {
+          "source": "fda-symbicort",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پس از هر بار مصرف دهان را بشویید (برفک دهان).",
+        "en": "Rinse mouth after each use (oral thrush)."
+      },
+      "refs": [
+        {
+          "source": "fda-symbicort",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "asthma-child",
+      "formulation": "mdi-80",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 2
+      }
+    },
+    {
+      "regimen": "asthma",
+      "formulation": "mdi-80",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2
+      }
+    },
+    {
+      "regimen": "copd",
+      "formulation": "mdi-80",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "R03AK07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21368",
+        "en": "BUDESONIDE/FORMOTEROL 160/4.5MCG 120DOSE INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید / فورموترول ۱۶۰ / ۴٫۵ میکروگرم ۱۲۰ دوز"
+      },
+      {
+        "code": "16506",
+        "en": "BUDESONIDE/FORMOTEROL 160/4.5MCG 60DOSE INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید / فورموترول ۱۶۰ / ۴٫۵ میکروگرم ۶۰ دوز"
+      },
+      {
+        "code": "13695",
+        "en": "BUDESONIDE/FORMOTEROL 200/12MCG SPRAY",
+        "fa": "اسپری بودزوناید / فورموترول ۲۰۰ / ۱۲ میکروگرم"
+      },
+      {
+        "code": "16503",
+        "en": "BUDESONIDE/FORMOTEROL 320/9MCG INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید / فورموترول ۳۲۰ / ۹ میکروگرم"
+      },
+      {
+        "code": "21486",
+        "en": "BUDESONIDE/FORMOTEROL 400/12MCG INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید / فورموترول ۴۰۰ / ۱۲ میکروگرم"
+      },
+      {
+        "code": "13696",
+        "en": "BUDESONIDE/FORMOTEROL 400/24MCG SPRAY",
+        "fa": "اسپری بودزوناید / فورموترول ۴۰۰ / ۲۴ میکروگرم"
+      },
+      {
+        "code": "16502",
+        "en": "BUDESONIDE/FORMOTEROL 80/4.5MCG INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید / فورموترول ۸۰ / ۴٫۵ میکروگرم"
+      },
+      {
+        "code": "52440",
+        "en": "BUDESONIDE / FORMOTEROL FUMARATE AEROSOL, METERED RESPIRATORY 160 ug/4.5 ug/1{dose} 120 {Puff}",
+        "fa": "فرآورده استنشاقی بودزوناید / فورموترول فومارات ۱۶۰ میکروگرم / ۴٫۵ میکروگرم / ۱ { دوز } ۱۲۰ { }"
+      },
+      {
+        "code": "52441",
+        "en": "BUDESONIDE / FORMOTEROL FUMARATE AEROSOL, METERED RESPIRATORY 80 ug/4.5 ug/1{dose} 120 {Puff}",
+        "fa": "فرآورده استنشاقی بودزوناید / فورموترول فومارات ۸۰ میکروگرم / ۴٫۵ میکروگرم / ۱ { دوز } ۱۲۰ { }"
+      },
+      {
+        "code": "50929",
+        "en": "BUDESONIDE / FORMOTEROL FUMARATE POWDER, METERED RESPIRATORY 320 ug/9 ug/1{dose} 120 {dose}",
+        "fa": "پودر بودزوناید / فورموترول فومارات ۳۲۰ میکروگرم / ۹ میکروگرم / ۱ { دوز } ۱۲۰ { دوز }"
+      },
+      {
+        "code": "52151",
+        "en": "BUDESONIDE / FORMOTEROL FUMARATE POWDER, METERED RESPIRATORY 80 ug/4.5 ug/1{dose} 60 {dose}",
+        "fa": "پودر بودزوناید / فورموترول فومارات ۸۰ میکروگرم / ۴٫۵ میکروگرم / ۱ { دوز } ۶۰ { دوز }"
+      },
+      {
+        "code": "52854",
+        "en": "BUDESONIDE / FORMOTEROL FUMARATE CAPSULE RESPIRATORY 320 ug/9 ug",
+        "fa": "کپسول بودزوناید / فورموترول فومارات ۳۲۰ میکروگرم / ۹ میکروگرم"
+      },
+      {
+        "code": "52853",
+        "en": "BUDESONIDE / FORMOTEROL FUMARATE CAPSULE RESPIRATORY 160 ug/4.5 ug",
+        "fa": "کپسول بودزوناید / فورموترول فومارات ۱۶۰ میکروگرم / ۴٫۵ میکروگرم"
+      },
+      {
+        "code": "52861",
+        "en": "BUDESONIDE / FORMOTEROL FUMARATE CAPSULE RESPIRATORY 160 ug/9 ug",
+        "fa": "کپسول بودزوناید / فورموترول فومارات ۱۶۰ میکروگرم / ۹ میکروگرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4623/Budesonide-Formoterol",
+        "url": "https://www.darooyab.ir/G-4623/Budesonide-Formoterol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021929",
+      "label": "NDA021929"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a645756c-c692-4bc6-a858-7e7e249561bd",
+      "label": "FDA Symbicort"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a623022.html",
+      "label": "Budesonide and Formoterol Oral Inhalation"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699056.html",
+      "label": "Budesonide Oral Inhalation"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03AK07",
+      "label": "R03AK07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4623/Budesonide-Formoterol",
+      "label": "Budesonide-Formoterol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies of SYMBICORT or one of its individual components, formoterol fumarate, in pregnant women; however studies are available for the other component budesonide.",
+      "refs": [
+        {
+          "source": "fda-symbicort",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no available data on the effects of SYMBICORT, budesonide or formoterol fumarate on the breastfed child or on milk production.",
+      "refs": [
+        {
+          "source": "fda-symbicort",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of SYMBICORT in asthma patients 12 years of age and older have been established in studies up to 12 months.",
+      "refs": [
+        {
+          "source": "fda-symbicort",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "As with other products containing beta 2 -agonists, special caution should be observed when using SYMBICORT in geriatric patients who have concomitant cardiovascular disease that could be adversely affected by beta 2 -agonists.",
+      "refs": [
+        {
+          "source": "fda-symbicort",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-symbicort",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021929"
+  }
+}

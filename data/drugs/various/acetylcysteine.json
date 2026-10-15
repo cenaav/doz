@@ -1,0 +1,335 @@
+{
+  "id": "acetylcysteine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "استیل‌سیستئین (پادزهر استامینوفن)",
+    "en": "Acetylcysteine (N-acetylcysteine)"
+  },
+  "category": "various",
+  "class": {
+    "fa": "موکولیتیک / پادزهر",
+    "en": "Mucolytic / antidote"
+  },
+  "brands": [
+    {
+      "name": "Mucomyst",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nac",
+    "acetylcysteine",
+    "استیل سیستئین",
+    "ان استیل سیستئین",
+    "پادزهر استامینوفن"
+  ],
+  "formulations": [
+    {
+      "id": "sol-20",
+      "form": "solution",
+      "route": "oral",
+      "label": "20% (200 mg/mL) solution — dilute to 5% for oral use",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "sol-10",
+      "form": "solution",
+      "route": "oral",
+      "label": "10% (100 mg/mL) solution",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "acetaminophen-overdose",
+      "label": {
+        "fa": "مسمومیت استامینوفن — دوز بارگذاری خوراکی ۱۴۰ mg/kg",
+        "en": "Acetaminophen overdose — oral loading 140 mg/kg"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 140,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "Dosage and Administration — Acetaminophen Overdose"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سپس بر اساس سطح استامینوفن: ۷۰ mg/kg هر ۴ ساعت برای ۱۷ دوز. برای مصرف خوراکی به محلول ۵٪ رقیق شود (جدول برچسب).",
+            "en": "Then by acetaminophen level: 70 mg/kg every 4 h for 17 doses. Dilute to 5% for oral use (label table)."
+          },
+          "refs": [
+            {
+              "source": "fda-acetadote",
+              "section": "Dosage and Administration — Acetaminophen Overdose"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "acetaminophen-overdose",
+      "label": {
+        "fa": "مسمومیت استامینوفن — نگهدارنده ۷۰ mg/kg هر ۴ ساعت (۱۷ دوز)",
+        "en": "Acetaminophen overdose — maintenance 70 mg/kg every 4 h (17 doses)"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 70,
+        "intervalHours": 4
+      },
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "Dosage and Administration — Acetaminophen Overdose"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به استیل‌سیستئین.",
+        "en": "Sensitivity to acetylcysteine."
+      },
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "sol-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 9800,
+        "mlPerDose": 49
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "sol-20",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1400,
+        "mlPerDose": 7
+      }
+    }
+  ],
+  "atc": [
+    "V03AB23",
+    "R05CB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11538",
+        "en": "ACETYLCYSTEINE 200 mg/ml AMPOULE",
+        "fa": "آمپول استیل‌سیستئین ۲۰۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "11144",
+        "en": "ACETYLCYSTEINE 200MG EFF TAB",
+        "fa": "قرص جوشان استیل‌سیستئین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01868",
+        "en": "ACETYLCYSTEINE 200MG TAB",
+        "fa": "قرص استیل‌سیستئین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "07823",
+        "en": "ACETYLCYSTEINE 2G/10ML VIAL",
+        "fa": "ویال استیل‌سیستئین ۲ گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "20227",
+        "en": "ACETYLCYSTEINE 300MG/3ML INJ",
+        "fa": "فرآورده تزریقی استیل‌سیستئین ۳۰۰ میلی‌گرم / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "02369",
+        "en": "ACETYLCYSTEINE 600MG EFF TAB",
+        "fa": "قرص جوشان استیل‌سیستئین ۶۰۰ میلی‌گرم"
+      },
+      {
+        "code": "13957",
+        "en": "ACETYLCYSTEINE 600MG SACHET",
+        "fa": "ساشه استیل‌سیستئین ۶۰۰ میلی‌گرم"
+      },
+      {
+        "code": "11756",
+        "en": "ACETYLCYSTEINE+ASCORBIC ACID 600/75MG SACHET",
+        "fa": "ساشه استیل‌سیستئین + اسید اسکوربیک ۶۰۰ / ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "51914",
+        "en": "ACETYLCYSTEINE INJECTION PARENTERAL 200 mg/1mL 10 mL",
+        "fa": "فرآورده تزریقی استیل‌سیستئین ۲۰۰ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "50528",
+        "en": "ACETYLCYSTEINE SOLUTION RESPIRATORY 100 mg/1mL 3 mL",
+        "fa": "محلول استیل‌سیستئین ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر ۳ میلی‌لیتر"
+      },
+      {
+        "code": "52361",
+        "en": "ACETYLCYSTEINE INJECTION PARENTERAL 100 mg/1mL 3 mL",
+        "fa": "فرآورده تزریقی استیل‌سیستئین ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر ۳ میلی‌لیتر"
+      },
+      {
+        "code": "52537",
+        "en": "ACETYLCYSTEINE TABLET ORAL 600 mg",
+        "fa": "قرص استیل‌سیستئین ۶۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52797",
+        "en": "ACETYLCYSTEINE GRANULE ORAL 100 mg",
+        "fa": "گرانول استیل‌سیستئین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52798",
+        "en": "ACETYLCYSTEINE GRANULE ORAL 200 mg",
+        "fa": "گرانول استیل‌سیستئین ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2132/Acetylcysteine",
+        "url": "https://www.darooyab.ir/G-2132/Acetylcysteine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=073664",
+      "label": "ANDA073664"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5558a5f5-e821-473b-7d8a-5d33d09f0586",
+      "label": "FDA Acetylcysteine sol."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615021.html",
+      "label": "Acetylcysteine Oral Inhalation"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AB23",
+      "label": "V03AB23"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R05CB01",
+      "label": "R05CB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2132/Acetylcysteine",
+      "label": "Acetylcysteine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies may not always be predictive of human responses, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "Pregnancy: Teratogenic Effects"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when acetylcysteine is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-acetadote",
+          "section": "Nursing Mothers"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-acetadote",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA073664"
+  }
+}

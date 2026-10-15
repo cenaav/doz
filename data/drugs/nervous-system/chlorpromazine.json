@@ -1,0 +1,404 @@
+{
+  "id": "chlorpromazine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلرپرومازین",
+    "en": "Chlorpromazine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدروان‌پریشی تیپیک",
+    "en": "Typical antipsychotic (phenothiazine)"
+  },
+  "brands": [
+    {
+      "name": "Thorazine",
+      "market": "US"
+    },
+    {
+      "name": "Largactil",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "largactil",
+    "thorazine",
+    "لارگاکتیل",
+    "کلرپرومازین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "nv",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "تهوع و استفراغ — ۱۰ تا ۲۵ mg هر ۴ تا ۶ ساعت",
+        "en": "Nausea and vomiting — 10–25 mg every 4–6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 25,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "Dosage and Administration — Adults"
+        }
+      ]
+    },
+    {
+      "id": "hiccup",
+      "disease": "hiccups",
+      "label": {
+        "fa": "سکسکه مقاوم — ۲۵ تا ۵۰ mg سه تا چهار بار در روز",
+        "en": "Intractable hiccups — 25–50 mg three to four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "perDoseMax": 50,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "Dosage and Administration — Adults"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر ۲ تا ۳ روز ادامه یافت، تزریقی.",
+            "en": "If persisting 2–3 days, parenteral therapy."
+          },
+          "refs": [
+            {
+              "source": "fda-chlorpromazine",
+              "section": "Dosage and Administration — Adults"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psych",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "روان‌پریشی — دوز فردی (معمولاً تا ۲۰۰ mg در روز)",
+        "en": "Psychosis — individualised (200 mg/day not unusual)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: دوز بر اساس شدت؛ ۲۰۰ mg در روز غیرمعمول نیست و بعضی بیماران دوز بالاتر لازم دارند. قرص ۱۰۰ و ۲۰۰ mg فقط برای موارد شدید.",
+          "en": "Label: dose by severity; 200 mg/day is not unusual and some need more. 100/200 mg tablets only for severe conditions."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ ماه مگر در شرایط نجات‌بخش.",
+        "en": "Under 6 months except where potentially lifesaving."
+      },
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "Dosage and Administration — Pediatric Patients"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش مرگ در سالمندان مبتلا به دمانس با روان‌پریشی.",
+        "en": "Boxed warning: increased mortality in elderly patients with dementia-related psychosis."
+      },
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "nv",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "hiccup",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "upperPerDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "N05AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52674",
+        "en": "CHLORPROMAZINE SOLUTION ORAL 25 mg/5mL 125 ML",
+        "fa": "محلول خوراکی کلرپرومازین ۲۵ میلی‌گرم / ۵ میلی‌لیتر ۱۲۵ میلی‌لیتر"
+      },
+      {
+        "code": "00278",
+        "en": "CHLORPROMAZINE HCL 100MG TAB",
+        "fa": "قرص کلرپرومازین هیدروکلراید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01432",
+        "en": "CHLORPROMAZINE HCL 200MG TAB",
+        "fa": "قرص کلرپرومازین هیدروکلراید ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00279",
+        "en": "CHLORPROMAZINE HCL 25MG TAB",
+        "fa": "قرص کلرپرومازین هیدروکلراید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00277",
+        "en": "CHLORPROMAZINE HCL 50MG/2ML AMP",
+        "fa": "آمپول کلرپرومازین هیدروکلراید ۵۰ میلی‌گرم / ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1249/Chlorpromazine",
+        "url": "https://www.darooyab.ir/G-1249/Chlorpromazine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213368",
+      "label": "ANDA213368"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2bd42d3a-bf89-4d74-a252-9b914106a570",
+      "label": "FDA Chlorpromazine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682040.html",
+      "label": "Chlorpromazine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05AA01",
+      "label": "N05AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1249/Chlorpromazine",
+      "label": "Chlorpromazine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Chlorpromazine hydrochloride should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "Precautions/Warnings – Usage in Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants from chlorpromazine, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: در سالمندان هشدار جدی یا پرهیز.",
+        "en": "Label: serious warning or avoid in older adults."
+      },
+      "quote": "Increased Mortality in Elderly Patients with Dementia-Related Psychosis Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death.",
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-chlorpromazine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213368"
+  }
+}
