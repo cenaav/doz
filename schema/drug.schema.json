@@ -1,0 +1,1029 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "drug.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "schemaVersion",
+    "name",
+    "category",
+    "brands",
+    "synonyms",
+    "formulations",
+    "regimens",
+    "contraindications",
+    "warnings",
+    "renal",
+    "monitoring",
+    "interactions",
+    "review",
+    "examples"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/id"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "name": {
+      "$ref": "#/$defs/text"
+    },
+    "category": {
+      "$ref": "#/$defs/id"
+    },
+    "class": {
+      "$ref": "#/$defs/text"
+    },
+    "brands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "market"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "market": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          }
+        }
+      }
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "formulations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/formulation"
+      }
+    },
+    "regimens": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/regimen"
+      }
+    },
+    "contraindications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "severity",
+          "rule",
+          "text",
+          "refs"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "severity": {
+            "enum": [
+              "block",
+              "warn"
+            ]
+          },
+          "rule": {
+            "$ref": "#/$defs/range"
+          },
+          "text": {
+            "$ref": "#/$defs/text"
+          },
+          "refs": {
+            "$ref": "#/$defs/refs"
+          }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/note"
+      }
+    },
+    "renal": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "egfrBelow",
+          "severity",
+          "text",
+          "refs"
+        ],
+        "properties": {
+          "egfrBelow": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "severity": {
+            "enum": [
+              "block",
+              "warn"
+            ]
+          },
+          "text": {
+            "$ref": "#/$defs/text"
+          },
+          "refs": {
+            "$ref": "#/$defs/refs"
+          }
+        }
+      }
+    },
+    "monitoring": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/note"
+      }
+    },
+    "interactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "with",
+          "text",
+          "refs"
+        ],
+        "properties": {
+          "with": {
+            "type": "string"
+          },
+          "text": {
+            "$ref": "#/$defs/text"
+          },
+          "refs": {
+            "$ref": "#/$defs/refs"
+          }
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "reviewer",
+        "date"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unverified",
+            "verified"
+          ]
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/example"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "text": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "fa": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source"
+      ],
+      "anyOf": [
+        {
+          "required": [
+            "section"
+          ]
+        },
+        {
+          "required": [
+            "page"
+          ]
+        }
+      ],
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/id"
+        },
+        "section": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "page": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "note": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/ref"
+      }
+    },
+    "note": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "refs"
+      ],
+      "properties": {
+        "text": {
+          "$ref": "#/$defs/text"
+        },
+        "refs": {
+          "$ref": "#/$defs/refs"
+        }
+      }
+    },
+    "age": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "unit"
+      ],
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "enum": [
+            "day",
+            "week",
+            "month",
+            "year"
+          ]
+        }
+      }
+    },
+    "range": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minAge": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/age"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "maxAge": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/age"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "minWeightKg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "maxWeightKg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "unit": {
+      "enum": [
+        "mg",
+        "mcg",
+        "g",
+        "unit",
+        "mL"
+      ]
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "refs"
+      ],
+      "minProperties": 2,
+      "properties": {
+        "maxPerDose": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "maxPerDay": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "maxPerKgPerDose": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "maxPerKgPerDay": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "refs": {
+          "$ref": "#/$defs/refs"
+        }
+      }
+    },
+    "formulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "form",
+        "route",
+        "label",
+        "concentration",
+        "markets",
+        "refs"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "form": {
+          "enum": [
+            "suspension",
+            "syrup",
+            "solution",
+            "drops",
+            "tablet",
+            "capsule",
+            "chewable-tablet",
+            "odt",
+            "sachet",
+            "injection"
+          ]
+        },
+        "route": {
+          "enum": [
+            "oral",
+            "iv",
+            "im",
+            "sc",
+            "rectal",
+            "topical",
+            "inhaled",
+            "nasal"
+          ]
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "concentration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "amount",
+            "unit"
+          ],
+          "oneOf": [
+            {
+              "required": [
+                "perVolumeMl"
+              ]
+            },
+            {
+              "required": [
+                "perUnit"
+              ]
+            }
+          ],
+          "properties": {
+            "amount": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "unit": {
+              "$ref": "#/$defs/unit"
+            },
+            "perVolumeMl": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "perUnit": {
+              "enum": [
+                "tablet",
+                "capsule",
+                "sachet"
+              ]
+            },
+            "scored": {
+              "type": "boolean"
+            }
+          }
+        },
+        "components": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "name",
+                  "amount",
+                  "unit"
+                ],
+                "properties": {
+                  "name": {
+                    "$ref": "#/$defs/text"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  "unit": {
+                    "$ref": "#/$defs/unit"
+                  },
+                  "limits": {
+                    "$ref": "#/$defs/limits"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "markets": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          }
+        },
+        "refs": {
+          "$ref": "#/$defs/refs"
+        }
+      }
+    },
+    "titration": {
+      "type": "object",
+      "required": [
+        "start",
+        "max"
+      ],
+      "properties": {
+        "start": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "increment": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "incrementEveryDays": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "targetMin": {
+          "type": "number"
+        },
+        "targetMax": {
+          "type": "number"
+        },
+        "max": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "minWeightKg": {
+          "type": "number"
+        },
+        "maxWeightKg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "regimen": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "disease",
+        "label",
+        "population",
+        "type",
+        "dose",
+        "refs"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "disease": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "$ref": "#/$defs/text"
+        },
+        "population": {
+          "$ref": "#/$defs/range"
+        },
+        "type": {
+          "enum": [
+            "weightBased",
+            "fixed",
+            "ageBand",
+            "bsa",
+            "loading",
+            "titration",
+            "notCalculated"
+          ]
+        },
+        "unit": {
+          "$ref": "#/$defs/unit"
+        },
+        "dose": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "perKgPerDay": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "perKgPerDose": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "dividedDoses": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "intervalHours": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "perDose": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "dosesPerDay": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "perM2PerDay": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "bands": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "minAge",
+                  "maxAge",
+                  "perDose",
+                  "dosesPerDay"
+                ],
+                "properties": {
+                  "minAge": {
+                    "$ref": "#/$defs/age"
+                  },
+                  "maxAge": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/age"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "perDose": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  "dosesPerDay": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "refs": {
+                    "$ref": "#/$defs/refs"
+                  }
+                }
+              }
+            },
+            "days": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "fromDay",
+                  "toDay",
+                  "perKgPerDay"
+                ],
+                "properties": {
+                  "fromDay": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "toDay": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "perKgPerDay": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  "maxPerDay": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  }
+                }
+              }
+            },
+            "titration": {
+              "$ref": "#/$defs/titration"
+            },
+            "weightBands": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/$defs/titration"
+                  },
+                  {
+                    "required": [
+                      "minWeightKg",
+                      "maxWeightKg"
+                    ]
+                  }
+                ]
+              }
+            },
+            "reason": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        },
+        "doseComponent": {
+          "type": "string"
+        },
+        "limits": {
+          "$ref": "#/$defs/limits"
+        },
+        "durationDays": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "min",
+                "max"
+              ],
+              "properties": {
+                "min": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "max": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              }
+            }
+          ]
+        },
+        "allowedFormulations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "refs": {
+          "$ref": "#/$defs/refs"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/note"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "weightBased"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dose": {
+                "oneOf": [
+                  {
+                    "required": [
+                      "perKgPerDay",
+                      "dividedDoses"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "perKgPerDose",
+                      "intervalHours"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "fixed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dose": {
+                "required": [
+                  "perDose",
+                  "dosesPerDay"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "ageBand"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dose": {
+                "required": [
+                  "bands"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "bsa"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dose": {
+                "required": [
+                  "perM2PerDay",
+                  "dividedDoses"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "loading"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dose": {
+                "required": [
+                  "days",
+                  "dividedDoses"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "titration"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dose": {
+                "required": [
+                  "dividedDoses"
+                ],
+                "oneOf": [
+                  {
+                    "required": [
+                      "titration"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "weightBands"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "notCalculated"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dose": {
+                "required": [
+                  "reason"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "regimen",
+        "formulation",
+        "input",
+        "expect"
+      ],
+      "properties": {
+        "regimen": {
+          "$ref": "#/$defs/id"
+        },
+        "formulation": {
+          "$ref": "#/$defs/id"
+        },
+        "input": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "weightKg"
+          ],
+          "properties": {
+            "ageDays": {
+              "type": "number"
+            },
+            "ageMonths": {
+              "type": "number"
+            },
+            "ageYears": {
+              "type": "number"
+            },
+            "weightKg": {
+              "type": "number"
+            },
+            "heightCm": {
+              "type": "number"
+            },
+            "scrMgDl": {
+              "type": "number"
+            }
+          }
+        },
+        "expect": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "ok",
+                "blocked",
+                "notCalculated",
+                "invalidInput"
+              ]
+            },
+            "perDose": {
+              "type": "number"
+            },
+            "perDay": {
+              "type": "number"
+            },
+            "dosesPerDay": {
+              "type": "number"
+            },
+            "mlPerDose": {
+              "type": "number"
+            },
+            "mlPerDoseRounded": {
+              "type": "number"
+            },
+            "tabletsPerDoseRounded": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

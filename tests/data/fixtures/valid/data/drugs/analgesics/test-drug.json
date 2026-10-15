@@ -1,0 +1,27 @@
+{
+  "id": "test-drug",
+  "schemaVersion": 1,
+  "name": { "fa": "داروی آزمایشی", "en": "Test drug" },
+  "category": "analgesics",
+  "brands": [],
+  "synonyms": [],
+  "formulations": [
+    { "id": "susp-160-5", "form": "suspension", "route": "oral", "label": "160 mg / 5 mL",
+      "concentration": { "amount": 160, "unit": "mg", "perVolumeMl": 5 }, "markets": ["US"],
+      "refs": [{ "source": "fda-x", "section": "3" }] }
+  ],
+  "regimens": [
+    { "id": "fever", "disease": "fever", "label": { "en": "Fever" }, "population": {},
+      "type": "weightBased", "unit": "mg", "dose": { "perKgPerDay": 60, "dividedDoses": 4 },
+      "refs": [{ "source": "fda-x", "section": "2.1" }] }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": { "status": "unverified", "reviewer": null, "date": null },
+  "examples": [
+    { "regimen": "fever", "formulation": "susp-160-5", "input": { "ageYears": 3, "weightKg": 14 }, "expect": { "perDose": 210 } }
+  ]
+}

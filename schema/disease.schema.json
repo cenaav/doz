@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "disease.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "name",
+      "synonyms",
+      "icd10",
+      "specialty"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "object",
+        "required": [
+          "fa",
+          "en"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "fa": {
+            "type": "string"
+          },
+          "en": {
+            "type": "string"
+          }
+        }
+      },
+      "synonyms": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "icd10": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^[A-Z][0-9]{2}(\\.[0-9A-Z]{1,4})?$"
+        }
+      },
+      "specialty": {
+        "type": "string"
+      }
+    }
+  }
+}

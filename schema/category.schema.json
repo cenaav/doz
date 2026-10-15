@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "category.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "name",
+      "icon",
+      "order"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "object",
+        "required": [
+          "fa",
+          "en"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "fa": {
+            "type": "string"
+          },
+          "en": {
+            "type": "string"
+          }
+        }
+      },
+      "icon": {
+        "type": "string"
+      },
+      "order": {
+        "type": "integer"
+      }
+    }
+  }
+}

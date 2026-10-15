@@ -1,0 +1,44 @@
+import { describe, expect, test } from 'vitest'
+import { join } from 'node:path'
+import { loadDataSet } from '../../lib/data/load-fs'
+import { validateDataSet } from '../../lib/data/validate'
+import type { DataSet } from '../../lib/types'
+
+const repo = join(__dirname, '../..')
+const fixture = () => loadDataSet(join(__dirname, 'fixtures/valid'))
+const errorsOf = (mut: (ds: DataSet) => void) => {
+  const ds = fixture()
+  mut(ds)
+  return validateDataSet(ds, repo)
+}
+
+describe('validateDataSet', () => {
+  test('valid fixture passes', () => expect(validateDataSet(fixture(), repo)).toEqual([]))
+  test('regimen without refs fails', () => {
+    expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [] }).join()).toMatch(/refs/)
+  })
+  test('ref without section or page fails', () => {
+    expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'fda-x' }] }).length).toBeGreaterThan(0)
+  })
+  test('unknown source fails', () => {
+    expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'nope', section: '1' }] }).join()).toMatch(/unknown source nope/)
+  })
+  test('unknown disease fails', () => {
+    expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].disease = 'nope' }).join()).toMatch(/unknown disease/)
+  })
+  test('calculable regimen without example fails', () => {
+    expect(errorsOf((ds) => { ds.drugs[0].drug.examples = [] }).join()).toMatch(/has no example/)
+  })
+  test('unit mismatch fails', () => {
+    expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].unit = 'mcg' }).join()).toMatch(/unit mcg/)
+  })
+  test('typo field fails (additionalProperties)', () => {
+    expect(errorsOf((ds) => { (ds.drugs[0].drug as any).warnigns = [] }).length).toBeGreaterThan(0)
+  })
+  test('wrong folder fails', () => {
+    expect(errorsOf((ds) => { ds.drugs[0].path = 'drugs/other/test-drug.json' }).join()).toMatch(/must be at/)
+  })
+  test('verified without reviewer fails', () => {
+    expect(errorsOf((ds) => { ds.drugs[0].drug.review.status = 'verified' }).join()).toMatch(/reviewer/)
+  })
+})
