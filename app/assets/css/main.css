@@ -30,3 +30,15 @@ html { font-size: 93.75%; }
 @utility chip { @apply inline-flex items-center rounded-md border border-brand-300 bg-brand-50 px-1.5 py-0.5 text-xs font-medium text-brand-800 hover:bg-brand-100 dark:border-brand-700 dark:bg-brand-900/40 dark:text-brand-200; }
 
 .ltr { direction: ltr; unicode-bidi: isolate; }
+
+/* Custom dropdown arrow: the native one sits awkwardly against the edge, especially in RTL. */
+select.input {
+  appearance: none;
+  padding-inline-end: 1.9rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2364748b'%3E%3Cpath d='M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.17l3.71-3.94a.75.75 0 1 1 1.08 1.04l-4.25 4.5a.75.75 0 0 1-1.08 0l-4.25-4.5a.75.75 0 0 1 .02-1.06z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: right 0.55rem center;
+}
+[dir='rtl'] select.input { background-position: left 0.55rem center; }
+[dir='rtl'] select.input.ltr { background-position: right 0.55rem center; }

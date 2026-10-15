@@ -2,7 +2,6 @@
 const localePath = useLocalePath()
 const route = useRoute()
 const isHome = computed(() => route.path.replace(/\/$/, '') === localePath('/').replace(/\/$/, ''))
-const { current } = useRefSheet()
 </script>
 
 <template>
@@ -27,7 +26,6 @@ const { current } = useRefSheet()
         <a href="https://t.me/cenaav" target="_blank" rel="noopener" class="ltr font-medium text-brand-700 underline dark:text-brand-300">@cenaav</a>
       </p>
     </footer>
-    <LazyRefSheet v-if="current" />
     <DisclaimerModal />
   </div>
 </template>
