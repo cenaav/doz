@@ -1,0 +1,207 @@
+{
+  "id": "sumatriptan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سوماتریپتان",
+    "en": "Sumatriptan"
+  },
+  "category": "neurology",
+  "class": {
+    "fa": "تریپتان",
+    "en": "Triptan"
+  },
+  "brands": [
+    {
+      "name": "Imitrex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "imitrex",
+    "ایمیترکس",
+    "سوماتریپتان",
+    "تریپتان"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sumatriptan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sumatriptan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sumatriptan",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "migraine-acute",
+      "label": {
+        "fa": "حمله حاد میگرن — بزرگسال: ۲۵، ۵۰ یا ۱۰۰ mg",
+        "en": "Acute migraine — adults: 25, 50 or 100 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-sumatriptan",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 200,
+        "refs": [
+          {
+            "source": "fda-sumatriptan",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۵۰ و ۱۰۰ mg ممکن است مؤثرتر از ۲۵ باشد ولی ۱۰۰ لزوماً بهتر از ۵۰ نیست. دوز دوم حداقل ۲ ساعت بعد؛ حداکثر ۲۰۰ mg در ۲۴ ساعت.",
+            "en": "50 and 100 mg may be more effective than 25, but 100 not necessarily better than 50. Second dose at least 2 h later; max 200 mg/24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-sumatriptan",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "migraine-acute",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "قرص سوماتریپتان برای زیر ۱۸ سال توصیه نمی‌شود.",
+          "en": "Sumatriptan tablets are not recommended under 18 years."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-sumatriptan",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "cv",
+      "severity": "block",
+      "text": {
+        "fa": "بیماری ایسکمیک عروق کرونر، اسپاسم کرونر، سکته مغزی یا TIA، بیماری عروق محیطی، فشار خون کنترل‌نشده؛ همراه سایر تریپتان‌ها یا ارگوت در ۲۴ ساعت.",
+        "en": "Ischemic coronary disease, coronary vasospasm, stroke or TIA, peripheral vascular disease, uncontrolled hypertension; other triptans or ergots within 24 h."
+      },
+      "refs": [
+        {
+          "source": "fda-sumatriptan",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50
+      }
+    }
+  ]
+}

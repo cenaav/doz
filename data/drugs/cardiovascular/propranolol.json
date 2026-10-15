@@ -1,0 +1,237 @@
+{
+  "id": "propranolol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پروپرانولول",
+    "en": "Propranolol"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "بتابلاکر غیرانتخابی",
+    "en": "Non-selective beta-blocker"
+  },
+  "brands": [
+    {
+      "name": "Inderal",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "inderal",
+    "ایندرال",
+    "پروپرانولول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (scored)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-propranolol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "migraine",
+      "disease": "migraine-prophylaxis",
+      "label": {
+        "fa": "پیشگیری از میگرن — بزرگسال: ۸۰ mg/day منقسم",
+        "en": "Migraine prophylaxis — adults: 80 mg/day divided"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 80,
+          "increment": 40,
+          "incrementEveryDays": 7,
+          "targetMin": 160,
+          "targetMax": 240,
+          "max": 240
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-propranolol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "محدوده مؤثر ۱۶۰ تا ۲۴۰ mg/day؛ اگر ۴ تا ۶ هفته پس از حداکثر دوز پاسخ نبود، به‌تدریج قطع شود.",
+            "en": "Effective 160–240 mg/day; if no response 4–6 weeks after the maximum dose, withdraw gradually."
+          },
+          "refs": [
+            {
+              "source": "fda-propranolol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — بزرگسال: ۴۰ mg دو بار در روز",
+        "en": "Hypertension — adults: 40 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-propranolol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده معمول ۱۲۰ تا ۲۴۰ mg/day.",
+            "en": "Usual maintenance 120–240 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-propranolol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tremor",
+      "disease": "essential-tremor",
+      "label": {
+        "fa": "لرزش اساسی — بزرگسال: ۴۰ mg دو بار در روز",
+        "en": "Essential tremor — adults: 40 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-propranolol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "معمولاً ۱۲۰ mg/day کافی است؛ گاهی ۲۴۰ تا ۳۲۰.",
+            "en": "Usually 120 mg/day; occasionally 240–320."
+          },
+          "refs": [
+            {
+              "source": "fda-propranolol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "شوک کاردیوژنیک؛ برادی‌کاردی سینوسی و بلوک بیش از درجه یک؛ آسم برونشیال؛ حساسیت.",
+        "en": "Cardiogenic shock; sinus bradycardia and greater than first-degree block; bronchial asthma; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-propranolol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "migraine",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "htn",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "tremor",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 40
+      }
+    }
+  ]
+}
