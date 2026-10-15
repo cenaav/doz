@@ -3,18 +3,13 @@ import tailwindcss from '@tailwindcss/vite'
 
 const base = process.env.NUXT_APP_BASE_URL || '/'
 
-// Precache the home pages under both `/x` and `/x/` (GitHub Pages serves `/x/`, in-app links use `/x`).
-// Other pages are cached at runtime as they are visited, so a first visit does not download the whole site.
+// Precache only the hashed app assets and icons. HTML and payloads are cached at runtime (network first),
+// so after a deploy the browser never shows an old page that points at deleted files.
 type PrecacheEntry = { url: string; revision: string | null; size: number }
-const precachePages = async (entries: PrecacheEntry[]) => {
-  const manifest = entries.flatMap((e) => {
-    if (!e.url.endsWith('index.html')) return [e]
-    const dir = e.url.replace(/^\//, '').replace(/index\.html$/, '')
-    if (!dir) return [{ ...e, url: base }]
-    return [{ ...e, url: dir.slice(0, -1) }, { ...e, url: dir }]
-  })
-  return { manifest, warnings: [] }
-}
+const precacheAssets = async (entries: PrecacheEntry[]) => ({
+  manifest: entries.filter((e) => !e.url.endsWith('.html') && !e.url.endsWith('_payload.json')),
+  warnings: [],
+})
 const routes: string[] = existsSync('app/generated/routes.json')
   ? JSON.parse(readFileSync('app/generated/routes.json', 'utf8'))
   : []
@@ -60,13 +55,14 @@ export default defineNuxtConfig({
       display: 'standalone',
     },
     workbox: {
-      globPatterns: ['_nuxt/**/*.{js,css,woff2}', '*.{png,svg,ico}', 'index.html', 'en/index.html'],
+      globPatterns: ['_nuxt/**/*.{js,css,woff2}', '*.{png,svg,ico}'],
       runtimeCaching: [
         { urlPattern: ({ request }) => request.mode === 'navigate', handler: 'NetworkFirst', options: { cacheName: 'doz-pages', networkTimeoutSeconds: 4 } },
-        { urlPattern: /_payload\.json/, handler: 'StaleWhileRevalidate', options: { cacheName: 'doz-payloads' } },
+        { urlPattern: /_payload\.json/, handler: 'NetworkFirst', options: { cacheName: 'doz-payloads', networkTimeoutSeconds: 4 } },
+        { urlPattern: /\/_i18n\//, handler: 'NetworkFirst', options: { cacheName: 'doz-i18n', networkTimeoutSeconds: 4 } },
       ],
       navigateFallback: undefined,
-      manifestTransforms: [precachePages],
+      manifestTransforms: [precacheAssets],
       clientsClaim: true,
       skipWaiting: true,
     },
