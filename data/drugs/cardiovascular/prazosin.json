@@ -1,0 +1,182 @@
+{
+  "id": "prazosin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پرازوسین",
+    "en": "Prazosin"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آلفا بلاکر",
+    "en": "Alpha-1 blocker"
+  },
+  "brands": [
+    {
+      "name": "Minipress",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "minipress",
+    "مینی پرس",
+    "پرازوسین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-1",
+      "form": "capsule",
+      "route": "oral",
+      "label": "1 mg capsule",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prazosin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-2",
+      "form": "capsule",
+      "route": "oral",
+      "label": "2 mg capsule",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prazosin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "5 mg capsule",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prazosin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — شروع ۱ mg دو یا سه بار در روز",
+        "en": "Hypertension — start 1 mg two or three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-prazosin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 20,
+        "refs": [
+          {
+            "source": "fda-prazosin",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش تدریجی تا ۲۰ mg/day منقسم؛ معمول ۶ تا ۱۵ mg/day. خطر سنکوپ دوز اول.",
+            "en": "Increase slowly to 20 mg/day divided; usual 6–15 mg/day. First-dose syncope risk."
+          },
+          "refs": [
+            {
+              "source": "fda-prazosin",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-prazosin",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کینازولین‌ها یا پرازوسین.",
+        "en": "Sensitivity to quinazolines or prazosin."
+      },
+      "refs": [
+        {
+          "source": "fda-prazosin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "cap-1",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "id": "clonidine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلونیدین",
+    "en": "Clonidine"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آگونیست مرکزی α2",
+    "en": "Central alpha-2 agonist"
+  },
+  "brands": [
+    {
+      "name": "Catapres",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "catapres",
+    "کاتاپرس",
+    "کلونیدین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.1 mg tablet (scored)",
+      "concentration": {
+        "amount": 0.1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clonidine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-0-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.2 mg tablet (scored)",
+      "concentration": {
+        "amount": 0.2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clonidine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-0-3",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.3 mg tablet (scored)",
+      "concentration": {
+        "amount": 0.3,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clonidine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — شروع ۰٫۱ mg دو بار (صبح و شب)",
+        "en": "Hypertension — start 0.1 mg twice daily (morning and bedtime)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-clonidine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۰٫۱ mg/day هفتگی؛ معمول ۰٫۲ تا ۰٫۶ mg/day منقسم. قطع ناگهانی نشود (فشار برگشتی).",
+            "en": "Increase by 0.1 mg/day weekly; usual 0.2–0.6 mg/day divided. Do not stop abruptly (rebound hypertension)."
+          },
+          "refs": [
+            {
+              "source": "fda-clonidine",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-clonidine",
+              "section": "Warnings, Withdrawal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کلونیدین.",
+        "en": "Hypersensitivity to clonidine."
+      },
+      "refs": [
+        {
+          "source": "fda-clonidine",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان ثابت نشده.",
+        "en": "Not established in children."
+      },
+      "refs": [
+        {
+          "source": "fda-clonidine",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-0-1",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 0.1
+      }
+    }
+  ]
+}

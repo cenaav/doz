@@ -1,0 +1,196 @@
+{
+  "id": "cyclobenzaprine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیکلوبنزاپرین",
+    "en": "Cyclobenzaprine"
+  },
+  "category": "analgesics",
+  "class": {
+    "fa": "شل‌کننده عضلانی",
+    "en": "Skeletal muscle relaxant"
+  },
+  "brands": [
+    {
+      "name": "Flexeril",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "flexeril",
+    "فلکسریل",
+    "سیکلوبنزاپرین",
+    "شل کننده عضله"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cyclobenzaprine2",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-7-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "7.5 mg tablet",
+      "concentration": {
+        "amount": 7.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cyclobenzaprine2",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cyclobenzaprine2",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "spasm",
+      "disease": "muscle-spasm",
+      "label": {
+        "fa": "اسپاسم عضلانی حاد — ۵ mg سه بار در روز",
+        "en": "Acute muscle spasm — 5 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 15,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-cyclobenzaprine2",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 21
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۱۰ mg سه بار. بیش از ۲ تا ۳ هفته توصیه نمی‌شود.",
+            "en": "If needed 10 mg three times daily. Use beyond 2–3 weeks not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-cyclobenzaprine2",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ همراه یا تا ۱۴ روز پس از MAOI؛ فاز بهبود حاد MI؛ آریتمی، بلوک یا اختلال هدایت؛ نارسایی قلبی؛ پرکاری تیروئید.",
+        "en": "Hypersensitivity; with or within 14 days of an MAOI; acute recovery phase of MI; arrhythmias, heart block or conduction disturbances; heart failure; hyperthyroidism."
+      },
+      "refs": [
+        {
+          "source": "fda-cyclobenzaprine2",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-15",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 15,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۵ سال ثابت نشده.",
+        "en": "Not established under 15 years."
+      },
+      "refs": [
+        {
+          "source": "fda-cyclobenzaprine2",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "spasm",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 10
+      }
+    }
+  ]
+}

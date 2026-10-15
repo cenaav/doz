@@ -1,0 +1,234 @@
+{
+  "id": "donepezil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دونپزیل",
+    "en": "Donepezil"
+  },
+  "category": "neurology",
+  "class": {
+    "fa": "مهارکننده کولین‌استراز",
+    "en": "Cholinesterase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Aricept",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aricept",
+    "آریسپت",
+    "دونپزیل",
+    "آلزایمر"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-donepezil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-donepezil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-23",
+      "form": "tablet",
+      "route": "oral",
+      "label": "23 mg tablet",
+      "concentration": {
+        "amount": 23,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-donepezil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mild",
+      "disease": "alzheimers",
+      "label": {
+        "fa": "آلزایمر خفیف تا متوسط — ۵ mg شب",
+        "en": "Mild–moderate Alzheimer’s — 5 mg in the evening"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-donepezil",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۱۰ mg فقط پس از ۴ تا ۶ هفته مصرف ۵ mg.",
+            "en": "10 mg only after 4–6 weeks on 5 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-donepezil",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "severe",
+      "disease": "alzheimers",
+      "label": {
+        "fa": "آلزایمر متوسط تا شدید — ۱۰ mg (تا ۲۳ mg)",
+        "en": "Moderate–severe Alzheimer’s — 10 mg (up to 23 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-donepezil",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 23,
+        "refs": [
+          {
+            "source": "fda-donepezil",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۳ mg فقط پس از حداقل ۳ ماه مصرف ۱۰ mg؛ قرص ۲۳ mg شکسته یا جویده نشود.",
+            "en": "23 mg only after at least 3 months on 10 mg; do not split or chew the 23 mg tablet."
+          },
+          "refs": [
+            {
+              "source": "fda-donepezil",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-donepezil",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دونپزیل یا مشتقات پیپریدین.",
+        "en": "Hypersensitivity to donepezil or piperidine derivatives."
+      },
+      "refs": [
+        {
+          "source": "fda-donepezil",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mild",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 75,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "severe",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 80,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ]
+}

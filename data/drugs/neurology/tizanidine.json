@@ -1,0 +1,186 @@
+{
+  "id": "tizanidine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تیزانیدین",
+    "en": "Tizanidine"
+  },
+  "category": "neurology",
+  "class": {
+    "fa": "شل‌کننده عضلانی (آگونیست α2)",
+    "en": "Muscle relaxant (alpha-2 agonist)"
+  },
+  "brands": [
+    {
+      "name": "Zanaflex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zanaflex",
+    "زانافلکس",
+    "تیزانیدین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet (scored)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-4",
+      "form": "tablet",
+      "route": "oral",
+      "label": "4 mg tablet (scored)",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "spasticity",
+      "disease": "spasticity",
+      "label": {
+        "fa": "اسپاستیسیتی — شروع ۲ mg هر ۶ تا ۸ ساعت در صورت نیاز (حداکثر ۳ نوبت)",
+        "en": "Spasticity — start 2 mg every 6–8 h as needed (max 3 doses)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 3,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 36,
+        "refs": [
+          {
+            "source": "fda-tizanidine",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲ تا ۴ mg در هر دوز هر ۱ تا ۴ روز؛ حداکثر ۳۶ mg/day. آنزیم‌های کبدی در ابتدا و یک ماه بعد. قطع تدریجی ۲ تا ۴ mg در روز.",
+            "en": "Increase by 2–4 mg per dose every 1–4 days; max 36 mg/day. Check liver enzymes at baseline and 1 month. Taper by 2–4 mg/day when stopping."
+          },
+          "refs": [
+            {
+              "source": "fda-tizanidine",
+              "section": "2"
+            },
+            {
+              "source": "fda-tizanidine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-tizanidine",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "همراه مهارکننده‌های قوی CYP1A2 (فلووکسامین، سیپروفلوکساسین)؛ حساسیت.",
+        "en": "With strong CYP1A2 inhibitors (fluvoxamine, ciprofloxacin); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان ثابت نشده.",
+        "en": "Not established in children."
+      },
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "spasticity",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2
+      }
+    }
+  ]
+}

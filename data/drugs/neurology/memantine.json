@@ -1,0 +1,150 @@
+{
+  "id": "memantine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ممانتین",
+    "en": "Memantine"
+  },
+  "category": "neurology",
+  "class": {
+    "fa": "آنتاگونیست NMDA",
+    "en": "NMDA antagonist"
+  },
+  "brands": [
+    {
+      "name": "Namenda",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "namenda",
+    "نامندا",
+    "ممانتین",
+    "آلزایمر"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-memantine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-memantine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ad",
+      "disease": "alzheimers",
+      "label": {
+        "fa": "آلزایمر متوسط تا شدید — دوز هدف ۱۰ mg دو بار (پس از تیتراسیون)",
+        "en": "Moderate–severe Alzheimer’s — target 10 mg twice daily (after titration)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-memantine",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۵ mg یک بار؛ افزایش ۵ mg (حداقل یک هفته فاصله): ۱۰ mg/day (۵ دو بار)، ۱۵ (۵ و ۱۰)، ۲۰ (۱۰ دو بار).",
+            "en": "Start 5 mg once daily; increase in 5 mg steps at least 1 week apart: 10 mg/day (5 twice), 15 (5 + 10), 20 (10 twice)."
+          },
+          "refs": [
+            {
+              "source": "fda-memantine",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ممانتین.",
+        "en": "Hypersensitivity to memantine."
+      },
+      "refs": [
+        {
+          "source": "fda-memantine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ad",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 75,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 10,
+        "perDay": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": "varenicline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "وارنیکلین",
+    "en": "Varenicline"
+  },
+  "category": "psychiatry",
+  "class": {
+    "fa": "آگونیست نسبی نیکوتینی",
+    "en": "Nicotinic partial agonist"
+  },
+  "brands": [
+    {
+      "name": "Chantix",
+      "market": "US"
+    },
+    {
+      "name": "Champix",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "chantix",
+    "champix",
+    "شمپیکس",
+    "وارنیکلین",
+    "ترک سیگار"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "quit",
+      "disease": "smoking-cessation",
+      "label": {
+        "fa": "ترک سیگار — هفته اول تیتراسیون، سپس ۱ mg دو بار",
+        "en": "Smoking cessation — week-1 titration, then 1 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 84,
+        "max": 84
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "روز ۱ تا ۳: ۰٫۵ mg یک بار؛ روز ۴ تا ۷: ۰٫۵ mg دو بار؛ سپس ۱ mg دو بار تا ۱۲ هفته. CrCl کمتر از ۳۰: حداکثر ۰٫۵ mg دو بار.",
+            "en": "Days 1–3: 0.5 mg once daily; days 4–7: 0.5 mg twice daily; then 1 mg twice daily to 12 weeks. CrCl <30: max 0.5 mg twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-varenicline",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت یا واکنش پوستی جدی به وارنیکلین.",
+        "en": "History of serious hypersensitivity or skin reactions to varenicline."
+      },
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در ۱۶ سال و کمتر توصیه نمی‌شود.",
+        "en": "Not recommended in patients 16 years or younger."
+      },
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "quit",
+      "formulation": "tab-1",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 2
+      }
+    }
+  ]
+}
