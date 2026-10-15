@@ -1,0 +1,257 @@
+{
+  "id": "carbamazepine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کاربامازپین",
+    "en": "Carbamazepine"
+  },
+  "category": "psychiatry",
+  "class": {
+    "fa": "ضدتشنج",
+    "en": "Anticonvulsant"
+  },
+  "brands": [
+    {
+      "name": "Tegretol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tegretol",
+    "تگرتول",
+    "کاربامازپین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet (partially scored)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "epi-lt6",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع — زیر ۶ سال: شروع ۱۰ تا ۲۰ mg/kg/day",
+        "en": "Epilepsy — under 6 y: start 10–20 mg/kg/day"
+      },
+      "population": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "perKgPerDayMax": 20,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 35,
+        "refs": [
+          {
+            "source": "fda-carbamazepine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هفتگی تا پاسخ مطلوب افزایش؛ معمولاً پاسخ زیر ۳۵ mg/kg/day؛ قرص دو یا سه بار در روز.",
+            "en": "Increase weekly to response; usually below 35 mg/kg/day; tablets 2–3 times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-carbamazepine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epi-6-12",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع — ۶ تا ۱۲ سال: شروع ۱۰۰ mg دو بار در روز",
+        "en": "Epilepsy — 6–12 y: start 100 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش هفتگی تا ۱۰۰ mg/day.",
+            "en": "Increase weekly by up to 100 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-carbamazepine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epi-12plus",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع — بزرگسال و بالای ۱۲ سال: شروع ۲۰۰ mg دو بار در روز",
+        "en": "Epilepsy — adults and >12 y: start 200 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش هفتگی تا ۲۰۰ mg/day.",
+            "en": "Increase weekly by up to 200 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-carbamazepine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه سرکوب مغز استخوان؛ حساسیت به کاربامازپین یا ضدافسردگی‌های سه‌حلقه‌ای؛ MAOI.",
+        "en": "History of bone marrow depression; hypersensitivity to carbamazepine or tricyclics; MAOIs."
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: واکنش‌های پوستی کشنده (SJS/TEN) مرتبط با آلل HLA-B*1502 (خطر حدود ۱۰ برابر در برخی جمعیت‌های آسیایی)؛ آپلاستیک آنمی و آگرانولوسیتوز.",
+        "en": "Boxed warning: fatal skin reactions (SJS/TEN) linked to HLA-B*1502 (about 10× risk in some Asian populations); aplastic anemia and agranulocytosis."
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "WARNINGS (boxed): SERIOUS DERMATOLOGIC REACTIONS AND HLA-B*1502 ALLELE"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "epi-lt6",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "epi-6-12",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "epi-12plus",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ]
+}

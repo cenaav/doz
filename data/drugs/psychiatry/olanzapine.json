@@ -1,0 +1,317 @@
+{
+  "id": "olanzapine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "الانزاپین",
+    "en": "Olanzapine"
+  },
+  "category": "psychiatry",
+  "class": {
+    "fa": "آنتی‌سایکوتیک آتیپیک",
+    "en": "Atypical antipsychotic"
+  },
+  "brands": [
+    {
+      "name": "Zyprexa",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zyprexa",
+    "زیپرکسا",
+    "اولانزاپین",
+    "الانزاپین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zyprexa",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zyprexa",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-7-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "7.5 mg tablet",
+      "concentration": {
+        "amount": 7.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zyprexa",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zyprexa",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zyprexa",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zyprexa",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "schizo-adol",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی — ۱۳ تا ۱۷ سال: شروع ۲٫۵ یا ۵ mg، هدف ۱۰",
+        "en": "Schizophrenia — 13–17 y: start 2.5 or 5 mg, target 10"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 2.5,
+          "increment": 2.5,
+          "incrementEveryDays": 7,
+          "targetMin": 10,
+          "targetMax": 10,
+          "max": 20
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-zyprexa",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش وزن و دیس‌لیپیدمی در نوجوانان بیشتر است؛ ممکن است داروهای دیگر اول انتخاب شوند.",
+            "en": "Weight gain and dyslipidemia are greater in adolescents; other drugs may be considered first."
+          },
+          "refs": [
+            {
+              "source": "fda-zyprexa",
+              "section": "1.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "schizo-adult",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی — بزرگسال: ۵ تا ۱۰ mg، هدف ۱۰",
+        "en": "Schizophrenia — adults: 5–10 mg, target 10"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 5,
+          "increment": 5,
+          "incrementEveryDays": 7,
+          "targetMin": 10,
+          "targetMax": 10,
+          "max": 20
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-zyprexa",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "bipolar-adult",
+      "disease": "bipolar-mania",
+      "label": {
+        "fa": "مانیای دوقطبی — بزرگسال: شروع ۱۰ یا ۱۵ mg",
+        "en": "Bipolar mania — adults: start 10 or 15 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 10,
+          "increment": 5,
+          "incrementEveryDays": 1,
+          "targetMin": 10,
+          "targetMax": 15,
+          "max": 20
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-zyprexa",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "schizo-adol",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 2.5
+      }
+    },
+    {
+      "regimen": "schizo-adult",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "bipolar-adult",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ]
+}

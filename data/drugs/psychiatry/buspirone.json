@@ -1,0 +1,137 @@
+{
+  "id": "buspirone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بوسپیرون",
+    "en": "Buspirone"
+  },
+  "category": "psychiatry",
+  "class": {
+    "fa": "ضداضطراب غیربنزودیازپینی",
+    "en": "Non-benzodiazepine anxiolytic"
+  },
+  "brands": [
+    {
+      "name": "Buspar",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "buspar",
+    "بوسپار",
+    "بوسپیرون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet (scored)",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-buspirone",
+          "section": "Patient instructions — breaking the 15 mg tablet"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "anxiety",
+      "disease": "anxiety",
+      "label": {
+        "fa": "اضطراب — بزرگسال: ۷٫۵ mg دو بار در روز",
+        "en": "Anxiety — adults: 7.5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 7.5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-buspirone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 60,
+        "refs": [
+          {
+            "source": "fda-buspirone",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۲ تا ۳ روز ۵ mg/day افزایش؛ معمولاً ۲۰ تا ۳۰ mg/day.",
+            "en": "Increase 5 mg/day every 2–3 days; usually 20–30 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-buspirone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ MAOI یا تا ۱۴ روز پس از قطع.",
+        "en": "Hypersensitivity; MAOI within 14 days."
+      },
+      "refs": [
+        {
+          "source": "fda-buspirone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "anxiety",
+      "formulation": "tab-15",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 7.5,
+        "tabletsPerDoseRounded": 0.5
+      }
+    }
+  ]
+}
