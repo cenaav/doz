@@ -1,0 +1,237 @@
+{
+  "id": "chlorthalidone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلرتالیدون",
+    "en": "Chlorthalidone"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "دیورتیک شبه‌تیازید",
+    "en": "Thiazide-like diuretic"
+  },
+  "brands": [
+    {
+      "name": "Thalitone",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "thalitone",
+    "کلرتالیدون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-chlorthalidone",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-chlorthalidone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۲۵ mg یک بار در روز",
+        "en": "Hypertension — 25 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-chlorthalidone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 100,
+        "refs": [
+          {
+            "source": "fda-chlorthalidone",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۵۰ و سپس ۱۰۰ mg؛ بالای ۱۰۰ معمولاً اثر بیشتری ندارد.",
+            "en": "If needed 50 then 100 mg; above 100 usually no more effect."
+          },
+          "refs": [
+            {
+              "source": "fda-chlorthalidone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edema",
+      "disease": "edema",
+      "label": {
+        "fa": "ادم — ۵۰ تا ۱۰۰ mg روزانه (یا ۱۰۰ mg یک روز در میان)",
+        "en": "Edema — 50–100 mg daily (or 100 mg on alternate days)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "perDoseMax": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-chlorthalidone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "برخی تا ۱۵۰ تا ۲۰۰ mg.",
+            "en": "Some need 150–200 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-chlorthalidone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "hypertension",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in children not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-chlorthalidone",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آنوری؛ حساسیت به کلرتالیدون یا سولفونامیدها.",
+        "en": "Anuria; hypersensitivity to chlorthalidone or sulfonamides."
+      },
+      "refs": [
+        {
+          "source": "fda-chlorthalidone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "edema",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 50,
+        "upperPerDose": 100
+      }
+    }
+  ]
+}

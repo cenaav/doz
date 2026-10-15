@@ -1,0 +1,156 @@
+{
+  "id": "indapamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اینداپامید",
+    "en": "Indapamide"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "دیورتیک شبه‌تیازید",
+    "en": "Thiazide-like diuretic"
+  },
+  "brands": [
+    {
+      "name": "Natrilix",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "natrilix",
+    "ناتریلیکس",
+    "اینداپامید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg coated tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-indapamide",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۲٫۵ mg صبح",
+        "en": "Hypertension — 2.5 mg in the morning"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-indapamide",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2.5,
+        "refs": [
+          {
+            "source": "uk-smpc-indapamide",
+            "section": "4.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بالاتر توصیه نمی‌شود (اثر ضدفشار بیشتری ندارد). اثر کامل ممکن است چند ماه طول بکشد.",
+            "en": "Higher doses not recommended (no added antihypertensive effect). Full effect may take months."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-indapamide",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اینداپامید یا سولفونامیدها؛ نارسایی شدید کلیه یا کبد؛ هیپوکالمی؛ پورفیری؛ آدیسون؛ هیپوناترمی یا هیپرکلسمی مقاوم.",
+        "en": "Hypersensitivity to indapamide or sulfonamides; severe renal or hepatic failure; hypokalaemia; porphyria; Addison's disease; refractory hyponatraemia or hypercalcaemia."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-indapamide",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "دوز کودکان در این SmPC نیامده.",
+        "en": "No pediatric dose in this SmPC."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-indapamide",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 2.5
+      }
+    }
+  ]
+}

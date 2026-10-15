@@ -1,0 +1,212 @@
+{
+  "id": "bisoprolol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بیزوپرولول",
+    "en": "Bisoprolol"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "بتابلاکر انتخابی β1",
+    "en": "Beta-1 selective blocker"
+  },
+  "brands": [
+    {
+      "name": "Zebeta",
+      "market": "US"
+    },
+    {
+      "name": "Concor",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "zebeta",
+    "concor",
+    "کنکور",
+    "بیسوپرولول",
+    "بیزوپرولول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bisoprolol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bisoprolol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bisoprolol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۵ mg یک بار در روز",
+        "en": "Hypertension — 5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bisoprolol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 20,
+        "refs": [
+          {
+            "source": "fda-bisoprolol",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "گاهی شروع ۲٫۵ mg (برونکواسپاسم). افزایش به ۱۰ و سپس ۲۰ mg. نارسایی کبد یا CrCl کمتر از ۴۰: شروع ۲٫۵ mg.",
+            "en": "Some patients start 2.5 mg (bronchospasm). Increase to 10 then 20 mg. Hepatic impairment or CrCl <40: start 2.5 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-bisoprolol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "hypertension",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in children not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-bisoprolol",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "شوک کاردیوژنیک، نارسایی قلبی آشکار، بلوک AV درجه ۲ یا ۳، برادی‌کاردی سینوسی شدید.",
+        "en": "Cardiogenic shock, overt cardiac failure, second- or third-degree AV block, marked sinus bradycardia."
+      },
+      "refs": [
+        {
+          "source": "fda-bisoprolol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ]
+}

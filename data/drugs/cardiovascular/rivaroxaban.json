@@ -1,0 +1,264 @@
+{
+  "id": "rivaroxaban",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریواروکسابان",
+    "en": "Rivaroxaban"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "ضدانعقاد خوراکی (مهارکننده فاکتور Xa)",
+    "en": "Oral anticoagulant (factor Xa inhibitor)"
+  },
+  "brands": [
+    {
+      "name": "Xarelto",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xarelto",
+    "زارلتو",
+    "ریواروکسابان",
+    "DOAC"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "af",
+      "disease": "atrial-fibrillation",
+      "label": {
+        "fa": "AF غیردریچه‌ای — ۲۰ mg یک بار با شام",
+        "en": "Non-valvular AF — 20 mg once daily with the evening meal"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس کلیرانس کراتینین ۱۵ یا ۲۰ mg. قرص‌های ۱۵ و ۲۰ mg با غذا.",
+            "en": "15 or 20 mg depending on creatinine clearance. 15 and 20 mg tablets with food."
+          },
+          "refs": [
+            {
+              "source": "fda-xarelto",
+              "section": "2"
+            },
+            {
+              "source": "fda-xarelto",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vte",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "درمان DVT/PE — ۱۵ mg دو بار با غذا ۲۱ روز، سپس ۲۰ mg یک بار",
+        "en": "DVT/PE — 15 mg twice daily with food for 21 days, then 20 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 21,
+        "max": 21
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از ۲۱ روز ۲۰ mg یک بار با غذا. پیشگیری از عود پس از ۶ ماه: ۱۰ mg یک بار.",
+            "en": "After 21 days 20 mg once daily with food. Recurrence prevention after 6 months: 10 mg once daily."
+          },
+          "refs": [
+            {
+              "source": "fda-xarelto",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی پاتولوژیک فعال؛ حساسیت شدید.",
+        "en": "Active pathological bleeding; severe hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: قطع زودهنگام خطر ترومبوز را بالا می‌برد؛ هماتوم نخاعی با بی‌حسی نخاعی.",
+        "en": "Boxed warning: premature discontinuation raises thrombotic risk; spinal/epidural haematoma with neuraxial anaesthesia."
+      },
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "af",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 20
+      }
+    },
+    {
+      "regimen": "vte",
+      "formulation": "tab-15",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDay": 30
+      }
+    }
+  ]
+}

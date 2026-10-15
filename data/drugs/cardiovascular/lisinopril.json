@@ -1,0 +1,468 @@
+{
+  "id": "lisinopril",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لیزینوپریل",
+    "en": "Lisinopril"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مهارکننده ACE",
+    "en": "ACE inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Zestril",
+      "market": "US"
+    },
+    {
+      "name": "Prinivil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zestril",
+    "prinivil",
+    "لیزینوپریل",
+    "ACEI"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg tablet",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — بزرگسال: ۱۰ mg یک بار در روز",
+        "en": "Hypertension — adults: 10 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 80,
+        "refs": [
+          {
+            "source": "fda-lisinopril",
+            "section": "2.1",
+            "note": {
+              "en": "Doses up to 80 mg used without greater effect"
+            }
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "معمول ۲۰ تا ۴۰ mg/day یک‌جا. با دیورتیک: شروع ۵ mg. CrCl ۱۰ تا ۳۰: نصف دوز؛ کمتر از ۱۰ یا دیالیز: ۲٫۵ mg.",
+            "en": "Usual 20–40 mg/day once. On diuretics: start 5 mg. CrCl 10–30: halve; <10 or dialysis: 2.5 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-lisinopril",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-lisinopril",
+              "section": "2"
+            },
+            {
+              "source": "fda-lisinopril",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۶ سال به بالا: ۰٫۰۷ mg/kg یک بار (تا ۵ mg)",
+        "en": "Hypertension — ≥6 y: 0.07 mg/kg once daily (up to 5 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.07,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "2"
+        },
+        {
+          "source": "fda-lisinopril",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 5,
+        "refs": [
+          {
+            "source": "fda-lisinopril",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تا ۰٫۶۱ mg/kg (حداکثر ۴۰ mg)؛ بالاتر مطالعه نشده. برای GFR کمتر از ۳۰ توصیه نمی‌شود.",
+            "en": "Up to 0.61 mg/kg (max 40 mg); higher not studied. Not for GFR <30."
+          },
+          "refs": [
+            {
+              "source": "fda-lisinopril",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hf",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی قلبی — شروع ۵ mg یک بار در روز",
+        "en": "Heart failure — start 5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 40,
+        "refs": [
+          {
+            "source": "fda-lisinopril",
+            "section": "2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mi",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "MI حاد (۲۴ ساعت اول) — ۵ mg، سپس ۵ mg، سپس ۱۰ mg روزانه",
+        "en": "Acute MI (within 24 h) — 5 mg, then 5 mg, then 10 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۵ mg، ۲۴ ساعت بعد ۵ mg، ۴۸ ساعت بعد ۱۰ mg، سپس ۱۰ mg یک بار در روز.",
+            "en": "5 mg, 5 mg after 24 h, 10 mg after 48 h, then 10 mg once daily."
+          },
+          "refs": [
+            {
+              "source": "fda-lisinopril",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه آنژیوادم؛ حساسیت؛ آلیسکیرن در دیابت؛ همراه ساکوبیتریل (۳۶ ساعت فاصله).",
+        "en": "History of angioedema; hypersensitivity; aliskiren in diabetes; with sacubitril (36 h gap)."
+      },
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-6",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ سال توصیه نمی‌شود.",
+        "en": "Not recommended under 6 years."
+      },
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "pregnancy",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — با تشخیص بارداری فوراً قطع شود.",
+        "en": "Boxed warning: fetal toxicity — stop as soon as pregnancy is detected."
+      },
+      "refs": [
+        {
+          "source": "fda-lisinopril",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 35
+      },
+      "expect": {
+        "perDose": 2.45,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "hf",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "mi",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ]
+}

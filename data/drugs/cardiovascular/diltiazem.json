@@ -1,0 +1,219 @@
+{
+  "id": "diltiazem",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیلتیازم",
+    "en": "Diltiazem"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مسدودکننده کانال کلسیم",
+    "en": "Calcium-channel blocker"
+  },
+  "brands": [
+    {
+      "name": "Cardizem",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cardizem",
+    "کاردیزم",
+    "دیلتیازم"
+  ],
+  "formulations": [
+    {
+      "id": "tab-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg tablet",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diltiazemir",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-60",
+      "form": "tablet",
+      "route": "oral",
+      "label": "60 mg tablet (scored)",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diltiazemir",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-90",
+      "form": "tablet",
+      "route": "oral",
+      "label": "90 mg tablet (scored)",
+      "concentration": {
+        "amount": 90,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diltiazemir",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-120",
+      "form": "tablet",
+      "route": "oral",
+      "label": "120 mg tablet (scored)",
+      "concentration": {
+        "amount": 120,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diltiazemir",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "angina",
+      "disease": "angina",
+      "label": {
+        "fa": "آنژین — شروع ۳۰ mg چهار بار در روز",
+        "en": "Angina — start 30 mg four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-diltiazemir",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "قبل از غذا و هنگام خواب؛ افزایش تدریجی هر ۱ تا ۲ روز؛ محدوده بهینه ۱۸۰ تا ۳۶۰ mg/day در ۳ یا ۴ نوبت. قرص ۳۰ mg نصف نشود.",
+            "en": "Before meals and at bedtime; increase every 1–2 days; optimum 180–360 mg/day in 3–4 doses. Do not split 30 mg tablets."
+          },
+          "refs": [
+            {
+              "source": "fda-diltiazemir",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "angina",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in children not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-diltiazemir",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سندرم سینوس بیمار یا بلوک AV درجه ۲ یا ۳ (بدون پیس‌میکر)؛ افت فشار (سیستولیک <۹۰)؛ MI حاد با احتقان ریه؛ حساسیت.",
+        "en": "Sick sinus syndrome or second/third-degree AV block (no pacemaker); hypotension (<90 systolic); acute MI with pulmonary congestion; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-diltiazemir",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "angina",
+      "formulation": "tab-30",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 30,
+        "perDay": 120
+      }
+    }
+  ]
+}

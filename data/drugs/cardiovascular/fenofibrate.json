@@ -1,0 +1,241 @@
+{
+  "id": "fenofibrate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فنوفیبرات",
+    "en": "Fenofibrate"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "فیبرات",
+    "en": "Fibrate"
+  },
+  "brands": [
+    {
+      "name": "Tricor",
+      "market": "US"
+    },
+    {
+      "name": "Lipanthyl",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "tricor",
+    "lipanthyl",
+    "لیپانتیل",
+    "فنوفیبرات"
+  ],
+  "formulations": [
+    {
+      "id": "tab-54",
+      "form": "tablet",
+      "route": "oral",
+      "label": "54 mg tablet",
+      "concentration": {
+        "amount": 54,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fenofibrate",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-160",
+      "form": "tablet",
+      "route": "oral",
+      "label": "160 mg tablet",
+      "concentration": {
+        "amount": 160,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fenofibrate",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "lipid",
+      "disease": "hyperlipidemia",
+      "label": {
+        "fa": "هیپرکلسترولمی یا دیس‌لیپیدمی مختلط — ۱۶۰ mg یک بار",
+        "en": "Primary hypercholesterolaemia or mixed dyslipidaemia — 160 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 160,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fenofibrate",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 160,
+        "refs": [
+          {
+            "source": "fda-fenofibrate",
+            "section": "2.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tg",
+      "disease": "hypertriglyceridemia",
+      "label": {
+        "fa": "تری‌گلیسرید شدید — ۵۴ تا ۱۶۰ mg یک بار",
+        "en": "Severe hypertriglyceridaemia — 54–160 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 54,
+        "perDoseMax": 160,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fenofibrate",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 160,
+        "refs": [
+          {
+            "source": "fda-fenofibrate",
+            "section": "2.3"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نارسایی خفیف تا متوسط کلیه: شروع ۵۴ mg. اگر پس از ۲ ماه با ۱۶۰ mg پاسخ نبود، قطع شود.",
+            "en": "Mild–moderate renal impairment: start 54 mg. Stop if no response after 2 months on 160 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-fenofibrate",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-fenofibrate",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "hyperlipidemia",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in children not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-fenofibrate",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی شدید کلیه یا دیالیز؛ بیماری فعال کبد؛ بیماری کیسه صفرا؛ شیردهی؛ حساسیت.",
+        "en": "Severe renal impairment or dialysis; active liver disease; gallbladder disease; breastfeeding; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-fenofibrate",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "lipid",
+      "formulation": "tab-160",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 85
+      },
+      "expect": {
+        "perDose": 160
+      }
+    },
+    {
+      "regimen": "tg",
+      "formulation": "tab-54",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 90
+      },
+      "expect": {
+        "perDose": 54
+      }
+    }
+  ]
+}

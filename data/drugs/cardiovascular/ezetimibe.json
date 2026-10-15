@@ -1,0 +1,152 @@
+{
+  "id": "ezetimibe",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ازتیمایب",
+    "en": "Ezetimibe"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مهارکننده جذب کلسترول",
+    "en": "Cholesterol absorption inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Zetia",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zetia",
+    "زتیا",
+    "ازتیمیب",
+    "ازتیمایب"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ezetimibe",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hyperlipidemia",
+      "label": {
+        "fa": "چربی خون — ۱۰ mg یک بار در روز",
+        "en": "Hyperlipidaemia — 10 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ezetimibe",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با یا بدون غذا؛ ۲ ساعت قبل یا ۴ ساعت بعد از رزین‌های اسید صفراوی. کودکان ۱۰ سال به بالا: فقط FH هتروزیگوت همراه استاتین.",
+            "en": "With or without food; 2 h before or 4 h after bile acid sequestrants. Children ≥10 y: HeFH only, with a statin."
+          },
+          "refs": [
+            {
+              "source": "fda-ezetimibe",
+              "section": "2"
+            },
+            {
+              "source": "fda-ezetimibe",
+              "section": "8.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ در ترکیب با استاتین یا فنوفیبرات، هر جا آن‌ها منع دارند.",
+        "en": "Hypersensitivity; with a statin or fenofibrate, wherever those are contraindicated."
+      },
+      "refs": [
+        {
+          "source": "fda-ezetimibe",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-10",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۰ سال ثابت نشده.",
+        "en": "Not established under 10 years."
+      },
+      "refs": [
+        {
+          "source": "fda-ezetimibe",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ]
+}

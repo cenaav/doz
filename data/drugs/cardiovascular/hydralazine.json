@@ -1,0 +1,267 @@
+{
+  "id": "hydralazine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "هیدرالازین",
+    "en": "Hydralazine"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "گشادکننده عروق",
+    "en": "Vasodilator"
+  },
+  "brands": [
+    {
+      "name": "Apresoline",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "apresoline",
+    "آپرسولین",
+    "هیدرالازین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hydralazine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hydralazine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hydralazine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hydralazine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — بزرگسال: ۱۰ mg چهار بار در روز (شروع)",
+        "en": "Hypertension — adults: 10 mg four times daily (start)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 4,
+        "titration": {
+          "start": 40,
+          "targetMin": 200,
+          "targetMax": 200,
+          "max": 300
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-hydralazine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "روز ۲ تا ۴: ۱۰ mg چهار بار؛ بقیه هفته اول ۲۵ mg چهار بار؛ از هفته دوم ۵۰ mg چهار بار. گاهی تا ۳۰۰ mg/day.",
+            "en": "Days 2–4: 10 mg qid; rest of week 1: 25 mg qid; from week 2: 50 mg qid. Occasionally up to 300 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-hydralazine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — کودکان: ۰٫۷۵ mg/kg/day در ۴ نوبت",
+        "en": "Hypertension — children: 0.75 mg/kg/day in 4 doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.75,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-hydralazine",
+          "section": "Pediatric Use"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 7.5,
+        "maxPerDay": 200,
+        "refs": [
+          {
+            "source": "fda-hydralazine",
+            "section": "Pediatric Use"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش تدریجی طی ۳ تا ۴ هفته تا حداکثر ۷٫۵ mg/kg یا ۲۰۰ mg در روز.",
+            "en": "Increase gradually over 3–4 weeks to max 7.5 mg/kg or 200 mg daily."
+          },
+          "refs": [
+            {
+              "source": "fda-hydralazine",
+              "section": "Pediatric Use"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ بیماری عروق کرونر؛ بیماری روماتیسمی دریچه میترال.",
+        "en": "Hypersensitivity; coronary artery disease; mitral valvular rheumatic heart disease."
+      },
+      "refs": [
+        {
+          "source": "fda-hydralazine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 30
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 53.33
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ]
+}

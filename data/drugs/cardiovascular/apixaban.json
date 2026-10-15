@@ -1,0 +1,266 @@
+{
+  "id": "apixaban",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آپیکسابان",
+    "en": "Apixaban"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "ضدانعقاد خوراکی (مهارکننده فاکتور Xa)",
+    "en": "Oral anticoagulant (factor Xa inhibitor)"
+  },
+  "brands": [
+    {
+      "name": "Eliquis",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "eliquis",
+    "الیکوئیس",
+    "آپیکسابان",
+    "DOAC",
+    "NOAC"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "af",
+      "disease": "atrial-fibrillation",
+      "label": {
+        "fa": "AF غیردریچه‌ای — ۵ mg دو بار در روز",
+        "en": "Non-valvular AF — 5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر حداقل ۲ مورد از سن ≥۸۰، وزن ≤۶۰ kg، کراتینین ≥۱٫۵ وجود دارد: ۲٫۵ mg دو بار. با مهارکننده‌های قوی CYP3A4 و P-gp دوز نصف شود.",
+            "en": "If at least 2 of age ≥80, weight ≤60 kg, creatinine ≥1.5: 2.5 mg twice daily. Halve with combined strong CYP3A4 + P-gp inhibitors."
+          },
+          "refs": [
+            {
+              "source": "fda-eliquis",
+              "section": "2"
+            },
+            {
+              "source": "fda-eliquis",
+              "section": "2.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vte",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "درمان DVT/PE — ۱۰ mg دو بار ۷ روز، سپس ۵ mg دو بار",
+        "en": "DVT/PE treatment — 10 mg twice daily for 7 days, then 5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از ۷ روز: ۵ mg دو بار. پیشگیری از عود پس از ۶ ماه: ۲٫۵ mg دو بار.",
+            "en": "After 7 days: 5 mg twice daily. Recurrence prevention after 6 months: 2.5 mg twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-eliquis",
+              "section": "2"
+            },
+            {
+              "source": "fda-eliquis",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ortho",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "پیشگیری DVT پس از تعویض لگن یا زانو — ۲٫۵ mg دو بار",
+        "en": "DVT prophylaxis after hip/knee replacement — 2.5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی پاتولوژیک فعال؛ حساسیت شدید.",
+        "en": "Active pathological bleeding; severe hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: قطع زودهنگام خطر ترومبوز را بالا می‌برد؛ هماتوم نخاعی با بی‌حسی نخاعی.",
+        "en": "Boxed warning: premature discontinuation raises thrombotic risk; spinal/epidural haematoma with neuraxial anaesthesia."
+      },
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "af",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 5,
+        "perDay": 10
+      }
+    },
+    {
+      "regimen": "vte",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "ortho",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 2.5
+      }
+    }
+  ]
+}

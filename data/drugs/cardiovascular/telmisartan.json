@@ -1,0 +1,221 @@
+{
+  "id": "telmisartan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تلمیسارتان",
+    "en": "Telmisartan"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "ARB",
+    "en": "Angiotensin receptor blocker"
+  },
+  "brands": [
+    {
+      "name": "Micardis",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "micardis",
+    "میکاردیس",
+    "تلمیسارتان",
+    "ARB"
+  ],
+  "formulations": [
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-telmisartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-telmisartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-80",
+      "form": "tablet",
+      "route": "oral",
+      "label": "80 mg tablet",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-telmisartan",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۴۰ mg یک بار در روز",
+        "en": "Hypertension — 40 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-telmisartan",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 80,
+        "refs": [
+          {
+            "source": "fda-telmisartan",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "محدوده ۴۰ تا ۸۰ mg؛ پاسخ وابسته به دوز بین ۲۰ تا ۸۰ mg.",
+            "en": "Range 40–80 mg; dose-related response from 20 to 80 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-telmisartan",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "hypertension",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in children not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-telmisartan",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت (آنافیلاکسی یا آنژیوادم) به تلمیسارتان.",
+        "en": "Hypersensitivity (anaphylaxis or angioedema) to telmisartan."
+      },
+      "refs": [
+        {
+          "source": "fda-telmisartan",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "pregnancy",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — با تشخیص بارداری فوراً قطع شود.",
+        "en": "Boxed warning: fetal toxicity — stop as soon as pregnancy is detected."
+      },
+      "refs": [
+        {
+          "source": "fda-telmisartan",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 40
+      }
+    }
+  ]
+}

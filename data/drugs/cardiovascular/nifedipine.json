@@ -1,0 +1,253 @@
+{
+  "id": "nifedipine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نیفدیپین آهسته‌رهش",
+    "en": "Nifedipine extended-release"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مسدودکننده کانال کلسیم",
+    "en": "Calcium-channel blocker"
+  },
+  "brands": [
+    {
+      "name": "Procardia XL",
+      "market": "US"
+    },
+    {
+      "name": "Adalat",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "procardia",
+    "adalat",
+    "آدالات",
+    "نیفدیپین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg tablet",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nifedipine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-60",
+      "form": "tablet",
+      "route": "oral",
+      "label": "60 mg tablet",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nifedipine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — آهسته‌رهش ۳۰ یا ۶۰ mg یک بار در روز",
+        "en": "Hypertension — extended-release 30 or 60 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "perDoseMax": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nifedipine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 120,
+        "refs": [
+          {
+            "source": "fda-nifedipine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کامل بلعیده شود. بالای ۱۲۰ mg توصیه نمی‌شود.",
+            "en": "Swallow whole. Titration above 120 mg not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-nifedipine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "angina",
+      "disease": "angina",
+      "label": {
+        "fa": "آنژین — آهسته‌رهش ۳۰ یا ۶۰ mg یک بار در روز",
+        "en": "Angina — extended-release 30 or 60 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "perDoseMax": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nifedipine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 120,
+        "refs": [
+          {
+            "source": "fda-nifedipine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تجربه بالای ۹۰ mg در آنژین محدود است.",
+            "en": "Experience above 90 mg in angina is limited."
+          },
+          "refs": [
+            {
+              "source": "fda-nifedipine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "hypertension",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in children not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-nifedipine",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به نیفدیپین.",
+        "en": "Hypersensitivity to nifedipine."
+      },
+      "refs": [
+        {
+          "source": "fda-nifedipine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-30",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 30,
+        "upperPerDose": 60
+      }
+    },
+    {
+      "regimen": "angina",
+      "formulation": "tab-30",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 30
+      }
+    }
+  ]
+}
