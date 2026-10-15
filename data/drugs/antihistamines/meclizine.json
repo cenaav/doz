@@ -1,0 +1,152 @@
+{
+  "id": "meclizine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مکلیزین",
+    "en": "Meclizine"
+  },
+  "category": "antihistamines",
+  "class": {
+    "fa": "آنتی‌هیستامین ضدتهوع",
+    "en": "Antihistamine antiemetic"
+  },
+  "brands": [
+    {
+      "name": "Bonine",
+      "market": "US"
+    },
+    {
+      "name": "Antivert",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "antivert",
+    "bonine",
+    "مکلیزین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-meclizine",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "motion",
+      "disease": "motion-sickness",
+      "label": {
+        "fa": "بیماری حرکت — ۱۲ سال به بالا: ۱ تا ۲ قرص یک بار در روز",
+        "en": "Motion sickness — ≥12 y: 1–2 tablets once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "perDoseMax": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-meclizine",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۳۰ تا ۶۰ دقیقه قبل از سفر.",
+            "en": "30–60 min before travel."
+          },
+          "refs": [
+            {
+              "source": "fda-meclizine",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال فقط به دستور پزشک.",
+        "en": "Under 12 years only if directed by a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-meclizine",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پیش از مصرف با پزشک: بیماری تنفسی، گلوکوم، مشکل ادراری از پروستات، مصرف آرام‌بخش.",
+        "en": "Ask a doctor first: breathing problems, glaucoma, urinary difficulty from prostate, sedatives."
+      },
+      "refs": [
+        {
+          "source": "fda-meclizine",
+          "section": "Ask a doctor before use"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "motion",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 25,
+        "upperPerDose": 50
+      }
+    }
+  ]
+}

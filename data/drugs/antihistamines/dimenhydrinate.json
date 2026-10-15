@@ -1,0 +1,192 @@
+{
+  "id": "dimenhydrinate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیمن‌هیدرینات",
+    "en": "Dimenhydrinate"
+  },
+  "category": "antihistamines",
+  "class": {
+    "fa": "آنتی‌هیستامین ضدتهوع",
+    "en": "Antihistamine antiemetic"
+  },
+  "brands": [
+    {
+      "name": "Dramamine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "dramamine",
+    "دراماین",
+    "دیمن هیدرینات",
+    "ماشین گرفتگی"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dimenhydrinate",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "motion",
+      "disease": "motion-sickness",
+      "label": {
+        "fa": "بیماری حرکت — بر اساس سن (۲ سال به بالا)",
+        "en": "Motion sickness — by age (≥2 y)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 25,
+            "dosesPerDay": 3
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 25,
+            "dosesPerDay": 3
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 50,
+            "dosesPerDay": 4
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-dimenhydrinate",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اولین دوز ۳۰ تا ۶۰ دقیقه قبل از سفر. ۲ تا ۶ سال: ½ قرص هر ۶ تا ۸ ساعت، حداکثر ۱½ قرص/روز. ۶ تا ۱۲ سال: ½ تا ۱ قرص هر ۶ تا ۸ ساعت، حداکثر ۳ قرص/روز. ۱۲ سال به بالا: ۱ تا ۲ قرص هر ۴ تا ۶ ساعت، حداکثر ۸ قرص/روز.",
+            "en": "First dose 30–60 min before travel. 2–6 y: ½ tablet every 6–8 h, max 1½ tablets/day. 6–12 y: ½–1 tablet every 6–8 h, max 3/day. ≥12 y: 1–2 tablets every 4–6 h, max 8/day."
+          },
+          "refs": [
+            {
+              "source": "fda-dimenhydrinate",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال فقط به دستور پزشک.",
+        "en": "Under 2 years only if directed by a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-dimenhydrinate",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پیش از مصرف با پزشک: بیماری تنفسی (آمفیزم، برونشیت مزمن)، گلوکوم، مشکل ادراری از پروستات، مصرف آرام‌بخش.",
+        "en": "Ask a doctor first: breathing problems (emphysema, chronic bronchitis), glaucoma, urinary difficulty from prostate, sedatives."
+      },
+      "refs": [
+        {
+          "source": "fda-dimenhydrinate",
+          "section": "Ask a doctor before use"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "motion",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "motion",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 50
+      }
+    }
+  ]
+}

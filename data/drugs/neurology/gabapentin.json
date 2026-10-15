@@ -1,0 +1,374 @@
+{
+  "id": "gabapentin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گاباپنتین",
+    "en": "Gabapentin"
+  },
+  "category": "neurology",
+  "class": {
+    "fa": "ضدتشنج / ضددرد نوروپاتیک",
+    "en": "Anticonvulsant / neuropathic pain"
+  },
+  "brands": [
+    {
+      "name": "Neurontin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "neurontin",
+    "نورونتین",
+    "گاباپنتین",
+    "گاباپنتین ۳۰۰"
+  ],
+  "formulations": [
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neurontin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-300",
+      "form": "capsule",
+      "route": "oral",
+      "label": "300 mg capsule",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neurontin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-400",
+      "form": "capsule",
+      "route": "oral",
+      "label": "400 mg capsule",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neurontin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-600",
+      "form": "tablet",
+      "route": "oral",
+      "label": "600 mg tablet (scored)",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neurontin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-800",
+      "form": "tablet",
+      "route": "oral",
+      "label": "800 mg tablet (scored)",
+      "concentration": {
+        "amount": 800,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neurontin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "sol-250",
+      "form": "solution",
+      "route": "oral",
+      "label": "250 mg/5 mL oral solution",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neurontin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "phn",
+      "disease": "neuropathic-pain",
+      "label": {
+        "fa": "درد پس از زونا — بزرگسال: روز ۱: ۳۰۰، روز ۲: ۶۰۰، روز ۳: ۹۰۰ mg/day",
+        "en": "Postherpetic neuralgia — adults: day 1 300, day 2 600, day 3 900 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 3,
+        "titration": {
+          "start": 900,
+          "increment": 300,
+          "incrementEveryDays": 1,
+          "targetMin": 1800,
+          "targetMax": 1800,
+          "max": 1800
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-gabapentin",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "روز ۱: ۳۰۰ mg تک‌دوز؛ روز ۲: ۳۰۰ دو بار؛ روز ۳: ۳۰۰ سه بار؛ سپس تا ۱۸۰۰ mg/day (۶۰۰ سه بار). بالای ۱۸۰۰ سود اضافه نشان نداده. دوز نمایش‌داده‌شده از روز ۳ است.",
+            "en": "Day 1: 300 mg once; day 2: 300 twice; day 3: 300 three times; then up to 1,800 mg/day (600 tid). No added benefit shown above 1,800. Displayed dose is from day 3."
+          },
+          "refs": [
+            {
+              "source": "fda-gabapentin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epi-12",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع پارشیل — ۱۲ سال به بالا: ۳۰۰ mg سه بار در روز",
+        "en": "Partial seizures — ≥12 y: 300 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "perDoseMax": 600,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-gabapentin",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده ۳۰۰ تا ۶۰۰ mg سه بار؛ تا ۲۴۰۰ mg/day در مطالعات طولانی. فاصله دوزها بیش از ۱۲ ساعت نشود. نارسایی کلیه: کاهش دوز (جدول ۱).",
+            "en": "Maintenance 300–600 mg tid; up to 2,400 mg/day in long-term studies. Interval between doses ≤12 h. Renal impairment: reduce (Table 1)."
+          },
+          "refs": [
+            {
+              "source": "fda-gabapentin",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-gabapentin",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epi-3-11",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع پارشیل — ۳ تا ۱۱ سال: شروع ۱۰ تا ۱۵ mg/kg/day در ۳ نوبت",
+        "en": "Partial seizures — 3–11 y: start 10–15 mg/kg/day in 3 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "perKgPerDayMax": 15,
+        "dividedDoses": 3
+      },
+      "refs": [
+        {
+          "source": "fda-gabapentin",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "طی حدود ۳ روز به نگهدارنده: ۳ تا ۴ سال ۴۰ mg/kg/day؛ ۵ تا ۱۱ سال ۲۵ تا ۳۵ mg/kg/day (سه نوبت). تا ۵۰ mg/kg/day مصرف شده.",
+            "en": "Titrate over about 3 days to maintenance: 3–4 y 40 mg/kg/day; 5–11 y 25–35 mg/kg/day (three doses). Up to 50 mg/kg/day has been used."
+          },
+          "refs": [
+            {
+              "source": "fda-gabapentin",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به گاباپنتین.",
+        "en": "Hypersensitivity to gabapentin."
+      },
+      "refs": [
+        {
+          "source": "fda-gabapentin",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-3",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 3,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۳ سال ثابت نشده.",
+        "en": "Not established below 3 years."
+      },
+      "refs": [
+        {
+          "source": "fda-gabapentin",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "phn",
+      "formulation": "cap-300",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "epi-12",
+      "formulation": "cap-300",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 300,
+        "upperPerDose": 600
+      }
+    },
+    {
+      "regimen": "epi-3-11",
+      "formulation": "sol-250",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 66.67,
+        "upperPerDose": 100
+      }
+    }
+  ]
+}

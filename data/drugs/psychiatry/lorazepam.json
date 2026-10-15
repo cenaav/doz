@@ -1,0 +1,252 @@
+{
+  "id": "lorazepam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لورازپام",
+    "en": "Lorazepam"
+  },
+  "category": "psychiatry",
+  "class": {
+    "fa": "بنزودیازپین",
+    "en": "Benzodiazepine"
+  },
+  "brands": [
+    {
+      "name": "Ativan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ativan",
+    "آتیوان",
+    "لورازپام"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "anxiety",
+      "disease": "anxiety",
+      "label": {
+        "fa": "اضطراب — شروع ۲ تا ۳ mg/day در ۲ یا ۳ نوبت",
+        "en": "Anxiety — start 2–3 mg/day in 2 or 3 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-lorazepam",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "معمول ۲ تا ۶ mg/day منقسم (بیشترین دوز شب)؛ محدوده ۱ تا ۱۰. سالمند: شروع ۱ تا ۲ mg/day.",
+            "en": "Usual 2–6 mg/day divided (largest at bedtime); range 1–10. Elderly: start 1–2 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-lorazepam",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insomnia",
+      "disease": "insomnia",
+      "label": {
+        "fa": "بی‌خوابی ناشی از اضطراب — ۲ تا ۴ mg شب",
+        "en": "Insomnia due to anxiety — 2–4 mg at bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "perDoseMax": 4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بنزودیازپین‌ها؛ گلوکوم زاویه بسته حاد.",
+        "en": "Hypersensitivity to benzodiazepines; acute narrow-angle glaucoma."
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال ثابت نشده.",
+        "en": "Not established in children under 12."
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: مصرف همزمان با اپیوئیدها (دپرسیون تنفسی و مرگ)؛ سوءمصرف و وابستگی؛ علائم ترک با قطع ناگهانی.",
+        "en": "Boxed warning: concomitant opioids (respiratory depression, death); abuse, misuse and dependence; withdrawal on abrupt stop."
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "anxiety",
+      "formulation": "tab-1",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 2
+      }
+    },
+    {
+      "regimen": "insomnia",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "upperPerDose": 4
+      }
+    }
+  ]
+}

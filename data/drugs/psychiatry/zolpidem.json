@@ -1,0 +1,195 @@
+{
+  "id": "zolpidem",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "زولپیدم",
+    "en": "Zolpidem"
+  },
+  "category": "psychiatry",
+  "class": {
+    "fa": "خواب‌آور غیربنزودیازپینی",
+    "en": "Non-benzodiazepine hypnotic"
+  },
+  "brands": [
+    {
+      "name": "Ambien",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ambien",
+    "آمبین",
+    "زولپیدم",
+    "استیلنوکس",
+    "stilnox"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zolpidem",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zolpidem",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "insomnia",
+      "label": {
+        "fa": "بی‌خوابی — زن ۵ mg؛ مرد ۵ یا ۱۰ mg درست قبل از خواب",
+        "en": "Insomnia — women 5 mg; men 5 or 10 mg immediately before bed"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zolpidem",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-zolpidem",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط یک بار در شب با ۷ تا ۸ ساعت فرصت خواب. اگر ۵ mg اثر نکرد ۱۰ mg. کوتاه‌ترین دوره ممکن.",
+            "en": "Once per night with 7–8 h before waking. If 5 mg ineffective, 10 mg. Shortest possible course."
+          },
+          "refs": [
+            {
+              "source": "fda-zolpidem",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه رفتارهای پیچیده خواب با زولپیدم؛ حساسیت.",
+        "en": "Prior complex sleep behaviours with zolpidem; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-zolpidem",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان توصیه نمی‌شود.",
+        "en": "Not recommended in children."
+      },
+      "refs": [
+        {
+          "source": "fda-zolpidem",
+          "section": "8.4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: رفتارهای پیچیده خواب (راه رفتن، رانندگی در خواب) با آسیب جدی یا مرگ.",
+        "en": "Boxed warning: complex sleep behaviours (sleep-walking, sleep-driving) with serious injury or death."
+      },
+      "refs": [
+        {
+          "source": "fda-zolpidem",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 10
+      }
+    }
+  ]
+}

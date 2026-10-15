@@ -1,0 +1,396 @@
+{
+  "id": "levetiracetam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لووتیراستام",
+    "en": "Levetiracetam"
+  },
+  "category": "neurology",
+  "class": {
+    "fa": "ضدتشنج",
+    "en": "Anticonvulsant"
+  },
+  "brands": [
+    {
+      "name": "Keppra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "keppra",
+    "کپرا",
+    "لوتیراستام",
+    "لووتیراستام"
+  ],
+  "formulations": [
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet (scored)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levetiracetam",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-750",
+      "form": "tablet",
+      "route": "oral",
+      "label": "750 mg tablet",
+      "concentration": {
+        "amount": 750,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levetiracetam",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1000",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1000 mg tablet",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levetiracetam",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "sol-100",
+      "form": "solution",
+      "route": "oral",
+      "label": "100 mg/mL oral solution",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levetiracetam-sol",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع پارشیل — ۱۶ سال به بالا: ۵۰۰ mg دو بار در روز",
+        "en": "Partial seizures — ≥16 y: 500 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 1000,
+          "increment": 1000,
+          "incrementEveryDays": 14,
+          "max": 3000
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-levetiracetam",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۱۰۰۰ mg/day هر ۲ هفته تا حداکثر ۳۰۰۰؛ بالاتر سودی ندارد.",
+            "en": "Increase by 1,000 mg/day every 2 weeks up to 3,000; no added benefit above."
+          },
+          "refs": [
+            {
+              "source": "fda-levetiracetam",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-levetiracetam-sol",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1-6m",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع پارشیل — ۱ تا ۶ ماه: ۷ mg/kg دو بار (هدف ۲۱)",
+        "en": "Partial seizures — 1–6 months: 7 mg/kg twice daily (target 21)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 14,
+        "perKgPerDayMax": 42,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-levetiracetam-sol",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۱۴ mg/kg/day هر ۲ هفته تا ۴۲ mg/kg/day. محلول خوراکی با سرنگ مدرج.",
+            "en": "Increase by 14 mg/kg/day every 2 weeks to 42 mg/kg/day. Oral solution with a calibrated syringe."
+          },
+          "refs": [
+            {
+              "source": "fda-levetiracetam-sol",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6m-4y",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع پارشیل — ۶ ماه تا ۴ سال: ۱۰ mg/kg دو بار (هدف ۲۵)",
+        "en": "Partial seizures — 6 months–4 y: 10 mg/kg twice daily (target 25)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 20,
+        "perKgPerDayMax": 50,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-levetiracetam-sol",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از ۲ هفته ۲۰ mg/kg/day افزایش تا ۵۰ mg/kg/day.",
+            "en": "After 2 weeks increase by 20 mg/kg/day to 50 mg/kg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-levetiracetam-sol",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4-16",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع پارشیل — ۴ تا ۱۵ سال: ۱۰ mg/kg دو بار (هدف ۳۰)",
+        "en": "Partial seizures — 4–15 y: 10 mg/kg twice daily (target 30)"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 20,
+        "perKgPerDayMax": 60,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-levetiracetam-sol",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 3000,
+        "refs": [
+          {
+            "source": "fda-levetiracetam",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۰ mg/kg/day هر ۲ هفته تا ۶۰ mg/kg/day. ۲۰ kg و کمتر: فقط محلول.",
+            "en": "Increase by 20 mg/kg/day every 2 weeks to 60 mg/kg/day. ≤20 kg: oral solution only."
+          },
+          "refs": [
+            {
+              "source": "fda-levetiracetam-sol",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-levetiracetam",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به لووتیراستام.",
+        "en": "Hypersensitivity to levetiracetam."
+      },
+      "refs": [
+        {
+          "source": "fda-levetiracetam",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "1-6m",
+      "formulation": "sol-100",
+      "input": {
+        "ageYears": 0.25,
+        "weightKg": 5
+      },
+      "expect": {
+        "perDose": 35,
+        "mlPerDose": 0.35
+      }
+    },
+    {
+      "regimen": "6m-4y",
+      "formulation": "sol-100",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 1,
+        "upperPerDose": 250
+      }
+    },
+    {
+      "regimen": "4-16",
+      "formulation": "sol-100",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "4-16",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 500,
+        "upperPerDose": 1500
+      }
+    }
+  ]
+}

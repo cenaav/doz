@@ -1,0 +1,364 @@
+{
+  "id": "promethazine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پرومتازین",
+    "en": "Promethazine"
+  },
+  "category": "antihistamines",
+  "class": {
+    "fa": "آنتی‌هیستامین فنوتیازینی",
+    "en": "Phenothiazine antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Phenergan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "phenergan",
+    "فنرگان",
+    "پرومتازین",
+    "پرومتازین ۲۵"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet (scored)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-promethazine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergy",
+      "disease": "allergic-conditions",
+      "label": {
+        "fa": "آلرژی — ۲۵ mg هنگام خواب",
+        "en": "Allergy — 25 mg at bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-promethazine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۱۲٫۵ mg قبل از غذا و هنگام خواب؛ یا ۶٫۲۵ تا ۱۲٫۵ mg سه بار.",
+            "en": "Or 12.5 mg before meals and at bedtime; or 6.25–12.5 mg three times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-promethazine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motion",
+      "disease": "motion-sickness",
+      "label": {
+        "fa": "بیماری حرکت — بزرگسال: ۲۵ mg دو بار در روز",
+        "en": "Motion sickness — adults: 25 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-promethazine",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "motion-child",
+      "disease": "motion-sickness",
+      "label": {
+        "fa": "بیماری حرکت — کودک ۲ سال به بالا: ۱۲٫۵ تا ۲۵ mg دو بار",
+        "en": "Motion sickness — child ≥2 y: 12.5–25 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 12.5,
+        "perDoseMax": 25,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-promethazine",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "nv-adult",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "تهوع و استفراغ — بزرگسال: ۲۵ mg",
+        "en": "Nausea and vomiting — adults: 25 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 4,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-promethazine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پیشگیری (مثلاً پس از جراحی): ۲۵ mg هر ۴ تا ۶ ساعت در صورت نیاز.",
+            "en": "Prophylaxis (e.g. postoperative): 25 mg every 4–6 h as needed."
+          },
+          "refs": [
+            {
+              "source": "fda-promethazine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nv-child",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "تهوع و استفراغ — کودک ۲ سال به بالا: ۰٫۵ mg/پوند (≈۱٫۱ mg/kg)",
+        "en": "Nausea and vomiting — child ≥2 y: 0.5 mg/lb (≈1.1 mg/kg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1.1,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-promethazine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 25,
+        "refs": [
+          {
+            "source": "fda-promethazine",
+            "section": "Dosage and Administration",
+            "note": {
+              "fa": "Doz دوز مؤثر متوسط (۲۵ mg) را سقف هر دوز گرفته؛ برچسب آن را حداکثر نگفته",
+              "en": "Doz uses the average adult/child effective dose (25 mg) as a per-dose ceiling; not stated as a maximum"
+            }
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۰٫۵ mg به‌ازای هر پوند؛ تبدیل به mg/kg را Doz انجام داده. در استفراغ با علت نامعلوم در کودکان استفاده نشود.",
+            "en": "0.5 mg per pound; conversion to mg/kg done by Doz. Do not use for vomiting of unknown cause in children."
+          },
+          "refs": [
+            {
+              "source": "fda-promethazine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "هشدار جعبه‌ای: زیر ۲ سال منع مصرف (دپرسیون تنفسی کشنده).",
+        "en": "Boxed warning: contraindicated under 2 years (fatal respiratory depression)."
+      },
+      "refs": [
+        {
+          "source": "fda-promethazine",
+          "section": "Contraindications"
+        },
+        {
+          "source": "fda-promethazine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "کما؛ حساسیت به فنوتیازین‌ها؛ درمان علائم تنفسی تحتانی از جمله آسم.",
+        "en": "Coma; hypersensitivity to phenothiazines; lower respiratory symptoms including asthma."
+      },
+      "refs": [
+        {
+          "source": "fda-promethazine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergy",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "motion",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDay": 50
+      }
+    },
+    {
+      "regimen": "motion-child",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 12.5,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "nv-adult",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "nv-child",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 11.5
+      },
+      "expect": {
+        "perDose": 12.65,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "nv-child",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 25
+      }
+    }
+  ]
+}
