@@ -1,0 +1,237 @@
+{
+  "id": "clotrimazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلوتریمازول",
+    "en": "Clotrimazole"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "ضدقارچ آزول موضعی",
+    "en": "Topical azole antifungal"
+  },
+  "brands": [
+    {
+      "name": "Canesten",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "canesten",
+    "کانستن",
+    "کلوتریمازول",
+    "کرم قارچ",
+    "شیاف قارچ واژن"
+  ],
+  "formulations": [
+    {
+      "id": "cream-1",
+      "form": "cream",
+      "route": "topical",
+      "label": "1% cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-canesten-cream",
+          "section": "2"
+        }
+      ]
+    },
+    {
+      "id": "pess-500",
+      "form": "pessary",
+      "route": "vaginal",
+      "label": "500 mg vaginal pessary",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-canesten-pessary-500",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "tinea",
+      "disease": "tinea",
+      "label": {
+        "fa": "قارچ پوستی/کاندیدای پوستی — دو یا سه بار در روز",
+        "en": "Fungal skin / cutaneous candida — two or three times daily"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-canesten-cream",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 3,
+        "refs": [
+          {
+            "source": "uk-smpc-canesten-cream",
+            "section": "4.2"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "cream-1"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "لایه نازک؛ نیم سانتی‌متر برای سطحی به اندازه کف دست. درماتوفیت حداقل ۱ ماه، کاندیدا حداقل ۲ هفته. برای ناخن یا پوست سر نیست.",
+            "en": "Thin layer; ½ cm strip covers a hand-sized area. Dermatophytes at least 1 month; candida at least 2 weeks. Not for nail or scalp."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-canesten-cream",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-canesten-cream",
+              "section": "4.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vaginal",
+      "disease": "vaginal-candidiasis",
+      "label": {
+        "fa": "کاندیدیاز واژن — بزرگسال: شیاف ۵۰۰ mg یک‌بار شب",
+        "en": "Vaginal candidiasis — adults: one 500 mg pessary at night"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-canesten-pessary-500",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pess-500"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با اپلیکاتور تا حد ممکن عمیق. در صورت نیاز یک نوبت دیگر. اولین بار یا بیش از ۲ بار در ۶ ماه: مشورت پزشک.",
+            "en": "With the applicator as high as possible. A second treatment if needed. First episode or >2 in 6 months: see a doctor."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-canesten-pessary-500",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-canesten-pessary-500",
+              "section": "4.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کلوتریمازول.",
+        "en": "Hypersensitivity to clotrimazole."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-canesten-cream",
+          "section": "4.3"
+        },
+        {
+          "source": "uk-smpc-canesten-pessary-500",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "tinea",
+      "formulation": "cream-1",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 2
+      }
+    },
+    {
+      "regimen": "vaginal",
+      "formulation": "pess-500",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "vaginal",
+      "formulation": "cream-1",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

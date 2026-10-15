@@ -1,0 +1,136 @@
+{
+  "id": "fusidic-acid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کرم فوزیدیک اسید",
+    "en": "Fusidic acid cream"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "آنتی‌بیوتیک موضعی",
+    "en": "Topical antibiotic"
+  },
+  "brands": [
+    {
+      "name": "Fucidin",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "fucidin",
+    "فوسیدین",
+    "فوزیدیک اسید",
+    "fusidic"
+  ],
+  "formulations": [
+    {
+      "id": "cream-2",
+      "form": "cream",
+      "route": "topical",
+      "label": "2% cream (20 mg/g)",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-fucidin-cream",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "skin",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت پوستی سطحی — سه یا چهار بار در روز",
+        "en": "Superficial skin infection — three or four times daily"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-fucidin-cream",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4,
+        "refs": [
+          {
+            "source": "uk-smpc-fucidin-cream",
+            "section": "4.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "ضایعات باز: ۳ تا ۴ بار؛ ضایعات پوشیده: کمتر. استفاده طولانی یا مکرر خطر مقاومت استاف و حساسیت تماسی دارد.",
+            "en": "Uncovered lesions: 3–4 times daily; covered: less often. Extended or recurrent use increases staph resistance and contact sensitisation."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-fucidin-cream",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-fucidin-cream",
+              "section": "4.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to any ingredient."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-fucidin-cream",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "skin",
+      "formulation": "cream-2",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 3
+      }
+    }
+  ]
+}

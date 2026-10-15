@@ -1,0 +1,211 @@
+{
+  "id": "ketoconazole-cream",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کرم کتوکونازول",
+    "en": "Ketoconazole cream"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "ضدقارچ آزول موضعی",
+    "en": "Topical azole antifungal"
+  },
+  "brands": [
+    {
+      "name": "Nizoral",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nizoral",
+    "نیزورال",
+    "کتوکونازول",
+    "شوره"
+  ],
+  "formulations": [
+    {
+      "id": "cream-2",
+      "form": "cream",
+      "route": "topical",
+      "label": "2% cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ketoconazole-cream",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "tinea",
+      "disease": "tinea",
+      "label": {
+        "fa": "قارچ پوستی، کاندیدای پوستی — یک بار در روز",
+        "en": "Tinea, cutaneous candidiasis — once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ketoconazole-cream",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "versicolor",
+      "disease": "pityriasis-versicolor",
+      "label": {
+        "fa": "پیتریازیس ورسیکالر — یک بار در روز",
+        "en": "Pityriasis versicolor — once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ketoconazole-cream",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "seb",
+      "disease": "seborrheic-dermatitis",
+      "label": {
+        "fa": "درماتیت سبورئیک — دو بار در روز، ۴ هفته",
+        "en": "Seborrhoeic dermatitis — twice daily for 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ketoconazole-cream",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 28
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to any ingredient."
+      },
+      "refs": [
+        {
+          "source": "fda-ketoconazole-cream",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان ثابت نشده.",
+        "en": "Not established in children."
+      },
+      "refs": [
+        {
+          "source": "fda-ketoconazole-cream",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "tinea",
+      "formulation": "cream-2",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    },
+    {
+      "regimen": "versicolor",
+      "formulation": "cream-2",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDay": 1
+      }
+    },
+    {
+      "regimen": "seb",
+      "formulation": "cream-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDay": 2
+      }
+    }
+  ]
+}

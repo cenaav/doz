@@ -1,0 +1,129 @@
+{
+  "id": "hydrocortisone-cream",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کرم هیدروکورتیزون ۱٪",
+    "en": "Hydrocortisone 1% cream"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "کورتیکواستروئید موضعی ضعیف",
+    "en": "Low-potency topical corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Cortizone-10",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "hydrocortisone",
+    "هیدروکورتیزون",
+    "کرم خارش",
+    "کرم کورتون"
+  ],
+  "formulations": [
+    {
+      "id": "cream-1",
+      "form": "cream",
+      "route": "topical",
+      "label": "1% cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hydrocortisone-1",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "itch",
+      "disease": "dermatitis",
+      "label": {
+        "fa": "خارش و التهاب پوست — ۲ سال به بالا: حداکثر ۳ تا ۴ بار در روز",
+        "en": "Itch and skin inflammation — ≥2 y: up to 3–4 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-hydrocortisone-1",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4,
+        "refs": [
+          {
+            "source": "fda-hydrocortisone-1",
+            "section": "Directions"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال استفاده نشود؛ با پزشک مشورت شود.",
+        "en": "Do not use under 2 years; ask a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-hydrocortisone-1",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "itch",
+      "formulation": "cream-1",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 3
+      }
+    }
+  ]
+}

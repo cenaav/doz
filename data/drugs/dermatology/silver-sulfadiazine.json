@@ -1,0 +1,154 @@
+{
+  "id": "silver-sulfadiazine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کرم سولفادیازین نقره",
+    "en": "Silver sulfadiazine cream"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "ضدمیکروب موضعی سوختگی",
+    "en": "Topical burn antimicrobial"
+  },
+  "brands": [
+    {
+      "name": "Silvadene",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "silvadene",
+    "SSD",
+    "سیلور سولفادیازین",
+    "سولفادیازین نقره",
+    "پماد سوختگی"
+  ],
+  "formulations": [
+    {
+      "id": "cream-1",
+      "form": "cream",
+      "route": "topical",
+      "label": "1% cream",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-silver-sulfadiazine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "burns",
+      "disease": "burns",
+      "label": {
+        "fa": "سوختگی — یک یا دو بار در روز (ضخامت حدود ۱٫۵ mm)",
+        "en": "Burns — once or twice daily (about 1/16 inch thick)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-silver-sulfadiazine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2,
+        "refs": [
+          {
+            "source": "fda-silver-sulfadiazine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سیلور سولفادیازین.",
+        "en": "Hypersensitivity to silver sulfadiazine."
+      },
+      "refs": [
+        {
+          "source": "fda-silver-sulfadiazine",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "newborn",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "نوزاد زیر ۲ ماه و نارس: خطر کرن ایکتروس؛ همچنین بارداری نزدیک ترم.",
+        "en": "Newborns under 2 months and premature infants: kernicterus risk; also pregnancy near term."
+      },
+      "refs": [
+        {
+          "source": "fda-silver-sulfadiazine",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "burns",
+      "formulation": "cream-1",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 1
+      }
+    },
+    {
+      "regimen": "burns",
+      "formulation": "cream-1",
+      "input": {
+        "ageYears": 0.05,
+        "weightKg": 4
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

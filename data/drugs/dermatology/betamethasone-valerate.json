@@ -1,0 +1,136 @@
+{
+  "id": "betamethasone-valerate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بتامتازون والرات موضعی",
+    "en": "Betamethasone valerate (topical)"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "کورتیکواستروئید موضعی قوی",
+    "en": "Potent topical corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Betnovate",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "betnovate",
+    "بتنوویت",
+    "بتامتازون",
+    "پماد بتامتازون"
+  ],
+  "formulations": [
+    {
+      "id": "oint-0-1",
+      "form": "ointment",
+      "route": "topical",
+      "label": "0.1% ointment",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-betamethasone-valerate",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "derm",
+      "disease": "dermatitis",
+      "label": {
+        "fa": "درماتوز پاسخ‌ده به کورتون — دو بار در روز",
+        "en": "Corticosteroid-responsive dermatoses — twice daily"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-betamethasone-valerate",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "صبح و شب؛ پس از بهبود یک بار در روز.",
+            "en": "Morning and night; once daily after improvement."
+          },
+          "refs": [
+            {
+              "source": "fda-betamethasone-valerate",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to any component."
+      },
+      "refs": [
+        {
+          "source": "fda-betamethasone-valerate",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کودکان نسبت به سرکوب محور HPA و سندرم کوشینگ با کورتون موضعی حساس‌ترند؛ کمترین مقدار مؤثر.",
+        "en": "Children are more susceptible to HPA-axis suppression and Cushing's syndrome from topical steroids; use the least effective amount."
+      },
+      "refs": [
+        {
+          "source": "fda-betamethasone-valerate",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "derm",
+      "formulation": "oint-0-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "mupirocin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پماد موپیروسین",
+    "en": "Mupirocin ointment"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "آنتی‌بیوتیک موضعی",
+    "en": "Topical antibiotic"
+  },
+  "brands": [
+    {
+      "name": "Bactroban",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "bactroban",
+    "باکتروبان",
+    "موپیروسین",
+    "پماد زرد زخم"
+  ],
+  "formulations": [
+    {
+      "id": "oint-2",
+      "form": "ointment",
+      "route": "topical",
+      "label": "2% ointment (20 mg/g)",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mupirocin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "impetigo",
+      "disease": "impetigo",
+      "label": {
+        "fa": "زرد زخم — ۲ ماه به بالا: سه بار در روز تا ۱۰ روز",
+        "en": "Impetigo — ≥2 months: three times daily up to 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-mupirocin",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "مقدار کم با گوش‌پاک‌کن یا گاز. اگر در ۳ تا ۵ روز پاسخ نبود، ارزیابی مجدد. برای بینی، چشم یا مخاط نیست.",
+            "en": "Small amount with a cotton swab or gauze. Re-evaluate if no response in 3–5 days. Not for nasal, ophthalmic or mucosal use."
+          },
+          "refs": [
+            {
+              "source": "fda-mupirocin",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به موپیروسین.",
+        "en": "Hypersensitivity to mupirocin."
+      },
+      "refs": [
+        {
+          "source": "fda-mupirocin",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-2m",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ ماه ثابت نشده.",
+        "en": "Not established under 2 months."
+      },
+      "refs": [
+        {
+          "source": "fda-mupirocin",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "impetigo",
+      "formulation": "oint-2",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 3
+      }
+    }
+  ]
+}
