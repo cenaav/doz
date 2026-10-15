@@ -1,0 +1,268 @@
+{
+  "id": "ofloxacin-otic",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره گوش افلوکساسین",
+    "en": "Ofloxacin ear drops"
+  },
+  "category": "antibiotics",
+  "class": {
+    "fa": "فلوروکینولون موضعی گوش",
+    "en": "Topical otic fluoroquinolone"
+  },
+  "brands": [
+    {
+      "name": "Floxin Otic",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "floxin otic",
+    "قطره گوش",
+    "افلوکساسین",
+    "عفونت گوش"
+  ],
+  "formulations": [
+    {
+      "id": "otic-0-3",
+      "form": "drops",
+      "route": "topical",
+      "label": "0.3% otic solution",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oe-child",
+      "disease": "otitis-externa",
+      "label": {
+        "fa": "عفونت گوش خارجی — ۶ ماه تا ۱۳ سال: ۵ قطره یک بار در روز، ۷ روز",
+        "en": "Otitis externa — 6 mo–13 y: 5 drops once daily for 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "oe-adult",
+      "disease": "otitis-externa",
+      "label": {
+        "fa": "عفونت گوش خارجی — ۱۳ سال به بالا: ۱۰ قطره یک بار در روز، ۷ روز",
+        "en": "Otitis externa — ≥13 y: 10 drops once daily for 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "aom-tubes",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت میانی با لوله تمپانوستومی — ۱ تا ۱۲ سال: ۵ قطره دو بار، ۱۰ روز",
+        "en": "AOM with tympanostomy tubes — 1–12 y: 5 drops twice daily for 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "csom",
+      "disease": "chronic-suppurative-otitis",
+      "label": {
+        "fa": "اوتیت چرکی مزمن با پرده پاره — ۱۲ سال به بالا: ۱۰ قطره دو بار، ۱۴ روز",
+        "en": "CSOM with perforated drum — ≥12 y: 10 drops twice daily for 14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به افلوکساسین یا سایر کینولون‌ها.",
+        "en": "Hypersensitivity to ofloxacin or other quinolones."
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-6m",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ ماه ثابت نشده.",
+        "en": "Not established under 6 months."
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oe-child",
+      "formulation": "otic-0-3",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "oe-adult",
+      "formulation": "otic-0-3",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "aom-tubes",
+      "formulation": "otic-0-3",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "perDay": 10
+      }
+    },
+    {
+      "regimen": "csom",
+      "formulation": "otic-0-3",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDay": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "id": "cefadroxil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفادروکسیل",
+    "en": "Cefadroxil"
+  },
+  "category": "antibiotics",
+  "class": {
+    "fa": "سفالوسپورین نسل اول",
+    "en": "First-generation cephalosporin"
+  },
+  "brands": [
+    {
+      "name": "Duricef",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "duricef",
+    "سفادروکسیل",
+    "سفادروکسیل ۵۰۰"
+  ],
+  "formulations": [
+    {
+      "id": "cap-500",
+      "form": "capsule",
+      "route": "oral",
+      "label": "500 mg capsule",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefadroxil",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "susp-250",
+      "form": "suspension",
+      "route": "oral",
+      "label": "250 mg/5 mL suspension",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "susp-500",
+      "form": "suspension",
+      "route": "oral",
+      "label": "500 mg/5 mL suspension",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cystitis",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "سیستیت بدون عارضه — بزرگسال: ۱ تا ۲ g در روز",
+        "en": "Uncomplicated cystitis — adults: 1–2 g per day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "perDoseMax": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک‌جا یا در دو نوبت. سایر UTIها: ۲ g/day در دو نوبت.",
+            "en": "Once or in two doses. Other UTIs: 2 g/day in two doses."
+          },
+          "refs": [
+            {
+              "source": "fda-cefadroxilsusp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharyngitis",
+      "disease": "streptococcal-pharyngitis",
+      "label": {
+        "fa": "فارنژیت/تونسیلیت — بزرگسال: ۱ g در روز، ۱۰ روز",
+        "en": "Pharyngitis/tonsillitis — adults: 1 g per day for 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "skin",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت پوست — بزرگسال: ۱ g در روز",
+        "en": "Skin infection — adults: 1 g per day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "peds-uti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "UTI — کودکان: ۳۰ mg/kg/day در ۲ نوبت",
+        "en": "UTI — children: 30 mg/kg/day in 2 doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 30,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "peds-strep",
+      "disease": "streptococcal-pharyngitis",
+      "label": {
+        "fa": "فارنژیت، تونسیلیت، زرد زخم — کودکان: ۳۰ mg/kg/day یک یا دو نوبت",
+        "en": "Pharyngitis, tonsillitis, impetigo — children: 30 mg/kg/day once or in 2 doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 30,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آلرژی به سفالوسپورین‌ها.",
+        "en": "Allergy to cephalosporins."
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cystitis",
+      "formulation": "cap-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 2,
+        "upperPerDose": 2000
+      }
+    },
+    {
+      "regimen": "pharyngitis",
+      "formulation": "cap-500",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "skin",
+      "formulation": "cap-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "peds-uti",
+      "formulation": "susp-250",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 6
+      }
+    },
+    {
+      "regimen": "peds-strep",
+      "formulation": "susp-500",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 600,
+        "mlPerDose": 6
+      }
+    }
+  ]
+}

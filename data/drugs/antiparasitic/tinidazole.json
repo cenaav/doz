@@ -1,0 +1,420 @@
+{
+  "id": "tinidazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تینیدازول",
+    "en": "Tinidazole"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "نیتروایمیدازول",
+    "en": "Nitroimidazole"
+  },
+  "brands": [
+    {
+      "name": "Tindamax",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tindamax",
+    "تینیدازول",
+    "فاسیژین",
+    "fasigyn"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet (scored)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tinidazole",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet (scored)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tinidazole",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "trich",
+      "disease": "trichomoniasis",
+      "label": {
+        "fa": "تریکومونیاز — ۲ g تک‌دوز با غذا",
+        "en": "Trichomoniasis — single 2 g dose with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tinidazole",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "شریک جنسی همزمان با همین دوز درمان شود.",
+            "en": "Treat sexual partners with the same dose at the same time."
+          },
+          "refs": [
+            {
+              "source": "fda-tinidazole",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "giardia-adult",
+      "disease": "giardiasis",
+      "label": {
+        "fa": "ژیاردیا — بزرگسال: ۲ g تک‌دوز",
+        "en": "Giardiasis — adults: single 2 g dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tinidazole",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "giardia-child",
+      "disease": "giardiasis",
+      "label": {
+        "fa": "ژیاردیا — بالای ۳ سال: ۵۰ mg/kg تک‌دوز (تا ۲ g)",
+        "en": "Giardiasis — >3 y: single 50 mg/kg (up to 2 g)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 50,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tinidazole",
+          "section": "2.4"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 2000,
+        "refs": [
+          {
+            "source": "fda-tinidazole",
+            "section": "2.4"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "amoeba-adult",
+      "disease": "intestinal-amebiasis",
+      "label": {
+        "fa": "آمیبیاز روده — بزرگسال: ۲ g/day، ۳ روز",
+        "en": "Intestinal amoebiasis — adults: 2 g/day for 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tinidazole",
+          "section": "2.5"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "آبسه آمیبی کبد: ۲ g/day به مدت ۳ تا ۵ روز.",
+            "en": "Amoebic liver abscess: 2 g/day for 3–5 days."
+          },
+          "refs": [
+            {
+              "source": "fda-tinidazole",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amoeba-child",
+      "disease": "intestinal-amebiasis",
+      "label": {
+        "fa": "آمیبیاز روده — بالای ۳ سال: ۵۰ mg/kg/day (تا ۲ g)، ۳ روز",
+        "en": "Intestinal amoebiasis — >3 y: 50 mg/kg/day (up to 2 g) for 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 50,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tinidazole",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2000,
+        "refs": [
+          {
+            "source": "fda-tinidazole",
+            "section": "2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "id": "bv",
+      "disease": "bacterial-vaginosis",
+      "label": {
+        "fa": "واژینوز باکتریایی — ۲ g روزانه ۲ روز (یا ۱ g روزانه ۵ روز)",
+        "en": "Bacterial vaginosis — 2 g daily for 2 days (or 1 g daily for 5 days)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tinidazole",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 2,
+        "max": 2
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تینیدازول یا سایر نیتروایمیدازول‌ها (و سایر موارد بخش ۴، از جمله سه‌ماهه اول بارداری و شیردهی).",
+        "en": "Hypersensitivity to tinidazole or other nitroimidazoles (and other items in section 4, incl. first trimester and breastfeeding)."
+      },
+      "refs": [
+        {
+          "source": "fda-tinidazole",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-3",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 3,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "دوز کودکان برای بالای ۳ سال است.",
+        "en": "Pediatric dosing is for children older than 3."
+      },
+      "refs": [
+        {
+          "source": "fda-tinidazole",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "trich",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 2000,
+        "tabletsPerDoseRounded": 4
+      }
+    },
+    {
+      "regimen": "giardia-adult",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 2000
+      }
+    },
+    {
+      "regimen": "giardia-child",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "amoeba-adult",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 2000
+      }
+    },
+    {
+      "regimen": "amoeba-child",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "bv",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 2000
+      }
+    }
+  ]
+}

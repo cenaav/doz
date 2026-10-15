@@ -1,0 +1,178 @@
+{
+  "id": "praziquantel",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پرازیکوانتل",
+    "en": "Praziquantel"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدانگل (ترماتود)",
+    "en": "Anthelmintic (trematodes)"
+  },
+  "brands": [
+    {
+      "name": "Biltricide",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "biltricide",
+    "بیلتریساید",
+    "پرازیکوانتل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-600",
+      "form": "tablet",
+      "route": "oral",
+      "label": "600 mg tablet (three scores = four 150 mg segments)",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-praziquantel",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "schisto",
+      "disease": "schistosomiasis",
+      "label": {
+        "fa": "شیستوزومیازیس — ۲۰ mg/kg سه بار در یک روز",
+        "en": "Schistosomiasis — 20 mg/kg three times in one day"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 20,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-praziquantel",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فاصله ۴ تا ۶ ساعت، فقط یک روز؛ با آب و غذا. زیر ۶ سال قرص خرد شود.",
+            "en": "4–6 h apart, one day only; with water during meals. Under 6 y the tablet may be crushed."
+          },
+          "refs": [
+            {
+              "source": "fda-praziquantel",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-praziquantel",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "liver-fluke",
+      "disease": "schistosomiasis",
+      "label": {
+        "fa": "کلونورکیازیس/اوپیستورکیازیس — ۲۵ mg/kg سه بار در یک روز",
+        "en": "Clonorchiasis/opisthorchiasis — 25 mg/kg three times in one day"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 25,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-praziquantel",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ سیستیسرکوز چشمی؛ همراه القاکننده‌های قوی CYP450 مانند ریفامپین.",
+        "en": "Hypersensitivity; ocular cysticercosis; with strong CYP450 inducers such as rifampin."
+      },
+      "refs": [
+        {
+          "source": "fda-praziquantel",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "schisto",
+      "formulation": "tab-600",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 600,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "liver-fluke",
+      "formulation": "tab-600",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1500,
+        "tabletsPerDoseRounded": 2.5
+      }
+    }
+  ]
+}

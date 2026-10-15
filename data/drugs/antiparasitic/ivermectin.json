@@ -1,0 +1,162 @@
+{
+  "id": "ivermectin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایورمکتین",
+    "en": "Ivermectin"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدانگل",
+    "en": "Anthelmintic"
+  },
+  "brands": [
+    {
+      "name": "Stromectol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "stromectol",
+    "استرومکتول",
+    "ایورمکتین",
+    "ایورمکتین ۳"
+  ],
+  "formulations": [
+    {
+      "id": "tab-3",
+      "form": "tablet",
+      "route": "oral",
+      "label": "3 mg tablet",
+      "concentration": {
+        "amount": 3000,
+        "unit": "mcg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ivermectin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "strongy",
+      "disease": "strongyloidiasis",
+      "label": {
+        "fa": "استرونژیلوئیدیازیس — ۲۰۰ mcg/kg تک‌دوز",
+        "en": "Strongyloidiasis — single 200 mcg/kg dose"
+      },
+      "population": {
+        "minWeightKg": 15
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDay": 200,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ivermectin",
+          "section": "Dosage and Administration"
+        },
+        {
+          "source": "fda-ivermectin",
+          "section": "Dosage and Administration, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "جدول برچسب (قرص ۳ mg): ۱۵ تا ۲۴ kg یک قرص؛ ۲۵ تا ۳۵ دو؛ ۳۶ تا ۵۰ سه؛ ۵۱ تا ۶۵ چهار؛ ۶۶ تا ۷۹ پنج؛ ۸۰ به بالا ۲۰۰ mcg/kg. با آب، ناشتا.",
+            "en": "Label table (3 mg tablets): 15–24 kg 1 tablet; 25–35 kg 2; 36–50 kg 3; 51–65 kg 4; 66–79 kg 5; ≥80 kg 200 mcg/kg. With water on an empty stomach."
+          },
+          "refs": [
+            {
+              "source": "fda-ivermectin",
+              "section": "Dosage and Administration, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to any component."
+      },
+      "refs": [
+        {
+          "source": "fda-ivermectin",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-15",
+      "severity": "block",
+      "rule": {
+        "maxWeightKg": 14.99
+      },
+      "text": {
+        "fa": "کمتر از ۱۵ kg ثابت نشده.",
+        "en": "Not established under 15 kg."
+      },
+      "refs": [
+        {
+          "source": "fda-ivermectin",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "strongy",
+      "formulation": "tab-3",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 6000,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "strongy",
+      "formulation": "tab-3",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 13
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

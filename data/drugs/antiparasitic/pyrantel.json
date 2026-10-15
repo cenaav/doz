@@ -1,0 +1,222 @@
+{
+  "id": "pyrantel",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پیرانتل پاموات",
+    "en": "Pyrantel pamoate"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدکرم",
+    "en": "Anthelmintic"
+  },
+  "brands": [
+    {
+      "name": "Pin-X",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pin-x",
+    "pinworm",
+    "پیرانتل",
+    "کرمک",
+    "کرم نواری"
+  ],
+  "formulations": [
+    {
+      "id": "chew-250",
+      "form": "chewable-tablet",
+      "route": "oral",
+      "label": "≈250 mg pyrantel base chewable tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-pyrantel2",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pinworm",
+      "disease": "pinworm",
+      "label": {
+        "fa": "کرمک — ۲ سال به بالا: تک‌دوز بر اساس جدول وزن برچسب",
+        "en": "Pinworm — ≥2 y: single dose by the label weight chart"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "minWeightKg": 11.3
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 11.33,
+            "maxWeightKg": 17.23,
+            "perDose": 125,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 17.23,
+            "maxWeightKg": 28.57,
+            "perDose": 250,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 28.57,
+            "maxWeightKg": 39.91,
+            "perDose": 375,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 39.91,
+            "maxWeightKg": 51.25,
+            "perDose": 500,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 51.25,
+            "maxWeightKg": 62.59,
+            "perDose": 625,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 62.59,
+            "maxWeightKg": 73.93,
+            "perDose": 750,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 73.93,
+            "maxWeightKg": 85.27,
+            "perDose": 875,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 85.27,
+            "maxWeightKg": null,
+            "perDose": 1000,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-pyrantel2",
+          "section": "Directions"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "جدول برچسب (پوند): ۲۵ تا ۳۷ نیم قرص؛ ۳۸ تا ۶۲ یک؛ ۶۳ تا ۸۷ یک و نیم؛ ۸۸ تا ۱۱۲ دو؛ … ۱۸۸ به بالا ۴ قرص (۱ g). تبدیل پوند به kg و ≈۲۵۰ mg در هر قرص (۱ g = ۴ قرص) را Doz انجام داده.",
+            "en": "Label chart (lb): 25–37 ½ tablet; 38–62 1; 63–87 1½; 88–112 2; … ≥188 4 tablets (1 g). Pound-to-kg conversion and ≈250 mg per tablet (1 g = 4 tablets) are Doz derivations."
+          },
+          "refs": [
+            {
+              "source": "fda-pyrantel2",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "small",
+      "severity": "block",
+      "rule": {
+        "maxWeightKg": 11.3
+      },
+      "text": {
+        "fa": "کمتر از ۲۵ پوند (۱۱٫۳ kg) یا زیر ۲ سال فقط با دستور پزشک.",
+        "en": "Under 25 lb (11.3 kg) or under 2 years only if directed by a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-pyrantel2",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پیش از مصرف با پزشک: بارداری، بیماری کبد.",
+        "en": "Ask a doctor first: pregnancy, liver disease."
+      },
+      "refs": [
+        {
+          "source": "fda-pyrantel2",
+          "section": "Ask a doctor"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pinworm",
+      "formulation": "chew-250",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "pinworm",
+      "formulation": "chew-250",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "perDose": 125,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "pinworm",
+      "formulation": "chew-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 95
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "id": "famciclovir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فامسیکلوویر",
+    "en": "Famciclovir"
+  },
+  "category": "antiviral",
+  "class": {
+    "fa": "ضدویروس",
+    "en": "Antiviral"
+  },
+  "brands": [
+    {
+      "name": "Famvir",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "famvir",
+    "فامویر",
+    "فامسیکلوویر"
+  ],
+  "formulations": [
+    {
+      "id": "tab-125",
+      "form": "tablet",
+      "route": "oral",
+      "label": "125 mg tablet",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-famciclovir",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-famciclovir",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-famciclovir",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cold-sore",
+      "disease": "herpes-labialis",
+      "label": {
+        "fa": "تبخال — ۱۵۰۰ mg تک‌دوز",
+        "en": "Cold sores — single 1,500 mg dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-famciclovir",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "gh-rec",
+      "disease": "genital-herpes",
+      "label": {
+        "fa": "تبخال تناسلی عودکننده — ۱۰۰۰ mg دو بار، ۱ روز",
+        "en": "Recurrent genital herpes — 1,000 mg twice daily for 1 day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-famciclovir",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "gh-supp",
+      "disease": "genital-herpes",
+      "label": {
+        "fa": "سرکوب تبخال تناسلی — ۲۵۰ mg دو بار در روز",
+        "en": "Genital herpes suppression — 250 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-famciclovir",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "zoster",
+      "disease": "herpes-zoster",
+      "label": {
+        "fa": "زونا — ۵۰۰ mg هر ۸ ساعت، ۷ روز",
+        "en": "Herpes zoster — 500 mg every 8 h for 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-famciclovir",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فامسیکلوویر یا کرم پنسیکلوویر.",
+        "en": "Hypersensitivity to famciclovir or penciclovir cream."
+      },
+      "refs": [
+        {
+          "source": "fda-famciclovir",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "دوز برچسب برای بزرگسالان است.",
+        "en": "Label dosing is for adults."
+      },
+      "refs": [
+        {
+          "source": "fda-famciclovir",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cold-sore",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1500,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "gh-rec",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "gh-supp",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250
+      }
+    },
+    {
+      "regimen": "zoster",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDay": 1500
+      }
+    }
+  ]
+}

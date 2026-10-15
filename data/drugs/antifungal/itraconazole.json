@@ -1,0 +1,221 @@
+{
+  "id": "itraconazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایتراکونازول",
+    "en": "Itraconazole"
+  },
+  "category": "antifungal",
+  "class": {
+    "fa": "ضدقارچ آزول",
+    "en": "Azole antifungal"
+  },
+  "brands": [
+    {
+      "name": "Sporanox",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sporanox",
+    "اسپورانوکس",
+    "ایتراکونازول"
+  ],
+  "formulations": [
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-itraconazole",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "toenail",
+      "disease": "onychomycosis",
+      "label": {
+        "fa": "قارچ ناخن پا (± دست) — ۲۰۰ mg یک بار، ۱۲ هفته",
+        "en": "Toenail onychomycosis (± fingernail) — 200 mg once daily for 12 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-itraconazole",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 84,
+        "max": 84
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "با غذای کامل.",
+            "en": "With a full meal."
+          },
+          "refs": [
+            {
+              "source": "fda-itraconazole",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finger",
+      "disease": "onychomycosis",
+      "label": {
+        "fa": "قارچ ناخن دست فقط — دو پالس ۲۰۰ mg دو بار در روز به مدت ۱ هفته",
+        "en": "Fingernail only — two pulses of 200 mg twice daily for 1 week"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-itraconazole",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بین دو پالس ۳ هفته فاصله بدون دارو.",
+            "en": "Pulses separated by a 3-week drug-free interval."
+          },
+          "refs": [
+            {
+              "source": "fda-itraconazole",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "chf",
+      "severity": "block",
+      "text": {
+        "fa": "هشدار جعبه‌ای: در نارسایی قلبی یا سابقه آن برای قارچ ناخن تجویز نشود؛ تداخل با بسیاری از داروهای CYP3A4 (منع مصرف).",
+        "en": "Boxed warning: do not use for onychomycosis in CHF or history of CHF; many contraindicated CYP3A4 interactions."
+      },
+      "refs": [
+        {
+          "source": "fda-itraconazole",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ایتراکونازول؛ داروهای CYP3A4 منع‌شده (متادون، کینیدین، ارگوت‌ها و ...).",
+        "en": "Hypersensitivity to itraconazole; contraindicated CYP3A4 substrates (methadone, quinidine, ergots, etc.)."
+      },
+      "refs": [
+        {
+          "source": "fda-itraconazole",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان ثابت نشده.",
+        "en": "Not established in children."
+      },
+      "refs": [
+        {
+          "source": "fda-itraconazole",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "toenail",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "finger",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDay": 400
+      }
+    }
+  ]
+}
