@@ -1,0 +1,597 @@
+{
+  "id": "co-trimoxazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کوتریموکسازول (سولفامتوکسازول/تری‌متوپریم)",
+    "en": "Sulfamethoxazole-trimethoprim (co-trimoxazole)"
+  },
+  "category": "antibiotics",
+  "class": {
+    "fa": "سولفونامید + مهارکننده دی‌هیدروفولات ردوکتاز",
+    "en": "Sulfonamide + dihydrofolate reductase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Bactrim",
+      "market": "US"
+    },
+    {
+      "name": "Septra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "TMP-SMX",
+    "cotrimoxazole",
+    "باکتریم",
+    "سپترین",
+    "کوتریموکسازول"
+  ],
+  "formulations": [
+    {
+      "id": "susp-40-200",
+      "form": "suspension",
+      "route": "oral",
+      "label": "TMP 40 mg + SMX 200 mg / 5 mL",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "How Supplied"
+        }
+      ],
+      "components": {
+        "trimethoprim": {
+          "name": {
+            "fa": "تری‌متوپریم",
+            "en": "Trimethoprim"
+          },
+          "amount": 40,
+          "unit": "mg"
+        },
+        "sulfamethoxazole": {
+          "name": {
+            "fa": "سولفامتوکسازول",
+            "en": "Sulfamethoxazole"
+          },
+          "amount": 200,
+          "unit": "mg"
+        }
+      }
+    }
+  ],
+  "regimens": [
+    {
+      "id": "uti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "عفونت ادراری — تری‌متوپریم ۸ mg/kg/day هر ۱۲ ساعت، ۱۰ روز",
+        "en": "UTI — TMP 8 mg/kg/day every 12 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 8,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "doseComponent": "trimethoprim",
+      "limits": {
+        "maxPerDose": 160,
+        "refs": [
+          {
+            "source": "fda-tmp-smx-susp",
+            "section": "Dosage and Administration",
+            "note": {
+              "fa": "دوز بزرگسال ۲۰ mL (تری‌متوپریم ۱۶۰ mg) هر ۱۲ ساعت",
+              "en": "Adult dose 20 mL (TMP 160 mg) every 12 h; table: 40 kg → 20 mL"
+            }
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر اساس جزء تری‌متوپریم محاسبه و نمایش داده می‌شود.",
+            "en": "Dose is calculated and shown as the trimethoprim component."
+          },
+          "refs": [
+            {
+              "source": "fda-tmp-smx-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aom",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت مدیای حاد — تری‌متوپریم ۸ mg/kg/day هر ۱۲ ساعت، ۱۰ روز",
+        "en": "Acute otitis media — TMP 8 mg/kg/day every 12 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 8,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Dosage and Administration"
+        },
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Indications and Usage"
+        }
+      ],
+      "doseComponent": "trimethoprim",
+      "limits": {
+        "maxPerDose": 160,
+        "refs": [
+          {
+            "source": "fda-tmp-smx-susp",
+            "section": "Dosage and Administration",
+            "note": {
+              "fa": "دوز بزرگسال ۲۰ mL (تری‌متوپریم ۱۶۰ mg) هر ۱۲ ساعت",
+              "en": "Adult dose 20 mL (TMP 160 mg) every 12 h; table: 40 kg → 20 mL"
+            }
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر اساس جزء تری‌متوپریم محاسبه و نمایش داده می‌شود.",
+            "en": "Dose is calculated and shown as the trimethoprim component."
+          },
+          "refs": [
+            {
+              "source": "fda-tmp-smx-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "برای پیشگیری یا مصرف طولانی در اوتیت مدیا اندیکاسیون ندارد؛ داده بی‌خطری مصرف مکرر زیر ۲ سال محدود است.",
+            "en": "Not indicated for prophylactic or prolonged use in otitis media; limited safety data for repeated use under 2 years."
+          },
+          "refs": [
+            {
+              "source": "fda-tmp-smx-susp",
+              "section": "Indications and Usage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shigellosis",
+      "disease": "shigellosis",
+      "label": {
+        "fa": "شیگلوز — تری‌متوپریم ۸ mg/kg/day هر ۱۲ ساعت، ۵ روز",
+        "en": "Shigellosis — TMP 8 mg/kg/day every 12 h, 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 8,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "doseComponent": "trimethoprim",
+      "limits": {
+        "maxPerDose": 160,
+        "refs": [
+          {
+            "source": "fda-tmp-smx-susp",
+            "section": "Dosage and Administration",
+            "note": {
+              "fa": "دوز بزرگسال ۲۰ mL (تری‌متوپریم ۱۶۰ mg) هر ۱۲ ساعت",
+              "en": "Adult dose 20 mL (TMP 160 mg) every 12 h; table: 40 kg → 20 mL"
+            }
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر اساس جزء تری‌متوپریم محاسبه و نمایش داده می‌شود.",
+            "en": "Dose is calculated and shown as the trimethoprim component."
+          },
+          "refs": [
+            {
+              "source": "fda-tmp-smx-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pcp-treatment",
+      "disease": "pneumocystis-pneumonia",
+      "label": {
+        "fa": "درمان PCP — تری‌متوپریم ۱۵ تا ۲۰ mg/kg/day هر ۶ ساعت",
+        "en": "PCP treatment — TMP 15–20 mg/kg/day every 6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "perKgPerDayMax": 20,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "doseComponent": "trimethoprim",
+      "durationDays": {
+        "min": 14,
+        "max": 21
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر اساس جزء تری‌متوپریم محاسبه و نمایش داده می‌شود.",
+            "en": "Dose is calculated and shown as the trimethoprim component."
+          },
+          "refs": [
+            {
+              "source": "fda-tmp-smx-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pcp-prophylaxis-child",
+      "disease": "pneumocystis-pneumonia",
+      "label": {
+        "fa": "پیشگیری PCP کودکان — تری‌متوپریم ۱۵۰ mg/m²/day در دو نوبت، ۳ روز متوالی در هفته",
+        "en": "PCP prophylaxis, children — TMP 150 mg/m²/day in 2 doses, 3 consecutive days/week"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 150,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "doseComponent": "trimethoprim",
+      "limits": {
+        "maxPerDay": 320,
+        "refs": [
+          {
+            "source": "fda-tmp-smx-susp",
+            "section": "Dosage and Administration",
+            "note": {
+              "fa": "کل دوز روزانه نباید از ۳۲۰ mg تری‌متوپریم بیشتر شود",
+              "en": "Total daily dose should not exceed 320 mg TMP"
+            }
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر اساس جزء تری‌متوپریم محاسبه و نمایش داده می‌شود.",
+            "en": "Dose is calculated and shown as the trimethoprim component."
+          },
+          "refs": [
+            {
+              "source": "fda-tmp-smx-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult-uti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "بزرگسال — ۲۰ mL (تری‌متوپریم ۱۶۰ mg) هر ۱۲ ساعت",
+        "en": "Adults — 20 mL (TMP 160 mg) every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 160,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "doseComponent": "trimethoprim",
+      "durationDays": {
+        "min": 10,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر اساس جزء تری‌متوپریم محاسبه و نمایش داده می‌شود.",
+            "en": "Dose is calculated and shown as the trimethoprim component."
+          },
+          "refs": [
+            {
+              "source": "fda-tmp-smx-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تری‌متوپریم یا سولفونامیدها.",
+        "en": "Known hypersensitivity to trimethoprim or sulfonamides."
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-2-months",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "کودکان کمتر از ۲ ماه.",
+        "en": "Pediatric patients less than 2 months of age."
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه ترومبوسیتوپنی ایمنی ناشی از دارو، کم‌خونی مگالوبلاستیک ناشی از کمبود فولات، آسیب شدید کبدی، نارسایی شدید کلیه بدون امکان پایش، مصرف همزمان دوفتیلید.",
+        "en": "History of drug-induced immune thrombocytopenia, folate-deficiency megaloblastic anemia, marked hepatic damage, severe renal insufficiency without monitoring, concomitant dofetilide."
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "کلیرانس ۱۵ تا ۳۰: نصف رژیم معمول.",
+        "en": "CrCl 15–30 mL/min: half the usual regimen."
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "egfrBelow": 15,
+      "severity": "block",
+      "text": {
+        "fa": "کلیرانس کمتر از ۱۵: مصرف توصیه نمی‌شود.",
+        "en": "CrCl below 15 mL/min: use not recommended."
+      },
+      "refs": [
+        {
+          "source": "fda-tmp-smx-susp",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "uti",
+      "formulation": "susp-40-200",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "uti",
+      "formulation": "susp-40-200",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 160,
+        "mlPerDose": 20
+      }
+    },
+    {
+      "regimen": "aom",
+      "formulation": "susp-40-200",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 80,
+        "mlPerDose": 10
+      }
+    },
+    {
+      "regimen": "shigellosis",
+      "formulation": "susp-40-200",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 80
+      }
+    },
+    {
+      "regimen": "pcp-treatment",
+      "formulation": "susp-40-200",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 8
+      },
+      "expect": {
+        "perDose": 30,
+        "upperPerDose": 40,
+        "upperMlPerDose": 5
+      }
+    },
+    {
+      "regimen": "pcp-prophylaxis-child",
+      "formulation": "susp-40-200",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 16,
+        "heightCm": 100
+      },
+      "expect": {
+        "perDay": 100,
+        "perDose": 50
+      }
+    },
+    {
+      "regimen": "adult-uti",
+      "formulation": "susp-40-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 160,
+        "mlPerDose": 20
+      }
+    },
+    {
+      "regimen": "uti",
+      "formulation": "susp-40-200",
+      "input": {
+        "ageDays": 30,
+        "weightKg": 4
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

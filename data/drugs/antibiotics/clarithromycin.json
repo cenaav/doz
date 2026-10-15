@@ -1,0 +1,563 @@
+{
+  "id": "clarithromycin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلاریترومایسین",
+    "en": "Clarithromycin"
+  },
+  "category": "antibiotics",
+  "class": {
+    "fa": "ماکرولید",
+    "en": "Macrolide"
+  },
+  "brands": [
+    {
+      "name": "Biaxin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "clarithro",
+    "کلاریترو"
+  ],
+  "formulations": [
+    {
+      "id": "susp-125-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "125 mg / 5 mL",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "susp-250-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "250 mg / 5 mL",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pharyngitis",
+      "disease": "streptococcal-pharyngitis",
+      "label": {
+        "fa": "فارنژیت/تونسیلیت",
+        "en": "Pharyngitis/tonsillitis"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "8.4"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 250,
+        "refs": [
+          {
+            "source": "fda-clarithromycin-tab",
+            "section": "2.2, Table 1",
+            "note": {
+              "fa": "دوز بزرگسال این عفونت: 250 mg هر ۱۲ ساعت",
+              "en": "Adult dose for this infection: 250 mg every 12 h (\"up to the adult dose\")"
+            }
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "cap",
+      "disease": "community-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی اکتسابی",
+        "en": "Community-acquired pneumonia"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "8.4"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 250,
+        "refs": [
+          {
+            "source": "fda-clarithromycin-tab",
+            "section": "2.2, Table 1",
+            "note": {
+              "fa": "دوز بزرگسال این عفونت: 250 mg هر ۱۲ ساعت",
+              "en": "Adult dose for this infection: 250 mg every 12 h (\"up to the adult dose\")"
+            }
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "sinusitis",
+      "disease": "acute-bacterial-sinusitis",
+      "label": {
+        "fa": "سینوزیت ماگزیلاری حاد",
+        "en": "Acute maxillary sinusitis"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "8.4"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 500,
+        "refs": [
+          {
+            "source": "fda-clarithromycin-tab",
+            "section": "2.2, Table 1",
+            "note": {
+              "fa": "دوز بزرگسال این عفونت: 500 mg هر ۱۲ ساعت",
+              "en": "Adult dose for this infection: 500 mg every 12 h (\"up to the adult dose\")"
+            }
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "skin",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت پوست بدون عارضه",
+        "en": "Uncomplicated skin infection"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "8.4"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 250,
+        "refs": [
+          {
+            "source": "fda-clarithromycin-tab",
+            "section": "2.2, Table 1",
+            "note": {
+              "fa": "دوز بزرگسال این عفونت: 250 mg هر ۱۲ ساعت",
+              "en": "Adult dose for this infection: 250 mg every 12 h (\"up to the adult dose\")"
+            }
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "aom",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت مدیای حاد",
+        "en": "Acute otitis media"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "1.6"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "برچسب برای اوتیت مدیا دوز بزرگسال تعریف نکرده است؛ سقف «تا دوز بزرگسال» را با جدول بزرگسالان بسنجید.",
+            "en": "The label defines no adult dose for otitis media; check \"up to the adult dose\" against the adult table."
+          },
+          "refs": [
+            {
+              "source": "fda-clarithromycin-tab",
+              "section": "2.2, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کلاریترومایسین، اریترومایسین یا هر ماکرولید.",
+        "en": "Hypersensitivity to clarithromycin, erythromycin or any macrolide."
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "4.1"
+        }
+      ]
+    },
+    {
+      "id": "cisapride-pimozide",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف همزمان با سیزاپراید یا پیموزاید (آریتمی کشنده).",
+        "en": "Concomitant cisapride or pimozide (fatal arrhythmias)."
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "4.2"
+        }
+      ]
+    },
+    {
+      "id": "hepatic-history",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه یرقان کلستاتیک/اختلال کبدی با کلاریترومایسین.",
+        "en": "History of cholestatic jaundice/hepatic dysfunction with clarithromycin."
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "colchicine",
+      "severity": "block",
+      "text": {
+        "fa": "همراه کلشی‌سین در نارسایی کلیه یا کبد.",
+        "en": "With colchicine in renal or hepatic impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "4.4"
+        }
+      ]
+    },
+    {
+      "id": "statins",
+      "severity": "block",
+      "text": {
+        "fa": "همراه لومیتاپید، لواستاتین یا سیمواستاتین.",
+        "en": "With lomitapide, lovastatin or simvastatin."
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "4.5"
+        }
+      ]
+    },
+    {
+      "id": "under-6-months",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "بی‌خطری سوسپانسیون زیر ۶ ماه ثابت نشده است.",
+        "en": "Safety and effectiveness established only from 6 months."
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش‌های حساسیتی حاد شدید",
+        "en": "Severe acute hypersensitivity reactions"
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "5.1"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "طولانی شدن QT",
+        "en": "QT prolongation"
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "5.2"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سمیت کبدی",
+        "en": "Hepatotoxicity"
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "5.3"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "عوارض جدی در مصرف همزمان با داروهای دیگر",
+        "en": "Serious adverse reactions with concomitant drugs"
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "5.4"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "اسهال مرتبط با کلستریدیوم دیفیسیل",
+        "en": "Clostridium difficile-associated diarrhea"
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "5.6"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "تشدید میاستنی گراویس",
+        "en": "Exacerbation of myasthenia gravis"
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "5.8"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "کلیرانس کمتر از ۳۰: دوز ۵۰٪ کاهش یابد.",
+        "en": "CrCl <30 mL/min: reduce dose by 50%."
+      },
+      "refs": [
+        {
+          "source": "fda-clarithromycin-susp",
+          "section": "2.6"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pharyngitis",
+      "formulation": "susp-125-5",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 75,
+        "mlPerDose": 3
+      }
+    },
+    {
+      "regimen": "pharyngitis",
+      "formulation": "susp-250-5",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 250
+      }
+    },
+    {
+      "regimen": "cap",
+      "formulation": "susp-250-5",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 150
+      }
+    },
+    {
+      "regimen": "sinusitis",
+      "formulation": "susp-250-5",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 6
+      }
+    },
+    {
+      "regimen": "skin",
+      "formulation": "susp-125-5",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 75
+      }
+    },
+    {
+      "regimen": "aom",
+      "formulation": "susp-125-5",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 12
+      },
+      "expect": {
+        "perDose": 90,
+        "mlPerDose": 3.6
+      }
+    }
+  ]
+}
