@@ -49,5 +49,4 @@ Design: [docs/superpowers/specs/2026-10-15-doz-design.md](docs/superpowers/specs
 
 **Cloudflare (main site, doz.amonproject.com):** `npm run deploy:cf` builds the site and uploads `.output/public` as static assets to the `doz` Worker (`wrangler.jsonc`). Requires `npx wrangler login` once. `public/_headers` gives hashed `/_nuxt/` files a one-year cache.
 
-**GitHub Pages (mirror):** 
-Every push to `main` runs data validation, tests and the static build, then publishes to GitHub Pages (`.github/workflows/deploy.yml`). One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+**GitHub Pages (mirror):** every push to `main` runs data validation, tests and the static build, then publishes to GitHub Pages (`.github/workflows/deploy.yml`). One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
