@@ -40,6 +40,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "sol-10-1",
+      "form": "solution",
+      "route": "oral",
+      "label": "10 mg / mL oral solution",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-prednisolone",
+          "section": "2"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -85,11 +105,114 @@
       ]
     },
     {
-      "id": "child",
+      "id": "asthma-child",
       "disease": "asthma",
       "label": {
-        "fa": "کودکان (آسم، کروپ و…)",
-        "en": "Children (asthma, croup, …)"
+        "fa": "حمله حاد آسم در کودک — بر اساس سن",
+        "en": "Acute asthma attack in children — by age"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 20,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 18,
+              "unit": "year"
+            },
+            "perDose": 30,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-prednisolone",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲ تا ۵ سال: ۲۰ mg؛ بالای ۵ سال: ۳۰ تا ۴۰ mg (حد پایین نمایش داده شده). در صورت استفراغ قابل تکرار است.",
+            "en": "2–5 years: 20 mg; over 5 years: 30–40 mg (lower value shown). May be repeated if the child vomits."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-prednisolone",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asthma-on-steroids",
+      "disease": "asthma",
+      "label": {
+        "fa": "حمله آسم در کودکی که استروئید نگهدارنده می‌گیرد — ۲ mg/kg (حداکثر ۶۰ mg)",
+        "en": "Acute asthma, child already on maintenance steroids — 2 mg/kg (max 60 mg)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-prednisolone",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 60,
+        "refs": [
+          {
+            "source": "uk-smpc-prednisolone",
+            "section": "4.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "child-general",
+      "disease": "corticosteroid-responsive",
+      "label": {
+        "fa": "سایر کاربردها در کودکان — کسری از دوز بزرگسال",
+        "en": "Other pediatric uses — fraction of adult dose"
       },
       "population": {
         "maxAge": {
@@ -101,18 +224,14 @@
       "unit": "mg",
       "dose": {
         "reason": {
-          "fa": "برچسب FDA دوز mg/kg کودکان ندارد و دوز را فردی می‌داند؛ دوز کودکان در انتظار منبع دارای مجوز است.",
-          "en": "The FDA label gives no pediatric mg/kg dose and requires individualized dosing; pediatric dosing pending the licensed reference."
+          "fa": "SmPC: کسری از دوز بزرگسال (مثلاً ۷۵٪ در ۱۲ سالگی، ۵۰٪ در ۷ سالگی، ۲۵٪ در ۱ سالگی) با توجه به شرایط بالینی؛ محاسبه خودکار ندارد.",
+          "en": "SmPC: fractions of the adult dose (e.g. 75% at 12 years, 50% at 7 years, 25% at 1 year) with clinical judgement; not auto-calculated."
         }
       },
       "refs": [
         {
-          "source": "fda-prednisolone-sol",
-          "section": "Dosage and Administration"
-        },
-        {
-          "source": "fda-prednisolone-sol",
-          "section": "Pediatric Use"
+          "source": "uk-smpc-prednisolone",
+          "section": "4.2"
         }
       ]
     }
@@ -129,6 +248,20 @@
         {
           "source": "fda-prednisolone-sol",
           "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "uk-ci",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت سیستمیک بدون درمان ضدعفونت؛ ایمن‌سازی با واکسن زنده.",
+        "en": "Systemic infection without anti-infective therapy; live virus immunisation."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-prednisolone",
+          "section": "4.3"
         }
       ]
     }
@@ -168,6 +301,53 @@
         "mlPerDose": 1,
         "upperPerDose": 60,
         "upperMlPerDose": 12
+      }
+    },
+    {
+      "regimen": "asthma-child",
+      "formulation": "sol-10-1",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "asthma-child",
+      "formulation": "sol-10-1",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 30,
+        "mlPerDose": 3
+      }
+    },
+    {
+      "regimen": "asthma-on-steroids",
+      "formulation": "sol-10-1",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 4
+      }
+    },
+    {
+      "regimen": "asthma-on-steroids",
+      "formulation": "sol-10-1",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 60
       }
     }
   ]

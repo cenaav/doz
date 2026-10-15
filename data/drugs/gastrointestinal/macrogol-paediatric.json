@@ -1,0 +1,231 @@
+{
+  "id": "macrogol-paediatric",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ماکروگل (PEG) کودکان",
+    "en": "Macrogol 3350 paediatric (PEG)"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "ملین اسموتیک",
+    "en": "Osmotic laxative"
+  },
+  "brands": [
+    {
+      "name": "Movicol Paediatric",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "PEG",
+    "پی ای جی",
+    "پودر پگ",
+    "macrogol",
+    "polyethylene glycol",
+    "movicol"
+  ],
+  "formulations": [
+    {
+      "id": "sachet-6-8",
+      "form": "sachet",
+      "route": "oral",
+      "label": "6.8 g sachet (macrogol 3350 6.563 g)",
+      "concentration": {
+        "amount": 1,
+        "unit": "unit",
+        "perUnit": "sachet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "chronic",
+      "disease": "constipation",
+      "label": {
+        "fa": "یبوست مزمن — ۲ تا ۱۱ سال",
+        "en": "Chronic constipation — 2 to 11 years"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "unit",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 7,
+              "unit": "year"
+            },
+            "perDose": 1,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 7,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 2,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.2"
+        },
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲ تا ۶ سال: ۱ ساشه؛ ۷ تا ۱۱ سال: ۲ ساشه روزانه. تنظیم یک روز در میان تا مدفوع نرم منظم؛ معمولاً حداکثر ۴ ساشه. هر ساشه در ۶۲٫۵ mL آب.",
+            "en": "2–6 years: 1 sachet; 7–11 years: 2 sachets daily. Adjust every second day to regular soft stools; usually max 4 sachets. Each sachet in 62.5 mL water."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-movicol-paed",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-movicol-paed",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "impaction",
+      "disease": "faecal-impaction",
+      "label": {
+        "fa": "نهفتگی مدفوع — ۵ تا ۱۱ سال: برنامه ۷ روزه",
+        "en": "Faecal impaction — 5 to 11 years: 7-day schedule"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برنامه روزانه ساشه‌ها: روز ۱: ۴، روز ۲: ۶، روز ۳: ۸، روز ۴: ۱۰، روز ۵ تا ۷: ۱۲؛ در دوزهای منقسم طی ۱۲ ساعت. با دفع حجم زیاد مدفوع قطع شود.",
+          "en": "Daily sachets: day 1: 4, day 2: 6, day 3: 8, day 4: 10, days 5–7: 12; divided doses within 12 hours. Stop once disimpaction occurs."
+        }
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "obstruction",
+      "severity": "block",
+      "text": {
+        "fa": "سوراخ شدن یا انسداد روده، ایلئوس، بیماری التهابی شدید روده (کرون، کولیت اولسراتیو، مگاکولون سمی).",
+        "en": "Intestinal perforation or obstruction, ileus, severe inflammatory bowel conditions (Crohn's, ulcerative colitis, toxic megacolon)."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای یبوست مزمن زیر ۲ سال توصیه نمی‌شود.",
+        "en": "Not recommended under 2 years for chronic constipation."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "chronic",
+      "formulation": "sachet-6-8",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 1,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "chronic",
+      "formulation": "sachet-6-8",
+      "input": {
+        "ageYears": 9,
+        "weightKg": 28
+      },
+      "expect": {
+        "perDose": 2,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ]
+}
