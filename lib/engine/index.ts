@@ -22,11 +22,31 @@ export interface Result {
   schedule?: ScheduleStep[]; titration?: TitrationPlan
   capsApplied: CapHit[]; warnings: Msg[]; blocks: Msg[]; refs: Ref[]
   egfr?: number; bsa?: number; reason?: I18nText
+  /** Upper end of a dose range, when the source gives one. */
+  upper?: Pick<Result, 'perDose' | 'perDay' | 'mlPerDose' | 'mlPerDoseRounded' | 'mlPerDay' | 'tabletsPerDose' | 'tabletsPerDoseRounded' | 'capsApplied'>
 }
 
 const MAX_AGE_DAYS = 120 * 365.25
 
+/** Calculates a dose; when the regimen gives a range, `upper` holds the result for the top of the range. */
 export function calculate(drug: Drug, regimenId: string, formulationId: string, p: Patient): Result {
+  const res = calculateOne(drug, regimenId, formulationId, p)
+  const reg = drug.regimens.find((r) => r.id === regimenId)
+  const d = reg?.dose
+  if (res.status !== 'ok' || !reg || !d || (d.perKgPerDayMax == null && d.perKgPerDoseMax == null && d.perDoseMax == null)) return res
+  const upperDose = {
+    ...d,
+    perKgPerDay: d.perKgPerDayMax ?? d.perKgPerDay,
+    perKgPerDose: d.perKgPerDoseMax ?? d.perKgPerDose,
+    perDose: d.perDoseMax ?? d.perDose,
+  }
+  const hi = calculateOne({ ...drug, regimens: drug.regimens.map((r) => (r === reg ? { ...r, dose: upperDose } : r)) }, regimenId, formulationId, p)
+  if (hi.status !== 'ok') return { ...res, warnings: [...res.warnings, ...hi.blocks] }
+  const { perDose, perDay, mlPerDose, mlPerDoseRounded, mlPerDay, tabletsPerDose, tabletsPerDoseRounded, capsApplied } = hi
+  return { ...res, upper: { perDose, perDay, mlPerDose, mlPerDoseRounded, mlPerDay, tabletsPerDose, tabletsPerDoseRounded, capsApplied } }
+}
+
+function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: Patient): Result {
   const reg = drug.regimens.find((r) => r.id === regimenId)
   const form = drug.formulations.find((f) => f.id === formulationId)
   const unit = reg?.unit ?? 'mg'

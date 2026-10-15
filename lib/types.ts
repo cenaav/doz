@@ -57,10 +57,13 @@ export interface Regimen {
   unit?: DoseUnit
   dose: {
     perKgPerDay?: number
+    perKgPerDayMax?: number
     perKgPerDose?: number
+    perKgPerDoseMax?: number
     dividedDoses?: number
     intervalHours?: number
     perDose?: number
+    perDoseMax?: number
     dosesPerDay?: number
     perM2PerDay?: number
     bands?: AgeBandRow[]
@@ -83,7 +86,7 @@ export interface Example {
   regimen: string
   formulation: string
   input: { ageDays?: number; ageMonths?: number; ageYears?: number; weightKg: number; heightCm?: number; scrMgDl?: number }
-  expect: Partial<Record<'status' | 'perDose' | 'perDay' | 'dosesPerDay' | 'mlPerDose' | 'mlPerDoseRounded' | 'tabletsPerDoseRounded', number | string>>
+  expect: Partial<Record<'status' | 'perDose' | 'perDay' | 'dosesPerDay' | 'mlPerDose' | 'mlPerDoseRounded' | 'tabletsPerDoseRounded' | 'upperPerDose' | 'upperPerDay' | 'upperMlPerDose' | 'upperMlPerDoseRounded', number | string>>
 }
 export interface Drug {
   id: string

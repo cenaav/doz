@@ -11,8 +11,9 @@ for (const { drug } of ds.drugs.filter((d) => d.drug.examples.length)) {
       test(`example ${i + 1}: ${ex.regimen} / ${ex.formulation}`, () => {
         const r = calculate(drug, ex.regimen, ex.formulation, { ...ex.input, ageDays: ageDaysFrom(ex.input) })
         for (const [k, v] of Object.entries(ex.expect)) {
-          if (typeof v === 'number') expect((r as any)[k], k).toBeCloseTo(v, 2)
-          else expect((r as any)[k], k).toBe(v)
+          const actual = k.startsWith('upper') ? (r.upper as any)?.[k[5].toLowerCase() + k.slice(6)] : (r as any)[k]
+          if (typeof v === 'number') expect(actual, k).toBeCloseTo(v, 2)
+          else expect(actual, k).toBe(v)
         }
       })
     })

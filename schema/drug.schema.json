@@ -743,6 +743,18 @@
             },
             "reason": {
               "$ref": "#/$defs/text"
+            },
+            "perKgPerDayMax": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "perKgPerDoseMax": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "perDoseMax": {
+              "type": "number",
+              "exclusiveMinimum": 0
             }
           }
         },
@@ -1028,6 +1040,18 @@
               "type": "number"
             },
             "tabletsPerDoseRounded": {
+              "type": "number"
+            },
+            "upperPerDose": {
+              "type": "number"
+            },
+            "upperPerDay": {
+              "type": "number"
+            },
+            "upperMlPerDose": {
+              "type": "number"
+            },
+            "upperMlPerDoseRounded": {
               "type": "number"
             }
           }

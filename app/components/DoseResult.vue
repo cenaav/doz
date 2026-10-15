@@ -23,16 +23,16 @@ const msg = (m: Msg) => (m.text ? lt(m.text) : t(`engine.${m.code}`, m.params ??
       <div class="rounded-2xl bg-brand-50 p-4 dark:bg-brand-900/30">
         <p class="text-sm text-slate-600 dark:text-slate-300">{{ $t('calc.perDose') }}</p>
         <p class="text-3xl font-black text-brand-700 dark:text-brand-300">
-          <template v-if="result.mlPerDoseRounded != null">{{ fmt(result.mlPerDoseRounded) }} {{ $t('units.ml') }}</template>
-          <template v-else>{{ fmt(result.tabletsPerDoseRounded) }} {{ $t(`units.${result.tabletUnit}`) }}</template>
+          <template v-if="result.mlPerDoseRounded != null">{{ fmt(result.mlPerDoseRounded) }}<template v-if="result.upper"> – {{ fmt(result.upper.mlPerDoseRounded) }}</template> {{ $t('units.ml') }}</template>
+          <template v-else>{{ fmt(result.tabletsPerDoseRounded) }}<template v-if="result.upper"> – {{ fmt(result.upper.tabletsPerDoseRounded) }}</template> {{ $t(`units.${result.tabletUnit}`) }}</template>
         </p>
         <p class="mt-1 text-sm">
-          = {{ fmt(result.perDose) }} {{ u }}
+          = {{ fmt(result.perDose) }}<template v-if="result.upper"> – {{ fmt(result.upper.perDose) }}</template> {{ u }}
           <span v-if="result.mlPerDose != null && result.mlPerDose !== result.mlPerDoseRounded" class="text-slate-500">({{ $t('calc.exact') }}: {{ fmt(result.mlPerDose) }} {{ $t('units.ml') }})</span>
           <span v-if="result.tabletsPerDose != null && result.tabletsPerDose !== result.tabletsPerDoseRounded" class="text-slate-500">({{ $t('calc.exact') }}: {{ fmt(result.tabletsPerDose) }})</span>
         </p>
         <p class="mt-2 font-bold">{{ $t('calc.every', { h: fmt(result.intervalHours), n: fmt(result.dosesPerDay) }) }}</p>
-        <p class="text-sm">{{ $t('calc.perDay') }}: {{ fmt(result.perDay) }} {{ u }}<span v-if="result.mlPerDay != null"> ({{ fmt(result.mlPerDay) }} {{ $t('units.ml') }})</span></p>
+        <p class="text-sm">{{ $t('calc.perDay') }}: {{ fmt(result.perDay) }}<template v-if="result.upper"> – {{ fmt(result.upper.perDay) }}</template> {{ u }}<span v-if="result.mlPerDay != null"> ({{ fmt(result.mlPerDay) }} {{ $t('units.ml') }})</span></p>
         <p v-if="result.durationDays" class="text-sm">{{ $t('calc.duration', { min: fmt(result.durationDays.min), max: fmt(result.durationDays.max) }) }}</p>
         <p v-if="result.bsa" class="text-sm">BSA: {{ fmt(result.bsa) }} m²</p>
         <p v-if="result.egfr" class="text-sm">eGFR (bedside Schwartz): {{ fmt(result.egfr) }}</p>
@@ -58,8 +58,9 @@ const msg = (m: Msg) => (m.text ? lt(m.text) : t(`engine.${m.code}`, m.params ??
         <p class="font-bold">{{ $t('calc.tMax', { d: fmt(result.titration.max), u }) }}</p>
       </div>
 
-      <ul v-if="result.capsApplied.length" class="space-y-1 rounded-xl border border-amber-300 bg-amber-50 p-3 text-sm dark:border-amber-800 dark:bg-amber-950">
-        <li v-for="(c, i) in result.capsApplied" :key="i">🛡️ {{ $t(`calc.cap.${c.kind}`, { v: fmt(c.limit), u }) }} <RefChips :refs="c.refs" /></li>
+      <p v-if="result.upper" class="text-xs text-slate-500">{{ $t('calc.rangeNote') }}</p>
+      <ul v-if="[...result.capsApplied, ...(result.upper?.capsApplied ?? [])].length" class="space-y-1 rounded-xl border border-amber-300 bg-amber-50 p-3 text-sm dark:border-amber-800 dark:bg-amber-950">
+        <li v-for="(c, i) in [...result.capsApplied, ...(result.upper?.capsApplied ?? [])]" :key="i">🛡️ {{ $t(`calc.cap.${c.kind}`, { v: fmt(c.limit), u }) }} <RefChips :refs="c.refs" /></li>
       </ul>
     </template>
 
