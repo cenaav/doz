@@ -41,6 +41,89 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "tab-400",
+      "form": "tablet",
+      "route": "oral",
+      "label": "400 mg tablet",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acyclovir-tab",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-800",
+      "form": "tablet",
+      "route": "oral",
+      "label": "800 mg tablet",
+      "concentration": {
+        "amount": 800,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acyclovir-tab",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-200",
+      "form": "capsule",
+      "route": "oral",
+      "label": "200 mg capsule",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acyclovir-cap",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "inj-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mg/mL concentrate (10 or 20 mL vial) — dilute before IV infusion",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acyclovir-inj",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -100,6 +183,12 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "susp-200-5",
+        "tab-400",
+        "tab-800",
+        "cap-200"
       ]
     },
     {
@@ -127,7 +216,533 @@
       "durationDays": {
         "min": 5,
         "max": 5
-      }
+      },
+      "allowedFormulations": [
+        "susp-200-5",
+        "tab-400",
+        "tab-800",
+        "cap-200"
+      ]
+    },
+    {
+      "id": "zoster",
+      "disease": "herpes-zoster",
+      "label": {
+        "fa": "زونا — ۸۰۰ mg پنج بار در روز (هر ۴ ساعت)، ۷ تا ۱۰ روز",
+        "en": "Herpes zoster — 800 mg five times daily (every 4 h), 7–10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 800,
+        "dosesPerDay": 5
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-tab",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 10
+      },
+      "allowedFormulations": [
+        "tab-400",
+        "tab-800",
+        "cap-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نارسایی کلیه: کاهش دوز طبق جدول ۳ برچسب (مثلاً ۸۰۰ mg: CrCl ۱۰ تا ۲۵ هر ۸ ساعت، زیر ۱۰ هر ۱۲ ساعت).",
+            "en": "Renal impairment: reduce per label Table 3 (e.g. 800 mg: CrCl 10–25 every 8 h, <10 every 12 h)."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-tab",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gh-initial",
+      "disease": "genital-herpes",
+      "label": {
+        "fa": "تبخال تناسلی — نوبت اول: ۲۰۰ mg پنج بار در روز، ۱۰ روز",
+        "en": "Genital herpes — first episode: 200 mg five times daily, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 5
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-tab",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "allowedFormulations": [
+        "tab-400",
+        "tab-800",
+        "cap-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نارسایی کلیه: کاهش دوز طبق جدول ۳ برچسب (مثلاً ۸۰۰ mg: CrCl ۱۰ تا ۲۵ هر ۸ ساعت، زیر ۱۰ هر ۱۲ ساعت).",
+            "en": "Renal impairment: reduce per label Table 3 (e.g. 800 mg: CrCl 10–25 every 8 h, <10 every 12 h)."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-tab",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gh-episodic",
+      "disease": "genital-herpes",
+      "label": {
+        "fa": "تبخال تناسلی — عود (درمان متناوب): ۲۰۰ mg پنج بار در روز، ۵ روز",
+        "en": "Genital herpes — recurrence (intermittent): 200 mg five times daily, 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 5
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-tab",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "allowedFormulations": [
+        "tab-400",
+        "tab-800",
+        "cap-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در اولین علامت (پرودروم) شروع شود.",
+            "en": "Start at the earliest sign or symptom (prodrome)."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-tab",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "نارسایی کلیه: کاهش دوز طبق جدول ۳ برچسب (مثلاً ۸۰۰ mg: CrCl ۱۰ تا ۲۵ هر ۸ ساعت، زیر ۱۰ هر ۱۲ ساعت).",
+            "en": "Renal impairment: reduce per label Table 3 (e.g. 800 mg: CrCl 10–25 every 8 h, <10 every 12 h)."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-tab",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gh-suppress",
+      "disease": "genital-herpes",
+      "label": {
+        "fa": "تبخال تناسلی — سرکوب مزمن: ۴۰۰ mg دو بار در روز تا ۱۲ ماه",
+        "en": "Genital herpes — chronic suppression: 400 mg twice daily for up to 12 months"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-tab",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-400",
+        "tab-800",
+        "cap-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از ۱ سال ارزیابی مجدد. رژیم‌های جایگزین: ۲۰۰ mg سه تا پنج بار در روز.",
+            "en": "Re-evaluate after 1 year. Alternatives: 200 mg three to five times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-tab",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "نارسایی کلیه: کاهش دوز طبق جدول ۳ برچسب (مثلاً ۸۰۰ mg: CrCl ۱۰ تا ۲۵ هر ۸ ساعت، زیر ۱۰ هر ۱۲ ساعت).",
+            "en": "Renal impairment: reduce per label Table 3 (e.g. 800 mg: CrCl 10–25 every 8 h, <10 every 12 h)."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-tab",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-hse-adult",
+      "disease": "hsv-encephalitis",
+      "label": {
+        "fa": "آنسفالیت هرپسی — ۱۲ سال به بالا: ۱۰ mg/kg وریدی هر ۸ ساعت، ۱۰ روز",
+        "en": "HSV encephalitis — ≥12 y: 10 mg/kg IV every 8 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-inj",
+          "section": "Dosage"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDose": 20,
+        "refs": [
+          {
+            "source": "fda-acyclovir-inj",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "allowedFormulations": [
+        "inj-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "انفوزیون یکنواخت در ۱ ساعت؛ هرگز بولوس، عضلانی یا زیرجلدی. حداکثر معادل ۲۰ mg/kg هر ۸ ساعت. چاقی: بر اساس وزن ایده‌آل. حجم نمایش‌داده‌شده از محلول غلیظ ۵۰ mg/mL است و پیش از انفوزیون رقیق شود.",
+            "en": "Infuse at a constant rate over 1 h; never bolus, IM or SC. Max equivalent of 20 mg/kg every 8 h. Obese patients: ideal body weight. The volume shown is of the 50 mg/mL concentrate, which must be diluted before infusion."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-inj",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-acyclovir-inj",
+              "section": "Dosage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-hse-child",
+      "disease": "hsv-encephalitis",
+      "label": {
+        "fa": "آنسفالیت هرپسی — ۳ ماه تا ۱۲ سال: ۲۰ mg/kg وریدی هر ۸ ساعت، ۱۰ روز",
+        "en": "HSV encephalitis — 3 months to 12 y: 20 mg/kg IV every 8 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 20,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-inj",
+          "section": "Dosage"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDose": 20,
+        "refs": [
+          {
+            "source": "fda-acyclovir-inj",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "allowedFormulations": [
+        "inj-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "انفوزیون یکنواخت در ۱ ساعت؛ هرگز بولوس، عضلانی یا زیرجلدی. حداکثر معادل ۲۰ mg/kg هر ۸ ساعت. چاقی: بر اساس وزن ایده‌آل. حجم نمایش‌داده‌شده از محلول غلیظ ۵۰ mg/mL است و پیش از انفوزیون رقیق شود.",
+            "en": "Infuse at a constant rate over 1 h; never bolus, IM or SC. Max equivalent of 20 mg/kg every 8 h. Obese patients: ideal body weight. The volume shown is of the 50 mg/mL concentrate, which must be diluted before infusion."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-inj",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-acyclovir-inj",
+              "section": "Dosage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-neonatal",
+      "disease": "hsv-encephalitis",
+      "label": {
+        "fa": "هرپس نوزادی — تولد تا ۳ ماه: ۱۰ mg/kg وریدی هر ۸ ساعت، ۱۰ روز",
+        "en": "Neonatal HSV — birth to 3 months: 10 mg/kg IV every 8 h, 10 days"
+      },
+      "population": {
+        "maxAge": {
+          "value": 3,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-inj",
+          "section": "Dosage"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDose": 20,
+        "refs": [
+          {
+            "source": "fda-acyclovir-inj",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "allowedFormulations": [
+        "inj-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "انفوزیون یکنواخت در ۱ ساعت؛ هرگز بولوس، عضلانی یا زیرجلدی. حداکثر معادل ۲۰ mg/kg هر ۸ ساعت. چاقی: بر اساس وزن ایده‌آل. حجم نمایش‌داده‌شده از محلول غلیظ ۵۰ mg/mL است و پیش از انفوزیون رقیق شود.",
+            "en": "Infuse at a constant rate over 1 h; never bolus, IM or SC. Max equivalent of 20 mg/kg every 8 h. Obese patients: ideal body weight. The volume shown is of the 50 mg/mL concentrate, which must be diluted before infusion."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-inj",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-acyclovir-inj",
+              "section": "Dosage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-zoster-adult",
+      "disease": "herpes-zoster",
+      "label": {
+        "fa": "زونا در نقص ایمنی — ۱۲ سال به بالا: ۱۰ mg/kg وریدی هر ۸ ساعت، ۷ روز",
+        "en": "Zoster in immunocompromised — ≥12 y: 10 mg/kg IV every 8 h, 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-inj",
+          "section": "Dosage"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDose": 20,
+        "refs": [
+          {
+            "source": "fda-acyclovir-inj",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "allowedFormulations": [
+        "inj-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "انفوزیون یکنواخت در ۱ ساعت؛ هرگز بولوس، عضلانی یا زیرجلدی. حداکثر معادل ۲۰ mg/kg هر ۸ ساعت. چاقی: بر اساس وزن ایده‌آل. حجم نمایش‌داده‌شده از محلول غلیظ ۵۰ mg/mL است و پیش از انفوزیون رقیق شود.",
+            "en": "Infuse at a constant rate over 1 h; never bolus, IM or SC. Max equivalent of 20 mg/kg every 8 h. Obese patients: ideal body weight. The volume shown is of the 50 mg/mL concentrate, which must be diluted before infusion."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-inj",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-acyclovir-inj",
+              "section": "Dosage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-zoster-child",
+      "disease": "herpes-zoster",
+      "label": {
+        "fa": "زونا در نقص ایمنی — زیر ۱۲ سال: ۲۰ mg/kg وریدی هر ۸ ساعت، ۷ روز",
+        "en": "Zoster in immunocompromised — <12 y: 20 mg/kg IV every 8 h, 7 days"
+      },
+      "population": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 20,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-inj",
+          "section": "Dosage"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDose": 20,
+        "refs": [
+          {
+            "source": "fda-acyclovir-inj",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "allowedFormulations": [
+        "inj-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "انفوزیون یکنواخت در ۱ ساعت؛ هرگز بولوس، عضلانی یا زیرجلدی. حداکثر معادل ۲۰ mg/kg هر ۸ ساعت. چاقی: بر اساس وزن ایده‌آل. حجم نمایش‌داده‌شده از محلول غلیظ ۵۰ mg/mL است و پیش از انفوزیون رقیق شود.",
+            "en": "Infuse at a constant rate over 1 h; never bolus, IM or SC. Max equivalent of 20 mg/kg every 8 h. Obese patients: ideal body weight. The volume shown is of the 50 mg/mL concentrate, which must be diluted before infusion."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-inj",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-acyclovir-inj",
+              "section": "Dosage"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -148,12 +763,6 @@
     {
       "id": "under-2",
       "severity": "block",
-      "rule": {
-        "maxAge": {
-          "value": 2,
-          "unit": "year"
-        }
-      },
       "text": {
         "fa": "بی‌خطری اشکال خوراکی زیر ۲ سال ثابت نشده است.",
         "en": "Oral forms not established under 2 years."
@@ -224,6 +833,114 @@
       "expect": {
         "perDose": 800,
         "mlPerDose": 20
+      }
+    },
+    {
+      "regimen": "zoster",
+      "formulation": "tab-800",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 800,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "gh-initial",
+      "formulation": "cap-200",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "iv-hse-adult",
+      "formulation": "inj-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 700,
+        "mlPerDose": 14
+      }
+    },
+    {
+      "regimen": "iv-hse-child",
+      "formulation": "inj-50",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 8
+      }
+    },
+    {
+      "regimen": "gh-episodic",
+      "formulation": "cap-200",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 200,
+        "dosesPerDay": 5
+      }
+    },
+    {
+      "regimen": "gh-suppress",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 400,
+        "dosesPerDay": 2
+      }
+    },
+    {
+      "regimen": "iv-neonatal",
+      "formulation": "inj-50",
+      "input": {
+        "ageDays": 10,
+        "weightKg": 3.5
+      },
+      "expect": {
+        "perDose": 35,
+        "mlPerDose": 0.7
+      }
+    },
+    {
+      "regimen": "iv-zoster-adult",
+      "formulation": "inj-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 700,
+        "mlPerDose": 14
+      }
+    },
+    {
+      "regimen": "iv-zoster-child",
+      "formulation": "inj-50",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 8
       }
     }
   ],
@@ -300,13 +1017,28 @@
   "links": [
     {
       "kind": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212252",
-      "label": "ANDA212252"
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203701",
+      "label": "ANDA203701"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d3ab226c-677d-4cb7-85cb-1c2e5012f40d",
+      "label": "FDA Acyclovir injection"
     },
     {
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8208711c-18ba-4615-b932-3c0bb7e6efae",
       "label": "FDA Acyclovir susp"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0de2f5c7-9e75-4bdf-9c28-e026cc6694b4",
+      "label": "FDA Acyclovir tablets"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85332671-0e3a-4445-a337-e1266886b9cf",
+      "label": "FDA Acyclovir capsules"
     },
     {
       "kind": "medlineplus",
@@ -336,11 +1068,11 @@
         "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
         "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
       },
-      "quote": "Pregnancy : Teratogenic Effects : Pregnancy Category B.",
+      "quote": "Teratogenic Effects Pregnancy Category B Acyclovir administered during organogenesis was not teratogenic in the mouse (450 mg/kg/day, PO), rabbit (50 mg/kg/day, SC and IV), or rat (50 mg/kg/day, SC).",
       "refs": [
         {
-          "source": "fda-acyclovir-susp",
-          "section": "PREGNANCY"
+          "source": "fda-acyclovir-inj",
+          "section": "Pregnancy"
         }
       ]
     },
@@ -350,11 +1082,11 @@
         "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
         "en": "Label: use with caution while breastfeeding; see the label text."
       },
-      "quote": "Nursing Mothers : Acyclovir concentrations have been documented in breast milk in 2 women following oral administration of acyclovir and ranged from 0.6 to 4.1 times corresponding plasma levels.",
+      "quote": "Acyclovir concentrations have been documented in breast milk in two women following oral administration of acyclovir and ranged from 0.6 to 4.1 times corresponding plasma levels.",
       "refs": [
         {
-          "source": "fda-acyclovir-susp",
-          "section": "NURSING MOTHERS"
+          "source": "fda-acyclovir-inj",
+          "section": "Nursing Mothers"
         }
       ]
     },
@@ -364,11 +1096,11 @@
         "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
         "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
       },
-      "quote": "Pediatric Use : Safety and effectiveness of oral formulations of acyclovir in pediatric patients younger than 2 years of age have not been established.",
+      "quote": "See DOSAGE AND ADMINISTRATION .",
       "refs": [
         {
-          "source": "fda-acyclovir-susp",
-          "section": "PEDIATRIC USE"
+          "source": "fda-acyclovir-inj",
+          "section": "Pediatric Use"
         }
       ]
     },
@@ -378,11 +1110,11 @@
         "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
         "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
       },
-      "quote": "Elderly patients are more likely to have reduced renal function and require dose reduction.",
+      "quote": "In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased renal function, and of concomitant disease or other drug therapy.",
       "refs": [
         {
-          "source": "fda-acyclovir-susp",
-          "section": "GERIATRIC USE"
+          "source": "fda-acyclovir-inj",
+          "section": "Geriatric Use"
         }
       ]
     }
@@ -391,10 +1123,10 @@
     "kind": "ANDA",
     "refs": [
       {
-        "source": "fda-acyclovir-susp",
+        "source": "fda-acyclovir-inj",
         "section": "SPL approval / marketing category"
       }
     ],
-    "id": "ANDA212252"
+    "id": "ANDA203701"
   }
 }

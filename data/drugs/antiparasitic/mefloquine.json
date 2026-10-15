@@ -1,0 +1,420 @@
+{
+  "id": "mefloquine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مفلوکین",
+    "en": "Mefloquine"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدمالاریا",
+    "en": "Antimalarial"
+  },
+  "brands": [
+    {
+      "name": "Lariam",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lariam",
+    "لاریام",
+    "مفلوکین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet (scored)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "treat-adult",
+      "disease": "malaria",
+      "label": {
+        "fa": "درمان مالاریای خفیف تا متوسط — بزرگسال: ۱۲۵۰ mg (۵ قرص) یک‌جا",
+        "en": "Mild–moderate malaria — adult: 1,250 mg (5 tablets) single dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1250,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه غذا و حداقل ۲۴۰ mL آب. در P. vivax برای پیشگیری از عود، بعداً پریماکین.",
+            "en": "With food and at least 240 mL water. In P. vivax follow with primaquine to prevent relapse."
+          },
+          "refs": [
+            {
+              "source": "fda-mefloquine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treat-child",
+      "disease": "malaria",
+      "label": {
+        "fa": "درمان مالاریا — کودک: ۲۰ تا ۲۵ mg/kg (کل دوره)",
+        "en": "Malaria treatment — child: 20–25 mg/kg (whole course)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 20,
+        "perKgPerDayMax": 25,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 1250,
+        "refs": [
+          {
+            "source": "fda-mefloquine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "می‌توان کل دوز را به ۲ نوبت با فاصله ۶ تا ۸ ساعت تقسیم کرد. بیشتر از دوز بزرگسال نشود. تجربه در زیر ۲۰ kg محدود است. اگر ظرف ۳۰ دقیقه استفراغ شد، دوز کامل دوم.",
+            "en": "The total dose may be split into 2 doses 6–8 h apart. Not more than the adult dose. Limited experience under 20 kg. If vomited within 30 min, give a second full dose."
+          },
+          "refs": [
+            {
+              "source": "fda-mefloquine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proph-adult",
+      "disease": "malaria",
+      "label": {
+        "fa": "پیشگیری مالاریا — بزرگسال: ۲۵۰ mg هفته‌ای یک بار",
+        "en": "Malaria prophylaxis — adult: 250 mg once weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هفته‌ای یک بار (نه روزانه)، همیشه در یک روز ثابت پس از غذا؛ از ۱ هفته پیش از سفر تا ۴ هفته پس از ترک منطقه.",
+            "en": "Once WEEKLY (not daily), same day each week after the main meal; from 1 week before arrival until 4 weeks after leaving."
+          },
+          "refs": [
+            {
+              "source": "fda-mefloquine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proph-child",
+      "disease": "malaria",
+      "label": {
+        "fa": "پیشگیری مالاریا — کودک: حدود ۵ mg/kg هفته‌ای یک بار",
+        "en": "Malaria prophylaxis — child: about 5 mg/kg once weekly"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: هفته‌ای یک بار — ۲۰ تا ۳۰ kg: نصف قرص؛ ۳۰ تا ۴۵ kg: سه‌چهارم قرص؛ بالای ۴۵ kg: یک قرص ۲۵۰ mg. تجربه در زیر ۲۰ kg محدود است.",
+          "en": "Label: once weekly — 20–30 kg: ½ tablet; 30–45 kg: ¾ tablet; over 45 kg: one 250 mg tablet. Limited experience under 20 kg."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مفلوکین یا ترکیبات مشابه (کینین، کینیدین).",
+        "en": "Hypersensitivity to mefloquine or related compounds (quinine, quinidine)."
+      },
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "psych",
+      "severity": "block",
+      "text": {
+        "fa": "پیشگیری در افسردگی فعال یا اخیر، اضطراب فراگیر، سایکوز، اسکیزوفرنی یا سایر اختلالات روانی مهم، یا سابقه تشنج ممنوع.",
+        "en": "Not for prophylaxis with active or recent depression, generalised anxiety, psychosis, schizophrenia or other major psychiatric disorder, or a history of seizures."
+      },
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: عوارض عصبی‌روانی که ممکن است پس از قطع ادامه یابد؛ با بروز علائم، قطع و جایگزینی.",
+        "en": "Boxed warning: neuropsychiatric adverse reactions that can persist after stopping; stop and substitute if symptoms occur."
+      },
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "treat-adult",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1250,
+        "tabletsPerDoseRounded": 5
+      }
+    },
+    {
+      "regimen": "treat-child",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 400,
+        "upperPerDose": 500
+      }
+    },
+    {
+      "regimen": "proph-adult",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "P01BC02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00796",
+        "en": "MEFLOQUINE 250MG TAB",
+        "fa": "قرص مفلوکوین ۲۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-843/Mefloquine",
+        "url": "https://www.darooyab.ir/G-843/Mefloquine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076392",
+      "label": "ANDA076392"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09716a24-d7da-42b2-af29-c03a1b6670bd",
+      "label": "FDA Mefloquine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603030.html",
+      "label": "Mefloquine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=P01BC02",
+      "label": "P01BC02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-843/Mefloquine",
+      "label": "Mefloquine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "",
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of mefloquine for the treatment of malaria in pediatric patients below the age of 6 months have not been established.",
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Since electrocardiographic abnormalities have been observed in individuals treated with mefloquine (see PRECAUTIONS ) and underlying cardiac disease is more prevalent in elderly than in younger patients, the benefits of mefloquine therapy should be weighed against the possibility of adverse cardiac effects in elderly …",
+      "refs": [
+        {
+          "source": "fda-mefloquine",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-mefloquine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076392"
+  }
+}

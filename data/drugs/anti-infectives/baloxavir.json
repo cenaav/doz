@@ -1,0 +1,524 @@
+{
+  "id": "baloxavir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بالوکساویر",
+    "en": "Baloxavir marboxil"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضد آنفلوانزا (مهارکننده اندونوکلئاز)",
+    "en": "Anti-influenza (endonuclease inhibitor)"
+  },
+  "brands": [
+    {
+      "name": "Xofluza",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xofluza",
+    "زوفلوزا",
+    "بالوکساویر"
+  ],
+  "formulations": [
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-80",
+      "form": "tablet",
+      "route": "oral",
+      "label": "80 mg tablet",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "susp-2",
+      "form": "suspension",
+      "route": "oral",
+      "label": "2 mg/mL suspension (40 mg/20 mL bottle after reconstitution)",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 20
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "3"
+        },
+        {
+          "source": "fda-xofluza",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "treat",
+      "disease": "influenza",
+      "label": {
+        "fa": "آنفلوانزای بدون عارضه — یک دوز بر اساس وزن (۵ سال به بالا، ۲۰ kg به بالا)",
+        "en": "Uncomplicated influenza — single dose by weight (≥5 y, ≥20 kg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        },
+        "minWeightKg": 20
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 20,
+            "maxWeightKg": 79.99,
+            "perDose": 40,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 80,
+            "maxWeightKg": null,
+            "perDose": 80,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "2.2, Tables 1–3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یک دوز، هرچه زودتر و ظرف ۴۸ ساعت از شروع علائم یا تماس. همزمان با لبنیات، نوشیدنی غنی از کلسیم، آنتی‌اسید، ملین یا مکمل کلسیم، آهن، منیزیم، سلنیوم یا روی مصرف نشود.",
+            "en": "Single dose, as soon as possible and within 48 h of symptom onset or contact. Not with dairy, calcium-fortified drinks, antacids, laxatives or calcium, iron, magnesium, selenium or zinc supplements."
+          },
+          "refs": [
+            {
+              "source": "fda-xofluza",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-xofluza",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treat-small",
+      "disease": "influenza",
+      "label": {
+        "fa": "آنفلوانزا — زیر ۲۰ kg (۵ سال به بالا): ۲ mg/kg یک دوز سوسپانسیون",
+        "en": "Influenza — under 20 kg (≥5 y): 2 mg/kg single dose of suspension"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        },
+        "maxWeightKg": 19.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 2,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "2.2, Tables 1–3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "susp-2"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک دوز، هرچه زودتر و ظرف ۴۸ ساعت از شروع علائم یا تماس. همزمان با لبنیات، نوشیدنی غنی از کلسیم، آنتی‌اسید، ملین یا مکمل کلسیم، آهن، منیزیم، سلنیوم یا روی مصرف نشود.",
+            "en": "Single dose, as soon as possible and within 48 h of symptom onset or contact. Not with dairy, calcium-fortified drinks, antacids, laxatives or calcium, iron, magnesium, selenium or zinc supplements."
+          },
+          "refs": [
+            {
+              "source": "fda-xofluza",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-xofluza",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pep",
+      "disease": "influenza-prophylaxis",
+      "label": {
+        "fa": "پیشگیری پس از تماس — یک دوز بر اساس وزن (۵ سال به بالا، ۲۰ kg به بالا)",
+        "en": "Post-exposure prophylaxis — single dose by weight (≥5 y, ≥20 kg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        },
+        "minWeightKg": 20
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 20,
+            "maxWeightKg": 79.99,
+            "perDose": 40,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 80,
+            "maxWeightKg": null,
+            "perDose": 80,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "2.2, Tables 1–3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یک دوز، هرچه زودتر و ظرف ۴۸ ساعت از شروع علائم یا تماس. همزمان با لبنیات، نوشیدنی غنی از کلسیم، آنتی‌اسید، ملین یا مکمل کلسیم، آهن، منیزیم، سلنیوم یا روی مصرف نشود.",
+            "en": "Single dose, as soon as possible and within 48 h of symptom onset or contact. Not with dairy, calcium-fortified drinks, antacids, laxatives or calcium, iron, magnesium, selenium or zinc supplements."
+          },
+          "refs": [
+            {
+              "source": "fda-xofluza",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-xofluza",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pep-small",
+      "disease": "influenza-prophylaxis",
+      "label": {
+        "fa": "پیشگیری پس از تماس — زیر ۲۰ kg (۵ سال به بالا): ۲ mg/kg سوسپانسیون",
+        "en": "Post-exposure prophylaxis — under 20 kg (≥5 y): 2 mg/kg suspension"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        },
+        "maxWeightKg": 19.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 2,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "2.2, Tables 1–3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "susp-2"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک دوز، هرچه زودتر و ظرف ۴۸ ساعت از شروع علائم یا تماس. همزمان با لبنیات، نوشیدنی غنی از کلسیم، آنتی‌اسید، ملین یا مکمل کلسیم، آهن، منیزیم، سلنیوم یا روی مصرف نشود.",
+            "en": "Single dose, as soon as possible and within 48 h of symptom onset or contact. Not with dairy, calcium-fortified drinks, antacids, laxatives or calcium, iron, magnesium, selenium or zinc supplements."
+          },
+          "refs": [
+            {
+              "source": "fda-xofluza",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-xofluza",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به بالوکساویر (آنافیلاکسی، آنژیوادم، کهیر، اریتم مولتی‌فرم).",
+        "en": "History of hypersensitivity to baloxavir (anaphylaxis, angioedema, urticaria, erythema multiforme)."
+      },
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "cations",
+      "text": {
+        "fa": "لبنیات، آنتی‌اسید و مکمل‌های کلسیم، آهن، منیزیم، سلنیوم و روی جذب را کم می‌کنند.",
+        "en": "Dairy, antacids and calcium, iron, magnesium, selenium and zinc supplements reduce absorption."
+      },
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "treat",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "treat",
+      "formulation": "tab-80",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 90
+      },
+      "expect": {
+        "perDose": 80,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "treat-small",
+      "formulation": "susp-2",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 36,
+        "mlPerDose": 18
+      }
+    },
+    {
+      "regimen": "pep",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "pep-small",
+      "formulation": "susp-2",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 17
+      },
+      "expect": {
+        "perDose": 34,
+        "mlPerDose": 17
+      }
+    }
+  ],
+  "atc": [
+    "J05AX25"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Baloxavir%20marboxil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210854",
+      "label": "NDA210854"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e49e1a61-1b7c-4be5-ac84-af6240b511e7",
+      "label": "FDA Xofluza"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618062.html",
+      "label": "Baloxavir Marboxil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AX25",
+      "label": "J05AX25"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies with XOFLUZA in pregnant women to inform a drug-associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of baloxavir marboxil in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Pediatric Subjects (< 5 Years of Age) The safety and effectiveness of XOFLUZA for treatment and post-exposure prophylaxis of influenza in pediatric subjects less than 5 years of age, including neonates, have not been established [see Warnings and Precautions (5.2) and Microbiology (12.4) ].",
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The safety and effectiveness of XOFLUZA in subjects 65 years of age and older has been established and is supported by one randomized, double-blind, controlled trial [see Clinical Studies (14.2) ] .",
+      "refs": [
+        {
+          "source": "fda-xofluza",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-xofluza",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA210854"
+  }
+}

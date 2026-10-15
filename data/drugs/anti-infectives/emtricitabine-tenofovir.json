@@ -1,0 +1,286 @@
+{
+  "id": "emtricitabine-tenofovir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "امتریسیتابین + تنوفوویر (PrEP)",
+    "en": "Emtricitabine + tenofovir DF (PrEP)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدرتروویروس",
+    "en": "Antiretroviral"
+  },
+  "brands": [
+    {
+      "name": "Truvada",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "truvada",
+    "تروادا",
+    "PrEP",
+    "پرپ"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200-300",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Emtricitabine 200 mg + tenofovir DF 300 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-truvada",
+          "section": "3"
+        }
+      ],
+      "components": {
+        "emtricitabine": {
+          "name": {
+            "fa": "امتریسیتابین",
+            "en": "Emtricitabine"
+          },
+          "amount": 200,
+          "unit": "mg"
+        },
+        "tenofovir": {
+          "name": {
+            "fa": "تنوفوویر دیزوپروکسیل",
+            "en": "Tenofovir DF"
+          },
+          "amount": 300,
+          "unit": "mg"
+        }
+      }
+    }
+  ],
+  "regimens": [
+    {
+      "id": "prep",
+      "disease": "hiv-prep",
+      "label": {
+        "fa": "پیشگیری پیش از مواجهه HIV — یک قرص روزانه (۳۵ kg به بالا)",
+        "en": "HIV PrEP — one tablet daily (≥35 kg)"
+      },
+      "population": {
+        "minWeightKg": 35
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-truvada",
+          "section": "2.5"
+        }
+      ],
+      "doseComponent": "emtricitabine",
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت جزء امتریسیتابین (یک قرص ۲۰۰/۳۰۰). منفی بودن HIV درست پیش از شروع و دست‌کم هر ۳ ماه تأیید شود.",
+            "en": "Shown as the emtricitabine component (one 200/300 tablet). Confirm HIV-negative immediately before starting and at least every 3 months."
+          },
+          "refs": [
+            {
+              "source": "fda-truvada",
+              "section": "2.5"
+            },
+            {
+              "source": "fda-truvada",
+              "section": "Boxed Warning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hiv",
+      "severity": "block",
+      "text": {
+        "fa": "برای PrEP در وضعیت HIV نامعلوم یا مثبت ممنوع.",
+        "en": "Contraindicated for PrEP with unknown or positive HIV-1 status."
+      },
+      "refs": [
+        {
+          "source": "fda-truvada",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: تشدید هپاتیت B پس از قطع؛ مقاومت دارویی HIV اگر عفونت حاد تشخیص داده نشود.",
+        "en": "Boxed warning: hepatitis B flare after stopping; HIV drug resistance if acute infection is missed."
+      },
+      "refs": [
+        {
+          "source": "fda-truvada",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "prep",
+      "formulation": "tab-200-300",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J05AR03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21940",
+        "en": "EMTRICITABINE 200 MG + TENOFOVIR 300MG TAB",
+        "fa": "قرص امتری‌سیتابین ۲۰۰ میلی‌گرم + تنوفوویر ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "11460",
+        "en": "TENOFOVIR/EMTRICITABINE 245/200MG TAB",
+        "fa": "قرص تنوفوویر / امتری‌سیتابین ۲۴۵ / ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "51977",
+        "en": "EMTRICITABINE / TENOFOVIR ALAFENAMIDE (AS FUMARATE) TABLET ORAL 200 mg/25 mg",
+        "fa": "قرص امتری‌سیتابین / تنوفوویر آلافنامید (معادل فومارات) ۲۰۰ میلی‌گرم / ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4726/Emtricitabine-Tenofovir",
+        "url": "https://www.darooyab.ir/G-4726/Emtricitabine-Tenofovir"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021752",
+      "label": "NDA021752"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54e82b13-a037-49ed-b4b3-030b37c0ecdd",
+      "label": "FDA Truvada"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604004.html",
+      "label": "Emtricitabine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AR03",
+      "label": "J05AR03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4726/Emtricitabine-Tenofovir",
+      "label": "Emtricitabine-Tenofovir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های مشاهده‌ای افزایش خطر نقص مادرزادی عمده را نشان نداده‌اند.",
+        "en": "Label: observational data have shown no increased risk of major birth defects."
+      },
+      "quote": "Data on the use of TRUVADA during pregnancy from observational studies have shown no increased risk of major birth defects.",
+      "refs": [
+        {
+          "source": "fda-truvada",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Women should not breastfeed if acute HIV-1 infection is suspected because of the risk of HIV-1 transmission to the infant.",
+      "refs": [
+        {
+          "source": "fda-truvada",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of Truvada for HIV-1 PrEP in pediatric patients weighing less than 35 kg have not been established.",
+      "refs": [
+        {
+          "source": "fda-truvada",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical trials of FTC, TDF, or TRUVADA did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-truvada",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-truvada",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021752"
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "id": "miltefosine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "میلتفوسین",
+    "en": "Miltefosine"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدلیشمانیا خوراکی",
+    "en": "Oral antileishmanial"
+  },
+  "brands": [
+    {
+      "name": "Impavido",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "impavido",
+    "ایمپاویدو",
+    "میلتفوسین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-50",
+      "form": "capsule",
+      "route": "oral",
+      "label": "50 mg capsule",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cl",
+      "disease": "cutaneous-leishmaniasis",
+      "label": {
+        "fa": "لیشمانیوز جلدی — ۵۰ mg دو یا سه بار در روز بر اساس وزن، ۲۸ روز",
+        "en": "Cutaneous leishmaniasis — 50 mg two or three times daily by weight, 28 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "minWeightKg": 30
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 30,
+            "maxWeightKg": 44.99,
+            "perDose": 50,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 45,
+            "maxWeightKg": null,
+            "perDose": 50,
+            "dosesPerDay": 3
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 28
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه غذا. گونه‌های تأییدشده در برچسب برای فرم جلدی: L. braziliensis، L. guyanensis و L. panamensis (آمریکای لاتین)؛ گونه‌های شایع ایران (L. major و L. tropica) در برچسب نیستند.",
+            "en": "With food. Label-approved species for cutaneous disease: L. braziliensis, L. guyanensis, L. panamensis; the species common in Iran (L. major, L. tropica) are not in the label."
+          },
+          "refs": [
+            {
+              "source": "fda-impavido",
+              "section": "2, Table 1"
+            },
+            {
+              "source": "fda-impavido",
+              "section": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vl",
+      "disease": "visceral-leishmaniasis",
+      "label": {
+        "fa": "لیشمانیوز احشایی (L. donovani) — ۵۰ mg دو یا سه بار در روز بر اساس وزن، ۲۸ روز",
+        "en": "Visceral leishmaniasis (L. donovani) — 50 mg two or three times daily by weight, 28 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "minWeightKg": 30
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 30,
+            "maxWeightKg": 44.99,
+            "perDose": 50,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 45,
+            "maxWeightKg": null,
+            "perDose": 50,
+            "dosesPerDay": 3
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 28
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "preg",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری — ممنوع (مرگ و ناهنجاری جنین).",
+        "en": "Pregnancy — contraindicated (fetal death and malformation)."
+      },
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "sls",
+      "severity": "block",
+      "text": {
+        "fa": "سندرم شوگرن-لارسون.",
+        "en": "Sjögren-Larsson syndrome."
+      },
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به میلتفوسین.",
+        "en": "Hypersensitivity to miltefosine."
+      },
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی. پیش از شروع تست بارداری؛ پیشگیری مؤثر از بارداری در طول درمان و تا ۵ ماه پس از آن.",
+        "en": "Boxed warning: embryo-fetal toxicity. Pregnancy test before starting; effective contraception during treatment and for 5 months after."
+      },
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cl",
+      "formulation": "cap-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1,
+        "dosesPerDay": 3
+      }
+    },
+    {
+      "regimen": "vl",
+      "formulation": "cap-50",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 50,
+        "dosesPerDay": 2
+      }
+    }
+  ],
+  "atc": [
+    "P01CX04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18499",
+        "en": "MILTEFOSIN 50MG  CAP.",
+        "fa": "کپسول میلتفوسین ۵۰ میلی‌گرم ."
+      },
+      {
+        "code": "51441",
+        "en": "MILTEFOSINE CAPSULE ORAL 50 mg",
+        "fa": "کپسول میلتفوسین ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1029/Miltefosine",
+        "url": "https://www.darooyab.ir/G-1029/Miltefosine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204684",
+      "label": "NDA204684"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bcb387ac-2e90-4f5e-94b2-d3635190678e",
+      "label": "FDA Impavido"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=P01CX04",
+      "label": "P01CX04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1029/Miltefosine",
+      "label": "Miltefosine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "IMPAVIDO is contraindicated in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are present in human milk and because of the potential for serious adverse reactions in nursing infants from IMPAVIDO, a decision should be made whether to discontinue nursing or discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients < 12 years have not been established.",
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of IMPAVIDO did not include sufficient numbers of subjects 65 years of age and over to determine if they respond differently than younger subjects.",
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception IMPAVIDO may cause fetal harm when used during pregnancy.",
+      "refs": [
+        {
+          "source": "fda-impavido",
+          "section": "8.8"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-impavido",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204684"
+  }
+}

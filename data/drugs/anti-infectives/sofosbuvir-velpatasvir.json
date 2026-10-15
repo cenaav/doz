@@ -1,0 +1,394 @@
+{
+  "id": "sofosbuvir-velpatasvir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سوفوسبوویر + ولپاتاسویر",
+    "en": "Sofosbuvir + velpatasvir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضد HCV (همه ژنوتیپ‌ها)",
+    "en": "Pangenotypic anti-HCV"
+  },
+  "brands": [
+    {
+      "name": "Epclusa",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "epclusa",
+    "اپکلوسا",
+    "سوفوسبوویر",
+    "ولپاتاسویر"
+  ],
+  "formulations": [
+    {
+      "id": "tab-400-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Sofosbuvir 400 mg + velpatasvir 100 mg tablet",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "3"
+        }
+      ],
+      "components": {
+        "sofosbuvir": {
+          "name": {
+            "fa": "سوفوسبوویر",
+            "en": "Sofosbuvir"
+          },
+          "amount": 400,
+          "unit": "mg"
+        },
+        "velpatasvir": {
+          "name": {
+            "fa": "ولپاتاسویر",
+            "en": "Velpatasvir"
+          },
+          "amount": 100,
+          "unit": "mg"
+        }
+      }
+    },
+    {
+      "id": "tab-200-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Sofosbuvir 200 mg + velpatasvir 50 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "3"
+        }
+      ],
+      "components": {
+        "sofosbuvir": {
+          "name": {
+            "fa": "سوفوسبوویر",
+            "en": "Sofosbuvir"
+          },
+          "amount": 200,
+          "unit": "mg"
+        },
+        "velpatasvir": {
+          "name": {
+            "fa": "ولپاتاسویر",
+            "en": "Velpatasvir"
+          },
+          "amount": 50,
+          "unit": "mg"
+        }
+      }
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hcv",
+      "disease": "hepatitis-c",
+      "label": {
+        "fa": "هپاتیت C — یک بار در روز، ۱۲ هفته (۳ سال به بالا، قرص از ۱۷ kg)",
+        "en": "Hepatitis C — once daily for 12 weeks (≥3 y; tablets from 17 kg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        },
+        "minWeightKg": 17
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 17,
+            "maxWeightKg": 29.99,
+            "perDose": 200,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 30,
+            "maxWeightKg": null,
+            "perDose": 400,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-epclusa",
+          "section": "2.4, Table 2"
+        }
+      ],
+      "doseComponent": "sofosbuvir",
+      "durationDays": {
+        "min": 84,
+        "max": 84
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت جزء سوفوسبوویر. زیر ۱۷ kg: پلت خوراکی ۱۵۰/۳۷٫۵ mg. سیروز جبران‌نشده: همراه ریباویرین. پیش از شروع HBsAg و anti-HBc.",
+            "en": "Shown as the sofosbuvir component. Under 17 kg: 150/37.5 mg oral pellets. Decompensated cirrhosis: add ribavirin. Test HBsAg and anti-HBc before starting."
+          },
+          "refs": [
+            {
+              "source": "fda-epclusa",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-epclusa",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-epclusa",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "rbv",
+      "severity": "block",
+      "text": {
+        "fa": "ترکیب با ریباویرین در مواردی که ریباویرین ممنوع است.",
+        "en": "Combination with ribavirin where ribavirin is contraindicated."
+      },
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: فعال شدن مجدد HBV در عفونت همزمان HCV/HBV.",
+        "en": "Boxed warning: HBV reactivation in HCV/HBV co-infection."
+      },
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "برادی‌کاردی علامت‌دار شدید با آمیودارون.",
+        "en": "Serious symptomatic bradycardia with amiodarone."
+      },
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "5.2"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "amiodarone",
+      "text": {
+        "fa": "آمیودارون: برادی‌کاردی شدید و نیاز به پیس‌میکر؛ یک مورد ایست قلبی کشنده با رژیم‌های سوفوسبوویر.",
+        "en": "Amiodarone: severe bradycardia needing pacing; a fatal cardiac arrest with a sofosbuvir regimen."
+      },
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "5.2"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hcv",
+      "formulation": "tab-400-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "hcv",
+      "formulation": "tab-200-50",
+      "input": {
+        "ageYears": 7,
+        "weightKg": 22
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J05AP55"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51994",
+        "en": "SOFOSBUVIR / VELPATASVIR TABLET ORAL 400 mg/100 mg",
+        "fa": "قرص سوفوسبوویر / ولپاتاسویر ۴۰۰ میلی‌گرم / ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5387/Sofosbuvir-Velpatasvir",
+        "url": "https://www.darooyab.ir/G-5387/Sofosbuvir-Velpatasvir"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208341",
+      "label": "NDA208341"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f30631a-ee3b-4cfe-866b-964df3f0a44f",
+      "label": "FDA Epclusa"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614014.html",
+      "label": "Sofosbuvir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AP55",
+      "label": "J05AP55"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5387/Sofosbuvir-Velpatasvir",
+      "label": "Sofosbuvir-Velpatasvir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: منع مصرف فقط برای ترکیب با ریباویرین (در زن باردار و مردی که همسرش باردار است)؛ برای اپکلوسا به‌تنهایی داده کافی نیست.",
+        "en": "Label: contraindicated only in combination with ribavirin (pregnant women and men whose partners are pregnant); limited data for Epclusa alone."
+      },
+      "quote": "Risk Summary If EPCLUSA is administered with ribavirin, the combination regimen is contraindicated in pregnant women and in men whose female partners are pregnant.",
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "The predominant circulating metabolite of sofosbuvir (GS-331007) was the primary component observed in the milk of lactating rats administered sofosbuvir, without effect on nursing pups.",
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The pharmacokinetics, safety, and effectiveness of EPCLUSA for treatment of HCV genotype 1, 2, 3, 4, or 6 infection in treatment-naïve and treatment-experienced pediatric patients 3 years of age and older without cirrhosis or with compensated cirrhosis have been established in an open-label, multicenter clinical trial …",
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dosage adjustment of EPCLUSA is warranted in geriatric patients [see Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "If EPCLUSA is administered with ribavirin, the information for ribavirin with regard to pregnancy testing, contraception, and infertility also applies to this combination regimen.",
+      "refs": [
+        {
+          "source": "fda-epclusa",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-epclusa",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA208341"
+  }
+}

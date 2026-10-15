@@ -1,0 +1,231 @@
+{
+  "id": "paromomycin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پارومومایسین (خوراکی)",
+    "en": "Paromomycin (oral)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آمینوگلیکوزید روده‌ای ضدآمیب",
+    "en": "Intestinal aminoglycoside amoebicide"
+  },
+  "brands": [
+    {
+      "name": "Humatin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "humatin",
+    "هوماتین",
+    "پارومومایسین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-humatin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "amebiasis",
+      "disease": "intestinal-amebiasis",
+      "label": {
+        "fa": "آمیبیازیس روده‌ای — ۲۵ تا ۳۵ mg/kg/روز در ۳ نوبت همراه غذا، ۵ تا ۱۰ روز",
+        "en": "Intestinal amoebiasis — 25–35 mg/kg/day in 3 doses with meals, 5–10 days"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 25,
+        "perKgPerDayMax": 35,
+        "dividedDoses": 3
+      },
+      "refs": [
+        {
+          "source": "fda-humatin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 10
+      }
+    },
+    {
+      "id": "hepatic",
+      "disease": "hepatic-encephalopathy",
+      "label": {
+        "fa": "کمای کبدی — بزرگسال: ۴ گرم در روز در دوزهای منقسم",
+        "en": "Hepatic coma — adult: 4 g/day in divided doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: ۴ g در روز در دوزهای منقسم با فواصل منظم به مدت ۵ تا ۶ روز؛ تعداد نوبت مشخص نشده است.",
+          "en": "Label: 4 g daily in divided doses at regular intervals for 5–6 days; the number of doses is not stated."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-humatin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به پارومومایسین؛ انسداد روده.",
+        "en": "Hypersensitivity to paromomycin; intestinal obstruction."
+      },
+      "refs": [
+        {
+          "source": "fda-humatin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "amebiasis",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 500,
+        "upperPerDose": 700
+      }
+    }
+  ],
+  "atc": [
+    "A07AA06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00953",
+        "en": "PAROMOMYCIN 125MG/5ML 60ML SYRUP",
+        "fa": "شربت پارومومایسین ۱۲۵ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "00954",
+        "en": "PAROMOMYCIN 250MG CAP",
+        "fa": "کپسول پارومومایسین ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "14903",
+        "en": "PAROMOMYCIN 250MG TAB",
+        "fa": "قرص پارومومایسین ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01720",
+        "en": "PAROMOMYCIN UREA (15+10)/100GR OINT",
+        "fa": "پماد پارومومایسین اوره (۱۵ + ۱۰) / ۱۰۰ گرم"
+      },
+      {
+        "code": "52737",
+        "en": "PAROMOMYCIN OINTMENT TOPICAL  30 g",
+        "fa": "پماد پارومومایسین ۳۰ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1141/Paromomycin",
+        "url": "https://www.darooyab.ir/G-1141/Paromomycin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=065173",
+      "label": "ANDA065173"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a725f022-ec3c-430d-8021-96c861b9893c",
+      "label": "FDA Humatin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07AA06",
+      "label": "A07AA06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1141/Paromomycin",
+      "label": "Paromomycin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری پارامومایسین گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-1141/Paromomycin — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-1141/Paromomycin"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-humatin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA065173"
+  }
+}

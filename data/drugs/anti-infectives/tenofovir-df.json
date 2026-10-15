@@ -1,0 +1,370 @@
+{
+  "id": "tenofovir-df",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تنوفوویر دیزوپروکسیل",
+    "en": "Tenofovir disoproxil fumarate"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "آنالوگ نوکلئوتیدی ضد HBV/HIV",
+    "en": "Nucleotide analogue (HBV/HIV)"
+  },
+  "brands": [
+    {
+      "name": "Viread",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "viread",
+    "ویرید",
+    "تنوفوویر",
+    "TDF"
+  ],
+  "formulations": [
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-viread",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-viread",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-viread",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-300",
+      "form": "tablet",
+      "route": "oral",
+      "label": "300 mg tablet",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-viread",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hbv",
+      "disease": "hepatitis-b",
+      "label": {
+        "fa": "هپاتیت B مزمن — یک بار در روز بر اساس وزن (۲ سال به بالا، ۱۷ kg به بالا برای قرص)",
+        "en": "Chronic hepatitis B — once daily by weight (≥2 y, ≥17 kg for tablets)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "minWeightKg": 17
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 17,
+            "maxWeightKg": 21.99,
+            "perDose": 150,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 22,
+            "maxWeightKg": 27.99,
+            "perDose": 200,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 28,
+            "maxWeightKg": 34.99,
+            "perDose": 250,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 35,
+            "maxWeightKg": null,
+            "perDose": 300,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-viread",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با یا بدون غذا. دوز HIV همین است. پیش از شروع، تست HIV و HBV؛ کراتینین، CrCl، قند و پروتئین ادرار. CrCl ۳۰ تا ۴۹: هر ۴۸ ساعت؛ ۱۰ تا ۲۹: هر ۷۲ تا ۹۶ ساعت؛ همودیالیز: هفته‌ای یک بار پس از دیالیز.",
+            "en": "With or without food. Same dose for HIV. Before starting test for HIV and HBV; creatinine, CrCl, urine glucose and protein. CrCl 30–49: every 48 h; 10–29: every 72–96 h; haemodialysis: weekly after dialysis."
+          },
+          "refs": [
+            {
+              "source": "fda-viread",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-viread",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-viread",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: تشدید شدید هپاتیت B پس از قطع؛ کبد تا چند ماه پایش شود.",
+        "en": "Boxed warning: severe acute exacerbation of hepatitis B after stopping; monitor liver for several months."
+      },
+      "refs": [
+        {
+          "source": "fda-viread",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hbv",
+      "formulation": "tab-300",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "hbv",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J05AF07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "16918",
+        "en": "TENOFOVIR 245MG TAB",
+        "fa": "قرص تنوفوویر ۲۴۵ میلی‌گرم"
+      },
+      {
+        "code": "13524",
+        "en": "TENOFOVIR 300MG TAB",
+        "fa": "قرص تنوفوویر ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "51976",
+        "en": "TENOFOVIR 25MG TAB",
+        "fa": "قرص تنوفوویر ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "52153",
+        "en": "TENOFOVIR DISOPROXIL FUMARATE TABLET ORAL 200 mg",
+        "fa": "قرص تنوفوویر دیسوپروکسیل فومارات ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1205/Tenofovir",
+        "url": "https://www.darooyab.ir/G-1205/Tenofovir"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021356",
+      "label": "NDA021356"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33fd6418-fbdc-42ca-a50d-ce2a476a5418",
+      "label": "FDA Viread"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618049.html",
+      "label": "Doravirine, Lamivudine, and Tenofovir disoproxil fumarate"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616048.html",
+      "label": "Efavirenz, Emtricitabine, and Tenofovir disoproxil fumarate"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AF07",
+      "label": "J05AF07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1205/Tenofovir",
+      "label": "Tenofovir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from the APR show no increase in the overall risk of major birth defects with first trimester exposure for tenofovir disoproxil fumarate (TDF) (2.1%) compared with the background rate for major birth defects of 2.7% in a U.S. reference population of the Metropolitan Atlanta Congenital …",
+      "refs": [
+        {
+          "source": "fda-viread",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Based on published data, tenofovir has been shown to be present in human breast milk (see Data ).",
+      "refs": [
+        {
+          "source": "fda-viread",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of VIREAD in pediatric patients younger than 2 years of age and weighing less than 10 kg with HIV-1 infection have not been established.",
+      "refs": [
+        {
+          "source": "fda-viread",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for the elderly patient should be cautious, keeping in mind the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-viread",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-viread",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021356"
+  }
+}

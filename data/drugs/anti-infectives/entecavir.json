@@ -1,0 +1,594 @@
+{
+  "id": "entecavir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "انتکاویر",
+    "en": "Entecavir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "آنالوگ نوکلئوزیدی ضد HBV",
+    "en": "Nucleoside analogue (HBV)"
+  },
+  "brands": [
+    {
+      "name": "Baraclude",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "baraclude",
+    "باراکلود",
+    "انتکاویر"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "sol-0-05",
+      "form": "solution",
+      "route": "oral",
+      "label": "0.05 mg/mL oral solution",
+      "concentration": {
+        "amount": 0.05,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "naive-adult",
+      "disease": "hepatitis-b",
+      "label": {
+        "fa": "هپاتیت B — بدون درمان قبلی، ۱۶ سال به بالا: ۰٫۵ mg روزانه",
+        "en": "Hepatitis B — treatment-naive, ≥16 y: 0.5 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با معده خالی (۲ ساعت پس از غذا و ۲ ساعت پیش از غذای بعد). CrCl زیر ۵۰: کاهش دوز طبق جدول ۲ برچسب.",
+            "en": "On an empty stomach (2 h after a meal and 2 h before the next). CrCl <50: reduce per label Table 2."
+          },
+          "refs": [
+            {
+              "source": "fda-baraclude",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-baraclude",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lam-adult",
+      "disease": "hepatitis-b",
+      "label": {
+        "fa": "هپاتیت B — مقاوم به لامیوودین یا سیروز جبران‌نشده، ۱۶ سال به بالا: ۱ mg روزانه",
+        "en": "Hepatitis B — lamivudine-refractory or decompensated, ≥16 y: 1 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با معده خالی (۲ ساعت پس از غذا و ۲ ساعت پیش از غذای بعد). CrCl زیر ۵۰: کاهش دوز طبق جدول ۲ برچسب.",
+            "en": "On an empty stomach (2 h after a meal and 2 h before the next). CrCl <50: reduce per label Table 2."
+          },
+          "refs": [
+            {
+              "source": "fda-baraclude",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-baraclude",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naive-child",
+      "disease": "hepatitis-b",
+      "label": {
+        "fa": "هپاتیت B — کودک ۲ سال به بالا بدون درمان قبلی: بر اساس وزن",
+        "en": "Hepatitis B — child ≥2 y, treatment-naive: by weight"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        },
+        "minWeightKg": 10
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 10,
+            "maxWeightKg": 11,
+            "perDose": 0.15,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 11.01,
+            "maxWeightKg": 14,
+            "perDose": 0.2,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 14.01,
+            "maxWeightKg": 17,
+            "perDose": 0.25,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 17.01,
+            "maxWeightKg": 20,
+            "perDose": 0.3,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 20.01,
+            "maxWeightKg": 23,
+            "perDose": 0.35,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 23.01,
+            "maxWeightKg": 26,
+            "perDose": 0.4,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 26.01,
+            "maxWeightKg": 30,
+            "perDose": 0.45,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 30.01,
+            "maxWeightKg": null,
+            "perDose": 0.5,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تا ۳۰ kg محلول خوراکی. بالای ۳۰ kg: ۱۰ mL محلول یا یک قرص ۰٫۵ mg.",
+            "en": "Oral solution up to 30 kg. Over 30 kg: 10 mL solution or one 0.5 mg tablet."
+          },
+          "refs": [
+            {
+              "source": "fda-baraclude",
+              "section": "2.3"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "با معده خالی (۲ ساعت پس از غذا و ۲ ساعت پیش از غذای بعد). CrCl زیر ۵۰: کاهش دوز طبق جدول ۲ برچسب.",
+            "en": "On an empty stomach (2 h after a meal and 2 h before the next). CrCl <50: reduce per label Table 2."
+          },
+          "refs": [
+            {
+              "source": "fda-baraclude",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-baraclude",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lam-child",
+      "disease": "hepatitis-b",
+      "label": {
+        "fa": "هپاتیت B — کودک ۲ سال به بالا با سابقه لامیوودین: بر اساس وزن (دو برابر)",
+        "en": "Hepatitis B — child ≥2 y, lamivudine-experienced: by weight (double)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        },
+        "minWeightKg": 10
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 10,
+            "maxWeightKg": 11,
+            "perDose": 0.3,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 11.01,
+            "maxWeightKg": 14,
+            "perDose": 0.4,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 14.01,
+            "maxWeightKg": 17,
+            "perDose": 0.5,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 17.01,
+            "maxWeightKg": 20,
+            "perDose": 0.6,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 20.01,
+            "maxWeightKg": 23,
+            "perDose": 0.7,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 23.01,
+            "maxWeightKg": 26,
+            "perDose": 0.8,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 26.01,
+            "maxWeightKg": 30,
+            "perDose": 0.9,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 30.01,
+            "maxWeightKg": null,
+            "perDose": 1.0,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بالای ۳۰ kg: ۲۰ mL محلول یا یک قرص ۱ mg.",
+            "en": "Over 30 kg: 20 mL solution or one 1 mg tablet."
+          },
+          "refs": [
+            {
+              "source": "fda-baraclude",
+              "section": "2.3"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "با معده خالی (۲ ساعت پس از غذا و ۲ ساعت پیش از غذای بعد). CrCl زیر ۵۰: کاهش دوز طبق جدول ۲ برچسب.",
+            "en": "On an empty stomach (2 h after a meal and 2 h before the next). CrCl <50: reduce per label Table 2."
+          },
+          "refs": [
+            {
+              "source": "fda-baraclude",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-baraclude",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: تشدید شدید هپاتیت B پس از قطع؛ در عفونت همزمان HIV بدون درمان ضدرتروویروسی خطر مقاومت HIV؛ اسیدوز لاکتیک و کبد چرب شدید.",
+        "en": "Boxed warning: severe hepatitis B flare after stopping; HIV resistance risk in untreated HIV co-infection; lactic acidosis and severe hepatomegaly with steatosis."
+      },
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "naive-adult",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "naive-child",
+      "formulation": "sol-0-05",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 12
+      },
+      "expect": {
+        "perDose": 0.2,
+        "mlPerDose": 4
+      }
+    },
+    {
+      "regimen": "lam-adult",
+      "formulation": "tab-1",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "lam-child",
+      "formulation": "sol-0-05",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 12
+      },
+      "expect": {
+        "perDose": 0.4,
+        "mlPerDose": 8
+      }
+    }
+  ],
+  "atc": [
+    "J05AF10"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11471",
+        "en": "ENTECAVIR 0.5MG TAB",
+        "fa": "قرص انتکاویر ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "12741",
+        "en": "ENTECAVIR 1MG  TAB",
+        "fa": "قرص انتکاویر ۱ میلی‌گرم"
+      },
+      {
+        "code": "52677",
+        "en": "ENTECAVIR TABLET ORAL 0.5 mg",
+        "fa": "قرص انتکاویر ۰٫۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4727/Entecavir",
+        "url": "https://www.darooyab.ir/G-4727/Entecavir"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021797",
+      "label": "NDA021797"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=046e61c9-9298-4b2e-b76e-b26b81fecd20",
+      "label": "FDA Baraclude"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605028.html",
+      "label": "Entecavir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AF10",
+      "label": "J05AF10"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4727/Entecavir",
+      "label": "Entecavir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Prospective pregnancy data from the APR are not sufficient to adequately assess the risk of birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "When administered to lactating rats, entecavir was present in milk (see Data).",
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "BARACLUDE was evaluated in two clinical trials of pediatric subjects 2 years of age and older with HBeAg-positive chronic HBV infection and compensated liver disease.",
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function [see Dosage and Administration (2.4) ].",
+      "refs": [
+        {
+          "source": "fda-baraclude",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-baraclude",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021797"
+  }
+}

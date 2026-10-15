@@ -1,0 +1,308 @@
+{
+  "id": "quinine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کینین (خوراکی)",
+    "en": "Quinine sulfate (oral)"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدمالاریا",
+    "en": "Antimalarial"
+  },
+  "brands": [
+    {
+      "name": "Qualaquin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "qualaquin",
+    "کینین",
+    "quinine"
+  ],
+  "formulations": [
+    {
+      "id": "cap-324",
+      "form": "capsule",
+      "route": "oral",
+      "label": "324 mg capsule",
+      "concentration": {
+        "amount": 324,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-quinine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "treat",
+      "disease": "malaria",
+      "label": {
+        "fa": "مالاریای فالسیپاروم بدون عارضه — ۶۴۸ mg هر ۸ ساعت، ۷ روز (۱۶ سال به بالا)",
+        "en": "Uncomplicated P. falciparum malaria — 648 mg every 8 h for 7 days (≥16 y)"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 648,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-quinine",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه غذا. نارسایی شدید مزمن کلیه: یک دوز بارگذاری ۶۴۸ mg، سپس ۳۲۴ mg هر ۱۲ ساعت. در نارسایی شدید کبد مصرف نشود.",
+            "en": "With food. Severe chronic renal impairment: one 648 mg loading dose, then 324 mg every 12 h. Not for severe hepatic impairment."
+          },
+          "refs": [
+            {
+              "source": "fda-quinine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-quinine",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-quinine",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "QT طولانی، کمبود G6PD، میاستنی گراویس، نوریت اپتیک، حساسیت به کینین/مفلوکین/کینیدین.",
+        "en": "Prolonged QT, G6PD deficiency, myasthenia gravis, optic neuritis, hypersensitivity to quinine/mefloquine/quinidine."
+      },
+      "refs": [
+        {
+          "source": "fda-quinine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: برای گرفتگی شبانه پا مصرف نشود — واکنش‌های خونی کشنده (ترومبوسیتوپنی، HUS/TTP).",
+        "en": "Boxed warning: not for nocturnal leg cramps — life-threatening haematologic reactions (thrombocytopenia, HUS/TTP)."
+      },
+      "refs": [
+        {
+          "source": "fda-quinine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "treat",
+      "formulation": "cap-324",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 648,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "P01BC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01089",
+        "en": "QUININE 100MG TAB",
+        "fa": "قرص کینین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "06966",
+        "en": "QUININE 200MG TAB",
+        "fa": "قرص کینین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01090",
+        "en": "QUININE 250MG TAB",
+        "fa": "قرص کینین ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01091",
+        "en": "QUININE 250MG/1ML AMP",
+        "fa": "آمپول کینین ۲۵۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01756",
+        "en": "QUININE 300MG/ML AMP",
+        "fa": "آمپول کینین ۳۰۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "14575",
+        "en": "QUININE 600MG/ML AMP",
+        "fa": "آمپول کینین ۶۰۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "02042",
+        "en": "QUININE HCL 100MG CAP",
+        "fa": "کپسول کینین هیدروکلراید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "06724",
+        "en": "QUININE SULPHATE 300MG TAB",
+        "fa": "قرص کینین سولفات ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "51949",
+        "en": "QUININE SULFATE TABLET ORAL 300 mg",
+        "fa": "قرص کینین سولفات ۳۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-849/Quinine",
+        "url": "https://www.darooyab.ir/G-849/Quinine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203112",
+      "label": "ANDA203112"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1f32f05c-a215-40be-b951-e41a7b54a8a0",
+      "label": "FDA Quinine sulfate"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682322.html",
+      "label": "Quinine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=P01BC01",
+      "label": "P01BC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-849/Quinine",
+      "label": "Quinine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C There are extensive published data but few well-controlled studies of quinine sulfate in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-quinine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-quinine",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of quinine sulfate in pediatric patients under the age of 16 has not been established.",
+      "refs": [
+        {
+          "source": "fda-quinine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of quinine sulfate did not include sufficient numbers of subjects aged 65 and over to determine whether they respond to treatment differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-quinine",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-quinine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA203112"
+  }
+}

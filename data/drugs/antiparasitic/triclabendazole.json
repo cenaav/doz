@@ -1,0 +1,247 @@
+{
+  "id": "triclabendazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تریکلابندازول",
+    "en": "Triclabendazole"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدکرم (بنزیمیدازول)",
+    "en": "Anthelmintic (benzimidazole)"
+  },
+  "brands": [
+    {
+      "name": "Egaten",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "egaten",
+    "اگاتن",
+    "تریکلابندازول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet (scored)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-egaten",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "fasc",
+      "disease": "fascioliasis",
+      "label": {
+        "fa": "فاسیولیازیس — ۱۰ mg/kg دو نوبت با فاصله ۱۲ ساعت (۶ سال به بالا)",
+        "en": "Fascioliasis — 10 mg/kg twice, 12 h apart (≥6 y)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-egaten",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط ۲ نوبت. همراه غذا. برچسب: اگر دوز دقیق ممکن نیست، به سمت بالا گرد شود (نیم قرص = ۱۲۵ mg).",
+            "en": "Two doses only. With food. Label: if the dose cannot be matched exactly, round up (half tablet = 125 mg)."
+          },
+          "refs": [
+            {
+              "source": "fda-egaten",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تریکلابندازول یا سایر بنزیمیدازول‌ها.",
+        "en": "Hypersensitivity to triclabendazole or other benzimidazoles."
+      },
+      "refs": [
+        {
+          "source": "fda-egaten",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "fasc",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "P02BX04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01697",
+        "en": "TRICLABENDAZOLE 250MG TAB",
+        "fa": "قرص تریکلابندازول ۲۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-270/Triclabendazole",
+        "url": "https://www.darooyab.ir/G-270/Triclabendazole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208711",
+      "label": "NDA208711"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5552884e-10ea-450c-9658-d3d4f33c946e",
+      "label": "FDA Egaten"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a619048.html",
+      "label": "Triclabendazole"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=P02BX04",
+      "label": "P02BX04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-270/Triclabendazole",
+      "label": "Triclabendazole"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on EGATEN use in pregnant women to inform a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-egaten",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of triclabendazole in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-egaten",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of EGATEN has been established in pediatric patients aged 6 years and older.",
+      "refs": [
+        {
+          "source": "fda-egaten",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-egaten",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-egaten",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA208711"
+  }
+}

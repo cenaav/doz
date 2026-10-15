@@ -63,6 +63,26 @@
           "section": "2"
         }
       ]
+    },
+    {
+      "id": "troche-10",
+      "form": "lozenge",
+      "route": "oral",
+      "label": "10 mg lozenge (troche)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clotroche",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -167,6 +187,100 @@
           ]
         }
       ]
+    },
+    {
+      "id": "thrush",
+      "disease": "oral-candidiasis",
+      "label": {
+        "fa": "برفک دهان — یک قرص مکیدنی ۵ بار در روز، ۱۴ روز (۳ سال به بالا)",
+        "en": "Oral thrush — one lozenge 5 times daily, 14 days (≥3 y)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 5
+      },
+      "refs": [
+        {
+          "source": "fda-clotroche",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      },
+      "allowedFormulations": [
+        "troche-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "آهسته در دهان حل شود؛ جویده یا بلعیده نشود.",
+            "en": "Dissolve slowly in the mouth; do not chew or swallow whole."
+          },
+          "refs": [
+            {
+              "source": "fda-clotroche",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thrush-proph",
+      "disease": "oral-candidiasis",
+      "label": {
+        "fa": "پیشگیری از برفک در نقص ایمنی (شیمی‌درمانی، پرتودرمانی، کورتون) — یک قرص ۳ بار در روز",
+        "en": "Thrush prophylaxis in immunosuppression (chemo, radiotherapy, steroids) — one lozenge 3 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-clotroche",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "troche-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در طول شیمی‌درمانی یا تا کاهش کورتون به دوز نگهدارنده. ایمنی پیشگیری در کودکان ثابت نشده.",
+            "en": "For the duration of chemotherapy or until steroids are reduced to maintenance. Prophylactic safety not established in children."
+          },
+          "refs": [
+            {
+              "source": "fda-clotroche",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-clotroche",
+              "section": "Pediatric Use"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -231,6 +345,31 @@
       },
       "expect": {
         "status": "blocked"
+      }
+    },
+    {
+      "regimen": "thrush",
+      "formulation": "troche-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1,
+        "dosesPerDay": 5
+      }
+    },
+    {
+      "regimen": "thrush-proph",
+      "formulation": "troche-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "dosesPerDay": 3
       }
     }
   ],
@@ -311,6 +450,16 @@
   },
   "links": [
     {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215641",
+      "label": "ANDA215641"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=980736aa-751a-4642-ab85-a309435fd02f",
+      "label": "FDA Clotrimazole troche"
+    },
+    {
       "kind": "medlineplus",
       "url": "https://medlineplus.gov/druginfo/meds/a618058.html",
       "label": "Clotrimazole Lozenge"
@@ -348,27 +497,51 @@
         "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
         "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
       },
-      "quote": ": There is a limited amount of data from the use of clotrimazole in pregnant women.",
+      "quote": "Clotrimazole lozenges should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
       "refs": [
         {
-          "source": "uk-smpc-canesten-cream",
-          "section": "4.6"
+          "source": "fda-clotroche",
+          "section": "Pregnancy Category C:"
         }
       ]
     },
-    "lactation": {
+    "pediatric": {
       "level": "caution",
       "text": {
-        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
-        "en": "Label: use with caution while breastfeeding; see the label text."
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
       },
-      "quote": ": There are no data on the excretion of clotrimazole into human milk.",
+      "quote": "Safety and effectiveness of clotrimazole in children below the age of 3 years have not been established; therefore, its use in such patients is not recommended.",
       "refs": [
         {
-          "source": "uk-smpc-canesten-cream",
-          "section": "4.6"
+          "source": "fda-clotroche",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of clotrimazole did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-clotroche",
+          "section": "Geriatric Use"
         }
       ]
     }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-clotroche",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA215641"
   }
 }

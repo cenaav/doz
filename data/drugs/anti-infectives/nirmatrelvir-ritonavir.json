@@ -1,0 +1,285 @@
+{
+  "id": "nirmatrelvir-ritonavir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نیرماترلویر + ریتوناویر",
+    "en": "Nirmatrelvir + ritonavir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده پروتئاز SARS-CoV-2",
+    "en": "SARS-CoV-2 protease inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Paxlovid",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "paxlovid",
+    "پکسلووید",
+    "پاکسلووید",
+    "نیرماترلویر"
+  ],
+  "formulations": [
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Nirmatrelvir 150 mg tablet (co-packaged with ritonavir 100 mg)",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-paxlovid",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "covid",
+      "disease": "covid-19",
+      "label": {
+        "fa": "کووید-۱۹ خفیف تا متوسط در بزرگسال پرخطر — ۳۰۰ mg نیرماترلویر + ۱۰۰ mg ریتوناویر دو بار در روز، ۵ روز",
+        "en": "Mild–moderate COVID-19 in high-risk adults — nirmatrelvir 300 mg + ritonavir 100 mg twice daily, 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-paxlovid",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر نوبت: ۲ قرص نیرماترلویر + ۱ قرص ریتوناویر با هم. eGFR ۳۰ تا ۶۰: ۱۵۰ mg + ۱۰۰ mg دو بار در روز. eGFR زیر ۳۰: روز اول ۳۰۰ + ۱۰۰ یک بار، روز ۲ تا ۵ ۱۵۰ + ۱۰۰ یک بار. نارسایی شدید کبد توصیه نمی‌شود.",
+            "en": "Each dose: 2 nirmatrelvir tablets + 1 ritonavir tablet together. eGFR 30–60: 150 mg + 100 mg twice daily. eGFR <30: day 1 300 + 100 once, days 2–5 150 + 100 once daily. Not recommended in severe hepatic impairment."
+          },
+          "refs": [
+            {
+              "source": "fda-paxlovid",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-paxlovid",
+              "section": "2.3, Table 1"
+            },
+            {
+              "source": "fda-paxlovid",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت مهم (TEN، استیونس-جانسون) به نیرماترلویر یا ریتوناویر.",
+        "en": "History of clinically significant hypersensitivity (TEN, Stevens-Johnson) to nirmatrelvir or ritonavir."
+      },
+      "refs": [
+        {
+          "source": "fda-paxlovid",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "cyp",
+      "severity": "block",
+      "text": {
+        "fa": "داروهایی که عمدتاً با CYP3A متابولیزه می‌شوند و افزایش سطح آن‌ها خطرناک است، و القاکننده‌های قوی CYP3A — فهرست کامل در بخش ۴ برچسب.",
+        "en": "Drugs highly dependent on CYP3A where raised levels are dangerous, and strong CYP3A inducers — full list in label section 4."
+      },
+      "refs": [
+        {
+          "source": "fda-paxlovid",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: تداخلات دارویی مهم (ریتوناویر مهارکننده قوی CYP3A)؛ پیش از تجویز همه داروهای بیمار بررسی شود.",
+        "en": "Boxed warning: significant drug interactions (ritonavir is a strong CYP3A inhibitor); review all medicines before prescribing."
+      },
+      "refs": [
+        {
+          "source": "fda-paxlovid",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "covid",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "J05AE30"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Nirmatrelvir%20%2B%20ritonavir"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217188",
+      "label": "NDA217188"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8a99d6d6-fd9e-45bb-b1bf-48c7f761232a",
+      "label": "FDA Paxlovid"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a622005.html",
+      "label": "Nirmatrelvir and Ritonavir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AE30",
+      "label": "J05AE30"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data on the use of nirmatrelvir during pregnancy are insufficient to evaluate for a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-paxlovid",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Nirmatrelvir and ritonavir are present in human breast milk in small amounts (less than 2%).",
+      "refs": [
+        {
+          "source": "fda-paxlovid",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The optimal dose of PAXLOVID has not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-paxlovid",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of PAXLOVID include subjects 65 years of age and older and their data contributes to the overall assessment of safety and efficacy [see Adverse Reactions (6.1) and Clinical Studies (14.1) ] .",
+      "refs": [
+        {
+          "source": "fda-paxlovid",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Use of ritonavir may reduce the efficacy of combined hormonal contraceptives.",
+      "refs": [
+        {
+          "source": "fda-paxlovid",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-paxlovid",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA217188"
+  }
+}

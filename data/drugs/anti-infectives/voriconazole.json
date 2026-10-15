@@ -1,0 +1,342 @@
+{
+  "id": "voriconazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "وریکونازول (وریدی)",
+    "en": "Voriconazole (IV)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدقارچ تری‌آزول",
+    "en": "Triazole antifungal"
+  },
+  "brands": [
+    {
+      "name": "Vfend",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vfend",
+    "وفند",
+    "وریکونازول"
+  ],
+  "formulations": [
+    {
+      "id": "vial-200",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "200 mg vial (reconstitute to 10 mg/mL, dilute to ≤5 mg/mL)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vfend",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "invasive-fungal",
+      "label": {
+        "fa": "بزرگسال و ۱۵ سال به بالا — نگهدارنده ۴ mg/kg هر ۱۲ ساعت (پس از بارگذاری)",
+        "en": "Adults and ≥15 y — maintenance 4 mg/kg every 12 h (after loading)"
+      },
+      "population": {
+        "minAge": {
+          "value": 15,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 4,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-vfend",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بارگذاری: ۶ mg/kg هر ۱۲ ساعت در ۲۴ ساعت اول. کاندیدمی: ۳ تا ۴ mg/kg. حداقل ۷ روز وریدی، سپس خوراکی ۲۰۰ mg هر ۱۲ ساعت (زیر ۴۰ kg نصف). انفوزیون ۱ تا ۳ ساعت، حداکثر ۳ mg/kg در ساعت؛ هرگز بولوس. ۱۲ تا ۱۴ سال با وزن ۵۰ kg و بیشتر: دوز بزرگسال.",
+            "en": "Loading: 6 mg/kg every 12 h for the first 24 h. Candidaemia: 3–4 mg/kg. At least 7 days IV, then oral 200 mg every 12 h (half if <40 kg). Infuse over 1–3 h, max 3 mg/kg/h; never as a bolus. 12–14 y weighing ≥50 kg: adult dose."
+          },
+          "refs": [
+            {
+              "source": "fda-vfend",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-vfend",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-vfend",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "invasive-fungal",
+      "label": {
+        "fa": "کودک ۲ تا کمتر از ۱۲ سال — نگهدارنده ۸ mg/kg هر ۱۲ ساعت (پس از بارگذاری)",
+        "en": "Child 2 to <12 y — maintenance 8 mg/kg every 12 h (after loading)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 8,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-vfend",
+          "section": "2.4, Table 2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بارگذاری: ۹ mg/kg هر ۱۲ ساعت در ۲۴ ساعت اول. همین دوز برای ۱۲ تا ۱۴ سال زیر ۵۰ kg. خوراکی: ۹ mg/kg هر ۱۲ ساعت (حداکثر ۳۵۰ mg).",
+            "en": "Loading: 9 mg/kg every 12 h for the first 24 h. Same dose for 12–14 y under 50 kg. Oral: 9 mg/kg every 12 h (max 350 mg)."
+          },
+          "refs": [
+            {
+              "source": "fda-vfend",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به وریکونازول.",
+        "en": "Hypersensitivity to voriconazole."
+      },
+      "refs": [
+        {
+          "source": "fda-vfend",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "cyp",
+      "severity": "block",
+      "text": {
+        "fa": "همراه با داروهای وابسته به CYP3A4 با عوارض خطرناک (مثل اپلرنون، ارگوت‌ها، ایوابرادین، لورازیدون، پیموزاید، کینیدین، سیرولیموس، تولواپتان) و القاکننده‌ها (کاربامازپین، باربیتورات طولانی‌اثر، ریفابوتین، ریفامپین، ریتوناویر دوز بالا، علف چای).",
+        "en": "With CYP3A4-dependent drugs causing serious reactions (e.g. eplerenone, ergot alkaloids, ivabradine, lurasidone, pimozide, quinidine, sirolimus, tolvaptan) and inducers (carbamazepine, long-acting barbiturates, rifabutin, rifampin, high-dose ritonavir, St John’s wort)."
+      },
+      "refs": [
+        {
+          "source": "fda-vfend",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-200",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 280
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-200",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 160
+      }
+    }
+  ],
+  "atc": [
+    "J02AC03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06382",
+        "en": "VORICONAZOLE 200MG TAB",
+        "fa": "قرص ووریکونازول ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "06383",
+        "en": "VORICONAZOLE 200MG VIAL",
+        "fa": "ویال ووریکونازول ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "09604",
+        "en": "VORICONAZOLE 50MG TAB",
+        "fa": "قرص ووریکونازول ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-753/Voriconazole",
+        "url": "https://www.darooyab.ir/G-753/Voriconazole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021267",
+      "label": "NDA021267"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08d08721-1f4c-478a-8abf-d9c402d50553",
+      "label": "FDA Vfend IV"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605022.html",
+      "label": "Voriconazole"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J02AC03",
+      "label": "J02AC03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-753/Voriconazole",
+      "label": "Voriconazole"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Voriconazole can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-vfend",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary No data are available regarding the presence of voriconazole in human milk, the effects of voriconazole on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-vfend",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of VFEND have been established in pediatric patients 2 years of age and older based on evidence from adequate and well-controlled studies in adult and pediatric patients and additional pediatric pharmacokinetic and safety data.",
+      "refs": [
+        {
+          "source": "fda-vfend",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "However, the overall safety profile of the elderly patients was similar to that of the young so no dosage adjustment is recommended [see Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-vfend",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Advise females of reproductive potential to use effective contraception during treatment with VFEND.",
+      "refs": [
+        {
+          "source": "fda-vfend",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-vfend",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021267"
+  }
+}

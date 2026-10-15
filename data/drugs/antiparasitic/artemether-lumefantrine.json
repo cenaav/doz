@@ -1,0 +1,351 @@
+{
+  "id": "artemether-lumefantrine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آرتمتر + لومفانترین",
+    "en": "Artemether + lumefantrine"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدمالاریا (ترکیب آرتمیزینین)",
+    "en": "Antimalarial (artemisinin combination)"
+  },
+  "brands": [
+    {
+      "name": "Coartem",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "coartem",
+    "کوارتم",
+    "آرتمتر",
+    "artemether"
+  ],
+  "formulations": [
+    {
+      "id": "tab-20-120",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Artemether 20 mg + lumefantrine 120 mg tablet (scored)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "3"
+        }
+      ],
+      "components": {
+        "artemether": {
+          "name": {
+            "fa": "آرتمتر",
+            "en": "Artemether"
+          },
+          "amount": 20,
+          "unit": "mg"
+        },
+        "lumefantrine": {
+          "name": {
+            "fa": "لومفانترین",
+            "en": "Lumefantrine"
+          },
+          "amount": 120,
+          "unit": "mg"
+        }
+      }
+    }
+  ],
+  "regimens": [
+    {
+      "id": "treat",
+      "disease": "malaria",
+      "label": {
+        "fa": "مالاریای حاد بدون عارضه — بر اساس وزن، ۶ نوبت در ۳ روز",
+        "en": "Acute uncomplicated malaria — by weight, 6 doses over 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "minWeightKg": 5
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 5,
+            "maxWeightKg": 14.99,
+            "perDose": 20,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 15,
+            "maxWeightKg": 24.99,
+            "perDose": 40,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 25,
+            "maxWeightKg": 34.99,
+            "perDose": 60,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 35,
+            "maxWeightKg": null,
+            "perDose": 80,
+            "dosesPerDay": 2
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "2.2–2.3"
+        }
+      ],
+      "doseComponent": "artemether",
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت جزء آرتمتر نمایش داده می‌شود (۲۰ mg در هر قرص). نوبت اول، نوبت دوم ۸ ساعت بعد، سپس روزی ۲ بار تا روز سوم (جمعاً ۶ نوبت). همراه غذا؛ اگر ظرف ۱ تا ۲ ساعت استفراغ شد، تکرار.",
+            "en": "Shown as the artemether component (20 mg per tablet). First dose, second dose after 8 h, then twice daily for the next 2 days (6 doses total). Take with food; repeat a dose vomited within 1–2 h."
+          },
+          "refs": [
+            {
+              "source": "fda-coartem",
+              "section": "2.2–2.3"
+            },
+            {
+              "source": "fda-coartem",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آرتمتر یا لومفانترین.",
+        "en": "Hypersensitivity to artemether or lumefantrine."
+      },
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "ind",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف همزمان با القاکننده‌های قوی CYP3A4 (ریفامپین، کاربامازپین، فنی‌توئین، علف چای).",
+        "en": "Coadministration with strong CYP3A4 inducers (rifampin, carbamazepine, phenytoin, St John’s wort)."
+      },
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "طولانی شدن QT: در QT طولانی، کمبود پتاسیم یا منیزیم و با داروهای طولانی‌کننده QT اجتناب شود.",
+        "en": "QT prolongation: avoid with known long QT, hypokalaemia or hypomagnesaemia, and with QT-prolonging drugs."
+      },
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "cyp3a4-inducers",
+      "text": {
+        "fa": "ریفامپین، کاربامازپین، فنی‌توئین و علف چای اثر را از بین می‌برند (ممنوع).",
+        "en": "Rifampin, carbamazepine, phenytoin and St John’s wort cause loss of efficacy (contraindicated)."
+      },
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "treat",
+      "formulation": "tab-20-120",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "treat",
+      "formulation": "tab-20-120",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 80,
+        "tabletsPerDoseRounded": 4
+      }
+    }
+  ],
+  "atc": [
+    "P01BF01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5343/Artemether-Lumefantrine",
+        "url": "https://www.darooyab.ir/G-5343/Artemether-Lumefantrine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022268",
+      "label": "NDA022268"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7866ec19-dfac-47d4-a53f-511a12643cbf",
+      "label": "FDA Coartem"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=P01BF01",
+      "label": "P01BF01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5343/Artemether-Lumefantrine",
+      "label": "Artemether-Lumefantrine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Published data from clinical studies and pharmacovigilance data have not established an association with artemether/lumefantrine use during pregnancy and major birth defects, miscarriage, or adverse maternal or fetal outcomes (see Data) .",
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of artemether or lumefantrine in human milk, the effects on the breastfed infant or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Coartem Tablets have been established in pediatric patients aged 2 months and older with a bodyweight of 5 kg and above for the treatment of acute, uncomplicated malaria [see Clinical Studies (14.1)] .",
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of Coartem Tablets did not include sufficient numbers of subjects aged 65 years and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Use of Coartem may reduce the efficacy of hormonal contraceptives.",
+      "refs": [
+        {
+          "source": "fda-coartem",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-coartem",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022268"
+  }
+}
