@@ -1,0 +1,379 @@
+{
+  "id": "budesonide-ec",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بودزوناید خوراکی (کرون)",
+    "en": "Budesonide oral (Crohn’s)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "کورتیکواستروئید با اثر موضعی روده",
+    "en": "Gut-acting corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Entocort EC",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "entocort",
+    "budenofalk",
+    "بودزوناید خوراکی"
+  ],
+  "formulations": [
+    {
+      "id": "cap-3",
+      "form": "capsule",
+      "route": "oral",
+      "label": "3 mg delayed-release capsule",
+      "concentration": {
+        "amount": 3,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-budesonide-ec",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "active",
+      "disease": "crohns",
+      "label": {
+        "fa": "کرون خفیف تا متوسط فعال — بزرگسال: ۹ mg صبح‌ها تا ۸ هفته",
+        "en": "Mild–moderate active Crohn’s — adult: 9 mg every morning up to 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 9,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-budesonide-ec",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 56,
+        "max": 56
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کپسول کامل بلعیده شود؛ آب گریپ‌فروت نه. نگهدارنده بهبودی: ۶ mg روزانه تا ۳ ماه.",
+            "en": "Swallow whole; avoid grapefruit juice. Maintenance of remission: 6 mg daily up to 3 months."
+          },
+          "refs": [
+            {
+              "source": "fda-budesonide-ec",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-budesonide-ec",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "crohns",
+      "label": {
+        "fa": "کرون فعال — کودک ۸ تا ۱۷ سال بالای ۲۵ kg: ۹ mg تا ۸ هفته سپس ۶ mg دو هفته",
+        "en": "Active Crohn’s — child 8–17 y >25 kg: 9 mg up to 8 weeks, then 6 mg for 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 8,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 25.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 9,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-budesonide-ec",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بودزوناید.",
+        "en": "Hypersensitivity to budesonide."
+      },
+      "refs": [
+        {
+          "source": "fda-budesonide-ec",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "active",
+      "formulation": "cap-3",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 9,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "cap-3",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 9,
+        "tabletsPerDoseRounded": 3
+      }
+    }
+  ],
+  "atc": [
+    "A07EA06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08889",
+        "en": "BUDESONIDE 0.5MG/2ML NEBULISING SUSPENSION",
+        "fa": "بودزوناید ۰٫۵ میلی‌گرم / ۲ میلی‌لیتر نبولیسینگ"
+      },
+      {
+        "code": "08884",
+        "en": "BUDESONIDE 100MCG/DOSE INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید ۱۰۰ میکروگرم / دوز"
+      },
+      {
+        "code": "08891",
+        "en": "BUDESONIDE 1MG/2ML NEBULISING SUSPENSION",
+        "fa": "بودزوناید ۱ میلی‌گرم / ۲ میلی‌لیتر نبولیسینگ"
+      },
+      {
+        "code": "05998",
+        "en": "BUDESONIDE 200MCG/DOSE 100DOSE INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید ۲۰۰ میکروگرم / دوز ۱۰۰ دوز"
+      },
+      {
+        "code": "17793",
+        "en": "BUDESONIDE 200MCG/DOSE 200DOSE INHALER",
+        "fa": "فرآورده استنشاقی بودزوناید ۲۰۰ میکروگرم / دوز ۲۰۰ دوز"
+      },
+      {
+        "code": "07123",
+        "en": "BUDESONIDE 2MG/100ML ENEMA",
+        "fa": "انما بودزوناید ۲ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "06165",
+        "en": "BUDESONIDE 3MG CAP",
+        "fa": "کپسول بودزوناید ۳ میلی‌گرم"
+      },
+      {
+        "code": "13080",
+        "en": "BUDESONIDE 400MCG/DOSE 100DOSE INHALATION POWDER",
+        "fa": "پودر بودزوناید ۴۰۰ میکروگرم / دوز ۱۰۰ دوز"
+      },
+      {
+        "code": "20131",
+        "en": "BUDESONIDE 400MCG/DOSE 200DOSE INHALATION POWDER",
+        "fa": "پودر بودزوناید ۴۰۰ میکروگرم / دوز ۲۰۰ دوز"
+      },
+      {
+        "code": "08887",
+        "en": "BUDESONIDE 400MCG/DOSE 50DOSE INHALATION POWDER",
+        "fa": "پودر بودزوناید ۴۰۰ میکروگرم / دوز ۵۰ دوز"
+      },
+      {
+        "code": "08209",
+        "en": "BUDESONIDE 64MCG NASAL SPRAY",
+        "fa": "اسپری بینی بودزوناید ۶۴ میکروگرم"
+      },
+      {
+        "code": "52638",
+        "en": "BUDESONIDE AEROSOL, METERED RESPIRATORY 100 ug/1{dose} 200 {dose}",
+        "fa": "بودزوناید ۱۰۰ میکروگرم / ۱ { دوز } ۲۰۰ { دوز }"
+      },
+      {
+        "code": "52637",
+        "en": "BUDESONIDE AEROSOL, METERED RESPIRATORY 200 ug/1{dose} 200 {dose}",
+        "fa": "بودزوناید ۲۰۰ میکروگرم / ۱ { دوز } ۲۰۰ { دوز }"
+      },
+      {
+        "code": "52306",
+        "en": "BUDESONIDE SUSPENSION RESPIRATORY 0.5 mg/1mL 2 mL",
+        "fa": "بودزوناید ۰٫۵ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "52308",
+        "en": "BUDESONIDE POWDER, METERED RESPIRATORY 200 ug/1{dose} 100 {dose}",
+        "fa": "پودر بودزوناید ۲۰۰ میکروگرم / ۱ { دوز } ۱۰۰ { دوز }"
+      },
+      {
+        "code": "52458",
+        "en": "BUDESONIDE TABLET, EXTENDED RELEASE ORAL 9 mg",
+        "fa": "قرص آهسته‌رهش بودزوناید ۹ میلی‌گرم"
+      },
+      {
+        "code": "53061",
+        "en": "BUDESONIDE CAPSULE RESPIRATORY 200 ug",
+        "fa": "کپسول بودزوناید ۲۰۰ میکروگرم"
+      },
+      {
+        "code": "53062",
+        "en": "BUDESONIDE CAPSULE RESPIRATORY 400 ug",
+        "fa": "کپسول بودزوناید ۴۰۰ میکروگرم"
+      },
+      {
+        "code": "52635",
+        "en": "BUDESONIDE CAPSULE, EXTENDED RELEASE ORAL 3 mg",
+        "fa": "کپسول آهسته‌رهش بودزوناید ۳ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2077/Budesonide",
+        "url": "https://www.darooyab.ir/G-2077/Budesonide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021324",
+      "label": "NDA021324"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a18d5a7-04c5-4137-8155-70a8adc0a48b",
+      "label": "FDA Budesonide EC"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07EA06",
+      "label": "A07EA06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2077/Budesonide",
+      "label": "Budesonide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited published studies report on the use of budesonide in pregnant women; however, the data are insufficient to inform a drug-associated risk for major birth defects and miscarriage.",
+      "refs": [
+        {
+          "source": "fda-budesonide-ec",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Lactation studies have not been conducted with oral budesonide, including budesonide delayed-release capsules, and no information is available on the effects of the drug on the breastfed infant or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-budesonide-ec",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of budesonide delayed-release capsules have been established in pediatric patients 8 to 17 years of age who weigh more than 25 kg for the treatment of mild to moderate active Crohn’s disease involving the ileum and/or the ascending colon.",
+      "refs": [
+        {
+          "source": "fda-budesonide-ec",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-budesonide-ec",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-budesonide-ec",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021324"
+  }
+}

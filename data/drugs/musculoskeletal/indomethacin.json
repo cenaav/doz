@@ -1,0 +1,360 @@
+{
+  "id": "indomethacin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایندومتاسین",
+    "en": "Indomethacin"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "NSAID",
+    "en": "NSAID"
+  },
+  "brands": [
+    {
+      "name": "Indocin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "indocin",
+    "ایندومتاسین",
+    "اندومتاسین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-25",
+      "form": "capsule",
+      "route": "oral",
+      "label": "25 mg capsule",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-50",
+      "form": "capsule",
+      "route": "oral",
+      "label": "50 mg capsule",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "arthritis",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید، استئوآرتریت، اسپوندیلیت — ۲۵ mg دو یا سه بار در روز",
+        "en": "RA, OA, ankylosing spondylitis — 25 mg two or three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "2.2"
+        }
+      ]
+    },
+    {
+      "id": "gout",
+      "disease": "gout",
+      "label": {
+        "fa": "حمله حاد نقرس — ۵۰ mg سه بار در روز",
+        "en": "Acute gouty arthritis — 50 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "nsaid",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ سابقه آسم، کهیر یا واکنش آلرژیک با آسپرین یا NSAID؛ درد حین جراحی CABG.",
+        "en": "Hypersensitivity; history of asthma, urticaria or allergic reaction to aspirin or NSAIDs; perioperative pain in CABG."
+      },
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: خطر حوادث قلبی‌عروقی ترومبوتیک و خونریزی، زخم و سوراخ شدن دستگاه گوارش.",
+        "en": "Boxed warning: risk of serious thrombotic cardiovascular events and GI bleeding, ulceration and perforation."
+      },
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "arthritis",
+      "formulation": "cap-25",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "gout",
+      "formulation": "cap-50",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "M01AB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01541",
+        "en": "INDOMETHACIN 1% OPH DROP",
+        "fa": "قطره چشمی ایندومتاسین ۱ درصد"
+      },
+      {
+        "code": "00668",
+        "en": "INDOMETHACIN 100MG SUPP",
+        "fa": "شیاف ایندومتاسین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "06467",
+        "en": "INDOMETHACIN 100ML SUSP",
+        "fa": "سوسپانسیون ایندومتاسین ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00669",
+        "en": "INDOMETHACIN 25MG CAP",
+        "fa": "کپسول ایندومتاسین ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00670",
+        "en": "INDOMETHACIN 50MG SUPP",
+        "fa": "شیاف ایندومتاسین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "19235",
+        "en": "INDOMETHACIN 50MG/2ML INJ",
+        "fa": "فرآورده تزریقی ایندومتاسین ۵۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "01542",
+        "en": "INDOMETHACIN AMP",
+        "fa": "آمپول ایندومتاسین"
+      },
+      {
+        "code": "00671",
+        "en": "INDOMETHACIN SR 75MG TAB",
+        "fa": "قرص آهسته‌رهش ایندومتاسین ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "02139",
+        "en": "INDOMETHACIN SR 80MG TAB",
+        "fa": "قرص آهسته‌رهش ایندومتاسین ۸۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-104/Indomethacin",
+        "url": "https://www.darooyab.ir/G-104/Indomethacin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-indomethacin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA091276"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=091276",
+      "label": "ANDA091276"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7ed39e2-5431-4e47-935c-c7441d058f94",
+      "label": "FDA Indomethacin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a681027.html",
+      "label": "Indomethacin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a621040.html",
+      "label": "Indomethacin Rectal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M01AB01",
+      "label": "M01AB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-104/Indomethacin",
+      "label": "Indomethacin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Clinical Considerations Fetal/Neonatal Adverse Reactions Premature Closure of Fetal Ductus Arteriosus: Avoid use of NSAIDs in women at about 30 weeks gestation and later in pregnancy, because NSAIDs, including indomethacin capsules, can cause premature closure of the fetal ductus arteriosus ( see Data ).",
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Based on available published clinical data, indomethacin may be present in human milk.",
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients 14 years of age and younger has not been established.",
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly patients and patients with a prior history of peptic ulcer disease and/or GI bleeding are at greater risk for serious GI events ( 5.2 ) Cardiovascular Thrombotic Events • Nonsteroidal anti-inflammatory drugs (NSAIDs) cause an increased risk of serious cardiovascular thrombotic events, including myocardial …",
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Females Based on the mechanism of action, the use of prostaglandin-mediated NSAIDs, including indomethacin capsules, may delay or prevent rupture of ovarian follicles, which has been associated with reversible infertility in some women.",
+      "refs": [
+        {
+          "source": "fda-indomethacin",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

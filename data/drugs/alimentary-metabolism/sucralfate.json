@@ -1,0 +1,234 @@
+{
+  "id": "sucralfate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سوکرالفات",
+    "en": "Sucralfate"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "محافظ مخاط",
+    "en": "Mucosal protectant"
+  },
+  "brands": [
+    {
+      "name": "Carafate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "carafate",
+    "سوکرالفات"
+  ],
+  "formulations": [
+    {
+      "id": "tab-1g",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 g tablet",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-carafate",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "du",
+      "disease": "peptic-ulcer-disease",
+      "label": {
+        "fa": "زخم فعال دوازدهه — ۱ g چهار بار در روز با معده خالی، ۴ تا ۸ هفته",
+        "en": "Active duodenal ulcer — 1 g four times daily on an empty stomach, 4–8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-carafate",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "آنتی‌اسید نیم ساعت قبل یا بعد از سوکرالفات نه.",
+            "en": "No antacid within 30 min before or after sucralfate."
+          },
+          "refs": [
+            {
+              "source": "fda-carafate",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "peptic-ulcer-disease",
+      "label": {
+        "fa": "نگهدارنده پس از بهبود زخم دوازدهه — ۱ g دو بار در روز",
+        "en": "Maintenance after duodenal ulcer healing — 1 g twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-carafate",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "du",
+      "formulation": "tab-1g",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "tab-1g",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A02BX02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01178",
+        "en": "SUCRALFATE 1G TAB",
+        "fa": "قرص سوکرالفیت ۱ گرم"
+      },
+      {
+        "code": "01179",
+        "en": "SUCRALFATE 500MG TAB",
+        "fa": "قرص سوکرالفیت ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02188",
+        "en": "SUCRALFATE FOR SUS 1G/SACHET",
+        "fa": "ساشه سوکرالفیت سوس ۱ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2651/Sucralfate",
+        "url": "https://www.darooyab.ir/G-2651/Sucralfate"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-carafate",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA018333"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=018333",
+      "label": "NDA018333"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c87c6b50-6977-4fa7-ae98-40c0753f7aee",
+      "label": "FDA Carafate"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a681049.html",
+      "label": "Sucralfate"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A02BX02",
+      "label": "A02BX02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2651/Sucralfate",
+      "label": "Sucralfate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری سوکرالفیت گروه B قابل استفاده در بارداری:",
+      "text": {
+        "fa": "دارویاب: گروه B — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category B — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-2651/Sucralfate — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-2651/Sucralfate"
+        }
+      ]
+    }
+  }
+}

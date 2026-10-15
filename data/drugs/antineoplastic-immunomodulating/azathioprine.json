@@ -1,0 +1,284 @@
+{
+  "id": "azathioprine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آزاتیوپرین",
+    "en": "Azathioprine"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "سرکوب‌کننده ایمنی (آنتی‌متابولیت)",
+    "en": "Immunosuppressant (antimetabolite)"
+  },
+  "brands": [
+    {
+      "name": "Imuran",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "imuran",
+    "ایموران",
+    "آزاتیوپرین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-azathioprine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — شروع حدود ۱ mg/kg روزانه (۵۰ تا ۱۰۰ mg)",
+        "en": "Rheumatoid arthritis — start about 1 mg/kg daily (50–100 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 1,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-azathioprine",
+          "section": "Dosage and Administration — Rheumatoid Arthritis"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 2.5,
+        "refs": [
+          {
+            "source": "fda-azathioprine",
+            "section": "Dosage and Administration — Rheumatoid Arthritis"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یک‌جا یا دو بار در روز. از هفته ۶ تا ۸ هر ۴ هفته ۰٫۵ mg/kg افزایش تا حداکثر ۲٫۵ mg/kg. پیش از شروع TPMT و NUDT15 بررسی شود (کمبود ← کاهش شدید دوز).",
+            "en": "Single or twice-daily. From week 6–8 increase 0.5 mg/kg every 4 weeks up to 2.5 mg/kg. Test TPMT and NUDT15 before starting (deficiency → major dose reduction)."
+          },
+          "refs": [
+            {
+              "source": "fda-azathioprine",
+              "section": "Dosage and Administration — Rheumatoid Arthritis"
+            },
+            {
+              "source": "fda-azathioprine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ آرتریت روماتوئید در بارداری؛ RA با درمان قبلی آلکیله‌کننده (خطر بدخیمی).",
+        "en": "Hypersensitivity; rheumatoid arthritis in pregnancy; RA previously treated with alkylating agents (malignancy risk)."
+      },
+      "refs": [
+        {
+          "source": "fda-azathioprine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: بدخیمی (لنفوم و سرطان پوست) با سرکوب ایمنی مزمن.",
+        "en": "Boxed warning: malignancy (lymphoma and skin cancer) with chronic immunosuppression."
+      },
+      "refs": [
+        {
+          "source": "fda-azathioprine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "xo",
+      "text": {
+        "fa": "آلوپورینول و فبوکسوستات: افزایش شدید سمیت (فبوکسوستات ممنوع).",
+        "en": "Allopurinol and febuxostat: markedly increased toxicity (febuxostat contraindicated)."
+      },
+      "refs": [
+        {
+          "source": "fda-azathioprine",
+          "section": "Drug Interactions"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ra",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 75,
+        "tabletsPerDoseRounded": 1.5
+      }
+    }
+  ],
+  "atc": [
+    "L04AX01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "20225",
+        "en": "AZATHIOPRINE 100MG TAB",
+        "fa": "قرص آزاتیوپرین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "17665",
+        "en": "AZATHIOPRINE 25MG TAB",
+        "fa": "قرص آزاتیوپرین ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00122",
+        "en": "AZATHIOPRINE 50MG TAB",
+        "fa": "قرص آزاتیوپرین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01399",
+        "en": "AZATHIOPRINE SODIUM 50MG AMP",
+        "fa": "آمپول آزاتیوپرین سدیم ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2730/Azathioprine",
+        "url": "https://www.darooyab.ir/G-2730/Azathioprine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-azathioprine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075252"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075252",
+      "label": "ANDA075252"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ceab8e8b-d022-4d0c-a552-cc5782446248",
+      "label": "FDA Azathioprine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682167.html",
+      "label": "Azathioprine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AX01",
+      "label": "L04AX01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2730/Azathioprine",
+      "label": "Azathioprine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects : See WARNINGS section.",
+      "refs": [
+        {
+          "source": "fda-azathioprine",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "The use of Azathioprine Tablets in nursing mothers is not recommended.",
+      "refs": [
+        {
+          "source": "fda-azathioprine",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and efficacy of azathioprine in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-azathioprine",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "id": "leflunomide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لفلونوماید",
+    "en": "Leflunomide"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "DMARD (مهارکننده سنتز پیریمیدین)",
+    "en": "DMARD (pyrimidine synthesis inhibitor)"
+  },
+  "brands": [
+    {
+      "name": "Arava",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "arava",
+    "آراوا",
+    "لفلونوماید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — بارگذاری ۱۰۰ mg روزانه، ۳ روز (کم‌خطر برای کبد و مغز استخوان)",
+        "en": "Rheumatoid arthritis — loading 100 mg daily for 3 days (low hepatic/marrow risk)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "id": "maint",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — نگهدارنده ۲۰ mg یک بار در روز (در عدم تحمل ۱۰ mg)",
+        "en": "Rheumatoid arthritis — maintenance 20 mg once daily (10 mg if not tolerated)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع: غربال سل، تست بارداری، فشار خون و آزمایش‌ها.",
+            "en": "Before starting: TB screening, pregnancy test, blood pressure and labs."
+          },
+          "refs": [
+            {
+              "source": "fda-leflunomide",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری؛ نارسایی شدید کبد؛ حساسیت؛ مصرف همزمان تری‌فلونوماید.",
+        "en": "Pregnancy; severe hepatic impairment; hypersensitivity; concomitant teriflunomide."
+      },
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی (پیش از شروع بارداری رد شود) و سمیت کبدی.",
+        "en": "Boxed warning: embryo-fetal toxicity (exclude pregnancy first) and hepatotoxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 5
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L04AK01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06351",
+        "en": "LEFLUNOMIDE 100MG TAB",
+        "fa": "قرص لفلونوماید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "10058",
+        "en": "LEFLUNOMIDE 10MG TAB",
+        "fa": "قرص لفلونوماید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "05974",
+        "en": "LEFLUNOMIDE 20MG TAB",
+        "fa": "قرص لفلونوماید ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "15836",
+        "en": "LEFLUNOMIDE 5MG TAB",
+        "fa": "قرص لفلونوماید ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-112/Leflunomide",
+        "url": "https://www.darooyab.ir/G-112/Leflunomide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-leflunomide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213497"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213497",
+      "label": "ANDA213497"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fc044417-cd9a-42f6-8a3d-a14e7c2f81a2",
+      "label": "FDA Leflunomide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a600032.html",
+      "label": "Leflunomide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AK01",
+      "label": "L04AK01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-112/Leflunomide",
+      "label": "Leflunomide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Leflunomide is contraindicated in: Pregnant women.",
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Clinical lactation studies have not been conducted to assess the presence of leflunomide in human milk, the effects of leflunomide on the breastfed child, or the effects of leflunomide on milk production.",
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of leflunomide in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dosage adjustment is needed in patients over 65.",
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Females of reproductive potential should use effective contraception while taking leflunomide.",
+      "refs": [
+        {
+          "source": "fda-leflunomide",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

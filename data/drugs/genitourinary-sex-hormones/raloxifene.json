@@ -1,0 +1,260 @@
+{
+  "id": "raloxifene",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "رالوکسیفن",
+    "en": "Raloxifene"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "تعدیل‌کننده انتخابی گیرنده استروژن (SERM)",
+    "en": "Selective oestrogen receptor modulator"
+  },
+  "brands": [
+    {
+      "name": "Evista",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "evista",
+    "اویستا",
+    "رالوکسیفن"
+  ],
+  "formulations": [
+    {
+      "id": "tab-60",
+      "form": "tablet",
+      "route": "oral",
+      "label": "60 mg tablet",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-raloxifene",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pmo",
+      "disease": "osteoporosis",
+      "label": {
+        "fa": "پوکی استخوان یائسگی (درمان یا پیشگیری) — ۶۰ mg یک بار در روز",
+        "en": "Postmenopausal osteoporosis (treatment or prevention) — 60 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-raloxifene",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بدون توجه به غذا. کلسیم و ویتامین D در صورت دریافت ناکافی.",
+            "en": "With or without food. Calcium and vitamin D if intake is inadequate."
+          },
+          "refs": [
+            {
+              "source": "fda-raloxifene",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-raloxifene",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "ترومبوآمبولی وریدی فعال یا قبلی (DVT، PE، ترومبوز ورید شبکیه)؛ بارداری.",
+        "en": "Active or past VTE (DVT, PE, retinal vein thrombosis); pregnancy."
+      },
+      "refs": [
+        {
+          "source": "fda-raloxifene",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش خطر ترومبوآمبولی وریدی و مرگ ناشی از سکته.",
+        "en": "Boxed warning: increased risk of venous thromboembolism and death from stroke."
+      },
+      "refs": [
+        {
+          "source": "fda-raloxifene",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pmo",
+      "formulation": "tab-60",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 60,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G03XC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01926",
+        "en": "RALOXIFENE 60MG TAB",
+        "fa": "قرص رالوکسیفن ۶۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3311/Raloxifene",
+        "url": "https://www.darooyab.ir/G-3311/Raloxifene"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-raloxifene",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078193"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078193",
+      "label": "ANDA078193"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6be5b1d-757d-4bab-ad6a-c421960a104d",
+      "label": "FDA Raloxifene"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698007.html",
+      "label": "Raloxifene"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03XC01",
+      "label": "G03XC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3311/Raloxifene",
+      "label": "Raloxifene"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "… nd retinal vein thrombosis [ see Warnings and Precautions ( 5.1 ) ]. 4.2 Pregnancy Raloxifene hydrochloride tablets are contraindicated for use in pregnancy, as it may cause fetal harm [ see Use in Specific Populations ( 8.1 ) ].",
+      "refs": [
+        {
+          "source": "fda-raloxifene",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Raloxifene hydrochloride is not indicated for use in females of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-raloxifene",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-raloxifene",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of patients in placebo-controlled clinical studies of raloxifene hydrochloride, 61% were 65 and over, while 15.5% were 75 and over.",
+      "refs": [
+        {
+          "source": "fda-raloxifene",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

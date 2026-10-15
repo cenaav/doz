@@ -1,0 +1,331 @@
+{
+  "id": "morphine-oral",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مورفین خوراکی (سریع‌رهش)",
+    "en": "Morphine (oral, immediate-release)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آگونیست اپیوئیدی",
+    "en": "Opioid agonist"
+  },
+  "brands": [
+    {
+      "name": "MSIR",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "morphine tablet",
+    "مورفین خوراکی",
+    "قرص مورفین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet (scored)",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-morphine-tab",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg tablet (scored)",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-morphine-tab",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pain",
+      "disease": "severe-pain",
+      "label": {
+        "fa": "درد شدید (بیمار بدون مصرف قبلی اپیوئید) — ۱۵ تا ۳۰ mg هر ۴ ساعت در صورت نیاز",
+        "en": "Severe pain (opioid-naive) — 15–30 mg every 4 h as needed"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "perDoseMax": 30,
+        "dosesPerDay": 6
+      },
+      "refs": [
+        {
+          "source": "fda-morphine-tab",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کمترین دوز مؤثر در کوتاه‌ترین مدت. در کودک زیر ۵۰ kg قرص مناسب نیست.",
+            "en": "Lowest effective dose for the shortest time. Tablets not suitable for children under 50 kg."
+          },
+          "refs": [
+            {
+              "source": "fda-morphine-tab",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "دپرسیون تنفسی قابل‌توجه؛ آسم حاد یا شدید بدون پایش؛ انسداد گوارشی یا ایلئوس فلجی؛ حساسیت؛ MAOI همزمان یا ظرف ۱۴ روز.",
+        "en": "Significant respiratory depression; acute or severe asthma without monitoring; GI obstruction or paralytic ileus; hypersensitivity; MAOIs now or within 14 days."
+      },
+      "refs": [
+        {
+          "source": "fda-morphine-tab",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: اعتیاد و سوءمصرف، دپرسیون تنفسی کشنده، مصرف تصادفی در کودک، سندرم ترک نوزادی، تداخل با بنزودیازپین‌ها و مهارکننده‌های CYP3A4. نالوکسان در دسترس باشد.",
+        "en": "Boxed warning: addiction and misuse, life-threatening respiratory depression, accidental ingestion in children, neonatal opioid withdrawal, interactions with benzodiazepines and CYP3A4 inhibitors. Keep naloxone available."
+      },
+      "refs": [
+        {
+          "source": "fda-morphine-tab",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-morphine-tab",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pain",
+      "formulation": "tab-15",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15,
+        "upperPerDose": 30
+      }
+    }
+  ],
+  "atc": [
+    "N02AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "12225",
+        "en": "MORPHINE 10MG SUPP",
+        "fa": "شیاف مورفین ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "01597",
+        "en": "MORPHINE HCL 0.2MG/1ML EPIDURAL AMP",
+        "fa": "آمپول مورفین هیدروکلراید ۰٫۲ میلی‌گرم / ۱ میلی‌لیتر اپیدورال"
+      },
+      {
+        "code": "01598",
+        "en": "MORPHINE HCL 0.4MG/1ML EPIDURAL AMP",
+        "fa": "آمپول مورفین هیدروکلراید ۰٫۴ میلی‌گرم / ۱ میلی‌لیتر اپیدورال"
+      },
+      {
+        "code": "00865",
+        "en": "MORPHINE HCL 10MG/1ML AMP",
+        "fa": "آمپول مورفین هیدروکلراید ۱۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00866",
+        "en": "MORPHINE HCL 20MG/1ML AMP",
+        "fa": "آمپول مورفین هیدروکلراید ۲۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01599",
+        "en": "MORPHINE SULFATE 10MG TAB",
+        "fa": "قرص مورفین سولفات ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "01600",
+        "en": "MORPHINE SULFATE 10MG/1ML AMP",
+        "fa": "آمپول مورفین سولفات ۱۰ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-135/Morphine",
+        "url": "https://www.darooyab.ir/G-135/Morphine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-morphine-tab",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA215194"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215194",
+      "label": "ANDA215194"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b69f67f-30b3-4982-953e-5a4b87ec6ac6",
+      "label": "FDA Morphine IR tab"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682133.html",
+      "label": "Morphine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601161.html",
+      "label": "Morphine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02AA01",
+      "label": "N02AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-135/Morphine",
+      "label": "Morphine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Neonatal Opioid Withdrawal Syndrome (NOWS) Advise pregnant women using opioids for an extended period of time of the risk of Neonatal Opioid Withdrawal Syndrome, which may be life-threatening if not recognized and treated.",
+      "refs": [
+        {
+          "source": "fda-morphine-tab",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Morphine is present in breast milk.",
+      "refs": [
+        {
+          "source": "fda-morphine-tab",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: در کودک زیر ۵۰ kg ثابت نشده (دوز با قرص قابل دستیابی نیست). مصرف تصادفی در کودک می‌تواند کشنده باشد.",
+        "en": "Label: not established in children under 50 kg (dose not achievable with tablets). Accidental ingestion by a child can be fatal."
+      },
+      "quote": "The safety and effectiveness of morphine sulfate tablets have not been established for the management of pediatric patients weighing less than 50 kg",
+      "refs": [
+        {
+          "source": "fda-morphine-tab",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, use caution when selecting a dose for an elderly patient, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-morphine-tab",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Use of opioids for an extended period of time may cause reduced fertility in females and males of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-morphine-tab",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

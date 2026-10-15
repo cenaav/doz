@@ -1,0 +1,357 @@
+{
+  "id": "sulfasalazine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سولفاسالازین",
+    "en": "Sulfasalazine"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آمینوسالیسیلات / DMARD",
+    "en": "Aminosalicylate / DMARD"
+  },
+  "brands": [
+    {
+      "name": "Azulfidine EN-tabs",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "azulfidine",
+    "salazopyrin",
+    "سولفاسالازین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg delayed-release tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sulfasalazine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "uc-adult",
+      "disease": "ulcerative-colitis",
+      "label": {
+        "fa": "کولیت اولسروز — بزرگسال: ۳ تا ۴ g در روز در دوزهای مساوی",
+        "en": "Ulcerative colitis — adult: 3–4 g/day in divided doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-sulfasalazine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4000,
+        "refs": [
+          {
+            "source": "fda-sulfasalazine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فاصله دوزها حداکثر ۸ ساعت، پس از غذا، قرص کامل. می‌توان با ۱ تا ۲ g در روز شروع کرد. نگهدارنده: ۲ g در روز.",
+            "en": "Dose intervals ≤8 h, after meals, swallow whole. May start at 1–2 g/day. Maintenance: 2 g/day."
+          },
+          "refs": [
+            {
+              "source": "fda-sulfasalazine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc-child",
+      "disease": "ulcerative-colitis",
+      "label": {
+        "fa": "کولیت اولسروز — کودک ۶ سال به بالا: ۴۰ تا ۶۰ mg/kg/روز در ۳ تا ۶ دوز",
+        "en": "Ulcerative colitis — child ≥6 y: 40–60 mg/kg/day in 3–6 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 40,
+        "perKgPerDayMax": 60,
+        "dividedDoses": 3
+      },
+      "refs": [
+        {
+          "source": "fda-sulfasalazine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده: ۳۰ mg/kg/روز در ۴ دوز.",
+            "en": "Maintenance: 30 mg/kg/day in 4 doses."
+          },
+          "refs": [
+            {
+              "source": "fda-sulfasalazine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — ۲ g در روز در ۲ دوز",
+        "en": "Rheumatoid arthritis — 2 g/day in 2 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-sulfasalazine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بهتر است با ۰٫۵ تا ۱ g در روز شروع و تدریجی افزایش. پاسخ معمولاً پس از ۴ تا ۱۲ هفته.",
+            "en": "Start at 0.5–1 g/day and increase gradually. Response usually after 4–12 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-sulfasalazine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سولفاسالازین، سولفونامیدها یا سالیسیلات‌ها؛ انسداد روده یا ادراری؛ پورفیری.",
+        "en": "Hypersensitivity to sulfasalazine, sulfonamides or salicylates; intestinal or urinary obstruction; porphyria."
+      },
+      "refs": [
+        {
+          "source": "fda-sulfasalazine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "uc-adult",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "uc-child",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 1000,
+        "upperPerDose": 1500
+      }
+    },
+    {
+      "regimen": "ra",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "A07EC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01184",
+        "en": "SULFASALAZINE 3MG/100ML ENEMA",
+        "fa": "انما سولفاسالازین ۳ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "04150",
+        "en": "SULFASALAZINE 500MG EC TAB",
+        "fa": "قرص انتریک‌کوتد سولفاسالازین ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01183",
+        "en": "SULFASALAZINE 500MG TAB",
+        "fa": "قرص سولفاسالازین ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2652/Sulfasalazine",
+        "url": "https://www.darooyab.ir/G-2652/Sulfasalazine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA authorized generic",
+    "refs": [
+      {
+        "source": "fda-sulfasalazine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA007073"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=007073",
+      "label": "NDA007073"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=257cee60-b68f-4c2b-b57d-8e4d73d17e09",
+      "label": "FDA Sulfasalazine DR"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682204.html",
+      "label": "Sulfasalazine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07EC01",
+      "label": "A07EC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2652/Sulfasalazine",
+      "label": "Sulfasalazine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-sulfasalazine",
+          "section": "Pregnancy:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when sulfasalazine delayed release tablets are administered to a nursing mother.",
+      "refs": [
+        {
+          "source": "fda-sulfasalazine",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of sulfasalazine delayed release tablets in pediatric patients below the age of 2 years with ulcerative colitis have not been established.",
+      "refs": [
+        {
+          "source": "fda-sulfasalazine",
+          "section": "Pediatric Use:"
+        }
+      ]
+    }
+  }
+}

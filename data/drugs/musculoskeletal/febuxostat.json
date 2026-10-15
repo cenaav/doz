@@ -1,0 +1,310 @@
+{
+  "id": "febuxostat",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فبوکسوستات",
+    "en": "Febuxostat"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "مهارکننده گزانتین اکسیداز",
+    "en": "Xanthine oxidase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Uloric",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "uloric",
+    "adenuric",
+    "فبوکسوستات"
+  ],
+  "formulations": [
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-febuxostat",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-80",
+      "form": "tablet",
+      "route": "oral",
+      "label": "80 mg tablet",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-febuxostat",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "gout",
+      "disease": "gout",
+      "label": {
+        "fa": "هیپراوریسمی مزمن در نقرس — شروع ۴۰ mg یک بار در روز (تا ۸۰ mg)",
+        "en": "Chronic hyperuricaemia in gout — start 40 mg once daily (up to 80 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-febuxostat",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 80,
+        "refs": [
+          {
+            "source": "fda-febuxostat",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پس از ۲ هفته اسید اوریک زیر ۶ نشد، ۸۰ mg. نارسایی شدید کلیه: حداکثر ۴۰ mg. در شروع درمان پیشگیری از حمله (NSAID یا کلشی‌سین).",
+            "en": "If uric acid is not <6 after 2 weeks, 80 mg. Severe renal impairment: max 40 mg. Flare prophylaxis (NSAID or colchicine) when starting."
+          },
+          "refs": [
+            {
+              "source": "fda-febuxostat",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف همزمان آزاتیوپرین یا مرکاپتوپورین.",
+        "en": "Concomitant azathioprine or mercaptopurine."
+      },
+      "refs": [
+        {
+          "source": "fda-febuxostat",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: مرگ قلبی‌عروقی در بیماران نقرس با بیماری قلبی بیشتر از آلوپورینول؛ فقط اگر آلوپورینول مؤثر یا قابل تحمل نیست.",
+        "en": "Boxed warning: higher cardiovascular death than allopurinol in gout patients with CV disease; use only when allopurinol fails or is not tolerated."
+      },
+      "refs": [
+        {
+          "source": "fda-febuxostat",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "azathioprine",
+      "text": {
+        "fa": "آزاتیوپرین و مرکاپتوپورین — ممنوع (افزایش سطح و سمیت).",
+        "en": "Azathioprine and mercaptopurine — contraindicated (raised levels and toxicity)."
+      },
+      "refs": [
+        {
+          "source": "fda-febuxostat",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "gout",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 85
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "M04AA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "16693",
+        "en": "FEBUXOSTAT 40MG TAB",
+        "fa": "قرص فبوکسوستات ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "19835",
+        "en": "FEBUXOSTAT 80MG TAB",
+        "fa": "قرص فبوکسوستات ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "25137",
+        "en": "FEBUXOSTAT 120 mg TABLET",
+        "fa": "قرص فبوکسوستات ۱۲۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4752/Febuxostat",
+        "url": "https://www.darooyab.ir/G-4752/Febuxostat"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-febuxostat",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213069"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213069",
+      "label": "ANDA213069"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f1d0452-e041-cda6-e063-6394a90a2aef",
+      "label": "FDA Febuxostat"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609020.html",
+      "label": "Febuxostat"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M04AA03",
+      "label": "M04AA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4752/Febuxostat",
+      "label": "Febuxostat"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited available data with febuxostat tablets use in pregnant women are insufficient to inform a drug associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-febuxostat",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of febuxostat in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-febuxostat",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of febuxostat tablets in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-febuxostat",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dose adjustment is necessary in elderly patients.",
+      "refs": [
+        {
+          "source": "fda-febuxostat",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}
