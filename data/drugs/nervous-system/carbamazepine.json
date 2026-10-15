@@ -198,6 +198,57 @@
           ]
         }
       ]
+    },
+    {
+      "id": "tn",
+      "disease": "trigeminal-neuralgia",
+      "label": {
+        "fa": "نورالژی سه‌قلو — روز اول ۱۰۰ mg دو بار، افزایش تا رفع درد (حداکثر ۱۲۰۰ mg در روز)",
+        "en": "Trigeminal neuralgia — day 1: 100 mg twice daily, increase until pain-free (max 1,200 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 200,
+          "increment": 200,
+          "incrementEveryDays": 1,
+          "targetMin": 400,
+          "targetMax": 800,
+          "max": 1200
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Dosage and Administration — Trigeminal Neuralgia"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش روزانه حداکثر ۲۰۰ mg (۱۰۰ mg هر ۱۲ ساعت) و فقط در حد نیاز برای رفع درد. نگهدارنده بیشتر بیماران ۴۰۰ تا ۸۰۰ mg در روز. هر ۳ ماه تلاش برای کمترین دوز یا قطع. مسکن ساده نیست.",
+            "en": "Increase by up to 200 mg/day (100 mg every 12 h) only as needed for pain freedom. Most maintain on 400–800 mg/day. Try to reduce to the minimum or stop every 3 months. Not a simple analgesic."
+          },
+          "refs": [
+            {
+              "source": "fda-carbamazepine",
+              "section": "Dosage and Administration — Trigeminal Neuralgia"
+            },
+            {
+              "source": "fda-carbamazepine",
+              "section": "Indications and Usage"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -279,6 +330,18 @@
       "input": {
         "ageYears": 4,
         "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "tn",
+      "formulation": "susp-100-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
       },
       "expect": {
         "perDose": 100,

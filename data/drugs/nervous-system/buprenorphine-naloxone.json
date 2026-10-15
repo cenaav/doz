@@ -1,0 +1,369 @@
+{
+  "id": "buprenorphine-naloxone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بوپرنورفین + نالوکسان (زیرزبانی)",
+    "en": "Buprenorphine + naloxone (sublingual)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آگونیست نسبی اپیوئید برای درمان اعتیاد",
+    "en": "Partial opioid agonist for OUD"
+  },
+  "brands": [
+    {
+      "name": "Suboxone",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "suboxone",
+    "سابوکسون",
+    "بوپرنورفین",
+    "بوپره نورفین",
+    "ب ن"
+  ],
+  "formulations": [
+    {
+      "id": "sl-2",
+      "form": "sublingual-tablet",
+      "route": "sublingual",
+      "label": "Buprenorphine 2 mg / naloxone 0.5 mg sublingual tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bup-nal",
+          "section": "3"
+        }
+      ],
+      "components": {
+        "buprenorphine": {
+          "name": {
+            "fa": "بوپرنورفین",
+            "en": "Buprenorphine"
+          },
+          "amount": 2,
+          "unit": "mg"
+        },
+        "naloxone": {
+          "name": {
+            "fa": "نالوکسان",
+            "en": "Naloxone"
+          },
+          "amount": 0.5,
+          "unit": "mg"
+        }
+      }
+    },
+    {
+      "id": "sl-8",
+      "form": "sublingual-tablet",
+      "route": "sublingual",
+      "label": "Buprenorphine 8 mg / naloxone 2 mg sublingual tablet",
+      "concentration": {
+        "amount": 8,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bup-nal",
+          "section": "3"
+        }
+      ],
+      "components": {
+        "buprenorphine": {
+          "name": {
+            "fa": "بوپرنورفین",
+            "en": "Buprenorphine"
+          },
+          "amount": 8,
+          "unit": "mg"
+        },
+        "naloxone": {
+          "name": {
+            "fa": "نالوکسان",
+            "en": "Naloxone"
+          },
+          "amount": 2,
+          "unit": "mg"
+        }
+      }
+    }
+  ],
+  "regimens": [
+    {
+      "id": "maint",
+      "disease": "opioid-use-disorder",
+      "label": {
+        "fa": "نگهدارنده اختلال مصرف اپیوئید — هدف ۱۶ mg بوپرنورفین یک بار در روز (بازه ۴ تا ۲۴ mg)",
+        "en": "OUD maintenance — target 16 mg buprenorphine once daily (range 4–24 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 16,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bup-nal",
+          "section": "2.3"
+        }
+      ],
+      "doseComponent": "buprenorphine",
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت جزء بوپرنورفین. پس از القا با بوپرنورفین زیرزبانی؛ تنظیم با گام‌های ۲ یا ۴ mg؛ بازه معمول ۴ تا ۲۴ mg در روز. زیر زبان تا حل کامل؛ نجود و نبلعد. آغاز با مصرف تحت نظر.",
+            "en": "Shown as the buprenorphine component. After induction with sublingual buprenorphine; adjust in 2 or 4 mg steps; usual range 4–24 mg/day. Under the tongue until dissolved; do not chew or swallow. Start with supervised dosing."
+          },
+          "refs": [
+            {
+              "source": "fda-bup-nal",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-bup-nal",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-bup-nal",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-bup-nal",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بوپرنورفین یا نالوکسان.",
+        "en": "Hypersensitivity to buprenorphine or naloxone."
+      },
+      "refs": [
+        {
+          "source": "fda-bup-nal",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "دپرسیون تنفسی (به‌ویژه همراه بنزودیازپین یا سایر مضعف‌های CNS)؛ مصرف تصادفی در کودک؛ نالوکسان در دسترس باشد.",
+        "en": "Respiratory depression (especially with benzodiazepines or other CNS depressants); accidental pediatric exposure; keep naloxone available."
+      },
+      "refs": [
+        {
+          "source": "fda-bup-nal",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-bup-nal",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "maint",
+      "formulation": "sl-8",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 16,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "N07BC51"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01414",
+        "en": "BUPRENORPHINE 0.3MG/1ML AMP",
+        "fa": "آمپول بوپرنورفین ۰٫۳ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01983",
+        "en": "BUPRENORPHINE 0.4MG SL TAB",
+        "fa": "قرص بوپرنورفین ۰٫۴ میلی‌گرم SL"
+      },
+      {
+        "code": "10102",
+        "en": "BUPRENORPHINE 15MG TAB",
+        "fa": "قرص بوپرنورفین ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "03799",
+        "en": "BUPRENORPHINE 2MG SL TAB",
+        "fa": "قرص بوپرنورفین ۲ میلی‌گرم SL"
+      },
+      {
+        "code": "03800",
+        "en": "BUPRENORPHINE 8MG SL TAB",
+        "fa": "قرص بوپرنورفین ۸ میلی‌گرم SL"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-34/Buprenorphine",
+        "url": "https://www.darooyab.ir/G-34/Buprenorphine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-bup-nal",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA203326"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203326",
+      "label": "ANDA203326"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=713db2c6-0544-4633-b874-cfbeaf93db89",
+      "label": "FDA Buprenorphine-nalox."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616019.html",
+      "label": "Buprenorphine Buccal (chronic pain)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618015.html",
+      "label": "Buprenorphine Injection (opioid dependence)"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07BC51",
+      "label": "N07BC51"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-34/Buprenorphine",
+      "label": "Buprenorphine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The data on use of buprenorphine, one of the active ingredients in Buprenorphine and Naloxone Sublingual Tablets, in pregnancy, are limited; however, these data do not indicate an increased risk of major malformations specifically due to buprenorphine exposure.",
+      "refs": [
+        {
+          "source": "fda-bup-nal",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Based on two studies in 13 lactating women maintained on buprenorphine treatment, buprenorphine and its metabolite norbuprenorphine were present in low levels in human milk and available data have not shown adverse reactions in breastfed infants.",
+      "refs": [
+        {
+          "source": "fda-bup-nal",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Buprenorphine and Naloxone Sublingual Tablets have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-bup-nal",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… g therapy in geriatric patients, the decision to prescribe Buprenorphine and Naloxone Sublingual Tablets should be made cautiously in individuals 65 years of age or older and these patients should be monitored for signs and symptoms of toxicity or overdose.",
+      "refs": [
+        {
+          "source": "fda-bup-nal",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Chronic use of opioids may cause reduced fertility in females and males of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-bup-nal",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

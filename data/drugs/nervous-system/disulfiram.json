@@ -1,0 +1,340 @@
+{
+  "id": "disulfiram",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دی‌سولفیرام",
+    "en": "Disulfiram"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بازدارنده مصرف الکل",
+    "en": "Alcohol deterrent"
+  },
+  "brands": [
+    {
+      "name": "Antabuse",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "antabuse",
+    "آنتابوس",
+    "دی سولفیرام"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-disulfiram",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "initial",
+      "disease": "alcohol-use-disorder",
+      "label": {
+        "fa": "وابستگی به الکل — مرحله اول: حداکثر ۵۰۰ mg یک بار در روز، ۱ تا ۲ هفته",
+        "en": "Alcohol dependence — first phase: max 500 mg once daily for 1–2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-disulfiram",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط پس از دست‌کم ۱۲ ساعت پرهیز از الکل و با آگاهی کامل بیمار.",
+            "en": "Only after at least 12 h of abstinence and with the patient’s full knowledge."
+          },
+          "refs": [
+            {
+              "source": "fda-disulfiram",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-disulfiram",
+              "section": "Boxed Warning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "alcohol-use-disorder",
+      "label": {
+        "fa": "نگهدارنده — معمولاً ۲۵۰ mg روزانه (۱۲۵ تا ۵۰۰ mg)",
+        "en": "Maintenance — usually 250 mg daily (125–500 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-disulfiram",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 500,
+        "refs": [
+          {
+            "source": "fda-disulfiram",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف اخیر مترونیدازول، پارالدئید، الکل یا فرآورده‌های الکل‌دار؛ بیماری شدید میوکارد یا انسداد کرونر؛ سایکوز؛ حساسیت به تیورام‌ها.",
+        "en": "Recent metronidazole, paraldehyde, alcohol or alcohol-containing preparations; severe myocardial disease or coronary occlusion; psychosis; thiuram hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-disulfiram",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: هرگز در حالت مستی یا بدون آگاهی بیمار داده نشود. هپاتیت و نارسایی کبد (گاهی کشنده)؛ نوریت اپتیک و نوروپاتی.",
+        "en": "Boxed warning: never give to an intoxicated patient or without their knowledge. Hepatitis and hepatic failure (sometimes fatal); optic neuritis and neuropathy."
+      },
+      "refs": [
+        {
+          "source": "fda-disulfiram",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-disulfiram",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "metronidazole",
+      "text": {
+        "fa": "مترونیدازول و فرآورده‌های الکل‌دار (شربت سرفه، تونیک) — ممنوع.",
+        "en": "Metronidazole and alcohol-containing preparations (cough syrups, tonics) — contraindicated."
+      },
+      "refs": [
+        {
+          "source": "fda-disulfiram",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "initial",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N07BB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06745",
+        "en": "DISULFIRAM 200MG TAB",
+        "fa": "قرص دی‌سولفیرام ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08634",
+        "en": "DISULFIRAM 250MG TAB",
+        "fa": "قرص دی‌سولفیرام ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "08106",
+        "en": "DISULFIRAM 500MG TAB",
+        "fa": "قرص دی‌سولفیرام ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3801/Disulfiram",
+        "url": "https://www.darooyab.ir/G-3801/Disulfiram"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-disulfiram",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA091681"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=091681",
+      "label": "ANDA091681"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b90f8ff4-4fb3-46ab-8149-cb55f24a4044",
+      "label": "FDA Disulfiram"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682602.html",
+      "label": "Disulfiram"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07BB01",
+      "label": "N07BB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3801/Disulfiram",
+      "label": "Disulfiram"
+    }
+  ],
+  "populations": {
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Since many drugs are so excreted, disulfiram should not be given to nursing mothers.",
+      "refs": [
+        {
+          "source": "fda-disulfiram",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-disulfiram",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-disulfiram",
+          "section": "Geriatric Use"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری دی سولفیرام گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-3801/Disulfiram — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-3801/Disulfiram"
+        }
+      ]
+    }
+  }
+}

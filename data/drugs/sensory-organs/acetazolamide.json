@@ -1,0 +1,336 @@
+{
+  "id": "acetazolamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "استازولامید",
+    "en": "Acetazolamide"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "مهارکننده کربنیک انیدراز",
+    "en": "Carbonic anhydrase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Diamox",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "diamox",
+    "دیاموکس",
+    "استازولامید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-125",
+      "form": "tablet",
+      "route": "oral",
+      "label": "125 mg tablet (scored)",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acetazolamide",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet (quarter-scored)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acetazolamide",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "glaucoma",
+      "disease": "glaucoma",
+      "label": {
+        "fa": "گلوکوم زاویه باز (کمکی) — ۲۵۰ mg تا ۱ g در روز در دوزهای منقسم",
+        "en": "Open-angle glaucoma (adjunct) — 250 mg–1 g/day in divided doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-acetazolamide",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1000,
+        "refs": [
+          {
+            "source": "fda-acetazolamide",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بیش از ۲۵۰ mg در دوزهای منقسم؛ بالای ۱ g در روز اثر بیشتری ندارد. گلوکوم ثانویه و پیش از جراحی گلوکوم حاد زاویه بسته طبق برچسب.",
+            "en": "Divide doses above 250 mg; more than 1 g/day adds no effect. Secondary and acute angle-closure glaucoma per label."
+          },
+          "refs": [
+            {
+              "source": "fda-acetazolamide",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ams",
+      "disease": "altitude-sickness",
+      "label": {
+        "fa": "بیماری کوهستان — ۵۰۰ تا ۱۰۰۰ mg در روز در دوزهای منقسم",
+        "en": "Acute mountain sickness — 500–1,000 mg/day in divided doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "perDoseMax": 500,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-acetazolamide",
+          "section": "Dosage and Administration — Acute Mountain Sickness"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بهتر است ۲۴ تا ۴۸ ساعت پیش از صعود شروع و تا ۴۸ ساعت در ارتفاع ادامه. صعود سریع (امداد، نظامی): ۱۰۰۰ mg.",
+            "en": "Preferably start 24–48 h before ascent and continue for 48 h at altitude. Rapid ascent (rescue, military): 1,000 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-acetazolamide",
+              "section": "Dosage and Administration — Acute Mountain Sickness"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به استازولامید یا سولفونامیدها؛ کمبود سدیم یا پتاسیم؛ بیماری شدید کلیه یا کبد؛ نارسایی آدرنال؛ اسیدوز هیپرکلرمیک.",
+        "en": "Hypersensitivity to acetazolamide or sulfonamides; low sodium or potassium; marked renal or hepatic disease; adrenal failure; hyperchloraemic acidosis."
+      },
+      "refs": [
+        {
+          "source": "fda-acetazolamide",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "glaucoma",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "ams",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "upperPerDose": 500
+      }
+    }
+  ],
+  "atc": [
+    "S01EC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00011",
+        "en": "ACETAZOLAMIDE 250MG TAB",
+        "fa": "قرص آستازولامید ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00012",
+        "en": "ACETAZOLAMIDE 500MG INJ",
+        "fa": "فرآورده تزریقی آستازولامید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "18326",
+        "en": "ACETAZOMID 500MG  ING.",
+        "fa": "آستازومید ۵۰۰ میلی‌گرم اینگ ."
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1508/Acetazolamide",
+        "url": "https://www.darooyab.ir/G-1508/Acetazolamide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-acetazolamide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA211151"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211151",
+      "label": "ANDA211151"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=240ab24b-3124-4805-80c2-36dd1945e3b3",
+      "label": "FDA Acetazolamide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682756.html",
+      "label": "Acetazolamide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01EC01",
+      "label": "S01EC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1508/Acetazolamide",
+      "label": "Acetazolamide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Acetazolamide, administered orally or parenterally, has been shown to be teratogenic (defects of the limbs) in mice, rats, hamsters, and rabbits.",
+      "refs": [
+        {
+          "source": "fda-acetazolamide",
+          "section": "Pregnancy: Teratogenic effects"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants from acetazolamide, a decision should be made whether to discontinue nursing or to discontinue the drug taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-acetazolamide",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of acetazolamide in pediatric patients has not been established.",
+      "refs": [
+        {
+          "source": "fda-acetazolamide",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-acetazolamide",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

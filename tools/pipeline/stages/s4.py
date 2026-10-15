@@ -7,7 +7,6 @@ S = json.load(open(os.path.join(C, 's4_setids.json')))
 sid = lambda k: S[k][0]
 
 add_disease('svt', 'تاکی‌کاردی فوق بطنی حمله‌ای (PSVT)', 'Paroxysmal supraventricular tachycardia', ['SVT', 'PSVT', 'تاکی کاردی فوق بطنی', 'تپش قلب'], ['I47.10'], 'cardiology')
-add_disease('cardiac-arrest', 'ایست قلبی و فیبریلاسیون بطنی', 'Cardiac arrest and ventricular fibrillation', ['cardiac arrest', 'VF', 'ایست قلبی', 'احیا'], ['I46.9', 'I49.01'], 'emergency')
 add_disease('iron-poisoning', 'مسمومیت حاد با آهن', 'Acute iron poisoning', ['iron overdose', 'مسمومیت آهن', 'قرص آهن'], ['T45.4X1A'], 'toxicology')
 add_disease('toxic-alcohol', 'مسمومیت با متانول یا اتیلن گلیکول', 'Methanol or ethylene glycol poisoning', ['methanol', 'ethylene glycol', 'متانول', 'الکل صنعتی', 'ضدیخ'], ['T51.1X1A', 'T52.3X1A'], 'toxicology')
 add_disease('methemoglobinemia', 'مت‌هموگلوبینمی', 'Methaemoglobinaemia', ['methemoglobinemia', 'مت هموگلوبین', 'سیانوز'], ['D74.9'], 'toxicology')

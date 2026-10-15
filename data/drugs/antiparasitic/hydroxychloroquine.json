@@ -175,6 +175,51 @@
           ]
         }
       ]
+    },
+    {
+      "id": "sle",
+      "disease": "lupus",
+      "label": {
+        "fa": "لوپوس اریتماتوی سیستمیک یا دیسکوئید — بزرگسال: ۲۰۰ تا ۴۰۰ mg در روز",
+        "en": "Systemic or chronic discoid lupus — adult: 200–400 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "perDoseMax": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-hcq",
+          "section": "2.5"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۰۰ mg یک بار، یا ۴۰۰ mg یک بار یا در ۲ دوز.",
+            "en": "200 mg once daily, or 400 mg once daily or in two divided doses."
+          },
+          "refs": [
+            {
+              "source": "fda-hcq",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -266,6 +311,18 @@
       "expect": {
         "perDose": 201.5,
         "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "sle",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 200,
+        "upperPerDose": 400
       }
     }
   ],

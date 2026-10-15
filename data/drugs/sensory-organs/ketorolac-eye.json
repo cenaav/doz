@@ -1,0 +1,303 @@
+{
+  "id": "ketorolac-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی کتورولاک",
+    "en": "Ketorolac eye drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "NSAID چشمی",
+    "en": "Ophthalmic NSAID"
+  },
+  "brands": [
+    {
+      "name": "Acular",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "acular",
+    "آکولار",
+    "کتورولاک چشمی"
+  ],
+  "formulations": [
+    {
+      "id": "sol-05",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "Ketorolac tromethamine 0.5% eye drops",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acular",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "itch",
+      "disease": "allergic-conjunctivitis",
+      "label": {
+        "fa": "خارش چشم در ورم ملتحمه آلرژیک فصلی — یک قطره ۴ بار در روز",
+        "en": "Itching of seasonal allergic conjunctivitis — 1 drop four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-acular",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "postop",
+      "disease": "ocular-inflammation",
+      "label": {
+        "fa": "التهاب پس از جراحی آب‌مروارید — یک قطره ۴ بار در روز از ۲۴ ساعت بعد تا ۲ هفته",
+        "en": "Post-cataract inflammation — 1 drop four times daily from 24 h after surgery for 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-acular",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزای فرآورده.",
+        "en": "Hypersensitivity to any ingredient."
+      },
+      "refs": [
+        {
+          "source": "fda-acular",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "تأخیر در ترمیم، حساسیت متقاطع با آسپرین و NSAIDها، افزایش زمان خونریزی و کراتیت.",
+        "en": "Delayed healing, cross-sensitivity with aspirin and NSAIDs, prolonged bleeding time and keratitis."
+      },
+      "refs": [
+        {
+          "source": "fda-acular",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "itch",
+      "formulation": "sol-05",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1,
+        "dosesPerDay": 4
+      }
+    },
+    {
+      "regimen": "postop",
+      "formulation": "sol-05",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "dosesPerDay": 4
+      }
+    }
+  ],
+  "atc": [
+    "S01BC05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13573",
+        "en": "KETOROLAC 10MG TAB",
+        "fa": "قرص کتورولاک ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "17265",
+        "en": "KETOROLAC 10MG/ML INJ",
+        "fa": "فرآورده تزریقی کتورولاک ۱۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "13267",
+        "en": "KETOROLAC 30MG/ML  INJ",
+        "fa": "فرآورده تزریقی کتورولاک ۳۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "17972",
+        "en": "KETOROLAC 60MG/2ML  INJ",
+        "fa": "فرآورده تزریقی کتورولاک ۶۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "11458",
+        "en": "KETOROLAC TROMETAMIN 0.5% 5ML OPH DROP",
+        "fa": "قطره چشمی کتورولاک ترومتامین ۰٫۵ درصد ۵ میلی‌لیتر"
+      },
+      {
+        "code": "23124",
+        "en": "KETOROLAC TROMETAMOL INJECTION PARENTERAL 15 mg/1mL 1 mL",
+        "fa": "فرآورده تزریقی کتورولاک ترومتامول ۱۵ میلی‌گرم / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-110/Ketorolac",
+        "url": "https://www.darooyab.ir/G-110/Ketorolac"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019700",
+      "label": "NDA019700"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c94644d3-7b64-4f3d-a0c7-12c77466a0fc",
+      "label": "FDA Acular"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01BC05",
+      "label": "S01BC05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-110/Ketorolac",
+      "label": "Ketorolac"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Clinical Considerations Because of the known effects of prostaglandin-inhibiting drugs on the fetal cardiovascular system (closure of the ductus arteriosus), the use of ACULAR during late pregnancy should be avoided.",
+      "refs": [
+        {
+          "source": "fda-acular",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when ACULAR is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-acular",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of ACULAR have not been established in pediatric patients younger than 2 years old.",
+      "refs": [
+        {
+          "source": "fda-acular",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness have been observed between elderly and other adult patients.",
+      "refs": [
+        {
+          "source": "fda-acular",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-acular",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019700"
+  }
+}

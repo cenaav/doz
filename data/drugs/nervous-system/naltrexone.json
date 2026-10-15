@@ -1,0 +1,300 @@
+{
+  "id": "naltrexone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نالترکسون",
+    "en": "Naltrexone"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتاگونیست اپیوئید",
+    "en": "Opioid antagonist"
+  },
+  "brands": [
+    {
+      "name": "Revia",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "revia",
+    "رویا",
+    "نالترکسون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-naltrexone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "alcohol",
+      "disease": "alcohol-use-disorder",
+      "label": {
+        "fa": "وابستگی به الکل — ۵۰ mg یک بار در روز",
+        "en": "Alcohol dependence — 50 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-naltrexone",
+          "section": "Dosage and Administration — Alcoholism"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در کارآزمایی‌ها تا ۱۲ هفته؛ فقط بخشی از برنامه درمان جامع.",
+            "en": "Studied for up to 12 weeks; only part of a comprehensive programme."
+          },
+          "refs": [
+            {
+              "source": "fda-naltrexone",
+              "section": "Dosage and Administration — Alcoholism"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "opioid",
+      "disease": "opioid-use-disorder",
+      "label": {
+        "fa": "پیشگیری از عود اپیوئید (پس از سم‌زدایی) — شروع ۲۵ mg، سپس ۵۰ mg روزانه",
+        "en": "Opioid relapse prevention (after detox) — start 25 mg, then 50 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-naltrexone",
+          "section": "Dosage and Administration — Treatment of Opioid Dependence"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول ۲۵ mg؛ اگر علائم ترک نبود، ۵۰ mg روزانه. بیمار باید ۷ تا ۱۰ روز بدون اپیوئید باشد (تست ادرار منفی یا تست نالوکسان).",
+            "en": "First dose 25 mg; if no withdrawal, 50 mg daily. Patient must be opioid-free for 7–10 days (negative urine screen or naloxone challenge)."
+          },
+          "refs": [
+            {
+              "source": "fda-naltrexone",
+              "section": "Dosage and Administration — Treatment of Opioid Dependence"
+            },
+            {
+              "source": "fda-naltrexone",
+              "section": "Contraindications"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف مسکن اپیوئیدی؛ وابستگی فعلی به اپیوئید (از جمله متادون یا بوپرنورفین)؛ ترک حاد اپیوئید؛ تست نالوکسان ناموفق یا ادرار مثبت؛ حساسیت.",
+        "en": "Receiving opioid analgesics; current opioid dependence (including methadone or buprenorphine); acute opioid withdrawal; failed naloxone challenge or positive urine screen; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-naltrexone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "alcohol",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "opioid",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N07BB04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01718",
+        "en": "NALTREXONE HCL 25MG CAP",
+        "fa": "کپسول نالترکسون هیدروکلراید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "01719",
+        "en": "NALTREXONE HCL 50MG CAP",
+        "fa": "کپسول نالترکسون هیدروکلراید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "51777",
+        "en": "NALTREXONE INJECTION, POWDER, FOR SUSPENSION PARENTERAL 380 mg",
+        "fa": "پودر برای تهیه سوسپانسیون تزریقی نالترکسون ۳۸۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1970/Naltrexone",
+        "url": "https://www.darooyab.ir/G-1970/Naltrexone"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-naltrexone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076264"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076264",
+      "label": "ANDA076264"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06ff2d5a-e62b-4fa4-bbdb-01938535bc65",
+      "label": "FDA Naltrexone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a685041.html",
+      "label": "Naltrexone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609007.html",
+      "label": "Naltrexone Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07BB04",
+      "label": "N07BB04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1970/Naltrexone",
+      "label": "Naltrexone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Category C Naltrexone has been shown to increase the incidence of early fetal loss when given to rats at doses ≥ 30 mg/kg/day (180 mg/m 2 /day; 5 times the recommended therapeutic dose, based on body surface area) and to rabbits at oral doses ≥ 60 mg/kg/day (720 mg/m 2 /day; 18 times the …",
+      "refs": [
+        {
+          "source": "fda-naltrexone",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when naltrexone hydrochloride is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-naltrexone",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safe use of naltrexone hydrochloride in pediatric patients younger than 18 years old has not been established.",
+      "refs": [
+        {
+          "source": "fda-naltrexone",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "id": "rasagiline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "رازاژیلین",
+    "en": "Rasagiline"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده MAO-B",
+    "en": "MAO-B inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Azilect",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "azilect",
+    "آزیلکت",
+    "رازاژیلین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rasagiline",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rasagiline",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mono",
+      "disease": "parkinsons",
+      "label": {
+        "fa": "پارکینسون — تک‌درمانی یا همراه داروی غیر لوودوپا: ۱ mg یک بار در روز",
+        "en": "Parkinson’s — monotherapy or with non-levodopa drugs: 1 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rasagiline",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با سیپروفلوکساسین یا سایر مهارکننده‌های CYP1A2 و نارسایی خفیف کبد: ۰٫۵ mg؛ در نارسایی متوسط یا شدید کبد مصرف نشود.",
+            "en": "With ciprofloxacin or other CYP1A2 inhibitors and in mild hepatic impairment: 0.5 mg; not for moderate or severe hepatic impairment."
+          },
+          "refs": [
+            {
+              "source": "fda-rasagiline",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-rasagiline",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "levodopa",
+      "disease": "parkinsons",
+      "label": {
+        "fa": "پارکینسون — همراه لوودوپا: ۰٫۵ mg یک بار در روز (تا ۱ mg)",
+        "en": "Parkinson’s — with levodopa: 0.5 mg once daily (up to 1 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rasagiline",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 1,
+        "refs": [
+          {
+            "source": "fda-rasagiline",
+            "section": "2.1"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "مپریدین، ترامادول، متادون، دکسترومتورفان، سیکلوبنزاپرین، علف چای و سایر MAOIها (۱۴ روز فاصله) — خطر سندرم سروتونین.",
+        "en": "Meperidine, tramadol, methadone, dextromethorphan, cyclobenzaprine, St John’s wort and other MAOIs (14-day gap) — serotonin syndrome risk."
+      },
+      "refs": [
+        {
+          "source": "fda-rasagiline",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mono",
+      "formulation": "tab-1",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "levodopa",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N04BD02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09392",
+        "en": "RASAGILINE 1MG TAB",
+        "fa": "قرص راساجیلین ۱ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4795/Rasagiline",
+        "url": "https://www.darooyab.ir/G-4795/Rasagiline"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-rasagiline",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA201970"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201970",
+      "label": "ANDA201970"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a62a9946-755f-47d0-afe6-edc8f7d641fe",
+      "label": "FDA Rasagiline"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a606017.html",
+      "label": "Rasagiline"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04BD02",
+      "label": "N04BD02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4795/Rasagiline",
+      "label": "Rasagiline"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risks associated with the use of rasagiline in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-rasagiline",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of rasagiline in human milk or the effects on the breastfed infant.",
+      "refs": [
+        {
+          "source": "fda-rasagiline",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-rasagiline",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Approximately half of patients in clinical trials were 65 years and over.",
+      "refs": [
+        {
+          "source": "fda-rasagiline",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

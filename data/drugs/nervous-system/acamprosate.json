@@ -1,0 +1,243 @@
+{
+  "id": "acamprosate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آکامپروسات",
+    "en": "Acamprosate"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "داروی حفظ پرهیز از الکل",
+    "en": "Alcohol abstinence maintenance"
+  },
+  "brands": [
+    {
+      "name": "Campral",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "campral",
+    "کمپرال",
+    "آکامپروسات"
+  ],
+  "formulations": [
+    {
+      "id": "tab-333",
+      "form": "tablet",
+      "route": "oral",
+      "label": "333 mg delayed-release tablet",
+      "concentration": {
+        "amount": 333,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acamprosate",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "alcohol-use-disorder",
+      "label": {
+        "fa": "حفظ پرهیز از الکل — ۶۶۶ mg (۲ قرص) سه بار در روز",
+        "en": "Maintaining alcohol abstinence — 666 mg (2 tablets) three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 666,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-acamprosate",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هرچه زودتر پس از دوره ترک و پس از رسیدن به پرهیز شروع؛ در صورت عود ادامه. ترجیحاً با وعده‌ها.",
+            "en": "Start as soon as possible after withdrawal once abstinent; continue through relapse. Preferably with meals."
+          },
+          "refs": [
+            {
+              "source": "fda-acamprosate",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ نارسایی شدید کلیه.",
+        "en": "Hypersensitivity; severe renal impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-acamprosate",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "tab-333",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 666,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "N07BB03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09245",
+        "en": "ACAMPROSATE CALCIUM 333MG TAB",
+        "fa": "قرص آکامپروسات کلسیم ۳۳۳ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1218/Acamprosate",
+        "url": "https://www.darooyab.ir/G-1218/Acamprosate"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-acamprosate",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA218984"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218984",
+      "label": "ANDA218984"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1cfe4675-766f-4f1a-b1a8-96bbdacfcfa5",
+      "label": "FDA Acamprosate DR"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604028.html",
+      "label": "Acamprosate"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07BB03",
+      "label": "N07BB03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1218/Acamprosate",
+      "label": "Acamprosate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Acamprosate calcium should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-acamprosate",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when acamprosate calcium is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-acamprosate",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of acamprosate calcium have not been established in the pediatric population.",
+      "refs": [
+        {
+          "source": "fda-acamprosate",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function [ see Clinical Pharmacology ( 12.3 ), Adverse Reactions ( 6.1 ), and Dosage and Administration ( 2.1 ) ].",
+      "refs": [
+        {
+          "source": "fda-acamprosate",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

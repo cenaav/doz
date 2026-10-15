@@ -93,6 +93,54 @@
           ]
         }
       ]
+    },
+    {
+      "id": "canker",
+      "disease": "mouth-pain",
+      "label": {
+        "fa": "زخم آفتی (آفت دهان) — تا ۴ بار در روز (۲ سال به بالا)",
+        "en": "Canker sores — up to 4 times daily (≥2 y)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-benzocaine",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-benzocaine",
+          "section": "Uses"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "با پنبه یا انگشت روی ناحیه. زیر ۱۲ سال با نظارت بزرگسال. بیش از ۷ روز نه مگر به دستور دندان‌پزشک.",
+            "en": "Apply with cotton or fingertip. Under 12 with adult supervision. Not more than 7 days unless directed by a dentist."
+          },
+          "refs": [
+            {
+              "source": "fda-benzocaine",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -156,6 +204,17 @@
   "examples": [
     {
       "regimen": "use",
+      "formulation": "liq-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    },
+    {
+      "regimen": "canker",
       "formulation": "liq-20",
       "input": {
         "ageYears": 30,

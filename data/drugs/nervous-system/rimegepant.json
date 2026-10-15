@@ -1,0 +1,285 @@
+{
+  "id": "rimegepant",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریمژپانت",
+    "en": "Rimegepant"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتاگونیست گیرنده CGRP",
+    "en": "CGRP receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Nurtec ODT",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nurtec",
+    "vydura",
+    "نورتک",
+    "ریمژپانت"
+  ],
+  "formulations": [
+    {
+      "id": "odt-75",
+      "form": "odt",
+      "route": "oral",
+      "label": "75 mg orally disintegrating tablet",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nurtec",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acute",
+      "disease": "migraine-acute",
+      "label": {
+        "fa": "حمله میگرن — ۷۵ mg در صورت نیاز (حداکثر ۷۵ mg در ۲۴ ساعت)",
+        "en": "Acute migraine — 75 mg as needed (max 75 mg per 24 h)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 75,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nurtec",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 75,
+        "refs": [
+          {
+            "source": "fda-nurtec",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "ایمنی بیش از ۱۸ دوز در ۳۰ روز ثابت نشده. روی یا زیر زبان بدون آب.",
+            "en": "Safety of more than 18 doses in 30 days not established. On or under the tongue, no water needed."
+          },
+          "refs": [
+            {
+              "source": "fda-nurtec",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-nurtec",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prev",
+      "disease": "migraine-prophylaxis",
+      "label": {
+        "fa": "پیشگیری میگرن اپیزودیک — ۷۵ mg یک روز در میان",
+        "en": "Episodic migraine prevention — 75 mg every other day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "۷۵ mg یک روز در میان (نه روزانه)، با یا بدون غذا.",
+          "en": "75 mg every OTHER day (not daily), with or without food."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-nurtec",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به ریمژپانت.",
+        "en": "History of hypersensitivity to rimegepant."
+      },
+      "refs": [
+        {
+          "source": "fda-nurtec",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acute",
+      "formulation": "odt-75",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 75,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N02CD06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "53652",
+        "en": "RIMEGEPANT 75 mg OD TABLET",
+        "fa": "قرص ریمجپانت ۷۵ میلی‌گرم اد"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5554/Rimegepant",
+        "url": "https://www.darooyab.ir/G-5554/Rimegepant"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-nurtec",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA212728"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212728",
+      "label": "NDA212728"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9ef08e09-1098-35cc-e053-2a95a90a3e1d",
+      "label": "FDA Nurtec ODT"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620031.html",
+      "label": "Rimegepant"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02CD06",
+      "label": "N02CD06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5554/Rimegepant",
+      "label": "Rimegepant"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of NURTEC ODT in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-nurtec",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary A lactation study was conducted, and the results have established a relative infant dose of less than 1% of the maternal weight-adjusted dose and the milk-to-plasma ratio of 0.20 (see Data ) .",
+      "refs": [
+        {
+          "source": "fda-nurtec",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-nurtec",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In pharmacokinetic studies, no clinically significant pharmacokinetic differences were observed between elderly and younger subjects.",
+      "refs": [
+        {
+          "source": "fda-nurtec",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

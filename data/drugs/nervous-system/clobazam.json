@@ -1,0 +1,346 @@
+{
+  "id": "clobazam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلوبازام",
+    "en": "Clobazam"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بنزودیازپین ضدتشنج",
+    "en": "Benzodiazepine anticonvulsant"
+  },
+  "brands": [
+    {
+      "name": "Onfi",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "onfi",
+    "frisium",
+    "فریزیوم",
+    "کلوبازام"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (scored)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (scored)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "susp-2-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "2.5 mg/mL oral suspension",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "lgs",
+      "disease": "lennox-gastaut",
+      "label": {
+        "fa": "لنوکس-گاستو (افزودنی، ۲ سال به بالا) — دوز شروع بر اساس وزن",
+        "en": "Lennox-Gastaut (adjunctive, ≥2 y) — starting dose by weight"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 30,
+            "perDose": 5,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 30,
+            "maxWeightKg": null,
+            "perDose": 5,
+            "dosesPerDay": 2
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۳۰ kg و کمتر: ۵ mg/روز، روز ۷ ← ۱۰ mg، روز ۱۴ ← ۲۰ mg. بالای ۳۰ kg: ۱۰ mg/روز، روز ۷ ← ۲۰ mg، روز ۱۴ ← ۴۰ mg. بالای ۵ mg در روز در ۲ دوز. سریع‌تر از هفتگی افزایش نه؛ قطع تدریجی.",
+            "en": "≤30 kg: 5 mg/day, day 7 → 10 mg, day 14 → 20 mg. >30 kg: 10 mg/day, day 7 → 20 mg, day 14 → 40 mg. Above 5 mg/day give in 2 doses. No faster than weekly; taper to stop."
+          },
+          "refs": [
+            {
+              "source": "fda-onfi",
+              "section": "2.1, Table 1"
+            },
+            {
+              "source": "fda-onfi",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به کلوبازام.",
+        "en": "History of hypersensitivity to clobazam."
+      },
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: مصرف همزمان با اپیوئید (آرام‌بخشی شدید، دپرسیون تنفسی، مرگ)، سوءمصرف و وابستگی، واکنش ترک.",
+        "en": "Boxed warning: concomitant opioids (profound sedation, respiratory depression, death), abuse and dependence, withdrawal reactions."
+      },
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "lgs",
+      "formulation": "susp-2-5",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 5,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "lgs",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 0.5,
+        "dosesPerDay": 2
+      }
+    }
+  ],
+  "atc": [
+    "N05BA09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00312",
+        "en": "CLOBAZAM 10MG TAB",
+        "fa": "قرص کلوبازام ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "53342",
+        "en": "CLOBAZAM  2.5 mg/1mL 120ML SUSPENSION ORAL",
+        "fa": "سوسپانسیون خوراکی کلوبازام ۲٫۵ میلی‌گرم / ۱ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-660/Clobazam",
+        "url": "https://www.darooyab.ir/G-660/Clobazam"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-onfi",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA202067"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202067",
+      "label": "NDA202067"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de03bd69-2dca-459c-93b4-541fd3e9571c",
+      "label": "FDA Onfi"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612008.html",
+      "label": "Clobazam"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05BA09",
+      "label": "N05BA09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-660/Clobazam",
+      "label": "Clobazam"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Neonates born to mothers using benzodiazepines late in pregnancy have been reported to experience symptoms of sedation and/or neonatal withdrawal [see Warnings and Precautions ( 5.9) and Clinical Considerations] .",
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary ONFI is excreted in human milk ( see Data) .",
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness in patients less than 2 years of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of ONFI did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Administration of clobazam to rats prior to and during mating and early gestation resulted in adverse effects on fertility and early embryonic development at plasma exposures for clobazam and its major active metabolite, N-desmethylclobazam, below those in humans at the MRHD [see Nonclinical Toxicology ( 13.1 )] .",
+      "refs": [
+        {
+          "source": "fda-onfi",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "id": "brimonidine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی بریمونیدین",
+    "en": "Brimonidine eye drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "آگونیست α2 (کاهش فشار چشم)",
+    "en": "α2 agonist (IOP-lowering)"
+  },
+  "brands": [
+    {
+      "name": "Alphagan P",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "alphagan",
+    "آلفاگان",
+    "بریمونیدین"
+  ],
+  "formulations": [
+    {
+      "id": "sol-01",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "Brimonidine tartrate 0.1% eye drops",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-brimonidine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "iop",
+      "disease": "glaucoma",
+      "label": {
+        "fa": "گلوکوم زاویه باز یا فشار بالای چشم — یک قطره ۳ بار در روز (هر ۸ ساعت)",
+        "en": "Open-angle glaucoma or ocular hypertension — 1 drop three times daily (every 8 h)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-brimonidine",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با سایر قطره‌ها دست‌کم ۵ دقیقه فاصله.",
+            "en": "At least 5 minutes apart from other eye drops."
+          },
+          "refs": [
+            {
+              "source": "fda-brimonidine",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "infant",
+      "severity": "block",
+      "text": {
+        "fa": "نوزاد و شیرخوار زیر ۲ سال.",
+        "en": "Neonates and infants under 2 years."
+      },
+      "refs": [
+        {
+          "source": "fda-brimonidine",
+          "section": "4"
+        }
+      ],
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      }
+    },
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش حساسیتی قبلی.",
+        "en": "Previous hypersensitivity reaction."
+      },
+      "refs": [
+        {
+          "source": "fda-brimonidine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "iop",
+      "formulation": "sol-01",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "dosesPerDay": 3
+      }
+    }
+  ],
+  "atc": [
+    "S01EA05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18369",
+        "en": "BRIMONIDINE 1.3 MG +TIMOLOL 0.5 MG  DROP",
+        "fa": "قطره بریمونیدین ۱٫۳ میلی‌گرم + تیمولول ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "11459",
+        "en": "BRIMONIDINE TARTRATE 0.2% OPH DROP",
+        "fa": "قطره چشمی بریمونیدین تارتارات ۰٫۲ درصد"
+      },
+      {
+        "code": "02028",
+        "en": "BRIMONIDINE TARTRATE 1% 5ML OPH DROP",
+        "fa": "قطره چشمی بریمونیدین تارتارات ۱ درصد ۵ میلی‌لیتر"
+      },
+      {
+        "code": "52430",
+        "en": "BRIMONIDINE (AS TARTRATE) GEL TOPICAL 3 mg/1g 30 g",
+        "fa": "ژل موضعی بریمونیدین (معادل تارتارات) ۳ میلی‌گرم / ۱ گرم ۳۰ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1565/Brimonidine",
+        "url": "https://www.darooyab.ir/G-1565/Brimonidine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220398",
+      "label": "ANDA220398"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f6666d85-f810-4869-993d-e8ae35b4517f",
+      "label": "FDA Brimonidine 0.1%"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01EA05",
+      "label": "S01EA05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1565/Brimonidine",
+      "label": "Brimonidine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies with brimonidine tartrate ophthalmic solution in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-brimonidine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "In animal studies, brimonidine tartrate has been shown to cross the blood-brain barrier and is excreted into breast milk after oral administration to lactating rats (see Data) .",
+      "refs": [
+        {
+          "source": "fda-brimonidine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: زیر ۲ سال ممنوع؛ از ۲ سالگی با احتیاط.",
+        "en": "Label: contraindicated under 2 years; use with caution from 2 years."
+      },
+      "quote": "Neonates and infants (pediatric patients younger than 2 years old).",
+      "refs": [
+        {
+          "source": "fda-brimonidine",
+          "section": "4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness have been observed between elderly and other adult patients.",
+      "refs": [
+        {
+          "source": "fda-brimonidine",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-brimonidine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA220398"
+  }
+}

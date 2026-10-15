@@ -1,0 +1,399 @@
+{
+  "id": "lacosamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لاکوزامید",
+    "en": "Lacosamide"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدتشنج",
+    "en": "Anticonvulsant"
+  },
+  "brands": [
+    {
+      "name": "Vimpat",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vimpat",
+    "ویمپت",
+    "لاکوزامید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "sol-10",
+      "form": "solution",
+      "route": "oral",
+      "label": "10 mg/mL oral solution",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "تشنج کانونی (افزودنی) — بزرگسال و کودک ۵۰ kg به بالا: شروع ۵۰ mg دو بار در روز",
+        "en": "Partial-onset seizures (adjunctive) — adults and children ≥50 kg: start 50 mg twice daily"
+      },
+      "population": {
+        "minWeightKg": 50
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 100,
+          "increment": 100,
+          "incrementEveryDays": 7,
+          "targetMin": 200,
+          "targetMax": 400,
+          "max": 400
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هفتگی ۵۰ mg دو بار در روز افزایش. نگهدارنده افزودنی ۱۰۰ تا ۲۰۰ mg دو بار؛ تک‌درمانی بزرگسال: شروع ۱۰۰ mg دو بار، نگهدارنده ۱۵۰ تا ۲۰۰ mg دو بار.",
+            "en": "Increase weekly by 50 mg twice daily. Adjunctive maintenance 100–200 mg twice daily; adult monotherapy: start 100 mg twice daily, maintain 150–200 mg twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-vimpat",
+              "section": "2.1, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "تشنج کانونی — کودک ۱۱ تا کمتر از ۵۰ kg: شروع ۱ mg/kg دو بار در روز",
+        "en": "Partial-onset seizures — child 11 to <50 kg: start 1 mg/kg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "minWeightKg": 11,
+        "maxWeightKg": 49.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هفتگی ۱ mg/kg دو بار افزایش. نگهدارنده: ۱۱ تا ۳۰ kg ← ۳ تا ۶ mg/kg دو بار؛ ۳۰ تا ۵۰ kg ← ۲ تا ۴ mg/kg دو بار.",
+            "en": "Increase weekly by 1 mg/kg twice daily. Maintenance: 11–30 kg → 3–6 mg/kg twice daily; 30–50 kg → 2–4 mg/kg twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-vimpat",
+              "section": "2.1, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "sol-10",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "N03AX18"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21109",
+        "en": "LACOSAMIDE 200MG TAB",
+        "fa": "قرص لاکوزامید ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "18112",
+        "en": "LACOSAMIDE 50 MG  TAB.",
+        "fa": "قرص لاکوزامید ۵۰ میلی‌گرم ."
+      },
+      {
+        "code": "52179",
+        "en": "LACOSAMIDE 150MG TAB",
+        "fa": "قرص لاکوزامید ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52177",
+        "en": "LACOSAMIDE 100MG TAB",
+        "fa": "قرص لاکوزامید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "53308",
+        "en": "LACOSAMIDE SOLUTION ORAL 10 mg/1mL 120M",
+        "fa": "محلول خوراکی لاکوزامید ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۱۲۰ M"
+      },
+      {
+        "code": "52178",
+        "en": "LACOSAMIDE TABLET ORAL 50 mg",
+        "fa": "قرص لاکوزامید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4682/Lacosamide",
+        "url": "https://www.darooyab.ir/G-4682/Lacosamide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-vimpat",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022253"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022253",
+      "label": "NDA022253"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9e79b42c-38a3-4b2c-a196-a5a1948250e2",
+      "label": "FDA Vimpat"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609028.html",
+      "label": "Lacosamide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609029.html",
+      "label": "Lacosamide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AX18",
+      "label": "N03AX18"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4682/Lacosamide",
+      "label": "Lacosamide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from the North American Antiepileptic Drug (NAAED) pregnancy registry, a prospective cohort study, case reports, and a case series with VIMPAT use in pregnant women are insufficient to identify a drug-associated risk of major birth defects, miscarriage or other adverse maternal or fetal …",
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from published literature indicate that lacosamide is present in human milk.",
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Partial-Onset Seizures Safety and effectiveness of VIMPAT for the treatment of partial-onset seizures have been established in pediatric patients 1 month to less than 17 years of age.",
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In elderly patients, dose titration should be performed with caution, usually starting at the lower end of the dosing range, reflecting the greater frequency of decreased hepatic function, decreased renal function, increased cardiac conduction abnormalities, and polypharmacy [see Dosage and Administration (2.1 , 2.4 , …",
+      "refs": [
+        {
+          "source": "fda-vimpat",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

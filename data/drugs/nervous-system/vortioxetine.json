@@ -1,0 +1,298 @@
+{
+  "id": "vortioxetine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "وورتیوکستین",
+    "en": "Vortioxetine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدافسردگی چندحالته",
+    "en": "Multimodal antidepressant"
+  },
+  "brands": [
+    {
+      "name": "Trintellix",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "trintellix",
+    "brintellix",
+    "ترینتلیکس",
+    "وورتیوکستین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-trintellix",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-trintellix",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-trintellix",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی اساسی — شروع ۱۰ mg یک بار در روز، سپس ۲۰ mg",
+        "en": "Major depression — start 10 mg once daily, then 20 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 10,
+          "increment": 10,
+          "incrementEveryDays": 7,
+          "targetMin": 20,
+          "targetMax": 20,
+          "max": 20
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-trintellix",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در عدم تحمل تا ۵ mg کاهش. پیش از شروع سابقه دوقطبی بررسی شود.",
+            "en": "May reduce to 5 mg if not tolerated. Screen for bipolar disorder before starting."
+          },
+          "refs": [
+            {
+              "source": "fda-trintellix",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-trintellix",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ MAOI همزمان، ظرف ۱۴ روز پس از قطع MAOI یا ۲۱ روز پس از قطع وورتیوکستین؛ لینزولید یا متیلن بلو وریدی.",
+        "en": "Hypersensitivity; MAOIs, within 14 days of stopping an MAOI or 21 days of stopping vortioxetine; linezolid or IV methylene blue."
+      },
+      "refs": [
+        {
+          "source": "fda-trintellix",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش افکار و رفتار خودکشی در کودکان و جوانان؛ در کودکان تأیید نشده.",
+        "en": "Boxed warning: increased suicidal thoughts and behaviour in children and young adults; not approved in children."
+      },
+      "refs": [
+        {
+          "source": "fda-trintellix",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N06AX26"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Vortioxetine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-trintellix",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204447"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204447",
+      "label": "NDA204447"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a5b68e2-14d0-419d-9ec6-1ca97145e838",
+      "label": "FDA Trintellix"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614003.html",
+      "label": "Vortioxetine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AX26",
+      "label": "N06AX26"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on data from published observational studies, exposure to SSRIs or SNRIs, particularly in the month before delivery, has been associated with a less than 2-fold increase in the risk of postpartum hemorrhage [see Warnings and Precautions (5.3) and Clinical Considerations ] .",
+      "refs": [
+        {
+          "source": "fda-trintellix",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of vortioxetine in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-trintellix",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Antidepressants increased the risk of suicidal thoughts and behavior in pediatric and young adult patients in short-term studies.",
+      "refs": [
+        {
+          "source": "fda-trintellix",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Serotonergic antidepressants have been associated with cases of clinically significant hyponatremia in elderly patients, who may be at greater risk for this adverse event [see Warnings and Precautions (5.7) ] .",
+      "refs": [
+        {
+          "source": "fda-trintellix",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}
