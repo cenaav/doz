@@ -163,6 +163,90 @@
           "section": "2.5"
         }
       ]
+    },
+    {
+      "id": "tls-child",
+      "disease": "cancer-hyperuricemia",
+      "label": {
+        "fa": "اسید اوریک در درمان سرطان — کودک: ۱۰ mg/kg/روز در ۲ تا ۳ دوز",
+        "en": "Hyperuricaemia with cancer therapy — child: 10 mg/kg/day in 2–3 doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "2.4"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 800,
+        "refs": [
+          {
+            "source": "fda-allopurinol",
+            "section": "2.4"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "برچسب: ۱۰۰ mg/m² هر ۸ تا ۱۲ ساعت (۱۰ mg/kg/روز، حداکثر ۸۰۰ mg).",
+            "en": "Label: 100 mg/m² every 8–12 h (10 mg/kg/day, max 800 mg/day)."
+          },
+          "refs": [
+            {
+              "source": "fda-allopurinol",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tls-adult",
+      "disease": "cancer-hyperuricemia",
+      "label": {
+        "fa": "اسید اوریک در درمان سرطان — بزرگسال: ۳۰۰ تا ۸۰۰ mg روزانه",
+        "en": "Hyperuricaemia with cancer therapy — adult: 300–800 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "2.4"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 800,
+        "refs": [
+          {
+            "source": "fda-allopurinol",
+            "section": "2.4"
+          }
+        ]
+      }
     }
   ],
   "contraindications": [
@@ -212,6 +296,29 @@
       "expect": {
         "perDose": 200,
         "upperPerDose": 300
+      }
+    },
+    {
+      "regimen": "tls-child",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "tls-adult",
+      "formulation": "tab-300",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300
       }
     }
   ],

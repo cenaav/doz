@@ -208,6 +208,50 @@
           "section": "Dosage and Administration"
         }
       ]
+    },
+    {
+      "id": "nv-child",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "تهوع و استفراغ — کودک ۶ ماه تا ۱۲ سال: ۰٫۲۵ mg به ازای هر پوند (حدود ۰٫۵۵ mg/kg) هر ۴ تا ۶ ساعت",
+        "en": "Nausea and vomiting — child 6 months–12 y: ¼ mg/lb (about 0.55 mg/kg) every 4–6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.55,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-chlorpromazine",
+          "section": "Dosage and Administration — Pediatric Patients"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "¼ mg/lb به ۰٫۵۵ mg/kg تبدیل شده؛ مثال برچسب: کودک ۴۰ پوندی (۱۸ kg) ← ۱۰ mg.",
+            "en": "¼ mg/lb converted to 0.55 mg/kg; label example: 40-lb (18 kg) child → 10 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-chlorpromazine",
+              "section": "Dosage and Administration — Pediatric Patients"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -277,6 +321,18 @@
       "expect": {
         "perDose": 25,
         "upperPerDose": 50
+      }
+    },
+    {
+      "regimen": "nv-child",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 9.9,
+        "tabletsPerDoseRounded": 1
       }
     }
   ],

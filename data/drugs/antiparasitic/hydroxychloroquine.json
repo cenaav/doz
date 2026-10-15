@@ -125,6 +125,56 @@
           ]
         }
       ]
+    },
+    {
+      "id": "malaria-proph-child",
+      "disease": "malaria",
+      "label": {
+        "fa": "پیشگیری مالاریا — کودک ۳۱ kg به بالا: ۶٫۵ mg/kg هفته‌ای یک بار (حداکثر ۴۰۰ mg)",
+        "en": "Malaria prophylaxis — child ≥31 kg: 6.5 mg/kg once weekly (max 400 mg)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 31
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 6.5,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 400,
+        "refs": [
+          {
+            "source": "fda-hcq",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "قرص ۲۰۰ mg قابل تقسیم نیست؛ اگر دوز به قرص کامل نرسد ماشین‌حساب متوقف می‌شود.",
+            "en": "The 200 mg tablet cannot be divided; the calculator stops if the dose does not match whole tablets."
+          },
+          "refs": [
+            {
+              "source": "fda-hcq",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -204,6 +254,18 @@
       },
       "expect": {
         "perDose": 400
+      }
+    },
+    {
+      "regimen": "malaria-proph-child",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 31
+      },
+      "expect": {
+        "perDose": 201.5,
+        "tabletsPerDoseRounded": 1
       }
     }
   ],
