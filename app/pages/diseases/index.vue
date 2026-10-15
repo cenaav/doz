@@ -3,7 +3,7 @@ const { t } = useI18n()
 const lt = useLocalText()
 const localePath = useLocalePath()
 const fmt = useFormatNumber()
-useSeoMeta({ title: () => t('diseases.title'), description: () => t('diseases.description') })
+usePageMeta(() => t('diseases.title'), () => t('diseases.description'))
 const rows = computed(() =>
   diseases
     .map((d) => ({ d, n: catalog.reduce((a, c) => a + c.regimens.filter((r) => r.disease === d.id).length, 0) }))

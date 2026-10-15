@@ -6,7 +6,7 @@ const lt = useLocalText()
 const localePath = useLocalePath()
 const { t } = useI18n()
 const rows = catalog.flatMap((d) => d.regimens.filter((r) => r.disease === disease.id).map((r) => ({ drug: d, regimen: r })))
-useSeoMeta({ title: () => lt(disease.name), description: () => t('disease.description', { name: lt(disease.name) }) })
+usePageMeta(() => lt(disease.name), () => t('disease.description', { name: lt(disease.name) }))
 </script>
 <template>
   <div class="space-y-4">

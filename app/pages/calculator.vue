@@ -4,7 +4,7 @@ const { t } = useI18n()
 const fmt = useFormatNumber()
 const lt = useLocalText()
 const localePath = useLocalePath()
-useSeoMeta({ title: () => t('quick.title'), description: () => t('quick.description') })
+usePageMeta(() => t('quick.title'), () => t('quick.description'))
 
 type Mode = 'weight' | 'age'
 const MODE_TYPES: Record<Mode, string[]> = { weight: ['weightBased', 'bsa', 'loading', 'weightBand'], age: ['ageBand', 'fixed', 'titration'] }

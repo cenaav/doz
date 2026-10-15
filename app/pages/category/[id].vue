@@ -15,7 +15,7 @@ const groups = computed(() => {
   }
   return [...map.entries()].sort(([a], [b]) => (a || 'ZZZ').localeCompare(b || 'ZZZ')).map(([code, list]) => ({ code, group: getAtcGroup(code), list }))
 })
-useSeoMeta({ title: () => lt(category.name), description: () => t('category.description', { name: lt(category.name) }) })
+usePageMeta(() => lt(category.name), () => t('category.description', { name: lt(category.name) }))
 </script>
 <template>
   <div class="space-y-5">

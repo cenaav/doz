@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-useSeoMeta({ title: () => t('sources.title'), description: () => t('sources.description') })
+usePageMeta(() => t('sources.title'), () => t('sources.description'))
 const types = ['fda-label', 'uk-smpc', 'ema-smpc', 'guideline', 'licensed-reference', 'ifda-leaflet', 'textbook', 'medlineplus', 'secondary-web'] as const
 </script>
 <template>

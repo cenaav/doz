@@ -5,10 +5,10 @@ const { data: drug } = await useAsyncData(`drug-${id}`, () => loadDrug(id))
 if (!drug.value) throw createError({ statusCode: 404, statusMessage: 'Drug not found', fatal: true })
 const lt = useLocalText()
 const { t, locale } = useI18n()
-useSeoMeta({
-  title: () => `${lt(drug.value!.name)}${locale.value === 'fa' ? ` (${drug.value!.name.en})` : ''} — ${t('drug.doseTitle')}`,
-  description: () => t('drug.description', { name: lt(drug.value!.name) }),
-})
+usePageMeta(
+  () => `${lt(drug.value!.name)}${locale.value === 'fa' ? ` (${drug.value!.name.en})` : ''} — ${t('drug.doseTitle')}`,
+  () => t('drug.description', { name: lt(drug.value!.name) }),
+)
 onMounted(() => {
   const list: string[] = JSON.parse(localStorage.getItem('doz_recent') ?? '[]')
   localStorage.setItem('doz_recent', JSON.stringify([id, ...list.filter((x) => x !== id)].slice(0, 8)))

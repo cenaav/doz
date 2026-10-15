@@ -4,7 +4,7 @@ const { t } = useI18n()
 const lt = useLocalText()
 const localePath = useLocalePath()
 const fmt = useFormatNumber()
-useSeoMeta({ title: () => t('home.title'), description: () => t('home.description') })
+usePageMeta(() => t('home.title'), () => t('home.description'))
 const cats = categories.map((c) => ({ ...c, count: categoryCounts[c.id] ?? 0 })).filter((c) => c.count)
 const recentDrugs = shallowRef<CatalogEntry[]>([])
 // The catalog is only fetched when there are recent drugs to name, after the page has rendered.

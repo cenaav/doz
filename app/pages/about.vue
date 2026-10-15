@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-useSeoMeta({ title: () => t('about.title'), description: () => t('about.description') })
+usePageMeta(() => t('about.title'), () => t('about.description'))
 const sections = ['what', 'refs', 'review', 'privacy', 'contrib'] as const
 </script>
 

@@ -5,7 +5,7 @@ if (!collection) throw createError({ statusCode: 404, statusMessage: 'Collection
 const lt = useLocalText()
 const ids = new Set(collection.drugs)
 const drugs = catalog.filter((d) => ids.has(d.id))
-useSeoMeta({ title: () => lt(collection.name), description: () => lt(collection.description ?? collection.name) })
+usePageMeta(() => lt(collection.name), () => lt(collection.description ?? collection.name))
 </script>
 <template>
   <div class="space-y-4">
