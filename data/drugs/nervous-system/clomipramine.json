@@ -1,0 +1,386 @@
+{
+  "id": "clomipramine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلومیپرامین",
+    "en": "Clomipramine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدافسردگی سه‌حلقه‌ای",
+    "en": "Tricyclic antidepressant"
+  },
+  "brands": [
+    {
+      "name": "Anafranil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "anafranil",
+    "آنافرانیل",
+    "کلومیپرامین",
+    "TCA"
+  ],
+  "formulations": [
+    {
+      "id": "cap-25",
+      "form": "capsule",
+      "route": "oral",
+      "label": "25 mg capsule",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clomipramine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-50",
+      "form": "capsule",
+      "route": "oral",
+      "label": "50 mg capsule",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clomipramine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "ocd",
+      "label": {
+        "fa": "OCD — بزرگسال: شروع ۲۵ mg روزانه",
+        "en": "OCD — adults: start 25 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 25,
+          "targetMin": 100,
+          "targetMax": 100,
+          "max": 250
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-clomipramine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تا حدود ۱۰۰ mg طی ۲ هفته (منقسم با غذا)، سپس تدریجی تا حداکثر ۲۵۰ mg/day؛ پس از تیتراسیون یک‌جا هنگام خواب.",
+            "en": "To about 100 mg over 2 weeks (divided, with meals), then gradually to max 250 mg/day; after titration once at bedtime."
+          },
+          "refs": [
+            {
+              "source": "fda-clomipramine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "ocd",
+      "label": {
+        "fa": "OCD — کودکان و نوجوانان (۱۰ سال به بالا): شروع ۲۵ mg روزانه",
+        "en": "OCD — children/adolescents (≥10 y): start 25 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 25,
+          "max": 200
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-clomipramine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 3,
+        "refs": [
+          {
+            "source": "fda-clomipramine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۲ هفته اول تا حداکثر ۳ mg/kg یا ۱۰۰ mg (هر کدام کمتر)؛ سپس تا ۳ mg/kg یا ۲۰۰ mg (هر کدام کمتر).",
+            "en": "First 2 weeks up to 3 mg/kg or 100 mg (whichever smaller); then up to 3 mg/kg or 200 mg (whichever smaller)."
+          },
+          "refs": [
+            {
+              "source": "fda-clomipramine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کلومیپرامین یا سایر TCAها؛ همراه یا تا ۱۴ روز پس از MAOI؛ دوره بهبود حاد پس از MI.",
+        "en": "Hypersensitivity to clomipramine or other TCAs; with or within 14 days of an MAOI; acute recovery period after MI."
+      },
+      "refs": [
+        {
+          "source": "fda-clomipramine",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "suicide",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 25,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش افکار و رفتار خودکشی در کودکان، نوجوانان و جوانان.",
+        "en": "Boxed warning: increased suicidal thoughts and behaviour in children, adolescents and young adults."
+      },
+      "refs": [
+        {
+          "source": "fda-clomipramine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "cap-25",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "cap-25",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 25
+      }
+    }
+  ],
+  "atc": [
+    "N06AA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07402",
+        "en": "CLOMIPRAMINE HCL 10MG CAP",
+        "fa": "کپسول کلومیپرامین هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00320",
+        "en": "CLOMIPRAMINE HCL 10MG TAB",
+        "fa": "قرص کلومیپرامین هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "07080",
+        "en": "CLOMIPRAMINE HCL 25MG CAP",
+        "fa": "کپسول کلومیپرامین هیدروکلراید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00321",
+        "en": "CLOMIPRAMINE HCL 25MG TAB",
+        "fa": "قرص کلومیپرامین هیدروکلراید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "07949",
+        "en": "CLOMIPRAMINE HCL 25MG/2ML AMP",
+        "fa": "آمپول کلومیپرامین هیدروکلراید ۲۵ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "01438",
+        "en": "CLOMIPRAMINE HCL 50MG TAB",
+        "fa": "قرص کلومیپرامین هیدروکلراید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01439",
+        "en": "CLOMIPRAMINE HCL 75MG TAB",
+        "fa": "قرص کلومیپرامین هیدروکلراید ۷۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-577/Clomipramine",
+        "url": "https://www.darooyab.ir/G-577/Clomipramine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211364",
+      "label": "ANDA211364"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa0d4de8-c96e-429d-a65c-928afbf46863",
+      "label": "FDA Clomipramine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697002.html",
+      "label": "Clomipramine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AA04",
+      "label": "N06AA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-577/Clomipramine",
+      "label": "Clomipramine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-clomipramine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA211364"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Clomipramine hydrochloride capsules, USP should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-clomipramine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for adverse reactions, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-clomipramine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Clomipramine hydrochloride is not approved for use in pediatric patients except for patients with obsessive compulsive disorder (OCD) ( see WARNINGS, Clinical Worsening and Suicide Risk ;",
+      "refs": [
+        {
+          "source": "fda-clomipramine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-clomipramine",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "id": "ofloxacin-otic",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره گوش افلوکساسین",
+    "en": "Ofloxacin ear drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "فلوروکینولون موضعی گوش",
+    "en": "Topical otic fluoroquinolone"
+  },
+  "brands": [
+    {
+      "name": "Floxin Otic",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "floxin otic",
+    "قطره گوش",
+    "افلوکساسین",
+    "عفونت گوش"
+  ],
+  "formulations": [
+    {
+      "id": "otic-0-3",
+      "form": "drops",
+      "route": "topical",
+      "label": "0.3% otic solution",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oe-child",
+      "disease": "otitis-externa",
+      "label": {
+        "fa": "عفونت گوش خارجی — ۶ ماه تا ۱۳ سال: ۵ قطره یک بار در روز، ۷ روز",
+        "en": "Otitis externa — 6 mo–13 y: 5 drops once daily for 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "oe-adult",
+      "disease": "otitis-externa",
+      "label": {
+        "fa": "عفونت گوش خارجی — ۱۳ سال به بالا: ۱۰ قطره یک بار در روز، ۷ روز",
+        "en": "Otitis externa — ≥13 y: 10 drops once daily for 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "aom-tubes",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت میانی با لوله تمپانوستومی — ۱ تا ۱۲ سال: ۵ قطره دو بار، ۱۰ روز",
+        "en": "AOM with tympanostomy tubes — 1–12 y: 5 drops twice daily for 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "csom",
+      "disease": "chronic-suppurative-otitis",
+      "label": {
+        "fa": "اوتیت چرکی مزمن با پرده پاره — ۱۲ سال به بالا: ۱۰ قطره دو بار، ۱۴ روز",
+        "en": "CSOM with perforated drum — ≥12 y: 10 drops twice daily for 14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به افلوکساسین یا سایر کینولون‌ها.",
+        "en": "Hypersensitivity to ofloxacin or other quinolones."
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-6m",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ ماه ثابت نشده.",
+        "en": "Not established under 6 months."
+      },
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oe-child",
+      "formulation": "otic-0-3",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "oe-adult",
+      "formulation": "otic-0-3",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "aom-tubes",
+      "formulation": "otic-0-3",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "perDay": 10
+      }
+    },
+    {
+      "regimen": "csom",
+      "formulation": "otic-0-3",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDay": 20
+      }
+    }
+  ],
+  "atc": [
+    "S02AA16"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02446",
+        "en": "OFLOXACIN  0.30% OTIC DROP",
+        "fa": "قطره گوشی افلوکساسین ۰٫۳۰ درصد"
+      },
+      {
+        "code": "00929",
+        "en": "OFLOXACIN 100MG TAB",
+        "fa": "قرص افلوکساسین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00930",
+        "en": "OFLOXACIN 200MG FC TAB",
+        "fa": "قرص روکش‌دار افلوکساسین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02009",
+        "en": "OFLOXACIN 300MG FC TAB",
+        "fa": "قرص روکش‌دار افلوکساسین ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08636",
+        "en": "OFLOXACIN 400MG FC TAB",
+        "fa": "قرص روکش‌دار افلوکساسین ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52369",
+        "en": "OFLOXACIN SOLUTION, DROPS OPHTHALMIC 3 mg/1mL 5 mL",
+        "fa": "قطره چشمی افلوکساسین ۳ میلی‌گرم / ۱ میلی‌لیتر ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-461/Ofloxacin",
+        "url": "https://www.darooyab.ir/G-461/Ofloxacin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076527",
+      "label": "ANDA076527"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8db221b1-32f3-f6ca-e404-71f56a860d08",
+      "label": "FDA Ofloxacin otic"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S02AA16",
+      "label": "S02AA16"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-461/Ofloxacin",
+      "label": "Ofloxacin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ofloxotic",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076527"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category C.",
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions from ofloxacin in nursing infants, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Safety and efficacy have been demonstrated in pediatric patients of the following ages for the listed indications: six months and older: otitis externa with intact tympanic membranes one year and older: acute otitis media with tympanostomy tubes twelve years and older: chronic suppurative otitis media with perforated …",
+      "refs": [
+        {
+          "source": "fda-ofloxotic",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

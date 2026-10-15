@@ -213,6 +213,136 @@
       "items": {
         "$ref": "#/$defs/example"
       }
+    },
+    "atc": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z](\\d\\d([A-Z]([A-Z](\\d\\d)?)?)?)?$"
+      },
+      "description": "WHO ATC codes, checked on atcddd.fhi.no"
+    },
+    "iran": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "refs"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "registered",
+            "not-found",
+            "iran-only"
+          ]
+        },
+        "forms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "code",
+              "en"
+            ],
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "en": {
+                "type": "string"
+              },
+              "fa": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "refs": {
+          "$ref": "#/$defs/refs"
+        }
+      }
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "kind",
+          "url"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "dailymed",
+              "fda",
+              "medlineplus",
+              "who-atc",
+              "darooyab",
+              "emc",
+              "nhs"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "populations": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pregnancy": {
+          "$ref": "#/$defs/popNote"
+        },
+        "lactation": {
+          "$ref": "#/$defs/popNote"
+        },
+        "pediatric": {
+          "$ref": "#/$defs/popNote"
+        },
+        "geriatric": {
+          "$ref": "#/$defs/popNote"
+        },
+        "reproductive": {
+          "$ref": "#/$defs/popNote"
+        }
+      }
+    },
+    "usApproval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "refs"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "NDA",
+            "ANDA",
+            "BLA",
+            "NDA authorized generic",
+            "OTC monograph",
+            "unapproved",
+            "dietary supplement"
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "refs": {
+          "$ref": "#/$defs/refs"
+        }
+      },
+      "description": "US marketing category from the DailyMed SPL approval block"
     }
   },
   "$defs": {
@@ -1160,6 +1290,38 @@
               "type": "number"
             }
           }
+        }
+      }
+    },
+    "popNote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "level",
+        "text",
+        "refs"
+      ],
+      "properties": {
+        "level": {
+          "enum": [
+            "ok",
+            "caution",
+            "avoid",
+            "contraindicated",
+            "not-established",
+            "no-data"
+          ],
+          "description": "Taken only from explicit source wording."
+        },
+        "text": {
+          "$ref": "#/$defs/text"
+        },
+        "quote": {
+          "type": "string",
+          "description": "Verbatim sentence from the source the level is based on."
+        },
+        "refs": {
+          "$ref": "#/$defs/refs"
         }
       }
     }

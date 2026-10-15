@@ -1,0 +1,325 @@
+{
+  "id": "ferrous-sulfate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سولفات آهن (فروس سولفات)",
+    "en": "Ferrous sulfate"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مکمل آهن",
+    "en": "Iron supplement"
+  },
+  "brands": [
+    {
+      "name": "Ferrous sulfate 200 mg",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "ferrous sulfate",
+    "فروس سولفات",
+    "سولفات فرو",
+    "قرص آهن",
+    "آهن"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet (≈65 mg iron)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-ferrous-sulfate-200",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "treat",
+      "disease": "iron-deficiency-anemia",
+      "label": {
+        "fa": "درمان کم‌خونی فقر آهن — بزرگسال: ۱ قرص ۲۰۰ mg دو تا سه بار",
+        "en": "Iron-deficiency anaemia — adults: one 200 mg tablet two to three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-ferrous-sulfate-200",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "uk-smpc-ferrous-sulfate-200",
+            "section": "4.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر قرص ۲۰۰ mg سولفات آهن خشک ≈ ۶۵ mg آهن المنتال. قرص بلعیده شود (جویده یا مکیده نشود). معمولاً حداکثر ۳ ماه پس از اصلاح کم‌خونی.",
+            "en": "Each 200 mg dried ferrous sulfate ≈ 65 mg elemental iron. Swallow whole. Usually no longer than 3 months after correction."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-ferrous-sulfate-200",
+              "section": "2"
+            },
+            {
+              "source": "uk-smpc-ferrous-sulfate-200",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-ferrous-sulfate-200",
+              "section": "4.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prophylaxis",
+      "disease": "iron-prophylaxis",
+      "label": {
+        "fa": "پیشگیری — بزرگسال: ۱ قرص روزانه",
+        "en": "Prophylaxis — adults: one tablet daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-ferrous-sulfate-200",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "هموسیدروز/هموکروماتوز؛ زخم پپتیک فعال؛ ترانسفوزیون مکرر؛ کرون یا کولیت اولسراتیو؛ کم‌خونی همولیتیک؛ PNH؛ همراه آهن تزریقی؛ حساسیت.",
+        "en": "Haemosiderosis/haemochromatosis; active peptic ulcer; repeated transfusions; regional enteritis or ulcerative colitis; haemolytic anaemia; PNH; with parenteral iron; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-ferrous-sulfate-200",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "این فرآورده برای کودکان توصیه نمی‌شود.",
+        "en": "This presentation is not recommended for children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-ferrous-sulfate-200",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "treat",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 200,
+        "perDay": 400
+      }
+    },
+    {
+      "regimen": "prophylaxis",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 200
+      }
+    }
+  ],
+  "atc": [
+    "B03AA07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02290",
+        "en": "FERRIC OXIDE SACCHARATED 20MG/ML AMP",
+        "fa": "آمپول فریک اکساید ساکچاراتد ۲۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "02046",
+        "en": "FERROUS FUMARATE 125MG(25mg iron)/ML ORAL DROP",
+        "fa": "قطره خوراکی فروس فومارات ۱۲۵ میلی‌گرم (۲۵ میلی‌گرم آهن) / میلی‌لیتر"
+      },
+      {
+        "code": "02047",
+        "en": "FERROUS FUMARATE EQ TO 50MG Fe++ TAB",
+        "fa": "قرص فروس فومارات معادل تو ۵۰ میلی‌گرم FE + +"
+      },
+      {
+        "code": "01505",
+        "en": "FERROUS FUMARATE-F TAB",
+        "fa": "قرص فروس فومارات–F"
+      },
+      {
+        "code": "11375",
+        "en": "FERROUS GLYCINE SULPHATE CAP",
+        "fa": "کپسول فروس گلیسین سولفات"
+      },
+      {
+        "code": "00530",
+        "en": "FERROUS SULFATE 125MG(25MG FE)/ML ORAL DROP",
+        "fa": "قطره خوراکی فروس سولفات ۱۲۵ میلی‌گرم (۲۵ میلی‌گرم FE) / میلی‌لیتر"
+      },
+      {
+        "code": "01506",
+        "en": "FERROUS SULFATE 200MG/5ML 60ML SYRUP",
+        "fa": "شربت فروس سولفات ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "00531",
+        "en": "FERROUS SULFATE EQ TO 50MG FE++ TAB",
+        "fa": "قرص فروس سولفات معادل تو ۵۰ میلی‌گرم FE + +"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2880/Ferrous",
+        "url": "https://www.darooyab.ir/G-2880/Ferrous"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682778.html",
+      "label": "Iron Supplements"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B03AA07",
+      "label": "B03AA07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2880/Ferrous",
+      "label": "Ferrous"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/2623/smpc",
+      "label": "UK SmPC Ferrous sulfate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Use of any drug during the first trimester of pregnancy should be avoided if possible.",
+      "refs": [
+        {
+          "source": "uk-smpc-ferrous-sulfate-200",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Paediatric population : This presentation is not recommended for children.",
+      "refs": [
+        {
+          "source": "uk-smpc-ferrous-sulfate-200",
+          "section": "4.2"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly : as above.",
+      "refs": [
+        {
+          "source": "uk-smpc-ferrous-sulfate-200",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

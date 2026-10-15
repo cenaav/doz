@@ -1,0 +1,402 @@
+{
+  "id": "carbamazepine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کاربامازپین",
+    "en": "Carbamazepine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدتشنج",
+    "en": "Anticonvulsant"
+  },
+  "brands": [
+    {
+      "name": "Tegretol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tegretol",
+    "تگرتول",
+    "کاربامازپین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet (partially scored)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "epi-lt6",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع — زیر ۶ سال: شروع ۱۰ تا ۲۰ mg/kg/day",
+        "en": "Epilepsy — under 6 y: start 10–20 mg/kg/day"
+      },
+      "population": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "perKgPerDayMax": 20,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 35,
+        "refs": [
+          {
+            "source": "fda-carbamazepine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هفتگی تا پاسخ مطلوب افزایش؛ معمولاً پاسخ زیر ۳۵ mg/kg/day؛ قرص دو یا سه بار در روز.",
+            "en": "Increase weekly to response; usually below 35 mg/kg/day; tablets 2–3 times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-carbamazepine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epi-6-12",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع — ۶ تا ۱۲ سال: شروع ۱۰۰ mg دو بار در روز",
+        "en": "Epilepsy — 6–12 y: start 100 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش هفتگی تا ۱۰۰ mg/day.",
+            "en": "Increase weekly by up to 100 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-carbamazepine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epi-12plus",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع — بزرگسال و بالای ۱۲ سال: شروع ۲۰۰ mg دو بار در روز",
+        "en": "Epilepsy — adults and >12 y: start 200 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش هفتگی تا ۲۰۰ mg/day.",
+            "en": "Increase weekly by up to 200 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-carbamazepine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه سرکوب مغز استخوان؛ حساسیت به کاربامازپین یا ضدافسردگی‌های سه‌حلقه‌ای؛ MAOI.",
+        "en": "History of bone marrow depression; hypersensitivity to carbamazepine or tricyclics; MAOIs."
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: واکنش‌های پوستی کشنده (SJS/TEN) مرتبط با آلل HLA-B*1502 (خطر حدود ۱۰ برابر در برخی جمعیت‌های آسیایی)؛ آپلاستیک آنمی و آگرانولوسیتوز.",
+        "en": "Boxed warning: fatal skin reactions (SJS/TEN) linked to HLA-B*1502 (about 10× risk in some Asian populations); aplastic anemia and agranulocytosis."
+      },
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "WARNINGS (boxed): SERIOUS DERMATOLOGIC REACTIONS AND HLA-B*1502 ALLELE"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "epi-lt6",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "epi-6-12",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "epi-12plus",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N03AF01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09437",
+        "en": "CARBAMAZEPINE 100MG/5ML 120ML SUSP",
+        "fa": "سوسپانسیون کاربامازپین ۱۰۰ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "14911",
+        "en": "CARBAMAZEPINE 100MG/5ML 250ML SYRUP",
+        "fa": "شربت کاربامازپین ۱۰۰ میلی‌گرم / ۵ میلی‌لیتر ۲۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00208",
+        "en": "CARBAMAZEPINE 200MG TAB",
+        "fa": "قرص کاربامازپین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "10690",
+        "en": "CARBAMAZEPINE 300MG SR TAB",
+        "fa": "قرص آهسته‌رهش کاربامازپین ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02114",
+        "en": "CARBAMAZEPINE SR 200MG TAB",
+        "fa": "قرص آهسته‌رهش کاربامازپین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01420",
+        "en": "CARBAMAZEPINE SR 400MG TAB",
+        "fa": "قرص آهسته‌رهش کاربامازپین ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "51864",
+        "en": "CARBAMAZEPINE SUSPENSION ORAL 100 mg/5mL 120 mL",
+        "fa": "سوسپانسیون خوراکی کاربامازپین ۱۰۰ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-659/Carbamazepine",
+        "url": "https://www.darooyab.ir/G-659/Carbamazepine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207798",
+      "label": "ANDA207798"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f3d91cd-a959-4e07-a51b-8a4e9ba9ece2",
+      "label": "FDA Carbamazepine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682237.html",
+      "label": "Carbamazepine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AF01",
+      "label": "N03AF01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-659/Carbamazepine",
+      "label": "Carbamazepine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-carbamazepine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA207798"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Carbamazepine can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Precautions/Warnings – Usage in Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants from carbamazepine, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Substantial evidence of carbamazepine's effectiveness for use in the management of children with epilepsy (see INDICATIONS AND USAGE for specific seizure types) is derived from clinical investigations performed in adults and from studies in several in vitro systems which support the conclusion that (1) the …",
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "No systematic studies in geriatric patients have been conducted.",
+      "refs": [
+        {
+          "source": "fda-carbamazepine",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    }
+  }
+}

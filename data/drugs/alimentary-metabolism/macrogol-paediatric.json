@@ -1,0 +1,342 @@
+{
+  "id": "macrogol-paediatric",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ماکروگل (PEG) کودکان",
+    "en": "Macrogol 3350 paediatric (PEG)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ملین اسموتیک",
+    "en": "Osmotic laxative"
+  },
+  "brands": [
+    {
+      "name": "Movicol Paediatric",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "PEG",
+    "پی ای جی",
+    "پودر پگ",
+    "macrogol",
+    "polyethylene glycol",
+    "movicol"
+  ],
+  "formulations": [
+    {
+      "id": "sachet-6-8",
+      "form": "sachet",
+      "route": "oral",
+      "label": "6.8 g sachet (macrogol 3350 6.563 g)",
+      "concentration": {
+        "amount": 1,
+        "unit": "unit",
+        "perUnit": "sachet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "chronic",
+      "disease": "constipation",
+      "label": {
+        "fa": "یبوست مزمن — ۲ تا ۱۱ سال",
+        "en": "Chronic constipation — 2 to 11 years"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "unit",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 7,
+              "unit": "year"
+            },
+            "perDose": 1,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 7,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 2,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.2"
+        },
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲ تا ۶ سال: ۱ ساشه؛ ۷ تا ۱۱ سال: ۲ ساشه روزانه. تنظیم یک روز در میان تا مدفوع نرم منظم؛ معمولاً حداکثر ۴ ساشه. هر ساشه در ۶۲٫۵ mL آب.",
+            "en": "2–6 years: 1 sachet; 7–11 years: 2 sachets daily. Adjust every second day to regular soft stools; usually max 4 sachets. Each sachet in 62.5 mL water."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-movicol-paed",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-movicol-paed",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "impaction",
+      "disease": "faecal-impaction",
+      "label": {
+        "fa": "نهفتگی مدفوع — ۵ تا ۱۱ سال: برنامه ۷ روزه",
+        "en": "Faecal impaction — 5 to 11 years: 7-day schedule"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برنامه روزانه ساشه‌ها: روز ۱: ۴، روز ۲: ۶، روز ۳: ۸، روز ۴: ۱۰، روز ۵ تا ۷: ۱۲؛ در دوزهای منقسم طی ۱۲ ساعت. با دفع حجم زیاد مدفوع قطع شود.",
+          "en": "Daily sachets: day 1: 4, day 2: 6, day 3: 8, day 4: 10, days 5–7: 12; divided doses within 12 hours. Stop once disimpaction occurs."
+        }
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "obstruction",
+      "severity": "block",
+      "text": {
+        "fa": "سوراخ شدن یا انسداد روده، ایلئوس، بیماری التهابی شدید روده (کرون، کولیت اولسراتیو، مگاکولون سمی).",
+        "en": "Intestinal perforation or obstruction, ileus, severe inflammatory bowel conditions (Crohn's, ulcerative colitis, toxic megacolon)."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای یبوست مزمن زیر ۲ سال توصیه نمی‌شود.",
+        "en": "Not recommended under 2 years for chronic constipation."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "chronic",
+      "formulation": "sachet-6-8",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 1,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "chronic",
+      "formulation": "sachet-6-8",
+      "input": {
+        "ageYears": 9,
+        "weightKg": 28
+      },
+      "expect": {
+        "perDose": 2,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "A06AD15"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17902",
+        "en": "MACROGOL SACHET",
+        "fa": "ساشه ماکروگول"
+      },
+      {
+        "code": "01022",
+        "en": "POLYETHYLENE GLYCOL_BULK",
+        "fa": "ماده اولیه پلی‌اتیلن گلیکول"
+      },
+      {
+        "code": "18312",
+        "en": "POLYETHYLENGLYCOL 10G SACHET",
+        "fa": "ساشه پلی‌اتیلن گلیکول ۱۰ گرم"
+      },
+      {
+        "code": "02174",
+        "en": "POLYETHYLENGLYCOL 70G SACHET",
+        "fa": "ساشه پلی‌اتیلن گلیکول ۷۰ گرم"
+      },
+      {
+        "code": "18315",
+        "en": "POLYETHYLENGLYCOL ELECTROLYTE 1 70G BOX",
+        "fa": "پلی‌اتیلن گلیکول الکترولیت ۱ ۷۰ گرم بوکس"
+      },
+      {
+        "code": "17761",
+        "en": "POLYETHYLENGLYCOL ELECTROLYTE 2 POWDER",
+        "fa": "پودر پلی‌اتیلن گلیکول الکترولیت ۲"
+      },
+      {
+        "code": "52450",
+        "en": "POLYETHYLENE GLYCOL POWDER ORAL  17 g",
+        "fa": "پودر پلی‌اتیلن گلیکول ۱۷ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3984/Polyethylene-Glycol",
+        "url": "https://www.darooyab.ir/G-3984/Polyethylene-Glycol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A06AD15",
+      "label": "A06AD15"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3984/Polyethylene-Glycol",
+      "label": "Polyethylene-Glycol"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/4308/smpc",
+      "label": "UK SmPC Movicol Paed"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are limited amount of data from the use of Movicol in pregnant women.",
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "No effects on the breastfed newborn/infant are anticipated since the systemic exposure of the breast-feeding woman to Macrogol 3350 is negligible Movicol can be used during breast-feeding.",
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Paediatric Chocolate flavour is not recommended for children below five years of age for the treatment of faecal impaction, or in children below two years of age for the treatment of chronic constipation.",
+      "refs": [
+        {
+          "source": "uk-smpc-movicol-paed",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

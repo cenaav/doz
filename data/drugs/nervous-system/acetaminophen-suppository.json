@@ -1,0 +1,408 @@
+{
+  "id": "acetaminophen-suppository",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "شیاف استامینوفن",
+    "en": "Acetaminophen suppository"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضددرد و ضدتب",
+    "en": "Analgesic and antipyretic"
+  },
+  "brands": [
+    {
+      "name": "FeverAll",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "feverall",
+    "شیاف استامینوفن",
+    "شیاف تب",
+    "پاراستامول شیاف"
+  ],
+  "formulations": [
+    {
+      "id": "supp-325",
+      "form": "tablet",
+      "route": "rectal",
+      "label": "325 mg rectal suppository",
+      "concentration": {
+        "amount": 325,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-feverall",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "fever",
+      "disease": "fever",
+      "label": {
+        "fa": "تب و درد — شیاف ۳۲۵ mg بر اساس سن",
+        "en": "Fever and pain — 325 mg suppository by age"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 325,
+            "dosesPerDay": 4
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 650,
+            "dosesPerDay": 4
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-feverall",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ تا ۶ ساعت. ۶ تا ۱۲ سال: ۱ شیاف (حداکثر ۵ دوز در ۲۴ ساعت)؛ ۱۲ سال به بالا: ۲ شیاف (حداکثر ۶ دوز). زیر ۶ سال از این قدرت استفاده نشود.",
+            "en": "Every 4–6 h. 6–12 y: 1 suppository (max 5 doses/24 h); ≥12 y: 2 suppositories (max 6 doses). Do not use this strength under 6."
+          },
+          "refs": [
+            {
+              "source": "fda-feverall",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-6",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "این قدرت (۳۲۵ mg) برای زیر ۶ سال نیست.",
+        "en": "This 325 mg strength is not for children under 6."
+      },
+      "refs": [
+        {
+          "source": "fda-feverall",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "liver",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار کبد: از تعداد دوز مجاز بیشتر نشود و با سایر داروهای حاوی استامینوفن همزمان مصرف نشود.",
+        "en": "Liver warning: do not exceed the allowed doses or combine with other acetaminophen products."
+      },
+      "refs": [
+        {
+          "source": "fda-feverall",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "fever",
+      "formulation": "supp-325",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 325,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "fever",
+      "formulation": "supp-325",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 650,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "N02BE01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21805",
+        "en": "APOTEL® 500MG  SUPP.",
+        "fa": "شیاف آپوتل ® ۵۰۰ میلی‌گرم ."
+      },
+      {
+        "code": "00003",
+        "en": "ACETAMINOPHEN 100MG/ML DROP",
+        "fa": "قطره استامینوفن ۱۰۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "21986",
+        "en": "ACETAMINOPHEN 100MG/ML SUSP DROP",
+        "fa": "سوسپانسیون استامینوفن ۱۰۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "21791",
+        "en": "ACETAMINOPHEN 120MG/5ML 120ML SOLUTION",
+        "fa": "محلول استامینوفن ۱۲۰ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "00004",
+        "en": "ACETAMINOPHEN 120MG/5ML 60ML SOL",
+        "fa": "محلول استامینوفن ۱۲۰ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "00005",
+        "en": "ACETAMINOPHEN 120MG/5ML SUSP",
+        "fa": "سوسپانسیون استامینوفن ۱۲۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "17679",
+        "en": "ACETAMINOPHEN 125MG ORAL DISINTEGRATING TAB",
+        "fa": "قرص استامینوفن ۱۲۵ میلی‌گرم بازشونده"
+      },
+      {
+        "code": "00006",
+        "en": "ACETAMINOPHEN 125MG PED SUPP",
+        "fa": "شیاف استامینوفن ۱۲۵ میلی‌گرم پد"
+      },
+      {
+        "code": "20883",
+        "en": "ACETAMINOPHEN 150MG/ML 4ML INJ",
+        "fa": "فرآورده تزریقی استامینوفن ۱۵۰ میلی‌گرم / میلی‌لیتر ۴ میلی‌لیتر"
+      },
+      {
+        "code": "18420",
+        "en": "ACETAMINOPHEN 150MG/ML 6.7ML VIAL",
+        "fa": "ویال استامینوفن ۱۵۰ میلی‌گرم / میلی‌لیتر ۶٫۷ میلی‌لیتر"
+      },
+      {
+        "code": "18133",
+        "en": "ACETAMINOPHEN 160MG DISPERSIBLE TAB",
+        "fa": "قرص پراکنده‌شونده استامینوفن ۱۶۰ میلی‌گرم"
+      },
+      {
+        "code": "14254",
+        "en": "ACETAMINOPHEN 1G/100ML INJ",
+        "fa": "فرآورده تزریقی استامینوفن ۱ گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "11177",
+        "en": "ACETAMINOPHEN 250MG SUPP",
+        "fa": "شیاف استامینوفن ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "15243",
+        "en": "ACETAMINOPHEN 300MG/2ML AMP",
+        "fa": "آمپول استامینوفن ۳۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "13708",
+        "en": "ACETAMINOPHEN 325MG CAP(SOFT GEL)",
+        "fa": "کپسول نرم استامینوفن ۳۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00008",
+        "en": "ACETAMINOPHEN 325MG SUPP",
+        "fa": "شیاف استامینوفن ۳۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00007",
+        "en": "ACETAMINOPHEN 325MG TAB",
+        "fa": "قرص استامینوفن ۳۲۵ میلی‌گرم"
+      },
+      {
+        "code": "13706",
+        "en": "ACETAMINOPHEN 500MG CAP(SOFT GEL)",
+        "fa": "کپسول نرم استامینوفن ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "12928",
+        "en": "ACETAMINOPHEN 500MG EFF TAB",
+        "fa": "قرص جوشان استامینوفن ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02012",
+        "en": "ACETAMINOPHEN 500MG TAB",
+        "fa": "قرص استامینوفن ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "14495",
+        "en": "ACETAMINOPHEN 500MG/50ML VIAL",
+        "fa": "ویال استامینوفن ۵۰۰ میلی‌گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "12898",
+        "en": "ACETAMINOPHEN 80MG DISPERSIBLE TAB",
+        "fa": "قرص پراکنده‌شونده استامینوفن ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "00009",
+        "en": "ACETAMINOPHEN 80MG TAB",
+        "fa": "قرص استامینوفن ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "52196",
+        "en": "ACETAMINOPHEN 75MG SUPP",
+        "fa": "شیاف استامینوفن ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "17679",
+        "en": "ACETAMINOPHEN ORALLY DISINTEGRATING 125 MG TAB",
+        "fa": "قرص استامینوفن بازشونده ۱۲۵ میلی‌گرم"
+      },
+      {
+        "code": "18133",
+        "en": "ACETAMINOPHEN ORALLY DISINTEGRATING 160MG TAB",
+        "fa": "قرص استامینوفن بازشونده ۱۶۰ میلی‌گرم"
+      },
+      {
+        "code": "52792",
+        "en": "ACETAMINOPHEN SUSPENSION ORAL /5mL 60 mL",
+        "fa": "سوسپانسیون خوراکی استامینوفن / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "52816",
+        "en": "ACETAMINOPHEN CAPSULE, LIQUID FILLED ORAL 500 mg",
+        "fa": "کپسول استامینوفن پرشده ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52989",
+        "en": "ACETAMINOPHEN INJECTION, SOLUTION INTRAVENOUS 10 mg/1mL 10 mL",
+        "fa": "فرآورده تزریقی استامینوفن ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-153/Acetaminophen",
+        "url": "https://www.darooyab.ir/G-153/Acetaminophen"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=018337",
+      "label": "NDA018337"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3561bbc3-53b0-4857-8b71-39e165ed95ce",
+      "label": "FDA FeverAll Jr (OTC)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a621016.html",
+      "label": "Acetaminophen Rectal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02BE01",
+      "label": "N02BE01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-153/Acetaminophen",
+      "label": "Acetaminophen"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-feverall",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA018337"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-feverall",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-feverall",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  }
+}

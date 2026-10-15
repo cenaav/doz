@@ -1,0 +1,435 @@
+{
+  "id": "fluvoxamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلووکسامین",
+    "en": "Fluvoxamine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "SSRI",
+    "en": "SSRI"
+  },
+  "brands": [
+    {
+      "name": "Luvox",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "luvox",
+    "لووکس",
+    "فلووکسامین",
+    "فلوکسامین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "ocd",
+      "label": {
+        "fa": "OCD — بزرگسال: شروع ۵۰ mg هنگام خواب",
+        "en": "OCD — adults: start 50 mg at bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 50,
+          "increment": 50,
+          "incrementEveryDays": 4,
+          "max": 300
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-fluvoxamine",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۵۰ mg هر ۴ تا ۷ روز؛ حداکثر ۳۰۰ mg/day؛ بالای ۱۰۰ mg منقسم شود.",
+            "en": "Increase by 50 mg every 4–7 days; max 300 mg/day; divide doses above 100 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-fluvoxamine",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "ocd",
+      "label": {
+        "fa": "OCD — ۸ تا ۱۷ سال: شروع ۲۵ mg هنگام خواب",
+        "en": "OCD — 8–17 y: start 25 mg at bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 8,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 25,
+          "increment": 25,
+          "incrementEveryDays": 4,
+          "max": 300
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-fluvoxamine",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ mg هر ۴ تا ۷ روز؛ حداکثر ۲۰۰ mg/day (۸ تا ۱۱ سال) یا ۳۰۰ mg/day (۱۲ تا ۱۷ سال)؛ بالای ۵۰ mg منقسم شود.",
+            "en": "Increase by 25 mg every 4–7 days; max 200 mg/day (8–11 y) or 300 mg/day (12–17 y); divide doses above 50 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-fluvoxamine",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "همراه یا تا 14 روز پس از MAOI (از جمله لینزولید یا متیلن بلو وریدی).",
+        "en": "With or within 14 days of an MAOI (including linezolid or IV methylene blue)."
+      },
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "همراه تیزانیدین، تیوریدازین، آلوسترون یا پیموزاید.",
+        "en": "With tizanidine, thioridazine, alosetron or pimozide."
+      },
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-8",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 8,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای زیر ۸ سال تأیید نشده (فقط OCD در ۸ تا ۱۷ سال).",
+        "en": "Not approved under 8 years (OCD only, 8–17 y)."
+      },
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-fluvoxamine",
+          "section": "2.2"
+        }
+      ]
+    },
+    {
+      "id": "suicide",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 25,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش افکار و رفتار خودکشی در کودکان، نوجوانان و جوانان.",
+        "en": "Boxed warning: increased suicidal thoughts and behaviour in children, adolescents and young adults."
+      },
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 25
+      }
+    }
+  ],
+  "atc": [
+    "N06AB08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "04708",
+        "en": "FLUVOXAMINE MALEATE 100MG TAB",
+        "fa": "قرص فلووکسامین مالئات ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01827",
+        "en": "FLUVOXAMINE MALEATE 50MG TAB",
+        "fa": "قرص فلووکسامین مالئات ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-586/Fluvoxamine",
+        "url": "https://www.darooyab.ir/G-586/Fluvoxamine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075902",
+      "label": "ANDA075902"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6eeb14df-6fcf-a737-5359-5744eb4accea",
+      "label": "FDA Fluvoxamine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a695004.html",
+      "label": "Fluvoxamine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AB08",
+      "label": "N06AB08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-586/Fluvoxamine",
+      "label": "Fluvoxamine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-fluvoxamine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075902"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on data from published observational studies, exposure to SSRIs, particularly in the month before delivery, has been associated with a less than 2-fold increase in the risk of postpartum hemorrhage [see Warnings and Precautions ( 5.10 ) and Clinical Considerations].",
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Data from published literature report the presence of fluvoxamine is in human milk (see Data).",
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Fluvoxamine maleate tablets are not approved for use in pediatric patients except for patients with obsessive compulsive disorder (OCD) [see Warnings and Precautions ( 5.1 )] .",
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… ly significant hyponatremia in elderly patients, who may be at greater risk for this adverse event [see Warnings and Precautions ( 5.13 )] .",
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Animal findings suggest fertility may be impaired while taking fluvoxamine [see Nonclinical Toxicology ( 13.1 )].",
+      "refs": [
+        {
+          "source": "fda-fluvoxamine",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

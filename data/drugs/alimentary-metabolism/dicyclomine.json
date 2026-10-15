@@ -1,0 +1,304 @@
+{
+  "id": "dicyclomine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دی‌سیکلومین",
+    "en": "Dicyclomine"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ضد اسپاسم آنتی‌کولینرژیک",
+    "en": "Anticholinergic antispasmodic"
+  },
+  "brands": [
+    {
+      "name": "Bentyl",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "dicycloverine",
+    "دیسیکلومین",
+    "bentyl"
+  ],
+  "formulations": [
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dicyclomine-tab",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "ibs",
+      "label": {
+        "fa": "بزرگسال — ۲۰ mg چهار بار در روز",
+        "en": "Adults — 20 mg four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 4,
+        "titration": {
+          "start": 80,
+          "increment": 80,
+          "incrementEveryDays": 7,
+          "targetMin": 80,
+          "targetMax": 160,
+          "max": 160
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-dicyclomine-tab",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از یک هفته تا ۴۰ mg چهار بار در روز. اگر ظرف ۲ هفته مؤثر نبود یا عوارض اجازه ۸۰ mg/day نداد قطع شود.",
+            "en": "After one week may increase to 40 mg four times a day. Discontinue if no efficacy within 2 weeks or side effects require doses below 80 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-dicyclomine-tab",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "ibs",
+      "label": {
+        "fa": "کودکان",
+        "en": "Children"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب FDA دوز کودکان ندارد و زیر ۶ ماه منع مصرف دارد.",
+          "en": "The FDA label gives no pediatric dose and contraindicates use under 6 months."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-dicyclomine-tab",
+          "section": "4"
+        },
+        {
+          "source": "fda-dicyclomine-tab",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-6-months",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "شیرخواران زیر ۶ ماه.",
+        "en": "Infants less than 6 months."
+      },
+      "refs": [
+        {
+          "source": "fda-dicyclomine-tab",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "severity": "block",
+      "text": {
+        "fa": "شیردهی؛ وضعیت قلبی‌عروقی ناپایدار در خونریزی حاد؛ میاستنی گراویس؛ گلوکوم؛ اوروپاتی انسدادی؛ انسداد گوارشی.",
+        "en": "Nursing mothers; unstable cardiovascular status in acute hemorrhage; myasthenia gravis; glaucoma; obstructive uropathy; obstructive GI disease."
+      },
+      "refs": [
+        {
+          "source": "fda-dicyclomine-tab",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A03AA07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00429",
+        "en": "DICYCLOMINE HCL 10MG TAB",
+        "fa": "قرص دی‌سیکلومین هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00430",
+        "en": "DICYCLOMINE HCL 10MG/5ML ELIXIR",
+        "fa": "الگزیر دی‌سیکلومین هیدروکلراید ۱۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00431",
+        "en": "DICYCLOMINE HCL 20MG/2ML AMP",
+        "fa": "آمپول دی‌سیکلومین هیدروکلراید ۲۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "13768",
+        "en": "DICYCLOVERINE 10MG TAB",
+        "fa": "قرص دیسیکلوورین ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-880/Dicyclomine",
+        "url": "https://www.darooyab.ir/G-880/Dicyclomine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218952",
+      "label": "ANDA218952"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bd9801f-b862-4f14-bcea-df7124d858f4",
+      "label": "FDA Dicyclomine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a684007.html",
+      "label": "Dicyclomine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A03AA07",
+      "label": "A03AA07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-880/Dicyclomine",
+      "label": "Dicyclomine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-dicyclomine-tab",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA218952"
+  },
+  "populations": {
+    "lactation": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در شیردهی منع مصرف دارد.",
+        "en": "Label: contraindicated while breastfeeding."
+      },
+      "quote": "Dicyclomine hydrochloride is contraindicated in infants less than 6 months of age [see Use in Specific Populations ( 8.4 )], nursing mothers [see Use in Specific Populations ( 8.3 )] , and in patients with: • unstable cardiovascular status in acute hemorrhage • myasthenia gravis [see Warnings and Precautions ( 5.4 )] …",
+      "refs": [
+        {
+          "source": "fda-dicyclomine-tab",
+          "section": "4"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در کودکان زیر سن مشخص منع مصرف دارد.",
+        "en": "Label: contraindicated in children below a stated age."
+      },
+      "quote": "Dicyclomine hydrochloride is contraindicated in infants less than 6 months of age [see Use in Specific Populations ( 8.4 )], nursing mothers [see Use in Specific Populations ( 8.3 )] , and in patients with: • unstable cardiovascular status in acute hemorrhage • myasthenia gravis [see Warnings and Precautions ( 5.4 )] …",
+      "refs": [
+        {
+          "source": "fda-dicyclomine-tab",
+          "section": "4"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری دیسیکلومین گروه B قابل استفاده در بارداری:",
+      "text": {
+        "fa": "دارویاب: گروه B — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category B — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-880/Dicyclomine — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-880/Dicyclomine"
+        }
+      ]
+    }
+  }
+}

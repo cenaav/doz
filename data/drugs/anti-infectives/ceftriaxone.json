@@ -1,0 +1,489 @@
+{
+  "id": "ceftriaxone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفتریاکسون",
+    "en": "Ceftriaxone"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین نسل سوم",
+    "en": "Third-generation cephalosporin"
+  },
+  "brands": [
+    {
+      "name": "Rocephin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rocephin",
+    "روسفین",
+    "سفتریاکسون",
+    "سفتریاکسان",
+    "سفتریاکسون آمپول"
+  ],
+  "formulations": [
+    {
+      "id": "im-250",
+      "form": "powder-for-injection",
+      "route": "im",
+      "label": "IM: reconstituted to 250 mg/mL (per label table)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Dosage and Administration, Intramuscular Administration"
+        },
+        {
+          "source": "fda-ceftriaxone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "susceptible-bacterial-infection",
+      "label": {
+        "fa": "بزرگسال: ۱ تا ۲ g یک بار در روز",
+        "en": "Adults: 1–2 g once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "perDoseMax": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Dosage and Administration, Adults"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4000,
+        "refs": [
+          {
+            "source": "fda-ceftriaxone",
+            "section": "Dosage and Administration, Adults"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یا در دو نوبت مساوی. حداقل ۲ روز پس از رفع علائم ادامه؛ معمولاً ۴ تا ۱۴ روز؛ استرپتوکوک پیوژنز حداقل ۱۰ روز.",
+            "en": "Or in two equal doses. Continue ≥2 days after symptoms resolve; usually 4–14 days; S. pyogenes at least 10 days."
+          },
+          "refs": [
+            {
+              "source": "fda-ceftriaxone",
+              "section": "Dosage and Administration, Adults"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gonorrhea",
+      "disease": "gonorrhea",
+      "label": {
+        "fa": "سوزاک بدون عارضه: ۲۵۰ mg عضلانی تک‌دوز",
+        "en": "Uncomplicated gonorrhoea: 250 mg IM single dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Dosage and Administration, Adults"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "aom",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت میانی حاد — کودکان: ۵۰ mg/kg عضلانی تک‌دوز (حداکثر ۱ g)",
+        "en": "Acute otitis media — children: 50 mg/kg IM single dose (max 1 g)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 50,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Dosage and Administration, Pediatric Patients"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 1000,
+        "refs": [
+          {
+            "source": "fda-ceftriaxone",
+            "section": "Dosage and Administration, Pediatric Patients"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "sssi",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت پوست — کودکان: ۵۰ تا ۷۵ mg/kg/day یک بار (حداکثر ۲ g/day)",
+        "en": "Skin infection — children: 50–75 mg/kg/day once (max 2 g/day)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 50,
+        "perKgPerDayMax": 75,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Dosage and Administration, Pediatric Patients"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2000,
+        "refs": [
+          {
+            "source": "fda-ceftriaxone",
+            "section": "Dosage and Administration, Pediatric Patients"
+          }
+        ]
+      }
+    },
+    {
+      "id": "meningitis",
+      "disease": "bacterial-meningitis",
+      "label": {
+        "fa": "مننژیت — کودکان: ۱۰۰ mg/kg/day (حداکثر ۴ g/day)",
+        "en": "Meningitis — children: 100 mg/kg/day (max 4 g/day)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 100,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Dosage and Administration, Pediatric Patients"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4000,
+        "refs": [
+          {
+            "source": "fda-ceftriaxone",
+            "section": "Dosage and Administration, Pediatric Patients"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول ۱۰۰ mg/kg (حداکثر ۴ g)؛ سپس یک بار در روز یا دو نوبت هر ۱۲ ساعت. معمولاً وریدی و در بیمارستان.",
+            "en": "First dose 100 mg/kg (max 4 g); then once daily or in two doses every 12 h. Usually IV in hospital."
+          },
+          "refs": [
+            {
+              "source": "fda-ceftriaxone",
+              "section": "Dosage and Administration, Pediatric Patients"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سفتریاکسون یا هر سفالوسپورین؛ نوزاد نارس تا سن پس از قاعدگی ۴۱ هفته؛ نوزاد ≤۲۸ روز که محلول کلسیم‌دار وریدی لازم دارد؛ تزریق وریدی محلول حاوی لیدوکائین.",
+        "en": "Hypersensitivity to ceftriaxone or any cephalosporin; premature neonates up to 41 weeks postmenstrual age; neonates ≤28 days needing calcium-containing IV solutions; IV use of solutions containing lidocaine."
+      },
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "im-250",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "mlPerDose": 4,
+        "upperPerDose": 2000
+      }
+    },
+    {
+      "regimen": "gonorrhea",
+      "formulation": "im-250",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "aom",
+      "formulation": "im-250",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 500,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "aom",
+      "formulation": "im-250",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "sssi",
+      "formulation": "im-250",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1000,
+        "upperPerDose": 1500
+      }
+    },
+    {
+      "regimen": "meningitis",
+      "formulation": "im-250",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 4000
+      }
+    }
+  ],
+  "atc": [
+    "J01DD04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00237",
+        "en": "CEFTRIAXONE 1 GR VIAL",
+        "fa": "ویال سفتریاکسون ۱ گرم"
+      },
+      {
+        "code": "00238",
+        "en": "CEFTRIAXONE 250MG VIAL",
+        "fa": "ویال سفتریاکسون ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "13291",
+        "en": "CEFTRIAXONE 2G  VIAL",
+        "fa": "ویال سفتریاکسون ۲ گرم"
+      },
+      {
+        "code": "00239",
+        "en": "CEFTRIAXONE 500MG VIAL",
+        "fa": "ویال سفتریاکسون ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-352/Ceftriaxone",
+        "url": "https://www.darooyab.ir/G-352/Ceftriaxone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=065342",
+      "label": "ANDA065342"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8351aa37-552d-471d-b293-c564dcb6ec29",
+      "label": "FDA Ceftriaxone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a685032.html",
+      "label": "Ceftriaxone Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DD04",
+      "label": "J01DD04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-352/Ceftriaxone",
+      "label": "Ceftriaxone"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ceftriaxone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA065342"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproductive studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when ceftriaxone is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Safety and effectiveness of ceftriaxone in neonates, infants and pediatric patients have been established for the dosages described in the DOSAGE AND ADMINISTRATION section.",
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of subjects in clinical studies of ceftriaxone, 32% were 60 and over.",
+      "refs": [
+        {
+          "source": "fda-ceftriaxone",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "id": "allopurinol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آلوپورینول",
+    "en": "Allopurinol"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "مهارکننده گزانتین اکسیداز",
+    "en": "Xanthine oxidase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Zyloprim",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zyloprim",
+    "زیلوپریم",
+    "آلوپورینول",
+    "اسید اوریک"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet (scored)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-300",
+      "form": "tablet",
+      "route": "oral",
+      "label": "300 mg tablet (scored)",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "gout",
+      "disease": "gout",
+      "label": {
+        "fa": "نقرس (کاهش اسید اوریک) — شروع ۱۰۰ mg/day، افزایش هفتگی",
+        "en": "Gout (urate lowering) — start 100 mg/day, weekly increases"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 100,
+          "increment": 100,
+          "incrementEveryDays": 7,
+          "max": 800
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۱۰۰ mg هر هفته تا اسید اوریک ≤۶ mg/dL؛ حداکثر ۸۰۰ mg/day. نارسایی کلیه: شروع ۵۰ mg. حمله همزمان جداگانه درمان شود.",
+            "en": "Increase by 100 mg weekly until uric acid ≤6 mg/dL; max 800 mg/day. Renal impairment: start 50 mg. Treat flares alongside."
+          },
+          "refs": [
+            {
+              "source": "fda-allopurinol",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-allopurinol",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stones",
+      "disease": "calcium-oxalate-stones",
+      "label": {
+        "fa": "سنگ کلسیم اگزالات عودکننده — ۲۰۰ تا ۳۰۰ mg/day",
+        "en": "Recurrent calcium oxalate stones — 200–300 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "perDoseMax": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "2.5"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه واکنش حساسیتی به آلوپورینول.",
+        "en": "History of hypersensitivity reaction to allopurinol."
+      },
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "gout",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 85
+      },
+      "expect": {
+        "perDose": 100
+      }
+    },
+    {
+      "regimen": "stones",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 200,
+        "upperPerDose": 300
+      }
+    }
+  ],
+  "atc": [
+    "M04AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00038",
+        "en": "ALLOPURINOL 100MG TAB",
+        "fa": "قرص آلوپورینول ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02017",
+        "en": "ALLOPURINOL 300MG TAB",
+        "fa": "قرص آلوپورینول ۳۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-754/Allopurinol",
+        "url": "https://www.darooyab.ir/G-754/Allopurinol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204467",
+      "label": "ANDA204467"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=71fd88d2-cfd8-4abd-bb15-7ef2699ccf9d",
+      "label": "FDA Allopurinol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682673.html",
+      "label": "Allopurinol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a622045.html",
+      "label": "Allopurinol Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M04AA01",
+      "label": "M04AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-754/Allopurinol",
+      "label": "Allopurinol"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-allopurinol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA204467"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings in animals, allopurinol tablets may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in a breastfed child, advise women not to breastfeed during treatments with allopurinol tablets and for one week after the last dose.",
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Inborn Errors of Metabolism The safety and effectiveness of allopurinol tablets have not been established in pediatric patients with rare inborn errors of purine metabolism.",
+      "refs": [
+        {
+          "source": "fda-allopurinol",
+          "section": "8.4"
+        }
+      ]
+    }
+  }
+}

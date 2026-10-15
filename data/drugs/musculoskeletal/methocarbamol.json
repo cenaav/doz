@@ -1,0 +1,345 @@
+{
+  "id": "methocarbamol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متوکاربامول",
+    "en": "Methocarbamol"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "شل‌کننده عضلانی",
+    "en": "Skeletal muscle relaxant"
+  },
+  "brands": [
+    {
+      "name": "Robaxin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "robaxin",
+    "روباکسین",
+    "متوکاربامول",
+    "شل کننده عضله"
+  ],
+  "formulations": [
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet (scored)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-methocarbamol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-750",
+      "form": "tablet",
+      "route": "oral",
+      "label": "750 mg tablet",
+      "concentration": {
+        "amount": 750,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-methocarbamol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "initial",
+      "disease": "muscle-spasm",
+      "label": {
+        "fa": "اسپاسم دردناک — شروع: ۱۵۰۰ mg چهار بار در روز (۴۸ تا ۷۲ ساعت)",
+        "en": "Painful spasm — initial: 1,500 mg four times daily (48–72 h)"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1500,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-methocarbamol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 8000,
+        "refs": [
+          {
+            "source": "fda-methocarbamol",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 2,
+        "max": 3
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۶ g/day در ۴۸ تا ۷۲ ساعت اول (شدید تا ۸ g/day).",
+            "en": "6 g/day for the first 48–72 h (severe up to 8 g/day)."
+          },
+          "refs": [
+            {
+              "source": "fda-methocarbamol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "muscle-spasm",
+      "label": {
+        "fa": "اسپاسم دردناک — نگهدارنده: ۱۰۰۰ mg چهار بار در روز",
+        "en": "Painful spasm — maintenance: 1,000 mg four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-methocarbamol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "حدود ۴ g/day؛ یا ۷۵۰ mg هر ۴ ساعت، یا ۱۵۰۰ mg سه بار.",
+            "en": "About 4 g/day; or 750 mg every 4 h, or 1,500 mg three times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-methocarbamol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به متوکاربامول.",
+        "en": "Hypersensitivity to methocarbamol."
+      },
+      "refs": [
+        {
+          "source": "fda-methocarbamol",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-16",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۶ سال ثابت نشده.",
+        "en": "Not established below 16 years."
+      },
+      "refs": [
+        {
+          "source": "fda-methocarbamol",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "initial",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 1500,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 75
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "M03BA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00822",
+        "en": "METHOCARBAMOL 1000MG/10ML AMP",
+        "fa": "آمپول متوکاربامول ۱۰۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "00823",
+        "en": "METHOCARBAMOL 500MG TAB",
+        "fa": "قرص متوکاربامول ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52318",
+        "en": "METHOCARBAMOL 750MG TAB",
+        "fa": "قرص متوکاربامول ۷۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2797/Methocarbamol",
+        "url": "https://www.darooyab.ir/G-2797/Methocarbamol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209312",
+      "label": "ANDA209312"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42c0a177-7d62-4bcf-9fce-7dd484cda4d5",
+      "label": "FDA Methocarbamol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682579.html",
+      "label": "Methocarbamol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M03BA03",
+      "label": "M03BA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2797/Methocarbamol",
+      "label": "Methocarbamol"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-methocarbamol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA209312"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category C Animal reproduction studies have not been conducted with methocarbamol.",
+      "refs": [
+        {
+          "source": "fda-methocarbamol",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when methocarbamol tablets are administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-methocarbamol",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Safety and effectiveness of methocarbamol tablets in pediatric patients below the age of 16 have not been established.",
+      "refs": [
+        {
+          "source": "fda-methocarbamol",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

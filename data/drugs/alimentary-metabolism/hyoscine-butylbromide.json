@@ -1,0 +1,339 @@
+{
+  "id": "hyoscine-butylbromide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "هیوسین بوتیل‌بروماید",
+    "en": "Hyoscine butylbromide"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ضداسپاسم آنتی‌کولینرژیک",
+    "en": "Antispasmodic (antimuscarinic)"
+  },
+  "brands": [
+    {
+      "name": "Buscopan",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "buscopan",
+    "بوسکوپان",
+    "هیوسین",
+    "اسکوپولامین",
+    "butylscopolamine",
+    "دل پیچه"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg coated tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "abdominal-cramps",
+      "label": {
+        "fa": "اسپاسم گوارشی یا ادراری — بزرگسال: ۲۰ mg چهار بار در روز",
+        "en": "GI or GU spasm — adults: 20 mg four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بدون بررسی علت درد شکم، به‌طور مداوم یا طولانی مصرف نشود.",
+            "en": "Do not take continuously or long-term without investigating the cause of abdominal pain."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-buscopan",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ibs",
+      "disease": "ibs",
+      "label": {
+        "fa": "IBS — شروع ۱۰ mg سه بار (تا ۲۰ mg چهار بار)",
+        "en": "IBS — start 10 mg three times daily (up to 20 mg four times daily)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 80,
+        "refs": [
+          {
+            "source": "uk-smpc-buscopan",
+            "section": "4.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "child",
+      "disease": "abdominal-cramps",
+      "label": {
+        "fa": "اسپاسم — ۶ تا ۱۲ سال: ۱۰ mg سه بار در روز",
+        "en": "Spasm — 6–12 y: 10 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ میاستنی گراویس؛ تنگی مکانیکی گوارش؛ ایلئوس فلجی یا انسدادی؛ مگاکولون؛ گلوکوم زاویه بسته.",
+        "en": "Hypersensitivity; myasthenia gravis; mechanical GI stenosis; paralytic or obstructive ileus; megacolon; narrow-angle glaucoma."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "under-6",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "دوز برای زیر ۶ سال در این SmPC نیامده.",
+        "en": "No dose under 6 years in this SmPC."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "ibs",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDay": 30
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "A03BB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00653",
+        "en": "HYOSCINE-N-BUTYL BROMIDE 10MG SUPP",
+        "fa": "شیاف هیوسین–N–بوتیل بروماید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00654",
+        "en": "HYOSCINE-N-BUTYL BROMIDE 10MG TAB",
+        "fa": "قرص هیوسین–N–بوتیل بروماید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00655",
+        "en": "HYOSCINE-N-BUTYL BROMIDE 20MG/1ML AMP",
+        "fa": "آمپول هیوسین–N–بوتیل بروماید ۲۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00656",
+        "en": "HYOSCINE-N-BUTYL BROMIDE 7.5MG SUPP",
+        "fa": "شیاف هیوسین–N–بوتیل بروماید ۷٫۵ میلی‌گرم"
+      },
+      {
+        "code": "01989",
+        "en": "SCOPOLAMINE 1MG/72H PLASTER",
+        "fa": "چسب دارویی سکوپولامین ۱ میلی‌گرم / ۷۲ H"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-894/Hyoscine",
+        "url": "https://www.darooyab.ir/G-894/Hyoscine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A03BB01",
+      "label": "A03BB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-894/Hyoscine",
+      "label": "Hyoscine"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/1775/smpc",
+      "label": "UK SmPC Buscopan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are limited data from the use of hyoscine butylbromide in pregnant women.",
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Use of Buscopan during breastfeeding is not recommended.",
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Children 6 - 12 years: 1 tablet three times daily.",
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

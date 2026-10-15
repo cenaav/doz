@@ -1,0 +1,458 @@
+{
+  "id": "methylphenidate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متیل‌فنیدیت",
+    "en": "Methylphenidate"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "محرک CNS",
+    "en": "CNS stimulant"
+  },
+  "brands": [
+    {
+      "name": "Ritalin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ritalin",
+    "ریتالین",
+    "متیل فنیدیت"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (partial bisection)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (partial bisection)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "child",
+      "disease": "adhd",
+      "label": {
+        "fa": "ADHD — ۶ سال به بالا: شروع ۵ mg دو بار در روز",
+        "en": "ADHD — ≥6 years: start 5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 10,
+          "increment": 5,
+          "incrementEveryDays": 7,
+          "max": 60
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-ritalin",
+          "section": "8.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "قبل از صبحانه و ناهار؛ افزایش هفتگی ۵ تا ۱۰ mg؛ بیش از ۶۰ mg/day توصیه نمی‌شود. اگر پس از یک ماه بهبود نبود قطع شود.",
+            "en": "Before breakfast and lunch; increase 5–10 mg weekly; above 60 mg/day not recommended. Discontinue if no improvement after one month."
+          },
+          "refs": [
+            {
+              "source": "fda-ritalin",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-ritalin",
+              "section": "2.3"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "پیش از شروع: بیماری قلبی، سابقه خانوادگی مرگ ناگهانی و تیک/تورت بررسی شود.",
+            "en": "Before starting: screen for cardiac disease, family history of sudden death, tics/Tourette's."
+          },
+          "refs": [
+            {
+              "source": "fda-ritalin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "adhd",
+      "label": {
+        "fa": "بزرگسال — معمولاً ۲۰ تا ۳۰ mg روزانه در ۲ تا ۳ نوبت",
+        "en": "Adults — usually 20–30 mg daily in 2–3 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 15,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 60,
+        "refs": [
+          {
+            "source": "fda-ritalin",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۳۰ تا ۴۵ دقیقه قبل از غذا؛ آخرین دوز قبل از ساعت ۶ عصر در صورت بی‌خوابی. حداکثر ۶۰ mg/day.",
+            "en": "30–45 min before meals; last dose before 6 p.m. if insomnia. Max 60 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-ritalin",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف MAOI یا تا ۱۴ روز پس از قطع (بحران فشار خون)؛ حساسیت.",
+        "en": "MAOI within 14 days (hypertensive crisis); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-6",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "بی‌خطری زیر ۶ سال ثابت نشده است.",
+        "en": "Not established under 6 years."
+      },
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: احتمال بالای سوءمصرف، مصرف نادرست و اعتیاد؛ خطر اوردوز و مرگ.",
+        "en": "Boxed warning: high potential for abuse, misuse and addiction; risk of overdose and death."
+      },
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "WARNING: ABUSE, MISUSE, AND ADDICTION"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [
+    {
+      "text": {
+        "fa": "رشد (قد و وزن) کودکان در طول درمان پایش شود.",
+        "en": "Monitor growth (height and weight) during treatment."
+      },
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "child",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "upperPerDose": 15
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "N06BA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01328",
+        "en": "METHYLPHENIDATE HCL 10MG TAB",
+        "fa": "قرص متیل‌فنیدات هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "07991",
+        "en": "METHYLPHENIDATE HCL 20MG SR TAB",
+        "fa": "قرص آهسته‌رهش متیل‌فنیدات هیدروکلراید ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "50684",
+        "en": "METHYLPHENIDATE HCL TABLET, EXTENDED RELEASE ORAL 18 mg",
+        "fa": "قرص آهسته‌رهش متیل‌فنیدات هیدروکلراید ۱۸ میلی‌گرم"
+      },
+      {
+        "code": "50685",
+        "en": "METHYLPHENIDATE HCL TABLET, EXTENDED RELEASE ORAL 36 mg",
+        "fa": "قرص آهسته‌رهش متیل‌فنیدات هیدروکلراید ۳۶ میلی‌گرم"
+      },
+      {
+        "code": "50686",
+        "en": "METHYLPHENIDATE HCL TABLET, EXTENDED RELEASE ORAL 54 mg",
+        "fa": "قرص آهسته‌رهش متیل‌فنیدات هیدروکلراید ۵۴ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3392/Methylphenidate",
+        "url": "https://www.darooyab.ir/G-3392/Methylphenidate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=010187",
+      "label": "NDA010187"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d6fb2750-cdab-4749-ba0d-7534840a5892",
+      "label": "FDA Ritalin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682188.html",
+      "label": "Methylphenidate"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a606014.html",
+      "label": "Methylphenidate Transdermal Patch"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06BA04",
+      "label": "N06BA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3392/Methylphenidate",
+      "label": "Methylphenidate"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-ritalin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA010187"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Published studies and postmarketing reports on methylphenidate use during pregnancy have not identified a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Limited published literature, based on milk sampling from seven mothers, reports that methylphenidate is present in human milk, which resulted in infant doses of 0.16% to 0.7% of the maternal weight-adjusted dosage and a milk/plasma ratio ranging between 1.1 and 2.7.",
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and effectiveness of Ritalin in pediatric patients less than aged 6 years have not been established.",
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Ritalin has not been studied in the geriatric population.",
+      "refs": [
+        {
+          "source": "fda-ritalin",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

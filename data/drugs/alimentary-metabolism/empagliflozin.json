@@ -1,0 +1,339 @@
+{
+  "id": "empagliflozin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "امپاگلیفلوزین",
+    "en": "Empagliflozin"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده SGLT2",
+    "en": "SGLT2 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Jardiance",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "jardiance",
+    "جاردیانس",
+    "امپاگلیفلوزین",
+    "SGLT2"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2dm",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ — ۱۰ سال به بالا: ۱۰ mg صبح",
+        "en": "Type 2 diabetes — ≥10 y: 10 mg in the morning"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 25,
+        "refs": [
+          {
+            "source": "fda-jardiance",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "برای کنترل بیشتر در صورت تحمل ۲۵ mg. برای کنترل قند با eGFR کمتر از ۳۰ توصیه نمی‌شود. کم‌آبی پیش از شروع اصلاح شود.",
+            "en": "If tolerated may increase to 25 mg for more control. Not recommended for glycaemic control with eGFR <30. Correct volume depletion first."
+          },
+          "refs": [
+            {
+              "source": "fda-jardiance",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-jardiance",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hf",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی قلبی / بیماری مزمن کلیه — بزرگسال: ۱۰ mg",
+        "en": "Heart failure / CKD — adults: 10 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "2.2, Table 1"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به امپاگلیفلوزین (از جمله آنژیوادم).",
+        "en": "Hypersensitivity to empagliflozin (including angioedema)."
+      },
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-10",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۰ سال ثابت نشده.",
+        "en": "Not established under 10 years."
+      },
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2dm",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "hf",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "A10BK03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52137",
+        "en": "EMPAGLIFLOZIN  25 MG TABLET",
+        "fa": "قرص امپاگلیفلوزین ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "52138",
+        "en": "EMPAGLIFLOZIN 10 MG TABLET",
+        "fa": "قرص امپاگلیفلوزین ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-632/Empagliflozin",
+        "url": "https://www.darooyab.ir/G-632/Empagliflozin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204629",
+      "label": "NDA204629"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59ed43d9-b4e0-72a2-e063-6394a90a327d",
+      "label": "FDA Jardiance"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614043.html",
+      "label": "Empagliflozin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BK03",
+      "label": "A10BK03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-632/Empagliflozin",
+      "label": "Empagliflozin"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-jardiance",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204629"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on animal data showing adverse renal effects, JARDIANCE is not recommended during the second and third trimesters of pregnancy.",
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is limited information regarding the presence of JARDIANCE in human milk, the effects of JARDIANCE on the breastfed infant or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and effectiveness of JARDIANCE have not been established in pediatric patients less than 10 years of age as an adjunct to diet and exercise to improve glycemic control in type 2 diabetes mellitus.",
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… %, and 15.1% in patients randomized to placebo, JARDIANCE 10 mg, and JARDIANCE 25 mg, respectively [see Warnings and Precautions (5.2) and Adverse Reactions (6.1) ] .",
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

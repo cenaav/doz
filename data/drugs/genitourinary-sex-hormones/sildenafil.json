@@ -1,0 +1,356 @@
+{
+  "id": "sildenafil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیلدنافیل",
+    "en": "Sildenafil"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "مهارکننده PDE5",
+    "en": "PDE5 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Viagra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "viagra",
+    "ویاگرا",
+    "سیلدنافیل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ed",
+      "disease": "erectile-dysfunction",
+      "label": {
+        "fa": "اختلال نعوظ — ۵۰ mg حدود ۱ ساعت قبل در صورت نیاز",
+        "en": "ED — 50 mg about 1 h before, as needed"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 100,
+        "refs": [
+          {
+            "source": "fda-sildenafil",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۵ تا ۱۰۰ mg؛ حداکثر یک بار در روز؛ ۳۰ دقیقه تا ۴ ساعت قبل. بالای ۶۵ سال، نارسایی کبد یا CrCl کمتر از ۳۰: شروع ۲۵ mg. با ریتوناویر حداکثر ۲۵ mg در ۴۸ ساعت.",
+            "en": "25–100 mg; at most once daily; 30 min to 4 h before. Over 65, hepatic impairment or CrCl <30: start 25 mg. With ritonavir max 25 mg per 48 h."
+          },
+          "refs": [
+            {
+              "source": "fda-sildenafil",
+              "section": "2"
+            },
+            {
+              "source": "fda-sildenafil",
+              "section": "2.5"
+            },
+            {
+              "source": "fda-sildenafil",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "nitrates",
+      "severity": "block",
+      "text": {
+        "fa": "همراه هر نوع نیترات (نیتروگلیسیرین، ایزوسورباید) یا محرک‌های گوانیلات سیکلاز (ریوسیگوات): افت شدید فشار.",
+        "en": "With any nitrate (nitroglycerin, isosorbide) or guanylate-cyclase stimulators (riociguat): severe hypotension."
+      },
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای کودکان نیست.",
+        "en": "Not indicated in children."
+      },
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ed",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "G04BE03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01780",
+        "en": "SILDENAFIL CITRATE 100MG TAB",
+        "fa": "قرص سیلدنافیل سیترات ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02098",
+        "en": "SILDENAFIL CITRATE 25MG TAB",
+        "fa": "قرص سیلدنافیل سیترات ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "01781",
+        "en": "SILDENAFIL CITRATE 50MG TAB",
+        "fa": "قرص سیلدنافیل سیترات ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "51942",
+        "en": "SILDENAFIL 1 % 15 GRAM TOPICAL GEL",
+        "fa": "ژل موضعی سیلدنافیل ۱ درصد ۱۵ گرم"
+      },
+      {
+        "code": "51120",
+        "en": "SILDENAFIL 1% 30 GRAM TOP GEL",
+        "fa": "ژل موضعی سیلدنافیل ۱ درصد ۳۰ گرم"
+      },
+      {
+        "code": "52667",
+        "en": "SILDENAFIL 1 % 20 GRAM TOPICAL GEL",
+        "fa": "ژل موضعی سیلدنافیل ۱ درصد ۲۰ گرم"
+      },
+      {
+        "code": "52512",
+        "en": "SILDENAFIL (AS CITRATE) TABLET, ORALLY DISINTEGRATING ORAL 50 mg",
+        "fa": "قرص بازشونده دهانی سیلدنافیل (معادل سیترات) بازشونده ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52511",
+        "en": "SILDENAFIL (AS CITRATE) TABLET, ORALLY DISINTEGRATING ORAL 25 mg",
+        "fa": "قرص بازشونده دهانی سیلدنافیل (معادل سیترات) بازشونده ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4223/Sildenafil",
+        "url": "https://www.darooyab.ir/G-4223/Sildenafil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209302",
+      "label": "ANDA209302"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90477a51-63ba-43f4-a74b-4659a946093c",
+      "label": "FDA Sildenafil"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699015.html",
+      "label": "Sildenafil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BE03",
+      "label": "G04BE03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4223/Sildenafil",
+      "label": "Sildenafil"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-sildenafil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA209302"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Sildenafil is not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Sildenafil is not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Healthy elderly volunteers (65 years or over) had a reduced clearance of sildenafil resulting in approximately 84% and 107% higher plasma AUC values of sildenafil and its active N-desmethyl metabolite, respectively, compared to those seen in healthy young volunteers (18-45 years) [ see Clinical Pharmacology (12.3) ].",
+      "refs": [
+        {
+          "source": "fda-sildenafil",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

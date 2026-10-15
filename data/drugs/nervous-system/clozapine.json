@@ -1,0 +1,318 @@
+{
+  "id": "clozapine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلوزاپین",
+    "en": "Clozapine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتی‌سایکوتیک آتیپیک",
+    "en": "Atypical antipsychotic"
+  },
+  "brands": [
+    {
+      "name": "Clozaril",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "clozaril",
+    "کلوزاریل",
+    "کلوزاپین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet (scored)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clozapine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clozapine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "scz",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی مقاوم — شروع ۱۲٫۵ mg یک یا دو بار",
+        "en": "Treatment-resistant schizophrenia — start 12.5 mg once or twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 25,
+          "increment": 50,
+          "incrementEveryDays": 1,
+          "targetMin": 300,
+          "targetMax": 450,
+          "max": 900
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-clozapine",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-clozapine",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ تا ۵۰ mg/day تا هدف ۱۵۰ تا ۲۲۵ mg دو بار؛ حداکثر ۴۵۰ mg دو بار. پایش شمارش نوتروفیل الزامی است.",
+            "en": "Increase by 25–50 mg/day to target 150–225 mg twice daily; max 450 mg twice daily. Neutrophil monitoring required."
+          },
+          "refs": [
+            {
+              "source": "fda-clozapine",
+              "section": "2"
+            },
+            {
+              "source": "fda-clozapine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کلوزاپین.",
+        "en": "Hypersensitivity to clozapine."
+      },
+      "refs": [
+        {
+          "source": "fda-clozapine",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: نوتروپنی شدید، افت فشار ارتوستاتیک و سنکوپ، تشنج، میوکاردیت، مرگ در سالمندان با دمانس.",
+        "en": "Boxed warning: severe neutropenia, orthostatic hypotension and syncope, seizures, myocarditis, mortality in elderly dementia patients."
+      },
+      "refs": [
+        {
+          "source": "fda-clozapine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان ثابت نشده.",
+        "en": "Not established in children."
+      },
+      "refs": [
+        {
+          "source": "fda-clozapine",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "scz",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 12.5,
+        "tabletsPerDoseRounded": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "N05AH02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00334",
+        "en": "CLOZAPINE 100MG TAB",
+        "fa": "قرص کلوزاپین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01743",
+        "en": "CLOZAPINE 25MG TAB",
+        "fa": "قرص کلوزاپین ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1260/Clozapine",
+        "url": "https://www.darooyab.ir/G-1260/Clozapine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206433",
+      "label": "ANDA206433"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=61fe53d5-ed5c-4e45-9189-709d08d386cb",
+      "label": "FDA Clozapine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a691001.html",
+      "label": "Clozapine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05AH02",
+      "label": "N05AH02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1260/Clozapine",
+      "label": "Clozapine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-clozapine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA206433"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Neonates exposed to antipsychotic drugs, including clozapine, during the third trimester are at risk for extrapyramidal and/or withdrawal symptoms following delivery ( see Clinical Considerations ).",
+      "refs": [
+        {
+          "source": "fda-clozapine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Clozapine is present in human milk.",
+      "refs": [
+        {
+          "source": "fda-clozapine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-clozapine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: در سالمندان هشدار جدی یا پرهیز.",
+        "en": "Label: serious warning or avoid in older adults."
+      },
+      "quote": "Increased Mortality in Elderly Patients with Dementia-Related Psychosis Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death.",
+      "refs": [
+        {
+          "source": "fda-clozapine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  }
+}

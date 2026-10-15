@@ -1,0 +1,870 @@
+{
+  "id": "azithromycin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آزیترومایسین",
+    "en": "Azithromycin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ماکرولید",
+    "en": "Macrolide"
+  },
+  "brands": [
+    {
+      "name": "Zithromax",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "azithro",
+    "آزیترو",
+    "ازیترومایسین",
+    "zithromax"
+  ],
+  "formulations": [
+    {
+      "id": "susp-100-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "100 mg / 5 mL",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "susp-200-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "200 mg / 5 mL",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "aom-5day",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت مدیا — ۵ روزه (روز ۱: ۱۰، روز ۲ تا ۵: ۵ mg/kg)",
+        "en": "Otitis media — 5-day (day 1: 10, days 2–5: 5 mg/kg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "loading",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "days": [
+          {
+            "fromDay": 1,
+            "toDay": 1,
+            "perKgPerDay": 10,
+            "maxPerDay": 500
+          },
+          {
+            "fromDay": 2,
+            "toDay": 5,
+            "perKgPerDay": 5,
+            "maxPerDay": 250
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "2.2, Table 2"
+        },
+        {
+          "source": "fda-zithromax",
+          "section": "2.2, Table 3"
+        }
+      ],
+      "allowedFormulations": [
+        "susp-100-5",
+        "susp-200-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سقف روزانه از ردیف «۵۰ کیلوگرم و بالاتر» جدول برچسب گرفته شده است.",
+            "en": "Daily maximum taken from the \"50 kg and above\" row of the label table."
+          },
+          "refs": [
+            {
+              "source": "fda-zithromax",
+              "section": "2.2, Table 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aom-3day",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت مدیا — ۳ روزه، ۱۰ mg/kg روزانه",
+        "en": "Otitis media — 3-day, 10 mg/kg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "loading",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "days": [
+          {
+            "fromDay": 1,
+            "toDay": 3,
+            "perKgPerDay": 10,
+            "maxPerDay": 500
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "2.2, Table 2"
+        },
+        {
+          "source": "fda-zithromax",
+          "section": "2.2, Table 4"
+        }
+      ],
+      "allowedFormulations": [
+        "susp-100-5",
+        "susp-200-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سقف روزانه از ردیف «۵۰ کیلوگرم و بالاتر» جدول برچسب گرفته شده است.",
+            "en": "Daily maximum taken from the \"50 kg and above\" row of the label table."
+          },
+          "refs": [
+            {
+              "source": "fda-zithromax",
+              "section": "2.2, Table 4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aom-1day",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت مدیا — تک‌دوز ۳۰ mg/kg",
+        "en": "Otitis media — single dose 30 mg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "loading",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "days": [
+          {
+            "fromDay": 1,
+            "toDay": 1,
+            "perKgPerDay": 30,
+            "maxPerDay": 1500
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "2.2, Table 2"
+        },
+        {
+          "source": "fda-zithromax",
+          "section": "2.2, Table 5"
+        }
+      ],
+      "allowedFormulations": [
+        "susp-200-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سقف روزانه از ردیف «۵۰ کیلوگرم و بالاتر» جدول برچسب گرفته شده است.",
+            "en": "Daily maximum taken from the \"50 kg and above\" row of the label table."
+          },
+          "refs": [
+            {
+              "source": "fda-zithromax",
+              "section": "2.2, Table 5"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "بی‌خطری تکرار دوز در کودکی که پس از دوز ۳۰ mg/kg استفراغ می‌کند ثابت نشده است.",
+            "en": "Safety of re-dosing after vomiting the 30 mg/kg single dose has not been established."
+          },
+          "refs": [
+            {
+              "source": "fda-zithromax",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sinusitis-3day",
+      "disease": "acute-bacterial-sinusitis",
+      "label": {
+        "fa": "سینوزیت حاد باکتریایی — ۳ روزه",
+        "en": "Acute bacterial sinusitis — 3-day"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "loading",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "days": [
+          {
+            "fromDay": 1,
+            "toDay": 3,
+            "perKgPerDay": 10,
+            "maxPerDay": 500
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "2.2, Table 2"
+        },
+        {
+          "source": "fda-zithromax",
+          "section": "2.2, Table 4"
+        }
+      ],
+      "allowedFormulations": [
+        "susp-100-5",
+        "susp-200-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سقف روزانه از ردیف «۵۰ کیلوگرم و بالاتر» جدول برچسب گرفته شده است.",
+            "en": "Daily maximum taken from the \"50 kg and above\" row of the label table."
+          },
+          "refs": [
+            {
+              "source": "fda-zithromax",
+              "section": "2.2, Table 4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cap-5day",
+      "disease": "community-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی اکتسابی — ۵ روزه",
+        "en": "Community-acquired pneumonia — 5-day"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "loading",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "days": [
+          {
+            "fromDay": 1,
+            "toDay": 1,
+            "perKgPerDay": 10,
+            "maxPerDay": 500
+          },
+          {
+            "fromDay": 2,
+            "toDay": 5,
+            "perKgPerDay": 5,
+            "maxPerDay": 250
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "2.2, Table 2"
+        },
+        {
+          "source": "fda-zithromax",
+          "section": "2.2, Table 3"
+        }
+      ],
+      "allowedFormulations": [
+        "susp-100-5",
+        "susp-200-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سقف روزانه از ردیف «۵۰ کیلوگرم و بالاتر» جدول برچسب گرفته شده است.",
+            "en": "Daily maximum taken from the \"50 kg and above\" row of the label table."
+          },
+          "refs": [
+            {
+              "source": "fda-zithromax",
+              "section": "2.2, Table 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharyngitis-5day",
+      "disease": "streptococcal-pharyngitis",
+      "label": {
+        "fa": "فارنژیت/تونسیلیت — ۱۲ mg/kg روزانه، ۵ روز",
+        "en": "Pharyngitis/tonsillitis — 12 mg/kg once daily, 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "loading",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "days": [
+          {
+            "fromDay": 1,
+            "toDay": 5,
+            "perKgPerDay": 12,
+            "maxPerDay": 500
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "2.3, Table 6"
+        }
+      ],
+      "allowedFormulations": [
+        "susp-200-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سقف روزانه ۵۰۰ mg از ردیف ۴۰ کیلوگرم جدول ۶ گرفته شده است.",
+            "en": "500 mg/day maximum taken from the 40 kg row of Table 6."
+          },
+          "refs": [
+            {
+              "source": "fda-zithromax",
+              "section": "2.3, Table 6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "macrolide-hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شناخته‌شده به آزیترومایسین، اریترومایسین، هر ماکرولید یا کتولید.",
+        "en": "Known hypersensitivity to azithromycin, erythromycin, any macrolide or ketolide."
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "4.1"
+        }
+      ]
+    },
+    {
+      "id": "hepatic-history",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه یرقان کلستاتیک/اختلال کبدی با مصرف قبلی آزیترومایسین.",
+        "en": "History of cholestatic jaundice/hepatic dysfunction with prior azithromycin."
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش‌های حساسیتی",
+        "en": "Hypersensitivity"
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "5.1"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سمیت کبدی",
+        "en": "Hepatotoxicity"
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "5.2"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "تنگی هیپرتروفیک پیلور در شیرخواران",
+        "en": "Infantile hypertrophic pyloric stenosis (IHPS)"
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "5.3"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "طولانی شدن QT",
+        "en": "QT prolongation"
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "5.4"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "مرگ قلبی‌عروقی",
+        "en": "Cardiovascular death"
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "5.5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "aom-5day",
+      "formulation": "susp-200-5",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 150
+      }
+    },
+    {
+      "regimen": "aom-5day",
+      "formulation": "susp-200-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "aom-3day",
+      "formulation": "susp-100-5",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "aom-1day",
+      "formulation": "susp-200-5",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 7.5
+      }
+    },
+    {
+      "regimen": "aom-1day",
+      "formulation": "susp-100-5",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "sinusitis-3day",
+      "formulation": "susp-200-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "cap-5day",
+      "formulation": "susp-200-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "pharyngitis-5day",
+      "formulation": "susp-200-5",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 17
+      },
+      "expect": {
+        "perDose": 204,
+        "mlPerDose": 5.1
+      }
+    },
+    {
+      "regimen": "pharyngitis-5day",
+      "formulation": "susp-200-5",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "J01FA10"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17803",
+        "en": "AZITHROMYCIN 1% OPH DROP",
+        "fa": "قطره چشمی آزیترومایسین ۱ درصد"
+      },
+      {
+        "code": "17392",
+        "en": "AZITHROMYCIN 1.5% OPH DROP",
+        "fa": "قطره چشمی آزیترومایسین ۱٫۵ درصد"
+      },
+      {
+        "code": "02373",
+        "en": "AZITHROMYCIN 100MG/5ML 30 ML SUSP",
+        "fa": "سوسپانسیون آزیترومایسین ۱۰۰ میلی‌گرم / ۵ میلی‌لیتر ۳۰ میلی‌لیتر"
+      },
+      {
+        "code": "04989",
+        "en": "AZITHROMYCIN 200MG/5ML 15ML SUSP",
+        "fa": "سوسپانسیون آزیترومایسین ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۱۵ میلی‌لیتر"
+      },
+      {
+        "code": "07986",
+        "en": "AZITHROMYCIN 200MG/5ML 22.5ML SUSP",
+        "fa": "سوسپانسیون آزیترومایسین ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۲۲٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "01400",
+        "en": "AZITHROMYCIN 200MG/5ML 30ML SUSP",
+        "fa": "سوسپانسیون آزیترومایسین ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۳۰ میلی‌لیتر"
+      },
+      {
+        "code": "18672",
+        "en": "AZITHROMYCIN 2G POWDER FOR ORAL SUSP",
+        "fa": "پودر برای تهیه سوسپانسیون خوراکی آزیترومایسین ۲ گرم"
+      },
+      {
+        "code": "09248",
+        "en": "AZITHROMYCIN 500MG VIAL",
+        "fa": "ویال آزیترومایسین ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00123",
+        "en": "AZITHROMYCIN DIHYDRATE 250MG CAP",
+        "fa": "کپسول آزیترومایسین دی‌هیدرات ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02110",
+        "en": "AZITHROMYCIN DIHYDRATE 250MG TAB",
+        "fa": "قرص آزیترومایسین دی‌هیدرات ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02408",
+        "en": "AZITHROMYCIN DIHYDRATE 500MG CAP",
+        "fa": "کپسول آزیترومایسین دی‌هیدرات ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02407",
+        "en": "AZITHROMYCIN DIHYDRATE 500MG TAB",
+        "fa": "قرص آزیترومایسین دی‌هیدرات ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "51960",
+        "en": "AZITHROMYCIN POWDER, FOR SUSPENSION ORAL 100 mg/5mL 30 mL",
+        "fa": "سوسپانسیون خوراکی آزیترومایسین ۱۰۰ میلی‌گرم / ۵ میلی‌لیتر ۳۰ میلی‌لیتر"
+      },
+      {
+        "code": "53071",
+        "en": "AZITHROMYCIN SUSPENSION ORAL 200 mg/5mL 15 mL",
+        "fa": "سوسپانسیون خوراکی آزیترومایسین ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۱۵ میلی‌لیتر"
+      },
+      {
+        "code": "53069",
+        "en": "AZITHROMYCIN SUSPENSION ORAL 100 mg/5mL 15 mL",
+        "fa": "سوسپانسیون خوراکی آزیترومایسین ۱۰۰ میلی‌گرم / ۵ میلی‌لیتر ۱۵ میلی‌لیتر"
+      },
+      {
+        "code": "53072",
+        "en": "AZITHROMYCIN SUSPENSION ORAL 200 mg/5mL 30 mL",
+        "fa": "سوسپانسیون خوراکی آزیترومایسین ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۳۰ میلی‌لیتر"
+      },
+      {
+        "code": "53070",
+        "en": "AZITHROMYCIN SUSPENSION ORAL 100 mg/5mL 30 mL",
+        "fa": "سوسپانسیون خوراکی آزیترومایسین ۱۰۰ میلی‌گرم / ۵ میلی‌لیتر ۳۰ میلی‌لیتر"
+      },
+      {
+        "code": "52027",
+        "en": "AZITHROMYCIN DIHYDRATE SOLUTION, DROPS OPHTHALMIC 1.5 % 0.25 g",
+        "fa": "قطره چشمی آزیترومایسین دی‌هیدرات ۱٫۵ درصد ۰٫۲۵ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-286/Azithromycin",
+        "url": "https://www.darooyab.ir/G-286/Azithromycin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050711",
+      "label": "NDA050711"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db52b91e-79f7-4cc1-9564-f2eee8e31c45",
+      "label": "FDA Zithromax"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697037.html",
+      "label": "Azithromycin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a624056.html",
+      "label": "Azithromycin ophthalmic"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01FA10",
+      "label": "J01FA10"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-286/Azithromycin",
+      "label": "Azithromycin"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-zithromax",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA050711"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published literature and postmarketing experience over several decades with azithromycin use in pregnant women have not identified any drug-associated risks for major birth defects, miscarriage, or adverse maternal or fetal outcomes (see Data ) .",
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Azithromycin is present in human milk (see Data ) .",
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "[see Clinical Pharmacology (12.3) , Indications and Usage (1.2) , and Dosage and Administration (2.2) ] Safety and effectiveness in the treatment of pediatric patients with acute otitis media, acute bacterial sinusitis and community-acquired pneumonia under 6 months of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "[see Warnings and Precautions (5.4) ]",
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

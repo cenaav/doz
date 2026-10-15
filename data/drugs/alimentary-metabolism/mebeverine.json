@@ -1,0 +1,237 @@
+{
+  "id": "mebeverine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مبورین",
+    "en": "Mebeverine"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ضداسپاسم روده",
+    "en": "Intestinal antispasmodic"
+  },
+  "brands": [
+    {
+      "name": "Colofac",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "colofac",
+    "کولوفاک",
+    "مبورین",
+    "مبه ورین",
+    "دوسپاتالین",
+    "duspatalin"
+  ],
+  "formulations": [
+    {
+      "id": "tab-135",
+      "form": "tablet",
+      "route": "oral",
+      "label": "135 mg coated tablet",
+      "concentration": {
+        "amount": 135,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ibs",
+      "disease": "ibs",
+      "label": {
+        "fa": "IBS — بزرگسال: ۱۳۵ mg سه بار در روز",
+        "en": "IBS — adults: 135 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 135,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۰ دقیقه قبل از غذا، جویده نشود. پس از چند هفته و بهبود، دوز به‌تدریج کم شود.",
+            "en": "20 min before meals, do not chew. After several weeks with good effect, reduce gradually."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-colofac",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مبورین.",
+        "en": "Hypersensitivity to mebeverine."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان توصیه نمی‌شود.",
+        "en": "Not recommended in children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ibs",
+      "formulation": "tab-135",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 135,
+        "perDay": 405
+      }
+    }
+  ],
+  "atc": [
+    "A03AA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09532",
+        "en": "MEBEVERINE 200MG ER CAP",
+        "fa": "کپسول آهسته‌رهش مبورین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00787",
+        "en": "MEBEVERINE HCL 135MG TAB",
+        "fa": "قرص مبورین هیدروکلراید ۱۳۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2612/Mebeverine",
+        "url": "https://www.darooyab.ir/G-2612/Mebeverine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A03AA04",
+      "label": "A03AA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2612/Mebeverine",
+      "label": "Mebeverine"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/102499/smpc",
+      "label": "UK SmPC Colofac"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "and lactation Pregnancy There are no or limited amounts of data from the use of mebeverine in pregnant women.",
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "The excretion of mebeverine in milk has not been studied in animals.",
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Paediatric Population Mebeverine 135 mg tablets are not recommended for use in children and adolescents below 18, due to insufficient data on safety and efficacy.",
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

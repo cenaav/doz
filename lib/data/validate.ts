@@ -10,7 +10,7 @@ export function validateDataSet(ds: DataSet, schemaRoot: string): string[] {
   const errors: string[] = []
   const ajv = new Ajv2020({ allErrors: true })
   addFormats(ajv)
-  for (const n of ['drug', 'source', 'disease', 'category'])
+  for (const n of ['drug', 'source', 'disease', 'category', 'collection'])
     ajv.addSchema(JSON.parse(readFileSync(join(schemaRoot, 'schema', `${n}.schema.json`), 'utf8')))
   const schema = (n: string) => ajv.getSchema(`${n}.schema.json`)!
   const check = (name: string, fn: ReturnType<typeof schema>, value: unknown) => {
@@ -19,6 +19,7 @@ export function validateDataSet(ds: DataSet, schemaRoot: string): string[] {
   check('sources.json', schema('source'), ds.sources)
   check('diseases.json', schema('disease'), ds.diseases)
   check('categories.json', schema('category'), ds.categories)
+  check('collections.json', schema('collection'), ds.collections ?? [])
   const drugSchema = schema('drug')
   for (const { path, drug } of ds.drugs) check(path, drugSchema, drug)
   if (errors.length) return errors
@@ -40,6 +41,13 @@ export function validateDataSet(ds: DataSet, schemaRoot: string): string[] {
   dup(ds.drugs.map((d) => d.drug.id), 'drug')
 
   for (const r of collectRefs(ds.diseases)) if (!sourceIds.has(r.source)) errors.push(`diseases.json: unknown source ${r.source}`)
+  const drugIds = new Set(ds.drugs.map((d) => d.drug.id))
+  for (const c of ds.collections ?? []) for (const id of c.drugs) if (!drugIds.has(id)) errors.push(`collections.json: ${c.id} unknown drug ${id}`)
+  const catAtc = new Map(ds.categories.map((c) => [c.id, c.atc]))
+  for (const { path, drug } of ds.drugs) {
+    const main = drug.atc?.[0]?.[0]
+    if (main && catAtc.get(drug.category) !== main) errors.push(`${path}: ATC ${drug.atc![0]} belongs in the category for group ${main}`)
+  }
   for (const { path, drug } of ds.drugs) errors.push(...checkDrug(path, drug, sourceIds, diseaseIds, categoryIds))
   return errors
 }

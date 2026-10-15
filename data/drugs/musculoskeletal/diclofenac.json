@@ -1,0 +1,358 @@
+{
+  "id": "diclofenac",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیکلوفناک",
+    "en": "Diclofenac sodium"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "ضدالتهاب غیراستروئیدی (NSAID)",
+    "en": "NSAID"
+  },
+  "brands": [
+    {
+      "name": "Voltaren",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ولتارن",
+    "voltaren",
+    "دیکلوفناک",
+    "diclofenac"
+  ],
+  "formulations": [
+    {
+      "id": "dr-75",
+      "form": "tablet",
+      "route": "oral",
+      "label": "75 mg delayed-release tablet",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oa",
+      "disease": "osteoarthritis",
+      "label": {
+        "fa": "آرتروز — ۷۵ mg دو بار در روز (۱۰۰ تا ۱۵۰ mg/day)",
+        "en": "Osteoarthritis — 75 mg twice daily (100–150 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 75,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — ۷۵ mg دو بار در روز (۱۵۰ تا ۲۰۰ mg/day)",
+        "en": "Rheumatoid arthritis — 75 mg twice daily (150–200 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 75,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "pain",
+      "label": {
+        "fa": "کودکان",
+        "en": "Children"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in pediatric patients have not been established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "nsaid",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دیکلوفناک؛ سابقه آسم، کهیر یا واکنش آلرژیک پس از آسپرین/NSAID؛ جراحی CABG.",
+        "en": "Hypersensitivity to diclofenac; asthma, urticaria or allergic reactions after aspirin/NSAIDs; CABG surgery."
+      },
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش خطر حوادث قلبی‌عروقی ترومبوتیک (سکته قلبی و مغزی) و خونریزی/زخم/سوراخ شدن گوارش.",
+        "en": "Boxed warning: increased risk of serious cardiovascular thrombotic events (MI, stroke) and GI bleeding, ulceration and perforation."
+      },
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "WARNING: RISK OF SERIOUS CARDIOVASCULAR AND GASTROINTESTINAL EVENTS"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oa",
+      "formulation": "dr-75",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1,
+        "perDay": 150
+      }
+    },
+    {
+      "regimen": "ra",
+      "formulation": "dr-75",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 75
+      }
+    }
+  ],
+  "atc": [
+    "M01AB05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "15917",
+        "en": "DICLOFENAC POTASSIUM 50MG TAB",
+        "fa": "قرص دیکلوفناک پتاسیم ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00427",
+        "en": "DICLOFENAC SODIUM 100MG SUPP",
+        "fa": "شیاف دیکلوفناک سدیم ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00424",
+        "en": "DICLOFENAC SODIUM 25MG EC TAB",
+        "fa": "قرص انتریک‌کوتد دیکلوفناک سدیم ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "02041",
+        "en": "DICLOFENAC SODIUM 50MG EC TAB",
+        "fa": "قرص انتریک‌کوتد دیکلوفناک سدیم ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00428",
+        "en": "DICLOFENAC SODIUM 50MG SUPP",
+        "fa": "شیاف دیکلوفناک سدیم ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "19930",
+        "en": "DICLOFENAC SODIUM 75MG EXTENDED RELEASE TAB",
+        "fa": "قرص آهسته‌رهش دیکلوفناک سدیم ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "00425",
+        "en": "DICLOFENAC SODIUM 75MG/3ML AMP",
+        "fa": "آمپول دیکلوفناک سدیم ۷۵ میلی‌گرم / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "01993",
+        "en": "DICLOFENAC SODIUM SR 100MG CAP",
+        "fa": "کپسول آهسته‌رهش دیکلوفناک سدیم ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01464",
+        "en": "DICLOFENAC SODIUM SR 100MG TAB",
+        "fa": "قرص آهسته‌رهش دیکلوفناک سدیم ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "51105",
+        "en": "DICLOFENAC POTASSIUM CAPSULE, LIQUID FILLED ORAL 25 mg",
+        "fa": "کپسول دیکلوفناک پتاسیم پرشده ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-56/Diclofenac",
+        "url": "https://www.darooyab.ir/G-56/Diclofenac"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075185",
+      "label": "ANDA075185"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc99e6af-7050-4653-a681-5b252305a970",
+      "label": "FDA Diclofenac DR"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a689002.html",
+      "label": "Diclofenac"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699002.html",
+      "label": "Diclofenac and Misoprostol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M01AB05",
+      "label": "M01AB05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-56/Diclofenac",
+      "label": "Diclofenac"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-diclofenac-dr",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075185"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Clinical Considerations Fetal/Neonatal Adverse Reactions Premature Closure of Fetal Ductus Arteriosus: Avoid use of NSAIDs in women at about 30 weeks gestation and later in pregnancy, because NSAIDs, including Diclofenac Sodium, can cause premature closure of the fetal ductus arteriosus (see WARNINGS;",
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Pregnancy Section"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Based on available data, diclofenac may be present in human milk.The developmental and health benefits of breastfeeding should be considered along with the mother’s clinical need for diclofenac and any potential adverse effects on the breastfed infant from the diclofenac or from the underlying maternal …",
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly patients and patients with a prior history of peptic ulcer disease and/or GI bleeding are at greater risk for serious GI events (see ).",
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  }
+}

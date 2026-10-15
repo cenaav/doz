@@ -5,7 +5,7 @@ const lt = useLocalText()
 const localePath = useLocalePath()
 const fmt = useFormatNumber()
 useSeoMeta({ title: () => t('home.title'), description: () => t('home.description') })
-const cats = categories.map((c) => ({ ...c, count: categoryCounts[c.id] ?? 0 }))
+const cats = categories.map((c) => ({ ...c, count: categoryCounts[c.id] ?? 0 })).filter((c) => c.count)
 const recentDrugs = shallowRef<CatalogEntry[]>([])
 // The catalog is only fetched when there are recent drugs to name, after the page has rendered.
 onMounted(async () => {
@@ -34,7 +34,18 @@ onMounted(async () => {
       </div>
     </section>
     <section>
-      <h2 class="mb-3 text-base font-semibold">{{ $t('home.categories') }}</h2>
+      <h2 class="mb-3 text-base font-semibold">{{ $t('home.collections') }}</h2>
+      <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <NuxtLink v-for="c in collections" :key="c.id" :to="localePath(`/collection/${c.id}`)" class="card hover:border-brand-400">
+          <div class="text-2xl">{{ c.icon }}</div>
+          <div class="mt-1 font-semibold">{{ lt(c.name) }}</div>
+          <div class="text-sm text-slate-500">{{ $t('home.drugCount', { n: fmt(c.drugs.length) }) }}</div>
+        </NuxtLink>
+      </div>
+    </section>
+    <section>
+      <h2 class="mb-1 text-base font-semibold">{{ $t('home.categories') }}</h2>
+      <p class="mb-3 text-xs text-slate-500">{{ $t('category.atcNote') }}</p>
       <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
         <NuxtLink v-for="c in cats" :key="c.id" :to="localePath(`/category/${c.id}`)" class="card hover:border-brand-400">
           <div class="text-2xl">{{ c.icon }}</div>

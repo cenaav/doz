@@ -1,0 +1,387 @@
+{
+  "id": "carbidopa-levodopa",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کاربیدوپا-لوودوپا",
+    "en": "Carbidopa/levodopa"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "پیش‌ساز دوپامین",
+    "en": "Dopamine precursor"
+  },
+  "brands": [
+    {
+      "name": "Sinemet",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sinemet",
+    "سینمت",
+    "لوودوپا",
+    "کاربیدوپا لوودوپا",
+    "پارکینسون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10/100 mg tablet (carbidopa/levodopa)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "components": {
+        "carbidopa": {
+          "name": {
+            "fa": "کاربیدوپا",
+            "en": "Carbidopa"
+          },
+          "amount": 10,
+          "unit": "mg"
+        },
+        "levodopa": {
+          "name": {
+            "fa": "لوودوپا",
+            "en": "Levodopa"
+          },
+          "amount": 100,
+          "unit": "mg"
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-carbidopalevodopa",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-25-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25/100 mg tablet (carbidopa/levodopa)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "components": {
+        "carbidopa": {
+          "name": {
+            "fa": "کاربیدوپا",
+            "en": "Carbidopa"
+          },
+          "amount": 25,
+          "unit": "mg"
+        },
+        "levodopa": {
+          "name": {
+            "fa": "لوودوپا",
+            "en": "Levodopa"
+          },
+          "amount": 100,
+          "unit": "mg"
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-carbidopalevodopa",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-25-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25/250 mg tablet (carbidopa/levodopa)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "components": {
+        "carbidopa": {
+          "name": {
+            "fa": "کاربیدوپا",
+            "en": "Carbidopa"
+          },
+          "amount": 25,
+          "unit": "mg"
+        },
+        "levodopa": {
+          "name": {
+            "fa": "لوودوپا",
+            "en": "Levodopa"
+          },
+          "amount": 250,
+          "unit": "mg"
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-carbidopalevodopa",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pd",
+      "disease": "parkinsons",
+      "label": {
+        "fa": "پارکینسون — شروع ۱ قرص ۲۵/۱۰۰ سه بار در روز",
+        "en": "Parkinson’s — start one 25/100 tablet three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-carbidopalevodopa",
+          "section": "Dosage and Administration, Usual Initial Dosage"
+        }
+      ],
+      "doseComponent": "levodopa",
+      "allowedFormulations": [
+        "tab-25-100"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر روز یا یک روز در میان یک قرص اضافه تا ۸ قرص ۲۵/۱۰۰ در روز. کاربیدوپا ۷۰ تا ۱۰۰ mg/day برای اشباع لازم است.",
+            "en": "Add one tablet every day or every other day up to eight 25/100 tablets per day. About 70–100 mg/day carbidopa is needed to saturate decarboxylase."
+          },
+          "refs": [
+            {
+              "source": "fda-carbidopalevodopa",
+              "section": "Dosage and Administration, Usual Initial Dosage"
+            },
+            {
+              "source": "fda-carbidopalevodopa",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "همراه MAOIهای غیرانتخابی؛ حساسیت؛ گلوکوم زاویه بسته.",
+        "en": "With nonselective MAOIs; hypersensitivity; narrow-angle glaucoma."
+      },
+      "refs": [
+        {
+          "source": "fda-carbidopalevodopa",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pd",
+      "formulation": "tab-25-100",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "pd",
+      "formulation": "tab-25-250",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "N04BA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00747",
+        "en": "LEVODOPA-C 110MG TAB",
+        "fa": "قرص لوودوپا–C ۱۱۰ میلی‌گرم"
+      },
+      {
+        "code": "02383",
+        "en": "LEVODOPA-C 125MG TAB",
+        "fa": "قرص لوودوپا–C ۱۲۵ میلی‌گرم"
+      },
+      {
+        "code": "06733",
+        "en": "LEVODOPA-C 275MG TAB",
+        "fa": "قرص لوودوپا–C ۲۷۵ میلی‌گرم"
+      },
+      {
+        "code": "10062",
+        "en": "LEVODOPA-C 62.5MG TAB",
+        "fa": "قرص لوودوپا–C ۶۲٫۵ میلی‌گرم"
+      },
+      {
+        "code": "00748",
+        "en": "LEVODOPA-C FORTE 250 TAB",
+        "fa": "قرص لوودوپا–C فورت ۲۵۰"
+      },
+      {
+        "code": "52301",
+        "en": "LEVODOPA / CARBIDOPA TABLET ORAL 100 mg/25 mg",
+        "fa": "قرص لوودوپا / کاربیدوپا ۱۰۰ میلی‌گرم / ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "52479",
+        "en": "LEVODOPA / CARBIDOPA TABLET, EXTENDED RELEASE ORAL 200 mg/50 mg",
+        "fa": "قرص آهسته‌رهش لوودوپا / کاربیدوپا ۲۰۰ میلی‌گرم / ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4529/Levodopa-C",
+        "url": "https://www.darooyab.ir/G-4529/Levodopa-C"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=074260",
+      "label": "ANDA074260"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4ace5274-b6cf-414c-b9c0-f60e28a9cea5",
+      "label": "FDA Carbidopa-levodopa"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601068.html",
+      "label": "Levodopa and Carbidopa"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04BA02",
+      "label": "N04BA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4529/Levodopa-C",
+      "label": "Levodopa-C"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-carbidopalevodopa",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA074260"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "No teratogenic effects were observed in a study in mice receiving up to 20 times the maximum recommended human dose of carbidopa and levodopa.",
+      "refs": [
+        {
+          "source": "fda-carbidopalevodopa",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when carbidopa and levodopa is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-carbidopalevodopa",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-carbidopalevodopa",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In the clinical efficacy trials for carbidopa and levodopa, almost half of the patients were older than 65, but few were older than 75.",
+      "refs": [
+        {
+          "source": "fda-carbidopalevodopa",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    }
+  }
+}

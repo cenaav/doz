@@ -1,0 +1,514 @@
+{
+  "id": "prednisolone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پردنیزولون",
+    "en": "Prednisolone"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "کورتیکواستروئید",
+    "en": "Corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Orapred",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "پردنیزولون شربت",
+    "prednisolon"
+  ],
+  "formulations": [
+    {
+      "id": "sol-25-5",
+      "form": "solution",
+      "route": "oral",
+      "label": "25 mg / 5 mL (prednisolone base)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "sol-10-1",
+      "form": "solution",
+      "route": "oral",
+      "label": "10 mg / mL oral solution",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-prednisolone",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "corticosteroid-responsive",
+      "label": {
+        "fa": "دوز اولیه — ۵ تا ۶۰ mg در روز (بسته به بیماری)",
+        "en": "Initial dose — 5 to 60 mg/day (depends on condition)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز کاملاً فردی است؛ پس از پاسخ، با کاهش تدریجی به کمترین دوز نگهدارنده برسید.",
+            "en": "Dosage must be individualized; after response, taper to the lowest effective maintenance dose."
+          },
+          "refs": [
+            {
+              "source": "fda-prednisolone-sol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asthma-child",
+      "disease": "asthma",
+      "label": {
+        "fa": "حمله حاد آسم در کودک — بر اساس سن",
+        "en": "Acute asthma attack in children — by age"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 20,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 18,
+              "unit": "year"
+            },
+            "perDose": 30,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-prednisolone",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲ تا ۵ سال: ۲۰ mg؛ بالای ۵ سال: ۳۰ تا ۴۰ mg (حد پایین نمایش داده شده). در صورت استفراغ قابل تکرار است.",
+            "en": "2–5 years: 20 mg; over 5 years: 30–40 mg (lower value shown). May be repeated if the child vomits."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-prednisolone",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asthma-on-steroids",
+      "disease": "asthma",
+      "label": {
+        "fa": "حمله آسم در کودکی که استروئید نگهدارنده می‌گیرد — ۲ mg/kg (حداکثر ۶۰ mg)",
+        "en": "Acute asthma, child already on maintenance steroids — 2 mg/kg (max 60 mg)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-prednisolone",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 60,
+        "refs": [
+          {
+            "source": "uk-smpc-prednisolone",
+            "section": "4.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "child-general",
+      "disease": "corticosteroid-responsive",
+      "label": {
+        "fa": "سایر کاربردها در کودکان — کسری از دوز بزرگسال",
+        "en": "Other pediatric uses — fraction of adult dose"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "SmPC: کسری از دوز بزرگسال (مثلاً ۷۵٪ در ۱۲ سالگی، ۵۰٪ در ۷ سالگی، ۲۵٪ در ۱ سالگی) با توجه به شرایط بالینی؛ محاسبه خودکار ندارد.",
+          "en": "SmPC: fractions of the adult dose (e.g. 75% at 12 years, 50% at 7 years, 25% at 1 year) with clinical judgement; not auto-calculated."
+        }
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-prednisolone",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "fungal",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت قارچی سیستمیک؛ حساسیت به دارو.",
+        "en": "Systemic fungal infections; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "uk-ci",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت سیستمیک بدون درمان ضدعفونت؛ ایمن‌سازی با واکسن زنده.",
+        "en": "Systemic infection without anti-infective therapy; live virus immunisation."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-prednisolone",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [
+    {
+      "text": {
+        "fa": "در کودکان: فشار خون، وزن، قد، فشار چشم و علائم عفونت به‌طور مکرر پایش شود.",
+        "en": "In children monitor blood pressure, weight, height, intraocular pressure and signs of infection frequently."
+      },
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "sol-25-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "mlPerDose": 1,
+        "upperPerDose": 60,
+        "upperMlPerDose": 12
+      }
+    },
+    {
+      "regimen": "asthma-child",
+      "formulation": "sol-10-1",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "asthma-child",
+      "formulation": "sol-10-1",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 30,
+        "mlPerDose": 3
+      }
+    },
+    {
+      "regimen": "asthma-on-steroids",
+      "formulation": "sol-10-1",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 4
+      }
+    },
+    {
+      "regimen": "asthma-on-steroids",
+      "formulation": "sol-10-1",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 60
+      }
+    }
+  ],
+  "atc": [
+    "H02AB06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08379",
+        "en": "PREDNISOLONE 10MG AMP",
+        "fa": "آمپول پردنیزولون ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "19458",
+        "en": "PREDNISOLONE 1MG TAB",
+        "fa": "قرص پردنیزولون ۱ میلی‌گرم"
+      },
+      {
+        "code": "15175",
+        "en": "PREDNISOLONE 20MG TAB",
+        "fa": "قرص پردنیزولون ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "01045",
+        "en": "PREDNISOLONE 5MG TAB",
+        "fa": "قرص پردنیزولون ۵ میلی‌گرم"
+      },
+      {
+        "code": "01044",
+        "en": "PREDNISOLONE FORT 50MG TAB",
+        "fa": "قرص پردنیزولون فورت ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02178",
+        "en": "PREDNISONE 1MG TAB",
+        "fa": "قرص پردنیزون ۱ میلی‌گرم"
+      },
+      {
+        "code": "01048",
+        "en": "PREDNISONE 50MG TAB",
+        "fa": "قرص پردنیزون ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "08784",
+        "en": "PREDNISONE 5MG TAB",
+        "fa": "قرص پردنیزون ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2123/Prednisolone",
+        "url": "https://www.darooyab.ir/G-2123/Prednisolone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=091396",
+      "label": "ANDA091396"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=95208441-1700-5d3f-e053-2a95a90a7da2",
+      "label": "FDA Prednisolone sol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615042.html",
+      "label": "Prednisolone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682794.html",
+      "label": "Prednisolone Ophthalmic"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H02AB06",
+      "label": "H02AB06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2123/Prednisolone",
+      "label": "Prednisolone"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/3370/smpc",
+      "label": "UK SmPC Prednisolone"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-prednisolone-sol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA091396"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "",
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when prednisolone sodium phosphate oral solution (25 mg prednisolone per 5 mL) is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The efficacy and safety of prednisolone in the pediatric population are based on the well-established course of effect of corticosteroids which is similar in pediatric and adult populations.",
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of communicant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

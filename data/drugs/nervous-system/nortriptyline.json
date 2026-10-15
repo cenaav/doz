@@ -1,0 +1,367 @@
+{
+  "id": "nortriptyline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نورتریپتیلین",
+    "en": "Nortriptyline"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدافسردگی سه‌حلقه‌ای",
+    "en": "Tricyclic antidepressant"
+  },
+  "brands": [
+    {
+      "name": "Pamelor",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pamelor",
+    "نورتریپتیلین",
+    "نور تریپتیلین",
+    "TCA"
+  ],
+  "formulations": [
+    {
+      "id": "cap-10",
+      "form": "capsule",
+      "route": "oral",
+      "label": "10 mg capsule",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nortriptyline",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-25",
+      "form": "capsule",
+      "route": "oral",
+      "label": "25 mg capsule",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nortriptyline",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی — بزرگسال: ۲۵ mg سه یا چهار بار در روز",
+        "en": "Depression — adults: 25 mg three or four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-nortriptyline",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 150,
+        "refs": [
+          {
+            "source": "fda-nortriptyline",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "از دوز پایین شروع و به‌تدریج افزایش. بالای ۱۰۰ mg/day سطح خونی پایش شود (۵۰ تا ۱۵۰ ng/mL)؛ بیش از ۱۵۰ mg/day توصیه نمی‌شود.",
+            "en": "Start low and increase as required. Above 100 mg/day monitor plasma levels (50–150 ng/mL); above 150 mg/day not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-nortriptyline",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adolescent",
+      "disease": "mdd",
+      "label": {
+        "fa": "نوجوان و سالمند: ۳۰ تا ۵۰ mg/day",
+        "en": "Adolescents and elderly: 30–50 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-nortriptyline",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "منقسم یا یک‌جا. در کودکان توصیه نمی‌شود.",
+            "en": "Divided or once daily. Not recommended for children."
+          },
+          "refs": [
+            {
+              "source": "fda-nortriptyline",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "همراه یا تا ۱۴ روز پس از MAOI (از جمله لینزولید یا متیلن بلو وریدی).",
+        "en": "With or within 14 days of an MAOI (including linezolid or IV methylene blue)."
+      },
+      "refs": [
+        {
+          "source": "fda-nortriptyline",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان توصیه نمی‌شود.",
+        "en": "Not recommended for children."
+      },
+      "refs": [
+        {
+          "source": "fda-nortriptyline",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "suicide",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 25,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش افکار و رفتار خودکشی در کودکان، نوجوانان و جوانان.",
+        "en": "Boxed warning: increased suicidal thoughts and behaviour in children, adolescents and young adults."
+      },
+      "refs": [
+        {
+          "source": "fda-nortriptyline",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "cap-25",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "perDay": 75
+      }
+    },
+    {
+      "regimen": "adolescent",
+      "formulation": "cap-10",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDay": 30
+      }
+    }
+  ],
+  "atc": [
+    "N06AA10"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02170",
+        "en": "NORTRIPTYLINE HCL 10MG CAP",
+        "fa": "کپسول نورتریپتیلین هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00921",
+        "en": "NORTRIPTYLINE HCL 10MG TAB",
+        "fa": "قرص نورتریپتیلین هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "02171",
+        "en": "NORTRIPTYLINE HCL 25MG CAP",
+        "fa": "کپسول نورتریپتیلین هیدروکلراید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00922",
+        "en": "NORTRIPTYLINE HCL 25MG TAB",
+        "fa": "قرص نورتریپتیلین هیدروکلراید ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-601/Nortriptyline",
+        "url": "https://www.darooyab.ir/G-601/Nortriptyline"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=074132",
+      "label": "ANDA074132"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d111c36d-98ed-4f0d-97ea-86fe9048deee",
+      "label": "FDA Nortriptyline"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682620.html",
+      "label": "Nortriptyline"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AA10",
+      "label": "N06AA10"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-601/Nortriptyline",
+      "label": "Nortriptyline"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-nortriptyline",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA074132"
+  },
+  "populations": {
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Nortriptyline hydrochloride is not approved for use in pediatric patients ( see WARNINGS, Clinical Worsening and Suicide Risk ;",
+      "refs": [
+        {
+          "source": "fda-nortriptyline",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "As with other tricyclic antidepressants, dose selection for an elderly patient should usually be limited to the smallest effective total daily dose ( see",
+      "refs": [
+        {
+          "source": "fda-nortriptyline",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "avoid",
+      "quote": "مصرف در بارداری نورتریپتیلین گروه D استفاده نشود:",
+      "text": {
+        "fa": "دارویاب: گروه D — شواهد خطر برای جنین؛ فقط در شرایط ضروری.",
+        "en": "Darooyab: category D — evidence of fetal risk; only when essential."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-601/Nortriptyline — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-601/Nortriptyline"
+        }
+      ]
+    }
+  }
+}

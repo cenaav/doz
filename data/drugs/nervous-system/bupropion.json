@@ -1,0 +1,303 @@
+{
+  "id": "bupropion",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بوپروپیون",
+    "en": "Bupropion"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدافسردگی (NDRI)",
+    "en": "Antidepressant (NDRI)"
+  },
+  "brands": [
+    {
+      "name": "Wellbutrin XL",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "wellbutrin",
+    "ولبوترین",
+    "بوپروپیون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bupropion-xl",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی — بزرگسال: ۱۵۰ mg صبح، پس از ۴ روز ۳۰۰",
+        "en": "MDD — adults: 150 mg morning, 300 after 4 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 150,
+          "increment": 150,
+          "incrementEveryDays": 4,
+          "targetMin": 300,
+          "targetMax": 300,
+          "max": 450
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-bupropion-xl",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "برای کاهش خطر تشنج تدریجی افزایش یابد؛ قرص کامل بلعیده شود.",
+            "en": "Increase gradually to reduce seizure risk; swallow whole."
+          },
+          "refs": [
+            {
+              "source": "fda-bupropion-xl",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sad",
+      "disease": "seasonal-affective",
+      "label": {
+        "fa": "اختلال عاطفی فصلی: ۱۵۰ mg، پس از ۷ روز ۳۰۰",
+        "en": "Seasonal affective disorder: 150 mg, 300 after 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 150,
+          "increment": 150,
+          "incrementEveryDays": 7,
+          "targetMin": 300,
+          "targetMax": 300,
+          "max": 300
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-bupropion-xl",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "اختلال تشنجی؛ سابقه بولیمیا یا آنورکسیا.",
+        "en": "Seizure disorder; current or prior bulimia or anorexia nervosa."
+      },
+      "refs": [
+        {
+          "source": "fda-bupropion-xl",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 150
+      }
+    },
+    {
+      "regimen": "sad",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 150
+      }
+    }
+  ],
+  "atc": [
+    "N06AX12"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01909",
+        "en": "BUPROPION 100MG TAB",
+        "fa": "قرص بوپروپیون ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01908",
+        "en": "BUPROPION 75MG TAB",
+        "fa": "قرص بوپروپیون ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "02033",
+        "en": "BUPROPION SR 150MG TAB",
+        "fa": "قرص آهسته‌رهش بوپروپیون ۱۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-574/Bupropion",
+        "url": "https://www.darooyab.ir/G-574/Bupropion"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077715",
+      "label": "ANDA077715"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a1e768fd-c28f-4b49-822d-ccc315b4099c",
+      "label": "FDA Bupropion XL"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a695033.html",
+      "label": "Bupropion"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AX12",
+      "label": "N06AX12"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-574/Bupropion",
+      "label": "Bupropion"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-bupropion-xl",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077715"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Data from epidemiological studies of pregnant women exposed to bupropion in the first trimester have not identified an increased risk of congenital malformations overall (see Data).",
+      "refs": [
+        {
+          "source": "fda-bupropion-xl",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from published literature report the presence of bupropion and its metabolites in human milk (see Data).",
+      "refs": [
+        {
+          "source": "fda-bupropion-xl",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "SUICIDALITY AND ANTIDEPRESSANT DRUGS Antidepressants increased the risk of suicidal thoughts and behavior in children, adolescents, and young adults in short-term trials.",
+      "refs": [
+        {
+          "source": "fda-bupropion-xl",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, it may be necessary to consider this factor in dose selection; it may be useful to monitor renal function [see Dosage and Administration ( 2.7 ), Use in Specific Populations ( 8.6 ), and Clinical Pharmacology ( 12.3 )] .",
+      "refs": [
+        {
+          "source": "fda-bupropion-xl",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

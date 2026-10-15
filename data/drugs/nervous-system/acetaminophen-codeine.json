@@ -1,0 +1,443 @@
+{
+  "id": "acetaminophen-codeine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "استامینوفن کدئین",
+    "en": "Acetaminophen/codeine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضددرد اپیوئیدی ترکیبی",
+    "en": "Opioid combination analgesic"
+  },
+  "brands": [
+    {
+      "name": "Tylenol with Codeine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tylenol 3",
+    "tylenol codeine",
+    "استامینوفن کدئین",
+    "استامینوفن کدیین",
+    "کدئین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-300-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Acetaminophen 300 mg + codeine 15 mg",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "components": {
+        "codeine": {
+          "name": {
+            "fa": "کدئین",
+            "en": "Codeine"
+          },
+          "amount": 15,
+          "unit": "mg"
+        },
+        "acetaminophen": {
+          "name": {
+            "fa": "استامینوفن",
+            "en": "Acetaminophen"
+          },
+          "amount": 300,
+          "unit": "mg",
+          "limits": {
+            "maxPerDay": 4000,
+            "refs": [
+              {
+                "source": "fda-tylenol3",
+                "section": "Boxed Warning"
+              }
+            ]
+          }
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tylenol3",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-300-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Acetaminophen 300 mg + codeine 30 mg",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "components": {
+        "codeine": {
+          "name": {
+            "fa": "کدئین",
+            "en": "Codeine"
+          },
+          "amount": 30,
+          "unit": "mg"
+        },
+        "acetaminophen": {
+          "name": {
+            "fa": "استامینوفن",
+            "en": "Acetaminophen"
+          },
+          "amount": 300,
+          "unit": "mg",
+          "limits": {
+            "maxPerDay": 4000,
+            "refs": [
+              {
+                "source": "fda-tylenol3",
+                "section": "Boxed Warning"
+              }
+            ]
+          }
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tylenol3",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-300-60",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Acetaminophen 300 mg + codeine 60 mg",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "components": {
+        "codeine": {
+          "name": {
+            "fa": "کدئین",
+            "en": "Codeine"
+          },
+          "amount": 60,
+          "unit": "mg"
+        },
+        "acetaminophen": {
+          "name": {
+            "fa": "استامینوفن",
+            "en": "Acetaminophen"
+          },
+          "amount": 300,
+          "unit": "mg",
+          "limits": {
+            "maxPerDay": 4000,
+            "refs": [
+              {
+                "source": "fda-tylenol3",
+                "section": "Boxed Warning"
+              }
+            ]
+          }
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tylenol3",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pain",
+      "disease": "pain",
+      "label": {
+        "fa": "درد — بزرگسال: ۱ تا ۲ قرص هر ۴ ساعت در صورت نیاز",
+        "en": "Pain — adults: 1–2 tablets every 4 h as needed"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "perDoseMax": 60,
+        "dosesPerDay": 6,
+        "intervalHours": 4
+      },
+      "refs": [
+        {
+          "source": "fda-tylenol3",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "doseComponent": "codeine",
+      "limits": {
+        "maxPerDay": 360,
+        "refs": [
+          {
+            "source": "fda-tylenol3",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۳۰۰ تا ۶۰۰ mg استامینوفن + ۳۰ تا ۶۰ mg کدئین هر ۴ ساعت؛ کمترین دوز مؤثر. حداکثر استامینوفن ۴ g/day از همه منابع.",
+            "en": "300–600 mg acetaminophen + 30–60 mg codeine every 4 h; lowest effective dose. Acetaminophen max 4 g/day from all sources."
+          },
+          "refs": [
+            {
+              "source": "fda-tylenol3",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال منع مصرف (دپرسیون تنفسی کشنده)؛ پس از تونسیلکتومی زیر ۱۸ سال.",
+        "en": "Contraindicated under 12 (fatal respiratory depression); after tonsillectomy under 18."
+      },
+      "refs": [
+        {
+          "source": "fda-tylenol3",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: اعتیاد، دپرسیون تنفسی، متابولیسم فوق‌سریع کدئین، سمیت کبدی استامینوفن، تداخل با بنزودیازپین‌ها.",
+        "en": "Boxed warning: addiction, respiratory depression, ultra-rapid codeine metabolism, acetaminophen hepatotoxicity, benzodiazepine interaction."
+      },
+      "refs": [
+        {
+          "source": "fda-tylenol3",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pain",
+      "formulation": "tab-300-30",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 30,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 60
+      }
+    }
+  ],
+  "atc": [
+    "N02AJ06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08440",
+        "en": "ACETAMINOPHEN CODEINE (300+10)MG TAB",
+        "fa": "قرص استامینوفن کدئین (۳۰۰ + ۱۰) میلی‌گرم"
+      },
+      {
+        "code": "02243",
+        "en": "ACETAMINOPHEN CODEINE (300+20) TAB",
+        "fa": "قرص استامینوفن کدئین (۳۰۰ + ۲۰)"
+      },
+      {
+        "code": "07716",
+        "en": "ACETAMINOPHEN CODEINE (500+30) MG TAB",
+        "fa": "قرص استامینوفن کدئین (۵۰۰ + ۳۰) میلی‌گرم"
+      },
+      {
+        "code": "00010",
+        "en": "ACETAMINOPHEN CODEINE (500+8) TAB",
+        "fa": "قرص استامینوفن کدئین (۵۰۰ + ۸)"
+      },
+      {
+        "code": "18838",
+        "en": "ACETAMINOPHEN CODEINE 300/10MG SOFT GEL CAP",
+        "fa": "کپسول نرم استامینوفن کدئین ۳۰۰ / ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "02404",
+        "en": "ACETAMINOPHEN CODEINE EFF TAB",
+        "fa": "قرص جوشان استامینوفن کدئین"
+      },
+      {
+        "code": "52500",
+        "en": "ACETAMINOPHEN / CODEINE PHOSPHATE CAPSULE, LIQUID FILLED ORAL 300 mg/20 mg",
+        "fa": "کپسول استامینوفن / کدئین فسفات پرشده ۳۰۰ میلی‌گرم / ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "52312",
+        "en": "ACETAMINOPHEN / CODEINE PHOSPHATE TABLET ORAL 300 mg/10 mg",
+        "fa": "قرص استامینوفن / کدئین فسفات ۳۰۰ میلی‌گرم / ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "52922",
+        "en": "ACETAMINOPHEN / CODEINE PHOSPHATE TABLET ORAL 500 mg/8 mg",
+        "fa": "قرص استامینوفن / کدئین فسفات ۵۰۰ میلی‌گرم / ۸ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4643/Acetaminophen-Codeine",
+        "url": "https://www.darooyab.ir/G-4643/Acetaminophen-Codeine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211610",
+      "label": "ANDA211610"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=79377617-686b-4640-b2b8-e1358cf82358",
+      "label": "FDA APAP-codeine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a681004.html",
+      "label": "Acetaminophen"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611019.html",
+      "label": "Acetaminophen Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02AJ06",
+      "label": "N02AJ06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4643/Acetaminophen-Codeine",
+      "label": "Acetaminophen-Codeine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-tylenol3",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA211610"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Neonatal Opioid Withdrawal Syndrome (NOWS) Advise pregnant women using opioids for an extended period of time of the risk of Neonatal Opioid Withdrawal Syndrome, which may be life-threatening if not recognized and treated.",
+      "refs": [
+        {
+          "source": "fda-tylenol3",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions, including excess sedation, respiratory depression, and death in a breastfed infant, advise patients that breastfeeding is not recommended during treatment with acetaminophen and codeine phosphate tablets (see WARNINGS ).",
+      "refs": [
+        {
+          "source": "fda-tylenol3",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در کودکان زیر سن مشخص منع مصرف دارد.",
+        "en": "Label: contraindicated in children below a stated age."
+      },
+      "quote": "Acetaminophen and codeine phosphate tablets are contraindicated for: • All children younger than 12 years of age (see WARNINGS ) • Post-operative management in children younger than 18 years of age following tonsillectomy and/or adenoidectomy (see WARNINGS ).",
+      "refs": [
+        {
+          "source": "fda-tylenol3",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, use caution when selecting a dosage for an elderly patient, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-tylenol3",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

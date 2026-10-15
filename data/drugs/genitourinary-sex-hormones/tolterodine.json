@@ -1,0 +1,279 @@
+{
+  "id": "tolterodine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تولترودین",
+    "en": "Tolterodine"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آنتی‌موسکارینی ادراری",
+    "en": "Urinary antimuscarinic"
+  },
+  "brands": [
+    {
+      "name": "Detrol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "detrol",
+    "دترول",
+    "تولترودین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tolterodine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tolterodine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oab",
+      "disease": "overactive-bladder",
+      "label": {
+        "fa": "مثانه بیش‌فعال — ۲ mg دو بار در روز",
+        "en": "Overactive bladder — 2 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tolterodine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس پاسخ می‌توان ۱ mg دو بار داد؛ نارسایی کبد/کلیه یا مهارکننده قوی CYP3A4: ۱ mg دو بار.",
+            "en": "May lower to 1 mg twice daily; hepatic/renal impairment or strong CYP3A4 inhibitors: 1 mg twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-tolterodine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "احتباس ادرار یا معده؛ گلوکوم زاویه بسته کنترل‌نشده؛ حساسیت به تولترودین یا فزوترودین.",
+        "en": "Urinary or gastric retention; uncontrolled narrow-angle glaucoma; hypersensitivity to tolterodine or fesoterodine."
+      },
+      "refs": [
+        {
+          "source": "fda-tolterodine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oab",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "perDay": 4
+      }
+    }
+  ],
+  "atc": [
+    "G04BD07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "04578",
+        "en": "TOLTERODINE 1MG TAB",
+        "fa": "قرص تولترودین ۱ میلی‌گرم"
+      },
+      {
+        "code": "21323",
+        "en": "TOLTERODINE 2MG EXTENDED RELEASE CAP",
+        "fa": "کپسول آهسته‌رهش تولترودین ۲ میلی‌گرم"
+      },
+      {
+        "code": "04579",
+        "en": "TOLTERODINE 2MG TAB",
+        "fa": "قرص تولترودین ۲ میلی‌گرم"
+      },
+      {
+        "code": "07115",
+        "en": "TOLTERODINE 4MG EXTENDED RELEASE CAP",
+        "fa": "کپسول آهسته‌رهش تولترودین ۴ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-927/Tolterodine",
+        "url": "https://www.darooyab.ir/G-927/Tolterodine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204721",
+      "label": "ANDA204721"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9ba8ad2-27f6-4f18-bd84-73659047910e",
+      "label": "FDA Tolterodine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699026.html",
+      "label": "Tolterodine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BD07",
+      "label": "G04BD07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-927/Tolterodine",
+      "label": "Tolterodine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-tolterodine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA204721"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C.",
+      "refs": [
+        {
+          "source": "fda-tolterodine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Tolterodine is excreted into the milk in mice.",
+      "refs": [
+        {
+          "source": "fda-tolterodine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Efficacy in the pediatric population has not been demonstrated.",
+      "refs": [
+        {
+          "source": "fda-tolterodine",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety were observed between the older and younger patients (see CLINICAL PHARMACOLOGY, Pharmacokinetics in Special Populations ).",
+      "refs": [
+        {
+          "source": "fda-tolterodine",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

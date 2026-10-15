@@ -9,7 +9,8 @@
       "id",
       "name",
       "icon",
-      "order"
+      "order",
+      "atc"
     ],
     "properties": {
       "id": {
@@ -37,6 +38,11 @@
       },
       "order": {
         "type": "integer"
+      },
+      "atc": {
+        "type": "string",
+        "pattern": "^[A-Z]$",
+        "description": "WHO ATC anatomical main group"
       }
     }
   }

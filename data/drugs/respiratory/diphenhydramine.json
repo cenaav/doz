@@ -1,0 +1,311 @@
+{
+  "id": "diphenhydramine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیفن‌هیدرامین",
+    "en": "Diphenhydramine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل اول",
+    "en": "First-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Benadryl",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "دیفن هیدرامین",
+    "benadryl",
+    "بنادریل"
+  ],
+  "formulations": [
+    {
+      "id": "liq-12-5-5",
+      "form": "solution",
+      "route": "oral",
+      "label": "12.5 mg / 5 mL",
+      "concentration": {
+        "amount": 12.5,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergy",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "علائم آلرژی — ۶ تا ۱۱ سال (برچسب OTC)",
+        "en": "Allergy symptoms — 6 to 11 years (OTC label)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 12.5,
+        "perDoseMax": 25,
+        "dosesPerDay": 6,
+        "intervalHours": 4
+      },
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-benadryl-children",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ تا ۶ ساعت؛ بیش از ۶ نوبت در ۲۴ ساعت نه. زیر ۲ سال مصرف نشود؛ ۲ تا ۵ سال فقط با دستور پزشک.",
+            "en": "Every 4 to 6 hours; not more than 6 doses in 24 h. Under 2 years do not use; 2–5 years only if directed by a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-benadryl-children",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "کودکان زیر ۲ سال: مصرف نشود.",
+        "en": "Children under 2 years: do not use."
+      },
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "2-5",
+      "severity": "warn",
+      "rule": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "۲ تا ۵ سال: فقط با دستور پزشک.",
+        "en": "2 to 5 years: do not use unless directed by a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "severity": "block",
+      "text": {
+        "fa": "برای خواب‌آلود کردن کودک یا همراه هر فرآورده دیگر حاوی دیفن‌هیدرامین (حتی موضعی) مصرف نشود.",
+        "en": "Do not use to make a child sleepy, or with any other diphenhydramine product, even one used on skin."
+      },
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پیش از مصرف با پزشک: مشکل تنفسی مثل برونشیت مزمن، گلوکوم، رژیم کم‌سدیم.",
+        "en": "Ask a doctor first if breathing problem such as chronic bronchitis, glaucoma, or sodium-restricted diet."
+      },
+      "refs": [
+        {
+          "source": "fda-benadryl-children",
+          "section": "Ask a doctor before use if the child has"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergy",
+      "formulation": "liq-12-5-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 12.5,
+        "mlPerDose": 5,
+        "upperPerDose": 25,
+        "upperMlPerDose": 10
+      }
+    },
+    {
+      "regimen": "allergy",
+      "formulation": "liq-12-5-5",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "R06AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18777",
+        "en": "DIPHENHYDRAMINE 25MG SOFT GEL CAP",
+        "fa": "کپسول نرم دیفن‌هیدرامین ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00454",
+        "en": "DIPHENHYDRAMINE HCL 12.5MG/5ML 60ML ELIXIR",
+        "fa": "الگزیر دیفن‌هیدرامین هیدروکلراید ۱۲٫۵ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "12558",
+        "en": "DIPHENHYDRAMINE HCL 20MG/2ML  INJ",
+        "fa": "فرآورده تزریقی دیفن‌هیدرامین هیدروکلراید ۲۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "00455",
+        "en": "DIPHENHYDRAMINE HCL 25MG TAB",
+        "fa": "قرص دیفن‌هیدرامین هیدروکلراید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "01475",
+        "en": "DIPHENHYDRAMINE HCL 50MG TAB",
+        "fa": "قرص دیفن‌هیدرامین هیدروکلراید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00453",
+        "en": "DIPHENHYDRAMINE HCL 50MG/1ML AMP",
+        "fa": "آمپول دیفن‌هیدرامین هیدروکلراید ۵۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "51885",
+        "en": "DIPHENHYDRAMINE HYDROCHLORIDE SOLUTION ORAL 12.5 mg/5mL 120 mL",
+        "fa": "محلول خوراکی دیفن‌هیدرامین هیدروکلراید ۱۲٫۵ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-792/Diphenhydramine",
+        "url": "https://www.darooyab.ir/G-792/Diphenhydramine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fc9181b9-c92d-493e-8d7c-4a4239c6c092",
+      "label": "FDA Children's Benadryl"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682539.html",
+      "label": "Diphenhydramine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616038.html",
+      "label": "Diphenhydramine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R06AA02",
+      "label": "R06AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-792/Diphenhydramine",
+      "label": "Diphenhydramine"
+    }
+  ],
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-benadryl-children",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M012"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری دیفن هیدرامین گروه B قابل استفاده در بارداری:",
+      "text": {
+        "fa": "دارویاب: گروه B — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category B — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-792/Diphenhydramine — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-792/Diphenhydramine"
+        }
+      ]
+    }
+  }
+}

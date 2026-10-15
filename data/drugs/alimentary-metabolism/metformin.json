@@ -1,0 +1,475 @@
+{
+  "id": "metformin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متفورمین",
+    "en": "Metformin"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "بیگوانید",
+    "en": "Biguanide"
+  },
+  "brands": [
+    {
+      "name": "Glucophage",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "metformin",
+    "متفورمین",
+    "گلوکوفاژ"
+  ],
+  "formulations": [
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-850",
+      "form": "tablet",
+      "route": "oral",
+      "label": "850 mg tablet",
+      "concentration": {
+        "amount": 850,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1000",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1000 mg tablet",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "child",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "کودکان ۱۰ سال به بالا — شروع ۵۰۰ mg دو بار در روز",
+        "en": "Children ≥10 years — start 500 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 1000,
+          "increment": 500,
+          "incrementEveryDays": 7,
+          "max": 2000
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-metformin",
+          "section": "8.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه غذا؛ افزایش هفتگی ۵۰۰ mg بر اساس قند و تحمل، حداکثر ۲۰۰۰ mg/day در دو نوبت.",
+            "en": "With meals; increase by 500 mg weekly per glycemic control and tolerability, max 2000 mg/day in two doses."
+          },
+          "refs": [
+            {
+              "source": "fda-metformin",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "بزرگسال — شروع ۵۰۰ mg دو بار در روز",
+        "en": "Adults — start 500 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 1000,
+          "increment": 500,
+          "incrementEveryDays": 7,
+          "max": 2550
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۸۵۰ mg یک‌بار در روز؛ افزایش ۵۰۰ mg هفتگی یا ۸۵۰ mg هر ۲ هفته؛ حداکثر ۲۵۵۰ mg/day. بالای ۲۰۰۰ mg بهتر در ۳ نوبت.",
+            "en": "Or 850 mg once daily; increase 500 mg weekly or 850 mg every 2 weeks; max 2550 mg/day; above 2000 mg better tolerated in 3 doses."
+          },
+          "refs": [
+            {
+              "source": "fda-metformin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "renal",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی شدید کلیه (eGFR کمتر از ۳۰)؛ اسیدوز متابولیک یا کتواسیدوز؛ حساسیت.",
+        "en": "Severe renal impairment (eGFR <30); metabolic acidosis incl. DKA; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-10",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "بی‌خطری زیر ۱۰ سال ثابت نشده است.",
+        "en": "Not established under 10 years."
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: اسیدوز لاکتیک (می‌تواند کشنده باشد).",
+        "en": "Boxed warning: lactic acidosis (can be fatal)."
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "WARNING: LACTIC ACIDOSIS"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 45,
+      "severity": "warn",
+      "text": {
+        "fa": "شروع در eGFR ۳۰ تا ۴۵ توصیه نمی‌شود؛ زیر ۳۰ منع مصرف.",
+        "en": "Initiation not recommended at eGFR 30–45; contraindicated below 30."
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "2.3"
+        }
+      ]
+    },
+    {
+      "egfrBelow": 30,
+      "severity": "block",
+      "text": {
+        "fa": "eGFR کمتر از ۳۰: منع مصرف.",
+        "en": "eGFR <30: contraindicated."
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "child",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 500
+      }
+    }
+  ],
+  "atc": [
+    "A10BA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "16845",
+        "en": "METFORMIN HCL 1000MG EXTENDED RELEASE TAB",
+        "fa": "قرص آهسته‌رهش متفورمین هیدروکلراید ۱۰۰۰ میلی‌گرم"
+      },
+      {
+        "code": "10915",
+        "en": "METFORMIN HCL 1000MG TAB",
+        "fa": "قرص متفورمین هیدروکلراید ۱۰۰۰ میلی‌گرم"
+      },
+      {
+        "code": "21080",
+        "en": "METFORMIN HCL 500MG CAP",
+        "fa": "کپسول متفورمین هیدروکلراید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "21337",
+        "en": "METFORMIN HCL 500MG EXTENDED RELEASE TAB",
+        "fa": "قرص آهسته‌رهش متفورمین هیدروکلراید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00817",
+        "en": "METFORMIN HCL 500MG TAB",
+        "fa": "قرص متفورمین هیدروکلراید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "16844",
+        "en": "METFORMIN HCL 750MG SR TAB",
+        "fa": "قرص آهسته‌رهش متفورمین هیدروکلراید ۷۵۰ میلی‌گرم"
+      },
+      {
+        "code": "16430",
+        "en": "METFORMIN HCL 750MG TAB",
+        "fa": "قرص متفورمین هیدروکلراید ۷۵۰ میلی‌گرم"
+      },
+      {
+        "code": "10073",
+        "en": "METFORMIN HCL 850MG TAB",
+        "fa": "قرص متفورمین هیدروکلراید ۸۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52888",
+        "en": "METFORMIN HYDROCHLORIDE TABLET ORAL 850 mg",
+        "fa": "قرص متفورمین هیدروکلراید ۸۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52921",
+        "en": "METFORMIN HYDROCHLORIDE SOLUTION ORAL 500 mg/5mL 250 mL",
+        "fa": "محلول خوراکی متفورمین هیدروکلراید ۵۰۰ میلی‌گرم / ۵ میلی‌لیتر ۲۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-640/Metformin",
+        "url": "https://www.darooyab.ir/G-640/Metformin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077095",
+      "label": "ANDA077095"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7078da8f-f8a7-411f-aa79-8a9710d0cdb5",
+      "label": "FDA Metformin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a696005.html",
+      "label": "Metformin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BA02",
+      "label": "A10BA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-640/Metformin",
+      "label": "Metformin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-metformin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077095"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited data with metformin hydrochloride in pregnant women are not sufficient to determine a drug-associated risk for major birth defects or miscarriage.",
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Limited published studies report that metformin is present in human milk [see Data].",
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Safety and effectiveness of metformin hydrochloride have not been established in pediatric patients less than 10 years old.",
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy and the higher risk of lactic acidosis.",
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Discuss the potential for unintended pregnancy with premenopausal women as therapy with metformin hydrochloride may result in ovulation in some anovulatory women.",
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

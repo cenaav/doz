@@ -11,7 +11,7 @@ const diseases: Disease[] = [
   { id: 'allergic-rhinitis', name: { en: 'Allergic rhinitis', fa: 'رینیت آلرژیک' }, synonyms: ['hay fever'], icd10: ['J30.9'], specialty: 'allergy',
     symptoms: { items: [{ en: 'Sneezing', fa: 'عطسه' }, { en: 'Runny nose', fa: 'آبریزش بینی' }, { en: 'Itchy eyes', fa: 'خارش چشم' }], refs: [{ source: 's', section: 'Symptoms' }] } },
 ]
-const categories: Category[] = [{ id: 'antibiotics', name: { en: 'Antibiotics', fa: 'آنتی‌بیوتیک‌ها' }, icon: '💊', order: 1 }]
+const categories: Category[] = [{ id: 'antibiotics', name: { en: 'Antibiotics', fa: 'آنتی‌بیوتیک‌ها' }, icon: '💊', order: 1, atc: 'J' }]
 const catalog = [
   entry('amoxicillin', 'Amoxicillin', 'آموکسی‌سیلین', { brands: ['Amoxil'], class: { en: 'Aminopenicillin', fa: 'آمینوپنی‌سیلین' },
     regimens: [{ id: 'aom', disease: 'acute-otitis-media', label: { en: 'Acute otitis media — high dose', fa: 'اوتیت مدیا — دوز بالا' } }] }),

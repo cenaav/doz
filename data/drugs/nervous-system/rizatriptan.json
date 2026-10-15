@@ -1,0 +1,396 @@
+{
+  "id": "rizatriptan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریزاتریپتان",
+    "en": "Rizatriptan"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "تریپتان (آگونیست 5-HT1B/1D)",
+    "en": "Triptan"
+  },
+  "brands": [
+    {
+      "name": "Maxalt-MLT",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "maxalt",
+    "مکسالت",
+    "ریزاتریپتان",
+    "تریپتان"
+  ],
+  "formulations": [
+    {
+      "id": "odt-5",
+      "form": "odt",
+      "route": "oral",
+      "label": "5 mg ODT",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "odt-10",
+      "form": "odt",
+      "route": "oral",
+      "label": "10 mg ODT",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "peds",
+      "disease": "migraine-acute",
+      "label": {
+        "fa": "حمله حاد میگرن — ۶ تا ۱۷ سال: بر اساس وزن (تک‌دوز)",
+        "en": "Acute migraine — 6–17 y: by weight (single dose)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 39.99,
+            "perDose": 5,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 39.99,
+            "maxWeightKg": null,
+            "perDose": 10,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "8.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کمتر از ۴۰ kg: ۵ mg؛ ۴۰ kg به بالا: ۱۰ mg. بی‌خطری بیش از یک دوز در ۲۴ ساعت در کودکان ثابت نشده. روی زبان؛ آب لازم نیست.",
+            "en": "<40 kg: 5 mg; ≥40 kg: 10 mg. More than one dose in 24 h not established in children. Place on tongue; no liquid needed."
+          },
+          "refs": [
+            {
+              "source": "fda-rizatriptan-odt",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-rizatriptan-odt",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "migraine-acute",
+      "label": {
+        "fa": "حمله حاد میگرن — بزرگسال: ۵ یا ۱۰ mg",
+        "en": "Acute migraine — adults: 5 or 10 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 30,
+        "refs": [
+          {
+            "source": "fda-rizatriptan-odt",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت برگشت سردرد، دوز دوم ۲ ساعت بعد؛ حداکثر ۳۰ mg در ۲۴ ساعت.",
+            "en": "If headache returns, a second dose 2 h later; max 30 mg in 24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-rizatriptan-odt",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "cv",
+      "severity": "block",
+      "text": {
+        "fa": "بیماری ایسکمیک عروق کرونر، اسپاسم کرونر، سکته مغزی یا TIA، بیماری عروق محیطی، فشار خون کنترل‌نشده؛ همراه سایر تریپتان‌ها یا ارگوت در ۲۴ ساعت.",
+        "en": "Ischemic coronary disease, coronary vasospasm, stroke or TIA, peripheral vascular disease, uncontrolled hypertension; other triptans or ergots within 24 h."
+      },
+      "refs": [
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-6",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ سال ثابت نشده است.",
+        "en": "Not established under 6 years."
+      },
+      "refs": [
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "peds",
+      "formulation": "odt-5",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "odt-10",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "odt-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "N02CC04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "20203",
+        "en": "RIZATRIPTAN 10MG ORALLY DISINTEGRATING TAB",
+        "fa": "قرص ریزاتریپتان ۱۰ میلی‌گرم بازشونده"
+      },
+      {
+        "code": "08596",
+        "en": "RIZATRIPTAN BENZOATE 0.5MG TAB",
+        "fa": "قرص ریزاتریپتان بنزوات ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "02455",
+        "en": "RIZATRIPTAN BENZOATE 10MG TAB",
+        "fa": "قرص ریزاتریپتان بنزوات ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "02286",
+        "en": "RIZATRIPTAN BENZOATE 5MG TAB",
+        "fa": "قرص ریزاتریپتان بنزوات ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-863/Rizatriptan",
+        "url": "https://www.darooyab.ir/G-863/Rizatriptan"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201914",
+      "label": "ANDA201914"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4de33a24-db69-444a-b04d-c69ccba57ab2",
+      "label": "FDA Rizatriptan ODT"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601109.html",
+      "label": "Rizatriptan"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02CC04",
+      "label": "N02CC04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-863/Rizatriptan",
+      "label": "Rizatriptan"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-rizatriptan-odt",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA201914"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available human data on the use of rizatriptan benzoate in pregnant women are not sufficient to draw conclusions about drug-associated risk for major birth defects and miscarriage.",
+      "refs": [
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of rizatriptan or any active metabolites in human milk, or on the effects of rizatriptan on the breastfed infant, or on milk production.",
+      "refs": [
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Safety and effectiveness in pediatric patients under 6 years of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Although the pharmacokinetics of rizatriptan were similar in elderly (aged ≥65 years) and in younger adults (n=17), in general, dose selection for an elderly patient should be cautious, starting at the low end of the dosing range.",
+      "refs": [
+        {
+          "source": "fda-rizatriptan-odt",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "id": "tizanidine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تیزانیدین",
+    "en": "Tizanidine"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "شل‌کننده عضلانی (آگونیست α2)",
+    "en": "Muscle relaxant (alpha-2 agonist)"
+  },
+  "brands": [
+    {
+      "name": "Zanaflex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zanaflex",
+    "زانافلکس",
+    "تیزانیدین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet (scored)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-4",
+      "form": "tablet",
+      "route": "oral",
+      "label": "4 mg tablet (scored)",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "spasticity",
+      "disease": "spasticity",
+      "label": {
+        "fa": "اسپاستیسیتی — شروع ۲ mg هر ۶ تا ۸ ساعت در صورت نیاز (حداکثر ۳ نوبت)",
+        "en": "Spasticity — start 2 mg every 6–8 h as needed (max 3 doses)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 3,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 36,
+        "refs": [
+          {
+            "source": "fda-tizanidine",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲ تا ۴ mg در هر دوز هر ۱ تا ۴ روز؛ حداکثر ۳۶ mg/day. آنزیم‌های کبدی در ابتدا و یک ماه بعد. قطع تدریجی ۲ تا ۴ mg در روز.",
+            "en": "Increase by 2–4 mg per dose every 1–4 days; max 36 mg/day. Check liver enzymes at baseline and 1 month. Taper by 2–4 mg/day when stopping."
+          },
+          "refs": [
+            {
+              "source": "fda-tizanidine",
+              "section": "2"
+            },
+            {
+              "source": "fda-tizanidine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-tizanidine",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "همراه مهارکننده‌های قوی CYP1A2 (فلووکسامین، سیپروفلوکساسین)؛ حساسیت.",
+        "en": "With strong CYP1A2 inhibitors (fluvoxamine, ciprofloxacin); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان ثابت نشده.",
+        "en": "Not established in children."
+      },
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "spasticity",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "M03BX02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11500",
+        "en": "TIZANIDINE 2MG TAB",
+        "fa": "قرص تیزانیدین ۲ میلی‌گرم"
+      },
+      {
+        "code": "05635",
+        "en": "TIZANIDINE 4MG TAB",
+        "fa": "قرص تیزانیدین ۴ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2800/Tizanidine",
+        "url": "https://www.darooyab.ir/G-2800/Tizanidine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076533",
+      "label": "ANDA076533"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01c0d3d3-2373-a1b7-822a-80a66291a248",
+      "label": "FDA Tizanidine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601121.html",
+      "label": "Tizanidine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M03BX02",
+      "label": "M03BX02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2800/Tizanidine",
+      "label": "Tizanidine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-tizanidine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076533"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with use of tizanidine tablets in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of tizanidine in human milk, the effects on the breastfed infant, or the effects on human milk production.",
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Monitor elderly patients because they may have an increased risk for adverse reactions associated with tizanidine tablets.",
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Oral administration of tizanidine to male and female rats resulted in adverse effects on fertility [see Nonclinical Toxicology (13.1) ].",
+      "refs": [
+        {
+          "source": "fda-tizanidine",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

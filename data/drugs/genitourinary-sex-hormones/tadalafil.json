@@ -1,0 +1,387 @@
+{
+  "id": "tadalafil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تادالافیل",
+    "en": "Tadalafil"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "مهارکننده PDE5",
+    "en": "PDE5 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Cialis",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cialis",
+    "سیالیس",
+    "تادالافیل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ed-prn",
+      "disease": "erectile-dysfunction",
+      "label": {
+        "fa": "اختلال نعوظ (در صورت نیاز) — شروع ۱۰ mg",
+        "en": "ED (as needed) — start 10 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 20,
+        "refs": [
+          {
+            "source": "fda-tadalafil",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۵ تا ۲۰ mg؛ CrCl ۳۰ تا ۵۰: شروع ۵ mg و حداکثر ۱۰ mg هر ۴۸ ساعت.",
+            "en": "5–20 mg; CrCl 30–50: start 5 mg, max 10 mg per 48 h."
+          },
+          "refs": [
+            {
+              "source": "fda-tadalafil",
+              "section": "2"
+            },
+            {
+              "source": "fda-tadalafil",
+              "section": "2.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bph",
+      "disease": "bph",
+      "label": {
+        "fa": "BPH (± اختلال نعوظ) — ۵ mg یک بار در روز",
+        "en": "BPH (± ED) — 5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-tadalafil",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "nitrates",
+      "severity": "block",
+      "text": {
+        "fa": "همراه هر نوع نیترات (نیتروگلیسیرین، ایزوسورباید) یا محرک‌های گوانیلات سیکلاز (ریوسیگوات): افت شدید فشار.",
+        "en": "With any nitrate (nitroglycerin, isosorbide) or guanylate-cyclase stimulators (riociguat): severe hypotension."
+      },
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۸ سال ثابت نشده.",
+        "en": "Not established under 18."
+      },
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ed-prn",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "bph",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "G04BE08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06974",
+        "en": "TADALAFIL 10MG TAB",
+        "fa": "قرص تادالافیل ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "06975",
+        "en": "TADALAFIL 20MG TAB",
+        "fa": "قرص تادالافیل ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "52889",
+        "en": "TADALAFIL 2.5MG TAB",
+        "fa": "قرص تادالافیل ۲٫۵ میلی‌گرم"
+      },
+      {
+        "code": "51681",
+        "en": "TADALAFIL 5MG TAB",
+        "fa": "قرص تادالافیل ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4274/Tadalafil",
+        "url": "https://www.darooyab.ir/G-4274/Tadalafil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205885",
+      "label": "ANDA205885"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ad14d63-42e7-493f-b56c-e02a4fd139f7",
+      "label": "FDA Tadalafil"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604008.html",
+      "label": "Tadalafil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BE08",
+      "label": "G04BE08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4274/Tadalafil",
+      "label": "Tadalafil"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-tadalafil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA205885"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Tadalafil tablets are not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Tadalafil tablets are not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Tadalafil tablets are not indicated for use in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "However, a greater sensitivity to medications in some older individuals should be considered [see Clinical Pharmacology ( 12.3 )] .",
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Based on the data from 3 studies in adult males, tadalafil decreased sperm concentrations in the study of 10 mg tadalafil for 6 months and the study of 20 mg tadalafil for 9 months.",
+      "refs": [
+        {
+          "source": "fda-tadalafil",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

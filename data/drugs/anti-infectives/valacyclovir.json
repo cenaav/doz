@@ -1,0 +1,546 @@
+{
+  "id": "valacyclovir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "والاسیکلوویر",
+    "en": "Valacyclovir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدویروس (پیش‌داروی آسیکلوویر)",
+    "en": "Antiviral (acyclovir prodrug)"
+  },
+  "brands": [
+    {
+      "name": "Valtrex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "valtrex",
+    "والترکس",
+    "والاسیکلوویر",
+    "تبخال",
+    "زونا"
+  ],
+  "formulations": [
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-valacyclovir-1g",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1000",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 g tablet (partially scored)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-valacyclovir-1g",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "susp-50",
+      "form": "suspension",
+      "route": "oral",
+      "label": "50 mg/mL extemporaneous suspension (from 500 mg tablets)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cold-sore",
+      "disease": "herpes-labialis",
+      "label": {
+        "fa": "تبخال — ۱۲ سال به بالا: ۲ g هر ۱۲ ساعت، ۱ روز",
+        "en": "Cold sores — ≥12 y: 2 g every 12 h for 1 day"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-valacyclovir",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "gh-initial",
+      "disease": "genital-herpes",
+      "label": {
+        "fa": "تبخال تناسلی، نوبت اول: ۱ g دو بار در روز، ۱۰ روز",
+        "en": "Genital herpes, initial episode: 1 g twice daily for 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "gh-recurrent",
+      "disease": "genital-herpes",
+      "label": {
+        "fa": "تبخال تناسلی عودکننده: ۵۰۰ mg دو بار در روز، ۳ روز",
+        "en": "Recurrent genital herpes: 500 mg twice daily for 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "id": "gh-suppress",
+      "disease": "genital-herpes",
+      "label": {
+        "fa": "سرکوب تبخال تناسلی: ۱ g یک بار در روز",
+        "en": "Genital herpes suppression: 1 g once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "zoster",
+      "disease": "herpes-zoster",
+      "label": {
+        "fa": "زونا: ۱ g سه بار در روز، ۷ روز",
+        "en": "Herpes zoster: 1 g three times daily for 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر چه زودتر، ترجیحاً در ۴۸ ساعت اول بثورات.",
+            "en": "Start as early as possible, ideally within 48 h of rash."
+          },
+          "refs": [
+            {
+              "source": "fda-valacyclovir",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chickenpox",
+      "disease": "chickenpox",
+      "label": {
+        "fa": "آبله‌مرغان — ۲ تا ۱۷ سال: ۲۰ mg/kg سه بار در روز، ۵ روز",
+        "en": "Chickenpox — 2–17 y: 20 mg/kg three times daily for 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 20,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 1000,
+        "refs": [
+          {
+            "source": "fda-valacyclovir",
+            "section": "2.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شدید (آنافیلاکسی، واکنش پوستی شدید) به والاسیکلوویر یا آسیکلوویر.",
+        "en": "Clinically significant hypersensitivity (anaphylaxis, SCARs) to valacyclovir or acyclovir."
+      },
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cold-sore",
+      "formulation": "tab-1000",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 2000,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "gh-initial",
+      "formulation": "tab-1000",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "gh-recurrent",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "gh-suppress",
+      "formulation": "tab-1000",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDay": 1000
+      }
+    },
+    {
+      "regimen": "zoster",
+      "formulation": "tab-1000",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDay": 3000
+      }
+    },
+    {
+      "regimen": "chickenpox",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 7,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "chickenpox",
+      "formulation": "susp-50",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 6
+      }
+    },
+    {
+      "regimen": "chickenpox",
+      "formulation": "tab-1000",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    }
+  ],
+  "atc": [
+    "J05AB11"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "10064",
+        "en": "VALACICLOVIR 1000MG TAB",
+        "fa": "قرص والاسیکلوویر ۱۰۰۰ میلی‌گرم"
+      },
+      {
+        "code": "16814",
+        "en": "VALACICLOVIR 250MG TAB",
+        "fa": "قرص والاسیکلوویر ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "09161",
+        "en": "VALACICLOVIR 500MG TAB",
+        "fa": "قرص والاسیکلوویر ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1211/Valaciclovir",
+        "url": "https://www.darooyab.ir/G-1211/Valaciclovir"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203047",
+      "label": "ANDA203047"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c2d5cec-038f-42bb-8f04-90d2431dc1c9",
+      "label": "FDA Valacyclovir"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72300f70-57fd-42a8-a2dc-4cf95a1ce805",
+      "label": "FDA Valacyclovir 1 g"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a695010.html",
+      "label": "Valacyclovir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AB11",
+      "label": "J05AB11"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1211/Valaciclovir",
+      "label": "Valaciclovir"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-valacyclovir",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA203047"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Clinical data over several decades with valacyclovir and its metabolite, acyclovir, in pregnant women, have not identified a drug associated risk of major birth defects.",
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Although there is no information on the presence of valacyclovir in human milk, its metabolite, acyclovir, is present in human milk following oral administration of valacyclovir.",
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The efficacy and safety of valacyclovir have not been established in pediatric patients: • aged less than 12 years with cold sores • aged less than 18 years with genital herpes • aged less than 18 years with herpes zoster • aged less than 2 years with chickenpox • for suppressive therapy following neonatal HSV …",
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly patients are also more likely to have renal or CNS adverse events [see Dosage and Administration ( 2.4 ), Warnings and Precautions ( 5.2 , 5.3 ), Clinical Pharmacology ( 12.3 )].",
+      "refs": [
+        {
+          "source": "fda-valacyclovir",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "id": "calcium-vitamin-d3",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلسیم + ویتامین D3",
+    "en": "Calcium carbonate + vitamin D3"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مکمل کلسیم و ویتامین D",
+    "en": "Calcium and vitamin D supplement"
+  },
+  "brands": [
+    {
+      "name": "Adcal-D3",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "adcal",
+    "کلسیم دی",
+    "کلسیم D",
+    "calcium d",
+    "کلسیم",
+    "calcium carbonate"
+  ],
+  "formulations": [
+    {
+      "id": "chew",
+      "form": "chewable-tablet",
+      "route": "oral",
+      "label": "Calcium 600 mg + vitamin D3 400 IU chewable tablet",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "components": {
+        "calcium": {
+          "name": {
+            "fa": "کلسیم المنتال",
+            "en": "Elemental calcium"
+          },
+          "amount": 600,
+          "unit": "mg"
+        },
+        "vitd3": {
+          "name": {
+            "fa": "ویتامین D3 (۴۰۰ واحد)",
+            "en": "Vitamin D3 (400 IU)"
+          },
+          "amount": 10,
+          "unit": "mcg"
+        }
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-adcal-d3",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "osteoporosis",
+      "label": {
+        "fa": "کمبود کلسیم/ویتامین D، کمکی پوکی استخوان — بالای ۱۲ سال: ۱ قرص دو بار در روز",
+        "en": "Calcium/vitamin D deficiency, osteoporosis adjunct — >12 y: 1 tablet twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-adcal-d3",
+          "section": "4.2"
+        }
+      ],
+      "doseComponent": "calcium",
+      "notes": [
+        {
+          "text": {
+            "fa": "ترجیحاً یکی صبح و یکی عصر؛ جویده شود. هر قرص ۶۰۰ mg کلسیم المنتال + ۴۰۰ واحد D3.",
+            "en": "Preferably one morning and one evening; chew. Each tablet 600 mg elemental calcium + 400 IU D3."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-adcal-d3",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-adcal-d3",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "هیپرکلسمی (میلوم، متاستاز استخوان، سارکوئیدوز)؛ هیپرپاراتیروئیدی اولیه؛ مسمومیت ویتامین D؛ نارسایی شدید کلیه؛ حساسیت؛ آلرژی به بادام‌زمینی یا سویا.",
+        "en": "Hypercalcaemia (myeloma, bone metastases, sarcoidosis); primary hyperparathyroidism; vitamin D overdose; severe renal failure; hypersensitivity; peanut or soya allergy."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-adcal-d3",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال توصیه نمی‌شود.",
+        "en": "Not recommended under 12 years."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-adcal-d3",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "chew",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 600,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A12AX"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07865",
+        "en": "CALCIUM ACETATE 667MG TAB",
+        "fa": "قرص کلسیم استات ۶۶۷ میلی‌گرم"
+      },
+      {
+        "code": "24140",
+        "en": "CALCIUM CARBONATE 500MG EFF TAB",
+        "fa": "قرص جوشان کلسیم کربنات ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00198",
+        "en": "CALCIUM CARBONATE 500MG TAB",
+        "fa": "قرص کلسیم کربنات ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02113",
+        "en": "CALCIUM CHLORIDE 100MG/ML 10ML AMP",
+        "fa": "آمپول کلسیم کلراید ۱۰۰ میلی‌گرم / میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "17570",
+        "en": "CALCIUM CHLORIDE 10ML OPH DROP",
+        "fa": "قطره چشمی کلسیم کلراید ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "11440",
+        "en": "CALCIUM CITRATE TAB",
+        "fa": "قرص کلسیم سیترات"
+      },
+      {
+        "code": "00199",
+        "en": "CALCIUM FORTE EFF TAB",
+        "fa": "قرص جوشان کلسیم فورت"
+      },
+      {
+        "code": "02415",
+        "en": "CALCIUM GLUCONATE 1 G EFF TAB",
+        "fa": "قرص جوشان کلسیم گلوکونات ۱ گرم"
+      },
+      {
+        "code": "00200",
+        "en": "CALCIUM GLUCONATE 10% 10ML AMP",
+        "fa": "آمپول کلسیم گلوکونات ۱۰ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "15397",
+        "en": "CALCIUM GLUCONATE 10% 10ML P-AMP",
+        "fa": "آمپول کلسیم گلوکونات ۱۰ درصد ۱۰ میلی‌لیتر–"
+      },
+      {
+        "code": "01417",
+        "en": "CALCIUM GLUCONATE 45MG TAB",
+        "fa": "قرص کلسیم گلوکونات ۴۵ میلی‌گرم"
+      },
+      {
+        "code": "00196",
+        "en": "CALCIUM SYRUP",
+        "fa": "شربت کلسیم"
+      },
+      {
+        "code": "03369",
+        "en": "CALCIUM-D SACHET",
+        "fa": "ساشه کلسیم–D"
+      },
+      {
+        "code": "00197",
+        "en": "CALCIUM-D TAB",
+        "fa": "قرص کلسیم–D"
+      },
+      {
+        "code": "50253",
+        "en": "CALCIUM CARBONATE TABLET ORAL 500 mg",
+        "fa": "قرص کلسیم کربنات ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2506/Calcium",
+        "url": "https://www.darooyab.ir/G-2506/Calcium"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601032.html",
+      "label": "Calcium Carbonate"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A12AX",
+      "label": "A12AX"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2506/Calcium",
+      "label": "Calcium"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/1356/smpc",
+      "label": "UK SmPC Adcal-D3"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "and lactation During pregnancy and lactation treatment with Adcal-D 3 should always be under the direction of a physician.",
+      "refs": [
+        {
+          "source": "uk-smpc-adcal-d3",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Children: Not recommended for children under 12 years.",
+      "refs": [
+        {
+          "source": "uk-smpc-adcal-d3",
+          "section": "4.2"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly and children above 12 years of age: 2 chewable tablets per day, preferably one tablet each morning and evening.",
+      "refs": [
+        {
+          "source": "uk-smpc-adcal-d3",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "id": "fluoxetine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلوکستین",
+    "en": "Fluoxetine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "SSRI",
+    "en": "SSRI"
+  },
+  "brands": [
+    {
+      "name": "Prozac",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "prozac",
+    "پروزاک",
+    "فلوکستین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-10",
+      "form": "capsule",
+      "route": "oral",
+      "label": "10 mg capsule",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-20",
+      "form": "capsule",
+      "route": "oral",
+      "label": "20 mg capsule",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-40",
+      "form": "capsule",
+      "route": "oral",
+      "label": "40 mg capsule",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd-child",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی — کودکان و نوجوانان (۸ سال به بالا): شروع ۱۰ یا ۲۰ mg",
+        "en": "MDD — children/adolescents (≥8 y): start 10 or 20 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 8,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 10,
+          "increment": 10,
+          "incrementEveryDays": 7,
+          "targetMin": 20,
+          "targetMax": 20,
+          "max": 20
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-fluoxetine",
+          "section": "8.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از ۱ هفته با ۱۰ mg به ۲۰ mg؛ در کودکان کم‌وزن شروع و هدف می‌تواند ۱۰ mg باشد.",
+            "en": "After 1 week at 10 mg increase to 20 mg; lower-weight children may start and stay at 10 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-fluoxetine",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ocd-child",
+      "disease": "ocd",
+      "label": {
+        "fa": "وسواس — کودکان و نوجوانان (۷ سال به بالا): شروع ۱۰ mg",
+        "en": "OCD — children/adolescents (≥7 y): start 10 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 7,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 10,
+          "increment": 10,
+          "incrementEveryDays": 14,
+          "targetMin": 20,
+          "targetMax": 60,
+          "max": 60
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-fluoxetine",
+          "section": "8.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نوجوان و کودک سنگین‌وزن: پس از ۲ هفته ۲۰ mg، محدوده ۲۰ تا ۶۰؛ کودک کم‌وزن: محدوده ۲۰ تا ۳۰ mg.",
+            "en": "Adolescents/higher weight: 20 mg after 2 weeks, range 20–60; lower weight: range 20–30 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-fluoxetine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mdd-adult",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی — بزرگسال: ۲۰ mg صبح",
+        "en": "MDD — adults: 20 mg in the morning"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 20,
+          "increment": 20,
+          "incrementEveryDays": 21,
+          "max": 80
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "ocd-adult",
+      "disease": "ocd",
+      "label": {
+        "fa": "وسواس — بزرگسال: ۲۰ mg (محدوده ۲۰ تا ۶۰)",
+        "en": "OCD — adults: 20 mg (range 20–60)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 20,
+          "increment": 20,
+          "incrementEveryDays": 21,
+          "targetMin": 20,
+          "targetMax": 60,
+          "max": 80
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "2.2"
+        }
+      ]
+    },
+    {
+      "id": "bulimia",
+      "disease": "bulimia",
+      "label": {
+        "fa": "پرخوری عصبی — بزرگسال: ۶۰ mg صبح",
+        "en": "Bulimia — adults: 60 mg in the morning"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "2.3"
+        }
+      ]
+    },
+    {
+      "id": "panic",
+      "disease": "panic-disorder",
+      "label": {
+        "fa": "پانیک — بزرگسال: شروع ۱۰ mg، پس از ۱ هفته ۲۰ mg",
+        "en": "Panic disorder — adults: 10 mg, then 20 mg after 1 week"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 10,
+          "increment": 10,
+          "incrementEveryDays": 7,
+          "targetMin": 20,
+          "targetMax": 20,
+          "max": 60
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "MAOI در ۱۴ روز اخیر؛ شروع MAOI تا ۵ هفته پس از قطع فلوکستین ممنوع؛ لینزولید یا متیلن بلو وریدی.",
+        "en": "MAOI within 14 days; no MAOI within 5 weeks after stopping fluoxetine; linezolid or IV methylene blue."
+      },
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش خطر افکار و رفتار خودکشی در کودکان، نوجوانان و جوانان (تا ۲۴ سال)؛ پایش دقیق برای بدتر شدن بالینی.",
+        "en": "Boxed warning: Increased risk of suicidal thoughts and behavior in children, adolescents and young adults (up to 24 years); monitor closely for clinical worsening."
+      },
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "WARNING: SUICIDAL THOUGHTS AND BEHAVIORS"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd-child",
+      "formulation": "cap-10",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "ocd-child",
+      "formulation": "cap-10",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "mdd-adult",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20
+      }
+    },
+    {
+      "regimen": "ocd-adult",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20
+      }
+    },
+    {
+      "regimen": "bulimia",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "panic",
+      "formulation": "cap-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "N06AB03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02051",
+        "en": "FLUOXETINE 20MG/5ML SYRUP",
+        "fa": "شربت فلوکستین ۲۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "01512",
+        "en": "FLUOXETINE HCL 10MG CAP",
+        "fa": "کپسول فلوکستین هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00551",
+        "en": "FLUOXETINE HCL 20MG CAP",
+        "fa": "کپسول فلوکستین هیدروکلراید ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "16338",
+        "en": "FLUOXETINE HCL 20MG TAB",
+        "fa": "قرص فلوکستین هیدروکلراید ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "52820",
+        "en": "FLUOXETINE (AS HYDROCHLORIDE) CAPSULE, DELAYED RELEASE ORAL 90 mg",
+        "fa": "کپسول تأخیری‌رهش فلوکستین (معادل هیدروکلراید) ۹۰ میلی‌گرم"
+      },
+      {
+        "code": "53063",
+        "en": "FLUOXETINE (AS HYDROCHLORIDE) TABLET ORAL 10 mg",
+        "fa": "قرص فلوکستین (معادل هیدروکلراید) ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "53064",
+        "en": "FLUOXETINE (AS HYDROCHLORIDE) TABLET ORAL 20 mg",
+        "fa": "قرص فلوکستین (معادل هیدروکلراید) ۲۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-585/Fluoxetine",
+        "url": "https://www.darooyab.ir/G-585/Fluoxetine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078619",
+      "label": "ANDA078619"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cdb0d6d-d0cc-4fd9-e063-6394a90a9e0f",
+      "label": "FDA Fluoxetine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a689006.html",
+      "label": "Fluoxetine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AB03",
+      "label": "N06AB03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-585/Fluoxetine",
+      "label": "Fluoxetine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-fluoxetine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078619"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on data from published observational studies, exposure to SSRIs, particularly in the month before delivery, has been associated with a less than 2-fold increase in the risk of postpartum hemorrhage [see Warnings and Precautions (5.7) and Clinical Considerations].",
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from published literature report the presence of fluoxetine and norfluoxetine in human milk (see Data).",
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Antidepressants increased the risk of suicidal thoughts and behavior in children, adolescents, and young adults in short-term studies.",
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… significant hyponatremia in elderly patients, who may be at greater risk for this adverse reaction [see Warnings and Precautions (5.9) ] .",
+      "refs": [
+        {
+          "source": "fda-fluoxetine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

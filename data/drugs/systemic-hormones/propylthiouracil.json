@@ -1,0 +1,282 @@
+{
+  "id": "propylthiouracil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پروپیل‌تیواوراسیل",
+    "en": "Propylthiouracil (PTU)"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "ضدتیروئید",
+    "en": "Antithyroid"
+  },
+  "brands": [
+    {
+      "name": "PTU",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "PTU",
+    "پی تی یو",
+    "پروپیل تیواوراسیل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ptu",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hyperthyroidism",
+      "label": {
+        "fa": "پرکاری تیروئید — بزرگسال: ۳۰۰ mg/day در ۳ نوبت",
+        "en": "Hyperthyroidism — adults: 300 mg/day in 3 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-ptu",
+          "section": "Dosage and Administration, Adults"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۸ ساعت. شدید یا گواتر بزرگ: ۴۰۰ mg/day (گاهی ۶۰۰ تا ۹۰۰). نگهدارنده ۱۰۰ تا ۱۵۰ mg/day. ممکن است در سه‌ماهه اول بارداری ارجح باشد.",
+            "en": "Every 8 hours. Severe or large goitre: 400 mg/day (occasionally 600–900). Maintenance 100–150 mg/day. May be preferred in the first trimester of pregnancy."
+          },
+          "refs": [
+            {
+              "source": "fda-ptu",
+              "section": "Dosage and Administration, Adults"
+            },
+            {
+              "source": "fda-ptu",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-ptu",
+              "section": "Indications and Usage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "hyperthyroidism",
+      "label": {
+        "fa": "کودکان",
+        "en": "Children"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "به‌علت آسیب شدید کبدی در کودکان توصیه نمی‌شود، مگر وقتی متی‌مازول تحمل نشود و جراحی یا ید رادیواکتیو مناسب نباشد.",
+          "en": "Not recommended in children because of severe liver injury, except when methimazole is not tolerated and surgery or radioiodine are unsuitable."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-ptu",
+          "section": "Dosage and Administration, Pediatric Patients"
+        },
+        {
+          "source": "fda-ptu",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دارو.",
+        "en": "Hypersensitivity to the drug."
+      },
+      "refs": [
+        {
+          "source": "fda-ptu",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سمیت کبدی: نارسایی کبد، پیوند یا مرگ در بزرگسالان و کودکان گزارش شده است.",
+        "en": "Liver toxicity: liver failure, transplantation or death reported in adults and children."
+      },
+      "refs": [
+        {
+          "source": "fda-ptu",
+          "section": "Warnings, Liver Toxicity"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "H03BA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01072",
+        "en": "PROPYLTHIOURACIL 50MG TAB",
+        "fa": "قرص پروپیلتیووراسیل ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3417/Propylthiouracil",
+        "url": "https://www.darooyab.ir/G-3417/Propylthiouracil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=006188",
+      "label": "NDA006188"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0c23a2c-b250-4c0d-9b2a-c1483faa2ca0",
+      "label": "FDA Propylthiouracil"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682465.html",
+      "label": "Propylthiouracil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H03BA02",
+      "label": "H03BA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3417/Propylthiouracil",
+      "label": "Propylthiouracil"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-ptu",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA006188"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Pregnancy Category D.",
+      "refs": [
+        {
+          "source": "fda-ptu",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Propylthiouracil is present in breast milk to a small extent and therefore likely results in clinically insignificant doses to the nursing infant.",
+      "refs": [
+        {
+          "source": "fda-ptu",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "These reports of hepatic reactions include cases requiring liver transplantation in adult and pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-ptu",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  }
+}

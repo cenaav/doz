@@ -1,0 +1,273 @@
+{
+  "id": "erythromycin-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پماد چشمی اریترومایسین",
+    "en": "Erythromycin eye ointment"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "ماکرولید موضعی چشم",
+    "en": "Topical ophthalmic macrolide"
+  },
+  "brands": [
+    {
+      "name": "Erythromycin ophthalmic",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "erythromycin eye",
+    "پماد چشم",
+    "اریترومایسین",
+    "افتالمی نوزاد"
+  ],
+  "formulations": [
+    {
+      "id": "oint-0-5",
+      "form": "eye-ointment",
+      "route": "ophthalmic",
+      "label": "0.5% (5 mg/g) eye ointment, 1 cm ribbon",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-erythromycin-eye",
+          "section": "Description"
+        },
+        {
+          "source": "fda-erythromycin-eye",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "infection",
+      "disease": "bacterial-conjunctivitis",
+      "label": {
+        "fa": "عفونت سطحی چشم: نوار ۱ سانتی‌متری تا ۶ بار در روز",
+        "en": "Superficial eye infection: 1 cm ribbon up to 6 times daily"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 6
+      },
+      "refs": [
+        {
+          "source": "fda-erythromycin-eye",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 6,
+        "refs": [
+          {
+            "source": "fda-erythromycin-eye",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تعداد دفعات (حداکثر ۶ بار) بسته به شدت عفونت.",
+            "en": "Frequency (up to 6 times) depends on severity."
+          },
+          "refs": [
+            {
+              "source": "fda-erythromycin-eye",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neonatal",
+      "disease": "ophthalmia-neonatorum-prophylaxis",
+      "label": {
+        "fa": "پیشگیری از افتالمی نوزادی: نوار ۱ سانتی‌متری یک بار در هر چشم",
+        "en": "Neonatal ophthalmia prophylaxis: one 1 cm ribbon into each eye"
+      },
+      "population": {
+        "maxAge": {
+          "value": 28,
+          "unit": "day"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-erythromycin-eye",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در کیسه ملتحمه تحتانی هر چشم؛ شسته نشود؛ برای هر نوزاد تیوب جدید. اگر مادر سوزاک بالینی دارد، پروفیلاکسی موضعی کافی نیست و پنی‌سیلین G تزریقی لازم است.",
+            "en": "Into each lower conjunctival sac; do not flush; a new tube for each infant. If the mother has clinically apparent gonorrhea, topical prophylaxis alone is inadequate; give parenteral penicillin G."
+          },
+          "refs": [
+            {
+              "source": "fda-erythromycin-eye",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-erythromycin-eye",
+              "section": "Indications and Usage"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به اریترومایسین.",
+        "en": "History of hypersensitivity to erythromycin."
+      },
+      "refs": [
+        {
+          "source": "fda-erythromycin-eye",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "infection",
+      "formulation": "oint-0-5",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 6
+      }
+    },
+    {
+      "regimen": "neonatal",
+      "formulation": "oint-0-5",
+      "input": {
+        "ageYears": 0.003,
+        "weightKg": 3.4
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "S01AA17"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00499",
+        "en": "ERYTHROMYCIN 0.5% 3G OPH OINT",
+        "fa": "پماد اریترومایسین ۰٫۵ درصد ۳ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4593/Erythromycin-Ophthalmic",
+        "url": "https://www.darooyab.ir/G-4593/Erythromycin-Ophthalmic"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=064067",
+      "label": "ANDA064067"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=061ddd20-94a6-4e3c-ba84-1ebd8529eea6",
+      "label": "FDA Erythromycin eye"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01AA17",
+      "label": "S01AA17"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4593/Erythromycin-Ophthalmic",
+      "label": "Erythromycin-Ophthalmic"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-erythromycin-eye",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA064067"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproductive studies are not always predictive of human response, the erythromycins should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-erythromycin-eye",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when erythromycin is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-erythromycin-eye",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    }
+  }
+}

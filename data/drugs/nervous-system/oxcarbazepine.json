@@ -1,0 +1,424 @@
+{
+  "id": "oxcarbazepine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اکسکاربازپین",
+    "en": "Oxcarbazepine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدتشنج",
+    "en": "Anticonvulsant"
+  },
+  "brands": [
+    {
+      "name": "Trileptal",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "trileptal",
+    "تری لپتال",
+    "اکسکاربازپین",
+    "اکس کاربازپین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet (scored)",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-300",
+      "form": "tablet",
+      "route": "oral",
+      "label": "300 mg tablet (scored)",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-600",
+      "form": "tablet",
+      "route": "oral",
+      "label": "600 mg tablet (scored)",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع پارشیل — بزرگسال: شروع ۶۰۰ mg/day در دو نوبت",
+        "en": "Partial seizures — adults: start 600 mg/day in two doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 600,
+          "increment": 600,
+          "incrementEveryDays": 7,
+          "targetMin": 1200,
+          "targetMax": 2400,
+          "max": 2400
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کمکی: هدف ۱۲۰۰ mg/day. تبدیل به تک‌درمانی: هدف ۲۴۰۰ mg/day. CrCl کمتر از ۳۰: شروع ۳۰۰ mg/day.",
+            "en": "Adjunct: target 1,200 mg/day. Conversion to monotherapy: target 2,400 mg/day. CrCl <30: start 300 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-oxcarbazepine",
+              "section": "2"
+            },
+            {
+              "source": "fda-oxcarbazepine",
+              "section": "2.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع پارشیل — ۴ تا ۱۶ سال: شروع ۸ تا ۱۰ mg/kg/day در دو نوبت",
+        "en": "Partial seizures — 4–16 y: start 8–10 mg/kg/day in two doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 8,
+        "perKgPerDayMax": 10,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "2.4"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-oxcarbazepine",
+            "section": "2.4"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع معمولاً حداکثر ۶۰۰ mg/day. نگهدارنده تک‌درمانی بر اساس وزن (جدول ۱).",
+            "en": "Start generally not above 600 mg/day. Monotherapy maintenance by weight (Table 1)."
+          },
+          "refs": [
+            {
+              "source": "fda-oxcarbazepine",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-oxcarbazepine",
+              "section": "2.6, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اکسکاربازپین یا اسلی‌کاربازپین.",
+        "en": "Hypersensitivity to oxcarbazepine or eslicarbazepine."
+      },
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال ثابت نشده.",
+        "en": "Not established under 2 years."
+      },
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-300",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 37.5
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N03AF02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02280",
+        "en": "OXCARBAZEPINE 150MG TAB",
+        "fa": "قرص اکس‌کاربازپین ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02447",
+        "en": "OXCARBAZEPINE 300MG TAB",
+        "fa": "قرص اکس‌کاربازپین ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02448",
+        "en": "OXCARBAZEPINE 600MG TAB",
+        "fa": "قرص اکس‌کاربازپین ۶۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52693",
+        "en": "OXCARBAZEPINE 150MG EXTENDED RELEASE TAB",
+        "fa": "قرص آهسته‌رهش اکس‌کاربازپین ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52694",
+        "en": "OXCARBAZEPINE 300 EXTENDED RELEASE TAB",
+        "fa": "قرص آهسته‌رهش اکس‌کاربازپین ۳۰۰"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-674/Oxcarbazepine",
+        "url": "https://www.darooyab.ir/G-674/Oxcarbazepine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218341",
+      "label": "ANDA218341"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8841174a-9f4b-424f-a50d-01478f2aeb29",
+      "label": "FDA Oxcarbazepine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601245.html",
+      "label": "Oxcarbazepine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AF02",
+      "label": "N03AF02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-674/Oxcarbazepine",
+      "label": "Oxcarbazepine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-oxcarbazepine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA218341"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Although oxcarbazepine tablets is closely related structurally to carbamazepine, which is considered to be teratogenic in humans, available human data from published literature and ongoing pregnancy registry studies on use of oxcarbazepine during pregnancy have not demonstrated an increased prevalence of …",
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Oxcarbazepine and its active metabolite (MHD) are present in human milk after oxcarbazepine tablets administration.",
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and effectiveness for use as adjunctive therapy for partial-onset seizures in pediatric patients below the age of 2 have not been established.",
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Close monitoring of sodium levels is required in elderly patients at risk for hyponatremia [see Warnings and Precautions (5.1) ] .",
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Use of oxcarbazepine tablets with hormonal contraceptives containing ethinylestradiol or levonorgestrel is associated with decreased plasma concentrations of these hormones and may result in a failure of the therapeutic effect of the oral contraceptive drug.",
+      "refs": [
+        {
+          "source": "fda-oxcarbazepine",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

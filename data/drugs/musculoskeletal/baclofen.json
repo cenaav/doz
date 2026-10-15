@@ -1,0 +1,293 @@
+{
+  "id": "baclofen",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "باکلوفن",
+    "en": "Baclofen"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "شل‌کننده عضلانی (آگونیست GABA-B)",
+    "en": "Muscle relaxant (GABA-B agonist)"
+  },
+  "brands": [
+    {
+      "name": "Lioresal",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lioresal",
+    "لیورزال",
+    "باکلوفن"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (scored)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-baclofen",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (scored)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-baclofen",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "spasticity",
+      "disease": "spasticity",
+      "label": {
+        "fa": "اسپاستیسیتی — ۱۲ سال به بالا: ۵ mg سه بار، افزایش هر ۳ روز",
+        "en": "Spasticity — ≥12 y: 5 mg three times daily, increase every 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 3,
+        "titration": {
+          "start": 15,
+          "increment": 15,
+          "incrementEveryDays": 3,
+          "targetMin": 40,
+          "targetMax": 80,
+          "max": 80
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-baclofen-b",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۵ mg سه بار ×۳ روز، ۱۰ mg سه بار ×۳ روز، ۱۵ mg سه بار ×۳ روز، ۲۰ mg سه بار ×۳ روز؛ معمولاً ۴۰ تا ۸۰ mg/day؛ حداکثر ۸۰ mg (۲۰ mg چهار بار). قطع ناگهانی نشود.",
+            "en": "5 mg tid ×3 days, 10 mg tid ×3 days, 15 mg tid ×3 days, 20 mg tid ×3 days; usually 40–80 mg/day; max 80 mg (20 mg qid)."
+          },
+          "refs": [
+            {
+              "source": "fda-baclofen-b",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به باکلوفن.",
+        "en": "Hypersensitivity to baclofen."
+      },
+      "refs": [
+        {
+          "source": "fda-baclofen",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال ثابت نشده.",
+        "en": "Not established below 12 years."
+      },
+      "refs": [
+        {
+          "source": "fda-baclofen-b",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "spasticity",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "M03BX01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00129",
+        "en": "BACLOFEN 10MG TAB",
+        "fa": "قرص باکلوفن ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "04929",
+        "en": "BACLOFEN 10MG/20ML AMP",
+        "fa": "آمپول باکلوفن ۱۰ میلی‌گرم / ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "06780",
+        "en": "BACLOFEN 10MG/5ML AMP",
+        "fa": "آمپول باکلوفن ۱۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00130",
+        "en": "BACLOFEN 25MG TAB",
+        "fa": "قرص باکلوفن ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "22313",
+        "en": "BACLOFEN 50MCG AMP",
+        "fa": "آمپول باکلوفن ۵۰ میکروگرم"
+      },
+      {
+        "code": "09086",
+        "en": "BACLOFEN 5MG TAB",
+        "fa": "قرص باکلوفن ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2785/Baclofen",
+        "url": "https://www.darooyab.ir/G-2785/Baclofen"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077068",
+      "label": "ANDA077068"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c17527be-661d-42f5-b6f6-56a681ba7870",
+      "label": "FDA Baclofen"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9bd46eb6-53b2-4845-88b4-81c1ced08aaa",
+      "label": "FDA Baclofen (2)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682530.html",
+      "label": "Baclofen"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M03BX01",
+      "label": "M03BX01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2785/Baclofen",
+      "label": "Baclofen"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-baclofen",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077068"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Baclofen should be used during pregnancy only if the benefit clearly justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-baclofen",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Safety and effectiveness in pediatric patients below the age of 12 years have not been established.",
+      "refs": [
+        {
+          "source": "fda-baclofen",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    }
+  }
+}

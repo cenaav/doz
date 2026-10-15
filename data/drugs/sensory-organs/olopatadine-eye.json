@@ -1,0 +1,254 @@
+{
+  "id": "olopatadine-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی اولوپاتادین",
+    "en": "Olopatadine eye drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "آنتی‌هیستامین/پایدارکننده ماست‌سل چشمی",
+    "en": "Ophthalmic antihistamine / mast-cell stabiliser"
+  },
+  "brands": [
+    {
+      "name": "Pataday",
+      "market": "US"
+    },
+    {
+      "name": "Patanol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pataday",
+    "patanol",
+    "پاتانول",
+    "اولوپاتادین",
+    "آلرژی چشم",
+    "خارش چشم"
+  ],
+  "formulations": [
+    {
+      "id": "sol-0-1",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.1% eye drops",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-pataday-bid",
+          "section": "Principal Display Panel"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergic",
+      "disease": "allergic-conjunctivitis",
+      "label": {
+        "fa": "خارش چشم آلرژیک — ۲ سال به بالا: ۱ قطره دو بار در روز",
+        "en": "Allergic itchy eyes — ≥2 y: 1 drop twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-pataday-bid",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2,
+        "refs": [
+          {
+            "source": "fda-pataday-bid",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۶ تا ۸ ساعت، حداکثر دو بار در روز. با قطره دیگر حداقل ۵ دقیقه فاصله. زیر ۲ سال: با پزشک مشورت شود.",
+            "en": "Every 6–8 hours, no more than twice a day. Wait 5 minutes between eye products. Under 2 years: consult a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-pataday-bid",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال: با پزشک مشورت شود (دوز OTC ندارد).",
+        "en": "Under 2 years: consult a doctor (no OTC dose)."
+      },
+      "refs": [
+        {
+          "source": "fda-pataday-bid",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "lens",
+      "severity": "warn",
+      "text": {
+        "fa": "برای تحریک ناشی از لنز تماسی استفاده نشود؛ در صورت تغییر رنگ یا کدر شدن محلول مصرف نشود.",
+        "en": "Not for contact-lens irritation; do not use if solution changes colour or becomes cloudy."
+      },
+      "refs": [
+        {
+          "source": "fda-pataday-bid",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergic",
+      "formulation": "sol-0-1",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 2
+      }
+    },
+    {
+      "regimen": "allergic",
+      "formulation": "sol-0-1",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "S01GX09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18871",
+        "en": "OLOPATADINE 0.6% NASAL SPRAY",
+        "fa": "اسپری بینی اولوپاتادین ۰٫۶ درصد"
+      },
+      {
+        "code": "12282",
+        "en": "OLOPATADINE 5MG/5ML OPH DROP",
+        "fa": "قطره چشمی اولوپاتادین ۵ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "52459",
+        "en": "OLOPATADINE HYDROCHLORIDE SPRAY NASAL 0.6 % 15 mL",
+        "fa": "اسپری بینی اولوپاتادین هیدروکلراید ۰٫۶ درصد ۱۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-814/Olopatadine",
+        "url": "https://www.darooyab.ir/G-814/Olopatadine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020688",
+      "label": "NDA020688"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b7a24375-25df-4405-aa7c-34c46af51194",
+      "label": "FDA Pataday (OTC)"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01GX09",
+      "label": "S01GX09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-814/Olopatadine",
+      "label": "Olopatadine"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-pataday-bid",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020688"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری اولوپاتادین گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-814/Olopatadine — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-814/Olopatadine"
+        }
+      ]
+    }
+  }
+}

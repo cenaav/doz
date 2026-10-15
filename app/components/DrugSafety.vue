@@ -4,7 +4,7 @@ defineProps<{ drug: Drug }>()
 const lt = useLocalText()
 </script>
 <template>
-  <section class="card space-y-4">
+  <section id="safety" class="card scroll-mt-20 space-y-4">
     <h2 class="card-title !mb-0">🛡️ {{ $t('safety.title') }}</h2>
     <div v-if="drug.contraindications.length">
       <h3 class="mb-1 text-sm font-semibold text-red-700 dark:text-red-400">{{ $t('safety.contraindications') }}</h3>

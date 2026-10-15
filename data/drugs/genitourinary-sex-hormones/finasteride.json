@@ -1,0 +1,282 @@
+{
+  "id": "finasteride",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فیناستراید",
+    "en": "Finasteride"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "مهارکننده ۵-آلفا ردوکتاز",
+    "en": "5-alpha-reductase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Proscar",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "proscar",
+    "پروسکار",
+    "فیناستراید",
+    "پروستات"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-finasteride",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bph",
+      "disease": "bph",
+      "label": {
+        "fa": "BPH — ۵ mg یک بار در روز",
+        "en": "BPH — 5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-finasteride",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "به‌تنهایی یا همراه دوکسازوسین.",
+            "en": "Alone or with doxazosin."
+          },
+          "refs": [
+            {
+              "source": "fda-finasteride",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ زنان باردار یا احتمال بارداری (لمس قرص شکسته هم پرهیز شود).",
+        "en": "Hypersensitivity; women who are or may become pregnant."
+      },
+      "refs": [
+        {
+          "source": "fda-finasteride",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای کودکان نیست.",
+        "en": "Not indicated in children."
+      },
+      "refs": [
+        {
+          "source": "fda-finasteride",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bph",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "G04CB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01872",
+        "en": "FINASTERIDE 1MG TAB",
+        "fa": "قرص فیناستراید ۱ میلی‌گرم"
+      },
+      {
+        "code": "00535",
+        "en": "FINASTERIDE 5MG TAB",
+        "fa": "قرص فیناستراید ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3262/Finasteride",
+        "url": "https://www.darooyab.ir/G-3262/Finasteride"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=090121",
+      "label": "ANDA090121"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=adfb8f6b-a7bb-4ac2-b2aa-fec6d56630ad",
+      "label": "FDA Finasteride"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698016.html",
+      "label": "Finasteride"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04CB01",
+      "label": "G04CB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3262/Finasteride",
+      "label": "Finasteride"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-finasteride",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA090121"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Finasteride use is contraindicated in females when they are or may potentially be pregnant.",
+      "refs": [
+        {
+          "source": "fda-finasteride",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Finasteride tablets are not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-finasteride",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-finasteride",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dosage adjustment is necessary in the elderly [see Clinical Pharmacology (12.3) and Clinical Studies (14) ] .",
+      "refs": [
+        {
+          "source": "fda-finasteride",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Females Finasteride tablets are not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-finasteride",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

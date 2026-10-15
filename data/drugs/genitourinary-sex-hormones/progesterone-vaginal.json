@@ -1,0 +1,389 @@
+{
+  "id": "progesterone-vaginal",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پروژسترون واژینال",
+    "en": "Progesterone (vaginal)"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "پروژستین",
+    "en": "Progestin"
+  },
+  "brands": [
+    {
+      "name": "Crinone",
+      "market": "US"
+    },
+    {
+      "name": "Cyclogest",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "crinone",
+    "cyclogest",
+    "سیکلوژست",
+    "شیاف پروژسترون",
+    "پروژسترون واژینال"
+  ],
+  "formulations": [
+    {
+      "id": "gel-90",
+      "form": "gel",
+      "route": "vaginal",
+      "label": "Crinone 8% (90 mg) applicator",
+      "concentration": {
+        "amount": 90,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "gel-45",
+      "form": "gel",
+      "route": "vaginal",
+      "label": "Crinone 4% (45 mg) applicator",
+      "concentration": {
+        "amount": 45,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "art",
+      "disease": "female-infertility",
+      "label": {
+        "fa": "حمایت لوتئال در ART — کرینون ۸٪ (۹۰ mg) یک بار در روز واژینال",
+        "en": "ART luteal support — Crinone 8% (90 mg) vaginally once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 90,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "gel-90"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نارسایی کامل/نسبی تخمدان: ۹۰ mg دو بار. در صورت بارداری تا ۱۰ تا ۱۲ هفته ادامه.",
+            "en": "Partial or complete ovarian failure: 90 mg twice daily. If pregnant, continue to 10–12 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-crinone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amen",
+      "disease": "secondary-amenorrhea",
+      "label": {
+        "fa": "آمنوره ثانویه — کرینون ۴٪ (۴۵ mg) یک روز در میان، ۶ دوز",
+        "en": "Secondary amenorrhoea — Crinone 4% (45 mg) every other day, 6 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 45,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "gel-45"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پاسخ نداد، ۸٪ یک روز در میان تا ۶ دوز.",
+            "en": "If no response, 8% every other day up to 6 doses."
+          },
+          "refs": [
+            {
+              "source": "fda-crinone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی واژینال تشخیص‌داده‌نشده؛ بیماری کبد؛ سرطان پستان یا دستگاه تناسلی؛ ترومبوآمبولی؛ سقط فراموش‌شده.",
+        "en": "Undiagnosed vaginal bleeding; liver disease; breast or genital cancer; thromboembolism; missed abortion."
+      },
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "art",
+      "formulation": "gel-90",
+      "input": {
+        "ageYears": 32,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 90
+      }
+    },
+    {
+      "regimen": "amen",
+      "formulation": "gel-45",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 45
+      }
+    }
+  ],
+  "atc": [
+    "G03DA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18897",
+        "en": "PROGESTERONE 100MG  CAP.",
+        "fa": "کپسول پروژسترون ۱۰۰ میلی‌گرم ."
+      },
+      {
+        "code": "19093",
+        "en": "PROGESTERONE 100MG VAG TAB",
+        "fa": "قرص واژینال پروژسترون ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "18898",
+        "en": "PROGESTERONE 200MG  CAP.",
+        "fa": "کپسول پروژسترون ۲۰۰ میلی‌گرم ."
+      },
+      {
+        "code": "02534",
+        "en": "PROGESTERONE 200MG PESSARY",
+        "fa": "پروژسترون ۲۰۰ میلی‌گرم پسساری"
+      },
+      {
+        "code": "02355",
+        "en": "PROGESTERONE 200MG VAG SUPP",
+        "fa": "شیاف پروژسترون ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01057",
+        "en": "PROGESTERONE 25MG/1ML AMP",
+        "fa": "آمپول پروژسترون ۲۵ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "02082",
+        "en": "PROGESTERONE 400MG SUPP",
+        "fa": "شیاف پروژسترون ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01059",
+        "en": "PROGESTERONE 400MG VAG SUPP",
+        "fa": "شیاف پروژسترون ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01058",
+        "en": "PROGESTERONE 50MG/1ML AMP",
+        "fa": "آمپول پروژسترون ۵۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "14624",
+        "en": "PROGESTERONE 80G GEL",
+        "fa": "ژل پروژسترون ۸۰ گرم"
+      },
+      {
+        "code": "01056",
+        "en": "PROGESTERONE_BULK",
+        "fa": "ماده اولیه پروژسترون"
+      },
+      {
+        "code": "52265",
+        "en": "PROGESTERONE GEL VAGINAL 8 % 22.5 g",
+        "fa": "ژل پروژسترون ۸ درصد ۲۲٫۵ گرم"
+      },
+      {
+        "code": "53109",
+        "en": "PROGESTERONE INJECTION PARENTERAL 25 mg/1mL 2 mL",
+        "fa": "فرآورده تزریقی پروژسترون ۲۵ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3304/Progesterone",
+        "url": "https://www.darooyab.ir/G-3304/Progesterone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020701",
+      "label": "NDA020701"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=75e97aa1-daa4-45f9-b2e2-1a371302914e",
+      "label": "FDA Crinone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604017.html",
+      "label": "Progesterone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a623013.html",
+      "label": "Progesterone Vaginal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03DA04",
+      "label": "G03DA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3304/Progesterone",
+      "label": "Progesterone"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-crinone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020701"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "[See CLINICAL STUDIES, Assisted Reproductive Technology ] Crinone 8% has been used to support embryo implantation and maintain pregnancies through its use as part of ART treatment regimens in two clinical studies (studies COL1620-007US and COL1620-F01).",
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Detectable amounts of progestins have been identified in the milk of mothers receiving them.",
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The safety and effectiveness in geriatric patients (over age 65) have not been established.",
+      "refs": [
+        {
+          "source": "fda-crinone",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "id": "varenicline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "وارنیکلین",
+    "en": "Varenicline"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آگونیست نسبی نیکوتینی",
+    "en": "Nicotinic partial agonist"
+  },
+  "brands": [
+    {
+      "name": "Chantix",
+      "market": "US"
+    },
+    {
+      "name": "Champix",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "chantix",
+    "champix",
+    "شمپیکس",
+    "وارنیکلین",
+    "ترک سیگار"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "quit",
+      "disease": "smoking-cessation",
+      "label": {
+        "fa": "ترک سیگار — هفته اول تیتراسیون، سپس ۱ mg دو بار",
+        "en": "Smoking cessation — week-1 titration, then 1 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 84,
+        "max": 84
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "روز ۱ تا ۳: ۰٫۵ mg یک بار؛ روز ۴ تا ۷: ۰٫۵ mg دو بار؛ سپس ۱ mg دو بار تا ۱۲ هفته. CrCl کمتر از ۳۰: حداکثر ۰٫۵ mg دو بار.",
+            "en": "Days 1–3: 0.5 mg once daily; days 4–7: 0.5 mg twice daily; then 1 mg twice daily to 12 weeks. CrCl <30: max 0.5 mg twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-varenicline",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت یا واکنش پوستی جدی به وارنیکلین.",
+        "en": "History of serious hypersensitivity or skin reactions to varenicline."
+      },
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در ۱۶ سال و کمتر توصیه نمی‌شود.",
+        "en": "Not recommended in patients 16 years or younger."
+      },
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "quit",
+      "formulation": "tab-1",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 2
+      }
+    }
+  ],
+  "atc": [
+    "N07BA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "10674",
+        "en": "VARENICLINE 1MG TAB",
+        "fa": "قرص وارنیکلین ۱ میلی‌گرم"
+      },
+      {
+        "code": "10675",
+        "en": "VARENICLINE 500MCG TAB",
+        "fa": "قرص وارنیکلین ۵۰۰ میکروگرم"
+      },
+      {
+        "code": "16352",
+        "en": "VARENICLINE 500MCG/1MG TAB",
+        "fa": "قرص وارنیکلین ۵۰۰ میکروگرم / ۱ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4345/Varenicline",
+        "url": "https://www.darooyab.ir/G-4345/Varenicline"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218985",
+      "label": "ANDA218985"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2e57493-d099-4055-8e92-67611c8d20f4",
+      "label": "FDA Varenicline"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a606024.html",
+      "label": "Varenicline"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a621057.html",
+      "label": "Varenicline Nasal Spray"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07BA03",
+      "label": "N07BA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4345/Varenicline",
+      "label": "Varenicline"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-varenicline",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA218985"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data have not suggested an increased risk for major birth defects following exposure to varenicline in pregnancy, compared with women who smoke [see Data] .",
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of varenicline in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Varenicline tablets is not recommended for use in pediatric patients 16 years of age or younger because its efficacy in this population was not demonstrated.",
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function [see Dosage and Administration (2.2) ].",
+      "refs": [
+        {
+          "source": "fda-varenicline",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

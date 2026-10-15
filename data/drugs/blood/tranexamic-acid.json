@@ -1,0 +1,269 @@
+{
+  "id": "tranexamic-acid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ترانگزامیک اسید",
+    "en": "Tranexamic acid"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "ضدفیبرینولیز",
+    "en": "Antifibrinolytic"
+  },
+  "brands": [
+    {
+      "name": "Lysteda",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lysteda",
+    "ترانکسامیک",
+    "ترانگزامیک اسید",
+    "خونریزی قاعدگی",
+    "TXA"
+  ],
+  "formulations": [
+    {
+      "id": "tab-650",
+      "form": "tablet",
+      "route": "oral",
+      "label": "650 mg tablet",
+      "concentration": {
+        "amount": 650,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tranexamic",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hmb",
+      "disease": "heavy-menstrual-bleeding",
+      "label": {
+        "fa": "خونریزی شدید قاعدگی — ۱۳۰۰ mg سه بار در روز، حداکثر ۵ روز",
+        "en": "Heavy menstrual bleeding — 1,300 mg three times daily, max 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1300,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-tranexamic",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط در روزهای قاعدگی. کراتینین بالای ۱٫۴ mg/dL: دوز کمتر.",
+            "en": "During menstruation only. Creatinine above 1.4 mg/dL: lower dose."
+          },
+          "refs": [
+            {
+              "source": "fda-tranexamic",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "همراه قرص‌های ترکیبی هورمونی؛ ترومبوآمبولی فعال یا سابقه یا خطر ذاتی ترومبوز؛ حساسیت.",
+        "en": "With combined hormonal contraceptives; active, past or intrinsic risk of thromboembolism; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-tranexamic",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hmb",
+      "formulation": "tab-650",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1300,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "B02AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02105",
+        "en": "TRANEXAMIC ACID 100MG/ML 10ML AMP",
+        "fa": "آمپول ترانگزامیک اسید ۱۰۰ میلی‌گرم / میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "01239",
+        "en": "TRANEXAMIC ACID 250 CAP",
+        "fa": "کپسول ترانگزامیک اسید ۲۵۰"
+      },
+      {
+        "code": "02106",
+        "en": "TRANEXAMIC ACID 500MG TAB",
+        "fa": "قرص ترانگزامیک اسید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01238",
+        "en": "TRANEXAMIC ACID 500MG/5ML AMP",
+        "fa": "آمپول ترانگزامیک اسید ۵۰۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "01240",
+        "en": "TRANEXAMIC ACID 50MG/ML 5ML AMP",
+        "fa": "آمپول ترانگزامیک اسید ۵۰ میلی‌گرم / میلی‌لیتر ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1426/Tranexamic-Acid",
+        "url": "https://www.darooyab.ir/G-1426/Tranexamic-Acid"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205133",
+      "label": "ANDA205133"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4877eacd-fda7-4708-93a5-81052c1d2e14",
+      "label": "FDA Tranexamic acid"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612021.html",
+      "label": "Tranexamic Acid"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B02AA02",
+      "label": "B02AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1426/Tranexamic-Acid",
+      "label": "Tranexamic-Acid"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-tranexamic",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA205133"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Tranexamic acid is not indicated for use in pregnant women .",
+      "refs": [
+        {
+          "source": "fda-tranexamic",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Tranexamic acid is present in the mother’s milk at a concentration of about one hundredth of the corresponding serum concentration (see Data).",
+      "refs": [
+        {
+          "source": "fda-tranexamic",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and effectiveness of tranexamic acid have been established in females of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-tranexamic",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Tranexamic acid is indicated for females of reproductive potential and is not intended for use by postmenopausal women.",
+      "refs": [
+        {
+          "source": "fda-tranexamic",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

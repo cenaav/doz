@@ -1,0 +1,208 @@
+{
+  "id": "phenazopyridine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فنازوپیریدین",
+    "en": "Phenazopyridine"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "ضددرد مجاری ادرار",
+    "en": "Urinary analgesic"
+  },
+  "brands": [
+    {
+      "name": "Azo",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "azo",
+    "pyridium",
+    "پیریدیوم",
+    "فنازوپیریدین",
+    "سوزش ادرار"
+  ],
+  "formulations": [
+    {
+      "id": "tab-99-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "99.5 mg tablet",
+      "concentration": {
+        "amount": 99.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-phenazopyridine",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "dysuria",
+      "disease": "dysuria",
+      "label": {
+        "fa": "سوزش و درد ادرار — ۱۲ سال به بالا: ۲ قرص سه بار در روز",
+        "en": "Urinary pain/burning — ≥12 y: 2 tablets three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 199,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-phenazopyridine",
+          "section": "Directions"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 2
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "با یک لیوان آب، همراه یا بعد از غذا. بیش از ۲ روز (۱۲ قرص) بدون پزشک نه. فقط علامت را کم می‌کند و عفونت را درمان نمی‌کند.",
+            "en": "With a glass of water, with or after meals. Not more than 2 days (12 tablets) without a doctor. Relieves symptoms only; does not treat infection."
+          },
+          "refs": [
+            {
+              "source": "fda-phenazopyridine",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال: با پزشک مشورت شود.",
+        "en": "Under 12 years: consult a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-phenazopyridine",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "dysuria",
+      "formulation": "tab-99-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 199,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "G04BX06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00976",
+        "en": "PHENAZOPYRIDINE HCL 100MG TAB",
+        "fa": "قرص فنازوپیریدین هیدروکلراید ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-164/Phenazopyridine",
+        "url": "https://www.darooyab.ir/G-164/Phenazopyridine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42abac37-557f-4372-b55a-12ddae71ec8b",
+      "label": "FDA Phenazopyridine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682231.html",
+      "label": "Phenazopyridine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BX06",
+      "label": "G04BX06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-164/Phenazopyridine",
+      "label": "Phenazopyridine"
+    }
+  ],
+  "usApproval": {
+    "kind": "unapproved",
+    "refs": [
+      {
+        "source": "fda-phenazopyridine",
+        "section": "SPL approval / marketing category"
+      }
+    ]
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری فنازوپریدین گروه B قابل استفاده در بارداری:",
+      "text": {
+        "fa": "دارویاب: گروه B — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category B — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-164/Phenazopyridine — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-164/Phenazopyridine"
+        }
+      ]
+    }
+  }
+}

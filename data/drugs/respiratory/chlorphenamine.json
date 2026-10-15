@@ -1,0 +1,375 @@
+{
+  "id": "chlorphenamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلرفنیرامین",
+    "en": "Chlorphenamine (chlorpheniramine)"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل اول",
+    "en": "First-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Piriton",
+      "market": "GB"
+    },
+    {
+      "name": "Chlor-Trimeton",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "chlorpheniramine",
+    "کلرفنیرامین",
+    "piriton"
+  ],
+  "formulations": [
+    {
+      "id": "syr-2-5",
+      "form": "syrup",
+      "route": "oral",
+      "label": "2 mg / 5 mL syrup",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergy",
+      "disease": "allergic-conditions",
+      "label": {
+        "fa": "حالات آلرژیک و خارش آبله‌مرغان",
+        "en": "Allergic conditions and chickenpox itch"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "intervalHours": 4,
+        "bands": [
+          {
+            "minAge": {
+              "value": 1,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "perDose": 1,
+            "dosesPerDay": 2
+          },
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 1,
+            "dosesPerDay": 6
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 2,
+            "dosesPerDay": 6
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 4,
+            "dosesPerDay": 6
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.2"
+        },
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ تا ۶ ساعت (۱ تا ۲ سال: دو بار در روز). حداکثر روزانه: ۱–۲ سال ۲ mg؛ ۲–۶ سال ۶ mg؛ ۶–۱۲ سال ۱۲ mg؛ ۱۲ سال به بالا ۲۴ mg. بیش از ۲ هفته بدون مشورت ادامه نیابد. زیر ۱ سال توصیه نمی‌شود.",
+            "en": "Every 4–6 h (1–2 years: twice daily). Daily max: 1–2 y 2 mg; 2–6 y 6 mg; 6–12 y 12 mg; ≥12 y 24 mg. Not continuously >2 weeks without advice. Not recommended under 1 year."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-piriton",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-1",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱ سال توصیه نمی‌شود.",
+        "en": "Not recommended for children below 1 year."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.2"
+        }
+      ]
+    },
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف MAOI در ۱۴ روز گذشته؛ حساسیت به آنتی‌هیستامین‌ها.",
+        "en": "MAOI treatment within the last 14 days; hypersensitivity to antihistamines."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "احتیاط در صرع، گلوکوم، هیپرتروفی پروستات، آسم/برونشیت، نارسایی کبد یا کلیه؛ تحریک متناقض در کودکان.",
+        "en": "Caution in epilepsy, glaucoma, prostatic hypertrophy, asthma/bronchitis, hepatic or renal impairment; paradoxical excitation in children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergy",
+      "formulation": "syr-2-5",
+      "input": {
+        "ageMonths": 18,
+        "weightKg": 11
+      },
+      "expect": {
+        "perDose": 1,
+        "mlPerDose": 2.5,
+        "perDay": 2
+      }
+    },
+    {
+      "regimen": "allergy",
+      "formulation": "syr-2-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 2,
+        "mlPerDose": 5,
+        "perDay": 12
+      }
+    },
+    {
+      "regimen": "allergy",
+      "formulation": "syr-2-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4,
+        "perDay": 24
+      }
+    }
+  ],
+  "atc": [
+    "R06AB04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00275",
+        "en": "CHLORPHENIRAMINE MALEATE 10MG/1ML AMP",
+        "fa": "آمپول کلرفنیرامین مالئات ۱۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "02014",
+        "en": "CHLORPHENIRAMINE MALEATE 2MG/5ML 60ML SYRUP",
+        "fa": "شربت کلرفنیرامین مالئات ۲ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "00276",
+        "en": "CHLORPHENIRAMINE MALEATE 4MG TAB",
+        "fa": "قرص کلرفنیرامین مالئات ۴ میلی‌گرم"
+      },
+      {
+        "code": "01431",
+        "en": "CHLORPHENIRAMINE MALEATE SR 8MG TAB",
+        "fa": "قرص آهسته‌رهش کلرفنیرامین مالئات ۸ میلی‌گرم"
+      },
+      {
+        "code": "00402",
+        "en": "DEXCHLORPHENIRAMINE MALEATE 2MG TAB",
+        "fa": "قرص دکسکلرفنیرامین مالئات ۲ میلی‌گرم"
+      },
+      {
+        "code": "00401",
+        "en": "DEXCHLORPHENIRAMINE MALEATE 2MG/5ML SYRUP",
+        "fa": "شربت دکسکلرفنیرامین مالئات ۲ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "01459",
+        "en": "DEXCHLORPHENIRAMINE MALEATE SR 6MG TAB",
+        "fa": "قرص آهسته‌رهش دکسکلرفنیرامین مالئات ۶ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-779/Chlorpheniramine-Maleate",
+        "url": "https://www.darooyab.ir/G-779/Chlorpheniramine-Maleate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682543.html",
+      "label": "Chlorpheniramine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682492.html",
+      "label": "Dextromethorphan"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R06AB04",
+      "label": "R06AB04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-779/Chlorpheniramine-Maleate",
+      "label": "Chlorpheniramine-Maleate"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/3928/smpc",
+      "label": "UK SmPC Piriton"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are no adequate data from the use of chlorphenamine in pregnant women.",
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Chlorphenamine maleate and other antihistamines may inhibit lactation and may be secreted in breast milk.",
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Children aged 6 - 12 years : 5ml (2mg) every 4 to 6 hourly.",
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.2"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly : The elderly are more likely to experience neurological anticholinergic effects.",
+      "refs": [
+        {
+          "source": "uk-smpc-piriton",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

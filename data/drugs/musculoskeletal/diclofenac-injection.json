@@ -1,0 +1,279 @@
+{
+  "id": "diclofenac-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیکلوفناک (آمپول)",
+    "en": "Diclofenac (injection)"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "NSAID تزریقی",
+    "en": "Injectable NSAID"
+  },
+  "brands": [
+    {
+      "name": "Voltarol",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "voltarol",
+    "ولتارن آمپول",
+    "دیکلوفناک آمپول",
+    "آمپول دیکلوفناک"
+  ],
+  "formulations": [
+    {
+      "id": "amp-75",
+      "form": "injection",
+      "route": "im",
+      "label": "75 mg/3 mL ampoule",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-voltarol-amp",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "im",
+      "disease": "pain",
+      "label": {
+        "fa": "درد حاد — ۷۵ mg عضلانی عمیق یک بار (شدید دو بار)",
+        "en": "Acute pain — 75 mg deep IM once daily (severe: twice)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 75,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-voltarol-amp",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 150,
+        "refs": [
+          {
+            "source": "uk-smpc-voltarol-amp",
+            "section": "4.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عضلانی عمیق در ربع فوقانی خارجی باسن؛ نوبت دوم در باسن مقابل. حداکثر ۱۵۰ mg/day از همه اشکال.",
+            "en": "Deep IM into the upper outer quadrant of the buttock; second dose in the other buttock. Max 150 mg/day from all forms."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-voltarol-amp",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "زخم یا خونریزی فعال گوارشی؛ سابقه خونریزی با NSAID؛ سه‌ماهه سوم بارداری؛ نارسایی شدید قلب، کبد یا کلیه؛ حساسیت (و سایر موارد بخش ۴٫۳).",
+        "en": "Active GI ulcer/bleeding; prior NSAID GI bleeding; third trimester; severe heart, liver or renal failure; hypersensitivity (and others in 4.3)."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-voltarol-amp",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "آمپول برای کودکان توصیه نمی‌شود.",
+        "en": "Ampoules not recommended in children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-voltarol-amp",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "im",
+      "formulation": "amp-75",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 75,
+        "mlPerDose": 3
+      }
+    }
+  ],
+  "atc": [
+    "M01AB05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "15917",
+        "en": "DICLOFENAC POTASSIUM 50MG TAB",
+        "fa": "قرص دیکلوفناک پتاسیم ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00427",
+        "en": "DICLOFENAC SODIUM 100MG SUPP",
+        "fa": "شیاف دیکلوفناک سدیم ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00424",
+        "en": "DICLOFENAC SODIUM 25MG EC TAB",
+        "fa": "قرص انتریک‌کوتد دیکلوفناک سدیم ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "02041",
+        "en": "DICLOFENAC SODIUM 50MG EC TAB",
+        "fa": "قرص انتریک‌کوتد دیکلوفناک سدیم ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00428",
+        "en": "DICLOFENAC SODIUM 50MG SUPP",
+        "fa": "شیاف دیکلوفناک سدیم ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "19930",
+        "en": "DICLOFENAC SODIUM 75MG EXTENDED RELEASE TAB",
+        "fa": "قرص آهسته‌رهش دیکلوفناک سدیم ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "00425",
+        "en": "DICLOFENAC SODIUM 75MG/3ML AMP",
+        "fa": "آمپول دیکلوفناک سدیم ۷۵ میلی‌گرم / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "01993",
+        "en": "DICLOFENAC SODIUM SR 100MG CAP",
+        "fa": "کپسول آهسته‌رهش دیکلوفناک سدیم ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01464",
+        "en": "DICLOFENAC SODIUM SR 100MG TAB",
+        "fa": "قرص آهسته‌رهش دیکلوفناک سدیم ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "51105",
+        "en": "DICLOFENAC POTASSIUM CAPSULE, LIQUID FILLED ORAL 25 mg",
+        "fa": "کپسول دیکلوفناک پتاسیم پرشده ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-56/Diclofenac",
+        "url": "https://www.darooyab.ir/G-56/Diclofenac"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a689002.html",
+      "label": "Diclofenac"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a606003.html",
+      "label": "Diclofenac Ophthalmic"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M01AB05",
+      "label": "M01AB05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-56/Diclofenac",
+      "label": "Diclofenac"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/1043/smpc",
+      "label": "UK SmPC Voltarol amp."
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "In women who may have difficulties conceiving or who are undergoing investigation of infertility, withdrawal of Voltarol should be considered (see section 4.6 Fertility, pregnancy and lactation).",
+      "refs": [
+        {
+          "source": "uk-smpc-voltarol-amp",
+          "section": "4.3"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در شیردهی منع مصرف دارد.",
+        "en": "Label: contraindicated while breastfeeding."
+      },
+      "quote": "Ask your doctor or pharmacist for advice if you are pregnant or breast-feeding or if you have liver or kidney disease.",
+      "refs": [
+        {
+          "source": "uk-smpc-voltarol-amp",
+          "section": "4.3"
+        }
+      ]
+    }
+  }
+}

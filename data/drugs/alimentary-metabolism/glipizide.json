@@ -1,0 +1,305 @@
+{
+  "id": "glipizide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گلی‌پیزاید",
+    "en": "Glipizide"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "سولفونیل‌اوره",
+    "en": "Sulfonylurea"
+  },
+  "brands": [
+    {
+      "name": "Glucotrol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "glucotrol",
+    "گلیپیزاید",
+    "گلی پیزاید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-glipizide",
+          "section": "Package Label"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-glipizide",
+          "section": "Package Label"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ — شروع ۵ mg قبل از صبحانه",
+        "en": "Type 2 diabetes — start 5 mg before breakfast"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-glipizide",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 40,
+        "refs": [
+          {
+            "source": "fda-glipizide",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "سالمند یا بیماری کبد: ۲٫۵ mg. افزایش ۲٫۵ تا ۵ mg؛ حداکثر یک‌باره ۱۵ mg؛ بالاتر منقسم قبل از غذا؛ حداکثر ۴۰ mg/day.",
+            "en": "Elderly or liver disease: 2.5 mg. Increase by 2.5–5 mg; max once-daily 15 mg; higher divided before meals; max 40 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-glipizide",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in children not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-glipizide",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ دیابت نوع ۱، کتواسیدوز دیابتی.",
+        "en": "Hypersensitivity; type 1 diabetes, diabetic ketoacidosis."
+      },
+      "refs": [
+        {
+          "source": "fda-glipizide",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "A10BB07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09242",
+        "en": "GLIPIZIDE 10MG TAB",
+        "fa": "قرص گلی‌پیزاید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00596",
+        "en": "GLIPIZIDE 5MG TAB",
+        "fa": "قرص گلی‌پیزاید ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-629/Glipizide",
+        "url": "https://www.darooyab.ir/G-629/Glipizide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075795",
+      "label": "ANDA075795"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=16fb8bc7-1db1-477e-a201-b3b678b8a84c",
+      "label": "FDA Glipizide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a684060.html",
+      "label": "Glipizide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BB07",
+      "label": "A10BB07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-629/Glipizide",
+      "label": "Glipizide"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-glipizide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075795"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C Glipizide was found to be mildly fetotoxic in rat reproductive studies at all dose levels (5 to 50 mg/kg).",
+      "refs": [
+        {
+          "source": "fda-glipizide",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because the potential for hypoglycemia in nursing infants may exist, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-glipizide",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in children have not been established.",
+      "refs": [
+        {
+          "source": "fda-glipizide",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-glipizide",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

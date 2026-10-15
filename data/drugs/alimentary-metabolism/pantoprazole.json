@@ -1,0 +1,366 @@
+{
+  "id": "pantoprazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پنتوپرازول",
+    "en": "Pantoprazole"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده پمپ پروتون",
+    "en": "Proton pump inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Protonix",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pantoprazol",
+    "پنتوپرازول",
+    "PPI"
+  ],
+  "formulations": [
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg delayed-release tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-protonix",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg delayed-release tablet",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-protonix",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ee-child",
+      "disease": "erosive-esophagitis",
+      "label": {
+        "fa": "ازوفاژیت فرسایشی — ۵ سال به بالا، بر اساس وزن",
+        "en": "Erosive esophagitis — 5 years and older, by weight"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        },
+        "minWeightKg": 15
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 14.99,
+            "maxWeightKg": 39.99,
+            "perDose": 20,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 39.99,
+            "maxWeightKg": null,
+            "perDose": 40,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-protonix",
+          "section": "2.1, Table 1"
+        },
+        {
+          "source": "fda-protonix",
+          "section": "8.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 56
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "قرص خرد، جویده یا نصف نشود.",
+            "en": "Do not split, chew or crush."
+          },
+          "refs": [
+            {
+              "source": "fda-protonix",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ee-adult",
+      "disease": "erosive-esophagitis",
+      "label": {
+        "fa": "بزرگسال — ۴۰ mg روزانه تا ۸ هفته",
+        "en": "Adults — 40 mg daily up to 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-protonix",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 56
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا یا بنزیمیدازول‌های جانشین‌شده؛ مصرف همزمان ریلپیویرین.",
+        "en": "Hypersensitivity to any component or substituted benzimidazoles; rilpivirine-containing products."
+      },
+      "refs": [
+        {
+          "source": "fda-protonix",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ee-child",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 20
+      }
+    },
+    {
+      "regimen": "ee-child",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 40
+      }
+    },
+    {
+      "regimen": "ee-adult",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A02BC02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "16673",
+        "en": "PANTOPRAZOLE 15MG CAP",
+        "fa": "کپسول پنتوپرازول ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "10031",
+        "en": "PANTOPRAZOLE 20MG CAP",
+        "fa": "کپسول پنتوپرازول ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "02332",
+        "en": "PANTOPRAZOLE 20MG TAB",
+        "fa": "قرص پنتوپرازول ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "10029",
+        "en": "PANTOPRAZOLE 40MG CAP",
+        "fa": "کپسول پنتوپرازول ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "02336",
+        "en": "PANTOPRAZOLE 40MG FOR INFUSION",
+        "fa": "محلول انفوزیون پنتوپرازول ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "02333",
+        "en": "PANTOPRAZOLE 40MG TAB",
+        "fa": "قرص پنتوپرازول ۴۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2625/Pantoprazole",
+        "url": "https://www.darooyab.ir/G-2625/Pantoprazole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020987",
+      "label": "NDA020987"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08098cb2-c048-4640-f387-6beec4a38936",
+      "label": "FDA Protonix"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601246.html",
+      "label": "Pantoprazole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a619034.html",
+      "label": "Pantoprazole Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A02BC02",
+      "label": "A02BC02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2625/Pantoprazole",
+      "label": "Pantoprazole"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-protonix",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020987"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published observational studies did not demonstrate an association of major malformations or other adverse pregnancy outcomes with pantoprazole.",
+      "refs": [
+        {
+          "source": "fda-protonix",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Pantoprazole has been detected in breast milk of a nursing mother after a single 40 mg oral dose of pantoprazole.",
+      "refs": [
+        {
+          "source": "fda-protonix",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of PROTONIX for pediatric uses other than EE have not been established. 1 year through 16 years of age Use of PROTONIX in pediatric patients 1 year through 16 years of age for short-term treatment (up to eight weeks) of EE associated with GERD is supported by: a) extrapolation of results …",
+      "refs": [
+        {
+          "source": "fda-protonix",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In short-term US clinical trials, EE healing rates in the 107 elderly patients (≥65 years old) treated with PROTONIX were similar to those found in patients under the age of 65.",
+      "refs": [
+        {
+          "source": "fda-protonix",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

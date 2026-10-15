@@ -1,0 +1,512 @@
+{
+  "id": "cefdinir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفدینیر",
+    "en": "Cefdinir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین نسل سوم",
+    "en": "Third-generation cephalosporin"
+  },
+  "brands": [
+    {
+      "name": "Omnicef",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "omnicef",
+    "امنیسف",
+    "سفدینیر"
+  ],
+  "formulations": [
+    {
+      "id": "susp-125",
+      "form": "suspension",
+      "route": "oral",
+      "label": "125 mg/5 mL suspension",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "Dosage and Administration, Pediatric Dosage Chart"
+        }
+      ]
+    },
+    {
+      "id": "susp-250",
+      "form": "suspension",
+      "route": "oral",
+      "label": "250 mg/5 mL suspension",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "Dosage and Administration, Pediatric Dosage Chart"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "aom-bid",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت میانی — ۶ ماه تا ۱۲ سال: ۷ mg/kg هر ۱۲ ساعت",
+        "en": "Otitis media — 6 mo–12 y: 7 mg/kg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 14,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-cefdinir",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 10
+      }
+    },
+    {
+      "id": "aom-qd",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت میانی — ۶ ماه تا ۱۲ سال: ۱۴ mg/kg یک بار، ۱۰ روز",
+        "en": "Otitis media — 6 mo–12 y: 14 mg/kg once daily, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 14,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-cefdinir",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "pharyngitis",
+      "disease": "streptococcal-pharyngitis",
+      "label": {
+        "fa": "فارنژیت/تونسیلیت — ۶ ماه تا ۱۲ سال: ۷ mg/kg هر ۱۲ ساعت",
+        "en": "Pharyngitis/tonsillitis — 6 mo–12 y: 7 mg/kg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 14,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-cefdinir",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 10
+      }
+    },
+    {
+      "id": "sinusitis",
+      "disease": "acute-bacterial-sinusitis",
+      "label": {
+        "fa": "سینوزیت ماگزیلاری — ۶ ماه تا ۱۲ سال: ۷ mg/kg هر ۱۲ ساعت، ۱۰ روز",
+        "en": "Maxillary sinusitis — 6 mo–12 y: 7 mg/kg every 12 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 14,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-cefdinir",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "sssi",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت پوستی بدون عارضه — ۶ ماه تا ۱۲ سال: ۷ mg/kg هر ۱۲ ساعت، ۱۰ روز",
+        "en": "Uncomplicated skin infection — 6 mo–12 y: 7 mg/kg every 12 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 14,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-cefdinir",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آلرژی به سفالوسپورین‌ها.",
+        "en": "Allergy to cephalosporins."
+      },
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-6m",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ ماه ثابت نشده.",
+        "en": "Not established under 6 months."
+      },
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "کلیرانس کمتر از ۳۰: ۷ mg/kg (تا ۳۰۰ mg) یک بار در روز.",
+        "en": "CrCl <30: 7 mg/kg (up to 300 mg) once daily."
+      },
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "aom-bid",
+      "formulation": "susp-125",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 9
+      },
+      "expect": {
+        "perDose": 63,
+        "mlPerDoseRounded": 2.5
+      }
+    },
+    {
+      "regimen": "aom-qd",
+      "formulation": "susp-125",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 9
+      },
+      "expect": {
+        "perDose": 126,
+        "mlPerDose": 5.04
+      }
+    },
+    {
+      "regimen": "pharyngitis",
+      "formulation": "susp-250",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 140,
+        "mlPerDose": 2.8
+      }
+    },
+    {
+      "regimen": "sinusitis",
+      "formulation": "susp-250",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 210
+      }
+    },
+    {
+      "regimen": "sssi",
+      "formulation": "susp-250",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 300,
+        "perDay": 600
+      }
+    }
+  ],
+  "atc": [
+    "J01DD15"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-321/Cefdinir",
+        "url": "https://www.darooyab.ir/G-321/Cefdinir"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210534",
+      "label": "ANDA210534"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42a2d8f5-12bc-4745-b9d4-e69ba6c66647",
+      "label": "FDA Cefdinir susp"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698001.html",
+      "label": "Cefdinir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DD15",
+      "label": "J01DD15"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-321/Cefdinir",
+      "label": "Cefdinir"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cefdinir",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA210534"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category B Cefdinir was not teratogenic in rats at oral doses up to 1000 mg/kg/day (70 times the human dose based on mg/kg/day, 11 times based on mg/m 2 /day) or in rabbits at oral doses up to 10 mg/kg/day (0.7 times the human dose based on mg/kg/day, 0.23 times based on mg/m 2 /day).",
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "PREGNANCY"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Following administration of single 600 mg doses, cefdinir was not detected in human breast milk",
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "NURSING MOTHERS"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Safety and efficacy in neonates and infants less than 6 months of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "PEDIATRIC USE"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Efficacy is comparable in geriatric patients and younger adults.",
+      "refs": [
+        {
+          "source": "fda-cefdinir",
+          "section": "GERIATRIC USE"
+        }
+      ]
+    }
+  }
+}

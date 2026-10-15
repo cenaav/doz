@@ -1,0 +1,365 @@
+{
+  "id": "citalopram",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیتالوپرام",
+    "en": "Citalopram"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "SSRI",
+    "en": "SSRI"
+  },
+  "brands": [
+    {
+      "name": "Celexa",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "celexa",
+    "سیتالوپرام",
+    "سیپرالکس"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (scored)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet (scored)",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd-adult",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی — بزرگسال: ۲۰ mg روزانه (حداکثر ۴۰)",
+        "en": "MDD — adults: 20 mg daily (max 40)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 20,
+          "increment": 20,
+          "incrementEveryDays": 7,
+          "max": 40
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بالای ۴۰ mg به علت طولانی شدن QT توصیه نمی‌شود.",
+            "en": "Doses above 40 mg not recommended due to QT prolongation."
+          },
+          "refs": [
+            {
+              "source": "fda-celexa",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "mdd",
+      "label": {
+        "fa": "کودکان",
+        "en": "Children"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی سیتالوپرام در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness of citalopram in pediatric patients have not been established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف MAOI (شامل لینزولید یا متیلن بلو وریدی) یا تا ۱۴ روز پس از قطع آن.",
+        "en": "Taking an MAOI (incl. linezolid or IV methylene blue) or within 14 days of stopping."
+      },
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "pimozide",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف پیموزاید (QT)؛ حساسیت.",
+        "en": "Pimozide (QT prolongation); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش خطر افکار و رفتار خودکشی در کودکان و جوانان؛ پایش دقیق. سیتالوپرام برای کودکان تأیید نشده است.",
+        "en": "Boxed warning: Increased risk of suicidal thoughts and behaviors in pediatric and young adult patients; monitor closely. Not approved for pediatric use."
+      },
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "WARNING: SUICIDAL THOUGHTS AND BEHAVIORS"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd-adult",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N06AB04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13057",
+        "en": "CITALOPRAM <ACCORD> 20 MG  TAB.",
+        "fa": "قرص سیتالوپرام < آککورد > ۲۰ میلی‌گرم ."
+      },
+      {
+        "code": "08454",
+        "en": "CITALOPRAM HBR 10MG FC TAB",
+        "fa": "قرص روکش‌دار سیتالوپرام هیدروبروماید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "01905",
+        "en": "CITALOPRAM HBR 20MG FC TAB",
+        "fa": "قرص روکش‌دار سیتالوپرام هیدروبروماید ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "01906",
+        "en": "CITALOPRAM HBR 40MG FC TAB",
+        "fa": "قرص روکش‌دار سیتالوپرام هیدروبروماید ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "02118",
+        "en": "CITALOPRAM HBR 40MG/ML ORAL DROP",
+        "fa": "قطره خوراکی سیتالوپرام هیدروبروماید ۴۰ میلی‌گرم / میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-576/Citalopram",
+        "url": "https://www.darooyab.ir/G-576/Citalopram"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020822",
+      "label": "NDA020822"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4259d9b1-de34-43a4-85a8-41dd214e9177",
+      "label": "FDA Celexa"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699001.html",
+      "label": "Citalopram"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AB04",
+      "label": "N06AB04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-576/Citalopram",
+      "label": "Citalopram"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-celexa",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020822"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on data from published observational studies, exposure to SSRIs, particularly in the month before delivery, has been associated with a less than 2-fold increase in the risk of postpartum hemorrhage [see Warnings and Precautions ( 5.4 ) and Clinical Considerations] .",
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from the published literature report the presence of citalopram in human milk at relative infant doses ranging between 0.7 to 9.4% of the maternal weight-adjusted dosage and a milk/plasma ratio ranging between 0.78 to 4.3.",
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Antidepressants increased the risk of suicidal thoughts and behaviors in pediatric and young adult patients in short -term studies .",
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Therefore, the maximum recommended dosage in patients 60 years of age and older is lower than younger patients [see Dosage and Administration ( 2.3 ) , Warnings and Precautions ( 5.2 ) ] .",
+      "refs": [
+        {
+          "source": "fda-celexa",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

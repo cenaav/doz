@@ -1,0 +1,731 @@
+{
+  "id": "sertraline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سرترالین",
+    "en": "Sertraline"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده انتخابی بازجذب سروتونین (SSRI)",
+    "en": "SSRI"
+  },
+  "brands": [
+    {
+      "name": "Zoloft",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zoloft",
+    "زولوفت",
+    "سرترالین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet (scored)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ocd-6-12",
+      "disease": "ocd",
+      "label": {
+        "fa": "وسواس — ۶ تا ۱۲ سال: شروع ۲۵ mg روزانه",
+        "en": "OCD — 6–12 years: start 25 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 25,
+          "increment": 25,
+          "incrementEveryDays": 7,
+          "targetMin": 50,
+          "targetMax": 200,
+          "max": 200
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "2.1, Table 1"
+        },
+        {
+          "source": "fda-sertraline",
+          "section": "8.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ تا ۵۰ mg/day هر هفته در صورت پاسخ ناکافی، حداکثر ۲۰۰ mg/day.",
+            "en": "Increase by 25–50 mg/day weekly if needed, max 200 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-sertraline",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ocd-13-17",
+      "disease": "ocd",
+      "label": {
+        "fa": "وسواس — ۱۳ تا ۱۷ سال: شروع ۵۰ mg روزانه",
+        "en": "OCD — 13–17 years: start 50 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 50,
+          "increment": 50,
+          "incrementEveryDays": 7,
+          "targetMin": 50,
+          "targetMax": 200,
+          "max": 200
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ تا ۵۰ mg/day هر هفته در صورت پاسخ ناکافی، حداکثر ۲۰۰ mg/day.",
+            "en": "Increase by 25–50 mg/day weekly if needed, max 200 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-sertraline",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mdd-adult",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی اساسی — بزرگسال: شروع ۵۰ mg",
+        "en": "MDD — adults: start 50 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 50,
+          "increment": 50,
+          "incrementEveryDays": 7,
+          "targetMin": 50,
+          "targetMax": 200,
+          "max": 200
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ تا ۵۰ mg/day هر هفته در صورت پاسخ ناکافی، حداکثر ۲۰۰ mg/day.",
+            "en": "Increase by 25–50 mg/day weekly if needed, max 200 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-sertraline",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ocd-adult",
+      "disease": "ocd",
+      "label": {
+        "fa": "وسواس — بزرگسال: شروع ۵۰ mg",
+        "en": "OCD — adults: start 50 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 50,
+          "increment": 50,
+          "incrementEveryDays": 7,
+          "targetMin": 50,
+          "targetMax": 200,
+          "max": 200
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ تا ۵۰ mg/day هر هفته در صورت پاسخ ناکافی، حداکثر ۲۰۰ mg/day.",
+            "en": "Increase by 25–50 mg/day weekly if needed, max 200 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-sertraline",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "panic-disorder-adult",
+      "disease": "panic-disorder",
+      "label": {
+        "fa": "پانیک — بزرگسال: شروع ۲۵ mg",
+        "en": "Panic disorder — adults: start 25 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 25,
+          "increment": 25,
+          "incrementEveryDays": 7,
+          "targetMin": 50,
+          "targetMax": 200,
+          "max": 200
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ تا ۵۰ mg/day هر هفته در صورت پاسخ ناکافی، حداکثر ۲۰۰ mg/day.",
+            "en": "Increase by 25–50 mg/day weekly if needed, max 200 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-sertraline",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ptsd-adult",
+      "disease": "ptsd",
+      "label": {
+        "fa": "PTSD — بزرگسال: شروع ۲۵ mg",
+        "en": "PTSD — adults: start 25 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 25,
+          "increment": 25,
+          "incrementEveryDays": 7,
+          "targetMin": 50,
+          "targetMax": 200,
+          "max": 200
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ تا ۵۰ mg/day هر هفته در صورت پاسخ ناکافی، حداکثر ۲۰۰ mg/day.",
+            "en": "Increase by 25–50 mg/day weekly if needed, max 200 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-sertraline",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social-anxiety-adult",
+      "disease": "social-anxiety",
+      "label": {
+        "fa": "اضطراب اجتماعی — بزرگسال: شروع ۲۵ mg",
+        "en": "Social anxiety disorder — adults: start 25 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 25,
+          "increment": 25,
+          "incrementEveryDays": 7,
+          "targetMin": 50,
+          "targetMax": 200,
+          "max": 200
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ تا ۵۰ mg/day هر هفته در صورت پاسخ ناکافی، حداکثر ۲۰۰ mg/day.",
+            "en": "Increase by 25–50 mg/day weekly if needed, max 200 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-sertraline",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف MAOI (شامل لینزولید یا متیلن بلو وریدی) یا تا ۱۴ روز پس از قطع آن.",
+        "en": "Taking an MAOI (incl. linezolid or IV methylene blue) or within 14 days of stopping."
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "pimozide",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف همزمان پیموزاید؛ حساسیت به سرترالین.",
+        "en": "Concomitant pimozide; hypersensitivity to sertraline."
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "peds-other",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان فقط برای وسواس (۶ تا ۱۷ سال) تأیید شده است.",
+        "en": "In children only OCD (6–17 years) is established."
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش خطر افکار و رفتار خودکشی در کودکان و جوانان؛ پایش دقیق.",
+        "en": "Boxed warning: increased risk of suicidal thoughts and behaviors in pediatric and young adult patients; monitor closely."
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "WARNING: SUICIDAL THOUGHTS AND BEHAVIORS"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "پیش از شروع، سابقه شخصی/خانوادگی دوقطبی یا مانیا بررسی شود.",
+        "en": "Screen for personal/family history of bipolar disorder or mania before starting."
+      },
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ocd-6-12",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 9,
+        "weightKg": 28
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "ocd-13-17",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 50
+      }
+    },
+    {
+      "regimen": "mdd-adult",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50
+      }
+    },
+    {
+      "regimen": "ocd-adult",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50
+      }
+    },
+    {
+      "regimen": "panic-disorder-adult",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "ptsd-adult",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "social-anxiety-adult",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25
+      }
+    }
+  ],
+  "atc": [
+    "N06AB06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05691",
+        "en": "SERTRALINE HCL 100MG CAP",
+        "fa": "کپسول سرترالین هیدروکلراید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01897",
+        "en": "SERTRALINE HCL 100MG TAB",
+        "fa": "قرص سرترالین هیدروکلراید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "05934",
+        "en": "SERTRALINE HCL 25MG TAB",
+        "fa": "قرص سرترالین هیدروکلراید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "05692",
+        "en": "SERTRALINE HCL 50MG CAP",
+        "fa": "کپسول سرترالین هیدروکلراید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01896",
+        "en": "SERTRALINE HCL 50MG TAB",
+        "fa": "قرص سرترالین هیدروکلراید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-610/Sertraline",
+        "url": "https://www.darooyab.ir/G-610/Sertraline"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077670",
+      "label": "ANDA077670"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4cf8d5c8-842b-4e7c-9a99-3f41ef8abbdb",
+      "label": "FDA Sertraline"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697048.html",
+      "label": "Sertraline"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AB06",
+      "label": "N06AB06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-610/Sertraline",
+      "label": "Sertraline"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-sertraline",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077670"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on data from published observational studies, exposure to SSRIs, particularly in the month before delivery, has been associated with a less than 2-fold increase in the risk of postpartum hemorrhage [see Warnings and Precautions ( 5.3 ) and Clinical Considerations] .",
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Available data from published literature demonstrate low levels of sertraline and its metabolites in human milk [See Data].",
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Antidepressants increased the risk of suicidal thoughts and behavior in pediatric and young adult patients in short-term studies.",
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… significant hyponatremia in elderly patients, who may be at greater risk for this adverse reaction [See Warnings and Precautions ( 5.8 )] .",
+      "refs": [
+        {
+          "source": "fda-sertraline",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

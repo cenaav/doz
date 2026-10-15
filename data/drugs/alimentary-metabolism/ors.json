@@ -1,0 +1,212 @@
+{
+  "id": "ors",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "محلول خوراکی نمک‌های آب‌رسان (ORS)",
+    "en": "Oral rehydration salts (ORS)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مایع‌درمانی خوراکی",
+    "en": "Oral rehydration"
+  },
+  "brands": [],
+  "synonyms": [
+    "ORS",
+    "او آر اس",
+    "پودر او آر اس",
+    "oral rehydration",
+    "سرم خوراکی"
+  ],
+  "formulations": [
+    {
+      "id": "ors-lo",
+      "form": "solution",
+      "route": "oral",
+      "label": "Low-osmolarity ORS (reconstituted)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "UN"
+      ],
+      "refs": [
+        {
+          "source": "who-diarrhoea-factsheet",
+          "section": "Prevention and treatment"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "plan-b",
+      "disease": "acute-diarrhoea",
+      "label": {
+        "fa": "کم‌آبی متوسط (طرح B) — ۷۵ mL/kg طی ۴ ساعت",
+        "en": "Some dehydration (Plan B) — 75 mL/kg over 4 hours"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mL",
+      "dose": {
+        "perKgPerDose": 75,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "who-dha-2005",
+          "section": "Annex 2, Plan B: Treat some dehydration with ORS (PDF p. 33)"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "مقدار کل برای ۴ ساعت اول در کلینیک؛ اگر کودک بیشتر خواست بیشتر بدهید. جرعه‌های کوچک؛ در استفراغ ۱۰ دقیقه صبر و آهسته‌تر ادامه. شیرخوار زیر ۶ ماه بدون شیر مادر: ۱۰۰ تا ۲۰۰ mL آب هم بدهید. پس از ۴ ساعت ارزیابی مجدد.",
+            "en": "Total for the first 4 hours in clinic; give more if the child wants. Small sips; if vomiting, wait 10 min and continue slower. Non-breastfed infants under 6 months: also 100–200 mL clean water. Reassess after 4 hours."
+          },
+          "refs": [
+            {
+              "source": "who-dha-2005",
+              "section": "Annex 2, Plan B (PDF p. 33)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan-a",
+      "disease": "acute-diarrhoea",
+      "label": {
+        "fa": "بدون کم‌آبی (طرح A) — پس از هر بار مدفوع شل",
+        "en": "No dehydration (Plan A) — after each loose stool"
+      },
+      "population": {},
+      "type": "ageBand",
+      "unit": "mL",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 0,
+              "unit": "day"
+            },
+            "maxAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "perDose": 50,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 100,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "who-dha-2005",
+          "section": "Annex 2, Plan A chart (PDF p. 32)"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تا ۲ سال: ۵۰ تا ۱۰۰ mL؛ ۲ سال به بالا: ۱۰۰ تا ۲۰۰ mL پس از هر مدفوع شل و بین آن‌ها، علاوه بر مایعات معمول، تا قطع اسهال. عدد نمایش‌داده حد پایین است.",
+            "en": "Up to 2 years: 50–100 mL; 2 years or more: 100–200 mL after each loose stool and between, on top of usual fluids, until diarrhoea stops. Lower value shown."
+          },
+          "refs": [
+            {
+              "source": "who-dha-2005",
+              "section": "Annex 2, Plan A chart (PDF p. 32)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "plan-b",
+      "formulation": "ors-lo",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 12
+      },
+      "expect": {
+        "perDose": 900,
+        "mlPerDose": 900
+      }
+    },
+    {
+      "regimen": "plan-a",
+      "formulation": "ors-lo",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "A07CA"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02172",
+        "en": "ORS 1L ORAL SOLUTION",
+        "fa": "محلول خوراکی ORS ۱ لیتر"
+      },
+      {
+        "code": "00933",
+        "en": "ORS SACHET",
+        "fa": "ساشه ORS"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2504/Oral-Rehydration-Solutions",
+        "url": "https://www.darooyab.ir/G-2504/Oral-Rehydration-Solutions"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07CA",
+      "label": "A07CA"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2504/Oral-Rehydration-Solutions",
+      "label": "Oral-Rehydration-Solutions"
+    }
+  ]
+}

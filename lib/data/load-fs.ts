@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, statSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import type { DataSet, Drug } from '../types'
 
@@ -17,6 +17,7 @@ export function loadDataSet(root: string): DataSet {
     sources: readJson(join(dataDir, 'sources.json')),
     diseases: readJson(join(dataDir, 'diseases.json')),
     categories: readJson(join(dataDir, 'categories.json')),
+    collections: existsSync(join(dataDir, 'collections.json')) ? readJson(join(dataDir, 'collections.json')) : [],
     drugs: walk(join(dataDir, 'drugs'))
       .sort()
       .map((p) => ({ path: relative(dataDir, p), drug: readJson(p) as Drug })),

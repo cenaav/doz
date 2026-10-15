@@ -1,0 +1,220 @@
+{
+  "id": "ferrous-sulfate-drops",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره آهن (فروس سولفات)",
+    "en": "Ferrous sulfate drops"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مکمل آهن",
+    "en": "Iron supplement"
+  },
+  "brands": [
+    {
+      "name": "Fer-In-Sol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "iron drops",
+    "قطره آهن",
+    "فروس سولفات قطره",
+    "فرین سول"
+  ],
+  "formulations": [
+    {
+      "id": "drops-15",
+      "form": "drops",
+      "route": "oral",
+      "label": "15 mg iron per 1 mL",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ferrousdrops",
+          "section": "Supplement Facts"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "prev",
+      "disease": "iron-prophylaxis",
+      "label": {
+        "fa": "مکمل آهن — شیرخوار و کودک تا ۴ سال: ۱ mL در روز",
+        "en": "Iron supplement — infants and children up to 4 y: 1 mL daily"
+      },
+      "population": {
+        "maxAge": {
+          "value": 5,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ferrousdrops",
+          "section": "Directions for use"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 15,
+        "refs": [
+          {
+            "source": "fda-ferrousdrops",
+            "section": "Directions for use"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط با قطره‌چکان داخل جعبه؛ بیش از ۱ mL در روز مگر به دستور پزشک. هر ۱ mL = ۱۵ mg آهن.",
+            "en": "Only with the enclosed dropper; not more than 1 mL/day unless a doctor advises. 1 mL = 15 mg iron."
+          },
+          "refs": [
+            {
+              "source": "fda-ferrousdrops",
+              "section": "Directions for use"
+            },
+            {
+              "source": "fda-ferrousdrops",
+              "section": "Supplement Facts"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "این یک فرآورده مکمل (Supplement Facts) است، نه داروی تأییدشده FDA.",
+        "en": "This is a supplement product (Supplement Facts), not an FDA-approved drug label."
+      },
+      "refs": [
+        {
+          "source": "fda-ferrousdrops",
+          "section": "Supplement Facts"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "prev",
+      "formulation": "drops-15",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 15,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "B03AA07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02290",
+        "en": "FERRIC OXIDE SACCHARATED 20MG/ML AMP",
+        "fa": "آمپول فریک اکساید ساکچاراتد ۲۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "02046",
+        "en": "FERROUS FUMARATE 125MG(25mg iron)/ML ORAL DROP",
+        "fa": "قطره خوراکی فروس فومارات ۱۲۵ میلی‌گرم (۲۵ میلی‌گرم آهن) / میلی‌لیتر"
+      },
+      {
+        "code": "02047",
+        "en": "FERROUS FUMARATE EQ TO 50MG Fe++ TAB",
+        "fa": "قرص فروس فومارات معادل تو ۵۰ میلی‌گرم FE + +"
+      },
+      {
+        "code": "01505",
+        "en": "FERROUS FUMARATE-F TAB",
+        "fa": "قرص فروس فومارات–F"
+      },
+      {
+        "code": "11375",
+        "en": "FERROUS GLYCINE SULPHATE CAP",
+        "fa": "کپسول فروس گلیسین سولفات"
+      },
+      {
+        "code": "00530",
+        "en": "FERROUS SULFATE 125MG(25MG FE)/ML ORAL DROP",
+        "fa": "قطره خوراکی فروس سولفات ۱۲۵ میلی‌گرم (۲۵ میلی‌گرم FE) / میلی‌لیتر"
+      },
+      {
+        "code": "01506",
+        "en": "FERROUS SULFATE 200MG/5ML 60ML SYRUP",
+        "fa": "شربت فروس سولفات ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "00531",
+        "en": "FERROUS SULFATE EQ TO 50MG FE++ TAB",
+        "fa": "قرص فروس سولفات معادل تو ۵۰ میلی‌گرم FE + +"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2880/Ferrous",
+        "url": "https://www.darooyab.ir/G-2880/Ferrous"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=73d1f079-d8eb-44f4-b33d-05fb25b80c8f",
+      "label": "FDA Fe-Vite drops"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B03AA07",
+      "label": "B03AA07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2880/Ferrous",
+      "label": "Ferrous"
+    }
+  ],
+  "usApproval": {
+    "kind": "dietary supplement",
+    "refs": [
+      {
+        "source": "fda-ferrousdrops",
+        "section": "SPL approval / marketing category"
+      }
+    ]
+  }
+}

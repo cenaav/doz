@@ -1,0 +1,400 @@
+{
+  "id": "apixaban",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آپیکسابان",
+    "en": "Apixaban"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "ضدانعقاد خوراکی (مهارکننده فاکتور Xa)",
+    "en": "Oral anticoagulant (factor Xa inhibitor)"
+  },
+  "brands": [
+    {
+      "name": "Eliquis",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "eliquis",
+    "الیکوئیس",
+    "آپیکسابان",
+    "DOAC",
+    "NOAC"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "af",
+      "disease": "atrial-fibrillation",
+      "label": {
+        "fa": "AF غیردریچه‌ای — ۵ mg دو بار در روز",
+        "en": "Non-valvular AF — 5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر حداقل ۲ مورد از سن ≥۸۰، وزن ≤۶۰ kg، کراتینین ≥۱٫۵ وجود دارد: ۲٫۵ mg دو بار. با مهارکننده‌های قوی CYP3A4 و P-gp دوز نصف شود.",
+            "en": "If at least 2 of age ≥80, weight ≤60 kg, creatinine ≥1.5: 2.5 mg twice daily. Halve with combined strong CYP3A4 + P-gp inhibitors."
+          },
+          "refs": [
+            {
+              "source": "fda-eliquis",
+              "section": "2"
+            },
+            {
+              "source": "fda-eliquis",
+              "section": "2.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vte",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "درمان DVT/PE — ۱۰ mg دو بار ۷ روز، سپس ۵ mg دو بار",
+        "en": "DVT/PE treatment — 10 mg twice daily for 7 days, then 5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از ۷ روز: ۵ mg دو بار. پیشگیری از عود پس از ۶ ماه: ۲٫۵ mg دو بار.",
+            "en": "After 7 days: 5 mg twice daily. Recurrence prevention after 6 months: 2.5 mg twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-eliquis",
+              "section": "2"
+            },
+            {
+              "source": "fda-eliquis",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ortho",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "پیشگیری DVT پس از تعویض لگن یا زانو — ۲٫۵ mg دو بار",
+        "en": "DVT prophylaxis after hip/knee replacement — 2.5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی پاتولوژیک فعال؛ حساسیت شدید.",
+        "en": "Active pathological bleeding; severe hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: قطع زودهنگام خطر ترومبوز را بالا می‌برد؛ هماتوم نخاعی با بی‌حسی نخاعی.",
+        "en": "Boxed warning: premature discontinuation raises thrombotic risk; spinal/epidural haematoma with neuraxial anaesthesia."
+      },
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "af",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 5,
+        "perDay": 10
+      }
+    },
+    {
+      "regimen": "vte",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "ortho",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 2.5
+      }
+    }
+  ],
+  "atc": [
+    "B01AF02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51340",
+        "en": "APIXABAN 5 MG TAB",
+        "fa": "قرص آپیکسابان ۵ میلی‌گرم"
+      },
+      {
+        "code": "51339",
+        "en": "APIXABAN 2.5 MG TAB",
+        "fa": "قرص آپیکسابان ۲٫۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5401/Apixaban",
+        "url": "https://www.darooyab.ir/G-5401/Apixaban"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202155",
+      "label": "NDA202155"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0",
+      "label": "FDA Eliquis"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613032.html",
+      "label": "Apixaban"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF02",
+      "label": "B01AF02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5401/Apixaban",
+      "label": "Apixaban"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-eliquis",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA202155"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The limited available data on ELIQUIS use in pregnant women are insufficient to inform drug-associated risks of major birth defects, miscarriage, or adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because human exposure through milk is unknown, breastfeeding is not recommended during treatment with ELIQUIS.",
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and effectiveness of ELIQUIS for the treatment of VTE and the reduction in the risk of recurrent VTE have been established in pediatric patients aged birth and older.",
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total subjects in the ARISTOTLE and AVERROES clinical studies, >69% were 65 years of age and older, and >31% were 75 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Females of reproductive potential requiring anticoagulation should discuss pregnancy planning with their physician.",
+      "refs": [
+        {
+          "source": "fda-eliquis",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

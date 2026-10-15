@@ -1,0 +1,333 @@
+{
+  "id": "epinephrine-ampoule",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اپی‌نفرین (آمپول ۱ mg/mL)",
+    "en": "Epinephrine 1 mg/mL (ampoule)"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آگونیست آدرنرژیک",
+    "en": "Adrenergic agonist"
+  },
+  "brands": [
+    {
+      "name": "Adrenalin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "adrenaline",
+    "adrenalin",
+    "آدرنالین",
+    "اپی نفرین آمپول",
+    "آنافیلاکسی"
+  ],
+  "formulations": [
+    {
+      "id": "amp-1",
+      "form": "injection",
+      "route": "im",
+      "label": "1 mg/mL ampoule",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-epiamp",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "anaphylaxis",
+      "label": {
+        "fa": "آنافیلاکسی — بزرگسال و بالای ۳۰ kg: ۰٫۳ تا ۰٫۵ mg عضلانی",
+        "en": "Anaphylaxis — adults and >30 kg: 0.3–0.5 mg IM"
+      },
+      "population": {
+        "minWeightKg": 30.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.3,
+        "perDoseMax": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-epiamp",
+          "section": "2"
+        },
+        {
+          "source": "fda-epiamp",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عضلانی یا زیرجلدی در قدامی‌خارجی ران؛ هر ۵ تا ۱۰ دقیقه در صورت نیاز تکرار.",
+            "en": "IM or SC into the anterolateral thigh; repeat every 5–10 min as needed."
+          },
+          "refs": [
+            {
+              "source": "fda-epiamp",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "anaphylaxis",
+      "label": {
+        "fa": "آنافیلاکسی — کودک زیر ۳۰ kg: ۰٫۰۱ mg/kg عضلانی",
+        "en": "Anaphylaxis — child <30 kg: 0.01 mg/kg IM"
+      },
+      "population": {
+        "maxWeightKg": 30
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.01,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-epiamp",
+          "section": "2"
+        },
+        {
+          "source": "fda-epiamp",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 0.3,
+        "refs": [
+          {
+            "source": "fda-epiamp",
+            "section": "2",
+            "note": {
+              "fa": "سقف ۰٫۳ mg (دوز بالای ۳۰ kg) را Doz گذاشته؛ برچسب آن را حداکثر نگفته",
+              "en": "Doz caps at the >30 kg dose (0.3 mg); not stated as a maximum"
+            }
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۵ تا ۱۰ دقیقه در صورت نیاز تکرار. ۰٫۰۱ mL/kg از محلول ۱ mg/mL.",
+            "en": "Repeat every 5–10 min as needed. 0.01 mL/kg of the 1 mg/mL solution."
+          },
+          "refs": [
+            {
+              "source": "fda-epiamp",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "amp-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.3,
+        "mlPerDose": 0.3,
+        "upperPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "amp-1",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 0.15,
+        "mlPerDose": 0.15
+      }
+    }
+  ],
+  "atc": [
+    "C01CA24"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07915",
+        "en": "ADRENALINE 0.15MG AUTO INJ",
+        "fa": "خودتزریق آدرنالین ۰٫۱۵ میلی‌گرم"
+      },
+      {
+        "code": "06748",
+        "en": "ADRENALINE 0.3MG AUTO INJ",
+        "fa": "خودتزریق آدرنالین ۰٫۳ میلی‌گرم"
+      },
+      {
+        "code": "10484",
+        "en": "EPINEPHRINE 0.01% 10ML AMP",
+        "fa": "آمپول اپی‌نفرین ۰٫۰۱ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "00489",
+        "en": "EPINEPHRINE 1% 7.5ML OPH DROP",
+        "fa": "قطره چشمی اپی‌نفرین ۱ درصد ۷٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "01489",
+        "en": "EPINEPHRINE 1MG/1ML AMP",
+        "fa": "آمپول اپی‌نفرین ۱ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00490",
+        "en": "EPINEPHRINE 1MG/ML SYRINGE",
+        "fa": "سرنگ اپی‌نفرین ۱ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "51121",
+        "en": "EPINEPHRINE INJECTION, SOLUTION PARENTERAL 0.5 mg/1mL 0.3 mL",
+        "fa": "محلول تزریقی اپی‌نفرین ۰٫۵ میلی‌گرم / ۱ میلی‌لیتر ۰٫۳ میلی‌لیتر"
+      },
+      {
+        "code": "52444",
+        "en": "EPINEPHRINE INJECTION PARENTERAL 1 mg/1mL 0.3 mL",
+        "fa": "فرآورده تزریقی اپی‌نفرین ۱ میلی‌گرم / ۱ میلی‌لیتر ۰٫۳ میلی‌لیتر"
+      },
+      {
+        "code": "52718",
+        "en": "EPINEPHRINE INJECTION, SOLUTION PARENTERAL 0.3 mg/0.3mL 2 mL",
+        "fa": "محلول تزریقی اپی‌نفرین ۰٫۳ میلی‌گرم / ۰٫۳ میلی‌لیتر ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1512/Epinephrine",
+        "url": "https://www.darooyab.ir/G-1512/Epinephrine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219239",
+      "label": "ANDA219239"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=79ca73ca-d3c0-40af-9dec-e2f4ce669cda",
+      "label": "FDA Epinephrine 1 mg/mL"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01CA24",
+      "label": "C01CA24"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1512/Epinephrine",
+      "label": "Epinephrine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-epiamp",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA219239"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Prolonged experience with epinephrine use in pregnant women over several decades, based on published literature, does not identify a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-epiamp",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of epinephrine in human milk or the effects of epinephrine on the breastfed infant or on milk production.",
+      "refs": [
+        {
+          "source": "fda-epiamp",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of epinephrine in pediatric patients with septic shock have not been established.",
+      "refs": [
+        {
+          "source": "fda-epiamp",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-epiamp",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

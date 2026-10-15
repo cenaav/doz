@@ -1,0 +1,333 @@
+{
+  "id": "domperidone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دومپریدون",
+    "en": "Domperidone"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتاگونیست دوپامین؛ ضدتهوع",
+    "en": "Dopamine antagonist; antiemetic"
+  },
+  "brands": [
+    {
+      "name": "Motilium",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "motilium",
+    "موتیلیوم"
+  ],
+  "formulations": [
+    {
+      "id": "susp-1-1",
+      "form": "suspension",
+      "route": "oral",
+      "label": "1 mg / mL oral suspension",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "1"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adolescent-adult",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "۱۲ سال به بالا و ۳۵ کیلوگرم یا بیشتر — ۱۰ mg تا ۳ بار در روز",
+        "en": "≥12 years and ≥35 kg — 10 mg up to 3 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "minWeightKg": 35
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 30,
+        "refs": [
+          {
+            "source": "uk-smpc-domperidone",
+            "section": "4.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کمترین دوز مؤثر برای کوتاه‌ترین مدت؛ معمولاً حداکثر یک هفته. ۱۵ تا ۳۰ دقیقه قبل از غذا.",
+            "en": "Lowest effective dose for the shortest duration; usually no more than one week. 15–30 min before meals."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-domperidone",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "کودکان زیر ۱۲ سال",
+        "en": "Children under 12 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "اثربخشی دومپریدون در کودکان زیر ۱۲ سال ثابت نشده است؛ دوز محاسبه نمی‌شود.",
+          "en": "Efficacy of domperidone in children under 12 years has not been established; no dose is calculated."
+        }
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "cardiac",
+      "severity": "block",
+      "text": {
+        "fa": "QT طولانی، اختلال الکترولیت یا بیماری قلبی زمینه‌ای؛ همراه داروهای طولانی‌کننده QT یا مهارکننده‌های قوی CYP3A4.",
+        "en": "Known QTc prolongation, significant electrolyte disturbance or underlying cardiac disease; with QT-prolonging drugs or potent CYP3A4 inhibitors."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "severity": "block",
+      "text": {
+        "fa": "پرولاکتینوما؛ فئوکروموسیتوم؛ خونریزی/انسداد/سوراخ شدن گوارش؛ نارسایی متوسط تا شدید کبد.",
+        "en": "Prolactinoma; phaeochromocytoma; GI haemorrhage, obstruction or perforation; moderate or severe hepatic impairment."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "طولانی شدن QT، آریتمی بطنی و مرگ ناگهانی قلبی؛ خطر بیشتر بالای ۶۰ سال و دوز بیش از ۳۰ mg/day.",
+        "en": "QT prolongation, serious ventricular arrhythmia and sudden cardiac death; higher risk over 60 years and above 30 mg/day."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adolescent-adult",
+      "formulation": "susp-1-1",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 10,
+        "perDay": 30
+      }
+    },
+    {
+      "regimen": "adolescent-adult",
+      "formulation": "susp-1-1",
+      "input": {
+        "ageYears": 13,
+        "weightKg": 30
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "A03FA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11438",
+        "en": "DOMPERIDEN 1MG/200ML SYR",
+        "fa": "دومپرایدن ۱ میلی‌گرم / ۲۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "12821",
+        "en": "DOMPERIDONE 10MG  CAP",
+        "fa": "کپسول دومپریدون ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "11520",
+        "en": "DOMPERIDONE 10MG/5ML 300ML SYR",
+        "fa": "دومپریدون ۱۰ میلی‌گرم / ۵ میلی‌لیتر ۳۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "06587",
+        "en": "DOMPERIDONE 1MG/ML SUSP",
+        "fa": "سوسپانسیون دومپریدون ۱ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "07551",
+        "en": "DOMPERIDONE 5MG/5ML SYRUP",
+        "fa": "شربت دومپریدون ۵ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "06754",
+        "en": "DOMPERIDONE MALEATE 10MG TAB",
+        "fa": "قرص دومپریدون مالئات ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "52038",
+        "en": "DOMPERIDONE SUSPENSION ORAL 1 mg/1 mL 200 mL",
+        "fa": "سوسپانسیون خوراکی دومپریدون ۱ میلی‌گرم / ۱ میلی‌لیتر ۲۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52673",
+        "en": "DOMPERIDONE SUSPENSION ORAL 1 mg/1 mL 120 mL",
+        "fa": "سوسپانسیون خوراکی دومپریدون ۱ میلی‌گرم / ۱ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "52039",
+        "en": "DOMPERIDONE SUSPENSION ORAL 1 mg/1 mL 100 mL",
+        "fa": "سوسپانسیون خوراکی دومپریدون ۱ میلی‌گرم / ۱ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "53039",
+        "en": "DOMPERIDONE SUSPENSION ORAL 1 mg/1 mL 250 mL",
+        "fa": "سوسپانسیون خوراکی دومپریدون ۱ میلی‌گرم / ۱ میلی‌لیتر ۲۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2576/Domperidone",
+        "url": "https://www.darooyab.ir/G-2576/Domperidone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A03FA03",
+      "label": "A03FA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2576/Domperidone",
+      "label": "Domperidone"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/3188/smpc",
+      "label": "UK SmPC Domperidone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are limited post-marketing data on the use of domperidone in pregnant women.",
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised in case of QTc prolongation risk factors in breast-fed infants.",
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Paediatric population The efficacy of domperidone in children less than 12 years of age has not been established (see section 5.1).",
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

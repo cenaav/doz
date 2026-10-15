@@ -1,0 +1,522 @@
+{
+  "id": "diazepam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیازپام",
+    "en": "Diazepam"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بنزودیازپین",
+    "en": "Benzodiazepine"
+  },
+  "brands": [
+    {
+      "name": "Valium",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "valium",
+    "والیوم",
+    "دیازپام",
+    "دیازپام ۵"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet (scored)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (scored)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "anxiety",
+      "disease": "anxiety",
+      "label": {
+        "fa": "اضطراب — بزرگسال: ۲ تا ۱۰ mg دو تا چهار بار در روز",
+        "en": "Anxiety — adults: 2–10 mg two to four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "perDoseMax": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بسته به شدت. سالمند/ناتوان: ۲ تا ۲٫۵ mg یک یا دو بار و افزایش تدریجی.",
+            "en": "By severity. Elderly/debilitated: 2–2.5 mg once or twice daily, increase gradually."
+          },
+          "refs": [
+            {
+              "source": "fda-diazepam",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alcohol",
+      "disease": "alcohol-withdrawal",
+      "label": {
+        "fa": "ترک حاد الکل: ۱۰ mg سه یا چهار بار در ۲۴ ساعت اول",
+        "en": "Acute alcohol withdrawal: 10 mg 3–4 times in the first 24 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سپس ۵ mg سه یا چهار بار در روز در صورت نیاز.",
+            "en": "Then 5 mg 3–4 times daily as needed."
+          },
+          "refs": [
+            {
+              "source": "fda-diazepam",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spasm",
+      "disease": "muscle-spasm",
+      "label": {
+        "fa": "اسپاسم عضلانی (کمکی): ۲ تا ۱۰ mg سه یا چهار بار",
+        "en": "Muscle spasm (adjunct): 2–10 mg 3–4 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "perDoseMax": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "anxiety",
+      "label": {
+        "fa": "کودکان ۶ ماه به بالا: ۱ تا ۲٫۵ mg سه یا چهار بار",
+        "en": "Children ≥6 months: 1–2.5 mg 3–4 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "perDoseMax": 2.5,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "از کمترین دوز شروع و در صورت نیاز افزایش.",
+            "en": "Start with the lowest dose and increase as required."
+          },
+          "refs": [
+            {
+              "source": "fda-diazepam",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-6m",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ ماه منع مصرف دارد.",
+        "en": "Contraindicated under 6 months."
+      },
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ میاستنی گراویس؛ نارسایی تنفسی شدید؛ نارسایی کبدی شدید؛ آپنه خواب؛ گلوکوم زاویه بسته حاد.",
+        "en": "Hypersensitivity; myasthenia gravis; severe respiratory insufficiency; severe hepatic insufficiency; sleep apnoea; acute narrow-angle glaucoma."
+      },
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: مصرف همزمان با اپیوئیدها (دپرسیون تنفسی و مرگ)؛ سوءمصرف و وابستگی؛ علائم ترک با قطع ناگهانی.",
+        "en": "Boxed warning: concomitant opioids (respiratory depression, death); abuse, misuse and dependence; withdrawal on abrupt stop."
+      },
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "anxiety",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "upperPerDose": 10
+      }
+    },
+    {
+      "regimen": "alcohol",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "spasm",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 2
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 1,
+        "tabletsPerDoseRounded": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "N05BA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02237",
+        "en": "DIAZEPAM 10MG RECTAL TUBE",
+        "fa": "دیازپام ۱۰ میلی‌گرم توب"
+      },
+      {
+        "code": "01461",
+        "en": "DIAZEPAM 10MG SUPP",
+        "fa": "شیاف دیازپام ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00417",
+        "en": "DIAZEPAM 10MG TAB",
+        "fa": "قرص دیازپام ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00418",
+        "en": "DIAZEPAM 10MG/2ML AMP",
+        "fa": "آمپول دیازپام ۱۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "00419",
+        "en": "DIAZEPAM 2MG TAB",
+        "fa": "قرص دیازپام ۲ میلی‌گرم"
+      },
+      {
+        "code": "07051",
+        "en": "DIAZEPAM 2MG/5ML 120ML SYRUP",
+        "fa": "شربت دیازپام ۲ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "01462",
+        "en": "DIAZEPAM 2MG/5ML 60ML SYRUP",
+        "fa": "شربت دیازپام ۲ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "02247",
+        "en": "DIAZEPAM 5MG RECTAL TUBE",
+        "fa": "دیازپام ۵ میلی‌گرم توب"
+      },
+      {
+        "code": "01460",
+        "en": "DIAZEPAM 5MG SUPP",
+        "fa": "شیاف دیازپام ۵ میلی‌گرم"
+      },
+      {
+        "code": "00420",
+        "en": "DIAZEPAM 5MG TAB",
+        "fa": "قرص دیازپام ۵ میلی‌گرم"
+      },
+      {
+        "code": "52452",
+        "en": "DIAZEPAM SOLUTION ORAL 2 mg/5 mL 120 mL",
+        "fa": "محلول خوراکی دیازپام ۲ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1266/Diazepam",
+        "url": "https://www.darooyab.ir/G-1266/Diazepam"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=070325",
+      "label": "ANDA070325"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c397a9da-862f-4f3f-8109-7d21691de53a",
+      "label": "FDA Diazepam"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682047.html",
+      "label": "Diazepam"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a624027.html",
+      "label": "Diazepam Buccal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05BA01",
+      "label": "N05BA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1266/Diazepam",
+      "label": "Diazepam"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-diazepam",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA070325"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Advise pregnant females that use of diazepam tablets late in pregnancy can result in sedation (respiratory depression, lethargy, hypotonia) and/or withdrawal symptoms (hyperreflexia, irritability, restlessness, tremors, inconsolable crying, and feeding difficulties) in newborns (see WARNINGS: Neonatal Sedation and …",
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reaction, including sedation and withdrawal symptoms in breastfed infants, advise patient that breastfeeding is not recommended during treatment with diazepam tablets.",
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در کودکان زیر سن مشخص منع مصرف دارد.",
+        "en": "Label: contraindicated in children below a stated age."
+      },
+      "quote": "Diazepam tablets are contraindicated in patients with a known hypersensitivity to diazepam and, because of lack of sufficient clinical experience, in pediatric patients under 6 months of age.",
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-diazepam",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

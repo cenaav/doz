@@ -1,0 +1,274 @@
+{
+  "id": "solifenacin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سولیفناسین",
+    "en": "Solifenacin"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آنتی‌موسکارینی ادراری",
+    "en": "Urinary antimuscarinic"
+  },
+  "brands": [
+    {
+      "name": "Vesicare",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vesicare",
+    "وزیکر",
+    "سولیفناسین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-solifenacin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-solifenacin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oab",
+      "disease": "overactive-bladder",
+      "label": {
+        "fa": "مثانه بیش‌فعال — ۵ mg یک بار (تا ۱۰ mg)",
+        "en": "Overactive bladder — 5 mg once daily (up to 10 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-solifenacin",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-solifenacin",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "CrCl کمتر از ۳۰: حداکثر ۵ mg.",
+            "en": "CrCl <30: max 5 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-solifenacin",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "احتباس ادرار یا معده؛ گلوکوم زاویه بسته کنترل‌نشده؛ حساسیت.",
+        "en": "Urinary or gastric retention; uncontrolled narrow-angle glaucoma; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-solifenacin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oab",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "G04BD08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07559",
+        "en": "SOLIFENACIN 10MG TAB",
+        "fa": "قرص سولیفناسین ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "07558",
+        "en": "SOLIFENACIN 5MG TAB",
+        "fa": "قرص سولیفناسین ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-923/Solifenacin",
+        "url": "https://www.darooyab.ir/G-923/Solifenacin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204374",
+      "label": "ANDA204374"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fbd6e753-1ed2-418a-8667-c674b215eabb",
+      "label": "FDA Solifenacin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605019.html",
+      "label": "Solifenacin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BD08",
+      "label": "G04BD08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-923/Solifenacin",
+      "label": "Solifenacin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-solifenacin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA204374"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no studies with the use of solifenacin succinate in pregnant women to inform a drug-associated risk of major birth defects, miscarriages, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-solifenacin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information on the presence of solifenacin in human milk, the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-solifenacin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of solifenacin succinate tablets have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-solifenacin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In placebo-controlled clinical studies, similar safety and effectiveness were observed between geriatric patients (623 patients ≥ 65 years and 189 patients ≥ 75 years) and younger adult patients (1188 patients < 65 years) treated with solifenacin succinate tablets.",
+      "refs": [
+        {
+          "source": "fda-solifenacin",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

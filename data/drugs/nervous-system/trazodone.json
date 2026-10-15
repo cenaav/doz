@@ -1,0 +1,251 @@
+{
+  "id": "trazodone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ترازودون",
+    "en": "Trazodone"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدافسردگی (SARI)",
+    "en": "Antidepressant"
+  },
+  "brands": [
+    {
+      "name": "Desyrel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ترازودون",
+    "trazodone"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-trazodone",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی — بزرگسال: ۱۵۰ mg/day در دوزهای منقسم",
+        "en": "MDD — adults: 150 mg/day divided"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-trazodone",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع با دوز کم و افزایش تدریجی؛ پس از غذا؛ در خواب‌آلودگی بخش اصلی دوز شب.",
+            "en": "Start low and increase gradually; after a meal; if drowsy, give most of the dose at bedtime."
+          },
+          "refs": [
+            {
+              "source": "fda-trazodone",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-trazodone",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "MAOI (شامل لینزولید یا متیلن بلو وریدی) یا تا ۱۴ روز پس از قطع.",
+        "en": "MAOI (incl. linezolid or IV methylene blue) or within 14 days."
+      },
+      "refs": [
+        {
+          "source": "fda-trazodone",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "perDay": 150
+      }
+    }
+  ],
+  "atc": [
+    "N06AX05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01864",
+        "en": "TRAZODONE HCL 100MG TAB",
+        "fa": "قرص ترازودون هیدروکلراید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01242",
+        "en": "TRAZODONE HCL 50MG TAB",
+        "fa": "قرص ترازودون هیدروکلراید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-614/Trazodone",
+        "url": "https://www.darooyab.ir/G-614/Trazodone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218988",
+      "label": "ANDA218988"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b9f0b60-0c25-4303-88f1-44bcb347bc49",
+      "label": "FDA Trazodone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a681038.html",
+      "label": "Trazodone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AX05",
+      "label": "N06AX05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-614/Trazodone",
+      "label": "Trazodone"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-trazodone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA218988"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Published prospective cohort studies, case series, and case reports over several decades with trazodone hydrochloride tablets use in pregnant women have not identified any drug-associated risks of major birth defects, miscarriage, or adverse maternal or fetal outcomes (see Data) .",
+      "refs": [
+        {
+          "source": "fda-trazodone",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from published literature report the transfer of trazodone into human milk.",
+      "refs": [
+        {
+          "source": "fda-trazodone",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Antidepressants increased the risk of suicidal thoughts and behaviors in pediatric and young adult patients in short-term studies.",
+      "refs": [
+        {
+          "source": "fda-trazodone",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "However, as experience in the elderly with trazodone hydrochloride is limited, it should be used with caution in geriatric patients.",
+      "refs": [
+        {
+          "source": "fda-trazodone",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

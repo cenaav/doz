@@ -1,0 +1,220 @@
+{
+  "id": "clomiphene",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلومیفن",
+    "en": "Clomiphene citrate"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "تعدیل‌کننده انتخابی گیرنده استروژن",
+    "en": "Selective oestrogen receptor modulator"
+  },
+  "brands": [
+    {
+      "name": "Clomid",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "clomid",
+    "کلومید",
+    "کلومیفن",
+    "کلومیفن سیترات",
+    "تخمک گذاری"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clomiphene",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ovulation",
+      "disease": "female-infertility",
+      "label": {
+        "fa": "القای تخمک‌گذاری — ۵۰ mg روزانه به مدت ۵ روز",
+        "en": "Ovulation induction — 50 mg daily for 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-clomiphene",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر تخمک‌گذاری نشد، دوره دوم ۱۰۰ mg روزانه ۵ روز، حداقل ۳۰ روز بعد و پس از رد بارداری.",
+            "en": "If no ovulation, a second course of 100 mg daily for 5 days, at least 30 days later after excluding pregnancy."
+          },
+          "refs": [
+            {
+              "source": "fda-clomiphene",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ بارداری (و سایر موارد بخش منع مصرف).",
+        "en": "Hypersensitivity; pregnancy (and other items in Contraindications)."
+      },
+      "refs": [
+        {
+          "source": "fda-clomiphene",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ovulation",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "G03GB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00319",
+        "en": "CLOMIPHENE CITRATE 50MG TAB",
+        "fa": "قرص کلومیفن سیترات ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3235/Clomifene-Citrate",
+        "url": "https://www.darooyab.ir/G-3235/Clomifene-Citrate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220673",
+      "label": "ANDA220673"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54f608de-6f14-4120-819e-aeb9350c3070",
+      "label": "FDA Clomiphene"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682704.html",
+      "label": "Clomiphene"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03GB02",
+      "label": "G03GB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3235/Clomifene-Citrate",
+      "label": "Clomifene-Citrate"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-clomiphene",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA220673"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Pregnancy Clomiphene citrate use in pregnant women is contraindicated, as clomiphene citrate does not offer benefit in this population.",
+      "refs": [
+        {
+          "source": "fda-clomiphene",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised if clomiphene citrate is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-clomiphene",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    }
+  }
+}

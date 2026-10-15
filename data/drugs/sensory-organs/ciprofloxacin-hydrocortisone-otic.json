@@ -1,0 +1,276 @@
+{
+  "id": "ciprofloxacin-hydrocortisone-otic",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره گوش سیپروفلوکساسین-هیدروکورتیزون",
+    "en": "Ciprofloxacin/hydrocortisone ear drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "آنتی‌بیوتیک + کورتون گوش",
+    "en": "Otic antibiotic + steroid"
+  },
+  "brands": [
+    {
+      "name": "Cipro HC Otic",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cipro hc",
+    "قطره گوش ترکیبی",
+    "سیپرو اچ سی"
+  ],
+  "formulations": [
+    {
+      "id": "susp",
+      "form": "drops",
+      "route": "topical",
+      "label": "Ciprofloxacin 0.2% + hydrocortisone 1% otic suspension",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ciprohc",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oe",
+      "disease": "otitis-externa",
+      "label": {
+        "fa": "عفونت گوش خارجی — ۱ سال به بالا: ۳ قطره دو بار، ۷ روز",
+        "en": "Otitis externa — ≥1 y: 3 drops twice daily for 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 3,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ciprohc",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "قبل از مصرف تکان دهید و گرم کنید.",
+            "en": "Shake well and warm before use."
+          },
+          "refs": [
+            {
+              "source": "fda-ciprohc",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ پرده گوش سوراخ؛ عفونت ویروسی مجرای گوش (آبله‌مرغان، هرپس).",
+        "en": "Hypersensitivity; perforated eardrum; viral infections of the ear canal (varicella, herpes)."
+      },
+      "refs": [
+        {
+          "source": "fda-ciprohc",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oe",
+      "formulation": "susp",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 3
+      }
+    }
+  ],
+  "atc": [
+    "S02CA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09786",
+        "en": "CIPROFLOXACIN 250MG/5ML 100ML SUSP",
+        "fa": "سوسپانسیون سیپروفلوکساسین ۲۵۰ میلی‌گرم / ۵ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00295",
+        "en": "CIPROFLOXACIN HCL 250MG TAB",
+        "fa": "قرص سیپروفلوکساسین هیدروکلراید ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00296",
+        "en": "CIPROFLOXACIN HCL 500MG TAB",
+        "fa": "قرص سیپروفلوکساسین هیدروکلراید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "10757",
+        "en": "CIPROFLOXACIN LACTATE 200MG/100ML INF BOTTLE",
+        "fa": "محلول انفوزیون در بطری سیپروفلوکساسین لاکتات ۲۰۰ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00294",
+        "en": "CIPROFLOXACIN LACTATE 200MG/100ML INF P-BAG",
+        "fa": "محلول انفوزیون سیپروفلوکساسین لاکتات ۲۰۰ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "02250",
+        "en": "CIPROFLOXACIN LACTATE 200MG/20ML INF",
+        "fa": "محلول انفوزیون سیپروفلوکساسین لاکتات ۲۰۰ میلی‌گرم / ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "52076",
+        "en": "CIPROFLOXACIN INJECTION, SOLUTION INTRAVENOUS 10 mg/1mL 40 mL",
+        "fa": "فرآورده تزریقی سیپروفلوکساسین ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۴۰ میلی‌لیتر"
+      },
+      {
+        "code": "52435",
+        "en": "CIPROFLOXACIN (AS HYDROCHLORIDE) TABLET ORAL 750 mg",
+        "fa": "قرص سیپروفلوکساسین (معادل هیدروکلراید) ۷۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52801",
+        "en": "CIPROFLOXACIN (AS LACTATE) INJECTION, SOLUTION INTRAVENOUS 2 mg/1mL 200 mL",
+        "fa": "فرآورده تزریقی سیپروفلوکساسین (معادل لاکتات) ۲ میلی‌گرم / ۱ میلی‌لیتر ۲۰۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-361/Ciprofloxacin",
+        "url": "https://www.darooyab.ir/G-361/Ciprofloxacin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020805",
+      "label": "NDA020805"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0881bbe-cc95-45d4-9878-3bc8946eff26",
+      "label": "FDA Cipro HC otic"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a688016.html",
+      "label": "Ciprofloxacin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a693022.html",
+      "label": "Ciprofloxacin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S02CA03",
+      "label": "S02CA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-361/Ciprofloxacin",
+      "label": "Ciprofloxacin"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA authorized generic",
+    "refs": [
+      {
+        "source": "fda-ciprohc",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020805"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Reproduction studies have been performed in rats and mice using oral doses of up to 100 mg/kg and IV doses up to 30 mg/kg and have revealed no evidence of harm to the fetus as a result of ciprofloxacin.",
+      "refs": [
+        {
+          "source": "fda-ciprohc",
+          "section": "Pregnancy: Teratogenic Effects:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-ciprohc",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and efficacy of ciprofloxacin hydrochloride and hydrocortisone otic suspension have been established in pediatric patients 2 years and older (131 patients) in adequate and well-controlled clinical trials.",
+      "refs": [
+        {
+          "source": "fda-ciprohc",
+          "section": "Pediatric Use:"
+        }
+      ]
+    }
+  }
+}

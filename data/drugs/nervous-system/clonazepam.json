@@ -1,0 +1,391 @@
+{
+  "id": "clonazepam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلونازپام",
+    "en": "Clonazepam"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بنزودیازپین",
+    "en": "Benzodiazepine"
+  },
+  "brands": [
+    {
+      "name": "Klonopin",
+      "market": "US"
+    },
+    {
+      "name": "Rivotril",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "rivotril",
+    "ریوتریل",
+    "کلونازپام"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet (scored)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "seizure-child",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "تشنج — کودکان تا ۱۰ سال یا ۳۰ kg: شروع ۰٫۰۱ تا ۰٫۰۳ mg/kg/day",
+        "en": "Seizures — children ≤10 y or 30 kg: start 0.01–0.03 mg/kg/day"
+      },
+      "population": {
+        "maxAge": {
+          "value": 11,
+          "unit": "year"
+        },
+        "maxWeightKg": 30
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.01,
+        "perKgPerDayMax": 0.03,
+        "dividedDoses": 3
+      },
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 0.05,
+        "refs": [
+          {
+            "source": "fda-clonazepam",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش حداکثر ۰٫۲۵ تا ۰٫۵ mg هر ۳ روز تا نگهدارنده ۰٫۱ تا ۰٫۲ mg/kg/day در ۳ نوبت.",
+            "en": "Increase by no more than 0.25–0.5 mg every 3 days to maintenance 0.1–0.2 mg/kg/day in three doses."
+          },
+          "refs": [
+            {
+              "source": "fda-clonazepam",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seizure-adult",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "تشنج — بزرگسال: شروع حداکثر ۱٫۵ mg/day در ۳ نوبت",
+        "en": "Seizures — adults: start ≤1.5 mg/day in 3 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 20,
+        "refs": [
+          {
+            "source": "fda-clonazepam",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "panic-adult",
+      "disease": "panic-disorder",
+      "label": {
+        "fa": "پانیک — بزرگسال: ۰٫۲۵ mg دو بار در روز، هدف ۱ mg/day",
+        "en": "Panic disorder — adults: 0.25 mg twice daily, target 1 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 0.5,
+          "increment": 0.5,
+          "incrementEveryDays": 3,
+          "targetMin": 1,
+          "targetMax": 1,
+          "max": 4
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بنزودیازپین‌ها؛ بیماری قابل توجه کبدی؛ گلوکوم زاویه بسته حاد.",
+        "en": "Sensitivity to benzodiazepines; significant liver disease; acute narrow-angle glaucoma."
+      },
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: مصرف همزمان با اپیوئیدها (دپرسیون تنفسی، کما، مرگ)؛ سوءمصرف، اعتیاد و وابستگی.",
+        "en": "Boxed warning: concomitant opioids (respiratory depression, coma, death); abuse, misuse, addiction and dependence."
+      },
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "WARNING (boxed)"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "seizure-adult",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5
+      }
+    },
+    {
+      "regimen": "panic-adult",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "seizure-child",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "N03AE01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "10928",
+        "en": "CLONAZEPAM 0.5MG TAB",
+        "fa": "قرص کلونازپام ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "00322",
+        "en": "CLONAZEPAM 1MG TAB",
+        "fa": "قرص کلونازپام ۱ میلی‌گرم"
+      },
+      {
+        "code": "00323",
+        "en": "CLONAZEPAM 2MG TAB",
+        "fa": "قرص کلونازپام ۲ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-661/Clonazepam",
+        "url": "https://www.darooyab.ir/G-661/Clonazepam"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075150",
+      "label": "ANDA075150"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=385c046c-d156-4ca0-a3c3-47538783dd2f",
+      "label": "FDA Clonazepam"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682279.html",
+      "label": "Clonazepam"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AE01",
+      "label": "N03AE01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-661/Clonazepam",
+      "label": "Clonazepam"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-clonazepam",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075150"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Neonates born to mothers using benzodiazepines late in pregnancy have been reported to experience symptoms of sedation and/or neonatal withdrawal (see WARNINGS: Neonatal Sedation and Withdrawal Syndrome , and Clinical Considerations ).",
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "Pregnancy:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Clonazepam is excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Because of the possibility that adverse effects on physical or mental development could become apparent only after many years, a benefit-risk consideration of the long-term use of clonazepam tablets is important in pediatric patients being treated for seizure disorder (see INDICATIONS AND USAGE and",
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-clonazepam",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    }
+  }
+}

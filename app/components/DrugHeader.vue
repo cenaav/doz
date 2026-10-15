@@ -22,6 +22,7 @@ const lowConfidence = drugConfidence(props.drug, sources) === 'low'
       <NuxtLink v-if="cat" :to="localePath(`/category/${cat.id}`)" class="chip">{{ cat.icon }} {{ lt(cat.name) }}</NuxtLink>
       <span v-if="drug.class" class="ms-2 text-slate-600 dark:text-slate-400">{{ lt(drug.class) }}</span>
     </p>
+    <DrugTags :drug="drug" />
     <p class="text-sm"><span class="text-slate-500">{{ $t('markets.label') }}:</span> <MarketBadges :markets="markets" /></p>
     <ConfidenceBanner v-if="lowConfidence" />
     <p v-if="drug.brands.length" class="ltr text-start text-sm text-slate-500">{{ drug.brands.map((b) => `${b.name} (${b.market})`).join(' · ') }}</p>

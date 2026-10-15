@@ -1,0 +1,441 @@
+{
+  "id": "tramadol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ترامادول",
+    "en": "Tramadol"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضددرد اپیوئیدی",
+    "en": "Opioid analgesic"
+  },
+  "brands": [
+    {
+      "name": "Ultram",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ultram",
+    "ترامادول",
+    "ترامال",
+    "tramal"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-75",
+      "form": "tablet",
+      "route": "oral",
+      "label": "75 mg tablet (scored)",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "maint",
+      "disease": "pain",
+      "label": {
+        "fa": "درد متوسط تا شدید — پس از تیتراسیون: ۵۰ تا ۱۰۰ mg هر ۴ تا ۶ ساعت",
+        "en": "Moderate–severe pain — after titration: 50–100 mg every 4–6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "perDoseMax": 100,
+        "dosesPerDay": 4,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 400,
+        "refs": [
+          {
+            "source": "fda-tramadol",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۲۵ mg/day و افزایش ۲۵ mg هر ۳ روز تا ۱۰۰ mg/day (۲۵ چهار بار)، سپس ۵۰ mg هر ۳ روز تا ۲۰۰ mg/day. بالای ۷۵ سال حداکثر ۳۰۰ mg/day. نارسایی شدید کلیه: فاصله دوز ۱۲ ساعت.",
+            "en": "Start 25 mg/day, increase by 25 mg every 3 days to 100 mg/day (25 four times daily), then by 50 mg every 3 days to 200 mg/day. Over 75 y max 300 mg/day. Severe renal impairment: 12-hour interval."
+          },
+          "refs": [
+            {
+              "source": "fda-tramadol",
+              "section": "2"
+            },
+            {
+              "source": "fda-tramadol",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال منع مصرف دارد (دپرسیون تنفسی کشنده).",
+        "en": "Contraindicated under 12 years (fatal respiratory depression)."
+      },
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "پس از تونسیلکتومی/آدنوئیدکتومی زیر ۱۸ سال؛ دپرسیون تنفسی؛ آسم حاد یا شدید بدون پایش؛ انسداد گوارشی؛ حساسیت به اپیوئید؛ MAOI در ۱۴ روز اخیر.",
+        "en": "After tonsillectomy/adenoidectomy under 18; respiratory depression; acute or severe asthma unmonitored; GI obstruction; opioid hypersensitivity; MAOI within 14 days."
+      },
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: اعتیاد و سوءمصرف، دپرسیون تنفسی، مصرف تصادفی کشنده در کودکان، تداخل با بنزودیازپین‌ها.",
+        "en": "Boxed warning: addiction and misuse, respiratory depression, fatal accidental ingestion by children, interaction with benzodiazepines."
+      },
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "maint",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "upperPerDose": 100
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 35
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "N02AX02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11402",
+        "en": "TRAMADOL 100MG SUSP",
+        "fa": "سوسپانسیون ترامادول ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08921",
+        "en": "TRAMADOL 10ML DROP",
+        "fa": "قطره ترامادول ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "02103",
+        "en": "TRAMADOL HCL 100MG TAB",
+        "fa": "قرص ترامادول هیدروکلراید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02013",
+        "en": "TRAMADOL HCL 100MG/2ML AMP",
+        "fa": "آمپول ترامادول هیدروکلراید ۱۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "06491",
+        "en": "TRAMADOL HCL 20MG CAP",
+        "fa": "کپسول ترامادول هیدروکلراید ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "01982",
+        "en": "TRAMADOL HCL 50MG CAP",
+        "fa": "کپسول ترامادول هیدروکلراید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02102",
+        "en": "TRAMADOL HCL 50MG TAB",
+        "fa": "قرص ترامادول هیدروکلراید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02708",
+        "en": "TRAMADOL HCL 50MG/1ML AMP",
+        "fa": "آمپول ترامادول هیدروکلراید ۵۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "02190",
+        "en": "TRAMADOL HCL SR 100MG TAB",
+        "fa": "قرص آهسته‌رهش ترامادول هیدروکلراید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "11401",
+        "en": "TRAMADOL HYDROCHLORIDE SR 200MG TAB",
+        "fa": "قرص آهسته‌رهش ترامادول هیدروکلراید ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52843",
+        "en": "TRAMADOL HYDROCHLORIDE TABLET, EXTENDED RELEASE ORAL 200 mg",
+        "fa": "قرص آهسته‌رهش ترامادول هیدروکلراید ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52898",
+        "en": "TRAMADOL HYDROCHLORIDE TABLET, EXTENDED RELEASE ORAL 300 mg",
+        "fa": "قرص آهسته‌رهش ترامادول هیدروکلراید ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "53076",
+        "en": "TRAMADOL HYDROCHLORIDE INJECTION PARENTERAL 50 mg/1mL 2 mL",
+        "fa": "فرآورده تزریقی ترامادول هیدروکلراید ۵۰ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-205/Tramadol",
+        "url": "https://www.darooyab.ir/G-205/Tramadol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208708",
+      "label": "ANDA208708"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=84b12129-cf10-4a3e-889c-990ebabdece6",
+      "label": "FDA Tramadol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a695011.html",
+      "label": "Tramadol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02AX02",
+      "label": "N02AX02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-205/Tramadol",
+      "label": "Tramadol"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-tramadol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA208708"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Neonatal Opioid Withdrawal Syndrome (NOWS) Advise pregnant women using opioids for an extended period of time of the risk of Neonatal Opioid Withdrawal Syndrome, which may be life-threatening if not recognized and treated.",
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions, including excess sedation and respiratory depression in a breastfed infant, advise patients that breastfeeding is not recommended during treatment with tramadol hydrochloride tablets [see Warnings and Precautions (5.4) ] .",
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در کودکان زیر سن مشخص منع مصرف دارد.",
+        "en": "Label: contraindicated in children below a stated age."
+      },
+      "quote": "Tramadol Hydrochloride Tablets, USP are contraindicated for: • all children younger than 12 years of age [see Warnings and Precautions (5.4) ]. • post-operative management in children younger than 18 years of age following tonsillectomy and/or adenoidectomy [see Warnings and Precautions (5.4) ].",
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to to regularly evaluate renal function.",
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Use of opioids for an extended period of time may cause reduced fertility in females and males of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

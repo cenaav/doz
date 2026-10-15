@@ -1,0 +1,380 @@
+{
+  "id": "ampicillin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمپی‌سیلین",
+    "en": "Ampicillin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "آمینوپنی‌سیلین",
+    "en": "Aminopenicillin"
+  },
+  "brands": [
+    {
+      "name": "Principen",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "آمپی سیلین",
+    "ampicillin",
+    "آمپیسیلین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-500",
+      "form": "capsule",
+      "route": "oral",
+      "label": "500 mg capsule",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "gu",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "عفونت ادراری/گوارشی — بالای ۲۰ kg: ۵۰۰ mg چهار بار",
+        "en": "GU/GI infection — >20 kg: 500 mg four times daily"
+      },
+      "population": {
+        "minWeightKg": 20.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "resp",
+      "disease": "respiratory-tract-infection",
+      "label": {
+        "fa": "عفونت تنفسی — بالای ۲۰ kg: ۲۵۰ mg چهار بار",
+        "en": "Respiratory infection — >20 kg: 250 mg four times daily"
+      },
+      "population": {
+        "minWeightKg": 20.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "gu-child",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "عفونت ادراری/گوارشی — ۲۰ kg و کمتر: ۱۰۰ mg/kg/day در ۴ نوبت",
+        "en": "GU/GI — ≤20 kg: 100 mg/kg/day in 4 doses"
+      },
+      "population": {
+        "maxWeightKg": 20
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 100,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "resp-child",
+      "disease": "respiratory-tract-infection",
+      "label": {
+        "fa": "عفونت تنفسی — ۲۰ kg و کمتر: ۵۰ mg/kg/day در ۳ یا ۴ نوبت",
+        "en": "Respiratory — ≤20 kg: 50 mg/kg/day in 3–4 doses"
+      },
+      "population": {
+        "maxWeightKg": 20
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 50,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت جدی به آمپی‌سیلین یا سایر بتالاکتام‌ها؛ عفونت با ارگانیسم‌های تولیدکننده پنی‌سیلیناز.",
+        "en": "Serious hypersensitivity to ampicillin or other beta-lactams; infections by penicillinase-producing organisms."
+      },
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "gu",
+      "formulation": "cap-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "resp",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250
+      }
+    },
+    {
+      "regimen": "gu-child",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "resp-child",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 250
+      }
+    }
+  ],
+  "atc": [
+    "J01CA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00083",
+        "en": "AMPICILLIN 125MG/5ML 100ML POW SUSP",
+        "fa": "پودر برای تهیه سوسپانسیون آمپی‌سیلین ۱۲۵ میلی‌گرم / ۵ میلی‌لیتر، ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00084",
+        "en": "AMPICILLIN 250MG CAP",
+        "fa": "کپسول آمپی‌سیلین ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01386",
+        "en": "AMPICILLIN 250MG TAB",
+        "fa": "قرص آمپی‌سیلین ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00086",
+        "en": "AMPICILLIN 250MG/5ML 100ML POW SUSP",
+        "fa": "پودر برای تهیه سوسپانسیون آمپی‌سیلین ۲۵۰ میلی‌گرم / ۵ میلی‌لیتر، ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00085",
+        "en": "AMPICILLIN 500MG CAP",
+        "fa": "کپسول آمپی‌سیلین ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01387",
+        "en": "AMPICILLIN 500MG TAB",
+        "fa": "قرص آمپی‌سیلین ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00080",
+        "en": "AMPICILLIN SODIUM 1GR VIAL",
+        "fa": "ویال آمپی‌سیلین سدیم ۱ گرم"
+      },
+      {
+        "code": "00081",
+        "en": "AMPICILLIN SODIUM 250MG VIAL",
+        "fa": "ویال آمپی‌سیلین سدیم ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00082",
+        "en": "AMPICILLIN SODIUM 500MG VIAL",
+        "fa": "ویال آمپی‌سیلین سدیم ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-276/Ampicillin",
+        "url": "https://www.darooyab.ir/G-276/Ampicillin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216554",
+      "label": "ANDA216554"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8b1ab1-73c6-4cdf-a838-7a4554c62586",
+      "label": "FDA Ampicillin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a685002.html",
+      "label": "Ampicillin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601133.html",
+      "label": "Ampicillin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01CA01",
+      "label": "J01CA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-276/Ampicillin",
+      "label": "Ampicillin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ampicillin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA216554"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, penicillin should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Ampicillin used by nursing mothers may lead to sensitization of infants; therefore, caution should be exercised when ampicillin is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Penicillins are excreted primarily unchanged by the kidney; therefore, the incompletely developed renal function in neonates and young infants will delay the excretion of penicillin.",
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

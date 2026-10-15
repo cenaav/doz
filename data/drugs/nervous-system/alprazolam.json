@@ -1,0 +1,381 @@
+{
+  "id": "alprazolam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آلپرازولام",
+    "en": "Alprazolam"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بنزودیازپین",
+    "en": "Benzodiazepine"
+  },
+  "brands": [
+    {
+      "name": "Xanax",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xanax",
+    "زاناکس",
+    "آلپرازولام"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.25 mg tablet",
+      "concentration": {
+        "amount": 0.25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "gad",
+      "disease": "gad",
+      "label": {
+        "fa": "اضطراب فراگیر — بزرگسال: ۰٫۲۵ تا ۰٫۵ mg سه بار در روز",
+        "en": "GAD — adults: 0.25–0.5 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.25,
+        "perDoseMax": 0.5,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4,
+        "refs": [
+          {
+            "source": "fda-xanax",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تنظیم هر ۳ تا ۴ روز؛ قطع تدریجی (حداکثر ۰٫۵ mg هر ۳ روز).",
+            "en": "Adjust every 3–4 days; taper gradually (≤0.5 mg every 3 days)."
+          },
+          "refs": [
+            {
+              "source": "fda-xanax",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-xanax",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "panic",
+      "disease": "panic-disorder",
+      "label": {
+        "fa": "پانیک — بزرگسال: ۰٫۵ mg سه بار در روز",
+        "en": "Panic disorder — adults: 0.5 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش هر ۳ تا ۴ روز حداکثر ۱ mg/day؛ در مطالعات ۱ تا ۱۰ mg/day.",
+            "en": "Increase every 3–4 days by ≤1 mg/day; studies used 1–10 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-xanax",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بنزودیازپین‌ها؛ مهارکننده‌های قوی CYP3A (کتوکونازول، ایتراکونازول).",
+        "en": "Hypersensitivity to benzodiazepines; strong CYP3A inhibitors (ketoconazole, itraconazole)."
+      },
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "gad",
+      "formulation": "tab-0-25",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.25,
+        "upperPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "panic",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "N05BA12"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00040",
+        "en": "ALPRAZOLAM 0.5MG TAB",
+        "fa": "قرص آلپرازولام ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "01382",
+        "en": "ALPRAZOLAM 1MG TAB",
+        "fa": "قرص آلپرازولام ۱ میلی‌گرم"
+      },
+      {
+        "code": "52892",
+        "en": "ALPRAZOLAM 2MG TAB",
+        "fa": "قرص آلپرازول ۲ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1223/Alprazolam",
+        "url": "https://www.darooyab.ir/G-1223/Alprazolam"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=018276",
+      "label": "NDA018276"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bb5cf72e-3a41-41a8-9a38-80f974eca33f",
+      "label": "FDA Xanax"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a684001.html",
+      "label": "Alprazolam"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05BA12",
+      "label": "N05BA12"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1223/Alprazolam",
+      "label": "Alprazolam"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-xanax",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA018276"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Neonates born to mothers using benzodiazepines late in pregnancy have been reported to experience symptoms of sedation and/or neonatal withdrawal [see Warnings and Precautions (5.8) and Clinical Considerations) ].",
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions, including sedation and withdrawal symptoms in breastfed infants, advise patients that breastfeeding is not recommended during treatment with XANAX.",
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of XANAX have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "XANAX-treated geriatric patients had higher plasma concentrations of alprazolam (due to reduced clearance) compared to younger adult patients receiving the same doses.",
+      "refs": [
+        {
+          "source": "fda-xanax",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

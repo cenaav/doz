@@ -1,0 +1,285 @@
+{
+  "id": "norethindrone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نورتیندرون استات",
+    "en": "Norethindrone acetate"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "پروژستین",
+    "en": "Progestin"
+  },
+  "brands": [
+    {
+      "name": "Aygestin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aygestin",
+    "primolut n",
+    "پریمولوت",
+    "نورتیندرون",
+    "نورتیسترون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-norethindrone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "aub",
+      "disease": "abnormal-uterine-bleeding",
+      "label": {
+        "fa": "آمنوره ثانویه یا خونریزی غیرطبیعی رحم — ۲٫۵ تا ۱۰ mg روزانه ۵ تا ۱۰ روز",
+        "en": "Secondary amenorrhoea or abnormal uterine bleeding — 2.5–10 mg daily for 5–10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-norethindrone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 10
+      }
+    },
+    {
+      "id": "endo",
+      "disease": "endometriosis",
+      "label": {
+        "fa": "اندومتریوز — شروع ۵ mg روزانه ۲ هفته",
+        "en": "Endometriosis — start 5 mg daily for 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 5,
+          "increment": 2.5,
+          "incrementEveryDays": 14,
+          "targetMin": 15,
+          "targetMax": 15,
+          "max": 15
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-norethindrone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۲ هفته ۲٫۵ mg افزایش تا ۱۵ mg/day؛ این دوز ۶ تا ۹ ماه قابل ادامه است.",
+            "en": "Increase by 2.5 mg/day every 2 weeks to 15 mg/day; may continue 6–9 months."
+          },
+          "refs": [
+            {
+              "source": "fda-norethindrone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری؛ خونریزی واژینال تشخیص‌داده‌نشده؛ سرطان پستان؛ DVT/PE فعال یا سابقه (و سایر موارد).",
+        "en": "Pregnancy; undiagnosed vaginal bleeding; breast cancer; active or past DVT/PE (and others)."
+      },
+      "refs": [
+        {
+          "source": "fda-norethindrone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "aub",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 10
+      }
+    },
+    {
+      "regimen": "endo",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "G03DC02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11928",
+        "en": "NORETHISTERONE 350MG TAB",
+        "fa": "قرص نورتیسترون ۳۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3289/Norethisterone",
+        "url": "https://www.darooyab.ir/G-3289/Norethisterone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=091090",
+      "label": "ANDA091090"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0a94321-eb60-4aa6-a429-f0156f9f8e01",
+      "label": "FDA Norethindrone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601050.html",
+      "label": "Ethinyl Estradiol and Norethindrone (Oral Contraceptives)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604034.html",
+      "label": "Norethindrone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03DC02",
+      "label": "G03DC02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3289/Norethisterone",
+      "label": "Norethisterone"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-norethindrone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA091090"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "• Known or suspected pregnancy.",
+      "refs": [
+        {
+          "source": "fda-norethindrone",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when progestins are administered to a nursing woman. 7.",
+      "refs": [
+        {
+          "source": "fda-norethindrone",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Norethindrone acetate tablets are not indicated in children.",
+      "refs": [
+        {
+          "source": "fda-norethindrone",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    }
+  }
+}

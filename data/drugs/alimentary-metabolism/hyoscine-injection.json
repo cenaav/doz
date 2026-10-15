@@ -1,0 +1,273 @@
+{
+  "id": "hyoscine-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "هیوسین (آمپول بوسکوپان)",
+    "en": "Hyoscine butylbromide (injection)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ضداسپاسم آنتی‌کولینرژیک",
+    "en": "Antispasmodic"
+  },
+  "brands": [
+    {
+      "name": "Buscopan",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "buscopan ampoule",
+    "آمپول بوسکوپان",
+    "آمپول هیوسین",
+    "هیوسین آمپول",
+    "قولنج کلیوی"
+  ],
+  "formulations": [
+    {
+      "id": "amp-20",
+      "form": "injection",
+      "route": "im",
+      "label": "20 mg/1 mL ampoule",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "spasm",
+      "disease": "abdominal-cramps",
+      "label": {
+        "fa": "اسپاسم حاد گوارشی یا ادراری — ۲۰ mg عضلانی یا وریدی آهسته",
+        "en": "Acute GI/GU spasm — 20 mg IM or slow IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 100,
+        "refs": [
+          {
+            "source": "uk-smpc-buscopan-amp",
+            "section": "4.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز پس از نیم ساعت تکرار؛ حداکثر ۱۰۰ mg/day. تزریق وریدی آهسته (احتمال افت شدید فشار).",
+            "en": "Repeat after 30 min if needed; max 100 mg/day. Slow IV (risk of marked hypotension)."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-buscopan-amp",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "گلوکوم زاویه بسته؛ هیپرتروفی پروستات با احتباس؛ تنگی مکانیکی گوارش؛ ایلئوس؛ مگاکولون؛ تاکی‌کاردی؛ میاستنی گراویس؛ عضلانی در مصرف‌کنندگان ضدانعقاد.",
+        "en": "Narrow-angle glaucoma; prostatic hypertrophy with retention; mechanical GI stenosis; ileus; megacolon; tachycardia; myasthenia gravis; IM in anticoagulated patients."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای کودکان توصیه نمی‌شود.",
+        "en": "Not recommended for children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "spasm",
+      "formulation": "amp-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "A03BB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00653",
+        "en": "HYOSCINE-N-BUTYL BROMIDE 10MG SUPP",
+        "fa": "شیاف هیوسین–N–بوتیل بروماید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00654",
+        "en": "HYOSCINE-N-BUTYL BROMIDE 10MG TAB",
+        "fa": "قرص هیوسین–N–بوتیل بروماید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00655",
+        "en": "HYOSCINE-N-BUTYL BROMIDE 20MG/1ML AMP",
+        "fa": "آمپول هیوسین–N–بوتیل بروماید ۲۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00656",
+        "en": "HYOSCINE-N-BUTYL BROMIDE 7.5MG SUPP",
+        "fa": "شیاف هیوسین–N–بوتیل بروماید ۷٫۵ میلی‌گرم"
+      },
+      {
+        "code": "01989",
+        "en": "SCOPOLAMINE 1MG/72H PLASTER",
+        "fa": "چسب دارویی سکوپولامین ۱ میلی‌گرم / ۷۲ H"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-894/Hyoscine",
+        "url": "https://www.darooyab.ir/G-894/Hyoscine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A03BB01",
+      "label": "A03BB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-894/Hyoscine",
+      "label": "Hyoscine"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/890/smpc",
+      "label": "UK SmPC Buscopan amp."
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are limited data from the use of hyoscine butylbromide in pregnant women.",
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Use of Buscopan during breastfeeding is not recommended.",
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Paediatric population Not recommended for children.",
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "4.2"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly: No specific information on the use of this product in the elderly is available.",
+      "refs": [
+        {
+          "source": "uk-smpc-buscopan-amp",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

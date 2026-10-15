@@ -1,0 +1,472 @@
+{
+  "id": "omeprazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "امپرازول",
+    "en": "Omeprazole"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده پمپ پروتون",
+    "en": "Proton pump inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Prilosec",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "omeprazol",
+    "امپرازول",
+    "لوسک",
+    "losec",
+    "PPI"
+  ],
+  "formulations": [
+    {
+      "id": "cap-20",
+      "form": "capsule",
+      "route": "oral",
+      "label": "20 mg delayed-release capsule",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "gerd-child",
+      "disease": "gerd",
+      "label": {
+        "fa": "ریفلاکس علامتی — ۲ تا ۱۶ سال",
+        "en": "Symptomatic GERD — 2 to 16 years"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        },
+        "minWeightKg": 10
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 9.99,
+            "maxWeightKg": 19.99,
+            "perDose": 10,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 19.99,
+            "maxWeightKg": null,
+            "perDose": 20,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "2.2, Table 2"
+        },
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "8.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 28
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۱۰ تا کمتر از ۲۰ kg: ۱۰ mg؛ ۲۰ kg به بالا: ۲۰ mg؛ یک‌بار در روز قبل از غذا. کپسول ۲۰ mg برای دوز ۱۰ mg مناسب نیست.",
+            "en": "10 to <20 kg: 10 mg; ≥20 kg: 20 mg; once daily before meals. A 20 mg capsule cannot give 10 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-omeprazole-cap",
+              "section": "2.2, Table 2"
+            },
+            {
+              "source": "fda-omeprazole-cap",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ee-child",
+      "disease": "erosive-esophagitis",
+      "label": {
+        "fa": "ازوفاژیت فرسایشی — ۲ تا ۱۶ سال",
+        "en": "Erosive esophagitis — 2 to 16 years"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        },
+        "minWeightKg": 10
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 9.99,
+            "maxWeightKg": 19.99,
+            "perDose": 10,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 19.99,
+            "maxWeightKg": null,
+            "perDose": 20,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "2.2, Table 2"
+        },
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "8.4"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 56
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۱۰ تا کمتر از ۲۰ kg: ۱۰ mg؛ ۲۰ kg به بالا: ۲۰ mg؛ یک‌بار در روز قبل از غذا. کپسول ۲۰ mg برای دوز ۱۰ mg مناسب نیست.",
+            "en": "10 to <20 kg: 10 mg; ≥20 kg: 20 mg; once daily before meals. A 20 mg capsule cannot give 10 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-omeprazole-cap",
+              "section": "2.2, Table 2"
+            },
+            {
+              "source": "fda-omeprazole-cap",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gerd-adult",
+      "disease": "gerd",
+      "label": {
+        "fa": "بزرگسال — ریفلاکس علامتی: ۲۰ mg روزانه تا ۴ هفته",
+        "en": "Adults — symptomatic GERD: 20 mg daily up to 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 28
+      }
+    },
+    {
+      "id": "du-adult",
+      "disease": "peptic-ulcer-disease",
+      "label": {
+        "fa": "بزرگسال — زخم اثنی‌عشر فعال: ۲۰ mg روزانه، ۴ هفته",
+        "en": "Adults — active duodenal ulcer: 20 mg daily, 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 28
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به امپرازول یا بنزیمیدازول‌های جانشین‌شده؛ مصرف همزمان ریلپیویرین.",
+        "en": "Hypersensitivity to the formulation or substituted benzimidazoles; rilpivirine-containing products."
+      },
+      "refs": [
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "gerd-child",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 15
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "gerd-child",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "ee-child",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 20
+      }
+    },
+    {
+      "regimen": "gerd-adult",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20
+      }
+    },
+    {
+      "regimen": "du-adult",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "A02BC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00931",
+        "en": "OMEPRAZOLE 20MG CAP",
+        "fa": "کپسول امپرازول ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "07660",
+        "en": "OMEPRAZOLE 40MG CAP",
+        "fa": "کپسول امپرازول ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "51518",
+        "en": "OMEPRAZOLE POWDER, FOR SUSPENSION ORAL 20 mg",
+        "fa": "سوسپانسیون خوراکی امپرازول ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "52204",
+        "en": "OMEPRAZOLE (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 40 mg",
+        "fa": "پودر برای تهیه محلول تزریقی امپرازول (معادل سدیم) ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "53120",
+        "en": "OMEPRAZOLE / SODIUM BICARBONATE POWDER, FOR SUSPENSION ORAL 20 mg/1680 mg",
+        "fa": "سوسپانسیون خوراکی امپرازول / سدیم بیکربنات ۲۰ میلی‌گرم / ۱۶۸۰ میلی‌گرم"
+      },
+      {
+        "code": "53121",
+        "en": "OMEPRAZOLE / SODIUM BICARBONATE POWDER, FOR SUSPENSION ORAL 40 mg/1680 mg",
+        "fa": "سوسپانسیون خوراکی امپرازول / سدیم بیکربنات ۴۰ میلی‌گرم / ۱۶۸۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2621/Omeprazole",
+        "url": "https://www.darooyab.ir/G-2621/Omeprazole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078490",
+      "label": "ANDA078490"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5e3a37a-f6e3-43d4-a8a9-54db6c271908",
+      "label": "FDA Omeprazole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a693050.html",
+      "label": "Omeprazole"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A02BC01",
+      "label": "A02BC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2621/Omeprazole",
+      "label": "Omeprazole"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-omeprazole-cap",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078490"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies with omeprazole in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Limited data suggest omeprazole may be present in human milk.",
+      "refs": [
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and effectiveness of omeprazole have been established in pediatric patients 2 to 16 years for the treatment of symptomatic GERD, treatment of EE due to acid-mediated GERD, and maintenance of healing of EE due to acid-mediated GERD.",
+      "refs": [
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "However, no dosage adjustment is necessary in the elderly [see Clinical Pharmacology (12.3) ].",
+      "refs": [
+        {
+          "source": "fda-omeprazole-cap",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "id": "griseofulvin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گریزئوفولوین",
+    "en": "Griseofulvin"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "ضدقارچ خوراکی",
+    "en": "Oral antifungal"
+  },
+  "brands": [
+    {
+      "name": "Grifulvin V",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "grifulvin",
+    "گریزوفولوین",
+    "گریزئوفولوین",
+    "کچلی"
+  ],
+  "formulations": [
+    {
+      "id": "susp-125",
+      "form": "suspension",
+      "route": "oral",
+      "label": "125 mg/5 mL suspension (microsize)",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-griseofulvin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "tinea",
+      "label": {
+        "fa": "عفونت قارچی پوست، مو و ناخن — بزرگسال: ۵۰۰ mg در روز",
+        "en": "Tinea of skin, hair or nails — adults: 500 mg per day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-griseofulvin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۱۲۵ mg چهار بار یا ۲۵۰ mg دو بار. ضایعات گسترده: شروع ۰٫۷۵ تا ۱ g/day. مدت: کچلی سر ۴ تا ۶ هفته، بدن ۲ تا ۴ هفته، پا ۴ تا ۸ هفته.",
+            "en": "Or 125 mg four times or 250 mg twice daily. Widespread lesions: start 0.75–1 g/day. Duration: tinea capitis 4–6 weeks, corporis 2–4 weeks, pedis 4–8 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-griseofulvin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "tinea-capitis",
+      "label": {
+        "fa": "کچلی سر و قارچ پوست — بالای ۲ سال: ۱۰ mg/kg/day",
+        "en": "Tinea capitis and skin tinea — >2 y: 10 mg/kg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-griseofulvin",
+          "section": "Dosage and Administration"
+        },
+        {
+          "source": "fda-griseofulvin",
+          "section": "Pediatric Use"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 42
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بی‌خطری بالای ۱۰ mg/kg/day در کودکان ثابت نشده.",
+            "en": "Safety above 10 mg/kg/day in children not established."
+          },
+          "refs": [
+            {
+              "source": "fda-griseofulvin",
+              "section": "Pediatric Use"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "پورفیری؛ نارسایی کبد؛ حساسیت؛ بارداری یا احتمال بارداری حین درمان.",
+        "en": "Porphyria; hepatocellular failure; hypersensitivity; pregnancy or possible pregnancy during treatment."
+      },
+      "refs": [
+        {
+          "source": "fda-griseofulvin",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "۲ سال و کمتر ثابت نشده.",
+        "en": "Not established at 2 years and younger."
+      },
+      "refs": [
+        {
+          "source": "fda-griseofulvin",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "susp-125",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500,
+        "mlPerDose": 20
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "susp-125",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 8
+      }
+    }
+  ],
+  "atc": [
+    "D01BA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00613",
+        "en": "GRISEOFULVIN 125MG TAB",
+        "fa": "قرص گریسوفولوین ۱۲۵ میلی‌گرم"
+      },
+      {
+        "code": "01953",
+        "en": "GRISEOFULVIN 500MG TAB",
+        "fa": "قرص گریسوفولوین ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-721/Griseofulvin",
+        "url": "https://www.darooyab.ir/G-721/Griseofulvin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=065394",
+      "label": "ANDA065394"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=af318d5d-cc39-4a63-a590-b87c50f2694f",
+      "label": "FDA Griseofulvin susp"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682295.html",
+      "label": "Griseofulvin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=D01BA01",
+      "label": "D01BA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-721/Griseofulvin",
+      "label": "Griseofulvin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-griseofulvin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA065394"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Two published cases of conjoined twins have been reported in patients taking griseofulvin during the first trimester of pregnancy, therefore, griseofulvin is contraindicated in women who are or may become pregnant during treatment.",
+      "refs": [
+        {
+          "source": "fda-griseofulvin",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "… y shown for griseofulvin in animal studies (see PRECAUTIONS , Carcinogenesis, Mutagenesis, Impairment of Fertility ), a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-griseofulvin",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients 2 years of age and younger have not been established.",
+      "refs": [
+        {
+          "source": "fda-griseofulvin",
+          "section": "Pediatric Use:"
+        }
+      ]
+    }
+  }
+}

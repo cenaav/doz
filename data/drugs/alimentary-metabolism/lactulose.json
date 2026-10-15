@@ -1,0 +1,308 @@
+{
+  "id": "lactulose",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لاکتولوز",
+    "en": "Lactulose"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ملین اسموتیک",
+    "en": "Osmotic laxative"
+  },
+  "brands": [],
+  "synonyms": [
+    "لاکتولوز شربت"
+  ],
+  "formulations": [
+    {
+      "id": "sol-10g-15",
+      "form": "solution",
+      "route": "oral",
+      "label": "10 g / 15 mL",
+      "concentration": {
+        "amount": 10,
+        "unit": "g",
+        "perVolumeMl": 15
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pediatric",
+      "disease": "constipation",
+      "label": {
+        "fa": "کودکان",
+        "en": "Pediatric patients"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان در این برچسب ثابت نشده است؛ دوز محاسبه نمی‌شود.",
+          "en": "Safety and effectiveness in pediatric patients have not been established in this label; no dose is calculated."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "constipation",
+      "label": {
+        "fa": "بزرگسالان — ۱۵ mL روزانه",
+        "en": "Adults — 15 mL daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 60,
+        "refs": [
+          {
+            "source": "fda-lactulose",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز معمول ۱۵ تا ۳۰ mL روزانه؛ در صورت نیاز تا ۶۰ mL روزانه. ۲۴ تا ۴۸ ساعت ممکن است تا اجابت مزاج طول بکشد.",
+            "en": "Usual dose 15–30 mL daily; may increase to 60 mL daily if necessary. 24–48 h may be required to produce a bowel movement."
+          },
+          "refs": [
+            {
+              "source": "fda-lactulose",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "low-galactose-diet",
+      "severity": "block",
+      "text": {
+        "fa": "بیمارانی که رژیم کم‌گالاکتوز نیاز دارند.",
+        "en": "Patients who require a low-galactose diet."
+      },
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "sol-10g-15",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15,
+        "mlPerDose": 15
+      }
+    }
+  ],
+  "atc": [
+    "A06AD11"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01565",
+        "en": "LACTULOSE 10 G SACHET",
+        "fa": "ساشه لاکتولوز ۱۰ گرم"
+      },
+      {
+        "code": "19734",
+        "en": "LACTULOSE 10G/15ML 120ML SYRUP",
+        "fa": "شربت لاکتولوز ۱۰ گرم / ۱۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "00731",
+        "en": "LACTULOSE 10G/15ML 240ML SYRUP",
+        "fa": "شربت لاکتولوز ۱۰ گرم / ۱۵ میلی‌لیتر ۲۴۰ میلی‌لیتر"
+      },
+      {
+        "code": "11540",
+        "en": "LACTULOSE 10G/15ML SUSP",
+        "fa": "سوسپانسیون لاکتولوز ۱۰ گرم / ۱۵ میلی‌لیتر"
+      },
+      {
+        "code": "11474",
+        "en": "LACTULOSE 300ML SYRUP",
+        "fa": "شربت لاکتولوز ۳۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52072",
+        "en": "LACTULOSE SYRUP ORAL 10 g/15mL 100 mL",
+        "fa": "شربت لاکتولوز ۱۰ گرم / ۱۵ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52075",
+        "en": "LACTULOSE SYRUP ORAL 10 g/15mL 250 mL",
+        "fa": "شربت لاکتولوز ۱۰ گرم / ۱۵ میلی‌لیتر ۲۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "52081",
+        "en": "LACTULOSE SYRUP ORAL 10 g/15mL 200 mL",
+        "fa": "شربت لاکتولوز ۱۰ گرم / ۱۵ میلی‌لیتر ۲۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "51935",
+        "en": "LACTULOSE SYRUP ORAL 10 g/15mL 15 mL",
+        "fa": "شربت لاکتولوز ۱۰ گرم / ۱۵ میلی‌لیتر ۱۵ میلی‌لیتر"
+      },
+      {
+        "code": "52217",
+        "en": "LACTULOSE SYRUP ORAL 10 g/15mL 300 mL",
+        "fa": "شربت لاکتولوز ۱۰ گرم / ۱۵ میلی‌لیتر ۳۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52150",
+        "en": "LACTULOSE SYRUP ORAL 10 g/15mL 500 mL",
+        "fa": "شربت لاکتولوز ۱۰ گرم / ۱۵ میلی‌لیتر ۵۰۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2598/Lactulose",
+        "url": "https://www.darooyab.ir/G-2598/Lactulose"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=090503",
+      "label": "ANDA090503"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b79d0d6-b9e3-436e-bab7-01451b6f45cd",
+      "label": "FDA Lactulose"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682338.html",
+      "label": "Lactulose"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A06AD11",
+      "label": "A06AD11"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2598/Lactulose",
+      "label": "Lactulose"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-lactulose",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA090503"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy category B.",
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when lactulose solution is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

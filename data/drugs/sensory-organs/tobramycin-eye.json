@@ -1,0 +1,326 @@
+{
+  "id": "tobramycin-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی توبرامایسین",
+    "en": "Tobramycin eye drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "آنتی‌بیوتیک آمینوگلیکوزید موضعی چشم",
+    "en": "Topical ophthalmic aminoglycoside"
+  },
+  "brands": [
+    {
+      "name": "Tobrex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tobrex",
+    "توبرکس",
+    "توبرامایسین",
+    "قطره چشم",
+    "عفونت چشم"
+  ],
+  "formulations": [
+    {
+      "id": "sol-0-3",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.3% (3 mg/mL) eye drops",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tobramycin-eye",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mild",
+      "disease": "bacterial-conjunctivitis",
+      "label": {
+        "fa": "عفونت خفیف تا متوسط چشم: ۱ تا ۲ قطره هر ۴ ساعت",
+        "en": "Mild–moderate eye infection: 1–2 drops every 4 hours"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "perDoseMax": 2,
+        "dosesPerDay": 6
+      },
+      "refs": [
+        {
+          "source": "fda-tobramycin-eye",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عفونت شدید: ۲ قطره هر ساعت تا بهبود، سپس کاهش تدریجی پیش از قطع.",
+            "en": "Severe infection: 2 drops hourly until improvement, then reduce before stopping."
+          },
+          "refs": [
+            {
+              "source": "fda-tobramycin-eye",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به هر یک از اجزا.",
+        "en": "Hypersensitivity to any component."
+      },
+      "refs": [
+        {
+          "source": "fda-tobramycin-eye",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-2m",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "بی‌خطری و اثربخشی زیر ۲ ماه ثابت نشده.",
+        "en": "Safety and effectiveness below 2 months not established."
+      },
+      "refs": [
+        {
+          "source": "fda-tobramycin-eye",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mild",
+      "formulation": "sol-0-3",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 1,
+        "upperPerDose": 2
+      }
+    },
+    {
+      "regimen": "mild",
+      "formulation": "sol-0-3",
+      "input": {
+        "ageYears": 0.1,
+        "weightKg": 4
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "S01AA12"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18882",
+        "en": "TOBRAMYCIN 0.3% OPH OINT",
+        "fa": "پماد توبرامایسین ۰٫۳ درصد"
+      },
+      {
+        "code": "13022",
+        "en": "TOBRAMYCIN 100MG/2ML  INJ",
+        "fa": "فرآورده تزریقی توبرامایسین ۱۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "02189",
+        "en": "TOBRAMYCIN 10MG/ML 2ML AMP",
+        "fa": "آمپول توبرامایسین ۱۰ میلی‌گرم / میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "21537",
+        "en": "TOBRAMYCIN 28MG INHALER",
+        "fa": "فرآورده استنشاقی توبرامایسین ۲۸ میلی‌گرم"
+      },
+      {
+        "code": "16775",
+        "en": "TOBRAMYCIN 300MG/4ML NEBULISATION SOLUTION",
+        "fa": "محلول توبرامایسین ۳۰۰ میلی‌گرم / ۴ میلی‌لیتر نبولایزیشن"
+      },
+      {
+        "code": "11619",
+        "en": "TOBRAMYCIN 300MG/5ML AMP",
+        "fa": "آمپول توبرامایسین ۳۰۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "19893",
+        "en": "TOBRAMYCIN 300MG/5ML NEBULISATION",
+        "fa": "توبرامایسین ۳۰۰ میلی‌گرم / ۵ میلی‌لیتر نبولایزیشن"
+      },
+      {
+        "code": "12781",
+        "en": "TOBRAMYCIN 40MG/1ML  INJ",
+        "fa": "فرآورده تزریقی توبرامایسین ۴۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01229",
+        "en": "TOBRAMYCIN 40MG/ML 2ML AMP",
+        "fa": "آمپول توبرامایسین ۴۰ میلی‌گرم / میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "06668",
+        "en": "TOBRAMYCIN 75MG/1.5ML AMP",
+        "fa": "آمپول توبرامایسین ۷۵ میلی‌گرم / ۱٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "12805",
+        "en": "TOBRAMYCIN 80MG/ML 2ML AMP",
+        "fa": "آمپول توبرامایسین ۸۰ میلی‌گرم / میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "51698",
+        "en": "TOBRAMYCIN SOLUTION RESPIRATORY 60 mg/1mL 5 mL",
+        "fa": "محلول توبرامایسین ۶۰ میلی‌گرم / ۱ میلی‌لیتر ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-557/Tobramycin",
+        "url": "https://www.darooyab.ir/G-557/Tobramycin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211847",
+      "label": "ANDA211847"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14c14f81-6b0a-4176-a5df-d0757cc3260d",
+      "label": "FDA Tobramycin eye"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01AA12",
+      "label": "S01AA12"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-557/Tobramycin",
+      "label": "Tobramycin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-tobramycin-eye",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA211847"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-tobramycin-eye",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because of the potential for adverse reactions in nursing infants from tobramycin ophthalmic solution, a decision should be made whether to discontinue nursing the infant or discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-tobramycin-eye",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Safety and effectiveness in pediatric patients below the age of 2 months has not been established.",
+      "refs": [
+        {
+          "source": "fda-tobramycin-eye",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness have been observed between elderly and younger patients.",
+      "refs": [
+        {
+          "source": "fda-tobramycin-eye",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

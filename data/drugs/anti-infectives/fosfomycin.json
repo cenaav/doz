@@ -1,0 +1,259 @@
+{
+  "id": "fosfomycin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فسفومایسین",
+    "en": "Fosfomycin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "آنتی‌بیوتیک ادراری",
+    "en": "Urinary antibacterial"
+  },
+  "brands": [
+    {
+      "name": "Monurol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "monurol",
+    "مونورال",
+    "فسفومایسین",
+    "فوسفومایسین",
+    "ساشه عفونت ادراری"
+  ],
+  "formulations": [
+    {
+      "id": "sachet-3g",
+      "form": "sachet",
+      "route": "oral",
+      "label": "3 g sachet (granules for oral solution)",
+      "concentration": {
+        "amount": 3,
+        "unit": "g",
+        "perUnit": "sachet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fosfomycin",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cystitis",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "سیستیت حاد بدون عارضه — زنان ۱۸ سال به بالا: یک ساشه ۳ g تک‌دوز",
+        "en": "Acute uncomplicated cystitis — women ≥18 y: one 3 g sachet, single dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "g",
+      "dose": {
+        "perDose": 3,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fosfomycin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دارو.",
+        "en": "Hypersensitivity to the drug."
+      },
+      "refs": [
+        {
+          "source": "fda-fosfomycin",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "۱۲ سال و کمتر ثابت نشده.",
+        "en": "Not established in children 12 and under."
+      },
+      "refs": [
+        {
+          "source": "fda-fosfomycin",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cystitis",
+      "formulation": "sachet-3g",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 3,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J01XX01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "50241",
+        "en": "FOSFOMYCIN 3 g GRANULE, FOR SUSPENSION",
+        "fa": "گرانول فوسفومایسین ۳ گرم"
+      },
+      {
+        "code": "24205",
+        "en": "FOSFOMYCIN (AS TROMETAMOL) GRANULE, FOR SOLUTION ORAL 3 g",
+        "fa": "محلول خوراکی فوسفومایسین (معادل ترومتامول) ۳ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-401/Fosfomycin",
+        "url": "https://www.darooyab.ir/G-401/Fosfomycin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210426",
+      "label": "ANDA210426"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36bca22f-49ea-42ce-926b-035c42eb6038",
+      "label": "FDA Fosfomycin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625118.html",
+      "label": "Fosfomycin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01XX01",
+      "label": "J01XX01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-401/Fosfomycin",
+      "label": "Fosfomycin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-fosfomycin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA210426"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-fosfomycin",
+          "section": "PREGNANCY"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from fosfomycin tromethamine, a decision should be made whether to discontinue nursing or to not administer the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-fosfomycin",
+          "section": "NURSING MOTHERS"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Safety and effectiveness in children age 12 years and under have not been established in adequate and well-controlled studies.",
+      "refs": [
+        {
+          "source": "fda-fosfomycin",
+          "section": "PEDIATRIC USE"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-fosfomycin",
+          "section": "GERIATRIC USE"
+        }
+      ]
+    }
+  }
+}

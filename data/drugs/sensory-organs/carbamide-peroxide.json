@@ -1,0 +1,172 @@
+{
+  "id": "carbamide-peroxide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره کاربامید پراکساید (جرم گوش)",
+    "en": "Carbamide peroxide ear drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "نرم‌کننده جرم گوش",
+    "en": "Earwax softener"
+  },
+  "brands": [
+    {
+      "name": "Debrox",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "debrox",
+    "دبروکس",
+    "قطره جرم گوش",
+    "کاربامید پراکساید"
+  ],
+  "formulations": [
+    {
+      "id": "drops-6-5",
+      "form": "drops",
+      "route": "topical",
+      "label": "6.5% ear drops",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-debrox",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "wax",
+      "disease": "earwax",
+      "label": {
+        "fa": "جرم گوش — بالای ۱۲ سال: ۵ تا ۱۰ قطره دو بار در روز تا ۴ روز",
+        "en": "Earwax — >12 y: 5–10 drops twice daily for up to 4 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-debrox",
+          "section": "Directions"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 4
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "سر کج، چند دقیقه در گوش بماند؛ نوک قطره‌چکان وارد مجرا نشود.",
+            "en": "Tilt head, keep in ear for several minutes; applicator tip must not enter the ear canal."
+          },
+          "refs": [
+            {
+              "source": "fda-debrox",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ear",
+      "severity": "block",
+      "text": {
+        "fa": "با ترشح، درد یا آسیب و پارگی پرده گوش، یا سرگیجه، پیش از مصرف با پزشک.",
+        "en": "Ear drainage, pain, injury or perforated eardrum, or dizziness: ask a doctor first."
+      },
+      "refs": [
+        {
+          "source": "fda-debrox",
+          "section": "Ask a doctor before use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "wax",
+      "formulation": "drops-6-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 10
+      }
+    }
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00209",
+        "en": "CARBAMIDE PEROXIDE 10% 15ML MOUTH WASH",
+        "fa": "دهان‌شویه کاربامید پراکساید ۱۰ درصد ۱۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2479/Carbamide-Peroxide",
+        "url": "https://www.darooyab.ir/G-2479/Carbamide-Peroxide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13a161c6-bc06-4315-9cc9-fe49d046cd6f",
+      "label": "FDA Carbamide peroxide"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2479/Carbamide-Peroxide",
+      "label": "Carbamide-Peroxide"
+    }
+  ],
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-debrox",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M014"
+  }
+}

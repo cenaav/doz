@@ -1,0 +1,269 @@
+{
+  "id": "metoclopramide-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متوکلوپرامید (آمپول)",
+    "en": "Metoclopramide (injection)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ضدتهوع پروکینتیک",
+    "en": "Prokinetic antiemetic"
+  },
+  "brands": [
+    {
+      "name": "Reglan injection",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "آمپول متوکلوپرامید",
+    "plasil",
+    "پلاسیل",
+    "reglan"
+  ],
+  "formulations": [
+    {
+      "id": "inj-5",
+      "form": "injection",
+      "route": "im",
+      "label": "10 mg/2 mL (5 mg/mL)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ponv",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "پیشگیری از تهوع پس از جراحی — ۱۰ یا ۲۰ mg عضلانی نزدیک پایان جراحی",
+        "en": "Postoperative nausea prevention — 10 or 20 mg IM near end of surgery"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه دیسکینزی تاردیو یا واکنش دیستونیک؛ خونریزی، انسداد یا سوراخ گوارشی؛ فئوکروموسیتوم؛ صرع.",
+        "en": "History of tardive dyskinesia or dystonic reaction; GI haemorrhage, obstruction or perforation; pheochromocytoma; epilepsy."
+      },
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: دیسکینزی تاردیو؛ بیش از ۱۲ هفته مصرف نشود.",
+        "en": "Boxed warning: tardive dyskinesia; avoid use longer than 12 weeks."
+      },
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ponv",
+      "formulation": "inj-5",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 2,
+        "upperPerDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "A03FA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18780",
+        "en": "METOCLOPRAMIDE 10MG SOFT GEL CAP",
+        "fa": "کپسول نرم متوکلوپرامید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00841",
+        "en": "METOCLOPRAMIDE 10MG TAB",
+        "fa": "قرص متوکلوپرامید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00839",
+        "en": "METOCLOPRAMIDE 10MG/2ML AMP",
+        "fa": "آمپول متوکلوپرامید ۱۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "00840",
+        "en": "METOCLOPRAMIDE 4MG/ML 15ML ORAL DROP",
+        "fa": "قطره خوراکی متوکلوپرامید ۴ میلی‌گرم / میلی‌لیتر ۱۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2614/Metoclopramide",
+        "url": "https://www.darooyab.ir/G-2614/Metoclopramide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217072",
+      "label": "ANDA217072"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f6efdc63-a9df-4bbd-acf8-75fc9d1b0347",
+      "label": "FDA Metoclopramide inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a684035.html",
+      "label": "Metoclopramide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601158.html",
+      "label": "Metoclopramide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A03FA01",
+      "label": "A03FA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2614/Metoclopramide",
+      "label": "Metoclopramide"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-metoclopramideinj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA217072"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Metoclopramide is excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and effectiveness of metoclopramide injection has been established as a single-dose to facilitate small bowel intubation in pediatric patients in whom the tube does not pass the pylorus with conventional maneuvers.",
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "For these reasons, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased renal function, concomitant disease, or other drug therapy in the elderly (see DOSAGE AND ADMINISTRATION - Use in Patients with Renal or …",
+      "refs": [
+        {
+          "source": "fda-metoclopramideinj",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

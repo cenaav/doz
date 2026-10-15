@@ -1,0 +1,381 @@
+{
+  "id": "escitalopram",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اس‌سیتالوپرام",
+    "en": "Escitalopram"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "SSRI",
+    "en": "SSRI"
+  },
+  "brands": [
+    {
+      "name": "Lexapro",
+      "market": "US"
+    },
+    {
+      "name": "Cipralex",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "lexapro",
+    "سیپرالکس",
+    "cipralex",
+    "اسیتالوپرام",
+    "اس سیتالوپرام"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-escitalopram",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-escitalopram",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-escitalopram",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd-12plus",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی اساسی — ۱۲ سال به بالا: ۱۰ mg روزانه (حداکثر ۲۰)",
+        "en": "MDD — ≥12 years: 10 mg daily (max 20)"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 10,
+          "increment": 10,
+          "incrementEveryDays": 21,
+          "targetMin": 10,
+          "targetMax": 10,
+          "max": 20
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-lexapro",
+          "section": "Highlights — Dosage table"
+        },
+        {
+          "source": "fda-escitalopram",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-escitalopram",
+          "section": "8.4"
+        }
+      ]
+    },
+    {
+      "id": "gad-7plus",
+      "disease": "gad",
+      "label": {
+        "fa": "اضطراب فراگیر — ۷ سال به بالا: ۱۰ mg روزانه (حداکثر ۲۰)",
+        "en": "GAD — ≥7 years: 10 mg daily (max 20)"
+      },
+      "population": {
+        "minAge": {
+          "value": 7,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 10,
+          "increment": 10,
+          "incrementEveryDays": 14,
+          "targetMin": 10,
+          "targetMax": 10,
+          "max": 20
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-lexapro",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-escitalopram",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش به ۲۰ mg با فاصله حداقل ۲ هفته (کودکان) یا ۱ هفته (بزرگسالان).",
+            "en": "Increase to 20 mg after at least 2 weeks (children) or 1 week (adults)."
+          },
+          "refs": [
+            {
+              "source": "fda-lexapro",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "MAOI (شامل لینزولید یا متیلن بلو وریدی) یا تا ۱۴ روز پس از قطع.",
+        "en": "MAOI (incl. linezolid or IV methylene blue) or within 14 days."
+      },
+      "refs": [
+        {
+          "source": "fda-escitalopram",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای (کلاس SSRI): افکار و رفتار خودکشی در کودکان و جوانان؛ پایش دقیق.",
+        "en": "Boxed warning (antidepressants): suicidal thoughts and behaviors in pediatric and young adult patients; monitor closely."
+      },
+      "refs": [
+        {
+          "source": "fda-lexapro",
+          "section": "WARNING: SUICIDAL THOUGHTS AND BEHAVIORS"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd-12plus",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "gad-7plus",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 9,
+        "weightKg": 28
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "N06AB10"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08968",
+        "en": "ESCITALOPRAM 10MG TAB",
+        "fa": "قرص اس‌سیتالوپرام ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "06484",
+        "en": "ESCITALOPRAM 20MG TAB",
+        "fa": "قرص اس‌سیتالوپرام ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "08455",
+        "en": "ESCITALOPRAM 5MG TAB",
+        "fa": "قرص اس‌سیتالوپرام ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-583/Escitalopram",
+        "url": "https://www.darooyab.ir/G-583/Escitalopram"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078777",
+      "label": "ANDA078777"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=253e8d6c-0c6a-4fa4-83fc-5cfbf4b08c0a",
+      "label": "FDA Escitalopram"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13bb8267-1cab-43e5-acae-55a4d957630a",
+      "label": "FDA Lexapro"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603005.html",
+      "label": "Escitalopram"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AB10",
+      "label": "N06AB10"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-583/Escitalopram",
+      "label": "Escitalopram"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-escitalopram",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078777"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on data from published observational studies, exposure to SSRIs, particularly in the month before delivery, has been associated with a less than 2-fold increase in the risk of postpartum hemorrhage [see Warnings and Precautions (5.7) and Clinical Considerations] .",
+      "refs": [
+        {
+          "source": "fda-escitalopram",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from the published literature report the presence of escitalopram and desmethylescitalopram in human milk (see Data ).",
+      "refs": [
+        {
+          "source": "fda-escitalopram",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Antidepressants increased the risk of suicidal thoughts and behaviors in pediatric and young adult patients in short-term studies.",
+      "refs": [
+        {
+          "source": "fda-escitalopram",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… significant hyponatremia in elderly patients, who may be at greater risk for this adverse reaction [see Warnings and Precautions ( 5.6 )].",
+      "refs": [
+        {
+          "source": "fda-escitalopram",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

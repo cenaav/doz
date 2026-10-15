@@ -1,0 +1,262 @@
+{
+  "id": "senna",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سنا (سنوزید)",
+    "en": "Senna (sennosides)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ملین محرک",
+    "en": "Stimulant laxative"
+  },
+  "brands": [
+    {
+      "name": "Senokot",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "senokot",
+    "senna",
+    "سنا",
+    "سنوزید",
+    "سناگل",
+    "ملین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-8-6",
+      "form": "tablet",
+      "route": "oral",
+      "label": "8.6 mg sennosides tablet",
+      "concentration": {
+        "amount": 8.6,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-senna",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "senna",
+      "disease": "constipation",
+      "label": {
+        "fa": "یبوست — بر اساس سن (۲ سال به بالا)، ترجیحاً هنگام خواب",
+        "en": "Constipation — by age (≥2 y), preferably at bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 4.3,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 8.6,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 17.2,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-senna",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز شروع: ۲ تا ۶ سال نیم قرص (حداکثر ۱ قرص دو بار)؛ ۶ تا ۱۲ سال یک قرص (حداکثر ۲ قرص دو بار)؛ ۱۲ سال به بالا دو قرص (حداکثر ۴ قرص دو بار). بیش از ۱ هفته بدون دستور پزشک نه.",
+            "en": "Starting dose: 2–6 y ½ tablet (max 1 tablet twice daily); 6–12 y 1 tablet (max 2 twice daily); ≥12 y 2 tablets (max 4 twice daily). Not more than 1 week without a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-senna",
+              "section": "Directions"
+            },
+            {
+              "source": "fda-senna",
+              "section": "Do not use"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال: با پزشک مشورت شود.",
+        "en": "Under 2 years: ask a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-senna",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "senna",
+      "formulation": "tab-8-6",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 4.3,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "senna",
+      "formulation": "tab-8-6",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 17.2,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "A06AB06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4986/Cassia-angustifolia",
+        "url": "https://www.darooyab.ir/G-4986/Cassia-angustifolia"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=509e1f54-3235-4606-b542-6a17f78cc354",
+      "label": "FDA Senna (OTC)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601112.html",
+      "label": "Senna"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A06AB06",
+      "label": "A06AB06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4986/Cassia-angustifolia",
+      "label": "Cassia-angustifolia"
+    }
+  ],
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-senna",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M007"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-senna",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-senna",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  }
+}

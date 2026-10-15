@@ -1,0 +1,360 @@
+{
+  "id": "aspirin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آسپیرین",
+    "en": "Aspirin (acetylsalicylic acid)"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "NSAID / ضدپلاکت",
+    "en": "NSAID / antiplatelet"
+  },
+  "brands": [
+    {
+      "name": "Bayer",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ASA",
+    "acetylsalicylic acid",
+    "آسپرین",
+    "آسپیرین",
+    "استیل سالیسیلیک اسید",
+    "آ اس آ"
+  ],
+  "formulations": [
+    {
+      "id": "chew-81",
+      "form": "chewable-tablet",
+      "route": "oral",
+      "label": "81 mg chewable tablet",
+      "concentration": {
+        "amount": 81,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pain",
+      "disease": "pain",
+      "label": {
+        "fa": "درد — ۱۲ سال به بالا: ۴ تا ۸ قرص ۸۱ mg هر ۴ ساعت",
+        "en": "Pain — ≥12 y: 4–8 × 81 mg tablets every 4 hours"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 324,
+        "perDoseMax": 648,
+        "dosesPerDay": 6
+      },
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 3888,
+        "refs": [
+          {
+            "source": "fda-aspirin-81",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر ۴۸ قرص در ۲۴ ساعت مگر به دستور پزشک. با یک لیوان آب.",
+            "en": "Not more than 48 tablets in 24 h unless directed by a doctor. With a full glass of water."
+          },
+          "refs": [
+            {
+              "source": "fda-aspirin-81",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "antiplatelet",
+      "disease": "atherothrombotic-prevention",
+      "label": {
+        "fa": "دوز پایین ضدپلاکت",
+        "en": "Low-dose antiplatelet"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "مصرف ضدپلاکتی در برچسب OTC نیامده؛ فقط به تجویز پزشک.",
+          "en": "Antiplatelet use is not on this OTC label; only as prescribed by a physician."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال: با پزشک مشورت شود.",
+        "en": "Under 12 years: consult a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "reye",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 20,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "سندرم ری: کودکان و نوجوانانی که آبله‌مرغان یا علائم شبه‌آنفلوآنزا دارند یا در حال بهبودند نباید مصرف کنند.",
+        "en": "Reye's syndrome: children and teenagers who have or are recovering from chickenpox or flu-like symptoms should not use this product."
+      },
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pain",
+      "formulation": "chew-81",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 324,
+        "tabletsPerDoseRounded": 4,
+        "upperPerDose": 648
+      }
+    },
+    {
+      "regimen": "pain",
+      "formulation": "chew-81",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "B01AC06",
+    "N02BA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00106",
+        "en": "ASA 100MG CHEWABLE TAB",
+        "fa": "قرص جویدنی آسپرین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02023",
+        "en": "ASA 100MG FC TAB",
+        "fa": "قرص روکش‌دار آسپرین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00111",
+        "en": "ASA 325MG EC TAB",
+        "fa": "قرص انتریک‌کوتد آسپرین ۳۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00107",
+        "en": "ASA 325MG EFF TAB",
+        "fa": "قرص جوشان آسپرین ۳۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00108",
+        "en": "ASA 325MG SUPP",
+        "fa": "شیاف آسپرین ۳۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00109",
+        "en": "ASA 325MG TAB",
+        "fa": "قرص آسپرین ۳۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00112",
+        "en": "ASA 500MG MC TAB",
+        "fa": "قرص آسپرین ۵۰۰ میلی‌گرم مک"
+      },
+      {
+        "code": "12249",
+        "en": "ASA 75MG TAB",
+        "fa": "قرص آسپرین ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "01395",
+        "en": "ASA 80MG EC TAB",
+        "fa": "قرص انتریک‌کوتد آسپرین ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "00110",
+        "en": "ASA CODEINE TAB",
+        "fa": "قرص آسپرین کدئین"
+      },
+      {
+        "code": "50622",
+        "en": "ASA (ACETYLSALICYLIC ACID) TABLET, DELAYED RELEASE ORAL 81 mg",
+        "fa": "قرص انتریک‌کوتد آسپرین (آستیلسالیسیلیک اسید) ۸۱ میلی‌گرم"
+      },
+      {
+        "code": "52377",
+        "en": "ASA (ACETYLSALICYLIC ACID) TABLET ORAL 100 mg",
+        "fa": "قرص آسپرین (آستیلسالیسیلیک اسید) ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52622",
+        "en": "ASA / ASCORBIC ACID TABLET, EFFERVESCENT ORAL 400 mg/240 mg",
+        "fa": "قرص جوشان آسپرین / اسید اسکوربیک ۴۰۰ میلی‌گرم / ۲۴۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-18/Aspirin",
+        "url": "https://www.darooyab.ir/G-18/Aspirin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1d6552e8-4f89-411f-a352-8f7835851fc0",
+      "label": "FDA Aspirin 81 (OTC)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682878.html",
+      "label": "Aspirin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a621021.html",
+      "label": "Aspirin Rectal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC06",
+      "label": "B01AC06"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02BA01",
+      "label": "N02BA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-18/Aspirin",
+      "label": "Aspirin"
+    }
+  ],
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-aspirin-81",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M013"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "It is especially important not to use aspirin at 20 weeks or later in pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery.",
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  }
+}

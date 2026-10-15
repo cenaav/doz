@@ -1,0 +1,392 @@
+{
+  "id": "phenytoin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فنی‌توئین",
+    "en": "Phenytoin"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدتشنج هیدانتوئین",
+    "en": "Hydantoin anticonvulsant"
+  },
+  "brands": [
+    {
+      "name": "Dilantin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "dilantin",
+    "دیلانتین",
+    "فنی توئین",
+    "فنیتوئین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg extended-release capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-phenytoin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "susp-125",
+      "form": "suspension",
+      "route": "oral",
+      "label": "125 mg/5 mL oral suspension",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-phenytoin-susp",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع — بزرگسال: ۱۰۰ mg سه بار در روز",
+        "en": "Epilepsy — adults: 100 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-phenytoin",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-phenytoin-susp",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر با ۱۰۰ mg سه بار کنترل شد، می‌توان ۳۰۰ mg یک بار (فقط کپسول آهسته‌رهش). سطح سرمی ممکن است لازم باشد. سوسپانسیون: حداکثر ۲۵ mL/day.",
+            "en": "If controlled on 100 mg tid, 300 mg once daily may be considered (extended capsules only). Serum levels may be needed. Suspension: max 25 mL/day."
+          },
+          "refs": [
+            {
+              "source": "fda-phenytoin",
+              "section": "2"
+            },
+            {
+              "source": "fda-phenytoin-susp",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع — کودکان: ۵ mg/kg/day در ۲ یا ۳ نوبت",
+        "en": "Epilepsy — children: 5 mg/kg/day in 2 or 3 doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 5,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-phenytoin",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 300,
+        "refs": [
+          {
+            "source": "fda-phenytoin",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده ۴ تا ۸ mg/kg/day؛ حداکثر ۳۰۰ mg/day. بالای ۶ سال ممکن است حداقل دوز بزرگسال (۳۰۰) لازم باشد.",
+            "en": "Maintenance 4–8 mg/kg/day; max 300 mg/day. Over 6 years may need the minimum adult dose (300)."
+          },
+          "refs": [
+            {
+              "source": "fda-phenytoin",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-phenytoin",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فنی‌توئین یا سایر هیدانتوئین‌ها؛ سابقه هپاتوتوکسیسیتی حاد با فنی‌توئین؛ همراه دلاویردین.",
+        "en": "Hypersensitivity to phenytoin or other hydantoins; prior acute phenytoin hepatotoxicity; with delavirdine."
+      },
+      "refs": [
+        {
+          "source": "fda-phenytoin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "perDay": 300
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "susp-125",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 50,
+        "mlPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "N03AB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06202",
+        "en": "PHENYTOIN 100MG TAB",
+        "fa": "قرص فنی‌توئین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00994",
+        "en": "PHENYTOIN 125MG/5ML SUSP",
+        "fa": "سوسپانسیون فنی‌توئین ۱۲۵ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "06072",
+        "en": "PHENYTOIN 30MG/5ML 120ML SUSP",
+        "fa": "سوسپانسیون فنی‌توئین ۳۰ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "09960",
+        "en": "PHENYTOIN 30MG/5ML 500ML SUSP",
+        "fa": "سوسپانسیون فنی‌توئین ۳۰ میلی‌گرم / ۵ میلی‌لیتر ۵۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00997",
+        "en": "PHENYTOIN SODIUM 1% 30G CREAM",
+        "fa": "کرم فنی‌توئین سدیم ۱ درصد ۳۰ گرم"
+      },
+      {
+        "code": "00993",
+        "en": "PHENYTOIN SODIUM 100MG CAP",
+        "fa": "کپسول فنی‌توئین سدیم ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "20315",
+        "en": "PHENYTOIN SODIUM 100MG TAB",
+        "fa": "قرص فنی‌توئین سدیم ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00995",
+        "en": "PHENYTOIN SODIUM 250MG/5ML AMP",
+        "fa": "آمپول فنی‌توئین سدیم ۲۵۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "01637",
+        "en": "PHENYTOIN SODIUM 50MG CAP",
+        "fa": "کپسول فنی‌توئین سدیم ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52698",
+        "en": "PHENYTOIN SUSPENSION ORAL 30 mg/5mL 200 mL",
+        "fa": "سوسپانسیون خوراکی فنی‌توئین ۳۰ میلی‌گرم / ۵ میلی‌لیتر ۲۰۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-679/Phenytoin",
+        "url": "https://www.darooyab.ir/G-679/Phenytoin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=040684",
+      "label": "ANDA040684"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46d5c0d1-a97b-46d9-8cf4-994780673337",
+      "label": "FDA Phenytoin ER"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=093fd736-5971-47af-b4ef-08c1696cebe8",
+      "label": "FDA Phenytoin susp"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682022.html",
+      "label": "Phenytoin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a619062.html",
+      "label": "Phenytoin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AB02",
+      "label": "N03AB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-679/Phenytoin",
+      "label": "Phenytoin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-phenytoin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA040684"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Information on the registry can also be found at the website http://www.aedpregnancyregistry.org/ Risk Summary In humans, prenatal exposure to phenytoin may increase the risks for congenital malformations and other adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-phenytoin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Phenytoin is secreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-phenytoin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Initially, 5 mg/kg/day in two or three equally divided doses, with subsequent dosage individualized to a maximum of 300 mg daily.",
+      "refs": [
+        {
+          "source": "fda-phenytoin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Phenytoin clearance tends to decrease with increasing age [see Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-phenytoin",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

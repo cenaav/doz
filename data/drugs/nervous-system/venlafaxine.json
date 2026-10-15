@@ -1,0 +1,340 @@
+{
+  "id": "venlafaxine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ونلافاکسین",
+    "en": "Venlafaxine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "SNRI",
+    "en": "SNRI"
+  },
+  "brands": [
+    {
+      "name": "Effexor XR",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "effexor",
+    "افکسور",
+    "ونلافاکسین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-37-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "37.5 mg capsule",
+      "concentration": {
+        "amount": 37.5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-venlafaxine-xr",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-75",
+      "form": "capsule",
+      "route": "oral",
+      "label": "75 mg capsule",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-venlafaxine-xr",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-150",
+      "form": "capsule",
+      "route": "oral",
+      "label": "150 mg capsule",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-venlafaxine-xr",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی — بزرگسال: ۷۵ mg روزانه",
+        "en": "MDD — adults: 75 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 75,
+          "increment": 75,
+          "incrementEveryDays": 4,
+          "targetMin": 75,
+          "targetMax": 225,
+          "max": 225
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-venlafaxine-xr",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "برخی بیماران: ۳۷٫۵ mg به مدت ۴ تا ۷ روز سپس ۷۵. همراه غذا؛ کپسول باز نشود.",
+            "en": "Some patients: 37.5 mg for 4–7 days then 75. With food; do not open capsule."
+          },
+          "refs": [
+            {
+              "source": "fda-venlafaxine-xr",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-venlafaxine-xr",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "MAOI (شامل لینزولید یا متیلن بلو وریدی) یا تا ۱۴ روز پس از قطع.",
+        "en": "MAOI (incl. linezolid or IV methylene blue) or within 14 days."
+      },
+      "refs": [
+        {
+          "source": "fda-venlafaxine-xr",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd",
+      "formulation": "cap-75",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 75
+      }
+    }
+  ],
+  "atc": [
+    "N06AX16"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09557",
+        "en": "VENLAFAXINE 100MCG TAB",
+        "fa": "قرص ونلافاکسین ۱۰۰ میکروگرم"
+      },
+      {
+        "code": "05154",
+        "en": "VENLAFAXINE 150MG EXTENDED RELEASE CAP",
+        "fa": "کپسول آهسته‌رهش ونلافاکسین ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "09713",
+        "en": "VENLAFAXINE 150MG TAB",
+        "fa": "قرص ونلافاکسین ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "05791",
+        "en": "VENLAFAXINE 37.5MG CAP",
+        "fa": "کپسول ونلافاکسین ۳۷٫۵ میلی‌گرم"
+      },
+      {
+        "code": "16035",
+        "en": "VENLAFAXINE 37.5MG EXTENDED RELEASE CAP",
+        "fa": "کپسول آهسته‌رهش ونلافاکسین ۳۷٫۵ میلی‌گرم"
+      },
+      {
+        "code": "07932",
+        "en": "VENLAFAXINE 37.5MG TAB",
+        "fa": "قرص ونلافاکسین ۳۷٫۵ میلی‌گرم"
+      },
+      {
+        "code": "14404",
+        "en": "VENLAFAXINE 50MG TAB",
+        "fa": "قرص ونلافاکسین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "05155",
+        "en": "VENLAFAXINE 75MG CAP",
+        "fa": "کپسول ونلافاکسین ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "13873",
+        "en": "VENLAFAXINE 75MG EXTENDED RELEASE CAP",
+        "fa": "کپسول آهسته‌رهش ونلافاکسین ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "06631",
+        "en": "VENLAFAXINE 75MG TAB",
+        "fa": "قرص ونلافاکسین ۷۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-617/Venlafaxine",
+        "url": "https://www.darooyab.ir/G-617/Venlafaxine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=200834",
+      "label": "ANDA200834"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7588ffdc-034d-4baf-9889-9a0ded265be5",
+      "label": "FDA Venlafaxine XR"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a694020.html",
+      "label": "Venlafaxine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AX16",
+      "label": "N06AX16"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-617/Venlafaxine",
+      "label": "Venlafaxine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-venlafaxine-xr",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA200834"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on data from published observational studies, exposure to SNRIs, particularly in the month before delivery, has been associated with a less than 2-fold increase in the risk of postpartum hemorrhage [see Warnings and Precautions (5.4) and Clinical Considerations] .",
+      "refs": [
+        {
+          "source": "fda-venlafaxine-xr",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from published literature report the presence of venlafaxine and its active metabolite in human milk and have not shown adverse reactions in breastfed infants (see Data) .",
+      "refs": [
+        {
+          "source": "fda-venlafaxine-xr",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Antidepressants increased the risk of suicidal thoughts and behavior in pediatric and young adult patients in short-term studies.",
+      "refs": [
+        {
+          "source": "fda-venlafaxine-xr",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… ly significant hyponatremia in elderly patients, who may be at greater risk for this adverse event [see Warnings and Precautions (5.9) ] .",
+      "refs": [
+        {
+          "source": "fda-venlafaxine-xr",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

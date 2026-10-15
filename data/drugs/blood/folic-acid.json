@@ -1,0 +1,334 @@
+{
+  "id": "folic-acid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اسید فولیک",
+    "en": "Folic acid"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "ویتامین B9",
+    "en": "Vitamin B9"
+  },
+  "brands": [
+    {
+      "name": "Folic acid 5 mg",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "folic acid",
+    "فولیک اسید",
+    "اسیدفولیک",
+    "folate",
+    "B9"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-folic-acid-5",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "megaloblastic",
+      "disease": "folate-deficiency",
+      "label": {
+        "fa": "کم‌خونی مگالوبلاستیک فولات — ۵ mg روزانه، ۴ ماه",
+        "en": "Folate-deficient megaloblastic anaemia — 5 mg daily for 4 months"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-folic-acid-5",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 120,
+        "max": 120
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "سوءجذب: تا ۱۵ mg/day (بزرگسال). کودک ۱ تا ۱۸ سال: همین دوز؛ نگهدارنده ۵ mg هر ۱ تا ۷ روز. پیش از درمان طولانی کمبود B12 رد شود.",
+            "en": "Malabsorption: up to 15 mg/day (adults). Child 1–18 y: same; maintenance 5 mg every 1–7 days. Exclude B12 deficiency before long-term use."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-folic-acid-5",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-folic-acid-5",
+              "section": "4.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ntd",
+      "disease": "folate-deficiency",
+      "label": {
+        "fa": "پیشگیری از نقص لوله عصبی (زنان پرخطر): ۵ mg روزانه",
+        "en": "Neural tube defect prevention (women at risk): 5 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-folic-acid-5",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "از پیش از بارداری تا پایان سه‌ماهه اول.",
+            "en": "From before conception through the first trimester."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-folic-acid-5",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialysis-child",
+      "disease": "folate-deficiency",
+      "label": {
+        "fa": "پیشگیری در دیالیز — ۱ تا ۱۲ سال: ۲۵۰ mcg/kg (حداکثر ۱۰ mg)",
+        "en": "Dialysis prophylaxis — 1–12 y: 250 mcg/kg (max 10 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.25,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-folic-acid-5",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "uk-smpc-folic-acid-5",
+            "section": "4.2"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "درمان طولانی در کمبود درمان‌نشده B12 (کم‌خونی پرنیشیوز)؛ به‌تنهایی در کمبود B12؛ بدخیمی (جز کم‌خونی مگالوبلاستیک فولات)؛ حساسیت.",
+        "en": "Long-term use with untreated B12 deficiency (pernicious anaemia); alone in B12 deficiency; malignancy (unless folate megaloblastic anaemia); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-folic-acid-5",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "megaloblastic",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "ntd",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "dialysis-child",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "B03BB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00562",
+        "en": "FOLIC ACID 1MG TAB",
+        "fa": "قرص اسید فولیک ۱ میلی‌گرم"
+      },
+      {
+        "code": "02133",
+        "en": "FOLIC ACID 50MG/10ML AMP",
+        "fa": "آمپول اسید فولیک ۵۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "01948",
+        "en": "FOLIC ACID 5MG TAB",
+        "fa": "قرص اسید فولیک ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2882/Folic-Acid",
+        "url": "https://www.darooyab.ir/G-2882/Folic-Acid"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682591.html",
+      "label": "Folic Acid"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B03BB01",
+      "label": "B03BB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2882/Folic-Acid",
+      "label": "Folic-Acid"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/14604/smpc",
+      "label": "UK SmPC Folic acid 5 mg"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are no known hazards to the use of folic acid in pregnancy, supplements of folic acid are often beneficial.",
+      "refs": [
+        {
+          "source": "uk-smpc-folic-acid-5",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Folic acid is actively excreted in human breast milk.",
+      "refs": [
+        {
+          "source": "uk-smpc-folic-acid-5",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Paediatric population For young children a more suitable dosage form should be used.",
+      "refs": [
+        {
+          "source": "uk-smpc-folic-acid-5",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

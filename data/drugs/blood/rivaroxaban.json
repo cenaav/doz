@@ -1,0 +1,408 @@
+{
+  "id": "rivaroxaban",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریواروکسابان",
+    "en": "Rivaroxaban"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "ضدانعقاد خوراکی (مهارکننده فاکتور Xa)",
+    "en": "Oral anticoagulant (factor Xa inhibitor)"
+  },
+  "brands": [
+    {
+      "name": "Xarelto",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xarelto",
+    "زارلتو",
+    "ریواروکسابان",
+    "DOAC"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "af",
+      "disease": "atrial-fibrillation",
+      "label": {
+        "fa": "AF غیردریچه‌ای — ۲۰ mg یک بار با شام",
+        "en": "Non-valvular AF — 20 mg once daily with the evening meal"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس کلیرانس کراتینین ۱۵ یا ۲۰ mg. قرص‌های ۱۵ و ۲۰ mg با غذا.",
+            "en": "15 or 20 mg depending on creatinine clearance. 15 and 20 mg tablets with food."
+          },
+          "refs": [
+            {
+              "source": "fda-xarelto",
+              "section": "2"
+            },
+            {
+              "source": "fda-xarelto",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vte",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "درمان DVT/PE — ۱۵ mg دو بار با غذا ۲۱ روز، سپس ۲۰ mg یک بار",
+        "en": "DVT/PE — 15 mg twice daily with food for 21 days, then 20 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 21,
+        "max": 21
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از ۲۱ روز ۲۰ mg یک بار با غذا. پیشگیری از عود پس از ۶ ماه: ۱۰ mg یک بار.",
+            "en": "After 21 days 20 mg once daily with food. Recurrence prevention after 6 months: 10 mg once daily."
+          },
+          "refs": [
+            {
+              "source": "fda-xarelto",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی پاتولوژیک فعال؛ حساسیت شدید.",
+        "en": "Active pathological bleeding; severe hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: قطع زودهنگام خطر ترومبوز را بالا می‌برد؛ هماتوم نخاعی با بی‌حسی نخاعی.",
+        "en": "Boxed warning: premature discontinuation raises thrombotic risk; spinal/epidural haematoma with neuraxial anaesthesia."
+      },
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "af",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 20
+      }
+    },
+    {
+      "regimen": "vte",
+      "formulation": "tab-15",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDay": 30
+      }
+    }
+  ],
+  "atc": [
+    "B01AF01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17597",
+        "en": "RIVAROXABAN 10MG TAB",
+        "fa": "قرص ریواروکسابان ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "22856",
+        "en": "RIVAROXABAN 20MG TAB",
+        "fa": "قرص ریواروکسابان ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "50005",
+        "en": "RIVAROXABAN 15MG TAB",
+        "fa": "قرص ریواروکسابان ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "52235",
+        "en": "RIVAROXABAN 2.5MG TAB",
+        "fa": "قرص ریواروکسابان ۲٫۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4798/Rivaroxaban",
+        "url": "https://www.darooyab.ir/G-4798/Rivaroxaban"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022406",
+      "label": "NDA022406"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+      "label": "FDA Xarelto"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611049.html",
+      "label": "Rivaroxaban"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF01",
+      "label": "B01AF01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4798/Rivaroxaban",
+      "label": "Rivaroxaban"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-xarelto",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022406"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The limited available data on XARELTO in pregnant women are insufficient to inform a drug-associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Rivaroxaban has been detected in human milk.",
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Therefore, XARELTO 2.5 mg tablets are not recommended for use in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of adult patients in clinical trials for the approved indications of XARELTO (N=64,943 patients), 64 percent were 65 years and over, with 27 percent 75 years and over.",
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Females of reproductive potential requiring anticoagulation should discuss pregnancy planning with their physician.",
+      "refs": [
+        {
+          "source": "fda-xarelto",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

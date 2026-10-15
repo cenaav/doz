@@ -1,0 +1,267 @@
+{
+  "id": "fexofenadine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فکسوفنادین",
+    "en": "Fexofenadine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل دوم",
+    "en": "Second-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Allegra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "فکسو",
+    "allegra",
+    "آلگرا",
+    "telfast",
+    "تلفاست"
+  ],
+  "formulations": [
+    {
+      "id": "susp-30-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "30 mg / 5 mL",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fexofenadine-otc",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergic-rhinitis",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک (برچسب OTC)",
+        "en": "Allergic rhinitis (OTC label)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 65,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 30,
+            "dosesPerDay": 2
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 60,
+            "dosesPerDay": 2
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-fexofenadine-otc",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-fexofenadine-otc",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "زیر ۲ سال، ۶۵ سال به بالا و بیماری کلیه: با پزشک مشورت شود.",
+            "en": "Under 2 years, 65 and older, or kidney disease: ask a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-fexofenadine-otc",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "susp-30-5",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 30,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "susp-30-5",
+      "input": {
+        "ageYears": 13,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 60,
+        "mlPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "R06AX26"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06751",
+        "en": "FEXOFENADINE 120MG TAB",
+        "fa": "قرص فکسوفنادین ۱۲۰ میلی‌گرم"
+      },
+      {
+        "code": "06750",
+        "en": "FEXOFENADINE 180MG TAB",
+        "fa": "قرص فکسوفنادین ۱۸۰ میلی‌گرم"
+      },
+      {
+        "code": "08028",
+        "en": "FEXOFENADINE 30MG TAB",
+        "fa": "قرص فکسوفنادین ۳۰ میلی‌گرم"
+      },
+      {
+        "code": "07251",
+        "en": "FEXOFENADINE 60MG TAB",
+        "fa": "قرص فکسوفنادین ۶۰ میلی‌گرم"
+      },
+      {
+        "code": "52908",
+        "en": "FEXOFENADINE SUSPENSION 30 mg/5mL 1 ML",
+        "fa": "فکسوفنادین ۳۰ میلی‌گرم / ۵ میلی‌لیتر ۱ میلی‌لیتر"
+      },
+      {
+        "code": "51213",
+        "en": "FEXOFENADINE HYDROCHLORIDE SUSPENSION ORAL 30 mg/5mL 120 mL",
+        "fa": "سوسپانسیون خوراکی فکسوفنادین هیدروکلراید ۳۰ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-799/Fexofenadine",
+        "url": "https://www.darooyab.ir/G-799/Fexofenadine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213466",
+      "label": "ANDA213466"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fe864426-c0d6-492a-96be-cd44fd9ca054",
+      "label": "FDA Fexofenadine OTC"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697035.html",
+      "label": "Fexofenadine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R06AX26",
+      "label": "R06AX26"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-799/Fexofenadine",
+      "label": "Fexofenadine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-fexofenadine-otc",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213466"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-fexofenadine-otc",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-fexofenadine-otc",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  }
+}

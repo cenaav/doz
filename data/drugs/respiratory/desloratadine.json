@@ -1,0 +1,401 @@
+{
+  "id": "desloratadine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دسلوراتادین",
+    "en": "Desloratadine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل دوم",
+    "en": "Second-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Clarinex",
+      "market": "US"
+    },
+    {
+      "name": "Neoclarityn",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "دسلوراتادين",
+    "aerius",
+    "آئریوس"
+  ],
+  "formulations": [
+    {
+      "id": "sol-0-5-1",
+      "form": "solution",
+      "route": "oral",
+      "label": "0.5 mg / mL oral solution",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "2"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-desloratadine-tab",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergic-rhinitis",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک و کهیر",
+        "en": "Allergic rhinitis and urticaria"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 1,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 1.25,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 2.5,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 5,
+            "dosesPerDay": 1,
+            "refs": [
+              {
+                "source": "fda-desloratadine-tab",
+                "section": "2.1"
+              }
+            ]
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "4.2"
+        },
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "4.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بیشتر رینیت‌های زیر ۲ سال عفونی است و برای رینیت عفونی داده‌ای نیست. بی‌خطری زیر ۱ سال ثابت نشده.",
+            "en": "Most rhinitis under 2 years is infectious; no data for infectious rhinitis. Safety below 1 year not established."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-neoclarityn",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دسلوراتادین یا لوراتادین.",
+        "en": "Hypersensitivity to desloratadine or loratadine."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "4.3"
+        },
+        {
+          "source": "fda-desloratadine-tab",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "احتیاط در سابقه تشنج، به‌ویژه کودکان کم‌سن.",
+        "en": "Caution with personal or family history of seizures, mainly young children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "4.4"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "نارسایی شدید کلیه: با احتیاط.",
+        "en": "Severe renal insufficiency: use with caution."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-neoclarityn",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "sol-0-5-1",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "perDose": 1.25,
+        "mlPerDose": 2.5
+      }
+    },
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "sol-0-5-1",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 2.5,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "R06AX27"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09633",
+        "en": "DESLORATADINE 5MG TAB",
+        "fa": "قرص دسلوراتادین ۵ میلی‌گرم"
+      },
+      {
+        "code": "09634",
+        "en": "DESLORATADINE SYRUP",
+        "fa": "شربت دسلوراتادین"
+      },
+      {
+        "code": "52136",
+        "en": "DESLORATADINE TABLET ORAL 5 mg",
+        "fa": "قرص دسلوراتادین ۵ میلی‌گرم"
+      },
+      {
+        "code": "52148",
+        "en": "DESLORATADINE SYRUP ORAL 2.5 mg/5 mL 120 mL",
+        "fa": "شربت دسلوراتادین ۲٫۵ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "52990",
+        "en": "DESLORATADINE SYRUP ORAL 2.5 mg/5 mL 60 mL",
+        "fa": "شربت دسلوراتادین ۲٫۵ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-788/Desloratadine",
+        "url": "https://www.darooyab.ir/G-788/Desloratadine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078352",
+      "label": "ANDA078352"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=69b9635b-c790-4316-a790-67b0f5512b72",
+      "label": "FDA Desloratadine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a602002.html",
+      "label": "Desloratadine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R06AX27",
+      "label": "R06AX27"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-788/Desloratadine",
+      "label": "Desloratadine"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/6510/smpc",
+      "label": "UK SmPC Neoclarityn"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-desloratadine-tab",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078352"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The limited available data with desloratadine in pregnant women are not sufficient to inform a drug-associated risk for major birth defects and miscarriage.",
+      "refs": [
+        {
+          "source": "fda-desloratadine-tab",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Desloratadine passes into breast milk.",
+      "refs": [
+        {
+          "source": "fda-desloratadine-tab",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The recommended dose of desloratadine oral solution in the pediatric population is based on cross-study comparison of the plasma concentration of desloratadine in adults and pediatric subjects.",
+      "refs": [
+        {
+          "source": "fda-desloratadine-tab",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-desloratadine-tab",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility There are no data available on human infertility associated with desloratadine.",
+      "refs": [
+        {
+          "source": "fda-desloratadine-tab",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "id": "loratadine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لوراتادین",
+    "en": "Loratadine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل دوم",
+    "en": "Second-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Claritin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "لوراتادین",
+    "claritin",
+    "کلاریتین"
+  ],
+  "formulations": [
+    {
+      "id": "sol-5-5",
+      "form": "solution",
+      "route": "oral",
+      "label": "5 mg / 5 mL",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-loratadine-otc",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergic-rhinitis",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک (برچسب OTC)",
+        "en": "Allergic rhinitis (OTC label)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 5,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 10,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-loratadine-otc",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-loratadine-otc",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "زیر ۲ سال و بیماری کبد یا کلیه: با پزشک مشورت شود.",
+            "en": "Under 2 years, or liver or kidney disease: ask a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-loratadine-otc",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه واکنش آلرژیک به این فرآورده.",
+        "en": "Allergic reaction to this product or its ingredients."
+      },
+      "refs": [
+        {
+          "source": "fda-loratadine-otc",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "sol-5-5",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 5,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "sol-5-5",
+      "input": {
+        "ageYears": 9,
+        "weightKg": 28
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "R06AX13"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13066",
+        "en": "LORATADINE 10MG ORO DISP TAB",
+        "fa": "قرص لوراتادین ۱۰ میلی‌گرم ارو دیسپ"
+      },
+      {
+        "code": "20923",
+        "en": "LORATADINE 10MG SOFT GEL CAP",
+        "fa": "کپسول نرم لوراتادین ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "01574",
+        "en": "LORATADINE 10MG TAB",
+        "fa": "قرص لوراتادین ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "02011",
+        "en": "LORATADINE 1MG/ML 60ML SYRUP",
+        "fa": "شربت لوراتادین ۱ میلی‌گرم / میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "52298",
+        "en": "LORATADINE TABLET, ORALLY DISINTEGRATING ORAL 10 mg",
+        "fa": "قرص بازشونده دهانی لوراتادین بازشونده ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-806/Loratadine",
+        "url": "https://www.darooyab.ir/G-806/Loratadine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075728",
+      "label": "ANDA075728"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=539336e6-7979-47ed-b1ea-fd46ef547aee",
+      "label": "FDA Loratadine OTC"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697038.html",
+      "label": "Loratadine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R06AX13",
+      "label": "R06AX13"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-806/Loratadine",
+      "label": "Loratadine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-loratadine-otc",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075728"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری لوراتادین گروه B قابل استفاده در بارداری:",
+      "text": {
+        "fa": "دارویاب: گروه B — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category B — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-806/Loratadine — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-806/Loratadine"
+        }
+      ]
+    }
+  }
+}

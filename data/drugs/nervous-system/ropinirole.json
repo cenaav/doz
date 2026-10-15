@@ -1,0 +1,415 @@
+{
+  "id": "ropinirole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "روپینیرول",
+    "en": "Ropinirole"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آگونیست دوپامین",
+    "en": "Dopamine agonist"
+  },
+  "brands": [
+    {
+      "name": "Requip",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "requip",
+    "ریکوئیپ",
+    "روپینیرول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.25 mg tablet",
+      "concentration": {
+        "amount": 0.25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pd",
+      "disease": "parkinsons",
+      "label": {
+        "fa": "پارکینسون — شروع ۰٫۲۵ mg سه بار در روز",
+        "en": "Parkinson’s disease — start 0.25 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 3,
+        "titration": {
+          "start": 0.75,
+          "increment": 0.75,
+          "incrementEveryDays": 7,
+          "max": 24
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هفته ۱ تا ۴: ۰٫۲۵، ۰٫۵، ۰٫۷۵، ۱ mg سه بار؛ سپس هفتگی تا ۹ و بعد تا حداکثر ۲۴ mg/day. قطع تدریجی طی ۷ روز.",
+            "en": "Weeks 1–4: 0.25, 0.5, 0.75, 1 mg three times daily; then weekly up to 9 and later max 24 mg/day. Taper over 7 days."
+          },
+          "refs": [
+            {
+              "source": "fda-ropinirole",
+              "section": "2.2, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rls",
+      "disease": "restless-legs",
+      "label": {
+        "fa": "پای بی‌قرار — ۰٫۲۵ mg ۱ تا ۳ ساعت قبل از خواب",
+        "en": "Restless legs — 0.25 mg 1–3 h before bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "2.3, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4,
+        "refs": [
+          {
+            "source": "fda-ropinirole",
+            "section": "2.3"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "روز ۱ و ۲: ۰٫۲۵؛ روز ۳ تا ۷: ۰٫۵؛ سپس هفتگی ۱، ۱٫۵، ۲، ۲٫۵، ۳ و ۴ mg؛ حداکثر ۴ mg.",
+            "en": "Days 1–2: 0.25; days 3–7: 0.5; then weekly 1, 1.5, 2, 2.5, 3 and 4 mg; max 4 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-ropinirole",
+              "section": "2.3, Table 2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به روپینیرول.",
+        "en": "Hypersensitivity to ropinirole."
+      },
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان ثابت نشده.",
+        "en": "Not established in children."
+      },
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pd",
+      "formulation": "tab-0-25",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.25
+      }
+    },
+    {
+      "regimen": "rls",
+      "formulation": "tab-0-25",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.25
+      }
+    }
+  ],
+  "atc": [
+    "N04BC04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02001",
+        "en": "ROPINIROLE 0.25MG TAB",
+        "fa": "قرص روپینیرول ۰٫۲۵ میلی‌گرم"
+      },
+      {
+        "code": "09141",
+        "en": "ROPINIROLE 0.5MG TAB",
+        "fa": "قرص روپینیرول ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "02002",
+        "en": "ROPINIROLE 1MG TAB",
+        "fa": "قرص روپینیرول ۱ میلی‌گرم"
+      },
+      {
+        "code": "06590",
+        "en": "ROPINIROLE 2MG TAB",
+        "fa": "قرص روپینیرول ۲ میلی‌گرم"
+      },
+      {
+        "code": "02003",
+        "en": "ROPINIROLE 5MG TAB",
+        "fa": "قرص روپینیرول ۵ میلی‌گرم"
+      },
+      {
+        "code": "16836",
+        "en": "ROPINIROLE 8MG TAB",
+        "fa": "قرص روپینیرول ۸ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2498/Ropinirole",
+        "url": "https://www.darooyab.ir/G-2498/Ropinirole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=090429",
+      "label": "ANDA090429"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d1a0f9f-5fa0-43fa-83b9-0d18a129fd0c",
+      "label": "FDA Ropinirole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698013.html",
+      "label": "Ropinirole"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04BC04",
+      "label": "N04BC04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2498/Ropinirole",
+      "label": "Ropinirole"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ropinirole",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA090429"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of ropinirole tablets in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of ropinirole in human milk, the effects of ropinirole on the breastfed infant, or the effects of ropinirole on milk production.",
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Pharmacokinetic trials conducted in patients demonstrated that oral clearance of ropinirole is reduced by 15% in patients older than 65 years compared with younger patients [see Clinical Pharmacology (12.3)] .",
+      "refs": [
+        {
+          "source": "fda-ropinirole",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

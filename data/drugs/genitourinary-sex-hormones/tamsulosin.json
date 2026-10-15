@@ -1,0 +1,296 @@
+{
+  "id": "tamsulosin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تامسولوسین",
+    "en": "Tamsulosin"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آلفا بلاکر",
+    "en": "Alpha-1 blocker"
+  },
+  "brands": [
+    {
+      "name": "Flomax",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "flomax",
+    "فلوماکس",
+    "تامسولوسین",
+    "پروستات"
+  ],
+  "formulations": [
+    {
+      "id": "cap-0-4",
+      "form": "capsule",
+      "route": "oral",
+      "label": "0.4 mg capsule",
+      "concentration": {
+        "amount": 0.4,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bph",
+      "disease": "bph",
+      "label": {
+        "fa": "BPH — ۰٫۴ mg یک بار در روز",
+        "en": "BPH — 0.4 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 0.8,
+        "refs": [
+          {
+            "source": "fda-tamsulosin",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پس از ۲ تا ۴ هفته پاسخ نبود ۰٫۸ mg. ۰٫۴ mg با مهارکننده‌های قوی CYP3A4 (کتوکونازول) مصرف نشود. اگر چند روز قطع شد، از ۰٫۴ از نو شروع شود.",
+            "en": "If no response after 2–4 weeks, 0.8 mg. Do not use 0.4 mg with strong CYP3A4 inhibitors (ketoconazole). If interrupted several days, restart at 0.4."
+          },
+          "refs": [
+            {
+              "source": "fda-tamsulosin",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تامسولوسین.",
+        "en": "Hypersensitivity to tamsulosin."
+      },
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای کودکان اندیکاسیون ندارد.",
+        "en": "Not indicated in pediatric populations."
+      },
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bph",
+      "formulation": "cap-0-4",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 0.4
+      }
+    }
+  ],
+  "atc": [
+    "G04CA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05100",
+        "en": "TAMSULOSIN 0.4MG CAP",
+        "fa": "کپسول تامسولوسین ۰٫۴ میلی‌گرم"
+      },
+      {
+        "code": "01923",
+        "en": "TAMSULOSIN 0.4MG TAB",
+        "fa": "قرص تامسولوسین ۰٫۴ میلی‌گرم"
+      },
+      {
+        "code": "52331",
+        "en": "TAMSULOSIN HYDROCHLORIDE TABLET, EXTENDED RELEASE ORAL 0.4 mg",
+        "fa": "قرص آهسته‌رهش تامسولوسین هیدروکلراید ۰٫۴ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1894/Tamsulosin",
+        "url": "https://www.darooyab.ir/G-1894/Tamsulosin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202433",
+      "label": "ANDA202433"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8302a6e-b8da-4931-a279-b49e37943816",
+      "label": "FDA Tamsulosin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698012.html",
+      "label": "Tamsulosin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04CA02",
+      "label": "G04CA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1894/Tamsulosin",
+      "label": "Tamsulosin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-tamsulosin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA202433"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Tamsulosin hydrochloride is not indicated for use in women.",
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Tamsulosin hydrochloride is not indicated for use in women.",
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Tamsulosin hydrochloride capsules are not indicated for use in pediatric populations.",
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of subjects (1783) in clinical studies of tamsulosin, 36% were 65 years of age and over.",
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Males Abnormal ejaculation including ejaculation failure, ejaculation disorder, retrograde ejaculation, and ejaculation decrease has been associated with tamsulosin hydrochloride [ see Clinical Trials Experience (6.1) ] .",
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

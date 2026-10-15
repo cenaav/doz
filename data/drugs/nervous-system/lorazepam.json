@@ -1,0 +1,368 @@
+{
+  "id": "lorazepam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لورازپام",
+    "en": "Lorazepam"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بنزودیازپین",
+    "en": "Benzodiazepine"
+  },
+  "brands": [
+    {
+      "name": "Ativan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ativan",
+    "آتیوان",
+    "لورازپام"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "anxiety",
+      "disease": "anxiety",
+      "label": {
+        "fa": "اضطراب — شروع ۲ تا ۳ mg/day در ۲ یا ۳ نوبت",
+        "en": "Anxiety — start 2–3 mg/day in 2 or 3 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-lorazepam",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "معمول ۲ تا ۶ mg/day منقسم (بیشترین دوز شب)؛ محدوده ۱ تا ۱۰. سالمند: شروع ۱ تا ۲ mg/day.",
+            "en": "Usual 2–6 mg/day divided (largest at bedtime); range 1–10. Elderly: start 1–2 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-lorazepam",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insomnia",
+      "disease": "insomnia",
+      "label": {
+        "fa": "بی‌خوابی ناشی از اضطراب — ۲ تا ۴ mg شب",
+        "en": "Insomnia due to anxiety — 2–4 mg at bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "perDoseMax": 4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بنزودیازپین‌ها؛ گلوکوم زاویه بسته حاد.",
+        "en": "Hypersensitivity to benzodiazepines; acute narrow-angle glaucoma."
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال ثابت نشده.",
+        "en": "Not established in children under 12."
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: مصرف همزمان با اپیوئیدها (دپرسیون تنفسی و مرگ)؛ سوءمصرف و وابستگی؛ علائم ترک با قطع ناگهانی.",
+        "en": "Boxed warning: concomitant opioids (respiratory depression, death); abuse, misuse and dependence; withdrawal on abrupt stop."
+      },
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "anxiety",
+      "formulation": "tab-1",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 2
+      }
+    },
+    {
+      "regimen": "insomnia",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "upperPerDose": 4
+      }
+    }
+  ],
+  "atc": [
+    "N05BA06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00771",
+        "en": "LORAZEPAM 1MG TAB",
+        "fa": "قرص لورازپام ۱ میلی‌گرم"
+      },
+      {
+        "code": "00772",
+        "en": "LORAZEPAM 2MG TAB",
+        "fa": "قرص لورازپام ۲ میلی‌گرم"
+      },
+      {
+        "code": "01575",
+        "en": "LORAZEPAM 2MG/ML AMP",
+        "fa": "آمپول لورازپام ۲ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "01576",
+        "en": "LORAZEPAM 4MG/ML AMP",
+        "fa": "آمپول لورازپام ۴ میلی‌گرم / میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1295/Lorazepam",
+        "url": "https://www.darooyab.ir/G-1295/Lorazepam"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078203",
+      "label": "ANDA078203"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1009c870-fd98-4e3b-81c8-4184036fb8c2",
+      "label": "FDA Lorazepam"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682053.html",
+      "label": "Lorazepam"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05BA06",
+      "label": "N05BA06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1295/Lorazepam",
+      "label": "Lorazepam"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-lorazepam",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078203"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Neonates born to mothers using benzodiazepines late in pregnancy have been reported to experience symptoms of sedation and/or neonatal withdrawal (see WARNINGS: Neonatal Sedation and Withdrawal Syndrome and Clinical Considerations ).",
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Lorazepam is present in breast milk.",
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, and lower doses may be sufficient in these patients (see DOSAGE AND ADMINISTRATION ).",
+      "refs": [
+        {
+          "source": "fda-lorazepam",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

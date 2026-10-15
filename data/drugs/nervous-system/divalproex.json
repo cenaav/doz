@@ -1,0 +1,609 @@
+{
+  "id": "divalproex",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "والپروات (دیوالپروکس)",
+    "en": "Divalproex sodium (valproate)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدتشنج و تثبیت‌کننده خلق",
+    "en": "Anticonvulsant and mood stabilizer"
+  },
+  "brands": [
+    {
+      "name": "Depakote",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "valproate",
+    "والپروات",
+    "دپاکین",
+    "depakine",
+    "sodium valproate",
+    "والپروات سدیم"
+  ],
+  "formulations": [
+    {
+      "id": "dr-125",
+      "form": "tablet",
+      "route": "oral",
+      "label": "125 mg delayed-release tablet",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "dr-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg delayed-release tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "dr-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg delayed-release tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "epilepsy",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "تشنج پارشیل کمپلکس — ۱۰ سال به بالا: شروع ۱۰ تا ۱۵ mg/kg/day",
+        "en": "Complex partial seizures — ≥10 y: start 10–15 mg/kg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "perKgPerDayMax": 15,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 60,
+        "refs": [
+          {
+            "source": "fda-divalproex",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۵ تا ۱۰ mg/kg/هفته؛ پاسخ معمولاً زیر ۶۰ mg/kg/day؛ سطح سرمی ۵۰ تا ۱۰۰ mcg/mL. دوز روزانه بالای ۲۵۰ mg در نوبت‌های منقسم.",
+            "en": "Increase 5–10 mg/kg/week; response usually below 60 mg/kg/day; serum 50–100 mcg/mL. Daily doses above 250 mg in divided doses."
+          },
+          "refs": [
+            {
+              "source": "fda-divalproex",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mania",
+      "disease": "bipolar-mania",
+      "label": {
+        "fa": "مانیا — بزرگسال: شروع ۷۵۰ mg روزانه در دوزهای منقسم",
+        "en": "Mania — adults: start 750 mg daily divided"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 375,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 60,
+        "refs": [
+          {
+            "source": "fda-divalproex",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش سریع تا کمترین دوز مؤثر؛ سطح سرمی ۵۰ تا ۱۲۵ mcg/mL؛ حداکثر ۶۰ mg/kg/day.",
+            "en": "Increase rapidly to lowest effective dose; trough 50–125 mcg/mL; max 60 mg/kg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-divalproex",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "migraine",
+      "disease": "migraine-prophylaxis",
+      "label": {
+        "fa": "پیشگیری از میگرن — بزرگسال: ۲۵۰ mg دو بار در روز",
+        "en": "Migraine prophylaxis — adults: 250 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "perDoseMax": 500,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hepatic",
+      "severity": "block",
+      "text": {
+        "fa": "بیماری یا اختلال شدید کبدی؛ اختلال میتوکندریایی POLG؛ حساسیت.",
+        "en": "Hepatic disease or significant dysfunction; POLG mitochondrial disorders; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-2",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال خطر بسیار بالای سمیت کبدی کشنده؛ فقط با احتیاط شدید و به‌تنهایی.",
+        "en": "Under 2 years: considerably increased risk of fatal hepatotoxicity; extreme caution, sole agent."
+      },
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت کبدی کشنده، تراتوژنیسیته و پانکراتیت.",
+        "en": "Boxed warning: fatal hepatotoxicity, teratogenicity and pancreatitis."
+      },
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "WARNING: LIFE THREATENING ADVERSE REACTIONS"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [
+    {
+      "text": {
+        "fa": "آزمایش کبد قبل از درمان و به‌طور مکرر، به‌ویژه ۶ ماه اول.",
+        "en": "Liver tests before and frequently during therapy, especially first 6 months."
+      },
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "WARNING: LIFE THREATENING ADVERSE REACTIONS"
+        }
+      ]
+    }
+  ],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "epilepsy",
+      "formulation": "dr-125",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 2,
+        "upperPerDose": 375
+      }
+    },
+    {
+      "regimen": "mania",
+      "formulation": "dr-125",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 375,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "migraine",
+      "formulation": "dr-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "upperPerDose": 500
+      }
+    }
+  ],
+  "atc": [
+    "N03AG01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11636",
+        "en": "DIVALPROEX (VALPROATE SEMISODIUM) 125MG TAB",
+        "fa": "قرص دی‌والپروکس (والپروات سمی‌سدیم) ۱۲۵ میلی‌گرم"
+      },
+      {
+        "code": "11614",
+        "en": "DIVALPROEX (VALPROATE SEMISODIUM) 250MG TAB",
+        "fa": "قرص دی‌والپروکس (والپروات سمی‌سدیم) ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "11611",
+        "en": "DIVALPROEX (VALPROATE SEMISODIUM) 500MG TAB",
+        "fa": "قرص دی‌والپروکس (والپروات سمی‌سدیم) ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "11366",
+        "en": "VALPROATE SODIUM 100MG/ML 10ML AMP",
+        "fa": "آمپول والپروات سدیم ۱۰۰ میلی‌گرم / میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "11367",
+        "en": "VALPROATE SODIUM 100MG/ML 3ML AMP",
+        "fa": "آمپول والپروات سدیم ۱۰۰ میلی‌گرم / میلی‌لیتر ۳ میلی‌لیتر"
+      },
+      {
+        "code": "17568",
+        "en": "VALPROATE SODIUM 100MG/ML 5ML INJ",
+        "fa": "فرآورده تزریقی والپروات سدیم ۱۰۰ میلی‌گرم / میلی‌لیتر ۵ میلی‌لیتر"
+      },
+      {
+        "code": "07763",
+        "en": "VALPROATE SODIUM 150MG CAP",
+        "fa": "کپسول والپروات سدیم ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01275",
+        "en": "VALPROATE SODIUM 200MG TAB",
+        "fa": "قرص والپروات سدیم ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "07669",
+        "en": "VALPROATE SODIUM 200MG/5ML 120ML SYRUP",
+        "fa": "شربت والپروات سدیم ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "02805",
+        "en": "VALPROATE SODIUM 200MG/5ML 240ML SYRUP",
+        "fa": "شربت والپروات سدیم ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۲۴۰ میلی‌لیتر"
+      },
+      {
+        "code": "06170",
+        "en": "VALPROATE SODIUM 200MG/5ML 300ML SYRUP",
+        "fa": "شربت والپروات سدیم ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۳۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "09715",
+        "en": "VALPROATE SODIUM 200MG/5ML 40ML SYRUP",
+        "fa": "شربت والپروات سدیم ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۴۰ میلی‌لیتر"
+      },
+      {
+        "code": "01724",
+        "en": "VALPROATE SODIUM 200MG/5ML 60ML SYRUP",
+        "fa": "شربت والپروات سدیم ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "11443",
+        "en": "VALPROATE SODIUM 200MG/ML SYRUP",
+        "fa": "شربت والپروات سدیم ۲۰۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "11494",
+        "en": "VALPROATE SODIUM 200ML SYRUP",
+        "fa": "شربت والپروات سدیم ۲۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "07127",
+        "en": "VALPROATE SODIUM 250MG TAB",
+        "fa": "قرص والپروات سدیم ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "12290",
+        "en": "VALPROATE SODIUM 300MG ER CAP",
+        "fa": "کپسول آهسته‌رهش والپروات سدیم ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "22182",
+        "en": "VALPROATE SODIUM 300MG TAB",
+        "fa": "قرص والپروات سدیم ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08601",
+        "en": "VALPROATE SODIUM 300MG/5ML 250ML SYRUP",
+        "fa": "شربت والپروات سدیم ۳۰۰ میلی‌گرم / ۵ میلی‌لیتر ۲۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "14127",
+        "en": "VALPROATE SODIUM 300MG/ML 100ML SYRUP",
+        "fa": "شربت والپروات سدیم ۳۰۰ میلی‌گرم / میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "15473",
+        "en": "VALPROATE SODIUM 300MG/ML DROP",
+        "fa": "قطره والپروات سدیم ۳۰۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "01159",
+        "en": "VALPROATE SODIUM 300ML SYRUP",
+        "fa": "شربت والپروات سدیم ۳۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "08498",
+        "en": "VALPROATE SODIUM 400MG EC TAB",
+        "fa": "قرص انتریک‌کوتد والپروات سدیم ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08396",
+        "en": "VALPROATE SODIUM 400MG INJ",
+        "fa": "فرآورده تزریقی والپروات سدیم ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "07764",
+        "en": "VALPROATE SODIUM 500MG CAP",
+        "fa": "کپسول والپروات سدیم ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01871",
+        "en": "VALPROATE SODIUM 500MG SR TAB",
+        "fa": "قرص آهسته‌رهش والپروات سدیم ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "04577",
+        "en": "VALPROATE SODIUM 500MG TAB",
+        "fa": "قرص والپروات سدیم ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08020",
+        "en": "VALPROATE SODIUM 50MG SR TAB",
+        "fa": "قرص آهسته‌رهش والپروات سدیم ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "21675",
+        "en": "VALPROIC ACID 500MG SOFT GEL CAP",
+        "fa": "کپسول نرم والپرویک اسید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52223",
+        "en": "VALPROATE SODIUM INJECTION PARENTERAL 100 mg/1mL 4 mL",
+        "fa": "فرآورده تزریقی والپروات سدیم ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر ۴ میلی‌لیتر"
+      },
+      {
+        "code": "52064",
+        "en": "VALPROATE SODIUM SYRUP ORAL 200 mg/5mL 250 mL",
+        "fa": "شربت والپروات سدیم ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر ۲۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-690/Sodium-Valproate",
+        "url": "https://www.darooyab.ir/G-690/Sodium-Valproate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078597",
+      "label": "ANDA078597"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1004e77e-b572-4d39-8ddd-5325612dad7b",
+      "label": "FDA Divalproex"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682412.html",
+      "label": "Valproic Acid"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AG01",
+      "label": "N03AG01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-690/Sodium-Valproate",
+      "label": "Sodium-Valproate"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-divalproex",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078597"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "… ea cycle disorders [see Warnings and Precautions (5.6)] . • being treated for prophylaxis of migraine headaches who are pregnant or in women of childbearing potential who are not using effective contraception [see Warnings and Precautions (5.2, 5.3, 5.4) and Use in Specific Populations (8.1)] . • Hepatic disease or …",
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Valproate is excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Children under the age of two years are at a considerably increased risk of developing fatal hepatotoxicity, especially those on multiple anticonvulsants, those with congenital metabolic disorders, those with severe seizure disorders accompanied by mental retardation, and those with organic brain disease.",
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "A study of elderly patients with dementia revealed drug related somnolence and discontinuation for somnolence [see Warnings and Precautions (5.16)] .",
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Women of childbearing potential should use effective contraception while taking valproate [see Boxed Warning, Warnings and Precautions (5.4), Drug Interactions (7), and Use in Specific Populations (8.1)] .",
+      "refs": [
+        {
+          "source": "fda-divalproex",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

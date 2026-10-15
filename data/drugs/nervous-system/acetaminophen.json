@@ -1,0 +1,581 @@
+{
+  "id": "acetaminophen",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "استامینوفن (پاراستامول)",
+    "en": "Acetaminophen (paracetamol)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضددرد و ضدتب",
+    "en": "Analgesic and antipyretic"
+  },
+  "brands": [
+    {
+      "name": "Tylenol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "paracetamol",
+    "پاراستامول",
+    "استامینوفن",
+    "tylenol",
+    "تیلنول"
+  ],
+  "formulations": [
+    {
+      "id": "susp-160-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "160 mg / 5 mL",
+      "concentration": {
+        "amount": 160,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "fever",
+      "disease": "fever",
+      "label": {
+        "fa": "تب — ۲ تا ۱۱ سال (جدول OTC)",
+        "en": "Fever — 2 to 11 years (OTC chart)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "intervalHours": 4,
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "perDose": 160,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 240,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 9,
+              "unit": "year"
+            },
+            "perDose": 320,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 9,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 11,
+              "unit": "year"
+            },
+            "perDose": 400,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 11,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 480,
+            "dosesPerDay": 5
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ ساعت تا زمانی که علائم هست؛ بیش از ۵ بار در ۲۴ ساعت نه. در صورت امکان بر اساس وزن (جدول وزن/سن برچسب)؛ زیر ۲ سال با پزشک مشورت شود. دوز mg/kg خوراکی در برچسب FDA نیامده و در انتظار منبع دارای مجوز است.",
+            "en": "Every 4 hours while symptoms last; no more than 5 times in 24 h. Use weight if possible (label weight/age chart); under 2 years ask a doctor. Oral mg/kg dosing is not in the FDA label; pending the licensed reference."
+          },
+          "refs": [
+            {
+              "source": "fda-childrens-tylenol",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pain",
+      "disease": "pain",
+      "label": {
+        "fa": "درد خفیف — ۲ تا ۱۱ سال (جدول OTC)",
+        "en": "Minor aches and pains — 2 to 11 years (OTC chart)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "intervalHours": 4,
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "perDose": 160,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 240,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 9,
+              "unit": "year"
+            },
+            "perDose": 320,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 9,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 11,
+              "unit": "year"
+            },
+            "perDose": 400,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 11,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 480,
+            "dosesPerDay": 5
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ ساعت تا زمانی که علائم هست؛ بیش از ۵ بار در ۲۴ ساعت نه. در صورت امکان بر اساس وزن (جدول وزن/سن برچسب)؛ زیر ۲ سال با پزشک مشورت شود. دوز mg/kg خوراکی در برچسب FDA نیامده و در انتظار منبع دارای مجوز است.",
+            "en": "Every 4 hours while symptoms last; no more than 5 times in 24 h. Use weight if possible (label weight/age chart); under 2 years ask a doctor. Oral mg/kg dosing is not in the FDA label; pending the licensed reference."
+          },
+          "refs": [
+            {
+              "source": "fda-childrens-tylenol",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "other-apap",
+      "severity": "block",
+      "text": {
+        "fa": "همراه هر داروی دیگر حاوی استامینوفن (نسخه‌ای یا بدون نسخه).",
+        "en": "With any other drug containing acetaminophen (prescription or nonprescription)."
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار کبدی: آسیب شدید کبد با بیش از ۵ دوز در ۲۴ ساعت یا همراه داروهای دیگر حاوی استامینوفن.",
+        "en": "Liver warning: severe liver damage with more than 5 doses in 24 hours or with other acetaminophen products."
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Warnings"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واکنش‌های شدید پوستی (قرمزی، تاول، بثورات): فوراً قطع شود.",
+        "en": "Severe skin reactions (reddening, blisters, rash): stop and seek help."
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "fever",
+      "formulation": "susp-160-5",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "perDose": 160,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "fever",
+      "formulation": "susp-160-5",
+      "input": {
+        "ageYears": 7,
+        "weightKg": 22
+      },
+      "expect": {
+        "perDose": 320,
+        "mlPerDose": 10
+      }
+    },
+    {
+      "regimen": "pain",
+      "formulation": "susp-160-5",
+      "input": {
+        "ageYears": 11,
+        "weightKg": 36
+      },
+      "expect": {
+        "perDose": 480,
+        "mlPerDose": 15
+      }
+    },
+    {
+      "regimen": "pain",
+      "formulation": "susp-160-5",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "N02BE01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21805",
+        "en": "APOTEL® 500MG  SUPP.",
+        "fa": "شیاف آپوتل ® ۵۰۰ میلی‌گرم ."
+      },
+      {
+        "code": "00003",
+        "en": "ACETAMINOPHEN 100MG/ML DROP",
+        "fa": "قطره استامینوفن ۱۰۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "21986",
+        "en": "ACETAMINOPHEN 100MG/ML SUSP DROP",
+        "fa": "سوسپانسیون استامینوفن ۱۰۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "21791",
+        "en": "ACETAMINOPHEN 120MG/5ML 120ML SOLUTION",
+        "fa": "محلول استامینوفن ۱۲۰ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "00004",
+        "en": "ACETAMINOPHEN 120MG/5ML 60ML SOL",
+        "fa": "محلول استامینوفن ۱۲۰ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "00005",
+        "en": "ACETAMINOPHEN 120MG/5ML SUSP",
+        "fa": "سوسپانسیون استامینوفن ۱۲۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "17679",
+        "en": "ACETAMINOPHEN 125MG ORAL DISINTEGRATING TAB",
+        "fa": "قرص استامینوفن ۱۲۵ میلی‌گرم بازشونده"
+      },
+      {
+        "code": "00006",
+        "en": "ACETAMINOPHEN 125MG PED SUPP",
+        "fa": "شیاف استامینوفن ۱۲۵ میلی‌گرم پد"
+      },
+      {
+        "code": "20883",
+        "en": "ACETAMINOPHEN 150MG/ML 4ML INJ",
+        "fa": "فرآورده تزریقی استامینوفن ۱۵۰ میلی‌گرم / میلی‌لیتر ۴ میلی‌لیتر"
+      },
+      {
+        "code": "18420",
+        "en": "ACETAMINOPHEN 150MG/ML 6.7ML VIAL",
+        "fa": "ویال استامینوفن ۱۵۰ میلی‌گرم / میلی‌لیتر ۶٫۷ میلی‌لیتر"
+      },
+      {
+        "code": "18133",
+        "en": "ACETAMINOPHEN 160MG DISPERSIBLE TAB",
+        "fa": "قرص پراکنده‌شونده استامینوفن ۱۶۰ میلی‌گرم"
+      },
+      {
+        "code": "14254",
+        "en": "ACETAMINOPHEN 1G/100ML INJ",
+        "fa": "فرآورده تزریقی استامینوفن ۱ گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "11177",
+        "en": "ACETAMINOPHEN 250MG SUPP",
+        "fa": "شیاف استامینوفن ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "15243",
+        "en": "ACETAMINOPHEN 300MG/2ML AMP",
+        "fa": "آمپول استامینوفن ۳۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "13708",
+        "en": "ACETAMINOPHEN 325MG CAP(SOFT GEL)",
+        "fa": "کپسول نرم استامینوفن ۳۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00008",
+        "en": "ACETAMINOPHEN 325MG SUPP",
+        "fa": "شیاف استامینوفن ۳۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00007",
+        "en": "ACETAMINOPHEN 325MG TAB",
+        "fa": "قرص استامینوفن ۳۲۵ میلی‌گرم"
+      },
+      {
+        "code": "13706",
+        "en": "ACETAMINOPHEN 500MG CAP(SOFT GEL)",
+        "fa": "کپسول نرم استامینوفن ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "12928",
+        "en": "ACETAMINOPHEN 500MG EFF TAB",
+        "fa": "قرص جوشان استامینوفن ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02012",
+        "en": "ACETAMINOPHEN 500MG TAB",
+        "fa": "قرص استامینوفن ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "14495",
+        "en": "ACETAMINOPHEN 500MG/50ML VIAL",
+        "fa": "ویال استامینوفن ۵۰۰ میلی‌گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "12898",
+        "en": "ACETAMINOPHEN 80MG DISPERSIBLE TAB",
+        "fa": "قرص پراکنده‌شونده استامینوفن ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "00009",
+        "en": "ACETAMINOPHEN 80MG TAB",
+        "fa": "قرص استامینوفن ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "52196",
+        "en": "ACETAMINOPHEN 75MG SUPP",
+        "fa": "شیاف استامینوفن ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "17679",
+        "en": "ACETAMINOPHEN ORALLY DISINTEGRATING 125 MG TAB",
+        "fa": "قرص استامینوفن بازشونده ۱۲۵ میلی‌گرم"
+      },
+      {
+        "code": "18133",
+        "en": "ACETAMINOPHEN ORALLY DISINTEGRATING 160MG TAB",
+        "fa": "قرص استامینوفن بازشونده ۱۶۰ میلی‌گرم"
+      },
+      {
+        "code": "52792",
+        "en": "ACETAMINOPHEN SUSPENSION ORAL /5mL 60 mL",
+        "fa": "سوسپانسیون خوراکی استامینوفن / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "52816",
+        "en": "ACETAMINOPHEN CAPSULE, LIQUID FILLED ORAL 500 mg",
+        "fa": "کپسول استامینوفن پرشده ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52989",
+        "en": "ACETAMINOPHEN INJECTION, SOLUTION INTRAVENOUS 10 mg/1mL 10 mL",
+        "fa": "فرآورده تزریقی استامینوفن ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-153/Acetaminophen",
+        "url": "https://www.darooyab.ir/G-153/Acetaminophen"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3162733b-9382-39f1-e063-6294a90ac420",
+      "label": "FDA Children's Tylenol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a681004.html",
+      "label": "Acetaminophen"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611019.html",
+      "label": "Acetaminophen Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02BE01",
+      "label": "N02BE01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-153/Acetaminophen",
+      "label": "Acetaminophen"
+    }
+  ],
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-childrens-tylenol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M013"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری استامینوفن گروه B قابل استفاده در بارداری:",
+      "text": {
+        "fa": "دارویاب: گروه B — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category B — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-153/Acetaminophen — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-153/Acetaminophen"
+        }
+      ]
+    }
+  }
+}

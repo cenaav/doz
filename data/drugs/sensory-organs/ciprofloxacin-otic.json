@@ -1,0 +1,301 @@
+{
+  "id": "ciprofloxacin-otic",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره گوش سیپروفلوکساسین",
+    "en": "Ciprofloxacin ear drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "فلوروکینولون موضعی گوش",
+    "en": "Topical otic fluoroquinolone"
+  },
+  "brands": [
+    {
+      "name": "Cetraxal",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cetraxal",
+    "قطره گوش سیپرو",
+    "سیپروفلوکساسین گوش"
+  ],
+  "formulations": [
+    {
+      "id": "otic-0-2",
+      "form": "drops",
+      "route": "topical",
+      "label": "0.2% single-dose container (0.25 mL)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cetraxal",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oe",
+      "disease": "otitis-externa",
+      "label": {
+        "fa": "عفونت گوش خارجی — ۱ سال به بالا: یک ویال ۰٫۲۵ mL دو بار، ۷ روز",
+        "en": "Otitis externa — ≥1 y: one 0.25 mL single-dose container twice daily for 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.25,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cetraxal",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "ویال را با دست گرم کنید تا سرگیجه نگیرد؛ گوش مبتلا رو به بالا.",
+            "en": "Warm the container in the hand to avoid dizziness; affected ear upward."
+          },
+          "refs": [
+            {
+              "source": "fda-cetraxal",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سیپروفلوکساسین.",
+        "en": "Hypersensitivity to ciprofloxacin."
+      },
+      "refs": [
+        {
+          "source": "fda-cetraxal",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-1",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱ سال ثابت نشده.",
+        "en": "Not established under 1 year."
+      },
+      "refs": [
+        {
+          "source": "fda-cetraxal",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oe",
+      "formulation": "otic-0-2",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 0.25,
+        "mlPerDose": 0.25
+      }
+    }
+  ],
+  "atc": [
+    "S02AA15"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09786",
+        "en": "CIPROFLOXACIN 250MG/5ML 100ML SUSP",
+        "fa": "سوسپانسیون سیپروفلوکساسین ۲۵۰ میلی‌گرم / ۵ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00295",
+        "en": "CIPROFLOXACIN HCL 250MG TAB",
+        "fa": "قرص سیپروفلوکساسین هیدروکلراید ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00296",
+        "en": "CIPROFLOXACIN HCL 500MG TAB",
+        "fa": "قرص سیپروفلوکساسین هیدروکلراید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "10757",
+        "en": "CIPROFLOXACIN LACTATE 200MG/100ML INF BOTTLE",
+        "fa": "محلول انفوزیون در بطری سیپروفلوکساسین لاکتات ۲۰۰ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00294",
+        "en": "CIPROFLOXACIN LACTATE 200MG/100ML INF P-BAG",
+        "fa": "محلول انفوزیون سیپروفلوکساسین لاکتات ۲۰۰ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "02250",
+        "en": "CIPROFLOXACIN LACTATE 200MG/20ML INF",
+        "fa": "محلول انفوزیون سیپروفلوکساسین لاکتات ۲۰۰ میلی‌گرم / ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "52076",
+        "en": "CIPROFLOXACIN INJECTION, SOLUTION INTRAVENOUS 10 mg/1mL 40 mL",
+        "fa": "فرآورده تزریقی سیپروفلوکساسین ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۴۰ میلی‌لیتر"
+      },
+      {
+        "code": "52435",
+        "en": "CIPROFLOXACIN (AS HYDROCHLORIDE) TABLET ORAL 750 mg",
+        "fa": "قرص سیپروفلوکساسین (معادل هیدروکلراید) ۷۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52801",
+        "en": "CIPROFLOXACIN (AS LACTATE) INJECTION, SOLUTION INTRAVENOUS 2 mg/1mL 200 mL",
+        "fa": "فرآورده تزریقی سیپروفلوکساسین (معادل لاکتات) ۲ میلی‌گرم / ۱ میلی‌لیتر ۲۰۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-361/Ciprofloxacin",
+        "url": "https://www.darooyab.ir/G-361/Ciprofloxacin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217887",
+      "label": "ANDA217887"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51dde3f2-adb1-4ed8-83c6-1f63723a2529",
+      "label": "FDA Ciprofloxacin otic"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S02AA15",
+      "label": "S02AA15"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-361/Ciprofloxacin",
+      "label": "Ciprofloxacin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cetraxal",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA217887"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C.",
+      "refs": [
+        {
+          "source": "fda-cetraxal",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-cetraxal",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and effectiveness of ciprofloxacin otic solution, 0.2% in infants below one year of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-cetraxal",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety and effectiveness have been observed between elderly and younger patients.",
+      "refs": [
+        {
+          "source": "fda-cetraxal",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

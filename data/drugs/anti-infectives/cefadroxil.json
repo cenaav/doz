@@ -1,0 +1,441 @@
+{
+  "id": "cefadroxil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفادروکسیل",
+    "en": "Cefadroxil"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین نسل اول",
+    "en": "First-generation cephalosporin"
+  },
+  "brands": [
+    {
+      "name": "Duricef",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "duricef",
+    "سفادروکسیل",
+    "سفادروکسیل ۵۰۰"
+  ],
+  "formulations": [
+    {
+      "id": "cap-500",
+      "form": "capsule",
+      "route": "oral",
+      "label": "500 mg capsule",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefadroxil",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "susp-250",
+      "form": "suspension",
+      "route": "oral",
+      "label": "250 mg/5 mL suspension",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "susp-500",
+      "form": "suspension",
+      "route": "oral",
+      "label": "500 mg/5 mL suspension",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cystitis",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "سیستیت بدون عارضه — بزرگسال: ۱ تا ۲ g در روز",
+        "en": "Uncomplicated cystitis — adults: 1–2 g per day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "perDoseMax": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک‌جا یا در دو نوبت. سایر UTIها: ۲ g/day در دو نوبت.",
+            "en": "Once or in two doses. Other UTIs: 2 g/day in two doses."
+          },
+          "refs": [
+            {
+              "source": "fda-cefadroxilsusp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharyngitis",
+      "disease": "streptococcal-pharyngitis",
+      "label": {
+        "fa": "فارنژیت/تونسیلیت — بزرگسال: ۱ g در روز، ۱۰ روز",
+        "en": "Pharyngitis/tonsillitis — adults: 1 g per day for 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "skin",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت پوست — بزرگسال: ۱ g در روز",
+        "en": "Skin infection — adults: 1 g per day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "peds-uti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "UTI — کودکان: ۳۰ mg/kg/day در ۲ نوبت",
+        "en": "UTI — children: 30 mg/kg/day in 2 doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 30,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "peds-strep",
+      "disease": "streptococcal-pharyngitis",
+      "label": {
+        "fa": "فارنژیت، تونسیلیت، زرد زخم — کودکان: ۳۰ mg/kg/day یک یا دو نوبت",
+        "en": "Pharyngitis, tonsillitis, impetigo — children: 30 mg/kg/day once or in 2 doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 30,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آلرژی به سفالوسپورین‌ها.",
+        "en": "Allergy to cephalosporins."
+      },
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cystitis",
+      "formulation": "cap-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 2,
+        "upperPerDose": 2000
+      }
+    },
+    {
+      "regimen": "pharyngitis",
+      "formulation": "cap-500",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "skin",
+      "formulation": "cap-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "peds-uti",
+      "formulation": "susp-250",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 6
+      }
+    },
+    {
+      "regimen": "peds-strep",
+      "formulation": "susp-500",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 600,
+        "mlPerDose": 6
+      }
+    }
+  ],
+  "atc": [
+    "J01DB05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-310/Cefadroxil",
+        "url": "https://www.darooyab.ir/G-310/Cefadroxil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=065396",
+      "label": "ANDA065396"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27009a05-4d2b-4618-be76-39f348240eda",
+      "label": "FDA Cefadroxil susp"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fe066ce-2f97-49d7-81bd-a672be1ebecd",
+      "label": "FDA Cefadroxil caps"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682730.html",
+      "label": "Cefadroxil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DB05",
+      "label": "J01DB05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-310/Cefadroxil",
+      "label": "Cefadroxil"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cefadroxilsusp",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA065396"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Category B Reproduction studies have been performed in mice and rats at doses up to 11 times the human dose and have revealed no evidence of impaired fertility or harm to the fetus due to cefadroxil monohydrate.",
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when cefadroxil monohydrate is administered to a nursing mother.",
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "(See DOSAGE AND ADMINISTRATION ).",
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-cefadroxilsusp",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

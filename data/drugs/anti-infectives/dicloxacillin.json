@@ -1,0 +1,290 @@
+{
+  "id": "dicloxacillin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیکلوکساسیلین (هم‌گروه کلوگزاسیلین)",
+    "en": "Dicloxacillin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "پنی‌سیلین مقاوم به پنی‌سیلیناز",
+    "en": "Penicillinase-resistant penicillin"
+  },
+  "brands": [
+    {
+      "name": "Dynapen",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "dicloxacillin",
+    "cloxacillin",
+    "کلوگزاسیلین",
+    "دیکلوکساسیلین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dicloxacillin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-500",
+      "form": "capsule",
+      "route": "oral",
+      "label": "500 mg capsule",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dicloxacillin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت استافیلوکوکی — بزرگسال: ۱۲۵ mg هر ۶ ساعت (شدید ۲۵۰)",
+        "en": "Staphylococcal infection — adults: 125 mg every 6 h (severe 250)"
+      },
+      "population": {
+        "minWeightKg": 40
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 125,
+        "perDoseMax": 250,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-dicloxacillin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "ناشتا (۱ ساعت قبل یا ۲ ساعت بعد از غذا) با حداقل ۱۲۰ mL آب؛ دراز نکشد. دوز ۱۲۵ mg با کپسول‌های ۲۵۰/۵۰۰ این برچسب ممکن نیست.",
+            "en": "Empty stomach (1 h before or 2 h after meals) with at least 120 mL water; not lying down. The 125 mg dose cannot be given with the 250/500 mg capsules in this label."
+          },
+          "refs": [
+            {
+              "source": "fda-dicloxacillin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت استافیلوکوکی — کمتر از ۴۰ kg: ۱۲٫۵ mg/kg/day (شدید ۲۵) در ۴ نوبت",
+        "en": "Staphylococcal infection — <40 kg: 12.5 mg/kg/day (severe 25) in 4 doses"
+      },
+      "population": {
+        "maxWeightKg": 39.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 12.5,
+        "perKgPerDayMax": 25,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-dicloxacillin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به هر پنی‌سیلین.",
+        "en": "Hypersensitivity to any penicillin."
+      },
+      "refs": [
+        {
+          "source": "fda-dicloxacillin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "J01CF01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-382/Dicloxacillin",
+        "url": "https://www.darooyab.ir/G-382/Dicloxacillin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=062286",
+      "label": "ANDA062286"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8478f242-c715-4984-ac1d-dc79dc28665e",
+      "label": "FDA Dicloxacillin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a685017.html",
+      "label": "Dicloxacillin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01CF01",
+      "label": "J01CF01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-382/Dicloxacillin",
+      "label": "Dicloxacillin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-dicloxacillin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA062286"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-dicloxacillin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when penicillins are administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-dicloxacillin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Because of incompletely developed renal function in newborns, penicillinase-resistant penicillins (especially methicillin) may not be completely excreted, with abnormally high blood levels resulting.",
+      "refs": [
+        {
+          "source": "fda-dicloxacillin",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-dicloxacillin",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,608 @@
+{
+  "id": "nitrofurantoin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نیتروفورانتوئین",
+    "en": "Nitrofurantoin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدعفونی ادراری",
+    "en": "Urinary antibacterial"
+  },
+  "brands": [
+    {
+      "name": "Macrobid",
+      "market": "US"
+    },
+    {
+      "name": "Macrodantin",
+      "market": "US"
+    },
+    {
+      "name": "Furadantin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "macrobid",
+    "macrodantin",
+    "furadantin",
+    "نیتروفورانتوئین",
+    "ماکروبید"
+  ],
+  "formulations": [
+    {
+      "id": "mb-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "Macrobid 100 mg capsule (monohydrate/macrocrystals)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-macrobid",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-25",
+      "form": "capsule",
+      "route": "oral",
+      "label": "25 mg capsule",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-macro",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-50",
+      "form": "capsule",
+      "route": "oral",
+      "label": "50 mg capsule",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-macro",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-macro",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "susp-25",
+      "form": "suspension",
+      "route": "oral",
+      "label": "25 mg/5 mL oral suspension",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-susp",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "macrobid",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "UTI — بالای ۱۲ سال: Macrobid ۱۰۰ mg هر ۱۲ ساعت، ۷ روز",
+        "en": "UTI — >12 y: Macrobid 100 mg every 12 hours for 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-macrobid",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "allowedFormulations": [
+        "mb-100"
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "UTI — بزرگسال (ماکروکریستال): ۵۰ تا ۱۰۰ mg چهار بار در روز",
+        "en": "UTI — adults (macrocrystals): 50–100 mg four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "perDoseMax": 100,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-susp",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-nitrofurantoin-macro",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-25",
+        "cap-50",
+        "cap-100",
+        "susp-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز پایین‌تر برای UTI بدون عارضه. با غذا. پیشگیری طولانی: ۵۰ تا ۱۰۰ mg هنگام خواب.",
+            "en": "Lower dose for uncomplicated UTI. With food. Long-term suppression: 50–100 mg at bedtime."
+          },
+          "refs": [
+            {
+              "source": "fda-nitrofurantoin-susp",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "UTI — ۱ ماه به بالا: ۵ تا ۷ mg/kg/day در ۴ نوبت",
+        "en": "UTI — ≥1 month: 5–7 mg/kg/day in 4 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 5,
+        "perKgPerDayMax": 7,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-susp",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-25",
+        "cap-50",
+        "cap-100",
+        "susp-25"
+      ]
+    },
+    {
+      "id": "peds-prophylaxis",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "پیشگیری طولانی UTI — کودکان: ۱ mg/kg/day",
+        "en": "Long-term UTI suppression — children: 1 mg/kg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 1,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-macro",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-25",
+        "cap-50",
+        "cap-100",
+        "susp-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک یا دو نوبت؛ ممکن است دوز به این کمی کافی باشد.",
+            "en": "Single or two divided doses; doses this low may be adequate."
+          },
+          "refs": [
+            {
+              "source": "fda-nitrofurantoin-macro",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "neonate",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱ ماه منع مصرف دارد (همولیز).",
+        "en": "Contraindicated under 1 month (haemolytic anaemia)."
+      },
+      "refs": [
+        {
+          "source": "fda-macrobid",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آنوری، الیگوری یا CrCl کمتر از ۶۰؛ بارداری ترم (۳۸ تا ۴۲ هفته) و زایمان؛ سابقه زردی کلستاتیک با نیتروفورانتوئین؛ حساسیت.",
+        "en": "Anuria, oliguria or CrCl <60 mL/min; pregnancy at term (38–42 weeks) and labour; prior nitrofurantoin cholestatic jaundice; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-macrobid",
+          "section": "Contraindications"
+        },
+        {
+          "source": "fda-nitrofurantoin-susp",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "block",
+      "text": {
+        "fa": "CrCl کمتر از ۶۰ منع مصرف است.",
+        "en": "CrCl under 60 mL/min is a contraindication."
+      },
+      "refs": [
+        {
+          "source": "fda-macrobid",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "macrobid",
+      "formulation": "mb-100",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 100,
+        "perDay": 200
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "cap-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 50,
+        "upperPerDose": 100
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "susp-25",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 12.5,
+        "mlPerDose": 2.5
+      }
+    },
+    {
+      "regimen": "peds-prophylaxis",
+      "formulation": "susp-25",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "susp-25",
+      "input": {
+        "ageYears": 0.05,
+        "weightKg": 4
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "J01XE01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00907",
+        "en": "NITROFURANTOIN 100MG TAB",
+        "fa": "قرص نیتروفورانتوئین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "11723",
+        "en": "NITROFURANTOIN 25MG/5ML 100ML SUSP",
+        "fa": "سوسپانسیون نیتروفورانتوئین ۲۵ میلی‌گرم / ۵ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00908",
+        "en": "NITROFURANTOIN 25MG/5ML 120ML SUSP",
+        "fa": "سوسپانسیون نیتروفورانتوئین ۲۵ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "11725",
+        "en": "NITROFURANTOIN 25MG/5ML 240ML SUSP",
+        "fa": "سوسپانسیون نیتروفورانتوئین ۲۵ میلی‌گرم / ۵ میلی‌لیتر ۲۴۰ میلی‌لیتر"
+      },
+      {
+        "code": "11701",
+        "en": "NITROFURANTOIN 25MG/5ML 60ML SUSP",
+        "fa": "سوسپانسیون نیتروفورانتوئین ۲۵ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "07967",
+        "en": "NITROFURANTOIN 50MG CAP",
+        "fa": "کپسول نیتروفورانتوئین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "09070",
+        "en": "NITROFURANTOIN 50MG/5ML 80ML SUSP",
+        "fa": "سوسپانسیون نیتروفورانتوئین ۵۰ میلی‌گرم / ۵ میلی‌لیتر ۸۰ میلی‌لیتر"
+      },
+      {
+        "code": "51882",
+        "en": "NITROFURANTOIN SUSPENSION ORAL 25 mg/5mL 100 mL",
+        "fa": "سوسپانسیون خوراکی نیتروفورانتوئین ۲۵ میلی‌گرم / ۵ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52046",
+        "en": "NITROFURANTOIN SUSPENSION ORAL 10 mg/1mL 80 mL",
+        "fa": "سوسپانسیون خوراکی نیتروفورانتوئین ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۸۰ میلی‌لیتر"
+      },
+      {
+        "code": "52089",
+        "en": "NITROFURANTOIN SUSPENSION ORAL 25 mg/5mL 80 mL",
+        "fa": "سوسپانسیون خوراکی نیتروفورانتوئین ۲۵ میلی‌گرم / ۵ میلی‌لیتر ۸۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-455/Nitrofurantoin",
+        "url": "https://www.darooyab.ir/G-455/Nitrofurantoin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217272",
+      "label": "ANDA217272"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ec66cc8-938f-4839-98c7-a51c9f1d50ed",
+      "label": "FDA Nitrofurantoin macro"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f270a9f-12a1-44d4-bc7e-873613555801",
+      "label": "FDA Macrobid"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89095f4d-e142-465e-b378-da24f6eeaf2b",
+      "label": "FDA Nitrofurantoin susp"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+      "label": "Nitrofurantoin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01XE01",
+      "label": "J01XE01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-455/Nitrofurantoin",
+      "label": "Nitrofurantoin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-nitrofurantoin-macro",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA217272"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Because of the possibility of hemolytic anemia due to immature erythrocyte enzyme systems (glutathione instability), the drug is contraindicated in pregnant patients at term (38 to 42 weeks' gestation), during labor and delivery, or when the onset of labor is imminent.",
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-macro",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions from nitrofurantoin in nursing infants under one month of age, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother (see CONTRAINDICATIONS ).",
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-macro",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Nitrofurantoin capsules (macrocrystals) are contraindicated in infants below the age of one month (see CONTRAINDICATIONS ).",
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-macro",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-nitrofurantoin-macro",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    }
+  }
+}

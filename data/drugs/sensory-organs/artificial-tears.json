@@ -1,0 +1,186 @@
+{
+  "id": "artificial-tears",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره اشک مصنوعی",
+    "en": "Artificial tears"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "روان‌کننده چشم",
+    "en": "Ocular lubricant"
+  },
+  "brands": [
+    {
+      "name": "Tears Naturale",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "artificial tears",
+    "اشک مصنوعی",
+    "قطره خشکی چشم",
+    "هیپروملوز"
+  ],
+  "formulations": [
+    {
+      "id": "drops",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "Dextran 70 0.1% / glycerin 0.2% / hypromellose 0.3%",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tears",
+          "section": "Active ingredients"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "dry",
+      "disease": "dry-eye",
+      "label": {
+        "fa": "خشکی چشم — ۱ یا ۲ قطره در صورت نیاز",
+        "en": "Dry eye — 1 or 2 drops as needed"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "perDoseMax": 2,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-tears",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز؛ تعداد نوبت روزانه نمونه است (برچسب «در صورت نیاز» گفته).",
+            "en": "As needed; the daily count is illustrative (the label says \"as needed\")."
+          },
+          "refs": [
+            {
+              "source": "fda-tears",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "color",
+      "severity": "warn",
+      "text": {
+        "fa": "اگر رنگ محلول تغییر کرد یا کدر شد استفاده نشود.",
+        "en": "Do not use if the solution changes colour or becomes cloudy."
+      },
+      "refs": [
+        {
+          "source": "fda-tears",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "dry",
+      "formulation": "drops",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "upperPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "S01XA20"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01536",
+        "en": "HYPROMELLOSE 2% SOL FOR INTRAOCULAR",
+        "fa": "محلول هیپرومللوس ۲ درصد اینتراوکولار"
+      },
+      {
+        "code": "06906",
+        "en": "HYPROMELOUS 1.6MG/0.5ML OPH DROP",
+        "fa": "قطره چشمی هیپروملوس ۱٫۶ میلی‌گرم / ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "07725",
+        "en": "HYPROMELOUS 1.6MG/0.5ML OPH GEL",
+        "fa": "ژل هیپروملوس ۱٫۶ میلی‌گرم / ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "05073",
+        "en": "CELLUGEL 1ML AMP",
+        "fa": "آمپول سللوجل ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3349/Hypromellose",
+        "url": "https://www.darooyab.ir/G-3349/Hypromellose"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f18bebf2-1936-658f-e053-2a95a90a5012",
+      "label": "FDA Artificial tears"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01XA20",
+      "label": "S01XA20"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3349/Hypromellose",
+      "label": "Hypromellose"
+    }
+  ],
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-tears",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M018"
+  }
+}

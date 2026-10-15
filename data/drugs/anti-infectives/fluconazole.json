@@ -1,0 +1,538 @@
+{
+  "id": "fluconazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلوکونازول",
+    "en": "Fluconazole"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدقارچ آزول",
+    "en": "Azole antifungal"
+  },
+  "brands": [
+    {
+      "name": "Diflucan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "diflucan",
+    "دیفلوکان",
+    "فلوکونازول",
+    "قرص قارچ واژن"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "susp-10",
+      "form": "suspension",
+      "route": "oral",
+      "label": "10 mg/mL oral suspension (reconstituted)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Directions for Mixing the Oral Suspension"
+        }
+      ]
+    },
+    {
+      "id": "susp-40",
+      "form": "suspension",
+      "route": "oral",
+      "label": "40 mg/mL oral suspension (reconstituted)",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Directions for Mixing the Oral Suspension"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "vaginal",
+      "disease": "vaginal-candidiasis",
+      "label": {
+        "fa": "کاندیدیاز واژن: ۱۵۰ mg خوراکی تک‌دوز",
+        "en": "Vaginal candidiasis: 150 mg orally, single dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 150,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Dosage and Administration in Adults"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "thrush-adult",
+      "disease": "oral-candidiasis",
+      "label": {
+        "fa": "برفک دهان — بزرگسال: روز اول ۲۰۰ mg، سپس ۱۰۰ mg روزانه",
+        "en": "Oropharyngeal candidiasis — adults: 200 mg day 1, then 100 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Dosage and Administration in Adults"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "روز اول ۲۰۰ mg. حداقل ۲ هفته برای کاهش عود. ازوفاژیت: همین دوز، تا ۴۰۰ mg/day، حداقل ۳ هفته.",
+            "en": "Day 1: 200 mg. At least 2 weeks to reduce relapse. Esophagitis: same, up to 400 mg/day, at least 3 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-diflucan",
+              "section": "Dosage and Administration in Adults"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thrush-peds",
+      "disease": "oral-candidiasis",
+      "label": {
+        "fa": "برفک دهان — ۶ ماه به بالا: روز اول ۶ mg/kg، سپس ۳ mg/kg روزانه",
+        "en": "Oropharyngeal candidiasis — ≥6 months: 6 mg/kg day 1, then 3 mg/kg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "loading",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "days": [
+          {
+            "fromDay": 1,
+            "toDay": 1,
+            "perKgPerDay": 6
+          },
+          {
+            "fromDay": 2,
+            "toDay": 14,
+            "perKgPerDay": 3
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Dosage and Administration in Pediatric Patients"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "حداقل ۲ هفته. ازوفاژیت: همین دوز، تا ۱۲ mg/kg/day.",
+            "en": "At least 2 weeks. Esophagitis: same, up to 12 mg/kg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-diflucan",
+              "section": "Dosage and Administration in Pediatric Patients"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فلوکونازول؛ همراه داروهای طولانی‌کننده QT که با CYP3A4 متابولیزه می‌شوند (اریترومایسین، پیموزاید، کینیدین).",
+        "en": "Hypersensitivity to fluconazole; with QT-prolonging CYP3A4 substrates (erythromycin, pimozide, quinidine)."
+      },
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-6m",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "دوز برفک در کودکان از ۶ ماه به بالا است.",
+        "en": "Pediatric thrush dosing is for 6 months and older."
+      },
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Dosage and Administration in Pediatric Patients"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "vaginal",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 150
+      }
+    },
+    {
+      "regimen": "thrush-adult",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100
+      }
+    },
+    {
+      "regimen": "thrush-peds",
+      "formulation": "susp-10",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 60,
+        "mlPerDose": 6
+      }
+    }
+  ],
+  "atc": [
+    "J02AC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00537",
+        "en": "FLUCONAZOLE 100MG CAP",
+        "fa": "کپسول فلوکونازول ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02127",
+        "en": "FLUCONAZOLE 100MG TAB",
+        "fa": "قرص فلوکونازول ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08530",
+        "en": "FLUCONAZOLE 100MG/50ML INF",
+        "fa": "محلول انفوزیون فلوکونازول ۱۰۰ میلی‌گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00538",
+        "en": "FLUCONAZOLE 150MG CAP",
+        "fa": "کپسول فلوکونازول ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02128",
+        "en": "FLUCONAZOLE 150MG TAB",
+        "fa": "قرص فلوکونازول ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02432",
+        "en": "FLUCONAZOLE 200MG CAP",
+        "fa": "کپسول فلوکونازول ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02433",
+        "en": "FLUCONAZOLE 200MG TAB",
+        "fa": "قرص فلوکونازول ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08529",
+        "en": "FLUCONAZOLE 200MG/100ML INJ",
+        "fa": "فرآورده تزریقی فلوکونازول ۲۰۰ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "11393",
+        "en": "FLUCONAZOLE 200MG/5ML SUSPENSION",
+        "fa": "فلوکونازول ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "22000",
+        "en": "FLUCONAZOLE 400MG/200ML INJ",
+        "fa": "فرآورده تزریقی فلوکونازول ۴۰۰ میلی‌گرم / ۲۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00540",
+        "en": "FLUCONAZOLE 50MG CAP",
+        "fa": "کپسول فلوکونازول ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02129",
+        "en": "FLUCONAZOLE 50MG TAB",
+        "fa": "قرص فلوکونازول ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-717/Fluconazole",
+        "url": "https://www.darooyab.ir/G-717/Fluconazole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019949",
+      "label": "NDA019949"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f694c617-3383-416c-91b6-b94fda371204",
+      "label": "FDA Diflucan"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a690002.html",
+      "label": "Fluconazole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601143.html",
+      "label": "Fluconazole Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J02AC01",
+      "label": "J02AC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-717/Fluconazole",
+      "label": "Fluconazole"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-diflucan",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019949"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Teratogenic Effects Potential for Fetal Harm: Use in pregnancy should be avoided except in patients with severe or potentially life-threatening fungal infections in whom fluconazole may be used if the anticipated benefit outweighs the possible risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when DIFLUCAN is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Use in Prophylaxis of Invasive Candida Infections in Pediatric Patients (premature infants weighing less than 750 grams at birth) Safety and effectiveness of DIFLUCAN for the prophylaxis of invasive candidiasis in pediatric patients (premature infants weighing less than 750 grams at birth) have not been established.",
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "It may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-diflucan",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

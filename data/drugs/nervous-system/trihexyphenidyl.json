@@ -1,0 +1,285 @@
+{
+  "id": "trihexyphenidyl",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تری‌هگزی‌فنیدیل",
+    "en": "Trihexyphenidyl"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتی‌کولینرژیک ضدپارکینسون",
+    "en": "Anticholinergic antiparkinsonian"
+  },
+  "brands": [
+    {
+      "name": "Artane",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "artane",
+    "آرتان",
+    "تری هگزی فنیدیل",
+    "ترى هگزى"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet (scored)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-trihexyphenidyl",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-trihexyphenidyl",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "eps",
+      "disease": "drug-induced-eps",
+      "label": {
+        "fa": "عوارض اکستراپیرامیدال دارویی — معمولاً ۵ تا ۱۵ mg/day",
+        "en": "Drug-induced EPS — usually 5–15 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "perDoseMax": 5,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-trihexyphenidyl",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 15,
+        "refs": [
+          {
+            "source": "fda-trihexyphenidyl",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت تجربی؛ گاهی ۱ mg روزانه کافی است.",
+            "en": "Determined empirically; sometimes 1 mg daily suffices."
+          },
+          "refs": [
+            {
+              "source": "fda-trihexyphenidyl",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pd",
+      "disease": "parkinsons",
+      "label": {
+        "fa": "پارکینسون — دوز هدف ۶ تا ۱۰ mg/day منقسم (پس از تیتراسیون)",
+        "en": "Parkinsonism — target 6–10 mg/day divided (after titration)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-trihexyphenidyl",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 15,
+        "refs": [
+          {
+            "source": "fda-trihexyphenidyl",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "روز اول ۱ mg، سپس افزایش ۲ mg هر ۳ تا ۵ روز تا ۶ تا ۱۰ mg/day؛ برخی تا ۱۲ تا ۱۵ mg.",
+            "en": "Day 1: 1 mg, then increase by 2 mg every 3–5 days to 6–10 mg/day; some need 12–15 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-trihexyphenidyl",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "eps",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "upperPerDose": 5
+      }
+    },
+    {
+      "regimen": "pd",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "perDay": 6
+      }
+    }
+  ],
+  "atc": [
+    "N04AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01258",
+        "en": "TRIHEXYPHENIDYL HCL 2MG TAB",
+        "fa": "قرص تریهکسیفنیدیل هیدروکلراید ۲ میلی‌گرم"
+      },
+      {
+        "code": "01698",
+        "en": "TRIHEXYPHENIDYL HCL 5MG TAB",
+        "fa": "قرص تریهکسیفنیدیل هیدروکلراید ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-929/Trihexyphenidyl",
+        "url": "https://www.darooyab.ir/G-929/Trihexyphenidyl"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=084363",
+      "label": "ANDA084363"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a44d7803-164d-4a67-9356-581c45de8596",
+      "label": "FDA Trihexyphenidyl"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682160.html",
+      "label": "Trihexyphenidyl"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04AA01",
+      "label": "N04AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-929/Trihexyphenidyl",
+      "label": "Trihexyphenidyl"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-trihexyphenidyl",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA084363"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری تری هگزی فنیدیل گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-929/Trihexyphenidyl — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-929/Trihexyphenidyl"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "betahistine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بتاهیستین",
+    "en": "Betahistine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنالوگ هیستامین",
+    "en": "Histamine analogue"
+  },
+  "brands": [
+    {
+      "name": "Serc",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "serc",
+    "سرک",
+    "بتاهیستین",
+    "سرگیجه"
+  ],
+  "formulations": [
+    {
+      "id": "tab-8",
+      "form": "tablet",
+      "route": "oral",
+      "label": "8 mg tablet",
+      "concentration": {
+        "amount": 8,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-serc-8",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "menieres",
+      "label": {
+        "fa": "منیر (سرگیجه، وزوز) — شروع ۱۶ mg سه بار در روز",
+        "en": "Ménière's (vertigo, tinnitus) — start 16 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 16,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-serc-8",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "ترجیحاً با غذا. نگهدارنده معمولاً ۲۴ تا ۴۸ mg/day. احتیاط در زخم پپتیک و آسم.",
+            "en": "Preferably with meals. Maintenance usually 24–48 mg/day. Caution in peptic ulcer and asthma."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-serc-8",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-serc-8",
+              "section": "4.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "فئوکروموسیتوم؛ حساسیت.",
+        "en": "Phaeochromocytoma; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-serc-8",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۸ سال توصیه نمی‌شود.",
+        "en": "Not recommended under 18 years."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-serc-8",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-8",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 16,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "N07CA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08828",
+        "en": "BETAHISTINE 2HCL 16MG TAB",
+        "fa": "قرص بتاهیستین ۲ هیدروکلراید ۱۶ میلی‌گرم"
+      },
+      {
+        "code": "00148",
+        "en": "BETAHISTINE 2HCL 8MG TAB",
+        "fa": "قرص بتاهیستین ۲ هیدروکلراید ۸ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3629/Betahistine",
+        "url": "https://www.darooyab.ir/G-3629/Betahistine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07CA01",
+      "label": "N07CA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3629/Betahistine",
+      "label": "Betahistine"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/1171/smpc",
+      "label": "UK SmPC Serc 8"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "and lactation Pregnancy There are no adequate data from the use of betahistine in pregnant women.",
+      "refs": [
+        {
+          "source": "uk-smpc-serc-8",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Betahistine is excreted in rat milk.",
+      "refs": [
+        {
+          "source": "uk-smpc-serc-8",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Paediatric population: not recommended for use in children below 18 years due to insufficient data on safety and efficacy.",
+      "refs": [
+        {
+          "source": "uk-smpc-serc-8",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

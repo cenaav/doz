@@ -1,0 +1,544 @@
+{
+  "id": "esomeprazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ازومپرازول",
+    "en": "Esomeprazole"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده پمپ پروتون",
+    "en": "Proton-pump inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Nexium",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nexium",
+    "نکسیوم",
+    "ازومپرازول",
+    "PPI"
+  ],
+  "formulations": [
+    {
+      "id": "cap-20",
+      "form": "capsule",
+      "route": "oral",
+      "label": "20 mg capsule",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-40",
+      "form": "capsule",
+      "route": "oral",
+      "label": "40 mg capsule",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ee",
+      "disease": "erosive-esophagitis",
+      "label": {
+        "fa": "ازوفاژیت اروزیو — ۲۰ یا ۴۰ mg یک بار، ۴ تا ۸ هفته",
+        "en": "Erosive oesophagitis — 20 or 40 mg once daily for 4–8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "perDoseMax": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 56
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداقل یک ساعت قبل از غذا؛ کامل بلعیده شود. نارسایی شدید کبد: حداکثر ۲۰ mg. نگهدارنده: ۲۰ mg روزانه.",
+            "en": "At least 1 h before meals; swallow whole. Severe liver impairment: max 20 mg. Maintenance: 20 mg daily."
+          },
+          "refs": [
+            {
+              "source": "fda-nexium",
+              "section": "2.1, Table 1"
+            },
+            {
+              "source": "fda-nexium",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gerd",
+      "disease": "gerd",
+      "label": {
+        "fa": "GERD علامت‌دار — ۲۰ mg یک بار، ۴ هفته",
+        "en": "Symptomatic GERD — 20 mg once daily for 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 28
+      }
+    },
+    {
+      "id": "hp",
+      "disease": "h-pylori",
+      "label": {
+        "fa": "ریشه‌کنی H. pylori (سه‌دارویی) — ۴۰ mg یک بار، ۱۰ روز",
+        "en": "H. pylori eradication (triple therapy) — 40 mg once daily for 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه آموکسی‌سیلین ۱۰۰۰ mg دو بار و کلاریترومایسین ۵۰۰ mg دو بار، ۱۰ روز.",
+            "en": "With amoxicillin 1,000 mg twice daily and clarithromycin 500 mg twice daily for 10 days."
+          },
+          "refs": [
+            {
+              "source": "fda-nexium",
+              "section": "2.1, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nsaid",
+      "disease": "peptic-ulcer-disease",
+      "label": {
+        "fa": "کاهش خطر زخم معده ناشی از NSAID — ۲۰ یا ۴۰ mg یک بار",
+        "en": "NSAID gastric-ulcer risk reduction — 20 or 40 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "perDoseMax": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "2.1, Table 1"
+        }
+      ]
+    },
+    {
+      "id": "peds-gerd",
+      "disease": "gerd",
+      "label": {
+        "fa": "GERD علامت‌دار — ۱۲ تا ۱۷ سال: ۲۰ mg یک بار، ۴ هفته",
+        "en": "Symptomatic GERD — 12–17 y: 20 mg once daily for 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 28
+      }
+    },
+    {
+      "id": "peds-ee",
+      "disease": "erosive-esophagitis",
+      "label": {
+        "fa": "ازوفاژیت اروزیو — ۱۲ تا ۱۷ سال: ۲۰ یا ۴۰ mg یک بار، ۴ تا ۸ هفته",
+        "en": "Erosive oesophagitis — 12–17 y: 20 or 40 mg once daily, 4–8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "perDoseMax": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 56
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بنزیمیدازول‌های جایگزین‌شده (آنافیلاکسی، آنژیوادم، نفریت بینابینی).",
+        "en": "Hypersensitivity to substituted benzimidazoles (anaphylaxis, angioedema, interstitial nephritis)."
+      },
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ee",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "upperPerDose": 40
+      }
+    },
+    {
+      "regimen": "gerd",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20
+      }
+    },
+    {
+      "regimen": "hp",
+      "formulation": "cap-40",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 40
+      }
+    },
+    {
+      "regimen": "nsaid",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20
+      }
+    },
+    {
+      "regimen": "peds-gerd",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 20
+      }
+    },
+    {
+      "regimen": "peds-ee",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "A02BC05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18013",
+        "en": "ESOMEPRAZOLE 10 MG  GRANULE",
+        "fa": "گرانول ازومپرازول ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "16306",
+        "en": "ESOMEPRAZOLE 10MG SACHET",
+        "fa": "ساشه ازومپرازول ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "13973",
+        "en": "ESOMEPRAZOLE 20MG CAP",
+        "fa": "کپسول ازومپرازول ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "05922",
+        "en": "ESOMEPRAZOLE 20MG TAB",
+        "fa": "قرص ازومپرازول ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "13974",
+        "en": "ESOMEPRAZOLE 40MG CAP",
+        "fa": "کپسول ازومپرازول ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "05923",
+        "en": "ESOMEPRAZOLE 40MG TAB",
+        "fa": "قرص ازومپرازول ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "52188",
+        "en": "ESOMEPRAZOLE 5 MG GRANULE",
+        "fa": "گرانول ازومپرازول ۵ میلی‌گرم"
+      },
+      {
+        "code": "52675",
+        "en": "ESOMEPRAZOLE 2.5 MG GRANULE",
+        "fa": "گرانول ازومپرازول ۲٫۵ میلی‌گرم"
+      },
+      {
+        "code": "52085",
+        "en": "ESOMEPRAZOLE (AS MAGNESIUM) GRANULE, DELAYED RELEASE ORAL 10 mg",
+        "fa": "گرانول ازومپرازول (معادل منیزیم) ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2582/Esomeprazole",
+        "url": "https://www.darooyab.ir/G-2582/Esomeprazole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021153",
+      "label": "NDA021153"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4853677-1622-4037-688b-fdf533a11d96",
+      "label": "FDA Nexium"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699054.html",
+      "label": "Esomeprazole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a619032.html",
+      "label": "Esomeprazole Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A02BC05",
+      "label": "A02BC05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2582/Esomeprazole",
+      "label": "Esomeprazole"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-nexium",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021153"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies with esomeprazole in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Esomeprazole is the S-isomer of omeprazole and limited data suggest that omeprazole may be present in human milk.",
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and effectiveness of NEXIUM for the treatment of EE due to acid-mediated GERD in pediatric patients less than 1 month of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of patients who received NEXIUM in clinical trials, 1459 were 65 to 74 years of age and 354 patients were 75 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-nexium",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

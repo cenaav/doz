@@ -1,0 +1,312 @@
+{
+  "id": "bismuth-subsalicylate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بیسموت ساب‌سالیسیلات",
+    "en": "Bismuth subsalicylate"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ضداسهال و محافظ معده",
+    "en": "Antidiarrhoeal and gastric protectant"
+  },
+  "brands": [
+    {
+      "name": "Pepto-Bismol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pepto bismol",
+    "پپتو بیسمول",
+    "بیسموت",
+    "bismuth"
+  ],
+  "formulations": [
+    {
+      "id": "susp-525",
+      "form": "suspension",
+      "route": "oral",
+      "label": "525 mg/30 mL liquid",
+      "concentration": {
+        "amount": 525,
+        "unit": "mg",
+        "perVolumeMl": 30
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-pepto",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "diarrhea",
+      "disease": "acute-diarrhoea",
+      "label": {
+        "fa": "اسهال/اسهال مسافرتی — ۱۲ سال به بالا: ۳۰ mL هر نیم ساعت",
+        "en": "Diarrhoea/traveller’s diarrhoea — ≥12 y: 30 mL every 30 minutes"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 525,
+        "dosesPerDay": 8,
+        "intervalHours": 0.5
+      },
+      "refs": [
+        {
+          "source": "fda-pepto",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4200,
+        "refs": [
+          {
+            "source": "fda-pepto",
+            "section": "Directions"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 2
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۶۰ mL هر ساعت در صورت نیاز؛ حداکثر ۸ دوز (۲۴۰ mL) در ۲۴ ساعت؛ حداکثر ۲ روز.",
+            "en": "Or 60 mL every hour as needed; max 8 doses (240 mL) in 24 h; no more than 2 days."
+          },
+          "refs": [
+            {
+              "source": "fda-pepto",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dyspepsia",
+      "disease": "dyspepsia",
+      "label": {
+        "fa": "سوءهاضمه، سوزش سر دل، تهوع — ۱۲ سال به بالا: ۳۰ mL هر نیم ساعت در صورت نیاز",
+        "en": "Indigestion, heartburn, nausea — ≥12 y: 30 mL every 30 minutes as needed"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 525,
+        "dosesPerDay": 8,
+        "intervalHours": 0.5
+      },
+      "refs": [
+        {
+          "source": "fda-pepto",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4200,
+        "refs": [
+          {
+            "source": "fda-pepto",
+            "section": "Directions"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال: با پزشک مشورت شود.",
+        "en": "Under 12 years: ask a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-pepto",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "reye",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 20,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "سندرم ری: کودکان و نوجوانان با آبله‌مرغان یا علائم شبه‌آنفلوآنزا مصرف نکنند (حاوی سالیسیلات).",
+        "en": "Reye’s syndrome: children and teenagers with chickenpox or flu-like symptoms should not use (contains salicylate)."
+      },
+      "refs": [
+        {
+          "source": "fda-pepto",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "diarrhea",
+      "formulation": "susp-525",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 525,
+        "mlPerDose": 30
+      }
+    },
+    {
+      "regimen": "dyspepsia",
+      "formulation": "susp-525",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "mlPerDose": 30
+      }
+    }
+  ],
+  "atc": [
+    "A07BB"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "19717",
+        "en": "BISMUTH OXIDE CREAM",
+        "fa": "کرم بیسموت اکساید"
+      },
+      {
+        "code": "00169",
+        "en": "BISMUTH SUBCITRATE 120MG TAB",
+        "fa": "قرص بیسموت سوبسیترات ۱۲۰ میلی‌گرم"
+      },
+      {
+        "code": "01332",
+        "en": "BISMUTH SUBNITRATE 100GR PWD",
+        "fa": "بیسموت سوبنیترات ۱۰۰ گرم پودر"
+      },
+      {
+        "code": "16618",
+        "en": "BISMUTH_BULK",
+        "fa": "ماده اولیه بیسموت"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2549/Bismuth-Salts",
+        "url": "https://www.darooyab.ir/G-2549/Bismuth-Salts"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=67006e82-870d-8d63-e053-2991aa0a02d1",
+      "label": "FDA Pepto-Bismol (OTC)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607040.html",
+      "label": "Bismuth Subsalicylate"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07BB",
+      "label": "A07BB"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2549/Bismuth-Salts",
+      "label": "Bismuth-Salts"
+    }
+  ],
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-pepto",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M008"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-pepto",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-pepto",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  }
+}

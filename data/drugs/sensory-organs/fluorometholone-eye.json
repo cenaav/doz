@@ -1,0 +1,271 @@
+{
+  "id": "fluorometholone-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی فلورومتولون",
+    "en": "Fluorometholone eye drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "کورتیکواستروئید چشمی",
+    "en": "Ophthalmic corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "FML",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "fml",
+    "اف ام ال",
+    "فلورومتولون",
+    "قطره کورتون چشم"
+  ],
+  "formulations": [
+    {
+      "id": "susp-0-1",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.1% suspension",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "inflam",
+      "disease": "ocular-inflammation",
+      "label": {
+        "fa": "التهاب چشم پاسخ‌ده به کورتون — ۱ قطره دو تا چهار بار",
+        "en": "Steroid-responsive eye inflammation — 1 drop two to four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 6,
+        "refs": [
+          {
+            "source": "fda-fml",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۴ تا ۴۸ ساعت اول می‌توان هر ۴ ساعت. اگر پس از ۲ روز بهبود نیافت، ارزیابی مجدد. قبل از مصرف تکان داده شود.",
+            "en": "First 24–48 h may be every 4 h. Re-evaluate if not improved after 2 days. Shake well."
+          },
+          "refs": [
+            {
+              "source": "fda-fml",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بیشتر بیماری‌های ویروسی قرنیه و ملتحمه (هرپس، واکسینیا، آبله‌مرغان)؛ عفونت مایکوباکتریایی یا قارچی چشم.",
+        "en": "Most viral diseases of cornea/conjunctiva (herpes, vaccinia, varicella); mycobacterial or fungal eye infection."
+      },
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال ثابت نشده.",
+        "en": "Not established under 2 years."
+      },
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "inflam",
+      "formulation": "susp-0-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "S01BA07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00548",
+        "en": "FLUOROMETHOLONE 0.1% 5ML OPH DROP",
+        "fa": "قطره چشمی فلوورومتولون ۰٫۱ درصد ۵ میلی‌لیتر"
+      },
+      {
+        "code": "11432",
+        "en": "FLUOROMETHOLONE 10ML OPH DROP",
+        "fa": "قطره چشمی فلوورومتولون ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2105/Fluorometholone",
+        "url": "https://www.darooyab.ir/G-2105/Fluorometholone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216348",
+      "label": "ANDA216348"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e7988a3b-e432-4d42-a8d2-63ca017e6a01",
+      "label": "FDA Fluorometholone eye"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01BA07",
+      "label": "S01BA07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2105/Fluorometholone",
+      "label": "Fluorometholone"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-fml",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA216348"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Fluorometholone should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants from fluorometholone, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in infants below the age of two years have not been established.",
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness have been observed between elderly and younger patients.",
+      "refs": [
+        {
+          "source": "fda-fml",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

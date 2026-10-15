@@ -88,6 +88,12 @@ export interface Example {
   input: { ageDays?: number; ageMonths?: number; ageYears?: number; weightKg: number; heightCm?: number; scrMgDl?: number }
   expect: Partial<Record<'status' | 'perDose' | 'perDay' | 'dosesPerDay' | 'mlPerDose' | 'mlPerDoseRounded' | 'tabletsPerDoseRounded' | 'upperPerDose' | 'upperPerDay' | 'upperMlPerDose' | 'upperMlPerDoseRounded', number | string>>
 }
+export type PopLevel = 'ok' | 'caution' | 'avoid' | 'contraindicated' | 'not-established' | 'no-data'
+export interface PopNote { level: PopLevel; text: I18nText; quote?: string; refs: Ref[] }
+export type Population = 'pregnancy' | 'lactation' | 'pediatric' | 'geriatric' | 'reproductive'
+export interface IranStatus { status: 'registered' | 'not-found' | 'iran-only'; forms?: { code: string; en: string; fa?: string }[]; refs: Ref[] }
+export interface DrugLink { kind: 'dailymed' | 'fda' | 'medlineplus' | 'who-atc' | 'darooyab' | 'emc' | 'nhs'; url: string; label?: string }
+export interface UsApproval { kind: 'NDA' | 'ANDA' | 'BLA' | 'NDA authorized generic' | 'OTC monograph' | 'unapproved' | 'dietary supplement'; id?: string; refs: Ref[] }
 export interface Drug {
   id: string
   schemaVersion: 1
@@ -105,6 +111,11 @@ export interface Drug {
   interactions: (Note & { with: string })[]
   review: { status: 'unverified' | 'verified'; reviewer: string | null; date: string | null }
   examples: Example[]
+  atc?: string[]
+  iran?: IranStatus
+  links?: DrugLink[]
+  populations?: Partial<Record<Population, PopNote>>
+  usApproval?: UsApproval
 }
 export interface Disease {
   id: string
@@ -115,7 +126,9 @@ export interface Disease {
   description?: Note
   symptoms?: { items: I18nText[]; refs: Ref[] }
 }
-export interface Category { id: string; name: I18nText; icon: string; order: number }
+export interface Category { id: string; name: I18nText; icon: string; order: number; atc: string }
+export interface AtcGroup { code: string; name: I18nText }
+export interface Collection { id: string; name: I18nText; icon: string; order: number; description?: I18nText; drugs: string[]; pediatricAuto?: boolean }
 export interface CatalogEntry {
   id: string
   category: string
@@ -126,6 +139,7 @@ export interface CatalogEntry {
   reviewStatus: 'unverified' | 'verified'
   confidence: 'high' | 'low'
   markets: string[]
+  atc: string[]
   regimens: { id: string; disease: string; label: I18nText; type: RegimenType }[]
 }
-export interface DataSet { sources: Source[]; diseases: Disease[]; categories: Category[]; drugs: { path: string; drug: Drug }[] }
+export interface DataSet { sources: Source[]; diseases: Disease[]; categories: Category[]; collections?: Collection[]; drugs: { path: string; drug: Drug }[] }

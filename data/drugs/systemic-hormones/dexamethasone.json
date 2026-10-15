@@ -1,0 +1,302 @@
+{
+  "id": "dexamethasone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دگزامتازون",
+    "en": "Dexamethasone"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "کورتیکواستروئید",
+    "en": "Corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Dexamethasone Intensol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "دگزا",
+    "dexa",
+    "دگزامتازون"
+  ],
+  "formulations": [
+    {
+      "id": "sol-1-1",
+      "form": "solution",
+      "route": "oral",
+      "label": "1 mg / mL oral concentrate",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dexamethasone-intensol",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "croup",
+      "disease": "croup",
+      "label": {
+        "fa": "کروپ — تک‌دوز خوراکی ۰٫۶ mg/kg",
+        "en": "Croup — single oral dose 0.6 mg/kg"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.6,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "cps-croup",
+          "section": "Treatment — Corticosteroids"
+        },
+        {
+          "source": "cps-croup",
+          "section": "Abstract"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "راه خوراکی ترجیح دارد؛ در استفراغ مداوم یا دیسترس شدید، عضلانی. دوزهای ۰٫۱۵ تا ۰٫۳ mg/kg مطالعه شده ولی معادل بودن روشن نیست. سقف mg در منبع ذکر نشده است.",
+            "en": "Oral route preferred; IM if persistent vomiting or significant distress. Doses of 0.15–0.3 mg/kg studied but equivalence unclear. The source states no mg maximum."
+          },
+          "refs": [
+            {
+              "source": "cps-croup",
+              "section": "Treatment — Corticosteroids"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "این کاربرد در برچسب FDA نیامده است.",
+            "en": "This use is not in the FDA label."
+          },
+          "refs": [
+            {
+              "source": "fda-dexamethasone-intensol",
+              "section": "Indications and Usage"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "fungal",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت قارچی سیستمیک؛ حساسیت به اجزا.",
+        "en": "Systemic fungal infections; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-dexamethasone-intensol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "croup",
+      "formulation": "sol-1-1",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 12
+      },
+      "expect": {
+        "perDose": 7.2,
+        "mlPerDose": 7.2
+      }
+    }
+  ],
+  "atc": [
+    "H02AB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00398",
+        "en": "DEXAMETHASONE 0.5MG TAB",
+        "fa": "قرص دگزامتازون ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "00397",
+        "en": "DEXAMETHASONE 0.5MG/5ML SYRUP",
+        "fa": "شربت دگزامتازون ۰٫۵ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "17013",
+        "en": "DEXAMETHASONE 0.7MG IMPLANT",
+        "fa": "ایمپلنت دگزامتازون ۰٫۷ میلی‌گرم"
+      },
+      {
+        "code": "11677",
+        "en": "DEXAMETHASONE 10ML SPRAY",
+        "fa": "اسپری دگزامتازون ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "00400",
+        "en": "DEXAMETHASONE 8MG/2ML AMP",
+        "fa": "آمپول دگزامتازون ۸ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "16620",
+        "en": "DEXAMETHASONE_BULK",
+        "fa": "ماده اولیه دگزامتازون"
+      },
+      {
+        "code": "51923",
+        "en": "DEXAMETHASONE 4 mg TABLET",
+        "fa": "قرص دگزامتازون ۴ میلی‌گرم"
+      },
+      {
+        "code": "52195",
+        "en": "DEXAMETHASONE (AS ACETATE) TABLET ORAL 40 mg",
+        "fa": "قرص دگزامتازون (معادل استات) ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "52870",
+        "en": "DEXAMETHASONE (AS DISODIUM PHOSPHATE) INJECTION PARENTERAL 4 mg/1mL 1 mL",
+        "fa": "فرآورده تزریقی دگزامتازون (معادل دی‌سدیم فسفات) ۴ میلی‌گرم / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2091/Dexamethasone",
+        "url": "https://www.darooyab.ir/G-2091/Dexamethasone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=088252",
+      "label": "ANDA088252"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=77429dd3-e66d-4ab4-a3f3-5ae0b987ac17",
+      "label": "FDA Dexa Intensol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682792.html",
+      "label": "Dexamethasone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616022.html",
+      "label": "Dexamethasone Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H02AB02",
+      "label": "H02AB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2091/Dexamethasone",
+      "label": "Dexamethasone"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-dexamethasone-intensol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA088252"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Corticosteroids should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-dexamethasone-intensol",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants from corticosteroids, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-dexamethasone-intensol",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The efficacy and safety of corticosteroids in the pediatric population are based on the well-established course of effect of corticosteroids, which is similar in pediatric and adult populations.",
+      "refs": [
+        {
+          "source": "fda-dexamethasone-intensol",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-dexamethasone-intensol",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

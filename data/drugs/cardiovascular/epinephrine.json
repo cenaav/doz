@@ -1,0 +1,343 @@
+{
+  "id": "epinephrine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اپی‌نفرین (اتو اینجکتور)",
+    "en": "Epinephrine auto-injector"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آگونیست آدرنرژیک — اورژانس آنافیلاکسی",
+    "en": "Adrenergic agonist — anaphylaxis emergency"
+  },
+  "brands": [
+    {
+      "name": "EpiPen",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "epipen",
+    "اپی پن",
+    "اپی نفرین",
+    "آدرنالین",
+    "adrenaline",
+    "آنافیلاکسی"
+  ],
+  "formulations": [
+    {
+      "id": "pen-0-3",
+      "form": "injection",
+      "route": "im",
+      "label": "EpiPen 0.3 mg auto-injector",
+      "concentration": {
+        "amount": 0.3,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "jr-0-15",
+      "form": "injection",
+      "route": "im",
+      "label": "EpiPen Jr 0.15 mg auto-injector",
+      "concentration": {
+        "amount": 0.15,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "anaphylaxis",
+      "disease": "anaphylaxis",
+      "label": {
+        "fa": "آنافیلاکسی — بر اساس وزن: ۱۵ تا ۳۰ kg EpiPen Jr؛ ۳۰ kg به بالا EpiPen",
+        "en": "Anaphylaxis — by weight: 15–30 kg EpiPen Jr; ≥30 kg EpiPen"
+      },
+      "population": {
+        "minWeightKg": 15
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 14.99,
+            "maxWeightKg": 29.99,
+            "perDose": 0.15,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 29.99,
+            "maxWeightKg": null,
+            "perDose": 0.3,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عضلانی یا زیرجلدی در قسمت قدامی‌خارجی ران، در صورت لزوم از روی لباس. در آنافیلاکسی شدید مداوم ممکن است تزریق دوم لازم شود؛ بیش از دو دوز فقط زیر نظر پزشک. فوراً اورژانس.",
+            "en": "IM or SC into the anterolateral thigh, through clothing if needed. Severe persistent anaphylaxis may need a second injection; more than two doses only under medical supervision. Seek emergency care immediately."
+          },
+          "refs": [
+            {
+              "source": "fda-epipen",
+              "section": "2"
+            },
+            {
+              "source": "fda-epipen",
+              "section": "8.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-15",
+      "severity": "warn",
+      "rule": {
+        "maxWeightKg": 14.99
+      },
+      "text": {
+        "fa": "زیر ۱۵ kg: دوز ثابت قلم‌ها ممکن است زیاد باشد؛ شکل دیگری از اپی‌نفرین تزریقی در نظر گرفته شود.",
+        "en": "Under 15 kg: fixed pen doses may be too high; consider another injectable epinephrine form."
+      },
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "anaphylaxis",
+      "formulation": "jr-0-15",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 0.15,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "anaphylaxis",
+      "formulation": "pen-0-3",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.3
+      }
+    },
+    {
+      "regimen": "anaphylaxis",
+      "formulation": "pen-0-3",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 18
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "C01CA24"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07915",
+        "en": "ADRENALINE 0.15MG AUTO INJ",
+        "fa": "خودتزریق آدرنالین ۰٫۱۵ میلی‌گرم"
+      },
+      {
+        "code": "06748",
+        "en": "ADRENALINE 0.3MG AUTO INJ",
+        "fa": "خودتزریق آدرنالین ۰٫۳ میلی‌گرم"
+      },
+      {
+        "code": "10484",
+        "en": "EPINEPHRINE 0.01% 10ML AMP",
+        "fa": "آمپول اپی‌نفرین ۰٫۰۱ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "00489",
+        "en": "EPINEPHRINE 1% 7.5ML OPH DROP",
+        "fa": "قطره چشمی اپی‌نفرین ۱ درصد ۷٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "01489",
+        "en": "EPINEPHRINE 1MG/1ML AMP",
+        "fa": "آمپول اپی‌نفرین ۱ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00490",
+        "en": "EPINEPHRINE 1MG/ML SYRINGE",
+        "fa": "سرنگ اپی‌نفرین ۱ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "51121",
+        "en": "EPINEPHRINE INJECTION, SOLUTION PARENTERAL 0.5 mg/1mL 0.3 mL",
+        "fa": "محلول تزریقی اپی‌نفرین ۰٫۵ میلی‌گرم / ۱ میلی‌لیتر ۰٫۳ میلی‌لیتر"
+      },
+      {
+        "code": "52444",
+        "en": "EPINEPHRINE INJECTION PARENTERAL 1 mg/1mL 0.3 mL",
+        "fa": "فرآورده تزریقی اپی‌نفرین ۱ میلی‌گرم / ۱ میلی‌لیتر ۰٫۳ میلی‌لیتر"
+      },
+      {
+        "code": "52718",
+        "en": "EPINEPHRINE INJECTION, SOLUTION PARENTERAL 0.3 mg/0.3mL 2 mL",
+        "fa": "محلول تزریقی اپی‌نفرین ۰٫۳ میلی‌گرم / ۰٫۳ میلی‌لیتر ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1512/Epinephrine",
+        "url": "https://www.darooyab.ir/G-1512/Epinephrine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019430",
+      "label": "NDA019430"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7560c201-9246-487c-a13b-6295db04274a",
+      "label": "FDA EpiPen"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603002.html",
+      "label": "Epinephrine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01CA24",
+      "label": "C01CA24"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1512/Epinephrine",
+      "label": "Epinephrine"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-epipen",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019430"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well controlled studies of the acute effect of epinephrine in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information on the presence of epinephrine in human milk, the effects on breastfed infants, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "EpiPen or EpiPen Jr may be administered to pediatric patients at a dosage appropriate to body weight [ see Dosage and Administration (2.1) ] .",
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Therefore, EpiPen should be administered with caution in elderly individuals, who may be at greater risk for developing adverse reactions after epinephrine administration [ see Warnings and Precautions (5.5) , Overdosage (10) ].",
+      "refs": [
+        {
+          "source": "fda-epipen",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

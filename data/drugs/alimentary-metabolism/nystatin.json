@@ -1,0 +1,318 @@
+{
+  "id": "nystatin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نیستاتین",
+    "en": "Nystatin"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ضدقارچ پلی‌ین",
+    "en": "Polyene antifungal"
+  },
+  "brands": [
+    {
+      "name": "Mycostatin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nistatin",
+    "نیستاتین قطره",
+    "mycostatin"
+  ],
+  "formulations": [
+    {
+      "id": "susp-100k",
+      "form": "suspension",
+      "route": "oral",
+      "label": "100,000 units / mL",
+      "concentration": {
+        "amount": 100000,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nystatin-susp",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "infant",
+      "disease": "oral-candidiasis",
+      "label": {
+        "fa": "شیرخوار — ۲ mL (۲۰۰٬۰۰۰ واحد) چهار بار در روز",
+        "en": "Infants — 2 mL (200,000 units) four times daily"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "unit",
+      "dose": {
+        "perDose": 200000,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-nystatin-susp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نیمی از دوز در هر طرف دهان؛ تا حد امکان در دهان نگه داشته شود. تا ۴۸ ساعت پس از رفع علائم ادامه یابد.",
+            "en": "Half the dose in each side of the mouth; retain as long as possible. Continue at least 48 h after symptoms resolve."
+          },
+          "refs": [
+            {
+              "source": "fda-nystatin-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "در نوزادان نارس و کم‌وزن، ۱ mL (۱۰۰٬۰۰۰ واحد) چهار بار در روز مؤثر گزارش شده است.",
+            "en": "In neonates incl. premature/low-birth-weight, 1 mL (100,000 units) four times daily was effective."
+          },
+          "refs": [
+            {
+              "source": "fda-nystatin-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-adult",
+      "disease": "oral-candidiasis",
+      "label": {
+        "fa": "کودکان و بزرگسالان — ۴ تا ۶ mL چهار بار در روز",
+        "en": "Children and adults — 4–6 mL four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "unit",
+      "dose": {
+        "perDose": 400000,
+        "perDoseMax": 600000,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-nystatin-susp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نیمی از دوز در هر طرف دهان؛ تا حد امکان در دهان نگه داشته شود. تا ۴۸ ساعت پس از رفع علائم ادامه یابد.",
+            "en": "Half the dose in each side of the mouth; retain as long as possible. Continue at least 48 h after symptoms resolve."
+          },
+          "refs": [
+            {
+              "source": "fda-nystatin-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به نیستاتین.",
+        "en": "History of hypersensitivity to nystatin."
+      },
+      "refs": [
+        {
+          "source": "fda-nystatin-susp",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "infant",
+      "formulation": "susp-100k",
+      "input": {
+        "ageMonths": 4,
+        "weightKg": 6
+      },
+      "expect": {
+        "perDose": 200000,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "child-adult",
+      "formulation": "susp-100k",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "mlPerDose": 4,
+        "upperMlPerDose": 6
+      }
+    }
+  ],
+  "atc": [
+    "A07AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00923",
+        "en": "NYSTATIN 100,000 U/G 15G OINT",
+        "fa": "پماد نیستاتین ۱۰۰۰۰۰ واحد / گرم ۱۵ گرم"
+      },
+      {
+        "code": "00925",
+        "en": "NYSTATIN 100,000 U/ML ORAL DROP",
+        "fa": "قطره خوراکی نیستاتین ۱۰۰۰۰۰ واحد / میلی‌لیتر"
+      },
+      {
+        "code": "20223",
+        "en": "NYSTATIN 100,000 U/ML SYRUP",
+        "fa": "شربت نیستاتین ۱۰۰۰۰۰ واحد / میلی‌لیتر"
+      },
+      {
+        "code": "00924",
+        "en": "NYSTATIN 100000 U VAG TAB",
+        "fa": "قرص واژینال نیستاتین ۱۰۰۰۰۰ واحد"
+      },
+      {
+        "code": "00926",
+        "en": "NYSTATIN 500,000 U TAB",
+        "fa": "قرص نیستاتین ۵۰۰۰۰۰ واحد"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-734/Nystatin",
+        "url": "https://www.darooyab.ir/G-734/Nystatin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=214346",
+      "label": "ANDA214346"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8211a0ef-98a8-4136-986c-23c306db1159",
+      "label": "FDA Nystatin susp"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682758.html",
+      "label": "Nystatin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618065.html",
+      "label": "Nystatin Topical"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07AA02",
+      "label": "A07AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-734/Nystatin",
+      "label": "Nystatin"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-nystatin-susp",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA214346"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Teratogenicity studies have not been conducted with nystatin.",
+      "refs": [
+        {
+          "source": "fda-nystatin-susp",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when nystatin is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-nystatin-susp",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "See DOSAGE AND ADMINISTRATION section for pediatric dosing recommendations.",
+      "refs": [
+        {
+          "source": "fda-nystatin-susp",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    }
+  }
+}

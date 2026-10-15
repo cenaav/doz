@@ -1,0 +1,337 @@
+{
+  "id": "medroxyprogesterone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مدروکسی‌پروژسترون",
+    "en": "Medroxyprogesterone acetate"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "پروژستین",
+    "en": "Progestin"
+  },
+  "brands": [
+    {
+      "name": "Provera",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "provera",
+    "پروورا",
+    "مدروکسی پروژسترون",
+    "MPA"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (scored)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-medroxyprogesterone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "amenorrhea",
+      "disease": "secondary-amenorrhea",
+      "label": {
+        "fa": "آمنوره ثانویه: ۵ یا ۱۰ mg روزانه، ۵ تا ۱۰ روز",
+        "en": "Secondary amenorrhoea: 5 or 10 mg daily for 5–10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-medroxyprogesterone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "برای تبدیل ترشحی بهینه آندومتر: ۱۰ mg روزانه ۱۰ روز. خونریزی قطع معمولاً ۳ تا ۷ روز پس از توقف.",
+            "en": "For optimal secretory transformation: 10 mg daily for 10 days. Withdrawal bleeding usually 3–7 days after stopping."
+          },
+          "refs": [
+            {
+              "source": "fda-medroxyprogesterone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aub",
+      "disease": "abnormal-uterine-bleeding",
+      "label": {
+        "fa": "خونریزی غیرطبیعی رحم (هورمونی): ۵ یا ۱۰ mg روزانه ۵ تا ۱۰ روز از روز ۱۶ یا ۲۱ سیکل",
+        "en": "Abnormal uterine bleeding (hormonal): 5 or 10 mg daily for 5–10 days from cycle day 16 or 21"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-medroxyprogesterone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 10
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی تناسلی تشخیص‌داده‌نشده؛ سرطان پستان یا نئوپلازی وابسته به هورمون؛ DVT/PE یا ترومبوآمبولی شریانی (فعلی یا سابقه)؛ بیماری کبد؛ بارداری؛ آنافیلاکسی به دارو.",
+        "en": "Undiagnosed genital bleeding; breast cancer or hormone-dependent neoplasia; current or past DVT/PE or arterial thromboembolism; liver disease; pregnancy; anaphylaxis to the drug."
+      },
+      "refs": [
+        {
+          "source": "fda-medroxyprogesterone",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: با استروژن خطر DVT، PE، سکته، MI، سرطان پستان و دمانس در زنان یائسه.",
+        "en": "Boxed warning: with oestrogen, increased risk of DVT, PE, stroke, MI, breast cancer and dementia in postmenopausal women."
+      },
+      "refs": [
+        {
+          "source": "fda-medroxyprogesterone",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "amenorrhea",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "aub",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "G03DA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00791",
+        "en": "MEDROXYPROGESTERONE ACETATE 150MG/1ML AMP",
+        "fa": "آمپول مدروکسی‌پروژسترون استات ۱۵۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "13657",
+        "en": "MEDROXYPROGESTERONE ACETATE 150MG/3ML VIAL",
+        "fa": "ویال مدروکسی‌پروژسترون استات ۱۵۰ میلی‌گرم / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "00789",
+        "en": "MEDROXYPROGESTERONE ACETATE 250MG TAB",
+        "fa": "قرص مدروکسی‌پروژسترون استات ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00793",
+        "en": "MEDROXYPROGESTERONE ACETATE 500MG/2.5ML AMP",
+        "fa": "آمپول مدروکسی‌پروژسترون استات ۵۰۰ میلی‌گرم / ۲٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "00790",
+        "en": "MEDROXYPROGESTERONE ACETATE 500MG/5ML VIAL",
+        "fa": "ویال مدروکسی‌پروژسترون استات ۵۰۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00792",
+        "en": "MEDROXYPROGESTERONE ACETATE 5MG TAB",
+        "fa": "قرص مدروکسی‌پروژسترون استات ۵ میلی‌گرم"
+      },
+      {
+        "code": "06066",
+        "en": "MEDROXYPROGESTRON 500MG/3.3ML VIAL",
+        "fa": "ویال مدروکسیپروجسترون ۵۰۰ میلی‌گرم / ۳٫۳ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3275/Medroxyprogesterone-Acetate",
+        "url": "https://www.darooyab.ir/G-3275/Medroxyprogesterone-Acetate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=040159",
+      "label": "ANDA040159"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbf142f9-9af3-4d79-9343-0ab42d6dbe9f",
+      "label": "FDA Medroxyprogesterone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601041.html",
+      "label": "Estrogen and Progestin (Hormone Replacement Therapy)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682470.html",
+      "label": "Medroxyprogesterone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03DA02",
+      "label": "G03DA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3275/Medroxyprogesterone-Acetate",
+      "label": "Medroxyprogesterone-Acetate"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-medroxyprogesterone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA040159"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Known or suspected pregnancy.",
+      "refs": [
+        {
+          "source": "fda-medroxyprogesterone",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Medroxyprogesterone acetate should not be used during lactation.",
+      "refs": [
+        {
+          "source": "fda-medroxyprogesterone",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Medroxyprogesterone acetate tablets are not indicated in children.",
+      "refs": [
+        {
+          "source": "fda-medroxyprogesterone",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: در سالمندان هشدار جدی یا پرهیز.",
+        "en": "Label: serious warning or avoid in older adults."
+      },
+      "quote": "Cardiovascular Disorders and Probable Dementia Estrogen plus progestin therapy should not be used for the prevention of cardiovascular disease or dementia.",
+      "refs": [
+        {
+          "source": "fda-medroxyprogesterone",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "id": "oxybutynin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اکسی‌بوتینین",
+    "en": "Oxybutynin"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آنتی‌موسکارینی ادراری",
+    "en": "Urinary antimuscarinic"
+  },
+  "brands": [
+    {
+      "name": "Ditropan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ditropan",
+    "دیتروپان",
+    "اکسی بوتینین",
+    "بی اختیاری ادرار",
+    "شب ادراری"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-oxybutynin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-oxybutynin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "overactive-bladder",
+      "label": {
+        "fa": "مثانه بیش‌فعال — بزرگسال: ۵ mg دو یا سه بار در روز",
+        "en": "Overactive bladder — adults: 5 mg two or three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-oxybutynin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 20,
+        "refs": [
+          {
+            "source": "fda-oxybutynin",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر ۵ mg چهار بار. سالمند ضعیف: شروع ۲٫۵ mg دو یا سه بار.",
+            "en": "Max 5 mg four times daily. Frail elderly: start 2.5 mg two or three times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-oxybutynin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "overactive-bladder",
+      "label": {
+        "fa": "مثانه بیش‌فعال — بالای ۵ سال: ۵ mg دو بار در روز",
+        "en": "Overactive bladder — >5 y: 5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-oxybutynin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 15,
+        "refs": [
+          {
+            "source": "fda-oxybutynin",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "احتباس ادرار یا معده، کاهش شدید حرکت گوارش، گلوکوم زاویه بسته کنترل‌نشده (یا در معرض خطر)؛ حساسیت.",
+        "en": "Urinary or gastric retention, severe decreased GI motility, uncontrolled narrow-angle glaucoma (or at risk); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-oxybutynin",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-5",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 5,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۵ سال ثابت نشده.",
+        "en": "Not established under 5 years."
+      },
+      "refs": [
+        {
+          "source": "fda-oxybutynin",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "perDay": 10
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "G04BD04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00935",
+        "en": "OXYBUTYNIN CHLORIDE 5MG TAB",
+        "fa": "قرص اکسیبوتینین کلراید ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-906/Oxybutynin-Chloride",
+        "url": "https://www.darooyab.ir/G-906/Oxybutynin-Chloride"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209025",
+      "label": "ANDA209025"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9578b6b8-5b9d-4263-9142-39b2c7216b85",
+      "label": "FDA Oxybutynin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682141.html",
+      "label": "Oxybutynin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613027.html",
+      "label": "Oxybutynin Topical"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BD04",
+      "label": "G04BD04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-906/Oxybutynin-Chloride",
+      "label": "Oxybutynin-Chloride"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-oxybutynin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA209025"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Reproduction studies using oxybutynin chloride in the hamster, rabbit, rat, and mouse have shown no definite evidence of impaired fertility or harm to the animal fetus.",
+      "refs": [
+        {
+          "source": "fda-oxybutynin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when oxybutynin chloride is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-oxybutynin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and efficacy of oxybutynin chloride administration have been demonstrated for pediatric patients 5 years of age and older (see DOSAGE AND ADMINISTRATION ).",
+      "refs": [
+        {
+          "source": "fda-oxybutynin",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… e elimination half-life from 2 to 3 hours to 5 hours. 2,3,4 In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-oxybutynin",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

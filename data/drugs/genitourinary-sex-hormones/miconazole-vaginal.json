@@ -1,0 +1,223 @@
+{
+  "id": "miconazole-vaginal",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "شیاف واژینال میکونازول",
+    "en": "Miconazole vaginal"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "ضدقارچ آزول واژینال",
+    "en": "Vaginal azole antifungal"
+  },
+  "brands": [
+    {
+      "name": "Monistat",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "monistat",
+    "مونیستات",
+    "میکونازول",
+    "شیاف قارچ"
+  ],
+  "formulations": [
+    {
+      "id": "supp-200",
+      "form": "pessary",
+      "route": "vaginal",
+      "label": "200 mg vaginal suppository",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-monistat",
+          "section": "Active ingredients"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "vvc",
+      "disease": "vaginal-candidiasis",
+      "label": {
+        "fa": "عفونت قارچی واژن — ۱۲ سال به بالا: ۱ شیاف ۲۰۰ mg هنگام خواب، ۳ شب",
+        "en": "Vaginal yeast infection — ≥12 y: one 200 mg suppository at bedtime for 3 nights"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-monistat",
+          "section": "Directions"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کرم خارجی ۲٪ برای خارش ناحیه خارجی: دو بار در روز تا ۷ روز.",
+            "en": "External 2% cream for vulvar itching: twice daily for up to 7 days."
+          },
+          "refs": [
+            {
+              "source": "fda-monistat",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "first",
+      "severity": "warn",
+      "text": {
+        "fa": "اگر تاکنون عفونت قارچی واژن توسط پزشک تشخیص داده نشده، استفاده نشود.",
+        "en": "Do not use if you have never had a vaginal yeast infection diagnosed by a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-monistat",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "vvc",
+      "formulation": "supp-200",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 200
+      }
+    }
+  ],
+  "atc": [
+    "G01AF04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00851",
+        "en": "MICONAZOLE NITRATE 2% 30G CREAM",
+        "fa": "کرم میکونازول نیترات ۲ درصد ۳۰ گرم"
+      },
+      {
+        "code": "00850",
+        "en": "MICONAZOLE NITRATE 2% 45G VAG CREAM",
+        "fa": "کرم واژینال میکونازول نیترات ۲ درصد ۴۵ گرم"
+      },
+      {
+        "code": "51996",
+        "en": "MICONAZOLE NITRATE CREAM TOPICAL 2 % 40 g",
+        "fa": "کرم میکونازول نیترات ۲ درصد ۴۰ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-729/Miconazole",
+        "url": "https://www.darooyab.ir/G-729/Miconazole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020670",
+      "label": "NDA020670"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=674f2e66-e7e3-40ff-aa21-adaf5d55dcda",
+      "label": "FDA Monistat 3 (OTC)"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G01AF04",
+      "label": "G01AF04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-729/Miconazole",
+      "label": "Miconazole"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-monistat",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020670"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-monistat",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-monistat",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  }
+}

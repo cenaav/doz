@@ -1,0 +1,577 @@
+{
+  "id": "duloxetine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دولوکستین",
+    "en": "Duloxetine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "SNRI",
+    "en": "SNRI"
+  },
+  "brands": [
+    {
+      "name": "Cymbalta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cymbalta",
+    "سیمبالتا",
+    "دولوکستین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-20",
+      "form": "capsule",
+      "route": "oral",
+      "label": "20 mg capsule",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-30",
+      "form": "capsule",
+      "route": "oral",
+      "label": "30 mg capsule",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-60",
+      "form": "capsule",
+      "route": "oral",
+      "label": "60 mg capsule",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی اساسی — ۴۰ تا ۶۰ mg/day",
+        "en": "Major depression — 40–60 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 120,
+        "refs": [
+          {
+            "source": "fda-duloxetine",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۰ mg دو بار تا ۶۰ mg یک‌جا یا ۳۰ mg دو بار. کپسول کامل بلعیده شود.",
+            "en": "20 mg twice daily up to 60 mg once or 30 mg twice daily. Swallow capsule whole."
+          },
+          "refs": [
+            {
+              "source": "fda-duloxetine",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-duloxetine",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gad",
+      "disease": "gad",
+      "label": {
+        "fa": "اضطراب فراگیر — بزرگسال زیر ۶۵: ۶۰ mg یک بار",
+        "en": "GAD — adults under 65: 60 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 120,
+        "refs": [
+          {
+            "source": "fda-duloxetine",
+            "section": "2.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gad-peds",
+      "disease": "gad",
+      "label": {
+        "fa": "اضطراب فراگیر — ۷ تا ۱۷ سال: ۳۰ mg یک بار، ۲ هفته",
+        "en": "GAD — 7–17 y: 30 mg once daily for 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 7,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سپس در صورت نیاز ۶۰ mg؛ محدوده ۳۰ تا ۶۰ mg.",
+            "en": "Then 60 mg if needed; range 30–60 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-duloxetine",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dpn",
+      "disease": "neuropathic-pain",
+      "label": {
+        "fa": "درد نوروپاتی دیابتی — ۶۰ mg یک بار",
+        "en": "Diabetic neuropathic pain — 60 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "2.4"
+        }
+      ]
+    },
+    {
+      "id": "fibro",
+      "disease": "fibromyalgia",
+      "label": {
+        "fa": "فیبرومیالژیا — ۶۰ mg یک بار",
+        "en": "Fibromyalgia — 60 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "2.5"
+        }
+      ]
+    },
+    {
+      "id": "msk",
+      "disease": "osteoarthritis",
+      "label": {
+        "fa": "درد مزمن اسکلتی‌عضلانی — ۶۰ mg یک بار",
+        "en": "Chronic musculoskeletal pain — 60 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "2.6"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بالاتر سود بیشتری ندارد.",
+            "en": "Higher doses add no benefit."
+          },
+          "refs": [
+            {
+              "source": "fda-duloxetine",
+              "section": "2.6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "همراه یا تا 14 روز پس از MAOI (از جمله لینزولید یا متیلن بلو وریدی).",
+        "en": "With or within 14 days of an MAOI (including linezolid or IV methylene blue)."
+      },
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "gfr",
+      "severity": "warn",
+      "text": {
+        "fa": "در نارسایی شدید کلیه (GFR کمتر از ۳۰) یا بیماری کبد پرهیز شود.",
+        "en": "Avoid in severe renal impairment (GFR <30) or hepatic impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "2.7"
+        }
+      ]
+    },
+    {
+      "id": "suicide",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 25,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش افکار و رفتار خودکشی در کودکان، نوجوانان و جوانان.",
+        "en": "Boxed warning: increased suicidal thoughts and behaviour in children, adolescents and young adults."
+      },
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd",
+      "formulation": "cap-60",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 60
+      }
+    },
+    {
+      "regimen": "gad",
+      "formulation": "cap-60",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 60
+      }
+    },
+    {
+      "regimen": "gad-peds",
+      "formulation": "cap-30",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 30
+      }
+    },
+    {
+      "regimen": "dpn",
+      "formulation": "cap-60",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 60
+      }
+    },
+    {
+      "regimen": "fibro",
+      "formulation": "cap-60",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 60
+      }
+    },
+    {
+      "regimen": "msk",
+      "formulation": "cap-60",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 60
+      }
+    }
+  ],
+  "atc": [
+    "N06AX21"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18430",
+        "en": "DULOXETINE 20MG CAP",
+        "fa": "کپسول دولوکستین ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "08361",
+        "en": "DULOXETINE 20MG TAB",
+        "fa": "قرص دولوکستین ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "07845",
+        "en": "DULOXETINE 30MG CAP",
+        "fa": "کپسول دولوکستین ۳۰ میلی‌گرم"
+      },
+      {
+        "code": "06448",
+        "en": "DULOXETINE 40MG CAP",
+        "fa": "کپسول دولوکستین ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "05970",
+        "en": "DULOXETINE 60MG CAP",
+        "fa": "کپسول دولوکستین ۶۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-582/Duloxetine",
+        "url": "https://www.darooyab.ir/G-582/Duloxetine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206653",
+      "label": "ANDA206653"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a105a648-6a97-4151-b9de-d7eac90a8f79",
+      "label": "FDA Duloxetine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604030.html",
+      "label": "Duloxetine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AX21",
+      "label": "N06AX21"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-582/Duloxetine",
+      "label": "Duloxetine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-duloxetine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA206653"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Data from a postmarketing retrospective cohort study indicate that use of duloxetine in the month before delivery may be associated with an increased risk of postpartum hemorrhage.",
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from published literature report the presence of duloxetine in human milk (see Data) .",
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Antidepressants increased the risk of suicidal thoughts and behavior in children, adolescents, and young adults in short-term studies.",
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "SSRIs and SNRIs, including duloxetine have been associated with clinically significant hyponatremia in geriatric patients, who may be at greater risk for this adverse reaction [see Warnings and Precautions ( 5.13 )] .",
+      "refs": [
+        {
+          "source": "fda-duloxetine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

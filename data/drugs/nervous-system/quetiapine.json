@@ -1,0 +1,505 @@
+{
+  "id": "quetiapine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کوئتیاپین",
+    "en": "Quetiapine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتی‌سایکوتیک آتیپیک",
+    "en": "Atypical antipsychotic"
+  },
+  "brands": [
+    {
+      "name": "Seroquel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "seroquel",
+    "سروکوئل",
+    "کوتیاپین",
+    "کوئتیاپین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "schizo-adol",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی — ۱۳ تا ۱۷ سال: روز ۱ ۲۵ mg دو بار در روز",
+        "en": "Schizophrenia — 13–17 y: day 1 25 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 50,
+          "increment": 100,
+          "incrementEveryDays": 1,
+          "targetMin": 400,
+          "targetMax": 800,
+          "max": 800
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "روز ۱: ۵۰، روز ۲: ۱۰۰، روز ۳: ۲۰۰، روز ۴: ۳۰۰، روز ۵: ۴۰۰ mg/day در دو نوبت؛ سپس افزایش حداکثر ۱۰۰ mg/day تا ۴۰۰–۸۰۰.",
+            "en": "Day 1: 50, day 2: 100, day 3: 200, day 4: 300, day 5: 400 mg/day in two doses; then ≤100 mg/day steps within 400–800."
+          },
+          "refs": [
+            {
+              "source": "fda-quetiapine",
+              "section": "2.2, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bipolar-peds",
+      "disease": "bipolar-mania",
+      "label": {
+        "fa": "مانیای دوقطبی — ۱۰ تا ۱۷ سال: روز ۱ ۲۵ mg دو بار در روز",
+        "en": "Bipolar mania — 10–17 y: day 1 25 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 50,
+          "increment": 100,
+          "incrementEveryDays": 1,
+          "targetMin": 400,
+          "targetMax": 600,
+          "max": 600
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "2.2, Table 1"
+        }
+      ]
+    },
+    {
+      "id": "schizo-adult",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی — بزرگسال: روز ۱ ۲۵ mg دو بار در روز",
+        "en": "Schizophrenia — adults: day 1 25 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 50,
+          "increment": 50,
+          "incrementEveryDays": 1,
+          "targetMin": 150,
+          "targetMax": 750,
+          "max": 750
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تا روز ۴ به ۳۰۰–۴۰۰ mg/day؛ محدوده ۱۵۰ تا ۷۵۰.",
+            "en": "300–400 mg/day by day 4; range 150–750."
+          },
+          "refs": [
+            {
+              "source": "fda-quetiapine",
+              "section": "2.2, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bipolar-dep",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی دوقطبی — بزرگسال: ۵۰ mg شب، هدف ۳۰۰",
+        "en": "Bipolar depression — adults: 50 mg at bedtime, target 300"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 50,
+          "increment": 100,
+          "incrementEveryDays": 1,
+          "targetMin": 300,
+          "targetMax": 300,
+          "max": 300
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "2.2, Table 1"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کوئتیاپین.",
+        "en": "Hypersensitivity to quetiapine."
+      },
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "schizo-adol",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "bipolar-peds",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "schizo-adult",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "bipolar-dep",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "N05AH04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05927",
+        "en": "QUETIAPINE 100MG TAB",
+        "fa": "قرص کوئتیاپین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "15618",
+        "en": "QUETIAPINE 150MG TAB",
+        "fa": "قرص کوئتیاپین ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "19983",
+        "en": "QUETIAPINE 200MG EXTENDED RELEASE TAB",
+        "fa": "قرص آهسته‌رهش کوئتیاپین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "05928",
+        "en": "QUETIAPINE 200MG TAB",
+        "fa": "قرص کوئتیاپین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "06743",
+        "en": "QUETIAPINE 25MG TAB",
+        "fa": "قرص کوئتیاپین ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "05929",
+        "en": "QUETIAPINE 300MG TAB",
+        "fa": "قرص کوئتیاپین ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "19984",
+        "en": "QUETIAPINE 50MG EXTENDED RELEASE TAB",
+        "fa": "قرص آهسته‌رهش کوئتیاپین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "13949",
+        "en": "QUETIAPINE 50MG TAB",
+        "fa": "قرص کوئتیاپین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "51513",
+        "en": "QUETIAPINE FUMARATE TABLET, EXTENDED RELEASE ORAL 150 mg",
+        "fa": "قرص آهسته‌رهش کوئتیاپین فومارات ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "51517",
+        "en": "QUETIAPINE FUMARATE TABLET, EXTENDED RELEASE ORAL 300 mg",
+        "fa": "قرص آهسته‌رهش کوئتیاپین فومارات ۳۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1341/Quetiapine",
+        "url": "https://www.darooyab.ir/G-1341/Quetiapine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201504",
+      "label": "ANDA201504"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9447739-9e21-4232-950f-174c0496ab66",
+      "label": "FDA Quetiapine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698019.html",
+      "label": "Quetiapine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05AH04",
+      "label": "N05AH04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1341/Quetiapine",
+      "label": "Quetiapine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-quetiapine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA201504"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "… ychotics at 1-866-961-2388 or online at http://womensmentalhealth.org/clinical-and-research-programs/pregnancyregistry/ Risk Summary Neonates exposed to antipsychotic drugs (including quetiapine tablet) during the third trimester are at risk for extrapyramidal and/or withdrawal symptoms following delivery (see …",
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Limited data from published literature report the presence of quetiapine in human breast milk at relative infant dose of <1% of the maternal weight-adjusted dosage.",
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Quetiapine is not approved for use in pediatric patients under ten years of age [ see Use in Specific Populations (8.4) ].",
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: در سالمندان هشدار جدی یا پرهیز.",
+        "en": "Label: serious warning or avoid in older adults."
+      },
+      "quote": "Increased Mortality in Elderly Patients with Dementia-Related Psychosis Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death [ see Warnings and Precautions (5.1) ].",
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Females Based on the pharmacologic action of quetiapine (D2 antagonism), treatment with quetiapine tablets may result in an increase in serum prolactin levels, which may lead to a reversible reduction in fertility in females of reproductive potential [see Warnings and Precautions ( 5.15 )].",
+      "refs": [
+        {
+          "source": "fda-quetiapine",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

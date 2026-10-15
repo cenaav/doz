@@ -1,0 +1,241 @@
+{
+  "id": "thiamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تیامین (ویتامین B1 تزریقی)",
+    "en": "Thiamine (vitamin B1 injection)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ویتامین B1",
+    "en": "Vitamin B1"
+  },
+  "brands": [
+    {
+      "name": "Thiamine HCl",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vitamin b1",
+    "ویتامین ب۱",
+    "ب یک",
+    "تیامین"
+  ],
+  "formulations": [
+    {
+      "id": "inj-100",
+      "form": "injection",
+      "route": "im",
+      "label": "100 mg/mL injection",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-thiamine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "beriberi",
+      "disease": "beriberi",
+      "label": {
+        "fa": "بری‌بری — ۱۰ تا ۲۰ mg عضلانی سه بار در روز تا ۲ هفته",
+        "en": "Beriberi — 10–20 mg IM three times daily up to 2 weeks"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 20,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-thiamine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بری‌بری مرطوب با نارسایی قلبی: اورژانس، وریدی آهسته.",
+            "en": "Wet beriberi with heart failure: emergency, slow IV."
+          },
+          "refs": [
+            {
+              "source": "fda-thiamine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به تیامین.",
+        "en": "History of sensitivity to thiamine."
+      },
+      "refs": [
+        {
+          "source": "fda-thiamine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "beriberi",
+      "formulation": "inj-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 0.1,
+        "upperPerDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "A11DA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "16485",
+        "en": "BENFOTIAMINE AMP",
+        "fa": "آمپول بنفوتیامین"
+      },
+      {
+        "code": "07213",
+        "en": "VITAMIN B1 100MG AMP",
+        "fa": "آمپول ویتامین B ۱ ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01292",
+        "en": "VITAMIN B1 100MG TAB",
+        "fa": "قرص ویتامین B ۱ ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "06412",
+        "en": "VITAMIN B1 250MG/7ML AMP",
+        "fa": "آمپول ویتامین B ۱ ۲۵۰ میلی‌گرم / ۷ میلی‌لیتر"
+      },
+      {
+        "code": "01293",
+        "en": "VITAMIN B1 300MG TAB",
+        "fa": "قرص ویتامین B ۱ ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "22368",
+        "en": "VITAMIN B1 (THIAMINE HYDROCHLORIDE) INJECTION INTRAVENOUS 100 mg/1mL",
+        "fa": "فرآورده تزریقی ویتامین B ۱ (تیامین هیدروکلراید) ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2947/Vitamin-B1",
+        "url": "https://www.darooyab.ir/G-2947/Vitamin-B1"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213131",
+      "label": "ANDA213131"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bfe8ac7-9294-4980-9635-90f8e6f6dd8e",
+      "label": "FDA Thiamine inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682586.html",
+      "label": "Thiamine (Vitamin B1)"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A11DA01",
+      "label": "A11DA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2947/Vitamin-B1",
+      "label": "Vitamin-B1"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-thiamine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213131"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category A –Studies in pregnant women have not shown that thiamine hydrochloride increases the risk of fetal abnormalities if administered during pregnancy.",
+      "refs": [
+        {
+          "source": "fda-thiamine",
+          "section": "Precautions/Warnings – Usage in Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when thiamine hydrochloride is administered to a nursing mother.",
+      "refs": [
+        {
+          "source": "fda-thiamine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    }
+  }
+}

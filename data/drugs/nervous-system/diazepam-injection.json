@@ -1,0 +1,294 @@
+{
+  "id": "diazepam-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیازپام (آمپول)",
+    "en": "Diazepam (injection)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بنزودیازپین",
+    "en": "Benzodiazepine"
+  },
+  "brands": [
+    {
+      "name": "Valium injection",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "آمپول دیازپام",
+    "valium injection",
+    "تشنج"
+  ],
+  "formulations": [
+    {
+      "id": "inj-5",
+      "form": "injection",
+      "route": "iv",
+      "label": "5 mg/mL injection",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diazepaminj",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "se",
+      "disease": "status-epilepticus",
+      "label": {
+        "fa": "استاتوس اپی‌لپتیکوس — بزرگسال: ۵ تا ۱۰ mg وریدی آهسته",
+        "en": "Status epilepticus — adults: 5–10 mg slow IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-diazepaminj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 30,
+        "refs": [
+          {
+            "source": "fda-diazepaminj",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز هر ۱۰ تا ۱۵ دقیقه تا حداکثر ۳۰ mg؛ تکرار پس از ۲ تا ۴ ساعت. وریدی ترجیح دارد؛ آهسته تزریق شود.",
+            "en": "Repeat every 10–15 min if needed up to 30 mg; may repeat in 2–4 h. IV preferred; inject slowly."
+          },
+          "refs": [
+            {
+              "source": "fda-diazepaminj",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: با اپیوئیدها دپرسیون تنفسی و مرگ؛ سوءمصرف و وابستگی.",
+        "en": "Boxed warning: with opioids respiratory depression and death; abuse and dependence."
+      },
+      "refs": [
+        {
+          "source": "fda-diazepaminj",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "se",
+      "formulation": "inj-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "mlPerDose": 1,
+        "upperPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "N05BA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02237",
+        "en": "DIAZEPAM 10MG RECTAL TUBE",
+        "fa": "دیازپام ۱۰ میلی‌گرم توب"
+      },
+      {
+        "code": "01461",
+        "en": "DIAZEPAM 10MG SUPP",
+        "fa": "شیاف دیازپام ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00417",
+        "en": "DIAZEPAM 10MG TAB",
+        "fa": "قرص دیازپام ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00418",
+        "en": "DIAZEPAM 10MG/2ML AMP",
+        "fa": "آمپول دیازپام ۱۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "00419",
+        "en": "DIAZEPAM 2MG TAB",
+        "fa": "قرص دیازپام ۲ میلی‌گرم"
+      },
+      {
+        "code": "07051",
+        "en": "DIAZEPAM 2MG/5ML 120ML SYRUP",
+        "fa": "شربت دیازپام ۲ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "01462",
+        "en": "DIAZEPAM 2MG/5ML 60ML SYRUP",
+        "fa": "شربت دیازپام ۲ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "02247",
+        "en": "DIAZEPAM 5MG RECTAL TUBE",
+        "fa": "دیازپام ۵ میلی‌گرم توب"
+      },
+      {
+        "code": "01460",
+        "en": "DIAZEPAM 5MG SUPP",
+        "fa": "شیاف دیازپام ۵ میلی‌گرم"
+      },
+      {
+        "code": "00420",
+        "en": "DIAZEPAM 5MG TAB",
+        "fa": "قرص دیازپام ۵ میلی‌گرم"
+      },
+      {
+        "code": "52452",
+        "en": "DIAZEPAM SOLUTION ORAL 2 mg/5 mL 120 mL",
+        "fa": "محلول خوراکی دیازپام ۲ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1266/Diazepam",
+        "url": "https://www.darooyab.ir/G-1266/Diazepam"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=070313",
+      "label": "ANDA070313"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cf7bd9ba-5030-479a-8448-3a99395b0d0c",
+      "label": "FDA Diazepam inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682047.html",
+      "label": "Diazepam"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a624027.html",
+      "label": "Diazepam Buccal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05BA01",
+      "label": "N05BA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1266/Diazepam",
+      "label": "Diazepam"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-diazepaminj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA070313"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Advise pregnant females that use of diazepam late in pregnancy can result in sedation (respiratory depression, lethargy, hypotonia) and/or withdrawal symptoms (hyperreflexia, irritability, restlessness, tremors, inconsolable crying, and feeding difficulties) in newborns (see WARNINGS;",
+      "refs": [
+        {
+          "source": "fda-diazepaminj",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Diazepam is present in breastmilk.",
+      "refs": [
+        {
+          "source": "fda-diazepaminj",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "Efficacy and safety of parenteral diazepam has not been established in the neonate (30 days or less of age).",
+      "refs": [
+        {
+          "source": "fda-diazepaminj",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

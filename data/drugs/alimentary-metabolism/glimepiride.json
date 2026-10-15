@@ -1,0 +1,354 @@
+{
+  "id": "glimepiride",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گلی‌مپیراید",
+    "en": "Glimepiride"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "سولفونیل‌اوره",
+    "en": "Sulfonylurea"
+  },
+  "brands": [
+    {
+      "name": "Amaryl",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "amaryl",
+    "آماریل",
+    "گلیمپیراید",
+    "گلی مپیراید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet (scored)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-glimepiride",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet (scored)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-glimepiride",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-4",
+      "form": "tablet",
+      "route": "oral",
+      "label": "4 mg tablet (scored)",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-glimepiride",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ — شروع ۱ یا ۲ mg با صبحانه",
+        "en": "Type 2 diabetes — start 1 or 2 mg with breakfast"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "perDoseMax": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-glimepiride",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 8,
+        "refs": [
+          {
+            "source": "fda-glimepiride",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۱ یا ۲ mg، نه زودتر از هر ۱ تا ۲ هفته؛ حداکثر ۸ mg. سالمند یا نارسایی کلیه: شروع ۱ mg.",
+            "en": "Increase by 1 or 2 mg no more often than every 1–2 weeks; max 8 mg. Elderly or renal impairment: start 1 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-glimepiride",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "در کودکان به‌علت افزایش وزن و هیپوگلیسمی توصیه نمی‌شود.",
+          "en": "Not recommended in children because of effects on body weight and hypoglycaemia."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-glimepiride",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به گلی‌مپیراید یا مشتقات سولفونامید.",
+        "en": "Hypersensitivity to glimepiride or sulfonamide derivatives."
+      },
+      "refs": [
+        {
+          "source": "fda-glimepiride",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-1",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 1,
+        "upperPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "A10BB12"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07707",
+        "en": "GLIMEPIRID 1MG TAB",
+        "fa": "قرص گلیمپیرید ۱ میلی‌گرم"
+      },
+      {
+        "code": "06456",
+        "en": "GLIMEPIRID 2MG TAB",
+        "fa": "قرص گلیمپیرید ۲ میلی‌گرم"
+      },
+      {
+        "code": "07586",
+        "en": "GLIMEPIRID 4MG TAB",
+        "fa": "قرص گلیمپیرید ۴ میلی‌گرم"
+      },
+      {
+        "code": "52425",
+        "en": "GLIMEPIRIDE TABLET ORAL 4 mg",
+        "fa": "قرص گلیمپیرید ۴ میلی‌گرم"
+      },
+      {
+        "code": "52422",
+        "en": "GLIMEPIRIDE TABLET ORAL 1 mg",
+        "fa": "قرص گلیمپیرید ۱ میلی‌گرم"
+      },
+      {
+        "code": "52423",
+        "en": "GLIMEPIRIDE TABLET ORAL 2 mg",
+        "fa": "قرص گلیمپیرید ۲ میلی‌گرم"
+      },
+      {
+        "code": "52424",
+        "en": "GLIMEPIRIDE TABLET ORAL 3 mg",
+        "fa": "قرص گلیمپیرید ۳ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-628/Glimepiride",
+        "url": "https://www.darooyab.ir/G-628/Glimepiride"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202112",
+      "label": "ANDA202112"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa533cde-4b32-450e-b080-127351524678",
+      "label": "FDA Glimepiride"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a696016.html",
+      "label": "Glimepiride"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BB12",
+      "label": "A10BB12"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-628/Glimepiride",
+      "label": "Glimepiride"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-glimepiride",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA202112"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from a small number of published studies and postmarketing experience with glimepiride tablets use in pregnancy over decades have not identified any drug associated risks for major birth defects, miscarriage, or adverse maternal outcomes.",
+      "refs": [
+        {
+          "source": "fda-glimepiride",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Breastfed infants of lactating women using glimepiride tablets should be monitored for symptoms of hypoglycemia (see Clinical Considerations) .",
+      "refs": [
+        {
+          "source": "fda-glimepiride",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Glimepiride is not recommended in pediatric patients because of its adverse effects on body weight and hypoglycemia.",
+      "refs": [
+        {
+          "source": "fda-glimepiride",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In addition, hypoglycemia may be difficult to recognize in the elderly [ see Dosage and Administration ( 2.1 ) and Warnings and Precautions ( 5.1 ) ].",
+      "refs": [
+        {
+          "source": "fda-glimepiride",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

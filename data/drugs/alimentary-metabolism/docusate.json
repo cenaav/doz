@@ -1,0 +1,268 @@
+{
+  "id": "docusate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دوکوزات سدیم",
+    "en": "Docusate sodium"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "نرم‌کننده مدفوع",
+    "en": "Stool softener"
+  },
+  "brands": [
+    {
+      "name": "Colace",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "colace",
+    "دوکوزات",
+    "نرم کننده مدفوع"
+  ],
+  "formulations": [
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-docusate",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "constipation",
+      "label": {
+        "fa": "نرم‌کننده مدفوع — ۱۲ سال به بالا: ۱ تا ۳ کپسول (۱۰۰ تا ۳۰۰ mg) روزانه",
+        "en": "Stool softener — ≥12 y: 1–3 softgels (100–300 mg) daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "perDoseMax": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-docusate",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک‌جا یا منقسم؛ با یک لیوان کامل آب.",
+            "en": "Single or divided doses; with a full glass of water."
+          },
+          "refs": [
+            {
+              "source": "fda-docusate",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "constipation",
+      "label": {
+        "fa": "نرم‌کننده مدفوع — ۶ تا ۱۲ سال: ۱ کپسول روزانه",
+        "en": "Stool softener — 6–12 y: 1 softgel daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-docusate",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-6",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ سال: با پزشک مشورت شود.",
+        "en": "Under 6 years: ask a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-docusate",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "upperPerDose": 300
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 100
+      }
+    }
+  ],
+  "atc": [
+    "A06AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01479",
+        "en": "DOCUSATE SODIUM & SORBITOL 67.5ML ENEMA",
+        "fa": "انما دوکوسات سدیم و سوربیتول ۶۷٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "14692",
+        "en": "DOCUSATE SODIUM 10ML DROP",
+        "fa": "قطره دوکوسات سدیم ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2574/Docusates",
+        "url": "https://www.darooyab.ir/G-2574/Docusates"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5851f15f-8add-559f-e063-6394a90a7b7d",
+      "label": "FDA Docusate (OTC)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601112.html",
+      "label": "Senna"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601113.html",
+      "label": "Stool Softeners"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A06AA02",
+      "label": "A06AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2574/Docusates",
+      "label": "Docusates"
+    }
+  ],
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-docusate",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M007"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-docusate",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-docusate",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  }
+}

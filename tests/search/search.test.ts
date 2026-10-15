@@ -17,7 +17,7 @@ describe('createSearch', () => {
   const s = createSearch(
     [entry('amoxicillin', 'Amoxicillin', 'آموکسی‌سیلین', { brands: ['Amoxil'] }), entry('cetirizine', 'Cetirizine', 'ستیریزین')],
     [{ id: 'acute-otitis-media', name: { en: 'Acute otitis media', fa: 'اوتیت مدیای حاد' }, synonyms: ['AOM'], icd10: ['H66.9'], specialty: 'peds' }],
-    [{ id: 'antibiotics', name: { en: 'Antibiotics', fa: 'آنتی‌بیوتیک‌ها' }, icon: '💊', order: 1 }],
+    [{ id: 'antibiotics', name: { en: 'Antibiotics', fa: 'آنتی‌بیوتیک‌ها' }, icon: '💊', order: 1, atc: 'J' }],
   )
   test('English name', () => expect(s('amox').drugs[0].id).toBe('amoxicillin'))
   test('typo', () => expect(s('amoxicilin').drugs[0].id).toBe('amoxicillin'))

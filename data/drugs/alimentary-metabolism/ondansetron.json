@@ -1,0 +1,604 @@
+{
+  "id": "ondansetron",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اندانسترون",
+    "en": "Ondansetron"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتاگونیست گیرنده 5-HT3",
+    "en": "5-HT3 receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Zofran",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ondansetrone",
+    "زوفران"
+  ],
+  "formulations": [
+    {
+      "id": "tab-4",
+      "form": "tablet",
+      "route": "oral",
+      "label": "4 mg tablet",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-8",
+      "form": "tablet",
+      "route": "oral",
+      "label": "8 mg tablet",
+      "concentration": {
+        "amount": 8,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "odt-4",
+      "form": "odt",
+      "route": "oral",
+      "label": "4 mg orally disintegrating tablet",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "2.1",
+          "note": {
+            "fa": "قرص، ODT و محلول در دوز معادل قابل جایگزینی‌اند",
+            "en": "Tablets, ODT and oral solution interchangeable at corresponding doses"
+          }
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "age-vomiting",
+      "disease": "gastroenteritis-vomiting",
+      "label": {
+        "fa": "استفراغ گاستروآنتریت — تک‌دوز ۰٫۱۵ mg/kg (حداکثر ۸ mg)",
+        "en": "Gastroenteritis vomiting — single dose 0.15 mg/kg (max 8 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "minWeightKg": 8
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.15,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "cps-ondansetron-2018",
+          "section": "Recommendations"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 8,
+        "refs": [
+          {
+            "source": "cps-ondansetron-2018",
+            "section": "Recommendations"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط یک دوز؛ دوزهای متعدد سودی ندارد. ORS از ۱۵ تا ۳۰ دقیقه بعد شروع شود. برای کودک با دهیدراتاسیون خفیف تا متوسط یا شکست ORS؛ در اسهال شدید غالب روتین نیست.",
+            "en": "Single dose only; no benefit from multiple doses. Start oral rehydration 15–30 min later. For mild–moderate dehydration or failed ORS; not routine when moderate–severe diarrhea predominates."
+          },
+          "refs": [
+            {
+              "source": "cps-ondansetron-2018",
+              "section": "Recommendations"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "جایگزین وزنی: ۸–۱۵ kg: ۲ mg؛ ۱۵–۳۰ kg: ۴ mg؛ بیش از ۳۰ kg: ۶–۸ mg. فرم مایع توصیه شده؛ قرص ۴ mg برای دوز کمتر از ۴ mg مناسب نیست.",
+            "en": "Weight-band alternative: 8–15 kg 2 mg; 15–30 kg 4 mg; >30 kg 6–8 mg. Liquid form recommended; a 4 mg tablet cannot give doses below 4 mg."
+          },
+          "refs": [
+            {
+              "source": "cps-ondansetron-2018",
+              "section": "Recommendations"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "این کاربرد در برچسب FDA نیست (برچسب: پیشگیری از تهوع شیمی‌درمانی و پس از عمل).",
+            "en": "This use is not in the FDA label (label: chemotherapy and postoperative nausea prevention)."
+          },
+          "refs": [
+            {
+              "source": "fda-ondansetron-tab",
+              "section": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cinv-4-11",
+      "disease": "cinv",
+      "label": {
+        "fa": "تهوع شیمی‌درمانی متوسط — ۴ تا ۱۱ سال: ۴ mg",
+        "en": "Moderately emetogenic chemotherapy — 4–11 years: 4 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "2.1, Table 2"
+        },
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "8.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۴ mg سی دقیقه قبل از شیمی‌درمانی، سپس ۴ و ۸ ساعت بعد؛ سپس ۴ mg سه بار در روز تا ۱–۲ روز پس از پایان.",
+            "en": "4 mg 30 min before chemotherapy, then at 4 and 8 h; then 4 mg three times a day for 1–2 days after completion."
+          },
+          "refs": [
+            {
+              "source": "fda-ondansetron-tab",
+              "section": "2.1, Table 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cinv-12-17",
+      "disease": "cinv",
+      "label": {
+        "fa": "تهوع شیمی‌درمانی متوسط — ۱۲ تا ۱۷ سال: ۸ mg",
+        "en": "Moderately emetogenic chemotherapy — 12–17 years: 8 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 8,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "2.1, Table 2"
+        },
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۸ mg سی دقیقه قبل، دوز دوم ۸ ساعت بعد؛ سپس ۸ mg هر ۱۲ ساعت تا ۱–۲ روز پس از پایان.",
+            "en": "8 mg 30 min before, second dose 8 h later; then 8 mg every 12 h for 1–2 days after completion."
+          },
+          "refs": [
+            {
+              "source": "fda-ondansetron-tab",
+              "section": "2.1, Table 2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت (مثل آنافیلاکسی) به اندانسترون.",
+        "en": "Hypersensitivity (e.g. anaphylaxis) to ondansetron."
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "apomorphine",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف همزمان آپومورفین (افت فشار شدید و کاهش هوشیاری).",
+        "en": "Concomitant apomorphine (profound hypotension, loss of consciousness)."
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "طولانی شدن QT",
+        "en": "QT prolongation"
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "5.2"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سندرم سروتونین",
+        "en": "Serotonin syndrome"
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "5.3"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "ایسکمی میوکارد",
+        "en": "Myocardial ischemia"
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "5.4"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "ممکن است ایلئوس پیشرونده را بپوشاند",
+        "en": "May mask progressive ileus and gastric distension"
+      },
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "5.5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "برای ECG و الکترولیت روتین پیش از تک‌دوز خوراکی در کودک بدون عامل خطر شواهدی نیست.",
+        "en": "Routine ECG/electrolyte screening before a single oral dose is not supported in children without known risk factors."
+      },
+      "refs": [
+        {
+          "source": "cps-ondansetron-2018",
+          "section": "Recommendations"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "age-vomiting",
+      "formulation": "tab-4",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 12
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "age-vomiting",
+      "formulation": "tab-4",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 26
+      },
+      "expect": {
+        "perDose": 3.9,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "age-vomiting",
+      "formulation": "tab-4",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 30
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "age-vomiting",
+      "formulation": "tab-8",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 8
+      }
+    },
+    {
+      "regimen": "age-vomiting",
+      "formulation": "tab-4",
+      "input": {
+        "ageMonths": 7,
+        "weightKg": 7
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "cinv-4-11",
+      "formulation": "tab-4",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "cinv-12-17",
+      "formulation": "tab-8",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A04AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "22103",
+        "en": "ONDANSETRON 32MG/50ML INJ P-BOTTLE",
+        "fa": "فرآورده تزریقی اندانسترون ۳۲ میلی‌گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "02093",
+        "en": "ONDANSETRON HCL 4MG TAB",
+        "fa": "قرص اندانسترون هیدروکلراید ۴ میلی‌گرم"
+      },
+      {
+        "code": "02091",
+        "en": "ONDANSETRON HCL 4MG/2ML AMP",
+        "fa": "آمپول اندانسترون هیدروکلراید ۴ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "02394",
+        "en": "ONDANSETRON HCL 4MG/5ML SYRUP",
+        "fa": "شربت اندانسترون هیدروکلراید ۴ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "02092",
+        "en": "ONDANSETRON HCL 8MG/4ML AMP",
+        "fa": "آمپول اندانسترون هیدروکلراید ۸ میلی‌گرم / ۴ میلی‌لیتر"
+      },
+      {
+        "code": "52024",
+        "en": "ONDANSETRON TABLET, ORALLY DISINTEGRATING ORAL 4 mg",
+        "fa": "قرص بازشونده دهانی اندانسترون بازشونده ۴ میلی‌گرم"
+      },
+      {
+        "code": "52025",
+        "en": "ONDANSETRON TABLET, ORALLY DISINTEGRATING ORAL 8 mg",
+        "fa": "قرص بازشونده دهانی اندانسترون بازشونده ۸ میلی‌گرم"
+      },
+      {
+        "code": "52086",
+        "en": "ONDANSETRON TABLET ORAL 8 mg",
+        "fa": "قرص اندانسترون ۸ میلی‌گرم"
+      },
+      {
+        "code": "53326",
+        "en": "ONDANSETRON 16 mg SUPPOSITORY",
+        "fa": "شیاف اندانسترون ۱۶ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2622/Ondansetron",
+        "url": "https://www.darooyab.ir/G-2622/Ondansetron"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078539",
+      "label": "ANDA078539"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=674ea285-8f84-4603-9655-82200c523fe5",
+      "label": "FDA Ondansetron"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+      "label": "Ondansetron"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a606022.html",
+      "label": "Ondansetron Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A04AA01",
+      "label": "A04AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2622/Ondansetron",
+      "label": "Ondansetron"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ondansetron-tab",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078539"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Published epidemiological studies on the association between ondansetron use and major birth defects have reported inconsistent findings and have important methodological limitations that preclude conclusions about the safety of ondansetron use in pregnancy (see Data) .",
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Ondansetron is unlikely to result in clinically relevant exposures in breastfed infants when administered intravenously at doses up to 4 mg/day to women who are breastfeeding.",
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of orally administered ondansetron have not been established in pediatric patients for: prevention of nausea and vomiting associated with highly emetogenic cancer chemotherapy prevention of nausea and vomiting associated with radiotherapy prevention of postoperative nausea and/or vomiting",
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "A reduction in clearance and increase in elimination half-life were seen in patients older than 75 years compared with younger subjects [see Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-ondansetron-tab",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

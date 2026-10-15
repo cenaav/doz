@@ -1,0 +1,309 @@
+{
+  "id": "vitamin-d3",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ویتامین D3 (کوله‌کلسیفرول)",
+    "en": "Vitamin D3 (colecalciferol)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ویتامین",
+    "en": "Vitamin"
+  },
+  "brands": [
+    {
+      "name": "Thorens",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "vitamin d",
+    "ویتامین د",
+    "قطره ویتامین D",
+    "cholecalciferol",
+    "کوله کلسیفرول",
+    "D3"
+  ],
+  "formulations": [
+    {
+      "id": "drops-10000",
+      "form": "drops",
+      "route": "oral",
+      "label": "10,000 IU/mL (200 IU per drop)",
+      "concentration": {
+        "amount": 10000,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-thorens",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "prevention",
+      "disease": "vitamin-d-deficiency",
+      "label": {
+        "fa": "پیشگیری در کودکان در معرض خطر",
+        "en": "Prevention in at-risk children"
+      },
+      "population": {},
+      "type": "ageBand",
+      "unit": "unit",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 0,
+              "unit": "day"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 400,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 18,
+              "unit": "year"
+            },
+            "perDose": 600,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 18,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 600,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-thorens",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۰ تا ۱۱ سال: ۲ قطره (۴۰۰ واحد)؛ ۱۲ تا ۱۸ سال: ۳–۴ قطره (۶۰۰–۸۰۰ واحد)؛ بزرگسال ۶۰۰–۸۰۰ واحد.",
+            "en": "0–11 y: 2 drops (400 IU); 12–18 y: 3–4 drops (600–800 IU); adults 600–800 IU."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-thorens",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "treatment-child",
+      "disease": "vitamin-d-deficiency",
+      "label": {
+        "fa": "درمان کمبود در کودکان — بر اساس سطح ۲۵(OH)D",
+        "en": "Treatment of deficiency in children — by 25(OH)D level"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "دوز درمان بر اساس سطح سرمی ۲۵(OH)D و شدت تنظیم می‌شود. حداکثر روزانه: زیر ۱ سال ۱۰۰۰ واحد؛ ۱ تا ۱۰ سال ۲۰۰۰ واحد؛ بالای ۱۱ سال ۴۰۰۰ واحد.",
+          "en": "Adjust to 25(OH)D level and severity. Daily maximum: <1 y 1,000 IU; 1–10 y 2,000 IU; >11 y 4,000 IU."
+        }
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-thorens",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypercalcaemia",
+      "severity": "block",
+      "text": {
+        "fa": "هیپرکلسمی، هیپرکلسیوری، مسمومیت ویتامین D، سنگ کلیه با هیپرکلسمی مزمن، نارسایی شدید کلیه.",
+        "en": "Hypercalcaemia, hypercalciuria, hypervitaminosis D, kidney stones with chronic hypercalcaemia, severe renal impairment."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-thorens",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "prevention",
+      "formulation": "drops-10000",
+      "input": {
+        "ageMonths": 3,
+        "weightKg": 6
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 0.04
+      }
+    },
+    {
+      "regimen": "prevention",
+      "formulation": "drops-10000",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 600
+      }
+    }
+  ],
+  "atc": [
+    "A11CC05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06445",
+        "en": "ALFACALCIDOL 2MCG/ML OPH DROP",
+        "fa": "قطره چشمی آلفاکلسیدول ۲ میکروگرم / میلی‌لیتر"
+      },
+      {
+        "code": "00445",
+        "en": "VITAMIN D2 (DIHYDROTACHYSTEROL) 0.5MG CAP",
+        "fa": "کپسول ویتامین D ۲ (دی‌هیدروتاکی‌استرول) ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "00444",
+        "en": "VITAMIN D2 (DIHYDROTACHYSTEROL)0.25MG/ML ORAL DROP",
+        "fa": "قطره خوراکی ویتامین D ۲ (دی‌هیدروتاکی‌استرول) ۰٫۲۵ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "14639",
+        "en": "VITAMIN D3 (COLECALCIFEROL) 1000IU(25MCG) TAB",
+        "fa": "قرص ویتامین D ۳ (کوله‌کلسیفرول) ۱۰۰۰ واحد بین‌المللی (۲۵ میکروگرم)"
+      },
+      {
+        "code": "00281",
+        "en": "VITAMIN D3 (COLECALCIFEROL) 200,000U 10ML",
+        "fa": "ویتامین D ۳ (کوله‌کلسیفرول) ۲۰۰ ۰۰۰ واحد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "01814",
+        "en": "VITAMIN D3 (COLECALCIFEROL) 300,000U AMP",
+        "fa": "آمپول ویتامین D ۳ (کوله‌کلسیفرول) ۳۰۰ ۰۰۰ واحد"
+      },
+      {
+        "code": "00282",
+        "en": "VITAMIN D3 (COLECALCIFEROL) 480,000U 60ML",
+        "fa": "ویتامین D ۳ (کوله‌کلسیفرول) ۴۸۰ ۰۰۰ واحد ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "01304",
+        "en": "VITAMIN D3 (COLECALCIFEROL) 50,000 CAP",
+        "fa": "کپسول ویتامین D ۳ (کوله‌کلسیفرول) ۵۰۰۰۰"
+      },
+      {
+        "code": "01302",
+        "en": "VITAMIN D3 (COLECALCIFEROL) 600,000 U AMP",
+        "fa": "آمپول ویتامین D ۳ (کوله‌کلسیفرول) ۶۰۰۰۰۰ واحد"
+      },
+      {
+        "code": "01303",
+        "en": "VITAMIN D3 (COLECALCIFEROL) PEARL",
+        "fa": "کپسول نرم ویتامین D ۳ (کوله‌کلسیفرول)"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2952/Vitamin-D3",
+        "url": "https://www.darooyab.ir/G-2952/Vitamin-D3"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A11CC05",
+      "label": "A11CC05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2952/Vitamin-D3",
+      "label": "Vitamin-D3"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/7044/smpc",
+      "label": "UK SmPC Thorens D3"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are no or limited amount of data from the use of colecalciferol (vitamin D 3 ) in pregnant women.",
+      "refs": [
+        {
+          "source": "uk-smpc-thorens",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Vitamin D3 and its metabolites are excreted in breast milk.",
+      "refs": [
+        {
+          "source": "uk-smpc-thorens",
+          "section": "4.6"
+        }
+      ]
+    }
+  }
+}

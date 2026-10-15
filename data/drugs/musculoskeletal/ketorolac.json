@@ -1,0 +1,382 @@
+{
+  "id": "ketorolac",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کتورولاک (تزریقی)",
+    "en": "Ketorolac (injection)"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "NSAID تزریقی",
+    "en": "Injectable NSAID"
+  },
+  "brands": [
+    {
+      "name": "Toradol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "toradol",
+    "تورادول",
+    "کتورولاک",
+    "آمپول کتورولاک"
+  ],
+  "formulations": [
+    {
+      "id": "inj-30",
+      "form": "injection",
+      "route": "im",
+      "label": " 30 mg/mL injection",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ketorolac",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "inj-15",
+      "form": "injection",
+      "route": "im",
+      "label": "15 mg/mL injection",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ketorolac",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "im-single",
+      "disease": "pain",
+      "label": {
+        "fa": "درد متوسط تا شدید — عضلانی تک‌دوز: ۶۰ mg (زیر ۶۵ سال)",
+        "en": "Moderate–severe pain — single IM dose: 60 mg (<65 y)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ketorolac",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۶۵ سال به بالا، نارسایی کلیه یا زیر ۵۰ kg: ۳۰ mg عضلانی. وریدی: ۳۰ mg (یا ۱۵ mg در گروه‌های پرخطر).",
+            "en": "≥65 y, renal impairment or <50 kg: 30 mg IM. IV: 30 mg (or 15 mg in those groups)."
+          },
+          "refs": [
+            {
+              "source": "fda-ketorolac",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multi",
+      "disease": "pain",
+      "label": {
+        "fa": "درد — چند دوز (IM/IV): ۳۰ mg هر ۶ ساعت",
+        "en": "Pain — multiple dose (IM/IV): 30 mg every 6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-ketorolac",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 120,
+        "refs": [
+          {
+            "source": "fda-ketorolac",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "گروه‌های پرخطر: ۱۵ mg هر ۶ ساعت، حداکثر ۶۰ mg/day. کل دوره تزریقی + خوراکی حداکثر ۵ روز.",
+            "en": "High-risk groups: 15 mg every 6 h, max 60 mg/day. Total injectable + oral course max 5 days."
+          },
+          "refs": [
+            {
+              "source": "fda-ketorolac",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای کودکان اندیکاسیون ندارد.",
+        "en": "Not indicated for pediatric patients."
+      },
+      "refs": [
+        {
+          "source": "fda-ketorolac",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: خونریزی و زخم گوارشی، حوادث قلبی‌عروقی، نارسایی کلیه، خونریزی؛ حداکثر ۵ روز؛ منع در نارسایی پیشرفته کلیه و کم‌آبی.",
+        "en": "Boxed warning: GI bleeding/ulceration, CV thrombotic events, renal risk, bleeding; max 5 days; contraindicated in advanced renal impairment and volume depletion."
+      },
+      "refs": [
+        {
+          "source": "fda-ketorolac",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "im-single",
+      "formulation": "inj-30",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 60,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "multi",
+      "formulation": "inj-30",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 30,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "M01AB15"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13573",
+        "en": "KETOROLAC 10MG TAB",
+        "fa": "قرص کتورولاک ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "17265",
+        "en": "KETOROLAC 10MG/ML INJ",
+        "fa": "فرآورده تزریقی کتورولاک ۱۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "13267",
+        "en": "KETOROLAC 30MG/ML  INJ",
+        "fa": "فرآورده تزریقی کتورولاک ۳۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "17972",
+        "en": "KETOROLAC 60MG/2ML  INJ",
+        "fa": "فرآورده تزریقی کتورولاک ۶۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "11458",
+        "en": "KETOROLAC TROMETAMIN 0.5% 5ML OPH DROP",
+        "fa": "قطره چشمی کتورولاک ترومتامین ۰٫۵ درصد ۵ میلی‌لیتر"
+      },
+      {
+        "code": "23124",
+        "en": "KETOROLAC TROMETAMOL INJECTION PARENTERAL 15 mg/1mL 1 mL",
+        "fa": "فرآورده تزریقی کتورولاک ترومتامول ۱۵ میلی‌گرم / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-110/Ketorolac",
+        "url": "https://www.darooyab.ir/G-110/Ketorolac"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=221041",
+      "label": "ANDA221041"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a7c8579-d423-4699-9435-69c4d127c654",
+      "label": "FDA Ketorolac inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a693001.html",
+      "label": "Ketorolac"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614011.html",
+      "label": "Ketorolac Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M01AB15",
+      "label": "M01AB15"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-110/Ketorolac",
+      "label": "Ketorolac"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ketorolac",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA221041"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Clinical Considerations Fetal/Neonatal Adverse Reactions Premature Closure of Fetal Ductus Arteriosus: Avoid use of NSAIDs in women at about 30 weeks gestation and later in pregnancy, because NSAIDs, including ketorolac tromethamine, can cause premature closure of the fetal ductus arteriosus (see WARNINGS;",
+      "refs": [
+        {
+          "source": "fda-ketorolac",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Limited data from one published study that included 10 breastfeeding women 2-6 days postpartum showed low levels of ketorolac in breast milk and were undetectable (less than 5 ng/mL) in 4 of the patients.",
+      "refs": [
+        {
+          "source": "fda-ketorolac",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Ketorolac tromethamine is not indicated for use in pediatric patients and it is NOT indicated for minor or chronic painful conditions.",
+      "refs": [
+        {
+          "source": "fda-ketorolac",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly patients are at greater risk for serious gastrointestinal events (see WARNINGS ).",
+      "refs": [
+        {
+          "source": "fda-ketorolac",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "id": "terbinafine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تربینافین",
+    "en": "Terbinafine"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "ضدقارچ آلیل‌آمین",
+    "en": "Allylamine antifungal"
+  },
+  "brands": [
+    {
+      "name": "Lamisil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lamisil",
+    "لامیزیل",
+    "تربینافین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-terbinafine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "finger",
+      "disease": "onychomycosis",
+      "label": {
+        "fa": "قارچ ناخن دست: ۲۵۰ mg روزانه، ۶ هفته",
+        "en": "Fingernail onychomycosis: 250 mg daily for 6 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-terbinafine",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 42,
+        "max": 42
+      }
+    },
+    {
+      "id": "toe",
+      "disease": "onychomycosis",
+      "label": {
+        "fa": "قارچ ناخن پا: ۲۵۰ mg روزانه، ۱۲ هفته",
+        "en": "Toenail onychomycosis: 250 mg daily for 12 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-terbinafine",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 84,
+        "max": 84
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع، بیماری کبدی بررسی شود.",
+            "en": "Check for liver disease before starting."
+          },
+          "refs": [
+            {
+              "source": "fda-terbinafine",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "onychomycosis",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "در کودکان ثابت نشده.",
+          "en": "Not established in children."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-terbinafine",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بیماری کبدی مزمن یا فعال؛ سابقه واکنش آلرژیک به تربینافین خوراکی.",
+        "en": "Chronic or active liver disease; prior allergic reaction to oral terbinafine."
+      },
+      "refs": [
+        {
+          "source": "fda-terbinafine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "finger",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250
+      }
+    },
+    {
+      "regimen": "toe",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 250
+      }
+    }
+  ],
+  "atc": [
+    "D01BA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01197",
+        "en": "TERBINAFINE HCL 250MG TAB",
+        "fa": "قرص تربینافین هیدروکلراید ۲۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-745/Terbinafine",
+        "url": "https://www.darooyab.ir/G-745/Terbinafine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078163",
+      "label": "ANDA078163"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2886b2ff-815f-4621-bc28-1fea082c1920",
+      "label": "FDA Terbinafine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699061.html",
+      "label": "Terbinafine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=D01BA02",
+      "label": "D01BA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-745/Terbinafine",
+      "label": "Terbinafine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-terbinafine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078163"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "​ Risk Summary Available data from postmarketing cases on the use of terbinafine tablets in pregnant women are insufficient to evaluate a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-terbinafine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary After oral administration, terbinafine is present in human milk.",
+      "refs": [
+        {
+          "source": "fda-terbinafine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and efficacy of terbinafine tablets have not been established in pediatric patients with onychomycosis.",
+      "refs": [
+        {
+          "source": "fda-terbinafine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-terbinafine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

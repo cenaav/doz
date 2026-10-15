@@ -1,0 +1,221 @@
+{
+  "id": "meclizine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مکلیزین",
+    "en": "Meclizine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین ضدتهوع",
+    "en": "Antihistamine antiemetic"
+  },
+  "brands": [
+    {
+      "name": "Bonine",
+      "market": "US"
+    },
+    {
+      "name": "Antivert",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "antivert",
+    "bonine",
+    "مکلیزین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-meclizine",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "motion",
+      "disease": "motion-sickness",
+      "label": {
+        "fa": "بیماری حرکت — ۱۲ سال به بالا: ۱ تا ۲ قرص یک بار در روز",
+        "en": "Motion sickness — ≥12 y: 1–2 tablets once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "perDoseMax": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-meclizine",
+          "section": "Directions"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۳۰ تا ۶۰ دقیقه قبل از سفر.",
+            "en": "30–60 min before travel."
+          },
+          "refs": [
+            {
+              "source": "fda-meclizine",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال فقط به دستور پزشک.",
+        "en": "Under 12 years only if directed by a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-meclizine",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پیش از مصرف با پزشک: بیماری تنفسی، گلوکوم، مشکل ادراری از پروستات، مصرف آرام‌بخش.",
+        "en": "Ask a doctor first: breathing problems, glaucoma, urinary difficulty from prostate, sedatives."
+      },
+      "refs": [
+        {
+          "source": "fda-meclizine",
+          "section": "Ask a doctor before use"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "motion",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 25,
+        "upperPerDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "R06AE05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51637",
+        "en": "MECLOZINE 25 MG TAB",
+        "fa": "قرص مکلوزین ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-808/Meclozine",
+        "url": "https://www.darooyab.ir/G-808/Meclozine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=571e3eeb-ae9e-7054-e063-6394a90a2634",
+      "label": "FDA Meclizine (OTC)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682548.html",
+      "label": "Meclizine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R06AE05",
+      "label": "R06AE05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-808/Meclozine",
+      "label": "Meclozine"
+    }
+  ],
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-meclizine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M009"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری مکلوزین گروه B قابل استفاده در بارداری:",
+      "text": {
+        "fa": "دارویاب: گروه B — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category B — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-808/Meclozine — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-808/Meclozine"
+        }
+      ]
+    }
+  }
+}

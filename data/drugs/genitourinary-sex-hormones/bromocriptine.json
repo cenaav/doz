@@ -1,0 +1,298 @@
+{
+  "id": "bromocriptine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بروموکریپتین",
+    "en": "Bromocriptine"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آگونیست دوپامین",
+    "en": "Dopamine agonist"
+  },
+  "brands": [
+    {
+      "name": "Parlodel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "parlodel",
+    "پارلودل",
+    "بروموکریپتین",
+    "پرولاکتین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet (scored)",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "prl",
+      "disease": "hyperprolactinemia",
+      "label": {
+        "fa": "اختلال ناشی از هیپرپرولاکتینمی — ۱٫۲۵ تا ۲٫۵ mg یک بار با غذا",
+        "en": "Hyperprolactinaemia-associated dysfunction — 1.25–2.5 mg once daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1.25,
+        "perDoseMax": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش تا ۲٫۵ mg هر ۲ تا ۷ روز در صورت تحمل.",
+            "en": "Increase by up to 2.5 mg every 2–7 days as tolerated."
+          },
+          "refs": [
+            {
+              "source": "fda-bromocriptine",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adenoma",
+      "disease": "hyperprolactinemia",
+      "label": {
+        "fa": "آدنوم مترشحه پرولاکتین — ۱۱ سال به بالا: ۱٫۲۵ تا ۲٫۵ mg یک بار",
+        "en": "Prolactin-secreting adenoma — ≥11 y: 1.25–2.5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 11,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1.25,
+        "perDoseMax": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه بیماری دریچه قلب یا فیبروز پریکارد (و سایر موارد بخش ۴).",
+        "en": "History of cardiac valvular disorder or pericardial fibrosis (and others in section 4)."
+      },
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "prl",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1.25,
+        "tabletsPerDoseRounded": 0.5,
+        "upperPerDose": 2.5
+      }
+    },
+    {
+      "regimen": "adenoma",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 1.25
+      }
+    }
+  ],
+  "atc": [
+    "G02CB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00179",
+        "en": "BROMOCRIPTINE MESYLATE 2.5MG TAB",
+        "fa": "قرص بروموکریپتین مزیلات ۲٫۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2484/Bromocriptine",
+        "url": "https://www.darooyab.ir/G-2484/Bromocriptine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=017962",
+      "label": "NDA017962"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17f3a343-1782-4799-95ba-31dfe93be2cf",
+      "label": "FDA Bromocriptine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682079.html",
+      "label": "Bromocriptine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G02CB01",
+      "label": "G02CB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2484/Bromocriptine",
+      "label": "Bromocriptine"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-bromocriptine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA017962"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Postpartum Period: Avoid use of bromocriptine mesylate for the inhibition or suppression of postpartum physiologic lactation because of the risk of serious adverse reactions [see Warnings and Precautions (5.4)] .",
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Avoid the use of bromocriptine mesylate during lactation in postpartum females.",
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of bromocriptine mesylate have not been established in pediatric patients for the treatment of hyperprolactiniemia-associated dysfunction, acromegaly, or idiopathic Parkinson’s disease or postencephalitic parkinsonism.",
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of bromocriptine mesylate did not include sufficient numbers of patients 65 years of age and older to determine whether they respond differently from younger adult patients.",
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females : Patients not seeking pregnancy, or those harboring large adenomas, should be advised to use appropriate contraceptive measures during treatment with bromocriptine mesylate.",
+      "refs": [
+        {
+          "source": "fda-bromocriptine",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

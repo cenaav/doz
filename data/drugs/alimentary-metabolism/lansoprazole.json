@@ -1,0 +1,563 @@
+{
+  "id": "lansoprazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لانسوپرازول",
+    "en": "Lansoprazole"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده پمپ پروتون",
+    "en": "Proton-pump inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Prevacid",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "prevacid",
+    "پرواسید",
+    "لانسوپرازول",
+    "PPI"
+  ],
+  "formulations": [
+    {
+      "id": "cap-15",
+      "form": "capsule",
+      "route": "oral",
+      "label": "15 mg capsule",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-30",
+      "form": "capsule",
+      "route": "oral",
+      "label": "30 mg capsule",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "du",
+      "disease": "peptic-ulcer-disease",
+      "label": {
+        "fa": "زخم دوازدهه — ۱۵ mg یک بار، ۴ هفته",
+        "en": "Duodenal ulcer — 15 mg once daily for 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 28
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده پس از بهبود: ۱۵ mg روزانه.",
+            "en": "Maintenance after healing: 15 mg daily."
+          },
+          "refs": [
+            {
+              "source": "fda-lansoprazole",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hp",
+      "disease": "h-pylori",
+      "label": {
+        "fa": "ریشه‌کنی H. pylori (سه‌دارویی) — ۳۰ mg دو بار، ۱۰ یا ۱۴ روز",
+        "en": "H. pylori triple therapy — 30 mg twice daily for 10 or 14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه آموکسی‌سیلین و کلاریترومایسین طبق برچسب.",
+            "en": "With amoxicillin and clarithromycin per label."
+          },
+          "refs": [
+            {
+              "source": "fda-lansoprazole",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ee",
+      "disease": "erosive-esophagitis",
+      "label": {
+        "fa": "ازوفاژیت اروزیو — ۳۰ mg یک بار تا ۸ هفته",
+        "en": "Erosive oesophagitis — 30 mg once daily up to 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 56,
+        "max": 56
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده: ۱۵ mg روزانه. نارسایی شدید کبد: ۱۵ mg.",
+            "en": "Maintenance: 15 mg daily. Severe liver impairment: 15 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-lansoprazole",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-lansoprazole",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds-1-11",
+      "disease": "gerd",
+      "label": {
+        "fa": "GERD/ازوفاژیت — ۱ تا ۱۱ سال: بر اساس وزن تا ۱۲ هفته",
+        "en": "GERD/oesophagitis — 1–11 y: by weight, up to 12 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 30,
+            "perDose": 15,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 30,
+            "maxWeightKg": null,
+            "perDose": 30,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 84,
+        "max": 84
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۳۰ kg و کمتر: ۱۵ mg؛ بالای ۳۰ kg: ۳۰ mg.",
+            "en": "≤30 kg: 15 mg; >30 kg: 30 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-lansoprazole",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds-12-17",
+      "disease": "gerd",
+      "label": {
+        "fa": "GERD غیراروزیو — ۱۲ تا ۱۷ سال: ۱۵ mg تا ۸ هفته",
+        "en": "Non-erosive GERD — 12–17 y: 15 mg up to 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 56,
+        "max": 56
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "ازوفاژیت اروزیو در این سن: ۳۰ mg تا ۸ هفته.",
+            "en": "Erosive oesophagitis at this age: 30 mg up to 8 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-lansoprazole",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا؛ همراه داروهای حاوی ریلپی‌ویرین.",
+        "en": "Hypersensitivity to any component; with rilpivirine-containing products."
+      },
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-1",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱ سال مؤثر نبوده است.",
+        "en": "Not effective under 1 year of age."
+      },
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "du",
+      "formulation": "cap-15",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15
+      }
+    },
+    {
+      "regimen": "hp",
+      "formulation": "cap-30",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDay": 60
+      }
+    },
+    {
+      "regimen": "ee",
+      "formulation": "cap-30",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 30
+      }
+    },
+    {
+      "regimen": "peds-1-11",
+      "formulation": "cap-15",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 15
+      }
+    },
+    {
+      "regimen": "peds-1-11",
+      "formulation": "cap-30",
+      "input": {
+        "ageYears": 11,
+        "weightKg": 35
+      },
+      "expect": {
+        "perDose": 30
+      }
+    },
+    {
+      "regimen": "peds-12-17",
+      "formulation": "cap-15",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 15
+      }
+    }
+  ],
+  "atc": [
+    "A02BC03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "12904",
+        "en": "LANSOPRAZOLE 15MG  TAB",
+        "fa": "قرص لانسوپرازول ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "06770",
+        "en": "LANSOPRAZOLE 15MG CAP",
+        "fa": "کپسول لانسوپرازول ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "06222",
+        "en": "LANSOPRAZOLE 30MG CAP",
+        "fa": "کپسول لانسوپرازول ۳۰ میلی‌گرم"
+      },
+      {
+        "code": "12720",
+        "en": "LANSOPRAZOLE 30MG TAB",
+        "fa": "قرص لانسوپرازول ۳۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2600/Lansoprazole",
+        "url": "https://www.darooyab.ir/G-2600/Lansoprazole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077255",
+      "label": "ANDA077255"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=427cf924-be17-47dc-8f77-115fa2f3fe17",
+      "label": "FDA Lansoprazole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a695020.html",
+      "label": "Lansoprazole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601067.html",
+      "label": "Lansoprazole, Clarithromycin, and Amoxicillin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A02BC03",
+      "label": "A02BC03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2600/Lansoprazole",
+      "label": "Lansoprazole"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-lansoprazole",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077255"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published observational studies overall do not indicate an association of adverse pregnancy outcomes with lansoprazole treatment (see Data) .",
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of lansoprazole in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
+        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+      },
+      "quote": "The safety and effectiveness of lansoprazole have been established in pediatric patients one year to 17 years of age for short-term treatment of symptomatic GERD and erosive esophagitis.",
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of patients (n=21,486) in clinical studies of lansoprazole, 16% of patients were aged 65 years and over, while 4% were 75 years and over.",
+      "refs": [
+        {
+          "source": "fda-lansoprazole",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}
