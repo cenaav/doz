@@ -1,0 +1,175 @@
+{
+  "id": "olopatadine-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی اولوپاتادین",
+    "en": "Olopatadine eye drops"
+  },
+  "category": "ophthalmology",
+  "class": {
+    "fa": "آنتی‌هیستامین/پایدارکننده ماست‌سل چشمی",
+    "en": "Ophthalmic antihistamine / mast-cell stabiliser"
+  },
+  "brands": [
+    {
+      "name": "Pataday",
+      "market": "US"
+    },
+    {
+      "name": "Patanol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pataday",
+    "patanol",
+    "پاتانول",
+    "اولوپاتادین",
+    "آلرژی چشم",
+    "خارش چشم"
+  ],
+  "formulations": [
+    {
+      "id": "sol-0-1",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.1% eye drops",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-pataday-bid",
+          "section": "Principal Display Panel"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergic",
+      "disease": "allergic-conjunctivitis",
+      "label": {
+        "fa": "خارش چشم آلرژیک — ۲ سال به بالا: ۱ قطره دو بار در روز",
+        "en": "Allergic itchy eyes — ≥2 y: 1 drop twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-pataday-bid",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2,
+        "refs": [
+          {
+            "source": "fda-pataday-bid",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۶ تا ۸ ساعت، حداکثر دو بار در روز. با قطره دیگر حداقل ۵ دقیقه فاصله. زیر ۲ سال: با پزشک مشورت شود.",
+            "en": "Every 6–8 hours, no more than twice a day. Wait 5 minutes between eye products. Under 2 years: consult a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-pataday-bid",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال: با پزشک مشورت شود (دوز OTC ندارد).",
+        "en": "Under 2 years: consult a doctor (no OTC dose)."
+      },
+      "refs": [
+        {
+          "source": "fda-pataday-bid",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "lens",
+      "severity": "warn",
+      "text": {
+        "fa": "برای تحریک ناشی از لنز تماسی استفاده نشود؛ در صورت تغییر رنگ یا کدر شدن محلول مصرف نشود.",
+        "en": "Not for contact-lens irritation; do not use if solution changes colour or becomes cloudy."
+      },
+      "refs": [
+        {
+          "source": "fda-pataday-bid",
+          "section": "Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergic",
+      "formulation": "sol-0-1",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 2
+      }
+    },
+    {
+      "regimen": "allergic",
+      "formulation": "sol-0-1",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

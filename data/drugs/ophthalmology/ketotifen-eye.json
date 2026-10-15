@@ -1,0 +1,162 @@
+{
+  "id": "ketotifen-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی کتوتیفن",
+    "en": "Ketotifen eye drops"
+  },
+  "category": "ophthalmology",
+  "class": {
+    "fa": "آنتی‌هیستامین چشمی",
+    "en": "Ophthalmic antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Zaditor",
+      "market": "US"
+    },
+    {
+      "name": "Alaway",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zaditor",
+    "alaway",
+    "zaditen eye",
+    "زادیتن",
+    "کتوتیفن",
+    "آلرژی چشم",
+    "خارش چشم"
+  ],
+  "formulations": [
+    {
+      "id": "sol-0-025",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.025% eye drops",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ketotifen-eye",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "allergic",
+      "disease": "allergic-conjunctivitis",
+      "label": {
+        "fa": "خارش چشم آلرژیک — ۳ سال به بالا: ۱ قطره دو بار در روز",
+        "en": "Allergic itchy eyes — ≥3 y: 1 drop twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-ketotifen-eye",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2,
+        "refs": [
+          {
+            "source": "fda-ketotifen-eye",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۸ تا ۱۲ ساعت، حداکثر دو بار در روز. زیر ۳ سال: با پزشک مشورت شود.",
+            "en": "Every 8–12 hours, no more than twice a day. Under 3 years: consult a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-ketotifen-eye",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-3",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 3,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۳ سال: با پزشک مشورت شود.",
+        "en": "Under 3 years: consult a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-ketotifen-eye",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "allergic",
+      "formulation": "sol-0-025",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 1,
+        "perDay": 2
+      }
+    },
+    {
+      "regimen": "allergic",
+      "formulation": "sol-0-025",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 12
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}
