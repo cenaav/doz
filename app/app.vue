@@ -9,5 +9,7 @@ useHead(() => ({
 </script>
 
 <template>
+  <NuxtPwaManifest />
+  <NuxtPwaAssets />
   <NuxtLayout><NuxtPage /></NuxtLayout>
 </template>

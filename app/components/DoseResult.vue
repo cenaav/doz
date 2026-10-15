@@ -53,7 +53,8 @@ const msg = (m: Msg) => (m.text ? lt(m.text) : t(`engine.${m.code}`, m.params ??
         <p class="font-bold">{{ $t('calc.titration') }}</p>
         <p>{{ $t('calc.tStart', { d: fmt(result.titration.start), u }) }}</p>
         <p v-if="result.titration.increment">{{ $t('calc.tIncrement', { d: fmt(result.titration.increment), every: fmt(result.titration.incrementEveryDays), u }) }}</p>
-        <p v-if="result.titration.targetMin">{{ $t('calc.tTarget', { min: fmt(result.titration.targetMin), max: fmt(result.titration.targetMax), u }) }}</p>
+        <p v-if="result.titration.targetMin && result.titration.targetMin === result.titration.targetMax">{{ $t('calc.tTargetOne', { d: fmt(result.titration.targetMin), u }) }}</p>
+        <p v-else-if="result.titration.targetMin">{{ $t('calc.tTarget', { min: fmt(result.titration.targetMin), max: fmt(result.titration.targetMax), u }) }}</p>
         <p class="font-bold">{{ $t('calc.tMax', { d: fmt(result.titration.max), u }) }}</p>
       </div>
 

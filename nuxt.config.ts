@@ -2,6 +2,19 @@ import { existsSync, readFileSync } from 'node:fs'
 import tailwindcss from '@tailwindcss/vite'
 
 const base = process.env.NUXT_APP_BASE_URL || '/'
+
+// Precache every prerendered page under both `/x` and `/x/` so deep links work offline
+// (GitHub Pages serves `/x/`, in-app links use `/x`).
+type PrecacheEntry = { url: string; revision: string | null; size: number }
+const precachePages = async (entries: PrecacheEntry[]) => {
+  const manifest = entries.flatMap((e) => {
+    if (!e.url.endsWith('index.html')) return [e]
+    const dir = e.url.replace(/^\//, '').replace(/index\.html$/, '')
+    if (!dir) return [{ ...e, url: base }]
+    return [{ ...e, url: dir.slice(0, -1) }, { ...e, url: dir }]
+  })
+  return { manifest, warnings: [] }
+}
 const routes: string[] = existsSync('app/generated/routes.json')
   ? JSON.parse(readFileSync('app/generated/routes.json', 'utf8'))
   : []
@@ -31,6 +44,8 @@ export default defineNuxtConfig({
   },
   pwa: {
     registerType: 'autoUpdate',
+    injectRegister: false,
+    client: { registerPlugin: false },
     pwaAssets: { config: true },
     manifest: {
       name: 'Doz',
@@ -44,7 +59,14 @@ export default defineNuxtConfig({
       scope: base,
       display: 'standalone',
     },
-    workbox: { globPatterns: ['**/*.{js,css,html,json,woff2,png,svg,ico,txt,xml}'], navigateFallback: undefined },
+    workbox: {
+      globPatterns: ['**/*.{js,css,html,json,woff2,png,svg,ico,txt,xml}'],
+      globIgnores: ['**/200.html', '**/404.html'],
+      navigateFallback: undefined,
+      manifestTransforms: [precachePages],
+      clientsClaim: true,
+      skipWaiting: true,
+    },
   },
   nitro: { prerender: { crawlLinks: true, failOnError: true, routes: ['/', '/en', ...routes] } },
 })

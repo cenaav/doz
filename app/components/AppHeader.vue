@@ -12,6 +12,7 @@ const isHome = computed(() => route.path.replace(/\/$/, '') === localePath('/').
         <NuxtLink v-if="!isHome" :to="localePath('/')" class="btn-ghost md:hidden" :aria-label="$t('search.placeholder')">🔍</NuxtLink>
         <NuxtLink :to="localePath('/sources')" class="btn-ghost hidden sm:inline-flex">{{ $t('nav.sources') }}</NuxtLink>
         <NuxtLink :to="localePath('/about')" class="btn-ghost">{{ $t('nav.about') }}</NuxtLink>
+        <NuxtLink :to="localePath('/settings')" class="btn-ghost" :aria-label="$t('settings.title')">⚙️</NuxtLink>
         <LangSwitch />
         <ThemeToggle />
       </nav>
