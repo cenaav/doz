@@ -28,16 +28,16 @@ It replaces the role of the earlier Saphira calculator (nameofstone.github.io/Sa
 
 ## 2. Stack and deployment
 
-- Vue 3 (Composition API) + Vite + vue-router (hash history) + vue-i18n.
-- `vite-plugin-pwa` for offline use.
-- Fuse.js for fuzzy search.
+- Nuxt 4 (Vue 3.5) in static generation mode (`nuxt generate`): every page is pre-rendered to real HTML at build time, so drug and disease pages are indexable by search engines and render before JS loads on phones.
+- `@nuxtjs/i18n` with URL prefixes `/fa/...` and `/en/...` (Persian default; `/` redirects by browser language). Each language version is its own indexable page with `hreflang` links.
+- Tailwind CSS 4 for styling: logical properties for RTL/LTR, `dark:` variant for themes, responsive breakpoints. No component library.
+- `@vite-pwa/nuxt` for offline use.
+- Fuse.js for fuzzy search (client side, index built at build time).
 - Vitest for unit tests; Ajv for JSON Schema validation.
-- Vazirmatn (self-hosted, not CDN, so offline works) for Persian; system font stack for English.
-- No UI framework; hand-written CSS with custom properties for themes.
-- GitHub Actions on push to `main`: install → validate data → test → build (`base: '/doz/'`) → deploy to Pages.
+- Vazirmatn (self-hosted via `@fontsource-variable/vazirmatn`, so offline works) for Persian; system font stack for English.
+- SEO: per-page `<title>`, description, canonical, `hreflang`, Open Graph; `sitemap.xml` and `robots.txt` generated at build.
+- GitHub Actions on push to `main`: install → validate data → test → `nuxt generate` (`app.baseURL: '/doz/'`) → deploy `.output/public` to Pages.
 - One-time manual step: repo Settings → Pages → Source = "GitHub Actions".
-
-Hash routing is used because GitHub Pages returns 404 for deep links in an SPA with history routing.
 
 ## 3. Data model
 
@@ -55,7 +55,7 @@ schema/
 docs/DATA_GUIDE.md              how to add/edit data
 ```
 
-At build time a Vite plugin (or `import.meta.glob`) bundles all drug files; the app also builds a search index from them. No runtime fetch is required.
+At build time all drug files are loaded (`import.meta.glob`), every drug/disease/category route is pre-rendered, and a search index is emitted. No runtime fetch is required.
 
 All human-readable text is bilingual: `{ "fa": "...", "en": "..." }`. A missing language falls back to the other with a visible marker.
 
@@ -231,15 +231,17 @@ Rules:
 
 ## 7. Pages
 
+All routes exist under `/fa/` and `/en/` and are pre-rendered.
+
 | route | content |
 |---|---|
-| `#/` | search, categories grid, recent drugs (localStorage) |
-| `#/category/:id` | drug list |
-| `#/drug/:id` | calculator, regimens, safety info, reference status |
-| `#/disease/:id` | related drugs and regimens |
-| `#/sources` | all sources; licensed-reference placeholder |
-| `#/about` | disclaimer, how to use, data policy, review status explanation |
-| `#/settings` | language, theme |
+| `/` | search, categories grid, recent drugs (localStorage) |
+| `/category/:id` | drug list |
+| `/drug/:id` | drug info, safety, reference status (static) + calculator (interactive) |
+| `/disease/:id` | related drugs and regimens |
+| `/sources` | all sources; licensed-reference placeholder |
+| `/about` | disclaimer, how to use, data policy, review status explanation |
+| `/settings` | language, theme |
 
 Layout: single column on phones; two columns ≥ 768 px (list + detail); three columns ≥ 1280 px (list + calculator + references). Max content width on very large screens with larger base font.
 
