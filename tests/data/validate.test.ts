@@ -20,6 +20,11 @@ describe('validateDataSet', () => {
   test('ref without section or page fails', () => {
     expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'fda-x' }] }).length).toBeGreaterThan(0)
   })
+  test('page must be a page number, not a table label', () => {
+    expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'fda-x', page: 'Table 1' }] }).join()).toMatch(/page/)
+    expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'fda-x', page: 'e964' }] })).toEqual([])
+    expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'fda-x', page: '39-44' }] })).toEqual([])
+  })
   test('unknown source fails', () => {
     expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'nope', section: '1' }] }).join()).toMatch(/unknown source nope/)
   })

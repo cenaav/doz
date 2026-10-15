@@ -30,7 +30,9 @@
   },
   "review": {
     "verified": "تأییدشده",
-    "unverified": "تأییدنشده"
+    "unverified": "تأییدنشده",
+    "by": "تأییدشده توسط {name} در {date}",
+    "unverifiedResult": "داده این دارو هنوز توسط بازبین بالینی تأیید نشده است."
   },
   "refs": {
     "title": "رفرنس",
@@ -71,5 +73,117 @@
       "light": "روز",
       "dark": "شب"
     }
+  },
+  "drug": {
+    "doseTitle": "دوز و منبع",
+    "description": "دوز {name} برای اطفال و بزرگسالان با ذکر منبع، سقف دوز و هشدارها."
+  },
+  "calc": {
+    "title": "محاسبه دوز",
+    "regimen": "بیماری / رژیم",
+    "regimenRefs": "منبع رژیم:",
+    "formulation": "فرآورده",
+    "age": "سن",
+    "agePh": "مثلاً ۳٫۵",
+    "weight": "وزن (kg)",
+    "weightPh": "مثلاً ۱۴",
+    "optional": "اختیاری: قد و کراتینین (برای eGFR)",
+    "height": "قد (cm)",
+    "scr": "کراتینین سرم (mg/dL)",
+    "badNumber": "{field} نامعتبر است.",
+    "enterInputs": "سن و وزن را وارد کنید.",
+    "perDose": "هر نوبت",
+    "perDay": "روزانه",
+    "exact": "دقیق",
+    "every": "هر {h} ساعت ({n} نوبت در روز)",
+    "duration": "مدت درمان: {min} تا {max} روز",
+    "days": "روز",
+    "capped": "سقف اعمال شد",
+    "titration": "برنامه افزایش تدریجی",
+    "tStart": "شروع: {d} {u} در روز",
+    "tIncrement": "افزایش: {d} {u} هر {every} روز",
+    "tTarget": "هدف: {min}–{max} {u} در روز",
+    "tMax": "حداکثر: {d} {u} در روز",
+    "refsUsed": "منابع این محاسبه",
+    "status": {
+      "invalidInput": "ورودی نامعتبر",
+      "blocked": "محاسبه انجام نشد"
+    },
+    "cap": {
+      "maxPerDose": "سقف هر نوبت ({v} {u}) اعمال شد.",
+      "maxPerDay": "سقف روزانه ({v} {u}) اعمال شد.",
+      "maxPerKgPerDose": "سقف وزنی هر نوبت ({v} {u}) اعمال شد.",
+      "maxPerKgPerDay": "سقف وزنی روزانه ({v} {u}) اعمال شد."
+    }
+  },
+  "engine": {
+    "INVALID_WEIGHT": "وزن باید بین ۰ و ۳۰۰ کیلوگرم باشد.",
+    "INVALID_AGE": "سن باید بین ۰ و ۱۲۰ سال باشد.",
+    "NEED_HEIGHT": "برای این رژیم قد لازم است.",
+    "UNKNOWN_REGIMEN": "رژیم پیدا نشد.",
+    "UNKNOWN_FORMULATION": "فرآورده پیدا نشد.",
+    "FORMULATION_NOT_ALLOWED": "این فرآورده برای این رژیم مجاز نیست.",
+    "OUTSIDE_POPULATION": "سن یا وزن بیمار خارج از محدوده این رژیم در منبع است.",
+    "NO_AGE_BAND": "برای این سن در منبع دوزی تعریف نشده است.",
+    "NO_WEIGHT_BAND": "برای این وزن در منبع دوزی تعریف نشده است.",
+    "CONTRAINDICATION": "منع مصرف",
+    "RENAL": "تنظیم کلیوی (eGFR {egfr})",
+    "COMPONENT_LIMIT": "جزء دیگر فرآورده از سقف مجاز بیشتر می‌شود ({perDay} {unit} در روز).",
+    "WEIGHT_IMPLAUSIBLE": "وزن برای این سن غیرمعمول است (محدوده تقریبی {min}–{max} kg). ورودی را بررسی کنید.",
+    "TABLET_ROUNDING": "تعداد قرص از {exact} به {rounded} گرد شد؛ فرآورده دیگری را بررسی کنید.",
+    "EGFR_ADULT_NOT_COMPUTED": "eGFR بزرگسالان در این نسخه محاسبه نمی‌شود."
+  },
+  "units": {
+    "day": "روز",
+    "week": "هفته",
+    "month": "ماه",
+    "year": "سال",
+    "ml": "mL",
+    "tablet": "قرص",
+    "capsule": "کپسول",
+    "sachet": "ساشه",
+    "dose": {
+      "mg": "mg",
+      "mcg": "mcg",
+      "g": "g",
+      "unit": "واحد",
+      "mL": "mL"
+    }
+  },
+  "forms": {
+    "suspension": "سوسپانسیون",
+    "syrup": "شربت",
+    "solution": "محلول",
+    "drops": "قطره",
+    "tablet": "قرص",
+    "capsule": "کپسول",
+    "chewable-tablet": "قرص جویدنی",
+    "odt": "قرص دهان‌حل",
+    "sachet": "ساشه",
+    "injection": "تزریقی"
+  },
+  "safety": {
+    "title": "ایمنی و اطلاعات",
+    "contraindications": "منع مصرف",
+    "warnings": "هشدارها",
+    "monitoring": "پایش",
+    "interactions": "تداخلات مهم",
+    "renal": "تنظیم کلیوی",
+    "formulations": "فرآورده‌ها"
+  },
+  "refStatus": {
+    "title": "وضعیت منابع این دارو",
+    "help": "مشخص می‌کند برای این دارو از کدام منابع رفرنس ثبت شده و از کدام نه.",
+    "present": "دارد",
+    "absent": "ندارد",
+    "review": "بازبینی بالینی"
+  },
+  "sourceTypes": {
+    "fda-label": "بروشور FDA (DailyMed)",
+    "ema-smpc": "SmPC اروپا (EMA)",
+    "guideline": "گایدلاین منتشرشده",
+    "licensed-reference": "منبع دارای مجوز دانشکده",
+    "ifda-leaflet": "بروشور ایران (IFDA)",
+    "textbook": "کتاب مرجع"
   }
 }

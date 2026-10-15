@@ -30,7 +30,9 @@
   },
   "review": {
     "verified": "Verified",
-    "unverified": "Unverified"
+    "unverified": "Unverified",
+    "by": "Verified by {name} on {date}",
+    "unverifiedResult": "This drug's data has not yet been verified by a clinical reviewer."
   },
   "refs": {
     "title": "Reference",
@@ -71,5 +73,117 @@
       "light": "Light",
       "dark": "Dark"
     }
+  },
+  "drug": {
+    "doseTitle": "Dose & references",
+    "description": "{name} dosing for children and adults with cited sources, maximum doses and warnings."
+  },
+  "calc": {
+    "title": "Dose calculator",
+    "regimen": "Disease / regimen",
+    "regimenRefs": "Regimen source:",
+    "formulation": "Formulation",
+    "age": "Age",
+    "agePh": "e.g. 3.5",
+    "weight": "Weight (kg)",
+    "weightPh": "e.g. 14",
+    "optional": "Optional: height and creatinine (for eGFR)",
+    "height": "Height (cm)",
+    "scr": "Serum creatinine (mg/dL)",
+    "badNumber": "{field} is not a valid number.",
+    "enterInputs": "Enter age and weight.",
+    "perDose": "Per dose",
+    "perDay": "Per day",
+    "exact": "exact",
+    "every": "Every {h} h ({n} doses per day)",
+    "duration": "Duration: {min} to {max} days",
+    "days": "Day",
+    "capped": "cap applied",
+    "titration": "Titration plan",
+    "tStart": "Start: {d} {u} per day",
+    "tIncrement": "Increase: {d} {u} every {every} days",
+    "tTarget": "Target: {min}–{max} {u} per day",
+    "tMax": "Maximum: {d} {u} per day",
+    "refsUsed": "Sources for this calculation",
+    "status": {
+      "invalidInput": "Invalid input",
+      "blocked": "Not calculated"
+    },
+    "cap": {
+      "maxPerDose": "Per-dose maximum ({v} {u}) applied.",
+      "maxPerDay": "Daily maximum ({v} {u}) applied.",
+      "maxPerKgPerDose": "Per-dose weight-based maximum ({v} {u}) applied.",
+      "maxPerKgPerDay": "Daily weight-based maximum ({v} {u}) applied."
+    }
+  },
+  "engine": {
+    "INVALID_WEIGHT": "Weight must be between 0 and 300 kg.",
+    "INVALID_AGE": "Age must be between 0 and 120 years.",
+    "NEED_HEIGHT": "This regimen needs height.",
+    "UNKNOWN_REGIMEN": "Regimen not found.",
+    "UNKNOWN_FORMULATION": "Formulation not found.",
+    "FORMULATION_NOT_ALLOWED": "This formulation is not allowed for this regimen.",
+    "OUTSIDE_POPULATION": "The patient's age or weight is outside the range this regimen covers in the source.",
+    "NO_AGE_BAND": "The source defines no dose for this age.",
+    "NO_WEIGHT_BAND": "The source defines no dose for this weight.",
+    "CONTRAINDICATION": "Contraindication",
+    "RENAL": "Renal adjustment (eGFR {egfr})",
+    "COMPONENT_LIMIT": "Another ingredient of this product exceeds its limit ({perDay} {unit} per day).",
+    "WEIGHT_IMPLAUSIBLE": "Weight is unusual for this age (approx. range {min}–{max} kg). Check the input.",
+    "TABLET_ROUNDING": "Tablet count rounded from {exact} to {rounded}; consider another strength.",
+    "EGFR_ADULT_NOT_COMPUTED": "Adult eGFR is not calculated in this version."
+  },
+  "units": {
+    "day": "days",
+    "week": "weeks",
+    "month": "months",
+    "year": "years",
+    "ml": "mL",
+    "tablet": "tablet(s)",
+    "capsule": "capsule(s)",
+    "sachet": "sachet(s)",
+    "dose": {
+      "mg": "mg",
+      "mcg": "mcg",
+      "g": "g",
+      "unit": "units",
+      "mL": "mL"
+    }
+  },
+  "forms": {
+    "suspension": "suspension",
+    "syrup": "syrup",
+    "solution": "solution",
+    "drops": "drops",
+    "tablet": "tablet",
+    "capsule": "capsule",
+    "chewable-tablet": "chewable tablet",
+    "odt": "orally disintegrating tablet",
+    "sachet": "sachet",
+    "injection": "injection"
+  },
+  "safety": {
+    "title": "Safety & information",
+    "contraindications": "Contraindications",
+    "warnings": "Warnings",
+    "monitoring": "Monitoring",
+    "interactions": "Important interactions",
+    "renal": "Renal adjustment",
+    "formulations": "Formulations"
+  },
+  "refStatus": {
+    "title": "Reference status for this drug",
+    "help": "Shows which sources have references recorded for this drug and which do not.",
+    "present": "Present",
+    "absent": "Not present",
+    "review": "Clinical review"
+  },
+  "sourceTypes": {
+    "fda-label": "FDA label (DailyMed)",
+    "ema-smpc": "EU SmPC (EMA)",
+    "guideline": "Published guideline",
+    "licensed-reference": "Licensed reference (medical school)",
+    "ifda-leaflet": "Iranian leaflet (IFDA)",
+    "textbook": "Reference textbook"
   }
 }
