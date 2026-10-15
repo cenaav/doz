@@ -1,0 +1,550 @@
+{
+  "id": "ciprofloxacin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیپروفلوکساسین",
+    "en": "Ciprofloxacin"
+  },
+  "category": "antibiotics",
+  "class": {
+    "fa": "فلوروکینولون",
+    "en": "Fluoroquinolone"
+  },
+  "brands": [
+    {
+      "name": "Cipro",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cipro",
+    "سیپرو",
+    "سیپروفلوکساسین",
+    "سیپروفلوکسازین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-750",
+      "form": "tablet",
+      "route": "oral",
+      "label": "750 mg tablet",
+      "concentration": {
+        "amount": 750,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "uti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "عفونت ادراری: ۲۵۰ تا ۵۰۰ mg هر ۱۲ ساعت، ۷ تا ۱۴ روز",
+        "en": "Urinary tract infection: 250–500 mg every 12 h, 7–14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "perDoseMax": 500,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      }
+    },
+    {
+      "id": "cystitis",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "سیستیت حاد بدون عارضه: ۲۵۰ mg هر ۱۲ ساعت، ۳ روز",
+        "en": "Acute uncomplicated cystitis: 250 mg every 12 h, 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "id": "sssi",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت پوست و بافت نرم: ۵۰۰ تا ۷۵۰ mg هر ۱۲ ساعت، ۷ تا ۱۴ روز",
+        "en": "Skin and skin structure: 500–750 mg every 12 h, 7–14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "perDoseMax": 750,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      }
+    },
+    {
+      "id": "lrti",
+      "disease": "lower-respiratory-infection",
+      "label": {
+        "fa": "عفونت تنفسی تحتانی: ۵۰۰ تا ۷۵۰ mg هر ۱۲ ساعت، ۷ تا ۱۴ روز",
+        "en": "Lower respiratory tract: 500–750 mg every 12 h, 7–14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "perDoseMax": 750,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      }
+    },
+    {
+      "id": "sinusitis",
+      "disease": "acute-bacterial-sinusitis",
+      "label": {
+        "fa": "سینوزیت حاد: ۵۰۰ mg هر ۱۲ ساعت، ۱۰ روز",
+        "en": "Acute sinusitis: 500 mg every 12 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "diarrhea",
+      "disease": "acute-diarrhoea",
+      "label": {
+        "fa": "اسهال عفونی: ۵۰۰ mg هر ۱۲ ساعت، ۵ تا ۷ روز",
+        "en": "Infectious diarrhoea: 500 mg every 12 h, 5–7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 7
+      }
+    },
+    {
+      "id": "typhoid",
+      "disease": "typhoid",
+      "label": {
+        "fa": "حصبه: ۵۰۰ mg هر ۱۲ ساعت، ۱۰ روز",
+        "en": "Typhoid fever: 500 mg every 12 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "gonorrhea",
+      "disease": "gonorrhea",
+      "label": {
+        "fa": "سوزاک بدون عارضه: ۲۵۰ mg تک‌دوز",
+        "en": "Uncomplicated gonorrhoea: 250 mg single dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "peds-cuti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "UTI عارضه‌دار/پیلونفریت — ۱ تا ۱۷ سال: ۱۰ تا ۲۰ mg/kg هر ۱۲ ساعت",
+        "en": "Complicated UTI/pyelonephritis — 1–17 y: 10–20 mg/kg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "perKgPerDoseMax": 20,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.2, Table 3"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 750,
+        "refs": [
+          {
+            "source": "fda-ciprofloxacin",
+            "section": "2.2, Table 3"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 21
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر ۷۵۰ mg در هر دوز حتی بالای ۵۱ kg. سیپروفلوکساسین در کودکان داروی خط اول نیست (عوارض مفصلی).",
+            "en": "Max 750 mg per dose even above 51 kg. Not a first-choice drug in children (joint adverse events)."
+          },
+          "refs": [
+            {
+              "source": "fda-ciprofloxacin",
+              "section": "2.2, Table 3"
+            },
+            {
+              "source": "fda-ciprofloxacin",
+              "section": "8.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سیپروفلوکساسین یا سایر کینولون‌ها؛ مصرف همزمان تیزانیدین.",
+        "en": "Hypersensitivity to ciprofloxacin or other quinolones; concomitant tizanidine."
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: تاندونیت و پارگی تاندون، نوروپاتی محیطی، اثرات CNS و تشدید میاستنی گراویس؛ در میاستنی پرهیز شود.",
+        "en": "Boxed warning: tendinitis and tendon rupture, peripheral neuropathy, CNS effects and exacerbation of myasthenia gravis; avoid in myasthenia gravis."
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "uti",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "upperPerDose": 500
+      }
+    },
+    {
+      "regimen": "cystitis",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDay": 500
+      }
+    },
+    {
+      "regimen": "sssi",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "lrti",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "sinusitis",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "diarrhea",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "typhoid",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "gonorrhea",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 250
+      }
+    },
+    {
+      "regimen": "peds-cuti",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 250,
+        "upperPerDose": 500
+      }
+    },
+    {
+      "regimen": "peds-cuti",
+      "formulation": "tab-750",
+      "input": {
+        "ageYears": 16,
+        "weightKg": 90
+      },
+      "expect": {
+        "perDose": 750
+      }
+    }
+  ]
+}

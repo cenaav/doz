@@ -1,0 +1,413 @@
+{
+  "id": "levofloxacin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لووفلوکساسین",
+    "en": "Levofloxacin"
+  },
+  "category": "antibiotics",
+  "class": {
+    "fa": "فلوروکینولون",
+    "en": "Fluoroquinolone"
+  },
+  "brands": [
+    {
+      "name": "Levaquin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "levaquin",
+    "لواکین",
+    "لووفلوکساسین",
+    "لووفلوکسازین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-750",
+      "form": "tablet",
+      "route": "oral",
+      "label": "750 mg tablet",
+      "concentration": {
+        "amount": 750,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cap",
+      "disease": "community-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی اکتسابی از جامعه: ۵۰۰ mg روزانه ۷ تا ۱۴ روز (یا ۷۵۰ mg، ۵ روز)",
+        "en": "Community-acquired pneumonia: 500 mg daily 7–14 days (or 750 mg for 5 days)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "perDoseMax": 750,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 14
+      }
+    },
+    {
+      "id": "sinusitis",
+      "disease": "acute-bacterial-sinusitis",
+      "label": {
+        "fa": "سینوزیت باکتریایی حاد: ۵۰۰ mg روزانه ۱۰ تا ۱۴ روز (یا ۷۵۰ mg، ۵ روز)",
+        "en": "Acute bacterial sinusitis: 500 mg daily 10–14 days (or 750 mg for 5 days)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "perDoseMax": 750,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 14
+      }
+    },
+    {
+      "id": "aecb",
+      "disease": "aecb",
+      "label": {
+        "fa": "تشدید باکتریایی برونشیت مزمن: ۵۰۰ mg روزانه ۷ روز",
+        "en": "Acute bacterial exacerbation of chronic bronchitis: 500 mg daily, 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "uti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "UTI بدون عارضه: ۲۵۰ mg روزانه ۳ روز",
+        "en": "Uncomplicated UTI: 250 mg daily, 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "id": "cuti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "UTI عارضه‌دار/پیلونفریت: ۷۵۰ mg روزانه ۵ روز",
+        "en": "Complicated UTI/pyelonephritis: 750 mg daily, 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 750,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      }
+    },
+    {
+      "id": "sssi",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت پوست بدون عارضه: ۵۰۰ mg روزانه ۷ تا ۱۰ روز",
+        "en": "Uncomplicated skin infection: 500 mg daily, 7–10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 10
+      }
+    },
+    {
+      "id": "peds",
+      "disease": "community-acquired-pneumonia",
+      "label": {
+        "fa": "کودکان",
+        "en": "Children"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "در کودکان فقط برای سیاه‌زخم استنشاقی و طاعون (۶ ماه به بالا) تأیید شده؛ قرص فقط برای ۳۰ kg به بالا.",
+          "en": "In children approved only for inhalational anthrax and plague (≥6 months); tablets only for ≥30 kg."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "8.4"
+        },
+        {
+          "source": "fda-levofloxacin",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به لووفلوکساسین یا سایر کینولون‌ها.",
+        "en": "Hypersensitivity to levofloxacin or other quinolones."
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: تاندونیت و پارگی تاندون، نوروپاتی محیطی، اثرات CNS و تشدید میاستنی گراویس؛ در میاستنی پرهیز شود.",
+        "en": "Boxed warning: tendinitis and tendon rupture, peripheral neuropathy, CNS effects and exacerbation of myasthenia gravis; avoid in myasthenia gravis."
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cap",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "sinusitis",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "aecb",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "uti",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 250
+      }
+    },
+    {
+      "regimen": "cuti",
+      "formulation": "tab-750",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 750
+      }
+    },
+    {
+      "regimen": "sssi",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    }
+  ]
+}
