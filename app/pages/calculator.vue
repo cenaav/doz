@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import type { CatalogEntry } from '../../lib/types'
+import type { CatalogEntry, Drug } from '../../lib/types'
 const { t } = useI18n()
+const fmt = useFormatNumber()
 const lt = useLocalText()
 const localePath = useLocalePath()
 useSeoMeta({ title: () => t('quick.title'), description: () => t('quick.description') })
@@ -21,7 +22,13 @@ watch([mode, category], () => {
   if (!list.value.some((d) => d.id === drugId.value)) drugId.value = ''
 })
 
-const { data: drug } = await useAsyncData('quick-drug', () => (drugId.value ? loadDrug(drugId.value) : Promise.resolve(null)), { watch: [drugId] })
+// Loaded on the client only. useAsyncData with a fixed key returned the prerendered (empty) value
+// after in-app navigation, so selecting a drug showed nothing.
+const drug = shallowRef<Drug | null>(null)
+watch(drugId, async (id) => {
+  const loaded = id ? await loadDrug(id) : null
+  if (drugId.value === id) drug.value = loaded
+})
 const regimenIds = computed(() => drug.value?.regimens.filter((r) => inMode(r.type)).map((r) => r.id) ?? [])
 const doseCupRef = [{ source: 'fda-childrens-tylenol', section: 'Directions', note: { fa: 'فقط از پیمانه مخصوص همراه دارو استفاده شود', en: 'Use only the enclosed dosing cup; do not use any other dosing device' } }]
 </script>
@@ -57,11 +64,12 @@ const doseCupRef = [{ source: 'fda-childrens-tylenol', section: 'Directions', no
     </div>
 
     <label class="block space-y-1">
-      <span class="text-sm font-bold">💊 {{ $t('quick.selectDrug') }}</span>
+      <span class="text-sm font-bold">💊 {{ $t('quick.selectDrug') }} <span class="font-normal text-slate-500">({{ $t('quick.count', { n: fmt(list.length) }) }})</span></span>
       <select v-model="drugId" class="input">
         <option value="">{{ $t('quick.selectDrugPh') }}</option>
         <option v-for="d in list" :key="d.id" :value="d.id">{{ lt(d.name) }} — {{ d.name.en }}</option>
       </select>
+      <span class="block text-xs leading-5 text-slate-500">{{ $t('quick.notListed') }}</span>
     </label>
 
     <template v-if="drug && regimenIds.length">
