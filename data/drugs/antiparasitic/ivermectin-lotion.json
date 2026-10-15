@@ -1,0 +1,202 @@
+{
+  "id": "ivermectin-lotion",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لوسیون ایورمکتین ۰٫۵٪ (شپش)",
+    "en": "Ivermectin 0.5% lotion"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدشپش موضعی",
+    "en": "Topical pediculicide"
+  },
+  "brands": [
+    {
+      "name": "Sklice",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sklice",
+    "ایورمکتین لوسیون",
+    "شپش"
+  ],
+  "formulations": [
+    {
+      "id": "lotion",
+      "form": "lotion",
+      "route": "topical",
+      "label": "Ivermectin 0.5% lotion",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sklice",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "lice",
+      "disease": "head-lice",
+      "label": {
+        "fa": "شپش سر — یک بار روی موی خشک، ۱۰ دقیقه، سپس با آب بشویید (۶ ماه به بالا)",
+        "en": "Head lice — once on dry hair, 10 min, then rinse with water (≥6 months)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-sklice",
+          "section": "Directions"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۶ ماه تا زیر ۱۲ سال با نظارت بزرگسال. فقط روی پوست سر؛ نه روی ابرو و مژه.",
+            "en": "6 months to <12 y with adult supervision. Scalp only; not on eyebrows or eyelashes."
+          },
+          "refs": [
+            {
+              "source": "fda-sklice",
+              "section": "Directions"
+            },
+            {
+              "source": "fda-sklice",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "lt6m",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ ماه مصرف نشود.",
+        "en": "Do not use under 6 months."
+      },
+      "refs": [
+        {
+          "source": "fda-sklice",
+          "section": "Warnings — Do not use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "lice",
+      "formulation": "lotion",
+      "input": {
+        "ageYears": 7,
+        "weightKg": 22
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=ivermectin%200.5%25%20lotion"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202736",
+      "label": "NDA202736"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7579bdfe-a538-4bff-b7c7-df2c4b6f13db",
+      "label": "FDA Sklice (OTC)"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-sklice",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-sklice",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-sklice",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA202736"
+  }
+}

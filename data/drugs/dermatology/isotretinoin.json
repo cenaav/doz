@@ -1,0 +1,361 @@
+{
+  "id": "isotretinoin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایزوترتینوئین (راکوتان)",
+    "en": "Isotretinoin"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "رتینوئید خوراکی",
+    "en": "Oral retinoid"
+  },
+  "brands": [
+    {
+      "name": "Accutane",
+      "market": "US"
+    },
+    {
+      "name": "Roaccutane",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "roaccutane",
+    "accutane",
+    "راکوتان",
+    "ایزوترتینوئین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-10",
+      "form": "capsule",
+      "route": "oral",
+      "label": "10 mg capsule",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-20",
+      "form": "capsule",
+      "route": "oral",
+      "label": "20 mg capsule",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-40",
+      "form": "capsule",
+      "route": "oral",
+      "label": "40 mg capsule",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acne",
+      "disease": "severe-acne",
+      "label": {
+        "fa": "آکنه ندولر شدید مقاوم — ۰٫۵ تا ۱ mg/kg/روز در ۲ دوز با غذا (۱۵ تا ۲۰ هفته)",
+        "en": "Severe nodular acne — 0.5–1 mg/kg/day in 2 doses with food (15–20 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.5,
+        "perKgPerDayMax": 1,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بزرگسال با بیماری بسیار شدید تا ۲ mg/kg/روز. فقط در برنامه iPLEDGE (آمریکا).",
+            "en": "Adults with very severe disease up to 2 mg/kg/day. Only within the iPLEDGE programme (US)."
+          },
+          "refs": [
+            {
+              "source": "fda-isotretinoin",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-isotretinoin",
+              "section": "5.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "preg",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری — ناهنجاری شدید جنین. دو روش پیشگیری و تست بارداری لازم است.",
+        "en": "Pregnancy — severe birth defects. Two forms of contraception and pregnancy tests required."
+      },
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "4"
+        },
+        {
+          "source": "fda-isotretinoin",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ایزوترتینوئین یا ویتامین A.",
+        "en": "Hypersensitivity to isotretinoin or vitamin A."
+      },
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی؛ مصرف در بارداری منع مطلق.",
+        "en": "Boxed warning: embryo-fetal toxicity; contraindicated in pregnancy."
+      },
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acne",
+      "formulation": "cap-20",
+      "input": {
+        "ageYears": 18,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 40
+      }
+    }
+  ],
+  "atc": [
+    "D10BA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06184",
+        "en": "ISOTRETINOIN 0.05% GEL",
+        "fa": "ژل ایزوترتینوئین ۰٫۰۵ درصد"
+      },
+      {
+        "code": "12056",
+        "en": "ISOTRETINOIN 10MG CAP",
+        "fa": "کپسول ایزوترتینوئین ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "20711",
+        "en": "ISOTRETINOIN 16MG CAP",
+        "fa": "کپسول ایزوترتینوئین ۱۶ میلی‌گرم"
+      },
+      {
+        "code": "00720",
+        "en": "ISOTRETINOIN 20MG CAP",
+        "fa": "کپسول ایزوترتینوئین ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "53031",
+        "en": "ISOTRETINOIN CAPSULE, LIQUID FILLED ORAL 10 mg",
+        "fa": "کپسول ایزوترتینوئین پرشده ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2284/Isotretinoin",
+        "url": "https://www.darooyab.ir/G-2284/Isotretinoin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202099",
+      "label": "ANDA202099"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27b3cf26-f22e-5b70-1c24-009933b7c6ee",
+      "label": "FDA Zenatane"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a681043.html",
+      "label": "Isotretinoin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=D10BA01",
+      "label": "D10BA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2284/Isotretinoin",
+      "label": "Isotretinoin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Zenatane is contraindicated in: Pregnancy [see Warnings and Precautions ( 5.1 ) and Use in Specific Populations ( 8.1 )].",
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants from isotretinoin, advise patients that breastfeeding is not recommended during treatment with Zenatane, and for at least 8 days after the last dose of Zenatane.",
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Zenatane for the treatment of severe recalcitrant nodular acne have been established in non-pregnant pediatric patients 12 years of age and older with multiple inflammatory nodules with a diameter of 5 mm or greater who are unresponsive to conventional treatment, including systemic …",
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of Zenatane did not include sufficient numbers of patients 65 years of age and older to determine whether they respond differently from younger adult patients.",
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "… of Zenatane treatment, AND (2) after the patient has used their chosen pregnancy prevention methods (i.e., two forms of contraception or committed to abstinence) for at least 30 days.",
+      "refs": [
+        {
+          "source": "fda-isotretinoin",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-isotretinoin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA202099"
+  }
+}

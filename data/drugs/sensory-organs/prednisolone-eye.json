@@ -1,0 +1,260 @@
+{
+  "id": "prednisolone-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره پردنیزولون استات ۱٪",
+    "en": "Prednisolone acetate 1% eye drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "کورتون چشمی",
+    "en": "Ophthalmic corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Pred Forte",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pred forte",
+    "پرد فورت",
+    "پردنیزولون چشمی",
+    "قطره کورتون چشم"
+  ],
+  "formulations": [
+    {
+      "id": "susp",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "1% ophthalmic suspension",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-predforte",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "infl",
+      "disease": "ocular-inflammation",
+      "label": {
+        "fa": "التهاب پاسخ‌ده به کورتون — ۲ قطره چهار بار در روز",
+        "en": "Steroid-responsive inflammation — 2 drops four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-predforte",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "قبل از مصرف تکان دهید. اگر ظرف ۲ روز بهبود نیافت ارزیابی دوباره. ناگهانی قطع نشود.",
+            "en": "Shake well. Re-evaluate if no improvement in 2 days. Do not stop prematurely."
+          },
+          "refs": [
+            {
+              "source": "fda-predforte",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بیشتر عفونت‌های ویروسی قرنیه و ملتحمه (از جمله هرپس دندریتیک، واریسلا)، عفونت مایکوباکتریایی و قارچی چشم.",
+        "en": "Most viral diseases of cornea and conjunctiva (incl. dendritic herpes, varicella), mycobacterial and fungal eye infections."
+      },
+      "refs": [
+        {
+          "source": "fda-predforte",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "مصرف طولانی: افزایش فشار چشم/گلوکوم و آب مروارید.",
+        "en": "Prolonged use: raised intraocular pressure/glaucoma and cataract."
+      },
+      "refs": [
+        {
+          "source": "fda-predforte",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "infl",
+      "formulation": "susp",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "S01BA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01046",
+        "en": "PREDNISOLONE ACETATE 1% OPH DROP",
+        "fa": "قطره چشمی پردنیزولون استات ۱ درصد"
+      },
+      {
+        "code": "01047",
+        "en": "PREDNISOLONE-S 10ML OPH DROP",
+        "fa": "قطره چشمی پردنیزولون–S ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "52376",
+        "en": "PREDNISOLONE SUSPENSION, DROPS OPHTHALMIC 1 % 5 mL",
+        "fa": "قطره چشمی پردنیزولون ۱ درصد ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4583/Prednisolone-Ophthalmic",
+        "url": "https://www.darooyab.ir/G-4583/Prednisolone-Ophthalmic"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=017469",
+      "label": "NDA017469"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3011a244-24a4-46ef-979a-b5d9e7076246",
+      "label": "FDA Pred acetate 1% eye"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01BA04",
+      "label": "S01BA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4583/Prednisolone-Ophthalmic",
+      "label": "Prednisolone-Ophthalmic"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "",
+      "refs": [
+        {
+          "source": "fda-predforte",
+          "section": "Pregnancy:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants from prednisolone acetate, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-predforte",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-predforte",
+          "section": "Pediatric Use:"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness have been observed between elderly and younger patients.",
+      "refs": [
+        {
+          "source": "fda-predforte",
+          "section": "Geriatric Use:"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA authorized generic",
+    "refs": [
+      {
+        "source": "fda-predforte",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA017469"
+  }
+}

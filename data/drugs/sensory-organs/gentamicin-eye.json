@@ -1,0 +1,194 @@
+{
+  "id": "gentamicin-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره چشمی جنتامایسین",
+    "en": "Gentamicin eye drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "آمینوگلیکوزید چشمی",
+    "en": "Ophthalmic aminoglycoside"
+  },
+  "brands": [
+    {
+      "name": "Garamycin ophthalmic",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "gentamicin eye",
+    "جنتامایسین چشمی",
+    "قطره جنتامایسین"
+  ],
+  "formulations": [
+    {
+      "id": "drops",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.3% ophthalmic solution",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-gentamicineye",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "conj",
+      "disease": "bacterial-conjunctivitis",
+      "label": {
+        "fa": "عفونت باکتریایی چشم — ۱ تا ۲ قطره هر ۴ ساعت",
+        "en": "Bacterial eye infection — 1–2 drops every 4 h"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 6
+      },
+      "refs": [
+        {
+          "source": "fda-gentamicineye",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عفونت شدید تا ۲ قطره هر ساعت.",
+            "en": "Severe infection up to 2 drops every hour."
+          },
+          "refs": [
+            {
+              "source": "fda-gentamicineye",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to components."
+      },
+      "refs": [
+        {
+          "source": "fda-gentamicineye",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "conj",
+      "formulation": "drops",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "S01AA11"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00588",
+        "en": "GENTAMICIN 3MG/G 3G OPH OINT",
+        "fa": "پماد جنتامایسین ۳ میلی‌گرم / گرم ۳ گرم"
+      },
+      {
+        "code": "00589",
+        "en": "GENTAMICIN 3MG/ML OPH DROP",
+        "fa": "قطره چشمی جنتامایسین ۳ میلی‌گرم / میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4576/Gentamicin-Ophthalmic",
+        "url": "https://www.darooyab.ir/G-4576/Gentamicin-Ophthalmic"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=064048",
+      "label": "ANDA064048"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41d01350-5c4b-42fc-be5f-986ceec02bd3",
+      "label": "FDA Gentamicin eye"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01AA11",
+      "label": "S01AA11"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4576/Gentamicin-Ophthalmic",
+      "label": "Gentamicin-Ophthalmic"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Gentamicin should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-gentamicineye",
+          "section": "Pregnancy"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-gentamicineye",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA064048"
+  }
+}

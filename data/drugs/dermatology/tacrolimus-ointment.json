@@ -1,0 +1,385 @@
+{
+  "id": "tacrolimus-ointment",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پماد تاکرولیموس",
+    "en": "Tacrolimus ointment"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "مهارکننده کلسی‌نورین موضعی",
+    "en": "Topical calcineurin inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Protopic",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "protopic",
+    "پروتوپیک",
+    "تاکرولیموس پماد",
+    "اگزما"
+  ],
+  "formulations": [
+    {
+      "id": "oint-0-03",
+      "form": "ointment",
+      "route": "topical",
+      "label": "0.03% ointment",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "oint-0-1",
+      "form": "ointment",
+      "route": "topical",
+      "label": "0.1% ointment",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "atopic-dermatitis",
+      "label": {
+        "fa": "درماتیت آتوپیک — بزرگسال: ۰٫۰۳٪ یا ۰٫۱٪ لایه نازک دو بار در روز",
+        "en": "Atopic dermatitis — adult: 0.03% or 0.1% thin layer twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "Dosage and Administration — Adult"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "atopic-dermatitis",
+      "label": {
+        "fa": "درماتیت آتوپیک — ۲ تا ۱۵ سال: فقط ۰٫۰۳٪ دو بار در روز",
+        "en": "Atopic dermatitis — 2–15 y: 0.03% only, twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "Dosage and Administration — Pediatric"
+        }
+      ],
+      "allowedFormulations": [
+        "oint-0-03"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تاکرولیموس.",
+        "en": "Hypersensitivity to tacrolimus."
+      },
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "lt2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای کودکان زیر ۲ سال اندیکاسیون ندارد.",
+        "en": "Not indicated for children under 2."
+      },
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "Indications and Usage"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: گزارش‌های نادر بدخیمی (پوست و لنفوم)؛ مصرف طولانی مداوم پرهیز؛ فقط در درمان خط دوم.",
+        "en": "Boxed warning: rare reports of malignancy (skin and lymphoma); avoid long-term continuous use; second-line only."
+      },
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "oint-0-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "oint-0-03",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "D11AH01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18952",
+        "en": "TACROLIMUS 0.03% 10G OINT",
+        "fa": "پماد تاکرولیموس ۰٫۰۳ درصد ۱۰ گرم"
+      },
+      {
+        "code": "11622",
+        "en": "TACROLIMUS 0.03% 30G OINT",
+        "fa": "پماد تاکرولیموس ۰٫۰۳ درصد ۳۰ گرم"
+      },
+      {
+        "code": "08131",
+        "en": "TACROLIMUS 0.03% 60G OINT",
+        "fa": "پماد تاکرولیموس ۰٫۰۳ درصد ۶۰ گرم"
+      },
+      {
+        "code": "08187",
+        "en": "TACROLIMUS 0.1% 10G OINT",
+        "fa": "پماد تاکرولیموس ۰٫۱ درصد ۱۰ گرم"
+      },
+      {
+        "code": "06599",
+        "en": "TACROLIMUS 0.1% 30G OINT",
+        "fa": "پماد تاکرولیموس ۰٫۱ درصد ۳۰ گرم"
+      },
+      {
+        "code": "05804",
+        "en": "TACROLIMUS 0.5MG CAP",
+        "fa": "کپسول تاکرولیموس ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "02083",
+        "en": "TACROLIMUS 1MG CAP",
+        "fa": "کپسول تاکرولیموس ۱ میلی‌گرم"
+      },
+      {
+        "code": "02084",
+        "en": "TACROLIMUS 5MG CAP",
+        "fa": "کپسول تاکرولیموس ۵ میلی‌گرم"
+      },
+      {
+        "code": "02087",
+        "en": "TACROLIMUS 5MG/ML FOR INFU",
+        "fa": "محلول انفوزیون تاکرولیموس ۵ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "50539",
+        "en": "TACROLIMUS 3MG CAP",
+        "fa": "کپسول تاکرولیموس ۳ میلی‌گرم"
+      },
+      {
+        "code": "52291",
+        "en": "TACROLIMUS CAPSULE, EXTENDED RELEASE ORAL 0.5 mg",
+        "fa": "کپسول آهسته‌رهش تاکرولیموس ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "52332",
+        "en": "TACROLIMUS CAPSULE, EXTENDED RELEASE ORAL 1 mg",
+        "fa": "کپسول آهسته‌رهش تاکرولیموس ۱ میلی‌گرم"
+      },
+      {
+        "code": "52333",
+        "en": "TACROLIMUS CAPSULE, EXTENDED RELEASE ORAL 5 mg",
+        "fa": "کپسول آهسته‌رهش تاکرولیموس ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2744/Tacrolimus",
+        "url": "https://www.darooyab.ir/G-2744/Tacrolimus"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210393",
+      "label": "ANDA210393"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c2d2e3a1-f346-4245-b445-6dd44e371180",
+      "label": "FDA Tacrolimus oint."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a602020.html",
+      "label": "Tacrolimus Topical"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=D11AH01",
+      "label": "D11AH01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2744/Tacrolimus",
+      "label": "Tacrolimus"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "",
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants from tacrolimus, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Since the safety and efficacy of tacrolimus ointment have not been established in pediatric patients below 2 years of age, its use in this age group is not recommended.",
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Four hundred and four (404) patients ≥ 65 years old received tacrolimus ointment in phase 3 studies.",
+      "refs": [
+        {
+          "source": "fda-tacrolimusoint",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-tacrolimusoint",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA210393"
+  }
+}

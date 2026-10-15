@@ -1,0 +1,230 @@
+{
+  "id": "spinosad",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سوسپانسیون اسپینوساد ۰٫۹٪ (شپش)",
+    "en": "Spinosad 0.9% suspension"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدشپش موضعی",
+    "en": "Topical pediculicide"
+  },
+  "brands": [
+    {
+      "name": "Natroba",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "natroba",
+    "اسپینوساد",
+    "شپش"
+  ],
+  "formulations": [
+    {
+      "id": "susp",
+      "form": "suspension",
+      "route": "topical",
+      "label": "Spinosad 0.9% topical suspension, 120 mL",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-natroba",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "lice",
+      "disease": "head-lice",
+      "label": {
+        "fa": "شپش سر — ۶ ماه به بالا: روی پوست سر و موی خشک، ۱۰ دقیقه",
+        "en": "Head lice — ≥6 months: on dry scalp and hair, 10 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-natroba",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تا ۱۲۰ mL بسته به طول مو. اگر پس از ۷ روز شپش زنده دیده شد، تکرار. در کودک فقط با نظارت بزرگسال.",
+            "en": "Up to 120 mL depending on hair length. Repeat if live lice seen after 7 days. In children only with adult supervision."
+          },
+          "refs": [
+            {
+              "source": "fda-natroba",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-natroba",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "lt6m",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ ماه توصیه نمی‌شود (بنزیل الکل).",
+        "en": "Not recommended under 6 months (benzyl alcohol)."
+      },
+      "refs": [
+        {
+          "source": "fda-natroba",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "lice",
+      "formulation": "susp",
+      "input": {
+        "ageYears": 7,
+        "weightKg": 22
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=spinosad%200.9%25%20suspension"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022408",
+      "label": "NDA022408"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72cf38f4-9ef4-4b0e-b085-b02f399e2592",
+      "label": "FDA Natroba"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: جذب سیستمیک ناچیز؛ مواجهه جنین انتظار نمی‌رود.",
+        "en": "Label: minimal systemic absorption; fetal exposure not expected."
+      },
+      "quote": "Risk Summary Spinosad, the active ingredient in NATROBA, is not absorbed systemically following topical application, and maternal use is not expected to result in fetal exposure to the drug.",
+      "refs": [
+        {
+          "source": "fda-natroba",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: مواجهه شیرخوار انتظار نمی‌رود.",
+        "en": "Label: infant exposure not expected."
+      },
+      "quote": "Topical benzyl alcohol is unlikely to be absorbed through the skin of breastfeeding women in clinically relevant amounts; therefore, breastfeeding is not expected to result in exposure of the infant to NATROBA [ see Clinical Pharmacology (12.3) ].",
+      "refs": [
+        {
+          "source": "fda-natroba",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Head Lice Infestation The safety and effectiveness of NATROBA for the topical treatment of head lice infestation have been established in pediatric patients 6 months of age and older [see Clinical Pharmacology (12.3) and Clinical Studies (14) ] .",
+      "refs": [
+        {
+          "source": "fda-natroba",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of NATROBA did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-natroba",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-natroba",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022408"
+  }
+}

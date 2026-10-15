@@ -1,0 +1,267 @@
+{
+  "id": "timolol-eye",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "قطره تیمولول",
+    "en": "Timolol eye drops"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "بتابلاکر چشمی",
+    "en": "Ophthalmic beta-blocker"
+  },
+  "brands": [
+    {
+      "name": "Timoptic",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "timoptic",
+    "تیموپتیک",
+    "تیمولول",
+    "قطره فشار چشم"
+  ],
+  "formulations": [
+    {
+      "id": "drops-0-25",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.25% ophthalmic solution",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-timolol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "drops-0-5",
+      "form": "eye-drops",
+      "route": "ophthalmic",
+      "label": "0.5% ophthalmic solution",
+      "concentration": {
+        "amount": 1,
+        "unit": "drop",
+        "perUnit": "drop"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-timolol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "glaucoma",
+      "disease": "glaucoma",
+      "label": {
+        "fa": "گلوکوم / فشار بالای چشم — ۱ قطره ۰٫۲۵٪ دو بار در روز",
+        "en": "Glaucoma / ocular hypertension — 1 drop of 0.25% twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "drop",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-timolol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر کافی نبود ۱ قطره ۰٫۵٪ دو بار در روز.",
+            "en": "If not adequate, 1 drop of 0.5% twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-timolol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آسم یا سابقه آسم؛ COPD شدید؛ برادی‌کاردی سینوسی؛ بلوک درجه ۲ و ۳؛ نارسایی آشکار قلب؛ شوک کاردیوژنیک؛ حساسیت.",
+        "en": "Asthma or history of asthma; severe COPD; sinus bradycardia; 2nd/3rd-degree AV block; overt heart failure; cardiogenic shock; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-timolol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "glaucoma",
+      "formulation": "drops-0-25",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "S01ED01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01226",
+        "en": "TIMOLOL MALEATE 0.5% 5ML OPH DROP",
+        "fa": "قطره چشمی تیمولول مالئات ۰٫۵ درصد ۵ میلی‌لیتر"
+      },
+      {
+        "code": "01695",
+        "en": "TIMOLOL MALEATE 10MG TAB",
+        "fa": "قرص تیمولول مالئات ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "01227",
+        "en": "TIMOLOL MALEATE 5MG TAB",
+        "fa": "قرص تیمولول مالئات ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1908/Timolol",
+        "url": "https://www.darooyab.ir/G-1908/Timolol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077259",
+      "label": "ANDA077259"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ed21930-1e05-46de-8acd-cb6f4798a7fa",
+      "label": "FDA Timolol eye"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01ED01",
+      "label": "S01ED01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1908/Timolol",
+      "label": "Timolol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Timolol maleate ophthalmic solution should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-timolol",
+          "section": "Pregnancy:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions from timolol maleate ophthalmic solution in nursing infants, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-timolol",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of timolol maleate ophthalmic solution have been established when administered in pediatric patients aged 2 years and older.",
+      "refs": [
+        {
+          "source": "fda-timolol",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness have been observed between elderly and younger patients.",
+      "refs": [
+        {
+          "source": "fda-timolol",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-timolol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077259"
+  }
+}
