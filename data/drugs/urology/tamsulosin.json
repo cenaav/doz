@@ -1,0 +1,157 @@
+{
+  "id": "tamsulosin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تامسولوسین",
+    "en": "Tamsulosin"
+  },
+  "category": "urology",
+  "class": {
+    "fa": "آلفا بلاکر",
+    "en": "Alpha-1 blocker"
+  },
+  "brands": [
+    {
+      "name": "Flomax",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "flomax",
+    "فلوماکس",
+    "تامسولوسین",
+    "پروستات"
+  ],
+  "formulations": [
+    {
+      "id": "cap-0-4",
+      "form": "capsule",
+      "route": "oral",
+      "label": "0.4 mg capsule",
+      "concentration": {
+        "amount": 0.4,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bph",
+      "disease": "bph",
+      "label": {
+        "fa": "BPH — ۰٫۴ mg یک بار در روز",
+        "en": "BPH — 0.4 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 0.8,
+        "refs": [
+          {
+            "source": "fda-tamsulosin",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پس از ۲ تا ۴ هفته پاسخ نبود ۰٫۸ mg. ۰٫۴ mg با مهارکننده‌های قوی CYP3A4 (کتوکونازول) مصرف نشود. اگر چند روز قطع شد، از ۰٫۴ از نو شروع شود.",
+            "en": "If no response after 2–4 weeks, 0.8 mg. Do not use 0.4 mg with strong CYP3A4 inhibitors (ketoconazole). If interrupted several days, restart at 0.4."
+          },
+          "refs": [
+            {
+              "source": "fda-tamsulosin",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تامسولوسین.",
+        "en": "Hypersensitivity to tamsulosin."
+      },
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای کودکان اندیکاسیون ندارد.",
+        "en": "Not indicated in pediatric populations."
+      },
+      "refs": [
+        {
+          "source": "fda-tamsulosin",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bph",
+      "formulation": "cap-0-4",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 0.4
+      }
+    }
+  ]
+}

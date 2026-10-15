@@ -1,0 +1,151 @@
+{
+  "id": "mebeverine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مبورین",
+    "en": "Mebeverine"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "ضداسپاسم روده",
+    "en": "Intestinal antispasmodic"
+  },
+  "brands": [
+    {
+      "name": "Colofac",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "colofac",
+    "کولوفاک",
+    "مبورین",
+    "مبه ورین",
+    "دوسپاتالین",
+    "duspatalin"
+  ],
+  "formulations": [
+    {
+      "id": "tab-135",
+      "form": "tablet",
+      "route": "oral",
+      "label": "135 mg coated tablet",
+      "concentration": {
+        "amount": 135,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ibs",
+      "disease": "ibs",
+      "label": {
+        "fa": "IBS — بزرگسال: ۱۳۵ mg سه بار در روز",
+        "en": "IBS — adults: 135 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 135,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۰ دقیقه قبل از غذا، جویده نشود. پس از چند هفته و بهبود، دوز به‌تدریج کم شود.",
+            "en": "20 min before meals, do not chew. After several weeks with good effect, reduce gradually."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-colofac",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مبورین.",
+        "en": "Hypersensitivity to mebeverine."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان توصیه نمی‌شود.",
+        "en": "Not recommended in children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-colofac",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ibs",
+      "formulation": "tab-135",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 135,
+        "perDay": 405
+      }
+    }
+  ]
+}

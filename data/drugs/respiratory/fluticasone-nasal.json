@@ -1,0 +1,224 @@
+{
+  "id": "fluticasone-nasal",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اسپری بینی فلوتیکازون",
+    "en": "Fluticasone propionate nasal spray"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "کورتیکواستروئید داخل بینی",
+    "en": "Intranasal corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Flonase",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "flonase",
+    "فلیکسوناز",
+    "flixonase",
+    "فلوتیکازون",
+    "اسپری بینی",
+    "آلرژی بینی"
+  ],
+  "formulations": [
+    {
+      "id": "spray-50",
+      "form": "nasal-spray",
+      "route": "nasal",
+      "label": "50 mcg per spray",
+      "concentration": {
+        "amount": 50,
+        "unit": "mcg",
+        "perUnit": "spray"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fluticasone-nasal",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک — بزرگسال: ۲ پاف در هر سوراخ بینی یک بار در روز",
+        "en": "Allergic rhinitis — adults: 2 sprays per nostril once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fluticasone-nasal",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 200,
+        "refs": [
+          {
+            "source": "fda-fluticasone-nasal",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عدد نمایش‌داده‌شده مجموع دو سوراخ است (۴ پاف = ۲۰۰ mcg). یا ۱ پاف هر سوراخ دو بار در روز. نگهدارنده: ۱ پاف هر سوراخ یک بار.",
+            "en": "Displayed total is both nostrils (4 sprays = 200 mcg). Or 1 spray per nostril twice daily. Maintenance: 1 spray per nostril once daily."
+          },
+          "refs": [
+            {
+              "source": "fda-fluticasone-nasal",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک — ۴ سال به بالا: ۱ پاف در هر سوراخ بینی یک بار",
+        "en": "Allergic rhinitis — ≥4 y: 1 spray per nostril once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fluticasone-nasal",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 200,
+        "refs": [
+          {
+            "source": "fda-fluticasone-nasal",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "مجموع دو سوراخ (۲ پاف = ۱۰۰ mcg). در پاسخ ناکافی ۲ پاف هر سوراخ؛ پس از کنترل به ۱ پاف برگردد.",
+            "en": "Total for both nostrils (2 sprays = 100 mcg). If inadequate, 2 sprays per nostril; return to 1 once controlled."
+          },
+          "refs": [
+            {
+              "source": "fda-fluticasone-nasal",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to any ingredient."
+      },
+      "refs": [
+        {
+          "source": "fda-fluticasone-nasal",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-4",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۴ سال ثابت نشده.",
+        "en": "Not established under 4 years."
+      },
+      "refs": [
+        {
+          "source": "fda-fluticasone-nasal",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "spray-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 4
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "spray-50",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ]
+}

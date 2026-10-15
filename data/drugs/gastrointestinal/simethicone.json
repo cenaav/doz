@@ -1,0 +1,241 @@
+{
+  "id": "simethicone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سایمتیکون",
+    "en": "Simethicone"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "ضدنفخ",
+    "en": "Antiflatulent"
+  },
+  "brands": [
+    {
+      "name": "Mylicon",
+      "market": "US"
+    },
+    {
+      "name": "Gas-X",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mylicon",
+    "gas-x",
+    "سایمتیکون",
+    "سیمتیکون",
+    "قطره نفخ",
+    "قطره ضد نفخ نوزاد"
+  ],
+  "formulations": [
+    {
+      "id": "drops-20",
+      "form": "drops",
+      "route": "oral",
+      "label": "20 mg/0.3 mL infant drops",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 0.3
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-simethicone-drops",
+          "section": "Active ingredient"
+        }
+      ]
+    },
+    {
+      "id": "softgel-125",
+      "form": "capsule",
+      "route": "oral",
+      "label": "125 mg softgel",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-simethicone-125",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "infant-child",
+      "disease": "flatulence",
+      "label": {
+        "fa": "نفخ — شیرخوار و کودک: زیر ۲ سال ۲۰ mg؛ بالای ۲ سال ۴۰ mg",
+        "en": "Gas — infants and children: <2 y 20 mg; >2 y 40 mg"
+      },
+      "population": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 0,
+              "unit": "day"
+            },
+            "maxAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "perDose": 20,
+            "dosesPerDay": 4
+          },
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 40,
+            "dosesPerDay": 4
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-simethicone-drops",
+          "section": "Directions"
+        }
+      ],
+      "allowedFormulations": [
+        "drops-20"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بعد از غذا و هنگام خواب در صورت نیاز؛ حداکثر ۱۲ دوز در روز. فقط با سرنگ داخل جعبه. زیر ۲ سال (زیر ۱۱ kg): ۰٫۳ mL؛ بالای ۲ سال: ۰٫۶ mL.",
+            "en": "After meals and at bedtime as needed; max 12 doses/day. Use only the enclosed syringe. Under 2 y (under 24 lb): 0.3 mL; over 2 y: 0.6 mL."
+          },
+          "refs": [
+            {
+              "source": "fda-simethicone-drops",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "flatulence",
+      "label": {
+        "fa": "نفخ — ۱۲ سال به بالا: ۱ یا ۲ کپسول ۱۲۵ mg",
+        "en": "Gas — ≥12 y: 1 or 2 × 125 mg softgels"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 125,
+        "perDoseMax": 250,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-simethicone-125",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 500,
+        "refs": [
+          {
+            "source": "fda-simethicone-125",
+            "section": "Directions"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "softgel-125"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز بعد از غذا و هنگام خواب؛ حداکثر ۴ کپسول در ۲۴ ساعت.",
+            "en": "As needed after meals and at bedtime; max 4 softgels in 24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-simethicone-125",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "infant-child",
+      "formulation": "drops-20",
+      "input": {
+        "ageYears": 0.3,
+        "weightKg": 6
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 0.3
+      }
+    },
+    {
+      "regimen": "infant-child",
+      "formulation": "drops-20",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 0.6
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "softgel-125",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 125,
+        "upperPerDose": 250
+      }
+    }
+  ]
+}

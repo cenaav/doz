@@ -1,0 +1,157 @@
+{
+  "id": "ipratropium",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایپراتروپیوم",
+    "en": "Ipratropium bromide"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌کولینرژیک استنشاقی کوتاه‌اثر",
+    "en": "Short-acting inhaled anticholinergic"
+  },
+  "brands": [
+    {
+      "name": "Atrovent HFA",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "atrovent",
+    "آتروونت",
+    "ایپراتروپیوم",
+    "اسپری COPD"
+  ],
+  "formulations": [
+    {
+      "id": "hfa-17",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "17 mcg per actuation (HFA)",
+      "concentration": {
+        "amount": 17,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-atrovent-hfa",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "copd",
+      "disease": "copd",
+      "label": {
+        "fa": "COPD (نگهدارنده) — ۲ پاف چهار بار در روز",
+        "en": "COPD maintenance — 2 inhalations four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 34,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-atrovent-hfa",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 204,
+        "refs": [
+          {
+            "source": "fda-atrovent-hfa",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پاف اضافه در صورت نیاز؛ مجموع بیش از ۱۲ پاف در ۲۴ ساعت نشود. نیاز به تکان دادن ندارد.",
+            "en": "Extra inhalations as required; total no more than 12 in 24 h. No shaking needed."
+          },
+          "refs": [
+            {
+              "source": "fda-atrovent-hfa",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ایپراتروپیوم، آتروپین یا مشتقات آن.",
+        "en": "Hypersensitivity to ipratropium, atropine or its derivatives."
+      },
+      "refs": [
+        {
+          "source": "fda-atrovent-hfa",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در کودکان ثابت نشده.",
+        "en": "Not established in children."
+      },
+      "refs": [
+        {
+          "source": "fda-atrovent-hfa",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "copd",
+      "formulation": "hfa-17",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 34,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ]
+}
