@@ -3,7 +3,15 @@
 export default defineNuxtPlugin(() => {
   if (import.meta.dev || !('serviceWorker' in navigator)) return
   const base = useRuntimeConfig().app.baseURL
-  const register = () => navigator.serviceWorker.register(`${base}sw.js`, { scope: base }).catch(() => {})
+  // When a new deploy's service worker takes over, reload once so the user never keeps seeing an old cached page.
+  const hadController = !!navigator.serviceWorker.controller
+  let reloaded = false
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!hadController || reloaded) return
+    reloaded = true
+    location.reload()
+  })
+  const register = () => navigator.serviceWorker.register(`${base}sw.js`, { scope: base }).then((r) => r.update()).catch(() => {})
   // Wait until the page is loaded and idle so precaching never competes with the first render.
   const idle = () => ('requestIdleCallback' in window ? requestIdleCallback(register, { timeout: 10000 }) : setTimeout(register, 5000))
   if (document.readyState === 'complete') idle()
