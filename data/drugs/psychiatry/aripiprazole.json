@@ -1,0 +1,459 @@
+{
+  "id": "aripiprazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آریپیپرازول",
+    "en": "Aripiprazole"
+  },
+  "category": "psychiatry",
+  "class": {
+    "fa": "آنتی‌سایکوتیک آتیپیک",
+    "en": "Atypical antipsychotic"
+  },
+  "brands": [
+    {
+      "name": "Abilify",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "abilify",
+    "ابیلیفای",
+    "آریپیپرازول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg tablet",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "autism",
+      "disease": "autism-irritability",
+      "label": {
+        "fa": "تحریک‌پذیری در اوتیسم — ۶ تا ۱۷ سال: شروع ۲ mg",
+        "en": "Irritability with autism — 6–17 y: start 2 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 2,
+          "increment": 5,
+          "incrementEveryDays": 7,
+          "targetMin": 5,
+          "targetMax": 15,
+          "max": 15
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "2.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲ ← ۵ mg، سپس در صورت نیاز ۱۰ یا ۱۵؛ تغییرات تا ۵ mg با فاصله حداقل یک هفته.",
+            "en": "2 → 5 mg, then 10 or 15 if needed; changes up to 5 mg at intervals of at least one week."
+          },
+          "refs": [
+            {
+              "source": "fda-aripiprazole",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tourette",
+      "disease": "tourette",
+      "label": {
+        "fa": "سندرم تورت — ۶ تا ۱۸ سال",
+        "en": "Tourette's disorder — 6–18 y"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 19,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 50,
+            "start": 2,
+            "increment": 5,
+            "incrementEveryDays": 7,
+            "targetMin": 5,
+            "targetMax": 5,
+            "max": 10
+          },
+          {
+            "minWeightKg": 50,
+            "maxWeightKg": null,
+            "start": 2,
+            "increment": 5,
+            "incrementEveryDays": 7,
+            "targetMin": 10,
+            "targetMax": 10,
+            "max": 20
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "2.5"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کمتر از ۵۰ kg: ۲ mg، پس از ۲ روز ۵ mg، تا ۱۰. ۵۰ kg به بالا: ۲ mg دو روز، ۵ mg پنج روز، روز ۸ ۱۰ mg، تا ۲۰.",
+            "en": "<50 kg: 2 mg, 5 mg after 2 days, up to 10. ≥50 kg: 2 mg ×2 days, 5 mg ×5 days, 10 mg on day 8, up to 20."
+          },
+          "refs": [
+            {
+              "source": "fda-aripiprazole",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "schizo-adolescent",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی — ۱۳ تا ۱۷ سال: هدف ۱۰ mg",
+        "en": "Schizophrenia — 13–17 y: target 10 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 2,
+          "increment": 5,
+          "incrementEveryDays": 2,
+          "targetMin": 10,
+          "targetMax": 10,
+          "max": 30
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲ mg، پس از ۲ روز ۵ mg، پس از ۲ روز دیگر ۱۰ mg؛ افزایش‌های بعدی ۵ mg.",
+            "en": "2 mg, 5 mg after 2 days, 10 mg after 2 more days; further increases in 5 mg steps."
+          },
+          "refs": [
+            {
+              "source": "fda-aripiprazole",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "schizo-adult",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی — بزرگسال: ۱۰ یا ۱۵ mg روزانه",
+        "en": "Schizophrenia — adults: 10 or 15 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "محدوده مؤثر ۱۰ تا ۳۰ mg؛ بالاتر از ۱۰–۱۵ مؤثرتر نبود. افزایش زودتر از ۲ هفته نه.",
+            "en": "Effective 10–30 mg; higher than 10–15 not more effective. Do not increase before 2 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-aripiprazole",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آریپیپرازول.",
+        "en": "Known hypersensitivity to aripiprazole."
+      },
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش مرگ در سالمندان با سایکوز دمانس؛ افکار خودکشی با داروهای ضدافسردگی.",
+        "en": "Boxed warning: increased mortality in elderly with dementia-related psychosis; suicidal thoughts with antidepressants."
+      },
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH DEMENTIA-RELATED PSYCHOSIS and SUICIDAL THOUGHTS AND BEHAVIORS WITH ANTIDEPRESSANT DRUGS"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "تنظیم دوز با مهارکننده/القاکننده CYP2D6 و CYP3A4 (جدول ۱).",
+        "en": "Adjust dose with CYP2D6/CYP3A4 inhibitors or inducers (Table 1)."
+      },
+      "refs": [
+        {
+          "source": "fda-aripiprazole",
+          "section": "2.6"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "autism",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 2
+      }
+    },
+    {
+      "regimen": "tourette",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 2
+      }
+    },
+    {
+      "regimen": "schizo-adolescent",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 2
+      }
+    },
+    {
+      "regimen": "schizo-adult",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ]
+}
