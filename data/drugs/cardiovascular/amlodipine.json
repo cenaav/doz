@@ -1,0 +1,189 @@
+{
+  "id": "amlodipine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آملودیپین",
+    "en": "Amlodipine"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مسدودکننده کانال کلسیم",
+    "en": "Calcium channel blocker"
+  },
+  "brands": [
+    {
+      "name": "Norvasc",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "آملودیپین",
+    "norvasc"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-amlodipine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn-child",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون ۶ تا ۱۷ سال — ۲٫۵ تا ۵ mg روزانه",
+        "en": "Hypertension 6–17 y — 2.5–5 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "perDoseMax": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-amlodipine",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-amlodipine",
+          "section": "8.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بالای ۵ mg در کودکان مطالعه نشده است.",
+            "en": "Doses above 5 mg not studied in children."
+          },
+          "refs": [
+            {
+              "source": "fda-amlodipine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "htn-adult",
+      "disease": "hypertension",
+      "label": {
+        "fa": "بزرگسال — شروع ۵ mg روزانه (حداکثر ۱۰ mg)",
+        "en": "Adults — start 5 mg daily (max 10 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-amlodipine",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سالمند، ضعیف یا نارسایی کبد: شروع ۲٫۵ mg؛ ۷ تا ۱۴ روز بین افزایش‌ها.",
+            "en": "Small, fragile, elderly or hepatic insufficiency: start 2.5 mg; wait 7–14 days between titration steps."
+          },
+          "refs": [
+            {
+              "source": "fda-amlodipine",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آملودیپین.",
+        "en": "Known sensitivity to amlodipine."
+      },
+      "refs": [
+        {
+          "source": "fda-amlodipine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn-adult",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 10
+      }
+    },
+    {
+      "regimen": "htn-child",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

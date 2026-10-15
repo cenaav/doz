@@ -1,0 +1,301 @@
+{
+  "id": "metformin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متفورمین",
+    "en": "Metformin"
+  },
+  "category": "endocrine",
+  "class": {
+    "fa": "بیگوانید",
+    "en": "Biguanide"
+  },
+  "brands": [
+    {
+      "name": "Glucophage",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "metformin",
+    "متفورمین",
+    "گلوکوفاژ"
+  ],
+  "formulations": [
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-850",
+      "form": "tablet",
+      "route": "oral",
+      "label": "850 mg tablet",
+      "concentration": {
+        "amount": 850,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1000",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1000 mg tablet",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "child",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "کودکان ۱۰ سال به بالا — شروع ۵۰۰ mg دو بار در روز",
+        "en": "Children ≥10 years — start 500 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 1000,
+          "increment": 500,
+          "incrementEveryDays": 7,
+          "max": 2000
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-metformin",
+          "section": "8.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه غذا؛ افزایش هفتگی ۵۰۰ mg بر اساس قند و تحمل، حداکثر ۲۰۰۰ mg/day در دو نوبت.",
+            "en": "With meals; increase by 500 mg weekly per glycemic control and tolerability, max 2000 mg/day in two doses."
+          },
+          "refs": [
+            {
+              "source": "fda-metformin",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "بزرگسال — شروع ۵۰۰ mg دو بار در روز",
+        "en": "Adults — start 500 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 1000,
+          "increment": 500,
+          "incrementEveryDays": 7,
+          "max": 2550
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۸۵۰ mg یک‌بار در روز؛ افزایش ۵۰۰ mg هفتگی یا ۸۵۰ mg هر ۲ هفته؛ حداکثر ۲۵۵۰ mg/day. بالای ۲۰۰۰ mg بهتر در ۳ نوبت.",
+            "en": "Or 850 mg once daily; increase 500 mg weekly or 850 mg every 2 weeks; max 2550 mg/day; above 2000 mg better tolerated in 3 doses."
+          },
+          "refs": [
+            {
+              "source": "fda-metformin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "renal",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی شدید کلیه (eGFR کمتر از ۳۰)؛ اسیدوز متابولیک یا کتواسیدوز؛ حساسیت.",
+        "en": "Severe renal impairment (eGFR <30); metabolic acidosis incl. DKA; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-10",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "بی‌خطری زیر ۱۰ سال ثابت نشده است.",
+        "en": "Not established under 10 years."
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: اسیدوز لاکتیک (می‌تواند کشنده باشد).",
+        "en": "Boxed warning: lactic acidosis (can be fatal)."
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "WARNING: LACTIC ACIDOSIS"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 45,
+      "severity": "warn",
+      "text": {
+        "fa": "شروع در eGFR ۳۰ تا ۴۵ توصیه نمی‌شود؛ زیر ۳۰ منع مصرف.",
+        "en": "Initiation not recommended at eGFR 30–45; contraindicated below 30."
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "2.3"
+        }
+      ]
+    },
+    {
+      "egfrBelow": 30,
+      "severity": "block",
+      "text": {
+        "fa": "eGFR کمتر از ۳۰: منع مصرف.",
+        "en": "eGFR <30: contraindicated."
+      },
+      "refs": [
+        {
+          "source": "fda-metformin",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "child",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 500
+      }
+    }
+  ]
+}

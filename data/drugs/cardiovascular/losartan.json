@@ -1,0 +1,303 @@
+{
+  "id": "losartan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لوزارتان",
+    "en": "Losartan"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مسدودکننده گیرنده آنژیوتانسین (ARB)",
+    "en": "Angiotensin receptor blocker"
+  },
+  "brands": [
+    {
+      "name": "Cozaar",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "لوزارتان",
+    "cozaar",
+    "ARB"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-losartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-losartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-losartan",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn-child",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون کودکان ۶ تا ۱۶ سال — ۰٫۷ mg/kg یک‌بار در روز (تا ۵۰ mg)",
+        "en": "Pediatric hypertension 6–16 y — 0.7 mg/kg once daily (up to 50 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.7,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-losartan",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-losartan",
+          "section": "8.4"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 50,
+        "refs": [
+          {
+            "source": "fda-losartan",
+            "section": "2.1",
+            "note": {
+              "fa": "دوز شروع حداکثر ۵۰ mg",
+              "en": "Starting dose up to 50 mg total"
+            }
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس پاسخ فشار تنظیم شود؛ بالای ۱.۴ mg/kg یا ۱۰۰ mg در روز در کودکان مطالعه نشده.",
+            "en": "Adjust to blood pressure; doses above 1.4 mg/kg or 100 mg/day not studied in children."
+          },
+          "refs": [
+            {
+              "source": "fda-losartan",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "htn-adult",
+      "disease": "hypertension",
+      "label": {
+        "fa": "بزرگسال — شروع ۵۰ mg روزانه (حداکثر ۱۰۰ mg)",
+        "en": "Adults — start 50 mg daily (max 100 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "perDoseMax": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-losartan",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در کاهش حجم داخل عروقی (مثلاً مصرف دیورتیک) شروع با ۲۵ mg.",
+            "en": "Start 25 mg with possible intravascular depletion (e.g. diuretics)."
+          },
+          "refs": [
+            {
+              "source": "fda-losartan",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "aliskiren",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ مصرف همزمان آلیسکیرن در دیابت.",
+        "en": "Hypersensitivity; coadministration with aliskiren in diabetes."
+      },
+      "refs": [
+        {
+          "source": "fda-losartan",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-6",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "بی‌خطری زیر ۶ سال ثابت نشده است.",
+        "en": "Not established under 6 years."
+      },
+      "refs": [
+        {
+          "source": "fda-losartan",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی؛ با تشخیص بارداری قطع شود.",
+        "en": "Boxed warning: fetal toxicity; discontinue when pregnancy is detected."
+      },
+      "refs": [
+        {
+          "source": "fda-losartan",
+          "section": "WARNING: FETAL TOXICITY"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "block",
+      "text": {
+        "fa": "در کودکان با GFR کمتر از ۳۰ توصیه نمی‌شود.",
+        "en": "Not recommended in pediatric patients with GFR <30."
+      },
+      "refs": [
+        {
+          "source": "fda-losartan",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn-child",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 36
+      },
+      "expect": {
+        "perDose": 25.2,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "htn-child",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "htn-adult",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 50,
+        "upperPerDose": 100
+      }
+    }
+  ]
+}

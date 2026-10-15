@@ -1,0 +1,243 @@
+{
+  "id": "atorvastatin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آتورواستاتین",
+    "en": "Atorvastatin"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "استاتین (مهارکننده HMG-CoA ردوکتاز)",
+    "en": "Statin"
+  },
+  "brands": [
+    {
+      "name": "Lipitor",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lipitor",
+    "آتورواستاتین",
+    "استاتین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-atorvastatin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-atorvastatin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-atorvastatin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-80",
+      "form": "tablet",
+      "route": "oral",
+      "label": "80 mg tablet",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-atorvastatin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hefh-child",
+      "disease": "hyperlipidemia",
+      "label": {
+        "fa": "هیپرکلسترولمی خانوادگی هتروزیگوت — ۱۰ سال به بالا: ۱۰ تا ۲۰ mg روزانه",
+        "en": "HeFH — ≥10 years: 10–20 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-atorvastatin",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-atorvastatin",
+          "section": "8.4"
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "hyperlipidemia",
+      "label": {
+        "fa": "بزرگسال — شروع ۱۰ تا ۲۰ mg روزانه (محدوده ۱۰ تا ۸۰)",
+        "en": "Adults — start 10–20 mg daily (range 10–80)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 80,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-atorvastatin",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر کاهش LDL بیش از ۴۵٪ لازم است، شروع با ۴۰ mg. LDL را از ۴ هفته بعد بسنجید.",
+            "en": "If >45% LDL-C reduction needed, may start at 40 mg. Assess LDL-C from 4 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-atorvastatin",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-atorvastatin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "liver",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی حاد کبد یا سیروز جبران‌نشده؛ حساسیت.",
+        "en": "Acute liver failure or decompensated cirrhosis; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-atorvastatin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hefh-child",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 10,
+        "upperPerDose": 20
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ]
+}

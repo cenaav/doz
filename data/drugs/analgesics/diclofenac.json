@@ -1,0 +1,193 @@
+{
+  "id": "diclofenac",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیکلوفناک",
+    "en": "Diclofenac sodium"
+  },
+  "category": "analgesics",
+  "class": {
+    "fa": "ضدالتهاب غیراستروئیدی (NSAID)",
+    "en": "NSAID"
+  },
+  "brands": [
+    {
+      "name": "Voltaren",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ولتارن",
+    "voltaren",
+    "دیکلوفناک",
+    "diclofenac"
+  ],
+  "formulations": [
+    {
+      "id": "dr-75",
+      "form": "tablet",
+      "route": "oral",
+      "label": "75 mg delayed-release tablet",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oa",
+      "disease": "osteoarthritis",
+      "label": {
+        "fa": "آرتروز — ۷۵ mg دو بار در روز (۱۰۰ تا ۱۵۰ mg/day)",
+        "en": "Osteoarthritis — 75 mg twice daily (100–150 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 75,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — ۷۵ mg دو بار در روز (۱۵۰ تا ۲۰۰ mg/day)",
+        "en": "Rheumatoid arthritis — 75 mg twice daily (150–200 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 75,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "pain",
+      "label": {
+        "fa": "کودکان",
+        "en": "Children"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in pediatric patients have not been established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "nsaid",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دیکلوفناک؛ سابقه آسم، کهیر یا واکنش آلرژیک پس از آسپرین/NSAID؛ جراحی CABG.",
+        "en": "Hypersensitivity to diclofenac; asthma, urticaria or allergic reactions after aspirin/NSAIDs; CABG surgery."
+      },
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش خطر حوادث قلبی‌عروقی ترومبوتیک (سکته قلبی و مغزی) و خونریزی/زخم/سوراخ شدن گوارش.",
+        "en": "Boxed warning: increased risk of serious cardiovascular thrombotic events (MI, stroke) and GI bleeding, ulceration and perforation."
+      },
+      "refs": [
+        {
+          "source": "fda-diclofenac-dr",
+          "section": "WARNING: RISK OF SERIOUS CARDIOVASCULAR AND GASTROINTESTINAL EVENTS"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oa",
+      "formulation": "dr-75",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1,
+        "perDay": 150
+      }
+    },
+    {
+      "regimen": "ra",
+      "formulation": "dr-75",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 75
+      }
+    }
+  ]
+}
