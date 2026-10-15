@@ -1,0 +1,166 @@
+{
+  "id": "zinc",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "زینک (روی)",
+    "en": "Zinc (for diarrhoea)"
+  },
+  "category": "nutrition",
+  "class": {
+    "fa": "ریزمغذی",
+    "en": "Micronutrient"
+  },
+  "brands": [],
+  "synonyms": [
+    "zinc",
+    "زینک",
+    "روی",
+    "zinc sulfate",
+    "قرص زینک"
+  ],
+  "formulations": [
+    {
+      "id": "disp-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Zinc 20 mg dispersible tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "UN"
+      ],
+      "refs": [
+        {
+          "source": "who-dha-2005",
+          "section": "Annex 2, Plan A chart \"Give zinc supplements\" (PDF p. 32)",
+          "note": {
+            "fa": "جدول: ۶ ماه به بالا ۱ قرص در روز؛ توصیه ۲۰ mg در روز",
+            "en": "Chart: 6 months or more 1 tablet/day; recommendation 20 mg/day"
+          }
+        },
+        {
+          "source": "who-dha-2005",
+          "section": "Tablets and/or syrup (PDF p. 51)"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "zinc",
+      "disease": "acute-diarrhoea",
+      "label": {
+        "fa": "اسهال حاد — زینک روزانه ۱۰ تا ۱۴ روز",
+        "en": "Acute diarrhoea — daily zinc for 10–14 days"
+      },
+      "population": {},
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 0,
+              "unit": "day"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "month"
+            },
+            "perDose": 10,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "month"
+            },
+            "maxAge": null,
+            "perDose": 20,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "who-elena-zinc",
+          "section": "WHO Recommendations"
+        },
+        {
+          "source": "who-dha-2005",
+          "section": "Recommendations (PDF p. 55)"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "زیر ۶ ماه: نیم قرص در شیر مادر دوشیده، ORS یا آب حل شود؛ بزرگ‌تر: جویده یا حل شود. همراه ORS.",
+            "en": "Under 6 months: half tablet dissolved in expressed breastmilk, ORS or water; older: chewed or dissolved. Give with ORS."
+          },
+          "refs": [
+            {
+              "source": "who-dha-2005",
+              "section": "Annex 2, Plan A chart (PDF p. 32)"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "قدرت فرآورده‌های محلی (قرص یا شربت) ممکن است متفاوت باشد؛ با فرآورده موجود تطبیق دهید.",
+            "en": "Local tablet or syrup strengths may differ; match to the product available."
+          },
+          "refs": [
+            {
+              "source": "who-dha-2005",
+              "section": "Tablets and/or syrup (PDF p. 51)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "zinc",
+      "formulation": "disp-20",
+      "input": {
+        "ageMonths": 4,
+        "weightKg": 6
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "zinc",
+      "formulation": "disp-20",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 12
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ]
+}
