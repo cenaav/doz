@@ -1,0 +1,417 @@
+{
+  "id": "naproxen",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ناپروکسن",
+    "en": "Naproxen"
+  },
+  "category": "analgesics",
+  "class": {
+    "fa": "NSAID",
+    "en": "NSAID"
+  },
+  "brands": [
+    {
+      "name": "Naprosyn",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "naprosyn",
+    "ناپروسین",
+    "ناپروکسن",
+    "ناپروکسین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-375",
+      "form": "tablet",
+      "route": "oral",
+      "label": "375 mg tablet",
+      "concentration": {
+        "amount": 375,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet (scored)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pain",
+      "disease": "pain",
+      "label": {
+        "fa": "درد، دیسمنوره، تاندونیت/بورسیت — بزرگسال: ۲۵۰ mg هر ۶ تا ۸ ساعت (دوز اول ۵۰۰)",
+        "en": "Pain, dysmenorrhoea, tendonitis/bursitis — adults: 250 mg every 6–8 h (first dose 500)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 4,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "2.4"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1250,
+        "refs": [
+          {
+            "source": "fda-naproxen",
+            "section": "2.4"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول ۵۰۰ mg، سپس ۲۵۰ mg هر ۶ تا ۸ ساعت در صورت نیاز؛ حداکثر ۱۲۵۰ mg/day.",
+            "en": "First dose 500 mg, then 250 mg every 6–8 h as needed; max 1,250 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-naproxen",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dysmenorrhea",
+      "disease": "dysmenorrhea",
+      "label": {
+        "fa": "دیسمنوره اولیه — ۲۵۰ mg هر ۶ تا ۸ ساعت (دوز اول ۵۰۰)",
+        "en": "Primary dysmenorrhoea — 250 mg every 6–8 h (first dose 500)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 4,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "2.4"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1250,
+        "refs": [
+          {
+            "source": "fda-naproxen",
+            "section": "2.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "arthritis",
+      "disease": "osteoarthritis",
+      "label": {
+        "fa": "آرتروز، آرتریت روماتوئید، اسپوندیلیت — ۲۵۰ تا ۵۰۰ mg دو بار در روز",
+        "en": "OA, RA, ankylosing spondylitis — 250–500 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "perDoseMax": 500,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت تحمل تا ۱۵۰۰ mg/day حداکثر ۶ ماه.",
+            "en": "If tolerated up to 1,500 mg/day for up to 6 months."
+          },
+          "refs": [
+            {
+              "source": "fda-naproxen",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gout",
+      "disease": "gout",
+      "label": {
+        "fa": "حمله حاد نقرس — ۷۵۰ mg، سپس ۲۵۰ mg هر ۸ ساعت",
+        "en": "Acute gout — 750 mg, then 250 mg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "2.5"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول ۷۵۰ mg؛ ادامه تا فروکش حمله.",
+            "en": "First dose 750 mg; continue until the attack subsides."
+          },
+          "refs": [
+            {
+              "source": "fda-naproxen",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jia",
+      "disease": "juvenile-arthritis",
+      "label": {
+        "fa": "آرتریت ایدیوپاتیک نوجوانان — ۵۰ kg به بالا: حدود ۱۰ mg/kg/day در ۲ نوبت",
+        "en": "Juvenile idiopathic arthritis — ≥50 kg: about 10 mg/kg/day in 2 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 50
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-naproxen",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "قرص برای کودکان زیر ۵۰ kg مناسب نیست (سوسپانسیون).",
+            "en": "Tablets are not appropriate for children under 50 kg (use suspension)."
+          },
+          "refs": [
+            {
+              "source": "fda-naproxen",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دارو؛ سابقه آسم، کهیر یا واکنش آلرژیک پس از آسپیرین یا NSAID؛ هنگام جراحی بای‌پس عروق کرونر (CABG).",
+        "en": "Hypersensitivity; history of asthma, urticaria or allergic-type reaction after aspirin or other NSAIDs; in the setting of CABG surgery."
+      },
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: خطر حوادث قلبی‌عروقی ترومبوتیک و خونریزی، زخم و سوراخ‌شدگی گوارشی.",
+        "en": "Boxed warning: risk of serious cardiovascular thrombotic events and GI bleeding, ulceration and perforation."
+      },
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pain",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "perDay": 1000
+      }
+    },
+    {
+      "regimen": "dysmenorrhea",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 250
+      }
+    },
+    {
+      "regimen": "arthritis",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 250,
+        "upperPerDose": 500
+      }
+    },
+    {
+      "regimen": "gout",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 85
+      },
+      "expect": {
+        "perDay": 750
+      }
+    },
+    {
+      "regimen": "jia",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 250
+      }
+    },
+    {
+      "regimen": "jia",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

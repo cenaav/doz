@@ -1,0 +1,273 @@
+{
+  "id": "meloxicam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ملوکسیکام",
+    "en": "Meloxicam"
+  },
+  "category": "analgesics",
+  "class": {
+    "fa": "NSAID",
+    "en": "NSAID"
+  },
+  "brands": [
+    {
+      "name": "Mobic",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mobic",
+    "موبیک",
+    "ملوکسیکام"
+  ],
+  "formulations": [
+    {
+      "id": "tab-7-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "7.5 mg tablet",
+      "concentration": {
+        "amount": 7.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-meloxicam",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-meloxicam",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oa",
+      "disease": "osteoarthritis",
+      "label": {
+        "fa": "آرتروز — ۷٫۵ mg یک بار (تا ۱۵ mg)",
+        "en": "Osteoarthritis — 7.5 mg once daily (up to 15 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 7.5,
+        "perDoseMax": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-meloxicam",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 15,
+        "refs": [
+          {
+            "source": "fda-meloxicam",
+            "section": "2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — ۷٫۵ mg یک بار (تا ۱۵ mg)",
+        "en": "Rheumatoid arthritis — 7.5 mg once daily (up to 15 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 7.5,
+        "perDoseMax": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-meloxicam",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 15,
+        "refs": [
+          {
+            "source": "fda-meloxicam",
+            "section": "2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jra",
+      "disease": "juvenile-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید نوجوانان — ۶۰ kg به بالا: ۷٫۵ mg",
+        "en": "Juvenile RA — ≥60 kg: 7.5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 60
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 7.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-meloxicam",
+          "section": "2.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در کودکان زیر ۶۰ kg قرص استفاده نشود.",
+            "en": "Do not use tablets in children under 60 kg."
+          },
+          "refs": [
+            {
+              "source": "fda-meloxicam",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دارو؛ سابقه آسم، کهیر یا واکنش آلرژیک پس از آسپیرین یا NSAID؛ هنگام جراحی بای‌پس عروق کرونر (CABG).",
+        "en": "Hypersensitivity; history of asthma, urticaria or allergic-type reaction after aspirin or other NSAIDs; in the setting of CABG surgery."
+      },
+      "refs": [
+        {
+          "source": "fda-meloxicam",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: خطر حوادث قلبی‌عروقی ترومبوتیک و خونریزی، زخم و سوراخ‌شدگی گوارشی.",
+        "en": "Boxed warning: risk of serious cardiovascular thrombotic events and GI bleeding, ulceration and perforation."
+      },
+      "refs": [
+        {
+          "source": "fda-meloxicam",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oa",
+      "formulation": "tab-7-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 7.5,
+        "upperPerDose": 15
+      }
+    },
+    {
+      "regimen": "ra",
+      "formulation": "tab-7-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 7.5
+      }
+    },
+    {
+      "regimen": "jra",
+      "formulation": "tab-7-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 62
+      },
+      "expect": {
+        "perDose": 7.5
+      }
+    },
+    {
+      "regimen": "jra",
+      "formulation": "tab-7-5",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

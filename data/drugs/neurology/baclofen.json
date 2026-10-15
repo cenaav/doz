@@ -1,0 +1,176 @@
+{
+  "id": "baclofen",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "باکلوفن",
+    "en": "Baclofen"
+  },
+  "category": "neurology",
+  "class": {
+    "fa": "شل‌کننده عضلانی (آگونیست GABA-B)",
+    "en": "Muscle relaxant (GABA-B agonist)"
+  },
+  "brands": [
+    {
+      "name": "Lioresal",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lioresal",
+    "لیورزال",
+    "باکلوفن"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (scored)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-baclofen",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (scored)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-baclofen",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "spasticity",
+      "disease": "spasticity",
+      "label": {
+        "fa": "اسپاستیسیتی — ۱۲ سال به بالا: ۵ mg سه بار، افزایش هر ۳ روز",
+        "en": "Spasticity — ≥12 y: 5 mg three times daily, increase every 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 3,
+        "titration": {
+          "start": 15,
+          "increment": 15,
+          "incrementEveryDays": 3,
+          "targetMin": 40,
+          "targetMax": 80,
+          "max": 80
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-baclofen-b",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۵ mg سه بار ×۳ روز، ۱۰ mg سه بار ×۳ روز، ۱۵ mg سه بار ×۳ روز، ۲۰ mg سه بار ×۳ روز؛ معمولاً ۴۰ تا ۸۰ mg/day؛ حداکثر ۸۰ mg (۲۰ mg چهار بار). قطع ناگهانی نشود.",
+            "en": "5 mg tid ×3 days, 10 mg tid ×3 days, 15 mg tid ×3 days, 20 mg tid ×3 days; usually 40–80 mg/day; max 80 mg (20 mg qid)."
+          },
+          "refs": [
+            {
+              "source": "fda-baclofen-b",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به باکلوفن.",
+        "en": "Hypersensitivity to baclofen."
+      },
+      "refs": [
+        {
+          "source": "fda-baclofen",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال ثابت نشده.",
+        "en": "Not established below 12 years."
+      },
+      "refs": [
+        {
+          "source": "fda-baclofen-b",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "spasticity",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 0.5
+      }
+    }
+  ]
+}

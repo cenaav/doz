@@ -1,0 +1,252 @@
+{
+  "id": "tramadol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ترامادول",
+    "en": "Tramadol"
+  },
+  "category": "analgesics",
+  "class": {
+    "fa": "ضددرد اپیوئیدی",
+    "en": "Opioid analgesic"
+  },
+  "brands": [
+    {
+      "name": "Ultram",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ultram",
+    "ترامادول",
+    "ترامال",
+    "tramal"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-75",
+      "form": "tablet",
+      "route": "oral",
+      "label": "75 mg tablet (scored)",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "maint",
+      "disease": "pain",
+      "label": {
+        "fa": "درد متوسط تا شدید — پس از تیتراسیون: ۵۰ تا ۱۰۰ mg هر ۴ تا ۶ ساعت",
+        "en": "Moderate–severe pain — after titration: 50–100 mg every 4–6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "perDoseMax": 100,
+        "dosesPerDay": 4,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 400,
+        "refs": [
+          {
+            "source": "fda-tramadol",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۲۵ mg/day و افزایش ۲۵ mg هر ۳ روز تا ۱۰۰ mg/day (۲۵ چهار بار)، سپس ۵۰ mg هر ۳ روز تا ۲۰۰ mg/day. بالای ۷۵ سال حداکثر ۳۰۰ mg/day. نارسایی شدید کلیه: فاصله دوز ۱۲ ساعت.",
+            "en": "Start 25 mg/day, increase by 25 mg every 3 days to 100 mg/day (25 four times daily), then by 50 mg every 3 days to 200 mg/day. Over 75 y max 300 mg/day. Severe renal impairment: 12-hour interval."
+          },
+          "refs": [
+            {
+              "source": "fda-tramadol",
+              "section": "2"
+            },
+            {
+              "source": "fda-tramadol",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال منع مصرف دارد (دپرسیون تنفسی کشنده).",
+        "en": "Contraindicated under 12 years (fatal respiratory depression)."
+      },
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "پس از تونسیلکتومی/آدنوئیدکتومی زیر ۱۸ سال؛ دپرسیون تنفسی؛ آسم حاد یا شدید بدون پایش؛ انسداد گوارشی؛ حساسیت به اپیوئید؛ MAOI در ۱۴ روز اخیر.",
+        "en": "After tonsillectomy/adenoidectomy under 18; respiratory depression; acute or severe asthma unmonitored; GI obstruction; opioid hypersensitivity; MAOI within 14 days."
+      },
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: اعتیاد و سوءمصرف، دپرسیون تنفسی، مصرف تصادفی کشنده در کودکان، تداخل با بنزودیازپین‌ها.",
+        "en": "Boxed warning: addiction and misuse, respiratory depression, fatal accidental ingestion by children, interaction with benzodiazepines."
+      },
+      "refs": [
+        {
+          "source": "fda-tramadol",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "maint",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "upperPerDose": 100
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 35
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}
