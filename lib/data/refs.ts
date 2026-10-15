@@ -34,3 +34,10 @@ export function groupRefsByType(refs: Ref[], sources: Source[]): Map<SourceType,
 export function drugRefs(drug: Drug): Ref[] {
   return uniqueRefs(collectRefs(drug))
 }
+
+/** 'low' when any formulation or regimen is supported only by secondary web sources (e.g. Iranian pharmacy sites). */
+export function drugConfidence(drug: Drug, sources: Source[]): 'high' | 'low' {
+  const type = new Map(sources.map((s) => [s.id, s.type]))
+  const weak = (refs: { source: string }[]) => refs.length > 0 && refs.every((r) => type.get(r.source) === 'secondary-web')
+  return [...drug.formulations, ...drug.regimens].some((x) => weak(x.refs)) ? 'low' : 'high'
+}

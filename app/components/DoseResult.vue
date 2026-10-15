@@ -1,15 +1,18 @@
 <script setup lang="ts">
 import type { Drug } from '../../lib/types'
 import type { Result, Msg } from '../../lib/engine'
+import { drugConfidence } from '../../lib/data/refs'
 const props = defineProps<{ result: Result; drug: Drug }>()
 const lt = useLocalText()
 const { t } = useI18n()
 const fmt = useFormatNumber()
 const u = computed(() => t(`units.dose.${props.result.unit}`))
+const lowConfidence = computed(() => drugConfidence(props.drug, sources) === 'low')
 const msg = (m: Msg) => (m.text ? lt(m.text) : t(`engine.${m.code}`, m.params ?? {}))
 </script>
 <template>
   <div class="space-y-3" aria-live="polite">
+    <ConfidenceBanner v-if="lowConfidence" compact />
     <div v-if="result.status === 'invalidInput' || result.status === 'blocked'" class="rounded-xl border border-red-300 bg-red-50 p-3 dark:border-red-800 dark:bg-red-950">
       <p class="font-bold text-red-700 dark:text-red-300">⛔ {{ $t(`calc.status.${result.status}`) }}</p>
       <ul class="mt-1 space-y-1 text-sm">

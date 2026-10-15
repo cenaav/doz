@@ -11,7 +11,7 @@ export interface Ref {
   note?: I18nText
 }
 
-export type SourceType = 'fda-label' | 'ema-smpc' | 'uk-smpc' | 'guideline' | 'licensed-reference' | 'ifda-leaflet' | 'textbook' | 'medlineplus'
+export type SourceType = 'fda-label' | 'ema-smpc' | 'uk-smpc' | 'guideline' | 'licensed-reference' | 'ifda-leaflet' | 'textbook' | 'medlineplus' | 'secondary-web'
 export interface Source {
   id: string
   type: SourceType
@@ -28,8 +28,8 @@ export interface Source {
 
 export interface Range { minAge?: Age | null; maxAge?: Age | null; minWeightKg?: number | null; maxWeightKg?: number | null }
 
-export type DoseUnit = 'mg' | 'mcg' | 'g' | 'unit' | 'mL'
-export interface Concentration { amount: number; unit: DoseUnit; perVolumeMl?: number; perUnit?: 'tablet' | 'capsule' | 'sachet' | 'actuation' | 'tube'; scored?: boolean }
+export type DoseUnit = 'mg' | 'mcg' | 'g' | 'unit' | 'mL' | 'drop' | 'application'
+export interface Concentration { amount: number; unit: DoseUnit; perVolumeMl?: number; perUnit?: 'tablet' | 'capsule' | 'sachet' | 'actuation' | 'tube' | 'drop' | 'application'; scored?: boolean }
 export interface Limits { maxPerDose?: number; maxPerDay?: number; maxPerKgPerDose?: number; maxPerKgPerDay?: number; refs: Ref[] }
 export interface Component { name: I18nText; amount: number; unit: DoseUnit; limits?: Limits }
 export interface Formulation {
@@ -124,6 +124,8 @@ export interface CatalogEntry {
   brands: string[]
   synonyms: string[]
   reviewStatus: 'unverified' | 'verified'
+  confidence: 'high' | 'low'
+  markets: string[]
   regimens: { id: string; disease: string; label: I18nText; type: RegimenType }[]
 }
 export interface DataSet { sources: Source[]; diseases: Disease[]; categories: Category[]; drugs: { path: string; drug: Drug }[] }

@@ -21,7 +21,11 @@ function blur() { setTimeout(() => (focused.value = false), 150) }
         <h3 class="px-2 text-xs font-bold uppercase text-slate-500">{{ $t('search.drugs') }}</h3>
         <NuxtLink v-for="d in results.drugs" :key="d.id" :to="localePath(`/drug/${d.id}`)" class="flex items-center justify-between gap-2 rounded-lg px-2 py-2 hover:bg-slate-100 dark:hover:bg-slate-800">
           <span><b>{{ lt(d.name) }}</b> <span class="ltr text-sm text-slate-500">{{ d.name.en }}</span></span>
-          <ReviewBadge :status="d.reviewStatus" small />
+          <span class="flex shrink-0 items-center gap-1">
+            <span v-if="d.confidence === 'low'" class="rounded-full bg-red-600 px-1.5 text-[10px] font-bold text-white">⚠ {{ $t('confidence.short') }}</span>
+            <MarketBadges :markets="d.markets" small />
+            <ReviewBadge :status="d.reviewStatus" small />
+          </span>
         </NuxtLink>
       </section>
       <section v-if="results.diseases.length">

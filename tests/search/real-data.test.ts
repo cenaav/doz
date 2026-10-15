@@ -5,7 +5,7 @@ import { buildCatalog } from '../../lib/data/catalog'
 import { createSearch } from '../../lib/search'
 
 const ds = loadDataSet(join(__dirname, '../..'))
-const s = createSearch(buildCatalog(ds.drugs.map((d) => d.drug)), ds.diseases, ds.categories)
+const s = createSearch(buildCatalog(ds.drugs.map((d) => d.drug), ds.sources), ds.diseases, ds.categories)
 
 describe('search over the real data set', () => {
   test('English drug name', () => expect(s('cephalexin').drugs[0]?.id).toBe('cephalexin'))

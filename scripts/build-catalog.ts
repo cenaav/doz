@@ -4,7 +4,7 @@ import { buildCatalog } from '../lib/data/catalog'
 
 const SITE = 'https://cenaav.github.io/doz'
 const ds = loadDataSet(process.cwd())
-const catalog = buildCatalog(ds.drugs.map((d) => d.drug))
+const catalog = buildCatalog(ds.drugs.map((d) => d.drug), ds.sources)
 const paths = [
   '/',
   '/sources',

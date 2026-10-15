@@ -24,7 +24,7 @@ const lt = useLocalText()
     </div>
     <div>
       <h3 class="mb-1 font-bold">{{ $t('safety.formulations') }}</h3>
-      <ul class="space-y-1 text-sm"><li v-for="f in drug.formulations" :key="f.id"><span class="ltr">{{ f.label }}</span> — {{ $t(`forms.${f.form}`) }} · {{ f.markets.join(', ') }} <RefChips :refs="f.refs" /></li></ul>
+      <ul class="space-y-1 text-sm"><li v-for="f in drug.formulations" :key="f.id"><span class="ltr">{{ f.label }}</span> — {{ $t(`forms.${f.form}`) }} <MarketBadges :markets="f.markets" small /> <RefChips :refs="f.refs" /></li></ul>
     </div>
   </section>
 </template>
