@@ -150,7 +150,7 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
 
 /** True when the dose, its limits, its population or a contraindication depends on body weight. */
 export function needsWeight(drug: Drug, reg: Drug['regimens'][number]): boolean {
-  if (['weightBased', 'bsa', 'loading'].includes(reg.type) || reg.dose.weightBands) return true
+  if (['weightBased', 'bsa', 'loading', 'weightBand'].includes(reg.type) || reg.dose.weightBands) return true
   const hasW = (r?: { minWeightKg?: number | null; maxWeightKg?: number | null }) => r?.minWeightKg != null || r?.maxWeightKg != null
   if (hasW(reg.population) || drug.contraindications.some((c) => hasW(c.rule))) return true
   return reg.limits?.maxPerKgPerDay != null || reg.limits?.maxPerKgPerDose != null

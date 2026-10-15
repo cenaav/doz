@@ -1,0 +1,302 @@
+{
+  "id": "mebendazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مبندازول",
+    "en": "Mebendazole"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدکرم بنزیمیدازول",
+    "en": "Benzimidazole anthelmintic"
+  },
+  "brands": [
+    {
+      "name": "Emverm",
+      "market": "US"
+    },
+    {
+      "name": "Vermox",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vermox",
+    "ورموکس",
+    "مبندازول"
+  ],
+  "formulations": [
+    {
+      "id": "chew-100",
+      "form": "chewable-tablet",
+      "route": "oral",
+      "label": "100 mg chewable tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-emverm",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pinworm",
+      "disease": "pinworm",
+      "label": {
+        "fa": "کرمک — ۱۰۰ mg تک‌دوز",
+        "en": "Pinworm — 100 mg once"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-emverm",
+          "section": "2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر ۳ هفته بعد بهبود نیافت، دوره دوم داده شود. قرص را می‌توان جوید، بلعید یا خرد کرد.",
+            "en": "If not cured 3 weeks after treatment, a second course is advised. May be chewed, swallowed or crushed."
+          },
+          "refs": [
+            {
+              "source": "fda-emverm",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "whipworm",
+      "disease": "whipworm",
+      "label": {
+        "fa": "کرم شلاقی — ۱۰۰ mg صبح و شب، ۳ روز",
+        "en": "Whipworm — 100 mg morning and evening for 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-emverm",
+          "section": "2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "id": "ascariasis",
+      "disease": "ascariasis",
+      "label": {
+        "fa": "آسکاریس — ۱۰۰ mg صبح و شب، ۳ روز",
+        "en": "Roundworm — 100 mg morning and evening for 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-emverm",
+          "section": "2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "id": "hookworm",
+      "disease": "hookworm",
+      "label": {
+        "fa": "کرم قلابدار — ۱۰۰ mg صبح و شب، ۳ روز",
+        "en": "Hookworm — 100 mg morning and evening for 3 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-emverm",
+          "section": "2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مبندازول.",
+        "en": "Hypersensitivity to mebendazole."
+      },
+      "refs": [
+        {
+          "source": "fda-emverm",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "بی‌خطری زیر ۲ سال ثابت نشده؛ تشنج در زیر ۱ سال گزارش شده است.",
+        "en": "Not established under 2 years; convulsions reported under 1 year."
+      },
+      "refs": [
+        {
+          "source": "fda-emverm",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "همراه مترونیدازول مصرف نشود (واکنش‌های جدی پوستی).",
+        "en": "Avoid with metronidazole (serious skin reactions)."
+      },
+      "refs": [
+        {
+          "source": "fda-emverm",
+          "section": "17"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pinworm",
+      "formulation": "chew-100",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "whipworm",
+      "formulation": "chew-100",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDay": 200
+      }
+    },
+    {
+      "regimen": "ascariasis",
+      "formulation": "chew-100",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "hookworm",
+      "formulation": "chew-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100
+      }
+    },
+    {
+      "regimen": "pinworm",
+      "formulation": "chew-100",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

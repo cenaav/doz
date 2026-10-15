@@ -6,7 +6,7 @@ const localePath = useLocalePath()
 useSeoMeta({ title: () => t('quick.title'), description: () => t('quick.description') })
 
 type Mode = 'weight' | 'age'
-const MODE_TYPES: Record<Mode, string[]> = { weight: ['weightBased', 'bsa', 'loading'], age: ['ageBand', 'fixed', 'titration'] }
+const MODE_TYPES: Record<Mode, string[]> = { weight: ['weightBased', 'bsa', 'loading', 'weightBand'], age: ['ageBand', 'fixed', 'titration'] }
 const mode = ref<Mode>('weight')
 const category = ref<string | null>(null)
 const drugId = ref('')

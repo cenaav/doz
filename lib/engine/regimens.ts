@@ -39,6 +39,11 @@ export function baseDose(reg: Regimen, pIn: Patient): BaseDose {
       })
       return { perDose: schedule[0].perDose, dosesPerDay: n, schedule }
     }
+    case 'weightBand': {
+      const b = d.weightBands!.find((x) => p.weightKg > x.minWeightKg && (x.maxWeightKg == null || p.weightKg <= x.maxWeightKg))
+      if (!b) return { error: { code: 'NO_WEIGHT_BAND' } }
+      return { perDose: b.perDose, dosesPerDay: b.dosesPerDay }
+    }
     case 'titration': {
       const steps = d.titration ?? d.weightBands!.find((w) => p.weightKg >= w.minWeightKg && (w.maxWeightKg == null || p.weightKg < w.maxWeightKg))
       if (!steps) return { error: { code: 'NO_WEIGHT_BAND' } }

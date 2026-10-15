@@ -1,0 +1,230 @@
+{
+  "id": "acyclovir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آسیکلوویر",
+    "en": "Acyclovir"
+  },
+  "category": "antiviral",
+  "class": {
+    "fa": "ضدویروس آنالوگ نوکلئوزید",
+    "en": "Nucleoside analogue antiviral"
+  },
+  "brands": [
+    {
+      "name": "Zovirax",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aciclovir",
+    "زوویراکس",
+    "آسیکلوویر"
+  ],
+  "formulations": [
+    {
+      "id": "susp-200-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "200 mg / 5 mL",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acyclovir-susp",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "chickenpox-child",
+      "disease": "chickenpox",
+      "label": {
+        "fa": "آبله‌مرغان — ۲ سال به بالا: ۲۰ mg/kg چهار بار در روز",
+        "en": "Chickenpox — ≥2 years: 20 mg/kg four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxWeightKg": 40
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 20,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-susp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 800,
+        "refs": [
+          {
+            "source": "fda-acyclovir-susp",
+            "section": "Dosage and Administration",
+            "note": {
+              "fa": "بالای ۴۰ کیلوگرم: دوز بزرگسال ۸۰۰ mg",
+              "en": "Children over 40 kg: adult dose 800 mg"
+            }
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در اولین نشانه شروع شود؛ اثربخشی شروع بعد از ۲۴ ساعت مشخص نیست.",
+            "en": "Start at the earliest sign; no efficacy data if started after 24 hours."
+          },
+          "refs": [
+            {
+              "source": "fda-acyclovir-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chickenpox-adult",
+      "disease": "chickenpox",
+      "label": {
+        "fa": "آبله‌مرغان — بزرگسال و بالای ۴۰ kg: ۸۰۰ mg چهار بار در روز",
+        "en": "Chickenpox — adults and >40 kg: 800 mg four times daily"
+      },
+      "population": {
+        "minWeightKg": 40.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 800,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-susp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت بالینی مهم به آسیکلوویر یا والاسیکلوویر.",
+        "en": "Clinically significant hypersensitivity to acyclovir or valacyclovir."
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-susp",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "بی‌خطری اشکال خوراکی زیر ۲ سال ثابت نشده است.",
+        "en": "Oral forms not established under 2 years."
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-susp",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [
+    {
+      "egfrBelow": 25,
+      "severity": "warn",
+      "text": {
+        "fa": "در نارسایی کلیه دوز طبق جدول برچسب تنظیم شود.",
+        "en": "Adjust dose in renal impairment per label table."
+      },
+      "refs": [
+        {
+          "source": "fda-acyclovir-susp",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "chickenpox-child",
+      "formulation": "susp-200-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 10
+      }
+    },
+    {
+      "regimen": "chickenpox-child",
+      "formulation": "susp-200-5",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 800
+      }
+    },
+    {
+      "regimen": "chickenpox-adult",
+      "formulation": "susp-200-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 800,
+        "mlPerDose": 20
+      }
+    }
+  ]
+}

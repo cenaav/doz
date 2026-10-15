@@ -81,3 +81,15 @@ describe('explicit interval for PRN schedules', () => {
     expect(r).toMatchObject({ perDose: 160, dosesPerDay: 5, perDay: 800, intervalHours: 4 })
   })
 })
+
+describe('weightBand (oseltamivir-like)', () => {
+  const d = drug([{ type: 'weightBand', dose: { weightBands: [
+    { minWeightKg: 0, maxWeightKg: 15, perDose: 30, dosesPerDay: 2 },
+    { minWeightKg: 15, maxWeightKg: 23, perDose: 45, dosesPerDay: 2 },
+    { minWeightKg: 23, maxWeightKg: null, perDose: 60, dosesPerDay: 2 },
+  ] } } as any], [susp('f', 6, 1)])
+  test.each([[12, 30, 5], [15, 30, 5], [15.1, 45, 7.5], [23, 45, 7.5], [30, 60, 10]])('%s kg → %s mg (%s mL)', (w, mg, ml) => {
+    expect(calculate(d, 'r0', 'f', { ageDays: yr(5), weightKg: w })).toMatchObject({ perDose: mg, mlPerDose: ml })
+  })
+  test('needs weight', () => expect(calculate(d, 'r0', 'f', { ageDays: yr(5) }).blocks[0].code).toBe('NEED_WEIGHT'))
+})

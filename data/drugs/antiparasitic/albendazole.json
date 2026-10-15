@@ -1,0 +1,313 @@
+{
+  "id": "albendazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آلبندازول",
+    "en": "Albendazole"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدکرم بنزیمیدازول",
+    "en": "Benzimidazole anthelmintic"
+  },
+  "brands": [
+    {
+      "name": "Albenza",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "albenza",
+    "آلبندازول",
+    "zentel"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-albenza",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hydatid-disease-lt60",
+      "disease": "hydatid-disease",
+      "label": {
+        "fa": "کیست هیداتید — کمتر از ۶۰ kg: ۱۵ mg/kg/day در ۲ نوبت",
+        "en": "Hydatid disease — <60 kg: 15 mg/kg/day in 2 doses"
+      },
+      "population": {
+        "maxWeightKg": 59.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-albenza",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 800,
+        "refs": [
+          {
+            "source": "fda-albenza",
+            "section": "2.1, Table 1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 28,
+        "max": 28
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "با غذا. پایش شمارش خون و آنزیم‌های کبد در شروع هر دوره و هر ۲ هفته.",
+            "en": "With meals. Monitor blood counts and liver enzymes at the start of each cycle and every 2 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-albenza",
+              "section": "2.3"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "دوره ۲۸ روزه، سپس ۱۴ روز بدون دارو؛ مجموعاً ۳ دوره.",
+            "en": "28-day cycle, then 14 days off; 3 cycles total."
+          },
+          "refs": [
+            {
+              "source": "fda-albenza",
+              "section": "2.1, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hydatid-disease-ge60",
+      "disease": "hydatid-disease",
+      "label": {
+        "fa": "کیست هیداتید — ۶۰ kg یا بیشتر: ۴۰۰ mg دو بار در روز",
+        "en": "Hydatid disease — ≥60 kg: 400 mg twice daily"
+      },
+      "population": {
+        "minWeightKg": 60
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-albenza",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 28
+      }
+    },
+    {
+      "id": "neurocysticercosis-lt60",
+      "disease": "neurocysticercosis",
+      "label": {
+        "fa": "نوروسیستی‌سرکوزیس — کمتر از ۶۰ kg: ۱۵ mg/kg/day در ۲ نوبت",
+        "en": "Neurocysticercosis — <60 kg: 15 mg/kg/day in 2 doses"
+      },
+      "population": {
+        "maxWeightKg": 59.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-albenza",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 800,
+        "refs": [
+          {
+            "source": "fda-albenza",
+            "section": "2.1, Table 1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 8,
+        "max": 30
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "با غذا. پایش شمارش خون و آنزیم‌های کبد در شروع هر دوره و هر ۲ هفته.",
+            "en": "With meals. Monitor blood counts and liver enzymes at the start of each cycle and every 2 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-albenza",
+              "section": "2.3"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "استروئید و ضدتشنج مناسب داده شود.",
+            "en": "Give appropriate steroid and anticonvulsant therapy."
+          },
+          "refs": [
+            {
+              "source": "fda-albenza",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neurocysticercosis-ge60",
+      "disease": "neurocysticercosis",
+      "label": {
+        "fa": "نوروسیستی‌سرکوزیس — ۶۰ kg یا بیشتر: ۴۰۰ mg دو بار در روز",
+        "en": "Neurocysticercosis — ≥60 kg: 400 mg twice daily"
+      },
+      "population": {
+        "minWeightKg": 60
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-albenza",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 8,
+        "max": 30
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بنزیمیدازول‌ها.",
+        "en": "Hypersensitivity to benzimidazoles."
+      },
+      "refs": [
+        {
+          "source": "fda-albenza",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [
+    {
+      "text": {
+        "fa": "شمارش خون و آنزیم‌های کبدی؛ تست بارداری پیش از درمان.",
+        "en": "Blood counts and liver enzymes; pregnancy test before therapy."
+      },
+      "refs": [
+        {
+          "source": "fda-albenza",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hydatid-disease-lt60",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 26
+      },
+      "expect": {
+        "perDose": 195,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "hydatid-disease-ge60",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "neurocysticercosis-lt60",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 400,
+        "perDay": 800
+      }
+    },
+    {
+      "regimen": "neurocysticercosis-ge60",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400
+      }
+    }
+  ]
+}

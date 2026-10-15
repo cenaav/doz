@@ -1,0 +1,197 @@
+{
+  "id": "albuterol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سالبوتامول (آلبوترول)",
+    "en": "Albuterol (salbutamol)"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آگونیست کوتاه‌اثر بتا-۲",
+    "en": "Short-acting beta-2 agonist"
+  },
+  "brands": [
+    {
+      "name": "Ventolin HFA",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "salbutamol",
+    "ونتولین",
+    "سالبوتامول",
+    "اسپری تنفسی"
+  ],
+  "formulations": [
+    {
+      "id": "hfa-90",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "90 mcg albuterol per actuation (MDI)",
+      "concentration": {
+        "amount": 90,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ventolin-hfa",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bronchospasm",
+      "disease": "asthma",
+      "label": {
+        "fa": "برونکواسپاسم حاد — ۴ سال به بالا: ۲ پاف هر ۴ تا ۶ ساعت",
+        "en": "Acute bronchospasm — ≥4 years: 2 inhalations every 4–6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 180,
+        "dosesPerDay": 4,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-ventolin-hfa",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ تا ۶ ساعت در صورت نیاز؛ در برخی ۱ پاف هر ۴ ساعت کافی است. دفعات یا پاف بیشتر توصیه نمی‌شود.",
+            "en": "Every 4–6 h as needed; in some patients 1 inhalation every 4 h is enough. More frequent use or more inhalations not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-ventolin-hfa",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eib",
+      "disease": "exercise-bronchospasm",
+      "label": {
+        "fa": "پیشگیری از برونکواسپاسم ورزشی — ۲ پاف ۱۵ تا ۳۰ دقیقه قبل",
+        "en": "Exercise-induced bronchospasm — 2 inhalations 15–30 min before"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 180,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ventolin-hfa",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزای فرآورده.",
+        "en": "Hypersensitivity to any ingredient."
+      },
+      "refs": [
+        {
+          "source": "fda-ventolin-hfa",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-4",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "بی‌خطری زیر ۴ سال ثابت نشده است.",
+        "en": "Not established under 4 years."
+      },
+      "refs": [
+        {
+          "source": "fda-ventolin-hfa",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bronchospasm",
+      "formulation": "hfa-90",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 2,
+        "perDose": 180
+      }
+    },
+    {
+      "regimen": "eib",
+      "formulation": "hfa-90",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 50
+      },
+      "expect": {
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "bronchospasm",
+      "formulation": "hfa-90",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

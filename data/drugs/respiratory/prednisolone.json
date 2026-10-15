@@ -1,0 +1,174 @@
+{
+  "id": "prednisolone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پردنیزولون",
+    "en": "Prednisolone"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "کورتیکواستروئید",
+    "en": "Corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Orapred",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "پردنیزولون شربت",
+    "prednisolon"
+  ],
+  "formulations": [
+    {
+      "id": "sol-25-5",
+      "form": "solution",
+      "route": "oral",
+      "label": "25 mg / 5 mL (prednisolone base)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "corticosteroid-responsive",
+      "label": {
+        "fa": "دوز اولیه — ۵ تا ۶۰ mg در روز (بسته به بیماری)",
+        "en": "Initial dose — 5 to 60 mg/day (depends on condition)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز کاملاً فردی است؛ پس از پاسخ، با کاهش تدریجی به کمترین دوز نگهدارنده برسید.",
+            "en": "Dosage must be individualized; after response, taper to the lowest effective maintenance dose."
+          },
+          "refs": [
+            {
+              "source": "fda-prednisolone-sol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "asthma",
+      "label": {
+        "fa": "کودکان (آسم، کروپ و…)",
+        "en": "Children (asthma, croup, …)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب FDA دوز mg/kg کودکان ندارد و دوز را فردی می‌داند؛ دوز کودکان در انتظار منبع دارای مجوز است.",
+          "en": "The FDA label gives no pediatric mg/kg dose and requires individualized dosing; pediatric dosing pending the licensed reference."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Dosage and Administration"
+        },
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "fungal",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت قارچی سیستمیک؛ حساسیت به دارو.",
+        "en": "Systemic fungal infections; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [
+    {
+      "text": {
+        "fa": "در کودکان: فشار خون، وزن، قد، فشار چشم و علائم عفونت به‌طور مکرر پایش شود.",
+        "en": "In children monitor blood pressure, weight, height, intraocular pressure and signs of infection frequently."
+      },
+      "refs": [
+        {
+          "source": "fda-prednisolone-sol",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "sol-25-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "mlPerDose": 1,
+        "upperPerDose": 60,
+        "upperMlPerDose": 12
+      }
+    }
+  ]
+}

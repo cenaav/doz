@@ -1,0 +1,443 @@
+{
+  "id": "montelukast",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مونته‌لوکاست",
+    "en": "Montelukast"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتاگونیست گیرنده لکوترین",
+    "en": "Leukotriene receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Singulair",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "singulair",
+    "سینگولر",
+    "مونتلوکاست"
+  ],
+  "formulations": [
+    {
+      "id": "gran-4",
+      "form": "sachet",
+      "route": "oral",
+      "label": "4 mg oral granules (packet)",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "sachet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-montelukast",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "chew-4",
+      "form": "chewable-tablet",
+      "route": "oral",
+      "label": "4 mg chewable tablet",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-montelukast",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "chew-5",
+      "form": "chewable-tablet",
+      "route": "oral",
+      "label": "5 mg chewable tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-montelukast",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-montelukast",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "asthma",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم — یک‌بار در روز",
+        "en": "Asthma — once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "month"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "month"
+            },
+            "maxAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "perDose": 4,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 4,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 15,
+              "unit": "year"
+            },
+            "perDose": 5,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 15,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 10,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-montelukast",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک‌بار در روز عصر. اگر دوزی فراموش شد، دوز بعدی در زمان معمول؛ دو دوز با هم نه.",
+            "en": "Once daily in the evening. If a dose is missed, take the next at the usual time; never two doses together."
+          },
+          "refs": [
+            {
+              "source": "fda-montelukast",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "۱۲ تا ۲۳ ماه فقط گرانول ۴ mg.",
+            "en": "12–23 months: 4 mg oral granules only."
+          },
+          "refs": [
+            {
+              "source": "fda-montelukast",
+              "section": "2.1, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "allergic-rhinitis",
+      "disease": "allergic-rhinitis",
+      "label": {
+        "fa": "رینیت آلرژیک فصلی",
+        "en": "Seasonal allergic rhinitis"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 4,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 15,
+              "unit": "year"
+            },
+            "perDose": 5,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 15,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 10,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-montelukast",
+          "section": "2.3, Table 3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط برای بیمارانی که به درمان‌های دیگر پاسخ کافی ندارند یا آن را تحمل نمی‌کنند (هشدار جعبه‌ای).",
+            "en": "Reserve for patients with inadequate response or intolerance to alternative therapies (boxed warning)."
+          },
+          "refs": [
+            {
+              "source": "fda-montelukast",
+              "section": "WARNING: SERIOUS NEUROPSYCHIATRIC EVENTS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eib",
+      "disease": "exercise-bronchospasm",
+      "label": {
+        "fa": "پیشگیری از برونکواسپاسم ورزشی — ۲ ساعت قبل از ورزش",
+        "en": "Exercise-induced bronchoconstriction — 2 h before exercise"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 15,
+              "unit": "year"
+            },
+            "perDose": 5,
+            "dosesPerDay": 1
+          },
+          {
+            "minAge": {
+              "value": 15,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 10,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-montelukast",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تک‌دوز حداقل ۲ ساعت قبل از ورزش؛ تا ۲۴ ساعت دوز دیگری نه.",
+            "en": "Single dose at least 2 h before exercise; no additional dose within 24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-montelukast",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزای مونته‌لوکاست.",
+        "en": "Hypersensitivity to any component."
+      },
+      "refs": [
+        {
+          "source": "fda-montelukast",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: رویدادهای جدی عصبی‌روانی (بی‌قراری، پرخاشگری، افسردگی، اختلال خواب، افکار خودکشی).",
+        "en": "Boxed warning: serious neuropsychiatric events (agitation, aggression, depression, sleep disturbance, suicidal thoughts)."
+      },
+      "refs": [
+        {
+          "source": "fda-montelukast",
+          "section": "WARNING: SERIOUS NEUROPSYCHIATRIC EVENTS"
+        },
+        {
+          "source": "fda-montelukast",
+          "section": "5.1"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "asthma",
+      "formulation": "gran-4",
+      "input": {
+        "ageMonths": 18,
+        "weightKg": 11
+      },
+      "expect": {
+        "perDose": 4,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "asthma",
+      "formulation": "chew-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "asthma",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "allergic-rhinitis",
+      "formulation": "chew-4",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "perDose": 4
+      }
+    },
+    {
+      "regimen": "eib",
+      "formulation": "chew-5",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ]
+}
