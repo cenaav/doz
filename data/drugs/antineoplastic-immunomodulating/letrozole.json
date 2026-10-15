@@ -1,0 +1,257 @@
+{
+  "id": "letrozole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لتروزول",
+    "en": "Letrozole"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده آروماتاز",
+    "en": "Aromatase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Femara",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "femara",
+    "فمارا",
+    "لتروزول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-letrozole",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bc",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان پس از یائسگی — ۲٫۵ mg روزانه",
+        "en": "Postmenopausal breast cancer — 2.5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-letrozole",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سیروز یا نارسایی شدید کبد: ۲٫۵ mg یک روز در میان. کاربرد در ناباروری در برچسب FDA نیست.",
+            "en": "Cirrhosis or severe hepatic impairment: 2.5 mg every other day. Use for infertility is not in the FDA label."
+          },
+          "refs": [
+            {
+              "source": "fda-letrozole",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری (آسیب جنین)؛ حساسیت.",
+        "en": "Pregnancy (fetal harm); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-letrozole",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bc",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2.5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L02BG04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01922",
+        "en": "LETROZOLE 2.5MG TAB",
+        "fa": "قرص لتروزول ۲٫۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1019/Letrozole",
+        "url": "https://www.darooyab.ir/G-1019/Letrozole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=200161",
+      "label": "ANDA200161"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=63e54b62-a30d-4a56-9215-75e7a0b0bf02",
+      "label": "FDA Letrozole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698004.html",
+      "label": "Letrozole"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BG04",
+      "label": "L02BG04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1019/Letrozole",
+      "label": "Letrozole"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Pregnancy: Letrozole can cause fetal harm [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-letrozole",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants from letrozole, advise lactating women not to breastfeed while taking letrozole and for at least 3 weeks after the last dose.",
+      "refs": [
+        {
+          "source": "fda-letrozole",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-letrozole",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "However, in comparison to tamoxifen, no overall differences with regards to the safety and efficacy profiles were observed between elderly patients and younger patients.",
+      "refs": [
+        {
+          "source": "fda-letrozole",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Based on animal studies, letrozole tablets can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-letrozole",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-letrozole",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA200161"
+  }
+}

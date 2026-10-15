@@ -1,0 +1,301 @@
+{
+  "id": "estradiol-oral",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "استرادیول (قرص)",
+    "en": "Estradiol (tablet)"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "استروژن",
+    "en": "Oestrogen"
+  },
+  "brands": [
+    {
+      "name": "Estrace",
+      "market": "US"
+    },
+    {
+      "name": "Progynova",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "estrace tablet",
+    "پروژینوا",
+    "استرادیول خوراکی"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet (scored)",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-estradioltab",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet (scored)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-estradioltab",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet (scored)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-estradioltab",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "vms",
+      "disease": "menopause-symptoms",
+      "label": {
+        "fa": "علائم یائسگی — شروع ۱ تا ۲ mg روزانه",
+        "en": "Menopausal symptoms — start 1–2 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 40,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "perDoseMax": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-estradioltab",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "برای کنترل علائم تنظیم و به کمترین دوز نگهدارنده برسد؛ در رحم سالم همراه پروژستین.",
+            "en": "Adjust to control symptoms, down to the lowest maintenance dose; add a progestin if the uterus is intact."
+          },
+          "refs": [
+            {
+              "source": "fda-estradioltab",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی تناسلی تشخیص‌داده‌نشده؛ سرطان پستان یا وابسته به استروژن؛ DVT/PE یا ترومبوز شریانی؛ بیماری کبد؛ بارداری.",
+        "en": "Undiagnosed genital bleeding; breast or oestrogen-dependent cancer; DVT/PE or arterial thrombosis; liver disease; pregnancy."
+      },
+      "refs": [
+        {
+          "source": "fda-premarin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سرطان آندومتر (بدون پروژستین در رحم سالم)، حوادث قلبی‌عروقی، سرطان پستان و دمانس احتمالی؛ کمترین دوز و کوتاه‌ترین مدت.",
+        "en": "Boxed warning: endometrial cancer (unopposed oestrogen with a uterus), cardiovascular disorders, breast cancer and probable dementia; lowest dose, shortest time."
+      },
+      "refs": [
+        {
+          "source": "fda-premarin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "vms",
+      "formulation": "tab-1",
+      "input": {
+        "ageYears": 52,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 1,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G03CA03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=estradiol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=040275",
+      "label": "ANDA040275"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333d92f-2585-4b99-aaea-87c01c95125e",
+      "label": "FDA Estradiol tablets"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+      "label": "FDA Premarin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605041.html",
+      "label": "Estradiol Topical"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605042.html",
+      "label": "Estradiol Transdermal Patch"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03CA03",
+      "label": "G03CA03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Known or suspected pregnancy.",
+      "refs": [
+        {
+          "source": "fda-estradioltab",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when estradiol is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-estradioltab",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-estradioltab",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: در سالمندان هشدار جدی یا پرهیز.",
+        "en": "Label: serious warning or avoid in older adults."
+      },
+      "quote": "The Women’s Health Initiative Memory Study (WHIMS), a substudy of WHI, reported increased risk of developing probable dementia in postmenopausal women 65 years of age or older during 4 years of treatment with oral conjugated estrogens plus medroxyprogesterone acetate relative to placebo.",
+      "refs": [
+        {
+          "source": "fda-estradioltab",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-estradioltab",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA040275"
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "id": "misoprostol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "میزوپروستول",
+    "en": "Misoprostol"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنالوگ پروستاگلاندین E1",
+    "en": "Prostaglandin E1 analogue"
+  },
+  "brands": [
+    {
+      "name": "Cytotec",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cytotec",
+    "سایتوتک",
+    "میزوپروستول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mcg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mcg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-misoprostol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mcg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mcg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-misoprostol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "nsaid",
+      "disease": "nsaid-ulcer-prevention",
+      "label": {
+        "fa": "پیشگیری از زخم معده ناشی از NSAID — ۲۰۰ mcg چهار بار در روز با غذا",
+        "en": "NSAID ulcer prevention — 200 mcg four times daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-misoprostol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر تحمل نشد ۱۰۰ mcg.",
+            "en": "If not tolerated, 100 mcg."
+          },
+          "refs": [
+            {
+              "source": "fda-misoprostol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "preg",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری — سقط، نقص جنین، پارگی رحم. در زنان در سن باروری فقط در پرخطرها با تست بارداری منفی و پیشگیری مؤثر.",
+        "en": "Pregnancy — abortion, birth defects, uterine rupture. In women of childbearing potential only if high risk, with a negative pregnancy test and effective contraception."
+      },
+      "refs": [
+        {
+          "source": "fda-misoprostol",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-misoprostol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: مصرف در بارداری سقط، زایمان زودرس، نقص مادرزادی یا پارگی رحم می‌دهد؛ به دیگران داده نشود.",
+        "en": "Boxed warning: use in pregnancy can cause abortion, premature birth, birth defects or uterine rupture; do not give to others."
+      },
+      "refs": [
+        {
+          "source": "fda-misoprostol",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-misoprostol",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "nsaid",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A02BB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09709",
+        "en": "MISOPROSTOL 100MCG TAB",
+        "fa": "قرص میزوپروستول ۱۰۰ میکروگرم"
+      },
+      {
+        "code": "08095",
+        "en": "MISOPROSTOL 200MCG TAB",
+        "fa": "قرص میزوپروستول ۲۰۰ میکروگرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3189/Misoprostol",
+        "url": "https://www.darooyab.ir/G-3189/Misoprostol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019268",
+      "label": "NDA019268"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c4fe14fb-0a43-4c31-9cd6-29eb0d156705",
+      "label": "FDA Misoprostol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a689009.html",
+      "label": "Misoprostol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A02BB01",
+      "label": "A02BB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3189/Misoprostol",
+      "label": "Misoprostol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Misoprostol should not be taken by pregnant women to reduce the risk of ulcers induced by nonsteroidal anti-inflammatory drugs (NSAIDs).",
+      "refs": [
+        {
+          "source": "fda-misoprostol",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when misoprostol is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-misoprostol",
+          "section": "Nursing mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of misoprostol in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-misoprostol",
+          "section": "Pediatric use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA authorized generic",
+    "refs": [
+      {
+        "source": "fda-misoprostol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019268"
+  }
+}

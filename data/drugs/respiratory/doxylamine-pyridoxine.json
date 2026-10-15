@@ -1,0 +1,244 @@
+{
+  "id": "doxylamine-pyridoxine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دوکسیلامین + پیریدوکسین (تهوع بارداری)",
+    "en": "Doxylamine + pyridoxine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین + ویتامین B6",
+    "en": "Antihistamine + vitamin B6"
+  },
+  "brands": [
+    {
+      "name": "Diclegis",
+      "market": "US"
+    },
+    {
+      "name": "Xonvea",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "diclegis",
+    "دیکلجیس",
+    "ویار",
+    "دوکسیلامین"
+  ],
+  "formulations": [
+    {
+      "id": "tab",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Doxylamine 10 mg + pyridoxine 10 mg delayed-release tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diclegis",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "nvp",
+      "disease": "nausea-pregnancy",
+      "label": {
+        "fa": "تهوع و استفراغ بارداری — شروع ۲ قرص هنگام خواب",
+        "en": "Nausea and vomiting of pregnancy — start 2 tablets at bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 14,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-diclegis",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 40,
+        "refs": [
+          {
+            "source": "fda-diclegis",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر کافی نبود: روز ۳ یک قرص صبح + ۲ شب؛ حداکثر ۴ قرص (۱ صبح، ۱ عصر، ۲ شب). کامل بلعیده شود.",
+            "en": "If not enough: from day 3 one in the morning + 2 at bedtime; max 4 tablets (1 morning, 1 mid-afternoon, 2 bedtime). Swallow whole."
+          },
+          "refs": [
+            {
+              "source": "fda-diclegis",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دوکسیلامین یا پیریدوکسین؛ مصرف مهارکننده MAO.",
+        "en": "Hypersensitivity to doxylamine or pyridoxine; MAO inhibitors."
+      },
+      "refs": [
+        {
+          "source": "fda-diclegis",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "خواب‌آلودگی — رانندگی نکنید؛ با الکل و آرام‌بخش‌ها تشدید می‌شود.",
+        "en": "Drowsiness — do not drive; worse with alcohol and sedatives."
+      },
+      "refs": [
+        {
+          "source": "fda-diclegis",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "nvp",
+      "formulation": "tab",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "R06AA59"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=doxylamine%20%2B%20pyridoxine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021876",
+      "label": "NDA021876"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bde08f6-e8bd-4e90-baa7-82e01876a86a",
+      "label": "FDA Diclegis"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613045.html",
+      "label": "Doxylamine and Pyridoxine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R06AA59",
+      "label": "R06AA59"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "﻿Risk Summary DICLEGIS is intended for the treatment of nausea and vomiting of pregnancy in women who do not respond to conservative management.",
+      "refs": [
+        {
+          "source": "fda-diclegis",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Women should not breastfeed while using DICLEGIS.",
+      "refs": [
+        {
+          "source": "fda-diclegis",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of DICLEGIS in children under 18 years of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-diclegis",
+          "section": "8.4"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-diclegis",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021876"
+  }
+}

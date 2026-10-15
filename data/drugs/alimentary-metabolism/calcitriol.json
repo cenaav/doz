@@ -1,0 +1,258 @@
+{
+  "id": "calcitriol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلسیتریول",
+    "en": "Calcitriol"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ویتامین D فعال",
+    "en": "Active vitamin D"
+  },
+  "brands": [
+    {
+      "name": "Rocaltrol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rocaltrol",
+    "روکالترول",
+    "کلسیتریول"
+  ],
+  "formulations": [
+    {
+      "id": "cap-0-25",
+      "form": "capsule",
+      "route": "oral",
+      "label": "0.25 mcg capsule",
+      "concentration": {
+        "amount": 0.25,
+        "unit": "mcg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-calcitriol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "predialysis",
+      "disease": "secondary-hyperparathyroidism-ckd",
+      "label": {
+        "fa": "هیپرپاراتیروئیدی ثانویه پیش از دیالیز — ۰٫۲۵ mcg روزانه (۳ سال به بالا)",
+        "en": "Secondary hyperparathyroidism, predialysis — 0.25 mcg/day (≥3 y)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 0.25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-calcitriol",
+          "section": "Dosage and Administration — Predialysis Patients"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۰٫۵ mcg در روز. زیر ۳ سال: ۱۰ تا ۱۵ نانوگرم/kg/روز. دریافت کلسیم حداقل ۶۰۰ mg در روز.",
+            "en": "May increase to 0.5 mcg/day. Under 3 y: 10–15 ng/kg/day. Calcium intake at least 600 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-calcitriol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ هیپرکلسمی یا مسمومیت با ویتامین D.",
+        "en": "Hypersensitivity; hypercalcaemia or vitamin D toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-calcitriol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "predialysis",
+      "formulation": "cap-0-25",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.25,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A11CC04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00195",
+        "en": "CALCITRIOL 0.25 MCG CAP",
+        "fa": "کپسول کلسی‌تریول ۰٫۲۵ میکروگرم"
+      },
+      {
+        "code": "14710",
+        "en": "CALCITRIOL 1MCG/1ML AMP",
+        "fa": "آمپول کلسی‌تریول ۱ میکروگرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "21775",
+        "en": "CALCITRIOLO EG*30CPS0.25MCG",
+        "fa": "کالسیتریولو اگ * ۳۰ کپس ۰٫۲۵ میکروگرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4554/Calcitriol",
+        "url": "https://www.darooyab.ir/G-4554/Calcitriol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076917",
+      "label": "ANDA076917"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cdcaffc6-e14e-4607-b77b-fc78a8382f60",
+      "label": "FDA Calcitriol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682335.html",
+      "label": "Calcitriol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613046.html",
+      "label": "Calcitriol Topical"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A11CC04",
+      "label": "A11CC04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4554/Calcitriol",
+      "label": "Calcitriol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects: Pregnancy Category C: Calcitriol has been found to be teratogenic in rabbits when given at doses of 0.08 and 0.3 mcg/kg (approximately 2 and 6 times the maximum recommended dose based on mg/m 2 ).",
+      "refs": [
+        {
+          "source": "fda-calcitriol",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Calcitriol from ingested calcitriol capsules may be excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-calcitriol",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of calcitriol in pediatric patients undergoing dialysis have not been established.",
+      "refs": [
+        {
+          "source": "fda-calcitriol",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-calcitriol",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-calcitriol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076917"
+  }
+}

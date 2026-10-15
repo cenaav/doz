@@ -1,0 +1,400 @@
+{
+  "id": "desmopressin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دسموپرسین (قرص)",
+    "en": "Desmopressin (tablet)"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "آنالوگ وازوپرسین",
+    "en": "Vasopressin analogue"
+  },
+  "brands": [
+    {
+      "name": "DDAVP",
+      "market": "US"
+    },
+    {
+      "name": "Minirin",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "ddavp",
+    "minirin",
+    "مینیرین",
+    "دسموپرسین",
+    "شب ادراری"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.1 mg tablet (scored)",
+      "concentration": {
+        "amount": 0.1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-desmopressin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-0-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.2 mg tablet (scored)",
+      "concentration": {
+        "amount": 0.2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-desmopressin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "enuresis",
+      "disease": "nocturnal-enuresis",
+      "label": {
+        "fa": "شب‌ادراری اولیه — ۶ سال به بالا: ۰٫۲ mg هنگام خواب",
+        "en": "Primary nocturnal enuresis — ≥6 y: 0.2 mg at bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-desmopressin",
+          "section": "Dosage and Administration — Primary Nocturnal Enuresis"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 0.6,
+        "refs": [
+          {
+            "source": "fda-desmopressin",
+            "section": "Dosage and Administration — Primary Nocturnal Enuresis"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تا ۰٫۶ mg قابل افزایش. از ۱ ساعت پیش تا صبح مایعات محدود شود (خطر کاهش سدیم و تشنج).",
+            "en": "May titrate to 0.6 mg. Limit fluids from 1 h before until morning (risk of hyponatraemia and seizures)."
+          },
+          "refs": [
+            {
+              "source": "fda-desmopressin",
+              "section": "Dosage and Administration — Primary Nocturnal Enuresis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "di",
+      "disease": "diabetes-insipidus",
+      "label": {
+        "fa": "دیابت بی‌مزه مرکزی — شروع ۰٫۰۵ mg دو بار در روز",
+        "en": "Central diabetes insipidus — start 0.05 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.05,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-desmopressin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1.2,
+        "refs": [
+          {
+            "source": "fda-desmopressin",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بهینه معمولاً ۰٫۱ تا ۰٫۸ mg در روز در دوزهای منقسم؛ محدوده ۰٫۱ تا ۱٫۲ mg.",
+            "en": "Usual optimum 0.1–0.8 mg/day in divided doses; range 0.1–1.2 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-desmopressin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ نارسایی متوسط تا شدید کلیه (کلیرانس زیر ۵۰)؛ هیپوناترمی یا سابقه آن.",
+        "en": "Hypersensitivity; moderate–severe renal impairment (CrCl <50 mL/min); hyponatraemia or history of it."
+      },
+      "refs": [
+        {
+          "source": "fda-desmopressin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "enuresis",
+      "formulation": "tab-0-2",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 0.2,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "di",
+      "formulation": "tab-0-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.05,
+        "tabletsPerDoseRounded": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "H01BA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01980",
+        "en": "DESMOPRESSIN ACETATE 0.1MG TAB",
+        "fa": "قرص دسموپرسین استات ۰٫۱ میلی‌گرم"
+      },
+      {
+        "code": "00389",
+        "en": "DESMOPRESSIN ACETATE 0.1MG/ML NASAL DROP",
+        "fa": "قطره بینی دسموپرسین استات ۰٫۱ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "01747",
+        "en": "DESMOPRESSIN ACETATE 0.1MG/ML NASAL SPRAY",
+        "fa": "اسپری بینی دسموپرسین استات ۰٫۱ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "02123",
+        "en": "DESMOPRESSIN ACETATE 0.2MG TAB",
+        "fa": "قرص دسموپرسین استات ۰٫۲ میلی‌گرم"
+      },
+      {
+        "code": "09607",
+        "en": "DESMOPRESSIN ACETATE 120MCG SUBLINGUALTAB",
+        "fa": "دسموپرسین استات ۱۲۰ میکروگرم سوبلینگوالتاب"
+      },
+      {
+        "code": "01457",
+        "en": "DESMOPRESSIN ACETATE 15MCG/ML AMP",
+        "fa": "آمپول دسموپرسین استات ۱۵ میکروگرم / میلی‌لیتر"
+      },
+      {
+        "code": "11924",
+        "en": "DESMOPRESSIN ACETATE 240MCG SUBLINGUALTAB",
+        "fa": "دسموپرسین استات ۲۴۰ میکروگرم سوبلینگوالتاب"
+      },
+      {
+        "code": "01338",
+        "en": "DESMOPRESSIN ACETATE 4MCG/1ML AMP",
+        "fa": "آمپول دسموپرسین استات ۴ میکروگرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "09606",
+        "en": "DESMOPRESSIN ACETATE 60MCG SUBLINGUALTAB",
+        "fa": "دسموپرسین استات ۶۰ میکروگرم سوبلینگوالتاب"
+      },
+      {
+        "code": "52065",
+        "en": "DESMOPRESSIN (AS ACETATE) SPRAY NASAL 10 ug/1{dose} 2.5 mL",
+        "fa": "اسپری بینی دسموپرسین (معادل استات) ۱۰ میکروگرم / ۱ { دوز } ۲٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "52237",
+        "en": "DESMOPRESSIN (AS ACETATE) TABLET SUBLINGUAL 25 ug",
+        "fa": "قرص زیرزبانی دسموپرسین (معادل استات) ۲۵ میکروگرم"
+      },
+      {
+        "code": "52238",
+        "en": "DESMOPRESSIN (AS ACETATE) TABLET SUBLINGUAL 50 ug",
+        "fa": "قرص زیرزبانی دسموپرسین (معادل استات) ۵۰ میکروگرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2694/Desmopressin",
+        "url": "https://www.darooyab.ir/G-2694/Desmopressin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077414",
+      "label": "ANDA077414"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72aeef35-c102-b628-0219-9822651887eb",
+      "label": "FDA Desmopressin tablets"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608010.html",
+      "label": "Desmopressin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682876.html",
+      "label": "Desmopressin Nasal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H01BA02",
+      "label": "H01BA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2694/Desmopressin",
+      "label": "Desmopressin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Category B Fertility studies have not been done.",
+      "refs": [
+        {
+          "source": "fda-desmopressin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when desmopressin acetate is administered to nursing mothers.",
+      "refs": [
+        {
+          "source": "fda-desmopressin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Central Diabetes Insipidus Desmopressin acetate tablets have been used safely in pediatric patients, age 4 years and older, with diabetes insipidus for periods up to 44 months.",
+      "refs": [
+        {
+          "source": "fda-desmopressin",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-desmopressin",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-desmopressin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077414"
+  }
+}

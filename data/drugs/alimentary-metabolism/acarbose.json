@@ -1,0 +1,304 @@
+{
+  "id": "acarbose",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آکاربوز",
+    "en": "Acarbose"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده آلفا-گلوکوزیداز",
+    "en": "Alpha-glucosidase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Precose",
+      "market": "US"
+    },
+    {
+      "name": "Glucobay",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "glucobay",
+    "precose",
+    "گلوکوبای",
+    "آکاربوز"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acarbose",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acarbose",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acarbose",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ — شروع ۲۵ mg سه بار در روز با اولین لقمه",
+        "en": "Type 2 diabetes — start 25 mg three times daily with the first bite"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-acarbose",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 300,
+        "refs": [
+          {
+            "source": "fda-acarbose",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر: تا ۶۰ kg ← ۵۰ mg سه بار؛ بالای ۶۰ kg ← ۱۰۰ mg سه بار.",
+            "en": "Maximum: ≤60 kg → 50 mg three times daily; >60 kg → 100 mg three times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-acarbose",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "کتواسیدوز دیابتی؛ سیروز؛ بیماری التهابی روده، زخم کولون، انسداد نسبی روده؛ حساسیت.",
+        "en": "Diabetic ketoacidosis; cirrhosis; inflammatory bowel disease, colonic ulceration, partial obstruction; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-acarbose",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A10BF01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02015",
+        "en": "ACARBOSE 100MG TAB",
+        "fa": "قرص آکاربوس ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02016",
+        "en": "ACARBOSE 50MG TAB",
+        "fa": "قرص آکاربوس ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-619/Acarbose",
+        "url": "https://www.darooyab.ir/G-619/Acarbose"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=090912",
+      "label": "ANDA090912"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656769ee-e292-4950-83df-a38e6b1a9d6e",
+      "label": "FDA Acarbose"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a696015.html",
+      "label": "Acarbose"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BF01",
+      "label": "A10BF01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-619/Acarbose",
+      "label": "Acarbose"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects: Pregnancy Category B.",
+      "refs": [
+        {
+          "source": "fda-acarbose",
+          "section": "PREGNANCY"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "A small amount of radioactivity has been found in the milk of lactating rats after administration of radiolabeled acarbose.",
+      "refs": [
+        {
+          "source": "fda-acarbose",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of Acarbose Tablets in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-acarbose",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety and effectiveness were observed between these subjects and younger subjects.",
+      "refs": [
+        {
+          "source": "fda-acarbose",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-acarbose",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA090912"
+  }
+}

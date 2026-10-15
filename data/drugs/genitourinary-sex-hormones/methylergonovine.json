@@ -1,0 +1,253 @@
+{
+  "id": "methylergonovine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متیل‌ارگونووین (متِرژن)",
+    "en": "Methylergonovine"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آلکالوئید ارگوت",
+    "en": "Ergot alkaloid uterotonic"
+  },
+  "brands": [
+    {
+      "name": "Methergine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "methergine",
+    "متیلرژن",
+    "متیل ارگونوین",
+    "متیلارگومترین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.2 mg tablet",
+      "concentration": {
+        "amount": 0.2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-methylergonovine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pph",
+      "disease": "postpartum-hemorrhage",
+      "label": {
+        "fa": "پس از زایمان — ۰٫۲ mg سه تا چهار بار در روز، حداکثر ۱ هفته",
+        "en": "Puerperium — 0.2 mg three to four times daily, max 1 week"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.2,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-methylergonovine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 7
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "فشار خون بالا؛ پره‌اکلامپسی؛ بارداری؛ حساسیت.",
+        "en": "Hypertension; toxaemia (pre-eclampsia); pregnancy; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-methylergonovine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "cyp3a4",
+      "text": {
+        "fa": "با مهارکننده‌های قوی CYP3A4 (کلاریترومایسین، اریترومایسین، ریتوناویر، کتوکونازول) خطر ایسکمی شدید عروقی.",
+        "en": "With strong CYP3A4 inhibitors (clarithromycin, erythromycin, ritonavir, ketoconazole) risk of serious vasospastic ischaemia."
+      },
+      "refs": [
+        {
+          "source": "fda-methylergonovine",
+          "section": "Precautions — Drug Interactions"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pph",
+      "formulation": "tab-0-2",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 0.2,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G02AB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00833",
+        "en": "METHYLERGONOVINE MALEATE 0.125MG TAB",
+        "fa": "قرص متیلرگونووین مالئات ۰٫۱۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00834",
+        "en": "METHYLERGONOVINE MALEATE 0.2MG/1ML AMP",
+        "fa": "آمپول متیلرگونووین مالئات ۰٫۲ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4015/Methylergonovine-Maleate",
+        "url": "https://www.darooyab.ir/G-4015/Methylergonovine-Maleate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210424",
+      "label": "ANDA210424"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b49b1e4c-de20-446d-b80a-75c7f0d41ddf",
+      "label": "FDA Methylergonovine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601077.html",
+      "label": "Methylergonovine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G02AB01",
+      "label": "G02AB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4015/Methylergonovine-Maleate",
+      "label": "Methylergonovine-Maleate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Hypertension; toxemia; pregnancy; and hypersensitivity.",
+      "refs": [
+        {
+          "source": "fda-methylergonovine",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Mothers should not breast-feed during treatment with methylergonovine maleate and at least 12 hours after administration of the last dose.",
+      "refs": [
+        {
+          "source": "fda-methylergonovine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-methylergonovine",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-methylergonovine",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-methylergonovine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA210424"
+  }
+}
