@@ -149,7 +149,7 @@ Common fields: `id`, `disease` (id from `diseases.json`), `label`, `population`,
 
 Work out the expected numbers **by hand from the source**, not by copying the app's output. Use `"status": "blocked"` to prove a block works (e.g. too young, wrong formulation). If an example fails, find whether the data or the engine is wrong; do not change the expected number to match the app.
 
-ML rounding shown to users: below 1 mL → nearest 0.05 mL; 1–10 mL → 0.1 mL; above 10 mL → 0.5 mL (`mlPerDoseRounded`). `mlPerDose` is the exact value.
+mL rounding shown to users: below 1 mL → nearest 0.05 mL; 1–10 mL → 0.1 mL; above 10 mL → 0.5 mL (`mlPerDoseRounded`). `mlPerDose` is the exact value. Tablets/capsules round to whole units (half units if `scored`); if that is more than 10% away from the dose, the calculation is blocked and the user is asked to choose another product.
 
 ## Clinical review
 

@@ -7,8 +7,16 @@ const route = useRoute()
 const lt = useLocalText()
 const localePath = useLocalePath()
 
-const q = route.query.regimen as string | undefined
-const regimenId = ref(props.drug.regimens.some((r) => r.id === q) ? q! : props.drug.regimens[0].id)
+const regimenFromQuery = () => {
+  const q = route.query.regimen
+  return typeof q === 'string' && props.drug.regimens.some((r) => r.id === q) ? q : null
+}
+const regimenId = ref(regimenFromQuery() ?? props.drug.regimens[0].id)
+// Pre-rendered HTML is built without the query string, so apply ?regimen= again after hydration.
+onMounted(() => {
+  const q = regimenFromQuery()
+  if (q) regimenId.value = q
+})
 const regimen = computed(() => props.drug.regimens.find((r) => r.id === regimenId.value)!)
 const formulations = computed(() => props.drug.formulations.filter((f) => !regimen.value.allowedFormulations || regimen.value.allowedFormulations.includes(f.id)))
 const formulationId = ref('')

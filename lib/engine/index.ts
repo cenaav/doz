@@ -111,11 +111,16 @@ export function calculate(drug: Drug, regimenId: string, formulationId: string, 
     res.schedule = base.schedule?.map((s) => ({ ...s, perDay: r2(s.perDay), perDose: r2(s.perDose), mlPerDose: r2(toMl(s.perDose)), mlPerDoseRounded: roundMl(toMl(s.perDose)) }))
   } else {
     const t = capped.perDose / c.amount
+    const rounded = roundTablets(t, !!c.scored)
+    // A strength that cannot deliver the dose within 10% must not be shown as a dose.
+    if (rounded === 0 || Math.abs(rounded - t) / t > 0.1) {
+      res.blocks.push({ code: 'TABLET_ROUNDING', params: { exact: r2(t), rounded } })
+      const { perDose, perDay, dosesPerDay, intervalHours, ...rest } = res
+      return { ...rest, status: 'blocked', refs: uniqueRefs(refs) }
+    }
     res.tabletsPerDose = r2(t)
-    res.tabletsPerDoseRounded = roundTablets(t, !!c.scored)
+    res.tabletsPerDoseRounded = rounded
     res.tabletUnit = c.perUnit
-    if (res.tabletsPerDoseRounded === 0 || Math.abs(res.tabletsPerDoseRounded - t) / t > 0.1)
-      res.warnings.push({ code: 'TABLET_ROUNDING', params: { exact: r2(t), rounded: res.tabletsPerDoseRounded } })
     res.schedule = base.schedule?.map((s) => ({ ...s, perDay: r2(s.perDay), perDose: r2(s.perDose) }))
   }
   return done('ok')

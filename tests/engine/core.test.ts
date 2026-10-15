@@ -117,6 +117,11 @@ describe('input validation and safety', () => {
     const r = calculate(drug([{ type: 'fixed', dose: { perDose: 375, dosesPerDay: 2 } }], [tab]), 'r0', 't', { ageDays: yr(12), weightKg: 40 })
     expect(r).toMatchObject({ tabletsPerDose: 1.5, tabletsPerDoseRounded: 1.5 }); expect(r.mlPerDose).toBeUndefined()
   })
+  test('tablet strength that cannot deliver the dose (>10% off) blocks instead of showing a rounded count', () => {
+    const cap = { id: 'c', form: 'capsule', route: 'oral', label: '500', concentration: { amount: 500, unit: 'mg' as const, perUnit: 'capsule' as const }, markets: ['IR'], refs: R }
+    const r = calculate(drug([{ dose: { perKgPerDay: 45, dividedDoses: 2 } }], [cap]), 'r0', 'c', { ageDays: yr(2), weightKg: 12 })
+    expect(r.status).toBe('blocked'); expect(r.blocks[0].code).toBe('TABLET_ROUNDING'); expect(r.tabletsPerDoseRounded).toBeUndefined()
+  })
   test('refs collected from regimen, limits and formulation', () => {
     const r = calculate(drug([{ dose: { perKgPerDay: 30, dividedDoses: 3 } }]), 'r0', 'f', { ageDays: yr(2), weightKg: 12 })
     expect(r.refs.length).toBeGreaterThan(0)

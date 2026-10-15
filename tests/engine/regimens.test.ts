@@ -40,10 +40,13 @@ describe('titration with weight bands (risperidone-like)', () => {
   const d = drug([{ type: 'titration', dose: { dividedDoses: 1, weightBands: [
     { minWeightKg: 0, maxWeightKg: 20, start: 0.25, increment: 0.25, incrementEveryDays: 14, targetMin: 0.5, targetMax: 0.5, max: 1 },
     { minWeightKg: 20, maxWeightKg: null, start: 0.5, increment: 0.5, incrementEveryDays: 14, targetMin: 1, targetMax: 1, max: 2.5 },
-  ] } }], [tab])
+  ] } }], [tab, susp('sol', 1, 1)])
   test('<20 kg band', () => {
-    const r = calculate(d, 'r0', 't', { ageDays: yr(6), weightKg: 18 })
-    expect(r.titration).toMatchObject({ start: 0.25, max: 1 }); expect(r.perDose).toBe(0.25)
+    const r = calculate(d, 'r0', 'sol', { ageDays: yr(6), weightKg: 18 })
+    expect(r.titration).toMatchObject({ start: 0.25, max: 1 }); expect(r.perDose).toBe(0.25); expect(r.mlPerDose).toBe(0.25)
+  })
+  test('unscored 0.5 mg tablet cannot give a 0.25 mg start dose', () => {
+    expect(calculate(d, 'r0', 't', { ageDays: yr(6), weightKg: 18 }).blocks[0].code).toBe('TABLET_ROUNDING')
   })
   test('≥20 kg band', () => {
     expect(calculate(d, 'r0', 't', { ageDays: yr(9), weightKg: 20 }).titration!.start).toBe(0.5)
