@@ -29,7 +29,7 @@ It replaces the role of the earlier Saphira calculator (nameofstone.github.io/Sa
 ## 2. Stack and deployment
 
 - Nuxt 4 (Vue 3.5) in static generation mode (`nuxt generate`): every page is pre-rendered to real HTML at build time, so drug and disease pages are indexable by search engines and render before JS loads on phones.
-- `@nuxtjs/i18n` with URL prefixes `/fa/...` and `/en/...` (Persian default; `/` redirects by browser language). Each language version is its own indexable page with `hreflang` links.
+- `@nuxtjs/i18n` with `prefix_except_default` strategy: Persian at `/doz/...`, English at `/doz/en/...`. Each language version is its own indexable page with `hreflang` links.
 - Tailwind CSS 4 for styling: logical properties for RTL/LTR, `dark:` variant for themes, responsive breakpoints. No component library.
 - `@vite-pwa/nuxt` for offline use.
 - Fuse.js for fuzzy search (client side, index built at build time).
@@ -143,8 +143,9 @@ All human-readable text is bilingual: `{ "fa": "...", "en": "..." }`. A missing 
       "label": { "fa": "...", "en": "High-dose AOM" },
       "population": { "minAge": { "value": 2, "unit": "month" }, "maxAge": null, "minWeightKg": null, "maxWeightKg": null },
       "type": "weightBased",
-      "dose": { "mgPerKgPerDay": 90, "dividedDoses": 2 },
-      "limits": { "maxPerDoseMg": 2000, "maxPerDayMg": 4000 },
+      "unit": "mg",
+      "dose": { "perKgPerDay": 90, "dividedDoses": 2 },
+      "limits": { "maxPerDose": 2000, "maxPerDay": 4000, "refs": [ ... ] },
       "durationDays": { "min": 5, "max": 10 },
       "allowedFormulations": ["susp-400-5", "susp-250-5"],
       "refs": [ ... ],
@@ -166,22 +167,23 @@ All human-readable text is bilingual: `{ "fa": "...", "en": "..." }`. A missing 
   "examples": [
     { "regimen": "aom-high-dose", "formulation": "susp-400-5",
       "input": { "ageMonths": 24, "weightKg": 12 },
-      "expect": { "mgPerDose": 540, "mlPerDose": 6.75, "mlPerDoseRounded": 6.8, "dosesPerDay": 2 } }
+      "expect": { "perDose": 540, "mlPerDose": 6.75, "mlPerDoseRounded": 6.8, "dosesPerDay": 2 } }
   ]
 }
 ```
 
 #### Regimen types
 
+Dose numbers are in the regimen's `unit` (`mg`, `mcg`, `g`, `unit`, `mL`; default `mg`). A formulation's `concentration` always gives the amount of the dosed ingredient per volume (liquids) or per tablet/capsule.
+
 | type | dose fields | used for |
 |---|---|---|
-| `weightBased` | `mgPerKgPerDay` + `dividedDoses`, or `mgPerKgPerDose` + `intervalHours` | most pediatric drugs |
-| `fixed` | `mgPerDose` + `dosesPerDay` | adult/fixed dosing |
-| `ageBand` | `bands[]`: age range → `mgPerDose`, `dosesPerDay` | cetirizine, nitazoxanide… |
-| `titration` | `start`, `increment`, `incrementEvery`, `target`, `max` (each mg + per-day/per-dose), optional weight split | psychiatry (methylphenidate, risperidone, SSRIs…) |
-| `volumePerKg` | `mlPerKgPerDay` + `dividedDoses` | lactulose |
-| `bsa` | `mgPerM2PerDay` + `dividedDoses` (needs height) | selected drugs |
-| `loading` | day-specific doses (`days[]`) | azithromycin 5-day |
+| `weightBased` | `perKgPerDay` + `dividedDoses`, or `perKgPerDose` + `intervalHours` | most pediatric drugs; with `unit: "mL"` also volume-per-kg drugs (lactulose) |
+| `fixed` | `perDose` + `dosesPerDay` | adult/fixed dosing |
+| `ageBand` | `bands[]`: age range → `perDose`, `dosesPerDay` | cetirizine, nitazoxanide… |
+| `titration` | per-day `start`, `increment`, `incrementEveryDays`, `targetMin`, `targetMax`, `max`, `dividedDoses`; optional `weightBands` | psychiatry (methylphenidate, risperidone, SSRIs…) |
+| `bsa` | `perM2PerDay` + `dividedDoses` (needs height) | selected drugs |
+| `loading` | `days[]`: day range → `perKgPerDay`, `maxPerDay` | azithromycin 5-day |
 | `notCalculated` | `reason` (bilingual) + refs | codeine combos, OTC age-label drugs |
 
 A regimen may define `weightBands` instead of a single dose (e.g. risperidone in autism irritability: <20 kg vs ≥20 kg).
@@ -211,7 +213,7 @@ Rules:
 - Population check: patient must be inside regimen `population`; otherwise `blocked` with reason.
 - Age bands are inclusive-lower / exclusive-upper on `ageDays` to avoid gaps (Saphira's 1.9→2 gap bug).
 - mL rounding: <1 mL → 0.05 mL; 1–10 mL → 0.1 mL; >10 mL → 0.5 mL. The unrounded value is shown too.
-- Plausibility: weight outside the age's rough 1st–99th WHO/CDC percentile range → warning (not block). Weight > 150 kg or age > 120 y → `invalidInput`.
+- Plausibility: weight outside the age's rough 1st–99th WHO/CDC percentile range → warning (not block). Weight ≤ 0 or > 300 kg, or age < 0 or > 120 y → `invalidInput`.
 - eGFR (bedside Schwartz for <18 y: 0.413 × height / SCr) is computed only if height and creatinine are given; renal rules then trigger.
 
 ## 5. Reference display
@@ -231,7 +233,7 @@ Rules:
 
 ## 7. Pages
 
-All routes exist under `/fa/` and `/en/` and are pre-rendered.
+All routes exist in Persian (no prefix) and English (`/en` prefix) and are pre-rendered.
 
 | route | content |
 |---|---|
