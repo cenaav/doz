@@ -1,0 +1,297 @@
+{
+  "id": "avanafil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آوانافیل",
+    "en": "Avanafil"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "مهارکننده PDE5",
+    "en": "PDE5 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Stendra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "stendra",
+    "استندرا",
+    "آوانافیل",
+    "spedra"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-avanafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-avanafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-avanafil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ed",
+      "disease": "erectile-dysfunction",
+      "label": {
+        "fa": "اختلال نعوذ — ۱۰۰ mg حدود ۱۵ دقیقه پیش از فعالیت جنسی",
+        "en": "Erectile dysfunction — 100 mg about 15 min before sexual activity"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-avanafil",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 200,
+        "refs": [
+          {
+            "source": "fda-avanafil",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بسته به اثر ۵۰ تا ۲۰۰ mg؛ بیش از یک بار در روز نه.",
+            "en": "Adjust 50–200 mg; no more than once a day."
+          },
+          "refs": [
+            {
+              "source": "fda-avanafil",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "nitrates",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف هم‌زمان با هر نوع نیترات یا ریوسیگوات/وریسیگوات.",
+        "en": "Use with any organic nitrate or riociguat/vericiguat."
+      },
+      "refs": [
+        {
+          "source": "fda-avanafil",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ed",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G04BE10"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=avanafil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202276",
+      "label": "NDA202276"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fa7d93e3-b69b-4e02-8146-89760cd8e9d6",
+      "label": "FDA Stendra"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614010.html",
+      "label": "Avanafil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BE10",
+      "label": "G04BE10"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-avanafil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA202276"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary STENDRA is not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-avanafil",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary STENDRA is not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-avanafil",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "STENDRA is not indicated for use in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-avanafil",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "However, a greater sensitivity to medication in some older individuals should be considered [ s ee Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-avanafil",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility There have been no studies evaluating the effect of STENDRA on fertility in men [ see Clinical Pharmacology (12.2) ] Based on studies in animals, decreased fertility, abnormal sperm motility and morphology, and altered estrous cycles were observed in rats.",
+      "refs": [
+        {
+          "source": "fda-avanafil",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

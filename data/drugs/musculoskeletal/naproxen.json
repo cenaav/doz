@@ -85,6 +85,27 @@
           "section": "3"
         }
       ]
+    },
+    {
+      "id": "otc-220",
+      "form": "tablet",
+      "route": "oral",
+      "label": "220 mg naproxen sodium caplet (OTC; = 200 mg naproxen)",
+      "concentration": {
+        "amount": 220,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aleve",
+          "section": "Active ingredient"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -136,6 +157,11 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-250",
+        "tab-375",
+        "tab-500"
       ]
     },
     {
@@ -172,7 +198,12 @@
             "section": "2.4"
           }
         ]
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-375",
+        "tab-500"
+      ]
     },
     {
       "id": "arthritis",
@@ -213,6 +244,11 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-250",
+        "tab-375",
+        "tab-500"
       ]
     },
     {
@@ -253,6 +289,11 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-250",
+        "tab-375",
+        "tab-500"
       ]
     },
     {
@@ -299,6 +340,63 @@
             {
               "source": "fda-naproxen",
               "section": "2.3"
+            }
+          ]
+        }
+      ],
+      "allowedFormulations": [
+        "tab-250",
+        "tab-375",
+        "tab-500"
+      ]
+    },
+    {
+      "id": "otc-adult",
+      "disease": "toothache",
+      "label": {
+        "fa": "درد (از جمله دندان‌درد) — ۱۲ سال به بالا: ۱ قرص ۲۲۰ mg هر ۸ تا ۱۲ ساعت",
+        "en": "Pain incl. toothache — ≥12 y: 1 × 220 mg caplet every 8–12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 220,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-aleve",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 660,
+        "refs": [
+          {
+            "source": "fda-aleve",
+            "section": "Directions"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "otc-220"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول می‌تواند ۲ قرص در ساعت اول باشد؛ حداکثر ۲ قرص در هر ۸ تا ۱۲ ساعت و ۳ قرص در ۲۴ ساعت.",
+            "en": "First dose may be 2 caplets within the first hour; max 2 caplets in any 8–12 h and 3 caplets in 24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-aleve",
+              "section": "Directions"
             }
           ]
         }
@@ -412,6 +510,18 @@
       "expect": {
         "status": "blocked"
       }
+    },
+    {
+      "regimen": "otc-adult",
+      "formulation": "otc-220",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 220,
+        "tabletsPerDoseRounded": 1
+      }
     }
   ],
   "atc": [
@@ -523,8 +633,8 @@
     "pediatric": {
       "level": "caution",
       "text": {
-        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
-        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
       },
       "quote": "Safety and effectiveness in pediatric patients below the age of 2 years have not been established.",
       "refs": [

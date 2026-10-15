@@ -1,0 +1,319 @@
+{
+  "id": "magnesium-sulfate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سولفات منیزیم (تزریقی)",
+    "en": "Magnesium sulfate (injection)"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "الکترولیت / ضدتشنج اکلامپسی",
+    "en": "Electrolyte / anticonvulsant in eclampsia"
+  },
+  "brands": [
+    {
+      "name": "Magnesium sulfate 50%",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "magnesium sulfate",
+    "سولفات منیزیم",
+    "منیزیم سولفات",
+    "آمپول منیزیم"
+  ],
+  "formulations": [
+    {
+      "id": "syr-50",
+      "form": "injection",
+      "route": "im",
+      "label": "50% (500 mg/mL; 4 mEq/mL)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-magsulf",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mild",
+      "disease": "hypomagnesemia",
+      "label": {
+        "fa": "کمبود خفیف منیزیم — بزرگسال: ۱ گرم عضلانی هر ۶ ساعت (۴ دوز)",
+        "en": "Mild magnesium deficiency — adult: 1 g IM every 6 h for 4 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-magsulf",
+          "section": "Dosage — In Magnesium Deficiency"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۲ mL از محلول ۵۰٪. شدید: تا ۲۵۰ mg/kg عضلانی در ۴ ساعت، یا ۵ گرم در یک لیتر سرم طی ۳ ساعت. در کودکان پیش از عضلانی به ۲۰٪ یا کمتر رقیق شود.",
+            "en": "2 mL of the 50% solution. Severe: up to 250 mg/kg IM within 4 h, or 5 g in 1 L over 3 h. In children dilute to ≤20% before IM."
+          },
+          "refs": [
+            {
+              "source": "fda-magsulf",
+              "section": "Dosage — In Magnesium Deficiency"
+            },
+            {
+              "source": "fda-magsulf",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eclampsia",
+      "disease": "eclampsia",
+      "label": {
+        "fa": "پره‌اکلامپسی شدید / اکلامپسی — طبق پروتکل برچسب",
+        "en": "Severe pre-eclampsia / eclampsia — per label protocol"
+      },
+      "population": {},
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "دوز اولیه کل ۱۰ تا ۱۴ گرم: ۴ تا ۵ گرم وریدی + تا ۱۰ گرم عضلانی (۵ گرم در هر باسن)، سپس ۴ تا ۵ گرم عضلانی هر ۴ ساعت یا ۱ تا ۲ گرم در ساعت انفوزیون؛ حداکثر ۳۰ تا ۴۰ گرم در ۲۴ ساعت. رفلکس زانو و تنفس پایش شود.",
+          "en": "Total initial dose 10–14 g: 4–5 g IV + up to 10 g IM (5 g each buttock), then 4–5 g IM every 4 h or 1–2 g/h infusion; do not exceed 30–40 g in 24 h. Monitor patellar reflex and respiration."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-magsulf",
+          "section": "Dosage — In Pre-eclampsia or Eclampsia"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بلوک قلبی یا آسیب میوکارد (تزریقی).",
+        "en": "Heart block or myocardial damage (parenteral)."
+      },
+      "refs": [
+        {
+          "source": "fda-magsulf",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "مصرف مداوم بیش از ۵ تا ۷ روز در بارداری می‌تواند هیپوکلسمی و ناهنجاری استخوانی جنین بدهد. در نارسایی کلیه با احتیاط.",
+        "en": "Continuous use beyond 5–7 days in pregnancy can cause fetal hypocalcaemia and bone abnormalities. Use caution in renal impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-magsulf",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mild",
+      "formulation": "syr-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "mlPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "B05XA05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02484",
+        "en": "MAGNESIUM GLUCONATE 0.22MG TAB",
+        "fa": "قرص منیزیم گلوکونات ۰٫۲۲ میلی‌گرم"
+      },
+      {
+        "code": "00776",
+        "en": "MAGNESIUM GLUCONATE 500MG TAB",
+        "fa": "قرص منیزیم گلوکونات ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "15514",
+        "en": "MAGNESIUM LACTATE DIHYDRATE 4MG TAB",
+        "fa": "قرص منیزیم لاکتات دی‌هیدرات ۴ میلی‌گرم"
+      },
+      {
+        "code": "08272",
+        "en": "MAGNESIUM SULFATE 10% 10ML VIAL",
+        "fa": "ویال منیزیم سولفات ۱۰ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "17831",
+        "en": "MAGNESIUM SULFATE 10% 50ML BAG",
+        "fa": "منیزیم سولفات ۱۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00778",
+        "en": "MAGNESIUM SULFATE 10% 50ML VIAL",
+        "fa": "ویال منیزیم سولفات ۱۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "01337",
+        "en": "MAGNESIUM SULFATE 20 G POWDER",
+        "fa": "پودر منیزیم سولفات ۲۰ گرم"
+      },
+      {
+        "code": "08269",
+        "en": "MAGNESIUM SULFATE 20% 10ML VIAL",
+        "fa": "ویال منیزیم سولفات ۲۰ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "17832",
+        "en": "MAGNESIUM SULFATE 20% 50ML BAG",
+        "fa": "منیزیم سولفات ۲۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00779",
+        "en": "MAGNESIUM SULFATE 20% 50ML VIAL",
+        "fa": "ویال منیزیم سولفات ۲۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "03823",
+        "en": "MAGNESIUM SULFATE 50% 10ML VIAL",
+        "fa": "ویال منیزیم سولفات ۵۰ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "00780",
+        "en": "MAGNESIUM SULFATE 50% 50ML VIAL",
+        "fa": "ویال منیزیم سولفات ۵۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "51854",
+        "en": "MAGNESIUM SULFATE INJECTION PARENTERAL 10 % 50 mL",
+        "fa": "فرآورده تزریقی منیزیم سولفات ۱۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "22689",
+        "en": "MAGNESIUM SULFATE INJECTION PARENTERAL 50 % 50 mL",
+        "fa": "فرآورده تزریقی منیزیم سولفات ۵۰ درصد ۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2507/Magnesium-Sulfate",
+        "url": "https://www.darooyab.ir/G-2507/Magnesium-Sulfate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075151",
+      "label": "ANDA075151"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b5863a-efb9-4551-a9ad-2b06e8666d87",
+      "label": "FDA Mag. sulfate 50%"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B05XA05",
+      "label": "B05XA05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2507/Magnesium-Sulfate",
+      "label": "Magnesium-Sulfate"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-magsulf",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075151"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "(See WARNINGS and PRECAUTIONS )",
+      "refs": [
+        {
+          "source": "fda-magsulf",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Since magnesium is distributed into milk during parenteral magnesium sulfate administration, the drug should be used with caution in nursing women.",
+      "refs": [
+        {
+          "source": "fda-magsulf",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    }
+  }
+}

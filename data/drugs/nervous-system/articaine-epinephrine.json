@@ -1,0 +1,304 @@
+{
+  "id": "articaine-epinephrine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آرتیکائین + اپی‌نفرین (کارپول دندان‌پزشکی)",
+    "en": "Articaine with epinephrine (dental cartridge)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بی‌حس‌کننده موضعی دندان‌پزشکی",
+    "en": "Dental local anaesthetic"
+  },
+  "brands": [
+    {
+      "name": "Orabloc",
+      "market": "US"
+    },
+    {
+      "name": "Septocaine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "articaine",
+    "آرتیکائین",
+    "سپتوکائین",
+    "کارپول آرتیکائین",
+    "بی حسی دندان"
+  ],
+  "formulations": [
+    {
+      "id": "cart-100k",
+      "form": "injection",
+      "route": "im",
+      "label": "4% articaine + epinephrine 1:100,000 cartridge",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-articaine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cart-200k",
+      "form": "injection",
+      "route": "im",
+      "label": "4% articaine + epinephrine 1:200,000 cartridge",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-articaine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "max",
+      "disease": "local-anesthesia",
+      "label": {
+        "fa": "حداکثر دوز مجاز — ۷ mg/kg (بزرگسال و ۴ تا ۱۶ سال)",
+        "en": "Maximum dose — 7 mg/kg (adults and 4–16 y)"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 7,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-articaine",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "معادل ۰٫۱۷۵ mL/kg. دوز معمول: انفیلتراسیون ۰٫۵ تا ۲٫۵ mL؛ بلوک ۰٫۵ تا ۳٫۴ mL؛ جراحی دهان ۱ تا ۵٫۱ mL. عدد محاسبه‌شده سقف است.",
+            "en": "Equals 0.175 mL/kg. Usual: infiltration 0.5–2.5 mL; nerve block 0.5–3.4 mL; oral surgery 1–5.1 mL. The calculated value is the ceiling."
+          },
+          "refs": [
+            {
+              "source": "fda-articaine",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-articaine",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "sulfite",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سولفیت.",
+        "en": "Sulfite hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-articaine",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "lt4",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۴ سال ثابت نشده.",
+        "en": "Not established under 4 years."
+      },
+      "refs": [
+        {
+          "source": "fda-articaine",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "max",
+      "formulation": "cart-100k",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 140,
+        "mlPerDose": 3.5
+      }
+    },
+    {
+      "regimen": "max",
+      "formulation": "cart-100k",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 490,
+        "mlPerDose": 12.25
+      }
+    }
+  ],
+  "atc": [
+    "N01BB58"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52282",
+        "en": "ARTICAINE / EPINEPHRINE INJECTION PARENTERAL 4 %/0.001 % 1.7 mL",
+        "fa": "فرآورده تزریقی آرتیکائین / اپی‌نفرین ۴ درصد / ۰٫۰۰۱ درصد ۱٫۷ میلی‌لیتر"
+      },
+      {
+        "code": "52283",
+        "en": "ARTICAINE / EPINEPHRINE INJECTION PARENTERAL 4 %/0.002 % 1.7 mL",
+        "fa": "فرآورده تزریقی آرتیکائین / اپی‌نفرین ۴ درصد / ۰٫۰۰۲ درصد ۱٫۷ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4622/Articaine-Epinephrine",
+        "url": "https://www.darooyab.ir/G-4622/Articaine-Epinephrine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022466",
+      "label": "NDA022466"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=905cade1-9b37-486a-ac12-21f3262ab4e2",
+      "label": "FDA Orabloc (articaine)"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N01BB58",
+      "label": "N01BB58"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4622/Articaine-Epinephrine",
+      "label": "Articaine-Epinephrine"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-articaine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022466"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from postmarketing case reports over decades of clinical use with articaine and epinephrine during pregnancy have not identified any drug-associated risks of major birth defects, miscarriage, or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-articaine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of articaine with epinephrine in human milk, the effects on breastfed infants, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-articaine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of ORABLOC for local, infiltrative, or conductive anesthesia in both simple and complex dental procedures have been established in pediatric patients ages 4 to 16 years old.",
+      "refs": [
+        {
+          "source": "fda-articaine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In clinical trials, 54 patients between the ages of 65 and 75 years, and 11 patients 75 years and over received another product containing articaine and epinephrine 1:100,000.",
+      "refs": [
+        {
+          "source": "fda-articaine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

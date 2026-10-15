@@ -50,6 +50,27 @@
           "section": "Description"
         }
       ]
+    },
+    {
+      "id": "otc-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet (OTC)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-advil",
+          "section": "Active ingredient"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -108,6 +129,9 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "susp-100-5"
       ]
     },
     {
@@ -165,6 +189,9 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "susp-100-5"
       ]
     },
     {
@@ -222,6 +249,9 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "susp-100-5"
       ]
     },
     {
@@ -275,6 +305,9 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "susp-100-5"
       ]
     },
     {
@@ -383,6 +416,9 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "susp-100-5"
       ]
     },
     {
@@ -487,6 +523,61 @@
           "refs": [
             {
               "source": "fda-ibuprofen-otc",
+              "section": "Directions"
+            }
+          ]
+        }
+      ],
+      "allowedFormulations": [
+        "susp-100-5"
+      ]
+    },
+    {
+      "id": "otc-adult",
+      "disease": "toothache",
+      "label": {
+        "fa": "درد و تب (از جمله دندان‌درد) — ۱۲ سال به بالا: ۱ قرص ۲۰۰ mg هر ۴ تا ۶ ساعت",
+        "en": "Pain/fever incl. toothache — ≥12 y: 1 × 200 mg tablet every 4–6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-advil",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1200,
+        "refs": [
+          {
+            "source": "fda-advil",
+            "section": "Directions"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "otc-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر ۱ قرص کافی نبود ۲ قرص؛ حداکثر ۶ قرص در ۲۴ ساعت مگر به دستور پزشک.",
+            "en": "If 1 tablet is not enough, 2 tablets; max 6 tablets in 24 h unless directed by a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-advil",
               "section": "Directions"
             }
           ]
@@ -672,6 +763,18 @@
       "expect": {
         "perDose": 300,
         "mlPerDose": 15
+      }
+    },
+    {
+      "regimen": "otc-adult",
+      "formulation": "otc-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
       }
     }
   ],
@@ -899,8 +1002,8 @@
     "pediatric": {
       "level": "caution",
       "text": {
-        "fa": "برچسب ایمنی را فقط برای بعضی سنین کودکان تأیید کرده؛ سن را در متن برچسب ببینید.",
-        "en": "Label supports use only in some paediatric ages; check the age in the label text."
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
       },
       "quote": "Safety and effectiveness of ibuprofen in pediatric patients below the age of 6 months have not been established (see CLINICAL PHARMACOLOGY - Clinical Studies ).",
       "refs": [

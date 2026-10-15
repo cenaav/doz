@@ -5,7 +5,7 @@ import { applyLimits } from './caps'
 import { plausibilityWarnings } from './plausibility'
 import { baseDose } from './regimens'
 import { schwartzEgfr } from './renal'
-import { r2, roundMl, roundTablets } from './rounding'
+import { r2, rDose, roundMl, roundTablets } from './rounding'
 
 export interface Patient { ageDays: number; weightKg?: number; heightCm?: number; scrMgDl?: number }
 export interface Msg { code: string; text?: I18nText; refs?: Ref[]; params?: Record<string, string | number> }
@@ -98,8 +98,8 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
   const n = base.dosesPerDay!
   const capped = applyLimits(base.perDose!, n, p.weightKg ?? 0, reg.limits, unit)
   res.capsApplied = capped.hits
-  res.perDose = r2(capped.perDose)
-  res.perDay = r2(capped.perDay)
+  res.perDose = rDose(capped.perDose)
+  res.perDay = rDose(capped.perDay)
   res.dosesPerDay = r2(n)
   res.intervalHours = r2(reg.dose.intervalHours ?? 24 / n)
   res.durationDays = reg.durationDays ?? null
@@ -130,7 +130,7 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
     res.mlPerDose = r2(toMl(capped.perDose))
     res.mlPerDoseRounded = roundMl(toMl(capped.perDose))
     res.mlPerDay = r2(toMl(capped.perDay))
-    res.schedule = base.schedule?.map((s) => ({ ...s, perDay: r2(s.perDay), perDose: r2(s.perDose), mlPerDose: r2(toMl(s.perDose)), mlPerDoseRounded: roundMl(toMl(s.perDose)) }))
+    res.schedule = base.schedule?.map((s) => ({ ...s, perDay: rDose(s.perDay), perDose: rDose(s.perDose), mlPerDose: r2(toMl(s.perDose)), mlPerDoseRounded: roundMl(toMl(s.perDose)) }))
   } else {
     const t = capped.perDose / c.amount
     const rounded = roundTablets(t, !!c.scored)
@@ -143,7 +143,7 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
     res.tabletsPerDose = r2(t)
     res.tabletsPerDoseRounded = rounded
     res.tabletUnit = c.perUnit
-    res.schedule = base.schedule?.map((s) => ({ ...s, perDay: r2(s.perDay), perDose: r2(s.perDose) }))
+    res.schedule = base.schedule?.map((s) => ({ ...s, perDay: rDose(s.perDay), perDose: rDose(s.perDose) }))
   }
   return done('ok')
 }

@@ -1,0 +1,292 @@
+{
+  "id": "lidocaine-epinephrine-dental",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لیدوکائین + اپی‌نفرین (کارپول دندان‌پزشکی)",
+    "en": "Lidocaine with epinephrine (dental cartridge)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بی‌حس‌کننده موضعی دندان‌پزشکی",
+    "en": "Dental local anaesthetic"
+  },
+  "brands": [
+    {
+      "name": "Xylocaine Dental",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xylocaine dental",
+    "لیدوکائین اپی نفرین",
+    "کارپول",
+    "بی حسی دندان",
+    "آمپول دندان"
+  ],
+  "formulations": [
+    {
+      "id": "cart-100k",
+      "form": "injection",
+      "route": "im",
+      "label": "2% lidocaine + epinephrine 1:100,000, 1.7 mL cartridge (34 mg)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lidoepi",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cart-50k",
+      "form": "injection",
+      "route": "im",
+      "label": "2% lidocaine + epinephrine 1:50,000, 1.7 mL cartridge (34 mg)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lidoepi",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "max",
+      "disease": "local-anesthesia",
+      "label": {
+        "fa": "حداکثر دوز مجاز بزرگسال — ۷ mg/kg و زیر ۵۰۰ mg",
+        "en": "Adult maximum dose — 7 mg/kg and below 500 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 7,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lidoepi",
+          "section": "Dosage and Administration — Adult"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 500,
+        "refs": [
+          {
+            "source": "fda-lidoepi",
+            "section": "Dosage and Administration — Adult"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز معمول بلوک یا انفیلتراسیون: ۱ تا ۵ mL (نصف تا ۲٫۵ کارپول). عدد محاسبه‌شده سقف است.",
+            "en": "Usual infiltration/block: 1–5 mL (½–2½ cartridges). The calculated value is the ceiling."
+          },
+          "refs": [
+            {
+              "source": "fda-lidoepi",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "local-anesthesia",
+      "label": {
+        "fa": "کودک زیر ۱۰ سال — معمولاً حداکثر نصف کارپول برای یک دندان",
+        "en": "Child under 10 — usually no more than half a cartridge for one tooth"
+      },
+      "population": {
+        "maxAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: زیر ۱۰ سال به‌ندرت بیش از نصف کارپول (۰٫۹ تا ۱ mL یا ۱۸ تا ۲۰ mg) برای یک دندان لازم است؛ سقف با فرمول‌های کودکان (مثل Clark) تعیین شود.",
+          "en": "Label: under 10 years rarely more than half a cartridge (0.9–1 mL, 18–20 mg) per single tooth; maximum by a pediatric formula (e.g. Clark’s rule)."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-lidoepi",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بی‌حس‌کننده‌های آمیدی یا اجزای فرآورده.",
+        "en": "Hypersensitivity to amide local anaesthetics or any component."
+      },
+      "refs": [
+        {
+          "source": "fda-lidoepi",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "max",
+      "formulation": "cart-100k",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 490,
+        "mlPerDose": 24.5
+      }
+    }
+  ],
+  "atc": [
+    "N01BB52"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51485",
+        "en": "LIDOCAINE / EPINEPHRINE INJECTION PARENTERAL 20 mg/12.5 ug/1mL 1.8 mL",
+        "fa": "فرآورده تزریقی لیدوکائین / اپی‌نفرین ۲۰ میلی‌گرم / ۱۲٫۵ میکروگرم / ۱ میلی‌لیتر ۱٫۸ میلی‌لیتر"
+      },
+      {
+        "code": "52225",
+        "en": "LIDOCAINE / EPINEPHRINE INJECTION PARENTERAL 20 mg/10 ug/1mL 1.8 mL",
+        "fa": "فرآورده تزریقی لیدوکائین / اپی‌نفرین ۲۰ میلی‌گرم / ۱۰ میکروگرم / ۱ میلی‌لیتر ۱٫۸ میلی‌لیتر"
+      },
+      {
+        "code": "52226",
+        "en": "LIDOCAINE / EPINEPHRINE INJECTION PARENTERAL 20 mg/20 ug/1mL 1.8 mL",
+        "fa": "فرآورده تزریقی لیدوکائین / اپی‌نفرین ۲۰ میلی‌گرم / ۲۰ میکروگرم / ۱ میلی‌لیتر ۱٫۸ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4633/Lidocaine-Epinephrine",
+        "url": "https://www.darooyab.ir/G-4633/Lidocaine-Epinephrine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=088389",
+      "label": "ANDA088389"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14b55cf9-f7cd-4bb4-a7c5-aba61abadef1",
+      "label": "FDA Xylocaine Dental"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N01BB52",
+      "label": "N01BB52"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4633/Lidocaine-Epinephrine",
+      "label": "Lidocaine-Epinephrine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-lidoepi",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA088389"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Reproduction studies have been performed in rats at doses up to 6.6 times the human dose and have revealed no evidence of harm to the fetus caused by lidocaine.",
+      "refs": [
+        {
+          "source": "fda-lidoepi",
+          "section": "PREGNANCY"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when lidocaine is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-lidoepi",
+          "section": "Nursing mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Dosages in pediatric population should be reduced, commensurate with age, body weight and physical condition (See DOSAGE AND ADMINISTRATION ).",
+      "refs": [
+        {
+          "source": "fda-lidoepi",
+          "section": "Pediatric use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "id": "calcium-gluconate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گلوکونات کلسیم (تزریقی)",
+    "en": "Calcium gluconate (injection)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مکمل کلسیم تزریقی",
+    "en": "Parenteral calcium"
+  },
+  "brands": [
+    {
+      "name": "Calcium gluconate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "calcium gluconate",
+    "گلوکونات کلسیم",
+    "آمپول کلسیم"
+  ],
+  "formulations": [
+    {
+      "id": "bag-20",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/mL (1,000 mg/50 mL; 2,000 mg/100 mL) bag",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "neo",
+      "disease": "hypocalcemia",
+      "label": {
+        "fa": "هیپوکلسمی حاد — نوزاد: ۱۰۰ تا ۲۰۰ mg/kg بولوس",
+        "en": "Acute hypocalcaemia — neonate: 100–200 mg/kg bolus"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 100,
+        "perKgPerDayMax": 200,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "2.2, Table"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تکرار در صورت نیاز هر ۶ ساعت. سرعت بولوس در کودکان حداکثر ۱۰۰ mg/min.",
+            "en": "Repeat every 6 h if needed. Pediatric bolus rate max 100 mg/min."
+          },
+          "refs": [
+            {
+              "source": "fda-calgluc",
+              "section": "2.2, Table"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "hypocalcemia",
+      "label": {
+        "fa": "هیپوکلسمی حاد — ۱ ماه تا زیر ۱۷ سال: ۲۹ تا ۶۰ mg/kg بولوس",
+        "en": "Acute hypocalcaemia — 1 month to <17 y: 29–60 mg/kg bolus"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 29,
+        "perKgPerDayMax": 60,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "2.2, Table"
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "hypocalcemia",
+      "label": {
+        "fa": "هیپوکلسمی حاد — ۱۷ سال به بالا: ۱۰۰۰ تا ۲۰۰۰ mg بولوس",
+        "en": "Acute hypocalcaemia — ≥17 y: 1,000–2,000 mg bolus"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "perDoseMax": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "2.2, Table"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سرعت بولوس بزرگسال حداکثر ۲۰۰ mg/min؛ کلسیم سرم هر ۴ تا ۶ ساعت.",
+            "en": "Adult bolus rate max 200 mg/min; check serum calcium every 4–6 h."
+          },
+          "refs": [
+            {
+              "source": "fda-calgluc",
+              "section": "2.2, Table"
+            },
+            {
+              "source": "fda-calgluc",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "هیپرکلسمی؛ نوزاد ۲۸ روزه یا کمتر که سفتریاکسون می‌گیرد.",
+        "en": "Hypercalcaemia; neonates ≤28 days receiving ceftriaxone."
+      },
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "ceftriaxone",
+      "text": {
+        "fa": "با سفتریاکسون رسوب کشنده در نوزاد؛ هم‌زمان در یک خط نزنید.",
+        "en": "Fatal precipitates with ceftriaxone in neonates; do not co-administer in the same line."
+      },
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "with": "digoxin",
+      "text": {
+        "fa": "خطر آریتمی با دیگوکسین؛ پایش ECG.",
+        "en": "Arrhythmia risk with digoxin; monitor ECG."
+      },
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "7"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "neo",
+      "formulation": "bag-20",
+      "input": {
+        "ageDays": 10,
+        "weightKg": 3.5
+      },
+      "expect": {
+        "perDose": 350,
+        "mlPerDose": 17.5
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "bag-20",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 580,
+        "mlPerDose": 29
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "bag-20",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "mlPerDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "A12AA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07865",
+        "en": "CALCIUM ACETATE 667MG TAB",
+        "fa": "قرص کلسیم استات ۶۶۷ میلی‌گرم"
+      },
+      {
+        "code": "24140",
+        "en": "CALCIUM CARBONATE 500MG EFF TAB",
+        "fa": "قرص جوشان کلسیم کربنات ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00198",
+        "en": "CALCIUM CARBONATE 500MG TAB",
+        "fa": "قرص کلسیم کربنات ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02113",
+        "en": "CALCIUM CHLORIDE 100MG/ML 10ML AMP",
+        "fa": "آمپول کلسیم کلراید ۱۰۰ میلی‌گرم / میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "17570",
+        "en": "CALCIUM CHLORIDE 10ML OPH DROP",
+        "fa": "قطره چشمی کلسیم کلراید ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "11440",
+        "en": "CALCIUM CITRATE TAB",
+        "fa": "قرص کلسیم سیترات"
+      },
+      {
+        "code": "00199",
+        "en": "CALCIUM FORTE EFF TAB",
+        "fa": "قرص جوشان کلسیم فورت"
+      },
+      {
+        "code": "02415",
+        "en": "CALCIUM GLUCONATE 1 G EFF TAB",
+        "fa": "قرص جوشان کلسیم گلوکونات ۱ گرم"
+      },
+      {
+        "code": "00200",
+        "en": "CALCIUM GLUCONATE 10% 10ML AMP",
+        "fa": "آمپول کلسیم گلوکونات ۱۰ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "15397",
+        "en": "CALCIUM GLUCONATE 10% 10ML P-AMP",
+        "fa": "آمپول کلسیم گلوکونات ۱۰ درصد ۱۰ میلی‌لیتر–"
+      },
+      {
+        "code": "01417",
+        "en": "CALCIUM GLUCONATE 45MG TAB",
+        "fa": "قرص کلسیم گلوکونات ۴۵ میلی‌گرم"
+      },
+      {
+        "code": "00196",
+        "en": "CALCIUM SYRUP",
+        "fa": "شربت کلسیم"
+      },
+      {
+        "code": "03369",
+        "en": "CALCIUM-D SACHET",
+        "fa": "ساشه کلسیم–D"
+      },
+      {
+        "code": "00197",
+        "en": "CALCIUM-D TAB",
+        "fa": "قرص کلسیم–D"
+      },
+      {
+        "code": "50253",
+        "en": "CALCIUM CARBONATE TABLET ORAL 500 mg",
+        "fa": "قرص کلسیم کربنات ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2506/Calcium",
+        "url": "https://www.darooyab.ir/G-2506/Calcium"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210906",
+      "label": "NDA210906"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0deed071-d89d-420e-b4b4-797dce0ad8f0",
+      "label": "FDA Calcium gluconate"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625036.html",
+      "label": "Calcium Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A12AA03",
+      "label": "A12AA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2506/Calcium",
+      "label": "Calcium"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-calgluc",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA210906"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk summary Limited available data with Calcium Gluconate Injection use in pregnant women are insufficient to inform a drug associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk summary Calcium is present in human milk as a natural component of human milk.",
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Calcium Gluconate in Sodium Chloride Injection have been established in pediatric patients for the treatment of acute, symptomatic hypocalcemia.",
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general dose selection for an elderly patient should start at the lowest dose of the recommended dose range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-calgluc",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

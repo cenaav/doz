@@ -1,0 +1,339 @@
+{
+  "id": "dextrose-50",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دکستروز ۵۰٪ (سرم قندی)",
+    "en": "Dextrose 50% injection"
+  },
+  "category": "various",
+  "class": {
+    "fa": "کربوهیدرات تزریقی",
+    "en": "Parenteral carbohydrate"
+  },
+  "brands": [
+    {
+      "name": "Dextrose 50%",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "dextrose 50",
+    "D50",
+    "قند ۵۰",
+    "سرم قندی",
+    "گلوکز هایپرتونیک"
+  ],
+  "formulations": [
+    {
+      "id": "syr-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50% (0.5 g/mL), 25 g/50 mL syringe",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "g",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dextrose50",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hypo",
+      "disease": "hypoglycemia",
+      "label": {
+        "fa": "افت قند ناشی از انسولین — بزرگسال: ۱۰ تا ۲۵ گرم وریدی",
+        "en": "Insulin-induced hypoglycaemia — adult: 10–25 g IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "g",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-dextrose50",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۰ تا ۵۰ mL از محلول ۵۰٪. وریدی آهسته؛ محلول هایپرتونیک — خطر آسیب بافتی در نشت.",
+            "en": "20–50 mL of 50% solution. Slow IV; hypertonic — tissue injury if extravasated."
+          },
+          "refs": [
+            {
+              "source": "fda-dextrose50",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی داخل جمجمه یا نخاع؛ دلیریوم ترمنس با کم‌آبی.",
+        "en": "Intracranial or intraspinal haemorrhage; delirium tremens with dehydration."
+      },
+      "refs": [
+        {
+          "source": "fda-dextrose50",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hypo",
+      "formulation": "syr-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 20,
+        "upperPerDose": 25,
+        "upperMlPerDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "V06DC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "04858",
+        "en": "DEXTROSE 10% 0.5L INF P-BAG",
+        "fa": "محلول انفوزیون دکستروز ۱۰ درصد ۰٫۵ لیتر"
+      },
+      {
+        "code": "00411",
+        "en": "DEXTROSE 10% 0.5L INF P-BOTTLE",
+        "fa": "محلول انفوزیون دکستروز ۱۰ درصد ۰٫۵ لیتر"
+      },
+      {
+        "code": "04857",
+        "en": "DEXTROSE 10% 1L INF P-BAG",
+        "fa": "محلول انفوزیون دکستروز ۱۰ درصد ۱ لیتر"
+      },
+      {
+        "code": "00410",
+        "en": "DEXTROSE 10% 1L INF P-BOTTLE",
+        "fa": "محلول انفوزیون دکستروز ۱۰ درصد ۱ لیتر"
+      },
+      {
+        "code": "10083",
+        "en": "DEXTROSE 10% 250ML P-BOTTLE",
+        "fa": "دکستروز ۱۰ درصد ۲۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "02038",
+        "en": "DEXTROSE 20% 0.5L INF",
+        "fa": "محلول انفوزیون دکستروز ۲۰ درصد ۰٫۵ لیتر"
+      },
+      {
+        "code": "02763",
+        "en": "DEXTROSE 20% 10ML VIAL",
+        "fa": "ویال دکستروز ۲۰ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "02039",
+        "en": "DEXTROSE 20% 1L INF",
+        "fa": "محلول انفوزیون دکستروز ۲۰ درصد ۱ لیتر"
+      },
+      {
+        "code": "15951",
+        "en": "DEXTROSE 20% 50ML P-BAG",
+        "fa": "دکستروز ۲۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00412",
+        "en": "DEXTROSE 20% 50ML VIAL",
+        "fa": "ویال دکستروز ۲۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "04861",
+        "en": "DEXTROSE 5% 0.5L INF P-BAG",
+        "fa": "محلول انفوزیون دکستروز ۵ درصد ۰٫۵ لیتر"
+      },
+      {
+        "code": "00414",
+        "en": "DEXTROSE 5% 0.5L INF P-BOTTLE",
+        "fa": "محلول انفوزیون دکستروز ۵ درصد ۰٫۵ لیتر"
+      },
+      {
+        "code": "02428",
+        "en": "DEXTROSE 5% 100ML INF",
+        "fa": "محلول انفوزیون دکستروز ۵ درصد ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "04860",
+        "en": "DEXTROSE 5% 1L INF P-BAG",
+        "fa": "محلول انفوزیون دکستروز ۵ درصد ۱ لیتر"
+      },
+      {
+        "code": "00413",
+        "en": "DEXTROSE 5% 1L INF P-BOTTLE",
+        "fa": "محلول انفوزیون دکستروز ۵ درصد ۱ لیتر"
+      },
+      {
+        "code": "06425",
+        "en": "DEXTROSE 5% 250ML INF P-BOTTLE",
+        "fa": "محلول انفوزیون دکستروز ۵ درصد ۲۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "02037",
+        "en": "DEXTROSE 50% 0.5L INF P-BAG",
+        "fa": "محلول انفوزیون دکستروز ۵۰ درصد ۰٫۵ لیتر"
+      },
+      {
+        "code": "19704",
+        "en": "DEXTROSE 50% 200ML INF P-BAG",
+        "fa": "محلول انفوزیون دکستروز ۵۰ درصد ۲۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "20011",
+        "en": "DEXTROSE 50% 400ML INF P-BAG",
+        "fa": "محلول انفوزیون دکستروز ۵۰ درصد ۴۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "07863",
+        "en": "DEXTROSE 50% 500ML INF P-BOTTLE",
+        "fa": "محلول انفوزیون دکستروز ۵۰ درصد ۵۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "15952",
+        "en": "DEXTROSE 50% 50ML P-BAG",
+        "fa": "دکستروز ۵۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00415",
+        "en": "DEXTROSE 50% 50ML VIAL",
+        "fa": "ویال دکستروز ۵۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "52251",
+        "en": "DEXTROSE INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 50 % 200 mL",
+        "fa": "فرآورده تزریقی دکستروز ۵۰ درصد ۲۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52252",
+        "en": "DEXTROSE INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 50 % 400 mL",
+        "fa": "فرآورده تزریقی دکستروز ۵۰ درصد ۴۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "05746",
+        "en": "DEXTROSE INJECTION, SOLUTION INTRAVENOUS 5 % 500 mL",
+        "fa": "فرآورده تزریقی دکستروز ۵ درصد ۵۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52253",
+        "en": "DEXTROSE INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 50 % 500 mL",
+        "fa": "فرآورده تزریقی دکستروز ۵۰ درصد ۵۰۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4620/Dextrose-INF",
+        "url": "https://www.darooyab.ir/G-4620/Dextrose-INF"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019445",
+      "label": "NDA019445"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=763b1cb8-1151-5f59-e053-2991aa0a4e01",
+      "label": "FDA Dextrose 50% inj."
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V06DC01",
+      "label": "V06DC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4620/Dextrose-INF",
+      "label": "Dextrose-INF"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-dextrose50",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019445"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Category C Animal reproduction studies have not been conducted with dextrose.",
+      "refs": [
+        {
+          "source": "fda-dextrose50",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when 50% Dextrose Injection, USP is administered to a nursing mother.",
+      "refs": [
+        {
+          "source": "fda-dextrose50",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    }
+  }
+}

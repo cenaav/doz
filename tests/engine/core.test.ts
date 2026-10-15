@@ -142,3 +142,13 @@ describe('weight optional when the regimen does not need it', () => {
     expect(calculate(pw, 'r0', 'f', { ageDays: yr(30) }).blocks[0].code).toBe('NEED_WEIGHT')
   })
 })
+
+describe('small doses keep their precision', () => {
+  test('rDose keeps 3 significant figures below 1 and 2 decimals above', async () => {
+    const { rDose } = await import('../../lib/engine/rounding')
+    expect(rDose(0.035)).toBe(0.035)
+    expect(rDose(0.0123)).toBe(0.0123)
+    expect(rDose(2.456)).toBe(2.46)
+    expect(rDose(250)).toBe(250)
+  })
+})

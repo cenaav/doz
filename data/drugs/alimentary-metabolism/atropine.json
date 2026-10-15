@@ -1,0 +1,413 @@
+{
+  "id": "atropine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آتروپین (تزریقی)",
+    "en": "Atropine (injection)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتی‌کولینرژیک",
+    "en": "Anticholinergic (antimuscarinic)"
+  },
+  "brands": [
+    {
+      "name": "Atropine sulfate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "atropine",
+    "آتروپین",
+    "آمپول آتروپین"
+  ],
+  "formulations": [
+    {
+      "id": "syr-0-1",
+      "form": "injection",
+      "route": "iv",
+      "label": "0.1 mg/mL prefilled syringe",
+      "concentration": {
+        "amount": 0.1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-atropine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "syr-0-05",
+      "form": "injection",
+      "route": "iv",
+      "label": "0.05 mg/mL prefilled syringe",
+      "concentration": {
+        "amount": 0.05,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-atropine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "antivagal",
+      "disease": "bradycardia",
+      "label": {
+        "fa": "برادی‌کاردی / اثر ضدواگ — بزرگسال: ۰٫۵ تا ۱ mg وریدی",
+        "en": "Bradycardia / antivagal — adult: 0.5–1 mg IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "perDoseMax": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-atropine",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تکرار هر ۱ تا ۲ ساعت؛ بر اساس ضربان، فاصله PR، فشار و علائم تیتر شود. در بیماری عروق کرونر کل دوز به ۰٫۰۳ تا ۰٫۰۴ mg/kg محدود شود.",
+            "en": "Repeat every 1–2 h; titrate to heart rate, PR interval, blood pressure and symptoms. In coronary artery disease limit total dose to 0.03–0.04 mg/kg."
+          },
+          "refs": [
+            {
+              "source": "fda-atropine",
+              "section": "2.2, Table 1"
+            },
+            {
+              "source": "fda-atropine",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "op",
+      "disease": "organophosphate-poisoning",
+      "label": {
+        "fa": "مسمومیت ارگانوفسفره / قارچ — بزرگسال: ۲ تا ۳ mg وریدی",
+        "en": "Organophosphate / mushroom poisoning — adult: 2–3 mg IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "perDoseMax": 3,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-atropine",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۲۰ تا ۳۰ دقیقه تکرار تا رفع علائم موسکارینی.",
+            "en": "Repeat every 20–30 min until muscarinic signs resolve."
+          },
+          "refs": [
+            {
+              "source": "fda-atropine",
+              "section": "2.2, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "bradycardia",
+      "label": {
+        "fa": "کودکان — دوز اولیه معمول ۰٫۰۱ تا ۰٫۰۳ mg/kg وریدی",
+        "en": "Children — usual initial dose 0.01–0.03 mg/kg IV"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.01,
+        "perKgPerDayMax": 0.03,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-atropine",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "برچسب: دوز کودکان خوب مطالعه نشده؛ بر اساس پاسخ تیتر شود.",
+            "en": "Label: pediatric dosing has not been well studied; titrate to response."
+          },
+          "refs": [
+            {
+              "source": "fda-atropine",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "none",
+      "severity": "warn",
+      "text": {
+        "fa": "برچسب منع مصرف مطلق ذکر نکرده؛ هشدار در گلوکوم زاویه بسته، انسداد خروجی ادرار و بیماری کرونر.",
+        "en": "Label lists no absolute contraindication; caution in angle-closure glaucoma, urinary outflow obstruction and coronary disease."
+      },
+      "refs": [
+        {
+          "source": "fda-atropine",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "antivagal",
+      "formulation": "syr-0-1",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "op",
+      "formulation": "syr-0-1",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "mlPerDose": 20
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "syr-0-1",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 0.2,
+        "mlPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "A03BA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01398",
+        "en": "ATROPINE SULFATE 0.5MG TAB",
+        "fa": "قرص آتروپین سولفات ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "00119",
+        "en": "ATROPINE SULFATE 0.5MG/1ML AMP",
+        "fa": "آمپول آتروپین سولفات ۰٫۵ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "10449",
+        "en": "ATROPINE SULFATE 0.5MG/1ML PREFILLED SYRINGE",
+        "fa": "سرنگ از پیش پرشده آتروپین سولفات ۰٫۵ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01397",
+        "en": "ATROPINE SULFATE 10MG/10ML AMP",
+        "fa": "آمپول آتروپین سولفات ۱۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "16785",
+        "en": "ATROPINE SULFATE 10MG/ML AMP",
+        "fa": "آمپول آتروپین سولفات ۱۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "17215",
+        "en": "ATROPINE SULFATE 1MG/1ML AMP",
+        "fa": "آمپول آتروپین سولفات ۱ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "02025",
+        "en": "ATROPINE SULFATE 20MG/2ML AMP",
+        "fa": "آمپول آتروپین سولفات ۲۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "11605",
+        "en": "ATROPINE SULFATE 2MG/0.8ML PREFILLED SYRINGE",
+        "fa": "سرنگ از پیش پرشده آتروپین سولفات ۲ میلی‌گرم / ۰٫۸ میلی‌لیتر"
+      },
+      {
+        "code": "52000",
+        "en": "ATROPINE SULFATE INJECTION PARENTERAL 10 mg/1mL 2 mL",
+        "fa": "فرآورده تزریقی آتروپین سولفات ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-866/Atropine",
+        "url": "https://www.darooyab.ir/G-866/Atropine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021146",
+      "label": "NDA021146"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ad8916e7-206e-409e-2582-30d072845dd4",
+      "label": "FDA Atropine inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682487.html",
+      "label": "Atropine Ophthalmic"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A03BA01",
+      "label": "A03BA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-866/Atropine",
+      "label": "Atropine"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-atropine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021146"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are risks to the mother and fetus associated with untreated severe or life-threatening muscarinic events (see Clinical Considerations ) .",
+      "refs": [
+        {
+          "source": "fda-atropine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Trace amounts of atropine have been reported in human milk.",
+      "refs": [
+        {
+          "source": "fda-atropine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Recommendations for use in pediatric patients are not based on clinical trials.",
+      "refs": [
+        {
+          "source": "fda-atropine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-atropine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

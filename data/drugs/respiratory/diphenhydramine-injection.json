@@ -1,0 +1,359 @@
+{
+  "id": "diphenhydramine-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیفن‌هیدرامین (تزریقی)",
+    "en": "Diphenhydramine (injection)"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌هیستامین نسل اول",
+    "en": "First-generation antihistamine"
+  },
+  "brands": [
+    {
+      "name": "Benadryl injection",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "diphenhydramine injection",
+    "آمپول دیفن هیدرامین",
+    "بنادریل تزریقی"
+  ],
+  "formulations": [
+    {
+      "id": "vial-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mg/mL vial",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diphenhydramineinj",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "acute-allergic-reaction",
+      "label": {
+        "fa": "بزرگسال — ۱۰ تا ۵۰ mg وریدی یا عضلانی عمیق",
+        "en": "Adult — 10–50 mg IV or deep IM"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-diphenhydramineinj",
+          "section": "Dosage and Administration — Adults"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 400,
+        "refs": [
+          {
+            "source": "fda-diphenhydramineinj",
+            "section": "Dosage and Administration — Adults"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۱۰۰ mg؛ حداکثر ۴۰۰ mg در روز؛ وریدی حداکثر ۲۵ mg/min.",
+            "en": "100 mg if required; max 400 mg/day; IV no faster than 25 mg/min."
+          },
+          "refs": [
+            {
+              "source": "fda-diphenhydramineinj",
+              "section": "Dosage and Administration — Adults"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "acute-allergic-reaction",
+      "label": {
+        "fa": "کودک (غیر از نوزاد و نارس) — ۵ mg/kg/روز در ۴ دوز",
+        "en": "Child (not neonate/premature) — 5 mg/kg/day in 4 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 5,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-diphenhydramineinj",
+          "section": "Dosage and Administration — Pediatric Patients"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 300,
+        "refs": [
+          {
+            "source": "fda-diphenhydramineinj",
+            "section": "Dosage and Administration — Pediatric Patients"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "neo",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "نوزاد و نارس.",
+        "en": "Neonates and premature infants."
+      },
+      "refs": [
+        {
+          "source": "fda-diphenhydramineinj",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "nursing",
+      "severity": "warn",
+      "text": {
+        "fa": "مادران شیرده.",
+        "en": "Nursing mothers."
+      },
+      "refs": [
+        {
+          "source": "fda-diphenhydramineinj",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دیفن‌هیدرامین.",
+        "en": "Hypersensitivity to diphenhydramine."
+      },
+      "refs": [
+        {
+          "source": "fda-diphenhydramineinj",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "upperPerDose": 50,
+        "upperMlPerDose": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 25,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "R06AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18777",
+        "en": "DIPHENHYDRAMINE 25MG SOFT GEL CAP",
+        "fa": "کپسول نرم دیفن‌هیدرامین ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00454",
+        "en": "DIPHENHYDRAMINE HCL 12.5MG/5ML 60ML ELIXIR",
+        "fa": "الگزیر دیفن‌هیدرامین هیدروکلراید ۱۲٫۵ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "12558",
+        "en": "DIPHENHYDRAMINE HCL 20MG/2ML  INJ",
+        "fa": "فرآورده تزریقی دیفن‌هیدرامین هیدروکلراید ۲۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "00455",
+        "en": "DIPHENHYDRAMINE HCL 25MG TAB",
+        "fa": "قرص دیفن‌هیدرامین هیدروکلراید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "01475",
+        "en": "DIPHENHYDRAMINE HCL 50MG TAB",
+        "fa": "قرص دیفن‌هیدرامین هیدروکلراید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00453",
+        "en": "DIPHENHYDRAMINE HCL 50MG/1ML AMP",
+        "fa": "آمپول دیفن‌هیدرامین هیدروکلراید ۵۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "51885",
+        "en": "DIPHENHYDRAMINE HYDROCHLORIDE SOLUTION ORAL 12.5 mg/5mL 120 mL",
+        "fa": "محلول خوراکی دیفن‌هیدرامین هیدروکلراید ۱۲٫۵ میلی‌گرم / ۵ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-792/Diphenhydramine",
+        "url": "https://www.darooyab.ir/G-792/Diphenhydramine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=080817",
+      "label": "ANDA080817"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5af2dd2-cc91-46c7-bdb9-97a7cdddcb69",
+      "label": "FDA Diphenhydramine inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682539.html",
+      "label": "Diphenhydramine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616038.html",
+      "label": "Diphenhydramine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R06AA02",
+      "label": "R06AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-792/Diphenhydramine",
+      "label": "Diphenhydramine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-diphenhydramineinj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA080817"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects—Pregnancy Category B Reproduction studies have been performed in rats and rabbits at doses up to 5 times the human dose and have revealed no evidence of impaired fertility or harm to the fetus due to diphenhydramine hydrochloride.",
+      "refs": [
+        {
+          "source": "fda-diphenhydramineinj",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در شیردهی منع مصرف دارد.",
+        "en": "Label: contraindicated while breastfeeding."
+      },
+      "quote": "Use in Nursing Mothers Because of the higher risk of antihistamines for infants generally, and for neonates and prematures in particular, antihistamine therapy is contraindicated in nursing mothers.",
+      "refs": [
+        {
+          "source": "fda-diphenhydramineinj",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Diphenhydramine should not be used in neonates and premature infants (see CONTRAINDICATIONS ).",
+      "refs": [
+        {
+          "source": "fda-diphenhydramineinj",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

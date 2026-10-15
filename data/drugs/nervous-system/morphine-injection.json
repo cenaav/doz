@@ -1,0 +1,341 @@
+{
+  "id": "morphine-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مرفین (تزریقی)",
+    "en": "Morphine (injection)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "اپیوئید",
+    "en": "Opioid analgesic"
+  },
+  "brands": [
+    {
+      "name": "Morphine sulfate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "morphine",
+    "مرفین",
+    "مورفین",
+    "آمپول مرفین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-4",
+      "form": "injection",
+      "route": "iv",
+      "label": "4 mg/mL single-dose vial (IV)",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "iv",
+      "disease": "severe-pain",
+      "label": {
+        "fa": "درد شدید — بزرگسال: ۰٫۱ تا ۰٫۲ mg/kg وریدی هر ۴ ساعت در صورت نیاز",
+        "en": "Severe pain — adult: 0.1–0.2 mg/kg IV every 4 h as needed"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.1,
+        "perKgPerDoseMax": 0.2,
+        "intervalHours": 4
+      },
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "آهسته تزریق شود؛ در سالمندان و ناتوان از دوز پایین شروع شود.",
+            "en": "Inject slowly; start low in elderly or debilitated patients."
+          },
+          "refs": [
+            {
+              "source": "fda-morphineinj",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "دپرسیون تنفسی قابل توجه؛ آسم حاد یا شدید بدون پایش؛ انسداد گوارشی شامل ایلئوس؛ مصرف مهارکننده MAO در ۱۴ روز اخیر؛ حساسیت.",
+        "en": "Significant respiratory depression; acute/severe asthma without monitoring; GI obstruction including ileus; MAO inhibitor within 14 days; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "در زیر ۱۸ سال ایمنی و اثربخشی ثابت نشده.",
+        "en": "Safety and effectiveness below 18 years not established."
+      },
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: اعتیاد و سوءمصرف، دپرسیون تنفسی کشنده، سندرم ترک نوزادی، و خطر مرگ با بنزودیازپین‌ها یا سایر داروهای آرام‌بخش.",
+        "en": "Boxed warning: addiction and misuse, life-threatening respiratory depression, neonatal opioid withdrawal syndrome, and risk of death with benzodiazepines or other CNS depressants."
+      },
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "benzodiazepines",
+      "text": {
+        "fa": "با بنزودیازپین‌ها و سایر آرام‌بخش‌ها: آرام‌بخشی شدید، دپرسیون تنفسی، کما و مرگ.",
+        "en": "With benzodiazepines and other CNS depressants: profound sedation, respiratory depression, coma and death."
+      },
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "iv",
+      "formulation": "vial-4",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 7,
+        "mlPerDose": 1.75,
+        "upperPerDose": 14
+      }
+    }
+  ],
+  "atc": [
+    "N02AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "12225",
+        "en": "MORPHINE 10MG SUPP",
+        "fa": "شیاف مورفین ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "01597",
+        "en": "MORPHINE HCL 0.2MG/1ML EPIDURAL AMP",
+        "fa": "آمپول مورفین هیدروکلراید ۰٫۲ میلی‌گرم / ۱ میلی‌لیتر اپیدورال"
+      },
+      {
+        "code": "01598",
+        "en": "MORPHINE HCL 0.4MG/1ML EPIDURAL AMP",
+        "fa": "آمپول مورفین هیدروکلراید ۰٫۴ میلی‌گرم / ۱ میلی‌لیتر اپیدورال"
+      },
+      {
+        "code": "00865",
+        "en": "MORPHINE HCL 10MG/1ML AMP",
+        "fa": "آمپول مورفین هیدروکلراید ۱۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00866",
+        "en": "MORPHINE HCL 20MG/1ML AMP",
+        "fa": "آمپول مورفین هیدروکلراید ۲۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01599",
+        "en": "MORPHINE SULFATE 10MG TAB",
+        "fa": "قرص مورفین سولفات ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "01600",
+        "en": "MORPHINE SULFATE 10MG/1ML AMP",
+        "fa": "آمپول مورفین سولفات ۱۰ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-135/Morphine",
+        "url": "https://www.darooyab.ir/G-135/Morphine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205758",
+      "label": "ANDA205758"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9362eca1-2bc9-4f72-8895-0b9179bfeb2b",
+      "label": "FDA Morphine inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682133.html",
+      "label": "Morphine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601161.html",
+      "label": "Morphine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02AA01",
+      "label": "N02AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-135/Morphine",
+      "label": "Morphine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-morphineinj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA205758"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Neonatal Opioid Withdrawal Syndrome (NOWS) Advise pregnant women using opioids for an extended period of time of the risk of Neonatal Opioid Withdrawal Syndrome, which may be life-threatening if not recognized and treated.",
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Morphine is present in breast milk.",
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of morphine sulfate injection in pediatric patients below the age of 18 have not been established.",
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, use caution when selecting a dosage for an elderly patient, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Use of opioids for an extended period of time may cause reduced fertility in females and males of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-morphineinj",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

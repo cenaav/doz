@@ -1,0 +1,304 @@
+{
+  "id": "midazolam-nasal",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "میدازولام اسپری بینی",
+    "en": "Midazolam nasal spray"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بنزودیازپین (ضدتشنج اورژانسی)",
+    "en": "Benzodiazepine (rescue anticonvulsant)"
+  },
+  "brands": [
+    {
+      "name": "Nayzilam",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nayzilam",
+    "midazolam",
+    "میدازولام",
+    "اسپری تشنج"
+  ],
+  "formulations": [
+    {
+      "id": "spray-5",
+      "form": "nasal-spray",
+      "route": "nasal",
+      "label": "5 mg/0.1 mL single-dose nasal spray",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "spray"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nayzilam",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cluster",
+      "disease": "status-epilepticus",
+      "label": {
+        "fa": "تشنج خوشه‌ای — ۱۲ سال به بالا: یک پاف ۵ mg در یک سوراخ بینی",
+        "en": "Seizure cluster — ≥12 y: one 5 mg spray in one nostril"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nayzilam",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-nayzilam",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پس از ۱۰ دقیقه پاسخ نبود، یک پاف دیگر در سوراخ دیگر. بیش از ۲ دوز برای یک حمله نه؛ حداکثر یک حمله هر ۳ روز و ۵ حمله در ماه.",
+            "en": "If no response after 10 min, one more spray in the other nostril. No more than 2 doses per cluster; no more than one cluster every 3 days and 5 per month."
+          },
+          "refs": [
+            {
+              "source": "fda-nayzilam",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به میدازولام؛ گلوکوم زاویه بسته حاد.",
+        "en": "Hypersensitivity to midazolam; acute narrow-angle glaucoma."
+      },
+      "refs": [
+        {
+          "source": "fda-nayzilam",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "lt12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال در برچسب نیست.",
+        "en": "Not labelled under 12 years."
+      },
+      "refs": [
+        {
+          "source": "fda-nayzilam",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: با اپیوئیدها دپرسیون تنفسی و مرگ؛ سوءمصرف و وابستگی.",
+        "en": "Boxed warning: with opioids respiratory depression and death; abuse and dependence."
+      },
+      "refs": [
+        {
+          "source": "fda-nayzilam",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cluster",
+      "formulation": "spray-5",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "N05CD08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17001",
+        "en": "MIDAZOLAM 2.5MG/ML 100ML SYRUP",
+        "fa": "شربت میدازولام ۲٫۵ میلی‌گرم / میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "01591",
+        "en": "MIDAZOLAM HCL 15MG/3ML AMP",
+        "fa": "آمپول میدازولام هیدروکلراید ۱۵ میلی‌گرم / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "02010",
+        "en": "MIDAZOLAM HCL 2MG/ML SYRUP",
+        "fa": "شربت میدازولام هیدروکلراید ۲ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "00852",
+        "en": "MIDAZOLAM HCL 5MG/1ML AMP",
+        "fa": "آمپول میدازولام هیدروکلراید ۵ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "17231",
+        "en": "MIDAZOLAM MALEATE 50MG/5ML BUCCAL LIQUID",
+        "fa": "مایع میدازولام مالئات ۵۰ میلی‌گرم / ۵ میلی‌لیتر بوککال"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1307/Midazolam",
+        "url": "https://www.darooyab.ir/G-1307/Midazolam"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211321",
+      "label": "NDA211321"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2b29422e-54d5-4a49-8522-e9cf752368c3",
+      "label": "FDA Nayzilam"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a621044.html",
+      "label": "Midazolam Nasal Spray"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05CD08",
+      "label": "N05CD08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1307/Midazolam",
+      "label": "Midazolam"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-nayzilam",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA211321"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Neonates born to mothers using benzodiazepines late in pregnancy have been reported to experience symptoms of sedation and/or neonatal withdrawal [see Warnings and Precautions (5.9) and Clinical Considerations ].",
+      "refs": [
+        {
+          "source": "fda-nayzilam",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Midazolam is excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-nayzilam",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness in pediatric patients below the age of 12 years have not been established.",
+      "refs": [
+        {
+          "source": "fda-nayzilam",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… ciated with rare reports of death under circumstances compatible with cardiorespiratory depression [see Warnings and Precautions (5.4) ].",
+      "refs": [
+        {
+          "source": "fda-nayzilam",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

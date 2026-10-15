@@ -1,0 +1,293 @@
+{
+  "id": "mepivacaine-dental",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مپیواکائین (کارپول دندان‌پزشکی)",
+    "en": "Mepivacaine (dental cartridge)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بی‌حس‌کننده موضعی دندان‌پزشکی",
+    "en": "Dental local anaesthetic"
+  },
+  "brands": [
+    {
+      "name": "Polocaine Dental",
+      "market": "US"
+    },
+    {
+      "name": "Carbocaine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mepivacaine",
+    "مپیواکائین",
+    "کاربوکائین",
+    "اسکاندونست",
+    "بی حسی بدون اپی نفرین"
+  ],
+  "formulations": [
+    {
+      "id": "cart-3",
+      "form": "injection",
+      "route": "im",
+      "label": "3% (30 mg/mL) 1.7 mL cartridge (51 mg)",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mepivacaine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "max",
+      "disease": "local-anesthesia",
+      "label": {
+        "fa": "حداکثر دوز بزرگسال — ۳ mg به ازای هر پوند (حدود ۶٫۶ mg/kg)، حداکثر ۴۰۰ mg",
+        "en": "Adult maximum — 3 mg per lb (about 6.6 mg/kg), max 400 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 6.6,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mepivacaine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 400,
+        "refs": [
+          {
+            "source": "fda-mepivacaine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۳ mg/lb به ۶٫۶ mg/kg تبدیل شده است. معمولاً ۵٫۳ کارپول (۲۷۰ mg از ۳٪) برای کل دهان کافی است.",
+            "en": "3 mg/lb converted to 6.6 mg/kg. About 5.3 cartridges (270 mg of 3%) usually anaesthetise the whole mouth."
+          },
+          "refs": [
+            {
+              "source": "fda-mepivacaine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "local-anesthesia",
+      "label": {
+        "fa": "کودکان — فرمول برچسب",
+        "en": "Children — label formula"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: حداکثر دوز کودک = وزن (پوند) × ۴۰۰ ÷ ۱۵۰ mg؛ جدول برچسب را ببینید.",
+          "en": "Label: maximum pediatric dose = weight (lb) × 400 ÷ 150 mg; see the label table."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-mepivacaine",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بی‌حس‌کننده‌های آمیدی.",
+        "en": "Hypersensitivity to amide local anaesthetics."
+      },
+      "refs": [
+        {
+          "source": "fda-mepivacaine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "max",
+      "formulation": "cart-3",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 13.33
+      }
+    },
+    {
+      "regimen": "max",
+      "formulation": "cart-3",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 330,
+        "mlPerDose": 11
+      }
+    }
+  ],
+  "atc": [
+    "N01BB03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13020",
+        "en": "MEPIVACAINE 20MG/1ML  AMP",
+        "fa": "آمپول مپیواکائین ۲۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01585",
+        "en": "MEPIVACAINE HCL 2% VIAL",
+        "fa": "ویال مپیواکائین هیدروکلراید ۲ درصد"
+      },
+      {
+        "code": "01782",
+        "en": "MEPIVACAINE HCL 3% 1.8ML CARTRIDGE",
+        "fa": "کارتریج مپیواکائین هیدروکلراید ۳ درصد ۱٫۸ میلی‌لیتر"
+      },
+      {
+        "code": "50510",
+        "en": "MEPIVACAINE INJECTION PARENTERAL 3 % 1.7MILLILITER",
+        "fa": "فرآورده تزریقی مپیواکائین ۳ درصد ۱٫۷ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2765/Mepivacaine",
+        "url": "https://www.darooyab.ir/G-2765/Mepivacaine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=088387",
+      "label": "ANDA088387"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eb7e2284-fe8d-46ad-b1d3-92ee2c6222bf",
+      "label": "FDA Polocaine Dental"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N01BB03",
+      "label": "N01BB03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2765/Mepivacaine",
+      "label": "Mepivacaine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-mepivacaine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA088387"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category C Animal reproduction studies have not been conducted with this solution.",
+      "refs": [
+        {
+          "source": "fda-mepivacaine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when this solution is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-mepivacaine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Great care must be exercised in adhering to safe concentrations and dosages for pedodontic administration (see DOSAGE AND ADMINISTRATION ).",
+      "refs": [
+        {
+          "source": "fda-mepivacaine",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "id": "meperidine-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پتیدین (مپریدین، تزریقی)",
+    "en": "Meperidine / pethidine (injection)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "اپیوئید",
+    "en": "Opioid analgesic"
+  },
+  "brands": [
+    {
+      "name": "Demerol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pethidine",
+    "meperidine",
+    "demerol",
+    "پتیدین",
+    "دمرول",
+    "آمپول پتیدین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-50",
+      "form": "injection",
+      "route": "im",
+      "label": "50 mg/mL vial",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-25",
+      "form": "injection",
+      "route": "im",
+      "label": "25 mg/mL vial",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pain",
+      "disease": "severe-pain",
+      "label": {
+        "fa": "درد — بزرگسال: ۵۰ تا ۱۵۰ mg عضلانی یا زیرجلدی هر ۳ تا ۴ ساعت",
+        "en": "Pain — adult: 50–150 mg IM or SC every 3–4 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "perDoseMax": 150,
+        "dosesPerDay": 6
+      },
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر اساس پاسخ تیتر شود. کودکان در برچسب: ۰٫۵ تا ۰٫۸ mg به ازای هر پوند (حدود ۱٫۱ تا ۱٫۸ mg/kg) تا حد دوز بزرگسال — ولی برچسب ایمنی زیر ۱۸ سال را ثابت‌نشده می‌داند.",
+            "en": "Titrate to response. Label pediatric dose: 0.5–0.8 mg/lb (about 1.1–1.8 mg/kg) up to the adult dose — but the label says safety below 18 is not established."
+          },
+          "refs": [
+            {
+              "source": "fda-meperidineinj",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-meperidineinj",
+              "section": "8.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "دپرسیون تنفسی قابل توجه؛ آسم حاد؛ انسداد گوارشی؛ مهارکننده MAO در ۱۴ روز اخیر (خطر واکنش کشنده)؛ حساسیت.",
+        "en": "Significant respiratory depression; acute asthma; GI obstruction; MAO inhibitor within 14 days (fatal reactions); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "4"
+        },
+        {
+          "source": "fda-meperidineinj",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: اعتیاد، دپرسیون تنفسی، ترک نوزادی، تداخل با بنزودیازپین و MAOI. متابولیت نورمپریدین در نارسایی کلیه تجمع و تشنج می‌دهد.",
+        "en": "Boxed warning: addiction, respiratory depression, neonatal withdrawal, benzodiazepine and MAOI interactions. Normeperidine accumulates in renal impairment and can cause seizures."
+      },
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-meperidineinj",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "maoi",
+      "text": {
+        "fa": "با مهارکننده‌های MAO منع مصرف (کما، دپرسیون تنفسی، سندرم سروتونین).",
+        "en": "Contraindicated with MAO inhibitors (coma, respiratory depression, serotonin syndrome)."
+      },
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pain",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "mlPerDose": 1,
+        "upperPerDose": 150,
+        "upperMlPerDose": 3
+      }
+    }
+  ],
+  "atc": [
+    "N02AB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01355",
+        "en": "PETHIDINE HCL 100MG/2ML AMP",
+        "fa": "آمپول پتیدین هیدروکلراید ۱۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "11397",
+        "en": "PETHIDINE HCL 25MG/1ML 1ML AMP",
+        "fa": "آمپول پتیدین هیدروکلراید ۲۵ میلی‌گرم / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01354",
+        "en": "PETHIDINE HCL 50MG/1ML AMP",
+        "fa": "آمپول پتیدین هیدروکلراید ۵۰ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-156/Pethidine",
+        "url": "https://www.darooyab.ir/G-156/Pethidine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=080445",
+      "label": "ANDA080445"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0e998da-f056-4fce-be8e-ed60cf3b461b",
+      "label": "FDA Meperidine inj."
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02AB02",
+      "label": "N02AB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-156/Pethidine",
+      "label": "Pethidine"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-meperidineinj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA080445"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "If opioid use is required for an extended period of time in a pregnant woman, advise the patient of the risk of Neonatal Opioid Withdrawal Syndrome, which may be life-threatening if not recognized and treated.",
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Meperidine appears in the milk of nursing mothers receiving the drug.",
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of Meperidine Hydrochloride Injection in patients less than 18 years of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, use caution when selecting a dosage for an elderly patient, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Use of opioids for an extended period of time may cause reduced fertility in females and males of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-meperidineinj",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

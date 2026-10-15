@@ -1,0 +1,310 @@
+{
+  "id": "glucagon",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گلوکاگون",
+    "en": "Glucagon"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "هورمون افزاینده قند (اورژانس)",
+    "en": "Glycogenolytic hormone (emergency)"
+  },
+  "brands": [
+    {
+      "name": "Gvoke",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "glucagon",
+    "gvoke",
+    "گلوکاگون",
+    "آمپول گلوکاگون"
+  ],
+  "formulations": [
+    {
+      "id": "pen-0-5",
+      "form": "injection",
+      "route": "sc",
+      "label": "0.5 mg/0.1 mL autoinjector",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-glucagon",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pen-1",
+      "form": "injection",
+      "route": "sc",
+      "label": "1 mg/0.2 mL autoinjector or syringe",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-glucagon",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "sc",
+      "disease": "hypoglycemia",
+      "label": {
+        "fa": "افت قند شدید — زیرجلدی بر اساس سن و وزن",
+        "en": "Severe hypoglycaemia — SC by age and weight"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 44.99,
+            "perDose": 0.5,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 45,
+            "maxWeightKg": null,
+            "perDose": 1,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-glucagon",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۱۲ سال به بالا: ۱ mg. ۲ تا زیر ۱۲ سال: زیر ۴۵ kg ← ۰٫۵ mg؛ ۴۵ kg و بیشتر ← ۱ mg. اگر پس از ۱۵ دقیقه پاسخ نبود، یک دوز دیگر با وسیله نو.",
+            "en": "≥12 y: 1 mg. 2 to <12 y: <45 kg → 0.5 mg; ≥45 kg → 1 mg. If no response after 15 min, one more dose from a new device."
+          },
+          "refs": [
+            {
+              "source": "fda-glucagon",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "فئوکروموسیتوم؛ انسولینوما؛ حساسیت به گلوکاگون.",
+        "en": "Pheochromocytoma; insulinoma; hypersensitivity to glucagon."
+      },
+      "refs": [
+        {
+          "source": "fda-glucagon",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "lt2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۲ سال در برچسب نیست.",
+        "en": "Not labelled under 2 years."
+      },
+      "refs": [
+        {
+          "source": "fda-glucagon",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "sc",
+      "formulation": "pen-0-5",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 0.5
+      }
+    },
+    {
+      "regimen": "sc",
+      "formulation": "pen-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "H04AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00597",
+        "en": "GLUCAGON HCL 1MG/1ML VIAL",
+        "fa": "ویال گلوکاگون هیدروکلراید ۱ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1959/Glucagon",
+        "url": "https://www.darooyab.ir/G-1959/Glucagon"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212097",
+      "label": "NDA212097"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=92385737-dbad-98c5-e053-2995a90a2805",
+      "label": "FDA Gvoke (glucagon)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682480.html",
+      "label": "Glucagon Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a619052.html",
+      "label": "Glucagon Nasal Powder"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H04AA01",
+      "label": "H04AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1959/Glucagon",
+      "label": "Glucagon"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-glucagon",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA212097"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from case reports and a small number of observational studies with glucagon use in pregnant women over decades of use have not identified a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-glucagon",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information available on the presence of glucagon in human or animal milk, the effects of the drug on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-glucagon",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of GVOKE for subcutaneous use for the treatment of severe hypoglycemia in patients with diabetes have been established in pediatric patients aged 2 years and older.",
+      "refs": [
+        {
+          "source": "fda-glucagon",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of GVOKE and GVOKE VialDx did not include sufficient numbers of patients aged 65 and over to determine whether they respond differently from younger adult patients.",
+      "refs": [
+        {
+          "source": "fda-glucagon",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

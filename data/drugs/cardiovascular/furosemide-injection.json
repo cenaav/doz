@@ -1,0 +1,401 @@
+{
+  "id": "furosemide-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فوروزماید (تزریقی)",
+    "en": "Furosemide (injection)"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مدر لوپ",
+    "en": "Loop diuretic"
+  },
+  "brands": [
+    {
+      "name": "Lasix injection",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lasix injection",
+    "آمپول لازیکس",
+    "فوروزماید آمپول",
+    "لازیکس"
+  ],
+  "formulations": [
+    {
+      "id": "vial-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL vial",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-furosemideinj",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "edema",
+      "disease": "edema",
+      "label": {
+        "fa": "ادم — بزرگسال: ۲۰ تا ۴۰ mg وریدی یا عضلانی",
+        "en": "Oedema — adult: 20–40 mg IV or IM"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "perDoseMax": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-furosemideinj",
+          "section": "Dosage and Administration — Edema"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۲۰ mg افزایش، نه زودتر از ۲ ساعت پس از دوز قبل. وریدی آهسته (۱ تا ۲ دقیقه).",
+            "en": "Raise by 20 mg if needed, no sooner than 2 h after the previous dose. IV slowly over 1–2 min."
+          },
+          "refs": [
+            {
+              "source": "fda-furosemideinj",
+              "section": "Dosage and Administration — Edema"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ape",
+      "disease": "acute-pulmonary-edema",
+      "label": {
+        "fa": "ادم حاد ریه — ۴۰ mg وریدی آهسته",
+        "en": "Acute pulmonary oedema — 40 mg slow IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-furosemideinj",
+          "section": "Dosage and Administration — Acute Pulmonary Edema"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر ظرف ۱ ساعت پاسخ نبود، ۸۰ mg وریدی آهسته.",
+            "en": "If no response within 1 h, 80 mg slow IV."
+          },
+          "refs": [
+            {
+              "source": "fda-furosemideinj",
+              "section": "Dosage and Administration — Acute Pulmonary Edema"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "edema",
+      "label": {
+        "fa": "کودک — ۱ mg/kg وریدی یا عضلانی آهسته",
+        "en": "Child — 1 mg/kg IV or IM slowly"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 1,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-furosemideinj",
+          "section": "Dosage and Administration — Pediatric Patients"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDose": 6,
+        "refs": [
+          {
+            "source": "fda-furosemideinj",
+            "section": "Dosage and Administration — Pediatric Patients"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۱ mg/kg افزایش، نه زودتر از ۲ ساعت؛ بیش از ۶ mg/kg توصیه نمی‌شود. نوزاد نارس: احتمال سمیت گوشی با بیش از ۱ mg/kg/۲۴ ساعت.",
+            "en": "Increase by 1 mg/kg if needed, no sooner than 2 h; more than 6 mg/kg not recommended. Premature infants: ototoxicity risk above 1 mg/kg/24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-furosemideinj",
+              "section": "Dosage and Administration — Pediatric Patients"
+            },
+            {
+              "source": "fda-furosemideinj",
+              "section": "Pediatric Use"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آنوری؛ حساسیت به فوروزماید.",
+        "en": "Anuria; hypersensitivity to furosemide."
+      },
+      "refs": [
+        {
+          "source": "fda-furosemideinj",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "edema",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "ape",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 4
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "C03CA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00570",
+        "en": "FUROSEMIDE 20MG/2ML AMP",
+        "fa": "آمپول فوروزماید ۲۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "00566",
+        "en": "FUROSEMIDE 250MG/25ML INF",
+        "fa": "محلول انفوزیون فوروزماید ۲۵۰ میلی‌گرم / ۲۵ میلی‌لیتر"
+      },
+      {
+        "code": "00571",
+        "en": "FUROSEMIDE 40MG TAB",
+        "fa": "قرص فوروزماید ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "02134",
+        "en": "FUROSEMIDE 40MG/4ML AMP",
+        "fa": "آمپول فوروزماید ۴۰ میلی‌گرم / ۴ میلی‌لیتر"
+      },
+      {
+        "code": "51896",
+        "en": "FUROSEMIDE INJECTION INTRAVENOUS 10 mg/1mL 2 mL",
+        "fa": "فرآورده تزریقی فوروزماید ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "50919",
+        "en": "FUROSEMIDE SOLUTION ORAL 10 mg/1mL 120 mL",
+        "fa": "محلول خوراکی فوروزماید ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "52433",
+        "en": "FUROSEMIDE INJECTION INTRAVENOUS 10 mg/1mL 25 mL",
+        "fa": "فرآورده تزریقی فوروزماید ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۲۵ میلی‌لیتر"
+      },
+      {
+        "code": "53041",
+        "en": "FUROSEMIDE SOLUTION ORAL 40 mg/5mL 60 mL",
+        "fa": "محلول خوراکی فوروزماید ۴۰ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1690/Furosemide",
+        "url": "https://www.darooyab.ir/G-1690/Furosemide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207552",
+      "label": "ANDA207552"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5b9f12e-d1e9-42de-90f2-c9ba33a86457",
+      "label": "FDA Furosemide inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682858.html",
+      "label": "Furosemide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616046.html",
+      "label": "Furosemide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA01",
+      "label": "C03CA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1690/Furosemide",
+      "label": "Furosemide"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-furosemideinj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA207552"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Furosemide should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-furosemideinj",
+          "section": "Pregnancy:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because it appears in breast milk, caution should be exercised when furosemide is administered to a nursing mother.",
+      "refs": [
+        {
+          "source": "fda-furosemideinj",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "In premature neonates with respiratory distress syndrome, diuretic treatment with furosemide in the first few weeks of life may increase the risk of persistent patent ductus arteriosus (PDA), possibly through a prostaglandin-E-mediated process.",
+      "refs": [
+        {
+          "source": "fda-furosemideinj",
+          "section": "Pediatric Use:"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for the elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-furosemideinj",
+          "section": "Geriatric Use:"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "id": "flumazenil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلومازنیل",
+    "en": "Flumazenil"
+  },
+  "category": "various",
+  "class": {
+    "fa": "آنتاگونیست بنزودیازپین (پادزهر)",
+    "en": "Benzodiazepine antagonist (antidote)"
+  },
+  "brands": [
+    {
+      "name": "Romazicon",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "anexate",
+    "romazicon",
+    "فلومازنیل",
+    "آنکسیت"
+  ],
+  "formulations": [
+    {
+      "id": "vial-0-1",
+      "form": "injection",
+      "route": "iv",
+      "label": "0.1 mg/mL multiple-dose vial",
+      "concentration": {
+        "amount": 0.1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-flumazenil",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "benzodiazepine-reversal",
+      "label": {
+        "fa": "برگرداندن آرام‌بخشی بنزودیازپین — بزرگسال: ۰٫۲ mg وریدی در ۱۵ ثانیه",
+        "en": "Reversal of benzodiazepine sedation — adult: 0.2 mg IV over 15 s"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-flumazenil",
+          "section": "Dosage and Administration — Adult Patients"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1,
+        "refs": [
+          {
+            "source": "fda-flumazenil",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۰٫۲ mg هر ۶۰ ثانیه تا ۴ بار دیگر؛ حداکثر کل ۱ mg.",
+            "en": "If needed 0.2 mg every 60 s up to 4 more times; maximum total 1 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-flumazenil",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "benzodiazepine-reversal",
+      "label": {
+        "fa": "کودک بالای ۱ سال — ۰٫۰۱ mg/kg (حداکثر ۰٫۲ mg) وریدی",
+        "en": "Child >1 y — 0.01 mg/kg (max 0.2 mg) IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.01,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-flumazenil",
+          "section": "Dosage and Administration — Pediatric Patients"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 0.2,
+        "refs": [
+          {
+            "source": "fda-flumazenil",
+            "section": "Dosage and Administration — Pediatric Patients"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر کل ۰٫۰۵ mg/kg یا ۱ mg (هر کدام کمتر). زیر ۱ سال ثابت نشده.",
+            "en": "Maximum total 0.05 mg/kg or 1 mg, whichever is lower. Not established under 1 year."
+          },
+          "refs": [
+            {
+              "source": "fda-flumazenil",
+              "section": "Dosage and Administration — Pediatric Patients"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ بیماری که بنزودیازپین برای وضعیت تهدیدکننده حیات گرفته (مثل تشنج پایدار یا فشار داخل جمجمه)؛ مسمومیت جدی با ضدافسردگی سه‌حلقه‌ای.",
+        "en": "Hypersensitivity; benzodiazepine given for a life-threatening condition (e.g. status epilepticus, raised ICP); serious tricyclic antidepressant overdose."
+      },
+      "refs": [
+        {
+          "source": "fda-flumazenil",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "lt1",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱ سال ثابت نشده.",
+        "en": "Not established under 1 year."
+      },
+      "refs": [
+        {
+          "source": "fda-flumazenil",
+          "section": "Dosage and Administration — Pediatric Patients"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: تشنج، به‌ویژه در مصرف طولانی بنزودیازپین یا مسمومیت با ضدافسردگی سه‌حلقه‌ای.",
+        "en": "Boxed warning: seizures, especially after long-term benzodiazepine use or tricyclic overdose."
+      },
+      "refs": [
+        {
+          "source": "fda-flumazenil",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-0-1",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.2,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-0-1",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 0.15,
+        "mlPerDose": 1.5
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-0-1",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 35
+      },
+      "expect": {
+        "perDose": 0.2
+      }
+    }
+  ],
+  "atc": [
+    "V03AB25"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00544",
+        "en": "FLUMAZENIL 0.5MG/5 ML AMP",
+        "fa": "آمپول فلومازنیل ۰٫۵ میلی‌گرم / ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1956/Flumazenil",
+        "url": "https://www.darooyab.ir/G-1956/Flumazenil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078527",
+      "label": "ANDA078527"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3eefb01b-3d6a-a3eb-e063-6394a90a4829",
+      "label": "FDA Flumazenil inj."
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AB25",
+      "label": "V03AB25"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1956/Flumazenil",
+      "label": "Flumazenil"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-flumazenil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078527"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C: There are no adequate and well-controlled studies of the use of flumazenil in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-flumazenil",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "",
+      "refs": [
+        {
+          "source": "fda-flumazenil",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of flumazenil have been established in pediatric patients 1 year of age and older.",
+      "refs": [
+        {
+          "source": "fda-flumazenil",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Several studies of flumazenil in subjects over the age of 65 and one study in subjects over the age of 80 suggest that while the doses of benzodiazepine used to induce sedation should be reduced, ordinary doses of flumazenil may be used for reversal.",
+      "refs": [
+        {
+          "source": "fda-flumazenil",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

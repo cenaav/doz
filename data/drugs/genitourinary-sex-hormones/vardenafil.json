@@ -1,0 +1,368 @@
+{
+  "id": "vardenafil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واردنافیل",
+    "en": "Vardenafil"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "مهارکننده PDE5",
+    "en": "PDE5 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Levitra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "levitra",
+    "لویترا",
+    "واردنافیل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ed",
+      "disease": "erectile-dysfunction",
+      "label": {
+        "fa": "اختلال نعوذ — ۱۰ mg حدود ۶۰ دقیقه پیش از فعالیت جنسی، حداکثر یک بار در روز",
+        "en": "Erectile dysfunction — 10 mg about 60 min before sexual activity, max once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 20,
+        "refs": [
+          {
+            "source": "fda-vardenafil",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بسته به اثر و تحمل ۵ تا ۲۰ mg. ۶۵ سال به بالا: شروع ۵ mg.",
+            "en": "Adjust to 5–20 mg by effect and tolerability. ≥65 y: start 5 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-vardenafil",
+              "section": "2"
+            },
+            {
+              "source": "fda-vardenafil",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "nitrates",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف هم‌زمان با نیترات‌ها (مثل نیتروگلیسرین) یا ریوسیگوات — افت فشار شدید.",
+        "en": "Use with nitrates (e.g. nitroglycerin) or riociguat — severe hypotension."
+      },
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "برای کودکان اندیکاسیون ندارد.",
+        "en": "Not indicated in children."
+      },
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "nitrates",
+      "text": {
+        "fa": "با نیترات‌ها منع مصرف.",
+        "en": "Contraindicated with nitrates."
+      },
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ed",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G04BE09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08831",
+        "en": "VARDENAFIL 10MG TAB",
+        "fa": "قرص واردنافیل ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "09293",
+        "en": "VARDENAFIL 20MG TAB",
+        "fa": "قرص واردنافیل ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "13263",
+        "en": "VARDENAFIL 5MG  TAB",
+        "fa": "قرص واردنافیل ۵ میلی‌گرم"
+      },
+      {
+        "code": "18016",
+        "en": "VERDENAFIL 10MG  TAB.",
+        "fa": "قرص وردنافیل ۱۰ میلی‌گرم ."
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4344/Vardenafil",
+        "url": "https://www.darooyab.ir/G-4344/Vardenafil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209057",
+      "label": "ANDA209057"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2782efed-6198-47b9-81ac-3e255e2ab7f6",
+      "label": "FDA Vardenafil"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603035.html",
+      "label": "Vardenafil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BE09",
+      "label": "G04BE09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4344/Vardenafil",
+      "label": "Vardenafil"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-vardenafil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA209057"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Vardenafil hydrochloride tablets are not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Vardenafil hydrochloride tablets are not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Vardenafil hydrochloride tablets are not indicated for use in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly males 65 years of age and older have higher vardenafil plasma concentrations than younger males (18 – 45 years), mean C max and AUC were 34% and 52% higher, respectively.",
+      "refs": [
+        {
+          "source": "fda-vardenafil",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

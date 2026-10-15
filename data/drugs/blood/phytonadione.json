@@ -1,0 +1,344 @@
+{
+  "id": "phytonadione",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ویتامین K1 (فیتونادیون)",
+    "en": "Phytonadione (vitamin K1)"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "ویتامین K",
+    "en": "Vitamin K"
+  },
+  "brands": [
+    {
+      "name": "AquaMephyton",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vitamin k",
+    "ویتامین کا",
+    "فیتومنادیون",
+    "کناکیون",
+    "phytomenadione"
+  ],
+  "formulations": [
+    {
+      "id": "syr-1",
+      "form": "injection",
+      "route": "im",
+      "label": "1 mg/0.5 mL prefilled syringe (neonatal)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-phytonadione",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "neo-proph",
+      "disease": "vitamin-k-deficiency-bleeding",
+      "label": {
+        "fa": "پیشگیری خونریزی نوزاد — ۰٫۵ تا ۱ mg عضلانی یک بار در ساعت اول تولد",
+        "en": "Neonatal prophylaxis — 0.5–1 mg IM once within 1 h of birth"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "perDoseMax": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-phytonadione",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "neo-tx",
+      "disease": "vitamin-k-deficiency-bleeding",
+      "label": {
+        "fa": "درمان خونریزی نوزاد — ۱ mg زیرجلدی یا عضلانی",
+        "en": "Neonatal treatment — 1 mg SC or IM"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-phytonadione",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر مادر ضدانعقاد خوراکی می‌گرفته، دوز بالاتر در نظر گرفته شود.",
+            "en": "Consider higher doses if the mother was on oral anticoagulants."
+          },
+          "refs": [
+            {
+              "source": "fda-phytonadione",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "vitamin-k-deficiency-bleeding",
+      "label": {
+        "fa": "بزرگسال — ناشی از ضدانعقاد یا علل دیگر",
+        "en": "Adult — anticoagulant-induced or other causes"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "ناشی از ضدانعقاد: ۲٫۵ تا ۱۰ mg یا بیشتر (تا ۲۵ تا ۵۰ mg تک‌دوز)؛ علل دیگر: ۲٫۵ تا ۲۵ mg یا بیشتر (تا ۵۰ mg). این فرآورده ۱ mg است؛ برای بزرگسال از قدرت مناسب استفاده شود. INR پس از ۶ تا ۸ ساعت.",
+          "en": "Anticoagulant-induced: 2.5–10 mg or more (up to 25–50 mg single dose); other causes: 2.5–25 mg or more (up to 50 mg). This product is 1 mg; use an adult strength. Check INR after 6–8 h."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-phytonadione",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فیتونادیون یا اجزا.",
+        "en": "Hypersensitivity to phytonadione or components."
+      },
+      "refs": [
+        {
+          "source": "fda-phytonadione",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: واکنش شدید ازدیاد حساسیت و مرگ با تزریق وریدی و عضلانی؛ تا حد امکان زیرجلدی؛ وریدی حداکثر ۱ mg/min.",
+        "en": "Boxed warning: severe hypersensitivity reactions and fatalities with IV and IM use; give SC whenever possible; IV no faster than 1 mg/min."
+      },
+      "refs": [
+        {
+          "source": "fda-phytonadione",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-phytonadione",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "neo-proph",
+      "formulation": "syr-1",
+      "input": {
+        "ageDays": 0,
+        "weightKg": 3.2
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.25,
+        "upperPerDose": 1
+      }
+    },
+    {
+      "regimen": "neo-tx",
+      "formulation": "syr-1",
+      "input": {
+        "ageDays": 5,
+        "weightKg": 3.5
+      },
+      "expect": {
+        "perDose": 1,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "B02BA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01856",
+        "en": "VITAMIN K 2MG AMP",
+        "fa": "آمپول ویتامین K ۲ میلی‌گرم"
+      },
+      {
+        "code": "01003",
+        "en": "VITAMIN K1 (PHYTOMENADIONE) 10MG/1ML AMP",
+        "fa": "آمپول ویتامین K ۱ (فیتومنادیون) ۱۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01004",
+        "en": "VITAMIN K1 (PHYTOMENADIONE) 1MG/0.5ML AMP",
+        "fa": "آمپول ویتامین K ۱ (فیتومنادیون) ۱ میلی‌گرم / ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "01005",
+        "en": "VITAMIN K1 (PHYTOMENADOINE) 10MG TAB",
+        "fa": "قرص ویتامین K ۱ (فیتومنادوین) ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "52467",
+        "en": "VITAMIN K1 (PHYTOMENADIONE) TABLET, CHEWABLE ORAL 10 mg",
+        "fa": "قرص جویدنی ویتامین K ۱ (فیتومنادیون) ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2954/Phytonadione",
+        "url": "https://www.darooyab.ir/G-2954/Phytonadione"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215820",
+      "label": "ANDA215820"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=226c0a5c-3e04-65a9-01ac-e67aad9a430a",
+      "label": "FDA Phytonadione inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682659.html",
+      "label": "Phytonadione"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a626026.html",
+      "label": "Phytonadione Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B02BA01",
+      "label": "B02BA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2954/Phytonadione",
+      "label": "Phytonadione"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-phytonadione",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA215820"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary If Phytonadione is needed during pregnancy, consider using a preservative-free formulation .",
+      "refs": [
+        {
+          "source": "fda-phytonadione",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary If available, preservative-free Phytonadione is recommended when Phytonadione is needed during lactation [ Use in Specific Populations ( 8.4 )] .",
+      "refs": [
+        {
+          "source": "fda-phytonadione",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Phytonadione Injectable Emulsion for prophylaxis and treatment of vitamin K deficiency have been established in neonates.",
+      "refs": [
+        {
+          "source": "fda-phytonadione",
+          "section": "8.4"
+        }
+      ]
+    }
+  }
+}

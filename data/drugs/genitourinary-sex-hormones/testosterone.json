@@ -1,0 +1,405 @@
+{
+  "id": "testosterone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تستوسترون",
+    "en": "Testosterone"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آندروژن",
+    "en": "Androgen"
+  },
+  "brands": [
+    {
+      "name": "Depo-Testosterone",
+      "market": "US"
+    },
+    {
+      "name": "AndroGel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "testosterone",
+    "تستوسترون",
+    "تستوویرون",
+    "آمپول تستوسترون",
+    "ژل تستوسترون"
+  ],
+  "formulations": [
+    {
+      "id": "inj-200",
+      "form": "injection",
+      "route": "im",
+      "label": "Testosterone cypionate 200 mg/mL (IM)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-testocyp",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "gel-pump",
+      "form": "gel",
+      "route": "topical",
+      "label": "AndroGel 1.62%: 20.25 mg testosterone per pump actuation",
+      "concentration": {
+        "amount": 20.25,
+        "unit": "mg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-androgel",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "im",
+      "disease": "male-hypogonadism",
+      "label": {
+        "fa": "هیپوگنادیسم مردانه — ۵۰ تا ۴۰۰ mg عضلانی هر ۲ تا ۴ هفته",
+        "en": "Male hypogonadism — 50–400 mg IM every 2–4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: ۵۰ تا ۴۰۰ mg عضلانی هر ۲ تا ۴ هفته؛ بر اساس سطح تستوسترون و پاسخ تنظیم شود.",
+          "en": "Label: 50–400 mg IM every 2–4 weeks, adjusted to testosterone level and response."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-testocyp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "inj-200"
+      ]
+    },
+    {
+      "id": "gel",
+      "disease": "male-hypogonadism",
+      "label": {
+        "fa": "هیپوگنادیسم مردانه — ژل ۱٫۶۲٪: ۴۰٫۵ mg (۲ پاف) صبح روی شانه و بازو",
+        "en": "Male hypogonadism — 1.62% gel: 40.5 mg (2 pumps) each morning to shoulders/upper arms"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-androgel",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 81,
+        "refs": [
+          {
+            "source": "fda-androgel",
+            "section": "2.1"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "gel-pump"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس سطح تستوسترون صبح بین ۲۰٫۲۵ و ۸۱ mg تنظیم شود. پوست کودکان و زنان با محل ژل تماس نیابد.",
+            "en": "Adjust between 20.25 and 81 mg by morning testosterone level. Keep children and women away from application sites."
+          },
+          "refs": [
+            {
+              "source": "fda-androgel",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-androgel",
+              "section": "Boxed Warning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سرطان پستان در مرد یا سرطان پروستات (شناخته‌شده یا مشکوک)؛ زنان باردار.",
+        "en": "Male breast cancer or known/suspected prostate cancer; pregnant women."
+      },
+      "refs": [
+        {
+          "source": "fda-androgel",
+          "section": "4"
+        },
+        {
+          "source": "fda-testocyp",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای ژل: انتقال ثانویه به کودکان (بلوغ زودرس) — دست‌ها شسته و محل پوشانده شود.",
+        "en": "Gel boxed warning: secondary exposure of children (virilisation) — wash hands and cover the site."
+      },
+      "refs": [
+        {
+          "source": "fda-androgel",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "gel",
+      "formulation": "gel-pump",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 40.5
+      }
+    }
+  ],
+  "atc": [
+    "G03BA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06605",
+        "en": "TESTOSTERONE 50MG/G SACHET",
+        "fa": "ساشه تستوسترون ۵۰ میلی‌گرم / گرم"
+      },
+      {
+        "code": "14737",
+        "en": "TESTOSTERONE 5MG PATCH",
+        "fa": "پچ پوستی تستوسترون ۵ میلی‌گرم"
+      },
+      {
+        "code": "05961",
+        "en": "TESTOSTERONE GEL",
+        "fa": "ژل تستوسترون"
+      },
+      {
+        "code": "01200",
+        "en": "TESTOSTRONE ENANTATE 100MG/1ML AMP",
+        "fa": "آمپول تستوسترون انانتات ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01201",
+        "en": "TESTOSTRONE ENANTATE 250MG/1ML AMP",
+        "fa": "آمپول تستوسترون انانتات ۲۵۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01941",
+        "en": "TESTOSTRONE UNDECANOATE 40MG CAP",
+        "fa": "کپسول تستوسترون آندکانوات ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "12066",
+        "en": "TESTOSTRONE UNDECANOATE 4ML AMP",
+        "fa": "آمپول تستوسترون آندکانوات ۴ میلی‌لیتر"
+      },
+      {
+        "code": "52157",
+        "en": "TESTOSTERONE GEL TOPICAL 1 % 5 g",
+        "fa": "ژل موضعی تستوسترون ۱ درصد ۵ گرم"
+      },
+      {
+        "code": "50872",
+        "en": "TESTOSTERONE ENANTHATE INJECTION PARENTERAL 250 mg/1mL",
+        "fa": "فرآورده تزریقی تستوسترون انانتات ۲۵۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "51119",
+        "en": "TESTOSTERONE UNDECANOATE CAPSULE ORAL 40 mg",
+        "fa": "کپسول تستوسترون آندکانوات ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "51918",
+        "en": "TESTOSTERONE UNDECANOATE INJECTION, SOLUTION PARENTERAL 250 mg/1mL 4 mL",
+        "fa": "محلول تزریقی تستوسترون آندکانوات ۲۵۰ میلی‌گرم / ۱ میلی‌لیتر ۴ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3315/Testosterone",
+        "url": "https://www.darooyab.ir/G-3315/Testosterone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022309",
+      "label": "NDA022309"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4e8d29b-8707-4d47-e053-2a95a90aecee",
+      "label": "FDA AndroGel 1.62%"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=375dd035-b792-4cb7-9fe6-bb367b87bdba",
+      "label": "FDA Testosterone cyp."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a619028.html",
+      "label": "Testosterone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603034.html",
+      "label": "Testosterone Buccal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03BA03",
+      "label": "G03BA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3315/Testosterone",
+      "label": "Testosterone"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-androgel",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022309"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "AndroGel 1.62% is contraindicated in women who are pregnant.",
+      "refs": [
+        {
+          "source": "fda-androgel",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary AndroGel 1.62% is not indicated for use in women.",
+      "refs": [
+        {
+          "source": "fda-androgel",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Virilization has been reported in children who were secondarily exposed to testosterone gel [see Warnings and Precautions ( 5.1 ) and Adverse Reactions ( 6.2 )].",
+      "refs": [
+        {
+          "source": "fda-androgel",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Additionally, there is insufficient long-term safety data in geriatric patients to assess the potentially increased risks of cardiovascular disease and prostate cancer.",
+      "refs": [
+        {
+          "source": "fda-androgel",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Testis disorder, testicular atrophy, and oligospermia have been identified during use of AndroGel 1.62% [see Adverse Reactions ( 6.1 , 6.2 )] .",
+      "refs": [
+        {
+          "source": "fda-androgel",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

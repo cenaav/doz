@@ -1,0 +1,275 @@
+{
+  "id": "ibuprofen-acetaminophen",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایبوپروفن + استامینوفن",
+    "en": "Ibuprofen + acetaminophen"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "ترکیب NSAID و ضددرد",
+    "en": "NSAID + analgesic combination"
+  },
+  "brands": [
+    {
+      "name": "Advil Dual Action",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "advil dual action",
+    "ایبوپروفن استامینوفن",
+    "ادویل دوال"
+  ],
+  "formulations": [
+    {
+      "id": "tab",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Ibuprofen 125 mg + acetaminophen 250 mg caplet",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "components": {
+        "ibuprofen": {
+          "name": {
+            "fa": "ایبوپروفن",
+            "en": "Ibuprofen"
+          },
+          "amount": 125,
+          "unit": "mg"
+        },
+        "acetaminophen": {
+          "name": {
+            "fa": "استامینوفن",
+            "en": "Acetaminophen"
+          },
+          "amount": 250,
+          "unit": "mg",
+          "limits": {
+            "maxPerDay": 1500,
+            "refs": [
+              {
+                "source": "fda-advildual",
+                "section": "Warnings — Liver warning"
+              }
+            ]
+          }
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-advildual",
+          "section": "Active ingredients"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pain",
+      "disease": "toothache",
+      "label": {
+        "fa": "درد (از جمله دندان‌درد) — ۱۲ سال به بالا: ۲ قرص هر ۸ ساعت",
+        "en": "Pain incl. toothache — ≥12 y: 2 caplets every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-advildual",
+          "section": "Directions"
+        }
+      ],
+      "doseComponent": "ibuprofen",
+      "limits": {
+        "maxPerDay": 750,
+        "refs": [
+          {
+            "source": "fda-advildual",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر ۶ قرص در ۲۴ ساعت. زیر ۱۲ سال با پزشک.",
+            "en": "Max 6 caplets in 24 h. Under 12: ask a doctor."
+          },
+          "refs": [
+            {
+              "source": "fda-advildual",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "lt12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال بدون نظر پزشک نه.",
+        "en": "Not under 12 without a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-advildual",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار کبد (استامینوفن) و خونریزی معده (NSAID)؛ با سایر داروهای حاوی استامینوفن یا NSAID مصرف نشود.",
+        "en": "Liver warning (acetaminophen) and stomach bleeding (NSAID); do not combine with other acetaminophen or NSAID products."
+      },
+      "refs": [
+        {
+          "source": "fda-advildual",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pain",
+      "formulation": "tab",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "M01AE51"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52662",
+        "en": "ACETAMINOPHEN / IBUPROFEN TABLET ORAL 500 mg/200 mg",
+        "fa": "قرص استامینوفن / ایبوپروفن ۵۰۰ میلی‌گرم / ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4255/Acetaminophen-Ibuprofen",
+        "url": "https://www.darooyab.ir/G-4255/Acetaminophen-Ibuprofen"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211733",
+      "label": "NDA211733"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55cd65fc-91bf-4979-e063-6294a90ab9b7",
+      "label": "FDA Advil Dual Action"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a681004.html",
+      "label": "Acetaminophen"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682159.html",
+      "label": "Ibuprofen"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M01AE51",
+      "label": "M01AE51"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4255/Acetaminophen-Ibuprofen",
+      "label": "Acetaminophen-Ibuprofen"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-advildual",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA211733"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "It is especially important not to use ibuprofen at 20 weeks or later in pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery.",
+      "refs": [
+        {
+          "source": "fda-advildual",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "If pregnant or breast-feeding, ask a health professional before use.",
+      "refs": [
+        {
+          "source": "fda-advildual",
+          "section": "Drug Facts – Warnings"
+        }
+      ]
+    }
+  }
+}

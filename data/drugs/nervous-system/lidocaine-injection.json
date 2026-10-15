@@ -1,0 +1,389 @@
+{
+  "id": "lidocaine-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لیدوکائین (آمپول بی‌حسی)",
+    "en": "Lidocaine (local anaesthetic injection)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بی‌حس‌کننده موضعی آمیدی",
+    "en": "Amide local anaesthetic"
+  },
+  "brands": [
+    {
+      "name": "Xylocaine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lidocaine",
+    "xylocaine",
+    "لیدوکائین",
+    "زایلوکائین",
+    "آمپول بی حسی"
+  ],
+  "formulations": [
+    {
+      "id": "vial-2",
+      "form": "injection",
+      "route": "im",
+      "label": "2% (20 mg/mL) single-dose vial",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lidocaineinj",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "max-plain",
+      "disease": "local-anesthesia",
+      "label": {
+        "fa": "حداکثر دوز مجاز — بدون اپی‌نفرین: ۴٫۵ mg/kg (حداکثر ۳۰۰ mg)",
+        "en": "Maximum dose — without epinephrine: 4.5 mg/kg (max 300 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 4.5,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lidocaineinj",
+          "section": "Dosage and Administration — Maximum Recommended Dosages"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 300,
+        "refs": [
+          {
+            "source": "fda-lidocaineinj",
+            "section": "Dosage and Administration — Maximum Recommended Dosages"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "این عدد سقف کل یک نوبت است، نه دوز معمول. کمترین دوز مؤثر؛ در سالمندان، ناتوان، بیماری قلب یا کبد کاهش یابد.",
+            "en": "This is the ceiling for one procedure, not a usual dose. Use the lowest effective dose; reduce in elderly, debilitated, cardiac or liver disease."
+          },
+          "refs": [
+            {
+              "source": "fda-lidocaineinj",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "local-anesthesia",
+      "label": {
+        "fa": "کودکان — سقف دوز بر اساس سن و وزن",
+        "en": "Children — maximum dose by age and weight"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: دوز کودکان بر اساس سن، وزن و وضعیت کاهش یابد؛ مثال برچسب: کودک ۵ ساله ۵۰ پوندی (حدود ۲۳ kg) حداکثر ۷۵ تا ۱۰۰ mg.",
+          "en": "Label: reduce by age, weight and condition; label example: a 5-year-old weighing 50 lb (about 23 kg) should not exceed 75–100 mg."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-lidocaineinj",
+          "section": "Dosage and Administration — Children"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بی‌حس‌کننده‌های آمیدی.",
+        "en": "Hypersensitivity to amide-type local anaesthetics."
+      },
+      "refs": [
+        {
+          "source": "fda-lidocaineinj",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "max-plain",
+      "formulation": "vial-2",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 225,
+        "mlPerDose": 11.25
+      }
+    },
+    {
+      "regimen": "max-plain",
+      "formulation": "vial-2",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 90
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 15
+      }
+    }
+  ],
+  "atc": [
+    "N01BB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02950",
+        "en": "LIDOCAINE 10% 100ML SPRAY",
+        "fa": "اسپری لیدوکائین ۱۰ درصد ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "02584",
+        "en": "LIDOCAINE 10% 50ML SPRAY",
+        "fa": "اسپری لیدوکائین ۱۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00752",
+        "en": "LIDOCAINE 10% 80G SPRAY",
+        "fa": "اسپری لیدوکائین ۱۰ درصد ۸۰ گرم"
+      },
+      {
+        "code": "01751",
+        "en": "LIDOCAINE 2%+1:80000EPINEPHRINE 1.8ML CARTRIGE",
+        "fa": "لیدوکائین ۲ درصد + ۱ ۸۰۰۰۰ اپی‌نفرین ۱٫۸ میلی‌لیتر کارتریج"
+      },
+      {
+        "code": "08364",
+        "en": "LIDOCAINE 2.5% OINT",
+        "fa": "پماد لیدوکائین ۲٫۵ درصد"
+      },
+      {
+        "code": "00760",
+        "en": "LIDOCAINE 5% OINT",
+        "fa": "پماد لیدوکائین ۵ درصد"
+      },
+      {
+        "code": "00761",
+        "en": "LIDOCAINE EPINEPHRINE CARTRIDGE",
+        "fa": "کارتریج لیدوکائین اپی‌نفرین"
+      },
+      {
+        "code": "00762",
+        "en": "LIDOCAINE H 5% 15GR OINT",
+        "fa": "پماد لیدوکائین H ۵ درصد ۱۵ گرم"
+      },
+      {
+        "code": "00755",
+        "en": "LIDOCAINE HCL 1% 50ML VIAL",
+        "fa": "ویال لیدوکائین هیدروکلراید ۱ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "10726",
+        "en": "LIDOCAINE HCL 10% 65ML SPRAY",
+        "fa": "اسپری لیدوکائین هیدروکلراید ۱۰ درصد ۶۵ میلی‌لیتر"
+      },
+      {
+        "code": "00757",
+        "en": "LIDOCAINE HCL 2% 50ML VIAL",
+        "fa": "ویال لیدوکائین هیدروکلراید ۲ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00756",
+        "en": "LIDOCAINE HCL 2% GEL",
+        "fa": "ژل لیدوکائین هیدروکلراید ۲ درصد"
+      },
+      {
+        "code": "00758",
+        "en": "LIDOCAINE HCL 2% VISCOUS SOL",
+        "fa": "محلول لیدوکائین هیدروکلراید ۲ درصد ویسکوس"
+      },
+      {
+        "code": "02385",
+        "en": "LIDOCAINE HCL 4% TOP SOL",
+        "fa": "محلول موضعی لیدوکائین هیدروکلراید ۴ درصد"
+      },
+      {
+        "code": "06465",
+        "en": "LIGNOCAINE 0.63MG CAP",
+        "fa": "کپسول لیگنوکائین ۰٫۶۳ میلی‌گرم"
+      },
+      {
+        "code": "52109",
+        "en": "LIDOCAINE SPRAY TOPICAL 10 mg/1{dose} 20 mL",
+        "fa": "اسپری لیدوکائین ۱۰ میلی‌گرم / ۱ { دوز } ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "52434",
+        "en": "LIDOCAINE CREAM TOPICAL 4 % 15 g",
+        "fa": "کرم لیدوکائین ۴ درصد ۱۵ گرم"
+      },
+      {
+        "code": "52955",
+        "en": "LIDOCAINE CREAM TOPICAL 4 % 30 g",
+        "fa": "کرم لیدوکائین ۴ درصد ۳۰ گرم"
+      },
+      {
+        "code": "52203",
+        "en": "LIDOCAINE / TETRACAINE CREAM TOPICAL 7 %/7 % 15 g",
+        "fa": "کرم لیدوکائین / تتراکائین ۷ درصد / ۷ درصد ۱۵ گرم"
+      },
+      {
+        "code": "52924",
+        "en": "LIDOCAINE / TETRACAINE CREAM TOPICAL 7 %/7 % 30 g",
+        "fa": "کرم لیدوکائین / تتراکائین ۷ درصد / ۷ درصد ۳۰ گرم"
+      },
+      {
+        "code": "52766",
+        "en": "LIDOCAINE HYDROCHLORIDE GEL TOPICAL 2 % 25 g",
+        "fa": "ژل موضعی لیدوکائین هیدروکلراید ۲ درصد ۲۵ گرم"
+      },
+      {
+        "code": "51403",
+        "en": "LIDOCAINE HYDROCHLORIDE SPRAY TOPICAL 6.5 % 65 mL",
+        "fa": "اسپری لیدوکائین هیدروکلراید ۶٫۵ درصد ۶۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2764/Lidocaine-Local",
+        "url": "https://www.darooyab.ir/G-2764/Lidocaine-Local"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=006488",
+      "label": "NDA006488"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=50aa6133-0776-4714-9821-fe8581f635ca",
+      "label": "FDA Xylocaine MPF"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625037.html",
+      "label": "Lidocaine Injection (antiarrhythmic)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625061.html",
+      "label": "Lidocaine Injection (local anesthetic)"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N01BB02",
+      "label": "N01BB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2764/Lidocaine-Local",
+      "label": "Lidocaine-Local"
+    }
+  ],
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-lidocaineinj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA006488"
+  },
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects: Pregnancy Category B.",
+      "refs": [
+        {
+          "source": "fda-lidocaineinj",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when lidocaine HCl is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-lidocaineinj",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Dosages in children should be reduced, commensurate with age, body weight and physical condition, see DOSAGE AND ADMINISTRATION .",
+      "refs": [
+        {
+          "source": "fda-lidocaineinj",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

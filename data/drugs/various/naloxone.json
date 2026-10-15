@@ -1,0 +1,315 @@
+{
+  "id": "naloxone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نالوکسان",
+    "en": "Naloxone"
+  },
+  "category": "various",
+  "class": {
+    "fa": "آنتاگونیست اپیوئید (پادزهر)",
+    "en": "Opioid antagonist (antidote)"
+  },
+  "brands": [
+    {
+      "name": "Narcan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "narcan",
+    "نارکان",
+    "نالوکسون",
+    "پادزهر تریاک"
+  ],
+  "formulations": [
+    {
+      "id": "syr-1",
+      "form": "injection",
+      "route": "iv",
+      "label": "1 mg/mL (2 mg/2 mL) prefilled syringe",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-naloxone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "opioid-overdose",
+      "label": {
+        "fa": "اوردوز اپیوئید — بزرگسال: ۰٫۴ تا ۲ mg وریدی",
+        "en": "Opioid overdose — adult: 0.4–2 mg IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.4,
+        "perDoseMax": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-naloxone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۲ تا ۳ دقیقه تکرار. اگر پس از ۱۰ mg پاسخی نبود، تشخیص اپیوئید زیر سؤال است. در صورت نبود رگ: عضلانی یا زیرجلدی.",
+            "en": "Repeat every 2–3 min. If no response after 10 mg, question the diagnosis. If no IV access: IM or SC."
+          },
+          "refs": [
+            {
+              "source": "fda-naloxone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "opioid-overdose",
+      "label": {
+        "fa": "اوردوز اپیوئید — کودک: ۰٫۰۱ mg/kg وریدی",
+        "en": "Opioid overdose — child: 0.01 mg/kg IV"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.01,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-naloxone",
+          "section": "Usage in Children"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پاسخ کافی نبود، دوز بعدی ۰٫۱ mg/kg. در نبود رگ: عضلانی یا زیرجلدی در دوزهای منقسم.",
+            "en": "If response is inadequate, a subsequent dose of 0.1 mg/kg. Without IV access: IM or SC in divided doses."
+          },
+          "refs": [
+            {
+              "source": "fda-naloxone",
+              "section": "Usage in Children"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به نالوکسان.",
+        "en": "Hypersensitivity to naloxone."
+      },
+      "refs": [
+        {
+          "source": "fda-naloxone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "در وابستگان به اپیوئید سندرم ترک حاد ایجاد می‌کند؛ اثر نالوکسان از بعضی اپیوئیدها کوتاه‌تر است و بیمار باید پایش شود.",
+        "en": "Precipitates acute withdrawal in opioid-dependent patients; its effect can be shorter than some opioids, so keep the patient monitored."
+      },
+      "refs": [
+        {
+          "source": "fda-naloxone",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "syr-1",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.4,
+        "mlPerDose": 0.4
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "syr-1",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 0.2,
+        "mlPerDose": 0.2
+      }
+    }
+  ],
+  "atc": [
+    "V03AB15"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01341",
+        "en": "NALOXONE HCL 0.4MG/1ML AMP",
+        "fa": "آمپول نالوکسان هیدروکلراید ۰٫۴ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1969/Naloxone",
+        "url": "https://www.darooyab.ir/G-1969/Naloxone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213209",
+      "label": "ANDA213209"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b1303f15-c48b-a44d-b28a-72f370094e02",
+      "label": "FDA Naloxone inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612022.html",
+      "label": "Naloxone Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616003.html",
+      "label": "Naloxone Nasal Spray"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AB15",
+      "label": "V03AB15"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1969/Naloxone",
+      "label": "Naloxone"
+    }
+  ],
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-naloxone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213209"
+  },
+  "populations": {
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when naloxone is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-naloxone",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Naloxone hydrochloride injection, USP may be administered intravenously, intramuscularly or subcutaneously in children and neonates to reverse the effects of opiates.",
+      "refs": [
+        {
+          "source": "fda-naloxone",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-naloxone",
+          "section": "Geriatric Use"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری نالوکسان گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-1969/Naloxone — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-1969/Naloxone"
+        }
+      ]
+    }
+  }
+}
