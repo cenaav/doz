@@ -1,0 +1,207 @@
+{
+  "id": "domperidone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دومپریدون",
+    "en": "Domperidone"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "آنتاگونیست دوپامین؛ ضدتهوع",
+    "en": "Dopamine antagonist; antiemetic"
+  },
+  "brands": [
+    {
+      "name": "Motilium",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "motilium",
+    "موتیلیوم"
+  ],
+  "formulations": [
+    {
+      "id": "susp-1-1",
+      "form": "suspension",
+      "route": "oral",
+      "label": "1 mg / mL oral suspension",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "1"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adolescent-adult",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "۱۲ سال به بالا و ۳۵ کیلوگرم یا بیشتر — ۱۰ mg تا ۳ بار در روز",
+        "en": "≥12 years and ≥35 kg — 10 mg up to 3 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "minWeightKg": 35
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 30,
+        "refs": [
+          {
+            "source": "uk-smpc-domperidone",
+            "section": "4.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کمترین دوز مؤثر برای کوتاه‌ترین مدت؛ معمولاً حداکثر یک هفته. ۱۵ تا ۳۰ دقیقه قبل از غذا.",
+            "en": "Lowest effective dose for the shortest duration; usually no more than one week. 15–30 min before meals."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-domperidone",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "کودکان زیر ۱۲ سال",
+        "en": "Children under 12 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "اثربخشی دومپریدون در کودکان زیر ۱۲ سال ثابت نشده است؛ دوز محاسبه نمی‌شود.",
+          "en": "Efficacy of domperidone in children under 12 years has not been established; no dose is calculated."
+        }
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "cardiac",
+      "severity": "block",
+      "text": {
+        "fa": "QT طولانی، اختلال الکترولیت یا بیماری قلبی زمینه‌ای؛ همراه داروهای طولانی‌کننده QT یا مهارکننده‌های قوی CYP3A4.",
+        "en": "Known QTc prolongation, significant electrolyte disturbance or underlying cardiac disease; with QT-prolonging drugs or potent CYP3A4 inhibitors."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "severity": "block",
+      "text": {
+        "fa": "پرولاکتینوما؛ فئوکروموسیتوم؛ خونریزی/انسداد/سوراخ شدن گوارش؛ نارسایی متوسط تا شدید کبد.",
+        "en": "Prolactinoma; phaeochromocytoma; GI haemorrhage, obstruction or perforation; moderate or severe hepatic impairment."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "طولانی شدن QT، آریتمی بطنی و مرگ ناگهانی قلبی؛ خطر بیشتر بالای ۶۰ سال و دوز بیش از ۳۰ mg/day.",
+        "en": "QT prolongation, serious ventricular arrhythmia and sudden cardiac death; higher risk over 60 years and above 30 mg/day."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-domperidone",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adolescent-adult",
+      "formulation": "susp-1-1",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 10,
+        "perDay": 30
+      }
+    },
+    {
+      "regimen": "adolescent-adult",
+      "formulation": "susp-1-1",
+      "input": {
+        "ageYears": 13,
+        "weightKg": 30
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

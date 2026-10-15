@@ -1,0 +1,504 @@
+{
+  "id": "famotidine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فاموتیدین",
+    "en": "Famotidine"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "آنتاگونیست گیرنده H2",
+    "en": "H2-receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Pepcid",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "famotidin",
+    "پپسید"
+  ],
+  "formulations": [
+    {
+      "id": "susp-40-5",
+      "form": "suspension",
+      "route": "oral",
+      "label": "40 mg / 5 mL (8 mg/mL)",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pud",
+      "disease": "peptic-ulcer-disease",
+      "label": {
+        "fa": "زخم پپتیک — ۰٫۵ mg/kg یک‌بار در روز (تا ۱ mg/kg)",
+        "en": "Peptic ulcer — 0.5 mg/kg once daily (up to 1 mg/kg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.5,
+        "perKgPerDayMax": 1,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 40,
+        "refs": [
+          {
+            "source": "fda-famotidine-susp",
+            "section": "2.2, Table 2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 56,
+        "max": 56
+      }
+    },
+    {
+      "id": "pud-bid",
+      "disease": "peptic-ulcer-disease",
+      "label": {
+        "fa": "زخم پپتیک — ۰٫۲۵ mg/kg دو بار در روز (تا ۰٫۵ mg/kg)",
+        "en": "Peptic ulcer — 0.25 mg/kg twice daily (up to 0.5 mg/kg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.5,
+        "perKgPerDayMax": 1,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 40,
+        "refs": [
+          {
+            "source": "fda-famotidine-susp",
+            "section": "2.2, Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gerd-neonate",
+      "disease": "gerd",
+      "label": {
+        "fa": "ریفلاکس — تولد تا کمتر از ۳ ماه: ۰٫۵ mg/kg یک‌بار در روز (تا ۱ mg/kg)",
+        "en": "GERD — birth to <3 months: 0.5 mg/kg once daily (up to 1 mg/kg)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 3,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.5,
+        "perKgPerDayMax": 1,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه اقدامات محافظه‌کارانه (مثل غلیظ کردن شیر). پس از ۴ هفته ارزیابی مجدد.",
+            "en": "Use conservative measures (e.g. thickened feedings) concurrently; re-evaluate after 4 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-famotidine-susp",
+              "section": "2.2, Table 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gerd-infant",
+      "disease": "gerd",
+      "label": {
+        "fa": "ریفلاکس — ۳ ماه تا کمتر از ۱ سال: ۰٫۵ mg/kg دو بار در روز (تا ۱ mg/kg)",
+        "en": "GERD — 3 months to <1 year: 0.5 mg/kg twice daily (up to 1 mg/kg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 1,
+        "perKgPerDayMax": 2,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 40,
+        "refs": [
+          {
+            "source": "fda-famotidine-susp",
+            "section": "2.2, Table 2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه اقدامات محافظه‌کارانه؛ پس از ۴ هفته ارزیابی مجدد.",
+            "en": "Use conservative measures concurrently; re-evaluate after 4 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-famotidine-susp",
+              "section": "2.2, Table 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gerd-child",
+      "disease": "gerd",
+      "label": {
+        "fa": "ریفلاکس با یا بدون ازوفاژیت — ۱ تا کمتر از ۱۷ سال: ۰٫۵ mg/kg دو بار در روز",
+        "en": "GERD ± esophagitis — 1 to <17 years: 0.5 mg/kg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 1,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 40,
+        "refs": [
+          {
+            "source": "fda-famotidine-susp",
+            "section": "2.2, Table 2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 42,
+        "max": 84
+      }
+    },
+    {
+      "id": "adult-gerd",
+      "disease": "gerd",
+      "label": {
+        "fa": "بزرگسال — ریفلاکس غیرفرسایشی: ۲۰ mg دو بار در روز",
+        "en": "Adults — symptomatic nonerosive GERD: 20 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 42,
+        "max": 42
+      }
+    },
+    {
+      "id": "adult-du",
+      "disease": "peptic-ulcer-disease",
+      "label": {
+        "fa": "بزرگسال — زخم اثنی‌عشر فعال: ۴۰ mg یک‌بار در روز",
+        "en": "Adults — active duodenal ulcer: 40 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۲۰ mg دو بار در روز؛ تا ۸ هفته.",
+            "en": "Or 20 mg twice daily; up to 8 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-famotidine-susp",
+              "section": "2.1, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "h2-hypersensitivity",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه واکنش حساسیتی جدی به فاموتیدین یا سایر آنتاگونیست‌های H2.",
+        "en": "History of serious hypersensitivity to famotidine or other H2-receptor antagonists."
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "عوارض دستگاه عصبی مرکزی (به‌ویژه در نارسایی کلیه)",
+        "en": "Central nervous system adverse reactions"
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "5.1"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "پاسخ علامتی، بدخیمی معده را رد نمی‌کند",
+        "en": "Symptomatic response does not rule out gastric malignancy"
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "5.2"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "warn",
+      "text": {
+        "fa": "دوز بی‌خطر در کودکان با نارسایی کلیه تعیین نشده است؛ در بزرگسالان کلیرانس کمتر از ۶۰ طبق جدول ۳ کاهش یابد.",
+        "en": "No safe dose established in pediatric renal impairment; adults with CrCl <60 per Table 3."
+      },
+      "refs": [
+        {
+          "source": "fda-famotidine-susp",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pud",
+      "formulation": "susp-40-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 1.25,
+        "upperPerDose": 20
+      }
+    },
+    {
+      "regimen": "pud-bid",
+      "formulation": "susp-40-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 10
+      }
+    },
+    {
+      "regimen": "gerd-neonate",
+      "formulation": "susp-40-5",
+      "input": {
+        "ageDays": 30,
+        "weightKg": 4
+      },
+      "expect": {
+        "perDose": 2,
+        "mlPerDose": 0.25,
+        "upperPerDose": 4
+      }
+    },
+    {
+      "regimen": "gerd-infant",
+      "formulation": "susp-40-5",
+      "input": {
+        "ageMonths": 6,
+        "weightKg": 8
+      },
+      "expect": {
+        "perDose": 4,
+        "upperPerDose": 8,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "gerd-child",
+      "formulation": "susp-40-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 1.25
+      }
+    },
+    {
+      "regimen": "gerd-child",
+      "formulation": "susp-40-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 90
+      },
+      "expect": {
+        "perDose": 40
+      }
+    },
+    {
+      "regimen": "adult-gerd",
+      "formulation": "susp-40-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 2.5
+      }
+    },
+    {
+      "regimen": "adult-du",
+      "formulation": "susp-40-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 5
+      }
+    }
+  ]
+}

@@ -99,7 +99,7 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
   res.perDose = r2(capped.perDose)
   res.perDay = r2(capped.perDay)
   res.dosesPerDay = r2(n)
-  res.intervalHours = r2(24 / n)
+  res.intervalHours = r2(reg.dose.intervalHours ?? 24 / n)
   res.durationDays = reg.durationDays ?? null
   res.bsa = base.bsa
   res.titration = base.titration

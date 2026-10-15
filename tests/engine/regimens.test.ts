@@ -73,3 +73,11 @@ describe('notCalculated', () => {
     expect(calculate(d, 'r0', 'f', { ageDays: yr(5), weightKg: 18 })).toMatchObject({ status: 'notCalculated', reason: { en: 'label is age-based OTC' } })
   })
 })
+
+describe('explicit interval for PRN schedules', () => {
+  test('ageBand with intervalHours shows the label interval, not 24/n', () => {
+    const d = drug([{ type: 'ageBand', dose: { intervalHours: 4, bands: [{ minAge: Y(2), maxAge: Y(4), perDose: 160, dosesPerDay: 5 }] } }], [susp('f', 160)])
+    const r = calculate(d, 'r0', 'f', { ageDays: yr(3), weightKg: 14 })
+    expect(r).toMatchObject({ perDose: 160, dosesPerDay: 5, perDay: 800, intervalHours: 4 })
+  })
+})

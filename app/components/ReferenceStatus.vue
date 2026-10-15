@@ -2,7 +2,7 @@
 import type { Drug, SourceType } from '../../lib/types'
 import { drugRefs, groupRefsByType } from '../../lib/data/refs'
 const props = defineProps<{ drug: Drug }>()
-const ALWAYS: SourceType[] = ['fda-label', 'guideline', 'licensed-reference', 'ifda-leaflet']
+const ALWAYS: SourceType[] = ['fda-label', 'uk-smpc', 'guideline', 'licensed-reference', 'ifda-leaflet']
 const grouped = computed(() => groupRefsByType(drugRefs(props.drug), sources))
 const rows = computed(() => {
   const extra = [...grouped.value.keys()].filter((k) => !ALWAYS.includes(k))

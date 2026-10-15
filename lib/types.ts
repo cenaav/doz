@@ -11,7 +11,7 @@ export interface Ref {
   note?: I18nText
 }
 
-export type SourceType = 'fda-label' | 'ema-smpc' | 'guideline' | 'licensed-reference' | 'ifda-leaflet' | 'textbook'
+export type SourceType = 'fda-label' | 'ema-smpc' | 'uk-smpc' | 'guideline' | 'licensed-reference' | 'ifda-leaflet' | 'textbook'
 export interface Source {
   id: string
   type: SourceType

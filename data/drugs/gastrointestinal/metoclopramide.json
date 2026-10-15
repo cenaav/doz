@@ -1,0 +1,279 @@
+{
+  "id": "metoclopramide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متوکلوپرامید",
+    "en": "Metoclopramide"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "آنتاگونیست دوپامین؛ پروکینتیک",
+    "en": "Dopamine antagonist; prokinetic"
+  },
+  "brands": [
+    {
+      "name": "Reglan",
+      "market": "US"
+    },
+    {
+      "name": "Maxolon",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "plasil",
+    "پلاسیل",
+    "متوکلوپرامید قطره"
+  ],
+  "formulations": [
+    {
+      "id": "sol-5-5",
+      "form": "solution",
+      "route": "oral",
+      "label": "5 mg / 5 mL oral solution",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-metoclopramide",
+          "section": "1"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cinv-child",
+      "disease": "cinv",
+      "label": {
+        "fa": "پیشگیری از تهوع تأخیری شیمی‌درمانی — ۱ تا ۱۸ سال: ۰٫۱ تا ۰٫۱۵ mg/kg تا ۳ بار در روز",
+        "en": "Prevention of delayed CINV — 1–18 years: 0.1–0.15 mg/kg up to 3 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.1,
+        "perKgPerDoseMax": 0.15,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-metoclopramide",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 0.5,
+        "refs": [
+          {
+            "source": "uk-smpc-metoclopramide",
+            "section": "4.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداقل ۶ ساعت فاصله بین دو دوز، حتی اگر استفراغ شود. حداکثر ۵ روز. در کودکان فقط برای این کاربرد مجوز دارد.",
+            "en": "At least 6 h between doses, even after vomiting. Maximum 5 days. In children licensed only for this use."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-metoclopramide",
+              "section": "4.2"
+            },
+            {
+              "source": "uk-smpc-metoclopramide",
+              "section": "4.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "nausea-vomiting",
+      "label": {
+        "fa": "بزرگسال — ۱۰ mg تا ۳ بار در روز",
+        "en": "Adults — 10 mg up to 3 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-metoclopramide",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 30,
+        "maxPerKgPerDay": 0.5,
+        "refs": [
+          {
+            "source": "uk-smpc-metoclopramide",
+            "section": "4.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 5
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-1-year",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "کودکان زیر ۱ سال (خطر اختلالات اکستراپیرامیدال).",
+        "en": "Children under 1 year (risk of extrapyramidal disorders)."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-metoclopramide",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی، انسداد یا سوراخ شدن گوارش؛ سابقه دیسکینزی دیررس؛ صرع؛ پارکینسون؛ فئوکروموسیتوم؛ همراه لوودوپا/آگونیست دوپامین؛ سابقه مت‌هموگلوبینمی.",
+        "en": "GI haemorrhage, obstruction or perforation; history of tardive dyskinesia; epilepsy; Parkinson's disease; phaeochromocytoma; with levodopa/dopamine agonists; history of methaemoglobinaemia."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-metoclopramide",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "عوارض اکستراپیرامیدال به‌ویژه در کودکان و جوانان، حتی پس از یک دوز؛ در صورت بروز فوراً قطع شود.",
+        "en": "Extrapyramidal disorders, particularly in children and young adults, even after a single dose; stop immediately if they occur."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-metoclopramide",
+          "section": "4.4"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "دیسکینزی دیررس با مصرف طولانی؛ بیش از ۳ ماه مصرف نشود. سندرم نورولپتیک بدخیم.",
+        "en": "Tardive dyskinesia with prolonged use; do not exceed 3 months. Neuroleptic malignant syndrome."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-metoclopramide",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "warn",
+      "text": {
+        "fa": "کلیرانس ۱۵ تا ۶۰: دوز ۵۰٪ کاهش؛ ۱۵ یا کمتر: دوز روزانه ۷۵٪ کاهش.",
+        "en": "CrCl 15–60: reduce dose 50%; ≤15: reduce daily dose 75%."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-metoclopramide",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cinv-child",
+      "formulation": "sol-5-5",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 1.5,
+        "mlPerDose": 1.5,
+        "upperPerDose": 2.25,
+        "upperPerDay": 6.75
+      }
+    },
+    {
+      "regimen": "cinv-child",
+      "formulation": "sol-5-5",
+      "input": {
+        "ageMonths": 8,
+        "weightKg": 8
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "sol-5-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 10,
+        "perDay": 30
+      }
+    }
+  ]
+}
