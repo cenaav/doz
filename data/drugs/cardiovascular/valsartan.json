@@ -1,0 +1,381 @@
+{
+  "id": "valsartan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "والسارتان",
+    "en": "Valsartan"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مسدودکننده گیرنده آنژیوتانسین (ARB)",
+    "en": "Angiotensin receptor blocker (ARB)"
+  },
+  "brands": [
+    {
+      "name": "Diovan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "diovan",
+    "دیووان",
+    "والسارتان",
+    "ARB"
+  ],
+  "formulations": [
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet (scored)",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-valsartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-80",
+      "form": "tablet",
+      "route": "oral",
+      "label": "80 mg tablet",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-valsartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-160",
+      "form": "tablet",
+      "route": "oral",
+      "label": "160 mg tablet",
+      "concentration": {
+        "amount": 160,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-valsartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-320",
+      "form": "tablet",
+      "route": "oral",
+      "label": "320 mg tablet",
+      "concentration": {
+        "amount": 320,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-valsartan",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult-htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — بزرگسال: ۸۰ یا ۱۶۰ mg یک بار در روز",
+        "en": "Hypertension — adults: 80 or 160 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 80,
+        "perDoseMax": 160,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-valsartan",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 320,
+        "refs": [
+          {
+            "source": "fda-valsartan",
+            "section": "2, Table"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "محدوده ۸۰ تا ۳۲۰ mg یک بار در روز.",
+            "en": "Range 80–320 mg once daily."
+          },
+          "refs": [
+            {
+              "source": "fda-valsartan",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds-htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۱ تا ۱۶ سال: ۱ mg/kg یک بار در روز (تا ۴۰ mg)",
+        "en": "Hypertension — 1–16 y: 1 mg/kg once daily (up to 40 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 1,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-valsartan",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 40,
+        "refs": [
+          {
+            "source": "fda-valsartan",
+            "section": "2.3"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "محدوده ۱ تا ۴ mg/kg یک بار (تا ۱۶۰ mg). برای ۱ تا ۵ سال یا وقتی دوز با قرص جور نیست، سوسپانسیون توصیه می‌شود.",
+            "en": "Range 1–4 mg/kg once daily (up to 160 mg). Suspension recommended for ages 1–5 or when the dose does not match tablet strengths."
+          },
+          "refs": [
+            {
+              "source": "fda-valsartan",
+              "section": "2, Table"
+            },
+            {
+              "source": "fda-valsartan",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hf",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی قلبی — بزرگسال: شروع ۴۰ mg دو بار در روز",
+        "en": "Heart failure — adults: start 40 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-valsartan",
+          "section": "2.4"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 320,
+        "refs": [
+          {
+            "source": "fda-valsartan",
+            "section": "2.4"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "محدوده ۴۰ تا ۱۶۰ mg دو بار؛ حداکثر ۳۲۰ mg/day در کارآزمایی‌ها.",
+            "en": "Range 40–160 mg twice daily; max 320 mg/day in trials."
+          },
+          "refs": [
+            {
+              "source": "fda-valsartan",
+              "section": "2, Table"
+            },
+            {
+              "source": "fda-valsartan",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-1",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱ سال توصیه نمی‌شود.",
+        "en": "Not recommended under 1 year."
+      },
+      "refs": [
+        {
+          "source": "fda-valsartan",
+          "section": "8.4"
+        }
+      ]
+    },
+    {
+      "id": "pregnancy",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — با تشخیص بارداری فوراً قطع شود.",
+        "en": "Boxed warning: fetal toxicity — stop as soon as pregnancy is detected."
+      },
+      "refs": [
+        {
+          "source": "fda-valsartan",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "در کودکان با GFR کمتر از ۳۰ یا دیالیز داده‌ای نیست.",
+        "en": "No data in children with GFR <30 or on dialysis."
+      },
+      "refs": [
+        {
+          "source": "fda-valsartan",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult-htn",
+      "formulation": "tab-80",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 80,
+        "upperPerDose": 160
+      }
+    },
+    {
+      "regimen": "peds-htn",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "peds-htn",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 40
+      }
+    },
+    {
+      "regimen": "hf",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDay": 80
+      }
+    }
+  ]
+}

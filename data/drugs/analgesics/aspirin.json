@@ -1,0 +1,207 @@
+{
+  "id": "aspirin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آسپیرین",
+    "en": "Aspirin (acetylsalicylic acid)"
+  },
+  "category": "analgesics",
+  "class": {
+    "fa": "NSAID / ضدپلاکت",
+    "en": "NSAID / antiplatelet"
+  },
+  "brands": [
+    {
+      "name": "Bayer",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ASA",
+    "acetylsalicylic acid",
+    "آسپرین",
+    "آسپیرین",
+    "استیل سالیسیلیک اسید",
+    "آ اس آ"
+  ],
+  "formulations": [
+    {
+      "id": "chew-81",
+      "form": "chewable-tablet",
+      "route": "oral",
+      "label": "81 mg chewable tablet",
+      "concentration": {
+        "amount": 81,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pain",
+      "disease": "pain",
+      "label": {
+        "fa": "درد — ۱۲ سال به بالا: ۴ تا ۸ قرص ۸۱ mg هر ۴ ساعت",
+        "en": "Pain — ≥12 y: 4–8 × 81 mg tablets every 4 hours"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 324,
+        "perDoseMax": 648,
+        "dosesPerDay": 6
+      },
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 3888,
+        "refs": [
+          {
+            "source": "fda-aspirin-81",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر ۴۸ قرص در ۲۴ ساعت مگر به دستور پزشک. با یک لیوان آب.",
+            "en": "Not more than 48 tablets in 24 h unless directed by a doctor. With a full glass of water."
+          },
+          "refs": [
+            {
+              "source": "fda-aspirin-81",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "antiplatelet",
+      "disease": "atherothrombotic-prevention",
+      "label": {
+        "fa": "دوز پایین ضدپلاکت",
+        "en": "Low-dose antiplatelet"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "مصرف ضدپلاکتی در برچسب OTC نیامده؛ فقط به تجویز پزشک.",
+          "en": "Antiplatelet use is not on this OTC label; only as prescribed by a physician."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال: با پزشک مشورت شود.",
+        "en": "Under 12 years: consult a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Directions"
+        }
+      ]
+    },
+    {
+      "id": "reye",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 20,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "سندرم ری: کودکان و نوجوانانی که آبله‌مرغان یا علائم شبه‌آنفلوآنزا دارند یا در حال بهبودند نباید مصرف کنند.",
+        "en": "Reye's syndrome: children and teenagers who have or are recovering from chickenpox or flu-like symptoms should not use this product."
+      },
+      "refs": [
+        {
+          "source": "fda-aspirin-81",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pain",
+      "formulation": "chew-81",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 324,
+        "tabletsPerDoseRounded": 4,
+        "upperPerDose": 648
+      }
+    },
+    {
+      "regimen": "pain",
+      "formulation": "chew-81",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ]
+}

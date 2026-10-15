@@ -1,0 +1,221 @@
+{
+  "id": "isosorbide-dinitrate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایزوسورباید دی‌نیترات",
+    "en": "Isosorbide dinitrate"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "نیترات",
+    "en": "Nitrate"
+  },
+  "brands": [
+    {
+      "name": "Isordil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "isordil",
+    "ایزوردیل",
+    "ایزوسورباید",
+    "نیترات"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isdn",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (scored)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isdn",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (scored)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isdn",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg tablet (scored)",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isdn",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "angina",
+      "disease": "angina",
+      "label": {
+        "fa": "پیشگیری از آنژین — شروع ۵ تا ۲۰ mg دو یا سه بار در روز",
+        "en": "Angina prevention — start 5–20 mg two or three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 20,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-isdn",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده ۱۰ تا ۴۰ mg دو یا سه بار در روز.",
+            "en": "Maintenance 10–40 mg two or three times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-isdn",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "angina",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in pediatric patients not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-isdn",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ایزوسورباید دی‌نیترات.",
+        "en": "Allergy to isosorbide dinitrate."
+      },
+      "refs": [
+        {
+          "source": "fda-isdn",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "angina",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 20
+      }
+    }
+  ]
+}

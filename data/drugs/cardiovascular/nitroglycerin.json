@@ -1,0 +1,135 @@
+{
+  "id": "nitroglycerin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نیتروگلیسیرین زیرزبانی",
+    "en": "Nitroglycerin (sublingual)"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "نیترات",
+    "en": "Nitrate"
+  },
+  "brands": [
+    {
+      "name": "Nitrostat",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nitrostat",
+    "TNG",
+    "NTG",
+    "نیتروگلیسیرین",
+    "قرص زیر زبانی",
+    "پرل"
+  ],
+  "formulations": [
+    {
+      "id": "sl-0-4",
+      "form": "sublingual-tablet",
+      "route": "sublingual",
+      "label": "0.4 mg sublingual tablet",
+      "concentration": {
+        "amount": 0.4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nitroglycerin-sl",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acute",
+      "disease": "angina",
+      "label": {
+        "fa": "حمله حاد آنژین — ۱ قرص زیر زبان",
+        "en": "Acute angina — 1 tablet under the tongue"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nitroglycerin-sl",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۵ دقیقه یک قرص دیگر تا رفع درد؛ حداکثر ۳ قرص در ۱۵ دقیقه. اگر درد پس از ۳ قرص ادامه یافت یا متفاوت بود، فوراً اورژانس. نشسته مصرف شود. پیشگیری: ۵ تا ۱۰ دقیقه پیش از فعالیت.",
+            "en": "Repeat one tablet every 5 min until relief; max 3 tablets in 15 min. If pain persists after 3 tablets or is different, seek emergency care. Take sitting. Prophylaxis: 5–10 min before activity."
+          },
+          "refs": [
+            {
+              "source": "fda-nitroglycerin-sl",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "همراه مهارکننده‌های PDE-5 (سیلدنافیل، تادالافیل، وردنافیل، آوانافیل) یا ریوسیگوات؛ کم‌خونی شدید؛ افزایش فشار داخل جمجمه (و سایر موارد بخش ۴).",
+        "en": "With PDE-5 inhibitors (sildenafil, tadalafil, vardenafil, avanafil) or riociguat; severe anaemia; increased intracranial pressure (and other items in section 4)."
+      },
+      "refs": [
+        {
+          "source": "fda-nitroglycerin-sl",
+          "section": "4.1"
+        },
+        {
+          "source": "fda-nitroglycerin-sl",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acute",
+      "formulation": "sl-0-4",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 0.4,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ]
+}

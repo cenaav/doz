@@ -1,0 +1,405 @@
+{
+  "id": "enalapril",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "انالاپریل",
+    "en": "Enalapril"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مهارکننده ACE",
+    "en": "ACE inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Vasotec",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vasotec",
+    "انالاپریل",
+    "enalapril maleate",
+    "ACEI"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet (scored)",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult-htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — بزرگسال: شروع ۵ mg یک بار در روز",
+        "en": "Hypertension — adults: start 5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "Dosage and Administration, Hypertension"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 40,
+        "refs": [
+          {
+            "source": "fda-enalapril",
+            "section": "Dosage and Administration, Renal Impairment"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "محدوده معمول ۱۰ تا ۴۰ mg/day در یک یا دو نوبت. اگر دیورتیک قطع نمی‌شود: شروع ۲٫۵ mg زیر نظر. CrCl ≤۳۰: شروع ۲٫۵ mg.",
+            "en": "Usual range 10–40 mg/day in one or two doses. If a diuretic cannot be stopped: start 2.5 mg under supervision. CrCl ≤30: start 2.5 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-enalapril",
+              "section": "Dosage and Administration, Hypertension"
+            },
+            {
+              "source": "fda-enalapril",
+              "section": "Dosage and Administration, Renal Impairment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds-htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۱ ماه تا ۱۶ سال: ۰٫۰۸ mg/kg یک بار در روز (حداکثر ۵ mg شروع)",
+        "en": "Hypertension — 1 month–16 y: 0.08 mg/kg once daily (start up to 5 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.08,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "Dosage and Administration, Pediatric Hypertensive Patients"
+        },
+        {
+          "source": "fda-enalapril",
+          "section": "Pediatric Use"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 5,
+        "refs": [
+          {
+            "source": "fda-enalapril",
+            "section": "Dosage and Administration, Pediatric Hypertensive Patients"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر اساس پاسخ فشار تنظیم شود. دوز بالاتر از ۰٫۵۸ mg/kg (یا بیش از ۴۰ mg) در کودکان مطالعه نشده.",
+            "en": "Adjust to blood-pressure response. Doses above 0.58 mg/kg (or over 40 mg) not studied in children."
+          },
+          "refs": [
+            {
+              "source": "fda-enalapril",
+              "section": "Dosage and Administration, Pediatric Hypertensive Patients"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hf",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی قلبی — بزرگسال: شروع ۲٫۵ mg",
+        "en": "Heart failure — adults: start 2.5 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "Dosage and Administration, Heart Failure"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 40,
+        "refs": [
+          {
+            "source": "fda-enalapril",
+            "section": "Dosage and Administration, Heart Failure and Renal Impairment"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش به ۲٫۵ mg دو بار، سپس ۵ mg دو بار و بیشتر، معمولاً با فاصله ≥۴ روز؛ حداکثر ۴۰ mg/day.",
+            "en": "Increase to 2.5 mg twice daily, then 5 mg twice daily and higher, usually ≥4 days apart; max 40 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-enalapril",
+              "section": "Dosage and Administration, Heart Failure and Renal Impairment"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "angioedema",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه آنژیوادم (با ACEI، ارثی یا ایدیوپاتیک)؛ همراه ساکوبیتریل (۳۶ ساعت فاصله)؛ آلیسکیرن در دیابت؛ حساسیت.",
+        "en": "History of angioedema (ACE inhibitor, hereditary or idiopathic); with sacubitril (36 h gap); aliskiren in diabetes; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "neonate",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 1,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "در نوزادان توصیه نمی‌شود (داده‌ای نیست).",
+        "en": "Not recommended in neonates (no data)."
+      },
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "Dosage and Administration, Pediatric Hypertensive Patients"
+        }
+      ]
+    },
+    {
+      "id": "pregnancy",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — با تشخیص بارداری فوراً قطع شود.",
+        "en": "Boxed warning: fetal toxicity — stop as soon as pregnancy is detected."
+      },
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "block",
+      "text": {
+        "fa": "در کودکان با GFR کمتر از ۳۰ توصیه نمی‌شود.",
+        "en": "Not recommended in children with GFR <30 mL/min/1.73 m²."
+      },
+      "refs": [
+        {
+          "source": "fda-enalapril",
+          "section": "Dosage and Administration, Pediatric Hypertensive Patients"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult-htn",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "peds-htn",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 9,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 2.4,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "peds-htn",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5
+      }
+    },
+    {
+      "regimen": "peds-htn",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 0.05,
+        "weightKg": 4
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    },
+    {
+      "regimen": "hf",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 2.5
+      }
+    }
+  ]
+}

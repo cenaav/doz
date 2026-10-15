@@ -1,0 +1,282 @@
+{
+  "id": "hydrochlorothiazide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "هیدروکلروتیازید",
+    "en": "Hydrochlorothiazide"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "دیورتیک تیازیدی",
+    "en": "Thiazide diuretic"
+  },
+  "brands": [
+    {
+      "name": "Microzide",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "hctz",
+    "HCT",
+    "هیدروکلروتیازید",
+    "اچ سی تی"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet (scored)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hctz",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — بزرگسال: ۲۵ mg یک بار در روز",
+        "en": "Hypertension — adults: 25 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hctz",
+          "section": "Dosage and Administration, Adults"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 50,
+        "refs": [
+          {
+            "source": "fda-hctz",
+            "section": "Dosage and Administration, Adults"
+          },
+          {
+            "source": "fda-hctz",
+            "section": "Dosage and Administration",
+            "note": {
+              "en": "Doses above 50 mg: marked potassium loss; usual ceiling 50 mg"
+            }
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تا ۵۰ mg/day (یک یا دو نوبت). دوز بالاتر از ۵۰ با افت شدید پتاسیم همراه است.",
+            "en": "Up to 50 mg/day (one or two doses). Doses above 50 mg cause marked potassium loss."
+          },
+          "refs": [
+            {
+              "source": "fda-hctz",
+              "section": "Dosage and Administration, Adults"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edema",
+      "disease": "edema",
+      "label": {
+        "fa": "ادم — بزرگسال: ۲۵ تا ۱۰۰ mg/day",
+        "en": "Edema — adults: 25–100 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "perDoseMax": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hctz",
+          "section": "Dosage and Administration, Adults"
+        }
+      ]
+    },
+    {
+      "id": "infant",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون/دیورز — زیر ۲ سال: ۱ تا ۲ mg/kg/day (حداکثر ۳۷٫۵ mg/day)",
+        "en": "Hypertension/diuresis — under 2 y: 1–2 mg/kg/day (max 37.5 mg/day)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 1,
+        "perKgPerDayMax": 2,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hctz",
+          "section": "Dosage and Administration, Infants and Children"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 37.5,
+        "refs": [
+          {
+            "source": "fda-hctz",
+            "section": "Dosage and Administration, Infants and Children"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یک یا دو نوبت. زیر ۶ ماه ممکن است تا ۳ mg/kg/day در دو نوبت لازم باشد.",
+            "en": "Single or two doses. Under 6 months up to 3 mg/kg/day in two doses may be needed."
+          },
+          "refs": [
+            {
+              "source": "fda-hctz",
+              "section": "Dosage and Administration, Infants and Children"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون/دیورز — ۲ تا ۱۲ سال: ۱ تا ۲ mg/kg/day (حداکثر ۱۰۰ mg/day)",
+        "en": "Hypertension/diuresis — 2–12 y: 1–2 mg/kg/day (max 100 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 1,
+        "perKgPerDayMax": 2,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hctz",
+          "section": "Dosage and Administration, Infants and Children"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 100,
+        "refs": [
+          {
+            "source": "fda-hctz",
+            "section": "Dosage and Administration, Infants and Children"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 12.5
+      },
+      "expect": {
+        "perDose": 12.5,
+        "tabletsPerDoseRounded": 0.5,
+        "upperPerDose": 25
+      }
+    },
+    {
+      "regimen": "infant",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 1.5,
+        "weightKg": 12.5
+      },
+      "expect": {
+        "perDose": 12.5
+      }
+    },
+    {
+      "regimen": "edema",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 25,
+        "upperPerDose": 100
+      }
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "id": "spironolactone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اسپیرونولاکتون",
+    "en": "Spironolactone"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آنتاگونیست آلدوسترون (دیورتیک نگهدارنده پتاسیم)",
+    "en": "Aldosterone antagonist (potassium-sparing diuretic)"
+  },
+  "brands": [
+    {
+      "name": "Aldactone",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aldactone",
+    "آلداکتون",
+    "اسپیرونولاکتون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-spironolactone",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-spironolactone",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-spironolactone",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hf",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی قلبی — ۲۵ mg یک بار در روز",
+        "en": "Heart failure — 25 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-spironolactone",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پتاسیم ≤۵ و eGFR بالای ۵۰. در صورت تحمل تا ۵۰ mg؛ در هیپرکالمی ۲۵ mg یک روز در میان. eGFR ۳۰ تا ۵۰: شروع یک روز در میان.",
+            "en": "If potassium ≤5.0 and eGFR >50. If tolerated up to 50 mg; with hyperkalemia 25 mg every other day. eGFR 30–50: start every other day."
+          },
+          "refs": [
+            {
+              "source": "fda-spironolactone",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-spironolactone",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۲۵ تا ۱۰۰ mg/day",
+        "en": "Hypertension — 25–100 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "perDoseMax": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-spironolactone",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک یا چند نوبت؛ بالاتر از ۱۰۰ mg/day معمولاً اثر بیشتری ندارد.",
+            "en": "Single or divided; above 100 mg/day generally no further benefit."
+          },
+          "refs": [
+            {
+              "source": "fda-spironolactone",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aldo",
+      "disease": "hyperaldosteronism",
+      "label": {
+        "fa": "هیپرآلدوسترونیسم — آمادگی جراحی: ۱۰۰ تا ۴۰۰ mg/day",
+        "en": "Hyperaldosteronism — before surgery: 100–400 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "perDoseMax": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-spironolactone",
+          "section": "2.5"
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in pediatric patients not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-spironolactone",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "هیپرکالمی؛ بیماری آدیسون؛ مصرف همزمان اپلرنون.",
+        "en": "Hyperkalemia; Addison's disease; concomitant eplerenone."
+      },
+      "refs": [
+        {
+          "source": "fda-spironolactone",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hf",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25
+      }
+    },
+    {
+      "regimen": "htn",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 25,
+        "upperPerDose": 100
+      }
+    },
+    {
+      "regimen": "aldo",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 100,
+        "upperPerDose": 400
+      }
+    }
+  ]
+}

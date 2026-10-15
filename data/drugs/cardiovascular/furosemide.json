@@ -1,0 +1,246 @@
+{
+  "id": "furosemide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فوروزماید",
+    "en": "Furosemide"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "دیورتیک لوپ",
+    "en": "Loop diuretic"
+  },
+  "brands": [
+    {
+      "name": "Lasix",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lasix",
+    "لازیکس",
+    "فوروزماید",
+    "furosemid",
+    "فوروسماید"
+  ],
+  "formulations": [
+    {
+      "id": "sol-10",
+      "form": "solution",
+      "route": "oral",
+      "label": "10 mg/mL oral solution",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-furosemide-solution",
+          "section": "Description"
+        },
+        {
+          "source": "fda-furosemide-solution",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-furosemide",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet (scored)",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-furosemide",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "edema",
+      "label": {
+        "fa": "ادم — بزرگسال: ۲۰ تا ۸۰ mg تک‌دوز",
+        "en": "Edema — adults: 20–80 mg single dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "perDoseMax": 80,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-furosemide-solution",
+          "section": "Dosage and Administration, Adults"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-furosemide-solution",
+            "section": "Dosage and Administration, Adults"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۲۰ یا ۴۰ mg افزایش، نه زودتر از ۶ تا ۸ ساعت. دوز مؤثر یک یا دو بار در روز (مثلاً ۸ صبح و ۲ بعدازظهر). تا ۶۰۰ mg/day فقط در ادم شدید.",
+            "en": "If needed raise by 20 or 40 mg, not sooner than 6–8 h. Effective dose once or twice daily (e.g. 8 am and 2 pm). Up to 600 mg/day only in severe edema."
+          },
+          "refs": [
+            {
+              "source": "fda-furosemide-solution",
+              "section": "Dosage and Administration, Adults"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "edema",
+      "label": {
+        "fa": "ادم — کودکان: ۲ mg/kg تک‌دوز",
+        "en": "Edema — children: 2 mg/kg single dose"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 2,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-furosemide-solution",
+          "section": "Dosage and Administration, Pediatric Patients"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDose": 6,
+        "refs": [
+          {
+            "source": "fda-furosemide-solution",
+            "section": "Dosage and Administration, Pediatric Patients"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پاسخ کافی نبود، ۱ یا ۲ mg/kg افزایش، نه زودتر از ۶ تا ۸ ساعت؛ بیش از ۶ mg/kg توصیه نمی‌شود. نگهدارنده: کمترین دوز مؤثر.",
+            "en": "If inadequate, increase by 1–2 mg/kg no sooner than 6–8 h; more than 6 mg/kg not recommended. Maintenance: lowest effective dose."
+          },
+          "refs": [
+            {
+              "source": "fda-furosemide-solution",
+              "section": "Dosage and Administration, Pediatric Patients"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آنوری؛ حساسیت به فوروزماید.",
+        "en": "Anuria; hypersensitivity to furosemide."
+      },
+      "refs": [
+        {
+          "source": "fda-furosemide-solution",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 20,
+        "upperPerDose": 80
+      }
+    },
+    {
+      "regimen": "peds",
+      "formulation": "sol-10",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 2
+      }
+    }
+  ]
+}

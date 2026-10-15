@@ -1,0 +1,255 @@
+{
+  "id": "clopidogrel",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلوپیدوگرل",
+    "en": "Clopidogrel"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مهارکننده P2Y12 (ضدپلاکت)",
+    "en": "P2Y12 inhibitor (antiplatelet)"
+  },
+  "brands": [
+    {
+      "name": "Plavix",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "plavix",
+    "پلاویکس",
+    "کلوپیدوگرل",
+    "ضد پلاکت"
+  ],
+  "formulations": [
+    {
+      "id": "tab-75",
+      "form": "tablet",
+      "route": "oral",
+      "label": "75 mg tablet",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clopidogrel",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-300",
+      "form": "tablet",
+      "route": "oral",
+      "label": "300 mg tablet",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clopidogrel",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acs-load",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "سندرم حاد کرونری — دوز بارگیری ۳۰۰ mg (یک‌بار)",
+        "en": "ACS — loading dose 300 mg (once)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-clopidogrel",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "سپس ۷۵ mg یک بار در روز. بدون دوز بارگیری، اثر ضدپلاکتی چند روز دیرتر می‌رسد.",
+            "en": "Then 75 mg once daily. Without a loading dose the antiplatelet effect is delayed by several days."
+          },
+          "refs": [
+            {
+              "source": "fda-clopidogrel",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "سندرم حاد کرونری — نگهدارنده ۷۵ mg یک بار در روز",
+        "en": "ACS — maintenance 75 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 75,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-clopidogrel",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "prevent",
+      "disease": "atherothrombotic-prevention",
+      "label": {
+        "fa": "MI یا سکته مغزی اخیر، PAD — ۷۵ mg یک بار در روز",
+        "en": "Recent MI or stroke, PAD — 75 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 75,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-clopidogrel",
+          "section": "2.2"
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "atherothrombotic-prevention",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان ثابت نشده است.",
+          "en": "Safety and effectiveness in pediatric patients not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-clopidogrel",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی پاتولوژیک فعال (زخم پپتیک، خونریزی داخل جمجمه)؛ حساسیت.",
+        "en": "Active pathological bleeding (peptic ulcer, intracranial haemorrhage); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-clopidogrel",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acs-load",
+      "formulation": "tab-300",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 300
+      }
+    },
+    {
+      "regimen": "prevent",
+      "formulation": "tab-75",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 75
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "tab-75",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDay": 75
+      }
+    }
+  ]
+}
