@@ -20,7 +20,7 @@ onMounted(() => {
       <DrugHeader :drug="drug" />
       <DoseCalculator :drug="drug" />
     </div>
-    <div class="space-y-4"><DrugSafety :drug="drug" /></div>
+    <div class="space-y-4"><DrugSafety :drug="drug" /><SimilarDrugs :drug="drug" /></div>
     <div class="space-y-4 lg:col-span-2 2xl:col-span-1"><ReferenceStatus :drug="drug" /></div>
   </div>
 </template>

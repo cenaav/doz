@@ -48,6 +48,74 @@
       },
       "specialty": {
         "type": "string"
+      },
+      "description": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "text",
+          "refs"
+        ],
+        "properties": {
+          "text": {
+            "type": "object",
+            "additionalProperties": false,
+            "minProperties": 1,
+            "properties": {
+              "fa": {
+                "type": "string",
+                "minLength": 1
+              },
+              "en": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "drug.schema.json#/$defs/ref"
+            }
+          }
+        }
+      },
+      "symptoms": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "items",
+          "refs"
+        ],
+        "properties": {
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "minProperties": 1,
+              "properties": {
+                "fa": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "drug.schema.json#/$defs/ref"
+            }
+          }
+        }
       }
     }
   }

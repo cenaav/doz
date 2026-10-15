@@ -10,8 +10,9 @@ const isHome = computed(() => route.path.replace(/\/$/, '') === localePath('/').
       <SearchBox v-if="!isHome" compact class="mx-2 hidden max-w-xl flex-1 md:block" />
       <nav class="ms-auto flex items-center gap-0.5">
         <NuxtLink v-if="!isHome" :to="localePath('/')" class="btn-ghost md:hidden" :aria-label="$t('search.placeholder')">🔍</NuxtLink>
+        <NuxtLink :to="localePath('/diseases')" class="btn-ghost">{{ $t('nav.diseases') }}</NuxtLink>
         <NuxtLink :to="localePath('/sources')" class="btn-ghost hidden sm:inline-flex">{{ $t('nav.sources') }}</NuxtLink>
-        <NuxtLink :to="localePath('/about')" class="btn-ghost">{{ $t('nav.about') }}</NuxtLink>
+        <NuxtLink :to="localePath('/about')" class="btn-ghost hidden sm:inline-flex">{{ $t('nav.about') }}</NuxtLink>
         <NuxtLink :to="localePath('/settings')" class="btn-ghost" :aria-label="$t('settings.title')">⚙️</NuxtLink>
         <LangSwitch />
         <ThemeToggle />

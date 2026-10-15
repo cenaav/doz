@@ -10,7 +10,9 @@ export function validateDataSet(ds: DataSet, schemaRoot: string): string[] {
   const errors: string[] = []
   const ajv = new Ajv2020({ allErrors: true })
   addFormats(ajv)
-  const schema = (n: string) => ajv.compile(JSON.parse(readFileSync(join(schemaRoot, 'schema', `${n}.schema.json`), 'utf8')))
+  for (const n of ['drug', 'source', 'disease', 'category'])
+    ajv.addSchema(JSON.parse(readFileSync(join(schemaRoot, 'schema', `${n}.schema.json`), 'utf8')))
+  const schema = (n: string) => ajv.getSchema(`${n}.schema.json`)!
   const check = (name: string, fn: ReturnType<typeof schema>, value: unknown) => {
     if (!fn(value)) for (const e of fn.errors ?? []) errors.push(`${name}: ${e.instancePath || '/'} ${e.message}`)
   }
@@ -36,6 +38,7 @@ export function validateDataSet(ds: DataSet, schemaRoot: string): string[] {
   dup(ds.categories.map((c) => c.id), 'category')
   dup(ds.drugs.map((d) => d.drug.id), 'drug')
 
+  for (const r of collectRefs(ds.diseases)) if (!sourceIds.has(r.source)) errors.push(`diseases.json: unknown source ${r.source}`)
   for (const { path, drug } of ds.drugs) errors.push(...checkDrug(path, drug, sourceIds, diseaseIds, categoryIds))
   return errors
 }

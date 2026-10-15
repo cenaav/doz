@@ -25,6 +25,15 @@ describe('validateDataSet', () => {
     expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'fda-x', page: 'e964' }] })).toEqual([])
     expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'fda-x', page: '39-44' }] })).toEqual([])
   })
+  test('disease symptoms with refs pass', () => {
+    expect(errorsOf((ds) => { ds.diseases[0].symptoms = { items: [{ en: 'Fever' }], refs: [{ source: 'fda-x', section: 'Symptoms' }] } })).toEqual([])
+  })
+  test('disease symptoms without refs fail', () => {
+    expect(errorsOf((ds) => { ds.diseases[0].symptoms = { items: [{ en: 'Fever' }], refs: [] } }).length).toBeGreaterThan(0)
+  })
+  test('disease symptoms with unknown source fail', () => {
+    expect(errorsOf((ds) => { ds.diseases[0].symptoms = { items: [{ en: 'Fever' }], refs: [{ source: 'nope', section: 'x' }] } }).join()).toMatch(/unknown source nope/)
+  })
   test('unknown source fails', () => {
     expect(errorsOf((ds) => { ds.drugs[0].drug.regimens[0].refs = [{ source: 'nope', section: '1' }] }).join()).toMatch(/unknown source nope/)
   })

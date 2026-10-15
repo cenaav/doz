@@ -16,6 +16,7 @@ function blur() { setTimeout(() => (focused.value = false), 150) }
       @focus="focused = true" @blur="blur" />
     <div v-if="focused && q.trim()" class="card absolute inset-x-0 top-full z-40 mt-1 max-h-[70dvh] space-y-3 overflow-auto p-2 text-start">
       <p v-if="empty" class="p-2 text-sm text-slate-500">{{ $t('search.noResults') }}</p>
+      <p v-else class="px-2 text-[11px] text-slate-400">{{ $t('search.hint') }}</p>
       <section v-if="results.drugs.length">
         <h3 class="px-2 text-xs font-bold uppercase text-slate-500">{{ $t('search.drugs') }}</h3>
         <NuxtLink v-for="d in results.drugs" :key="d.id" :to="localePath(`/drug/${d.id}`)" class="flex items-center justify-between gap-2 rounded-lg px-2 py-2 hover:bg-slate-100 dark:hover:bg-slate-800">
@@ -27,6 +28,7 @@ function blur() { setTimeout(() => (focused.value = false), 150) }
         <h3 class="px-2 text-xs font-bold uppercase text-slate-500">{{ $t('search.diseases') }}</h3>
         <NuxtLink v-for="d in results.diseases" :key="d.id" :to="localePath(`/disease/${d.id}`)" class="block rounded-lg px-2 py-2 hover:bg-slate-100 dark:hover:bg-slate-800">
           {{ lt(d.name) }} <span class="ltr text-xs text-slate-500">{{ d.icd10.join(', ') }}</span>
+          <span v-if="d.matched.length" class="block text-xs text-brand-700 dark:text-brand-300">{{ $t('search.matchedSymptoms') }}: {{ d.matched.join('، ') }}</span>
         </NuxtLink>
       </section>
       <section v-if="results.categories.length">

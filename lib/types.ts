@@ -103,7 +103,15 @@ export interface Drug {
   review: { status: 'unverified' | 'verified'; reviewer: string | null; date: string | null }
   examples: Example[]
 }
-export interface Disease { id: string; name: I18nText; synonyms: string[]; icd10: string[]; specialty: string }
+export interface Disease {
+  id: string
+  name: I18nText
+  synonyms: string[]
+  icd10: string[]
+  specialty: string
+  description?: Note
+  symptoms?: { items: I18nText[]; refs: Ref[] }
+}
 export interface Category { id: string; name: I18nText; icon: string; order: number }
 export interface CatalogEntry {
   id: string
