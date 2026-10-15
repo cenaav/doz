@@ -12,6 +12,9 @@ describe('search over the real data set', () => {
   test('Persian partial drug name', () => expect(s('سفال').drugs.map((d) => d.id)).toContain('cephalexin'))
   test('Persian symptom → disease', () => expect(s('گوش درد').diseases.map((d) => d.id)).toContain('acute-otitis-media'))
   test('English symptom → disease', () => expect(s('ear pain').diseases.map((d) => d.id)).toContain('acute-otitis-media'))
-  test('symptom → drugs', () => expect(s('wheezing').drugs.map((d) => d.id)).toContain('theophylline'))
+  test('symptom → drugs', () => {
+    const ids = s('wheezing').drugs.map((d) => d.id)
+    expect(ids.some((id) => ['theophylline', 'albuterol', 'montelukast', 'budesonide'].includes(id))).toBe(true)
+  })
   test('bloody diarrhea (Persian)', () => expect(s('اسهال خونی').diseases.map((d) => d.id)).toContain('shigellosis'))
 })

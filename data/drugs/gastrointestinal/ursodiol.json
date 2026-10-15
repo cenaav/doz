@@ -1,0 +1,139 @@
+{
+  "id": "ursodiol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اورسودیول (اورسوداکسی‌کولیک اسید)",
+    "en": "Ursodiol (ursodeoxycholic acid)"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "اسید صفراوی",
+    "en": "Bile acid"
+  },
+  "brands": [
+    {
+      "name": "Actigall",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "actigall",
+    "urso",
+    "اورسوبیل",
+    "اورسودیول",
+    "اورسو",
+    "UDCA"
+  ],
+  "formulations": [
+    {
+      "id": "cap-300",
+      "form": "capsule",
+      "route": "oral",
+      "label": "300 mg capsule",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ursodiol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "dissolve",
+      "disease": "gallstones",
+      "label": {
+        "fa": "حل سنگ صفرای رادیولوسنت — ۸ تا ۱۰ mg/kg/day در ۲ یا ۳ نوبت",
+        "en": "Radiolucent gallstone dissolution — 8–10 mg/kg/day in 2–3 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 8,
+        "perKgPerDayMax": 10,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ursodiol",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "prevent",
+      "disease": "gallstones",
+      "label": {
+        "fa": "پیشگیری از سنگ صفرا در کاهش وزن سریع — ۳۰۰ mg دو بار",
+        "en": "Gallstone prevention in rapid weight loss — 300 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ursodiol",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "dissolve",
+      "formulation": "cap-300",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 300
+      }
+    },
+    {
+      "regimen": "prevent",
+      "formulation": "cap-300",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 110
+      },
+      "expect": {
+        "perDose": 300
+      }
+    }
+  ]
+}

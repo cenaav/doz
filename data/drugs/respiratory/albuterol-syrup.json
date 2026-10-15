@@ -1,0 +1,228 @@
+{
+  "id": "albuterol-syrup",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "شربت سالبوتامول",
+    "en": "Albuterol (salbutamol) syrup"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آگونیست β2",
+    "en": "Beta-2 agonist"
+  },
+  "brands": [
+    {
+      "name": "Ventolin syrup",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "salbutamol syrup",
+    "شربت سالبوتامول",
+    "ونتولین",
+    "albuterol syrup"
+  ],
+  "formulations": [
+    {
+      "id": "syr-2",
+      "form": "syrup",
+      "route": "oral",
+      "label": "2 mg/5 mL syrup",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-albuterolsyr",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "asthma",
+      "label": {
+        "fa": "برونکواسپاسم — بالای ۱۴ سال: ۲ یا ۴ mg سه یا چهار بار",
+        "en": "Bronchospasm — >14 y: 2 or 4 mg three or four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 14,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "perDoseMax": 4,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-albuterolsyr",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "6-14",
+      "disease": "asthma",
+      "label": {
+        "fa": "برونکواسپاسم — ۶ تا ۱۴ سال: ۲ mg سه یا چهار بار",
+        "en": "Bronchospasm — 6–14 y: 2 mg three or four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 14,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-albuterolsyr",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "2-5",
+      "disease": "asthma",
+      "label": {
+        "fa": "برونکواسپاسم — ۲ تا ۵ سال: ۰٫۱ mg/kg سه بار (حداکثر ۲ mg)",
+        "en": "Bronchospasm — 2–5 y: 0.1 mg/kg three times daily (max 2 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.1,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-albuterolsyr",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 2,
+        "refs": [
+          {
+            "source": "fda-albuterolsyr",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آلبوترول.",
+        "en": "Hypersensitivity to albuterol."
+      },
+      "refs": [
+        {
+          "source": "fda-albuterolsyr",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "دوز برای زیر ۲ سال در برچسب نیامده.",
+        "en": "No dose under 2 years in the label."
+      },
+      "refs": [
+        {
+          "source": "fda-albuterolsyr",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "syr-2",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "mlPerDose": 5,
+        "upperPerDose": 4
+      }
+    },
+    {
+      "regimen": "6-14",
+      "formulation": "syr-2",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "2-5",
+      "formulation": "syr-2",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 1.5,
+        "mlPerDose": 3.75
+      }
+    }
+  ]
+}

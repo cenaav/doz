@@ -1,0 +1,154 @@
+{
+  "id": "albuterol-nebules",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمپول/محلول نبولایزر سالبوتامول",
+    "en": "Albuterol nebuliser solution"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آگونیست β2",
+    "en": "Beta-2 agonist"
+  },
+  "brands": [
+    {
+      "name": "AccuNeb",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nebulizer",
+    "نبولایزر",
+    "سالبوتامول نبولایزر",
+    "آسم کودک"
+  ],
+  "formulations": [
+    {
+      "id": "neb-0-63",
+      "form": "solution",
+      "route": "inhaled",
+      "label": "0.63 mg/3 mL nebuliser vial",
+      "concentration": {
+        "amount": 0.63,
+        "unit": "mg",
+        "perVolumeMl": 3
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-albuterolneb",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "neb-1-25",
+      "form": "solution",
+      "route": "inhaled",
+      "label": "1.25 mg/3 mL nebuliser vial",
+      "concentration": {
+        "amount": 1.25,
+        "unit": "mg",
+        "perVolumeMl": 3
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-albuterolneb",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "neb",
+      "disease": "asthma",
+      "label": {
+        "fa": "نبولایزر — ۲ تا ۱۲ سال: ۰٫۶۳ یا ۱٫۲۵ mg سه یا چهار بار در صورت نیاز",
+        "en": "Nebulised — 2–12 y: 0.63 or 1.25 mg 3–4 times daily as needed"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.63,
+        "perDoseMax": 1.25,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-albuterolneb",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کل محتوای یک ویال ۳ mL با نبولایزر.",
+            "en": "Entire 3 mL vial by nebuliser."
+          },
+          "refs": [
+            {
+              "source": "fda-albuterolneb",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا.",
+        "en": "Hypersensitivity to any component."
+      },
+      "refs": [
+        {
+          "source": "fda-albuterolneb",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "neb",
+      "formulation": "neb-1-25",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 0.63,
+        "mlPerDose": 1.51,
+        "upperPerDose": 1.25
+      }
+    }
+  ]
+}

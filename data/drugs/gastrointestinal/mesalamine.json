@@ -1,0 +1,159 @@
+{
+  "id": "mesalamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مزالازین",
+    "en": "Mesalamine (mesalazine)"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "آمینوسالیسیلات",
+    "en": "Aminosalicylate"
+  },
+  "brands": [
+    {
+      "name": "Asacol HD",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "asacol",
+    "پنتاسا",
+    "pentasa",
+    "مزالامین",
+    "مزالازین",
+    "mesalazine"
+  ],
+  "formulations": [
+    {
+      "id": "tab-800",
+      "form": "tablet",
+      "route": "oral",
+      "label": "800 mg tablet",
+      "concentration": {
+        "amount": 800,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mesalamine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "uc",
+      "disease": "ulcerative-colitis",
+      "label": {
+        "fa": "کولیت اولسراتیو متوسط فعال — ۱۶۰۰ mg سه بار، ۶ هفته",
+        "en": "Moderately active UC — 1,600 mg three times daily for 6 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1600,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-mesalamine",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 42,
+        "max": 42
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یک قرص ۸۰۰ mg جایگزین دو قرص ۴۰۰ mg نشود. پیش از شروع کارکرد کلیه بررسی شود.",
+            "en": "Do not substitute one 800 mg tablet for two 400 mg products. Check renal function first."
+          },
+          "refs": [
+            {
+              "source": "fda-mesalamine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-mesalamine",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سالیسیلات‌ها یا آمینوسالیسیلات‌ها.",
+        "en": "Hypersensitivity to salicylates or aminosalicylates."
+      },
+      "refs": [
+        {
+          "source": "fda-mesalamine",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "این فرآورده در کودکان ثابت نشده.",
+        "en": "This product not established in children."
+      },
+      "refs": [
+        {
+          "source": "fda-mesalamine",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "uc",
+      "formulation": "tab-800",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1600,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ]
+}

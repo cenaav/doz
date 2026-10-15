@@ -1,0 +1,162 @@
+{
+  "id": "chlordiazepoxide-clidinium",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلیدینیوم-سی (لیبراکس)",
+    "en": "Chlordiazepoxide/clidinium"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "ضداسپاسم + بنزودیازپین",
+    "en": "Antispasmodic + benzodiazepine"
+  },
+  "brands": [
+    {
+      "name": "Librax",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "librax",
+    "لیبراکس",
+    "کلیدینیوم سی",
+    "کلیدینیوم",
+    "chlordiazepoxide clidinium"
+  ],
+  "formulations": [
+    {
+      "id": "cap",
+      "form": "capsule",
+      "route": "oral",
+      "label": "Chlordiazepoxide 5 mg + clidinium 2.5 mg capsule",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "capsule"
+      },
+      "components": {
+        "chlordiazepoxide": {
+          "name": {
+            "fa": "کلردیازپوکساید",
+            "en": "Chlordiazepoxide"
+          },
+          "amount": 5,
+          "unit": "mg"
+        },
+        "clidinium": {
+          "name": {
+            "fa": "کلیدینیوم",
+            "en": "Clidinium"
+          },
+          "amount": 2.5,
+          "unit": "mg"
+        }
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-librax",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ibs",
+      "disease": "ibs",
+      "label": {
+        "fa": "IBS/زخم پپتیک (کمکی) — شروع حداکثر ۲ کپسول در روز",
+        "en": "IBS/peptic ulcer (adjunct) — start no more than 2 capsules daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-librax",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "doseComponent": "chlordiazepoxide",
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش تدریجی در صورت نیاز و تحمل. سالمندان در معرض عوارض بیشتر.",
+            "en": "Increase gradually as needed and tolerated. Elderly at greater risk of adverse reactions."
+          },
+          "refs": [
+            {
+              "source": "fda-librax",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "گلوکوم؛ هیپرتروفی پروستات و انسداد گردن مثانه؛ حساسیت.",
+        "en": "Glaucoma; prostatic hypertrophy and bladder-neck obstruction; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-librax",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: مصرف همزمان با اپیوئیدها؛ سوءمصرف و وابستگی؛ ترک با قطع ناگهانی.",
+        "en": "Boxed warning: concomitant opioids; abuse and dependence; withdrawal on abrupt stop."
+      },
+      "refs": [
+        {
+          "source": "fda-librax",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ibs",
+      "formulation": "cap",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ]
+}

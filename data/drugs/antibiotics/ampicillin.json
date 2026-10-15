@@ -1,0 +1,234 @@
+{
+  "id": "ampicillin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمپی‌سیلین",
+    "en": "Ampicillin"
+  },
+  "category": "antibiotics",
+  "class": {
+    "fa": "آمینوپنی‌سیلین",
+    "en": "Aminopenicillin"
+  },
+  "brands": [
+    {
+      "name": "Principen",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "آمپی سیلین",
+    "ampicillin",
+    "آمپیسیلین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-500",
+      "form": "capsule",
+      "route": "oral",
+      "label": "500 mg capsule",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "gu",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "عفونت ادراری/گوارشی — بالای ۲۰ kg: ۵۰۰ mg چهار بار",
+        "en": "GU/GI infection — >20 kg: 500 mg four times daily"
+      },
+      "population": {
+        "minWeightKg": 20.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "resp",
+      "disease": "respiratory-tract-infection",
+      "label": {
+        "fa": "عفونت تنفسی — بالای ۲۰ kg: ۲۵۰ mg چهار بار",
+        "en": "Respiratory infection — >20 kg: 250 mg four times daily"
+      },
+      "population": {
+        "minWeightKg": 20.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "gu-child",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "عفونت ادراری/گوارشی — ۲۰ kg و کمتر: ۱۰۰ mg/kg/day در ۴ نوبت",
+        "en": "GU/GI — ≤20 kg: 100 mg/kg/day in 4 doses"
+      },
+      "population": {
+        "maxWeightKg": 20
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 100,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "resp-child",
+      "disease": "respiratory-tract-infection",
+      "label": {
+        "fa": "عفونت تنفسی — ۲۰ kg و کمتر: ۵۰ mg/kg/day در ۳ یا ۴ نوبت",
+        "en": "Respiratory — ≤20 kg: 50 mg/kg/day in 3–4 doses"
+      },
+      "population": {
+        "maxWeightKg": 20
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 50,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت جدی به آمپی‌سیلین یا سایر بتالاکتام‌ها؛ عفونت با ارگانیسم‌های تولیدکننده پنی‌سیلیناز.",
+        "en": "Serious hypersensitivity to ampicillin or other beta-lactams; infections by penicillinase-producing organisms."
+      },
+      "refs": [
+        {
+          "source": "fda-ampicillin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "gu",
+      "formulation": "cap-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "resp",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250
+      }
+    },
+    {
+      "regimen": "gu-child",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "resp-child",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 250
+      }
+    }
+  ]
+}

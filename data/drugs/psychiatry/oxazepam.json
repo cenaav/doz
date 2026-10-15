@@ -1,0 +1,243 @@
+{
+  "id": "oxazepam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اگزازپام",
+    "en": "Oxazepam"
+  },
+  "category": "psychiatry",
+  "class": {
+    "fa": "بنزودیازپین",
+    "en": "Benzodiazepine"
+  },
+  "brands": [
+    {
+      "name": "Serax",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "serax",
+    "اکسازپام",
+    "اگزازپام"
+  ],
+  "formulations": [
+    {
+      "id": "cap-10",
+      "form": "capsule",
+      "route": "oral",
+      "label": "10 mg capsule",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-oxazepam",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-15",
+      "form": "capsule",
+      "route": "oral",
+      "label": "15 mg capsule",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-oxazepam",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-30",
+      "form": "capsule",
+      "route": "oral",
+      "label": "30 mg capsule",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-oxazepam",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mild",
+      "disease": "anxiety",
+      "label": {
+        "fa": "اضطراب خفیف تا متوسط — ۱۰ تا ۱۵ mg سه یا چهار بار",
+        "en": "Mild–moderate anxiety — 10–15 mg three or four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 15,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-oxazepam",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سالمند: شروع ۱۰ mg سه بار.",
+            "en": "Elderly: start 10 mg three times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-oxazepam",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "severe",
+      "disease": "anxiety",
+      "label": {
+        "fa": "اضطراب شدید، بی‌قراری — ۱۵ تا ۳۰ mg سه یا چهار بار",
+        "en": "Severe anxiety, agitation — 15–30 mg three or four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "perDoseMax": 30,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-oxazepam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ برای سایکوز اندیکاسیون ندارد.",
+        "en": "Hypersensitivity; not indicated in psychoses."
+      },
+      "refs": [
+        {
+          "source": "fda-oxazepam",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۶ سال ثابت نشده و دوز ۶ تا ۱۲ سال تعیین نشده.",
+        "en": "Not established under 6; dose for 6–12 y not established."
+      },
+      "refs": [
+        {
+          "source": "fda-oxazepam",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "severity": "warn",
+      "text": {
+        "fa": "هشدار جعبه‌ای: مصرف همزمان با اپیوئیدها؛ سوءمصرف و وابستگی؛ ترک با قطع ناگهانی.",
+        "en": "Boxed warning: concomitant opioids; abuse and dependence; withdrawal on abrupt stop."
+      },
+      "refs": [
+        {
+          "source": "fda-oxazepam",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mild",
+      "formulation": "cap-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "severe",
+      "formulation": "cap-15",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15,
+        "upperPerDose": 30
+      }
+    }
+  ]
+}

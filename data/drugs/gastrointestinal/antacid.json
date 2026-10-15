@@ -1,0 +1,159 @@
+{
+  "id": "antacid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آنتی‌اسید (کلسیم-منیزیم-سایمتیکون)",
+    "en": "Antacid (calcium/magnesium/simethicone)"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "آنتی‌اسید و ضدنفخ",
+    "en": "Antacid and antiflatulent"
+  },
+  "brands": [
+    {
+      "name": "Mylanta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mylanta",
+    "مایلانتا",
+    "آنتی اسید",
+    "شربت معده",
+    "سوزش معده"
+  ],
+  "formulations": [
+    {
+      "id": "liq",
+      "form": "suspension",
+      "route": "oral",
+      "label": "Calcium carbonate 800 mg + Mg hydroxide 270 mg + simethicone 80 mg / 10 mL",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-antacid",
+          "section": "Active ingredients"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "dys",
+      "disease": "dyspepsia",
+      "label": {
+        "fa": "سوزش سر دل و سوءهاضمه — ۱۲ سال به بالا: ۱۰ تا ۲۰ mL",
+        "en": "Heartburn/indigestion — ≥12 y: 10–20 mL"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 20,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-antacid",
+          "section": "Directions"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 60,
+        "refs": [
+          {
+            "source": "fda-antacid",
+            "section": "Directions"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بین غذاها و هنگام خواب؛ حداکثر ۶۰ mL در ۲۴ ساعت؛ دوز حداکثر بیش از ۲ هفته نه.",
+            "en": "Between meals and at bedtime; max 60 mL in 24 h; not at maximum dose for more than 2 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-antacid",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال: با پزشک مشورت شود.",
+        "en": "Under 12 years: ask a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-antacid",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "با بیماری کلیه یا رژیم محدود منیزیم پیش از مصرف با پزشک.",
+        "en": "Kidney disease or magnesium-restricted diet: ask a doctor first."
+      },
+      "refs": [
+        {
+          "source": "fda-antacid",
+          "section": "Ask a doctor before use"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "dys",
+      "formulation": "liq",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 10,
+        "upperPerDose": 20
+      }
+    }
+  ]
+}
