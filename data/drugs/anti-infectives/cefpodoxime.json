@@ -1,0 +1,477 @@
+{
+  "id": "cefpodoxime",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفپودوکسیم",
+    "en": "Cefpodoxime"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین نسل سوم",
+    "en": "Third-generation cephalosporin"
+  },
+  "brands": [
+    {
+      "name": "Vantin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cefpodoxime",
+    "سفپودوکسیم",
+    "اوروپودوکس",
+    "orelox"
+  ],
+  "formulations": [
+    {
+      "id": "susp-50",
+      "form": "suspension",
+      "route": "oral",
+      "label": "50 mg / 5 mL",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "susp-100",
+      "form": "suspension",
+      "route": "oral",
+      "label": "100 mg / 5 mL",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "aom",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت میانی حاد — کودک ۲ ماه تا ۱۲ سال: ۵ mg/kg هر ۱۲ ساعت، ۵ روز",
+        "en": "Acute otitis media — 2 months–12 y: 5 mg/kg every 12 h, 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 200,
+        "maxPerDay": 400,
+        "refs": [
+          {
+            "source": "fda-cefpodoxime",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      }
+    },
+    {
+      "id": "pharyngitis",
+      "disease": "streptococcal-pharyngitis",
+      "label": {
+        "fa": "فارنژیت — کودک: ۵ mg/kg هر ۱۲ ساعت (حداکثر ۱۰۰ mg در دوز)",
+        "en": "Pharyngitis — child: 5 mg/kg every 12 h (max 100 mg/dose)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 100,
+        "maxPerDay": 200,
+        "refs": [
+          {
+            "source": "fda-cefpodoxime",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 10
+      }
+    },
+    {
+      "id": "sinusitis",
+      "disease": "acute-bacterial-sinusitis",
+      "label": {
+        "fa": "سینوزیت — کودک: ۵ mg/kg هر ۱۲ ساعت، ۱۰ روز",
+        "en": "Sinusitis — child: 5 mg/kg every 12 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 200,
+        "maxPerDay": 400,
+        "refs": [
+          {
+            "source": "fda-cefpodoxime",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "adult-cap",
+      "disease": "community-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی اکتسابی — ۱۲ سال به بالا: ۲۰۰ mg هر ۱۲ ساعت، ۱۴ روز",
+        "en": "CAP — ≥12 y: 200 mg every 12 h, 14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      }
+    },
+    {
+      "id": "adult-uti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "عفونت ادراری ساده — ۱۲ سال به بالا: ۱۰۰ mg هر ۱۲ ساعت، ۷ روز",
+        "en": "Uncomplicated UTI — ≥12 y: 100 mg every 12 h, 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سفالوسپورین‌ها.",
+        "en": "Allergy to cephalosporins."
+      },
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "کلیرانس زیر ۳۰: فاصله دوز ۲۴ ساعت.",
+        "en": "CrCl <30: dose every 24 h."
+      },
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "aom",
+      "formulation": "susp-100",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 50,
+        "mlPerDose": 2.5
+      }
+    },
+    {
+      "regimen": "pharyngitis",
+      "formulation": "susp-100",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "sinusitis",
+      "formulation": "susp-100",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100
+      }
+    },
+    {
+      "regimen": "adult-cap",
+      "formulation": "susp-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 10
+      }
+    },
+    {
+      "regimen": "adult-uti",
+      "formulation": "susp-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "J01DD13"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08913",
+        "en": "CEFPODOXIM 100MG TAB",
+        "fa": "قرص سفپودوکسیم ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-342/Cefpodoxime-Proxetil",
+        "url": "https://www.darooyab.ir/G-342/Cefpodoxime-Proxetil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=065409",
+      "label": "ANDA065409"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=edf589b2-f796-4522-a5e6-2bd0a833922f",
+      "label": "FDA Cefpodoxime susp."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698024.html",
+      "label": "Cefpodoxime"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DD13",
+      "label": "J01DD13"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-342/Cefpodoxime-Proxetil",
+      "label": "Cefpodoxime-Proxetil"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category B Cefpodoxime proxetil was neither teratogenic nor embryocidal when administered to rats during organogenesis at doses up to 100 mg/kg/day (2 times the human dose based on mg/m 2 ) or to rabbits at doses up to 30 mg/kg/day (1 to 2 times the human dose based on mg/m 2 ).",
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Pregnancy - Teratogenic Effects:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious reactions in nursing infants, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and efficacy in infants less than 2 months of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Pediatric Use:"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in effectiveness or safety were observed between the elderly and younger patients.",
+      "refs": [
+        {
+          "source": "fda-cefpodoxime",
+          "section": "Geriatric Use:"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cefpodoxime",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA065409"
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "id": "isoniazid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایزونیازید",
+    "en": "Isoniazid"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدسل",
+    "en": "Antituberculous"
+  },
+  "brands": [
+    {
+      "name": "INH",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "inh",
+    "ایزونیازید",
+    "ایزونیازید سل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isoniazid",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-300",
+      "form": "tablet",
+      "route": "oral",
+      "label": "300 mg tablet (scored)",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isoniazid",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "tuberculosis",
+      "label": {
+        "fa": "سل — بزرگسال: ۵ mg/kg روزانه (حداکثر ۳۰۰ mg)",
+        "en": "TB — adult: 5 mg/kg daily (max 300 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 5,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-isoniazid",
+          "section": "Dosage and Administration — Usual Oral Dosage"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 300,
+        "refs": [
+          {
+            "source": "fda-isoniazid",
+            "section": "Dosage and Administration — Usual Oral Dosage"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۱۵ mg/kg (تا ۹۰۰ mg) دو یا سه بار در هفته.",
+            "en": "Or 15 mg/kg (up to 900 mg) two or three times weekly."
+          },
+          "refs": [
+            {
+              "source": "fda-isoniazid",
+              "section": "Dosage and Administration — Usual Oral Dosage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "tuberculosis",
+      "label": {
+        "fa": "سل — کودک: ۱۰ تا ۱۵ mg/kg روزانه (حداکثر ۳۰۰ mg)",
+        "en": "TB — child: 10–15 mg/kg daily (max 300 mg)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "perKgPerDayMax": 15,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-isoniazid",
+          "section": "Dosage and Administration — Usual Oral Dosage"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 300,
+        "refs": [
+          {
+            "source": "fda-isoniazid",
+            "section": "Dosage and Administration — Usual Oral Dosage"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش شدید قبلی (از جمله هپاتیت دارویی)؛ آسیب کبدی قبلی با ایزونیازید؛ بیماری حاد کبد.",
+        "en": "Previous severe reactions (incl. drug hepatitis); previous isoniazid liver injury; acute liver disease."
+      },
+      "refs": [
+        {
+          "source": "fda-isoniazid",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: هپاتیت شدید و گاهی کشنده؛ خطر با افزایش سن و مصرف روزانه الکل بیشتر می‌شود؛ علائم و آنزیم کبد پایش شود.",
+        "en": "Boxed warning: severe, sometimes fatal hepatitis; risk rises with age and daily alcohol use; monitor symptoms and liver enzymes."
+      },
+      "refs": [
+        {
+          "source": "fda-isoniazid",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-300",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "J04AC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00712",
+        "en": "ISONIAZID 100MG TAB",
+        "fa": "قرص ایزونیازید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00713",
+        "en": "ISONIAZID 300MG TAB",
+        "fa": "قرص ایزونیازید ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00714",
+        "en": "ISONIAZID 500MG/5ML AMP",
+        "fa": "آمپول ایزونیازید ۵۰۰ میلی‌گرم / ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-416/Isoniazid",
+        "url": "https://www.darooyab.ir/G-416/Isoniazid"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=040090",
+      "label": "ANDA040090"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=312cd403-b211-64ef-e063-6394a90aab88",
+      "label": "FDA Isoniazid"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682401.html",
+      "label": "Isoniazid"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J04AC01",
+      "label": "J04AC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-416/Isoniazid",
+      "label": "Isoniazid"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category C Isoniazid has been shown to have an embryocidal effect in rats and rabbits when given orally during pregnancy.",
+      "refs": [
+        {
+          "source": "fda-isoniazid",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "The small concentrations of isoniazid in breast milk do not produce toxicity in the nursing newborn; therefore, breast feeding should not be discouraged.",
+      "refs": [
+        {
+          "source": "fda-isoniazid",
+          "section": "Nursing Mothers"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-isoniazid",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA040090"
+  }
+}

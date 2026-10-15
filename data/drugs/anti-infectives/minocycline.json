@@ -1,0 +1,386 @@
+{
+  "id": "minocycline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مینوسایکلین",
+    "en": "Minocycline"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "تتراسایکلین",
+    "en": "Tetracycline antibiotic"
+  },
+  "brands": [
+    {
+      "name": "Minocin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "minocin",
+    "مینوسین",
+    "مینوسایکلین",
+    "آکنه"
+  ],
+  "formulations": [
+    {
+      "id": "cap-50",
+      "form": "capsule",
+      "route": "oral",
+      "label": "50 mg capsule",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-75",
+      "form": "capsule",
+      "route": "oral",
+      "label": "75 mg capsule",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "susceptible-bacterial-infection",
+      "label": {
+        "fa": "بزرگسال — ۲۰۰ mg شروع، سپس ۱۰۰ mg هر ۱۲ ساعت",
+        "en": "Adult — 200 mg first, then 100 mg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "Dosage and Administration — Adults"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 200,
+        "refs": [
+          {
+            "source": "fda-minocycline",
+            "section": "Dosage and Administration — Adults"
+          }
+        ]
+      }
+    },
+    {
+      "id": "child",
+      "disease": "susceptible-bacterial-infection",
+      "label": {
+        "fa": "کودک بالای ۸ سال — ۴ mg/kg شروع، سپس ۲ mg/kg هر ۱۲ ساعت",
+        "en": "Child >8 y — 4 mg/kg first, then 2 mg/kg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 8,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 100,
+        "refs": [
+          {
+            "source": "fda-minocycline",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "از دوز معمول بزرگسال بیشتر نشود.",
+            "en": "Not to exceed the usual adult dose."
+          },
+          "refs": [
+            {
+              "source": "fda-minocycline",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تتراسایکلین‌ها.",
+        "en": "Hypersensitivity to tetracyclines."
+      },
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "lt8",
+      "severity": "warn",
+      "rule": {
+        "maxAge": {
+          "value": 8,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۸ سال (تغییر رنگ دائمی دندان).",
+        "en": "Under 8 years (permanent tooth discoloration)."
+      },
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "cap-50",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J01AA08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "15238",
+        "en": "MINOCYCLINE 100MG CAP",
+        "fa": "کپسول مینوسایکلین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "06460",
+        "en": "MINOCYCLINE 100MG TAB",
+        "fa": "قرص مینوسایکلین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "15893",
+        "en": "MINOCYCLINE 50MG CAP",
+        "fa": "کپسول مینوسایکلین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "12107",
+        "en": "MINOCYCLINE 50MG TAB",
+        "fa": "قرص مینوسایکلین ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-442/Minocycline",
+        "url": "https://www.darooyab.ir/G-442/Minocycline"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=063181",
+      "label": "ANDA063181"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a5fc4d50-50b2-46e0-b722-4c6b2ec47d06",
+      "label": "FDA Minocycline caps."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682101.html",
+      "label": "Minocycline"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620003.html",
+      "label": "Minocycline Topical"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01AA08",
+      "label": "J01AA08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-442/Minocycline",
+      "label": "Minocycline"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Minocycline, like other tetracycline-class antibiotics, crosses the placenta and may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Tetracyclines are excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Minocycline is not recommended for the use in children below 8 years of age unless the expected benefits of therapy outweigh the risks (see WARNINGS ).",
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy (see WARNINGS and",
+      "refs": [
+        {
+          "source": "fda-minocycline",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-minocycline",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA063181"
+  }
+}

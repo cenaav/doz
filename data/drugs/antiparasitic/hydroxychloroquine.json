@@ -1,0 +1,330 @@
+{
+  "id": "hydroxychloroquine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "هیدروکسی‌کلروکین",
+    "en": "Hydroxychloroquine"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدمالاریا / DMARD",
+    "en": "Antimalarial / DMARD"
+  },
+  "brands": [
+    {
+      "name": "Plaquenil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "plaquenil",
+    "پلاکنیل",
+    "هیدروکسی کلروکین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — شروع ۴۰۰ تا ۶۰۰ mg روزانه",
+        "en": "Rheumatoid arthritis — start 400–600 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "perDoseMax": 600,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده ۲۰۰ تا ۴۰۰ mg در روز. بیش از ۵ mg/kg (وزن واقعی) در روز خطر رتینوپاتی را بالا می‌برد.",
+            "en": "Maintenance 200–400 mg/day. More than 5 mg/kg/day (actual weight) increases retinopathy."
+          },
+          "refs": [
+            {
+              "source": "fda-hcq",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malaria-proph",
+      "disease": "malaria",
+      "label": {
+        "fa": "پیشگیری مالاریا — بزرگسال: ۴۰۰ mg هفته‌ای یک بار",
+        "en": "Malaria prophylaxis — adult: 400 mg once weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "از ۲ هفته پیش از سفر تا ۴ هفته پس از بازگشت، هر هفته همان روز. کودک ۳۱ kg به بالا: ۶٫۵ mg/kg (تا ۴۰۰ mg)؛ زیر ۳۱ kg توصیه نمی‌شود.",
+            "en": "From 2 weeks before travel until 4 weeks after leaving, same day each week. Child ≥31 kg: 6.5 mg/kg (up to 400 mg); not recommended under 31 kg."
+          },
+          "refs": [
+            {
+              "source": "fda-hcq",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ترکیبات ۴-آمینوکینولین.",
+        "en": "Hypersensitivity to 4-aminoquinolines."
+      },
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "lt31",
+      "severity": "block",
+      "rule": {
+        "maxWeightKg": 30.99
+      },
+      "text": {
+        "fa": "کودک زیر ۳۱ kg (قرص ۲۰۰ mg قابل تقسیم نیست).",
+        "en": "Children under 31 kg (200 mg tablet cannot be divided)."
+      },
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [
+    {
+      "text": {
+        "fa": "معاینه شبکیه پایه و دوره‌ای (رتینوپاتی).",
+        "en": "Baseline and periodic retinal examination (retinopathy)."
+      },
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ra",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "malaria-proph",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400
+      }
+    }
+  ],
+  "atc": [
+    "P01BA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01825",
+        "en": "HYDROXYCHLOROQUINE 200MG TAB",
+        "fa": "قرص هیدروکسی‌کلروکین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "14059",
+        "en": "HYDROXYCHLOROQUINE 60MG TAB",
+        "fa": "قرص هیدروکسی‌کلروکین ۶۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-841/Hydroxychloroquine",
+        "url": "https://www.darooyab.ir/G-841/Hydroxychloroquine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=040081",
+      "label": "ANDA040081"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f3e49b2-dc11-40a9-b366-c88e36a471e5",
+      "label": "FDA Hydroxychloroquine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601240.html",
+      "label": "Hydroxychloroquine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=P01BA02",
+      "label": "P01BA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-841/Hydroxychloroquine",
+      "label": "Hydroxychloroquine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Prolonged clinical experience over decades of use and available data from published epidemiologic and clinical studies with hydroxychloroquine sulfate tablets use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal, or fetal outcomes ( see …",
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Published lactation data report that hydroxychloroquine is present in human milk at low levels.",
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of hydroxychloroquine sulfate tablets have been established in pediatric patients for the treatment of uncomplicated malaria due to P. falciparum, P. malariae, P. vivax , and P. ovale, as well as for the prophylaxis of malaria in geographic areas where chloroquine resistance is not …",
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection in geriatric patients should start with the lowest recommended dose, taking into consideration the greater frequency of decreased hepatic, renal or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-hcq",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-hcq",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA040081"
+  }
+}

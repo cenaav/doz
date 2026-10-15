@@ -1,0 +1,393 @@
+{
+  "id": "cefazolin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفازولین (تزریقی)",
+    "en": "Cefazolin (injection)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین نسل اول",
+    "en": "First-generation cephalosporin"
+  },
+  "brands": [
+    {
+      "name": "Ancef",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cefazolin",
+    "سفازولین",
+    "کفزول",
+    "آمپول سفازولین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g vial (reconstitute per label)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "dil-125",
+      "form": "injection",
+      "route": "im",
+      "label": "Diluted 125 mg/mL (label pediatric table)",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "Dosage and Administration — Pediatric Dosage, table"
+        }
+      ]
+    },
+    {
+      "id": "dil-225",
+      "form": "injection",
+      "route": "im",
+      "label": "Diluted 225 mg/mL (label pediatric table)",
+      "concentration": {
+        "amount": 225,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "Dosage and Administration — Pediatric Dosage, table"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "بزرگسال — عفونت متوسط تا شدید: ۵۰۰ mg تا ۱ g هر ۶ تا ۸ ساعت",
+        "en": "Adult — moderate to severe infection: 500 mg–1 g every 6–8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "۵۰۰ mg تا ۱ g هر ۶ تا ۸ ساعت؛ عفونت خفیف گرم مثبت ۲۵۰ تا ۵۰۰ mg هر ۸ ساعت؛ UTI ساده ۱ g هر ۱۲ ساعت. حجم رقیق‌سازی طبق برچسب.",
+          "en": "500 mg–1 g every 6–8 h; mild gram-positive 250–500 mg every 8 h; uncomplicated UTI 1 g every 12 h. Dilution per label."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "کودک بالای ۱ ماه — ۲۵ تا ۵۰ mg/kg/روز در ۳ تا ۴ دوز",
+        "en": "Child >1 month — 25–50 mg/kg/day in 3–4 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 25,
+        "perKgPerDayMax": 50,
+        "dividedDoses": 3
+      },
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "Dosage and Administration — Pediatric Dosage"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 100,
+        "refs": [
+          {
+            "source": "fda-cefazolin",
+            "section": "Dosage and Administration — Pediatric Dosage"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "dil-125",
+        "dil-225"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عفونت شدید تا ۱۰۰ mg/kg/روز. در نوزاد و نارس ثابت نشده.",
+            "en": "Severe infections up to 100 mg/kg/day. Not established in neonates and prematures."
+          },
+          "refs": [
+            {
+              "source": "fda-cefazolin",
+              "section": "Dosage and Administration — Pediatric Dosage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proph",
+      "disease": "surgical-prophylaxis",
+      "label": {
+        "fa": "پیشگیری جراحی — ۱ g وریدی ۳۰ تا ۶۰ دقیقه پیش از برش",
+        "en": "Surgical prophylaxis — 1 g IV 30–60 min before incision"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "Dosage and Administration — Perioperative Prophylactic Use"
+        }
+      ],
+      "allowedFormulations": [
+        "vial-1g"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "جراحی طولانی: ۵۰۰ mg تا ۱ g حین عمل؛ پس از عمل ۵۰۰ mg تا ۱ g هر ۶ تا ۸ ساعت تا ۲۴ ساعت.",
+            "en": "Long surgery: 500 mg–1 g during surgery; after surgery 500 mg–1 g every 6–8 h for 24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-cefazolin",
+              "section": "Dosage and Administration — Perioperative Prophylactic Use"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سفالوسپورین‌ها.",
+        "en": "Allergy to cephalosporins."
+      },
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "proph",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "dil-125",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 166.67,
+        "mlPerDose": 1.33
+      }
+    }
+  ],
+  "atc": [
+    "J01DB04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00222",
+        "en": "CEFAZOLIN 1 GR VIAL",
+        "fa": "ویال سفازولین ۱ گرم"
+      },
+      {
+        "code": "00223",
+        "en": "CEFAZOLIN 250MG VIAL",
+        "fa": "ویال سفازولین ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00224",
+        "en": "CEFAZOLIN 500MG VIAL",
+        "fa": "ویال سفازولین ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-318/Cefazolin",
+        "url": "https://www.darooyab.ir/G-318/Cefazolin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=065306",
+      "label": "ANDA065306"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1999084a-124c-45f9-801f-416a1b942c96",
+      "label": "FDA Cefazolin inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682731.html",
+      "label": "Cefazolin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DB04",
+      "label": "J01DB04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-318/Cefazolin",
+      "label": "Cefazolin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects: Pregnancy Category B.",
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when Cefazolin for Injection is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness for use in premature infants and neonates have not been established.",
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function (see PRECAUTIONS, General and DOSAGE AND ADMINISTRATION).",
+      "refs": [
+        {
+          "source": "fda-cefazolin",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cefazolin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA065306"
+  }
+}

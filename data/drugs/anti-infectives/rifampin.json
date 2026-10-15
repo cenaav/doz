@@ -1,0 +1,462 @@
+{
+  "id": "rifampin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریفامپین",
+    "en": "Rifampin (rifampicin)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ریفامایسین (ضدسل)",
+    "en": "Rifamycin (antituberculous)"
+  },
+  "brands": [
+    {
+      "name": "Rifadin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rifampicin",
+    "rifadin",
+    "ریفامپیسین",
+    "ریفادین",
+    "ریفامپین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-150",
+      "form": "capsule",
+      "route": "oral",
+      "label": "150 mg capsule",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-300",
+      "form": "capsule",
+      "route": "oral",
+      "label": "300 mg capsule",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "tb-adult",
+      "disease": "tuberculosis",
+      "label": {
+        "fa": "سل — بزرگسال: ۱۰ mg/kg یک بار در روز (حداکثر ۶۰۰ mg)",
+        "en": "TB — adult: 10 mg/kg once daily (max 600 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "Dosage and Administration — Tuberculosis"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-rifampin",
+            "section": "Dosage and Administration — Tuberculosis"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "ناشتا: ۱ ساعت قبل یا ۲ ساعت بعد غذا، با یک لیوان آب؛ همیشه همراه داروهای دیگر سل.",
+            "en": "Empty stomach: 1 h before or 2 h after a meal with water; always with other TB drugs."
+          },
+          "refs": [
+            {
+              "source": "fda-rifampin",
+              "section": "Dosage and Administration — Tuberculosis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tb-child",
+      "disease": "tuberculosis",
+      "label": {
+        "fa": "سل — کودک: ۱۰ تا ۲۰ mg/kg یک بار در روز (حداکثر ۶۰۰ mg)",
+        "en": "TB — child: 10–20 mg/kg once daily (max 600 mg)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "perKgPerDayMax": 20,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "Dosage and Administration — Tuberculosis"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-rifampin",
+            "section": "Dosage and Administration — Tuberculosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mening-adult",
+      "disease": "meningococcal-carrier",
+      "label": {
+        "fa": "حامل مننگوکوک — بزرگسال: ۶۰۰ mg دو بار در روز، ۲ روز",
+        "en": "Meningococcal carrier — adult: 600 mg twice daily, 2 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "Dosage and Administration — Meningococcal Carriers"
+        }
+      ],
+      "durationDays": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    {
+      "id": "mening-child",
+      "disease": "meningococcal-carrier",
+      "label": {
+        "fa": "حامل مننگوکوک — کودک ۱ ماه به بالا: ۱۰ mg/kg هر ۱۲ ساعت، ۲ روز",
+        "en": "Meningococcal carrier — child ≥1 month: 10 mg/kg every 12 h, 2 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "Dosage and Administration — Meningococcal Carriers"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 600,
+        "refs": [
+          {
+            "source": "fda-rifampin",
+            "section": "Dosage and Administration — Meningococcal Carriers"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 2,
+        "max": 2
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ریفامایسین‌ها؛ هم‌زمان با ساکویناویر/ریتوناویر و برخی داروهای ضدویروس.",
+        "en": "Hypersensitivity to rifamycins; with saquinavir/ritonavir and certain antivirals."
+      },
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "ادرار، خلط و اشک رنگی می‌شود و لنز تماسی نرم ممکن است برای همیشه رنگ بگیرد. قرص و سایر روش‌های هورمونی پیشگیری ممکن است کم‌اثر شوند.",
+        "en": "Urine, sputum and tears may be discoloured and soft contact lenses permanently stained. Hormonal contraceptives may become less reliable."
+      },
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "Precautions — Information for Patients"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "tb-adult",
+      "formulation": "cap-300",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 600,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "tb-child",
+      "formulation": "cap-150",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "mening-adult",
+      "formulation": "cap-300",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600
+      }
+    },
+    {
+      "regimen": "mening-child",
+      "formulation": "cap-150",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J04AB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01101",
+        "en": "RIFAMPICIN 150MG CAP",
+        "fa": "کپسول ریفامپیسین ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01102",
+        "en": "RIFAMPICIN 153MG/ML DROP ORAL",
+        "fa": "قطره خوراکی ریفامپیسین ۱۵۳ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "14626",
+        "en": "RIFAMPICIN 20MG/ML 60ML SYRUP",
+        "fa": "شربت ریفامپیسین ۲۰ میلی‌گرم / میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "01103",
+        "en": "RIFAMPICIN 300MG CAP",
+        "fa": "کپسول ریفامپیسین ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01100",
+        "en": "RIFAMPICIN 600MG VIAL",
+        "fa": "ویال ریفامپیسین ۶۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52408",
+        "en": "RIFAMPICIN SYRUP ORAL 20 mg/1mL 60 mL",
+        "fa": "شربت ریفامپیسین ۲۰ میلی‌گرم / ۱ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "53021",
+        "en": "RIFAMPICIN SUSPENSION ORAL 20 mg/1mL 200 mL",
+        "fa": "سوسپانسیون خوراکی ریفامپیسین ۲۰ میلی‌گرم / ۱ میلی‌لیتر ۲۰۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-492/Rifampin",
+        "url": "https://www.darooyab.ir/G-492/Rifampin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219918",
+      "label": "ANDA219918"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b389b1a3-672f-47e3-916c-4a9c044b211b",
+      "label": "FDA Rifampin caps."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682403.html",
+      "label": "Rifampin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J04AB02",
+      "label": "J04AB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-492/Rifampin",
+      "label": "Rifampin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Nevertheless, because the studies in humans cannot rule out the possibility of harm, rifampin should be used during pregnancy only if the potential benefit outweighs the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "PREGNANCY"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because of the potential for tumorigenicity shown for rifampin in animal studies, a decision should be made whether to discontinue nursing or discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "NURSING MOTHERS"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "See CLINICAL PHARMACOLOGY–Pediatrics; see also DOSAGE AND ADMINISTRATION.",
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "PEDIATRIC USE"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Caution should therefore be observed in using rifampin in elderly patients.",
+      "refs": [
+        {
+          "source": "fda-rifampin",
+          "section": "GERIATRIC USE"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-rifampin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA219918"
+  }
+}

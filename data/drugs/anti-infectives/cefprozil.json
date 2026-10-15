@@ -1,0 +1,351 @@
+{
+  "id": "cefprozil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفپروزیل",
+    "en": "Cefprozil"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین نسل دوم",
+    "en": "Second-generation cephalosporin"
+  },
+  "brands": [
+    {
+      "name": "Cefzil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cefzil",
+    "سفپروزیل"
+  ],
+  "formulations": [
+    {
+      "id": "susp-125",
+      "form": "suspension",
+      "route": "oral",
+      "label": "125 mg / 5 mL",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "susp-250",
+      "form": "suspension",
+      "route": "oral",
+      "label": "250 mg / 5 mL",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "aom",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "اوتیت میانی — ۶ ماه تا ۱۲ سال: ۱۵ mg/kg هر ۱۲ ساعت، ۱۰ روز",
+        "en": "Otitis media — 6 months–12 y: 15 mg/kg every 12 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 15,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "pharyngitis",
+      "disease": "streptococcal-pharyngitis",
+      "label": {
+        "fa": "فارنژیت — ۲ تا ۱۲ سال: ۷٫۵ mg/kg هر ۱۲ ساعت، ۱۰ روز",
+        "en": "Pharyngitis — 2–12 y: 7.5 mg/kg every 12 h, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 7.5,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "adult-pharyngitis",
+      "disease": "streptococcal-pharyngitis",
+      "label": {
+        "fa": "فارنژیت — ۱۳ سال به بالا: ۵۰۰ mg روزانه، ۱۰ روز",
+        "en": "Pharyngitis — ≥13 y: 500 mg once daily, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سفالوسپورین‌ها.",
+        "en": "Allergy to cephalosporins."
+      },
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "کلیرانس ۰ تا ۲۹: ۵۰٪ دوز استاندارد با همان فاصله؛ پس از دیالیز.",
+        "en": "CrCl 0–29: 50% of the standard dose at the standard interval; give after dialysis."
+      },
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "aom",
+      "formulation": "susp-250",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 3
+      }
+    },
+    {
+      "regimen": "pharyngitis",
+      "formulation": "susp-125",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 6
+      }
+    },
+    {
+      "regimen": "adult-pharyngitis",
+      "formulation": "susp-250",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 500,
+        "mlPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "J01DC10"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-343/Cefprozil",
+        "url": "https://www.darooyab.ir/G-343/Cefprozil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=065381",
+      "label": "ANDA065381"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8e3943b5-8c30-4c81-bcfa-aeaaa1d75fb4",
+      "label": "FDA Cefprozil susp."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698022.html",
+      "label": "Cefprozil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DC10",
+      "label": "J01DC10"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-343/Cefprozil",
+      "label": "Cefprozil"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects: Pregnancy Category B Reproduction studies have been performed in rabbits, mice, and rats using oral doses of cefprozil of 0.8, 8.5, and 18.5 times the maximum daily human dose (1000 mg) based upon mg/m 2 , and have revealed no harm to the fetus.",
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when cefprozil is administered to a nursing woman, since the effect of cefprozil on nursing infants is unknown.",
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "( See INDICATIONS AND USAGE and DOSAGE AND ADMINISTRATION .) The safety and effectiveness of cefprozil in the treatment of otitis media have been established in the age groups 6 months to 12 years.",
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Other reported clinical experience has not identified differences in responses between elderly and younger patients, but greater sensitivity of some older individuals to the effects of cefprozil cannot be excluded (see CLINICAL PHARMACOLOGY ).",
+      "refs": [
+        {
+          "source": "fda-cefprozil",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cefprozil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA065381"
+  }
+}

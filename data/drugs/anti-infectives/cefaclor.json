@@ -1,0 +1,351 @@
+{
+  "id": "cefaclor",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفاکلر",
+    "en": "Cefaclor"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین نسل دوم",
+    "en": "Second-generation cephalosporin"
+  },
+  "brands": [
+    {
+      "name": "Ceclor",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ceclor",
+    "سفاکلر",
+    "سکلر"
+  ],
+  "formulations": [
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefaclor",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-500",
+      "form": "capsule",
+      "route": "oral",
+      "label": "500 mg capsule",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefaclor",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "respiratory-tract-infection",
+      "label": {
+        "fa": "بزرگسال — ۲۵۰ mg هر ۸ ساعت",
+        "en": "Adult — 250 mg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-cefaclor",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عفونت شدیدتر یا ارگانیسم کم‌حساس: دوز می‌تواند دو برابر شود.",
+            "en": "More severe infections or less susceptible organisms: dose may be doubled."
+          },
+          "refs": [
+            {
+              "source": "fda-cefaclor",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "acute-otitis-media",
+      "label": {
+        "fa": "کودک بالای ۱ ماه — ۲۰ mg/kg/روز در ۳ دوز (عفونت شدید یا اوتیت: ۴۰)",
+        "en": "Child >1 month — 20 mg/kg/day in 3 doses (severe or otitis media: 40)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 20,
+        "perKgPerDayMax": 40,
+        "dividedDoses": 3
+      },
+      "refs": [
+        {
+          "source": "fda-cefaclor",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1000,
+        "refs": [
+          {
+            "source": "fda-cefaclor",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سفالوسپورین‌ها.",
+        "en": "Allergy to cephalosporins."
+      },
+      "refs": [
+        {
+          "source": "fda-cefaclor",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 37.5
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J01DC04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06036",
+        "en": "CEFACLOR 125MG/5ML 100ML SYRUP",
+        "fa": "شربت سفاکلر ۱۲۵ میلی‌گرم / ۵ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "12100",
+        "en": "CEFACLOR 125MG/60ML SYR",
+        "fa": "سفاکلر ۱۲۵ میلی‌گرم / ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "16824",
+        "en": "CEFACLOR 250MG TAB",
+        "fa": "قرص سفاکلر ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "12639",
+        "en": "CEFACLOR 250MG/5ML 100ML SUSP",
+        "fa": "سوسپانسیون سفاکلر ۲۵۰ میلی‌گرم / ۵ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "06037",
+        "en": "CEFACLOR 250MG/5ML 100ML SYRUP",
+        "fa": "شربت سفاکلر ۲۵۰ میلی‌گرم / ۵ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "12101",
+        "en": "CEFACLOR 250MG/60ML SYR",
+        "fa": "سفاکلر ۲۵۰ میلی‌گرم / ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "19333",
+        "en": "CEFACLOR 500MG CAP",
+        "fa": "کپسول سفاکلر ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "14487",
+        "en": "CEFACLOR 500MG TAB",
+        "fa": "قرص سفاکلر ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-309/Cefaclor",
+        "url": "https://www.darooyab.ir/G-309/Cefaclor"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=065146",
+      "label": "ANDA065146"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f61354e-bcb0-41aa-955f-51eabc11387b",
+      "label": "FDA Cefaclor caps."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682729.html",
+      "label": "Cefaclor"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DC04",
+      "label": "J01DC04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-309/Cefaclor",
+      "label": "Cefaclor"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-cefaclor",
+          "section": "Pregnancy ─ Teratogenic Effects ─ Pregnancy Category B"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when cefaclor is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-cefaclor",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of this product for use in infants less than 1 month of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-cefaclor",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful in monitor renal function (see DOSAGE AND ADMINISTRATION ).",
+      "refs": [
+        {
+          "source": "fda-cefaclor",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cefaclor",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA065146"
+  }
+}

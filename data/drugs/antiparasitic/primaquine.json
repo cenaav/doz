@@ -1,0 +1,251 @@
+{
+  "id": "primaquine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پریماکین",
+    "en": "Primaquine"
+  },
+  "category": "antiparasitic",
+  "class": {
+    "fa": "ضدمالاریا (۸-آمینوکینولین)",
+    "en": "Antimalarial (8-aminoquinoline)"
+  },
+  "brands": [
+    {
+      "name": "Primaquine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "primaquine",
+    "پریماکین",
+    "پریماکوئین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "26.3 mg primaquine phosphate (= 15 mg base)",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-primaquine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "vivax",
+      "disease": "malaria",
+      "label": {
+        "fa": "درمان ریشه‌ای ویواکس — بزرگسال: ۱۵ mg باز روزانه، ۱۴ روز",
+        "en": "Radical cure of vivax — adult: 15 mg base daily, 14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-primaquine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "کمبود G6PD؛ بارداری؛ شیردهی اگر نوزاد کمبود G6PD دارد یا وضعیتش نامعلوم است؛ مصرف کویناکرین.",
+        "en": "G6PD deficiency; pregnancy; breastfeeding when the infant is G6PD deficient or unknown; quinacrine use."
+      },
+      "refs": [
+        {
+          "source": "fda-primaquine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [
+    {
+      "text": {
+        "fa": "پیش از شروع، آزمایش G6PD.",
+        "en": "Test G6PD before starting."
+      },
+      "refs": [
+        {
+          "source": "fda-primaquine",
+          "section": "Warnings — Hemolytic Anemia"
+        }
+      ]
+    }
+  ],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "vivax",
+      "formulation": "tab-15",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "P01BA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01050",
+        "en": "PRIMAQUINE PHOSPHATE 15MG TAB",
+        "fa": "قرص پریماکوین فسفات ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "01649",
+        "en": "PRIMAQUINE PHOSPHATE 7.5MG TAB",
+        "fa": "قرص پریماکوین فسفات ۷٫۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-845/Primaquine",
+        "url": "https://www.darooyab.ir/G-845/Primaquine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206043",
+      "label": "ANDA206043"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09531382-2e06-4164-a7e1-169a1488788a",
+      "label": "FDA Primaquine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607037.html",
+      "label": "Primaquine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=P01BA03",
+      "label": "P01BA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-845/Primaquine",
+      "label": "Primaquine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Pregnant women (see WARNINGS, Pregnancy ).",
+      "refs": [
+        {
+          "source": "fda-primaquine",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در شیردهی منع مصرف دارد.",
+        "en": "Label: contraindicated while breastfeeding."
+      },
+      "quote": "Breastfeeding by a lactating woman when the infant is found to be G6PD deficient or if G6PD status is unknown (see WARNINGS, Nursing Mothers ).",
+      "refs": [
+        {
+          "source": "fda-primaquine",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-primaquine",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-primaquine",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-primaquine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA206043"
+  }
+}

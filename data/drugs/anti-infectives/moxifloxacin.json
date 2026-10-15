@@ -1,0 +1,336 @@
+{
+  "id": "moxifloxacin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "موکسی‌فلوکساسین",
+    "en": "Moxifloxacin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "فلوروکینولون",
+    "en": "Fluoroquinolone"
+  },
+  "brands": [
+    {
+      "name": "Avelox",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "avelox",
+    "آولوکس",
+    "موکسی فلوکساسین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-400",
+      "form": "tablet",
+      "route": "oral",
+      "label": "400 mg tablet",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cap",
+      "disease": "community-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی اکتسابی — ۴۰۰ mg روزانه، ۷ تا ۱۴ روز",
+        "en": "CAP — 400 mg once daily, 7–14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      }
+    },
+    {
+      "id": "sinusitis",
+      "disease": "acute-bacterial-sinusitis",
+      "label": {
+        "fa": "سینوزیت باکتریایی حاد — ۴۰۰ mg روزانه، ۱۰ روز",
+        "en": "Acute bacterial sinusitis — 400 mg once daily, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به موکسی‌فلوکساسین یا هر کینولون.",
+        "en": "Hypersensitivity to moxifloxacin or any quinolone."
+      },
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۸ سال اثربخشی ثابت نشده.",
+        "en": "Effectiveness under 18 not established."
+      },
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای فلوروکینولون‌ها: پارگی تاندون، نوروپاتی محیطی، اثرات CNS، تشدید میاستنی؛ برای سینوزیت و برونشیت فقط اگر گزینه دیگری نیست.",
+        "en": "Fluoroquinolone boxed warning: tendon rupture, peripheral neuropathy, CNS effects, myasthenia exacerbation; for sinusitis/bronchitis only if no alternative."
+      },
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "cations",
+      "text": {
+        "fa": "۴ ساعت قبل یا ۸ ساعت بعد از منیزیم، آلومینیوم، آهن، روی، آنتی‌اسید و مولتی‌ویتامین.",
+        "en": "Take 4 h before or 8 h after magnesium, aluminium, iron, zinc, antacids or multivitamins."
+      },
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cap",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "sinusitis",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400
+      }
+    }
+  ],
+  "atc": [
+    "J01MA14"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "14266",
+        "en": "MOXIFLOXACIN 0.5% 5ML OPH DROP",
+        "fa": "قطره چشمی موکسی‌فلوکساسین ۰٫۵ درصد ۵ میلی‌لیتر"
+      },
+      {
+        "code": "08277",
+        "en": "MOXIFLOXACIN HCL 400MG TAB",
+        "fa": "قرص موکسی‌فلوکساسین هیدروکلراید ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52529",
+        "en": "MOXIFLOXACIN SOLUTION, DROPS OPHTHALMIC 0.5 % 0.5 mL",
+        "fa": "قطره چشمی موکسی‌فلوکساسین ۰٫۵ درصد ۰٫۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-444/Moxifloxacin",
+        "url": "https://www.darooyab.ir/G-444/Moxifloxacin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202632",
+      "label": "ANDA202632"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f34c08e6-fe74-4de3-9e36-a82c3c1c183b",
+      "label": "FDA Moxifloxacin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a600002.html",
+      "label": "Moxifloxacin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608030.html",
+      "label": "Moxifloxacin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01MA14",
+      "label": "J01MA14"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-444/Moxifloxacin",
+      "label": "Moxifloxacin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Based on animal studies with moxifloxacin, moxifloxacin hydrochloride may cause fetal harm.",
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary It is not known if moxifloxacin is present in human milk.",
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Effectiveness in pediatric patients and adolescents less than 18 years of age has not been established.",
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Caution should be used when prescribing moxifloxacin hydrochloride to elderly patients especially those on corticosteroids.",
+      "refs": [
+        {
+          "source": "fda-moxifloxacin",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-moxifloxacin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA202632"
+  }
+}
