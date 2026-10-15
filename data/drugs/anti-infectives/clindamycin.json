@@ -42,6 +42,68 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "cap-150",
+      "form": "capsule",
+      "route": "oral",
+      "label": "150 mg capsule",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clindacap",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-300",
+      "form": "capsule",
+      "route": "oral",
+      "label": "300 mg capsule",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clindacap",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "inj-150",
+      "form": "injection",
+      "route": "iv",
+      "label": "150 mg/mL injection (IM undiluted; IV diluted)",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-clindainj",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -79,6 +141,9 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "sol-75-5"
       ]
     },
     {
@@ -115,6 +180,9 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "sol-75-5"
       ]
     },
     {
@@ -151,6 +219,9 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "sol-75-5"
       ]
     },
     {
@@ -187,6 +258,9 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "sol-75-5"
       ]
     },
     {
@@ -223,6 +297,9 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "sol-75-5"
       ]
     },
     {
@@ -256,6 +333,141 @@
             {
               "source": "fda-cleocin-pediatric",
               "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ],
+      "allowedFormulations": [
+        "sol-75-5"
+      ]
+    },
+    {
+      "id": "cap-adult",
+      "disease": "serious-anaerobic-infection",
+      "label": {
+        "fa": "کپسول — بزرگسال: ۱۵۰ تا ۳۰۰ mg هر ۶ ساعت (شدیدتر ۳۰۰ تا ۴۵۰ mg)",
+        "en": "Capsules — adult: 150–300 mg every 6 h (more severe 300–450 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 150,
+        "perDoseMax": 300,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-clindacap",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-150",
+        "cap-300"
+      ]
+    },
+    {
+      "id": "cap-child",
+      "disease": "serious-anaerobic-infection",
+      "label": {
+        "fa": "کپسول — کودکی که کپسول می‌بلعد: ۸ تا ۱۶ mg/kg/روز در ۳ تا ۴ دوز",
+        "en": "Capsules — child able to swallow capsules: 8–16 mg/kg/day in 3–4 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 8,
+        "perKgPerDayMax": 16,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-clindacap",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-150",
+        "cap-300"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عفونت شدیدتر ۱۶ تا ۲۰ mg/kg/روز. بر اساس وزن کل بدن حتی در چاقی.",
+            "en": "More severe 16–20 mg/kg/day. Dose by total body weight, even in obesity."
+          },
+          "refs": [
+            {
+              "source": "fda-clindacap",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-child",
+      "disease": "serious-anaerobic-infection",
+      "label": {
+        "fa": "تزریقی — کودک ۱ ماه تا ۱۶ سال: ۲۰ تا ۴۰ mg/kg/روز در ۳ تا ۴ دوز",
+        "en": "Injection — child 1 month–16 y: 20–40 mg/kg/day in 3–4 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 20,
+        "perKgPerDayMax": 40,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-clindainj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "inj-150"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بالاتر در عفونت شدیدتر. حاوی بنزیل الکل (خطر در نوزاد). تزریق عضلانی تک‌دوز بیش از ۶۰۰ mg توصیه نمی‌شود.",
+            "en": "Higher doses for more severe infection. Contains benzyl alcohol (neonatal risk). Single IM injections >600 mg not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-clindainj",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-clindainj",
+              "section": "Warnings — Neonates"
             }
           ]
         }
@@ -390,6 +602,45 @@
         "perDose": 63.75,
         "upperPerDose": 93.75
       }
+    },
+    {
+      "regimen": "cap-adult",
+      "formulation": "cap-150",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 300
+      }
+    },
+    {
+      "regimen": "cap-child",
+      "formulation": "cap-150",
+      "input": {
+        "ageYears": 16,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 300
+      }
+    },
+    {
+      "regimen": "iv-child",
+      "formulation": "inj-150",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 0.67,
+        "upperPerDose": 200
+      }
     }
   ],
   "atc": [
@@ -492,6 +743,16 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1ef87b6c-9d32-44ac-8c55-8bf01424cc45",
       "label": "FDA Cleocin Pediatric"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2367340c-d297-4a3f-8253-6d27a0ed39cb",
+      "label": "FDA Clindamycin caps"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05a75685-0af5-407c-ac57-e380c882b49d",
+      "label": "FDA Cleocin Phosphate"
     },
     {
       "kind": "medlineplus",

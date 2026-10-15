@@ -1,0 +1,289 @@
+{
+  "id": "penicillin-benzathine-procaine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پنی‌سیلین بنزاتین + پروکائین",
+    "en": "Penicillin G benzathine + procaine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "پنی‌سیلین طولانی‌اثر عضلانی",
+    "en": "Long-acting IM penicillin"
+  },
+  "brands": [
+    {
+      "name": "Bicillin C-R",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "bicillin c-r",
+    "بیسیلین",
+    "پنی سیلین ترکیبی"
+  ],
+  "formulations": [
+    {
+      "id": "syr-1-2mu",
+      "form": "injection",
+      "route": "im",
+      "label": "1,200,000 units / 2 mL syringe (deep IM only)",
+      "concentration": {
+        "amount": 600000,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-penprocaine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "strep",
+      "disease": "scarlet-fever",
+      "label": {
+        "fa": "عفونت استرپتوکوک گروه A (حلق، پوست، مخملک، اریزیپل) — یک نوبت بر اساس وزن",
+        "en": "Group A strep (throat, skin, scarlet fever, erysipelas) — single dose by weight"
+      },
+      "population": {},
+      "type": "weightBand",
+      "unit": "unit",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 13.6,
+            "perDose": 600000,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 13.61,
+            "maxWeightKg": 27.22,
+            "perDose": 900000,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 27.23,
+            "maxWeightKg": null,
+            "perDose": 2400000,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-penprocaine",
+          "section": "Dosage and Administration — Streptococcal Infections"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "برچسب بر حسب پوند: زیر ۳۰ پوند ← ۶۰۰٬۰۰۰؛ ۳۰ تا ۶۰ پوند ← ۹۰۰٬۰۰۰ تا ۱٬۲۰۰٬۰۰۰؛ بالای ۶۰ پوند ← ۲٬۴۰۰٬۰۰۰ واحد (به kg تبدیل شده). فقط عضلانی عمیق.",
+            "en": "Label in pounds: <30 lb → 600,000; 30–60 lb → 900,000–1,200,000; >60 lb → 2,400,000 units (converted to kg). Deep IM only."
+          },
+          "refs": [
+            {
+              "source": "fda-penprocaine",
+              "section": "Dosage and Administration — Streptococcal Infections"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به پنی‌سیلین یا پروکائین.",
+        "en": "Hypersensitivity to penicillin or procaine."
+      },
+      "refs": [
+        {
+          "source": "fda-penprocaine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار: هرگز وریدی تزریق نشود — ایست قلبی‌تنفسی و مرگ گزارش شده.",
+        "en": "Warning: never inject intravenously — cardiorespiratory arrest and death reported."
+      },
+      "refs": [
+        {
+          "source": "fda-penprocaine",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "strep",
+      "formulation": "syr-1-2mu",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 600000,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "strep",
+      "formulation": "syr-1-2mu",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 2400000,
+        "mlPerDose": 4
+      }
+    }
+  ],
+  "atc": [
+    "J01CE30"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01863",
+        "en": "PENICILLIN G PROCAINE 1,000,000 U VIAL",
+        "fa": "ویال پنی‌سیلین گرم پروکائین ۱۰۰۰۰۰۰ واحد"
+      },
+      {
+        "code": "00961",
+        "en": "PENICILLIN G PROCAINE 400,000 U VIAL",
+        "fa": "ویال پنی‌سیلین گرم پروکائین ۴۰۰۰۰۰ واحد"
+      },
+      {
+        "code": "00962",
+        "en": "PENICILLIN G PROCAINE 800,000 U VIAL",
+        "fa": "ویال پنی‌سیلین گرم پروکائین ۸۰۰۰۰۰ واحد"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-484/Procaine-Penicillin-G",
+        "url": "https://www.darooyab.ir/G-484/Procaine-Penicillin-G"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-penprocaine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA050138"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050138",
+      "label": "NDA050138"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b5640fc6-76d8-428d-80e6-760d769af8bb",
+      "label": "FDA Bicillin C-R"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01CE30",
+      "label": "J01CE30"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-484/Procaine-Penicillin-G",
+      "label": "Procaine-Penicillin-G"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-penprocaine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when penicillin G benzathine and penicillin G procaine are administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-penprocaine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "(See INDICATIONS AND USAGE and DOSAGE AND ADMINISTRATION sections.)",
+      "refs": [
+        {
+          "source": "fda-penprocaine",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-penprocaine",
+          "section": "Geriatric use"
+        }
+      ]
+    }
+  }
+}

@@ -104,6 +104,26 @@
           "section": "3"
         }
       ]
+    },
+    {
+      "id": "vial-500",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "500 mg vial for IV infusion",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-azithroiv",
+          "section": "3"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -454,6 +474,86 @@
           ]
         }
       ]
+    },
+    {
+      "id": "pid-iv",
+      "disease": "pid",
+      "label": {
+        "fa": "بیماری التهابی لگن — بزرگسال: ۵۰۰ mg وریدی روزانه ۱ تا ۲ روز، سپس ۲۵۰ mg خوراکی تا ۷ روز",
+        "en": "PID — adult: 500 mg IV daily for 1–2 days, then 250 mg orally to complete 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-azithroiv",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 2
+      },
+      "allowedFormulations": [
+        "vial-500"
+      ]
+    },
+    {
+      "id": "cap-iv",
+      "disease": "community-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی اکتسابی — بزرگسال: ۵۰۰ mg وریدی روزانه حداقل ۲ روز، سپس خوراکی تا ۷ تا ۱۰ روز",
+        "en": "CAP — adult: 500 mg IV daily ≥2 days, then oral to 7–10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-azithroiv",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 2,
+        "max": 2
+      },
+      "allowedFormulations": [
+        "vial-500"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "انفوزیون ۱ mg/mL در ۳ ساعت یا ۲ mg/mL در ۱ ساعت؛ هرگز بولوس یا عضلانی.",
+            "en": "Infuse 1 mg/mL over 3 h or 2 mg/mL over 1 h; never bolus or IM."
+          },
+          "refs": [
+            {
+              "source": "fda-azithroiv",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -660,6 +760,28 @@
       "expect": {
         "status": "blocked"
       }
+    },
+    {
+      "regimen": "pid-iv",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "cap-iv",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500
+      }
     }
   ],
   "atc": [
@@ -777,6 +899,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db52b91e-79f7-4cc1-9564-f2eee8e31c45",
       "label": "FDA Zithromax"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8d012c4-f411-4484-a618-7597599ea621",
+      "label": "FDA Azithromycin inj."
     },
     {
       "kind": "medlineplus",

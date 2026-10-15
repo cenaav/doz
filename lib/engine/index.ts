@@ -131,6 +131,9 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
     res.mlPerDoseRounded = roundMl(toMl(capped.perDose))
     res.mlPerDay = r2(toMl(capped.perDay))
     res.schedule = base.schedule?.map((s) => ({ ...s, perDay: rDose(s.perDay), perDose: rDose(s.perDose), mlPerDose: r2(toMl(s.perDose)), mlPerDoseRounded: roundMl(toMl(s.perDose)) }))
+  } else if (c.perUnit === 'vial') {
+    // Powder vials are reconstituted to a volume chosen by the user, so only the dose in mg is given.
+    res.schedule = base.schedule?.map((s) => ({ ...s, perDay: rDose(s.perDay), perDose: rDose(s.perDose) }))
   } else {
     const t = capped.perDose / c.amount
     const rounded = roundTablets(t, !!c.scored)

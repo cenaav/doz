@@ -1,0 +1,300 @@
+{
+  "id": "ceftazidime",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفتازیدیم (تزریقی)",
+    "en": "Ceftazidime (injection)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین نسل سوم ضدسودوموناس",
+    "en": "Antipseudomonal third-generation cephalosporin"
+  },
+  "brands": [
+    {
+      "name": "Fortaz",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "fortaz",
+    "tazicef",
+    "فورتاز",
+    "سفتازیدیم"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g (reconstitute per label)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ceftazidime",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "child",
+      "disease": "sepsis",
+      "label": {
+        "fa": "کودک ۱ ماه تا ۱۲ سال — ۳۰ تا ۵۰ mg/kg هر ۸ ساعت (حداکثر ۶ g در روز)",
+        "en": "Child 1 month–12 y — 30–50 mg/kg every 8 h (max 6 g/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 30,
+        "perKgPerDoseMax": 50,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-ceftazidime",
+          "section": "Dosage and Administration, Table 3"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 6000,
+        "refs": [
+          {
+            "source": "fda-ceftazidime",
+            "section": "Dosage and Administration, Table 3"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بالاتر برای نقص ایمنی، فیبروز کیستیک یا مننژیت. در GFR زیر ۵۰ کاهش دوز.",
+            "en": "Higher dose for immunocompromise, cystic fibrosis or meningitis. Reduce if GFR <50."
+          },
+          "refs": [
+            {
+              "source": "fda-ceftazidime",
+              "section": "Dosage and Administration, Table 3"
+            },
+            {
+              "source": "fda-ceftazidime",
+              "section": "Dosage and Administration — Impaired Renal Function"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "sepsis",
+      "label": {
+        "fa": "بزرگسال — معمولاً ۱ g هر ۸ تا ۱۲ ساعت",
+        "en": "Adult — usually 1 g every 8–12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "معمول ۱ g وریدی یا عضلانی هر ۸ تا ۱۲ ساعت؛ UTI ساده ۲۵۰ mg هر ۱۲ ساعت؛ مننژیت و عفونت‌های تهدیدکننده ۲ g هر ۸ ساعت. در نارسایی کلیه طبق جدول برچسب.",
+          "en": "Usual 1 g IV/IM every 8–12 h; uncomplicated UTI 250 mg every 12 h; meningitis and life-threatening infections 2 g every 8 h. Renal impairment per label table."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-ceftazidime",
+          "section": "Dosage and Administration, Table 3"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سفالوسپورین‌ها؛ در حساسیت به پنی‌سیلین با احتیاط.",
+        "en": "Cephalosporin hypersensitivity; caution with penicillin allergy."
+      },
+      "refs": [
+        {
+          "source": "fda-ceftazidime",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "child",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "status": "ok",
+        "perDose": 600,
+        "upperPerDose": 1000
+      }
+    }
+  ],
+  "atc": [
+    "J01DD02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00230",
+        "en": "CEFTAZIDIME PENTAHYDRATE 1G VIAL",
+        "fa": "ویال سفتازیدیم پنتاهیدرات ۱ گرم"
+      },
+      {
+        "code": "00231",
+        "en": "CEFTAZIDIME PENTAHYDRATE 2G VIAL",
+        "fa": "ویال سفتازیدیم پنتاهیدرات ۲ گرم"
+      },
+      {
+        "code": "00232",
+        "en": "CEFTAZIDIME PENTAHYDRATE 500MG VIAL",
+        "fa": "ویال سفتازیدیم پنتاهیدرات ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-347/Ceftazidime",
+        "url": "https://www.darooyab.ir/G-347/Ceftazidime"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ceftazidime",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA062640"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=062640",
+      "label": "ANDA062640"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=22d6534c-4488-48a1-8d78-e2fb908259de",
+      "label": "FDA Ceftazidime"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a686007.html",
+      "label": "Ceftazidime Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DD02",
+      "label": "J01DD02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-347/Ceftazidime",
+      "label": "Ceftazidime"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-ceftazidime",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when ceftazidime is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-ceftazidime",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "(see DOSAGE AND ADMINISTRATION ).",
+      "refs": [
+        {
+          "source": "fda-ceftazidime",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function (see DOSAGE AND ADMINISTRATION ).",
+      "refs": [
+        {
+          "source": "fda-ceftazidime",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

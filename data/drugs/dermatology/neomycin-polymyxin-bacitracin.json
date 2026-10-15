@@ -1,0 +1,147 @@
+{
+  "id": "neomycin-polymyxin-bacitracin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پماد سه‌آنتی‌بیوتیک (نئومایسین + پلی‌میکسین + باسیتراسین)",
+    "en": "Triple antibiotic ointment (neomycin + polymyxin B + bacitracin)"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "آنتی‌بیوتیک موضعی",
+    "en": "Topical antibiotic"
+  },
+  "brands": [
+    {
+      "name": "Neosporin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "neosporin",
+    "نئوسپورین",
+    "پماد آنتی بیوتیک",
+    "triple antibiotic"
+  ],
+  "formulations": [
+    {
+      "id": "oint",
+      "form": "ointment",
+      "route": "topical",
+      "label": "Per g: bacitracin 400 U, neomycin 3.5 mg, polymyxin B 5,000 U",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neosporin",
+          "section": "Active ingredients"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "wound",
+      "disease": "minor-wound",
+      "label": {
+        "fa": "زخم و خراش و سوختگی جزئی — مقدار کم ۱ تا ۳ بار در روز",
+        "en": "Minor cuts, scrapes, burns — small amount 1–3 times daily"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-neosporin",
+          "section": "Directions"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 7
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا؛ در چشم یا سطح وسیع بدن مصرف نشود. زخم عمیق، گازگرفتگی حیوان یا سوختگی جدی: با پزشک.",
+        "en": "Allergy to ingredients; not in the eyes or over large areas. Deep or puncture wounds, animal bites, serious burns: ask a doctor."
+      },
+      "refs": [
+        {
+          "source": "fda-neosporin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "wound",
+      "formulation": "oint",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "D06AX"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Triple%20antibiotic%20ointment"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "OTC monograph",
+    "refs": [
+      {
+        "source": "fda-neosporin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "M004"
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0ad21575-0e2d-24c2-e063-6394a90a616e",
+      "label": "FDA Neosporin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=D06AX",
+      "label": "D06AX"
+    }
+  ]
+}

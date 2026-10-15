@@ -44,6 +44,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "susp-25",
+      "form": "suspension",
+      "route": "oral",
+      "label": "25 mg / 5 mL oral suspension",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-doxysusp",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -150,6 +170,194 @@
           "section": "Dosage and Administration"
         }
       ]
+    },
+    {
+      "id": "chlamydia",
+      "disease": "chlamydia",
+      "label": {
+        "fa": "کلامیدیا (اورتریت، سرویسیت، رکتال) — بزرگسال: ۱۰۰ mg دو بار در روز، ۷ روز",
+        "en": "Chlamydia (urethral, endocervical, rectal) — adult: 100 mg twice daily, 7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-doxysusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "epididymitis",
+      "disease": "epididymitis",
+      "label": {
+        "fa": "اپیدیدیمو-ارکیت کلامیدیایی — ۱۰۰ mg دو بار در روز، حداقل ۱۰ روز",
+        "en": "Chlamydial epididymo-orchitis — 100 mg twice daily, at least 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-doxysusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "malaria-adult",
+      "disease": "malaria",
+      "label": {
+        "fa": "پیشگیری مالاریا — بزرگسال: ۱۰۰ mg روزانه",
+        "en": "Malaria prophylaxis — adult: 100 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-doxysusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "از ۱ تا ۲ روز پیش از سفر تا ۴ هفته پس از ترک منطقه.",
+            "en": "From 1–2 days before travel until 4 weeks after leaving."
+          },
+          "refs": [
+            {
+              "source": "fda-doxysusp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malaria-child",
+      "disease": "malaria",
+      "label": {
+        "fa": "پیشگیری مالاریا — کودک بالای ۸ سال: ۲ mg/kg روزانه (تا دوز بزرگسال)",
+        "en": "Malaria prophylaxis — child >8 y: 2 mg/kg daily (up to adult dose)"
+      },
+      "population": {
+        "minAge": {
+          "value": 8,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 2,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-doxysusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 100,
+        "refs": [
+          {
+            "source": "fda-doxysusp",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "child-lt45",
+      "disease": "susceptible-bacterial-infection",
+      "label": {
+        "fa": "عفونت‌های حساس — کودک بالای ۸ سال زیر ۴۵ kg: روز اول ۴٫۴ mg/kg در ۲ دوز، سپس ۲٫۲ mg/kg روزانه",
+        "en": "Susceptible infections — child >8 y, <45 kg: 4.4 mg/kg in 2 doses on day 1, then 2.2 mg/kg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 8,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxWeightKg": 44.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 2.2,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-doxysusp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "روز اول ۴٫۴ mg/kg در دو دوز. ۸ سال و کمتر فقط در عفونت‌های شدید (مثل سیاه‌زخم، تب منقوط): ۲٫۲ mg/kg هر ۱۲ ساعت.",
+            "en": "Day 1: 4.4 mg/kg in two doses. ≤8 years only for severe infections (e.g. anthrax, Rocky Mountain spotted fever): 2.2 mg/kg every 12 h."
+          },
+          "refs": [
+            {
+              "source": "fda-doxysusp",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-doxysusp",
+              "section": "Pediatric Use"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -242,6 +450,64 @@
       "expect": {
         "status": "blocked"
       }
+    },
+    {
+      "regimen": "chlamydia",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "epididymitis",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 100
+      }
+    },
+    {
+      "regimen": "malaria-adult",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100
+      }
+    },
+    {
+      "regimen": "malaria-child",
+      "formulation": "susp-25",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 60,
+        "mlPerDose": 12
+      }
+    },
+    {
+      "regimen": "child-lt45",
+      "formulation": "susp-25",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 66,
+        "mlPerDose": 13.2
+      }
     }
   ],
   "atc": [
@@ -304,6 +570,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=656ccfe8-dd25-474a-9306-e44e511d7acd",
       "label": "FDA Doxycycline"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0e80435-1b6a-4361-8c8a-e432f8f23a1b",
+      "label": "FDA Doxycycline susp."
     },
     {
       "kind": "medlineplus",

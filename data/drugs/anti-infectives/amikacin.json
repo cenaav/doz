@@ -1,0 +1,324 @@
+{
+  "id": "amikacin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمیکاسین (تزریقی)",
+    "en": "Amikacin (injection)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "آمینوگلیکوزید",
+    "en": "Aminoglycoside"
+  },
+  "brands": [
+    {
+      "name": "Amikin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "amikin",
+    "آمیکاسین",
+    "آمپول آمیکاسین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-250",
+      "form": "injection",
+      "route": "im",
+      "label": "250 mg/mL (500 mg/2 mL; 1 g/4 mL) vial",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-amikacin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "sepsis",
+      "label": {
+        "fa": "بزرگسال، کودک و شیرخوار بزرگ‌تر با کلیه سالم — ۱۵ mg/kg/روز در ۲ تا ۳ دوز",
+        "en": "Adults, children and older infants with normal renal function — 15 mg/kg/day in 2–3 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-amikacin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1500,
+        "refs": [
+          {
+            "source": "fda-amikacin",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 7,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یعنی ۷٫۵ mg/kg هر ۱۲ ساعت یا ۵ mg/kg هر ۸ ساعت؛ حداکثر ۱٫۵ g در روز. سطح سرمی، کلیه، شنوایی و تعادل پایش شود.",
+            "en": "i.e. 7.5 mg/kg every 12 h or 5 mg/kg every 8 h; max 1.5 g/day. Monitor serum levels, renal, auditory and vestibular function."
+          },
+          "refs": [
+            {
+              "source": "fda-amikacin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neo",
+      "disease": "sepsis",
+      "label": {
+        "fa": "نوزاد — بارگذاری ۱۰ mg/kg سپس ۷٫۵ mg/kg هر ۱۲ ساعت",
+        "en": "Newborn — load 10 mg/kg then 7.5 mg/kg every 12 h"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 7.5,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-amikacin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول ۱۰ mg/kg. در نارس و نوزاد به‌علت نارسی کلیه با احتیاط.",
+            "en": "First dose 10 mg/kg. Caution in premature and newborn infants (renal immaturity)."
+          },
+          "refs": [
+            {
+              "source": "fda-amikacin",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-amikacin",
+              "section": "Pediatric Use"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آمیکاسین یا سایر آمینوگلیکوزیدها.",
+        "en": "Hypersensitivity to amikacin or other aminoglycosides."
+      },
+      "refs": [
+        {
+          "source": "fda-amikacin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت گوش، کلیه و عصبی‌عضلانی؛ آسیب جنین در بارداری.",
+        "en": "Boxed warning: oto-, nephro- and neuromuscular toxicity; fetal harm in pregnancy."
+      },
+      "refs": [
+        {
+          "source": "fda-amikacin",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-amikacin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "vial-250",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 525,
+        "mlPerDose": 2.1
+      }
+    },
+    {
+      "regimen": "neo",
+      "formulation": "vial-250",
+      "input": {
+        "ageDays": 10,
+        "weightKg": 3.5
+      },
+      "expect": {
+        "perDose": 26.25,
+        "mlPerDose": 0.11
+      }
+    }
+  ],
+  "atc": [
+    "J01GB06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00053",
+        "en": "AMIKACIN SULFATE 100MG/2ML AMP",
+        "fa": "آمپول آمیکاسین سولفات ۱۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "00054",
+        "en": "AMIKACIN SULFATE 500MG/2ML AMP",
+        "fa": "آمپول آمیکاسین سولفات ۵۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-273/Amikacin",
+        "url": "https://www.darooyab.ir/G-273/Amikacin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-amikacin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA203323"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203323",
+      "label": "ANDA203323"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f260ff2a-76a0-4672-9516-91c344b67890",
+      "label": "FDA Amikacin inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682661.html",
+      "label": "Amikacin Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a623020.html",
+      "label": "Amikacin Oral Inhalation"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01GB06",
+      "label": "J01GB06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-273/Amikacin",
+      "label": "Amikacin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects (See WARNINGS section.)",
+      "refs": [
+        {
+          "source": "fda-amikacin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from amikacin, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-amikacin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Aminoglycosides should be used with caution in premature and neonatal infants because of the renal immaturity of these patients and the resulting prolongation of serum half-life of these drugs.",
+      "refs": [
+        {
+          "source": "fda-amikacin",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -64,6 +64,48 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mg tablet (base)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-erythrotab",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet (base)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-erythrotab",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -114,6 +156,10 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "susp-200-5",
+        "susp-400-5"
       ]
     },
     {
@@ -163,6 +209,10 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "susp-200-5",
+        "susp-400-5"
       ]
     },
     {
@@ -212,6 +262,10 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "susp-200-5",
+        "susp-400-5"
       ]
     },
     {
@@ -247,7 +301,11 @@
             }
           }
         ]
-      }
+      },
+      "allowedFormulations": [
+        "susp-200-5",
+        "susp-400-5"
+      ]
     },
     {
       "id": "pertussis",
@@ -300,6 +358,10 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "susp-200-5",
+        "susp-400-5"
       ]
     },
     {
@@ -344,7 +406,11 @@
       "durationDays": {
         "min": 10,
         "max": 14
-      }
+      },
+      "allowedFormulations": [
+        "susp-200-5",
+        "susp-400-5"
+      ]
     },
     {
       "id": "adult",
@@ -379,7 +445,64 @@
             "section": "Dosage and Administration"
           }
         ]
-      }
+      },
+      "allowedFormulations": [
+        "susp-200-5",
+        "susp-400-5"
+      ]
+    },
+    {
+      "id": "tab-adult",
+      "disease": "respiratory-tract-infection",
+      "label": {
+        "fa": "قرص — بزرگسال: ۲۵۰ mg چهار بار در روز یا ۵۰۰ mg هر ۱۲ ساعت",
+        "en": "Tablets — adult: 250 mg four times daily or 500 mg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-erythrotab",
+          "section": "Dosage and Administration — Adults"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4000,
+        "refs": [
+          {
+            "source": "fda-erythrotab",
+            "section": "Dosage and Administration — Adults"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تا ۴ g در روز بسته به شدت؛ بالای ۱ g در روز دو بار در روز توصیه نمی‌شود.",
+            "en": "Up to 4 g/day by severity; twice-daily dosing not recommended above 1 g/day."
+          },
+          "refs": [
+            {
+              "source": "fda-erythrotab",
+              "section": "Dosage and Administration — Adults"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -528,6 +651,18 @@
         "perDose": 400,
         "mlPerDose": 5
       }
+    },
+    {
+      "regimen": "tab-adult",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
+      }
     }
   ],
   "atc": [
@@ -610,6 +745,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3d80f96e-3bbe-4fa5-89a8-694c61dd5e8f",
       "label": "FDA Erythromycin ES"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=933049f6-61b9-4ed5-b6b7-60c5037e2115",
+      "label": "FDA Erythromycin tabs"
     },
     {
       "kind": "medlineplus",

@@ -1,0 +1,261 @@
+{
+  "id": "pyrazinamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پیرازینامید",
+    "en": "Pyrazinamide"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدسل",
+    "en": "Antituberculous"
+  },
+  "brands": [
+    {
+      "name": "Pyrazinamide",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pza",
+    "پیرازینامید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet (scored)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-pyrazinamide",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "tb",
+      "disease": "tuberculosis",
+      "label": {
+        "fa": "سل — ۱۵ تا ۳۰ mg/kg یک بار در روز (۲ ماه اول)",
+        "en": "TB — 15–30 mg/kg once daily (first 2 months)"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "perKgPerDayMax": 30,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-pyrazinamide",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 3000,
+        "refs": [
+          {
+            "source": "fda-pyrazinamide",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه با سایر داروهای سل؛ CDC حداکثر ۲ g در رژیم روزانه.",
+            "en": "Always with other TB drugs; CDC daily maximum 2 g."
+          },
+          "refs": [
+            {
+              "source": "fda-pyrazinamide",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آسیب شدید کبد؛ نقرس حاد؛ حساسیت.",
+        "en": "Severe hepatic damage; acute gout; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-pyrazinamide",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [
+    {
+      "text": {
+        "fa": "اسید اوریک و آزمایش کبد پایه و دوره‌ای.",
+        "en": "Baseline and periodic uric acid and liver tests."
+      },
+      "refs": [
+        {
+          "source": "fda-pyrazinamide",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "tb",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 750,
+        "tabletsPerDoseRounded": 1.5,
+        "upperPerDose": 1500
+      }
+    }
+  ],
+  "atc": [
+    "J04AK01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01078",
+        "en": "PYRAZINAMIDE 500MG TAB",
+        "fa": "قرص پیرازینامید ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-488/Pyrazinamide",
+        "url": "https://www.darooyab.ir/G-488/Pyrazinamide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-pyrazinamide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA080157"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=080157",
+      "label": "ANDA080157"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=262d8829-728c-48db-b89b-88d13b87e684",
+      "label": "FDA Pyrazinamide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682402.html",
+      "label": "Pyrazinamide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J04AK01",
+      "label": "J04AK01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-488/Pyrazinamide",
+      "label": "Pyrazinamide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects – Pregnancy Category C Animal reproduction studies have not been conducted with pyrazinamide.",
+      "refs": [
+        {
+          "source": "fda-pyrazinamide",
+          "section": "PREGNANCY"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Pyrazinamide has been found in small amounts in breast milk.",
+      "refs": [
+        {
+          "source": "fda-pyrazinamide",
+          "section": "NURSING MOTHERS"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Pyrazinamide regimens employed in adults are probably equally effective in pediatric patients. 4, 10, 11 Pyrazinamide appears to be well tolerated in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-pyrazinamide",
+          "section": "PEDIATRIC USE"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic or renal function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-pyrazinamide",
+          "section": "GERIATRIC USE"
+        }
+      ]
+    }
+  }
+}

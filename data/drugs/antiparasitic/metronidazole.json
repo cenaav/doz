@@ -63,6 +63,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "iv-5",
+      "form": "injection",
+      "route": "iv",
+      "label": "500 mg / 100 mL (5 mg/mL) IV infusion",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metroiv",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -113,6 +133,10 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500"
       ]
     },
     {
@@ -143,7 +167,11 @@
       "durationDays": {
         "min": 5,
         "max": 10
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500"
+      ]
     },
     {
       "id": "anaerobic-adult",
@@ -182,7 +210,92 @@
       "durationDays": {
         "min": 7,
         "max": 10
-      }
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500"
+      ]
+    },
+    {
+      "id": "iv-load",
+      "disease": "serious-anaerobic-infection",
+      "label": {
+        "fa": "عفونت بی‌هوازی شدید — بارگذاری ۱۵ mg/kg وریدی طی ۱ ساعت",
+        "en": "Serious anaerobic infection — loading 15 mg/kg IV over 1 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-metroiv",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "iv-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "حدود ۱ g برای ۷۰ kg؛ ۶ ساعت بعد نگهدارنده.",
+            "en": "About 1 g for 70 kg; maintenance starts 6 h later."
+          },
+          "refs": [
+            {
+              "source": "fda-metroiv",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-maint",
+      "disease": "serious-anaerobic-infection",
+      "label": {
+        "fa": "نگهدارنده — ۷٫۵ mg/kg وریدی هر ۶ ساعت",
+        "en": "Maintenance — 7.5 mg/kg IV every 6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 7.5,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-metroiv",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4000,
+        "refs": [
+          {
+            "source": "fda-metroiv",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "iv-5"
+      ]
     }
   ],
   "contraindications": [
@@ -308,6 +421,30 @@
       "expect": {
         "perDose": 525
       }
+    },
+    {
+      "regimen": "iv-load",
+      "formulation": "iv-5",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1050,
+        "mlPerDose": 210
+      }
+    },
+    {
+      "regimen": "iv-maint",
+      "formulation": "iv-5",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 525,
+        "mlPerDose": 105
+      }
     }
   ],
   "atc": [
@@ -390,6 +527,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9ed89bfc-ccf3-4e6c-924f-2a14bf82163f",
       "label": "FDA Metronidazole"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4ea0c09-cdd1-4708-962c-6ba28b989df3",
+      "label": "FDA Metronidazole inj."
     },
     {
       "kind": "medlineplus",

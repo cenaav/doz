@@ -1,0 +1,303 @@
+{
+  "id": "penicillin-g-crystalline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پنی‌سیلین G کریستال (تزریقی)",
+    "en": "Penicillin G (crystalline, injection)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "پنی‌سیلین طبیعی",
+    "en": "Natural penicillin"
+  },
+  "brands": [
+    {
+      "name": "Pfizerpen",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "penicillin g",
+    "crystalline penicillin",
+    "پنی سیلین کریستال",
+    "پنی سیلین جی",
+    "پنی سیلین ۵ میلیون"
+  ],
+  "formulations": [
+    {
+      "id": "vial-5mu",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "5,000,000 units vial",
+      "concentration": {
+        "amount": 5000000,
+        "unit": "unit",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-pfizerpen",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mening-child",
+      "disease": "bacterial-meningitis",
+      "label": {
+        "fa": "مننژیت پنوموکوک/مننگوکوک — کودک: ۲۵۰٬۰۰۰ واحد/kg/روز در دوزهای هر ۴ ساعت",
+        "en": "Pneumococcal/meningococcal meningitis — child: 250,000 units/kg/day every 4 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDay": 250000,
+        "dividedDoses": 6
+      },
+      "refs": [
+        {
+          "source": "fda-pfizerpen",
+          "section": "Dosage and Administration — Pediatric Patients"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 20000000,
+        "refs": [
+          {
+            "source": "fda-pfizerpen",
+            "section": "Dosage and Administration — Pediatric Patients"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر ۱۲ تا ۲۰ میلیون واحد در روز. این فرآورده برای دوزهای کمتر از ۱ میلیون واحد در هر نوبت نیست.",
+            "en": "Max 12–20 million units/day. This product is not for patients needing less than 1 million units per dose."
+          },
+          "refs": [
+            {
+              "source": "fda-pfizerpen",
+              "section": "Dosage and Administration — Pediatric Patients"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "sepsis",
+      "label": {
+        "fa": "بزرگسال — عفونت‌های جدی استرپتوکوکی: ۱۲ تا ۲۴ میلیون واحد در روز",
+        "en": "Adult — serious streptococcal infections: 12–24 million units/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "عفونت جدی استرپتوکوک (سپتی‌سمی، پنومونی، اندوکاردیت، مننژیت): ۱۲ تا ۲۴ میلیون واحد/روز در دوزهای هر ۴ تا ۶ ساعت؛ مننژیت ۱۵ تا ۲۰ میلیون واحد/روز به مدت ۲ هفته. در نارسایی کلیه کاهش.",
+          "en": "Serious streptococcal infections (septicaemia, pneumonia, endocarditis, meningitis): 12–24 million units/day every 4–6 h; meningitis 15–20 million units/day for 2 weeks. Reduce in renal impairment."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-pfizerpen",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "pen",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه واکنش آنافیلاکسی به هر پنی‌سیلین.",
+        "en": "History of anaphylactic reaction to any penicillin."
+      },
+      "refs": [
+        {
+          "source": "fda-pfizerpen",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mening-child",
+      "formulation": "vial-5mu",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 833333.33
+      }
+    }
+  ],
+  "atc": [
+    "J01CE01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00959",
+        "en": "PENICILLIN G POTASSIUM 1,000,000 U VIAL",
+        "fa": "ویال پنی‌سیلین گرم پتاسیم ۱۰۰۰۰۰۰ واحد"
+      },
+      {
+        "code": "00960",
+        "en": "PENICILLIN G POTASSIUM 5,000,000 U VIAL",
+        "fa": "ویال پنی‌سیلین گرم پتاسیم ۵۰۰۰۰۰۰ واحد"
+      },
+      {
+        "code": "00957",
+        "en": "PENICILLIN G SODIUM 5,000,000 U VIAL",
+        "fa": "ویال پنی‌سیلین گرم سدیم ۵۰۰۰۰۰۰ واحد"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-298/Penicillin-G-Sodium",
+        "url": "https://www.darooyab.ir/G-298/Penicillin-G-Sodium"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-pfizerpen",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA065149"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=065149",
+      "label": "ANDA065149"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0ced9d8-b9ea-466e-bf2c-10e9cc636f3f",
+      "label": "FDA Penicillin G K inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615053.html",
+      "label": "Penicillin G Benzathine and Penicillin G Procaine Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615051.html",
+      "label": "Penicillin G Benzathine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01CE01",
+      "label": "J01CE01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-298/Penicillin-G-Sodium",
+      "label": "Penicillin-G-Sodium"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-pfizerpen",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when penicillins are administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-pfizerpen",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Incompletely developed renal function in newborns may delay elimination of penicillin; therefore, appropriate reductions in the dosage and frequency of administration should be made in these patients.",
+      "refs": [
+        {
+          "source": "fda-pfizerpen",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-pfizerpen",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

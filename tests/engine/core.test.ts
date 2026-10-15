@@ -4,6 +4,7 @@ import { inRange, toDays } from '../../lib/engine/age'
 import { roundMl, roundTablets } from '../../lib/engine/rounding'
 import { schwartzEgfr, mostellerBsa } from '../../lib/engine/renal'
 import { drug, susp, R, yr, mo } from './helpers'
+import type { Formulation } from '../../lib/types'
 
 describe('age', () => {
   test('units', () => { expect(toDays({ value: 2, unit: 'year' })).toBe(730.5); expect(toDays({ value: 24, unit: 'month' })).toBe(730.5) })
@@ -150,5 +151,16 @@ describe('small doses keep their precision', () => {
     expect(rDose(0.0123)).toBe(0.0123)
     expect(rDose(2.456)).toBe(2.46)
     expect(rDose(250)).toBe(250)
+  })
+})
+
+describe('vials', () => {
+  test('a powder vial gives the dose in mg without whole-unit rounding', () => {
+    const vial: Formulation = { id: 'v', form: 'powder-for-injection', route: 'iv', label: '1 g vial', concentration: { amount: 1000, unit: 'mg', perUnit: 'vial' }, markets: ['US'], refs: R }
+    const r = calculate(drug([{ dose: { perKgPerDose: 10, intervalHours: 6 } }], [vial]), 'r0', 'v', { ageDays: yr(6), weightKg: 20 })
+    expect(r.status).toBe('ok')
+    expect(r.perDose).toBe(200)
+    expect(r.tabletsPerDoseRounded).toBeUndefined()
+    expect(r.mlPerDose).toBeUndefined()
   })
 })

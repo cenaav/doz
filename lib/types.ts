@@ -29,7 +29,7 @@ export interface Source {
 export interface Range { minAge?: Age | null; maxAge?: Age | null; minWeightKg?: number | null; maxWeightKg?: number | null }
 
 export type DoseUnit = 'mg' | 'mcg' | 'g' | 'unit' | 'mL' | 'drop' | 'application' | 'spray'
-export interface Concentration { amount: number; unit: DoseUnit; perVolumeMl?: number; perUnit?: 'tablet' | 'capsule' | 'sachet' | 'actuation' | 'tube' | 'drop' | 'application' | 'spray'; scored?: boolean }
+export interface Concentration { amount: number; unit: DoseUnit; perVolumeMl?: number; perUnit?: 'tablet' | 'capsule' | 'sachet' | 'actuation' | 'tube' | 'drop' | 'application' | 'spray' | 'vial'; scored?: boolean }
 export interface Limits { maxPerDose?: number; maxPerDay?: number; maxPerKgPerDose?: number; maxPerKgPerDay?: number; refs: Ref[] }
 export interface Component { name: I18nText; amount: number; unit: DoseUnit; limits?: Limits }
 export interface Formulation {

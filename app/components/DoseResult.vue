@@ -27,9 +27,11 @@ const msg = (m: Msg) => (m.text ? lt(m.text) : t(`engine.${m.code}`, m.params ??
         <p class="text-sm text-slate-600 dark:text-slate-300">{{ $t('calc.perDose') }}</p>
         <p class="text-2xl font-bold text-brand-700 dark:text-brand-300">
           <template v-if="result.mlPerDoseRounded != null">{{ fmt(result.mlPerDoseRounded) }}<template v-if="result.upper"> – {{ fmt(result.upper.mlPerDoseRounded) }}</template> {{ $t('units.ml') }}</template>
-          <template v-else>{{ fmt(result.tabletsPerDoseRounded) }}<template v-if="result.upper"> – {{ fmt(result.upper.tabletsPerDoseRounded) }}</template> {{ $t(`units.${result.tabletUnit}`) }}</template>
+          <template v-else-if="result.tabletsPerDoseRounded != null">{{ fmt(result.tabletsPerDoseRounded) }}<template v-if="result.upper"> – {{ fmt(result.upper.tabletsPerDoseRounded) }}</template> {{ $t(`units.${result.tabletUnit}`) }}</template>
+          <template v-else>{{ fmt(result.perDose) }}<template v-if="result.upper"> – {{ fmt(result.upper.perDose) }}</template> {{ u }}</template>
         </p>
-        <p class="mt-1 text-sm">
+        <p v-if="result.mlPerDoseRounded == null && result.tabletsPerDoseRounded == null" class="mt-1 text-sm text-slate-500">{{ $t('calc.vialNote') }}</p>
+        <p v-else class="mt-1 text-sm">
           = {{ fmt(result.perDose) }}<template v-if="result.upper"> – {{ fmt(result.upper.perDose) }}</template> {{ u }}
           <span v-if="result.mlPerDose != null && result.mlPerDose !== result.mlPerDoseRounded" class="text-slate-500">({{ $t('calc.exact') }}: {{ fmt(result.mlPerDose) }} {{ $t('units.ml') }})</span>
           <span v-if="result.tabletsPerDose != null && result.tabletsPerDose !== result.tabletsPerDoseRounded" class="text-slate-500">({{ $t('calc.exact') }}: {{ fmt(result.tabletsPerDose) }})</span>

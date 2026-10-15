@@ -1,0 +1,324 @@
+{
+  "id": "ampicillin-sulbactam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمپی‌سیلین + سولباکتام (تزریقی)",
+    "en": "Ampicillin + sulbactam (injection)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "پنی‌سیلین + مهارکننده بتالاکتاماز",
+    "en": "Penicillin + beta-lactamase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Unasyn",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "unasyn",
+    "یوناسین",
+    "آمپی سیلین سولباکتام"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1-5",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1.5 g vial (ampicillin 1 g + sulbactam 0.5 g)",
+      "concentration": {
+        "amount": 1500,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-unasyn",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "vial-3",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "3 g vial (ampicillin 2 g + sulbactam 1 g)",
+      "concentration": {
+        "amount": 3000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-unasyn",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "بزرگسال — ۱٫۵ تا ۳ g (مجموع) هر ۶ ساعت",
+        "en": "Adult — 1.5–3 g (combined) every 6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1500,
+        "perDoseMax": 3000,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-unasyn",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 12000,
+        "refs": [
+          {
+            "source": "fda-unasyn",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "سولباکتام حداکثر ۴ g در روز (= ۱۲ g مجموع).",
+            "en": "Sulbactam max 4 g/day (= 12 g combined)."
+          },
+          "refs": [
+            {
+              "source": "fda-unasyn",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "کودک ۱ سال به بالا — ۳۰۰ mg/kg/روز (مجموع) وریدی در ۴ دوز",
+        "en": "Child ≥1 y — 300 mg/kg/day (combined) IV in 4 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxWeightKg": 39.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 300,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-unasyn",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۴۰ kg و بیشتر: دوز بزرگسال. عضلانی در کودکان ثابت نشده.",
+            "en": "≥40 kg: adult dose. IM not established in children."
+          },
+          "refs": [
+            {
+              "source": "fda-unasyn",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شدید به بتالاکتام‌ها؛ سابقه یرقان کلستاتیک با این دارو.",
+        "en": "Serious beta-lactam hypersensitivity; prior cholestatic jaundice with this drug."
+      },
+      "refs": [
+        {
+          "source": "fda-unasyn",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-3",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1500,
+        "upperPerDose": 3000
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-1-5",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1500
+      }
+    }
+  ],
+  "atc": [
+    "J01CR01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06939",
+        "en": "AMPICILLIN/SULBACTAM 1G/0.5G VIAL",
+        "fa": "ویال آمپی‌سیلین / سولباکتام ۱ گرم / ۰٫۵ گرم"
+      },
+      {
+        "code": "06938",
+        "en": "AMPICILLIN/SULBACTAM 2G/1G VIAL",
+        "fa": "ویال آمپی‌سیلین / سولباکتام ۲ گرم / ۱ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4599/Ampicillin-Sulbactam",
+        "url": "https://www.darooyab.ir/G-4599/Ampicillin-Sulbactam"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-unasyn",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA201406"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201406",
+      "label": "ANDA201406"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a67ae347-487d-4751-a841-b321e81db26f",
+      "label": "FDA Ampicillin-sulbactam"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a685002.html",
+      "label": "Ampicillin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601133.html",
+      "label": "Ampicillin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01CR01",
+      "label": "J01CR01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4599/Ampicillin-Sulbactam",
+      "label": "Ampicillin-Sulbactam"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed (see PRECAUTIONS-Drug/Laboratory Test Interactions section).",
+      "refs": [
+        {
+          "source": "fda-unasyn",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Low concentrations of ampicillin and sulbactam are excreted in the milk; therefore, caution should be exercised when Ampicillin and Sulbactam for Injection is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-unasyn",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Ampicillin and Sulbactam for Injection have been established for pediatric patients one year of age and older for skin and skin structure infections as approved in adults.",
+      "refs": [
+        {
+          "source": "fda-unasyn",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "id": "ethambutol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اتامبوتول",
+    "en": "Ethambutol"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدسل",
+    "en": "Antituberculous"
+  },
+  "brands": [
+    {
+      "name": "Myambutol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "myambutol",
+    "اتامبوتول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-400",
+      "form": "tablet",
+      "route": "oral",
+      "label": "400 mg tablet (scored)",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "initial",
+      "disease": "tuberculosis",
+      "label": {
+        "fa": "سل — درمان اولیه: ۱۵ mg/kg یک بار در روز (۱۳ سال به بالا)",
+        "en": "TB — initial treatment: 15 mg/kg once daily (≥13 y)"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هرگز تنها مصرف نشود.",
+            "en": "Never used alone."
+          },
+          "refs": [
+            {
+              "source": "fda-ethambutol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retreat",
+      "disease": "tuberculosis",
+      "label": {
+        "fa": "سل — درمان مجدد: ۲۵ mg/kg یک بار در روز به مدت ۶۰ روز، سپس ۱۵ mg/kg",
+        "en": "TB — retreatment: 25 mg/kg once daily for 60 days, then 15 mg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 25,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در دوز ۲۵ mg/kg معاینه ماهانه چشم.",
+            "en": "Monthly eye examination while on 25 mg/kg."
+          },
+          "refs": [
+            {
+              "source": "fda-ethambutol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ نوریت اپتیک؛ ناتوانی در گزارش تغییرات بینایی (کودک خردسال، بیمار بیهوش).",
+        "en": "Hypersensitivity; optic neuritis; inability to report visual changes (young children, unconscious patients)."
+      },
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "lt13",
+      "severity": "block",
+      "text": {
+        "fa": "زیر ۱۳ سال توصیه نمی‌شود.",
+        "en": "Not recommended under 13 years."
+      },
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "Pediatric Use"
+        }
+      ],
+      "rule": {
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کاهش دید ناشی از نوریت اپتیک (گاهی دائمی)؛ سمیت کبدی.",
+        "en": "Reduced vision from optic neuritis (sometimes permanent); liver toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "initial",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 1200,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "retreat",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 2000,
+        "tabletsPerDoseRounded": 5
+      }
+    }
+  ],
+  "atc": [
+    "J04AK02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00508",
+        "en": "ETHAMBUTOL HCL 400MG TAB",
+        "fa": "قرص اتامبوتول هیدروکلراید ۴۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-391/Ethambutol",
+        "url": "https://www.darooyab.ir/G-391/Ethambutol"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA authorized generic",
+    "refs": [
+      {
+        "source": "fda-ethambutol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA016320"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=016320",
+      "label": "NDA016320"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3f6428d6-3745-4337-ad78-ebfff9f49135",
+      "label": "FDA Ethambutol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682550.html",
+      "label": "Ethambutol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J04AK02",
+      "label": "J04AK02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-391/Ethambutol",
+      "label": "Ethambutol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects: Pregnancy Category C.",
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "ETHAMBUTOL HCl is excreted into breast milk.",
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "ETHAMBUTOL HCl (ethambutol hydrochloride) is not recommended for use in pediatric patients under thirteen years of age since safe conditions for use have not been established.",
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "There are limited data on the use of ETHAMBUTOL HCl in the elderly.",
+      "refs": [
+        {
+          "source": "fda-ethambutol",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

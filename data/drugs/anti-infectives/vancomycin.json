@@ -1,0 +1,469 @@
+{
+  "id": "vancomycin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ونکومایسین",
+    "en": "Vancomycin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "گلیکوپپتید",
+    "en": "Glycopeptide antibiotic"
+  },
+  "brands": [
+    {
+      "name": "Vancocin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vancocin",
+    "ونکوسین",
+    "ونکومایسین",
+    "وانکومایسین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g vial for IV infusion (reconstitute per label)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vancoinj",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-125",
+      "form": "capsule",
+      "route": "oral",
+      "label": "125 mg capsule (oral)",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vancooral",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule (oral)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vancooral",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cdiff-adult",
+      "disease": "c-diff",
+      "label": {
+        "fa": "اسهال C. difficile — بزرگسال: ۱۲۵ mg خوراکی چهار بار در روز، ۱۰ روز",
+        "en": "C. difficile diarrhoea — adult: 125 mg orally four times daily, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 125,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-vancooral",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "allowedFormulations": [
+        "cap-125",
+        "cap-250"
+      ]
+    },
+    {
+      "id": "cdiff-child",
+      "disease": "c-diff",
+      "label": {
+        "fa": "اسهال C. difficile — کودک: ۴۰ mg/kg/روز خوراکی در ۳ تا ۴ دوز، ۷ تا ۱۰ روز",
+        "en": "C. difficile diarrhoea — child: 40 mg/kg/day orally in 3–4 doses, 7–10 days"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 40,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-vancooral",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2000,
+        "refs": [
+          {
+            "source": "fda-vancooral",
+            "section": "2.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 7,
+        "max": 10
+      },
+      "allowedFormulations": [
+        "cap-125",
+        "cap-250"
+      ]
+    },
+    {
+      "id": "iv-child",
+      "disease": "sepsis",
+      "label": {
+        "fa": "وریدی — کودک: ۱۰ mg/kg هر ۶ ساعت (انفوزیون حداقل ۶۰ دقیقه)",
+        "en": "IV — child: 10 mg/kg every 6 h (infuse over ≥60 min)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-vancoinj",
+          "section": "Dosage and Administration — Pediatric patients"
+        }
+      ],
+      "allowedFormulations": [
+        "vial-1g"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سطح سرمی پایش شود. نوزاد: ۱۵ mg/kg سپس ۱۰ mg/kg هر ۱۲ ساعت (هفته اول) و هر ۸ ساعت تا ۱ ماهگی.",
+            "en": "Monitor serum levels. Neonates: 15 mg/kg then 10 mg/kg every 12 h (first week) and every 8 h up to 1 month."
+          },
+          "refs": [
+            {
+              "source": "fda-vancoinj",
+              "section": "Dosage and Administration — Neonates"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-adult",
+      "disease": "sepsis",
+      "label": {
+        "fa": "وریدی — بزرگسال: ۵۰۰ mg هر ۶ ساعت یا ۱ g هر ۱۲ ساعت",
+        "en": "IV — adult: 500 mg every 6 h or 1 g every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: ۲ g در روز (۵۰۰ mg هر ۶ ساعت یا ۱ g هر ۱۲ ساعت)، هر دوز حداکثر ۱۰ mg/min یا حداقل ۶۰ دقیقه؛ در نارسایی کلیه و سالمندان کاهش دوز و پایش سطح.",
+          "en": "Label: 2 g/day (500 mg every 6 h or 1 g every 12 h), each dose ≤10 mg/min or over ≥60 min; reduce in renal impairment and the elderly, monitor levels."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-vancoinj",
+          "section": "Dosage and Administration — Adults"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ونکومایسین.",
+        "en": "Hypersensitivity to vancomycin."
+      },
+      "refs": [
+        {
+          "source": "fda-vancoinj",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "تزریق سریع: افت فشار و شوک؛ واکنش‌های تزریق (گرگرفتگی، قرمزی، کهیر، خارش)؛ آسیب حاد کلیه با مواجهه بالا.",
+        "en": "Rapid infusion: hypotension and shock; infusion reactions (flushing, erythema, urticaria, pruritus); acute kidney injury with high exposure."
+      },
+      "refs": [
+        {
+          "source": "fda-vancoinj",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cdiff-adult",
+      "formulation": "cap-125",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 125,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "cdiff-child",
+      "formulation": "cap-125",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "iv-child",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 200
+      }
+    }
+  ],
+  "atc": [
+    "J01XA01",
+    "A07AA09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17886",
+        "en": "VANCOMYCIN HCL 1G VIAL",
+        "fa": "ویال وانکومایسین هیدروکلراید ۱ گرم"
+      },
+      {
+        "code": "01702",
+        "en": "VANCOMYCIN HCL 250MG CAP",
+        "fa": "کپسول وانکومایسین هیدروکلراید ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01276",
+        "en": "VANCOMYCIN HCL 500MG VIAL",
+        "fa": "ویال وانکومایسین هیدروکلراید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01703",
+        "en": "VANCOMYCIN HCL 500MG/6ML 120ML SUSP",
+        "fa": "سوسپانسیون وانکومایسین هیدروکلراید ۵۰۰ میلی‌گرم / ۶ میلی‌لیتر ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "52200",
+        "en": "VANCOMYCIN (AS HYDROCHLORIDE) CAPSULE, LIQUID FILLED ORAL 125 mg",
+        "fa": "کپسول وانکومایسین (معادل هیدروکلراید) پرشده ۱۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-565/Vancomycin",
+        "url": "https://www.darooyab.ir/G-565/Vancomycin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-vancoinj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA205694"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205694",
+      "label": "ANDA205694"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b79d9671-02dd-40e2-97fb-a6c7be85cda1",
+      "label": "FDA Vancomycin inj."
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc737938-ae36-460b-a2a8-609f3fe59156",
+      "label": "FDA Vancomycin caps"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604038.html",
+      "label": "Vancomycin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601167.html",
+      "label": "Vancomycin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01XA01",
+      "label": "J01XA01"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07AA09",
+      "label": "A07AA09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-565/Vancomycin",
+      "label": "Vancomycin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Animal reproduction studies have not been conducted with vancomycin.",
+      "refs": [
+        {
+          "source": "fda-vancoinj",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for adverse events, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-vancoinj",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "In pediatric patients, it may be appropriate to confirm desired vancomycin serum concentrations.",
+      "refs": [
+        {
+          "source": "fda-vancoinj",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The natural decrement of glomerular filtration with increasing age may lead to elevated vancomycin serum concentrations if dosage is not adjusted.",
+      "refs": [
+        {
+          "source": "fda-vancoinj",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

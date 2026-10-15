@@ -63,6 +63,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g vial (IM/IV after reconstitution)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ampinj",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -87,6 +107,10 @@
           "source": "fda-ampicillin",
           "section": "Dosage and Administration"
         }
+      ],
+      "allowedFormulations": [
+        "cap-250",
+        "cap-500"
       ]
     },
     {
@@ -110,6 +134,10 @@
           "source": "fda-ampicillin",
           "section": "Dosage and Administration"
         }
+      ],
+      "allowedFormulations": [
+        "cap-250",
+        "cap-500"
       ]
     },
     {
@@ -133,6 +161,10 @@
           "source": "fda-ampicillin",
           "section": "Dosage and Administration"
         }
+      ],
+      "allowedFormulations": [
+        "cap-250",
+        "cap-500"
       ]
     },
     {
@@ -155,6 +187,54 @@
         {
           "source": "fda-ampicillin",
           "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-250",
+        "cap-500"
+      ]
+    },
+    {
+      "id": "mening",
+      "disease": "bacterial-meningitis",
+      "label": {
+        "fa": "مننژیت / سپتی‌سمی — بزرگسال و کودک: ۱۵۰ تا ۲۰۰ mg/kg/روز در دوزهای هر ۳ تا ۴ ساعت",
+        "en": "Meningitis / septicaemia — adults and children: 150–200 mg/kg/day every 3–4 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 29,
+          "unit": "day"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 150,
+        "perKgPerDayMax": 200,
+        "dividedDoses": 6
+      },
+      "refs": [
+        {
+          "source": "fda-ampinj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "vial-1g"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نوزاد ۲۸ روزه و کمتر: بر اساس سن بارداری و پس از تولد (جدول ۱ برچسب). با آمینوگلیکوزید اثر بیشتر.",
+            "en": "Neonates ≤28 days: by gestational and postnatal age (label Table 1). Aminoglycoside may enhance effect."
+          },
+          "refs": [
+            {
+              "source": "fda-ampinj",
+              "section": "Dosage and Administration"
+            }
+          ]
         }
       ]
     }
@@ -229,6 +309,18 @@
       "expect": {
         "perDose": 250
       }
+    },
+    {
+      "regimen": "mening",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 500,
+        "upperPerDose": 666.67
+      }
     }
   ],
   "atc": [
@@ -301,6 +393,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8b1ab1-73c6-4cdf-a838-7a4554c62586",
       "label": "FDA Ampicillin"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b3796dd-6f81-4999-ae2b-a13a72795729",
+      "label": "FDA Ampicillin inj."
     },
     {
       "kind": "medlineplus",
