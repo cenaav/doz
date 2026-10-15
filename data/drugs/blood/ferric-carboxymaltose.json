@@ -1,0 +1,312 @@
+{
+  "id": "ferric-carboxymaltose",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فریک کربوکسی‌مالتوز",
+    "en": "Ferric carboxymaltose"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "آهن تزریقی",
+    "en": "Parenteral iron"
+  },
+  "brands": [
+    {
+      "name": "Injectafer",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "injectafer",
+    "ferinject",
+    "فرینجکت",
+    "آهن وریدی"
+  ],
+  "formulations": [
+    {
+      "id": "vial-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mg iron/mL (100, 500, 750, 1000 mg vials)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-injectafer",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ge50",
+      "disease": "iron-deficiency-anemia",
+      "label": {
+        "fa": "کم‌خونی فقر آهن — ۵۰ kg و بیشتر: ۷۵۰ mg وریدی، دو دوز با فاصله ۷ روز",
+        "en": "Iron deficiency anaemia — ≥50 kg: 750 mg IV, two doses ≥7 days apart"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "minWeightKg": 50
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 750,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-injectafer",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "مجموع ۱۵۰۰ mg در هر دوره. بزرگسال: جایگزین یک دوز ۱۵ mg/kg تا ۱۰۰۰ mg. برای بیمار با عدم تحمل یا پاسخ ناکافی به آهن خوراکی.",
+            "en": "Total 1,500 mg per course. Adults: alternatively a single 15 mg/kg dose up to 1,000 mg. For intolerance or poor response to oral iron."
+          },
+          "refs": [
+            {
+              "source": "fda-injectafer",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-injectafer",
+              "section": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lt50",
+      "disease": "iron-deficiency-anemia",
+      "label": {
+        "fa": "کم‌خونی فقر آهن — زیر ۵۰ kg (۱ سال به بالا): ۱۵ mg/kg وریدی، دو دوز با فاصله ۷ روز",
+        "en": "Iron deficiency anaemia — <50 kg (≥1 y): 15 mg/kg IV, two doses ≥7 days apart"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxWeightKg": 49.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-injectafer",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به Injectafer.",
+        "en": "Hypersensitivity to Injectafer."
+      },
+      "refs": [
+        {
+          "source": "fda-injectafer",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: هیپوفسفاتمی شدید و طولانی (استئومالاسی، شکستگی)؛ فسفات پیش از دوره تکراری چک و هیپوفسفاتمی قبلی اصلاح شود.",
+        "en": "Boxed warning: severe prolonged hypophosphataemia (osteomalacia, fractures); check phosphate before a repeat course and correct prior hypophosphataemia."
+      },
+      "refs": [
+        {
+          "source": "fda-injectafer",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-injectafer",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ge50",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 750,
+        "mlPerDose": 15
+      }
+    },
+    {
+      "regimen": "lt50",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 6
+      }
+    }
+  ],
+  "atc": [
+    "B03AC"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "16954",
+        "en": "FERRIC CARBOXYMALTOSE 500MG/10ML VIAL",
+        "fa": "ویال فریک کاربوکسیمالتوس ۵۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5550/Ferric-Carboxymaltose",
+        "url": "https://www.darooyab.ir/G-5550/Ferric-Carboxymaltose"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203565",
+      "label": "NDA203565"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=517b4a19-45b3-4286-9f6a-ced4e10447de",
+      "label": "FDA Injectafer"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614037.html",
+      "label": "Ferric Carboxymaltose Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B03AC",
+      "label": "B03AC"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5550/Ferric-Carboxymaltose",
+      "label": "Ferric-Carboxymaltose"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Parenteral iron administration may be associated with hypersensitivity reactions [ see Warnings and Precautions ( 5.2 )], which may have serious consequences, such as fetal bradycardia ( see Clinical Considerations ).",
+      "refs": [
+        {
+          "source": "fda-injectafer",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary The available published data on the use of ferric carboxymaltose in lactating women demonstrate that iron is present in breast milk.",
+      "refs": [
+        {
+          "source": "fda-injectafer",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Injectafer for IDA in pediatric patients aged 1 year and older who have normal kidney function and have either intolerance to oral iron or have had unsatisfactory response to oral iron have been established.",
+      "refs": [
+        {
+          "source": "fda-injectafer",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 1,775 subjects in clinical studies of Injectafer, 50% were 65 years and over, while 25% were 75 years and over.",
+      "refs": [
+        {
+          "source": "fda-injectafer",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-injectafer",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA203565"
+  }
+}

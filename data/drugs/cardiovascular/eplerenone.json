@@ -1,0 +1,355 @@
+{
+  "id": "eplerenone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اپلرنون",
+    "en": "Eplerenone"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آنتاگونیست گیرنده مینرالوکورتیکوئید",
+    "en": "Mineralocorticoid receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Inspra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "inspra",
+    "اینسپرا",
+    "اپلرنون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hf",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی قلب پس از MI — شروع ۲۵ mg یک بار در روز، تا ۵۰ mg ظرف ۴ هفته",
+        "en": "HF after MI — start 25 mg once daily, up to 50 mg within 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 25,
+          "increment": 25,
+          "incrementEveryDays": 28,
+          "targetMin": 50,
+          "targetMax": 50,
+          "max": 50
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر اساس پتاسیم سرم طبق جدول ۱ برچسب تنظیم شود. پتاسیم پیش از شروع و به‌طور دوره‌ای.",
+            "en": "Adjust by serum potassium per label Table 1. Check potassium before starting and periodically."
+          },
+          "refs": [
+            {
+              "source": "fda-eplerenone",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-eplerenone",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۵۰ mg یک بار در روز (تا ۵۰ mg دو بار)",
+        "en": "Hypertension — 50 mg once daily (up to 50 mg twice daily)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 100,
+        "refs": [
+          {
+            "source": "fda-eplerenone",
+            "section": "2.2"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "all",
+      "severity": "block",
+      "text": {
+        "fa": "همه بیماران: پتاسیم بالای ۵٫۵ هنگام شروع؛ CrCl ≤ ۳۰؛ مهارکننده قوی CYP3A.",
+        "en": "All patients: K >5.5 at start; CrCl ≤30; strong CYP3A inhibitors."
+      },
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "htn",
+      "severity": "block",
+      "text": {
+        "fa": "فشار خون: دیابت نوع ۲ با میکروآلبومینوری؛ کراتینین بالای ۲ (مرد) یا ۱٫۸ (زن)؛ CrCl زیر ۵۰؛ مکمل پتاسیم یا دیورتیک نگهدارنده پتاسیم.",
+        "en": "Hypertension: type 2 diabetes with microalbuminuria; creatinine >2.0 (men) or >1.8 (women); CrCl <50; potassium supplements or potassium-sparing diuretics."
+      },
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hf",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "htn",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C03DA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09626",
+        "en": "EPLERENONE 25MG TAB",
+        "fa": "قرص اپلرنون ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "09644",
+        "en": "EPLERENONE 50MG TAB",
+        "fa": "قرص اپلرنون ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1664/Eplerenone",
+        "url": "https://www.darooyab.ir/G-1664/Eplerenone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208283",
+      "label": "ANDA208283"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2a51c12-bdc2-4b3b-8e9e-bf363c2817ed",
+      "label": "FDA Eplerenone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603004.html",
+      "label": "Eplerenone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA04",
+      "label": "C03DA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1664/Eplerenone",
+      "label": "Eplerenone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The available data from published case reports on eplerenone use during pregnancy are insufficient to establish a drug-associated risk of major birth defects, miscarriage, adverse maternal or fetal outcomes (see Clinical Considerations ) .",
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no human data available on whether eplerenone is present in human milk, or has effects on breastfed infants or on milk production.",
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of eplerenone for treatment of hypertension have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "However, due to age-related decreases in creatinine clearance, the incidence of laboratory-documented hyperkalemia was increased in patients 65 and older [see Warnings and Precautions (5.1) ] .",
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Based on animal data, use of eplerenone may compromise male fertility.",
+      "refs": [
+        {
+          "source": "fda-eplerenone",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-eplerenone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA208283"
+  }
+}

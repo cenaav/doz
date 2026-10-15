@@ -1,0 +1,455 @@
+{
+  "id": "epoetin-alfa",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اپوئتین آلفا (اریتروپویتین)",
+    "en": "Epoetin alfa (erythropoietin)"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "محرک اریتروپویز (ESA)",
+    "en": "Erythropoiesis-stimulating agent"
+  },
+  "brands": [
+    {
+      "name": "Epogen",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "epogen",
+    "eprex",
+    "اپرکس",
+    "اریتروپویتین",
+    "EPO"
+  ],
+  "formulations": [
+    {
+      "id": "vial-4000",
+      "form": "injection",
+      "route": "sc",
+      "label": "4,000 units/mL single-dose vial",
+      "concentration": {
+        "amount": 4000,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-epogen",
+          "section": "Description"
+        }
+      ]
+    },
+    {
+      "id": "vial-10000",
+      "form": "injection",
+      "route": "sc",
+      "label": "10,000 units/mL single-dose vial",
+      "concentration": {
+        "amount": 10000,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-epogen",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "anemia-ckd",
+      "label": {
+        "fa": "کم‌خونی بیماری مزمن کلیه — بزرگسال: ۵۰ تا ۱۰۰ واحد/kg سه بار در هفته",
+        "en": "Anaemia of CKD — adult: 50–100 units/kg three times weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDay": 50,
+        "perKgPerDayMax": 100,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-epogen",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سه بار در هفته (نه روزانه)، وریدی یا زیرجلدی (در همودیالیز وریدی). کمترین دوزی که نیاز به تزریق خون را کم کند؛ هموگلوبین بالای ۱۱ هدف نشود. هموگلوبین هفتگی تا پایدار شدن.",
+            "en": "Three times WEEKLY (not daily), IV or SC (IV on haemodialysis). Lowest dose that reduces transfusion need; do not target Hb above 11. Weekly Hb until stable."
+          },
+          "refs": [
+            {
+              "source": "fda-epogen",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "سرنگ‌های ایرانی (دارویاب) مثل ۲۰۰۰، ۴۰۰۰ یا ۱۰۰۰۰ واحد در ۰٫۵ mL هستند، نه در ۱ mL؛ حجم را از واحد و غلظت همان سرنگ حساب کنید.",
+            "en": "Iranian syringes (Darooyab) such as 2,000, 4,000 or 10,000 units are in 0.5 mL, not 1 mL; compute the volume from the units and that syringe’s strength."
+          },
+          "refs": [
+            {
+              "source": "darooyab-generic",
+              "section": "G-1393/Recombinant-Erythropoietin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "anemia-ckd",
+      "label": {
+        "fa": "کم‌خونی بیماری مزمن کلیه — کودک ۱ ماه به بالا: ۵۰ واحد/kg سه بار در هفته",
+        "en": "Anaemia of CKD — child ≥1 month: 50 units/kg three times weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDay": 50,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-epogen",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سه بار در هفته (نه روزانه)، وریدی یا زیرجلدی (در همودیالیز وریدی). کمترین دوزی که نیاز به تزریق خون را کم کند؛ هموگلوبین بالای ۱۱ هدف نشود. هموگلوبین هفتگی تا پایدار شدن.",
+            "en": "Three times WEEKLY (not daily), IV or SC (IV on haemodialysis). Lowest dose that reduces transfusion need; do not target Hb above 11. Weekly Hb until stable."
+          },
+          "refs": [
+            {
+              "source": "fda-epogen",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "ویال چنددوزی (بنزیل الکل) در نوزاد و شیرخوار ممنوع است؛ ویال تک‌دوز مصرف شود.",
+            "en": "Multiple-dose vials (benzyl alcohol) are contraindicated in neonates and infants; use single-dose vials."
+          },
+          "refs": [
+            {
+              "source": "fda-epogen",
+              "section": "4"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "سرنگ‌های ایرانی (دارویاب) مثل ۲۰۰۰، ۴۰۰۰ یا ۱۰۰۰۰ واحد در ۰٫۵ mL هستند، نه در ۱ mL؛ حجم را از واحد و غلظت همان سرنگ حساب کنید.",
+            "en": "Iranian syringes (Darooyab) such as 2,000, 4,000 or 10,000 units are in 0.5 mL, not 1 mL; compute the volume from the units and that syringe’s strength."
+          },
+          "refs": [
+            {
+              "source": "darooyab-generic",
+              "section": "G-1393/Recombinant-Erythropoietin"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "فشار خون کنترل‌نشده؛ آپلازی خالص گلبول قرمز پس از اریتروپویتین؛ حساسیت جدی؛ ویال چنددوزی (بنزیل الکل) در نوزاد، شیرخوار، بارداری و شیردهی.",
+        "en": "Uncontrolled hypertension; pure red cell aplasia after an erythropoietin; serious allergy; multiple-dose vials (benzyl alcohol) in neonates, infants, pregnancy and lactation."
+      },
+      "refs": [
+        {
+          "source": "fda-epogen",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: ESA خطر مرگ، MI، سکته، ترومبوز و پیشرفت تومور را افزایش می‌دهد؛ هموگلوبین بالای ۱۱ هدف نشود.",
+        "en": "Boxed warning: ESAs increase the risk of death, MI, stroke, thrombosis and tumour progression; do not target Hb above 11 g/dL."
+      },
+      "refs": [
+        {
+          "source": "fda-epogen",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-10000",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 3500,
+        "upperPerDose": 7000
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-4000",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1000,
+        "mlPerDose": 0.25
+      }
+    }
+  ],
+  "atc": [
+    "B03XA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11388",
+        "en": "EPOETIN BETA 2000UI AMP",
+        "fa": "آمپول اپوئتین بتا ۲۰۰۰ اوی"
+      },
+      {
+        "code": "21162",
+        "en": "ERYTHROPOIETIN 10000 IU/0.5ML SYRINGE",
+        "fa": "سرنگ اریترپوئتین ۱۰۰۰۰ واحد بین‌المللی / ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "13554",
+        "en": "ERYTHROPOIETIN 2000 U/0.5ML SYRINGE",
+        "fa": "سرنگ اریترپوئتین ۲۰۰۰ واحد / ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "13555",
+        "en": "ERYTHROPOIETIN 4000 U/0.5ML SYRINGE",
+        "fa": "سرنگ اریترپوئتین ۴۰۰۰ واحد / ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "07814",
+        "en": "ERYTHROPOIETIN RECOMBINANT HU 1000 IU/VIAL",
+        "fa": "ویال اریترپوئتین نوترکیب انسانی ۱۰۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "04965",
+        "en": "ERYTHROPOIETIN RECOMBINANT HU 10000 IU/VIAL",
+        "fa": "ویال اریترپوئتین نوترکیب انسانی ۱۰۰۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "00501",
+        "en": "ERYTHROPOIETIN RECOMBINANT HU 2000 IU/VIAL",
+        "fa": "ویال اریترپوئتین نوترکیب انسانی ۲۰۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "04486",
+        "en": "ERYTHROPOIETIN RECOMBINANT HU 4000 IU/VIAL",
+        "fa": "ویال اریترپوئتین نوترکیب انسانی ۴۰۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "52246",
+        "en": "EPOETIN INJECTION PARENTERAL 2000 [iU]/0.3mL",
+        "fa": "فرآورده تزریقی اپوئتین ۲۰۰۰ واحد بین‌المللی / ۰٫۳ میلی‌لیتر"
+      },
+      {
+        "code": "52263",
+        "en": "EPOETIN INJECTION PARENTERAL 4000 [iU]/0.3mL",
+        "fa": "فرآورده تزریقی اپوئتین ۴۰۰۰ واحد بین‌المللی / ۰٫۳ میلی‌لیتر"
+      },
+      {
+        "code": "52264",
+        "en": "EPOETIN INJECTION PARENTERAL 10000 [iU]/0.6mL",
+        "fa": "فرآورده تزریقی اپوئتین ۱۰۰۰۰ واحد بین‌المللی / ۰٫۶ میلی‌لیتر"
+      },
+      {
+        "code": "52289",
+        "en": "EPOETIN INJECTION PARENTERAL 20000 [iU]/1mL 0.5 mL",
+        "fa": "فرآورده تزریقی اپوئتین ۲۰۰۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "52623",
+        "en": "EPOETIN INJECTION PARENTERAL 4000 [iU]/1mL 0.5 mL",
+        "fa": "فرآورده تزریقی اپوئتین ۴۰۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "52626",
+        "en": "EPOETIN INJECTION, SOLUTION PARENTERAL 4000 [iU]/0.5mL",
+        "fa": "محلول تزریقی اپوئتین ۴۰۰۰ واحد بین‌المللی / ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "52290",
+        "en": "EPOETIN INJECTION PARENTERAL 20000 [iU]/1mL 1 mL",
+        "fa": "فرآورده تزریقی اپوئتین ۲۰۰۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      },
+      {
+        "code": "51957",
+        "en": "EPOETIN INJECTION PARENTERAL 10000 [iU]/1mL 0.4 mL",
+        "fa": "فرآورده تزریقی اپوئتین ۱۰۰۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۰٫۴ میلی‌لیتر"
+      },
+      {
+        "code": "52256",
+        "en": "EPOETIN INJECTION PARENTERAL 40000 [iU]/0.6mL",
+        "fa": "فرآورده تزریقی اپوئتین ۴۰۰۰۰ واحد بین‌المللی / ۰٫۶ میلی‌لیتر"
+      },
+      {
+        "code": "52247",
+        "en": "EPOETIN INJECTION PARENTERAL 20000 [iU]/0.6mL",
+        "fa": "فرآورده تزریقی اپوئتین ۲۰۰۰۰ واحد بین‌المللی / ۰٫۶ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1393/Recombinant-Erythropoietin",
+        "url": "https://www.darooyab.ir/G-1393/Recombinant-Erythropoietin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103234",
+      "label": "BLA103234"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1f2d0b28-9cc5-4523-80b8-637fdaf3f7a5",
+      "label": "FDA Epogen"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a692034.html",
+      "label": "Epoetin Alfa, Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B03XA01",
+      "label": "B03XA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1393/Recombinant-Erythropoietin",
+      "label": "Recombinant-Erythropoietin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: فقط ویال چنددوزی (حاوی بنزیل الکل) در بارداری و شیردهی ممنوع است؛ از ویال تک‌دوز استفاده شود.",
+        "en": "Label: only the multiple-dose vial (benzyl alcohol) is contraindicated in pregnancy and lactation; use single-dose vials."
+      },
+      "quote": "… actions to Epogen [see Warnings and Precautions ( 5.7 )] Epogen from multiple-dose vials contains benzyl alcohol and is contraindicated in: Neonates, infants, pregnant women, and lactating women [see Warnings and Precautions ( 5.9 ), Use in Specific Populations ( 8.1 , 8.2 , 8.4 )] .",
+      "refs": [
+        {
+          "source": "fda-epogen",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: فقط ویال چنددوزی (حاوی بنزیل الکل) در بارداری و شیردهی ممنوع است؛ از ویال تک‌دوز استفاده شود.",
+        "en": "Label: only the multiple-dose vial (benzyl alcohol) is contraindicated in pregnancy and lactation; use single-dose vials."
+      },
+      "quote": "… actions to Epogen [see Warnings and Precautions ( 5.7 )] Epogen from multiple-dose vials contains benzyl alcohol and is contraindicated in: Neonates, infants, pregnant women, and lactating women [see Warnings and Precautions ( 5.9 ), Use in Specific Populations ( 8.1 , 8.2 , 8.4 )] .",
+      "refs": [
+        {
+          "source": "fda-epogen",
+          "section": "4"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Pediatric Patients with CKD Epogen is indicated in pediatric patients, ages 1 month to 16 years of age, for the treatment of anemia associated with CKD requiring dialysis.",
+      "refs": [
+        {
+          "source": "fda-epogen",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Dose selection and adjustment for an elderly patient should be individualized to achieve and maintain the target hemoglobin [see Dosage and Administration ( 2 )] .",
+      "refs": [
+        {
+          "source": "fda-epogen",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-epogen",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103234"
+  }
+}

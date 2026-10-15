@@ -1,0 +1,435 @@
+{
+  "id": "ticagrelor",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تیکاگرلور",
+    "en": "Ticagrelor"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مهارکننده P2Y12 (ضدپلاکت)",
+    "en": "P2Y12 inhibitor (antiplatelet)"
+  },
+  "brands": [
+    {
+      "name": "Brilinta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "brilinta",
+    "brilique",
+    "بریلینتا",
+    "تیکاگرلور"
+  ],
+  "formulations": [
+    {
+      "id": "tab-60",
+      "form": "tablet",
+      "route": "oral",
+      "label": "60 mg tablet",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-90",
+      "form": "tablet",
+      "route": "oral",
+      "label": "90 mg tablet",
+      "concentration": {
+        "amount": 90,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acs-load",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "ACS — دوز بارگذاری ۱۸۰ mg",
+        "en": "ACS — 180 mg loading dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 180,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "tab-90"
+      ]
+    },
+    {
+      "id": "acs",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "ACS یا سابقه MI — ۹۰ mg دو بار در روز (سال اول)، سپس ۶۰ mg دو بار",
+        "en": "ACS or prior MI — 90 mg twice daily (first year), then 60 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 90,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-90"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اولین دوز نگهدارنده ۶ تا ۱۲ ساعت پس از بارگذاری. همراه آسپرین ۷۵ تا ۱۰۰ mg روزانه؛ آسپرین بیشتر نه.",
+            "en": "First maintenance dose 6–12 h after loading. With aspirin 75–100 mg daily; avoid higher aspirin doses."
+          },
+          "refs": [
+            {
+              "source": "fda-brilinta",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-brilinta",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cad",
+      "disease": "atherothrombotic-prevention",
+      "label": {
+        "fa": "بیماری عروق کرونر بدون سکته یا MI قبلی — ۶۰ mg دو بار در روز",
+        "en": "CAD without prior stroke or MI — 60 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "2.3"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-60"
+      ]
+    },
+    {
+      "id": "stroke",
+      "disease": "stroke-tia",
+      "label": {
+        "fa": "سکته ایسکمیک خفیف یا TIA — بارگذاری ۱۸۰ mg سپس ۹۰ mg دو بار تا ۳۰ روز",
+        "en": "Minor ischaemic stroke or TIA — 180 mg load then 90 mg twice daily up to 30 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 90,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 30,
+        "max": 30
+      },
+      "allowedFormulations": [
+        "tab-90"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه آسپرین بارگذاری ۳۰۰ تا ۳۲۵ mg و سپس ۷۵ تا ۱۰۰ mg روزانه.",
+            "en": "With an aspirin load of 300–325 mg then 75–100 mg daily."
+          },
+          "refs": [
+            {
+              "source": "fda-brilinta",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه خونریزی داخل جمجمه؛ خونریزی پاتولوژیک فعال؛ حساسیت.",
+        "en": "History of intracranial haemorrhage; active pathological bleeding; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: خطر خونریزی جدی و گاهی کشنده؛ پیش از CABG فوری شروع نشود؛ قطع زودهنگام خطر حوادث قلبی را بالا می‌برد.",
+        "en": "Boxed warning: significant, sometimes fatal bleeding; do not start before urgent CABG; premature discontinuation increases cardiovascular events."
+      },
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acs-load",
+      "formulation": "tab-90",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 180,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "acs",
+      "formulation": "tab-90",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 90,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "cad",
+      "formulation": "tab-60",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 60,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "stroke",
+      "formulation": "tab-90",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 90,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "B01AC24"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18002",
+        "en": "TICAGRELOR 90 MG TAB.",
+        "fa": "قرص تیکاگرلور ۹۰ میلی‌گرم ."
+      },
+      {
+        "code": "52087",
+        "en": "TICAGRELOR 60 MG TAB",
+        "fa": "قرص تیکاگرلور ۶۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4697/Ticagrelor",
+        "url": "https://www.darooyab.ir/G-4697/Ticagrelor"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022433",
+      "label": "NDA022433"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7b3f443-e83d-4bf2-0e96-023448fed9a8",
+      "label": "FDA Brilinta"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611050.html",
+      "label": "Ticagrelor"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC24",
+      "label": "B01AC24"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4697/Ticagrelor",
+      "label": "Ticagrelor"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from case reports with BRILINTA use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Breastfeeding is not recommended during treatment with BRILINTA.",
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of BRILINTA have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between elderly and younger patients.",
+      "refs": [
+        {
+          "source": "fda-brilinta",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-brilinta",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022433"
+  }
+}

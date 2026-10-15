@@ -72,6 +72,18 @@ def reg(id, disease, label, pop, type_, dose, refs, unit='mg', limits=None, dur=
     return r
 def ex(reg_, form_, exp, **inp): return {'regimen': reg_, 'formulation': form_, 'input': inp, 'expect': exp}
 
+def fix_bands(d):
+    """The engine matches a weight band as min < weight ≤ max. Bands are written inclusive ([15, 24.99], [25, …]),
+    so make them contiguous (each min = previous max) and start the first just below the regimen's minimum weight."""
+    for r in d['regimens']:
+        if r['type'] != 'weightBand': continue
+        b = sorted(r['dose']['weightBands'], key=lambda x: x['minWeightKg'])
+        for prev, cur in zip(b, b[1:]): cur['minWeightKg'] = prev['maxWeightKg']
+        pm = r['population'].get('minWeightKg')
+        if pm is not None and b[0]['minWeightKg'] >= pm: b[0]['minWeightKg'] = round(pm - 0.01, 2)
+        r['dose']['weightBands'] = b
+    return d
+
 def find(id):
     for c in os.listdir(os.path.join(ROOT, 'drugs')):
         p = os.path.join(ROOT, 'drugs', c, id + '.json')
@@ -87,6 +99,7 @@ def drug(id, cat, fa, en, cls, brands, syn, forms, regs, ci=(), warn=(), renal=(
          'monitoring': list(mon), 'interactions': list(inter), 'review': {'status': 'unverified', 'reviewer': None, 'date': None}, 'examples': list(exs)}
     for k in ('atc', 'iran', 'links', 'populations', 'usApproval'):
         if k in old: d[k] = old[k]
+    fix_bands(d)
     p = os.path.join(ROOT, 'drugs', cat, id + '.json'); os.makedirs(os.path.dirname(p), exist_ok=True)
     json.dump(d, open(p, 'w'), ensure_ascii=False, indent=2); open(p, 'a').write('\n')
 
@@ -102,5 +115,6 @@ def patch(id, add_forms=(), add_regs=(), add_exs=(), pin_old=False):
     d['regimens'] = [r for r in d['regimens'] if r['id'] not in rids] + list(add_regs)
     pairs = {(x['regimen'], x['formulation']) for x in add_exs}
     d['examples'] = [e for e in d['examples'] if (e['regimen'], e['formulation']) not in pairs] + list(add_exs)
+    fix_bands(d)
     json.dump(d, open(p, 'w'), ensure_ascii=False, indent=2); open(p, 'a').write('\n')
     return d

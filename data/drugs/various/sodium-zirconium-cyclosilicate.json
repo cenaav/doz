@@ -1,0 +1,294 @@
+{
+  "id": "sodium-zirconium-cyclosilicate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سدیم زیرکونیوم سیکلوسیلیکات",
+    "en": "Sodium zirconium cyclosilicate"
+  },
+  "category": "various",
+  "class": {
+    "fa": "جاذب پتاسیم",
+    "en": "Potassium binder"
+  },
+  "brands": [
+    {
+      "name": "Lokelma",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lokelma",
+    "لوکلما"
+  ],
+  "formulations": [
+    {
+      "id": "sachet-5",
+      "form": "sachet",
+      "route": "oral",
+      "label": "5 g sachet",
+      "concentration": {
+        "amount": 5,
+        "unit": "g",
+        "perUnit": "sachet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lokelma",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "sachet-10",
+      "form": "sachet",
+      "route": "oral",
+      "label": "10 g sachet",
+      "concentration": {
+        "amount": 10,
+        "unit": "g",
+        "perUnit": "sachet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lokelma",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "initial",
+      "disease": "hyperkalemia",
+      "label": {
+        "fa": "هیپرکالمی — شروع ۱۰ g سه بار در روز تا ۴۸ ساعت",
+        "en": "Hyperkalaemia — initial 10 g three times daily for up to 48 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "g",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-lokelma",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 2
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در حدود ۳ قاشق آب. سایر داروهای خوراکی ۲ ساعت قبل یا بعد.",
+            "en": "In about 3 tablespoons of water. Other oral drugs 2 h before or after."
+          },
+          "refs": [
+            {
+              "source": "fda-lokelma",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "hyperkalemia",
+      "label": {
+        "fa": "هیپرکالمی — نگهدارنده ۱۰ g یک بار در روز",
+        "en": "Hyperkalaemia — maintenance 10 g once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "g",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lokelma",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس پتاسیم هر یک هفته یا بیشتر ۵ g تنظیم. همودیالیز: فقط روزهای غیر دیالیز، شروع ۵ g (پتاسیم بالای ۶٫۵: ۱۰ g).",
+            "en": "Adjust by 5 g at intervals of ≥1 week by potassium. Haemodialysis: non-dialysis days only, start 5 g (K >6.5: 10 g)."
+          },
+          "refs": [
+            {
+              "source": "fda-lokelma",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-lokelma",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "initial",
+      "formulation": "sachet-10",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "sachet-10",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "V03AE10"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Sodium%20zirconium%20cyclosilicate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207078",
+      "label": "NDA207078"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=90bf8e28-748d-4e4b-a19f-9cf483370eff",
+      "label": "FDA Lokelma"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618035.html",
+      "label": "Sodium Zirconium Cyclosilicate"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AE10",
+      "label": "V03AE10"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: جذب سیستمیک ناچیز؛ مواجهه جنین انتظار نمی‌رود.",
+        "en": "Label: minimal systemic absorption; fetal exposure not expected."
+      },
+      "quote": "Risk Summary LOKELMA is not absorbed systemically following oral administration and maternal use is not expected to result in fetal exposure to the drug.",
+      "refs": [
+        {
+          "source": "fda-lokelma",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: مواجهه شیرخوار انتظار نمی‌رود.",
+        "en": "Label: infant exposure not expected."
+      },
+      "quote": "Risk Summary LOKELMA is not absorbed systemically following oral administration, and breastfeeding is not expected to result in exposure of the child to LOKELMA.",
+      "refs": [
+        {
+          "source": "fda-lokelma",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-lokelma",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these patients and younger patients.",
+      "refs": [
+        {
+          "source": "fda-lokelma",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-lokelma",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA207078"
+  }
+}

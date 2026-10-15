@@ -1,0 +1,324 @@
+{
+  "id": "repaglinide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "رپاگلینید",
+    "en": "Repaglinide"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "گلینید (محرک ترشح انسولین)",
+    "en": "Glinide (insulin secretagogue)"
+  },
+  "brands": [
+    {
+      "name": "Prandin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "prandin",
+    "novonorm",
+    "رپاگلینید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-repaglinide",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-repaglinide",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-repaglinide",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ — ۰٫۵ mg پیش از هر وعده (HbA1c ≥ ۸٪: ۱ تا ۲ mg)",
+        "en": "Type 2 diabetes — 0.5 mg before each meal (HbA1c ≥8%: 1–2 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-repaglinide",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 4,
+        "maxPerDay": 16,
+        "refs": [
+          {
+            "source": "fda-repaglinide",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "ظرف ۳۰ دقیقه پیش از غذا؛ اگر وعده حذف شد دوز هم حذف. هر هفته تا ۴ mg با هر وعده دو برابر شود. با سیکلوسپورین حداکثر ۶ mg در روز.",
+            "en": "Within 30 min before meals; skip the dose if the meal is skipped. Double weekly up to 4 mg with each meal. With cyclosporine max 6 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-repaglinide",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-repaglinide",
+              "section": "7"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف همزمان جم‌فیبروزیل؛ حساسیت.",
+        "en": "Concomitant gemfibrozil; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-repaglinide",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 0.5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A10BX02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21635",
+        "en": "REPAGLINIDE 0.5MG CAP",
+        "fa": "کپسول رپاگلیناید ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "04903",
+        "en": "REPAGLINIDE 0.5MG TAB",
+        "fa": "قرص رپاگلیناید ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "21636",
+        "en": "REPAGLINIDE 1MG CAP",
+        "fa": "کپسول رپاگلیناید ۱ میلی‌گرم"
+      },
+      {
+        "code": "04904",
+        "en": "REPAGLINIDE 1MG TAB",
+        "fa": "قرص رپاگلیناید ۱ میلی‌گرم"
+      },
+      {
+        "code": "21637",
+        "en": "REPAGLINIDE 2MG CAP",
+        "fa": "کپسول رپاگلیناید ۲ میلی‌گرم"
+      },
+      {
+        "code": "04905",
+        "en": "REPAGLINIDE 2MG TAB",
+        "fa": "قرص رپاگلیناید ۲ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-648/Repaglinide",
+        "url": "https://www.darooyab.ir/G-648/Repaglinide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207209",
+      "label": "ANDA207209"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f3118ce-fcbb-4f8b-b1ba-d8cd95e5b665",
+      "label": "FDA Repaglinide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a600010.html",
+      "label": "Repaglinide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BX02",
+      "label": "A10BX02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-648/Repaglinide",
+      "label": "Repaglinide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited available data from case reports and case series with repaglinide tablets use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-repaglinide",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of repaglinide in human milk, the effects on the breastfeeding infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-repaglinide",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-repaglinide",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In clinical studies of 24 weeks or greater duration, 415 patients were over 65 years of age and no patients were greater than 75 years of age.",
+      "refs": [
+        {
+          "source": "fda-repaglinide",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-repaglinide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA207209"
+  }
+}

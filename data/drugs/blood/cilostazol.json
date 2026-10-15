@@ -1,0 +1,273 @@
+{
+  "id": "cilostazol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیلوستازول",
+    "en": "Cilostazol"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مهارکننده فسفودی‌استراز III",
+    "en": "Phosphodiesterase III inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Pletal",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pletal",
+    "پلتال",
+    "سیلوستازول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cilostazol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cilostazol",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "intermittent-claudication",
+      "label": {
+        "fa": "لنگش متناوب — ۱۰۰ mg دو بار در روز، ناشتا",
+        "en": "Intermittent claudication — 100 mg twice daily, fasting"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cilostazol",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نیم ساعت پیش یا ۲ ساعت پس از صبحانه و شام. با مهارکننده‌های CYP3A4 یا CYP2C19 (کتوکونازول، اریترومایسین، دیلتیازم، امپرازول، فلوکونازول): ۵۰ mg دو بار. اگر پس از ۳ ماه بهتر نشد قطع.",
+            "en": "30 min before or 2 h after breakfast and dinner. With CYP3A4 or CYP2C19 inhibitors (ketoconazole, erythromycin, diltiazem, omeprazole, fluconazole): 50 mg twice daily. Stop if no improvement after 3 months."
+          },
+          "refs": [
+            {
+              "source": "fda-cilostazol",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-cilostazol",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی قلب با هر شدت؛ حساسیت.",
+        "en": "Heart failure of any severity; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-cilostazol",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "B01AC23"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06453",
+        "en": "CILOSTAZOL 100MG TAB",
+        "fa": "قرص سیلوستازول ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "07516",
+        "en": "CILOSTAZOL 50MG TAB",
+        "fa": "قرص سیلوستازول ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1597/Cilostazol",
+        "url": "https://www.darooyab.ir/G-1597/Cilostazol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077030",
+      "label": "ANDA077030"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ceac1ae3-c343-28ca-c083-b748d21a15e6",
+      "label": "FDA Cilostazol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601038.html",
+      "label": "Cilostazol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC23",
+      "label": "B01AC23"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1597/Cilostazol",
+      "label": "Cilostazol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category C.",
+      "refs": [
+        {
+          "source": "fda-cilostazol",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Transfer of cilostazol into milk has been reported in rats.",
+      "refs": [
+        {
+          "source": "fda-cilostazol",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of cilostazol in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-cilostazol",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "…  reported clinical experience has not identified differences in responses between the elderly and younger patients, but greater sensitivity of some older individuals cannot be excluded.",
+      "refs": [
+        {
+          "source": "fda-cilostazol",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cilostazol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077030"
+  }
+}

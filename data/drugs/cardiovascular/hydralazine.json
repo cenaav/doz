@@ -105,6 +105,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "inj-20",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/mL injection (1 mL vial)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hydralazine-inj",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -151,6 +171,12 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-10",
+        "tab-25",
+        "tab-50",
+        "tab-100"
       ]
     },
     {
@@ -201,6 +227,100 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-10",
+        "tab-25",
+        "tab-50",
+        "tab-100"
+      ]
+    },
+    {
+      "id": "iv",
+      "disease": "hypertensive-emergency",
+      "label": {
+        "fa": "فشار خون شدید (وقتی خوراکی ممکن نیست) — ۲۰ تا ۴۰ mg وریدی یا عضلانی، تکرار در صورت نیاز",
+        "en": "Severe hypertension (when oral not possible) — 20–40 mg IV or IM, repeat as needed"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "perDoseMax": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hydralazine-inj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "inj-20"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فشار مکرر کنترل شود؛ اثر حداکثر ۱۰ تا ۸۰ دقیقه. در آسیب کلیوی دوز کمتر. معمولاً ظرف ۲۴ تا ۴۸ ساعت به خوراکی.",
+            "en": "Check BP frequently; maximal fall at 10–80 min. Lower dose with marked renal damage. Usually switch to oral within 24–48 h."
+          },
+          "refs": [
+            {
+              "source": "fda-hydralazine-inj",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv-preg",
+      "disease": "hypertension-pregnancy",
+      "label": {
+        "fa": "فشار خون شدید بارداری (بیمارستانی) — ۲۰ تا ۴۰ mg وریدی یا عضلانی",
+        "en": "Severe hypertension in pregnancy (hospital) — 20–40 mg IV or IM"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "perDoseMax": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-hydralazine-inj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "inj-20"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز برچسب عمومی است؛ برچسب دوز جداگانه بارداری ندارد.",
+            "en": "General label dose; the label has no separate pregnancy dose."
+          },
+          "refs": [
+            {
+              "source": "fda-hydralazine-inj",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
       ]
     }
   ],
@@ -215,6 +335,20 @@
       "refs": [
         {
           "source": "fda-hydralazine",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "inj-ci",
+      "severity": "block",
+      "text": {
+        "fa": "تزریقی: حساسیت؛ بیماری عروق کرونر؛ بیماری روماتیسمی دریچه میترال.",
+        "en": "Injection: hypersensitivity; coronary artery disease; rheumatic mitral valve disease."
+      },
+      "refs": [
+        {
+          "source": "fda-hydralazine-inj",
           "section": "Contraindications"
         }
       ]
@@ -261,6 +395,30 @@
       },
       "expect": {
         "perDose": 10
+      }
+    },
+    {
+      "regimen": "iv",
+      "formulation": "inj-20",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 20,
+        "upperPerDose": 40
+      }
+    },
+    {
+      "regimen": "iv-preg",
+      "formulation": "inj-20",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "upperPerDose": 40
       }
     }
   ],
@@ -314,6 +472,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b3d1786d-c3ff-42f1-a09f-37a9c9021e5a",
       "label": "FDA Hydralazine"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f0db9c3c-d841-46f9-8409-9ffca83d7a97",
+      "label": "FDA Hydralazine inj."
     },
     {
       "kind": "medlineplus",

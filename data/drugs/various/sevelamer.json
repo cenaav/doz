@@ -1,0 +1,260 @@
+{
+  "id": "sevelamer",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سولامر",
+    "en": "Sevelamer carbonate"
+  },
+  "category": "various",
+  "class": {
+    "fa": "باندر فسفات",
+    "en": "Phosphate binder"
+  },
+  "brands": [
+    {
+      "name": "Renvela",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "renvela",
+    "renagel",
+    "رنولا",
+    "سولامر"
+  ],
+  "formulations": [
+    {
+      "id": "tab-800",
+      "form": "tablet",
+      "route": "oral",
+      "label": "800 mg tablet",
+      "concentration": {
+        "amount": 800,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-renvela",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "hyperphosphatemia",
+      "label": {
+        "fa": "فسفات بالا در دیالیز — ۰٫۸ تا ۱٫۶ g سه بار در روز با غذا",
+        "en": "Hyperphosphataemia on dialysis — 0.8–1.6 g three times daily with meals"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 800,
+        "perDoseMax": 1600,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-renvela",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فسفر ۵٫۵ تا ۷٫۵: ۰٫۸ g؛ ۷٫۵ و بیشتر: ۱٫۶ g سه بار با غذا. هر ۲ هفته ۰٫۸ g در هر وعده افزایش تا رسیدن به هدف.",
+            "en": "Phosphorus >5.5–<7.5: 0.8 g; ≥7.5: 1.6 g three times daily with meals. Titrate by 0.8 g per meal every 2 weeks to target."
+          },
+          "refs": [
+            {
+              "source": "fda-renvela",
+              "section": "2.1, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "انسداد روده؛ حساسیت به سولامر.",
+        "en": "Bowel obstruction; hypersensitivity to sevelamer."
+      },
+      "refs": [
+        {
+          "source": "fda-renvela",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "tab-800",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 800,
+        "upperPerDose": 1600
+      }
+    }
+  ],
+  "atc": [
+    "V03AE02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "04000",
+        "en": "SEVELAMER 800MG TAB",
+        "fa": "قرص سولامر ۸۰۰ میلی‌گرم"
+      },
+      {
+        "code": "21183",
+        "en": "SEVELAMER CARBONATE 800MG TAB",
+        "fa": "قرص سولامر کربنات ۸۰۰ میلی‌گرم"
+      },
+      {
+        "code": "50111",
+        "en": "SEVELAMER 2.5 gr Powder For Solution",
+        "fa": "پودر سولامر ۲٫۵ گرم"
+      },
+      {
+        "code": "52717",
+        "en": "SEVELAMER CARBONATE POWDER, FOR SUSPENSION ORAL 800 mg",
+        "fa": "سوسپانسیون خوراکی سولامر کربنات ۸۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1978/Sevelamer",
+        "url": "https://www.darooyab.ir/G-1978/Sevelamer"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022318",
+      "label": "NDA022318"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6328460-a57b-450b-a48c-6dcd4b476360",
+      "label": "FDA Renvela"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601248.html",
+      "label": "Sevelamer"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AE02",
+      "label": "V03AE02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1978/Sevelamer",
+      "label": "Sevelamer"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: جذب سیستمیک ناچیز؛ مواجهه جنین انتظار نمی‌رود.",
+        "en": "Label: minimal systemic absorption; fetal exposure not expected."
+      },
+      "quote": "Risk Summary Sevelamer carbonate is not absorbed systemically following oral administration and maternal use is not expected to result in fetal exposure to the drug.",
+      "refs": [
+        {
+          "source": "fda-renvela",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: مواجهه شیرخوار انتظار نمی‌رود.",
+        "en": "Label: infant exposure not expected."
+      },
+      "quote": "Risk Summary Renvela is not absorbed systemically by the mother following oral administration, and breastfeeding is not expected to result in exposure of the child to Renvela.",
+      "refs": [
+        {
+          "source": "fda-renvela",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of Renvela in lowering serum phosphorus levels was studied in patients 6 years of age and older with CKD.",
+      "refs": [
+        {
+          "source": "fda-renvela",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range.",
+      "refs": [
+        {
+          "source": "fda-renvela",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-renvela",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022318"
+  }
+}

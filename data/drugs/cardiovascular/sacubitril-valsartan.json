@@ -1,0 +1,521 @@
+{
+  "id": "sacubitril-valsartan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ساکوبیتریل + والسارتان",
+    "en": "Sacubitril + valsartan"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مهارکننده نپریلیزین و گیرنده آنژیوتانسین (ARNI)",
+    "en": "Angiotensin receptor–neprilysin inhibitor (ARNI)"
+  },
+  "brands": [
+    {
+      "name": "Entresto",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "entresto",
+    "انترستو",
+    "ساکوبیتریل",
+    "ARNI"
+  ],
+  "formulations": [
+    {
+      "id": "tab-24-26",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Sacubitril 24 mg / valsartan 26 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "3"
+        }
+      ],
+      "components": {
+        "sacubitril": {
+          "name": {
+            "fa": "ساکوبیتریل",
+            "en": "Sacubitril"
+          },
+          "amount": 24,
+          "unit": "mg"
+        },
+        "valsartan": {
+          "name": {
+            "fa": "والسارتان",
+            "en": "Valsartan"
+          },
+          "amount": 26,
+          "unit": "mg"
+        }
+      }
+    },
+    {
+      "id": "tab-49-51",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Sacubitril 49 mg / valsartan 51 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "3"
+        }
+      ],
+      "components": {
+        "sacubitril": {
+          "name": {
+            "fa": "ساکوبیتریل",
+            "en": "Sacubitril"
+          },
+          "amount": 49,
+          "unit": "mg"
+        },
+        "valsartan": {
+          "name": {
+            "fa": "والسارتان",
+            "en": "Valsartan"
+          },
+          "amount": 51,
+          "unit": "mg"
+        }
+      }
+    },
+    {
+      "id": "tab-97-103",
+      "form": "tablet",
+      "route": "oral",
+      "label": "Sacubitril 97 mg / valsartan 103 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "3"
+        }
+      ],
+      "components": {
+        "sacubitril": {
+          "name": {
+            "fa": "ساکوبیتریل",
+            "en": "Sacubitril"
+          },
+          "amount": 97,
+          "unit": "mg"
+        },
+        "valsartan": {
+          "name": {
+            "fa": "والسارتان",
+            "en": "Valsartan"
+          },
+          "amount": 103,
+          "unit": "mg"
+        }
+      }
+    },
+    {
+      "id": "susp-4",
+      "form": "suspension",
+      "route": "oral",
+      "label": "4 mg/mL oral suspension (prepared from 49/51 mg tablets; combined)",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی قلب بزرگسال — شروع ۴۹/۵۱ mg دو بار در روز، هدف ۹۷/۱۰۳ mg",
+        "en": "Adult heart failure — start 49/51 mg twice daily, target 97/103 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 200,
+          "increment": 200,
+          "incrementEveryDays": 14,
+          "targetMin": 400,
+          "targetMax": 400,
+          "max": 400
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-24-26",
+        "tab-49-51",
+        "tab-97-103"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اعداد بر حسب مجموع ساکوبیتریل + والسارتان (۴۹/۵۱ = ۱۰۰ mg). دوز پس از ۲ تا ۴ هفته دو برابر شود. از مهارکننده ACE دست‌کم ۳۶ ساعت فاصله.",
+            "en": "Amounts are sacubitril + valsartan combined (49/51 = 100 mg). Double the dose after 2–4 weeks. At least 36 h apart from an ACE inhibitor."
+          },
+          "refs": [
+            {
+              "source": "fda-entresto",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-entresto",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-lt40",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "کودک ۱ سال به بالا زیر ۴۰ kg — شروع ۱٫۶ mg/kg دو بار در روز (مجموع)",
+        "en": "Child ≥1 y, <40 kg — start 1.6 mg/kg twice daily (combined)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxWeightKg": 39.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1.6,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "susp-4"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۲ هفته به ۲٫۳ و سپس ۳٫۱ mg/kg دو بار در روز. سوسپانسیون یا پلت توصیه می‌شود.",
+            "en": "Every 2 weeks increase to 2.3 then 3.1 mg/kg twice daily. Suspension or pellets recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-entresto",
+              "section": "2.3, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-40plus",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "کودک ۴۰ kg و بیشتر — شروع بر اساس وزن، دو بار در روز",
+        "en": "Child ≥40 kg — starting dose by weight, twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 40
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 39.99,
+            "maxWeightKg": 49.99,
+            "perDose": 50,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 49.99,
+            "maxWeightKg": null,
+            "perDose": 100,
+            "dosesPerDay": 2
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-24-26",
+        "tab-49-51",
+        "tab-97-103"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۴۰ تا ۵۰ kg: ۲۴/۲۶ → ۴۹/۵۱ → ۷۲/۷۸ mg؛ ۵۰ kg و بیشتر: ۴۹/۵۱ → ۷۲/۷۸ → ۹۷/۱۰۳ mg، هر ۲ هفته.",
+            "en": "40–50 kg: 24/26 → 49/51 → 72/78 mg; ≥50 kg: 49/51 → 72/78 → 97/103 mg, every 2 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-entresto",
+              "section": "2.3, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه آنژیوادم با ACEi یا ARB؛ مصرف همزمان مهارکننده ACE (۳۶ ساعت فاصله)؛ آلیسکیرن در دیابت؛ حساسیت.",
+        "en": "History of angioedema with ACEi or ARB; concomitant ACE inhibitor (36 h washout); aliskiren in diabetes; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — با تشخیص بارداری فوراً قطع شود.",
+        "en": "Boxed warning: fetal toxicity — stop as soon as pregnancy is detected."
+      },
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-49-51",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child-lt40",
+      "formulation": "susp-4",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 32,
+        "mlPerDose": 8
+      }
+    },
+    {
+      "regimen": "child-40plus",
+      "formulation": "tab-49-51",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C09DX04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51005",
+        "en": "SACUBITRIL/VALSARTAN 49/51MG TAB",
+        "fa": "قرص ساکوبیتریل / والسارتان ۴۹ / ۵۱ میلی‌گرم"
+      },
+      {
+        "code": "50702",
+        "en": "SACUBITRIL/VALSARTAN 24/26MG TAB",
+        "fa": "قرص ساکوبیتریل / والسارتان ۲۴ / ۲۶ میلی‌گرم"
+      },
+      {
+        "code": "52234",
+        "en": "SACUBITRIL/VALSARTAN 103/97MG TAB",
+        "fa": "قرص ساکوبیتریل / والسارتان ۱۰۳ / ۹۷ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4847/Sacubitril-Valsartan",
+        "url": "https://www.darooyab.ir/G-4847/Sacubitril-Valsartan"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207620",
+      "label": "NDA207620"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+      "label": "FDA Entresto"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09DX04",
+      "label": "C09DX04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4847/Sacubitril-Valsartan",
+      "label": "Sacubitril-Valsartan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "When pregnancy is detected, discontinue ENTRESTO as soon as possible (5.1) Drugs that act directly on the renin-angiotensin system can cause injury and death to the developing fetus (5.1) WARNING: FETAL TOXICITY See full prescribing information for complete boxed warning.",
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants from exposure to sacubitril/valsartan, advise a nursing woman that breastfeeding is not recommended during treatment with ENTRESTO.",
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of ENTRESTO have been established for the treatment of heart failure in pediatric patients 1 year to less than 18 years.",
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness of ENTRESTO have been observed between patients 65 years of age and older and younger adult patients in either study.",
+      "refs": [
+        {
+          "source": "fda-entresto",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-entresto",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA207620"
+  }
+}

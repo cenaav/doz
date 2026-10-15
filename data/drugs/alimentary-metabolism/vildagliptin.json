@@ -1,0 +1,241 @@
+{
+  "id": "vildagliptin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ویلداگلیپتین",
+    "en": "Vildagliptin"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده DPP-4",
+    "en": "DPP-4 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Galvus",
+      "market": "UK"
+    }
+  ],
+  "synonyms": [
+    "galvus",
+    "گالووس",
+    "ویلداگلیپتین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "UK"
+      ],
+      "refs": [
+        {
+          "source": "uk-galvus",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ — ۵۰ mg دو بار در روز (با سولفونیل‌اوره: ۵۰ mg صبح)",
+        "en": "Type 2 diabetes — 50 mg twice daily (with a sulphonylurea: 50 mg in the morning)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "uk-galvus",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بیش از ۱۰۰ mg در روز توصیه نمی‌شود. در ترکیب دوگانه با سولفونیل‌اوره ۵۰ mg یک بار صبح کافی است.",
+            "en": "Doses above 100 mg/day not recommended. In dual combination with a sulphonylurea, 50 mg once in the morning."
+          },
+          "refs": [
+            {
+              "source": "uk-galvus",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ویلداگلیپتین.",
+        "en": "Hypersensitivity to vildagliptin."
+      },
+      "refs": [
+        {
+          "source": "uk-galvus",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "در نارسایی کبد یا ALT/AST بیش از ۳ برابر مصرف نشود؛ پایش آنزیم‌های کبد.",
+        "en": "Not for hepatic impairment or ALT/AST >3× ULN; monitor liver enzymes."
+      },
+      "refs": [
+        {
+          "source": "uk-galvus",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A10BH02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "14688",
+        "en": "INOSINE ACEDOBEN 500MG TAB",
+        "fa": "قرص اینوسین آسدوبن ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52522",
+        "en": "VILDAGLIPTIN TABLET ORAL 50 mg",
+        "fa": "قرص ویلداگلیپتین ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3925/Vildagliptin",
+        "url": "https://www.darooyab.ir/G-3925/Vildagliptin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BH02",
+      "label": "A10BH02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3925/Vildagliptin",
+      "label": "Vildagliptin"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/6225/smpc",
+      "label": "UK Galvus SmPC"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are no adequate data from the use of vildagliptin in pregnant women.",
+      "refs": [
+        {
+          "source": "uk-galvus",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Animal studies have shown excretion of vildagliptin in milk.",
+      "refs": [
+        {
+          "source": "uk-galvus",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and efficacy of Galvus in children and adolescents (< 18 years) have not been established.",
+      "refs": [
+        {
+          "source": "uk-galvus",
+          "section": "4.2"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "Elderly (≥ 65 years) No dose adjustments are necessary in elderly patients (see also sections 5.1 and 5.2).",
+      "refs": [
+        {
+          "source": "uk-galvus",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

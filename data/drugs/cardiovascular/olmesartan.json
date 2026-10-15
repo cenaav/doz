@@ -1,0 +1,369 @@
+{
+  "id": "olmesartan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اولمسارتان",
+    "en": "Olmesartan"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مسدودکننده گیرنده آنژیوتانسین (ARB)",
+    "en": "Angiotensin receptor blocker (ARB)"
+  },
+  "brands": [
+    {
+      "name": "Benicar",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "benicar",
+    "olmetec",
+    "اولمسارتان",
+    "اولمتک"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون بزرگسال — ۲۰ mg یک بار در روز (تا ۴۰ mg)",
+        "en": "Adult hypertension — 20 mg once daily (up to 40 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "perDoseMax": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون کودک ۶ سال به بالا — بر اساس وزن",
+        "en": "Pediatric hypertension ≥6 y — by weight"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 20
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 19.99,
+            "maxWeightKg": 34.99,
+            "perDose": 10,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 34.99,
+            "maxWeightKg": null,
+            "perDose": 20,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-olmesartan",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بازه: ۲۰ تا ۳۵ kg ← ۱۰ تا ۲۰ mg؛ ۳۵ kg و بیشتر ← ۲۰ تا ۴۰ mg. زیر ۱ سال توصیه نمی‌شود.",
+            "en": "Range: 20–35 kg → 10–20 mg; ≥35 kg → 20–40 mg. Not recommended under 1 year."
+          },
+          "refs": [
+            {
+              "source": "fda-olmesartan",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "aliskiren",
+      "severity": "block",
+      "text": {
+        "fa": "آلیسکیرن همزمان در دیابت.",
+        "en": "Concomitant aliskiren in diabetes."
+      },
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — با تشخیص بارداری فوراً قطع شود.",
+        "en": "Boxed warning: fetal toxicity — stop as soon as pregnancy is detected."
+      },
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 20,
+        "upperPerDose": 40
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 28
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "C09CA08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "14702",
+        "en": "OLMESARTAN 10MG TAB",
+        "fa": "قرص اولمسارتان ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "14703",
+        "en": "OLMESARTAN 20MG TAB",
+        "fa": "قرص اولمسارتان ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "16432",
+        "en": "OLMESARTAN 40MG TAB",
+        "fa": "قرص اولمسارتان ۴۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1806/Olmesartan",
+        "url": "https://www.darooyab.ir/G-1806/Olmesartan"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207135",
+      "label": "ANDA207135"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c49a7f23-2af0-4607-9f21-114970f8630d",
+      "label": "FDA Olmesartan"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603006.html",
+      "label": "Olmesartan"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA08",
+      "label": "C09CA08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1806/Olmesartan",
+      "label": "Olmesartan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "WARNING: FETAL TOXICITY See full prescribing information for complete boxed warning.",
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of olmesartan in human milk, the effects on the breastfed infant, or the effects on milk production. olmesartan is secreted at low concentration in the milk of lactating rats (see Data) .",
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The antihypertensive effects of olmesartan medoxomil tablets were evaluated in one randomized, double-blind clinical study in pediatric patients 1 to 16 years of age [see Clinical Studies (14.2) ].",
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in effectiveness or safety were observed between elderly patients and younger patients.",
+      "refs": [
+        {
+          "source": "fda-olmesartan",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-olmesartan",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA207135"
+  }
+}

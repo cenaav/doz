@@ -1,0 +1,370 @@
+{
+  "id": "torsemide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تورسماید",
+    "en": "Torsemide"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "دیورتیک لوپ",
+    "en": "Loop diuretic"
+  },
+  "brands": [
+    {
+      "name": "Demadex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "demadex",
+    "torasemide",
+    "تورسماید",
+    "تورازماید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (scored)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (scored)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hf",
+      "disease": "edema",
+      "label": {
+        "fa": "ادم نارسایی قلب — شروع ۱۰ یا ۲۰ mg یک بار در روز",
+        "en": "Heart-failure oedema — start 10 or 20 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت پاسخ ناکافی تقریباً دو برابر شود؛ بالای ۲۰۰ mg بررسی نشده. نارسایی مزمن کلیه: شروع ۲۰ mg؛ سیروز: ۵ یا ۱۰ mg (بالای ۴۰ mg بررسی نشده).",
+            "en": "If inadequate, roughly double; >200 mg not studied. CKD: start 20 mg; cirrhosis: 5 or 10 mg (>40 mg not studied)."
+          },
+          "refs": [
+            {
+              "source": "fda-torsemide",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — ۵ mg یک بار در روز، در صورت نیاز ۱۰ mg",
+        "en": "Hypertension — 5 mg once daily, 10 mg if needed"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 10,
+        "refs": [
+          {
+            "source": "fda-torsemide",
+            "section": "2.2"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تورسماید؛ آنوری؛ کمای کبدی.",
+        "en": "Hypersensitivity to torsemide; anuria; hepatic coma."
+      },
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hf",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 10,
+        "upperPerDose": 20
+      }
+    },
+    {
+      "regimen": "htn",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C03CA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "53392",
+        "en": "TORSEMIDE 100 mg TABLET",
+        "fa": "قرص تورسماید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "53391",
+        "en": "TORSEMIDE 20 mg TABLET",
+        "fa": "قرص تورسماید ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "53390",
+        "en": "TORSEMIDE 10 mg TABLET",
+        "fa": "قرص تورسماید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "53389",
+        "en": "TORSEMIDE 5 mg TABLET",
+        "fa": "قرص تورسماید ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1918/Torsemide",
+        "url": "https://www.darooyab.ir/G-1918/Torsemide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076346",
+      "label": "ANDA076346"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7fc14338-92e4-cf57-a3e8-ef64d8d1026c",
+      "label": "FDA Torsemide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601212.html",
+      "label": "Torsemide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA04",
+      "label": "C03CA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1918/Torsemide",
+      "label": "Torsemide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on use of torsemide in pregnant women and the risk of major birth defects or miscarriage.",
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data regarding the presence of torsemide in human milk or the effects of torsemide on the breastfed child.",
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of patients who received torsemide in United States clinical studies, 24% were 65 or older while about 4% were 75 or older.",
+      "refs": [
+        {
+          "source": "fda-torsemide",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-torsemide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076346"
+  }
+}

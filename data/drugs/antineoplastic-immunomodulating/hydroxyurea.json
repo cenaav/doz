@@ -1,0 +1,343 @@
+{
+  "id": "hydroxyurea",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "هیدروکسی‌اوره",
+    "en": "Hydroxyurea"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌متابولیت",
+    "en": "Antimetabolite"
+  },
+  "brands": [
+    {
+      "name": "Siklos",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "siklos",
+    "hydrea",
+    "هیدروکسی اوره",
+    "هیدرآ"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-siklos",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "sickle-cell",
+      "label": {
+        "fa": "کم‌خونی داسی‌شکل — بزرگسال: شروع ۱۵ mg/kg یک بار در روز",
+        "en": "Sickle cell anaemia — adult: start 15 mg/kg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-siklos",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 35,
+        "refs": [
+          {
+            "source": "fda-siklos",
+            "section": "2.1, Table 1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس وزن واقعی یا ایده‌آل (هر کدام کمتر). شمارش خون هر ۲ هفته؛ هر ۸ هفته ۵ mg/kg افزایش تا حداکثر ۳۵ mg/kg. CrCl زیر ۶۰: نصف دوز.",
+            "en": "Use actual or ideal weight, whichever is less. Blood count every 2 weeks; increase 5 mg/kg every 8 weeks up to 35 mg/kg. CrCl <60: half dose."
+          },
+          "refs": [
+            {
+              "source": "fda-siklos",
+              "section": "2.1, Table 1"
+            },
+            {
+              "source": "fda-siklos",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "sickle-cell",
+      "label": {
+        "fa": "کم‌خونی داسی‌شکل — کودک ۲ سال به بالا: شروع ۲۰ mg/kg یک بار در روز",
+        "en": "Sickle cell anaemia — child ≥2 y: start 20 mg/kg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 20,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-siklos",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 35,
+        "refs": [
+          {
+            "source": "fda-siklos",
+            "section": "2.1, Table 1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "شمارش خون هر ۲ هفته؛ هر ۸ هفته ۵ mg/kg افزایش تا حداکثر ۳۵ mg/kg. CrCl زیر ۶۰: ۱۰ mg/kg.",
+            "en": "Blood count every 2 weeks; increase 5 mg/kg every 8 weeks up to 35 mg/kg. CrCl <60: 10 mg/kg."
+          },
+          "refs": [
+            {
+              "source": "fda-siklos",
+              "section": "2.1, Table 1"
+            },
+            {
+              "source": "fda-siklos",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به هیدروکسی‌اوره.",
+        "en": "Hypersensitivity to hydroxyurea."
+      },
+      "refs": [
+        {
+          "source": "fda-siklos",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سرکوب مغز استخوان و بدخیمی؛ شمارش خون مکرر و محافظت از آفتاب.",
+        "en": "Boxed warning: myelosuppression and malignancies; frequent blood counts and sun protection."
+      },
+      "refs": [
+        {
+          "source": "fda-siklos",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1050
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 4
+      }
+    }
+  ],
+  "atc": [
+    "L01XX05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "16887",
+        "en": "HYDROXYCARBAMIDE 500MG CAP",
+        "fa": "کپسول هیدروکسیکاربامید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00648",
+        "en": "HYDROXYUREA 500MG CAP",
+        "fa": "کپسول هیدروکسی‌اوره ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1012/Hydroxyurea",
+        "url": "https://www.darooyab.ir/G-1012/Hydroxyurea"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208843",
+      "label": "NDA208843"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=76957c0d-0f98-4376-bb06-eee651adc09d",
+      "label": "FDA Siklos"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682004.html",
+      "label": "Hydroxyurea"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01XX05",
+      "label": "L01XX05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1012/Hydroxyurea",
+      "label": "Hydroxyurea"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary SIKLOS can cause fetal harm based on findings from animal studies and the drug's mechanism of action [see Clinical Pharmacology (12.1) ] .",
+      "refs": [
+        {
+          "source": "fda-siklos",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in a breastfed child from SIKLOS, including carcinogenicity, advise patients not to breastfeed during treatment with SIKLOS.",
+      "refs": [
+        {
+          "source": "fda-siklos",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of SIKLOS have been established in pediatric patients aged 2-18 years with sickle cell anemia with recurrent moderate to severe painful crises.",
+      "refs": [
+        {
+          "source": "fda-siklos",
+          "section": "8.4"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise females of reproductive potential to use effective contraception during and after treatment with SIKLOS for at least 6 months after therapy.",
+      "refs": [
+        {
+          "source": "fda-siklos",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-siklos",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA208843"
+  }
+}

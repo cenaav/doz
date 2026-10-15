@@ -1,0 +1,266 @@
+{
+  "id": "liraglutide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لیراگلوتاید",
+    "en": "Liraglutide"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آگونیست گیرنده GLP-1",
+    "en": "GLP-1 receptor agonist"
+  },
+  "brands": [
+    {
+      "name": "Victoza",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "victoza",
+    "ویکتوزا",
+    "لیراگلوتاید"
+  ],
+  "formulations": [
+    {
+      "id": "pen-6",
+      "form": "injection",
+      "route": "sc",
+      "label": "6 mg/mL pen (18 mg/3 mL; doses 0.6, 1.2, 1.8 mg)",
+      "concentration": {
+        "amount": 6,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-victoza",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2d",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ (۱۰ سال به بالا) — ۰٫۶ mg روزانه، سپس ۱٫۲ و تا ۱٫۸ mg",
+        "en": "Type 2 diabetes (≥10 y) — 0.6 mg daily, then 1.2 up to 1.8 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 0.6,
+          "increment": 0.6,
+          "incrementEveryDays": 7,
+          "targetMin": 1.2,
+          "targetMax": 1.8,
+          "max": 1.8
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-victoza",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۰٫۶ mg فقط برای تحمل گوارشی است. اگر بیش از ۳ روز قطع شد، از ۰٫۶ mg دوباره شروع.",
+            "en": "0.6 mg is only for GI tolerability. If more than 3 days missed, restart at 0.6 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-victoza",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-victoza",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "mtc",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه شخصی یا خانوادگی کارسینوم مدولاری تیروئید یا MEN 2؛ حساسیت جدی.",
+        "en": "Personal or family history of medullary thyroid carcinoma or MEN 2; serious hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-victoza",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: تومور سلول C تیروئید در جوندگان؛ در سابقه MTC یا MEN 2 ممنوع.",
+        "en": "Boxed warning: thyroid C-cell tumours in rodents; contraindicated with MTC or MEN 2 history."
+      },
+      "refs": [
+        {
+          "source": "fda-victoza",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2d",
+      "formulation": "pen-6",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 90
+      },
+      "expect": {
+        "perDose": 0.6,
+        "mlPerDose": 0.1
+      }
+    }
+  ],
+  "atc": [
+    "A10BJ02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "22666",
+        "en": "LIRAGLUTIDE INJECTION, SOLUTION 6 mg/1mL 3ML PEN (VICTOZA)",
+        "fa": "قلم تزریقی لیراگلوتاید ۶ میلی‌گرم / ۱ میلی‌لیتر ۳ میلی‌لیتر (ویکتوزا)"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4899/Liraglutide",
+        "url": "https://www.darooyab.ir/G-4899/Liraglutide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022341",
+      "label": "NDA022341"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a9ef4ea-c76a-4d34-a604-27c5b505f5a4",
+      "label": "FDA Victoza"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611003.html",
+      "label": "Liraglutide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BJ02",
+      "label": "A10BJ02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4899/Liraglutide",
+      "label": "Liraglutide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on animal reproduction studies, there may be risks to the fetus from exposure to VICTOZA during pregnancy.",
+      "refs": [
+        {
+          "source": "fda-victoza",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of VICTOZA in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-victoza",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of VICTOZA as an adjunct to diet and exercise to improve glycemic control in type 2 diabetes mellitus have been established in pediatric patients 10 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-victoza",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness for VICTOZA have been observed between patients 65 years of age and older and younger patients.",
+      "refs": [
+        {
+          "source": "fda-victoza",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-victoza",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022341"
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "id": "bumetanide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بومتانید",
+    "en": "Bumetanide"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "دیورتیک لوپ",
+    "en": "Loop diuretic"
+  },
+  "brands": [
+    {
+      "name": "Bumex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "bumex",
+    "burinex",
+    "بومتانید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bumetanide",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bumetanide",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bumetanide",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "edema",
+      "disease": "edema",
+      "label": {
+        "fa": "ادم — ۰٫۵ تا ۲ mg معمولاً یک بار در روز",
+        "en": "Oedema — 0.5–2 mg usually once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "perDoseMax": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bumetanide",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-bumetanide",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پاسخ کافی نبود، دوز دوم یا سوم با فاصله ۴ تا ۵ ساعت تا حداکثر ۱۰ mg در روز. برای ادم مزمن مصرف یک روز در میان یا ۳ تا ۴ روز با ۱ تا ۲ روز استراحت ایمن‌تر است. حدوداً ۱ mg بومتانید ≈ ۴۰ mg فوروزماید.",
+            "en": "If inadequate, a 2nd or 3rd dose at 4–5 h intervals up to 10 mg/day. For chronic oedema alternate-day or 3–4 days on, 1–2 days off is safest. About 1 mg bumetanide ≈ 40 mg furosemide."
+          },
+          "refs": [
+            {
+              "source": "fda-bumetanide",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آنوری؛ کمای کبدی؛ کمبود شدید الکترولیت تا اصلاح؛ حساسیت.",
+        "en": "Anuria; hepatic coma; severe electrolyte depletion until corrected; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-bumetanide",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "edema",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 0.5,
+        "upperPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "C03CA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "10070",
+        "en": "BUMETANIDE 1MG TAB",
+        "fa": "قرص بومتانید ۱ میلی‌گرم"
+      },
+      {
+        "code": "06629",
+        "en": "BUMETANIDE 5MG TAB",
+        "fa": "قرص بومتانید ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1569/Bumetanide",
+        "url": "https://www.darooyab.ir/G-1569/Bumetanide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213942",
+      "label": "ANDA213942"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=551918e1-96c4-453a-870c-61b282882206",
+      "label": "FDA Bumetanide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a684051.html",
+      "label": "Bumetanide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625109.html",
+      "label": "Bumetanide Nasal Spray"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA02",
+      "label": "C03CA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1569/Bumetanide",
+      "label": "Bumetanide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Bumetanide is neither teratogenic nor embryocidal in mice when given in doses up to 3400 times the maximum human therapeutic dose.",
+      "refs": [
+        {
+          "source": "fda-bumetanide",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "As a general rule, nursing should not be undertaken while the patient is on bumetanide since it may be excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-bumetanide",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients below the age of 18 have not been established.",
+      "refs": [
+        {
+          "source": "fda-bumetanide",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-bumetanide",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-bumetanide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213942"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "id": "ivabradine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایوابرادین",
+    "en": "Ivabradine"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مهارکننده کانال If گره سینوسی",
+    "en": "Sinus node If-channel inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Corlanor",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "corlanor",
+    "procoralan",
+    "کورلانور",
+    "ایوابرادین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (scored)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-7-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "7.5 mg tablet",
+      "concentration": {
+        "amount": 7.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "sol-1",
+      "form": "solution",
+      "route": "oral",
+      "label": "5 mg/5 mL oral solution",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی قلب بزرگسال — شروع ۵ mg دو بار در روز با غذا",
+        "en": "Adult heart failure — start 5 mg twice daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 7.5,
+        "refs": [
+          {
+            "source": "fda-corlanor",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از ۲ هفته بر اساس ضربان استراحت (هدف ۵۰ تا ۶۰): بالای ۶۰ → ۲٫۵ mg بیشتر تا حداکثر ۷٫۵ mg دو بار؛ زیر ۵۰ یا برادی‌کاردی → ۲٫۵ mg کمتر. در اختلال هدایت از ۲٫۵ mg دو بار شروع.",
+            "en": "After 2 weeks adjust to resting HR 50–60: >60 → +2.5 mg up to 7.5 mg twice daily; <50 or bradycardia → −2.5 mg. Start 2.5 mg twice daily with conduction defects."
+          },
+          "refs": [
+            {
+              "source": "fda-corlanor",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-lt40",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "کودک ۶ ماه به بالا زیر ۴۰ kg — شروع ۰٫۰۵ mg/kg دو بار در روز (محلول)",
+        "en": "Child ≥6 months, <40 kg — start 0.05 mg/kg twice daily (solution)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxWeightKg": 39.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.05,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "sol-1"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۲ هفته ۰٫۰۵ mg/kg افزایش تا کاهش ضربان دست‌کم ۲۰٪. حداکثر: ۶ ماه تا ۱ سال ۰٫۲ mg/kg، ۱ سال به بالا ۰٫۳ mg/kg دو بار در روز (تا ۷٫۵ mg).",
+            "en": "Increase by 0.05 mg/kg every 2 weeks to a ≥20% HR reduction. Max: 6 months–1 y 0.2 mg/kg, ≥1 y 0.3 mg/kg twice daily (up to 7.5 mg)."
+          },
+          "refs": [
+            {
+              "source": "fda-corlanor",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-40plus",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "کودک ۴۰ kg و بیشتر — شروع ۲٫۵ mg دو بار در روز",
+        "en": "Child ≥40 kg — start 2.5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 40
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-5"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی حاد جبران‌نشده قلب؛ افت فشار مهم؛ سندرم سینوس بیمار، بلوک SA یا AV درجه ۳ بدون پیس‌میکر؛ برادی‌کاردی مهم؛ نارسایی شدید کبد؛ وابستگی به پیس‌میکر؛ مهارکننده‌های قوی CYP3A4.",
+        "en": "Acute decompensated HF; significant hypotension; sick sinus, SA block or 3rd-degree AV block without pacemaker; significant bradycardia; severe hepatic impairment; pacemaker dependence; strong CYP3A4 inhibitors."
+      },
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child-lt40",
+      "formulation": "sol-1",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "child-40plus",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 45
+      },
+      "expect": {
+        "perDose": 2.5,
+        "tabletsPerDoseRounded": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "C01EB17"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17011",
+        "en": "IVABRADINE 5MG TAB",
+        "fa": "قرص ایوابرادین ۵ میلی‌گرم"
+      },
+      {
+        "code": "52101",
+        "en": "IVABRADINE 7.5MG TAB",
+        "fa": "قرص ایوابرادین ۷٫۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4766/Ivabradine",
+        "url": "https://www.darooyab.ir/G-4766/Ivabradine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206143",
+      "label": "NDA206143"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=92018a65-38f6-45f7-91d4-a34921b81d0d",
+      "label": "FDA Corlanor"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615027.html",
+      "label": "Ivabradine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01EB17",
+      "label": "C01EB17"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4766/Ivabradine",
+      "label": "Ivabradine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings in animals, Corlanor may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential risk to breastfed infants from exposure to Corlanor, breastfeeding is not recommended.",
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Corlanor have been established in pediatric patients (age 6 months to less than 18 years old) and are supported by pharmacokinetic and pharmacodynamic trials and evidence from adequate and well-controlled trials of Corlanor in adult patients.",
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "No pharmacokinetic differences have been observed in elderly (≥ 65 years) or very elderly (≥ 75 years) patients compared to the overall population.",
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Corlanor may cause fetal harm, based on animal data.",
+      "refs": [
+        {
+          "source": "fda-corlanor",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-corlanor",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA206143"
+  }
+}

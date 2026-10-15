@@ -84,6 +84,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "inj-5",
+      "form": "injection",
+      "route": "iv",
+      "label": "5 mg/mL injection (20 or 40 mL vial)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-labetalol-inj",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -125,6 +145,58 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-100",
+        "tab-200",
+        "tab-300"
+      ]
+    },
+    {
+      "id": "iv",
+      "disease": "hypertensive-emergency",
+      "label": {
+        "fa": "فشار خون شدید — ۲۰ mg وریدی آهسته در ۲ دقیقه، سپس ۴۰ تا ۸۰ mg هر ۱۰ دقیقه",
+        "en": "Severe hypertension — 20 mg slow IV over 2 min, then 40–80 mg every 10 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-labetalol-inj",
+          "section": "Dosage and Administration — Repeated Intravenous Injection"
+        }
+      ],
+      "allowedFormulations": [
+        "inj-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بیمار خوابیده؛ فشار پیش از تزریق و ۵ و ۱۰ دقیقه بعد. تزریق‌های بعدی ۴۰ یا ۸۰ mg هر ۱۰ دقیقه تا فشار مطلوب یا مجموع ۳۰۰ mg. جایگزین: انفوزیون آهسته ۱ mg/mL.",
+            "en": "Supine; BP before and 5 and 10 min after. Further 40 or 80 mg every 10 min until target BP or a total of 300 mg. Alternative: slow infusion of 1 mg/mL."
+          },
+          "refs": [
+            {
+              "source": "fda-labetalol-inj",
+              "section": "Dosage and Administration — Repeated Intravenous Injection"
+            },
+            {
+              "source": "fda-labetalol-inj",
+              "section": "Dosage and Administration — Slow Continuous Infusion"
+            }
+          ]
+        }
       ]
     }
   ],
@@ -139,6 +211,20 @@
       "refs": [
         {
           "source": "fda-labetalol",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "inj-ci",
+      "severity": "block",
+      "text": {
+        "fa": "تزریقی: آسم، نارسایی آشکار قلب، بلوک بالاتر از درجه ۱، شوک کاردیوژنیک، برادی‌کاردی شدید، افت فشار شدید طولانی.",
+        "en": "Injection: asthma, overt heart failure, heart block above first degree, cardiogenic shock, severe bradycardia, severe prolonged hypotension."
+      },
+      "refs": [
+        {
+          "source": "fda-labetalol-inj",
           "section": "Contraindications"
         }
       ]
@@ -164,6 +250,18 @@
       "expect": {
         "perDose": 100,
         "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "iv",
+      "formulation": "inj-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 4
       }
     }
   ],
@@ -222,6 +320,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=63ede355-42ec-4c52-a941-51e5f6b35ed6",
       "label": "FDA Labetalol"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abfc6b75-1ed5-41f1-0484-4597488237bc",
+      "label": "FDA Labetalol inj."
     },
     {
       "kind": "medlineplus",
