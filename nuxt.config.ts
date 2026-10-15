@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   i18n: {
     strategy: 'prefix_except_default',
     defaultLocale: 'fa',
-    baseUrl: 'https://cenaav.github.io/doz',
+    baseUrl: 'https://doz.amonproject.com',
     locales: [
       { code: 'fa', language: 'fa-IR', dir: 'rtl', name: 'فارسی', file: 'fa.json' },
       { code: 'en', language: 'en-US', dir: 'ltr', name: 'English', file: 'en.json' },

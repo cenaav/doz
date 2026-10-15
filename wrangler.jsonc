@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "doz",
+  "compatibility_date": "2026-10-15",
+  // Static site only: Cloudflare serves the prerendered Nuxt output, no Worker script.
+  "assets": {
+    "directory": "./.output/public",
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "doz.amonproject.com", "custom_domain": true }]
+}

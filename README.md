@@ -1,7 +1,7 @@
 # doz
 Doz is a source-referenced drug dose calculator that helps physicians prescribe accurately for children and patients of all ages. Choose a drug, indication, age and weight to get the dose, frequency and exact volume, with maximum-dose limits, safety checks and a cited reference for every result.
 
-**Live:** https://cenaav.github.io/doz/
+**Live:** https://doz.amonproject.com (Cloudflare) · mirror: https://cenaav.github.io/doz/
 
 > ⚠️ Doz is a decision-support tool for qualified healthcare professionals. It does not replace clinical judgment, official prescribing information or local guidelines. The data is under clinical review; drugs marked "Unverified" have not been signed off yet. Always check a dose against the original source before prescribing.
 
@@ -47,4 +47,7 @@ Design: [docs/superpowers/specs/2026-10-15-doz-design.md](docs/superpowers/specs
 
 ## Deployment
 
+**Cloudflare (main site, doz.amonproject.com):** `npm run deploy:cf` builds the site and uploads `.output/public` as static assets to the `doz` Worker (`wrangler.jsonc`). Requires `npx wrangler login` once. `public/_headers` gives hashed `/_nuxt/` files a one-year cache.
+
+**GitHub Pages (mirror):** 
 Every push to `main` runs data validation, tests and the static build, then publishes to GitHub Pages (`.github/workflows/deploy.yml`). One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
