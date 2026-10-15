@@ -1,0 +1,226 @@
+{
+  "id": "carboprost",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کاربوپروست",
+    "en": "Carboprost"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "پروستاگلاندین منقبض‌کننده رحم",
+    "en": "Uterotonic prostaglandin"
+  },
+  "brands": [
+    {
+      "name": "Hemabate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "hemabate",
+    "همابیت",
+    "کاربوپروست"
+  ],
+  "formulations": [
+    {
+      "id": "amp-250",
+      "form": "injection",
+      "route": "im",
+      "label": "250 mcg/mL (1 mL) ampoule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-carboprost",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pph",
+      "disease": "postpartum-hemorrhage",
+      "label": {
+        "fa": "خونریزی مقاوم پس از زایمان — ۲۵۰ mcg عضلانی عمیق",
+        "en": "Refractory postpartum haemorrhage — 250 mcg deep IM"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-carboprost",
+          "section": "Dosage and Administration — 2. Refractory Postpartum Uterine Bleeding"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بیشتر موارد با یک تزریق جواب می‌دهند؛ در صورت نیاز تکرار با فاصله ۱۵ تا ۹۰ دقیقه. مجموع حداکثر ۲ mg (۸ دوز).",
+            "en": "Most respond to a single injection; repeat at 15–90 min intervals if needed. Total max 2 mg (8 doses)."
+          },
+          "refs": [
+            {
+              "source": "fda-carboprost",
+              "section": "Dosage and Administration — 2. Refractory Postpartum Uterine Bleeding"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کاربوپروست؛ PID حاد؛ بیماری فعال قلبی، ریوی، کلیوی یا کبدی.",
+        "en": "Hypersensitivity to carboprost; acute PID; active cardiac, pulmonary, renal or hepatic disease."
+      },
+      "refs": [
+        {
+          "source": "fda-carboprost",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "فقط با دوز دقیق و در بیمارستان با امکان مراقبت ویژه و جراحی فوری.",
+        "en": "Strictly at recommended doses, in a hospital with immediate intensive care and surgery."
+      },
+      "refs": [
+        {
+          "source": "fda-carboprost",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pph",
+      "formulation": "amp-250",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "G02AD04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18333",
+        "en": "CARBOPROST 250 MCG  AMP.",
+        "fa": "آمپول کاربوپروست ۲۵۰ میکروگرم ."
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3177/Carboprost",
+        "url": "https://www.darooyab.ir/G-3177/Carboprost"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216882",
+      "label": "ANDA216882"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ae32fdb-e0a9-4742-a90a-5c32ad9269ff",
+      "label": "FDA Carboprost"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G02AD04",
+      "label": "G02AD04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3177/Carboprost",
+      "label": "Carboprost"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: دارو برای ختم بارداری و خونریزی پس از زایمان است، نه بارداری ادامه‌دار؛ ختم ناموفق باید با روش دیگری تکمیل شود.",
+        "en": "Label: used for pregnancy termination and postpartum haemorrhage, not in an ongoing pregnancy; a failed termination must be completed by other means."
+      },
+      "quote": "Although these studies do not indicate that carboprost tromethamine injection is teratogenic, any pregnancy termination with carboprost tromethamine injection that fails should be completed by some other means.",
+      "refs": [
+        {
+          "source": "fda-carboprost",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-carboprost",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-carboprost",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA216882"
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "id": "phenobarbital-neonatal",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فنوباربیتال وریدی (نوزاد)",
+    "en": "Phenobarbital IV (neonatal seizures)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدتشنج باربیتورات",
+    "en": "Barbiturate anticonvulsant"
+  },
+  "brands": [
+    {
+      "name": "Sezaby",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sezaby",
+    "فنوباربیتال",
+    "لومینال"
+  ],
+  "formulations": [
+    {
+      "id": "vial-100",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "100 mg vial (10 mg/mL after reconstitution with 10 mL)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sezaby",
+          "section": "3"
+        },
+        {
+          "source": "fda-sezaby",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "neonatal-seizures",
+      "label": {
+        "fa": "تشنج نوزادی — بارگذاری ۲۰ mg/kg وریدی در ۱۵ دقیقه",
+        "en": "Neonatal seizures — loading 20 mg/kg IV over 15 min"
+      },
+      "population": {
+        "maxAge": {
+          "value": 28,
+          "unit": "day"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 20,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-sezaby",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر ۱۵ دقیقه پس از پایان بارگذاری تشنج ادامه یافت: دوز دوم (نارس ۱۰ یا ۲۰ mg/kg؛ ترم ۲۰ mg/kg). مجموع بارگذاری حداکثر ۴۰ mg/kg. در ورید بزرگ محیطی.",
+            "en": "If seizures persist 15 min after the loading dose: a second dose (preterm 10 or 20 mg/kg; term 20 mg/kg). Total loading max 40 mg/kg. Into a large peripheral vein."
+          },
+          "refs": [
+            {
+              "source": "fda-sezaby",
+              "section": "2.1, Table 1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "در ایران آمپول ۱۰۰ و ۲۰۰ mg/mL (دارویاب) هم هست؛ حجم بالا برای پودر ۱۰ mg/mL است — با آمپول ایرانی حجم را از روی mg و غلظت همان آمپول حساب کنید.",
+            "en": "Iran also has 100 and 200 mg/mL ampoules (Darooyab); the volume shown is for the 10 mg/mL reconstituted powder — with an Iranian ampoule compute the volume from the mg dose and that ampoule’s strength."
+          },
+          "refs": [
+            {
+              "source": "darooyab-generic",
+              "section": "G-677/Phenobarbital"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "neonatal-seizures",
+      "label": {
+        "fa": "تشنج نوزادی — نگهدارنده ۴٫۵ mg/kg/روز (۱٫۵ mg/kg هر ۸ ساعت)",
+        "en": "Neonatal seizures — maintenance 4.5 mg/kg/day (1.5 mg/kg every 8 h)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 28,
+          "unit": "day"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1.5,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-sezaby",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۸ تا ۱۲ ساعت پس از بارگذاری اول شروع. جایگزین: ۲٫۲۵ mg/kg هر ۱۲ ساعت. حداکثر ۵ روز.",
+            "en": "Start 8–12 h after the first loading dose. Alternative: 2.25 mg/kg every 12 h. Max 5 days."
+          },
+          "refs": [
+            {
+              "source": "fda-sezaby",
+              "section": "2.1, Table 1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "در ایران آمپول ۱۰۰ و ۲۰۰ mg/mL (دارویاب) هم هست؛ حجم بالا برای پودر ۱۰ mg/mL است — با آمپول ایرانی حجم را از روی mg و غلظت همان آمپول حساب کنید.",
+            "en": "Iran also has 100 and 200 mg/mL ampoules (Darooyab); the volume shown is for the 10 mg/mL reconstituted powder — with an Iranian ampoule compute the volume from the mg dose and that ampoule’s strength."
+          },
+          "refs": [
+            {
+              "source": "darooyab-generic",
+              "section": "G-677/Phenobarbital"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "پورفیری حاد؛ حساسیت به فنوباربیتال یا باربیتورات‌ها.",
+        "en": "Acute porphyria; hypersensitivity to phenobarbital or barbiturates."
+      },
+      "refs": [
+        {
+          "source": "fda-sezaby",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "vial-100",
+      "input": {
+        "ageDays": 2,
+        "weightKg": 3
+      },
+      "expect": {
+        "perDose": 60,
+        "mlPerDose": 6
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "vial-100",
+      "input": {
+        "ageDays": 3,
+        "weightKg": 3
+      },
+      "expect": {
+        "perDose": 4.5,
+        "mlPerDose": 0.45
+      }
+    }
+  ],
+  "atc": [
+    "N03AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00979",
+        "en": "PHENOBARBITAL 100MG TAB",
+        "fa": "قرص فنوباربیتال ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00980",
+        "en": "PHENOBARBITAL 15MG TAB",
+        "fa": "قرص فنوباربیتال ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "11601",
+        "en": "PHENOBARBITAL 15MG/5ML SYRUP",
+        "fa": "شربت فنوباربیتال ۱۵ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00978",
+        "en": "PHENOBARBITAL 20MG/5ML ELIXIR 60ML",
+        "fa": "الگزیر فنوباربیتال ۲۰ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "00981",
+        "en": "PHENOBARBITAL 30MG TAB",
+        "fa": "قرص فنوباربیتال ۳۰ میلی‌گرم"
+      },
+      {
+        "code": "00982",
+        "en": "PHENOBARBITAL 60MG TAB",
+        "fa": "قرص فنوباربیتال ۶۰ میلی‌گرم"
+      },
+      {
+        "code": "01633",
+        "en": "PHENOBARBITAL SODIUM 100MG/1ML AMP",
+        "fa": "آمپول فنوباربیتال سدیم ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00977",
+        "en": "PHENOBARBITAL SODIUM 200MG/1ML AMP",
+        "fa": "آمپول فنوباربیتال سدیم ۲۰۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "07169",
+        "en": "PHENOBARBITAL SODIUM 200MG/2ML AMP",
+        "fa": "آمپول فنوباربیتال سدیم ۲۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "53088",
+        "en": "PHENOBARBITAL ELIXIR ORAL 15 mg/5mL 60 mL",
+        "fa": "الگزیر فنوباربیتال ۱۵ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-677/Phenobarbital",
+        "url": "https://www.darooyab.ir/G-677/Phenobarbital"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215910",
+      "label": "NDA215910"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8c7d0402-4977-4c25-bc4b-11db91339e9a",
+      "label": "FDA Sezaby"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AA02",
+      "label": "N03AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-677/Phenobarbital",
+      "label": "Phenobarbital"
+    }
+  ],
+  "populations": {
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of SEZABY have been established for the treatment of neonatal seizures in term and preterm infants, and the information on this use is discussed throughout the labeling.",
+      "refs": [
+        {
+          "source": "fda-sezaby",
+          "section": "8.4"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "avoid",
+      "quote": "مصرف در بارداری فنوباربیتال گروه D استفاده نشود:",
+      "text": {
+        "fa": "دارویاب: گروه D — شواهد خطر برای جنین؛ فقط در شرایط ضروری.",
+        "en": "Darooyab: category D — evidence of fetal risk; only when essential."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-677/Phenobarbital — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-677/Phenobarbital"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-sezaby",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA215910"
+  }
+}

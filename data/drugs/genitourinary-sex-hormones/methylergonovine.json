@@ -43,6 +43,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "inj-0-2",
+      "form": "injection",
+      "route": "im",
+      "label": "0.2 mg/mL (1 mL) ampoule",
+      "concentration": {
+        "amount": 0.2,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-methergine-inj",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -74,7 +94,53 @@
       "durationDays": {
         "min": 1,
         "max": 7
-      }
+      },
+      "allowedFormulations": [
+        "tab-0-2"
+      ]
+    },
+    {
+      "id": "pph-inj",
+      "disease": "postpartum-hemorrhage",
+      "label": {
+        "fa": "خونریزی پس از زایمان — ۰٫۲ mg عضلانی (یا وریدی آهسته)، تکرار هر ۲ تا ۴ ساعت",
+        "en": "Postpartum haemorrhage — 0.2 mg IM (or slow IV), repeat every 2–4 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-methergine-inj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "inj-0-2"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عضلانی پس از خروج شانه قدامی، پس از جفت یا در دوره نفاس؛ در صورت نیاز هر ۲ تا ۴ ساعت. وریدی آهسته در حداقل ۶۰ ثانیه.",
+            "en": "IM after delivery of the anterior shoulder, after the placenta or in the puerperium; repeat every 2–4 h as required. IV slowly over at least 60 s."
+          },
+          "refs": [
+            {
+              "source": "fda-methergine-inj",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -88,6 +154,20 @@
       "refs": [
         {
           "source": "fda-methylergonovine",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "inj-ci",
+      "severity": "block",
+      "text": {
+        "fa": "تزریقی: فشار خون بالا، توکسمی (پره‌اکلامپسی)، بارداری، حساسیت.",
+        "en": "Injection: hypertension, toxaemia (pre-eclampsia), pregnancy, hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-methergine-inj",
           "section": "Contraindications"
         }
       ]
@@ -128,6 +208,18 @@
         "perDose": 0.2,
         "tabletsPerDoseRounded": 1
       }
+    },
+    {
+      "regimen": "pph-inj",
+      "formulation": "inj-0-2",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.2,
+        "mlPerDose": 1
+      }
     }
   ],
   "atc": [
@@ -165,6 +257,11 @@
       "kind": "dailymed",
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b49b1e4c-de20-446d-b80a-75c7f0d41ddf",
       "label": "FDA Methylergonovine"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a9a3079e-b62b-4858-920e-d8f5cb38481e",
+      "label": "FDA Methylergonovine inj"
     },
     {
       "kind": "medlineplus",

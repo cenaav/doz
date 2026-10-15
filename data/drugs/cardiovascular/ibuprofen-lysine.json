@@ -1,0 +1,251 @@
+{
+  "id": "ibuprofen-lysine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایبوپروفن لیزین وریدی (نوزاد)",
+    "en": "Ibuprofen lysine IV (neonatal)"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "NSAID برای بستن PDA",
+    "en": "NSAID for PDA closure"
+  },
+  "brands": [
+    {
+      "name": "NeoProfen",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "neoprofen",
+    "نئوپروفن",
+    "ایبوپروفن وریدی نوزاد"
+  ],
+  "formulations": [
+    {
+      "id": "vial-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL (20 mg/2 mL) vial",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neoprofen",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "first",
+      "disease": "pda",
+      "label": {
+        "fa": "PDA نوزاد نارس — دوز اول ۱۰ mg/kg وریدی",
+        "en": "Preterm PDA — first dose 10 mg/kg IV"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-neoprofen",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوزها بر اساس وزن تولد. اگر هنگام دوز دوم یا سوم آنوری یا الیگوری (زیر ۰٫۶ mL/kg/ساعت) بود، تا طبیعی شدن کلیه داده نشود. رقیق و در ۱۵ دقیقه انفوزیون.",
+            "en": "Doses by birth weight. Withhold the 2nd/3rd dose if anuria or oliguria (<0.6 mL/kg/h) until renal function normalises. Dilute and infuse over 15 min."
+          },
+          "refs": [
+            {
+              "source": "fda-neoprofen",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-neoprofen",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "disease": "pda",
+      "label": {
+        "fa": "PDA — دوز دوم و سوم ۵ mg/kg پس از ۲۴ و ۴۸ ساعت",
+        "en": "PDA — 2nd and 3rd doses 5 mg/kg after 24 and 48 h"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 5,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-neoprofen",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 2,
+        "max": 2
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوزها بر اساس وزن تولد. اگر هنگام دوز دوم یا سوم آنوری یا الیگوری (زیر ۰٫۶ mL/kg/ساعت) بود، تا طبیعی شدن کلیه داده نشود. رقیق و در ۱۵ دقیقه انفوزیون.",
+            "en": "Doses by birth weight. Withhold the 2nd/3rd dose if anuria or oliguria (<0.6 mL/kg/h) until renal function normalises. Dilute and infuse over 15 min."
+          },
+          "refs": [
+            {
+              "source": "fda-neoprofen",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-neoprofen",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت درمان‌نشده؛ بیماری قلبی وابسته به PDA؛ خونریزی فعال (داخل جمجمه یا گوارش)؛ ترومبوسیتوپنی؛ اختلال انعقادی؛ NEC؛ اختلال قابل‌توجه کلیه.",
+        "en": "Untreated infection; ductal-dependent congenital heart disease; active bleeding (intracranial or GI); thrombocytopenia; coagulation defects; NEC; significant renal impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-neoprofen",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "first",
+      "formulation": "vial-10",
+      "input": {
+        "ageDays": 3,
+        "weightKg": 1.5
+      },
+      "expect": {
+        "perDose": 15,
+        "mlPerDose": 1.5
+      }
+    },
+    {
+      "regimen": "next",
+      "formulation": "vial-10",
+      "input": {
+        "ageDays": 4,
+        "weightKg": 1.5
+      },
+      "expect": {
+        "perDose": 7.5,
+        "mlPerDose": 0.75
+      }
+    }
+  ],
+  "atc": [
+    "C01EB16"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Ibuprofen%20lysine%20IV"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021903",
+      "label": "NDA021903"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f5ede6f-b0b7-4fc8-969e-652f60ead047",
+      "label": "FDA NeoProfen"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01EB16",
+      "label": "C01EB16"
+    }
+  ],
+  "populations": {
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have only been established in premature infants.",
+      "refs": [
+        {
+          "source": "fda-neoprofen",
+          "section": "8.4"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-neoprofen",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021903"
+  }
+}

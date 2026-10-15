@@ -85,6 +85,80 @@
           ]
         }
       ]
+    },
+    {
+      "id": "lact-inhibit",
+      "disease": "lactation-suppression",
+      "label": {
+        "fa": "جلوگیری از شیردهی — ۱ mg (۲ قرص ۰٫۵) یک‌جا در روز اول پس از زایمان",
+        "en": "Inhibition of lactation — 1 mg (two 0.5 mg tablets) once on the first day postpartum"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "uk-dostinex",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "lact-suppress",
+      "disease": "lactation-suppression",
+      "label": {
+        "fa": "قطع شیردهی برقرارشده — ۰٫۲۵ mg هر ۱۲ ساعت، ۲ روز",
+        "en": "Suppression of established lactation — 0.25 mg every 12 h for 2 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.25,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "uk-dostinex",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 2,
+        "max": 2
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "این رژیم نسبت به دوز یک‌جا بهتر تحمل می‌شود (افت فشار کمتر). همراه غذا.",
+            "en": "Better tolerated than the single dose (less hypotension). With food."
+          },
+          "refs": [
+            {
+              "source": "uk-dostinex",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -99,6 +173,20 @@
         {
           "source": "fda-cabergoline",
           "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "uk-ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ارگوت‌ها؛ سابقه فیبروز ریه، پریکارد یا رتروپریتوئن؛ نارسایی کبد؛ توکسمی بارداری؛ مصرف همزمان آنتی‌سایکوتیک؛ سابقه سایکوز پس از زایمان.",
+        "en": "Ergot hypersensitivity; history of pulmonary, pericardial or retroperitoneal fibrosis; hepatic insufficiency; toxaemia of pregnancy; concomitant antipsychotics; history of puerperal psychosis."
+      },
+      "refs": [
+        {
+          "source": "uk-dostinex",
+          "section": "4.3"
         }
       ]
     }
@@ -119,6 +207,30 @@
       "input": {
         "ageYears": 30,
         "weightKg": 60
+      },
+      "expect": {
+        "perDose": 0.25,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "lact-inhibit",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "lact-suppress",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 70
       },
       "expect": {
         "perDose": 0.25,
@@ -186,6 +298,11 @@
       "kind": "darooyab",
       "url": "https://www.darooyab.ir/G-2486/Cabergoline",
       "label": "Cabergoline"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/1691/smpc",
+      "label": "UK Dostinex SmPC"
     }
   ],
   "populations": {

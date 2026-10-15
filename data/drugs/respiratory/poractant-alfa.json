@@ -1,0 +1,310 @@
+{
+  "id": "poractant-alfa",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پوراکتانت آلفا (سورفکتانت)",
+    "en": "Poractant alfa (surfactant)"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "سورفکتانت ریوی",
+    "en": "Pulmonary surfactant"
+  },
+  "brands": [
+    {
+      "name": "Curosurf",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "curosurf",
+    "کوروسرف",
+    "سورفکتانت"
+  ],
+  "formulations": [
+    {
+      "id": "vial-80",
+      "form": "suspension",
+      "route": "inhaled",
+      "label": "80 mg/mL (120 mg/1.5 mL; 240 mg/3 mL) intratracheal suspension",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-curosurf",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "initial",
+      "disease": "neonatal-rds",
+      "label": {
+        "fa": "RDS نوزاد نارس — دوز اول ۲٫۵ mL/kg (۲۰۰ mg/kg) داخل تراشه",
+        "en": "Preterm RDS — initial 2.5 mL/kg (200 mg/kg) intratracheal"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 200,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-curosurf",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس وزن تولد. فقط داخل تراشه توسط پزشک باتجربه در اینتوباسیون و مراقبت نوزاد نارس.",
+            "en": "Based on birth weight. Intratracheal only, by clinicians experienced in intubation and preterm care."
+          },
+          "refs": [
+            {
+              "source": "fda-curosurf",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-curosurf",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repeat",
+      "disease": "neonatal-rds",
+      "label": {
+        "fa": "RDS — تکرار ۱٫۲۵ mL/kg (۱۰۰ mg/kg) با فاصله حدود ۱۲ ساعت، حداکثر ۲ بار",
+        "en": "RDS — repeat 1.25 mL/kg (100 mg/kg) about 12 h apart, up to 2 times"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 100,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-curosurf",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "مجموع دوز اول و تکرارها حداکثر ۵ mL/kg.",
+            "en": "Total of initial and repeat doses max 5 mL/kg."
+          },
+          "refs": [
+            {
+              "source": "fda-curosurf",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "initial",
+      "formulation": "vial-80",
+      "input": {
+        "ageDays": 1,
+        "weightKg": 1.5
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 3.75
+      }
+    },
+    {
+      "regimen": "repeat",
+      "formulation": "vial-80",
+      "input": {
+        "ageDays": 1,
+        "weightKg": 1.5
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 1.88
+      }
+    }
+  ],
+  "atc": [
+    "R07AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "16889",
+        "en": "BERACTANT 100MG/4ML VIAL",
+        "fa": "ویال براکتانت ۱۰۰ میلی‌گرم / ۴ میلی‌لیتر"
+      },
+      {
+        "code": "02372",
+        "en": "BERACTANT 200MG/8ML INTRATRACHEAL INJ",
+        "fa": "فرآورده تزریقی براکتانت ۲۰۰ میلی‌گرم / ۸ میلی‌لیتر اینتراتراچال"
+      },
+      {
+        "code": "04254",
+        "en": "BOVACTANT 50MG/1.2ML AMP",
+        "fa": "آمپول بوواکتانت ۵۰ میلی‌گرم / ۱٫۲ میلی‌لیتر"
+      },
+      {
+        "code": "21266",
+        "en": "BOVINE LIPID EXTRACT SURFACTANT 27MG/ML INJ",
+        "fa": "فرآورده تزریقی گاوی لیپید عصاره سورفکتانت ۲۷ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "11244",
+        "en": "BOVINE LUNG SURFACTANT 120MG/4ML VIAL",
+        "fa": "ویال گاوی لونگ سورفکتانت ۱۲۰ میلی‌گرم / ۴ میلی‌لیتر"
+      },
+      {
+        "code": "09351",
+        "en": "PORACTANT 120MG/1.5ML AMP",
+        "fa": "آمپول پوراکتانت ۱۲۰ میلی‌گرم / ۱٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "08501",
+        "en": "PORACTANT 240MG/3ML AMP",
+        "fa": "آمپول پوراکتانت ۲۴۰      میلی‌گرم / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "04255",
+        "en": "PORACTANT 80MG/1ML AMP",
+        "fa": "آمپول پوراکتانت ۸۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01368",
+        "en": "COLFOSCERIL PALMITATE INTRATRACHEAL VIAL",
+        "fa": "ویال کولفوسسریل پالمیتات اینتراتراچال"
+      },
+      {
+        "code": "52040",
+        "en": "CALFACTANT SUSPENSION ENDOTRACHEAL 35 mg/1mL 3 mL",
+        "fa": "کالفاکتانت اندوتراچال ۳۵ میلی‌گرم / ۱ میلی‌لیتر ۳ میلی‌لیتر"
+      },
+      {
+        "code": "52041",
+        "en": "CALFACTANT SUSPENSION ENDOTRACHEAL 35 mg/1mL 6 mL",
+        "fa": "کالفاکتانت اندوتراچال ۳۵ میلی‌گرم / ۱ میلی‌لیتر ۶ میلی‌لیتر"
+      },
+      {
+        "code": "52058",
+        "en": "PORACTANT ALFA INJECTION ENDOTRACHEAL 80 mg/1mL 1.5 mL",
+        "fa": "فرآورده تزریقی پوراکتانت آلفا اندوتراچال ۸۰ میلی‌گرم / ۱ میلی‌لیتر ۱٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "51720",
+        "en": "SUPERPARAMAGNETIC DEXTRAN NANOPARTICLES INJECTION, SUSPENSION PARENTERAL 13 %/87 % 10 mL",
+        "fa": "سوسپانسیون تزریقی سوپرپاراماگنتیک دکستران نانوپارتیکلس ۱۳ درصد / ۸۷ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "53060",
+        "en": "SURFACTANT (BOVINE LIPID EXTRACT) INJECTION, SUSPENSION TRANSTRACHEAL 27 mg/1mL 3 mL",
+        "fa": "فرآورده تزریقی سورفکتانت (گاوی لیپید عصاره) ترانستراچال ۲۷ میلی‌گرم / ۱ میلی‌لیتر ۳ میلی‌لیتر"
+      },
+      {
+        "code": "53059",
+        "en": "SURFACTANT (BOVINE LIPID EXTRACT) INJECTION, SUSPENSION TRANSTRACHEAL 27 mg/1mL 4 mL",
+        "fa": "فرآورده تزریقی سورفکتانت (گاوی لیپید عصاره) ترانستراچال ۲۷ میلی‌گرم / ۱ میلی‌لیتر ۴ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4160/Pulmonary-Surfactants",
+        "url": "https://www.darooyab.ir/G-4160/Pulmonary-Surfactants"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020744",
+      "label": "BLA020744"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=99bef307-00bd-4379-9f45-ede1380e74d4",
+      "label": "FDA Curosurf"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R07AA02",
+      "label": "R07AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4160/Pulmonary-Surfactants",
+      "label": "Pulmonary-Surfactants"
+    }
+  ],
+  "populations": {
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of CUROSURF for the rescue treatment, including the reduction of mortality and pneumothoraces, of Respiratory Distress Syndrome (RDS) have been established in premature infants and the information on this use is discussed throughout the labeling.",
+      "refs": [
+        {
+          "source": "fda-curosurf",
+          "section": "8.4"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-curosurf",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA020744"
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "id": "elagolix",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "الاگولیکس",
+    "en": "Elagolix"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "آنتاگونیست GnRH خوراکی",
+    "en": "Oral GnRH antagonist"
+  },
+  "brands": [
+    {
+      "name": "Orilissa",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "orilissa",
+    "اوریلیسا",
+    "الاگولیکس"
+  ],
+  "formulations": [
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-orilissa",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-orilissa",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "endometriosis",
+      "label": {
+        "fa": "درد آندومتریوز — ۱۵۰ mg یک بار در روز (حداکثر ۲۴ ماه)",
+        "en": "Endometriosis pain — 150 mg once daily (max 24 months)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 150,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-orilissa",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-150"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع بارداری رد شود یا ظرف ۷ روز از شروع قاعدگی شروع شود. نارسایی متوسط کبد: فقط ۱۵۰ mg و حداکثر ۶ ماه.",
+            "en": "Exclude pregnancy or start within 7 days of menses. Moderate hepatic impairment: 150 mg only, max 6 months."
+          },
+          "refs": [
+            {
+              "source": "fda-orilissa",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-orilissa",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dysp",
+      "disease": "endometriosis",
+      "label": {
+        "fa": "درد آندومتریوز با دیسپارونی — ۲۰۰ mg دو بار در روز (حداکثر ۶ ماه)",
+        "en": "Endometriosis pain with dyspareunia — 200 mg twice daily (max 6 months)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-orilissa",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-200"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری؛ استئوپوروز؛ نارسایی شدید کبد؛ مهارکننده‌های قوی OATP1B1؛ حساسیت.",
+        "en": "Pregnancy; osteoporosis; severe hepatic impairment; strong OATP1B1 inhibitors; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-orilissa",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کاهش تراکم استخوان وابسته به دوز و مدت؛ مدت مصرف محدود شود.",
+        "en": "Dose- and duration-dependent bone loss; limit duration of use."
+      },
+      "refs": [
+        {
+          "source": "fda-orilissa",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "dysp",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "H01CC03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5571/Elagolix",
+        "url": "https://www.darooyab.ir/G-5571/Elagolix"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210450",
+      "label": "NDA210450"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a86757b3-09c5-fd3b-1223-244e94f50a66",
+      "label": "FDA Orilissa"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618044.html",
+      "label": "Elagolix"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H01CC03",
+      "label": "H01CC03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5571/Elagolix",
+      "label": "Elagolix"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "ORILISSA is contraindicated in women: Who are pregnant [see Use in Specific Populations ( 8.1 )] .",
+      "refs": [
+        {
+          "source": "fda-orilissa",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information on the presence of elagolix or its metabolites in human milk, the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-orilissa",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of ORILISSA in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-orilissa",
+          "section": "8.4"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Advise women to use effective non-hormonal contraception during treatment with ORILISSA and for 28 days after discontinuing ORILISSA [see Warnings and Precautions ( 5.5 )] .",
+      "refs": [
+        {
+          "source": "fda-orilissa",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-orilissa",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA210450"
+  }
+}

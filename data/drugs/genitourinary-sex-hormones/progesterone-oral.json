@@ -1,0 +1,361 @@
+{
+  "id": "progesterone-oral",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پروژسترون خوراکی (میکرونیزه)",
+    "en": "Progesterone (oral, micronised)"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "پروژستین",
+    "en": "Progestogen"
+  },
+  "brands": [
+    {
+      "name": "Prometrium",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "prometrium",
+    "utrogestan",
+    "پروژسترون",
+    "اوتروژستان"
+  ],
+  "formulations": [
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prometrium",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-200",
+      "form": "capsule",
+      "route": "oral",
+      "label": "200 mg capsule",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prometrium",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hrt",
+      "disease": "menopause-symptoms",
+      "label": {
+        "fa": "همراه استروژن در یائسگی با رحم — ۲۰۰ mg شب‌ها، ۱۲ روز از هر ۲۸ روز",
+        "en": "With oestrogen in postmenopausal women with a uterus — 200 mg at bedtime, 12 days per 28-day cycle"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-prometrium",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 12,
+        "max": 12
+      }
+    },
+    {
+      "id": "amen",
+      "disease": "secondary-amenorrhea",
+      "label": {
+        "fa": "آمنوره ثانویه — ۴۰۰ mg شب‌ها، ۱۰ روز",
+        "en": "Secondary amenorrhoea — 400 mg at bedtime, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-prometrium",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت (حاوی روغن بادام‌زمینی)؛ خونریزی نامشخص تناسلی؛ سرطان پستان؛ DVT/PE یا ترومبوز شریانی فعال یا سابقه آن؛ بیماری کبد.",
+        "en": "Hypersensitivity (contains peanut oil); undiagnosed genital bleeding; breast cancer; active or past DVT/PE or arterial thrombosis; liver disease."
+      },
+      "refs": [
+        {
+          "source": "fda-prometrium",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "اختلالات قلبی‌عروقی: در PE، DVT، سکته یا MI فوراً قطع؛ ۴ تا ۶ هفته پیش از جراحی پرخطر قطع شود.",
+        "en": "Cardiovascular disorders: stop immediately if PE, DVT, stroke or MI; stop 4–6 weeks before high-risk surgery."
+      },
+      "refs": [
+        {
+          "source": "fda-prometrium",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hrt",
+      "formulation": "cap-200",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "amen",
+      "formulation": "cap-200",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "G03DA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18897",
+        "en": "PROGESTERONE 100MG  CAP.",
+        "fa": "کپسول پروژسترون ۱۰۰ میلی‌گرم ."
+      },
+      {
+        "code": "19093",
+        "en": "PROGESTERONE 100MG VAG TAB",
+        "fa": "قرص واژینال پروژسترون ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "18898",
+        "en": "PROGESTERONE 200MG  CAP.",
+        "fa": "کپسول پروژسترون ۲۰۰ میلی‌گرم ."
+      },
+      {
+        "code": "02534",
+        "en": "PROGESTERONE 200MG PESSARY",
+        "fa": "پروژسترون ۲۰۰ میلی‌گرم پسساری"
+      },
+      {
+        "code": "02355",
+        "en": "PROGESTERONE 200MG VAG SUPP",
+        "fa": "شیاف پروژسترون ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01057",
+        "en": "PROGESTERONE 25MG/1ML AMP",
+        "fa": "آمپول پروژسترون ۲۵ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "02082",
+        "en": "PROGESTERONE 400MG SUPP",
+        "fa": "شیاف پروژسترون ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01059",
+        "en": "PROGESTERONE 400MG VAG SUPP",
+        "fa": "شیاف پروژسترون ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01058",
+        "en": "PROGESTERONE 50MG/1ML AMP",
+        "fa": "آمپول پروژسترون ۵۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "14624",
+        "en": "PROGESTERONE 80G GEL",
+        "fa": "ژل پروژسترون ۸۰ گرم"
+      },
+      {
+        "code": "01056",
+        "en": "PROGESTERONE_BULK",
+        "fa": "ماده اولیه پروژسترون"
+      },
+      {
+        "code": "52265",
+        "en": "PROGESTERONE GEL VAGINAL 8 % 22.5 g",
+        "fa": "ژل پروژسترون ۸ درصد ۲۲٫۵ گرم"
+      },
+      {
+        "code": "53109",
+        "en": "PROGESTERONE INJECTION PARENTERAL 25 mg/1mL 2 mL",
+        "fa": "فرآورده تزریقی پروژسترون ۲۵ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3304/Progesterone",
+        "url": "https://www.darooyab.ir/G-3304/Progesterone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019781",
+      "label": "NDA019781"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1cf237ff-c4f8-4faa-a7aa-77599c856889",
+      "label": "FDA Prometrium"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604017.html",
+      "label": "Progesterone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a623013.html",
+      "label": "Progesterone Vaginal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03DA04",
+      "label": "G03DA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3304/Progesterone",
+      "label": "Progesterone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "PROMETRIUM Capsules should not be used during pregnancy.",
+      "refs": [
+        {
+          "source": "fda-prometrium",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "PROMETRIUM Capsules are not indicated in children.",
+      "refs": [
+        {
+          "source": "fda-prometrium",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… Study In the Women's Health Initiative Memory Study (WHIMS) of postmenopausal women 65 to 79 years of age, there was an increased risk of developing probable dementia in the estrogen plus progestin ancillary study when compared to placebo.",
+      "refs": [
+        {
+          "source": "fda-prometrium",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-prometrium",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019781"
+  }
+}

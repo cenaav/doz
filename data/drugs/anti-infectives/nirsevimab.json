@@ -1,0 +1,268 @@
+{
+  "id": "nirsevimab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نیرسویماب",
+    "en": "Nirsevimab"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "آنتی‌بادی مونوکلونال ضد RSV",
+    "en": "Anti-RSV monoclonal antibody"
+  },
+  "brands": [
+    {
+      "name": "Beyfortus",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "beyfortus",
+    "بیفورتوس",
+    "نیرسویماب"
+  ],
+  "formulations": [
+    {
+      "id": "syr-50",
+      "form": "injection",
+      "route": "im",
+      "label": "50 mg/0.5 mL prefilled syringe",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-beyfortus",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "syr-100",
+      "form": "injection",
+      "route": "im",
+      "label": "100 mg/mL prefilled syringe",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-beyfortus",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "first",
+      "disease": "rsv-prophylaxis",
+      "label": {
+        "fa": "فصل اول RSV — زیر ۵ kg: ۵۰ mg؛ ۵ kg و بیشتر: ۱۰۰ mg عضلانی یک‌بار",
+        "en": "First RSV season — <5 kg: 50 mg; ≥5 kg: 100 mg IM once"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 4.99,
+            "perDose": 50,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 5,
+            "maxWeightKg": null,
+            "perDose": 100,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-beyfortus",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "متولدین فصل RSV: از بدو تولد. متولدین خارج فصل: یک بار پیش از شروع فصل. فصل دوم برای کودک پرخطر تا ۲۴ ماه: ۲۰۰ mg بدون توجه به وزن. با واکسن‌های کودکی همزمان (سرنگ و محل جدا).",
+            "en": "Born during the RSV season: from birth. Born outside the season: once before the season starts. Second season for high-risk children up to 24 months: 200 mg regardless of weight. Can be given with childhood vaccines (separate syringe and site)."
+          },
+          "refs": [
+            {
+              "source": "fda-beyfortus",
+              "section": "2.1, Table 1"
+            },
+            {
+              "source": "fda-beyfortus",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت جدی (از جمله آنافیلاکسی) به نیرسویماب.",
+        "en": "History of serious hypersensitivity (including anaphylaxis) to nirsevimab."
+      },
+      "refs": [
+        {
+          "source": "fda-beyfortus",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "first",
+      "formulation": "syr-50",
+      "input": {
+        "ageMonths": 1,
+        "weightKg": 4
+      },
+      "expect": {
+        "perDose": 50,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "first",
+      "formulation": "syr-100",
+      "input": {
+        "ageMonths": 5,
+        "weightKg": 7
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "J06BD08"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Nirsevimab"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761328",
+      "label": "BLA761328"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f08fa60-f674-432d-801b-1f9514bd9b39",
+      "label": "FDA Beyfortus"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a623033.html",
+      "label": "Nirsevimab-alip"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J06BD08",
+      "label": "J06BD08"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "no-data",
+      "text": {
+        "fa": "برچسب: داروی نوزاد/شیرخوار است و برای زنان بزرگسال اندیکاسیون ندارد.",
+        "en": "Label: an infant product; not indicated for adult women."
+      },
+      "quote": "BEYFORTUS is not indicated for use in females of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-beyfortus",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "no-data",
+      "text": {
+        "fa": "برچسب: داروی نوزاد/شیرخوار است و برای زنان بزرگسال اندیکاسیون ندارد.",
+        "en": "Label: an infant product; not indicated for adult women."
+      },
+      "quote": "BEYFORTUS is not indicated for use in females of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-beyfortus",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of BEYFORTUS have been established for the prevention of RSV lower respiratory tract disease in neonates and infants born during or entering their first RSV season and in children up to 24 months of age who remain vulnerable to severe RSV disease through their second RSV season.",
+      "refs": [
+        {
+          "source": "fda-beyfortus",
+          "section": "8.4"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-beyfortus",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761328"
+  }
+}

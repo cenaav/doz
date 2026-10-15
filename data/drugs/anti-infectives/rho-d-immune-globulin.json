@@ -1,0 +1,257 @@
+{
+  "id": "rho-d-immune-globulin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایمونوگلوبولین Rh (آنتی‌D، رگام)",
+    "en": "Rho(D) immune globulin (anti-D)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ایمونوگلوبولین اختصاصی",
+    "en": "Specific immune globulin"
+  },
+  "brands": [
+    {
+      "name": "RhoGAM",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rhogam",
+    "رگام",
+    "آنتی دی",
+    "anti-D",
+    "روگام"
+  ],
+  "formulations": [
+    {
+      "id": "syr-300",
+      "form": "injection",
+      "route": "im",
+      "label": "300 mcg (1500 IU) prefilled syringe",
+      "concentration": {
+        "amount": 300,
+        "unit": "mcg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rhogam",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "rh-prophylaxis",
+      "label": {
+        "fa": "مادر Rh منفی — ۳۰۰ mcg عضلانی (هفته ۲۶ تا ۲۸، پس از زایمان، سقط یا عارضه)",
+        "en": "Rh-negative mother — 300 mcg IM (26–28 weeks, postpartum, abortion or complication)"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rhogam",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بارداری: هفته ۲۶ تا ۲۸. پس از زایمان (اگر نوزاد Rh مثبت): ظرف ۷۲ ساعت. سقط، حاملگی خارج رحمی، روش تهاجمی یا ترومای بعد از ۱۳ هفته: ظرف ۷۲ ساعت. خونریزی جنینی-مادری بیش از ۱۵ mL گلبول قرمز: ۲۰ mcg به ازای هر mL گلبول قرمز Rh مثبت، گرد به سرنگ کامل بعدی.",
+            "en": "Pregnancy: 26–28 weeks. Postpartum (if newborn Rh-positive): within 72 h. Abortion, ectopic, invasive procedure or trauma after 13 weeks: within 72 h. Fetal-maternal haemorrhage >15 mL red cells: 20 mcg per mL of Rh-positive red cells, rounded up to the next whole syringe."
+          },
+          "refs": [
+            {
+              "source": "fda-rhogam",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "افراد Rh مثبت؛ سابقه آنافیلاکسی یا واکنش سیستمیک شدید به ایمونوگلوبولین انسانی.",
+        "en": "Rh-positive individuals; history of anaphylaxis or severe systemic reaction to human immune globulin."
+      },
+      "refs": [
+        {
+          "source": "fda-rhogam",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "syr-300",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300
+      }
+    }
+  ],
+  "atc": [
+    "J06BB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02370",
+        "en": "ANTI- D IMMUNE GLOBULIN 100MCG/2ML AMP",
+        "fa": "آمپول ضد–D ایمونوگلوبولین ۱۰۰ میکروگرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "01098",
+        "en": "ANTI- D IMMUNE GLOBULIN 250 MCG AMP",
+        "fa": "آمپول ضد–D ایمونوگلوبولین ۲۵۰ میکروگرم"
+      },
+      {
+        "code": "01099",
+        "en": "ANTI- D IMMUNE GLOBULIN 300 MCG INJ",
+        "fa": "فرآورده تزریقی ضد–D ایمونوگلوبولین ۳۰۰ میکروگرم"
+      },
+      {
+        "code": "52345",
+        "en": "ANTI-D IMMUNOGLOBULIN INJECTION, SOLUTION INTRAMUSCULAR 300 ug/2mL",
+        "fa": "فرآورده تزریقی ضد–D ایمونوگلوبولین ۳۰۰ میکروگرم / ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3426/Anti-D-Immunoglobulin-IM",
+        "url": "https://www.darooyab.ir/G-3426/Anti-D-Immunoglobulin-IM"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103777",
+      "label": "BLA103777"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d87e4d0b-2442-4135-b3f9-5c4f74845b87",
+      "label": "FDA RhoGAM"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J06BB01",
+      "label": "J06BB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3426/Anti-D-Immunoglobulin-IM",
+      "label": "Anti-D-Immunoglobulin-IM"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "RhoGAM is indicated for administration to Rh-negative women not previously sensitized to the Rho(D) factor, unless the father or baby are conclusively Rh-negative, in case of: Delivery of an Rh-positive baby irrespective of the ABO groups of the mother and baby Antepartum prophylaxis at 26 to 28 weeks gestation …",
+      "refs": [
+        {
+          "source": "fda-rhogam",
+          "section": "1.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary RhoGAM can be used during breastfeeding.",
+      "refs": [
+        {
+          "source": "fda-rhogam",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-rhogam",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "No clinical studies have been performed in geriatric subjects.",
+      "refs": [
+        {
+          "source": "fda-rhogam",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-rhogam",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103777"
+  }
+}
