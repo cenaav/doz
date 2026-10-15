@@ -1,0 +1,216 @@
+{
+  "id": "pioglitazone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پیوگلیتازون",
+    "en": "Pioglitazone"
+  },
+  "category": "endocrine",
+  "class": {
+    "fa": "تیازولیدین‌دیون",
+    "en": "Thiazolidinedione"
+  },
+  "brands": [
+    {
+      "name": "Actos",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "actos",
+    "اکتوس",
+    "پیوگلیتازون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-pioglitazone",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg tablet",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-pioglitazone",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-45",
+      "form": "tablet",
+      "route": "oral",
+      "label": "45 mg tablet",
+      "concentration": {
+        "amount": 45,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-pioglitazone",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ — شروع ۱۵ یا ۳۰ mg یک بار در روز",
+        "en": "Type 2 diabetes — start 15 or 30 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "perDoseMax": 30,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-pioglitazone-b",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-pioglitazone-b",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 45,
+        "refs": [
+          {
+            "source": "fda-pioglitazone-b",
+            "section": "2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نارسایی قلبی NYHA I–II: شروع ۱۵ mg. افزایش ۱۵ mg تا حداکثر ۴۵. با جم‌فیبروزیل یا مهارکننده قوی CYP2C8 حداکثر ۱۵ mg.",
+            "en": "NYHA I–II heart failure: start 15 mg. Increase by 15 mg up to 45. With gemfibrozil or strong CYP2C8 inhibitors max 15 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-pioglitazone-b",
+              "section": "2"
+            },
+            {
+              "source": "fda-pioglitazone-b",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peds",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "زیر ۱۸ سال",
+        "en": "Under 18 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "در کودکان توصیه نمی‌شود.",
+          "en": "Not recommended in children."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-pioglitazone-b",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hf",
+      "severity": "block",
+      "text": {
+        "fa": "هشدار جعبه‌ای: شروع در نارسایی قلبی NYHA III یا IV ممنوع است.",
+        "en": "Boxed warning: initiation in NYHA class III or IV heart failure is contraindicated."
+      },
+      "refs": [
+        {
+          "source": "fda-pioglitazone-b",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-15",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 15,
+        "upperPerDose": 30
+      }
+    }
+  ]
+}

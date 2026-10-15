@@ -1,0 +1,219 @@
+{
+  "id": "empagliflozin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "امپاگلیفلوزین",
+    "en": "Empagliflozin"
+  },
+  "category": "endocrine",
+  "class": {
+    "fa": "مهارکننده SGLT2",
+    "en": "SGLT2 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Jardiance",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "jardiance",
+    "جاردیانس",
+    "امپاگلیفلوزین",
+    "SGLT2"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2dm",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ — ۱۰ سال به بالا: ۱۰ mg صبح",
+        "en": "Type 2 diabetes — ≥10 y: 10 mg in the morning"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 25,
+        "refs": [
+          {
+            "source": "fda-jardiance",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "برای کنترل بیشتر در صورت تحمل ۲۵ mg. برای کنترل قند با eGFR کمتر از ۳۰ توصیه نمی‌شود. کم‌آبی پیش از شروع اصلاح شود.",
+            "en": "If tolerated may increase to 25 mg for more control. Not recommended for glycaemic control with eGFR <30. Correct volume depletion first."
+          },
+          "refs": [
+            {
+              "source": "fda-jardiance",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-jardiance",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hf",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی قلبی / بیماری مزمن کلیه — بزرگسال: ۱۰ mg",
+        "en": "Heart failure / CKD — adults: 10 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "2.2, Table 1"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به امپاگلیفلوزین (از جمله آنژیوادم).",
+        "en": "Hypersensitivity to empagliflozin (including angioedema)."
+      },
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "under-10",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۰ سال ثابت نشده.",
+        "en": "Not established under 10 years."
+      },
+      "refs": [
+        {
+          "source": "fda-jardiance",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2dm",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 10
+      }
+    },
+    {
+      "regimen": "hf",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ]
+}
