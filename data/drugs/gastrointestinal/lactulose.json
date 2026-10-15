@@ -1,0 +1,157 @@
+{
+  "id": "lactulose",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لاکتولوز",
+    "en": "Lactulose"
+  },
+  "category": "gastrointestinal",
+  "class": {
+    "fa": "ملین اسموتیک",
+    "en": "Osmotic laxative"
+  },
+  "brands": [],
+  "synonyms": [
+    "لاکتولوز شربت"
+  ],
+  "formulations": [
+    {
+      "id": "sol-10g-15",
+      "form": "solution",
+      "route": "oral",
+      "label": "10 g / 15 mL",
+      "concentration": {
+        "amount": 10,
+        "unit": "g",
+        "perVolumeMl": 15
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pediatric",
+      "disease": "constipation",
+      "label": {
+        "fa": "کودکان",
+        "en": "Pediatric patients"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بی‌خطری و اثربخشی در کودکان در این برچسب ثابت نشده است؛ دوز محاسبه نمی‌شود.",
+          "en": "Safety and effectiveness in pediatric patients have not been established in this label; no dose is calculated."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "constipation",
+      "label": {
+        "fa": "بزرگسالان — ۱۵ mL روزانه",
+        "en": "Adults — 15 mL daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 60,
+        "refs": [
+          {
+            "source": "fda-lactulose",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز معمول ۱۵ تا ۳۰ mL روزانه؛ در صورت نیاز تا ۶۰ mL روزانه. ۲۴ تا ۴۸ ساعت ممکن است تا اجابت مزاج طول بکشد.",
+            "en": "Usual dose 15–30 mL daily; may increase to 60 mL daily if necessary. 24–48 h may be required to produce a bowel movement."
+          },
+          "refs": [
+            {
+              "source": "fda-lactulose",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "low-galactose-diet",
+      "severity": "block",
+      "text": {
+        "fa": "بیمارانی که رژیم کم‌گالاکتوز نیاز دارند.",
+        "en": "Patients who require a low-galactose diet."
+      },
+      "refs": [
+        {
+          "source": "fda-lactulose",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "sol-10g-15",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15,
+        "mlPerDose": 15
+      }
+    }
+  ]
+}

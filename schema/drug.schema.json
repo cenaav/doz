@@ -86,7 +86,6 @@
         "required": [
           "id",
           "severity",
-          "rule",
           "text",
           "refs"
         ],
@@ -101,7 +100,8 @@
             ]
           },
           "rule": {
-            "$ref": "#/$defs/range"
+            "$ref": "#/$defs/range",
+            "description": "Age/weight range in which the contraindication applies. Omit for non-age conditions (e.g. allergy); those are shown but never evaluated by the engine."
           },
           "text": {
             "$ref": "#/$defs/text"
@@ -734,7 +734,8 @@
                     "required": [
                       "minWeightKg",
                       "maxWeightKg"
-                    ]
+                    ],
+                    "type": "object"
                   }
                 ]
               }
@@ -817,7 +818,8 @@
                       "intervalHours"
                     ]
                   }
-                ]
+                ],
+                "type": "object"
               }
             }
           }
@@ -836,7 +838,8 @@
                 "required": [
                   "perDose",
                   "dosesPerDay"
-                ]
+                ],
+                "type": "object"
               }
             }
           }
@@ -854,7 +857,8 @@
               "dose": {
                 "required": [
                   "bands"
-                ]
+                ],
+                "type": "object"
               }
             }
           }
@@ -873,7 +877,8 @@
                 "required": [
                   "perM2PerDay",
                   "dividedDoses"
-                ]
+                ],
+                "type": "object"
               }
             }
           }
@@ -892,7 +897,8 @@
                 "required": [
                   "days",
                   "dividedDoses"
-                ]
+                ],
+                "type": "object"
               }
             }
           }
@@ -922,7 +928,8 @@
                       "weightBands"
                     ]
                   }
-                ]
+                ],
+                "type": "object"
               }
             }
           }
@@ -940,7 +947,8 @@
               "dose": {
                 "required": [
                   "reason"
-                ]
+                ],
+                "type": "object"
               }
             }
           }

@@ -77,7 +77,7 @@ export interface Regimen {
   notes?: Note[]
 }
 
-export interface Contraindication { id: string; severity: 'block' | 'warn'; rule: Range; text: I18nText; refs: Ref[] }
+export interface Contraindication { id: string; severity: 'block' | 'warn'; rule?: Range; text: I18nText; refs: Ref[] }
 export interface RenalRule { egfrBelow: number; severity: 'block' | 'warn'; text: I18nText; refs: Ref[] }
 export interface Example {
   regimen: string

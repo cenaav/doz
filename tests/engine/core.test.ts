@@ -13,6 +13,10 @@ describe('age', () => {
     expect(inRange({ ageDays: yr(2), weightKg: 12 }, r)).toBe(false)
     expect(inRange({ ageDays: yr(1.999), weightKg: 12 }, r)).toBe(true)
   })
+  test('maxWeightKg is inclusive (labels say "≤ 40 kg")', () => {
+    expect(inRange({ ageDays: yr(5), weightKg: 40 }, { maxWeightKg: 40 })).toBe(true)
+    expect(inRange({ ageDays: yr(5), weightKg: 40.1 }, { maxWeightKg: 40 })).toBe(false)
+  })
 })
 
 describe('rounding', () => {
@@ -84,6 +88,13 @@ describe('input validation and safety', () => {
     })
     expect(calculate(c, 'r0', 'f', { ageDays: mo(3), weightKg: 6 }).status).toBe('blocked')
     expect(calculate(c, 'r0', 'f', { ageDays: mo(7), weightKg: 8 }).status).toBe('ok')
+  })
+  test('contraindication without rule is informational only', () => {
+    const c = drug([{ dose: { perKgPerDay: 30, dividedDoses: 3 } }], undefined, {
+      contraindications: [{ id: 'allergy', severity: 'block', text: { en: 'beta-lactam allergy' }, refs: R }],
+    })
+    const r = calculate(c, 'r0', 'f', { ageDays: yr(3), weightKg: 14 })
+    expect(r.status).toBe('ok'); expect(r.blocks).toEqual([])
   })
   test('warn contraindication adds warning', () => {
     const c = drug([{ dose: { perKgPerDay: 30, dividedDoses: 3 } }], undefined, {

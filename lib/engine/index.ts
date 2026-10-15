@@ -42,7 +42,7 @@ export function calculate(drug: Drug, regimenId: string, formulationId: string, 
   res.warnings.push(...plausibilityWarnings(p))
 
   for (const c of drug.contraindications) {
-    if (!inRange(p, c.rule)) continue
+    if (!c.rule || !inRange(p, c.rule)) continue
     const msg = { code: 'CONTRAINDICATION', text: c.text, refs: c.refs }
     ;(c.severity === 'block' ? res.blocks : res.warnings).push(msg)
     refs.push(...c.refs)

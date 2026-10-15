@@ -14,6 +14,6 @@ export function inRange(p: Patient, r: Range): boolean {
   if (r.minAge && p.ageDays < toDays(r.minAge)) return false
   if (r.maxAge && p.ageDays >= toDays(r.maxAge)) return false
   if (r.minWeightKg != null && p.weightKg < r.minWeightKg) return false
-  if (r.maxWeightKg != null && p.weightKg >= r.maxWeightKg) return false
+  if (r.maxWeightKg != null && p.weightKg > r.maxWeightKg) return false
   return true
 }
