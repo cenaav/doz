@@ -1,0 +1,229 @@
+{
+  "id": "xylometazoline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اسپری بینی زایلومتازولین ۰٫۱٪",
+    "en": "Xylometazoline 0.1% nasal spray"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "ضداحتقان بینی",
+    "en": "Nasal decongestant"
+  },
+  "brands": [
+    {
+      "name": "Otrivine",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "otrivine",
+    "otrivin",
+    "اتریوین",
+    "زایلومتازولین",
+    "اسپری بینی"
+  ],
+  "formulations": [
+    {
+      "id": "spray",
+      "form": "nasal-spray",
+      "route": "nasal",
+      "label": "0.1% w/v metered nasal spray",
+      "concentration": {
+        "amount": 1,
+        "unit": "spray",
+        "perUnit": "spray"
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-otrivine",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "congestion",
+      "disease": "nasal-congestion",
+      "label": {
+        "fa": "احتقان بینی — ۱۲ سال به بالا: یک پاف هر سوراخ تا ۳ بار در روز",
+        "en": "Nasal congestion — ≥12 y: one spray each nostril up to 3 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "spray",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-otrivine",
+          "section": "4.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 6,
+        "refs": [
+          {
+            "source": "uk-smpc-otrivine",
+            "section": "4.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بیش از ۷ روز متوالی نه (احتقان برگشتی).",
+            "en": "Not more than 7 consecutive days (rebound congestion)."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-otrivine",
+              "section": "4.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "زیر ۱۲ سال؛ جراحی ترانس‌اسفنوئید یا با باز شدن سخت‌شامه؛ گلوکوم زاویه بسته؛ رینیت خشک/آتروفیک؛ فئوکروموسیتوم؛ بزرگی پروستات؛ مصرف MAOI در ۲ هفته اخیر؛ حساسیت.",
+        "en": "Under 12; trans-sphenoidal or dura-exposing surgery; narrow-angle glaucoma; rhinitis sicca/atrophic; phaeochromocytoma; prostatic hypertrophy; MAOI within 2 weeks; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-otrivine",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "lt12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "زیر ۱۲ سال منع مصرف دارد.",
+        "en": "Contraindicated under 12 years."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-otrivine",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "congestion",
+      "formulation": "spray",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "R01AA07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11446",
+        "en": "XYLOMETAZOLINE HCL 0.1% SPRAY",
+        "fa": "اسپری کسیلومتازولین هیدروکلراید ۰٫۱ درصد"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2235/Xylometazoline",
+        "url": "https://www.darooyab.ir/G-2235/Xylometazoline"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R01AA07",
+      "label": "R01AA07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2235/Xylometazoline",
+      "label": "Xylometazoline"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/3008/smpc",
+      "label": "UK SmPC Otrivine 0.1%"
+    }
+  ],
+  "populations": {
+    "pediatric": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در کودکان زیر سن مشخص منع مصرف دارد.",
+        "en": "Label: contraindicated in children below a stated age."
+      },
+      "quote": "Otrivine 0.1% is contraindicated in children aged less than 12 years.",
+      "refs": [
+        {
+          "source": "uk-smpc-otrivine",
+          "section": "4.3"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری زایلومتازولین گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-2235/Xylometazoline — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-2235/Xylometazoline"
+        }
+      ]
+    }
+  }
+}

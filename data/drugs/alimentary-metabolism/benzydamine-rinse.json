@@ -1,0 +1,270 @@
+{
+  "id": "benzydamine-rinse",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دهان‌شویه بنزیدامین ۰٫۱۵٪",
+    "en": "Benzydamine 0.15% mouthwash/gargle"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ضدالتهاب و بی‌حس‌کننده موضعی دهان و گلو",
+    "en": "Local anti-inflammatory analgesic for mouth/throat"
+  },
+  "brands": [
+    {
+      "name": "Difflam",
+      "market": "GB"
+    },
+    {
+      "name": "Tantum Verde",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "difflam",
+    "tantum verde",
+    "بنزیدامین",
+    "تانتوم",
+    "دهانشویه گلودرد"
+  ],
+  "formulations": [
+    {
+      "id": "rinse",
+      "form": "solution",
+      "route": "topical",
+      "label": "0.15% w/v rinse",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-difflam-rinse",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "throat",
+      "disease": "sore-throat",
+      "label": {
+        "fa": "گلودرد و التهاب دهان/گلو — بزرگسال: ۱۵ mL غرغره هر ۱٫۵ تا ۳ ساعت",
+        "en": "Sore throat / oral inflammation — adult: 15 mL rinse or gargle every 1½–3 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 8
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-difflam-rinse",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بیرون ریخته شود؛ اگر سوزش داد رقیق شود. بیش از ۷ روز بدون پزشک نه.",
+            "en": "Spit out after use; dilute if it stings. Not over 7 days without medical supervision."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-difflam-rinse",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بنزیدامین یا اجزا.",
+        "en": "Hypersensitivity to benzydamine or excipients."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-difflam-rinse",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "lt12",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "۱۲ سال و کمتر مناسب نیست.",
+        "en": "Not suitable for children 12 years or under."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-difflam-rinse",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "در حساسیت به آسپرین یا NSAID توصیه نمی‌شود؛ در آسم ممکن است برونکواسپاسم دهد.",
+        "en": "Not advisable with aspirin/NSAID hypersensitivity; may precipitate bronchospasm in asthma."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-difflam-rinse",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "throat",
+      "formulation": "rinse",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15,
+        "mlPerDose": 15
+      }
+    }
+  ],
+  "atc": [
+    "A01AD02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01406",
+        "en": "BENZYDAMINE HCl 0.15% 120 ML MOUTH WASH",
+        "fa": "دهان‌شویه بنزیدامین هیدروکلراید ۰٫۱۵ درصد ۱۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "02027",
+        "en": "BENZYDAMINE HCL 0.15% 240 ML MOUTH WASH",
+        "fa": "دهان‌شویه بنزیدامین هیدروکلراید ۰٫۱۵ درصد ۲۴۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-26/Benzydamine-Hydrochloride",
+        "url": "https://www.darooyab.ir/G-26/Benzydamine-Hydrochloride"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A01AD02",
+      "label": "A01AD02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-26/Benzydamine-Hydrochloride",
+      "label": "Benzydamine-Hydrochloride"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/102502/smpc",
+      "label": "UK SmPC Difflam rinse"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are no clinical data from the use of Benzydamine Sore Throat Rinse during pregnancy.",
+      "refs": [
+        {
+          "source": "uk-smpc-difflam-rinse",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Benzydamine Sore Throat Rinse should not be used during lactation unless considered essential by the physician.",
+      "refs": [
+        {
+          "source": "uk-smpc-difflam-rinse",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Children: Not suitable for children aged 12 years or under.",
+      "refs": [
+        {
+          "source": "uk-smpc-difflam-rinse",
+          "section": "4.2"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly: No special dosage recommendations are made for elderly patients.",
+      "refs": [
+        {
+          "source": "uk-smpc-difflam-rinse",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

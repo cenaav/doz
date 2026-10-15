@@ -1,0 +1,305 @@
+{
+  "id": "miconazole-oral-gel",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ژل خوراکی میکونازول",
+    "en": "Miconazole oral gel"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "ضدقارچ ایمیدازول",
+    "en": "Imidazole antifungal"
+  },
+  "brands": [
+    {
+      "name": "Daktarin Oral Gel",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "daktarin",
+    "داکتارین",
+    "میکونازول ژل دهانی",
+    "برفک"
+  ],
+  "formulations": [
+    {
+      "id": "gel",
+      "form": "gel",
+      "route": "oral",
+      "label": "20 mg/g oral gel (measuring spoon)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-daktarin-gel",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "infant",
+      "disease": "oral-candidiasis",
+      "label": {
+        "fa": "برفک دهان — ۴ تا ۲۴ ماه: ۱٫۲۵ mL چهار بار در روز پس از غذا",
+        "en": "Oral candidiasis — 4–24 months: 1.25 mL four times daily after meals"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 1.25,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-daktarin-gel",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "به بخش‌های کوچک با انگشت تمیز روی ضایعه؛ نه در عقب حلق (خفگی). تا یک هفته پس از بهبود ادامه.",
+            "en": "In small portions with a clean finger on the lesions; not at the back of the throat (choking). Continue a week after symptoms go."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-daktarin-gel",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "older",
+      "disease": "oral-candidiasis",
+      "label": {
+        "fa": "برفک دهان — ۲ سال به بالا و بزرگسال: ۲٫۵ mL چهار بار در روز پس از غذا",
+        "en": "Oral candidiasis — ≥2 y and adults: 2.5 mL four times daily after meals"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-daktarin-gel",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "زیر ۴ ماه یا رفلکس بلع ناکافی؛ اختلال کبد؛ حساسیت به ایمیدازول‌ها؛ هم‌زمان با داروهای CYP3A4 که QT را طولانی می‌کنند، ارگوت‌ها، سیمواستاتین/لوواستاتین، تریازولام و میدازولام خوراکی.",
+        "en": "Under 4 months or poor swallowing reflex; liver dysfunction; imidazole hypersensitivity; with QT-prolonging CYP3A4 substrates, ergot alkaloids, simvastatin/lovastatin, triazolam and oral midazolam."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-daktarin-gel",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "lt4m",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 4,
+          "unit": "month"
+        }
+      },
+      "text": {
+        "fa": "زیر ۴ ماه.",
+        "en": "Under 4 months."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-daktarin-gel",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "warfarin",
+      "text": {
+        "fa": "اثر وارفارین را زیاد می‌کند — INR پایش شود.",
+        "en": "Enhances warfarin — monitor INR."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-daktarin-gel",
+          "section": "4.4"
+        },
+        {
+          "source": "uk-smpc-daktarin-gel",
+          "section": "4.5"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "infant",
+      "formulation": "gel",
+      "input": {
+        "ageMonths": 10,
+        "weightKg": 9
+      },
+      "expect": {
+        "perDose": 1.25,
+        "mlPerDose": 1.25
+      }
+    },
+    {
+      "regimen": "older",
+      "formulation": "gel",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2.5,
+        "mlPerDose": 2.5
+      }
+    }
+  ],
+  "atc": [
+    "A01AB09",
+    "A07AC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00851",
+        "en": "MICONAZOLE NITRATE 2% 30G CREAM",
+        "fa": "کرم میکونازول نیترات ۲ درصد ۳۰ گرم"
+      },
+      {
+        "code": "00850",
+        "en": "MICONAZOLE NITRATE 2% 45G VAG CREAM",
+        "fa": "کرم واژینال میکونازول نیترات ۲ درصد ۴۵ گرم"
+      },
+      {
+        "code": "51996",
+        "en": "MICONAZOLE NITRATE CREAM TOPICAL 2 % 40 g",
+        "fa": "کرم میکونازول نیترات ۲ درصد ۴۰ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-729/Miconazole",
+        "url": "https://www.darooyab.ir/G-729/Miconazole"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A01AB09",
+      "label": "A01AB09"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07AC01",
+      "label": "A07AC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-729/Miconazole",
+      "label": "Miconazole"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/14746/smpc",
+      "label": "UK SmPC Daktarin gel"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "At clinically relevant exposures, animal studies do not indicate direct or indirect harmful effects with respect to reproductive toxicity.",
+      "refs": [
+        {
+          "source": "uk-smpc-daktarin-gel",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when prescribing miconazole oral gel to nursing mothers.",
+      "refs": [
+        {
+          "source": "uk-smpc-daktarin-gel",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در کودکان زیر سن مشخص منع مصرف دارد.",
+        "en": "Label: contraindicated in children below a stated age."
+      },
+      "quote": "In infants less than 4 months of age or in those whose swallowing reflex is not yet sufficiently developed (see section 4.4).",
+      "refs": [
+        {
+          "source": "uk-smpc-daktarin-gel",
+          "section": "4.3"
+        }
+      ]
+    }
+  }
+}

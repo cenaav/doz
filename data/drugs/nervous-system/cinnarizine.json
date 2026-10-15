@@ -1,0 +1,284 @@
+{
+  "id": "cinnarizine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیناریزین",
+    "en": "Cinnarizine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتی‌هیستامین ضددریازدگی",
+    "en": "Antihistamine for motion sickness"
+  },
+  "brands": [
+    {
+      "name": "Stugeron",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "stugeron",
+    "استوژرون",
+    "سیناریزین",
+    "سیناریزین",
+    "دریازدگی"
+  ],
+  "formulations": [
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-stugeron",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "motion-sickness",
+      "label": {
+        "fa": "دریازدگی — بالای ۱۲ سال: ۲ قرص ۲ ساعت قبل از سفر، سپس ۱ قرص هر ۸ ساعت",
+        "en": "Motion sickness — >12 y: 2 tablets 2 h before travel, then 1 every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-stugeron",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول ۳۰ mg (۲ قرص). بهتر است بعد از غذا.",
+            "en": "First dose 30 mg (2 tablets). Preferably after meals."
+          },
+          "refs": [
+            {
+              "source": "uk-smpc-stugeron",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "motion-sickness",
+      "label": {
+        "fa": "دریازدگی — ۵ تا ۱۲ سال: نصف دوز بزرگسال",
+        "en": "Motion sickness — 5–12 y: half the adult dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 7.5,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-stugeron",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سیناریزین.",
+        "en": "Hypersensitivity to cinnarizine."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-stugeron",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "در پارکینسون فقط اگر فایده بیشتر باشد؛ در پورفیری پرهیز؛ خواب‌آلودگی با الکل بیشتر می‌شود.",
+        "en": "In Parkinson’s only if benefit outweighs risk; avoid in porphyria; drowsiness worse with alcohol."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-stugeron",
+          "section": "4.4"
+        },
+        {
+          "source": "uk-smpc-stugeron",
+          "section": "4.5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-15",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-15",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "status": "blocked"
+      }
+    }
+  ],
+  "atc": [
+    "N07CA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07473",
+        "en": "CINNARIZINE 15MG TAB",
+        "fa": "قرص سیناریزین ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "00292",
+        "en": "CINNARIZINE 25MG TAB",
+        "fa": "قرص سیناریزین ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "08446",
+        "en": "CINNARIZINE 75MG CAP",
+        "fa": "کپسول سیناریزین ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "00293",
+        "en": "CINNARIZINE 75MG TAB",
+        "fa": "قرص سیناریزین ۷۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-781/Cinnarizine",
+        "url": "https://www.darooyab.ir/G-781/Cinnarizine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07CA02",
+      "label": "N07CA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-781/Cinnarizine",
+      "label": "Cinnarizine"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/371/smpc",
+      "label": "UK SmPC Stugeron 15mg"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "The safety of Stugeron in human pregnancy has not been established although studies in animals have not demonstrated teratogenic effects.",
+      "refs": [
+        {
+          "source": "uk-smpc-stugeron",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "There are no data on the excretion of Stugeron in human breast milk.",
+      "refs": [
+        {
+          "source": "uk-smpc-stugeron",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Children 5 to 12 years: One half the adult dose.",
+      "refs": [
+        {
+          "source": "uk-smpc-stugeron",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "id": "phenobarbital",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فنوباربیتال",
+    "en": "Phenobarbital"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "باربیتورات ضدصرع",
+    "en": "Barbiturate anticonvulsant"
+  },
+  "brands": [
+    {
+      "name": "Phenobarbital elixir",
+      "market": "GB"
+    }
+  ],
+  "synonyms": [
+    "phenobarbital",
+    "luminal",
+    "فنوباربیتال",
+    "لومینال",
+    "گاردنال"
+  ],
+  "formulations": [
+    {
+      "id": "elixir",
+      "form": "solution",
+      "route": "oral",
+      "label": "0.3% w/v elixir (15 mg / 5 mL)",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "GB"
+      ],
+      "refs": [
+        {
+          "source": "uk-smpc-phenobarbital-elixir",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع (غیر از ابسنس) — بزرگسال: ۶۰ تا ۲۰۰ mg در روز در ۲ تا ۳ دوز",
+        "en": "Epilepsy (except absence) — adult: 60–200 mg/day in 2–3 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "perDoseMax": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-phenobarbital-elixir",
+          "section": "4.2"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع — کودک: شروع ۳ تا ۶ mg/kg/روز در ۲ تا ۳ دوز",
+        "en": "Epilepsy — child: start 3–6 mg/kg/day in 2–3 doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 3,
+        "perKgPerDayMax": 6,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-phenobarbital-elixir",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به باربیتورات‌ها؛ دپرسیون تنفسی شدید؛ نارسایی شدید کبد یا کلیه؛ پورفیری حاد متناوب؛ کودکان بیش‌فعال.",
+        "en": "Barbiturate hypersensitivity; severe respiratory depression; severe hepatic or renal impairment; acute intermittent porphyria; hyperkinetic children."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-phenobarbital-elixir",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "افکار خودکشی با داروهای ضدصرع. این الگزیر الکل دارد.",
+        "en": "Suicidal ideation with antiepileptics. This elixir contains alcohol."
+      },
+      "refs": [
+        {
+          "source": "uk-smpc-phenobarbital-elixir",
+          "section": "4.4"
+        },
+        {
+          "source": "uk-smpc-phenobarbital-elixir",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "elixir",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 30,
+        "mlPerDose": 10,
+        "upperPerDose": 100
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "elixir",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 30,
+        "mlPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "N03AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00979",
+        "en": "PHENOBARBITAL 100MG TAB",
+        "fa": "قرص فنوباربیتال ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00980",
+        "en": "PHENOBARBITAL 15MG TAB",
+        "fa": "قرص فنوباربیتال ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "11601",
+        "en": "PHENOBARBITAL 15MG/5ML SYRUP",
+        "fa": "شربت فنوباربیتال ۱۵ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00978",
+        "en": "PHENOBARBITAL 20MG/5ML ELIXIR 60ML",
+        "fa": "الگزیر فنوباربیتال ۲۰ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "00981",
+        "en": "PHENOBARBITAL 30MG TAB",
+        "fa": "قرص فنوباربیتال ۳۰ میلی‌گرم"
+      },
+      {
+        "code": "00982",
+        "en": "PHENOBARBITAL 60MG TAB",
+        "fa": "قرص فنوباربیتال ۶۰ میلی‌گرم"
+      },
+      {
+        "code": "01633",
+        "en": "PHENOBARBITAL SODIUM 100MG/1ML AMP",
+        "fa": "آمپول فنوباربیتال سدیم ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00977",
+        "en": "PHENOBARBITAL SODIUM 200MG/1ML AMP",
+        "fa": "آمپول فنوباربیتال سدیم ۲۰۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "07169",
+        "en": "PHENOBARBITAL SODIUM 200MG/2ML AMP",
+        "fa": "آمپول فنوباربیتال سدیم ۲۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "53088",
+        "en": "PHENOBARBITAL ELIXIR ORAL 15 mg/5mL 60 mL",
+        "fa": "الگزیر فنوباربیتال ۱۵ میلی‌گرم / ۵ میلی‌لیتر ۶۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-677/Phenobarbital",
+        "url": "https://www.darooyab.ir/G-677/Phenobarbital"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682007.html",
+      "label": "Phenobarbital"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AA02",
+      "label": "N03AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-677/Phenobarbital",
+      "label": "Phenobarbital"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/4920/smpc",
+      "label": "UK SmPC Phenobarb elixir"
+    }
+  ],
+  "populations": {
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "is therefore not advisable.",
+      "refs": [
+        {
+          "source": "uk-smpc-phenobarbital-elixir",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Children: initially 3-6mg per kg body weight per day taken in 2 or 3 divided portions.",
+      "refs": [
+        {
+          "source": "uk-smpc-phenobarbital-elixir",
+          "section": "4.2"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "avoid",
+      "quote": "مصرف در بارداری فنوباربیتال گروه D استفاده نشود:",
+      "text": {
+        "fa": "دارویاب: گروه D — شواهد خطر برای جنین؛ فقط در شرایط ضروری.",
+        "en": "Darooyab: category D — evidence of fetal risk; only when essential."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-677/Phenobarbital — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-677/Phenobarbital"
+        }
+      ]
+    }
+  }
+}
