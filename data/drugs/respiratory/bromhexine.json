@@ -1,0 +1,196 @@
+{
+  "id": "bromhexine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "برم‌هگزین",
+    "en": "Bromhexine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "موکولیتیک",
+    "en": "Mucolytic"
+  },
+  "brands": [
+    {
+      "name": "Bromhexine (generic)",
+      "market": "IR"
+    }
+  ],
+  "synonyms": [
+    "برم هگزین",
+    "بروم هگزین",
+    "bromhexin",
+    "bisolvon"
+  ],
+  "formulations": [
+    {
+      "id": "syr",
+      "form": "syrup",
+      "route": "oral",
+      "label": "Bromhexine syrup (dose stated in mL; check strength on the local product)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mL",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "IR"
+      ],
+      "refs": [
+        {
+          "source": "ir-beytoote-bromhexine",
+          "section": "دوز بر اساس گروه سنی"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cough",
+      "disease": "chest-congestion",
+      "label": {
+        "fa": "خلط‌آور — سه بار در روز (حجم بر اساس سن)",
+        "en": "Mucolytic — three times daily (volume by age)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mL",
+      "dose": {
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 2.5,
+            "dosesPerDay": 3
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 5,
+            "dosesPerDay": 3
+          },
+          {
+            "minAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "maxAge": null,
+            "perDose": 10,
+            "dosesPerDay": 3
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "ir-beytoote-bromhexine",
+          "section": "دوز بر اساس گروه سنی"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه غذا؛ بیش از ۱۴ روز بدون توصیه پزشک مصرف نشود.",
+            "en": "With food; not more than 14 days without medical advice."
+          },
+          "refs": [
+            {
+              "source": "ir-beytoote-bromhexine",
+              "section": "دوز بر اساس گروه سنی"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "under-2",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "کودکان زیر ۲ سال مجاز نیست.",
+        "en": "Not permitted under 2 years."
+      },
+      "refs": [
+        {
+          "source": "ir-beytoote-bromhexine",
+          "section": "موارد منع مصرف"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "severity": "block",
+      "text": {
+        "fa": "آلرژی؛ سه‌ماهه اول بارداری؛ شیردهی؛ اختلال کبد یا کلیه؛ زخم معده.",
+        "en": "Allergy; first trimester of pregnancy; breastfeeding; liver or kidney disorders; peptic ulcer."
+      },
+      "refs": [
+        {
+          "source": "ir-beytoote-bromhexine",
+          "section": "موارد منع مصرف"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cough",
+      "formulation": "syr",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 2.5,
+        "mlPerDose": 2.5
+      }
+    },
+    {
+      "regimen": "cough",
+      "formulation": "syr",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 10
+      }
+    }
+  ]
+}
