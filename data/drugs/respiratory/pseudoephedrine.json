@@ -1,0 +1,192 @@
+{
+  "id": "pseudoephedrine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پسودوافدرین",
+    "en": "Pseudoephedrine"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "ضداحتقان سمپاتومیمتیک",
+    "en": "Sympathomimetic decongestant"
+  },
+  "brands": [
+    {
+      "name": "Sudafed",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "سودوافدرین",
+    "sudafed",
+    "ضد احتقان"
+  ],
+  "formulations": [
+    {
+      "id": "liq-15-5",
+      "form": "solution",
+      "route": "oral",
+      "label": "15 mg / 5 mL",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-childrens-sudafed",
+          "section": "Active ingredient"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "congestion",
+      "disease": "nasal-congestion",
+      "label": {
+        "fa": "گرفتگی بینی — هر ۴ تا ۶ ساعت (برچسب OTC)",
+        "en": "Nasal congestion — every 4–6 h (OTC label)"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "intervalHours": 4,
+        "bands": [
+          {
+            "minAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 15,
+            "dosesPerDay": 4
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 30,
+            "dosesPerDay": 4
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-sudafed",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-childrens-sudafed",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ تا ۶ ساعت؛ بیش از ۴ بار در ۲۴ ساعت نه. زیر ۴ سال مصرف نشود.",
+            "en": "Every 4–6 hours; not more than 4 times in 24 hours. Under 4 years do not use."
+          },
+          "refs": [
+            {
+              "source": "fda-childrens-sudafed",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف MAOI یا تا ۲ هفته پس از قطع آن.",
+        "en": "Taking an MAOI, or within 2 weeks of stopping it."
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-sudafed",
+          "section": "Do not use"
+        }
+      ]
+    },
+    {
+      "id": "under-4",
+      "severity": "block",
+      "rule": {
+        "maxAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "text": {
+        "fa": "کودکان زیر ۴ سال: مصرف نشود.",
+        "en": "Under 4 years: do not use."
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-sudafed",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "congestion",
+      "formulation": "liq-15-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 15,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "congestion",
+      "formulation": "liq-15-5",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 30,
+        "mlPerDose": 10
+      }
+    }
+  ]
+}

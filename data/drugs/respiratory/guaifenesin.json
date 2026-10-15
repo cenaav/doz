@@ -1,0 +1,152 @@
+{
+  "id": "guaifenesin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گایافنزین",
+    "en": "Guaifenesin"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "خلط‌آور",
+    "en": "Expectorant"
+  },
+  "brands": [
+    {
+      "name": "Mucinex",
+      "market": "US"
+    },
+    {
+      "name": "Robitussin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "اکسپکتورانت",
+    "expectorant",
+    "گایفنزین",
+    "خلط آور"
+  ],
+  "formulations": [
+    {
+      "id": "liq-200-10",
+      "form": "solution",
+      "route": "oral",
+      "label": "200 mg / 10 mL",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 10
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-guaifenesin-otc",
+          "section": "Active ingredients"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "chest-congestion",
+      "label": {
+        "fa": "۱۲ سال و بزرگسال — ۲۰۰ تا ۴۰۰ mg هر ۴ ساعت",
+        "en": "12 years and adults — 200–400 mg every 4 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "perDoseMax": 400,
+        "dosesPerDay": 6,
+        "intervalHours": 4
+      },
+      "refs": [
+        {
+          "source": "fda-guaifenesin-otc",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-guaifenesin-otc",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بیش از ۶ دوز در ۲۴ ساعت نه.",
+            "en": "Not more than 6 doses in any 24-hour period."
+          },
+          "refs": [
+            {
+              "source": "fda-guaifenesin-otc",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "chest-congestion",
+      "label": {
+        "fa": "کودکان زیر ۱۲ سال",
+        "en": "Children under 12 years"
+      },
+      "population": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "این فرآورده برای زیر ۱۲ سال نیست و برچسب کودکان تک‌جزئی گایافنزین هنوز ثبت نشده است.",
+          "en": "This product is not for children under 12; a single-ingredient pediatric guaifenesin label is not yet recorded."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-guaifenesin-otc",
+          "section": "Directions"
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "liq-200-10",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 10,
+        "upperMlPerDose": 20
+      }
+    }
+  ]
+}
