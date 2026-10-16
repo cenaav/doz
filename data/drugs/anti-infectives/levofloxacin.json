@@ -301,6 +301,120 @@
           "section": "2"
         }
       ]
+    },
+    {
+      "id": "plague",
+      "disease": "plague",
+      "label": {
+        "fa": "طاعون — بزرگسال و کودک ≥۵۰ kg: ۵۰۰ mg هر ۲۴ ساعت، ۱۰ تا ۱۴ روز",
+        "en": "Plague — adults and children ≥50 kg: 500 mg every 24 h, 10–14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "minWeightKg": 50
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-levofloxacin",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تأیید طاعون بر اساس مطالعات حیوانی است (مطالعه انسانی ممکن نبود). شروع هرچه زودتر پس از تماس یا تشخیص.",
+            "en": "Plague approval is based on animal studies (human trials not feasible). Start as soon as possible after exposure or diagnosis."
+          },
+          "refs": [
+            {
+              "source": "fda-levofloxacin",
+              "section": "1.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plague-child",
+      "disease": "plague",
+      "label": {
+        "fa": "طاعون — کودک ۳۰ تا <۵۰ kg: ۲۵۰ mg هر ۱۲ ساعت، ۱۰ تا ۱۴ روز",
+        "en": "Plague — child 30 to <50 kg: 250 mg every 12 h, 10–14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 30,
+        "maxWeightKg": 49.99
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-levofloxacin",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 14
+      },
+      "allowedFormulations": [
+        "tab-250"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تأیید طاعون بر اساس مطالعات حیوانی است (مطالعه انسانی ممکن نبود). شروع هرچه زودتر پس از تماس یا تشخیص.",
+            "en": "Plague approval is based on animal studies (human trials not feasible). Start as soon as possible after exposure or diagnosis."
+          },
+          "refs": [
+            {
+              "source": "fda-levofloxacin",
+              "section": "1.8"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "زیر ۳۰ kg قرص مناسب نیست؛ فرآورده دیگر لازم است.",
+            "en": "Tablets cannot be used under 30 kg; another formulation is needed."
+          },
+          "refs": [
+            {
+              "source": "fda-levofloxacin",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -407,6 +521,30 @@
       },
       "expect": {
         "perDose": 500
+      }
+    },
+    {
+      "regimen": "plague",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "plague-child",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 11,
+        "weightKg": 38
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 1
       }
     }
   ],

@@ -1,0 +1,269 @@
+{
+  "id": "riluzole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریلوزول",
+    "en": "Riluzole"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده گلوتامات",
+    "en": "Glutamate inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Rilutek",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rilutek",
+    "ریلوزول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-riluzole",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "als",
+      "disease": "als",
+      "label": {
+        "fa": "ALS — ۵۰ mg دو بار در روز، ۱ ساعت قبل یا ۲ ساعت بعد از غذا",
+        "en": "ALS — 50 mg twice daily, 1 h before or 2 h after a meal"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-riluzole",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "آنزیم‌های کبد قبل و حین درمان.",
+            "en": "Check aminotransferases before and during treatment."
+          },
+          "refs": [
+            {
+              "source": "fda-riluzole",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت شدید به ریلوزول (آنافیلاکسی رخ داده).",
+        "en": "History of severe hypersensitivity to riluzole (anaphylaxis has occurred)."
+      },
+      "refs": [
+        {
+          "source": "fda-riluzole",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آسیب کبدی (ALT بالای ۵ برابر: توصیه نمی‌شود)؛ نوتروپنی (گزارش تب)؛ بیماری بینابینی ریه.",
+        "en": "Hepatic injury (not recommended if ALT >5× ULN); neutropenia (report fever); interstitial lung disease."
+      },
+      "refs": [
+        {
+          "source": "fda-riluzole",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "als",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N07XX02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01921",
+        "en": "RILUZOLE 50MG TAB",
+        "fa": "قرص ریلوزول ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4181/Riluzole",
+        "url": "https://www.darooyab.ir/G-4181/Riluzole"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-riluzole",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA206045"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206045",
+      "label": "ANDA206045"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ccead445-970c-46a1-9532-2848cc2aa3b6",
+      "label": "FDA Riluzole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a696013.html",
+      "label": "Riluzole"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07XX02",
+      "label": "N07XX02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4181/Riluzole",
+      "label": "Riluzole"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no studies of riluzole in pregnant women, and case reports have been inadequate to inform the drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-riluzole",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary It is not known if riluzole is excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-riluzole",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of riluzole tablets in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-riluzole",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In clinical studies of riluzole tablets, 30% of patients were 65 years and over.",
+      "refs": [
+        {
+          "source": "fda-riluzole",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "In rats, oral administration of riluzole resulted in decreased fertility indices and increases in embryolethality [see Nonclinical Toxicology (13.1)].",
+      "refs": [
+        {
+          "source": "fda-riluzole",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -576,6 +576,120 @@
         "susp-250",
         "susp-500"
       ]
+    },
+    {
+      "id": "plague",
+      "disease": "plague",
+      "label": {
+        "fa": "طاعون (درمان یا پیشگیری) — بزرگسال ۵۰۰ تا ۷۵۰ mg هر ۱۲ ساعت، ۱۴ روز",
+        "en": "Plague (treatment or prophylaxis) — adult 500–750 mg every 12 h, 14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "perDoseMax": 750,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تأیید طاعون بر اساس مطالعات حیوانی است (مطالعه انسانی ممکن نبود). شروع هرچه زودتر پس از تماس یا تشخیص.",
+            "en": "Plague approval is based on animal studies (human trials not feasible). Start as soon as possible after exposure or diagnosis."
+          },
+          "refs": [
+            {
+              "source": "fda-ciprofloxacin",
+              "section": "1.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plague-child",
+      "disease": "plague",
+      "label": {
+        "fa": "طاعون — کودک (تولد تا ۱۷ سال): ۱۵ mg/kg هر ۸ تا ۱۲ ساعت (حداکثر ۵۰۰ mg)، ۱۴ روز",
+        "en": "Plague — child (birth–17 y): 15 mg/kg every 8–12 h (max 500 mg), 14 days"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 15,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-ciprofloxacin",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 500,
+        "refs": [
+          {
+            "source": "fda-ciprofloxacin",
+            "section": "2.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      },
+      "allowedFormulations": [
+        "susp-250",
+        "susp-500"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تأیید طاعون بر اساس مطالعات حیوانی است (مطالعه انسانی ممکن نبود). شروع هرچه زودتر پس از تماس یا تشخیص.",
+            "en": "Plague approval is based on animal studies (human trials not feasible). Start as soon as possible after exposure or diagnosis."
+          },
+          "refs": [
+            {
+              "source": "fda-ciprofloxacin",
+              "section": "1.8"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "ماشین‌حساب فاصله را ۱۲ ساعت نشان می‌دهد؛ برچسب ۸ تا ۱۲ ساعت.",
+            "en": "The calculator shows 12-hourly; the label allows every 8–12 h."
+          },
+          "refs": [
+            {
+              "source": "fda-ciprofloxacin",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -753,6 +867,30 @@
       "expect": {
         "perDose": 500,
         "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "plague",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "plague-child",
+      "formulation": "susp-250",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 6
       }
     }
   ],

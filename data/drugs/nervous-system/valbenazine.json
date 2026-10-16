@@ -1,0 +1,345 @@
+{
+  "id": "valbenazine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "والبنازین",
+    "en": "Valbenazine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده VMAT2",
+    "en": "VMAT2 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Ingrezza",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ingrezza",
+    "والبنازین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-40",
+      "form": "capsule",
+      "route": "oral",
+      "label": "40 mg capsule",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-60",
+      "form": "capsule",
+      "route": "oral",
+      "label": "60 mg capsule",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-80",
+      "form": "capsule",
+      "route": "oral",
+      "label": "80 mg capsule",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "td",
+      "disease": "tardive-dyskinesia",
+      "label": {
+        "fa": "دیسکینزی دیررس — ۴۰ mg یک بار در روز، پس از یک هفته ۸۰ mg",
+        "en": "Tardive dyskinesia — 40 mg once daily, 80 mg after one week"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 40,
+          "increment": 40,
+          "incrementEveryDays": 7,
+          "max": 80
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۴۰ یا ۶۰ mg هم بسته به پاسخ و تحمل ممکن است.",
+            "en": "40 or 60 mg may be considered depending on response and tolerability."
+          },
+          "refs": [
+            {
+              "source": "fda-ingrezza",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hd",
+      "disease": "huntington-chorea",
+      "label": {
+        "fa": "کره هانتینگتون — ۴۰ mg یک بار در روز، هر ۲ هفته ۲۰ mg بیشتر تا ۸۰ mg",
+        "en": "Huntington chorea — 40 mg once daily, +20 mg every 2 weeks to 80 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 40,
+          "increment": 20,
+          "incrementEveryDays": 14,
+          "max": 80
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به والبنازین (کهیر، آنژیوادم).",
+        "en": "History of hypersensitivity to valbenazine (rash, urticaria, angioedema)."
+      },
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افسردگی و افکار خودکشی در بیماری هانتینگتون؛ در افسردگی درمان‌نشده یا افکار خودکشی ممنوع.",
+        "en": "Boxed warning: depression and suicidality in Huntington’s disease; contraindicated with untreated depression or suicidality."
+      },
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "خواب‌آلودگی؛ طولانی شدن QT؛ سندرم نورولپتیک بدخیم؛ پارکینسونیسم.",
+        "en": "Somnolence; QT prolongation; neuroleptic malignant syndrome; parkinsonism."
+      },
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "td",
+      "formulation": "cap-40",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "hd",
+      "formulation": "cap-40",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N07XX13"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Valbenazine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-ingrezza",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA209241"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209241",
+      "label": "NDA209241"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c970164-cafb-421f-9eb5-c226ef0a3417",
+      "label": "FDA Ingrezza"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a617023.html",
+      "label": "Valbenazine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07XX13",
+      "label": "N07XX13"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The limited available data on INGREZZA or INGREZZA SPRINKLE use in pregnant women are insufficient to inform a drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of valbenazine or its metabolites in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of INGREZZA and INGREZZA SPRINKLE have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dose adjustment of INGREZZA or INGREZZA SPRINKLE is required for elderly patients.",
+      "refs": [
+        {
+          "source": "fda-ingrezza",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

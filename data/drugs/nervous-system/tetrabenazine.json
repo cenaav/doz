@@ -1,0 +1,297 @@
+{
+  "id": "tetrabenazine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تترابنازین",
+    "en": "Tetrabenazine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده VMAT2",
+    "en": "VMAT2 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Xenazine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xenazine",
+    "تترابنازین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-12-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "12.5 mg tablet (unscored)",
+      "concentration": {
+        "amount": 12.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tetrabenazine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet (scored)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tetrabenazine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hd",
+      "disease": "huntington-chorea",
+      "label": {
+        "fa": "کره هانتینگتون — هفته ۱: ۱۲٫۵ mg صبح؛ هفته ۲: ۱۲٫۵ دو بار؛ سپس هر هفته ۱۲٫۵ mg بیشتر (تا ۵۰ mg)",
+        "en": "Huntington chorea — week 1: 12.5 mg AM; week 2: 12.5 mg twice; then +12.5 mg weekly (up to 50 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 12.5,
+          "increment": 12.5,
+          "incrementEveryDays": 7,
+          "max": 50
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-tetrabenazine",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۳۷٫۵ تا ۵۰ mg در سه دوز؛ هر دوز حداکثر ۲۵ mg. بالای ۵۰ mg فقط پس از ژنوتایپ CYP2D6 (متابولیزر سریع/متوسط: حداکثر ۱۰۰ mg/روز، دوز ۳۷٫۵). با مهارکننده قوی CYP2D6 حداکثر ۵۰ mg.",
+            "en": "37.5–50 mg in three doses; max single dose 25 mg. Above 50 mg only after CYP2D6 genotyping (EM/IM: max 100 mg/day, single 37.5 mg). With strong CYP2D6 inhibitors max 50 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-tetrabenazine",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-tetrabenazine",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "افکار فعال خودکشی یا افسردگی درمان‌نشده؛ نارسایی کبد؛ MAOI (یا ظرف ۱۴ روز)؛ رزرپین (۲۰ روز فاصله)؛ دوتترابنازین یا والبنازین.",
+        "en": "Active suicidality or untreated/inadequately treated depression; hepatic impairment; MAOIs (or within 14 days); reserpine (20 days apart); deutetrabenazine or valbenazine."
+      },
+      "refs": [
+        {
+          "source": "fda-tetrabenazine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افسردگی و افکار خودکشی در بیماری هانتینگتون؛ در افسردگی درمان‌نشده یا افکار خودکشی ممنوع.",
+        "en": "Boxed warning: depression and suicidality in Huntington’s disease; contraindicated with untreated depression or suicidality."
+      },
+      "refs": [
+        {
+          "source": "fda-tetrabenazine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سندرم نورولپتیک بدخیم؛ آکاتیزی و پارکینسونیسم؛ خواب‌آلودگی؛ طولانی شدن QT.",
+        "en": "Neuroleptic malignant syndrome; akathisia and parkinsonism; sedation; QTc prolongation."
+      },
+      "refs": [
+        {
+          "source": "fda-tetrabenazine",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hd",
+      "formulation": "tab-12-5",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 12.5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N07XX06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01203",
+        "en": "TETRABENAZINE 25MG TAB",
+        "fa": "قرص تترابنازین ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4282/Tetrabenazine",
+        "url": "https://www.darooyab.ir/G-4282/Tetrabenazine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-tetrabenazine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA206093"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206093",
+      "label": "ANDA206093"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=471ac1d8-e3ad-7729-87c5-c26ae92c32eb",
+      "label": "FDA Tetrabenazine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618009.html",
+      "label": "Tetrabenazine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07XX06",
+      "label": "N07XX06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4282/Tetrabenazine",
+      "label": "Tetrabenazine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of tetrabenazine in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-tetrabenazine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of tetrabenazine or its metabolites in human milk, the effects on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-tetrabenazine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-tetrabenazine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The pharmacokinetics of tetrabenazine and its primary metabolites have not been formally studied in geriatric subjects.",
+      "refs": [
+        {
+          "source": "fda-tetrabenazine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

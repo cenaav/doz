@@ -554,6 +554,122 @@
           ]
         }
       ]
+    },
+    {
+      "id": "chancroid",
+      "disease": "chancroid",
+      "label": {
+        "fa": "شانکروئید (زخم تناسلی مردان) — یک دوز واحد ۱ g",
+        "en": "Chancroid (genital ulcer disease in men) — single 1 g dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اثربخشی در زنان به دلیل تعداد کم در کارآزمایی ثابت نشده است.",
+            "en": "Efficacy in women has not been established (few women studied)."
+          },
+          "refs": [
+            {
+              "source": "fda-zithromax",
+              "section": "1.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ngu",
+      "disease": "chlamydia",
+      "label": {
+        "fa": "اورتریت و سرویسیت غیرگنوکوکی (کلامیدیا) — یک دوز واحد ۱ g",
+        "en": "Non-gonococcal urethritis and cervicitis (chlamydia) — single 1 g dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500"
+      ]
+    },
+    {
+      "id": "gono",
+      "disease": "gonorrhea",
+      "label": {
+        "fa": "اورتریت و سرویسیت گنوکوکی — یک دوز واحد ۲ g",
+        "en": "Gonococcal urethritis and cervicitis — single 2 g dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zithromax",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "tab-250",
+        "tab-500"
+      ]
     }
   ],
   "contraindications": [
@@ -781,6 +897,42 @@
       },
       "expect": {
         "perDose": 500
+      }
+    },
+    {
+      "regimen": "chancroid",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "ngu",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "gono",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 2000,
+        "tabletsPerDoseRounded": 4
       }
     }
   ],

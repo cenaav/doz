@@ -1,0 +1,304 @@
+{
+  "id": "amifampridine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمیفامپریدین",
+    "en": "Amifampridine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مسدودکننده کانال پتاسیم",
+    "en": "Potassium channel blocker"
+  },
+  "brands": [
+    {
+      "name": "Firdapse",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "firdapse",
+    "آمیفامپریدین",
+    "3,4-diaminopyridine"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet (functionally scored)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-firdapse",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "lambert-eaton",
+      "label": {
+        "fa": "LEMS — بزرگسال و کودک ≥۴۵ kg: شروع ۱۵ mg/روز در ۳ دوز، هر ۳ تا ۴ روز ۵ mg بیشتر (حداکثر ۱۰۰ mg/روز)",
+        "en": "LEMS — adults and children ≥45 kg: start 15 mg/day in 3 doses, +5 mg every 3–4 days (max 100 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "minWeightKg": 45
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 3,
+        "titration": {
+          "start": 15,
+          "increment": 5,
+          "incrementEveryDays": 3,
+          "max": 100
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-firdapse",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 20,
+        "refs": [
+          {
+            "source": "fda-firdapse",
+            "section": "2.1, Table 1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۱۵ تا ۳۰ mg/روز در ۳ تا ۵ دوز. هر دوز حداکثر ۲۰ mg. نارسایی کلیه یا کبد و متابولیزر ضعیف NAT2: کمترین دوز شروع (۱۵ mg).",
+            "en": "Start 15–30 mg/day in 3–5 doses. Max single dose 20 mg. Renal or hepatic impairment and NAT2 poor metabolizers: lowest starting dose (15 mg)."
+          },
+          "refs": [
+            {
+              "source": "fda-firdapse",
+              "section": "2.1, Table 1"
+            },
+            {
+              "source": "fda-firdapse",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-firdapse",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-firdapse",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "lambert-eaton",
+      "label": {
+        "fa": "LEMS — کودک ۶ سال به بالا زیر ۴۵ kg: شروع ۵ تا ۱۵ mg/روز در ۳ تا ۵ دوز (حداکثر ۵۰ mg/روز)",
+        "en": "LEMS — child ≥6 y under 45 kg: start 5–15 mg/day in 3–5 doses (max 50 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxWeightKg": 44.99
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "افزایش ۲٫۵ mg هر ۳ تا ۴ روز؛ هر دوز حداکثر ۱۰ mg؛ حداکثر ۵۰ mg/روز. برای دوزهای کمتر از ۵ mg سوسپانسیون ۱ mg/mL طبق راهنمای برچسب تهیه شود.",
+          "en": "Increase by 2.5 mg every 3–4 days; max single dose 10 mg; max 50 mg/day. For doses below 5 mg steps prepare the 1 mg/mL suspension per the label."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-firdapse",
+          "section": "2.1, Table 1"
+        },
+        {
+          "source": "fda-firdapse",
+          "section": "2.5"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه تشنج؛ حساسیت به آمیفامپریدین یا سایر آمینوپیریدین‌ها.",
+        "en": "History of seizures; hypersensitivity to amifampridine or another aminopyridine."
+      },
+      "refs": [
+        {
+          "source": "fda-firdapse",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "تشنج (کاهش دوز یا قطع)؛ آنافیلاکسی.",
+        "en": "Seizures (reduce dose or stop); anaphylaxis."
+      },
+      "refs": [
+        {
+          "source": "fda-firdapse",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "N07XX05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2586/Amifampridine",
+        "url": "https://www.darooyab.ir/G-2586/Amifampridine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-firdapse",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA208078"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208078",
+      "label": "NDA208078"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f015fe60-3128-4a43-8c31-19fc6b5def3f",
+      "label": "FDA Firdapse"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07XX05",
+      "label": "N07XX05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2586/Amifampridine",
+      "label": "Amifampridine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no data on the developmental risk associated with the use of FIRDAPSE in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-firdapse",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of FIRDAPSE in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-firdapse",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of FIRDAPSE for the treatment of LEMS have been established in pediatric patients 6 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-firdapse",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy [see Dosage and Administration ( 2.2 , 2.3 ) and Drug …",
+      "refs": [
+        {
+          "source": "fda-firdapse",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

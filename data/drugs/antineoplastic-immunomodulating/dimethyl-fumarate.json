@@ -1,0 +1,291 @@
+{
+  "id": "dimethyl-fumarate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دی‌متیل فومارات",
+    "en": "Dimethyl fumarate"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "تعدیل‌کننده ایمنی (MS)",
+    "en": "Immunomodulator (MS)"
+  },
+  "brands": [
+    {
+      "name": "Tecfidera",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tecfidera",
+    "تکفیدرا",
+    "دی متیل فومارات"
+  ],
+  "formulations": [
+    {
+      "id": "cap-120",
+      "form": "capsule",
+      "route": "oral",
+      "label": "120 mg delayed-release capsule",
+      "concentration": {
+        "amount": 120,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tecfidera",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-240",
+      "form": "capsule",
+      "route": "oral",
+      "label": "240 mg delayed-release capsule",
+      "concentration": {
+        "amount": 240,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tecfidera",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ms",
+      "disease": "multiple-sclerosis",
+      "label": {
+        "fa": "MS عودکننده — ۱۲۰ mg دو بار در روز ۷ روز، سپس ۲۴۰ mg دو بار در روز",
+        "en": "Relapsing MS — 120 mg twice daily for 7 days, then 240 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 240,
+          "increment": 240,
+          "incrementEveryDays": 7,
+          "max": 480
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-tecfidera",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کپسول کامل بلعیده شود. برافروختگی: با غذا یا آسپرین غیرروکش‌دار تا ۳۲۵ mg نیم ساعت قبل. CBC با لنفوسیت و آزمایش کبد قبل از شروع.",
+            "en": "Swallow whole. Flushing: take with food or non-enteric-coated aspirin up to 325 mg 30 min before. CBC with lymphocytes and liver tests before starting."
+          },
+          "refs": [
+            {
+              "source": "fda-tecfidera",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-tecfidera",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دی‌متیل فومارات (آنافیلاکسی، آنژیوادم).",
+        "en": "Hypersensitivity to dimethyl fumarate (anaphylaxis, angioedema)."
+      },
+      "refs": [
+        {
+          "source": "fda-tecfidera",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "PML؛ زونا و عفونت فرصت‌طلب؛ لنفوپنی (CBC هر ۶ تا ۱۲ ماه)؛ آسیب کبدی.",
+        "en": "PML; herpes zoster and opportunistic infections; lymphopenia (CBC every 6–12 months); liver injury."
+      },
+      "refs": [
+        {
+          "source": "fda-tecfidera",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ms",
+      "formulation": "cap-120",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 120,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L04AX07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "22926",
+        "en": "DIMETHYL FUMARATE CAPSULE ORAL 240 mg",
+        "fa": "کپسول دی‌متیل فومارات ۲۴۰ میلی‌گرم"
+      },
+      {
+        "code": "22925",
+        "en": "DIMETHYL FUMARATE CAPSULE 120mg",
+        "fa": "کپسول دی‌متیل فومارات ۱۲۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4656/Dimethyl-Fumarate",
+        "url": "https://www.darooyab.ir/G-4656/Dimethyl-Fumarate"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-tecfidera",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204063"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204063",
+      "label": "NDA204063"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=665d7e74-036c-5f68-5b67-ab84b9b49151",
+      "label": "FDA Tecfidera"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613028.html",
+      "label": "Dimethyl Fumarate"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AX07",
+      "label": "L04AX07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4656/Dimethyl-Fumarate",
+      "label": "Dimethyl-Fumarate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from the TECFIDERA Pregnancy Registry, observational studies, and pharmacovigilance with dimethyl fumarate use in pregnant women have not indicated an increased risk of major birth defects, miscarriage, or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-tecfidera",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of DMF or MMF in human milk.",
+      "refs": [
+        {
+          "source": "fda-tecfidera",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-tecfidera",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of TECFIDERA did not include sufficient numbers of patients aged 65 and over to determine whether they respond differently from younger patients.",
+      "refs": [
+        {
+          "source": "fda-tecfidera",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

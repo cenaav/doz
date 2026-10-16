@@ -1,0 +1,482 @@
+{
+  "id": "ertapenem",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ارتاپنم",
+    "en": "Ertapenem"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "کارباپنم",
+    "en": "Carbapenem"
+  },
+  "brands": [
+    {
+      "name": "Invanz",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "invanz",
+    "اینوانز",
+    "ارتاپنم"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g vial (IV or IM)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "dfi",
+      "disease": "diabetic-foot-infection",
+      "label": {
+        "fa": "عفونت پای دیابتی بدون استئومیلیت — ۱۳ سال به بالا ۱ g یک بار در روز، ۷ تا ۱۴ روز",
+        "en": "Diabetic foot infection without osteomyelitis — ≥13 y 1 g once daily, 7–14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در پای دیابتی با استئومیلیت همزمان بررسی نشده است. انفوزیون ۳۰ دقیقه‌ای؛ با دکستروز رقیق نشود.",
+            "en": "Not studied in diabetic foot infection with concomitant osteomyelitis. Infuse over 30 min; no dextrose diluents."
+          },
+          "refs": [
+            {
+              "source": "fda-ertapenem",
+              "section": "2.2, Table 1"
+            },
+            {
+              "source": "fda-ertapenem",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dfi-child",
+      "disease": "diabetic-foot-infection",
+      "label": {
+        "fa": "عفونت پوست شامل پای دیابتی — کودک ۳ ماه تا ۱۲ سال: ۱۵ mg/kg دو بار در روز (حداکثر ۱ g/روز)",
+        "en": "Skin infection incl. diabetic foot — child 3 months–12 y: 15 mg/kg twice daily (max 1 g/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 15,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1000,
+        "refs": [
+          {
+            "source": "fda-ertapenem",
+            "section": "2.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      }
+    },
+    {
+      "id": "iai",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "عفونت عارضه‌دار داخل شکم — ۱۳ سال به بالا ۱ g یک بار در روز، ۵ تا ۱۴ روز",
+        "en": "Complicated intra-abdominal infection — ≥13 y 1 g once daily, 5–14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 14
+      }
+    },
+    {
+      "id": "iai-child",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "عفونت داخل شکم — کودک ۳ ماه تا ۱۲ سال: ۱۵ mg/kg دو بار در روز (حداکثر ۱ g/روز)",
+        "en": "Intra-abdominal infection — child 3 months–12 y: 15 mg/kg twice daily (max 1 g/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 15,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1000,
+        "refs": [
+          {
+            "source": "fda-ertapenem",
+            "section": "2.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 14
+      }
+    },
+    {
+      "id": "proph",
+      "disease": "surgical-prophylaxis",
+      "label": {
+        "fa": "پیشگیری از عفونت پس از جراحی انتخابی کولورکتال — ۱ g وریدی یک ساعت پیش از برش",
+        "en": "Prophylaxis for elective colorectal surgery — 1 g IV 1 h before incision"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزای فرآورده یا سایر کارباپنم‌ها؛ آنافیلاکسی با بتالاکتام‌ها. تزریق عضلانی (با لیدوکائین): حساسیت به بی‌حس‌کننده‌های آمیدی.",
+        "en": "Hypersensitivity to any component or other carbapenems; anaphylaxis with beta-lactams. IM (lidocaine diluent): hypersensitivity to amide local anaesthetics."
+      },
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش آلرژیک جدی؛ تشنج و عوارض CNS؛ اسهال C. difficile. با والپروات سطح آن کم و خطر تشنج بیشتر می‌شود.",
+        "en": "Serious hypersensitivity; seizures and CNS effects; C. difficile diarrhoea. Lowers valproate levels with breakthrough seizure risk."
+      },
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 31,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۳۰ و کمتر (و ESRD): ۵۰۰ mg روزانه. همودیالیز: اگر دوز ظرف ۶ ساعت پیش از دیالیز داده شد ۱۵۰ mg مکمل پس از دیالیز.",
+        "en": "CrCl ≤30 (and ESRD): 500 mg daily. Haemodialysis: give 150 mg after dialysis if the daily dose was given within 6 h before."
+      },
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-ertapenem",
+          "section": "2.5"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "valproate",
+      "text": {
+        "fa": "والپروات و دیوالپروکس: کاهش سطح والپروات و تشنج.",
+        "en": "Valproic acid and divalproex: reduced valproate levels and seizures."
+      },
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "dfi",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 85
+      },
+      "expect": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      }
+    },
+    {
+      "regimen": "dfi-child",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 300,
+        "dosesPerDay": 2
+      }
+    },
+    {
+      "regimen": "iai",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      }
+    },
+    {
+      "regimen": "iai-child",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 300,
+        "dosesPerDay": 2
+      }
+    },
+    {
+      "regimen": "proph",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    }
+  ],
+  "atc": [
+    "J01DH03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-389/Ertapenem",
+        "url": "https://www.darooyab.ir/G-389/Ertapenem"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ertapenem",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA207647"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207647",
+      "label": "ANDA207647"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b050245-aa03-4e28-e063-6394a90aeabc",
+      "label": "FDA Ertapenem"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614001.html",
+      "label": "Ertapenem Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DH03",
+      "label": "J01DH03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-389/Ertapenem",
+      "label": "Ertapenem"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from a small number of post-marketing cases with Ertapenem for injection use in pregnancy are insufficient to inform any drug-associated risks for major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Ertapenem is present in human milk (see Data ).",
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of Ertapenem for injection in pediatric patients 3 months to 17 years of age are supported by evidence from adequate and well-controlled trials in adults, pharmacokinetic data in pediatric patients, and additional data from comparator-controlled trials in pediatric patients 3 months to 17 …",
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function [see Dosage and Administration (2.2) ].",
+      "refs": [
+        {
+          "source": "fda-ertapenem",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

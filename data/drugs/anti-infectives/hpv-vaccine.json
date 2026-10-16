@@ -92,6 +92,66 @@
           ]
         }
       ]
+    },
+    {
+      "id": "warts-prevent",
+      "disease": "genital-warts",
+      "label": {
+        "fa": "پیشگیری از زگیل تناسلی (HPV نوع ۶ و ۱۱) — واکسیناسیون ۹ تا ۴۵ سال",
+        "en": "Prevention of genital warts (HPV 6 and 11) — vaccination 9–45 y"
+      },
+      "population": {
+        "minAge": {
+          "value": 9,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 46,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-gardasil",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر دوز دوم زودتر از ۵ ماه پس از اول زده شد، دوز سوم دست‌کم ۴ ماه بعد.",
+            "en": "If the second dose is given less than 5 months after the first, give a third dose at least 4 months later."
+          },
+          "refs": [
+            {
+              "source": "fda-gardasil",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "برچسب Gardasil 9: پیشگیری از زگیل تناسلی (کوندیلوما) ناشی از HPV نوع ۶ و ۱۱. درمان زگیل موجود نیست.",
+            "en": "Gardasil 9 label: prevention of genital warts (condyloma acuminata) caused by HPV types 6 and 11. It does not treat existing warts."
+          },
+          "refs": [
+            {
+              "source": "fda-gardasil",
+              "section": "1.1"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -122,6 +182,18 @@
   "examples": [
     {
       "regimen": "std",
+      "formulation": "syr-05",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "warts-prevent",
       "formulation": "syr-05",
       "input": {
         "ageYears": 12,

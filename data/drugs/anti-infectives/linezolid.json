@@ -116,6 +116,62 @@
           "section": "2.1"
         }
       ]
+    },
+    {
+      "id": "dfi",
+      "disease": "diabetic-foot-infection",
+      "label": {
+        "fa": "عفونت پای دیابتی بدون استئومیلیت — ۱۲ سال به بالا ۶۰۰ mg هر ۱۲ ساعت",
+        "en": "Diabetic foot infection without osteomyelitis — ≥12 y 600 mg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "VRE: ۱۴ تا ۲۸ روز. عفونت پوستی بدون عارضه بزرگسال: ۴۰۰ mg هر ۱۲ ساعت (قرص ۴۰۰ در این برچسب نیست).",
+            "en": "VRE: 14–28 days. Uncomplicated SSSI in adults: 400 mg every 12 h (no 400 mg tablet in this label)."
+          },
+          "refs": [
+            {
+              "source": "fda-linezolid",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "برچسب: عفونت عارضه‌دار پوست شامل پای دیابتی بدون استئومیلیت همزمان.",
+            "en": "Label: complicated skin infections including diabetic foot infections without concomitant osteomyelitis."
+          },
+          "refs": [
+            {
+              "source": "fda-linezolid",
+              "section": "1"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -173,6 +229,18 @@
   "examples": [
     {
       "regimen": "adult",
+      "formulation": "tab-600",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "dfi",
       "formulation": "tab-600",
       "input": {
         "ageYears": 50,

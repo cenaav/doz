@@ -1,0 +1,292 @@
+{
+  "id": "teriflunomide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تری‌فلونوماید",
+    "en": "Teriflunomide"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "تعدیل‌کننده ایمنی (MS)",
+    "en": "Immunomodulator (MS)"
+  },
+  "brands": [
+    {
+      "name": "Aubagio",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aubagio",
+    "اوباجیو",
+    "تری فلونوماید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-7",
+      "form": "tablet",
+      "route": "oral",
+      "label": "7 mg tablet",
+      "concentration": {
+        "amount": 7,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aubagio",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-14",
+      "form": "tablet",
+      "route": "oral",
+      "label": "14 mg tablet",
+      "concentration": {
+        "amount": 14,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aubagio",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ms",
+      "disease": "multiple-sclerosis",
+      "label": {
+        "fa": "MS عودکننده — ۷ یا ۱۴ mg یک بار در روز",
+        "en": "Relapsing MS — 7 or 14 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 7,
+        "perDoseMax": 14,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-aubagio",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی شدید کبد؛ بارداری یا زن در سن باروری بدون پیشگیری مؤثر؛ حساسیت؛ مصرف همزمان لفلونوماید.",
+        "en": "Severe hepatic impairment; pregnancy, or females of reproductive potential not using effective contraception; hypersensitivity; current leflunomide."
+      },
+      "refs": [
+        {
+          "source": "fda-aubagio",
+          "section": "4"
+        },
+        {
+          "source": "fda-aubagio",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت کبدی (ALT ماهانه ۶ ماه اول) و سمیت جنینی (رد بارداری قبل از شروع؛ حذف سریع با کلستیرامین یا زغال فعال).",
+        "en": "Boxed warning: hepatotoxicity (monthly ALT for 6 months) and embryofetal toxicity (exclude pregnancy before starting; accelerated elimination with cholestyramine or charcoal)."
+      },
+      "refs": [
+        {
+          "source": "fda-aubagio",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-aubagio",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ms",
+      "formulation": "tab-7",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 7,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 14
+      }
+    }
+  ],
+  "atc": [
+    "L04AK02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52932",
+        "en": "TERIFLUNOMIDE 7MG TAB",
+        "fa": "قرص تریفلونوماید ۷ میلی‌گرم"
+      },
+      {
+        "code": "22698",
+        "en": "TERIFLUNOMIDE 14MG TAB",
+        "fa": "قرص تریفلونوماید ۱۴ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3853/Teriflunomide",
+        "url": "https://www.darooyab.ir/G-3853/Teriflunomide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-aubagio",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA202992"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202992",
+      "label": "NDA202992"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4650d12c-b9c8-4525-b07f-a2d773eca155",
+      "label": "FDA Aubagio"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613010.html",
+      "label": "Teriflunomide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AK02",
+      "label": "L04AK02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3853/Teriflunomide",
+      "label": "Teriflunomide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Severe hepatic impairment ( 4 , 5.1 ) Pregnancy ( 4 , 5.2 , 8.1 ) Hypersensitivity ( 4 , 5.5 ) Current leflunomide treatment ( 4 ) AUBAGIO is contraindicated in/with: Patients with severe hepatic impairment [see Warnings and Precautions (5.1) ] .",
+      "refs": [
+        {
+          "source": "fda-aubagio",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for adverse reactions in a breastfed infant from AUBAGIO, women should not breastfeed during treatment with AUBAGIO.",
+      "refs": [
+        {
+          "source": "fda-aubagio",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-aubagio",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of AUBAGIO did not include patients over 65 years old.",
+      "refs": [
+        {
+          "source": "fda-aubagio",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Females of reproductive potential should use effective contraception while taking AUBAGIO.",
+      "refs": [
+        {
+          "source": "fda-aubagio",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}
