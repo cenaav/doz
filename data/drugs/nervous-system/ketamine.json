@@ -1,0 +1,384 @@
+{
+  "id": "ketamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کتامین",
+    "en": "Ketamine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بیهوش‌کننده تجزیه‌ای (آنتاگونیست NMDA)",
+    "en": "Dissociative anaesthetic (NMDA antagonist)"
+  },
+  "brands": [
+    {
+      "name": "Ketalar",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ketalar",
+    "کتالار",
+    "کتامین"
+  ],
+  "formulations": [
+    {
+      "id": "inj-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL multiple-dose vial",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "inj-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mg/mL multiple-dose vial",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "inj-100",
+      "form": "injection",
+      "route": "iv",
+      "label": "100 mg/mL multiple-dose vial",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "iv",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "القای بیهوشی وریدی — ۱ تا ۴٫۵ mg/kg آهسته در ۶۰ ثانیه",
+        "en": "IV induction — 1–4.5 mg/kg slowly over 60 s"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1,
+        "perKgPerDoseMax": 4.5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط توسط فرد آموزش‌دیده در بیهوشی با امکانات کنترل راه هوایی، اکسیژن و احیا.",
+            "en": "Only by persons trained in anaesthesia, with airway management, oxygen and resuscitation available."
+          },
+          "refs": [
+            {
+              "source": "fda-ketamine",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "یا ۱ تا ۲ mg/kg با سرعت ۰٫۵ mg/kg/دقیقه. نگهداری: نصف تا کل دوز القا در صورت نیاز تکرار شود.",
+            "en": "Or 1–2 mg/kg at 0.5 mg/kg/min. Maintenance: repeat one-half to the full induction dose as needed."
+          },
+          "refs": [
+            {
+              "source": "fda-ketamine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "im",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "القای بیهوشی عضلانی — ۶٫۵ تا ۱۳ mg/kg",
+        "en": "IM induction — 6.5–13 mg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 6.5,
+        "perKgPerDoseMax": 13,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-50",
+        "inj-100"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۹ تا ۱۳ mg/kg معمولاً ظرف ۳ تا ۴ دقیقه بیهوشی جراحی می‌دهد که ۱۲ تا ۲۵ دقیقه طول می‌کشد.",
+            "en": "9–13 mg/kg usually gives surgical anaesthesia within 3–4 min, lasting 12–25 min."
+          },
+          "refs": [
+            {
+              "source": "fda-ketamine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "هر جا افزایش قابل‌توجه فشار خون خطر جدی دارد؛ حساسیت به کتامین.",
+        "en": "Patients in whom a significant rise in blood pressure would be a serious hazard; hypersensitivity to ketamine."
+      },
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "افزایش فشار و ضربان؛ واکنش‌های هنگام بیداری (توهم، رؤیا، هذیان)؛ دپرسیون تنفسی با تزریق سریع؛ ایمنی زیر ۱۶ سال ثابت نشده.",
+        "en": "Raised BP and heart rate; emergence reactions (hallucinations, dreams, delirium); respiratory depression with rapid injection; safety under 16 y not established."
+      },
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "5"
+        },
+        {
+          "source": "fda-ketamine",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "iv",
+      "formulation": "inj-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 70,
+        "mlPerDose": 7,
+        "upperPerDose": 315
+      }
+    },
+    {
+      "regimen": "im",
+      "formulation": "inj-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 455,
+        "mlPerDose": 4.55,
+        "upperPerDose": 910
+      }
+    }
+  ],
+  "atc": [
+    "N01AX03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00723",
+        "en": "KETAMINE HCL 50MG/ML 10ML VIAL",
+        "fa": "ویال کتامین هیدروکلراید ۵۰ میلی‌گرم / میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "51975",
+        "en": "KETAMINE (AS HYDROCHLORIDE) INJECTION PARENTERAL 50 mg/1mL 2 mL",
+        "fa": "فرآورده تزریقی کتامین (معادل هیدروکلراید) ۵۰ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2671/Ketamine",
+        "url": "https://www.darooyab.ir/G-2671/Ketamine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ketamine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076092"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076092",
+      "label": "ANDA076092"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8b01c77-620d-4734-a771-b8524b65bcca",
+      "label": "FDA Ketamine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a626003.html",
+      "label": "Ketamine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N01AX03",
+      "label": "N01AX03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2671/Ketamine",
+      "label": "Ketamine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data on the use of ketamine in pregnant women mostly describe its use at the time of cesarean section and have not identified a drug-associated risk of adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Published literature describe the presence of ketamine and its metabolite in human milk.",
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness in pediatric patients below the age of 16 have not been established.",
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-ketamine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "id": "sugammadex",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "شوگامادکس",
+    "en": "Sugammadex"
+  },
+  "category": "various",
+  "class": {
+    "fa": "برگرداننده انتخابی روکورونیوم و وکورونیوم",
+    "en": "Selective reversal agent for rocuronium/vecuronium"
+  },
+  "brands": [
+    {
+      "name": "Bridion",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "bridion",
+    "بریدیون",
+    "سوگامادکس"
+  ],
+  "formulations": [
+    {
+      "id": "inj-100",
+      "form": "injection",
+      "route": "iv",
+      "label": "100 mg/mL (200 mg/2 mL, 500 mg/5 mL)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "moderate",
+      "disease": "nmb-reversal",
+      "label": {
+        "fa": "برگشت بلوک متوسط (ظهور پاسخ دوم TOF) — ۲ mg/kg",
+        "en": "Moderate block (second TOF twitch reappeared) — 2 mg/kg"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس وزن واقعی؛ زمان و دوز با پایش TOF؛ یک بولوس واحد.",
+            "en": "Based on actual body weight; timing and dose by TOF monitoring; single bolus."
+          },
+          "refs": [
+            {
+              "source": "fda-bridion",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deep",
+      "disease": "nmb-reversal",
+      "label": {
+        "fa": "برگشت بلوک عمیق (۱ تا ۲ پاسخ پس از تتانیک، بدون پاسخ TOF) — ۴ mg/kg",
+        "en": "Deep block (1–2 post-tetanic counts, no TOF response) — 4 mg/kg"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 4,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس وزن واقعی؛ زمان و دوز با پایش TOF؛ یک بولوس واحد.",
+            "en": "Based on actual body weight; timing and dose by TOF monitoring; single bolus."
+          },
+          "refs": [
+            {
+              "source": "fda-bridion",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "immediate",
+      "disease": "nmb-reversal",
+      "label": {
+        "fa": "برگشت فوری ۳ دقیقه پس از ۱٫۲ mg/kg روکورونیوم — ۱۶ mg/kg (فقط بزرگسال)",
+        "en": "Immediate reversal ~3 min after rocuronium 1.2 mg/kg — 16 mg/kg (adults only)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 16,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس وزن واقعی؛ زمان و دوز با پایش TOF؛ یک بولوس واحد.",
+            "en": "Based on actual body weight; timing and dose by TOF monitoring; single bolus."
+          },
+          "refs": [
+            {
+              "source": "fda-bridion",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "برگشت فوری در کودکان بررسی نشده است.",
+            "en": "Immediate reversal has not been studied in children."
+          },
+          "refs": [
+            {
+              "source": "fda-bridion",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به شوگامادکس (حتی بدون مواجهه قبلی آنافیلاکسی رخ داده).",
+        "en": "Hypersensitivity to sugammadex (anaphylaxis has occurred without prior exposure)."
+      },
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آنافیلاکسی؛ برادی‌کاردی شدید؛ کاهش اثر قرص ضدبارداری هورمونی (۷ روز روش کمکی).",
+        "en": "Anaphylaxis; marked bradycardia; reduces hormonal contraceptive effect (backup method for 7 days)."
+      },
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "moderate",
+      "formulation": "inj-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 140,
+        "mlPerDose": 1.4
+      }
+    },
+    {
+      "regimen": "deep",
+      "formulation": "inj-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 280,
+        "mlPerDose": 2.8
+      }
+    },
+    {
+      "regimen": "immediate",
+      "formulation": "inj-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1120,
+        "mlPerDose": 11.2
+      }
+    }
+  ],
+  "atc": [
+    "V03AB35"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51961",
+        "en": "SUGAMMADEX (AS SODIUM) INJECTION, SOLUTION PARENTERAL 100 mg/1mL 2 mL",
+        "fa": "محلول تزریقی سوگاممادکس (معادل سدیم) ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "52300",
+        "en": "SUGAMMADEX (AS SODIUM) INJECTION, SOLUTION PARENTERAL 100 mg/1mL 5 mL",
+        "fa": "محلول تزریقی سوگاممادکس (معادل سدیم) ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5406/Sugammadex",
+        "url": "https://www.darooyab.ir/G-5406/Sugammadex"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-bridion",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022225"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022225",
+      "label": "NDA022225"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5171d883-fe8f-482c-97ab-40b00975b64a",
+      "label": "FDA Bridion"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625008.html",
+      "label": "Sugammadex Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AB35",
+      "label": "V03AB35"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5406/Sugammadex",
+      "label": "Sugammadex"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no clinical trial data on BRIDION use in pregnant women to inform any drug-associated risks.",
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary No data are available regarding the presence of sugammadex in human milk, the effects of sugammadex on the breast fed infant, or the effects of sugammadex on milk production.",
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of BRIDION for reversal of neuromuscular blockade induced by rocuronium bromide or vecuronium bromide have been established in pediatric patients from birth and older.",
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function [see Use in Specific Populations (8.6) , Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Upon administration of BRIDION, the efficacy of hormonal contraceptives may be reduced for up to 7 days.",
+      "refs": [
+        {
+          "source": "fda-bridion",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

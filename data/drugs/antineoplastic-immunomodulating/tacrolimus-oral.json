@@ -1,0 +1,591 @@
+{
+  "id": "tacrolimus-oral",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تاکرولیموس خوراکی",
+    "en": "Tacrolimus (oral)"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده کلسی‌نورین",
+    "en": "Calcineurin inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Prograf",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "prograf",
+    "پروگراف",
+    "تاکرولیموس",
+    "tacrolimus"
+  ],
+  "formulations": [
+    {
+      "id": "cap-05",
+      "form": "capsule",
+      "route": "oral",
+      "label": "0.5 mg capsule",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-1",
+      "form": "capsule",
+      "route": "oral",
+      "label": "1 mg capsule",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "5 mg capsule",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "kidney-mmf",
+      "disease": "transplant-rejection",
+      "label": {
+        "fa": "پیوند کلیه همراه MMF یا آنتاگونیست IL-2 — ۰٫۱ mg/kg/روز در دو دوز هر ۱۲ ساعت",
+        "en": "Kidney transplant with MMF or IL-2RA — 0.1 mg/kg/day in two doses every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.1,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-05",
+        "cap-1",
+        "cap-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اولیه؛ سپس بر اساس سطح خونی (TDM) طبق جدول. اولین دوز کبد، قلب و ریه دست‌کم ۶ ساعت پس از پیوند. گریپ‌فروت نه.",
+            "en": "Initial dose; then adjust by whole-blood trough levels per the table. First dose for liver/heart/lung no sooner than 6 h after transplant. Avoid grapefruit."
+          },
+          "refs": [
+            {
+              "source": "fda-prograf",
+              "section": "2.2, Table 1"
+            },
+            {
+              "source": "fda-prograf",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-prograf",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kidney-aza",
+      "disease": "transplant-rejection",
+      "label": {
+        "fa": "پیوند کلیه همراه آزاتیوپرین — ۰٫۲ mg/kg/روز در دو دوز",
+        "en": "Kidney transplant with azathioprine — 0.2 mg/kg/day in two doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.2,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-05",
+        "cap-1",
+        "cap-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اولیه؛ سپس بر اساس سطح خونی (TDM) طبق جدول. اولین دوز کبد، قلب و ریه دست‌کم ۶ ساعت پس از پیوند. گریپ‌فروت نه.",
+            "en": "Initial dose; then adjust by whole-blood trough levels per the table. First dose for liver/heart/lung no sooner than 6 h after transplant. Avoid grapefruit."
+          },
+          "refs": [
+            {
+              "source": "fda-prograf",
+              "section": "2.2, Table 1"
+            },
+            {
+              "source": "fda-prograf",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-prograf",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "liver",
+      "disease": "transplant-rejection",
+      "label": {
+        "fa": "پیوند کبد — ۰٫۱ تا ۰٫۱۵ mg/kg/روز در دو دوز",
+        "en": "Liver transplant — 0.1–0.15 mg/kg/day in two doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.1,
+        "perKgPerDayMax": 0.15,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-05",
+        "cap-1",
+        "cap-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اولیه؛ سپس بر اساس سطح خونی (TDM) طبق جدول. اولین دوز کبد، قلب و ریه دست‌کم ۶ ساعت پس از پیوند. گریپ‌فروت نه.",
+            "en": "Initial dose; then adjust by whole-blood trough levels per the table. First dose for liver/heart/lung no sooner than 6 h after transplant. Avoid grapefruit."
+          },
+          "refs": [
+            {
+              "source": "fda-prograf",
+              "section": "2.2, Table 1"
+            },
+            {
+              "source": "fda-prograf",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-prograf",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heart",
+      "disease": "transplant-rejection",
+      "label": {
+        "fa": "پیوند قلب — ۰٫۰۷۵ mg/kg/روز در دو دوز",
+        "en": "Heart transplant — 0.075 mg/kg/day in two doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.075,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-05",
+        "cap-1",
+        "cap-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اولیه؛ سپس بر اساس سطح خونی (TDM) طبق جدول. اولین دوز کبد، قلب و ریه دست‌کم ۶ ساعت پس از پیوند. گریپ‌فروت نه.",
+            "en": "Initial dose; then adjust by whole-blood trough levels per the table. First dose for liver/heart/lung no sooner than 6 h after transplant. Avoid grapefruit."
+          },
+          "refs": [
+            {
+              "source": "fda-prograf",
+              "section": "2.2, Table 1"
+            },
+            {
+              "source": "fda-prograf",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-prograf",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تاکرولیموس؛ تزریقی: حساسیت به روغن کرچک هیدروژنه (HCO-60).",
+        "en": "Hypersensitivity to tacrolimus; injection: hypersensitivity to HCO-60 (polyoxyl 60 hydrogenated castor oil)."
+      },
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: بدخیمی و عفونت جدی. سمیت کلیه و عصب، دیابت پس از پیوند، طولانی شدن QT؛ تداخل‌های زیاد با مهار/القاگر CYP3A.",
+        "en": "Boxed warning: malignancy and serious infections. Nephrotoxicity, neurotoxicity, post-transplant diabetes, QT prolongation; many CYP3A interactions."
+      },
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-prograf",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "kidney-mmf",
+      "formulation": "cap-05",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 3.5,
+        "tabletsPerDoseRounded": 7
+      }
+    },
+    {
+      "regimen": "kidney-aza",
+      "formulation": "cap-1",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 7,
+        "tabletsPerDoseRounded": 7
+      }
+    },
+    {
+      "regimen": "liver",
+      "formulation": "cap-05",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 3.5,
+        "upperPerDose": 5.25
+      }
+    },
+    {
+      "regimen": "heart",
+      "formulation": "cap-05",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 3,
+        "tabletsPerDoseRounded": 6
+      }
+    }
+  ],
+  "atc": [
+    "L04AD02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18952",
+        "en": "TACROLIMUS 0.03% 10G OINT",
+        "fa": "پماد تاکرولیموس ۰٫۰۳ درصد ۱۰ گرم"
+      },
+      {
+        "code": "11622",
+        "en": "TACROLIMUS 0.03% 30G OINT",
+        "fa": "پماد تاکرولیموس ۰٫۰۳ درصد ۳۰ گرم"
+      },
+      {
+        "code": "08131",
+        "en": "TACROLIMUS 0.03% 60G OINT",
+        "fa": "پماد تاکرولیموس ۰٫۰۳ درصد ۶۰ گرم"
+      },
+      {
+        "code": "08187",
+        "en": "TACROLIMUS 0.1% 10G OINT",
+        "fa": "پماد تاکرولیموس ۰٫۱ درصد ۱۰ گرم"
+      },
+      {
+        "code": "06599",
+        "en": "TACROLIMUS 0.1% 30G OINT",
+        "fa": "پماد تاکرولیموس ۰٫۱ درصد ۳۰ گرم"
+      },
+      {
+        "code": "05804",
+        "en": "TACROLIMUS 0.5MG CAP",
+        "fa": "کپسول تاکرولیموس ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "02083",
+        "en": "TACROLIMUS 1MG CAP",
+        "fa": "کپسول تاکرولیموس ۱ میلی‌گرم"
+      },
+      {
+        "code": "02084",
+        "en": "TACROLIMUS 5MG CAP",
+        "fa": "کپسول تاکرولیموس ۵ میلی‌گرم"
+      },
+      {
+        "code": "02087",
+        "en": "TACROLIMUS 5MG/ML FOR INFU",
+        "fa": "محلول انفوزیون تاکرولیموس ۵ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "50539",
+        "en": "TACROLIMUS 3MG CAP",
+        "fa": "کپسول تاکرولیموس ۳ میلی‌گرم"
+      },
+      {
+        "code": "52291",
+        "en": "TACROLIMUS CAPSULE, EXTENDED RELEASE ORAL 0.5 mg",
+        "fa": "کپسول آهسته‌رهش تاکرولیموس ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "52332",
+        "en": "TACROLIMUS CAPSULE, EXTENDED RELEASE ORAL 1 mg",
+        "fa": "کپسول آهسته‌رهش تاکرولیموس ۱ میلی‌گرم"
+      },
+      {
+        "code": "52333",
+        "en": "TACROLIMUS CAPSULE, EXTENDED RELEASE ORAL 5 mg",
+        "fa": "کپسول آهسته‌رهش تاکرولیموس ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2744/Tacrolimus",
+        "url": "https://www.darooyab.ir/G-2744/Tacrolimus"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-prograf",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA050708"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050708",
+      "label": "NDA050708"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f667de1-9dfa-4bd6-8ba0-15ee2d78873b",
+      "label": "FDA Prograf"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601117.html",
+      "label": "Tacrolimus"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608037.html",
+      "label": "Tacrolimus Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AD02",
+      "label": "L04AD02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2744/Tacrolimus",
+      "label": "Tacrolimus"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Tacrolimus can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Controlled lactation studies have not been conducted in humans; however, tacrolimus has been reported to be present in human milk.",
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have been established in pediatric liver, kidney, heart, and lung transplant patients.",
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception PROGRAF can cause fetal harm when administered to pregnant women.",
+      "refs": [
+        {
+          "source": "fda-prograf",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "id": "filgrastim",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فیلگراستیم (G-CSF)",
+    "en": "Filgrastim (G-CSF)"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "فاکتور محرک کلونی گرانولوسیت",
+    "en": "Granulocyte colony-stimulating factor"
+  },
+  "brands": [
+    {
+      "name": "Neupogen",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "neupogen",
+    "نوپوژن",
+    "G-CSF",
+    "فیلگراستیم",
+    "pd-grastim"
+  ],
+  "formulations": [
+    {
+      "id": "vial-300",
+      "form": "injection",
+      "route": "sc",
+      "label": "300 mcg/mL vial (also 480 mcg/1.6 mL; syringes 300 mcg/0.5 mL, 480 mcg/0.8 mL)",
+      "concentration": {
+        "amount": 300,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neupogen",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "chemo",
+      "disease": "febrile-neutropenia",
+      "label": {
+        "fa": "شیمی‌درمانی سرکوب‌کننده مغز استخوان — شروع ۵ mcg/kg/روز",
+        "en": "Myelosuppressive chemotherapy — start 5 mcg/kg/day"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDay": 5,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-neupogen",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دست‌کم ۲۴ ساعت پس از شیمی‌درمانی شروع شود؛ تا ANC بالای ۱۰٬۰۰۰ پس از نادیر (حداکثر ۲ هفته). در هر دوره قابل افزایش ۵ mcg/kg. CBC دو بار در هفته.",
+            "en": "Start at least 24 h after chemotherapy; continue until ANC >10,000 after the nadir (up to 2 weeks). May increase by 5 mcg/kg each cycle. CBC twice weekly."
+          },
+          "refs": [
+            {
+              "source": "fda-neupogen",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmt",
+      "disease": "febrile-neutropenia",
+      "label": {
+        "fa": "پس از پیوند مغز استخوان — ۱۰ mcg/kg/روز وریدی",
+        "en": "After bone marrow transplant — 10 mcg/kg/day IV"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDay": 10,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-neupogen",
+          "section": "2.2"
+        }
+      ]
+    },
+    {
+      "id": "rad",
+      "disease": "poisoning",
+      "label": {
+        "fa": "مواجهه با تشعشع سرکوب‌کننده مغز استخوان (بیش از ۲ Gy) — ۱۰ mcg/kg یک بار در روز",
+        "en": "Myelosuppressive radiation exposure (>2 Gy) — 10 mcg/kg once daily"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDay": 10,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-neupogen",
+          "section": "2.5"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه واکنش آلرژیک جدی به فاکتورهای محرک کلونی گرانولوسیت (فیلگراستیم، پگ‌فیلگراستیم).",
+        "en": "History of serious allergic reactions to G-CSFs such as filgrastim or pegfilgrastim."
+      },
+      "refs": [
+        {
+          "source": "fda-neupogen",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پارگی طحال (درد شانه یا بالای شکم چپ)؛ ARDS؛ بحران سلول داسی؛ گلومرولونفریت؛ سندرم نشت مویرگی.",
+        "en": "Splenic rupture (left upper abdominal or shoulder pain); ARDS; sickle cell crisis; glomerulonephritis; capillary leak syndrome."
+      },
+      "refs": [
+        {
+          "source": "fda-neupogen",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "chemo",
+      "formulation": "vial-300",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 350,
+        "mlPerDose": 1.17
+      }
+    },
+    {
+      "regimen": "bmt",
+      "formulation": "vial-300",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 700,
+        "mlPerDose": 2.33
+      }
+    },
+    {
+      "regimen": "rad",
+      "formulation": "vial-300",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 700,
+        "mlPerDose": 2.33
+      }
+    }
+  ],
+  "atc": [
+    "L03AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05152",
+        "en": "FILGRASTIM(GCSF) 300MCG/0.5ML INJ",
+        "fa": "فرآورده تزریقی فیلگراستیم (گکسف) ۳۰۰ میکروگرم / ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "00534",
+        "en": "FILGRASTIM(GCSF) 300MCG/ML INJ",
+        "fa": "فرآورده تزریقی فیلگراستیم (گکسف) ۳۰۰ میکروگرم / میلی‌لیتر"
+      },
+      {
+        "code": "18972",
+        "en": "PEGFILGRASTIM 6MG/0.6ML INJECTION",
+        "fa": "فرآورده تزریقی پگفیلگراستیم ۶ میلی‌گرم / ۰٫۶ میلی‌لیتر"
+      },
+      {
+        "code": "50330",
+        "en": "FILGRASTIM INJECTION PARENTERAL 600 ug/1mL 0.2 mL",
+        "fa": "فرآورده تزریقی فیلگراستیم ۶۰۰ میکروگرم / ۱ میلی‌لیتر ۰٫۲ میلی‌لیتر"
+      },
+      {
+        "code": "52624",
+        "en": "FILGRASTIM INJECTION PARENTERAL 600 ug/1mL 0.25 mL",
+        "fa": "فرآورده تزریقی فیلگراستیم ۶۰۰ میکروگرم / ۱ میلی‌لیتر ۰٫۲۵ میلی‌لیتر"
+      },
+      {
+        "code": "51936",
+        "en": "PEGFILGRASTIM INJECTION, SOLUTION PARENTERAL 10 mg/1mL 0.3 mL",
+        "fa": "محلول تزریقی پگفیلگراستیم ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۰٫۳ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1403/Filgrastim",
+        "url": "https://www.darooyab.ir/G-1403/Filgrastim"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-neupogen",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103353"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103353",
+      "label": "BLA103353"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=97cc73cc-b5b7-458a-a933-77b00523e193",
+      "label": "FDA Neupogen"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a692033.html",
+      "label": "Filgrastim Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L03AA02",
+      "label": "L03AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1403/Filgrastim",
+      "label": "Filgrastim"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های موجود ارتباطی با نقص مادرزادی، سقط یا پیامد بد نشان نداده‌اند.",
+        "en": "Label: available data have not established an association with birth defects, miscarriage or adverse outcomes."
+      },
+      "quote": "Available data from published studies, including several observational studies of pregnancy outcomes in women exposed to filgrastim products and those who were unexposed, have not established an association with NEUPOGEN use during pregnancy and major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-neupogen",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is published literature documenting transfer of filgrastim into human milk.",
+      "refs": [
+        {
+          "source": "fda-neupogen",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of NEUPOGEN have been established in pediatric patients with SCN [see Clinical Studies (14.5) ] .",
+      "refs": [
+        {
+          "source": "fda-neupogen",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these subjects and younger subjects.",
+      "refs": [
+        {
+          "source": "fda-neupogen",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

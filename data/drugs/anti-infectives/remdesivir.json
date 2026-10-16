@@ -1,0 +1,467 @@
+{
+  "id": "remdesivir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "رمدسیویر",
+    "en": "Remdesivir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده RNA پلیمراز ویروسی",
+    "en": "Viral RNA polymerase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Veklury",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "veklury",
+    "وکلوری",
+    "رمدسیویر",
+    "remdeiran"
+  ],
+  "formulations": [
+    {
+      "id": "vial-100",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "100 mg vial",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "covid-19",
+      "label": {
+        "fa": "کووید-۱۹ — بزرگسال و کودک ≥۴۰ kg: روز ۱ دوز بارگذاری ۲۰۰ mg",
+        "en": "COVID-19 — adults and children ≥40 kg: day 1 loading 200 mg"
+      },
+      "population": {
+        "minWeightKg": 40
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بستری بدون ونتیلاتور: ۵ روز (در صورت عدم بهبود تا ۱۰)؛ ونتیلاتور یا ECMO: ۱۰ روز. آزمایش کبد و PT پیش از شروع. نارسایی کلیه تنظیم ندارد.",
+            "en": "Hospitalised without ventilation: 5 days (up to 10 if no improvement); ventilation/ECMO: 10 days. Liver tests and PT before starting. No renal adjustment."
+          },
+          "refs": [
+            {
+              "source": "fda-veklury",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-veklury",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-veklury",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "covid-19",
+      "label": {
+        "fa": "نگهدارنده — ≥۴۰ kg: ۱۰۰ mg یک بار در روز از روز ۲",
+        "en": "Maintenance — ≥40 kg: 100 mg once daily from day 2"
+      },
+      "population": {
+        "minWeightKg": 40
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 4,
+        "max": 9
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بستری بدون ونتیلاتور: ۵ روز (در صورت عدم بهبود تا ۱۰)؛ ونتیلاتور یا ECMO: ۱۰ روز. آزمایش کبد و PT پیش از شروع. نارسایی کلیه تنظیم ندارد.",
+            "en": "Hospitalised without ventilation: 5 days (up to 10 if no improvement); ventilation/ECMO: 10 days. Liver tests and PT before starting. No renal adjustment."
+          },
+          "refs": [
+            {
+              "source": "fda-veklury",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-veklury",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-veklury",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-load",
+      "disease": "covid-19",
+      "label": {
+        "fa": "کودک ≥۲۸ روز و ۳ تا <۴۰ kg — روز ۱: ۵ mg/kg",
+        "en": "Child ≥28 days and 3–<40 kg — day 1: 5 mg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 28,
+          "unit": "day"
+        },
+        "minWeightKg": 3,
+        "maxWeightKg": 39.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بستری بدون ونتیلاتور: ۵ روز (در صورت عدم بهبود تا ۱۰)؛ ونتیلاتور یا ECMO: ۱۰ روز. آزمایش کبد و PT پیش از شروع. نارسایی کلیه تنظیم ندارد.",
+            "en": "Hospitalised without ventilation: 5 days (up to 10 if no improvement); ventilation/ECMO: 10 days. Liver tests and PT before starting. No renal adjustment."
+          },
+          "refs": [
+            {
+              "source": "fda-veklury",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-veklury",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-veklury",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-maint",
+      "disease": "covid-19",
+      "label": {
+        "fa": "کودک ≥۲۸ روز و ۳ تا <۴۰ kg — از روز ۲: ۲٫۵ mg/kg یک بار در روز",
+        "en": "Child ≥28 days and 3–<40 kg — from day 2: 2.5 mg/kg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 28,
+          "unit": "day"
+        },
+        "minWeightKg": 3,
+        "maxWeightKg": 39.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2.5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بستری بدون ونتیلاتور: ۵ روز (در صورت عدم بهبود تا ۱۰)؛ ونتیلاتور یا ECMO: ۱۰ روز. آزمایش کبد و PT پیش از شروع. نارسایی کلیه تنظیم ندارد.",
+            "en": "Hospitalised without ventilation: 5 days (up to 10 if no improvement); ventilation/ECMO: 10 days. Liver tests and PT before starting. No renal adjustment."
+          },
+          "refs": [
+            {
+              "source": "fda-veklury",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-veklury",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-veklury",
+              "section": "2.4"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "نوزاد زیر ۲۸ روز (≥۱٫۵ kg): ۲٫۵ mg/kg روز ۱، سپس ۱٫۲۵ mg/kg.",
+            "en": "Neonates <28 days (≥1.5 kg): 2.5 mg/kg day 1, then 1.25 mg/kg."
+          },
+          "refs": [
+            {
+              "source": "fda-veklury",
+              "section": "2.3, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت قابل‌توجه به رمدسیویر.",
+        "en": "History of clinically significant hypersensitivity to remdesivir."
+      },
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش انفوزیون و حساسیت؛ افزایش ترانس‌آمیناز.",
+        "en": "Infusion-related and hypersensitivity reactions; transaminase elevations."
+      },
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 200
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 100
+      }
+    },
+    {
+      "regimen": "child-load",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100
+      }
+    },
+    {
+      "regimen": "child-maint",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "J05AB16"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52707",
+        "en": "REMDESIVIR INJECTION, SOLUTION PARENTERAL 5 mg/1mL 20MILLILITER",
+        "fa": "محلول تزریقی رمدسیویر ۵ میلی‌گرم / ۱ میلی‌لیتر ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "52689",
+        "en": "REMDESIVIR INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
+        "fa": "پودر برای تهیه محلول تزریقی رمدسیویر ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5408/Remdesivir",
+        "url": "https://www.darooyab.ir/G-5408/Remdesivir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-veklury",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA214787"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=214787",
+      "label": "NDA214787"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0978fa8-53ff-4ca2-82a7-567fd3e958ca",
+      "label": "FDA Veklury"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620033.html",
+      "label": "Remdesivir Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AB16",
+      "label": "J05AB16"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5408/Remdesivir",
+      "label": "Remdesivir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from a clinical trial (IMPAACT 2032), published reports, the COVID-PR pregnancy exposure registry, and compassionate use of remdesivir in pregnant individuals have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes following …",
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary A published case report describes the presence of remdesivir and active metabolite GS-441524 in human milk.",
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of VEKLURY for the treatment of COVID-19 have been established in pediatric patients from birth to less than 18 years of age and weighing at least 1.5 kg, who are: Hospitalized, or Not hospitalized and have mild-to-moderate COVID-19, and are at high risk for progression to severe COVID-19, …",
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, appropriate caution should be exercised in the administration of VEKLURY and monitoring of elderly patients, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-veklury",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

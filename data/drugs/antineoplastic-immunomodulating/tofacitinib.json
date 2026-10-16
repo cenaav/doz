@@ -1,0 +1,333 @@
+{
+  "id": "tofacitinib",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "توفاسیتینیب",
+    "en": "Tofacitinib"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده JAK",
+    "en": "JAK inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Xeljanz",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xeljanz",
+    "زلجانز",
+    "توفاسیتینیب"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xeljanz",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xeljanz",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید، پسوریاتیک، اسپوندیلیت — ۵ mg دو بار در روز (یا XR ۱۱ mg یک بار)",
+        "en": "RA, PsA, AS — 5 mg twice daily (or XR 11 mg once daily)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-xeljanz",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نارسایی کلیه متوسط/شدید یا کبد متوسط: ۵ mg یک بار در روز. لنفوسیت زیر ۵۰۰، ANC زیر ۱۰۰۰ یا Hb زیر ۸ شروع نشود.",
+            "en": "Moderate/severe renal or moderate hepatic impairment: 5 mg once daily. Do not start if lymphocytes <500, ANC <1000 or Hb <8."
+          },
+          "refs": [
+            {
+              "source": "fda-xeljanz",
+              "section": "2.3, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc",
+      "disease": "ulcerative-colitis",
+      "label": {
+        "fa": "کولیت اولسروز — القا ۱۰ mg دو بار در روز دست‌کم ۸ هفته، سپس ۵ mg دو بار",
+        "en": "Ulcerative colitis — induction 10 mg twice daily for ≥8 weeks, then 5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-xeljanz",
+          "section": "2.5, Table 3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۱۰ mg دو بار تا حداکثر ۱۶ هفته؛ بدون پاسخ کافی قطع شود.",
+            "en": "If needed 10 mg twice daily up to 16 weeks maximum; stop if no adequate response."
+          },
+          "refs": [
+            {
+              "source": "fda-xeljanz",
+              "section": "2.5, Table 3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای (مهارکننده JAK): عفونت جدی، مرگ، بدخیمی، حوادث قلبی‌عروقی بزرگ و ترومبوز. تست سل پیش از شروع.",
+        "en": "Boxed warning (JAK inhibitors): serious infections, mortality, malignancy, major adverse cardiovascular events and thrombosis. TB test before starting."
+      },
+      "refs": [
+        {
+          "source": "fda-xeljanz",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ra",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "uc",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L04AF01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "50711",
+        "en": "TOFACITINIB 5MG TAB",
+        "fa": "قرص توفاسیتینیب ۵ میلی‌گرم"
+      },
+      {
+        "code": "52216",
+        "en": "TOFACITINIB 10MG TAB",
+        "fa": "قرص توفاسیتینیب ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4538/Tofacitinib",
+        "url": "https://www.darooyab.ir/G-4538/Tofacitinib"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-xeljanz",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA203214"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203214",
+      "label": "NDA203214"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cf74ba2f-afc5-4baa-8594-979c889a5831",
+      "label": "FDA Xeljanz"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613025.html",
+      "label": "Tofacitinib"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AF01",
+      "label": "L04AF01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4538/Tofacitinib",
+      "label": "Tofacitinib"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The available data with XELJANZ (tablets and oral solution) and XELJANZ XR (extended-release tablets) from a pregnancy exposure registry that enrolled 11 exposed pregnant females, pharmacovigilance, and published literature are insufficient to draw conclusions about a drug‑associated risk of major birth …",
+      "refs": [
+        {
+          "source": "fda-xeljanz",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "… solution) and XELJANZ XR (extended-release tablets), such as increased risk of serious infections, advise patients that breastfeeding is not recommended during treatment and for at least 18 hours after the last dose of XELJANZ or 36 hours after the last dose of XELJANZ XR (approximately 6 elimination half-lives).",
+      "refs": [
+        {
+          "source": "fda-xeljanz",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Polyarticular Course Juvenile Idiopathic Arthritis (pcJIA) The safety and effectiveness of XELJANZ (tablets and oral solution) for the treatment of active pcJIA have been established in pediatric patients 2 years of age and older who have had an inadequate response or intolerance to one or more TNF blockers.",
+      "refs": [
+        {
+          "source": "fda-xeljanz",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 3315 adults who were enrolled in clinical trials with RA (Studies RA-I to V), a total of 505 patients were 65 years of age and older, including 71 patients 75 years and older.",
+      "refs": [
+        {
+          "source": "fda-xeljanz",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females In an animal reproduction study, tofacitinib at AUC multiples of 13 times the recommended dosage of 5 mg twice daily and 6.3 times the maximum recommended dosage of 10 mg twice daily demonstrated adverse embryo-fetal findings [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-xeljanz",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

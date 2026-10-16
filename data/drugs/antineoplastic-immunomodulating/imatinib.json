@@ -1,0 +1,547 @@
+{
+  "id": "imatinib",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایماتینیب",
+    "en": "Imatinib"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده تیروزین کیناز BCR-ABL",
+    "en": "BCR-ABL tyrosine kinase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Gleevec",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "gleevec",
+    "glivec",
+    "گلیوک",
+    "ایماتینیب"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-400",
+      "form": "tablet",
+      "route": "oral",
+      "label": "400 mg tablet (scored)",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cml-cp",
+      "disease": "cml",
+      "label": {
+        "fa": "CML فاز مزمن — بزرگسال ۴۰۰ mg یک بار در روز",
+        "en": "CML chronic phase — adult 400 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ دوز بر اساس پاسخ و عوارض تنظیم می‌شود.",
+            "en": "Only under an oncologist; dose is adjusted by response and toxicity."
+          },
+          "refs": [
+            {
+              "source": "fda-imatinib",
+              "section": "2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "با غذا و یک لیوان پر آب. ۴۰۰ و ۶۰۰ mg یک بار؛ ۸۰۰ mg به‌صورت ۴۰۰ mg دو بار. با القاگر قوی CYP3A4 دست‌کم ۵۰٪ افزایش.",
+            "en": "With a meal and a large glass of water. 400 and 600 mg once daily; 800 mg as 400 mg twice daily. With strong CYP3A4 inducers increase by at least 50%."
+          },
+          "refs": [
+            {
+              "source": "fda-imatinib",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-imatinib",
+              "section": "2.12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cml-ap",
+      "disease": "cml",
+      "label": {
+        "fa": "CML فاز تسریع یا بلاستی — بزرگسال ۶۰۰ mg یک بار در روز",
+        "en": "CML accelerated phase or blast crisis — adult 600 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ دوز بر اساس پاسخ و عوارض تنظیم می‌شود.",
+            "en": "Only under an oncologist; dose is adjusted by response and toxicity."
+          },
+          "refs": [
+            {
+              "source": "fda-imatinib",
+              "section": "2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "با غذا و یک لیوان پر آب. ۴۰۰ و ۶۰۰ mg یک بار؛ ۸۰۰ mg به‌صورت ۴۰۰ mg دو بار. با القاگر قوی CYP3A4 دست‌کم ۵۰٪ افزایش.",
+            "en": "With a meal and a large glass of water. 400 and 600 mg once daily; 800 mg as 400 mg twice daily. With strong CYP3A4 inducers increase by at least 50%."
+          },
+          "refs": [
+            {
+              "source": "fda-imatinib",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-imatinib",
+              "section": "2.12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cml-child",
+      "disease": "cml",
+      "label": {
+        "fa": "CML کودک (۱ سال به بالا) — ۳۴۰ mg/m²/روز (حداکثر ۶۰۰ mg)",
+        "en": "Pediatric CML (≥1 y) — 340 mg/m²/day (max 600 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 340,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 600,
+        "refs": [
+          {
+            "source": "fda-imatinib",
+            "section": "2.3"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ دوز بر اساس پاسخ و عوارض تنظیم می‌شود.",
+            "en": "Only under an oncologist; dose is adjusted by response and toxicity."
+          },
+          "refs": [
+            {
+              "source": "fda-imatinib",
+              "section": "2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "یک بار یا تقسیم در دو نوبت صبح و عصر.",
+            "en": "Once daily or split into morning and evening doses."
+          },
+          "refs": [
+            {
+              "source": "fda-imatinib",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gist",
+      "disease": "cml",
+      "label": {
+        "fa": "GIST متاستاتیک یا کمکی — بزرگسال ۴۰۰ mg یک بار در روز",
+        "en": "Metastatic or adjuvant GIST — adult 400 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "2.10"
+        },
+        {
+          "source": "fda-imatinib",
+          "section": "2.11"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ دوز بر اساس پاسخ و عوارض تنظیم می‌شود.",
+            "en": "Only under an oncologist; dose is adjusted by response and toxicity."
+          },
+          "refs": [
+            {
+              "source": "fda-imatinib",
+              "section": "2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "با غذا و یک لیوان پر آب. ۴۰۰ و ۶۰۰ mg یک بار؛ ۸۰۰ mg به‌صورت ۴۰۰ mg دو بار. با القاگر قوی CYP3A4 دست‌کم ۵۰٪ افزایش.",
+            "en": "With a meal and a large glass of water. 400 and 600 mg once daily; 800 mg as 400 mg twice daily. With strong CYP3A4 inducers increase by at least 50%."
+          },
+          "refs": [
+            {
+              "source": "fda-imatinib",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-imatinib",
+              "section": "2.12"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "کمکی: ۳ سال. پیشرفت در GIST متاستاتیک: تا ۸۰۰ mg (۴۰۰ دو بار).",
+            "en": "Adjuvant: 3 years. Progression in metastatic GIST: up to 800 mg (400 twice daily)."
+          },
+          "refs": [
+            {
+              "source": "fda-imatinib",
+              "section": "2.10"
+            },
+            {
+              "source": "fda-imatinib",
+              "section": "2.11"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "احتباس مایع و ادم؛ سرکوب مغز استخوان (CBC هفتگی ماه اول)؛ سمیت کبد؛ نارسایی قلب؛ آسیب جنینی.",
+        "en": "Fluid retention and oedema; myelosuppression (weekly CBC in month 1); hepatotoxicity; heart failure; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cml-cp",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "cml-ap",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600,
+        "tabletsPerDoseRounded": 6
+      }
+    },
+    {
+      "regimen": "cml-child",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 36,
+        "heightCm": 100
+      },
+      "expect": {
+        "perDose": 340,
+        "tabletsPerDoseRounded": 3.5
+      }
+    },
+    {
+      "regimen": "gist",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L01EA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02289",
+        "en": "IMATINIB MESYLATE 100MG CAP",
+        "fa": "کپسول ایماتینیب مزیلات ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "04840",
+        "en": "IMATINIB MESYLATE 100MG TAB",
+        "fa": "قرص ایماتینیب مزیلات ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02288",
+        "en": "IMATINIB MESYLATE 50MG CAP",
+        "fa": "کپسول ایماتینیب مزیلات ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "23155",
+        "en": "IMATINIB TABLET 400 mg",
+        "fa": "قرص ایماتینیب ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "51979",
+        "en": "IMATINIB MESYLATE 400MG CAP",
+        "fa": "کپسول ایماتینیب مزیلات ۴۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1016/Imatinib",
+        "url": "https://www.darooyab.ir/G-1016/Imatinib"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-imatinib",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA212773"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212773",
+      "label": "ANDA212773"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c0611fc0-b217-4988-acd4-b8c629ce489b",
+      "label": "FDA Imatinib"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a606018.html",
+      "label": "Imatinib"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01EA01",
+      "label": "L01EA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1016/Imatinib",
+      "label": "Imatinib"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Imatinib mesylate can cause fetal harm when administered to a pregnant woman based on human and animal data.",
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants from imatinib mesylate, advise a lactating woman not to breastfeed during treatment and for 1 month after the last dose.",
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of imatinib mesylate have been demonstrated in pediatric patients with newly diagnosed Ph+ chronic phase CML and Ph+ ALL [see Clinical Studies ( 14.2 , 14.4 ) ] .",
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The frequency of edema was higher in patients older than 65 years as compared to younger patients; no other difference in the safety profile was observed [see Warnings and Precautions ( 5.1 )] .",
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise female patients of reproductive potential to use effective contraception (methods that result in less than 1% pregnancy rates) when using imatinib mesylate during treatment and for fourteen days after stopping treatment with imatinib mesylate [see Specific Populations ( 8 )] .",
+      "refs": [
+        {
+          "source": "fda-imatinib",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

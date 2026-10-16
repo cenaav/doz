@@ -1,0 +1,241 @@
+{
+  "id": "typhoid-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن حصبه (Vi پلی‌ساکاریدی)",
+    "en": "Typhoid Vi polysaccharide vaccine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن پلی‌ساکاریدی",
+    "en": "Polysaccharide vaccine"
+  },
+  "brands": [
+    {
+      "name": "Typhim Vi",
+      "market": "UK"
+    }
+  ],
+  "synonyms": [
+    "typhim",
+    "واکسن حصبه",
+    "واکسن تیفوئید",
+    "typhoid vaccine"
+  ],
+  "formulations": [
+    {
+      "id": "syr-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL prefilled syringe",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mL",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "UK"
+      ],
+      "refs": [
+        {
+          "source": "emc-typhim",
+          "section": "6.5"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "typhoid",
+      "label": {
+        "fa": "پیشگیری از حصبه — بزرگسال و کودک ۲ سال به بالا: یک دوز ۰٫۵ mL",
+        "en": "Typhoid prevention — adults and children ≥2 y: single 0.5 mL dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "emc-typhim",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عضلانی (یا زیرجلدی)، دست‌کم ۲ هفته پیش از احتمال مواجهه. یادآور هر ۳ سال برای کسانی که در خطر می‌مانند. از پاراتیفوئید محافظت نمی‌کند. زیر ۲ سال پاسخ ناکافی است.",
+            "en": "IM (or SC), at least 2 weeks before possible exposure. Revaccinate every 3 years if at continued risk. No protection against paratyphoid. Inadequate response under 2 y."
+          },
+          "refs": [
+            {
+              "source": "emc-typhim",
+              "section": "4.2"
+            },
+            {
+              "source": "emc-typhim",
+              "section": "4.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ماده مؤثره، اجزا یا بقایای فرمالدئید و کازئین. در بیماری تب‌دار حاد واکسن به تعویق افتد.",
+        "en": "Hypersensitivity to the active substance, excipients or residues such as formaldehyde or casein. Postpone in acute febrile illness."
+      },
+      "refs": [
+        {
+          "source": "emc-typhim",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "syr-05",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07AP03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02193",
+        "en": "VACCINE-TYPHOID AMP",
+        "fa": "آمپول واکسن–تیفوید"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3532/Typhoid-Vaccines",
+        "url": "https://www.darooyab.ir/G-3532/Typhoid-Vaccines"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607028.html",
+      "label": "Typhoid Vaccine, Live Oral"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a626050.html",
+      "label": "Typhoid Vi Polysaccharide Vaccine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07AP03",
+      "label": "J07AP03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3532/Typhoid-Vaccines",
+      "label": "Typhoid-Vaccines"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/1393/smpc",
+      "label": "eMC Typhim Vi"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "and lactation Pregnancy Animal reproduction studies have not been conducted with TYPHIM Vi.",
+      "refs": [
+        {
+          "source": "emc-typhim",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution must be exercised when TYPHIM Vi is administered to a nursing mother.",
+      "refs": [
+        {
+          "source": "emc-typhim",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Children over 2 years of age: A single dose of 0.5 millilitre.",
+      "refs": [
+        {
+          "source": "emc-typhim",
+          "section": "4.2"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly: As for adults and children over 2 years of age.",
+      "refs": [
+        {
+          "source": "emc-typhim",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "id": "infliximab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اینفلیکسیمب",
+    "en": "Infliximab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده TNF",
+    "en": "TNF blocker"
+  },
+  "brands": [
+    {
+      "name": "Remicade",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "remicade",
+    "رمیکید",
+    "اینفلیکسیماب",
+    "infimab"
+  ],
+  "formulations": [
+    {
+      "id": "vial-100",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "100 mg vial",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "crohn",
+      "disease": "crohns",
+      "label": {
+        "fa": "کرون — بزرگسال و کودک ۶ سال به بالا: ۵ mg/kg هر نوبت (هفته ۰، ۲، ۶ و سپس هر ۸ هفته)",
+        "en": "Crohn’s — adults and children ≥6 y: 5 mg/kg per infusion (weeks 0, 2, 6, then every 8 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-remicade",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "القا در هفته ۰، ۲ و ۶، سپس نگهدارنده هر ۸ هفته (نه روزانه). انفوزیون وریدی دست‌کم ۲ ساعت.",
+            "en": "Induction at weeks 0, 2 and 6, then maintenance every 8 weeks (not daily). IV infusion over at least 2 hours."
+          },
+          "refs": [
+            {
+              "source": "fda-remicade",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "بزرگسال با از دست رفتن پاسخ: ۱۰ mg/kg ممکن است. بدون پاسخ تا هفته ۱۴ ادامه سودی ندارد.",
+            "en": "Adults who lose response: 10 mg/kg may be considered. No response by week 14 — unlikely to respond."
+          },
+          "refs": [
+            {
+              "source": "fda-remicade",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc",
+      "disease": "ulcerative-colitis",
+      "label": {
+        "fa": "کولیت اولسروز — بزرگسال و کودک ۶ سال به بالا: ۵ mg/kg هر نوبت",
+        "en": "Ulcerative colitis — adults and children ≥6 y: 5 mg/kg per infusion"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-remicade",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "القا در هفته ۰، ۲ و ۶، سپس نگهدارنده هر ۸ هفته (نه روزانه). انفوزیون وریدی دست‌کم ۲ ساعت.",
+            "en": "Induction at weeks 0, 2 and 6, then maintenance every 8 weeks (not daily). IV infusion over at least 2 hours."
+          },
+          "refs": [
+            {
+              "source": "fda-remicade",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — ۳ mg/kg هر نوبت همراه متوترکسات",
+        "en": "Rheumatoid arthritis — 3 mg/kg per infusion with methotrexate"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 3,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "2.5"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "القا در هفته ۰، ۲ و ۶، سپس نگهدارنده هر ۸ هفته (نه روزانه). انفوزیون وریدی دست‌کم ۲ ساعت.",
+            "en": "Induction at weeks 0, 2 and 6, then maintenance every 8 weeks (not daily). IV infusion over at least 2 hours."
+          },
+          "refs": [
+            {
+              "source": "fda-remicade",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "پاسخ ناکافی: تا ۱۰ mg/kg هر ۸ هفته یا هر ۴ هفته.",
+            "en": "Incomplete response: up to 10 mg/kg every 8 weeks or as often as every 4 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-remicade",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "as",
+      "disease": "ankylosing-spondylitis",
+      "label": {
+        "fa": "اسپوندیلیت آنکیلوزان — ۵ mg/kg (هفته ۰، ۲، ۶، سپس هر ۶ هفته)",
+        "en": "Ankylosing spondylitis — 5 mg/kg (weeks 0, 2, 6, then every 6 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "psa",
+      "disease": "psoriatic-arthritis",
+      "label": {
+        "fa": "آرتریت پسوریاتیک — ۵ mg/kg هر نوبت",
+        "en": "Psoriatic arthritis — 5 mg/kg per infusion"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "2.7"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "القا در هفته ۰، ۲ و ۶، سپس نگهدارنده هر ۸ هفته (نه روزانه). انفوزیون وریدی دست‌کم ۲ ساعت.",
+            "en": "Induction at weeks 0, 2 and 6, then maintenance every 8 weeks (not daily). IV infusion over at least 2 hours."
+          },
+          "refs": [
+            {
+              "source": "fda-remicade",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pso",
+      "disease": "psoriasis",
+      "label": {
+        "fa": "پسوریازیس شدید مزمن — ۵ mg/kg هر نوبت",
+        "en": "Chronic severe plaque psoriasis — 5 mg/kg per infusion"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "2.8"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "القا در هفته ۰، ۲ و ۶، سپس نگهدارنده هر ۸ هفته (نه روزانه). انفوزیون وریدی دست‌کم ۲ ساعت.",
+            "en": "Induction at weeks 0, 2 and 6, then maintenance every 8 weeks (not daily). IV infusion over at least 2 hours."
+          },
+          "refs": [
+            {
+              "source": "fda-remicade",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "دوز بیش از ۵ mg/kg در نارسایی قلبی متوسط یا شدید؛ حساسیت شدید قبلی به اینفلیکسیمب یا پروتئین موشی.",
+        "en": "Doses >5 mg/kg in moderate or severe heart failure; previous severe hypersensitivity to infliximab or murine proteins."
+      },
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: عفونت جدی (سل، قارچی، فرصت‌طلب) و بدخیمی. پیش از شروع تست سل نهفته و در صورت مثبت بودن درمان آن.",
+        "en": "Boxed warning: serious infections (TB, fungal, opportunistic) and malignancy. Test for latent TB before starting and treat if positive."
+      },
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "لنفوم سلول T کبدی-طحالی (بیشتر جوانان با آزاتیوپرین یا ۶-MP)؛ واکنش انفوزیون؛ فعال شدن هپاتیت B.",
+        "en": "Hepatosplenic T-cell lymphoma (mostly young patients on azathioprine/6-MP); infusion reactions; hepatitis B reactivation."
+      },
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-remicade",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "crohn",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 350
+      }
+    },
+    {
+      "regimen": "uc",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 35
+      },
+      "expect": {
+        "perDose": 175
+      }
+    },
+    {
+      "regimen": "ra",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 210
+      }
+    },
+    {
+      "regimen": "as",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 350
+      }
+    },
+    {
+      "regimen": "psa",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 350
+      }
+    },
+    {
+      "regimen": "pso",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 350
+      }
+    }
+  ],
+  "atc": [
+    "L04AB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05831",
+        "en": "INFLIXIMAB 100MG VIAL",
+        "fa": "ویال اینفلیکسیمب ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-105/Infliximab",
+        "url": "https://www.darooyab.ir/G-105/Infliximab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-remicade",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103772"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103772",
+      "label": "BLA103772"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0a046c1-056d-45a9-bfd9-13b47c24f257",
+      "label": "FDA Remicade"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604023.html",
+      "label": "Infliximab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AB02",
+      "label": "L04AB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-105/Infliximab",
+      "label": "Infliximab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available observational studies in pregnant women exposed to REMICADE showed no increased risk of major malformations among live births as compared to those exposed to non-biologics.",
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Published literature show that infliximab is present at low levels in human milk.",
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در کرون و کولیت اولسروز ۶ تا ۱۷ سال ثابت شده؛ هشدار جعبه‌ای لنفوم و بدخیمی در کودکان و نوجوانان.",
+        "en": "Label: established for CD and UC at 6–17 y; boxed warning of lymphoma and malignancy in children and adolescents."
+      },
+      "quote": "The safety and effectiveness of REMICADE have been established in pediatric patients 6 to 17 years of age for induction and maintenance treatment of CD and UC.",
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… re close monitoring of geriatric patients for the development of serious infections is recommended [see Warnings and Precautions (5.1) and Adverse Reactions (6.1) ] .",
+      "refs": [
+        {
+          "source": "fda-remicade",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

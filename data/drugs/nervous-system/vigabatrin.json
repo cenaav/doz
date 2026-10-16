@@ -1,0 +1,320 @@
+{
+  "id": "vigabatrin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ویگاباترین",
+    "en": "Vigabatrin"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده GABA ترانس‌آمیناز",
+    "en": "GABA transaminase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Sabril",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sabril",
+    "سابریل",
+    "ویگاباترین"
+  ],
+  "formulations": [
+    {
+      "id": "sol-50",
+      "form": "solution",
+      "route": "oral",
+      "label": "500 mg packet dissolved in 10 mL water = 50 mg/mL",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vigabatrin",
+          "section": "3"
+        },
+        {
+          "source": "fda-vigabatrin",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "is",
+      "disease": "infantile-spasms",
+      "label": {
+        "fa": "اسپاسم شیرخواران (۱ ماه تا ۲ سال) — شروع ۵۰ mg/kg/روز در دو دوز، تا ۱۵۰ mg/kg/روز",
+        "en": "Infantile spasms (1 month–2 y) — start 50 mg/kg/day in two doses, up to 150 mg/kg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 50,
+        "perKgPerDayMax": 150,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-vigabatrin",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 150,
+        "refs": [
+          {
+            "source": "fda-vigabatrin",
+            "section": "2.3"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ تا ۵۰ mg/kg/روز هر ۳ روز.",
+            "en": "Increase by 25–50 mg/kg/day every 3 days."
+          },
+          "refs": [
+            {
+              "source": "fda-vigabatrin",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cps",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "تشنج پارشیل مقاوم بزرگسال (۱۷ سال به بالا) — ۵۰۰ mg دو بار، هر هفته ۵۰۰ mg/روز بیشتر تا ۱۵۰۰ mg دو بار",
+        "en": "Refractory complex partial seizures, adult (≥17 y) — 500 mg twice daily, +500 mg/day weekly to 1500 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 1000,
+          "increment": 500,
+          "incrementEveryDays": 7,
+          "max": 3000
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-vigabatrin",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۶۰۰۰ mg/روز سود بیشتری ندارد. نارسایی کلیه: ClCr ۵۰ تا ۸۰ ← ۲۵٪ کمتر؛ ۳۰ تا ۵۰ ← ۵۰٪ کمتر.",
+            "en": "6000 mg/day adds no benefit. Renal impairment: CrCl 50–80 → 25% less; 30–50 → 50% less."
+          },
+          "refs": [
+            {
+              "source": "fda-vigabatrin",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-vigabatrin",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: کاهش دائمی میدان بینایی (دید تونلی) — معاینه بینایی پایه و هر ۳ ماه؛ فقط از طریق برنامه REMS.",
+        "en": "Boxed warning: permanent bilateral visual field loss (tunnel vision) — baseline and 3-monthly vision assessment; available only through REMS."
+      },
+      "refs": [
+        {
+          "source": "fda-vigabatrin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "is",
+      "formulation": "sol-50",
+      "input": {
+        "ageMonths": 6,
+        "weightKg": 6
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 3,
+        "upperPerDose": 450
+      }
+    },
+    {
+      "regimen": "cps",
+      "formulation": "sol-50",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500,
+        "mlPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "N03AG04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01282",
+        "en": "VIGABATRIN 500MG FC TAB",
+        "fa": "قرص روکش‌دار ویگاباترین ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-691/Vigabatrin",
+        "url": "https://www.darooyab.ir/G-691/Vigabatrin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-vigabatrin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA208218"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208218",
+      "label": "ANDA208218"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e7cbc0a5-8c28-4451-9176-b608e228ba66",
+      "label": "FDA Vigabatrin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a610016.html",
+      "label": "Vigabatrin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AG04",
+      "label": "N03AG04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-691/Vigabatrin",
+      "label": "Vigabatrin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of vigabatrin in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-vigabatrin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions from vigabatrin in nursing infants, breastfeeding is not recommended.",
+      "refs": [
+        {
+          "source": "fda-vigabatrin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of vigabatrin as adjunctive treatment of refractory complex partial seizures in pediatric patients 2 to 16 years of age have been established and is supported by three double-blind, placebo-controlled studies in patients 3 to 16 years of age, adequate and well-controlled studies in adult …",
+      "refs": [
+        {
+          "source": "fda-vigabatrin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-vigabatrin",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

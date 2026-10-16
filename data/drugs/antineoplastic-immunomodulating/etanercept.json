@@ -1,0 +1,364 @@
+{
+  "id": "etanercept",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اتانرسپت",
+    "en": "Etanercept"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده TNF",
+    "en": "TNF blocker"
+  },
+  "brands": [
+    {
+      "name": "Enbrel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "enbrel",
+    "انبرل",
+    "اتانرسپت",
+    "altebrel",
+    "آلتبرل"
+  ],
+  "formulations": [
+    {
+      "id": "syr-50",
+      "form": "injection",
+      "route": "sc",
+      "label": "50 mg/mL prefilled syringe or autoinjector",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-25",
+      "form": "injection",
+      "route": "sc",
+      "label": "25 mg/0.5 mL single-dose vial",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید، پسوریاتیک، اسپوندیلیت — ۵۰ mg هفته‌ای یک بار",
+        "en": "RA, PsA, ankylosing spondylitis — 50 mg once WEEKLY"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "هفته‌ای یک بار ۵۰ mg زیرجلدی (نه روزانه)، با یا بدون متوترکسات.",
+          "en": "50 mg SC once WEEKLY (not daily), with or without methotrexate."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "2"
+        }
+      ]
+    },
+    {
+      "id": "pso",
+      "disease": "psoriasis",
+      "label": {
+        "fa": "پسوریازیس پلاک بزرگسال — ۵۰ mg دو بار در هفته ۳ ماه، سپس هفته‌ای یک بار",
+        "en": "Adult plaque psoriasis — 50 mg twice weekly for 3 months, then once weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "۵۰ mg دو بار در هفته به مدت ۳ ماه، سپس ۵۰ mg هفته‌ای یک بار.",
+          "en": "50 mg twice weekly for 3 months, then 50 mg once weekly."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "2"
+        }
+      ]
+    },
+    {
+      "id": "jia",
+      "disease": "juvenile-arthritis",
+      "label": {
+        "fa": "pJIA، پسوریازیس و JPsA کودک — ۰٫۸ mg/kg هفته‌ای یک بار (حداکثر ۵۰ mg)",
+        "en": "pJIA, pediatric psoriasis and JPsA — 0.8 mg/kg once weekly (max 50 mg)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.8,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "2.4"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 50,
+        "refs": [
+          {
+            "source": "fda-enbrel",
+            "section": "2.4"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک دوز در هفته (نه روزانه). ۶۳ kg یا بیشتر: ۵۰ mg هفتگی. برای دوزهای غیر از ۲۵ یا ۵۰ mg از ویال استفاده شود.",
+            "en": "One dose per WEEK (not daily). ≥63 kg: 50 mg weekly. Use the vial for doses other than 25 or 50 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-enbrel",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "sepsis",
+      "severity": "block",
+      "text": {
+        "fa": "سپسیس.",
+        "en": "Sepsis."
+      },
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: عفونت جدی (سل، قارچی، فرصت‌طلب) و بدخیمی. پیش از شروع تست سل نهفته و در صورت مثبت بودن درمان آن.",
+        "en": "Boxed warning: serious infections (TB, fungal, opportunistic) and malignancy. Test for latent TB before starting and treat if positive."
+      },
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "jia",
+      "formulation": "vial-25",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 0.4
+      }
+    }
+  ],
+  "atc": [
+    "L04AB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "04008",
+        "en": "ETANERCEPT 25MG VIAL",
+        "fa": "ویال اتانرسپت ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "21559",
+        "en": "ETANERCEPT 50MG PREFILLED SYRINGE",
+        "fa": "سرنگ از پیش پرشده اتانرسپت ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "08170",
+        "en": "ETANERCEPT 50MG VIAL",
+        "fa": "ویال اتانرسپت ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52294",
+        "en": "ETANERCEPT INJECTION, SOLUTION SUBCUTANEOUS 25 mg/0.5mL",
+        "fa": "فرآورده تزریقی اتانرسپت ۲۵ میلی‌گرم / ۰٫۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-68/Etanercept",
+        "url": "https://www.darooyab.ir/G-68/Etanercept"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-enbrel",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103795"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103795",
+      "label": "BLA103795"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a002b40c-097d-47a5-957f-7a7b1807af7f",
+      "label": "FDA Enbrel"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a602013.html",
+      "label": "Etanercept Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AB01",
+      "label": "L04AB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-68/Etanercept",
+      "label": "Etanercept"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: مطالعات موجود ارتباط قابل‌اعتمادی با نقص مادرزادی بزرگ نشان نمی‌دهند.",
+        "en": "Label: available studies do not reliably support an association with major birth defects."
+      },
+      "quote": "Available studies with use of etanercept during pregnancy do not reliably support an association between etanercept and major birth defects.",
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from published literature show that etanercept is present in low levels in human milk but is not detected in the plasma of breastfed infants (see Data ) .",
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در pJIA از ۲ سالگی ثابت شده؛ هشدار جعبه‌ای لنفوم و بدخیمی در کودکان و نوجوانان.",
+        "en": "Label: established for pJIA from 2 y; boxed warning of lymphoma and malignancy in children and adolescents."
+      },
+      "quote": "The safety and effectiveness of Enbrel have been established in pediatric patients 2 years of age and older with pJIA.",
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because there is a higher incidence of infections in the elderly population in general, caution should be used in treating the elderly.",
+      "refs": [
+        {
+          "source": "fda-enbrel",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

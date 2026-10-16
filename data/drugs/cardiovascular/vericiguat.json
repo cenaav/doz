@@ -1,0 +1,344 @@
+{
+  "id": "vericiguat",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "وریسیگوات",
+    "en": "Vericiguat"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "محرک گوانیلات سیکلاز محلول",
+    "en": "Soluble guanylate cyclase stimulator"
+  },
+  "brands": [
+    {
+      "name": "Verquvo",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "verquvo",
+    "ورکوو",
+    "وریسیگوات"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hfref",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی قلبی با EF زیر ۴۵٪ پس از بدتر شدن — شروع ۵ mg، هر ۲ هفته دو برابر تا ۱۰ mg",
+        "en": "HFrEF (EF <45%) after worsening — start 5 mg, double every 2 weeks to 10 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 5,
+          "incrementEveryDays": 14,
+          "max": 10
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با غذا. در خطر افت فشار علامت‌دار: شروع ۲٫۵ mg. زن در سن باروری: تست بارداری پیش از شروع.",
+            "en": "With food. At risk of symptomatic hypotension: start 2.5 mg. Females of reproductive potential: pregnancy test before starting."
+          },
+          "refs": [
+            {
+              "source": "fda-verquvo",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-verquvo",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف همزمان سایر محرک‌های گوانیلات سیکلاز محلول (ریوسیگوات)؛ بارداری.",
+        "en": "Concomitant other soluble guanylate cyclase stimulators (e.g. riociguat); pregnancy."
+      },
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — رد بارداری پیش از شروع و پیشگیری مؤثر تا ۱ ماه پس از قطع.",
+        "en": "Boxed warning: embryo-fetal toxicity — exclude pregnancy before starting and use effective contraception until 1 month after stopping."
+      },
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "pde5",
+      "text": {
+        "fa": "مهارکننده‌های PDE5: توصیه نمی‌شود (افت فشار).",
+        "en": "PDE5 inhibitors: not recommended (hypotension)."
+      },
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "7"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hfref",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C01DX22"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "53611",
+        "en": "VERICIGUAT 2.5 mg TABLET",
+        "fa": "قرص وریسیگوات 2.5 میلی گرم"
+      },
+      {
+        "code": "53612",
+        "en": "VERICIGUAT 5 mg TABLET",
+        "fa": "قرص وریسیگوات 5 میلی گرم"
+      },
+      {
+        "code": "53613",
+        "en": "VERICIGUAT 10 mg TABLET",
+        "fa": "قرص وریسیگوات 10 میلی گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5577/Vericiguat",
+        "url": "https://www.darooyab.ir/G-5577/Vericiguat"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-verquvo",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA214377"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=214377",
+      "label": "NDA214377"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17056d73-1b1b-4bf2-9c07-b7a9367f0d6d",
+      "label": "FDA Verquvo"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a621014.html",
+      "label": "Vericiguat"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DX22",
+      "label": "C01DX22"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5577/Vericiguat",
+      "label": "Vericiguat"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "VERQUVO is contraindicated in pregnancy [see Warnings and Precautions (5.1) and Use in Specific Populations (8.1) ].",
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants from VERQUVO, advise women not to breastfeed during treatment with VERQUVO.",
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of VERQUVO have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dosage adjustment of VERQUVO is required in geriatric patients.",
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females VERQUVO may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-verquvo",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

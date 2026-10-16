@@ -1,0 +1,249 @@
+{
+  "id": "erenumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ارنومب",
+    "en": "Erenumab"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتی‌بادی ضد گیرنده CGRP",
+    "en": "Anti-CGRP receptor antibody"
+  },
+  "brands": [
+    {
+      "name": "Aimovig",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aimovig",
+    "آیموویگ",
+    "ارنوماب"
+  ],
+  "formulations": [
+    {
+      "id": "pen-70",
+      "form": "injection",
+      "route": "sc",
+      "label": "70 mg/mL or 140 mg/mL autoinjector",
+      "concentration": {
+        "amount": 70,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aimovig",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mig",
+      "disease": "migraine-prophylaxis",
+      "label": {
+        "fa": "پیشگیری از میگرن بزرگسال — ۷۰ mg ماهی یک بار (برخی ۱۴۰ mg)",
+        "en": "Adult migraine prevention — 70 mg once MONTHLY (some 140 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 70,
+        "perDoseMax": 140,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-aimovig",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یک دوز در ماه (نه روزانه) زیرجلدی.",
+            "en": "One SC dose per MONTH (not daily)."
+          },
+          "refs": [
+            {
+              "source": "fda-aimovig",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی به ارنومب (آنافیلاکسی، آنژیوادم).",
+        "en": "Serious hypersensitivity to erenumab (anaphylaxis, angioedema)."
+      },
+      "refs": [
+        {
+          "source": "fda-aimovig",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "یبوست شدید؛ افزایش یا بدتر شدن فشار خون.",
+        "en": "Severe constipation; new or worsening hypertension."
+      },
+      "refs": [
+        {
+          "source": "fda-aimovig",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mig",
+      "formulation": "pen-70",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 70,
+        "mlPerDose": 1,
+        "upperPerDose": 140
+      }
+    }
+  ],
+  "atc": [
+    "N02CD01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Erenumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-aimovig",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761077"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761077",
+      "label": "BLA761077"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b998ed05-94b0-47fd-b28f-cddd1e128fd8",
+      "label": "FDA Aimovig"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618029.html",
+      "label": "Erenumab-aooe Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02CD01",
+      "label": "N02CD01"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of AIMOVIG in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-aimovig",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of erenumab-aooe in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-aimovig",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-aimovig",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-aimovig",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

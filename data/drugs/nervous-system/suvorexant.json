@@ -1,0 +1,313 @@
+{
+  "id": "suvorexant",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سووورکسانت",
+    "en": "Suvorexant"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتاگونیست گیرنده اورکسین",
+    "en": "Orexin receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Belsomra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "belsomra",
+    "بلسومرا",
+    "سووورکسانت"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ins",
+      "disease": "insomnia",
+      "label": {
+        "fa": "بی‌خوابی (شروع یا تداوم خواب) — ۱۰ mg ۳۰ دقیقه قبل از خواب (حداکثر ۲۰ mg)",
+        "en": "Insomnia (onset or maintenance) — 10 mg within 30 min of bedtime (max 20 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر یک بار در شب با دست‌کم ۷ ساعت تا بیداری. با مهارکننده متوسط CYP3A ← ۵ mg؛ با مهارکننده قوی توصیه نمی‌شود.",
+            "en": "No more than once per night with at least 7 h before waking. Moderate CYP3A inhibitors → 5 mg; strong inhibitors not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-belsomra",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-belsomra",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "narco",
+      "severity": "block",
+      "text": {
+        "fa": "نارکولپسی.",
+        "en": "Narcolepsy."
+      },
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "خواب‌آلودگی روز بعد (رانندگی)؛ رفتارهای پیچیده خواب؛ فلج خواب و توهم.",
+        "en": "Next-day impairment (driving); complex sleep behaviours; sleep paralysis and hallucinations."
+      },
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ins",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "N05CJ01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Suvorexant"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-belsomra",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204569"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204569",
+      "label": "NDA204569"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5b72731-1acb-45b7-9c13-290ad12d3951",
+      "label": "FDA Belsomra"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614046.html",
+      "label": "Suvorexant"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05CJ01",
+      "label": "N05CJ01"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from postmarketing reports with BELSOMRA use in pregnant women are insufficient to establish a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Suvorexant and its metabolite, hydroxy suvorexant, are present in low concentrations in breast milk with a relative infant dose of less than 1% following maternal oral administration (see Data ) .",
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because BELSOMRA can increase drowsiness, patients, particularly the elderly, are at a higher risk of falls [see Warnings and Precautions (5.1) ] .",
+      "refs": [
+        {
+          "source": "fda-belsomra",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

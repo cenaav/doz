@@ -1,0 +1,254 @@
+{
+  "id": "safinamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سافینامید",
+    "en": "Safinamide"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده MAO-B",
+    "en": "MAO-B inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Xadago",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xadago",
+    "زاداگو",
+    "سافینامید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xadago",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xadago",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pd",
+      "disease": "parkinsons",
+      "label": {
+        "fa": "پارکینسون (کمکی لوودوپا) — ۵۰ mg روزانه، پس از ۲ هفته تا ۱۰۰ mg",
+        "en": "Parkinson’s (adjunct to levodopa) — 50 mg daily, up to 100 mg after 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "perDoseMax": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-xadago",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نارسایی متوسط کبد: حداکثر ۵۰ mg؛ شدید: منع مصرف.",
+            "en": "Moderate hepatic impairment: max 50 mg; severe: contraindicated."
+          },
+          "refs": [
+            {
+              "source": "fda-xadago",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سایر MAOI یا مهارکننده قوی MAO (از جمله لاینزولید)؛ اپیوئیدها (مپریدین، متادون، ترامادول)، SNRI، ضدافسردگی سه‌حلقه‌ای و چهارحلقه‌ای، سیکلوبنزاپرین، متیل‌فنیدیت و آمفتامین، گل راعی؛ دکسترومتورفان؛ نارسایی شدید کبد.",
+        "en": "Other MAOIs or potent MAO inhibitors (including linezolid); opioids (meperidine, methadone, tramadol), SNRIs, tri-/tetracyclic antidepressants, cyclobenzaprine, methylphenidate and amphetamines, St John’s wort; dextromethorphan; severe hepatic impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-xadago",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pd",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 100
+      }
+    }
+  ],
+  "atc": [
+    "N04BD03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Safinamide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-xadago",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA207145"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207145",
+      "label": "NDA207145"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c4d65f28-983f-42b4-bb23-023ae0fe81b2",
+      "label": "FDA Xadago"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a617025.html",
+      "label": "Safinamide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04BD03",
+      "label": "N04BD03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of XADAGO in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-xadago",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of XADAGO or its metabolites in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-xadago",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-xadago",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 1516 subjects exposed to XADAGO in clinical studies, 38% were 65 and over, while 4% were 75 and over.",
+      "refs": [
+        {
+          "source": "fda-xadago",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

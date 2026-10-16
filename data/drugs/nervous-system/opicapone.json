@@ -1,0 +1,256 @@
+{
+  "id": "opicapone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اوپیکاپون",
+    "en": "Opicapone"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده COMT",
+    "en": "COMT inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Ongentys",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ongentys",
+    "اونجنتیس",
+    "اوپیکاپون"
+  ],
+  "formulations": [
+    {
+      "id": "cap-25",
+      "form": "capsule",
+      "route": "oral",
+      "label": "25 mg capsule",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ongentys",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-50",
+      "form": "capsule",
+      "route": "oral",
+      "label": "50 mg capsule",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ongentys",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pd",
+      "disease": "parkinsons",
+      "label": {
+        "fa": "پارکینسون (کمکی لوودوپا، دوره off) — ۵۰ mg یک بار هنگام خواب",
+        "en": "Parkinson’s (adjunct to levodopa for \"off\" episodes) — 50 mg once at bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ongentys",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک ساعت قبل و دست‌کم یک ساعت بعد غذا نخورد. نارسایی متوسط کبد: ۲۵ mg؛ شدید: پرهیز.",
+            "en": "No food 1 h before and at least 1 h after. Moderate hepatic impairment: 25 mg; severe: avoid."
+          },
+          "refs": [
+            {
+              "source": "fda-ongentys",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-ongentys",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "MAOI غیرانتخابی همزمان؛ فئوکروموسیتوم، پاراگانگلیوم یا تومورهای ترشح‌کننده کاتکول‌آمین.",
+        "en": "Concomitant non-selective MAOIs; phaeochromocytoma, paraganglioma or other catecholamine-secreting tumours."
+      },
+      "refs": [
+        {
+          "source": "fda-ongentys",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pd",
+      "formulation": "cap-50",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N04BX04"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Opicapone"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-ongentys",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA212489"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212489",
+      "label": "NDA212489"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a511a531-112e-43f8-a43f-5334b0efe979",
+      "label": "FDA Ongentys"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620059.html",
+      "label": "Opicapone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04BX04",
+      "label": "N04BX04"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with use of ONGENTYS in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-ongentys",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of opicapone in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-ongentys",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-ongentys",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dose adjustment is required for elderly patients.",
+      "refs": [
+        {
+          "source": "fda-ongentys",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

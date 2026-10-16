@@ -1,0 +1,253 @@
+{
+  "id": "rotavirus-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن روتاویروس (خوراکی)",
+    "en": "Rotavirus vaccine (oral)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن زنده ضعیف‌شده خوراکی",
+    "en": "Live attenuated oral vaccine"
+  },
+  "brands": [
+    {
+      "name": "Rotarix",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rotarix",
+    "rotateq",
+    "روتاریکس",
+    "روتاویروس",
+    "واکسن اسهال"
+  ],
+  "formulations": [
+    {
+      "id": "oral-15",
+      "form": "solution",
+      "route": "oral",
+      "label": "1.5 mL oral dosing applicator",
+      "concentration": {
+        "amount": 1.5,
+        "unit": "mL",
+        "perVolumeMl": 1.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rotarix",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "immunization",
+      "label": {
+        "fa": "شیرخوار — ۲ دوز ۱٫۵ mL خوراکی: از ۶ هفتگی، با فاصله دست‌کم ۴ هفته، تا ۲۴ هفتگی",
+        "en": "Infants — 2 oral doses of 1.5 mL: from 6 weeks, ≥4 weeks apart, completed by 24 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "week"
+        },
+        "maxAge": {
+          "value": 24,
+          "unit": "week"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 1.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rotarix",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر شیرخوار بیشتر دوز را بیرون داد، می‌توان در همان مراجعه یک دوز جایگزین داد. دو نوع واکسن روتاویروس با هم ترکیب نشوند.",
+            "en": "If the infant spits out most of the dose, one replacement dose may be given at the same visit. Do not mix different rotavirus vaccines in one series."
+          },
+          "refs": [
+            {
+              "source": "fda-rotarix",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به واکسن؛ ناهنجاری مادرزادی اصلاح‌نشده گوارش مستعد انواژیناسیون؛ سابقه انواژیناسیون؛ نقص ایمنی شدید ترکیبی (SCID).",
+        "en": "Hypersensitivity to the vaccine; uncorrected congenital GI malformation predisposing to intussusception; history of intussusception; severe combined immunodeficiency (SCID)."
+      },
+      "refs": [
+        {
+          "source": "fda-rotarix",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "خطر انواژیناسیون (به‌ویژه ۷ روز پس از دوز اول).",
+        "en": "Risk of intussusception (mainly within 7 days of the first dose)."
+      },
+      "refs": [
+        {
+          "source": "fda-rotarix",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "oral-15",
+      "input": {
+        "ageMonths": 2,
+        "weightKg": 5
+      },
+      "expect": {
+        "perDose": 1.5,
+        "mlPerDose": 1.5
+      }
+    }
+  ],
+  "atc": [
+    "J07BH01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52640",
+        "en": "ROTAVIRUS VACCINE, MONOVALENT, LIVE ATTENUATED POWDER, FOR SUSPENSION ORAL  1.5 mL",
+        "fa": "سوسپانسیون خوراکی واکسن روتاویروس تک‌ظرفیتی زنده تضعیف‌شده ۱٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "52771",
+        "en": "ROTAVIRUS VACCINE, MONOVALENT, LIVE ATTENUATED POWDER, FOR SUSPENSION ORAL  2.5 mL",
+        "fa": "سوسپانسیون خوراکی واکسن روتاویروس تک‌ظرفیتی زنده تضعیف‌شده ۲٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "52171",
+        "en": "ROTAVIRUS VACCINE, PENTAVALENT, LIVE SOLUTION ORAL 1 {dose} 2 mL",
+        "fa": "محلول خوراکی واکسن روتاویروس پنتاوالنت زنده ۱ { دوز } ۲ میلی‌لیتر"
+      },
+      {
+        "code": "52996",
+        "en": "ROTAVIRUS VACCINE, PENTAVALENT, LIVE POWDER, FOR SUSPENSION ORAL  2.5 mL",
+        "fa": "سوسپانسیون خوراکی واکسن روتاویروس پنتاوالنت زنده ۲٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "52997",
+        "en": "ROTAVIRUS VACCINE, PENTAVALENT, LIVE POWDER, FOR SUSPENSION ORAL  5 mL",
+        "fa": "سوسپانسیون خوراکی واکسن روتاویروس پنتاوالنت زنده ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3509/Rotavirus-Vaccines",
+        "url": "https://www.darooyab.ir/G-3509/Rotavirus-Vaccines"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-rotarix",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125265"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125265",
+      "label": "BLA125265"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f3182470-1965-4e20-dbaf-e3506f893ea5",
+      "label": "FDA Rotarix"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BH01",
+      "label": "J07BH01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3509/Rotavirus-Vaccines",
+      "label": "Rotavirus-Vaccines"
+    }
+  ],
+  "populations": {
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of ROTARIX in infants younger than 6 weeks or older than 24 weeks of age have not been evaluated.",
+      "refs": [
+        {
+          "source": "fda-rotarix",
+          "section": "8.4"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری واکسن روتاویروس گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-3509/Rotavirus-Vaccines — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-3509/Rotavirus-Vaccines"
+        }
+      ]
+    }
+  }
+}

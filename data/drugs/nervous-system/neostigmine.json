@@ -1,0 +1,374 @@
+{
+  "id": "neostigmine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نئوستیگمین",
+    "en": "Neostigmine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده کولین‌استراز",
+    "en": "Cholinesterase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Bloxiverz",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "bloxiverz",
+    "prostigmin",
+    "نئوستیگمین",
+    "پروستیگمین"
+  ],
+  "formulations": [
+    {
+      "id": "inj-05",
+      "form": "injection",
+      "route": "iv",
+      "label": "0.5 mg/mL (10 mL vial)",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neostigmine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "inj-1",
+      "form": "injection",
+      "route": "iv",
+      "label": "1 mg/mL (10 mL vial)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-neostigmine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "short",
+      "disease": "nmb-reversal",
+      "label": {
+        "fa": "برگرداندن شل‌کننده کوتاه‌اثر یا پاسخ اول TOF خیلی بیشتر از ۱۰٪ — ۰٫۰۳ mg/kg",
+        "en": "Reversal of shorter-acting NMBA, or first twitch well above 10% — 0.03 mg/kg"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.03,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-neostigmine",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 5,
+        "refs": [
+          {
+            "source": "fda-neostigmine",
+            "section": "2.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط وقتی پاسخ اول TOF دست‌کم ۱۰٪ پایه باشد. آتروپین یا گلیکوپیرولات قبل یا همزمان (با سرنگ جدا). کودکان مانند بزرگسال.",
+            "en": "Only when the first TOF twitch is at least 10% of baseline. Atropine or glycopyrrolate before or with it (separate syringe). Children dosed as adults."
+          },
+          "refs": [
+            {
+              "source": "fda-neostigmine",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-neostigmine",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-neostigmine",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "long",
+      "disease": "nmb-reversal",
+      "label": {
+        "fa": "برگرداندن شل‌کننده طولانی‌اثر یا پاسخ اول نزدیک ۱۰٪ — ۰٫۰۷ mg/kg (حداکثر ۵ mg)",
+        "en": "Reversal of longer-acting NMBA, or first twitch near 10% — 0.07 mg/kg (max 5 mg)"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.07,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-neostigmine",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 5,
+        "refs": [
+          {
+            "source": "fda-neostigmine",
+            "section": "2.2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط وقتی پاسخ اول TOF دست‌کم ۱۰٪ پایه باشد. آتروپین یا گلیکوپیرولات قبل یا همزمان (با سرنگ جدا). کودکان مانند بزرگسال.",
+            "en": "Only when the first TOF twitch is at least 10% of baseline. Atropine or glycopyrrolate before or with it (separate syringe). Children dosed as adults."
+          },
+          "refs": [
+            {
+              "source": "fda-neostigmine",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-neostigmine",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-neostigmine",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به نئوستیگمین؛ پریتونیت یا انسداد مکانیکی روده یا مجاری ادرار.",
+        "en": "Hypersensitivity to neostigmine; peritonitis or mechanical obstruction of the intestinal or urinary tract."
+      },
+      "refs": [
+        {
+          "source": "fda-neostigmine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "برادی‌کاردی، برونکواسپاسم؛ حداکثر کل ۰٫۰۷ mg/kg یا ۵ mg (هر کدام کمتر).",
+        "en": "Bradycardia, bronchospasm; maximum total 0.07 mg/kg or 5 mg (whichever is less)."
+      },
+      "refs": [
+        {
+          "source": "fda-neostigmine",
+          "section": "5"
+        },
+        {
+          "source": "fda-neostigmine",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "short",
+      "formulation": "inj-1",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2.1,
+        "mlPerDose": 2.1
+      }
+    },
+    {
+      "regimen": "long",
+      "formulation": "inj-1",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4.9,
+        "mlPerDose": 4.9
+      }
+    }
+  ],
+  "atc": [
+    "N07AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01817",
+        "en": "NEOSTIGMINE BROMIDE 15MG TAB",
+        "fa": "قرص نئوستیگمین بروماید ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "00893",
+        "en": "NEOSTIGMINE METHYLSULFATE 0.5MG/1ML AMP",
+        "fa": "آمپول نئوستیگمین متیل‌سولفات ۰٫۵ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "00894",
+        "en": "NEOSTIGMINE METHYLSULFATE 12.5MG/5ML AMP",
+        "fa": "آمپول نئوستیگمین متیل‌سولفات ۱۲٫۵ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00895",
+        "en": "NEOSTIGMINE METHYLSULFATE 2.5MG/1ML AMP",
+        "fa": "آمپول نئوستیگمین متیل‌سولفات ۲٫۵ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3049/Neostigmine",
+        "url": "https://www.darooyab.ir/G-3049/Neostigmine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-neostigmine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA208405"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208405",
+      "label": "ANDA208405"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=673140f7-273e-4543-98b5-6b12c59f540b",
+      "label": "FDA Neostigmine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N07AA01",
+      "label": "N07AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3049/Neostigmine",
+      "label": "Neostigmine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate or well-controlled studies of neostigmine methylsulfate injection in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-neostigmine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk summary Neostigmine methylsulfate has not been studied in lactating women.",
+      "refs": [
+        {
+          "source": "fda-neostigmine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Neostigmine methylsulfate injection is approved for the reversal of the effects of non-depolarizing neuromuscular blocking agents after surgery in pediatric patients of all ages.",
+      "refs": [
+        {
+          "source": "fda-neostigmine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, neostigmine methylsulfate injection should be used with caution and monitored for a longer period in elderly patients.",
+      "refs": [
+        {
+          "source": "fda-neostigmine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

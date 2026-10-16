@@ -1,0 +1,238 @@
+{
+  "id": "rsv-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن RSV بزرگسال",
+    "en": "RSV vaccine (adult)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن نوترکیب با ادجوانت",
+    "en": "Recombinant adjuvanted vaccine"
+  },
+  "brands": [
+    {
+      "name": "Arexvy",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "arexvy",
+    "abrysvo",
+    "واکسن RSV",
+    "ویروس سنسیشیال"
+  ],
+  "formulations": [
+    {
+      "id": "vial-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL dose after reconstitution",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mL",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-arexvy",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "immunization",
+      "label": {
+        "fa": "پیشگیری از عفونت تحتانی RSV — ۶۰ سال به بالا، یا ۱۸ تا ۵۹ سال پرخطر: یک دوز ۰٫۵ mL",
+        "en": "Prevention of RSV lower respiratory disease — ≥60 y, or 18–59 y at increased risk: single 0.5 mL dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-arexvy",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-arexvy",
+          "section": "1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "برای بارداری نیست. زیر ۲ سال احتمالاً ناایمن (بیماری تشدیدشونده تنفسی در مدل حیوانی).",
+            "en": "Not for use in pregnancy. Likely unsafe under 2 y (enhanced respiratory disease in animal models)."
+          },
+          "refs": [
+            {
+              "source": "fda-arexvy",
+              "section": "1"
+            },
+            {
+              "source": "fda-arexvy",
+              "section": "8.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش آلرژیک شدید (آنافیلاکسی) به اجزای واکسن یا دوز قبلی.",
+        "en": "Severe allergic reaction (anaphylaxis) to a vaccine component or a previous dose."
+      },
+      "refs": [
+        {
+          "source": "fda-arexvy",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "vial-05",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07BX05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=RSV%20vaccine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-arexvy",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125775"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125775",
+      "label": "BLA125775"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e50f275-002e-413f-a840-66ee3cb3740c",
+      "label": "FDA Arexvy"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BX05",
+      "label": "J07BX05"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary All pregnancies have a risk of birth defect, loss, or other adverse outcomes.",
+      "refs": [
+        {
+          "source": "fda-arexvy",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "No human or animal data are available to assess the effects of AREXVY on the breastfed infant or on milk production/excretion.",
+      "refs": [
+        {
+          "source": "fda-arexvy",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Evidence from an animal model strongly suggests that AREXVY would be unsafe in individuals younger than 2 years of age because of an increased risk of enhanced respiratory disease.",
+      "refs": [
+        {
+          "source": "fda-arexvy",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of participants (N = 24,966) who received AREXVY or placebo in study 1, 13,943 (55.8%) were 60 to 69 years of age, 8,978 (36.0%) were 70 to 79 years of age, and 2,045 (8.2%) were 80 years of age and older [see Adverse Reactions ( 6.1 ), Use in Specific Populations ( 8.6 ), and Clinical Studies ( …",
+      "refs": [
+        {
+          "source": "fda-arexvy",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

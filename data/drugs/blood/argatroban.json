@@ -1,0 +1,290 @@
+{
+  "id": "argatroban",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آرگاتروبان",
+    "en": "Argatroban"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مهارکننده مستقیم ترومبین",
+    "en": "Direct thrombin inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Argatroban",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "argatroban",
+    "آرگاتروبان"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1-mcg",
+      "form": "injection",
+      "route": "iv",
+      "label": "125 mg/125 mL ready-to-use (1 mg/mL = 1000 mcg/mL)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-argatroban",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hit",
+      "disease": "hit",
+      "label": {
+        "fa": "HIT (با یا بدون ترومبوز) — شروع ۲ mcg/kg/دقیقه (حداکثر ۱۰)",
+        "en": "HIT (with or without thrombosis) — start 2 mcg/kg/min (max 10)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 2
+      },
+      "refs": [
+        {
+          "source": "fda-argatroban",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هپارین قطع و aPTT پایه گرفته شود. تنظیم تا aPTT ۱٫۵ تا ۳ برابر پایه (نه بیش از ۱۰۰ ثانیه)؛ حداکثر ۱۰ mcg/kg/دقیقه. نارسایی متوسط/شدید کبد: دوز کمتر.",
+            "en": "Stop heparin and get a baseline aPTT. Adjust to aPTT 1.5–3× baseline (not >100 s); max 10 mcg/kg/min. Moderate/severe hepatic impairment: lower dose."
+          },
+          "refs": [
+            {
+              "source": "fda-argatroban",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-argatroban",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pci",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "PCI در HIT — انفوزیون ۲۵ mcg/kg/دقیقه (به‌اضافه بولوس ۳۵۰ mcg/kg)",
+        "en": "PCI in HIT — infusion 25 mcg/kg/min (plus a 350 mcg/kg bolus)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 25
+      },
+      "refs": [
+        {
+          "source": "fda-argatroban",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بولوس ۳۵۰ mcg/kg در ۳ تا ۵ دقیقه؛ ACT ۵ تا ۱۰ دقیقه بعد؛ ادامه PCI اگر ACT بالای ۳۰۰ ثانیه.",
+            "en": "Bolus 350 mcg/kg over 3–5 min; check ACT 5–10 min later; proceed if ACT >300 s."
+          },
+          "refs": [
+            {
+              "source": "fda-argatroban",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی شدید؛ سابقه حساسیت به آرگاتروبان.",
+        "en": "Major bleeding; history of hypersensitivity to argatroban."
+      },
+      "refs": [
+        {
+          "source": "fda-argatroban",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hit",
+      "formulation": "vial-1-mcg",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 140,
+        "mlPerHour": 8.4
+      }
+    },
+    {
+      "regimen": "pci",
+      "formulation": "vial-1-mcg",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 1750,
+        "mlPerHour": 105
+      }
+    }
+  ],
+  "atc": [
+    "B01AE03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "22330",
+        "en": "ARGATROBAN 250MG/2.5ML VIAL",
+        "fa": "ویال آرگاتروبان ۲۵۰ میلی‌گرم / ۲٫۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1534/Argatroban",
+        "url": "https://www.darooyab.ir/G-1534/Argatroban"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-argatroban",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022485"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022485",
+      "label": "NDA022485"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=514ad15b-d060-9d65-e063-6294a90a6188",
+      "label": "FDA Argatroban"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AE03",
+      "label": "B01AE03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1534/Argatroban",
+      "label": "Argatroban"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited data from published literature and postmarketing reports do not suggest an association between argatroban and adverse fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-argatroban",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "There are no data on the presence of argatroban in human milk, or its effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-argatroban",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-argatroban",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The safety analysis did suggest that older patients tended to have an increased risk of events compared to younger patients; however, older patients had increased underlying conditions, which may predispose them to adverse reactions.",
+      "refs": [
+        {
+          "source": "fda-argatroban",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

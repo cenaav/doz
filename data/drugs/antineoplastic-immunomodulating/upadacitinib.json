@@ -1,0 +1,450 @@
+{
+  "id": "upadacitinib",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اوپاداسیتینیب",
+    "en": "Upadacitinib"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده JAK",
+    "en": "JAK inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Rinvoq",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rinvoq",
+    "رینووک",
+    "اوپاداسیتینیب"
+  ],
+  "formulations": [
+    {
+      "id": "er-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg extended-release tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "er-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg extended-release tablet",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "er-45",
+      "form": "tablet",
+      "route": "oral",
+      "label": "45 mg extended-release tablet",
+      "concentration": {
+        "amount": 45,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — ۱۵ mg یک بار در روز",
+        "en": "Rheumatoid arthritis — 15 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "2.3"
+        }
+      ]
+    },
+    {
+      "id": "ad",
+      "disease": "atopic-dermatitis",
+      "label": {
+        "fa": "درماتیت آتوپیک (۱۲ سال و ≥۴۰ kg، زیر ۶۵ سال) — ۱۵ mg، در صورت پاسخ ناکافی ۳۰ mg",
+        "en": "Atopic dermatitis (≥12 y and ≥40 kg, <65 y) — 15 mg, 30 mg if inadequate response"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 65,
+          "unit": "year"
+        },
+        "minWeightKg": 40
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "perDoseMax": 30,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "2.5"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۶۵ سال به بالا: ۱۵ mg. نارسایی شدید کلیه: ۱۵ mg.",
+            "en": "≥65 y: 15 mg. Severe renal impairment: 15 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-rinvoq",
+              "section": "2.5"
+            },
+            {
+              "source": "fda-rinvoq",
+              "section": "2.12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc",
+      "disease": "ulcerative-colitis",
+      "label": {
+        "fa": "کولیت اولسروز — القا ۴۵ mg روزانه ۸ هفته، نگهدارنده ۱۵ mg (تا ۳۰)",
+        "en": "Ulcerative colitis — induction 45 mg daily for 8 weeks, maintenance 15 mg (up to 30)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 45,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 56,
+        "max": 56
+      }
+    },
+    {
+      "id": "cd",
+      "disease": "crohns",
+      "label": {
+        "fa": "کرون — القا ۴۵ mg روزانه ۱۲ هفته، نگهدارنده ۱۵ mg (تا ۳۰)",
+        "en": "Crohn’s — induction 45 mg daily for 12 weeks, maintenance 15 mg (up to 30)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 45,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "2.7"
+        }
+      ],
+      "durationDays": {
+        "min": 84,
+        "max": 84
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اوپاداسیتینیب.",
+        "en": "Hypersensitivity to upadacitinib."
+      },
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای (مهارکننده JAK): عفونت جدی، مرگ، بدخیمی، حوادث قلبی‌عروقی بزرگ و ترومبوز. تست سل پیش از شروع.",
+        "en": "Boxed warning (JAK inhibitors): serious infections, mortality, malignancy, major adverse cardiovascular events and thrombosis. TB test before starting."
+      },
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ra",
+      "formulation": "er-15",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "ad",
+      "formulation": "er-15",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 15,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 30
+      }
+    },
+    {
+      "regimen": "uc",
+      "formulation": "er-45",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 45,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "cd",
+      "formulation": "er-45",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 45,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L04AF03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "53370",
+        "en": "UPADACITINIB 15 mg E.R Tablet",
+        "fa": "قرص آهسته‌رهش اوپاداسیتینیب ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "53371",
+        "en": "UPADACITINIB 30 mg E.R Tablet",
+        "fa": "قرص آهسته‌رهش اوپاداسیتینیب ۳۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5556/Upadacitinib",
+        "url": "https://www.darooyab.ir/G-5556/Upadacitinib"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-rinvoq",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA211675"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211675",
+      "label": "NDA211675"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2966aec7-2ef0-923c-d8ff-fe1a957bf095",
+      "label": "FDA Rinvoq"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a619051.html",
+      "label": "Upadacitinib"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AF03",
+      "label": "L04AF03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5556/Upadacitinib",
+      "label": "Upadacitinib"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from the pharmacovigilance safety database and postmarketing case reports on use of RINVOQ in pregnant women are not sufficient to evaluate a drug-associated risk for major birth defects or miscarriage.",
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in the breastfed infant, advise patients that breastfeeding is not recommended during treatment with RINVOQ/RINVOQ LQ, and for 6 days (approximately 10 half-lives) after the last dose.",
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Polyarticular Juvenile Idiopathic Arthritis and Psoriatic Arthritis The safety and effectiveness of RINVOQ/RINVOQ LQ in pediatric patients 2 to less than 18 years of age with pJIA and psoriatic arthritis have been established.",
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Rheumatoid Arthritis and Psoriatic Arthritis Of the 4381 patients treated in the five clinical trials, a total of 906 rheumatoid arthritis patients were 65 years of age or older, including 146 patients 75 years and older.",
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Based on animal studies, upadacitinib may cause embryo-fetal harm when administered to pregnant women [see Use in Specific Populations ( 8.1 )] .",
+      "refs": [
+        {
+          "source": "fda-rinvoq",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

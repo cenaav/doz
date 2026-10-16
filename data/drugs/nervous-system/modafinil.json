@@ -1,0 +1,324 @@
+{
+  "id": "modafinil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مودافینیل",
+    "en": "Modafinil"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "محرک بیداری",
+    "en": "Wakefulness-promoting agent"
+  },
+  "brands": [
+    {
+      "name": "Provigil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "provigil",
+    "پروویژیل",
+    "مودافینیل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-modafinil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet (scored)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-modafinil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "narco",
+      "disease": "narcolepsy",
+      "label": {
+        "fa": "نارکولپسی یا آپنه انسدادی خواب — ۲۰۰ mg یک بار صبح",
+        "en": "Narcolepsy or obstructive sleep apnoea — 200 mg once in the morning"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-modafinil",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تا ۴۰۰ mg تحمل شده ولی سود بیشتری ثابت نشده. نارسایی شدید کبد: نصف دوز. سالمند: دوز کمتر.",
+            "en": "Up to 400 mg tolerated but no consistent extra benefit. Severe hepatic impairment: half dose. Elderly: consider lower dose."
+          },
+          "refs": [
+            {
+              "source": "fda-modafinil",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-modafinil",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swd",
+      "disease": "narcolepsy",
+      "label": {
+        "fa": "اختلال کار شیفتی — ۲۰۰ mg حدود ۱ ساعت قبل از شروع شیفت",
+        "en": "Shift work disorder — 200 mg about 1 h before the shift"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-modafinil",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مودافینیل یا آرمودافینیل.",
+        "en": "Hypersensitivity to modafinil or armodafinil."
+      },
+      "refs": [
+        {
+          "source": "fda-modafinil",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "بثورات جدی پوستی (SJS) — قطع با اولین بثورات؛ آنژیوادم و آنافیلاکسی؛ حساسیت چندارگانی؛ خواب‌آلودگی پایدار؛ علائم روانی.",
+        "en": "Serious rash (SJS) — stop at the first rash; angioedema and anaphylaxis; multi-organ hypersensitivity; persistent sleepiness; psychiatric symptoms."
+      },
+      "refs": [
+        {
+          "source": "fda-modafinil",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "narco",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "swd",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N06BA07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06579",
+        "en": "MODAFINIL 100MG TAB",
+        "fa": "قرص مودافینیل ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08504",
+        "en": "MODAFINIL 200MG TAB",
+        "fa": "قرص مودافینیل ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3393/Modafinil",
+        "url": "https://www.darooyab.ir/G-3393/Modafinil"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-modafinil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA207196"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207196",
+      "label": "ANDA207196"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a309416-bd6a-45b1-982f-b689b097453d",
+      "label": "FDA Modafinil"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a602016.html",
+      "label": "Modafinil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06BA07",
+      "label": "N06BA07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3393/Modafinil",
+      "label": "Modafinil"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C There are no adequate and well-controlled studies of modafinil in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-modafinil",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when modafinil tablets are administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-modafinil",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-modafinil",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Therefore, consideration should be given to the use of lower doses and close monitoring in this population [see Dosage and Administration (2.4) and Clinical Pharmacology (12.3)].",
+      "refs": [
+        {
+          "source": "fda-modafinil",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

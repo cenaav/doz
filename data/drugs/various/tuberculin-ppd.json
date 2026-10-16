@@ -1,0 +1,227 @@
+{
+  "id": "tuberculin-ppd",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تست پوستی توبرکولین (PPD، مانتو)",
+    "en": "Tuberculin PPD (Mantoux test)"
+  },
+  "category": "various",
+  "class": {
+    "fa": "آنتی‌ژن تشخیصی",
+    "en": "Diagnostic antigen"
+  },
+  "brands": [
+    {
+      "name": "Tubersol / Aplisol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "PPD",
+    "tubersol",
+    "mantoux",
+    "تست مانتو",
+    "تست سل",
+    "TST"
+  ],
+  "formulations": [
+    {
+      "id": "vial",
+      "form": "injection",
+      "route": "intradermal",
+      "label": "5 TU per 0.1 mL (intradermal)",
+      "concentration": {
+        "amount": 0.1,
+        "unit": "mL",
+        "perVolumeMl": 0.1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tubersol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "test",
+      "disease": "tuberculosis",
+      "label": {
+        "fa": "تست مانتو — ۰٫۱ mL (۵ TU) داخل جلدی سطح داخلی ساعد",
+        "en": "Mantoux test — 0.1 mL (5 TU) intradermal, volar forearm"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tubersol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط داخل جلدی (برجستگی ۶ تا ۱۰ mm)؛ وریدی، عضلانی یا زیرجلدی نه — تزریق زیرجلدی قابل تفسیر نیست. خواندن ۴۸ تا ۷۲ ساعت بعد (اندازه سفتی، نه قرمزی).",
+            "en": "Intradermal only (6–10 mm wheal); not IV, IM or SC — an SC injection cannot be interpreted. Read at 48–72 h (induration, not redness)."
+          },
+          "refs": [
+            {
+              "source": "fda-tubersol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزا یا واکنش شدید قبلی به تست (نکروز، تاول، آنافیلاکسی، زخم)؛ سل فعال مستند یا سابقه روشن درمان سل؛ سوختگی وسیع یا اگزما.",
+        "en": "Allergy to a component or severe reaction to a previous test (necrosis, blistering, anaphylaxis, ulceration); documented active TB or a clear history of TB treatment; extensive burns or eczema."
+      },
+      "refs": [
+        {
+          "source": "fda-tubersol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "test",
+      "formulation": "vial",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.1,
+        "mlPerDose": 0.1
+      }
+    }
+  ],
+  "atc": [
+    "V04CF01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Tuberculin%20PPD"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-tubersol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103941"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103941",
+      "label": "BLA103941"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4a732e9-b8ee-4e6d-8b9a-6a9d2c36bfcd",
+      "label": "FDA Tubersol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V04CF01",
+      "label": "V04CF01"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Animal reproduction studies have not been conducted with TUBERSOL.",
+      "refs": [
+        {
+          "source": "fda-tubersol",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when TUBERSOL is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-tubersol",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "There is no contraindication to tuberculin skin testing of infants.",
+      "refs": [
+        {
+          "source": "fda-tubersol",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of TUBERSOL did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-tubersol",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

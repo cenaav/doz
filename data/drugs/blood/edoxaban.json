@@ -1,0 +1,411 @@
+{
+  "id": "edoxaban",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ادوکسابان",
+    "en": "Edoxaban"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مهارکننده مستقیم فاکتور Xa",
+    "en": "Direct factor Xa inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Savaysa / Lixiana",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "savaysa",
+    "lixiana",
+    "ادوکسابان"
+  ],
+  "formulations": [
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg tablet",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-60",
+      "form": "tablet",
+      "route": "oral",
+      "label": "60 mg tablet",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "af",
+      "disease": "atrial-fibrillation",
+      "label": {
+        "fa": "AF غیردریچه‌ای — ClCr ۵۰ تا ۹۵: ۶۰ mg یک بار در روز",
+        "en": "Non-valvular AF — CrCl 50–95: 60 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "ClCr بالای ۹۵ استفاده نشود (اثر کمتر). ClCr ۱۵ تا ۵۰: ۳۰ mg یک بار در روز.",
+            "en": "Do not use with CrCl >95 (reduced efficacy). CrCl 15–50: 30 mg once daily."
+          },
+          "refs": [
+            {
+              "source": "fda-savaysa",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vte",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "درمان DVT و PE — ۶۰ mg یک بار در روز پس از ۵ تا ۱۰ روز ضدانعقاد تزریقی",
+        "en": "DVT and PE treatment — 60 mg once daily after 5–10 days of parenteral anticoagulation"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 60.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۳۰ mg یک بار: ClCr ۱۵ تا ۵۰، وزن ۶۰ kg یا کمتر، یا مهارکننده P-gp خاص.",
+            "en": "30 mg once daily: CrCl 15–50, weight ≤60 kg, or certain P-gp inhibitors."
+          },
+          "refs": [
+            {
+              "source": "fda-savaysa",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vte-low",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "درمان DVT و PE — وزن ۶۰ kg یا کمتر: ۳۰ mg یک بار در روز",
+        "en": "DVT and PE treatment — weight ≤60 kg: 30 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxWeightKg": 60
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "bleed",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی پاتولوژیک فعال.",
+        "en": "Active pathological bleeding."
+      },
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: در AF با ClCr بالای ۹۵ اثر کمتر (سکته بیشتر)؛ قطع زودهنگام خطر ترومبوز را بالا می‌برد؛ هماتوم نخاعی/اپیدورال با بی‌حسی نخاعی.",
+        "en": "Boxed warning: reduced efficacy in AF with CrCl >95 (more strokes); premature discontinuation raises ischaemic risk; spinal/epidural haematoma with neuraxial procedures."
+      },
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 51,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۱۵ تا ۵۰: ۳۰ mg یک بار در روز؛ زیر ۱۵ توصیه نمی‌شود.",
+        "en": "CrCl 15–50: 30 mg once daily; <15 not recommended."
+      },
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-savaysa",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "af",
+      "formulation": "tab-60",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 60,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "vte",
+      "formulation": "tab-60",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 60,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "vte-low",
+      "formulation": "tab-30",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 30,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "B01AF03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Edoxaban"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-savaysa",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA206316"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206316",
+      "label": "NDA206316"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e77d3400-56ad-11e3-949a-0800200c9a66",
+      "label": "FDA Savaysa"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614055.html",
+      "label": "Edoxaban"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF03",
+      "label": "B01AF03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data about SAVAYSA use in pregnant women are insufficient to determine whether there are drug-associated risks for adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants, including hemorrhage, advise patients that breastfeeding is not recommended during treatment with SAVAYSA.",
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of SAVAYSA have not been established in pediatric patients with confirmed VTE (PE and/or DVT).",
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total patients in the ENGAGE AF-TIMI 48 study, 5182 (74%) were 65 years and older, while 2838 (41%) were 75 years and older.",
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Females of reproductive potential requiring anticoagulation should discuss pregnancy planning with their physician.",
+      "refs": [
+        {
+          "source": "fda-savaysa",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

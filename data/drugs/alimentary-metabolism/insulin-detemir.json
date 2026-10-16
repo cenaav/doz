@@ -1,0 +1,270 @@
+{
+  "id": "insulin-detemir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "انسولین دتمیر",
+    "en": "Insulin detemir"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "انسولین پایه طولانی‌اثر",
+    "en": "Long-acting basal insulin"
+  },
+  "brands": [
+    {
+      "name": "Levemir",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "levemir",
+    "لومیر",
+    "دتمیر"
+  ],
+  "formulations": [
+    {
+      "id": "u100",
+      "form": "injection",
+      "route": "sc",
+      "label": "100 units/mL FlexPen or vial",
+      "concentration": {
+        "amount": 100,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-levemir",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ — ۱۰ واحد (یا ۰٫۱ تا ۰٫۲ واحد/kg) یک بار عصر",
+        "en": "Type 2 diabetes — 10 units (or 0.1–0.2 units/kg) once daily in the evening"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "unit",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-levemir",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک بار با شام یا هنگام خواب، یا تقسیم دو بار در روز. تنظیم بر اساس قند.",
+            "en": "Once with the evening meal or at bedtime, or split twice daily. Titrate by glucose."
+          },
+          "refs": [
+            {
+              "source": "fda-levemir",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-levemir",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t1",
+      "disease": "type-1-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۱ — یک‌سوم تا نیمی از کل انسولین روزانه",
+        "en": "Type 1 diabetes — one-third to one-half of total daily insulin"
+      },
+      "population": {},
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "کل انسولین روزانه به‌طور کلی ۰٫۲ تا ۰٫۴ واحد/kg؛ یک‌سوم تا نیمی دتمیر و بقیه انسولین کوتاه‌اثر با غذا.",
+          "en": "Total daily insulin generally 0.2–0.4 units/kg; one-third to one-half as detemir, the rest as short-acting with meals."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-levemir",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "هنگام هیپوگلیسمی؛ حساسیت به انسولین دتمیر.",
+        "en": "During hypoglycaemia; hypersensitivity to insulin detemir."
+      },
+      "refs": [
+        {
+          "source": "fda-levemir",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هیپوگلیسمی؛ هیپوکالمی؛ قلم مشترک ممنوع.",
+        "en": "Hypoglycaemia; hypokalaemia; never share pens."
+      },
+      "refs": [
+        {
+          "source": "fda-levemir",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2",
+      "formulation": "u100",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 90
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 0.1
+      }
+    }
+  ],
+  "atc": [
+    "A10AE05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Insulin%20detemir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-levemir",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA021536"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021536",
+      "label": "BLA021536"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=82192527-99aa-4b53-8ce9-9173668d309c",
+      "label": "FDA Levemir"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a606012.html",
+      "label": "Insulin Detemir (rDNA Origin) Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10AE05",
+      "label": "A10AE05"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published studies and postmarketing case reports with LEVEMIR use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-levemir",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Available data from published literature demonstrate that exogenous human insulin products, including biosynthetic insulins such as insulin detemir, are transferred into human milk.",
+      "refs": [
+        {
+          "source": "fda-levemir",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of LEVEMIR to improve glycemic control in pediatric patients with diabetes mellitus have been established.",
+      "refs": [
+        {
+          "source": "fda-levemir",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these patients and younger patients, but small sample sizes limits conclusions.",
+      "refs": [
+        {
+          "source": "fda-levemir",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

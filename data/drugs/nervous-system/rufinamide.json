@@ -1,0 +1,342 @@
+{
+  "id": "rufinamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "روفینامید",
+    "en": "Rufinamide"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدصرع (تریازول)",
+    "en": "Antiepileptic (triazole)"
+  },
+  "brands": [
+    {
+      "name": "Banzel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "banzel",
+    "inovelon",
+    "روفینامید"
+  ],
+  "formulations": [
+    {
+      "id": "susp-40",
+      "form": "suspension",
+      "route": "oral",
+      "label": "40 mg/mL oral suspension",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rufinamide",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "child",
+      "disease": "lennox-gastaut",
+      "label": {
+        "fa": "لنوکس-گاستو کودک (۱ تا <۱۷ سال) — شروع ۱۰ mg/kg/روز در دو دوز",
+        "en": "Lennox-Gastaut, children 1–<17 y — start 10 mg/kg/day in two doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 10,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-rufinamide",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 45,
+        "maxPerDay": 3200,
+        "refs": [
+          {
+            "source": "fda-rufinamide",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۱۰ mg/kg یک روز در میان تا حداکثر ۴۵ mg/kg/روز (نه بیش از ۳۲۰۰ mg). با غذا. با والپروات دوز شروع کمتر.",
+            "en": "Increase by 10 mg/kg every other day up to 45 mg/kg/day (not over 3200 mg). With food. Start lower with valproate."
+          },
+          "refs": [
+            {
+              "source": "fda-rufinamide",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-rufinamide",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "lennox-gastaut",
+      "label": {
+        "fa": "لنوکس-گاستو بزرگسال — شروع ۴۰۰ تا ۸۰۰ mg/روز در دو دوز (حداکثر ۳۲۰۰ mg)",
+        "en": "Lennox-Gastaut, adult — start 400–800 mg/day in two doses (max 3200 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "perDoseMax": 400,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-rufinamide",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 3200,
+        "refs": [
+          {
+            "source": "fda-rufinamide",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۴۰۰ تا ۸۰۰ mg یک روز در میان تا ۳۲۰۰ mg/روز.",
+            "en": "Increase by 400–800 mg every other day to 3200 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-rufinamide",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "qt",
+      "severity": "block",
+      "text": {
+        "fa": "سندرم QT کوتاه خانوادگی.",
+        "en": "Familial short QT syndrome."
+      },
+      "refs": [
+        {
+          "source": "fda-rufinamide",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "child",
+      "formulation": "susp-40",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 2.5
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "susp-40",
+      "input": {
+        "ageYears": 25,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 5,
+        "upperPerDose": 400
+      }
+    }
+  ],
+  "atc": [
+    "N03AF03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "20060",
+        "en": "RUFINAMIDE 200MG TAB",
+        "fa": "قرص روفینامید ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "20809",
+        "en": "RUFINAMIDE 400MG TAB",
+        "fa": "قرص روفینامید ۴۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-684/Rufinamide",
+        "url": "https://www.darooyab.ir/G-684/Rufinamide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-rufinamide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213410"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213410",
+      "label": "ANDA213410"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a02ca527-bd8f-49ef-89fa-91fac154bffe",
+      "label": "FDA Rufinamide susp."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609001.html",
+      "label": "Rufinamide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AF03",
+      "label": "N03AF03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-684/Rufinamide",
+      "label": "Rufinamide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risks associated with use of rufinamide in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-rufinamide",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of rufinamide in human milk, the effects on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-rufinamide",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have been established in pediatric patients 1 to 17 years of age.",
+      "refs": [
+        {
+          "source": "fda-rufinamide",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-rufinamide",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Use of rufinamide may reduce the effectiveness of hormonal contraceptives containing ethinyl estradiol or norethindrone.",
+      "refs": [
+        {
+          "source": "fda-rufinamide",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

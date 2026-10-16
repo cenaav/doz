@@ -1,0 +1,277 @@
+{
+  "id": "ipv-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن فلج اطفال تزریقی (IPV)",
+    "en": "Inactivated polio vaccine (IPV)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن غیرفعال",
+    "en": "Inactivated vaccine"
+  },
+  "brands": [
+    {
+      "name": "IPOL",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ipol",
+    "IPV",
+    "واکسن فلج اطفال",
+    "پولیو",
+    "polio"
+  ],
+  "formulations": [
+    {
+      "id": "syr-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL dose",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mL",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ipol",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "child",
+      "disease": "immunization",
+      "label": {
+        "fa": "کودک — سری اولیه ۳ دوز ۰٫۵ mL (۲، ۴ و ۶ تا ۱۸ ماهگی) و یادآور ۴ تا ۶ سالگی",
+        "en": "Children — primary 3 × 0.5 mL (2, 4 and 6–18 months) and a booster at 4–6 y"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "week"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ipol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عضلانی یا زیرجلدی؛ ترجیحاً با فاصله ۸ هفته یا بیشتر و هرگز کمتر از ۴ هفته. در ایران برنامه کشوری را دنبال کنید.",
+            "en": "IM or SC; preferably 8 or more weeks apart and never less than 4 weeks. In Iran follow the national schedule."
+          },
+          "refs": [
+            {
+              "source": "fda-ipol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "immunization",
+      "label": {
+        "fa": "بزرگسال واکسینه‌نشده در معرض خطر — ۳ دوز ۰٫۵ mL",
+        "en": "Unvaccinated adults at risk of exposure — 3 × 0.5 mL"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ipol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دو دوز با فاصله ۱ تا ۲ ماه و دوز سوم ۶ تا ۱۲ ماه بعد (طبق برچسب).",
+            "en": "Two doses 1–2 months apart and a third 6–12 months later (per label)."
+          },
+          "refs": [
+            {
+              "source": "fda-ipol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزای واکسن از جمله ۲-فنوکسی‌اتانول، فرمالدئید، نئومایسین، استرپتومایسین و پلی‌میکسین B؛ آنافیلاکسی ظرف ۲۴ ساعت پس از دوز قبلی.",
+        "en": "Hypersensitivity to vaccine components including 2-phenoxyethanol, formaldehyde, neomycin, streptomycin and polymyxin B; anaphylaxis within 24 h of a previous dose."
+      },
+      "refs": [
+        {
+          "source": "fda-ipol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "child",
+      "formulation": "syr-05",
+      "input": {
+        "ageMonths": 2,
+        "weightKg": 5
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "syr-05",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07BF03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Inactivated%20polio%20vaccine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-ipol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103930"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103930",
+      "label": "BLA103930"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=34a647f5-8728-451b-b918-94c8acd15974",
+      "label": "FDA IPOL"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BF03",
+      "label": "J07BF03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Animal reproduction studies have not been conducted with IPOL vaccine.",
+      "refs": [
+        {
+          "source": "fda-ipol",
+          "section": "PREGNANCY"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when IPOL vaccine is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-ipol",
+          "section": "NURSING MOTHERS"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "SAFETY AND EFFECTIVENESS OF IPOL VACCINE IN INFANTS BELOW SIX WEEKS OF AGE HAVE NOT BEEN ESTABLISHED .",
+      "refs": [
+        {
+          "source": "fda-ipol",
+          "section": "PEDIATRIC USE"
+        }
+      ]
+    }
+  }
+}

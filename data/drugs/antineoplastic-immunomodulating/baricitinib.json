@@ -1,0 +1,403 @@
+{
+  "id": "baricitinib",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "باریسیتینیب",
+    "en": "Baricitinib"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده JAK",
+    "en": "JAK inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Olumiant",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "olumiant",
+    "اولومیانت",
+    "باریسیتینیب"
+  ],
+  "formulations": [
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-4",
+      "form": "tablet",
+      "route": "oral",
+      "label": "4 mg tablet",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — ۲ mg یک بار در روز",
+        "en": "Rheumatoid arthritis — 2 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "2.2"
+        }
+      ]
+    },
+    {
+      "id": "covid",
+      "disease": "covid-19",
+      "label": {
+        "fa": "کووید-۱۹ بستری — بزرگسال ۴ mg یک بار در روز تا ۱۴ روز",
+        "en": "Hospitalised COVID-19 — adult 4 mg once daily up to 14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۱۴ روز یا تا ترخیص، هر کدام زودتر.",
+            "en": "14 days or until discharge, whichever comes first."
+          },
+          "refs": [
+            {
+              "source": "fda-olumiant",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa",
+      "disease": "alopecia",
+      "label": {
+        "fa": "آلوپسی آره‌آتای شدید (۱۲ سال به بالا) — ۲ mg، در صورت پاسخ ناکافی ۴ mg",
+        "en": "Severe alopecia areata (≥12 y) — 2 mg, 4 mg if inadequate response"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "perDoseMax": 4,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "2.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "ریزش تقریباً کامل مو: شروع با ۴ mg قابل‌بررسی؛ پس از پاسخ به ۲ mg کاهش.",
+            "en": "Nearly complete hair loss: consider starting with 4 mg; reduce to 2 mg once responding."
+          },
+          "refs": [
+            {
+              "source": "fda-olumiant",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای (مهارکننده JAK): عفونت جدی، مرگ، بدخیمی، حوادث قلبی‌عروقی بزرگ و ترومبوز. تست سل پیش از شروع.",
+        "en": "Boxed warning (JAK inhibitors): serious infections, mortality, malignancy, major adverse cardiovascular events and thrombosis. TB test before starting."
+      },
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ra",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "covid",
+      "formulation": "tab-4",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 4,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "aa",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 2,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 4
+      }
+    }
+  ],
+  "atc": [
+    "L04AF02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52844",
+        "en": "BARICITINIB 2MG TAB",
+        "fa": "قرص باریسیتینیب ۲ میلی‌گرم"
+      },
+      {
+        "code": "52845",
+        "en": "BARICITINIB 4MG TAB",
+        "fa": "قرص باریسیتینیب ۴ میلی‌گرم"
+      },
+      {
+        "code": "52937",
+        "en": "BARICITINIB TABLET ORAL 1 mg",
+        "fa": "قرص باریسیتینیب ۱ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1716/Baricitinib",
+        "url": "https://www.darooyab.ir/G-1716/Baricitinib"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-olumiant",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA207924"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207924",
+      "label": "NDA207924"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=866e9f35-9035-4581-a4b1-75a621ab55cf",
+      "label": "FDA Olumiant"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618033.html",
+      "label": "Baricitinib"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AF02",
+      "label": "L04AF02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1716/Baricitinib",
+      "label": "Baricitinib"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on the findings from animal reproduction studies, OLUMIANT may cause fetal harm during pregnancy.",
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants advise women not to breastfeed during treatment with OLUMIANT and for 4 days after the last dose (approximately 5 to 6 elimination half-lives).",
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of OLUMIANT for the treatment of severe alopecia areata have been established in pediatric patients 12 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because geriatric patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function [see Dosage and Administration ( 2.6 )] .",
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Based on animal studies, OLUMIANT may cause fetal harm when administered during pregnancy [see Use in Specific Populations ( 8.1 )] .",
+      "refs": [
+        {
+          "source": "fda-olumiant",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

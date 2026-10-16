@@ -1,0 +1,435 @@
+{
+  "id": "rituximab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریتوکسیمب",
+    "en": "Rituximab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد CD20",
+    "en": "Anti-CD20 antibody"
+  },
+  "brands": [
+    {
+      "name": "Rituxan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rituxan",
+    "mabthera",
+    "zytux",
+    "ریتوکسیماب",
+    "زیتوکس"
+  ],
+  "formulations": [
+    {
+      "id": "vial-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL (100 mg/10 mL, 500 mg/50 mL vials)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rituxan",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "nhl",
+      "disease": "b-cell-lymphoma",
+      "label": {
+        "fa": "لنفوم غیرهوچکین سلول B — ۳۷۵ mg/m² هر نوبت",
+        "en": "B-cell NHL — 375 mg/m² per infusion"
+      },
+      "population": {},
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 375,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rituxan",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش‌دارو قبل از هر انفوزیون: استامینوفن و آنتی‌هیستامین (و کورتون طبق رژیم). فقط انفوزیون وریدی، نه بولوس.",
+            "en": "Premedicate before each infusion: acetaminophen and an antihistamine (and steroid per regimen). IV infusion only, never push or bolus."
+          },
+          "refs": [
+            {
+              "source": "fda-rituxan",
+              "section": "2.8"
+            },
+            {
+              "source": "fda-rituxan",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "عودکننده یا مقاوم: هفته‌ای یک بار ۴ یا ۸ دوز؛ درمان‌نشده: روز ۱ هر دوره شیمی‌درمانی تا ۸ دوز. CLL: دوره ۱ ← ۳۷۵ و دوره ۲ تا ۶ ← ۵۰۰ mg/m².",
+            "en": "Relapsed/refractory: weekly for 4 or 8 doses; untreated: day 1 of each chemo cycle up to 8 doses. CLL: cycle 1 → 375, cycles 2–6 → 500 mg/m²."
+          },
+          "refs": [
+            {
+              "source": "fda-rituxan",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-rituxan",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید — دو انفوزیون ۱۰۰۰ mg با فاصله ۲ هفته (همراه متوترکسات)",
+        "en": "Rheumatoid arthritis — two 1000 mg infusions 2 weeks apart (with methotrexate)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rituxan",
+          "section": "2.5"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش‌دارو قبل از هر انفوزیون: استامینوفن و آنتی‌هیستامین (و کورتون طبق رژیم). فقط انفوزیون وریدی، نه بولوس.",
+            "en": "Premedicate before each infusion: acetaminophen and an antihistamine (and steroid per regimen). IV infusion only, never push or bolus."
+          },
+          "refs": [
+            {
+              "source": "fda-rituxan",
+              "section": "2.8"
+            },
+            {
+              "source": "fda-rituxan",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "متیل‌پردنیزولون ۱۰۰ mg وریدی ۳۰ دقیقه قبل از هر انفوزیون. دوره بعدی هر ۲۴ هفته، نه زودتر از ۱۶ هفته.",
+            "en": "Methylprednisolone 100 mg IV 30 min before each infusion. Next course every 24 weeks, not sooner than 16 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-rituxan",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pv",
+      "disease": "pemphigus",
+      "label": {
+        "fa": "پمفیگوس ولگاریس — دو انفوزیون ۱۰۰۰ mg با فاصله ۲ هفته، همراه کاهش تدریجی کورتون",
+        "en": "Pemphigus vulgaris — two 1000 mg infusions 2 weeks apart, with tapering steroids"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rituxan",
+          "section": "2.7"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش‌دارو قبل از هر انفوزیون: استامینوفن و آنتی‌هیستامین (و کورتون طبق رژیم). فقط انفوزیون وریدی، نه بولوس.",
+            "en": "Premedicate before each infusion: acetaminophen and an antihistamine (and steroid per regimen). IV infusion only, never push or bolus."
+          },
+          "refs": [
+            {
+              "source": "fda-rituxan",
+              "section": "2.8"
+            },
+            {
+              "source": "fda-rituxan",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "نگهدارنده: ۵۰۰ mg در ماه ۱۲ و سپس هر ۶ ماه. عود: ۱۰۰۰ mg.",
+            "en": "Maintenance: 500 mg at month 12 and every 6 months. Relapse: 1000 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-rituxan",
+              "section": "2.7"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: واکنش انفوزیون کشنده (بیشتر انفوزیون اول)، واکنش شدید پوستی-مخاطی، فعال شدن هپاتیت B (غربالگری HBsAg و anti-HBc قبل)، PML.",
+        "en": "Boxed warning: fatal infusion reactions (mostly the first), severe mucocutaneous reactions, hepatitis B reactivation (screen HBsAg and anti-HBc first), PML."
+      },
+      "refs": [
+        {
+          "source": "fda-rituxan",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "nhl",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 81,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 754.67,
+        "mlPerDose": 75.47
+      }
+    },
+    {
+      "regimen": "ra",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "mlPerDose": 100
+      }
+    },
+    {
+      "regimen": "pv",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "mlPerDose": 100
+      }
+    }
+  ],
+  "atc": [
+    "L01FA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02473",
+        "en": "RITUXIMAB 100MG/10ML VIAL",
+        "fa": "ویال ریتوکسیمب ۱۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "02474",
+        "en": "RITUXIMAB 500MG/50ML VIAL",
+        "fa": "ویال ریتوکسیمب ۵۰۰ میلی‌گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "52048",
+        "en": "RITUXIMAB INJECTION PARENTERAL 120 mg/1mL 11.7 mL",
+        "fa": "فرآورده تزریقی ریتوکسیمب ۱۲۰ میلی‌گرم / ۱ میلی‌لیتر ۱۱٫۷ میلی‌لیتر"
+      },
+      {
+        "code": "52049",
+        "en": "RITUXIMAB INJECTION PARENTERAL 120 mg/1mL 13.4 mL",
+        "fa": "فرآورده تزریقی ریتوکسیمب ۱۲۰ میلی‌گرم / ۱ میلی‌لیتر ۱۳٫۴ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1062/Rituximab",
+        "url": "https://www.darooyab.ir/G-1062/Rituximab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-rituxan",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103705"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103705",
+      "label": "BLA103705"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b172773b-3905-4a1c-ad95-bab4b6126563",
+      "label": "FDA Rituxan"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607038.html",
+      "label": "Rituximab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01FA01",
+      "label": "L01FA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1062/Rituximab",
+      "label": "Rituximab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on human data, RITUXAN can cause adverse developmental outcomes including B-cell lymphocytopenia in infants exposed to RITUXAN in-utero ( see Clinical Considerations ).",
+      "refs": [
+        {
+          "source": "fda-rituxan",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Given that the clinical significance of this finding for children is not known, advise women not to breastfeed during treatment with RITUXAN and for 6 months after the last dose due to the potential of serious adverse reactions in breastfed children.",
+      "refs": [
+        {
+          "source": "fda-rituxan",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Mature B-Cell NHL/B-AL The safety and effectiveness of RITUXAN in combination with chemotherapy for the treatment of previously untreated, advanced stage, CD20-positive DLBCL/BL/BLL/B-AL have been established in pediatric patients aged 6 months and older.",
+      "refs": [
+        {
+          "source": "fda-rituxan",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Patients 70 years or older received lower dose intensity of fludarabine and cyclophosphamide compared to younger patients, regardless of the addition of RITUXAN.",
+      "refs": [
+        {
+          "source": "fda-rituxan",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise females of reproductive potential to use effective contraception during treatment with RITUXAN and for 12 months after the last dose.",
+      "refs": [
+        {
+          "source": "fda-rituxan",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

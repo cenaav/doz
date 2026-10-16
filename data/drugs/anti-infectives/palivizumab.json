@@ -1,0 +1,215 @@
+{
+  "id": "palivizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پالیویزوماب",
+    "en": "Palivizumab"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "آنتی‌بادی مونوکلونال ضد RSV",
+    "en": "Anti-RSV monoclonal antibody"
+  },
+  "brands": [
+    {
+      "name": "Synagis",
+      "market": "UK"
+    }
+  ],
+  "synonyms": [
+    "synagis",
+    "سیناژیس",
+    "پالیویزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "vial-100",
+      "form": "injection",
+      "route": "im",
+      "label": "100 mg/mL (50 mg/0.5 mL or 100 mg/1 mL vial)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "UK"
+      ],
+      "refs": [
+        {
+          "source": "emc-synagis",
+          "section": "6.5"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "rsv",
+      "disease": "rsv-prophylaxis",
+      "label": {
+        "fa": "پیشگیری RSV در کودک پرخطر — ۱۵ mg/kg عضلانی ماهی یک بار در فصل RSV",
+        "en": "RSV prophylaxis in high-risk children — 15 mg/kg IM once a MONTH during the RSV season"
+      },
+      "population": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 15,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "emc-synagis",
+          "section": "4.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یک دوز در هر ماه (نه روزانه) در طول فصل RSV؛ اولین دوز ترجیحاً پیش از شروع فصل؛ اغلب ۵ دوز در فصل. حجم (mL) = وزن × ۰٫۱۵.",
+            "en": "One dose each MONTH (not daily) through the RSV season; first dose preferably before the season starts; most experience is with 5 doses per season. Volume (mL) = weight × 0.15."
+          },
+          "refs": [
+            {
+              "source": "emc-synagis",
+              "section": "4.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "اندیکاسیون: نوزاد ≤۳۵ هفته و زیر ۶ ماه در شروع فصل؛ زیر ۲ سال با دیسپلازی برونکوپولمونری درمان‌شده در ۶ ماه اخیر؛ زیر ۲ سال با بیماری مادرزادی قلبی مهم.",
+            "en": "Indications: born ≤35 weeks and <6 months at season onset; <2 y treated for bronchopulmonary dysplasia in the last 6 months; <2 y with haemodynamically significant congenital heart disease."
+          },
+          "refs": [
+            {
+              "source": "emc-synagis",
+              "section": "4.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به پالیویزوماب، اجزا یا سایر آنتی‌بادی‌های مونوکلونال انسانی‌شده.",
+        "en": "Hypersensitivity to palivizumab, excipients or other humanised monoclonal antibodies."
+      },
+      "refs": [
+        {
+          "source": "emc-synagis",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آنافیلاکسی (گاه کشنده) — داروی درمان آن در دسترس باشد.",
+        "en": "Anaphylaxis (sometimes fatal) — have treatment available."
+      },
+      "refs": [
+        {
+          "source": "emc-synagis",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "rsv",
+      "formulation": "vial-100",
+      "input": {
+        "ageMonths": 4,
+        "weightKg": 5
+      },
+      "expect": {
+        "perDose": 75,
+        "mlPerDose": 0.75
+      }
+    }
+  ],
+  "atc": [
+    "J06BD01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "19965",
+        "en": "PALIVIZUMAB 50MG VIAL",
+        "fa": "ویال پالیویزومب ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3506/Palivizumab",
+        "url": "https://www.darooyab.ir/G-3506/Palivizumab"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698034.html",
+      "label": "Palivizumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J06BD01",
+      "label": "J06BD01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3506/Palivizumab",
+      "label": "Palivizumab"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/6963/smpc",
+      "label": "eMC Synagis"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری پالیویزوماب گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-3506/Palivizumab — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-3506/Palivizumab"
+        }
+      ]
+    }
+  }
+}

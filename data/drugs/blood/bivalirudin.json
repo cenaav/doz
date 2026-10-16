@@ -1,0 +1,255 @@
+{
+  "id": "bivalirudin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بیوالیرودین",
+    "en": "Bivalirudin"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مهارکننده مستقیم ترومبین",
+    "en": "Direct thrombin inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Angiomax",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "angiomax",
+    "آنژیومکس",
+    "بیوالیرودین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-250",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "250 mg vial",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bivalirudin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pci",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "PCI — بولوس ۰٫۷۵ mg/kg، سپس انفوزیون ۱٫۷۵ mg/kg/ساعت در طول پروسیجر",
+        "en": "PCI — 0.75 mg/kg bolus, then 1.75 mg/kg/h infusion for the procedure"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.75,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-bivalirudin",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عدد ماشین‌حساب دوز بولوس است. ACT ۵ دقیقه بعد؛ در صورت نیاز ۰٫۳ mg/kg بولوس اضافه. فقط با آسپرین مطالعه شده. انفوزیون تا ۴ ساعت پس از PCI قابل ادامه.",
+            "en": "The calculator gives the BOLUS. Check ACT after 5 min; extra 0.3 mg/kg bolus if needed. Studied only with aspirin. Infusion may continue up to 4 h after PCI."
+          },
+          "refs": [
+            {
+              "source": "fda-bivalirudin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی فعال شدید؛ حساسیت به بیوالیرودین.",
+        "en": "Active major bleeding; hypersensitivity to bivalirudin."
+      },
+      "refs": [
+        {
+          "source": "fda-bivalirudin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۳۰: انفوزیون ۱ mg/kg/ساعت؛ همودیالیز: ۰٫۲۵ mg/kg/ساعت. بولوس تغییر نمی‌کند.",
+        "en": "CrCl <30: infusion 1 mg/kg/h; haemodialysis: 0.25 mg/kg/h. No change to the bolus."
+      },
+      "refs": [
+        {
+          "source": "fda-bivalirudin",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pci",
+      "formulation": "vial-250",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 52.5
+      }
+    }
+  ],
+  "atc": [
+    "B01AE06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52515",
+        "en": "BIVALIRUDIN 250 mg Powder For Injection",
+        "fa": "پودر تزریقی بیوالیرودین ۲۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1561/Bivalirudin",
+        "url": "https://www.darooyab.ir/G-1561/Bivalirudin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-bivalirudin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA210031"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210031",
+      "label": "ANDA210031"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=42aa2630-83d6-433d-8277-0f672cf8d71d",
+      "label": "FDA Bivalirudin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AE06",
+      "label": "B01AE06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1561/Bivalirudin",
+      "label": "Bivalirudin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no data available on use of bivalirudin in pregnant women to inform a drug-associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-bivalirudin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "No data are available on the effects on the breastfed child or on milk production.",
+      "refs": [
+        {
+          "source": "fda-bivalirudin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of bivalirudin in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-bivalirudin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In studies of patients undergoing PCI, 44% were ≥65 years of age and 12% of patients were ≥75 years old.",
+      "refs": [
+        {
+          "source": "fda-bivalirudin",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,422 @@
+{
+  "id": "capecitabine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کپسیتابین",
+    "en": "Capecitabine"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌متابولیت (پیش‌داروی فلوئورواوراسیل)",
+    "en": "Antimetabolite (fluorouracil prodrug)"
+  },
+  "brands": [
+    {
+      "name": "Xeloda",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xeloda",
+    "زلودا",
+    "کپسیتابین",
+    "کاپسیتابین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "colon",
+      "disease": "colorectal-cancer",
+      "label": {
+        "fa": "سرطان کولون (کمکی، تک‌دارو) — ۱۲۵۰ mg/m² دو بار در روز، روز ۱ تا ۱۴ هر ۲۱ روز (حداکثر ۸ دوره)",
+        "en": "Adjuvant colon cancer (single agent) — 1250 mg/m² twice daily, days 1–14 every 21 days (max 8 cycles)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 2500,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ دوز بر اساس پاسخ و عوارض تنظیم می‌شود.",
+            "en": "Only under an oncologist; dose is adjusted by response and toxicity."
+          },
+          "refs": [
+            {
+              "source": "fda-capecitabine",
+              "section": "2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "دو بار در روز با فاصله حدود ۱۲ ساعت، تا ۳۰ دقیقه پس از غذا؛ روز ۱ تا ۱۴ هر دوره ۲۱ روزه. دوز به نزدیک‌ترین ۱۵۰ mg گرد شود. ClCr ۳۰ تا ۵۰: ۲۵٪ کمتر؛ زیر ۳۰ تعیین نشده.",
+            "en": "Twice daily about 12 h apart within 30 min after a meal; days 1–14 of each 21-day cycle. Round to the nearest 150 mg. CrCl 30–50: reduce by 25%; <30 not established."
+          },
+          "refs": [
+            {
+              "source": "fda-capecitabine",
+              "section": "2.7"
+            },
+            {
+              "source": "fda-capecitabine",
+              "section": "2.6"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "همراه اگزالی‌پلاتین: ۱۰۰۰ mg/m² دو بار در روز.",
+            "en": "With oxaliplatin: 1000 mg/m² twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-capecitabine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "breast",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان پیشرفته (تک‌دارو) — ۱۰۰۰ تا ۱۲۵۰ mg/m² دو بار در روز، روز ۱ تا ۱۴ هر ۲۱ روز",
+        "en": "Advanced breast cancer (single agent) — 1000–1250 mg/m² twice daily, days 1–14 every 21 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 2000,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ دوز بر اساس پاسخ و عوارض تنظیم می‌شود.",
+            "en": "Only under an oncologist; dose is adjusted by response and toxicity."
+          },
+          "refs": [
+            {
+              "source": "fda-capecitabine",
+              "section": "2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "دو بار در روز با فاصله حدود ۱۲ ساعت، تا ۳۰ دقیقه پس از غذا؛ روز ۱ تا ۱۴ هر دوره ۲۱ روزه. دوز به نزدیک‌ترین ۱۵۰ mg گرد شود. ClCr ۳۰ تا ۵۰: ۲۵٪ کمتر؛ زیر ۳۰ تعیین نشده.",
+            "en": "Twice daily about 12 h apart within 30 min after a meal; days 1–14 of each 21-day cycle. Round to the nearest 150 mg. CrCl 30–50: reduce by 25%; <30 not established."
+          },
+          "refs": [
+            {
+              "source": "fda-capecitabine",
+              "section": "2.7"
+            },
+            {
+              "source": "fda-capecitabine",
+              "section": "2.6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت شدید به فلوئورواوراسیل یا کپسیتابین.",
+        "en": "History of severe hypersensitivity to fluorouracil or capecitabine."
+      },
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: خونریزی و افزایش INR با وارفارین (پایش مکرر INR). کمبود DPD: سمیت شدید یا کشنده. اسهال، سندرم دست و پا.",
+        "en": "Boxed warning: bleeding and raised INR with warfarin (monitor INR frequently). DPD deficiency: severe or fatal toxicity. Diarrhoea, hand-foot syndrome."
+      },
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-capecitabine",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 51,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۳۰ تا ۵۰: ۲۵٪ کاهش دوز؛ زیر ۳۰ دوز تعیین نشده.",
+        "en": "CrCl 30–50: reduce dose by 25%; <30 dose not established."
+      },
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "2.6"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "colon",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 72,
+        "heightCm": 162
+      },
+      "expect": {
+        "perDose": 2250,
+        "tabletsPerDoseRounded": 15
+      }
+    },
+    {
+      "regimen": "breast",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 56.25,
+        "heightCm": 144
+      },
+      "expect": {
+        "perDose": 1500,
+        "tabletsPerDoseRounded": 3
+      }
+    }
+  ],
+  "atc": [
+    "L01BC06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02492",
+        "en": "CAPECITABINE 150MG TAB",
+        "fa": "قرص کاپسیتابین ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02493",
+        "en": "CAPECITABINE 500MG TAB",
+        "fa": "قرص کاپسیتابین ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-961/Capecitabine",
+        "url": "https://www.darooyab.ir/G-961/Capecitabine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-capecitabine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA210203"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210203",
+      "label": "ANDA210203"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b59e98c-5b34-4b93-90f6-20526f4d4f88",
+      "label": "FDA Capecitabine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699003.html",
+      "label": "Capecitabine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01BC06",
+      "label": "L01BC06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-961/Capecitabine",
+      "label": "Capecitabine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings in animal reproduction studies and its mechanism of action [see Clinical Pharmacology (12.1) ] , capecitabine can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in a breastfed child, advise women not to breastfeed during treatment with capecitabine and for 1 week after the last dose.",
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of capecitabine in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in efficacy were observed comparing older versus younger patients with colorectal cancer, gastric, esophageal or gastrointestinal junction cancer, or pancreatic cancer using the approved recommended dosages and treatment regimens.",
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise females of reproductive potential to use effective contraception during treatment with capecitabine and for 6 months after the last dose.",
+      "refs": [
+        {
+          "source": "fda-capecitabine",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "id": "mycophenolate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مایکوفنولات موفتیل",
+    "en": "Mycophenolate mofetil"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "سرکوب‌کننده ایمنی (آنتی‌متابولیت)",
+    "en": "Immunosuppressant (antimetabolite)"
+  },
+  "brands": [
+    {
+      "name": "CellCept",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cellcept",
+    "سل سپت",
+    "MMF",
+    "مایکوفنولات",
+    "cellmune"
+  ],
+  "formulations": [
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "kidney",
+      "disease": "transplant-rejection",
+      "label": {
+        "fa": "پیوند کلیه — بزرگسال ۱ g دو بار در روز",
+        "en": "Kidney transplant — adult 1 g twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه سیکلوسپورین یا تاکرولیموس و کورتون. GFR زیر ۲۵ در کلیه پیوندی: بیش از ۱ g دو بار در روز نه. ANC زیر ۱۳۰۰: قطع یا کاهش.",
+            "en": "With cyclosporine or tacrolimus and steroids. Graft GFR <25: no more than 1 g twice daily. ANC <1300: interrupt or reduce."
+          },
+          "refs": [
+            {
+              "source": "fda-mycophenolate",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heart",
+      "disease": "transplant-rejection",
+      "label": {
+        "fa": "پیوند قلب یا کبد — بزرگسال ۱٫۵ g دو بار در روز",
+        "en": "Heart or liver transplant — adult 1.5 g twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1500,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-mycophenolate",
+          "section": "2.4"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "transplant-rejection",
+      "label": {
+        "fa": "پیوند کلیه کودک (۳ ماه به بالا) — ۶۰۰ mg/m² دو بار در روز (حداکثر ۲ g/روز)",
+        "en": "Pediatric kidney transplant (≥3 months) — 600 mg/m² twice daily (max 2 g/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 1200,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2000,
+        "refs": [
+          {
+            "source": "fda-mycophenolate",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کودک معمولاً سوسپانسیون CellCept؛ کپسول برای کودکی که قادر به بلع باشد.",
+            "en": "Children usually receive CellCept oral suspension; capsules if able to swallow."
+          },
+          "refs": [
+            {
+              "source": "fda-mycophenolate",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مایکوفنولات یا مایکوفنولیک اسید.",
+        "en": "Hypersensitivity to mycophenolate mofetil or mycophenolic acid."
+      },
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سقط و ناهنجاری جنینی (پیشگیری از بارداری لازم)، لنفوم و بدخیمی پوست، عفونت جدی.",
+        "en": "Boxed warning: first-trimester loss and congenital malformations (contraception required), lymphoma and skin malignancy, serious infections."
+      },
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "kidney",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 4
+      }
+    },
+    {
+      "regimen": "heart",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1500,
+        "tabletsPerDoseRounded": 6
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 37.5,
+        "heightCm": 150
+      },
+      "expect": {
+        "perDose": 750,
+        "tabletsPerDoseRounded": 3
+      }
+    }
+  ],
+  "atc": [
+    "L04AA06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01755",
+        "en": "MYCOPHENOLATE MOFETIL 250MG CAP",
+        "fa": "کپسول مایکوفنولات موفتیل ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01752",
+        "en": "MYCOPHENOLATE MOFETIL 250MG TAB",
+        "fa": "قرص مایکوفنولات موفتیل ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01753",
+        "en": "MYCOPHENOLATE MOFETIL 500MG TAB",
+        "fa": "قرص مایکوفنولات موفتیل ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "11606",
+        "en": "MYCOPHENOLATE SODIUM 180MG TAB",
+        "fa": "قرص مایکوفنولات سدیم ۱۸۰ میلی‌گرم"
+      },
+      {
+        "code": "11607",
+        "en": "MYCOPHENOLATE SODIUM 360MG TAB",
+        "fa": "قرص مایکوفنولات سدیم ۳۶۰ میلی‌گرم"
+      },
+      {
+        "code": "50710",
+        "en": "MYCOPHENOLATE MOFETIL POWDER, FOR SUSPENSION ORAL 1 g/5mL 110 g",
+        "fa": "سوسپانسیون خوراکی مایکوفنولات موفتیل ۱ گرم / ۵ میلی‌لیتر ۱۱۰ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2741/Mycophenolate-Mofetil",
+        "url": "https://www.darooyab.ir/G-2741/Mycophenolate-Mofetil"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-mycophenolate",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA217828"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217828",
+      "label": "ANDA217828"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3eb584dc-f72d-4545-96fa-ab3d47be41ce",
+      "label": "FDA Mycophenolate"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601081.html",
+      "label": "Mycophenolate"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a622068.html",
+      "label": "Mycophenolate Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AA06",
+      "label": "L04AA06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2741/Mycophenolate-Mofetil",
+      "label": "Mycophenolate-Mofetil"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "WARNING: EMBRYOFETAL TOXICITY, MALIGNANCIES and SERIOUS INFECTIONS See full prescribing information for complete boxed warning Use during pregnancy is associated with increased risks of first trimester pregnancy loss and congenital malformations.",
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of mycophenolate in human milk, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have been established in pediatric patients 3 months and older for the prophylaxis of organ rejection of allogenic kidney, heart or liver transplants.",
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for a geriatric patient should take into consideration the presence of decreased hepatic, renal or cardiac function and of concomitant drug therapies [see Adverse Reactions (6.1) , Drug Interactions (7) ].",
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Female Patients Females of reproductive potential taking mycophenolate mofetil must receive contraceptive counseling and use acceptable contraception (see Table 9 for acceptable contraception methods).",
+      "refs": [
+        {
+          "source": "fda-mycophenolate",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

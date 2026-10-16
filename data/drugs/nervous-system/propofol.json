@@ -1,0 +1,652 @@
+{
+  "id": "propofol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پروپوفول",
+    "en": "Propofol"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بیهوش‌کننده وریدی",
+    "en": "IV general anaesthetic"
+  },
+  "brands": [
+    {
+      "name": "Diprivan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "diprivan",
+    "دیپریوان",
+    "پروپوفول"
+  ],
+  "formulations": [
+    {
+      "id": "em-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL emulsion (10, 20, 50, 100 mL vials)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "em-10-mcg",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL emulsion = 10,000 mcg/mL (for infusion rate)",
+      "concentration": {
+        "amount": 10000,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ind-adult",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "القای بیهوشی — بزرگسال سالم زیر ۶۵ سال: ۲ تا ۲٫۵ mg/kg تا شروع اثر",
+        "en": "Induction — healthy adult <65 y: 2–2.5 mg/kg titrated to onset"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 65,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2,
+        "perKgPerDoseMax": 2.5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "2.7, Table 1"
+        },
+        {
+          "source": "fda-diprivan",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "em-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط توسط فرد آموزش‌دیده در بیهوشی با امکانات کنترل راه هوایی، اکسیژن و احیا.",
+            "en": "Only by persons trained in anaesthesia, with airway management, oxygen and resuscitation available."
+          },
+          "refs": [
+            {
+              "source": "fda-diprivan",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "سالمند، ناتوان یا ASA III/IV: ۱ تا ۱٫۵ mg/kg؛ بیهوشی قلب: ۰٫۵ تا ۱٫۵؛ جراحی اعصاب: ۱ تا ۲ mg/kg. بولوس سریع در سالمند نه.",
+            "en": "Elderly, debilitated or ASA III/IV: 1–1.5 mg/kg; cardiac: 0.5–1.5; neurosurgical: 1–2 mg/kg. No rapid boluses in the elderly."
+          },
+          "refs": [
+            {
+              "source": "fda-diprivan",
+              "section": "2.7, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ind-elderly",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "القای بیهوشی — سالمند، ناتوان یا ASA III/IV: ۱ تا ۱٫۵ mg/kg",
+        "en": "Induction — elderly, debilitated or ASA III/IV: 1–1.5 mg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 65,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1,
+        "perKgPerDoseMax": 1.5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "2.7, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "em-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط توسط فرد آموزش‌دیده در بیهوشی با امکانات کنترل راه هوایی، اکسیژن و احیا.",
+            "en": "Only by persons trained in anaesthesia, with airway management, oxygen and resuscitation available."
+          },
+          "refs": [
+            {
+              "source": "fda-diprivan",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ind-child",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "القای بیهوشی — کودک سالم ۳ تا ۱۶ سال: ۲٫۵ تا ۳٫۵ mg/kg",
+        "en": "Induction — healthy child 3–16 y: 2.5–3.5 mg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2.5,
+        "perKgPerDoseMax": 3.5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "2.7, Table 1"
+        },
+        {
+          "source": "fda-diprivan",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "em-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط توسط فرد آموزش‌دیده در بیهوشی با امکانات کنترل راه هوایی، اکسیژن و احیا.",
+            "en": "Only by persons trained in anaesthesia, with airway management, oxygen and resuscitation available."
+          },
+          "refs": [
+            {
+              "source": "fda-diprivan",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "کودکان کوچک‌تر ممکن است دوز بیشتری لازم داشته باشند. ایمنی القا زیر ۳ سال ثابت نشده است.",
+            "en": "Younger children may need higher doses. Induction safety under 3 y not established."
+          },
+          "refs": [
+            {
+              "source": "fda-diprivan",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-diprivan",
+              "section": "2.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "نگهداری بیهوشی — بزرگسال سالم: ۱۰۰ تا ۲۰۰ mcg/kg/دقیقه",
+        "en": "Maintenance — healthy adult: 100–200 mcg/kg/min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 65,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 100,
+        "perKgPerMinMax": 200
+      },
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "2.7, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "em-10-mcg"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سالمند یا ASA III/IV: ۵۰ تا ۱۰۰ mcg/kg/دقیقه؛ بیهوشی قلب: ۲۵ تا ۱۰۰. کودک ۲ ماه تا ۱۶ سال: انفوزیون جداگانه طبق جدول برچسب.",
+            "en": "Elderly or ASA III/IV: 50–100 mcg/kg/min; cardiac: 25–100. Children 2 months–16 y: separate infusion per label table."
+          },
+          "refs": [
+            {
+              "source": "fda-diprivan",
+              "section": "2.7, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mac",
+      "disease": "icu-sedation",
+      "label": {
+        "fa": "آرام‌بخشی حین پروسیجر (MAC) — بزرگسال: ۲۵ تا ۷۵ mcg/kg/دقیقه",
+        "en": "Monitored anaesthesia care sedation — adult: 25–75 mcg/kg/min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 25,
+        "perKgPerMinMax": 75
+      },
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "2.4"
+        }
+      ],
+      "allowedFormulations": [
+        "em-10-mcg"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع با انفوزیون یا تزریق آهسته، نه بولوس سریع.",
+            "en": "Start with a slow infusion or slow injection, not a rapid bolus."
+          },
+          "refs": [
+            {
+              "source": "fda-diprivan",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icu",
+      "disease": "icu-sedation",
+      "label": {
+        "fa": "آرام‌بخشی ICU بیمار اینتوبه — شروع ۵ mcg/kg/دقیقه، افزایش ۵ تا ۱۰ هر ۵ تا ۱۰ دقیقه",
+        "en": "ICU sedation of intubated adults — start 5 mcg/kg/min, increase by 5–10 every 5–10 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 5,
+        "perKgPerMinMax": 50
+      },
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "2.7, Table 1"
+        },
+        {
+          "source": "fda-diprivan",
+          "section": "2.6"
+        }
+      ],
+      "allowedFormulations": [
+        "em-10-mcg"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۵ mcg/kg/دقیقه دست‌کم ۵ دقیقه؛ افزایش تا رسیدن به سطح آرام‌بخشی. تغییر سرعت آهسته (بیش از ۵ دقیقه) برای پیشگیری از افت فشار. چربی خون پایش شود.",
+            "en": "Start 5 mcg/kg/min for at least 5 min; increase until the desired sedation. Change rates slowly (>5 min) to avoid hypotension. Monitor blood lipids."
+          },
+          "refs": [
+            {
+              "source": "fda-diprivan",
+              "section": "2.7, Table 1"
+            },
+            {
+              "source": "fda-diprivan",
+              "section": "2.6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به پروپوفول یا اجزای آن؛ سابقه آنافیلاکسی به تخم‌مرغ یا سویا.",
+        "en": "Hypersensitivity to propofol or its components; history of anaphylaxis to eggs or soy."
+      },
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "افت فشار و دپرسیون تنفسی؛ سندرم انفوزیون پروپوفول در دوز بالا و طولانی؛ امولسیون چربی — رعایت سترونی (رشد میکروب).",
+        "en": "Hypotension and respiratory depression; propofol infusion syndrome with high-dose prolonged use; lipid emulsion — strict asepsis (supports microbial growth)."
+      },
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ind-adult",
+      "formulation": "em-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 140,
+        "mlPerDose": 14,
+        "upperPerDose": 175
+      }
+    },
+    {
+      "regimen": "ind-elderly",
+      "formulation": "em-10",
+      "input": {
+        "ageYears": 75,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 70,
+        "mlPerDose": 7
+      }
+    },
+    {
+      "regimen": "ind-child",
+      "formulation": "em-10",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 50,
+        "mlPerDose": 5,
+        "upperPerDose": 70
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "em-10-mcg",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 7000,
+        "mlPerHour": 42,
+        "upperPerMin": 14000,
+        "upperMlPerHour": 84
+      }
+    },
+    {
+      "regimen": "mac",
+      "formulation": "em-10-mcg",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 1750,
+        "mlPerHour": 10.5,
+        "upperPerMin": 5250,
+        "upperMlPerHour": 31.5
+      }
+    },
+    {
+      "regimen": "icu",
+      "formulation": "em-10-mcg",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 350,
+        "mlPerHour": 2.1,
+        "upperPerMin": 3500,
+        "upperMlPerHour": 21
+      }
+    }
+  ],
+  "atc": [
+    "N01AX10"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01952",
+        "en": "PROPOFOL 1000MG/100ML VIAL",
+        "fa": "ویال پروپوفول ۱۰۰۰ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "16873",
+        "en": "PROPOFOL 2% 50ML VIAL",
+        "fa": "ویال پروپوفول ۲ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "18940",
+        "en": "PROPOFOL 200MG/20ML AMP.",
+        "fa": "آمپول پروپوفول ۲۰۰ میلی‌گرم / ۲۰ میلی‌لیتر ."
+      },
+      {
+        "code": "01653",
+        "en": "PROPOFOL 200MG/20ML VIAL",
+        "fa": "ویال پروپوفول ۲۰۰ میلی‌گرم / ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "01951",
+        "en": "PROPOFOL 500MG/50ML VIAL",
+        "fa": "ویال پروپوفول ۵۰۰ میلی‌گرم / ۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2676/Propofol",
+        "url": "https://www.darooyab.ir/G-2676/Propofol"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-diprivan",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019627"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019627",
+      "label": "NDA019627"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e3105799-a4b6-f3f4-e6e2-b2b29bbdb538",
+      "label": "FDA Diprivan"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625006.html",
+      "label": "Propofol Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N01AX10",
+      "label": "N01AX10"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2676/Propofol",
+      "label": "Propofol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Data from randomized controlled trials, cohort studies and case series over several decades with propofol use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Based on data from published studies, propofol is present in human milk.",
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of DIPRIVAN have been established for induction of anesthesia in pediatric patients aged 3 years and older and for the maintenance of anesthesia aged 2 months and older.",
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The effect of age on induction dose requirements for propofol was assessed in an open-label study involving 211 unpremedicated patients with approximately 30 patients in each decade between the ages of 16 and 80.",
+      "refs": [
+        {
+          "source": "fda-diprivan",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

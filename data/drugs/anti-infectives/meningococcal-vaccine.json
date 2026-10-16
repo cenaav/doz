@@ -1,0 +1,388 @@
+{
+  "id": "meningococcal-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن مننگوکوک ACWY (کونژوگه)",
+    "en": "Meningococcal ACWY conjugate vaccine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن کونژوگه",
+    "en": "Conjugate vaccine"
+  },
+  "brands": [
+    {
+      "name": "Menveo",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "menveo",
+    "menactra",
+    "mcv4",
+    "واکسن مننژیت",
+    "مننگوکوک"
+  ],
+  "formulations": [
+    {
+      "id": "vial-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL dose (two-vial for 2 months–55 y; one-vial for 10–55 y)",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mL",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-menveo",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "infant",
+      "disease": "immunization",
+      "label": {
+        "fa": "شیرخوار از ۲ ماهگی — ۴ دوز در ۲، ۴، ۶ و ۱۲ ماهگی",
+        "en": "Infants from 2 months — 4 doses at 2, 4, 6 and 12 months"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 7,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-menveo",
+          "section": "2.4, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "toddler",
+      "disease": "immunization",
+      "label": {
+        "fa": "۷ تا ۲۳ ماه — ۲ دوز (دوز دوم در سال دوم و دست‌کم ۳ ماه پس از اول)",
+        "en": "7–23 months — 2 doses (second in the 2nd year, ≥3 months after the first)"
+      },
+      "population": {
+        "minAge": {
+          "value": 7,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-menveo",
+          "section": "2.4, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "std",
+      "disease": "immunization",
+      "label": {
+        "fa": "۲ تا ۵۵ سال — یک دوز ۰٫۵ mL عضلانی",
+        "en": "2–55 y — single 0.5 mL IM dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 56,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-menveo",
+          "section": "2.4, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کودک ۲ تا ۵ سال در خطر مداوم: دوز دوم ۲ ماه بعد. یادآور ۱۵ تا ۵۵ سال در خطر مداوم: یک دوز. زیر ۱۰ سال فقط فرآورده دوویالی.",
+            "en": "Children 2–5 y at continued risk: a second dose 2 months later. Booster at 15–55 y if at continued risk: one dose. Under 10 y only the two-vial presentation."
+          },
+          "refs": [
+            {
+              "source": "fda-menveo",
+              "section": "2.4, Table 1"
+            },
+            {
+              "source": "fda-menveo",
+              "section": "8.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش آلرژیک شدید (آنافیلاکسی) به اجزای واکسن یا دوز قبلی یا هر واکسن حاوی توکسوئید دیفتری.",
+        "en": "Severe allergic reaction (anaphylaxis) to a vaccine component or a previous dose or any diphtheria toxoid-containing vaccine."
+      },
+      "refs": [
+        {
+          "source": "fda-menveo",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "infant",
+      "formulation": "vial-05",
+      "input": {
+        "ageMonths": 2,
+        "weightKg": 5
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "toddler",
+      "formulation": "vial-05",
+      "input": {
+        "ageMonths": 10,
+        "weightKg": 9
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "std",
+      "formulation": "vial-05",
+      "input": {
+        "ageYears": 17,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07AH08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "04682",
+        "en": "MENINGOCOCCAL ACWY 10DOSE VIAL",
+        "fa": "ویال مننگوکوکی آکوی ۱۰ دوز"
+      },
+      {
+        "code": "21258",
+        "en": "MENINGOCOCCAL ACWY 1DOSE VIAL",
+        "fa": "ویال مننگوکوکی آکوی ۱ دوز"
+      },
+      {
+        "code": "17878",
+        "en": "MENINGOCOCCAL VAC A+C 1 DOSE VIAL",
+        "fa": "ویال مننگوکوکی VAC A + C ۱ دوز"
+      },
+      {
+        "code": "17876",
+        "en": "MENINGOCOCCAL VAC A+C 10 DOSE VIAL",
+        "fa": "ویال مننگوکوکی VAC A + C ۱۰ دوز"
+      },
+      {
+        "code": "01583",
+        "en": "MENINGOCOCCAL VAC A+C 50 DOSES",
+        "fa": "مننگوکوکی VAC A + C ۵۰ دوز"
+      },
+      {
+        "code": "19637",
+        "en": "MENINGOCOCCAL VACCINE POLYVALENT 1DOSE SYRINGE",
+        "fa": "سرنگ واکسن مننگوکوکی چندظرفیتی ۱ دوز"
+      },
+      {
+        "code": "19636",
+        "en": "MENINGOCOCCAL VACCINE POLYVALENT 1DOSE VIAL",
+        "fa": "ویال واکسن مننگوکوکی چندظرفیتی ۱ دوز"
+      },
+      {
+        "code": "02721",
+        "en": "VACCINE-MENIGOCOCCAL A+C 10 DOSES AMP",
+        "fa": "آمپول واکسن–منیگوکوککال A + C ۱۰ دوز"
+      },
+      {
+        "code": "52305",
+        "en": "MENINGOCOCCAL VACCINE INJECTION PARENTERAL  10 {dose}",
+        "fa": "فرآورده تزریقی واکسن مننگوکوکی ۱۰ { دوز }"
+      },
+      {
+        "code": "52293",
+        "en": "MENINGOCOCCAL VACCINE INJECTION PARENTERAL  1 {dose}",
+        "fa": "فرآورده تزریقی واکسن مننگوکوکی ۱ { دوز }"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3488/Meningococcal-Vaccines",
+        "url": "https://www.darooyab.ir/G-3488/Meningococcal-Vaccines"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-menveo",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125300"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125300",
+      "label": "BLA125300"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2dc730d5-55fd-4e98-8c8a-daa7d8f872b0",
+      "label": "FDA Menveo"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07AH08",
+      "label": "J07AH08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3488/Meningococcal-Vaccines",
+      "label": "Meningococcal-Vaccines"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary All pregnancies have a risk of birth defect, loss, or other adverse outcomes.",
+      "refs": [
+        {
+          "source": "fda-menveo",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Data are not available to assess the effects of MENVEO in the breastfed infant or on milk production/excretion.",
+      "refs": [
+        {
+          "source": "fda-menveo",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of MENVEO in children aged younger than 2 months have not been established.",
+      "refs": [
+        {
+          "source": "fda-menveo",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Safety and effectiveness of MENVEO in adults aged 65 years and older have not been established.",
+      "refs": [
+        {
+          "source": "fda-menveo",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

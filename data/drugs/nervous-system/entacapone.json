@@ -1,0 +1,252 @@
+{
+  "id": "entacapone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "انتاکاپون",
+    "en": "Entacapone"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده COMT",
+    "en": "COMT inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Comtan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "comtan",
+    "کامتان",
+    "انتاکاپون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-entacapone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pd",
+      "disease": "parkinsons",
+      "label": {
+        "fa": "پارکینسون با پدیده wearing-off — ۲۰۰ mg همراه هر دوز لوودوپا/کاربیدوپا (حداکثر ۸ بار در روز)",
+        "en": "Parkinson’s with wearing-off — 200 mg with each levodopa/carbidopa dose (max 8 times daily)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-entacapone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1600,
+        "refs": [
+          {
+            "source": "fda-entacapone",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه لوودوپا/کاربیدوپا؛ به‌تنهایی اثر ضدپارکینسون ندارد. ماشین‌حساب ۴ دوز را نشان می‌دهد؛ تعداد دوز = تعداد دوز لوودوپا. ممکن است کاهش دوز لوودوپا لازم شود.",
+            "en": "Always with levodopa/carbidopa; no antiparkinsonian effect alone. The calculator shows 4 doses; number of doses = number of levodopa doses. Levodopa dose may need reduction."
+          },
+          "refs": [
+            {
+              "source": "fda-entacapone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به انتاکاپون.",
+        "en": "Hypersensitivity to entacapone."
+      },
+      "refs": [
+        {
+          "source": "fda-entacapone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "maoi",
+      "text": {
+        "fa": "MAOI غیرانتخابی (فنلزین، ترانیل‌سیپرومین): همزمان نه.",
+        "en": "Non-selective MAOIs (phenelzine, tranylcypromine): should not be combined."
+      },
+      "refs": [
+        {
+          "source": "fda-entacapone",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pd",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N04BX02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06428",
+        "en": "ENTACAPONE 200MG TAB",
+        "fa": "قرص انتاکاپون ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2489/Entacapone",
+        "url": "https://www.darooyab.ir/G-2489/Entacapone"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-entacapone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA207210"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207210",
+      "label": "ANDA207210"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=56327e32-3b06-4144-91a0-bb1908842e33",
+      "label": "FDA Entacapone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601236.html",
+      "label": "Entacapone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04BX02",
+      "label": "N04BX02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2489/Entacapone",
+      "label": "Entacapone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C.",
+      "refs": [
+        {
+          "source": "fda-entacapone",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when entacapone is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-entacapone",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-entacapone",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

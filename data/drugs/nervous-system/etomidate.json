@@ -1,0 +1,258 @@
+{
+  "id": "etomidate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اتومیدیت",
+    "en": "Etomidate"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "بیهوش‌کننده وریدی",
+    "en": "IV general anaesthetic"
+  },
+  "brands": [
+    {
+      "name": "Amidate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "amidate",
+    "اتومیدیت"
+  ],
+  "formulations": [
+    {
+      "id": "inj-2",
+      "form": "injection",
+      "route": "iv",
+      "label": "2 mg/mL (20 mg/10 mL, 40 mg/20 mL)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-amidate",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ind",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "القای بیهوشی — بزرگسال و کودک بالای ۱۰ سال: معمولاً ۰٫۳ mg/kg (۰٫۲ تا ۰٫۶) در ۳۰ تا ۶۰ ثانیه",
+        "en": "Induction — adults and children >10 y: usually 0.3 mg/kg (0.2–0.6) over 30–60 s"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.3,
+        "perKgPerDoseMax": 0.6,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-amidate",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط توسط فرد آموزش‌دیده در بیهوشی با امکانات کنترل راه هوایی، اکسیژن و احیا.",
+            "en": "Only by persons trained in anaesthesia, with airway management, oxygen and resuscitation available."
+          },
+          "refs": [
+            {
+              "source": "fda-amidate",
+              "section": "Warnings"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "زیر ۱۰ سال داده کافی نیست و توصیه نمی‌شود. سالمندان ممکن است دوز کمتری بخواهند. برای انفوزیون طولانی نه (سرکوب کورتیزول و آلدوسترون).",
+            "en": "Insufficient data under 10 y — not recommended. Elderly may need less. Not for prolonged infusion (suppresses cortisol and aldosterone)."
+          },
+          "refs": [
+            {
+              "source": "fda-amidate",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-amidate",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اتومیدیت.",
+        "en": "Hypersensitivity to etomidate."
+      },
+      "refs": [
+        {
+          "source": "fda-amidate",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ind",
+      "formulation": "inj-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 21,
+        "mlPerDose": 10.5,
+        "upperPerDose": 42
+      }
+    }
+  ],
+  "atc": [
+    "N01AX07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01501",
+        "en": "ETOMIDATE 20MG/10ML AMP",
+        "fa": "آمپول اتومیدات ۲۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2668/Etomidate",
+        "url": "https://www.darooyab.ir/G-2668/Etomidate"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-amidate",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA018227"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=018227",
+      "label": "NDA018227"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b7ed5bf8-ba75-44dc-8f81-96b4ad5766be",
+      "label": "FDA Amidate"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N01AX07",
+      "label": "N01AX07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2668/Etomidate",
+      "label": "Etomidate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-amidate",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when AMIDATE is administered to a nursing mother.",
+      "refs": [
+        {
+          "source": "fda-amidate",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "There are inadequate data for AMIDATE to make dosage recommendations for induction of anesthesia in patients below the age of ten (10) years; therefore, such use is not recommended (see also DOSAGE AND ADMINISTRATION ).",
+      "refs": [
+        {
+          "source": "fda-amidate",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Elderly patients may require lower doses of AMIDATE than younger patients.",
+      "refs": [
+        {
+          "source": "fda-amidate",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "id": "bicalutamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بیکالوتامید",
+    "en": "Bicalutamide"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌آندروژن",
+    "en": "Antiandrogen"
+  },
+  "brands": [
+    {
+      "name": "Casodex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "casodex",
+    "کازودکس",
+    "بیکالوتامید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bicalutamide",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pc",
+      "disease": "prostate-cancer",
+      "label": {
+        "fa": "سرطان پروستات متاستاتیک (همراه آنالوگ LHRH) — ۵۰ mg یک بار در روز",
+        "en": "Metastatic prostate cancer (with an LHRH analogue) — 50 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bicalutamide",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هم‌زمان با شروع آنالوگ LHRH و هر روز در ساعت ثابت.",
+            "en": "Start at the same time as the LHRH analogue; take at the same time each day."
+          },
+          "refs": [
+            {
+              "source": "fda-bicalutamide",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بیکالوتامید (آنژیوادم، کهیر)؛ زنان (اندیکاسیون ندارد)؛ بارداری (آسیب جنین).",
+        "en": "Hypersensitivity to bicalutamide (angioedema, urticaria); women (no indication); pregnancy (fetal harm)."
+      },
+      "refs": [
+        {
+          "source": "fda-bicalutamide",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آسیب کبدی (آزمایش کبد دوره‌ای)؛ ژنیکوماستی؛ افزایش اثر وارفارین.",
+        "en": "Hepatitis (periodic liver tests); gynaecomastia; increased warfarin effect."
+      },
+      "refs": [
+        {
+          "source": "fda-bicalutamide",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pc",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L02BB03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07582",
+        "en": "BICALUTAMIDE 150MG TAB",
+        "fa": "قرص بیکالوتامید ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "06765",
+        "en": "BICALUTAMIDE 50MG TAB",
+        "fa": "قرص بیکالوتامید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-954/Bicalutamide",
+        "url": "https://www.darooyab.ir/G-954/Bicalutamide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-bicalutamide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020498"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020498",
+      "label": "NDA020498"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+      "label": "FDA Bicalutamide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697047.html",
+      "label": "Bicalutamide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BB03",
+      "label": "L02BB03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-954/Bicalutamide",
+      "label": "Bicalutamide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Bicalutamide tablets are contraindicated for use in pregnant women because it can cause fetal harm.",
+      "refs": [
+        {
+          "source": "fda-bicalutamide",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of bicalutamide tablets in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-bicalutamide",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Hepatic Impairment Bicalutamide tablets should be used with caution in patients with moderate-to-severe hepatic impairment.",
+      "refs": [
+        {
+          "source": "fda-bicalutamide",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    }
+  }
+}

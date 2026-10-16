@@ -1,0 +1,414 @@
+{
+  "id": "succinylcholine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سوکسینیل‌کولین (ساکسامتونیوم)",
+    "en": "Succinylcholine (suxamethonium)"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "شل‌کننده عضلانی دپلاریزان",
+    "en": "Depolarising neuromuscular blocker"
+  },
+  "brands": [
+    {
+      "name": "Quelicin / Anectine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "quelicin",
+    "anectine",
+    "suxamethonium",
+    "ساکسینیل کولین",
+    "سوکسامتونیوم"
+  ],
+  "formulations": [
+    {
+      "id": "inj-20",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/mL (200 mg/10 mL multiple-dose vial)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "لوله‌گذاری — بزرگسال: میانگین ۰٫۶ mg/kg وریدی (۰٫۳ تا ۱٫۱)",
+        "en": "Intubation — adult: average 0.6 mg/kg IV (0.3–1.1)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.6,
+        "perKgPerDoseMax": 1.1,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط با امکانات کامل راه هوایی و تهویه.",
+            "en": "Only with full airway and ventilation support available."
+          },
+          "refs": [
+            {
+              "source": "fda-quelicin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infant",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "لوله‌گذاری اورژانس — شیرخوار و کودک کوچک: ۲ mg/kg وریدی",
+        "en": "Emergency intubation — infants and small children: 2 mg/kg IV"
+      },
+      "population": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط با امکانات کامل راه هوایی و تهویه.",
+            "en": "Only with full airway and ventilation support available."
+          },
+          "refs": [
+            {
+              "source": "fda-quelicin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "لوله‌گذاری اورژانس — کودک بزرگ‌تر و نوجوان: ۱ mg/kg وریدی",
+        "en": "Emergency intubation — older children and adolescents: 1 mg/kg IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط با امکانات کامل راه هوایی و تهویه.",
+            "en": "Only with full airway and ventilation support available."
+          },
+          "refs": [
+            {
+              "source": "fda-quelicin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "im",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "عضلانی (بدون راه وریدی) — تا ۳ تا ۴ mg/kg، حداکثر ۱۵۰ mg",
+        "en": "IM (no IV access) — up to 3–4 mg/kg, max 150 mg total"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 3,
+        "perKgPerDoseMax": 4,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "2.4"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 150,
+        "refs": [
+          {
+            "source": "fda-quelicin",
+            "section": "2.4"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "میوپاتی عضلات اسکلتی؛ پس از مرحله حاد سوختگی وسیع، ترومای متعدد، دنرواسیون گسترده یا آسیب نورون حرکتی فوقانی (هیپرکالمی و ایست قلب)؛ سابقه شخصی یا خانوادگی هیپرترمی بدخیم؛ حساسیت.",
+        "en": "Skeletal muscle myopathies; after the acute phase of major burns, multiple trauma, extensive denervation or upper motor neuron injury (hyperkalaemia and cardiac arrest); personal or family history of malignant hyperthermia; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: رابدومیولیز با هیپرکالمی، آریتمی بطنی، ایست قلبی و مرگ در کودکان ظاهراً سالم با میوپاتی تشخیص‌داده‌نشده (اغلب دوشن). هیپرترمی بدخیم.",
+        "en": "Boxed warning: rhabdomyolysis with hyperkalaemia, ventricular dysrhythmias, cardiac arrest and death in apparently healthy children with undiagnosed myopathy (mostly Duchenne). Malignant hyperthermia."
+      },
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-quelicin",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "inj-20",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 42,
+        "mlPerDose": 2.1,
+        "upperPerDose": 77
+      }
+    },
+    {
+      "regimen": "infant",
+      "formulation": "inj-20",
+      "input": {
+        "ageMonths": 8,
+        "weightKg": 8
+      },
+      "expect": {
+        "perDose": 16,
+        "mlPerDose": 0.8
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "inj-20",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 30,
+        "mlPerDose": 1.5
+      }
+    },
+    {
+      "regimen": "im",
+      "formulation": "inj-20",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 60,
+        "mlPerDose": 3,
+        "upperPerDose": 80
+      }
+    }
+  ],
+  "atc": [
+    "M03AB01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Succinylcholine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-quelicin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA008845"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=008845",
+      "label": "NDA008845"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fb08161e-7711-406d-e7b3-ea4515c07983",
+      "label": "FDA Quelicin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M03AB01",
+      "label": "M03AB01"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published literature from case reports and case series over decades of use with succinylcholine during pregnancy have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of succinylcholine or its metabolite in either human or animal milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "• Acute rhabdomyolysis with hyperkalemia followed by ventricular dysrhythmias, cardiac arrest, and death has occurred after the administration of succinylcholine to apparently healthy pediatric patients who were subsequently found to have undiagnosed skeletal muscle myopathy, most frequently Duchenne muscular …",
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-quelicin",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

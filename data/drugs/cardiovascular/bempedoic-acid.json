@@ -1,0 +1,256 @@
+{
+  "id": "bempedoic-acid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بمپدوئیک اسید",
+    "en": "Bempedoic acid"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مهارکننده ACL (کاهش LDL)",
+    "en": "ACL inhibitor (LDL-lowering)"
+  },
+  "brands": [
+    {
+      "name": "Nexletol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nexletol",
+    "نکسلتول",
+    "بمپدوئیک"
+  ],
+  "formulations": [
+    {
+      "id": "tab-180",
+      "form": "tablet",
+      "route": "oral",
+      "label": "180 mg tablet",
+      "concentration": {
+        "amount": 180,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nexletol",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ldl",
+      "disease": "hyperlipidemia",
+      "label": {
+        "fa": "هیپرکلسترولمی یا پیشگیری قلبی — ۱۸۰ mg یک بار در روز",
+        "en": "Hypercholesterolaemia or CV risk reduction — 180 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 180,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nexletol",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "چربی خون ۸ تا ۱۲ هفته پس از شروع.",
+            "en": "Check lipids 8–12 weeks after starting."
+          },
+          "refs": [
+            {
+              "source": "fda-nexletol",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت جدی به بمپدوئیک اسید.",
+        "en": "History of serious hypersensitivity to bempedoic acid."
+      },
+      "refs": [
+        {
+          "source": "fda-nexletol",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "افزایش اسید اوریک و نقرس؛ پارگی تاندون؛ با سیمواستاتین بالای ۲۰ mg یا پراواستاتین بالای ۴۰ mg نه.",
+        "en": "Hyperuricaemia and gout; tendon rupture; avoid simvastatin >20 mg or pravastatin >40 mg."
+      },
+      "refs": [
+        {
+          "source": "fda-nexletol",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ldl",
+      "formulation": "tab-180",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 180,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C10AX15"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "53341",
+        "en": "BEMPEDOIC ACID  180 mg TABLET",
+        "fa": "قرص بمپدوئیک اسید ۱۸۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1914/Bempedoic-acid",
+        "url": "https://www.darooyab.ir/G-1914/Bempedoic-acid"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-nexletol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA211616"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211616",
+      "label": "NDA211616"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88d06d89-a3da-40b4-b273-8f4f7d56c4c9",
+      "label": "FDA Nexletol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620020.html",
+      "label": "Bempedoic Acid"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AX15",
+      "label": "C10AX15"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1914/Bempedoic-acid",
+      "label": "Bempedoic-acid"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "NEXLETOL decreases cholesterol synthesis and possibly the synthesis of other biologically active substances derived from cholesterol; therefore, NEXLETOL may cause fetal harm when administered to pregnant women based on the mechanism of action [see Clinical Pharmacology (12.1) ] .",
+      "refs": [
+        {
+          "source": "fda-nexletol",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Bempedoic acid was detected in breast milk of lactating women who received six consecutive daily doses of 180 mg bempedoic acid.",
+      "refs": [
+        {
+          "source": "fda-nexletol",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of NEXLETOL have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-nexletol",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness of NEXLETOL have been observed between patients 65 years of age and older and younger adult patients.",
+      "refs": [
+        {
+          "source": "fda-nexletol",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

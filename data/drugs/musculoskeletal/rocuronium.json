@@ -1,0 +1,468 @@
+{
+  "id": "rocuronium",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "روکورونیوم",
+    "en": "Rocuronium"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "شل‌کننده عضلانی غیردپلاریزان",
+    "en": "Non-depolarising neuromuscular blocker"
+  },
+  "brands": [
+    {
+      "name": "Zemuron",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zemuron",
+    "esmeron",
+    "روکورونیوم",
+    "اسمرون"
+  ],
+  "formulations": [
+    {
+      "id": "inj-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL (50 mg/5 mL, 100 mg/10 mL)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "inj-10-mcg",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL = 10,000 mcg/mL (for infusion rate)",
+      "concentration": {
+        "amount": 10000,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "intub",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "لوله‌گذاری — ۰٫۶ mg/kg (بزرگسال و کودک)",
+        "en": "Intubation — 0.6 mg/kg (adults and children)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.6,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-rocuronium",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز با محرک عصب محیطی (TOF) تنظیم شود. فقط توسط فرد مجرب.",
+            "en": "Titrate with a peripheral nerve stimulator (TOF). Experienced clinicians only."
+          },
+          "refs": [
+            {
+              "source": "fda-rocuronium",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "کودک: بسته به روش بیهوشی ۰٫۴۵ mg/kg هم کافی است.",
+            "en": "Children: 0.45 mg/kg may suffice depending on the anaesthetic technique."
+          },
+          "refs": [
+            {
+              "source": "fda-rocuronium",
+              "section": "2.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rsi",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "لوله‌گذاری سریع (RSI) — ۰٫۶ تا ۱٫۲ mg/kg",
+        "en": "Rapid sequence intubation — 0.6–1.2 mg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.6,
+        "perKgPerDoseMax": 1.2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز با محرک عصب محیطی (TOF) تنظیم شود. فقط توسط فرد مجرب.",
+            "en": "Titrate with a peripheral nerve stimulator (TOF). Experienced clinicians only."
+          },
+          "refs": [
+            {
+              "source": "fda-rocuronium",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "دوز نگهدارنده — ۰٫۱ تا ۰٫۲ mg/kg در بازگشت ۲۵٪ T1",
+        "en": "Maintenance bolus — 0.1–0.2 mg/kg at 25% T1 recovery"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.1,
+        "perKgPerDoseMax": 0.2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز با محرک عصب محیطی (TOF) تنظیم شود. فقط توسط فرد مجرب.",
+            "en": "Titrate with a peripheral nerve stimulator (TOF). Experienced clinicians only."
+          },
+          "refs": [
+            {
+              "source": "fda-rocuronium",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inf",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "انفوزیون — شروع ۱۰ تا ۱۲ mcg/kg/دقیقه پس از بازگشت اولیه",
+        "en": "Infusion — start 10–12 mcg/kg/min after early recovery"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 10,
+        "perKgPerMinMax": 12
+      },
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "2.5"
+        }
+      ],
+      "allowedFormulations": [
+        "inj-10-mcg"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز با محرک عصب محیطی (TOF) تنظیم شود. فقط توسط فرد مجرب.",
+            "en": "Titrate with a peripheral nerve stimulator (TOF). Experienced clinicians only."
+          },
+          "refs": [
+            {
+              "source": "fda-rocuronium",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت (مثلاً آنافیلاکسی) به روکورونیوم یا سایر شل‌کننده‌ها.",
+        "en": "Hypersensitivity (e.g. anaphylaxis) to rocuronium or other neuromuscular blockers."
+      },
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آنافیلاکسی؛ فقط با بیهوشی کافی (فلج بدون آرام‌بخشی نه)؛ اشتباه دارویی کشنده است.",
+        "en": "Anaphylaxis; only with adequate anaesthesia (no paralysis without sedation); accidental administration can be fatal."
+      },
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "5"
+        },
+        {
+          "source": "fda-rocuronium",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "intub",
+      "formulation": "inj-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 42,
+        "mlPerDose": 4.2
+      }
+    },
+    {
+      "regimen": "rsi",
+      "formulation": "inj-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 42,
+        "mlPerDose": 4.2,
+        "upperPerDose": 84
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "inj-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 7,
+        "mlPerDose": 0.7,
+        "upperPerDose": 14
+      }
+    },
+    {
+      "regimen": "inf",
+      "formulation": "inj-10-mcg",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 700,
+        "mlPerHour": 4.2,
+        "upperPerMin": 840,
+        "upperMlPerHour": 5.04
+      }
+    }
+  ],
+  "atc": [
+    "M03AC09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17084",
+        "en": "ROCURONIUM BROMIDE 50MG/5ML AMP",
+        "fa": "آمپول روکورونیوم بروماید ۵۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "52073",
+        "en": "ROCURONIUM BROMIDE INJECTION, SOLUTION PARENTERAL 10 mg/1mL 10 mL",
+        "fa": "محلول تزریقی روکورونیوم بروماید ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2811/Rocuronium",
+        "url": "https://www.darooyab.ir/G-2811/Rocuronium"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-rocuronium",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA219260"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219260",
+      "label": "ANDA219260"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a18fce42-0f3d-4354-845e-57c37ac3a147",
+      "label": "FDA Rocuronium"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M03AC09",
+      "label": "M03AC09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2811/Rocuronium",
+      "label": "Rocuronium"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Rocuronium bromide injection should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "8.1"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The use of rocuronium bromide injection has been studied in pediatric patients 3 months to 14 years of age under halothane anesthesia.",
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical experiences and recommendations for use in geriatric patients are discussed in other sections [see Dosage and Administration (2.6) , Warnings and Precautions (5.5) , Clinical Pharmacology (12.2) , and Clinical Studies (14.2) ] .",
+      "refs": [
+        {
+          "source": "fda-rocuronium",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

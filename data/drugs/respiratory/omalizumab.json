@@ -1,0 +1,299 @@
+{
+  "id": "omalizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اومالیزومب",
+    "en": "Omalizumab"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌بادی ضد IgE",
+    "en": "Anti-IgE antibody"
+  },
+  "brands": [
+    {
+      "name": "Xolair",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xolair",
+    "زولر",
+    "اومالیزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "syr-150",
+      "form": "injection",
+      "route": "sc",
+      "label": "150 mg/mL prefilled syringe (also 75 mg/0.5 mL, 300 mg/2 mL)",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xolair",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "csu",
+      "disease": "chronic-urticaria",
+      "label": {
+        "fa": "کهیر مزمن خودبه‌خودی (۱۲ سال به بالا) — ۱۵۰ یا ۳۰۰ mg هر ۴ هفته",
+        "en": "Chronic spontaneous urticaria (≥12 y) — 150 or 300 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 150,
+        "perDoseMax": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-xolair",
+          "section": "2.5"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یک دوز هر ۴ هفته (نه روزانه)؛ مستقل از IgE و وزن.",
+            "en": "One dose every 4 WEEKS (not daily); independent of IgE and weight."
+          },
+          "refs": [
+            {
+              "source": "fda-xolair",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asthma",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم آلرژیک متوسط تا شدید (۶ سال به بالا) — ۷۵ تا ۳۷۵ mg هر ۲ یا ۴ هفته بر اساس IgE و وزن",
+        "en": "Moderate–severe allergic asthma (≥6 y) — 75–375 mg every 2 or 4 weeks by IgE and weight"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "دوز و فاصله از جدول برچسب بر اساس IgE تام سرم پیش از درمان و وزن.",
+          "en": "Dose and interval from the label tables by pre-treatment total serum IgE and body weight."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-xolair",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش حساسیتی شدید به اومالیزومب.",
+        "en": "Severe hypersensitivity reaction to omalizumab."
+      },
+      "refs": [
+        {
+          "source": "fda-xolair",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: آنافیلاکسی (حتی پس از یک سال)؛ شروع در مرکز درمانی با مشاهده پس از تزریق.",
+        "en": "Boxed warning: anaphylaxis (even after a year); start in a healthcare setting with observation after injection."
+      },
+      "refs": [
+        {
+          "source": "fda-xolair",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "csu",
+      "formulation": "syr-150",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 1,
+        "upperPerDose": 300
+      }
+    }
+  ],
+  "atc": [
+    "R03DX05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07525",
+        "en": "OMALIZUMAB 150MG INJ",
+        "fa": "فرآورده تزریقی امالیزومب ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "18947",
+        "en": "OMALIZUMAB 75MG VIAL",
+        "fa": "ویال امالیزومب ۷۵ میلی‌گرم"
+      },
+      {
+        "code": "53096",
+        "en": "OMALIZUMAB INJECTION, SOLUTION PARENTERAL 150 mg/1mL 1 mL",
+        "fa": "محلول تزریقی امالیزومب ۱۵۰ میلی‌گرم / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1476/Omalizumab",
+        "url": "https://www.darooyab.ir/G-1476/Omalizumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-xolair",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103976"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103976",
+      "label": "BLA103976"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f6a2191-adfb-48b9-9bfa-0d9920479f0d",
+      "label": "FDA Xolair"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603031.html",
+      "label": "Omalizumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03DX05",
+      "label": "R03DX05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1476/Omalizumab",
+      "label": "Omalizumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary A registry study of XOLAIR exposure during pregnancy showed no increase in the rate of major birth defects or miscarriage.",
+      "refs": [
+        {
+          "source": "fda-xolair",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of omalizumab in human milk, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-xolair",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Asthma Safety and effectiveness of XOLAIR for moderate to severe persistent asthma who had a positive skin test or in vitro reactivity to a perennial aeroallergen and whose symptoms are inadequately controlled with inhaled corticosteroids, have been established in pediatric patients aged 6 years and older.",
+      "refs": [
+        {
+          "source": "fda-xolair",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In clinical studies, 134 asthma patients, 20 CRSwNP patients, 37 CSU patients and no IgE-mediated food allergy patients 65 years of age or older were treated with XOLAIR.",
+      "refs": [
+        {
+          "source": "fda-xolair",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

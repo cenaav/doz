@@ -1,0 +1,238 @@
+{
+  "id": "agomelatine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آگوملاتین",
+    "en": "Agomelatine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آگونیست ملاتونین و آنتاگونیست 5-HT2C",
+    "en": "Melatonergic agonist and 5-HT2C antagonist"
+  },
+  "brands": [
+    {
+      "name": "Valdoxan",
+      "market": "UK"
+    }
+  ],
+  "synonyms": [
+    "valdoxan",
+    "والدوکسان",
+    "آگوملاتین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg film-coated tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "UK"
+      ],
+      "refs": [
+        {
+          "source": "emc-valdoxan",
+          "section": "6.5"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی اساسی بزرگسال — ۲۵ mg هنگام خواب؛ پس از ۲ هفته بدون بهبود تا ۵۰ mg",
+        "en": "Adult major depression — 25 mg at bedtime; 50 mg if no improvement after 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "perDoseMax": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "emc-valdoxan",
+          "section": "4.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "آزمایش کبد پیش از شروع و حدود ۳، ۶، ۱۲ و ۲۴ هفته؛ ترانس‌آمیناز بالای ۳ برابر: شروع نشود و قطع شود. افزایش به ۵۰ mg با پایش دقیق کبد.",
+            "en": "Liver tests before starting and at about 3, 6, 12 and 24 weeks; do not start (and stop) if transaminases exceed 3× ULN. Increase to 50 mg only with strict liver monitoring."
+          },
+          "refs": [
+            {
+              "source": "emc-valdoxan",
+              "section": "4.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی کبد (سیروز یا بیماری فعال کبد) یا ترانس‌آمیناز بالای ۳ برابر؛ مهارکننده قوی CYP1A2 (فلووکسامین، سیپروفلوکساسین)؛ حساسیت.",
+        "en": "Hepatic impairment (cirrhosis or active liver disease) or transaminases >3× ULN; potent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "emc-valdoxan",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آسیب کبدی (گاه نارسایی کبد)؛ پایش آزمایش کبد.",
+        "en": "Liver injury (occasionally hepatic failure); monitor liver tests."
+      },
+      "refs": [
+        {
+          "source": "emc-valdoxan",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "N06AX22"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18949",
+        "en": "AGOMELATINE 25 mg TABLET",
+        "fa": "قرص آگوملاتین ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5431/Agomelatine",
+        "url": "https://www.darooyab.ir/G-5431/Agomelatine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AX22",
+      "label": "N06AX22"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5431/Agomelatine",
+      "label": "Agomelatine"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/6564/smpc",
+      "label": "eMC Valdoxan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are no or limited amount of data (less than 300 pregnancy outcomes) from the use of agomelatine in pregnant women.",
+      "refs": [
+        {
+          "source": "emc-valdoxan",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Available pharmacodynamic/toxicological data in animals have shown excretion of agomelatine/metabolites in milk (see section 5.3).",
+      "refs": [
+        {
+          "source": "emc-valdoxan",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Children and adolescents from 7 to 17 years The safety and efficacy of agomelatine in children and adolescents aged from 7 to 17 years for treatment of major depressive episodes have not been established.",
+      "refs": [
+        {
+          "source": "emc-valdoxan",
+          "section": "4.2"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dose adjustment is required in relation to age (see section 5.2).",
+      "refs": [
+        {
+          "source": "emc-valdoxan",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

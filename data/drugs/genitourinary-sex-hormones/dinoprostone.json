@@ -1,0 +1,256 @@
+{
+  "id": "dinoprostone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دینوپروستون (ژل داخل سرویکس)",
+    "en": "Dinoprostone (endocervical gel)"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "پروستاگلاندین E2",
+    "en": "Prostaglandin E2"
+  },
+  "brands": [
+    {
+      "name": "Prepidil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "prepidil",
+    "cervidil",
+    "prostin",
+    "دینوپروستون",
+    "پروستین"
+  ],
+  "formulations": [
+    {
+      "id": "gel",
+      "form": "gel",
+      "route": "vaginal",
+      "label": "0.5 mg dinoprostone in 3 g (2.5 mL) gel syringe with endocervical catheter",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prepidil",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ripen",
+      "disease": "labor-induction",
+      "label": {
+        "fa": "آماده‌سازی دهانه رحم در زمان ترم — ۰٫۵ mg داخل سرویکس؛ تکرار ۰٫۵ mg هر ۶ ساعت (حداکثر ۱٫۵ mg/۲۴ ساعت)",
+        "en": "Cervical ripening at term — 0.5 mg endocervical; repeat 0.5 mg every 6 h (max 1.5 mg/24 h)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-prepidil",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1.5,
+        "refs": [
+          {
+            "source": "fda-prepidil",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط در بیمارستان با امکانات مراقبت ویژه و جراحی. بیمار ۱۵ تا ۳۰ دقیقه درازکش بماند. شروع اکسی‌توسین ۶ تا ۱۲ ساعت پس از پاسخ.",
+            "en": "Hospital only, with intensive care and surgery available. Keep supine for 15–30 min. Start oxytocin 6–12 h after response."
+          },
+          "refs": [
+            {
+              "source": "fda-prepidil",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-prepidil",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "هر جا داروی اکسی‌توسیک منع دارد یا انقباض طولانی رحم نامناسب است (سزارین یا جراحی بزرگ رحم قبلی، عدم تناسب سر و لگن، دیسترس جنین بدون زایمان قریب‌الوقوع)؛ جفت سرراهی یا خونریزی واژینال بی‌علت؛ وقتی زایمان طبیعی مناسب نیست؛ حساسیت به پروستاگلاندین.",
+        "en": "Where oxytocics are contraindicated or prolonged contractions are inappropriate (previous Caesarean or major uterine surgery, cephalopelvic disproportion, fetal distress without imminent delivery); placenta praevia or unexplained vaginal bleeding; when vaginal delivery is not indicated; prostaglandin hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-prepidil",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "فقط در بیمارستان؛ دقیقاً با دوز توصیه‌شده. خطر انعقاد درون‌عروقی منتشر در زنان ۳۰ سال به بالا، عوارض بارداری و بارداری بالای ۴۰ هفته.",
+        "en": "Hospital use only; strict adherence to dosing. Increased risk of DIC in women ≥30 y, with pregnancy complications or gestation >40 weeks."
+      },
+      "refs": [
+        {
+          "source": "fda-prepidil",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ripen",
+      "formulation": "gel",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "G02AD02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02179",
+        "en": "PROSTAGLANDIN E2 3MG (DINOPROSTONE) VAG GEL",
+        "fa": "ژل واژینال پروستاگلاندین E ۲ ۳ میلی‌گرم (دینوپروستون)"
+      },
+      {
+        "code": "00451",
+        "en": "PROSTAGLANDIN E2 3MG (DINOPROSTONE) VAG TAB",
+        "fa": "قرص واژینال پروستاگلاندین E ۲ ۳ میلی‌گرم (دینوپروستون)"
+      },
+      {
+        "code": "00452",
+        "en": "PROSTAGLANDIN E2 5MG/0.5ML (DINOPROSTONE) AMP",
+        "fa": "آمپول پروستاگلاندین E ۲ ۵ میلی‌گرم / ۰٫۵ میلی‌لیتر (دینوپروستون)"
+      },
+      {
+        "code": "52741",
+        "en": "PROSTAGLANDIN E2 INSERT, EXTENDED RELEASE VAGINAL",
+        "fa": "پروستاگلاندین E ۲ اینسرت"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3180/Dinoprostone",
+        "url": "https://www.darooyab.ir/G-3180/Dinoprostone"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-prepidil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019617"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019617",
+      "label": "NDA019617"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab03de5b-782c-4f81-a8dc-7ef9969dd0cf",
+      "label": "FDA Prepidil"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682512.html",
+      "label": "Dinoprostone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G02AD02",
+      "label": "G02AD02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3180/Dinoprostone",
+      "label": "Dinoprostone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "فقط برای آماده‌سازی دهانه رحم در بارداری ترم و در بیمارستان؛ در شرایط منع داروی اکسی‌توسیک (سزارین قبلی، عدم تناسب سر و لگن...) نه.",
+        "en": "Used only for cervical ripening in term pregnancy, in hospital; not where oxytocics are contraindicated (previous Caesarean, cephalopelvic disproportion…)."
+      },
+      "quote": "Patients in whom oxytocic drugs are generally contraindicated or where prolonged contractions of the uterus are considered inappropriate",
+      "refs": [
+        {
+          "source": "fda-prepidil",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-prepidil",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    }
+  }
+}

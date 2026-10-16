@@ -1,0 +1,350 @@
+{
+  "id": "fondaparinux",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فونداپارینوکس",
+    "en": "Fondaparinux"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مهارکننده غیرمستقیم فاکتور Xa",
+    "en": "Indirect factor Xa inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Arixtra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "arixtra",
+    "آریکسترا",
+    "فونداپارینوکس"
+  ],
+  "formulations": [
+    {
+      "id": "syr-25",
+      "form": "injection",
+      "route": "sc",
+      "label": "2.5 mg/0.5 mL prefilled syringe",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fondaparinux",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "syr-75",
+      "form": "injection",
+      "route": "sc",
+      "label": "7.5 mg/0.6 mL prefilled syringe (also 5 mg/0.4 mL, 10 mg/0.8 mL)",
+      "concentration": {
+        "amount": 7.5,
+        "unit": "mg",
+        "perVolumeMl": 0.6
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fondaparinux",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "proph",
+      "disease": "dvt-prophylaxis",
+      "label": {
+        "fa": "پیشگیری از DVT پس از جراحی شکستگی لگن، تعویض مفصل یا جراحی شکم — ۲٫۵ mg یک بار در روز",
+        "en": "DVT prophylaxis after hip fracture, hip/knee replacement or abdominal surgery — 2.5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 50
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fondaparinux",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-fondaparinux",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 9
+      },
+      "allowedFormulations": [
+        "syr-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اولین دوز ۶ تا ۸ ساعت پس از جراحی پس از هموستاز (زودتر خونریزی بیشتر). شکستگی لگن: تا ۲۴ روز اضافه.",
+            "en": "First dose 6–8 h after surgery once haemostasis is established (earlier increases bleeding). Hip fracture: up to 24 additional days."
+          },
+          "refs": [
+            {
+              "source": "fda-fondaparinux",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tx",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "درمان DVT و PE — زیر ۵۰ kg: ۵؛ ۵۰ تا ۱۰۰: ۷٫۵؛ بالای ۱۰۰ kg: ۱۰ mg یک بار در روز",
+        "en": "DVT and PE treatment — <50 kg: 5; 50–100: 7.5; >100 kg: 10 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 49.99,
+            "perDose": 5,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 49.99,
+            "maxWeightKg": 100,
+            "perDose": 7.5,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 100,
+            "maxWeightKg": null,
+            "perDose": 10,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-fondaparinux",
+          "section": "2.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "وارفارین هرچه زودتر (معمولاً ظرف ۷۲ ساعت) شروع شود؛ دست‌کم ۵ روز و تا INR ۲ تا ۳ دو روز پشت سر هم.",
+            "en": "Start warfarin as soon as possible (usually within 72 h); at least 5 days and until INR 2–3 on two consecutive days."
+          },
+          "refs": [
+            {
+              "source": "fda-fondaparinux",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "ClCr زیر ۳۰؛ خونریزی فعال شدید؛ اندوکاردیت باکتریایی؛ ترومبوسیتوپنی با آنتی‌بادی ضدپلاکت وابسته به فونداپارینوکس؛ وزن زیر ۵۰ kg در پیشگیری؛ حساسیت.",
+        "en": "CrCl <30; active major bleeding; bacterial endocarditis; thrombocytopenia with a positive anti-platelet antibody test in the presence of fondaparinux; body weight <50 kg for prophylaxis; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-fondaparinux",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: هماتوم نخاعی یا اپیدورال با بی‌حسی نخاعی یا پونکسیون (فلج طولانی یا دائمی).",
+        "en": "Boxed warning: spinal or epidural haematoma with neuraxial anaesthesia or puncture (long-term or permanent paralysis)."
+      },
+      "refs": [
+        {
+          "source": "fda-fondaparinux",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "proph",
+      "formulation": "syr-25",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "tx",
+      "formulation": "syr-75",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 7.5,
+        "mlPerDose": 0.6
+      }
+    }
+  ],
+  "atc": [
+    "B01AX05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1688/Fondaparinux",
+        "url": "https://www.darooyab.ir/G-1688/Fondaparinux"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA authorized generic",
+    "refs": [
+      {
+        "source": "fda-fondaparinux",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021345"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021345",
+      "label": "NDA021345"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b65f642-87f7-4da5-a9c9-02cd1f8d9d16",
+      "label": "FDA Fondaparinux"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612026.html",
+      "label": "Fondaparinux Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AX05",
+      "label": "B01AX05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1688/Fondaparinux",
+      "label": "Fondaparinux"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published literature and postmarketing reports have not reported a clear association with fondaparinux sodium and adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-fondaparinux",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of fondaparinux sodium in human milk, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-fondaparinux",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of fondaparinux sodium for the treatment of venous thromboembolism have been established in pediatric patients aged 1 year and older weighing at least 10 kg.",
+      "refs": [
+        {
+          "source": "fda-fondaparinux",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "When using fondaparinux sodium in elderly patients, pay particular attention to dosing directions and concomitant medications (especially anti-platelet medication) [see Warnings and Precautions (5.2) ] .",
+      "refs": [
+        {
+          "source": "fda-fondaparinux",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

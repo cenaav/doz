@@ -1,0 +1,384 @@
+{
+  "id": "covid-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن کووید-۱۹ (mRNA)",
+    "en": "COVID-19 vaccine (mRNA)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن mRNA",
+    "en": "mRNA vaccine"
+  },
+  "brands": [
+    {
+      "name": "Comirnaty",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "comirnaty",
+    "pfizer",
+    "فایزر",
+    "واکسن کرونا",
+    "کووید"
+  ],
+  "formulations": [
+    {
+      "id": "dose-03",
+      "form": "injection",
+      "route": "im",
+      "label": "0.3 mL single dose (5–11 y vial; ≥12 y prefilled syringe)",
+      "concentration": {
+        "amount": 0.3,
+        "unit": "mL",
+        "perVolumeMl": 0.3
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-comirnaty",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "covid-19",
+      "label": {
+        "fa": "کووید-۱۹ — ۵ سال به بالا: یک دوز ۰٫۳ mL عضلانی",
+        "en": "COVID-19 — ≥5 y: single 0.3 mL IM dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.3,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-comirnaty",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-comirnaty",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر قبلاً واکسن کووید زده، دست‌کم ۲ ماه پس از آخرین دوز. ۵ تا ۱۱ سال: ویال درپوش آبی؛ ۱۲ سال به بالا: سرنگ پرشده خاکستری.",
+            "en": "If previously vaccinated, at least 2 months after the last COVID-19 dose. 5–11 y: blue-cap vial; ≥12 y: grey-label prefilled syringe."
+          },
+          "refs": [
+            {
+              "source": "fda-comirnaty",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-comirnaty",
+              "section": "3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش آلرژیک شدید (آنافیلاکسی) به اجزای واکسن یا دوز قبلی واکسن فایزر.",
+        "en": "Severe allergic reaction (anaphylaxis) to a vaccine component or a previous dose of a Pfizer-BioNTech COVID-19 vaccine."
+      },
+      "refs": [
+        {
+          "source": "fda-comirnaty",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "میوکاردیت و پریکاردیت (بیشتر مردان جوان، ظرف چند روز پس از تزریق)؛ سنکوپ.",
+        "en": "Myocarditis and pericarditis (mainly young males, within days of vaccination); syncope."
+      },
+      "refs": [
+        {
+          "source": "fda-comirnaty",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "dose-03",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.3,
+        "mlPerDose": 0.3
+      }
+    }
+  ],
+  "atc": [
+    "J07BN01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52773",
+        "en": "COVID-19 VACCINE (1) (adenovirus viral vector) INJECTION PARENTERAL  5 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ (۱) (آدنوویروس ناقل ویروسی) ۵ { دوز }"
+      },
+      {
+        "code": "52778",
+        "en": "COVID-19 VACCINE (1) (adenovirus viral vector) INJECTION PARENTERAL  1 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ (۱) (آدنوویروس ناقل ویروسی) ۱ { دوز }"
+      },
+      {
+        "code": "52849",
+        "en": "COVID-19 VACCINE (1) (adenovirus viral vector) INJECTION PARENTERAL  2 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ (۱) (آدنوویروس ناقل ویروسی) ۲ { دوز }"
+      },
+      {
+        "code": "52774",
+        "en": "COVID-19 VACCINE (2) (adenovirus viral vector) INJECTION PARENTERAL  5 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ (۲) (آدنوویروس ناقل ویروسی) ۵ { دوز }"
+      },
+      {
+        "code": "52779",
+        "en": "COVID-19 VACCINE (2) (adenovirus viral vector) INJECTION PARENTERAL  1 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ (۲) (آدنوویروس ناقل ویروسی) ۱ { دوز }"
+      },
+      {
+        "code": "52850",
+        "en": "COVID-19 VACCINE (2) (adenovirus viral vector) INJECTION PARENTERAL  2 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ (۲) (آدنوویروس ناقل ویروسی) ۲ { دوز }"
+      },
+      {
+        "code": "52796",
+        "en": "COVID-19 VACCINE, CONJUGATE INJECTION PARENTERAL  1 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ کونژوگه ۱ { دوز }"
+      },
+      {
+        "code": "52804",
+        "en": "COVID-19 VACCINE, CONJUGATE INJECTION PARENTERAL  10 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ کونژوگه ۱۰ { دوز }"
+      },
+      {
+        "code": "52874",
+        "en": "COVID-19 VACCINE, NON CONJUGATE, RECOMBINANT INJECTION INTRAMUSCULAR  10 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ نون کونژوگه نوترکیب ۱۰ { دوز }"
+      },
+      {
+        "code": "52873",
+        "en": "COVID-19 VACCINE, NON CONJUGATE, RECOMBINANT INJECTION INTRAMUSCULAR  1 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ نون کونژوگه نوترکیب ۱ { دوز }"
+      },
+      {
+        "code": "52935",
+        "en": "COVID-19 VACCINE, RECOMBINANT INJECTION, SUSPENSION INTRAMUSCULAR 80 ug/0.5mL 1 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ نوترکیب ۸۰ میکروگرم / ۰٫۵ میلی‌لیتر ۱ { دوز }"
+      },
+      {
+        "code": "52929",
+        "en": "COVID-19 VACCINE, RECOMBINANT INJECTION, SUSPENSION INTRAMUSCULAR 80 ug/0.5mL 10 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ نوترکیب ۸۰ میکروگرم / ۰٫۵ میلی‌لیتر ۱۰ { دوز }"
+      },
+      {
+        "code": "52814",
+        "en": "COVID-19 VACCINE, RECOMBINANT (Non-replicating adenovirus vector) INJECTION, SOLUTION INTRAMUSCULAR  10 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ نوترکیب (نون–رپلیکاتینگ آدنوویروس وکتور) ۱۰ { دوز }"
+      },
+      {
+        "code": "52895",
+        "en": "COVID-19 VACCINE, RECOMBINANT (Protein Subunit) INJECTION, EMULSION INTRAMUSCULAR 25 ug/0.5mL 16 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ نوترکیب (زیرواحد پروتئینی) ۲۵ میکروگرم / ۰٫۵ میلی‌لیتر ۱۶ { دوز }"
+      },
+      {
+        "code": "52857",
+        "en": "COVID-19 VACCINE, RECOMBINANT (Protein Subunit) INJECTION, EMULSION INTRAMUSCULAR 10 ug/0.2mL 20 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ نوترکیب (زیرواحد پروتئینی) ۱۰ میکروگرم / ۰٫۲ میلی‌لیتر ۲۰ { دوز }"
+      },
+      {
+        "code": "52856",
+        "en": "COVID-19 VACCINE, RECOMBINANT (Protein Subunit) EMULSION RESPIRATORY 10 ug/0.2mL 20 {dose}",
+        "fa": "واکسن COVID–۱۹ نوترکیب (زیرواحد پروتئینی) ۱۰ میکروگرم / ۰٫۲ میلی‌لیتر ۲۰ { دوز }"
+      },
+      {
+        "code": "52915",
+        "en": "COVID-19 VACCINE, RECOMBINANT (Protein Subunit) INJECTION, EMULSION INTRAMUSCULAR 10 ug/0.2mL 5 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ نوترکیب (زیرواحد پروتئینی) ۱۰ میکروگرم / ۰٫۲ میلی‌لیتر ۵ { دوز }"
+      },
+      {
+        "code": "52926",
+        "en": "COVID-19 VACCINE, RECOMBINANT (Protein Subunit) INJECTION, EMULSION INTRAMUSCULAR 25 ug/0.5mL 1 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ نوترکیب (زیرواحد پروتئینی) ۲۵ میکروگرم / ۰٫۵ میلی‌لیتر ۱ { دوز }"
+      },
+      {
+        "code": "52927",
+        "en": "COVID-19 VACCINE, RECOMBINANT (Protein Subunit) INJECTION, EMULSION INTRAMUSCULAR 25 ug/0.5mL 4 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ نوترکیب (زیرواحد پروتئینی) ۲۵ میکروگرم / ۰٫۵ میلی‌لیتر ۴ { دوز }"
+      },
+      {
+        "code": "52800",
+        "en": "COVID-19 VACCINE, WHOLE VIRION, INACTIVATED, VERO CELL-DERIVED INJECTION PARENTERAL  1 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ ویریون کامل غیرفعال‌شده ورو سلولی–مشتق‌شده ۱ { دوز }"
+      },
+      {
+        "code": "52803",
+        "en": "COVID-19 VACCINE, WHOLE VIRION, INACTIVATED, VERO CELL-DERIVED INJECTION PARENTERAL  10 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ ویریون کامل غیرفعال‌شده ورو سلولی–مشتق‌شده ۱۰ { دوز }"
+      },
+      {
+        "code": "52823",
+        "en": "COVID-19 VACCINE, WHOLE VIRION, INACTIVATED, VERO CELL-DERIVED INJECTION PARENTERAL  2 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ ویریون کامل غیرفعال‌شده ورو سلولی–مشتق‌شده ۲ { دوز }"
+      },
+      {
+        "code": "52872",
+        "en": "COVID-19 VACCINE, WHOLE VIRION, INACTIVATED, VERO CELL-DERIVED INJECTION PARENTERAL  5 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ ویریون کامل غیرفعال‌شده ورو سلولی–مشتق‌شده ۵ { دوز }"
+      },
+      {
+        "code": "52884",
+        "en": "COVID-19 VACCINE, WHOLE VIRION, INACTIVATED, VERO CELL-DERIVED INJECTION PARENTERAL  20 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ ویریون کامل غیرفعال‌شده ورو سلولی–مشتق‌شده ۲۰ { دوز }"
+      },
+      {
+        "code": "52901",
+        "en": "COVID-19 VACCINE, WHOLE VIRION, INACTIVATED, VERO CELL-DERIVED INJECTION PARENTERAL  4 {dose}",
+        "fa": "فرآورده تزریقی واکسن COVID–۱۹ ویریون کامل غیرفعال‌شده ورو سلولی–مشتق‌شده ۴ { دوز }"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5434/Covid-19-Vaccine",
+        "url": "https://www.darooyab.ir/G-5434/Covid-19-Vaccine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-comirnaty",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125742"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125742",
+      "label": "BLA125742"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48c86164-de07-4041-b9dc-f2b5744714e5",
+      "label": "FDA Comirnaty"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BN01",
+      "label": "J07BN01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5434/Covid-19-Vaccine",
+      "label": "Covid-19-Vaccine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary All pregnancies have a risk of birth defect, loss, or other adverse outcomes.",
+      "refs": [
+        {
+          "source": "fda-comirnaty",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Data are not available to assess the effects of COMIRNATY on the breastfed infant or on milk production/excretion.",
+      "refs": [
+        {
+          "source": "fda-comirnaty",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of COMIRNATY in individuals 5 years through 17 years of age with at least one underlying condition that puts them at high risk for severe outcomes from COVID-19 is based on safety and effectiveness data in this age group and in adults [see Adverse Reactions (6) and Clinical Studies (14) ] .",
+      "refs": [
+        {
+          "source": "fda-comirnaty",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these recipients and younger recipients.",
+      "refs": [
+        {
+          "source": "fda-comirnaty",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

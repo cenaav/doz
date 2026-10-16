@@ -1,0 +1,383 @@
+{
+  "id": "dexmedetomidine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دکسمدتومیدین",
+    "en": "Dexmedetomidine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آگونیست آلفا-۲ (آرام‌بخش)",
+    "en": "Alpha-2 agonist (sedative)"
+  },
+  "brands": [
+    {
+      "name": "Precedex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "precedex",
+    "پرسدکس",
+    "دکس مدتومیدین"
+  ],
+  "formulations": [
+    {
+      "id": "bag-4",
+      "form": "injection",
+      "route": "iv",
+      "label": "4 mcg/mL ready-to-use (200 mcg/50 mL, 400 mcg/100 mL)",
+      "concentration": {
+        "amount": 4,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-precedex",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "icu-sedation",
+      "label": {
+        "fa": "دوز بارگذاری ICU یا پروسیجر — بزرگسال: ۱ mcg/kg در ۱۰ دقیقه",
+        "en": "Loading for ICU or procedural sedation — adult: 1 mcg/kg over 10 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 1,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-precedex",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بیمار در حال تعویض از آرام‌بخش دیگر ممکن است بارگذاری نخواهد. پروسیجر کم‌تهاجمی (مثلاً چشم): ۰٫۵ mcg/kg. سالمند و نارسایی کبد: کاهش دوز.",
+            "en": "Patients switched from another sedative may not need a load. Less invasive procedures (e.g. eye): 0.5 mcg/kg. Elderly and hepatic impairment: consider reduction."
+          },
+          "refs": [
+            {
+              "source": "fda-precedex",
+              "section": "2.2, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icu",
+      "disease": "icu-sedation",
+      "label": {
+        "fa": "نگهدارنده ICU — بزرگسال: ۰٫۲ تا ۰٫۷ mcg/kg/ساعت",
+        "en": "ICU maintenance — adult: 0.2–0.7 mcg/kg/hour"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 0.00333,
+        "perKgPerMinMax": 0.01167
+      },
+      "refs": [
+        {
+          "source": "fda-precedex",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز برچسب «mcg/kg/ساعت» است؛ ماشین‌حساب همان را به دقیقه و mL/ساعت تبدیل کرده است.",
+            "en": "The label dose is in mcg/kg/HOUR; the calculator converts it to per minute and mL/h."
+          },
+          "refs": [
+            {
+              "source": "fda-precedex",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "بیش از ۲۴ ساعت انفوزیون اندیکاسیون ندارد.",
+            "en": "Not indicated for infusions longer than 24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-precedex",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "load-child",
+      "disease": "icu-sedation",
+      "label": {
+        "fa": "بارگذاری پروسیجر غیرتهاجمی کودک — ۱ ماه تا <۲ سال: ۱٫۵ mcg/kg؛ ۲ تا <۱۸ سال: ۲ mcg/kg (در ۱۰ دقیقه)",
+        "en": "Pediatric non-invasive procedure load — 1 month–<2 y: 1.5 mcg/kg; 2–<18 y: 2 mcg/kg (over 10 min)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-precedex",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده کودک: معمولاً شروع ۱٫۵ mcg/kg/ساعت، محدوده ۰٫۵ تا ۱٫۵.",
+            "en": "Pediatric maintenance: usually start 1.5 mcg/kg/hour, range 0.5–1.5."
+          },
+          "refs": [
+            {
+              "source": "fda-precedex",
+              "section": "2.2, Table 2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "برادی‌کاردی، افت فشار و ایست سینوسی؛ افزایش گذرای فشار با بارگذاری؛ قطع ناگهانی پس از مصرف طولانی علائم ترک می‌دهد.",
+        "en": "Bradycardia, hypotension and sinus arrest; transient hypertension with loading; withdrawal on abrupt stop after prolonged use."
+      },
+      "refs": [
+        {
+          "source": "fda-precedex",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "bag-4",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 70,
+        "mlPerDose": 17.5
+      }
+    },
+    {
+      "regimen": "icu",
+      "formulation": "bag-4",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "mlPerHour": 3.5,
+        "upperMlPerHour": 12.25
+      }
+    },
+    {
+      "regimen": "load-child",
+      "formulation": "bag-4",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "N05CM18"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17581",
+        "en": "DEXMEDETOMIDINE 100MCG/2ML VIAL",
+        "fa": "ویال دکسمدتومیدین ۱۰۰ میکروگرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "52044",
+        "en": "DEXMEDETOMIDINE (AS HYDROCHLORIDE) INJECTION PARENTERAL 4 ug/1mL 100 mL",
+        "fa": "فرآورده تزریقی دکسمدتومیدین (معادل هیدروکلراید) ۴ میکروگرم / ۱ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52043",
+        "en": "DEXMEDETOMIDINE (AS HYDROCHLORIDE) INJECTION PARENTERAL 4 ug/1mL 50 mL",
+        "fa": "فرآورده تزریقی دکسمدتومیدین (معادل هیدروکلراید) ۴ میکروگرم / ۱ میلی‌لیتر ۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1265/Dexmedetomidine",
+        "url": "https://www.darooyab.ir/G-1265/Dexmedetomidine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-precedex",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021038"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021038",
+      "label": "NDA021038"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=92b7ddaa-e45a-4b64-a802-bb5df8771dd6",
+      "label": "FDA Precedex"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625003.html",
+      "label": "Dexmedetomidine Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a622074.html",
+      "label": "Dexmedetomidine Sublingual and Buccal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05CM18",
+      "label": "N05CM18"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1265/Dexmedetomidine",
+      "label": "Dexmedetomidine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published randomized controlled trials and case reports over several decades of use with intravenously administered dexmedetomidine during pregnancy have not identified a drug-associated risk of major birth defects and miscarriage; however, the reported exposures occurred after the …",
+      "refs": [
+        {
+          "source": "fda-precedex",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Available published literature reports the presence of dexmedetomidine in human milk following intravenous administration (see Data ) .",
+      "refs": [
+        {
+          "source": "fda-precedex",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Sedation for Non-Invasive Procedures The safety and efficacy of PRECEDEX have been established in pediatric patients 1 month to less than 18 years of age for sedation during non-invasive procedures.",
+      "refs": [
+        {
+          "source": "fda-precedex",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In patients greater than 65 years of age, a higher incidence of bradycardia and hypotension was observed following administration of PRECEDEX [see Warnings and Precautions (5.2) ] .",
+      "refs": [
+        {
+          "source": "fda-precedex",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

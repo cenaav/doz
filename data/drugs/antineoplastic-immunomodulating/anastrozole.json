@@ -1,0 +1,263 @@
+{
+  "id": "anastrozole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آناستروزول",
+    "en": "Anastrozole"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده آروماتاز",
+    "en": "Aromatase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Arimidex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "arimidex",
+    "آریمیدکس",
+    "آناستروزول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-anastrozole",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bc",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان گیرنده هورمونی مثبت پس از یائسگی — ۱ mg یک بار در روز",
+        "en": "HR-positive breast cancer after menopause — 1 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-anastrozole",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پیشرفته: تا پیشرفت بیماری. کمکی: در کارآزمایی ATAC پنج سال.",
+            "en": "Advanced: until progression. Adjuvant: five years in the ATAC trial."
+          },
+          "refs": [
+            {
+              "source": "fda-anastrozole",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آناستروزول یا اجزای قرص.",
+        "en": "Hypersensitivity to anastrozole or any excipient."
+      },
+      "refs": [
+        {
+          "source": "fda-anastrozole",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کاهش تراکم استخوان؛ افزایش کلسترول؛ در بیماری ایسکمیک قلب حوادث قلبی بیشتر.",
+        "en": "Reduced bone mineral density; raised cholesterol; more ischaemic events in pre-existing ischaemic heart disease."
+      },
+      "refs": [
+        {
+          "source": "fda-anastrozole",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bc",
+      "formulation": "tab-1",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 1,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L02BG03"
+  ],
+  "iran": {
+    "status": "registered",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-945/Anastrozole",
+        "url": "https://www.darooyab.ir/G-945/Anastrozole"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-anastrozole",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA079220"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=079220",
+      "label": "ANDA079220"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ca9d4aff-ffdf-4a46-ad20-e47e5886a19e",
+      "label": "FDA Anastrozole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a696018.html",
+      "label": "Anastrozole"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BG03",
+      "label": "L02BG03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-945/Anastrozole",
+      "label": "Anastrozole"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal studies and its mechanism of action, anastrozole tablets may cause fetal harm when administered to a pregnant woman [see Clinical Pharmacology (12.1) ] .",
+      "refs": [
+        {
+          "source": "fda-anastrozole",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "… ole in animal studies, or the potential for serious adverse reactions in the breast-fed child from anastrozole tablets, advise lactating women not to breastfeed during treatment with anastrozole tablets and for 2 weeks after the last dose.",
+      "refs": [
+        {
+          "source": "fda-anastrozole",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Clinical studies in pediatric patients included a placebo-controlled trial in pubertal boys of adolescent age with gynecomastia and a single-arm trial in girls with McCune-Albright Syndrome and progressive precocious puberty.",
+      "refs": [
+        {
+          "source": "fda-anastrozole",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In studies 0030 and 0027, about 50% of patients were 65 or older.",
+      "refs": [
+        {
+          "source": "fda-anastrozole",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Based on animal studies, anastrozole tablets can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-anastrozole",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

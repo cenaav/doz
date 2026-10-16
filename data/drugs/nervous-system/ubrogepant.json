@@ -1,0 +1,267 @@
+{
+  "id": "ubrogepant",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اوبروجپانت",
+    "en": "Ubrogepant"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتاگونیست گیرنده CGRP (ژپانت)",
+    "en": "CGRP receptor antagonist (gepant)"
+  },
+  "brands": [
+    {
+      "name": "Ubrelvy",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ubrelvy",
+    "اوبرلوی",
+    "اوبروجپانت"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ubrelvy",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ubrelvy",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acute",
+      "disease": "migraine-acute",
+      "label": {
+        "fa": "حمله حاد میگرن — ۵۰ یا ۱۰۰ mg؛ دوز دوم دست‌کم ۲ ساعت بعد (حداکثر ۲۰۰ mg/۲۴ ساعت)",
+        "en": "Acute migraine — 50 or 100 mg; a second dose ≥2 h later (max 200 mg/24 h)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "perDoseMax": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ubrelvy",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 200,
+        "refs": [
+          {
+            "source": "fda-ubrelvy",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "درمان بیش از ۸ میگرن در ۳۰ روز بررسی نشده. نارسایی شدید کبد یا کلیه: ۵۰ mg.",
+            "en": "Treating more than 8 migraines in 30 days not studied. Severe hepatic or renal impairment: 50 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-ubrelvy",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-ubrelvy",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "مهارکننده قوی CYP3A4 همزمان؛ سابقه حساسیت جدی به اوبروجپانت.",
+        "en": "Concomitant strong CYP3A4 inhibitors; history of serious hypersensitivity to ubrogepant."
+      },
+      "refs": [
+        {
+          "source": "fda-ubrelvy",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acute",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 100
+      }
+    }
+  ],
+  "atc": [
+    "N02CD04"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Ubrogepant"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-ubrelvy",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA211765"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211765",
+      "label": "NDA211765"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd9f9458-fd96-4688-be3f-f77b3d1af6ab",
+      "label": "FDA Ubrelvy"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620016.html",
+      "label": "Ubrogepant"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02CD04",
+      "label": "N02CD04"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of UBRELVY in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-ubrelvy",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from a lactation study in twelve healthy adult females indicate that ubrogepant is excreted in breast milk in low amounts.",
+      "refs": [
+        {
+          "source": "fda-ubrelvy",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-ubrelvy",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range.",
+      "refs": [
+        {
+          "source": "fda-ubrelvy",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

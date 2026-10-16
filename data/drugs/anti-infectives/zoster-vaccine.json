@@ -1,0 +1,285 @@
+{
+  "id": "zoster-vaccine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "واکسن زونا (نوترکیب)",
+    "en": "Recombinant zoster vaccine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "واکسن نوترکیب با ادجوانت",
+    "en": "Recombinant adjuvanted vaccine"
+  },
+  "brands": [
+    {
+      "name": "Shingrix",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "shingrix",
+    "شینگریکس",
+    "واکسن زونا",
+    "zoster"
+  ],
+  "formulations": [
+    {
+      "id": "syr-05",
+      "form": "injection",
+      "route": "im",
+      "label": "0.5 mL dose",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mL",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-shingrix",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "herpes-zoster",
+      "label": {
+        "fa": "پیشگیری از زونا — ۵۰ سال به بالا: ۲ دوز ۰٫۵ mL با فاصله ۲ تا ۶ ماه",
+        "en": "Shingles prevention — ≥50 y: 2 × 0.5 mL, 2–6 months apart"
+      },
+      "population": {
+        "minAge": {
+          "value": 50,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-shingrix",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-shingrix",
+          "section": "1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "immuno",
+      "disease": "herpes-zoster",
+      "label": {
+        "fa": "نقص یا سرکوب ایمنی — ۱۸ سال به بالا: ۲ دوز با فاصله ۱ تا ۲ ماه",
+        "en": "Immunodeficient or immunosuppressed — ≥18 y: 2 doses 1–2 months apart"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-shingrix",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-shingrix",
+          "section": "1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "برای پیشگیری از آبله‌مرغان اولیه نیست.",
+            "en": "Not for prevention of primary varicella (chickenpox)."
+          },
+          "refs": [
+            {
+              "source": "fda-shingrix",
+              "section": "1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "allergy",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش آلرژیک شدید (آنافیلاکسی) به اجزای واکسن یا دوز قبلی.",
+        "en": "Severe allergic reaction (anaphylaxis) to a vaccine component or a previous dose."
+      },
+      "refs": [
+        {
+          "source": "fda-shingrix",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "syr-05",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "immuno",
+      "formulation": "syr-05",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J07BK03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Recombinant%20zoster%20vaccine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-shingrix",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125614"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125614",
+      "label": "BLA125614"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0280849d-5c78-4a9d-8941-4eab429f6bd8",
+      "label": "FDA Shingrix"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618023.html",
+      "label": "Zoster Vaccine, Recombinant"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J07BK03",
+      "label": "J07BK03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary All pregnancies have a risk of birth defect, loss, or other adverse outcomes.",
+      "refs": [
+        {
+          "source": "fda-shingrix",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Data are not available to assess the effects of SHINGRIX on the breastfed infant or on milk production/excretion.",
+      "refs": [
+        {
+          "source": "fda-shingrix",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness in individuals younger than 18 years have not been established.",
+      "refs": [
+        {
+          "source": "fda-shingrix",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Adults Aged 60 Years and Older Of the total number of subjects who received at least 1 dose of SHINGRIX in Studies 1 and 2 (n = 14,645), 2,243 (15%) were aged 60 through 69 years, 6,837 (47%) were aged 70 through 79 years, and 1,921 (13%) were aged 80 years and older.",
+      "refs": [
+        {
+          "source": "fda-shingrix",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}
