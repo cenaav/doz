@@ -52,25 +52,21 @@ const doseCupRef = [{ source: 'fda-childrens-tylenol', section: 'Directions', no
     </div>
     <p class="text-center text-xs text-slate-500">{{ $t(`quick.modeHelp.${mode}`) }}</p>
 
-    <div class="grid grid-cols-2 gap-2 sm:grid-cols-3">
-      <button type="button" class="rounded-xl border px-3 py-2 text-sm font-bold"
-        :class="!category ? 'border-brand-600 bg-brand-600 text-white' : 'border-slate-300 dark:border-slate-700'" @click="category = null">
-        {{ $t('quick.allCategories') }}
-      </button>
-      <button v-for="c in cats" :key="c.id" type="button" class="rounded-xl border px-3 py-2 text-sm font-bold"
-        :class="category === c.id ? 'border-brand-600 bg-brand-600 text-white' : 'border-slate-300 dark:border-slate-700'" @click="category = c.id">
-        {{ c.icon }} {{ lt(c.name) }}
+    <div class="grid auto-rows-fr grid-cols-2 gap-2 sm:grid-cols-3">
+      <button v-for="c in [null, ...cats]" :key="c?.id ?? 'all'" type="button" :aria-pressed="category === (c?.id ?? null)"
+        class="flex h-full min-h-[3.25rem] items-center justify-center gap-2 rounded-xl border px-3 py-2 text-center text-[13px] font-semibold leading-snug transition"
+        :class="category === (c?.id ?? null) ? 'border-brand-600 bg-brand-600 text-white shadow-sm' : 'border-slate-200 bg-white text-slate-700 hover:border-brand-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200'"
+        @click="category = c?.id ?? null">
+        <span v-if="c" class="shrink-0 text-base" aria-hidden="true">{{ c.icon }}</span>
+        <span>{{ c ? lt(c.name) : $t('quick.allCategories') }}</span>
       </button>
     </div>
 
-    <label class="block space-y-1">
-      <span class="text-sm font-bold">💊 {{ $t('quick.selectDrug') }} <span class="font-normal text-slate-500">({{ $t('quick.count', { n: fmt(list.length) }) }})</span></span>
-      <select v-model="drugId" class="input">
-        <option value="">{{ $t('quick.selectDrugPh') }}</option>
-        <option v-for="d in list" :key="d.id" :value="d.id">{{ lt(d.name) }} — {{ d.name.en }}</option>
-      </select>
+    <div class="space-y-1">
+      <span class="block text-sm font-bold">💊 {{ $t('quick.selectDrug') }} <span class="font-normal text-slate-500">({{ $t('quick.count', { n: fmt(list.length) }) }})</span></span>
+      <DrugPicker v-model="drugId" :drugs="list" />
       <span class="block text-xs leading-5 text-slate-500">{{ $t('quick.notListed') }}</span>
-    </label>
+    </div>
 
     <template v-if="drug && regimenIds.length">
       <DoseCalculator :key="`${drug.id}-${mode}`" :drug="drug" :regimen-ids="regimenIds" />
