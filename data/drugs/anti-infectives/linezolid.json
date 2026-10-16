@@ -1,0 +1,346 @@
+{
+  "id": "linezolid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لاینزولید",
+    "en": "Linezolid"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "اکسازولیدینون",
+    "en": "Oxazolidinone"
+  },
+  "brands": [
+    {
+      "name": "Zyvox",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zyvox",
+    "لاینزولید",
+    "لینزولید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-600",
+      "form": "tablet",
+      "route": "oral",
+      "label": "600 mg tablet",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hospital-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی بیمارستانی یا اکتسابی، عفونت عارضه‌دار پوست، VRE — ۱۲ سال به بالا ۶۰۰ mg هر ۱۲ ساعت",
+        "en": "Nosocomial or community pneumonia, cSSSI, VRE — ≥12 y 600 mg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "VRE: ۱۴ تا ۲۸ روز. عفونت پوستی بدون عارضه بزرگسال: ۴۰۰ mg هر ۱۲ ساعت (قرص ۴۰۰ در این برچسب نیست).",
+            "en": "VRE: 14–28 days. Uncomplicated SSSI in adults: 400 mg every 12 h (no 400 mg tablet in this label)."
+          },
+          "refs": [
+            {
+              "source": "fda-linezolid",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "hospital-acquired-pneumonia",
+      "label": {
+        "fa": "کودک زیر ۱۲ سال — ۱۰ mg/kg هر ۸ ساعت (فرم مایع)",
+        "en": "Child <12 y — 10 mg/kg every 8 h (liquid form)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: ۱۰ mg/kg هر ۸ ساعت (عفونت پوستی بدون عارضه: زیر ۵ سال هر ۸ و ۵ تا ۱۱ سال هر ۱۲ ساعت). این برچسب فقط قرص ۶۰۰ mg دارد؛ برای کودک از سوسپانسیون استفاده شود.",
+          "en": "Label: 10 mg/kg every 8 h (uncomplicated SSSI: <5 y every 8 h, 5–11 y every 12 h). This label only has the 600 mg tablet; children need the oral suspension."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به لاینزولید؛ مصرف MAOI یا ظرف ۲ هفته پس از آن.",
+        "en": "Hypersensitivity to linezolid; MAOIs now or within 2 weeks."
+      },
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سرکوب مغز استخوان (CBC هفتگی)؛ سندرم سروتونین با داروهای سروتونرژیک؛ نوروپاتی محیطی و بینایی در مصرف بیش از ۲۸ روز؛ اسیدوز لاکتیک؛ هیپوگلیسمی.",
+        "en": "Myelosuppression (weekly CBC); serotonin syndrome with serotonergic drugs; peripheral and optic neuropathy beyond 28 days; lactic acidosis; hypoglycaemia."
+      },
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "ssri",
+      "text": {
+        "fa": "SSRI، SNRI، تریپتان‌ها و سایر داروهای سروتونرژیک: سندرم سروتونین.",
+        "en": "SSRIs, SNRIs, triptans and other serotonergic drugs: serotonin syndrome."
+      },
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-600",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J01XX08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09250",
+        "en": "LINEZOLID 2mg/ml 300ML SOLUTION",
+        "fa": "محلول لاینزولید ۲ میلی‌گرم / میلی‌لیتر ۳۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "21942",
+        "en": "LINEZOLID 400MG TAB",
+        "fa": "قرص لاینزولید ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08301",
+        "en": "LINEZOLID 600MG INJ",
+        "fa": "فرآورده تزریقی لاینزولید ۶۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08300",
+        "en": "LINEZOLID 600MG TAB",
+        "fa": "قرص لاینزولید ۶۰۰ میلی‌گرم"
+      },
+      {
+        "code": "50114",
+        "en": "LINEZOLID INJECTION, SOLUTION PARENTERAL 2 mg/1mL 300 mL",
+        "fa": "محلول تزریقی لاینزولید ۲ میلی‌گرم / ۱ میلی‌لیتر ۳۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52928",
+        "en": "LINEZOLID INJECTION, SOLUTION PARENTERAL 2 mg/1mL 100 mL",
+        "fa": "محلول تزریقی لاینزولید ۲ میلی‌گرم / ۱ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-423/Linezolid",
+        "url": "https://www.darooyab.ir/G-423/Linezolid"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078845",
+      "label": "ANDA078845"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf4fa35d-93c9-41c3-a2ae-0298014b8a9f",
+      "label": "FDA Linezolid tab"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a602004.html",
+      "label": "Linezolid"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612002.html",
+      "label": "Linezolid Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01XX08",
+      "label": "J01XX08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-423/Linezolid",
+      "label": "Linezolid"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published and postmarketing case reports with linezolid use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Linezolid is present in breast milk.",
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "… y in patients ranging in age from 8 months through 12 years) • vancomycin-resistant Enterococcus faecium infections The safety and effectiveness of linezolid for the treatment of pediatric patients with the following infection have been established in a comparator-controlled study in pediatric patients ranging in …",
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 2,046 patients treated with linezolid in Phase 3 comparator-controlled clinical trials, 589 (29%) were 65 years or older and 253 (12%) were 75 years or older.",
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Males Based on findings from studies in rats, linezolid may reversibly impair fertility in male patients [ see Nonclinical Toxicology (13.1) ].",
+      "refs": [
+        {
+          "source": "fda-linezolid",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-linezolid",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078845"
+  }
+}

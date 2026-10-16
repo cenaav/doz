@@ -1,0 +1,284 @@
+{
+  "id": "tolvaptan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تولواپتان",
+    "en": "Tolvaptan"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آنتاگونیست گیرنده وازوپرسین V2",
+    "en": "Vasopressin V2 receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Samsca",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "samsca",
+    "سامسکا",
+    "تولواپتان"
+  ],
+  "formulations": [
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-samsca",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg tablet",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-samsca",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hyponat",
+      "disease": "hyponatremia",
+      "label": {
+        "fa": "هیپوناترمی هیپرولمیک یا یوولمیک — شروع ۱۵ mg روزانه در بیمارستان (تا ۶۰ mg)",
+        "en": "Hypervolaemic or euvolaemic hyponatraemia — start 15 mg daily in hospital (up to 60 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 15,
+          "increment": 15,
+          "incrementEveryDays": 1,
+          "max": 60
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-samsca",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط در بیمارستان شروع شود؛ اصلاح سریع سدیم دمیلیناسیون اسمزی می‌دهد. افزایش به ۳۰ و سپس حداکثر ۶۰ mg با فاصله دست‌کم ۲۴ ساعت.",
+            "en": "Start only in hospital; over-rapid correction causes osmotic demyelination. Increase to 30 then up to 60 mg at ≥24-h intervals."
+          },
+          "refs": [
+            {
+              "source": "fda-samsca",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-samsca",
+              "section": "Boxed Warning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "هیپوناترمی هیپوولمیک؛ ناتوانی در حس یا پاسخ به تشنگی؛ مهارکننده‌های قوی CYP3A؛ آنوری؛ ADPKD خارج از REMS؛ حساسیت.",
+        "en": "Hypovolaemic hyponatraemia; inability to sense or respond to thirst; strong CYP3A inhibitors; anuria; ADPKD outside REMS; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-samsca",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: شروع و شروع مجدد فقط در بیمارستان با پایش سدیم؛ برای ADPKD نیست.",
+        "en": "Boxed warning: initiate and re-initiate only in hospital with sodium monitoring; not for ADPKD."
+      },
+      "refs": [
+        {
+          "source": "fda-samsca",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hyponat",
+      "formulation": "tab-15",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 15,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C03XA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4897/Tolvaptan",
+        "url": "https://www.darooyab.ir/G-4897/Tolvaptan"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-samsca",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022275"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022275",
+      "label": "NDA022275"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5526617c-c7b9-4556-886d-729bbabbc566",
+      "label": "FDA Samsca"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620041.html",
+      "label": "Tolvaptan (kidney disease)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609033.html",
+      "label": "Tolvaptan (low blood sodium)"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03XA01",
+      "label": "C03XA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4897/Tolvaptan",
+      "label": "Tolvaptan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data with SAMSCA use in pregnant women are insufficient to determine if there is a drug-associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-samsca",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions, including electrolyte abnormalities (e.g., hypernatremia), hypotension, and volume depletion in breastfed infants, advise women not to breastfeed during treatment with SAMSCA.",
+      "refs": [
+        {
+          "source": "fda-samsca",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of SAMSCA in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-samsca",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of hyponatremic subjects treated with SAMSCA in clinical studies, 42% were 65 years old and over, while 19% were 75 years old and over.",
+      "refs": [
+        {
+          "source": "fda-samsca",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

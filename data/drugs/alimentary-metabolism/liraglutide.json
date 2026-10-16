@@ -41,6 +41,26 @@
           "section": "3"
         }
       ]
+    },
+    {
+      "id": "saxenda-6",
+      "form": "injection",
+      "route": "sc",
+      "label": "Saxenda 6 mg/mL pen (doses 0.6–3 mg)",
+      "concentration": {
+        "amount": 6,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-saxenda",
+          "section": "3"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -93,6 +113,59 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "pen-6"
+      ]
+    },
+    {
+      "id": "obesity",
+      "disease": "obesity",
+      "label": {
+        "fa": "چاقی (Saxenda، ۱۲ سال به بالا) — روزانه: ۰٫۶ و هر هفته ۰٫۶ mg بیشتر تا ۳ mg",
+        "en": "Obesity (Saxenda, ≥12 y) — daily: 0.6 mg, increase 0.6 mg weekly to 3 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 0.6,
+          "increment": 0.6,
+          "incrementEveryDays": 7,
+          "targetMin": 3,
+          "targetMax": 3,
+          "max": 3
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-saxenda",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "saxenda-6"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بزرگسال: اگر ۳ mg تحمل نشد قطع. کودک: در عدم تحمل ۲٫۴ mg؛ افزایش تا ۸ هفته طول بکشد.",
+            "en": "Adults: stop if 3 mg is not tolerated. Children: may reduce to 2.4 mg; escalation may take up to 8 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-saxenda",
+              "section": "2.2"
+            }
+          ]
+        }
       ]
     }
   ],
@@ -107,6 +180,10 @@
       "refs": [
         {
           "source": "fda-victoza",
+          "section": "4"
+        },
+        {
+          "source": "fda-saxenda",
           "section": "4"
         }
       ]
@@ -141,6 +218,18 @@
       "input": {
         "ageYears": 50,
         "weightKg": 90
+      },
+      "expect": {
+        "perDose": 0.6,
+        "mlPerDose": 0.1
+      }
+    },
+    {
+      "regimen": "obesity",
+      "formulation": "saxenda-6",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 100
       },
       "expect": {
         "perDose": 0.6,

@@ -1,0 +1,639 @@
+{
+  "id": "zidovudine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "زیدوودین (AZT)",
+    "en": "Zidovudine (AZT)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "NRTI",
+    "en": "NRTI"
+  },
+  "brands": [
+    {
+      "name": "Retrovir",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "retrovir",
+    "AZT",
+    "زیدوودین",
+    "رتروویر"
+  ],
+  "formulations": [
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "syr-10",
+      "form": "solution",
+      "route": "oral",
+      "label": "10 mg/mL oral solution",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 — بزرگسال: ۳۰۰ mg دو بار در روز",
+        "en": "HIV-1 — adult: 300 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس؛ دوز کودک از دوز بزرگسال بیشتر نشود.",
+            "en": "Always with other antiretrovirals; the pediatric dose must not exceed the adult dose."
+          },
+          "refs": [
+            {
+              "source": "fda-zidovudine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-zidovudine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-4",
+      "disease": "hiv",
+      "label": {
+        "fa": "کودک ۴ تا <۹ kg — ۱۲ mg/kg دو بار در روز",
+        "en": "Child 4 to <9 kg — 12 mg/kg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "week"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 4,
+        "maxWeightKg": 8.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 24,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "syr-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس؛ دوز کودک از دوز بزرگسال بیشتر نشود.",
+            "en": "Always with other antiretrovirals; the pediatric dose must not exceed the adult dose."
+          },
+          "refs": [
+            {
+              "source": "fda-zidovudine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-zidovudine",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "یا ۸ mg/kg سه بار در روز. جایگزین: ۴۸۰ mg/m²/روز.",
+            "en": "Or 8 mg/kg three times daily. Alternative: 480 mg/m²/day."
+          },
+          "refs": [
+            {
+              "source": "fda-zidovudine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-9",
+      "disease": "hiv",
+      "label": {
+        "fa": "کودک ۹ تا <۳۰ kg — ۹ mg/kg دو بار در روز",
+        "en": "Child 9 to <30 kg — 9 mg/kg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "week"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 9,
+        "maxWeightKg": 29.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 18,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس؛ دوز کودک از دوز بزرگسال بیشتر نشود.",
+            "en": "Always with other antiretrovirals; the pediatric dose must not exceed the adult dose."
+          },
+          "refs": [
+            {
+              "source": "fda-zidovudine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-zidovudine",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "یا ۶ mg/kg سه بار در روز.",
+            "en": "Or 6 mg/kg three times daily."
+          },
+          "refs": [
+            {
+              "source": "fda-zidovudine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-30",
+      "disease": "hiv",
+      "label": {
+        "fa": "کودک ۳۰ kg به بالا — ۳۰۰ mg دو بار در روز",
+        "en": "Child ≥30 kg — 300 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "week"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 30
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس؛ دوز کودک از دوز بزرگسال بیشتر نشود.",
+            "en": "Always with other antiretrovirals; the pediatric dose must not exceed the adult dose."
+          },
+          "refs": [
+            {
+              "source": "fda-zidovudine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-zidovudine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pmtct",
+      "disease": "hiv",
+      "label": {
+        "fa": "پیشگیری از انتقال مادر به جنین — مادر (بارداری بالای ۱۴ هفته): ۱۰۰ mg پنج بار در روز تا شروع زایمان",
+        "en": "Prevention of maternal-fetal transmission — mother (>14 weeks): 100 mg five times daily until labour"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 5
+      },
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "حین زایمان: وریدی ۲ mg/kg در ۱ ساعت، سپس ۱ mg/kg/ساعت تا بستن بند ناف.",
+            "en": "During labour: IV 2 mg/kg over 1 h, then 1 mg/kg/h until the cord is clamped."
+          },
+          "refs": [
+            {
+              "source": "fda-zidovudine",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neonate",
+      "disease": "hiv",
+      "label": {
+        "fa": "نوزاد (پیشگیری) — ۲ mg/kg خوراکی هر ۶ ساعت از ۱۲ ساعت اول تا ۶ هفتگی",
+        "en": "Neonate (prophylaxis) — 2 mg/kg orally every 6 h from within 12 h of birth to 6 weeks"
+      },
+      "population": {
+        "maxAge": {
+          "value": 6,
+          "unit": "week"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "2.3, Table 2"
+        }
+      ],
+      "durationDays": {
+        "min": 42,
+        "max": 42
+      },
+      "allowedFormulations": [
+        "syr-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر خوراکی ممکن نیست: وریدی ۱٫۵ mg/kg در ۳۰ دقیقه هر ۶ ساعت. سرنگ با درجه ۰٫۱ mL.",
+            "en": "If oral dosing is not possible: IV 1.5 mg/kg over 30 min every 6 h. Use a syringe with 0.1 mL graduations."
+          },
+          "refs": [
+            {
+              "source": "fda-zidovudine",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش حساسیتی تهدیدکننده حیات (آنافیلاکسی، SJS) به زیدوودین.",
+        "en": "Life-threatening hypersensitivity (anaphylaxis, Stevens-Johnson) to zidovudine."
+      },
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت خونی (نوتروپنی، کم‌خونی شدید)، میوپاتی، اسیدوز لاکتیک و کبد چرب.",
+        "en": "Boxed warning: haematological toxicity (neutropenia, severe anaemia), myopathy, lactic acidosis and hepatomegaly with steatosis."
+      },
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "child-4",
+      "formulation": "syr-10",
+      "input": {
+        "ageMonths": 4,
+        "weightKg": 6
+      },
+      "expect": {
+        "perDose": 72,
+        "mlPerDose": 7.2
+      }
+    },
+    {
+      "regimen": "child-9",
+      "formulation": "syr-10",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 180,
+        "mlPerDose": 18
+      }
+    },
+    {
+      "regimen": "neonate",
+      "formulation": "syr-10",
+      "input": {
+        "ageDays": 2,
+        "weightKg": 3
+      },
+      "expect": {
+        "perDose": 6,
+        "mlPerDose": 0.6
+      }
+    },
+    {
+      "regimen": "child-30",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 35
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "pmtct",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 100,
+        "dosesPerDay": 5
+      }
+    }
+  ],
+  "atc": [
+    "J05AF01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01314",
+        "en": "ZIDOVUDINE 100MG CAP",
+        "fa": "کپسول زیدوودین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01711",
+        "en": "ZIDOVUDINE 250MG CAP",
+        "fa": "کپسول زیدوودین ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "15727",
+        "en": "ZIDOVUDINE 250MG TAB",
+        "fa": "قرص زیدوودین ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "05078",
+        "en": "ZIDOVUDINE 300MG CAP",
+        "fa": "کپسول زیدوودین ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01775",
+        "en": "ZIDOVUDINE 300MG TAB",
+        "fa": "قرص زیدوودین ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01712",
+        "en": "ZIDOVUDINE 50MG/5ML SYRUP",
+        "fa": "شربت زیدوودین ۵۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "51747",
+        "en": "ZIDOVUDINE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 10 mg/1mL",
+        "fa": "کنسانتره محلول تزریقی زیدوودین ۱۰ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1216/Zidovudine",
+        "url": "https://www.darooyab.ir/G-1216/Zidovudine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019655",
+      "label": "NDA019655"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6df09f15-b102-431c-adde-d7aeef6f5d84",
+      "label": "FDA Retrovir"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a687007.html",
+      "label": "Zidovudine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601168.html",
+      "label": "Zidovudine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AF01",
+      "label": "J05AF01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1216/Zidovudine",
+      "label": "Zidovudine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های رجیستری بارداری افزایش نقص مادرزادی نسبت به جمعیت عمومی نشان نمی‌دهد.",
+        "en": "Label: pregnancy registry data show no increase in birth defects over the background rate."
+      },
+      "quote": "Available data from the APR show no difference in the overall risk of birth defects for zidovudine compared with the background rate for birth defects of 2.7% in the Metropolitan Atlanta Congenital Defects Program (MACDP) reference population.",
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary The Centers for Disease Control and Prevention recommends that HIV‑1‑infected mothers in the United States not breastfeed their infants to avoid risking postnatal transmission of HIV‑1 infection.",
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "RETROVIR has been studied in HIV-1-infected pediatric subjects aged at least 6 weeks who had HIV-1-related symptoms or who were asymptomatic with abnormal laboratory values indicating significant HIV-1-related immunosuppression.",
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-zidovudine",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-zidovudine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019655"
+  }
+}

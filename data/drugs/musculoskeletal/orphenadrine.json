@@ -1,0 +1,205 @@
+{
+  "id": "orphenadrine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اورفنادرین",
+    "en": "Orphenadrine"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "شل‌کننده عضلانی با اثر مرکزی",
+    "en": "Centrally acting muscle relaxant"
+  },
+  "brands": [
+    {
+      "name": "Norflex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "norflex",
+    "اورفنادرین",
+    "ارفنادرین"
+  ],
+  "formulations": [
+    {
+      "id": "er-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg extended-release tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-orphenadrine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "spasm",
+      "disease": "muscle-spasm",
+      "label": {
+        "fa": "درد عضلانی-اسکلتی حاد (کمکی) — یک قرص صبح و یک قرص عصر",
+        "en": "Acute painful musculoskeletal conditions (adjunct) — one tablet morning and evening"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-orphenadrine",
+          "section": "Dosage and Administration"
+        },
+        {
+          "source": "fda-orphenadrine",
+          "section": "Indications and Usage"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "گلوکوم؛ انسداد پیلور یا دوازدهه؛ زخم پپتیک تنگ‌کننده؛ هیپرتروفی پروستات یا انسداد گردن مثانه؛ آشالازی؛ میاستنی گراویس؛ حساسیت.",
+        "en": "Glaucoma; pyloric or duodenal obstruction; stenosing peptic ulcer; prostatic hypertrophy or bladder-neck obstruction; cardiospasm (megaoesophagus); myasthenia gravis; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-orphenadrine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "spasm",
+      "formulation": "er-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "M03BC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "12580",
+        "en": "ORPHENADRINE HCL 50MG  CAP",
+        "fa": "کپسول ارفنادرین هیدروکلراید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-905/Orphenadrine",
+        "url": "https://www.darooyab.ir/G-905/Orphenadrine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=040284",
+      "label": "ANDA040284"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b76c8a7-dd0c-481c-8299-26dfd38ce066",
+      "label": "FDA Orphenadrine ER"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682162.html",
+      "label": "Orphenadrine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M03BC01",
+      "label": "M03BC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-905/Orphenadrine",
+      "label": "Orphenadrine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C Animal reproduction studies have not been conducted with orphenadrine.",
+      "refs": [
+        {
+          "source": "fda-orphenadrine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-orphenadrine",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-orphenadrine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA040284"
+  }
+}

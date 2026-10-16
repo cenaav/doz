@@ -1,0 +1,356 @@
+{
+  "id": "dopamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دوپامین",
+    "en": "Dopamine"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "اینوتروپ و وازوپرسور",
+    "en": "Inotrope and vasopressor"
+  },
+  "brands": [
+    {
+      "name": "Dopamine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "intropin",
+    "دوپامین"
+  ],
+  "formulations": [
+    {
+      "id": "bag-800",
+      "form": "injection",
+      "route": "iv",
+      "label": "800 mcg/mL in D5W premixed bag",
+      "concentration": {
+        "amount": 800,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "bag-1600",
+      "form": "injection",
+      "route": "iv",
+      "label": "1600 mcg/mL in D5W premixed bag",
+      "concentration": {
+        "amount": 1600,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "bag-3200",
+      "form": "injection",
+      "route": "iv",
+      "label": "3200 mcg/mL in D5W premixed bag",
+      "concentration": {
+        "amount": 3200,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mild",
+      "disease": "shock",
+      "label": {
+        "fa": "شروع — بیمار با پاسخ احتمالی به افزایش متوسط: ۲ تا ۵ mcg/kg/دقیقه",
+        "en": "Start — patients likely to respond to modest increments: 2–5 mcg/kg/min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 2,
+        "perKgPerMinMax": 5
+      },
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "Dosage and Administration — Suggested Regimen"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع با کمترین سرعت و تیتراسیون بر اساس فشار، ضربان و پرفیوژن. حجم کم شود قبل از شروع اصلاح شود. از ورید بزرگ؛ نشت دارو نکروز می‌دهد.",
+            "en": "Start at the lowest rate and titrate to blood pressure, heart rate and perfusion. Correct hypovolaemia first. Use a large vein; extravasation causes necrosis."
+          },
+          "refs": [
+            {
+              "source": "fda-dopamine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "severe",
+      "disease": "shock",
+      "label": {
+        "fa": "بیمار بدحال — شروع ۵ mcg/kg/دقیقه، افزایش ۵ تا ۱۰ تا ۲۰–۵۰",
+        "en": "Seriously ill — start 5 mcg/kg/min, increase by 5–10 up to 20–50"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 5,
+        "perKgPerMinMax": 50
+      },
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "Dosage and Administration — Suggested Regimen"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بالای ۵۰ mcg/kg/دقیقه برون‌ده ادرار مرتب چک شود.",
+            "en": "Above 50 mcg/kg/min check urine output frequently."
+          },
+          "refs": [
+            {
+              "source": "fda-dopamine",
+              "section": "Dosage and Administration — Suggested Regimen"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "شروع با کمترین سرعت و تیتراسیون بر اساس فشار، ضربان و پرفیوژن. حجم کم شود قبل از شروع اصلاح شود. از ورید بزرگ؛ نشت دارو نکروز می‌دهد.",
+            "en": "Start at the lowest rate and titrate to blood pressure, heart rate and perfusion. Correct hypovolaemia first. Use a large vein; extravasation causes necrosis."
+          },
+          "refs": [
+            {
+              "source": "fda-dopamine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "فئوکروموسیتوم؛ تاکی‌آریتمی یا VF اصلاح‌نشده؛ حساسیت به ذرت (محلول دکستروز).",
+        "en": "Phaeochromocytoma; uncorrected tachyarrhythmia or VF; corn allergy (dextrose solution)."
+      },
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "maoi",
+      "text": {
+        "fa": "بیمار با سابقه MAOI به دوز خیلی کمتر نیاز دارد.",
+        "en": "Patients previously on MAOIs need substantially reduced doses."
+      },
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mild",
+      "formulation": "bag-1600",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 140,
+        "mlPerHour": 5.25,
+        "upperPerMin": 350,
+        "upperMlPerHour": 13.13
+      }
+    },
+    {
+      "regimen": "severe",
+      "formulation": "bag-1600",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 350,
+        "mlPerHour": 13.13
+      }
+    }
+  ],
+  "atc": [
+    "C01CA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00468",
+        "en": "DOPAMINE HCL 200MG/5ML AMP",
+        "fa": "آمپول دوپامین هیدروکلراید ۲۰۰ میلی‌گرم / ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1651/Dopamine",
+        "url": "https://www.darooyab.ir/G-1651/Dopamine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-dopamine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019615"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019615",
+      "label": "NDA019615"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cb97d4a0-89ed-407c-a763-209386b6f75c",
+      "label": "FDA Dopamine premix"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01CA04",
+      "label": "C01CA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1651/Dopamine",
+      "label": "Dopamine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Dopamine HCl should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when dopamine hydrochloride is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in children have not been established.",
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-dopamine",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

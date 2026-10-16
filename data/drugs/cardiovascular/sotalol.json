@@ -1,0 +1,430 @@
+{
+  "id": "sotalol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سوتالول",
+    "en": "Sotalol"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "ضدآریتمی کلاس III (بتابلاکر)",
+    "en": "Class III antiarrhythmic (beta-blocker)"
+  },
+  "brands": [
+    {
+      "name": "Betapace",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "betapace",
+    "سوتالول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-80",
+      "form": "tablet",
+      "route": "oral",
+      "label": "80 mg tablet (scored)",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-120",
+      "form": "tablet",
+      "route": "oral",
+      "label": "120 mg tablet (scored)",
+      "concentration": {
+        "amount": 120,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-160",
+      "form": "tablet",
+      "route": "oral",
+      "label": "160 mg tablet (scored)",
+      "concentration": {
+        "amount": 160,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-240",
+      "form": "tablet",
+      "route": "oral",
+      "label": "240 mg tablet (scored)",
+      "concentration": {
+        "amount": 240,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "vt",
+      "disease": "ventricular-arrhythmia",
+      "label": {
+        "fa": "آریتمی بطنی تهدیدکننده حیات — شروع ۸۰ mg دو بار در روز؛ معمولاً ۱۶۰ تا ۳۲۰ mg/روز",
+        "en": "Life-threatening ventricular arrhythmia — start 80 mg twice daily; usually 160–320 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 160,
+          "increment": 80,
+          "incrementEveryDays": 3,
+          "targetMin": 160,
+          "targetMax": 320,
+          "max": 640
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع در مرکز با پایش ECG دست‌کم ۳ روز. افزایش ۸۰ mg/روز هر ۳ روز فقط اگر QTc زیر ۵۰۰ ms.",
+            "en": "Start in a facility with ECG monitoring for at least 3 days. Increase by 80 mg/day every 3 days only if QTc <500 ms."
+          },
+          "refs": [
+            {
+              "source": "fda-sotalol",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-sotalol",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "در آریتمی مقاوم تا ۴۸۰ تا ۶۴۰ mg/روز به کار رفته است.",
+            "en": "Up to 480–640 mg/day has been used for refractory arrhythmias."
+          },
+          "refs": [
+            {
+              "source": "fda-sotalol",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "af",
+      "disease": "atrial-fibrillation",
+      "label": {
+        "fa": "پیشگیری از عود AF/فلوتر — شروع ۸۰ mg دو بار در روز؛ اغلب ۱۲۰ mg دو بار",
+        "en": "Maintenance of sinus rhythm in AF/AFL — start 80 mg twice daily; most respond to 120 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 80,
+        "perDoseMax": 120,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع در مرکز با پایش ECG دست‌کم ۳ روز. افزایش ۸۰ mg/روز هر ۳ روز فقط اگر QTc زیر ۵۰۰ ms.",
+            "en": "Start in a facility with ECG monitoring for at least 3 days. Increase by 80 mg/day every 3 days only if QTc <500 ms."
+          },
+          "refs": [
+            {
+              "source": "fda-sotalol",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-sotalol",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "QTc بالای ۴۵۰ ms در شروع: منع مصرف.",
+            "en": "Contraindicated if baseline QTc >450 ms."
+          },
+          "refs": [
+            {
+              "source": "fda-sotalol",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "برادی‌کاردی سینوسی، سندرم سینوس بیمار یا بلوک AV درجه ۲ و ۳ بدون پیس‌میکر؛ QT طولانی؛ شوک کاردیوژنیک یا نارسایی جبران‌نشده؛ پتاسیم زیر ۴؛ آسم برونشیال؛ حساسیت.",
+        "en": "Sinus bradycardia, sick sinus syndrome or 2nd/3rd-degree AV block without a pacemaker; long QT; cardiogenic shock or decompensated heart failure; serum potassium <4 mEq/L; bronchial asthma; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: آریتمی کشنده (تورساد). شروع و افزایش دوز در مرکز با پایش ECG و محاسبه کلیرانس کراتینین.",
+        "en": "Boxed warning: life-threatening proarrhythmia (torsade). Initiate and up-titrate in a facility with ECG monitoring and creatinine clearance calculation."
+      },
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "warn",
+      "text": {
+        "fa": "فاصله دوز: ClCr ۳۰ تا ۵۹ هر ۲۴ ساعت؛ ۱۰ تا ۲۹ هر ۳۶ تا ۴۸ ساعت؛ زیر ۱۰ فردی. افزایش دوز پس از دست‌کم ۵ دوز.",
+        "en": "Interval: CrCl 30–59 every 24 h; 10–29 every 36–48 h; <10 individualised. Escalate after at least 5 doses."
+      },
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "2.5"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "vt",
+      "formulation": "tab-80",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 80,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "af",
+      "formulation": "tab-80",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 80,
+        "upperPerDose": 120
+      }
+    }
+  ],
+  "atc": [
+    "C07AA07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01163",
+        "en": "SOTALOL HCL 40MG TAB",
+        "fa": "قرص سوتالول هیدروکلراید ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "01164",
+        "en": "SOTALOL HCL 80MG TAB",
+        "fa": "قرص سوتالول هیدروکلراید ۸۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1885/Sotalol",
+        "url": "https://www.darooyab.ir/G-1885/Sotalol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076140",
+      "label": "ANDA076140"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a56c82e-7ecd-43b0-2899-f89e47adf7db",
+      "label": "FDA Sotalol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a693010.html",
+      "label": "Sotalol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AA07",
+      "label": "C07AA07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1885/Sotalol",
+      "label": "Sotalol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Both the untreated underlying condition in pregnancy and the use of sotalol in pregnancy cause adverse outcomes to the mother and fetus/neonate (see Clinical Considerations) .",
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential serious adverse reactions to the breastfed child and the high level of sotalol in breast milk, advise women not to breastfeed while on treatment with sotalol hydrochloride .",
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of sotalol in children have not been established.",
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "8.4"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Based on the published literature, beta blockers (including sotalol) may cause erectile dysfunction.",
+      "refs": [
+        {
+          "source": "fda-sotalol",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-sotalol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076140"
+  }
+}

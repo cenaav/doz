@@ -1,0 +1,277 @@
+{
+  "id": "roflumilast",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "روفلومیلاست",
+    "en": "Roflumilast"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "مهارکننده PDE4",
+    "en": "PDE4 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Daliresp",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "daliresp",
+    "دالیرسپ",
+    "روفلومیلاست"
+  ],
+  "formulations": [
+    {
+      "id": "tab-250",
+      "form": "tablet",
+      "route": "oral",
+      "label": "250 mcg tablet (starter)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mcg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-daliresp",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mcg tablet",
+      "concentration": {
+        "amount": 500,
+        "unit": "mcg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-daliresp",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "copd",
+      "disease": "copd",
+      "label": {
+        "fa": "COPD شدید با برونشیت مزمن و سابقه تشدید — ۵۰۰ mcg یک بار در روز",
+        "en": "Severe COPD with chronic bronchitis and exacerbations — 500 mcg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-daliresp",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اختیاری: ۲۵۰ mcg روزانه ۴ هفته برای کاهش قطع درمان، سپس ۵۰۰ mcg (۲۵۰ دوز درمانی نیست). برای برونکواسپاسم حاد نه.",
+            "en": "Optional: 250 mcg daily for 4 weeks to improve tolerability, then 500 mcg (250 is not a therapeutic dose). Not for acute bronchospasm."
+          },
+          "refs": [
+            {
+              "source": "fda-daliresp",
+              "section": "2"
+            },
+            {
+              "source": "fda-daliresp",
+              "section": "5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "liver",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی متوسط تا شدید کبد (Child-Pugh B یا C).",
+        "en": "Moderate to severe liver impairment (Child-Pugh B or C)."
+      },
+      "refs": [
+        {
+          "source": "fda-daliresp",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "رویدادهای روانی از جمله افکار خودکشی؛ کاهش وزن.",
+        "en": "Psychiatric events including suicidality; weight loss."
+      },
+      "refs": [
+        {
+          "source": "fda-daliresp",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "copd",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "R03DX07"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1488/Roflumilast",
+        "url": "https://www.darooyab.ir/G-1488/Roflumilast"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022522",
+      "label": "NDA022522"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9a1d0a8-581f-4f91-a2b8-f419192d0ebf",
+      "label": "FDA Daliresp"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611034.html",
+      "label": "Roflumilast"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625108.html",
+      "label": "Roflumilast topical"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03DX07",
+      "label": "R03DX07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1488/Roflumilast",
+      "label": "Roflumilast"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no randomized clinical studies of DALIRESP in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-daliresp",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of DALIRESP in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-daliresp",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of DALIRESP in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-daliresp",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 4438 COPD subjects exposed to DALIRESP for up to 12 months in 8 controlled clinical trials, 2022 were >65 years of age and 471 were >75 years of age.",
+      "refs": [
+        {
+          "source": "fda-daliresp",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-daliresp",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022522"
+  }
+}

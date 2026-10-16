@@ -358,6 +358,99 @@
           ]
         }
       ]
+    },
+    {
+      "id": "brucella-adult",
+      "disease": "brucellosis",
+      "label": {
+        "fa": "بروسلوز — بزرگسال: ۱۰۰ mg هر ۱۲ ساعت (همراه استرپتومایسین)",
+        "en": "Brucellosis — adult: 100 mg every 12 h (with streptomycin)"
+      },
+      "population": {
+        "minWeightKg": 45
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-doxycycline",
+          "section": "Dosage and Administration — Adults"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "برچسب: بروسلوز «همراه با استرپتومایسین». مدت درمان در برچسب ذکر نشده است.",
+            "en": "Label: brucellosis “in conjunction with streptomycin”. The label gives no duration."
+          },
+          "refs": [
+            {
+              "source": "fda-doxycycline",
+              "section": "Indications and Usage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brucella-child",
+      "disease": "brucellosis",
+      "label": {
+        "fa": "بروسلوز — کودک زیر ۴۵ kg (عفونت شدید): ۲٫۲ mg/kg هر ۱۲ ساعت",
+        "en": "Brucellosis — child <45 kg (severe infection): 2.2 mg/kg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 8,
+          "unit": "year"
+        },
+        "maxWeightKg": 44.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2.2,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-doxycycline",
+          "section": "Dosage and Administration — Pediatric Patients"
+        }
+      ],
+      "allowedFormulations": [
+        "susp-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "برچسب: بروسلوز «همراه با استرپتومایسین». مدت درمان در برچسب ذکر نشده است.",
+            "en": "Label: brucellosis “in conjunction with streptomycin”. The label gives no duration."
+          },
+          "refs": [
+            {
+              "source": "fda-doxycycline",
+              "section": "Indications and Usage"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "زیر ۸ سال (خطر تغییر رنگ دائمی دندان) فقط در عفونت شدید یا تهدیدکننده حیات؛ برای آن از رژیم «عفونت شدید کودک» همین دارو استفاده کنید.",
+            "en": "Under 8 y (risk of permanent tooth discolouration) only for severe or life-threatening infection; use this drug’s severe-infection pediatric regimen."
+          },
+          "refs": [
+            {
+              "source": "fda-doxycycline",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -499,6 +592,30 @@
     },
     {
       "regimen": "child-lt45",
+      "formulation": "susp-25",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 66,
+        "mlPerDose": 13.2
+      }
+    },
+    {
+      "regimen": "brucella-adult",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "brucella-child",
       "formulation": "susp-25",
       "input": {
         "ageYears": 10,

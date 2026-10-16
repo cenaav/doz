@@ -88,6 +88,36 @@
           ]
         }
       ]
+    },
+    {
+      "id": "measles-pep",
+      "disease": "measles",
+      "label": {
+        "fa": "پیشگیری پس از تماس با سرخک — یک دوز ظرف ۷۲ ساعت",
+        "en": "Measles post-exposure prophylaxis — one dose within 72 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "month"
+        }
+      },
+      "type": "fixed",
+      "unit": "mL",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mmr",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
     }
   ],
   "contraindications": [
@@ -136,6 +166,18 @@
       "input": {
         "ageYears": 1,
         "weightKg": 10
+      },
+      "expect": {
+        "perDose": 0.5,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "measles-pep",
+      "formulation": "vial-05",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
       },
       "expect": {
         "perDose": 0.5,

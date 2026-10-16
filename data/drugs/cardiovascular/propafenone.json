@@ -1,0 +1,388 @@
+{
+  "id": "propafenone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پروپافنون",
+    "en": "Propafenone"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "ضدآریتمی کلاس IC",
+    "en": "Class IC antiarrhythmic"
+  },
+  "brands": [
+    {
+      "name": "Rythmol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rythmol",
+    "پروپافنون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet (scored)",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-225",
+      "form": "tablet",
+      "route": "oral",
+      "label": "225 mg tablet (scored)",
+      "concentration": {
+        "amount": 225,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-300",
+      "form": "tablet",
+      "route": "oral",
+      "label": "300 mg tablet (scored)",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "paf",
+      "disease": "atrial-fibrillation",
+      "label": {
+        "fa": "AF حمله‌ای بدون بیماری ساختاری قلب — ۱۵۰ mg هر ۸ ساعت (تا ۹۰۰ mg/روز)",
+        "en": "Paroxysmal AF without structural heart disease — 150 mg every 8 h (up to 900 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 3,
+        "titration": {
+          "start": 450,
+          "increment": 225,
+          "incrementEveryDays": 4,
+          "max": 900
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۱۵۰ mg هر ۸ ساعت؛ پس از دست‌کم ۳ تا ۴ روز به ۲۲۵ و سپس ۳۰۰ mg هر ۸ ساعت. در بیماری ساختاری قلب نه.",
+            "en": "150 mg every 8 h; after at least 3–4 days to 225 then 300 mg every 8 h. Not with structural heart disease."
+          },
+          "refs": [
+            {
+              "source": "fda-propafenone",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psvt",
+      "disease": "svt",
+      "label": {
+        "fa": "PSVT بدون بیماری ساختاری قلب — ۱۵۰ mg هر ۸ ساعت",
+        "en": "PSVT without structural heart disease — 150 mg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 3,
+        "titration": {
+          "start": 450,
+          "increment": 225,
+          "incrementEveryDays": 4,
+          "max": 900
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۱۵۰ mg هر ۸ ساعت؛ پس از دست‌کم ۳ تا ۴ روز به ۲۲۵ و سپس ۳۰۰ mg هر ۸ ساعت. در بیماری ساختاری قلب نه.",
+            "en": "150 mg every 8 h; after at least 3–4 days to 225 then 300 mg every 8 h. Not with structural heart disease."
+          },
+          "refs": [
+            {
+              "source": "fda-propafenone",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی قلبی؛ شوک کاردیوژنیک؛ اختلال گره سینوسی، دهلیزی-بطنی یا داخل‌بطنی بدون پیس‌میکر؛ سندرم بروگادا؛ برادی‌کاردی یا افت فشار شدید؛ بیماری برونکواسپاستیک؛ اختلال الکترولیت.",
+        "en": "Heart failure; cardiogenic shock; sinoatrial, AV or intraventricular conduction disorders without a pacemaker; Brugada syndrome; marked bradycardia or hypotension; bronchospastic disorders; electrolyte imbalance."
+      },
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش مرگ‌ومیر در کارآزمایی CAST؛ فقط برای آریتمی‌های تهدیدکننده یا علامت‌دار در بیمار بدون بیماری ساختاری.",
+        "en": "Boxed warning: increased mortality (CAST); reserve for documented life-threatening or symptomatic arrhythmias without structural heart disease."
+      },
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "paf",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "psvt",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C01BC03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01065",
+        "en": "PROPAFENONE HCL 150MG CAP",
+        "fa": "کپسول پروپافنون هیدروکلراید ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01777",
+        "en": "PROPAFENONE HCL 150MG TAB",
+        "fa": "قرص پروپافنون هیدروکلراید ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "01064",
+        "en": "PROPAFENONE HCL 300MG CAP",
+        "fa": "کپسول پروپافنون هیدروکلراید ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01778",
+        "en": "PROPAFENONE HCL 300MG TAB",
+        "fa": "قرص پروپافنون هیدروکلراید ۳۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1856/Propafenone",
+        "url": "https://www.darooyab.ir/G-1856/Propafenone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075938",
+      "label": "ANDA075938"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c65253ab-937f-4982-b841-69c2b9f9ccdb",
+      "label": "FDA Propafenone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698002.html",
+      "label": "Propafenone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BC03",
+      "label": "C01BC03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1856/Propafenone",
+      "label": "Propafenone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no studies of propafenone hydrochloride in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Propafenone and its active metabolite, 5-OH-propafenone, are present in human milk, but the levels are likely to be low.",
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of propafenone in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patients should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Males: Based on human and animal studies, propafenone hydrochloride may transiently impair spermatogenesis in males.",
+      "refs": [
+        {
+          "source": "fda-propafenone",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-propafenone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075938"
+  }
+}

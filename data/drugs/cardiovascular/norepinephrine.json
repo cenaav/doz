@@ -1,0 +1,375 @@
+{
+  "id": "norepinephrine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نوراپی‌نفرین (لووفد)",
+    "en": "Norepinephrine"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "وازوپرسور (آگونیست آلفا و بتا-۱)",
+    "en": "Vasopressor (alpha and beta-1 agonist)"
+  },
+  "brands": [
+    {
+      "name": "Levophed",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "levophed",
+    "noradrenaline",
+    "نوراپی نفرین",
+    "نورآدرنالین",
+    "لووفد"
+  ],
+  "formulations": [
+    {
+      "id": "bag-16",
+      "form": "injection",
+      "route": "iv",
+      "label": "4 mg/250 mL ready-to-use bag (16 mcg/mL)",
+      "concentration": {
+        "amount": 16,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-norepinephrine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "bag-32",
+      "form": "injection",
+      "route": "iv",
+      "label": "8 mg/250 mL ready-to-use bag (32 mcg/mL)",
+      "concentration": {
+        "amount": 32,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-norepinephrine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "bag-64",
+      "form": "injection",
+      "route": "iv",
+      "label": "16 mg/250 mL ready-to-use bag (64 mcg/mL)",
+      "concentration": {
+        "amount": 64,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-norepinephrine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "start",
+      "disease": "shock",
+      "label": {
+        "fa": "افت فشار حاد — بزرگسال: شروع ۸ تا ۱۲ mcg/دقیقه",
+        "en": "Acute hypotension — adult: start 8–12 mcg/min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perMin": 8,
+        "perMinMax": 12
+      },
+      "refs": [
+        {
+          "source": "fda-norepinephrine",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع با کمترین سرعت و تیتراسیون بر اساس فشار، ضربان و پرفیوژن. حجم کم شود قبل از شروع اصلاح شود. از ورید بزرگ؛ نشت دارو نکروز می‌دهد.",
+            "en": "Start at the lowest rate and titrate to blood pressure, heart rate and perfusion. Correct hypovolaemia first. Use a large vein; extravasation causes necrosis."
+          },
+          "refs": [
+            {
+              "source": "fda-norepinephrine",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "shock",
+      "label": {
+        "fa": "نگهدارنده — بزرگسال: معمولاً ۲ تا ۴ mcg/دقیقه",
+        "en": "Maintenance — adult: usually 2–4 mcg/min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perMin": 2,
+        "perMinMax": 4
+      },
+      "refs": [
+        {
+          "source": "fda-norepinephrine",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "قطع تدریجی؛ قطع ناگهانی افت شدید فشار می‌دهد.",
+            "en": "Taper gradually; abrupt stop causes marked hypotension."
+          },
+          "refs": [
+            {
+              "source": "fda-norepinephrine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-norepinephrine",
+              "section": "5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "ایسکمی بافت با نشت دارو؛ افت فشار با قطع ناگهانی؛ آریتمی.",
+        "en": "Tissue ischaemia with extravasation; hypotension on abrupt stop; arrhythmias."
+      },
+      "refs": [
+        {
+          "source": "fda-norepinephrine",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "start",
+      "formulation": "bag-16",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 8,
+        "mlPerHour": 30,
+        "upperPerMin": 12,
+        "upperMlPerHour": 45
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "bag-16",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 2,
+        "mlPerHour": 7.5
+      }
+    }
+  ],
+  "atc": [
+    "C01CA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00917",
+        "en": "NORADRENA AC TART 4MG/2ML AMP",
+        "fa": "آمپول نورادرنا آک تارت ۴ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "19312",
+        "en": "NORADRENALINE 1MG/ML INJ",
+        "fa": "فرآورده تزریقی نورآدرنالین ۱ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "09909",
+        "en": "NORADRENALINE 4MG/4ML AMP",
+        "fa": "آمپول نورآدرنالین ۴ میلی‌گرم / ۴ میلی‌لیتر"
+      },
+      {
+        "code": "06636",
+        "en": "NORADRENALINE 8MG/4ML AMP",
+        "fa": "آمپول نورآدرنالین ۸ میلی‌گرم / ۴ میلی‌لیتر"
+      },
+      {
+        "code": "01620",
+        "en": "NOREPINEPHRINE BITARATE 0.1% AMP",
+        "fa": "آمپول نوراپی‌نفرین بیتارات ۰٫۱ درصد"
+      },
+      {
+        "code": "50047",
+        "en": "NOREPINEPHRINE (AS BITARTRATE) INJECTION PARENTERAL 0.1 % 4 mL",
+        "fa": "فرآورده تزریقی نوراپی‌نفرین (معادل بیتارتارات) ۰٫۱ درصد ۴ میلی‌لیتر"
+      },
+      {
+        "code": "52084",
+        "en": "NOREPINEPHRINE (AS BITARTRATE) INJECTION PARENTERAL 0.1 % 1 mL",
+        "fa": "فرآورده تزریقی نوراپی‌نفرین (معادل بیتارتارات) ۰٫۱ درصد ۱ میلی‌لیتر"
+      },
+      {
+        "code": "52091",
+        "en": "NOREPINEPHRINE (AS BITARTRATE) INJECTION PARENTERAL 0.1 % 20 mL",
+        "fa": "فرآورده تزریقی نوراپی‌نفرین (معادل بیتارتارات) ۰٫۱ درصد ۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1803/Norepinephrine",
+        "url": "https://www.darooyab.ir/G-1803/Norepinephrine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-norepinephrine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA215700"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215700",
+      "label": "NDA215700"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ddbef60d-c20a-4ada-928f-e87074c08a54",
+      "label": "FDA Norepinephrine bag"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625019.html",
+      "label": "Norepinephrine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01CA03",
+      "label": "C01CA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1803/Norepinephrine",
+      "label": "Norepinephrine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited published data consisting of a small number of case reports and multiple small trials involving the use of norepinephrine in pregnant women at the time of delivery have not identified an increased risk of major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-norepinephrine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of norepinephrine in either human or animal milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-norepinephrine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-norepinephrine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-norepinephrine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

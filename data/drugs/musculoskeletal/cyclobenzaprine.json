@@ -132,6 +132,96 @@
           ]
         }
       ]
+    },
+    {
+      "id": "back",
+      "disease": "low-back-pain",
+      "label": {
+        "fa": "کمردرد حاد با اسپاسم عضلانی — کوتاه‌مدت (۲ تا ۳ هفته)",
+        "en": "Acute low back pain with muscle spasm — short term (2–3 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 15,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-cyclobenzaprine2",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 21
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۱۰ mg سه بار. بیش از ۲ تا ۳ هفته توصیه نمی‌شود.",
+            "en": "If needed 10 mg three times daily. Use beyond 2–3 weeks not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-cyclobenzaprine2",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strain",
+      "disease": "muscle-strain",
+      "label": {
+        "fa": "کشیدگی یا پیچ‌خوردگی با اسپاسم عضلانی — کوتاه‌مدت",
+        "en": "Strain or sprain with muscle spasm — short term"
+      },
+      "population": {
+        "minAge": {
+          "value": 15,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-cyclobenzaprine2",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 21
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "در صورت نیاز ۱۰ mg سه بار. بیش از ۲ تا ۳ هفته توصیه نمی‌شود.",
+            "en": "If needed 10 mg three times daily. Use beyond 2–3 weeks not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-cyclobenzaprine2",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -182,6 +272,30 @@
   "examples": [
     {
       "regimen": "spasm",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 10
+      }
+    },
+    {
+      "regimen": "back",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 10
+      }
+    },
+    {
+      "regimen": "strain",
       "formulation": "tab-5",
       "input": {
         "ageYears": 30,

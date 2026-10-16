@@ -1,0 +1,185 @@
+{
+  "id": "hydrocortisone-suppository",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "شیاف هیدروکورتیزون (ضدبواسیر)",
+    "en": "Hydrocortisone acetate suppository"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "کورتیکواستروئید رکتال",
+    "en": "Rectal corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Anusol-HC",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "anusol-hc",
+    "شیاف بواسیر",
+    "هیدروکورتیزون رکتال"
+  ],
+  "formulations": [
+    {
+      "id": "supp-25",
+      "form": "suppository",
+      "route": "rectal",
+      "label": "25 mg suppository",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-hc-supp",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hem",
+      "disease": "hemorrhoids",
+      "label": {
+        "fa": "هموروئید ملتهب و پروکتیت — یک شیاف دو بار در روز، ۲ هفته",
+        "en": "Inflamed haemorrhoids and proctitis — one suppository twice daily, 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-hc-supp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 14,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "موارد شدیدتر: یک شیاف ۳ بار در روز یا دو شیاف دو بار در روز. پیش از مصرف معاینه مقعد لازم است.",
+            "en": "More severe: one suppository three times daily or two twice daily. Proctological examination first."
+          },
+          "refs": [
+            {
+              "source": "fda-hc-supp",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-hc-supp",
+              "section": "Precautions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به هیدروکورتیزون استات.",
+        "en": "Hypersensitivity to hydrocortisone acetate."
+      },
+      "refs": [
+        {
+          "source": "fda-hc-supp",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hem",
+      "formulation": "supp-25",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C05AA01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Hydrocortisone%20acetate%20suppository"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "unapproved",
+    "refs": [
+      {
+        "source": "fda-hc-supp",
+        "section": "SPL approval / marketing category"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f9709ed-4818-3d3b-e063-6394a90a0d04",
+      "label": "FDA HC suppository"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C05AA01",
+      "label": "C05AA01"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "In laboratory animals, topical steroids have been associated with an increase in the incidence of fetal abnormalities when gestating females have been exposed to rather low dosage levels.",
+      "refs": [
+        {
+          "source": "fda-hc-supp",
+          "section": "Pregnancy Category C"
+        }
+      ]
+    }
+  }
+}

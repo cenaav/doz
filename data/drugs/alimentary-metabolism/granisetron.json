@@ -1,0 +1,280 @@
+{
+  "id": "granisetron",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گرانیسترون",
+    "en": "Granisetron"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتاگونیست 5-HT3 (ضدتهوع)",
+    "en": "5-HT3 antagonist (antiemetic)"
+  },
+  "brands": [
+    {
+      "name": "Kytril",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "kytril",
+    "گرانیسترون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-granisetron",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cinv",
+      "disease": "cinv",
+      "label": {
+        "fa": "پیشگیری از تهوع شیمی‌درمانی — ۲ mg یک بار (یا ۱ mg دو بار) فقط در روز شیمی‌درمانی",
+        "en": "Chemotherapy nausea prevention — 2 mg once (or 1 mg twice) on chemotherapy days only"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-granisetron",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تا ۱ ساعت پیش از شیمی‌درمانی. رژیم دیگر: ۱ mg تا ۱ ساعت قبل و ۱ mg دوم ۱۲ ساعت بعد.",
+            "en": "Up to 1 h before chemotherapy. Alternative: 1 mg up to 1 h before and a second 1 mg 12 h later."
+          },
+          "refs": [
+            {
+              "source": "fda-granisetron",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به گرانیسترون یا اجزای فرآورده.",
+        "en": "Hypersensitivity to granisetron or its components."
+      },
+      "refs": [
+        {
+          "source": "fda-granisetron",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سندرم سروتونین با داروهای سروتونرژیک.",
+        "en": "Serotonin syndrome with serotonergic drugs."
+      },
+      "refs": [
+        {
+          "source": "fda-granisetron",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cinv",
+      "formulation": "tab-1",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "A04AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05170",
+        "en": "GRANISETRON 1MG/1ML AMP",
+        "fa": "آمپول گرانیسترون ۱ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "08870",
+        "en": "GRANISETRON 3MG/3ML AMP",
+        "fa": "آمپول گرانیسترون ۳ میلی‌گرم / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "00609",
+        "en": "GRANISETRON HCL 1MG TAB",
+        "fa": "قرص گرانیسترون هیدروکلراید ۱ میلی‌گرم"
+      },
+      {
+        "code": "00610",
+        "en": "GRANISETRON HCL 3MG/3ML VIAL",
+        "fa": "ویال گرانیسترون هیدروکلراید ۳ میلی‌گرم / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "21313",
+        "en": "GRANISETRON PATCH, EXTENDED RELEASE TRANSDERMAL 34.3 mg/52cm2",
+        "fa": "پچ پوستی گرانیسترون ۳۴٫۳ میلی‌گرم / ۵۲ سانتی‌متر ۲"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2590/Granisetron",
+        "url": "https://www.darooyab.ir/G-2590/Granisetron"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078969",
+      "label": "ANDA078969"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df4b6775-4337-41e0-815a-b064d98c3fe1",
+      "label": "FDA Granisetron tab"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601211.html",
+      "label": "Granisetron"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a694011.html",
+      "label": "Granisetron Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A04AA02",
+      "label": "A04AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2590/Granisetron",
+      "label": "Granisetron"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category B Reproduction studies have been performed in pregnant rats at oral doses up to 125 mg/kg/day (750 mg/m 2 /day, 507 times the recommended human dose based on body surface area) and pregnant rabbits at oral doses up to 32 mg/kg/day (378 mg/m 2 /day, 255 times the recommended human …",
+      "refs": [
+        {
+          "source": "fda-granisetron",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when granisetron hydrochloride is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-granisetron",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-granisetron",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "During clinical trials, 325 patients 65 years of age or older received granisetron hydrochloride tablets; 298 were 65 to 74 years of age, and 27 were 75 years of age or older.",
+      "refs": [
+        {
+          "source": "fda-granisetron",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-granisetron",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078969"
+  }
+}

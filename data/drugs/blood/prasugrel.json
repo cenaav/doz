@@ -1,0 +1,343 @@
+{
+  "id": "prasugrel",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پراسوگرل",
+    "en": "Prasugrel"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مهارکننده P2Y12 (ضدپلاکت)",
+    "en": "P2Y12 inhibitor (antiplatelet)"
+  },
+  "brands": [
+    {
+      "name": "Effient",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "effient",
+    "پراسوگرل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prasugrel",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prasugrel",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acs",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "سندرم حاد کرونری با PCI — ۱۰ mg روزانه (پس از بارگذاری ۶۰ mg)",
+        "en": "ACS managed with PCI — 10 mg daily (after a 60 mg load)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 60
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-prasugrel",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع با دوز بارگذاری ۶۰ mg یک‌جا، سپس روزانه. همراه آسپرین ۷۵ تا ۳۲۵ mg روزانه. ۷۵ سال به بالا معمولاً توصیه نمی‌شود.",
+            "en": "Start with a single 60 mg loading dose, then daily. With aspirin 75–325 mg daily. Generally not recommended at ≥75 y."
+          },
+          "refs": [
+            {
+              "source": "fda-prasugrel",
+              "section": "2"
+            },
+            {
+              "source": "fda-prasugrel",
+              "section": "5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acs-low",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "وزن زیر ۶۰ kg — ۵ mg روزانه (پس از بارگذاری ۶۰ mg)",
+        "en": "Weight <60 kg — 5 mg daily (after a 60 mg load)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxWeightKg": 59.99
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-prasugrel",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع با دوز بارگذاری ۶۰ mg یک‌جا، سپس روزانه. همراه آسپرین ۷۵ تا ۳۲۵ mg روزانه. ۷۵ سال به بالا معمولاً توصیه نمی‌شود.",
+            "en": "Start with a single 60 mg loading dose, then daily. With aspirin 75–325 mg daily. Generally not recommended at ≥75 y."
+          },
+          "refs": [
+            {
+              "source": "fda-prasugrel",
+              "section": "2"
+            },
+            {
+              "source": "fda-prasugrel",
+              "section": "5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "bleed",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی فعال پاتولوژیک؛ سابقه TIA یا سکته مغزی؛ حساسیت.",
+        "en": "Active pathological bleeding; prior TIA or stroke; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-prasugrel",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: خونریزی شدید و گاه کشنده. در ≥۷۵ سال معمولاً توصیه نمی‌شود. ۷ روز پیش از جراحی قطع شود.",
+        "en": "Boxed warning: significant, sometimes fatal bleeding. Generally not recommended at ≥75 y. Stop 7 days before surgery."
+      },
+      "refs": [
+        {
+          "source": "fda-prasugrel",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acs",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "acs-low",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "B01AC22"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "16009",
+        "en": "PRASUGREL 10MG TAB",
+        "fa": "قرص پراسوگرل ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "16010",
+        "en": "PRASUGREL 5MG TAB",
+        "fa": "قرص پراسوگرل ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4733/Prasugrel",
+        "url": "https://www.darooyab.ir/G-4733/Prasugrel"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205897",
+      "label": "ANDA205897"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f51e64e0-f556-65d0-a876-fb709aaeefea",
+      "label": "FDA Prasugrel"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609027.html",
+      "label": "Prasugrel"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC22",
+      "label": "B01AC22"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4733/Prasugrel",
+      "label": "Prasugrel"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no data with prasugrel tablets use in pregnant women to inform a drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-prasugrel",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of prasugrel in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-prasugrel",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-prasugrel",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… ory of myocardial infarction) where its effect appears to be greater and its use may be considered [see Warnings and Precautions ( 5.1 ), Clinical Pharmacology ( 12.3 ), and Clinical Studies ( 14 )] .",
+      "refs": [
+        {
+          "source": "fda-prasugrel",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-prasugrel",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA205897"
+  }
+}

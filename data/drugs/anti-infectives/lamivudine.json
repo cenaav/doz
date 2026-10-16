@@ -1,0 +1,403 @@
+{
+  "id": "lamivudine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لامیوودین",
+    "en": "Lamivudine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده نوکلئوزیدی ترانس‌کریپتاز معکوس (NRTI)",
+    "en": "Nucleoside reverse transcriptase inhibitor (NRTI)"
+  },
+  "brands": [
+    {
+      "name": "Epivir",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "epivir",
+    "3TC",
+    "لامیودین",
+    "لامیوودین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet (scored)",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-300",
+      "form": "tablet",
+      "route": "oral",
+      "label": "300 mg tablet",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 — بزرگسال: ۱۵۰ mg دو بار یا ۳۰۰ mg یک بار در روز",
+        "en": "HIV-1 — adult: 150 mg twice daily or 300 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 150,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس.",
+            "en": "Always in combination with other antiretrovirals."
+          },
+          "refs": [
+            {
+              "source": "fda-lamivudine",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "hiv",
+      "label": {
+        "fa": "کودک ۱۴ kg به بالا (قرص شیاردار ۱۵۰) — یک بار در روز: ۱۵۰ / ۲۲۵ / ۳۰۰ mg بر اساس وزن",
+        "en": "Child ≥14 kg (scored 150 mg tablet) — once daily: 150 / 225 / 300 mg by weight"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 14
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 13.99,
+            "maxWeightKg": 19.99,
+            "perDose": 150,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 19.99,
+            "maxWeightKg": 24.99,
+            "perDose": 225,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 24.99,
+            "maxWeightKg": null,
+            "perDose": 300,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-150"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس.",
+            "en": "Always in combination with other antiretrovirals."
+          },
+          "refs": [
+            {
+              "source": "fda-lamivudine",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "رژیم دو بار در روز (همان جدول): ۱۴ تا <۲۰ kg نیم قرص صبح و شب؛ ۲۰ تا <۲۵ kg نیم قرص صبح و یک قرص شب؛ ≥۲۵ kg یک قرص صبح و شب. داده یک بار در روز محدود به بیمارانی است که پس از ۳۶ هفته از دو بار در روز تغییر داده‌اند. ناتوان در بلع قرص: محلول خوراکی.",
+            "en": "Twice-daily option (same table): 14 to <20 kg ½ tablet AM and PM; 20 to <25 kg ½ tablet AM and 1 tablet PM; ≥25 kg 1 tablet AM and PM. Once-daily data are limited to patients switched from twice daily after 36 weeks. Unable to swallow tablets: oral solution."
+          },
+          "refs": [
+            {
+              "source": "fda-lamivudine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت قبلی به لامیوودین.",
+        "en": "Previous hypersensitivity to lamivudine."
+      },
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: تشدید شدید هپاتیت B پس از قطع در عفونت همزمان HBV؛ Epivir-HBV برای HIV مناسب نیست (مقاومت).",
+        "en": "Boxed warning: severe acute exacerbation of hepatitis B on stopping in HBV co-infection; Epivir-HBV is not for HIV (resistance)."
+      },
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 50,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۳۰ تا ۴۹: ۱۵۰ mg روزانه؛ ۱۵ تا ۲۹: ۱۵۰ سپس ۱۰۰ mg؛ ۵ تا ۱۴: ۱۵۰ سپس ۵۰ mg؛ زیر ۵: ۵۰ سپس ۲۵ mg روزانه.",
+        "en": "CrCl 30–49: 150 mg daily; 15–29: 150 then 100 mg daily; 5–14: 150 then 50 mg daily; <5: 50 then 25 mg daily."
+      },
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 7,
+        "weightKg": 22
+      },
+      "expect": {
+        "perDose": 225,
+        "tabletsPerDoseRounded": 1.5
+      }
+    }
+  ],
+  "atc": [
+    "J05AF05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01815",
+        "en": "LAMIVUDINE 100MG TAB",
+        "fa": "قرص لامیوودین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02066",
+        "en": "LAMIVUDINE 10MG/ML 100ML ORAL SOLUTION",
+        "fa": "محلول خوراکی لامیوودین ۱۰ میلی‌گرم / میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "01819",
+        "en": "LAMIVUDINE 150MG TAB",
+        "fa": "قرص لامیوودین ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "19349",
+        "en": "LAMIVUDINE 50MG/5ML 240ML SUSP",
+        "fa": "سوسپانسیون لامیوودین ۵۰ میلی‌گرم / ۵ میلی‌لیتر ۲۴۰ میلی‌لیتر"
+      },
+      {
+        "code": "01776",
+        "en": "LAMIVUDINE CAP",
+        "fa": "کپسول لامیوودین"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1186/Lamivudine",
+        "url": "https://www.darooyab.ir/G-1186/Lamivudine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=091606",
+      "label": "ANDA091606"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=34c02bcc-d6ff-99d4-8e6a-4a91908adca8",
+      "label": "FDA Lamivudine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a696011.html",
+      "label": "Lamivudine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AF05",
+      "label": "J05AF05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1186/Lamivudine",
+      "label": "Lamivudine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های رجیستری بارداری افزایش نقص مادرزادی نسبت به جمعیت عمومی نشان نمی‌دهد.",
+        "en": "Label: pregnancy registry data show no increase in birth defects over the background rate."
+      },
+      "quote": "Available data from the APR show no difference in the overall risk of birth defects for lamivudine compared with the background rate for birth defects of 2.7% in the Metropolitan Atlanta Congenital Defects Program (MACDP) reference population.",
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary The Centers for Disease Control and Prevention recommends that HIV-1-infected mothers in the United States not breastfeed their infants to avoid risking postnatal transmission of HIV-1 infection.",
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of lamivudine tablets in combination with other antiretroviral agents have been established in pediatric patients aged 3 months and older.",
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, caution should be exercised in the administration of lamivudine in elderly patients reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy [see Dosage and Administration ( 2.3 ), Clinical Pharmacology ( 12.3 )].",
+      "refs": [
+        {
+          "source": "fda-lamivudine",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-lamivudine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA091606"
+  }
+}

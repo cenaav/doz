@@ -1,0 +1,619 @@
+{
+  "id": "cefepime",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفپیم",
+    "en": "Cefepime"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین نسل چهارم",
+    "en": "Fourth-generation cephalosporin"
+  },
+  "brands": [
+    {
+      "name": "Maxipime",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "maxipime",
+    "سفپیم",
+    "سفیپیم"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g vial",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-2g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "2 g vial",
+      "concentration": {
+        "amount": 2000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pneu",
+      "disease": "community-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی متوسط تا شدید — بزرگسال ۱ تا ۲ g هر ۸ تا ۱۲ ساعت",
+        "en": "Moderate–severe pneumonia — adult 1–2 g every 8–12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "perDoseMax": 2000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پسودوموناس: ۲ g هر ۸ ساعت. ماشین‌حساب دفعات را برای ۱۲ ساعت نشان می‌دهد.",
+            "en": "Pseudomonas: 2 g every 8 h. The calculator shows 12-hourly."
+          },
+          "refs": [
+            {
+              "source": "fda-cefepime",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fn",
+      "disease": "febrile-neutropenia",
+      "label": {
+        "fa": "تب و نوتروپنی (تجربی) — بزرگسال ۲ g هر ۸ ساعت",
+        "en": "Empiric therapy for febrile neutropenia — adult 2 g every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2000,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "uti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "UTI خفیف تا متوسط — بزرگسال ۰٫۵ تا ۱ g هر ۱۲ ساعت",
+        "en": "Mild–moderate UTI — adult 0.5–1 g every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "perDoseMax": 1000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "UTI شدید: ۲ g هر ۱۲ ساعت.",
+            "en": "Severe UTI: 2 g every 12 h."
+          },
+          "refs": [
+            {
+              "source": "fda-cefepime",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skin",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت پوست متوسط تا شدید — بزرگسال ۲ g هر ۱۲ ساعت",
+        "en": "Moderate–severe skin infection — adult 2 g every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      }
+    },
+    {
+      "id": "iai",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "عفونت عارضه‌دار داخل شکم — بزرگسال ۲ g هر ۱۲ ساعت + مترونیدازول",
+        "en": "Complicated intra-abdominal infection — adult 2 g every 12 h + metronidazole"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 10
+      }
+    },
+    {
+      "id": "child",
+      "disease": "community-acquired-pneumonia",
+      "label": {
+        "fa": "کودک ۲ ماه تا ۱۶ سال (تا ۴۰ kg) — ۵۰ mg/kg هر ۱۲ ساعت (پنومونی، UTI، پوست)",
+        "en": "Child 2 months–16 y (≤40 kg) — 50 mg/kg every 12 h (pneumonia, UTI, skin)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        },
+        "maxWeightKg": 40
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 50,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 2000,
+        "refs": [
+          {
+            "source": "fda-cefepime",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کودک بالای ۴۰ kg یا اگر دوز از بزرگسال بیشتر شود: دوز بزرگسال.",
+            "en": "Children over 40 kg, or if the calculated dose exceeds it: use the adult dose."
+          },
+          "refs": [
+            {
+              "source": "fda-cefepime",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-fn",
+      "disease": "febrile-neutropenia",
+      "label": {
+        "fa": "تب و نوتروپنی — کودک ۲ ماه تا ۱۶ سال: ۵۰ mg/kg هر ۸ ساعت",
+        "en": "Febrile neutropenia — child 2 months–16 y: 50 mg/kg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        },
+        "maxWeightKg": 40
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 50,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 2000,
+        "refs": [
+          {
+            "source": "fda-cefepime",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کودک بالای ۴۰ kg یا اگر دوز از بزرگسال بیشتر شود: دوز بزرگسال.",
+            "en": "Children over 40 kg, or if the calculated dose exceeds it: use the adult dose."
+          },
+          "refs": [
+            {
+              "source": "fda-cefepime",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش آلرژیک فوری به سفپیم، سفالوسپورین‌ها، پنی‌سیلین‌ها یا سایر بتالاکتام‌ها.",
+        "en": "Immediate hypersensitivity to cefepime, cephalosporins, penicillins or other beta-lactams."
+      },
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "انسفالوپاتی، میوکلونوس و تشنج غیرتشنجی به‌ویژه در نارسایی کلیه بدون تعدیل دوز؛ اسهال C. difficile.",
+        "en": "Encephalopathy, myoclonus and non-convulsive status, mainly with renal impairment without dose adjustment; C. difficile diarrhoea."
+      },
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۶۰ و کمتر: کاهش دوز یا افزایش فاصله طبق جدول برچسب.",
+        "en": "CrCl ≤60: reduce dose or extend interval per label table."
+      },
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pneu",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "upperPerDose": 2000
+      }
+    },
+    {
+      "regimen": "fn",
+      "formulation": "vial-2g",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2000,
+        "dosesPerDay": 3
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "uti",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500,
+        "upperPerDose": 1000
+      }
+    },
+    {
+      "regimen": "skin",
+      "formulation": "vial-2g",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2000,
+        "dosesPerDay": 2
+      }
+    },
+    {
+      "regimen": "iai",
+      "formulation": "vial-2g",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2000,
+        "dosesPerDay": 2
+      }
+    },
+    {
+      "regimen": "child-fn",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1000,
+        "dosesPerDay": 3
+      }
+    }
+  ],
+  "atc": [
+    "J01DE01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02416",
+        "en": "CEFEPIME HYDROCHLORIDE 1 G VIAL",
+        "fa": "ویال سفپیم هیدروکلراید ۱ گرم"
+      },
+      {
+        "code": "02417",
+        "en": "CEFEPIME HYDROCHLORIDE 2 G VIAL",
+        "fa": "ویال سفپیم هیدروکلراید ۲ گرم"
+      },
+      {
+        "code": "02418",
+        "en": "CEFEPIME HYDROCHLORIDE 500MG VIAL",
+        "fa": "ویال سفپیم هیدروکلراید ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-323/Cefepime",
+        "url": "https://www.darooyab.ir/G-323/Cefepime"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=065441",
+      "label": "ANDA065441"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fd857e5-591f-44ca-80cf-fd903660b03c",
+      "label": "FDA Cefepime"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a698021.html",
+      "label": "Cefepime Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DE01",
+      "label": "J01DE01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-323/Cefepime",
+      "label": "Cefepime"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no cases of cefepime exposure during pregnancy reported from postmarketing experience or from clinical trials.",
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Cefepime is present in human breast milk at low concentrations (approximately 0.5 mcg/mL) following a single intravenous dose of 1000 mg.",
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of cefepime in the treatment of uncomplicated and complicated urinary tract infections (including pyelonephritis), uncomplicated skin and skin structure infections, pneumonia, and as empiric therapy for febrile neutropenic patients have been established in the age groups 2 months up to 16 …",
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… ng life-threatening or fatal occurrences of the following: encephalopathy, myoclonus, and seizures [see Warnings and Precautions ( 5.2 ), Adverse Reactions ( 6.2 )] .",
+      "refs": [
+        {
+          "source": "fda-cefepime",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cefepime",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA065441"
+  }
+}

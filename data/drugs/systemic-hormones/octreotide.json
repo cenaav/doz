@@ -1,0 +1,345 @@
+{
+  "id": "octreotide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اکترئوتاید",
+    "en": "Octreotide"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "آنالوگ سوماتوستاتین",
+    "en": "Somatostatin analogue"
+  },
+  "brands": [
+    {
+      "name": "Sandostatin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sandostatin",
+    "ساندوستاتین",
+    "اکتروتاید"
+  ],
+  "formulations": [
+    {
+      "id": "inj-50",
+      "form": "injection",
+      "route": "sc",
+      "label": "50 mcg/mL ampule or vial",
+      "concentration": {
+        "amount": 50,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "inj-100",
+      "form": "injection",
+      "route": "sc",
+      "label": "100 mcg/mL ampule or vial",
+      "concentration": {
+        "amount": 100,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "inj-500",
+      "form": "injection",
+      "route": "sc",
+      "label": "500 mcg/mL ampule or vial",
+      "concentration": {
+        "amount": 500,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acro",
+      "disease": "acromegaly",
+      "label": {
+        "fa": "آکرومگالی — شروع ۵۰ mcg سه بار در روز؛ نگهدارنده معمولاً ۱۰۰ تا ۵۰۰ mcg سه بار",
+        "en": "Acromegaly — start 50 mcg three times daily; usual maintenance 100–500 mcg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تیتراسیون بر اساس IGF-1 هر ۲ هفته. دوز بالای ۳۰۰ mcg/روز به‌ندرت سود بیشتری دارد.",
+            "en": "Titrate by IGF-1 every 2 weeks. Doses above 300 mcg/day rarely add benefit."
+          },
+          "refs": [
+            {
+              "source": "fda-octreotide",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carcinoid",
+      "disease": "carcinoid-tumors",
+      "label": {
+        "fa": "کارسینوئید متاستاتیک — ۱۰۰ تا ۶۰۰ mcg/روز در ۲ تا ۴ دوز (۲ هفته اول)",
+        "en": "Metastatic carcinoid — 100–600 mcg/day in 2–4 doses (first 2 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "۱۰۰ تا ۶۰۰ mcg/روز در ۲ تا ۴ دوز منقسم زیرجلدی در ۲ هفته اول (میانگین ۳۰۰)؛ سپس بر اساس پاسخ.",
+          "en": "100–600 mcg/day SC in 2–4 divided doses for the first 2 weeks (mean 300); then by response."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "2.3"
+        }
+      ]
+    },
+    {
+      "id": "vipoma",
+      "disease": "carcinoid-tumors",
+      "label": {
+        "fa": "VIPoma — ۲۰۰ تا ۳۰۰ mcg/روز در ۲ تا ۴ دوز (۲ هفته اول)",
+        "en": "VIPoma — 200–300 mcg/day in 2–4 doses (first 2 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "۲۰۰ تا ۳۰۰ mcg/روز در ۲ تا ۴ دوز منقسم زیرجلدی در ۲ هفته اول؛ سپس تنظیم بر اساس پاسخ.",
+          "en": "200–300 mcg/day SC in 2–4 divided doses for the first 2 weeks; then adjust to response."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اکترئوتاید یا اجزای فرآورده.",
+        "en": "Sensitivity to octreotide or its components."
+      },
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acro",
+      "formulation": "inj-100",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 50,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "H01CB02"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Octreotide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076313",
+      "label": "ANDA076313"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9502860d-0261-4d69-a4be-827a5376d356",
+      "label": "FDA Octreotide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620051.html",
+      "label": "Octreotide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a693049.html",
+      "label": "Octreotide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H01CB02",
+      "label": "H01CB02"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The limited data with octreotide acetate injection in pregnant women are insufficient to inform a drug-associated risk for major birth defects and miscarriage.",
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information available on the presence of octreotide acetate injection in human milk, the effects of the drug on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and efficacy of octreotide acetate injection in the pediatric population have not been demonstrated.",
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "…  insulin-like growth factor 1 (IGF-1) concentration in acromegalic females treated with octreotide may lead to improved fertility.",
+      "refs": [
+        {
+          "source": "fda-octreotide",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-octreotide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076313"
+  }
+}

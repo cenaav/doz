@@ -40,7 +40,7 @@ function insidePatient(pop: Range) {
 }
 
 const numbers = (r: Result) =>
-  [r.perDose, r.perDay, r.mlPerDose, r.mlPerDoseRounded, r.mlPerDay, r.tabletsPerDose, r.tabletsPerDoseRounded, r.upper?.perDose, r.upper?.perDay].filter((n) => n != null) as number[]
+  [r.perMin, r.mlPerHour, r.perDose, r.perDay, r.mlPerDose, r.mlPerDoseRounded, r.mlPerDay, r.tabletsPerDose, r.tabletsPerDoseRounded, r.upper?.perDose, r.upper?.perDay].filter((n) => n != null) as number[]
 
 const neverDosed: string[] = []
 for (const { drug } of ds.drugs) {
@@ -63,6 +63,11 @@ for (const { drug } of ds.drugs) {
             }
             if (r.status !== 'ok') continue
             okCount++
+            if (reg.type === 'infusion') {
+              // An infusion gives a dose per minute and a pump rate; the per-dose checks below do not apply.
+              expect(r.perMin, `${where}: infusion without rate`).toBeGreaterThan(0)
+              continue
+            }
             expect(r.perDose, `${where}: ok without dose`).toBeGreaterThan(0)
             const l = reg.limits
             const eps = 1e-6

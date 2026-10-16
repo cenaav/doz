@@ -1,0 +1,477 @@
+{
+  "id": "dolutegravir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دولوتگراویر",
+    "en": "Dolutegravir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده اینتگراز (INSTI)",
+    "en": "Integrase inhibitor (INSTI)"
+  },
+  "brands": [
+    {
+      "name": "Tivicay",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tivicay",
+    "تیویکای",
+    "دولوتگراویر",
+    "DTG"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 (بدون مقاومت به INSTI) — ۵۰ mg یک بار در روز",
+        "en": "HIV-1 (INSTI-naive) — 50 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس.",
+            "en": "Always in combination with other antiretrovirals."
+          },
+          "refs": [
+            {
+              "source": "fda-tivicay",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult-bid",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 با القاگر (افاویرنز، ریفامپین و...) یا مقاومت به INSTI — ۵۰ mg دو بار در روز",
+        "en": "HIV-1 with certain inducers (efavirenz, rifampin…) or INSTI resistance — 50 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس.",
+            "en": "Always in combination with other antiretrovirals."
+          },
+          "refs": [
+            {
+              "source": "fda-tivicay",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "hiv",
+      "label": {
+        "fa": "کودک ۱۴ kg به بالا (قرص) — ۱۴ تا <۲۰ kg: ۴۰ mg؛ ≥۲۰ kg: ۵۰ mg یک بار در روز",
+        "en": "Child ≥14 kg (tablets) — 14 to <20 kg: 40 mg; ≥20 kg: 50 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "week"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 14
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 13.99,
+            "maxWeightKg": 19.99,
+            "perDose": 40,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 19.99,
+            "maxWeightKg": null,
+            "perDose": 50,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "2.3, Table 4"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-10",
+        "tab-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس.",
+            "en": "Always in combination with other antiretrovirals."
+          },
+          "refs": [
+            {
+              "source": "fda-tivicay",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "۱۴ تا <۲۰ kg: قرص محلول PD ارجح است (با قرص معمولی mg به mg جایگزین نیست). زیر ۱۴ kg فقط Tivicay PD. با القاگرها دوز دو بار در روز.",
+            "en": "14 to <20 kg: Tivicay PD preferred (not interchangeable mg-for-mg). Under 14 kg only Tivicay PD. With inducers give twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-tivicay",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-tivicay",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت قبلی به دولوتگراویر؛ مصرف همزمان دوفتیلید.",
+        "en": "Previous hypersensitivity to dolutegravir; concomitant dofetilide."
+      },
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی و آسیب کبدی؛ سندرم بازسازی ایمنی.",
+        "en": "Hypersensitivity and hepatotoxicity; immune reconstitution syndrome."
+      },
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "dofetilide",
+      "text": {
+        "fa": "دوفتیلید: منع مصرف همزمان.",
+        "en": "Dofetilide: contraindicated."
+      },
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "with": "cations",
+      "text": {
+        "fa": "آنتی‌اسید، مکمل کلسیم یا آهن: دولوتگراویر ۲ ساعت قبل یا ۶ ساعت بعد (یا همراه غذا برای کلسیم/آهن).",
+        "en": "Antacids, calcium or iron supplements: take dolutegravir 2 h before or 6 h after (or together with food for calcium/iron)."
+      },
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "7"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 17
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 4
+      }
+    },
+    {
+      "regimen": "adult-bid",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "dosesPerDay": 2
+      }
+    }
+  ],
+  "atc": [
+    "J05AJ03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51948",
+        "en": "DOLUTEGRAVIR TABLET ORAL 50 mg",
+        "fa": "قرص دولوتگراویر ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52421",
+        "en": "DOLUTEGRAVIR TABLET ORAL 25 mg",
+        "fa": "قرص دولوتگراویر ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "52420",
+        "en": "DOLUTEGRAVIR TABLET ORAL 10 mg",
+        "fa": "قرص دولوتگراویر ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5462/Dolutegravir",
+        "url": "https://www.darooyab.ir/G-5462/Dolutegravir"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213983",
+      "label": "NDA213983"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=63df5af3-b8ac-4e76-9830-2dbb340af922",
+      "label": "FDA Tivicay"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613043.html",
+      "label": "Dolutegravir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AJ03",
+      "label": "J05AJ03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5462/Dolutegravir",
+      "label": "Dolutegravir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Data from two, ongoing birth outcome surveillance studies in Botswana and Eswatini which together include over 14,000 individuals evaluated during pregnancy show similar prevalence of neural tube defects among infants born to individuals taking dolutegravir at the time of conception compared to those born …",
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Dolutegravir is present in human milk.",
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Children and Adolescent Participants with HIV 1 The safety, pharmacokinetics, and effectiveness of TIVICAY and TIVICAY PD were evaluated in 75 treatment-naïve or treatment-experienced, INSTI-naïve pediatric and adolescent participants with HIV‑1 aged 4 weeks to less than 18 years weighing at least 3 kg in an …",
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, caution should be exercised in the administration of TIVICAY in elderly patients reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy [see Clinical Pharmacology ( 12.3 )] .",
+      "refs": [
+        {
+          "source": "fda-tivicay",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-tivicay",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA213983"
+  }
+}

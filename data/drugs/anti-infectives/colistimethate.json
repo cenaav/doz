@@ -1,0 +1,264 @@
+{
+  "id": "colistimethate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کولیستیمتات (کولیستین تزریقی)",
+    "en": "Colistimethate (colistin)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "پلی‌میکسین",
+    "en": "Polymyxin"
+  },
+  "brands": [
+    {
+      "name": "Coly-Mycin M",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "colistin",
+    "coly-mycin",
+    "کولیستین",
+    "کلیستین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-150",
+      "form": "injection",
+      "route": "iv",
+      "label": "150 mg colistin base activity vial → 75 mg/mL after adding 2 mL water",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-colistimethate",
+          "section": "How Supplied"
+        },
+        {
+          "source": "fda-colistimethate",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "sepsis",
+      "label": {
+        "fa": "عفونت گرم‌منفی حساس (بزرگسال و کودک) — ۲٫۵ تا ۵ mg/kg/روز کولیستین پایه در ۲ تا ۴ دوز",
+        "en": "Susceptible Gram-negative infection (adults and children) — 2.5–5 mg/kg/day colistin base in 2–4 doses"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 2.5,
+        "perKgPerDayMax": 5,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-colistimethate",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 5,
+        "refs": [
+          {
+            "source": "fda-colistimethate",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس وزن ایده‌آل. حداکثر ۵ mg/kg/روز. ماشین‌حساب ۲ دوز را نشان می‌دهد؛ ۳ یا ۴ دوز هم مجاز است.",
+            "en": "Based on ideal body weight. Max 5 mg/kg/day. The calculator splits into 2 doses; 3 or 4 doses are also allowed."
+          },
+          "refs": [
+            {
+              "source": "fda-colistimethate",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کولیستیمتات.",
+        "en": "Hypersensitivity to colistimethate."
+      },
+      "refs": [
+        {
+          "source": "fda-colistimethate",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سمیت کلیوی و عصبی (پارستزی، فلج تنفسی با شل‌کننده‌ها و آمینوگلیکوزیدها)؛ دوز در نارسایی کلیه کاهش یابد.",
+        "en": "Nephrotoxicity and neurotoxicity (paraesthesia, respiratory arrest with curariform relaxants or aminoglycosides); reduce dose in renal impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-colistimethate",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 80,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۵۰ تا ۷۹: ۲٫۵ تا ۳٫۸ mg/kg/روز در ۲ دوز؛ ۳۰ تا ۴۹: ۲٫۵ mg/kg/روز در ۱ یا ۲ دوز؛ ۱۰ تا ۲۹: ۱٫۵ mg/kg هر ۳۶ ساعت.",
+        "en": "CrCl 50–79: 2.5–3.8 mg/kg/day in 2 doses; 30–49: 2.5 mg/kg/day once or in 2 doses; 10–29: 1.5 mg/kg every 36 h."
+      },
+      "refs": [
+        {
+          "source": "fda-colistimethate",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "vial-150",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 87.5,
+        "mlPerDose": 1.17,
+        "upperPerDose": 175
+      }
+    }
+  ],
+  "atc": [
+    "J01XB01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Colistimethate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050108",
+      "label": "NDA050108"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d6e13e2-dc33-4b7b-84d0-66146a57c552",
+      "label": "FDA Coly-Mycin M"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01XB01",
+      "label": "J01XB01"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Since colistimethate sodium is transferred across the placental barrier in humans, it should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-colistimethate",
+          "section": "Pregnancy - Teratogenic Effects"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Therefore, caution should be exercised when colistimethate sodium is administered to nursing women.",
+      "refs": [
+        {
+          "source": "fda-colistimethate",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "In clinical studies, colistimethate sodium was administered to the pediatric population (neonates, infants, children and adolescents).",
+      "refs": [
+        {
+          "source": "fda-colistimethate",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-colistimethate",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-colistimethate",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA050108"
+  }
+}

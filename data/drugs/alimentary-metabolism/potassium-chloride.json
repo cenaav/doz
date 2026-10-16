@@ -1,0 +1,702 @@
+{
+  "id": "potassium-chloride",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلرید پتاسیم",
+    "en": "Potassium chloride"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مکمل الکترولیت",
+    "en": "Electrolyte supplement"
+  },
+  "brands": [
+    {
+      "name": "K-Dur / Klor-Con",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "KCl",
+    "klor-con",
+    "پتاسیم کلراید",
+    "کلرور پتاسیم"
+  ],
+  "formulations": [
+    {
+      "id": "sol-10",
+      "form": "solution",
+      "route": "oral",
+      "label": "10% oral solution, 20 mEq/15 mL (1.3 mEq/mL)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mEq",
+        "perVolumeMl": 15
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "sol-20",
+      "form": "solution",
+      "route": "oral",
+      "label": "20% oral solution, 40 mEq/15 mL (2.6 mEq/mL)",
+      "concentration": {
+        "amount": 40,
+        "unit": "mEq",
+        "perVolumeMl": 15
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "er-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mEq (750 mg) extended-release tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mEq",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kcl-er",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "iv-2",
+      "form": "injection",
+      "route": "iv",
+      "label": "2 mEq/mL concentrate — MUST be diluted",
+      "concentration": {
+        "amount": 2,
+        "unit": "mEq",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kcl-iv",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult-tx",
+      "disease": "hypokalemia",
+      "label": {
+        "fa": "درمان هیپوکالمی — بزرگسال: ۴۰ تا ۱۰۰ mEq/روز در ۲ تا ۵ دوز (هر دوز حداکثر ۴۰)",
+        "en": "Hypokalaemia treatment — adult: 40–100 mEq/day in 2–5 doses (max 40 per dose)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mEq",
+      "dose": {
+        "perDose": 20,
+        "perDoseMax": 40,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 40,
+        "maxPerDay": 200,
+        "refs": [
+          {
+            "source": "fda-kcl-solution",
+            "section": "2.2"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "sol-10",
+        "sol-20",
+        "er-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پتاسیم سرم روزانه یا بیشتر تا طبیعی شدن. قرص آهسته‌رهش: هر دوز حداکثر ۲۰ mEq.",
+            "en": "Check potassium daily or more until normal. ER tablets: no more than 20 mEq per dose."
+          },
+          "refs": [
+            {
+              "source": "fda-kcl-solution",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-kcl-er",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "در ایران: ویال ۱۵٪ (۲ mEq/mL)، شربت ۸٪ و ساشه ۲۰ mEq (دارویاب). شربت قبل از مصرف رقیق و با غذا.",
+            "en": "In Iran: 15% vial (2 mEq/mL), 8% syrup and 20 mEq sachets (Darooyab). Dilute oral liquid and take with meals."
+          },
+          "refs": [
+            {
+              "source": "darooyab-generic",
+              "section": "G-2509/Potassium-chloride"
+            },
+            {
+              "source": "fda-kcl-solution",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult-maint",
+      "disease": "hypokalemia",
+      "label": {
+        "fa": "پیشگیری یا نگهدارنده — بزرگسال: معمولاً ۲۰ mEq/روز",
+        "en": "Prevention or maintenance — adult: typically 20 mEq/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mEq",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "sol-10",
+        "sol-20",
+        "er-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در ایران: ویال ۱۵٪ (۲ mEq/mL)، شربت ۸٪ و ساشه ۲۰ mEq (دارویاب). شربت قبل از مصرف رقیق و با غذا.",
+            "en": "In Iran: 15% vial (2 mEq/mL), 8% syrup and 20 mEq sachets (Darooyab). Dilute oral liquid and take with meals."
+          },
+          "refs": [
+            {
+              "source": "darooyab-generic",
+              "section": "G-2509/Potassium-chloride"
+            },
+            {
+              "source": "fda-kcl-solution",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-tx",
+      "disease": "hypokalemia",
+      "label": {
+        "fa": "درمان هیپوکالمی — تولد تا ۱۶ سال: ۲ تا ۴ mEq/kg/روز در دوزهای منقسم",
+        "en": "Hypokalaemia treatment — birth to 16 y: 2–4 mEq/kg/day in divided doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mEq",
+      "dose": {
+        "perKgPerDay": 2,
+        "perKgPerDayMax": 4,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDose": 1,
+        "maxPerDose": 40,
+        "maxPerDay": 100,
+        "refs": [
+          {
+            "source": "fda-kcl-solution",
+            "section": "2.3"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "sol-10",
+        "sol-20"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر دوز حداکثر ۱ mEq/kg یا ۴۰ mEq (هر کدام کمتر). کمبود شدید یا از دست دادن مداوم: درمان وریدی.",
+            "en": "Single dose max 1 mEq/kg or 40 mEq, whichever is lower. Severe deficit or ongoing loss: consider IV."
+          },
+          "refs": [
+            {
+              "source": "fda-kcl-solution",
+              "section": "2.3"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "در ایران: ویال ۱۵٪ (۲ mEq/mL)، شربت ۸٪ و ساشه ۲۰ mEq (دارویاب). شربت قبل از مصرف رقیق و با غذا.",
+            "en": "In Iran: 15% vial (2 mEq/mL), 8% syrup and 20 mEq sachets (Darooyab). Dilute oral liquid and take with meals."
+          },
+          "refs": [
+            {
+              "source": "darooyab-generic",
+              "section": "G-2509/Potassium-chloride"
+            },
+            {
+              "source": "fda-kcl-solution",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child-maint",
+      "disease": "hypokalemia",
+      "label": {
+        "fa": "نگهدارنده — تولد تا ۱۶ سال: ۱ mEq/kg/روز (حداکثر ۳ mEq/kg)",
+        "en": "Maintenance — birth to 16 y: 1 mEq/kg/day (max 3 mEq/kg)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mEq",
+      "dose": {
+        "perKgPerDay": 1,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 3,
+        "refs": [
+          {
+            "source": "fda-kcl-solution",
+            "section": "2.3"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "sol-10",
+        "sol-20"
+      ]
+    },
+    {
+      "id": "iv",
+      "disease": "hypokalemia",
+      "label": {
+        "fa": "وریدی (رقیق‌شده) — پتاسیم بالای ۲٫۵: حداکثر ۱۰ mEq/ساعت",
+        "en": "IV (diluted) — K >2.5: max 10 mEq/h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: حتماً رقیق شود (تزریق مستقیم بی‌درنگ کشنده است). پتاسیم سرم بالای ۲٫۵: حداکثر ۱۰ mEq/ساعت با غلظت تا ۴۰ mEq/لیتر. زیر ۲ با تغییرات ECG یا فلج: با احتیاط تا ۴۰ mEq/ساعت با پایش مداوم ECG. حداکثر ۲۰۰ mEq در ۲۴ ساعت.",
+          "en": "Label: must be diluted (direct injection can be instantly fatal). K >2.5: max 10 mEq/h at up to 40 mEq/L. K <2.0 with ECG changes or paralysis: cautiously up to 40 mEq/h with continuous ECG. Max 200 mEq per 24 h."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-kcl-iv",
+          "section": "Dosage and Administration"
+        },
+        {
+          "source": "fda-kcl-iv",
+          "section": "Warnings"
+        }
+      ],
+      "allowedFormulations": [
+        "iv-2"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ksparing",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف همزمان دیورتیک نگهدارنده پتاسیم.",
+        "en": "Concomitant potassium-sparing diuretics."
+      },
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "4"
+        }
+      ]
+    },
+    {
+      "id": "iv",
+      "severity": "block",
+      "text": {
+        "fa": "تزریقی: هیپرکالمی، نارسایی کلیه و حالت‌های احتباس پتاسیم.",
+        "en": "Injection: hyperkalaemia, renal failure and potassium retention."
+      },
+      "refs": [
+        {
+          "source": "fda-kcl-iv",
+          "section": "Contraindications"
+        }
+      ]
+    },
+    {
+      "id": "solid",
+      "severity": "block",
+      "text": {
+        "fa": "قرص: هر علتی برای توقف یا تأخیر عبور قرص در دستگاه گوارش (مثلاً گاستروپارزی دیابتی، داروهای آنتی‌کولینرژیک).",
+        "en": "Tablets: any cause of arrested or delayed tablet transit (e.g. diabetic gastroparesis, anticholinergics)."
+      },
+      "refs": [
+        {
+          "source": "fda-kcl-er",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هیپرکالمی کشنده (به‌ویژه در نارسایی کلیه)؛ تزریق رقیق‌نشده فوراً کشنده است.",
+        "en": "Fatal hyperkalaemia (especially in renal impairment); undiluted injection is instantly fatal."
+      },
+      "refs": [
+        {
+          "source": "fda-kcl-iv",
+          "section": "Warnings"
+        },
+        {
+          "source": "fda-kcl-er",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult-tx",
+      "formulation": "sol-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 15,
+        "upperPerDose": 40
+      }
+    },
+    {
+      "regimen": "adult-maint",
+      "formulation": "er-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "child-tx",
+      "formulation": "sol-10",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 15
+      }
+    },
+    {
+      "regimen": "child-maint",
+      "formulation": "sol-10",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 15
+      }
+    }
+  ],
+  "atc": [
+    "A12BA01",
+    "B05XA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00941",
+        "en": "POTASSIUM CHLORIDE 100MEQ/50ML VIAL",
+        "fa": "ویال پتاسیم کلراید ۱۰۰ میلی‌اکی‌والان / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "08434",
+        "en": "POTASSIUM CHLORIDE 15% 50ML P-BAG INF",
+        "fa": "محلول انفوزیون پتاسیم کلراید ۱۵ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "01340",
+        "en": "POTASSIUM CHLORIDE 15% 50ML VIAL",
+        "fa": "ویال پتاسیم کلراید ۱۵ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "01641",
+        "en": "POTASSIUM CHLORIDE 20MEQ/10ML AMP",
+        "fa": "آمپول پتاسیم کلراید ۲۰ میلی‌اکی‌والان / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "02175",
+        "en": "POTASSIUM CHLORIDE 20mEQ/SACHET",
+        "fa": "ساشه پتاسیم کلراید ۲۰ میلی‌اکی‌والان"
+      },
+      {
+        "code": "07564",
+        "en": "POTASSIUM CHLORIDE 600MG TAB",
+        "fa": "قرص پتاسیم کلراید ۶۰۰ میلی‌گرم"
+      },
+      {
+        "code": "06443",
+        "en": "POTASSIUM CHLORIDE 8% 500ML SYRUP",
+        "fa": "شربت پتاسیم کلراید ۸ درصد ۵۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "01027",
+        "en": "POTASSIUM CHLORIDE SR 500MG TAB",
+        "fa": "قرص آهسته‌رهش پتاسیم کلراید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "51572",
+        "en": "POTASSIUM CHLORIDE INJECTION INTRAVENOUS 0.3 % 500 mL",
+        "fa": "فرآورده تزریقی پتاسیم کلراید ۰٫۳ درصد ۵۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52205",
+        "en": "POTASSIUM CHLORIDE INJECTION INTRAVENOUS 0.3 % 1000 mL",
+        "fa": "فرآورده تزریقی پتاسیم کلراید ۰٫۳ درصد ۱۰۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52103",
+        "en": "POTASSIUM CHLORIDE INJECTION INTRAVENOUS 0.15 % 1000 mL",
+        "fa": "فرآورده تزریقی پتاسیم کلراید ۰٫۱۵ درصد ۱۰۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52102",
+        "en": "POTASSIUM CHLORIDE INJECTION INTRAVENOUS 0.15 % 500 mL",
+        "fa": "فرآورده تزریقی پتاسیم کلراید ۰٫۱۵ درصد ۵۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52379",
+        "en": "POTASSIUM CHLORIDE CONCENTRATED INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 2 meq/1mL 10 mL",
+        "fa": "فرآورده تزریقی پتاسیم کلراید غلیظ ۲ میلی‌اکی‌والان / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "50494",
+        "en": "POTASSIUM CHLORIDE CONCENTRATED INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 1 meq/1mL 50 mL",
+        "fa": "فرآورده تزریقی پتاسیم کلراید غلیظ ۱ میلی‌اکی‌والان / ۱ میلی‌لیتر ۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2509/Potassium-chloride",
+        "url": "https://www.darooyab.ir/G-2509/Potassium-chloride"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-kcl-solution",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213392"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213392",
+      "label": "ANDA213392"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=302b3fa7-ea87-4bf1-aae0-6a2d7459de86",
+      "label": "FDA KCl oral solution"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab",
+      "label": "FDA KCl concentrate"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=60285a8d-bcb0-40ba-b359-df5c89480cd6",
+      "label": "FDA KCl ER tablet"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601099.html",
+      "label": "Potassium"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625021.html",
+      "label": "Potassium Chloride Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A12BA01",
+      "label": "A12BA01"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B05XA01",
+      "label": "B05XA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2509/Potassium-chloride",
+      "label": "Potassium-chloride"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "There are no human data related to use of Potassium Chloride during pregnancy, and animal studies have not been conducted.",
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary The normal potassium ion content of human milk is about 13 mEq per liter.",
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Potassium Chloride have been demonstrated in children with diarrhea and malnutrition from birth to 16 years.",
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-kcl-solution",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

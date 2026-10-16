@@ -1,0 +1,496 @@
+{
+  "id": "meropenem",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مروپنم",
+    "en": "Meropenem"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "کارباپنم",
+    "en": "Carbapenem"
+  },
+  "brands": [
+    {
+      "name": "Merrem",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "merrem",
+    "مروپنم",
+    "مروپنem"
+  ],
+  "formulations": [
+    {
+      "id": "vial-500",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "500 mg vial",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g vial",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cssi",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت عارضه‌دار پوست و بافت نرم — بزرگسال ۵۰۰ mg هر ۸ ساعت",
+        "en": "Complicated skin and skin-structure infection — adult 500 mg every 8 h"
+      },
+      "population": {
+        "minWeightKg": 50.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در پسودوموناس آئروژینوزا ۱ g هر ۸ ساعت.",
+            "en": "1 g every 8 h if Pseudomonas aeruginosa is suspected or confirmed."
+          },
+          "refs": [
+            {
+              "source": "fda-meropenem",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iai",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "عفونت عارضه‌دار داخل شکم — بزرگسال ۱ g هر ۸ ساعت",
+        "en": "Complicated intra-abdominal infection — adult 1 g every 8 h"
+      },
+      "population": {
+        "minWeightKg": 50.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "cssi-child",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت عارضه‌دار پوست — کودک ۳ ماه به بالا: ۱۰ mg/kg هر ۸ ساعت (حداکثر ۵۰۰ mg)",
+        "en": "cSSSI — child ≥3 months: 10 mg/kg every 8 h (max 500 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxWeightKg": 50
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 500,
+        "refs": [
+          {
+            "source": "fda-meropenem",
+            "section": "2.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "iai-child",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "عفونت داخل شکم — کودک ۳ ماه به بالا: ۲۰ mg/kg هر ۸ ساعت (حداکثر ۱ g)",
+        "en": "cIAI — child ≥3 months: 20 mg/kg every 8 h (max 1 g)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxWeightKg": 50
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 20,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 1000,
+        "refs": [
+          {
+            "source": "fda-meropenem",
+            "section": "2.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mening-child",
+      "disease": "bacterial-meningitis",
+      "label": {
+        "fa": "مننژیت باکتریایی — کودک ۳ ماه به بالا: ۴۰ mg/kg هر ۸ ساعت (حداکثر ۲ g)",
+        "en": "Bacterial meningitis — child ≥3 months: 40 mg/kg every 8 h (max 2 g)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxWeightKg": 50
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 40,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 2000,
+        "refs": [
+          {
+            "source": "fda-meropenem",
+            "section": "2.3"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "کودک بالای ۵۰ kg: ۲ g هر ۸ ساعت.",
+            "en": "Children over 50 kg: 2 g every 8 h."
+          },
+          "refs": [
+            {
+              "source": "fda-meropenem",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دارو یا آنافیلاکسی با سایر بتالاکتام‌ها.",
+        "en": "Hypersensitivity to the drug or anaphylaxis with other beta-lactams."
+      },
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش آلرژیک جدی؛ اسهال مرتبط با کلستریدیوم دیفیسیل؛ تشنج (به‌ویژه در نارسایی کلیه).",
+        "en": "Serious hypersensitivity; Clostridioides difficile-associated diarrhoea; seizures (especially with renal impairment)."
+      },
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 50,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۲۶ تا ۵۰: دوز معمول هر ۱۲ ساعت؛ ۱۰ تا ۲۵: نصف دوز هر ۱۲ ساعت؛ زیر ۱۰: نصف دوز هر ۲۴ ساعت.",
+        "en": "CrCl 26–50: usual dose every 12 h; 10–25: half dose every 12 h; <10: half dose every 24 h."
+      },
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "valproate",
+      "text": {
+        "fa": "والپروات: کاهش شدید سطح والپروات و خطر تشنج — همزمان توصیه نمی‌شود.",
+        "en": "Valproic acid: marked fall in valproate levels and breakthrough seizures — not recommended together."
+      },
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cssi",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500,
+        "dosesPerDay": 3
+      }
+    },
+    {
+      "regimen": "cssi-child",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 200
+      }
+    },
+    {
+      "regimen": "iai-child",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 400
+      }
+    },
+    {
+      "regimen": "mening-child",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 800
+      }
+    },
+    {
+      "regimen": "iai",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1000,
+        "dosesPerDay": 3
+      }
+    }
+  ],
+  "atc": [
+    "J01DH02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05629",
+        "en": "MEROPENEM 1G VIAL",
+        "fa": "ویال مروپنم ۱ گرم"
+      },
+      {
+        "code": "03283",
+        "en": "MEROPENEM 500MG VIAL",
+        "fa": "ویال مروپنم ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-433/Meropenem",
+        "url": "https://www.darooyab.ir/G-433/Meropenem"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210773",
+      "label": "ANDA210773"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=74ff19b5-6156-4a27-affb-744b0ce1aeec",
+      "label": "FDA Meropenem"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a696038.html",
+      "label": "Meropenem Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DH02",
+      "label": "J01DH02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-433/Meropenem",
+      "label": "Meropenem"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are insufficient human data to establish whether there is a drug-associated risk of major birth defects or miscarriages with meropenem in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Meropenem has been reported to be excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Meropenem for injection have been established for pediatric patients 3 months of age and older with complicated skin and skin structure infections and bacterial meningitis, and for pediatric patients of all ages with complicated intra-abdominal infections.",
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-meropenem",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-meropenem",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA210773"
+  }
+}

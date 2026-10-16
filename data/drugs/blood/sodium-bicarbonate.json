@@ -1,0 +1,429 @@
+{
+  "id": "sodium-bicarbonate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بیکربنات سدیم (تزریقی)",
+    "en": "Sodium bicarbonate (injection)"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "قلیایی‌کننده",
+    "en": "Alkalinising agent"
+  },
+  "brands": [
+    {
+      "name": "Sodium bicarbonate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "bicarbonate",
+    "بی کربنات",
+    "جوش شیرین تزریقی",
+    "NaHCO3"
+  ],
+  "formulations": [
+    {
+      "id": "bag-015",
+      "form": "injection",
+      "route": "iv",
+      "label": "12.6 mg/mL (0.150 mEq/mL) isotonic 1000 mL",
+      "concentration": {
+        "amount": 0.15,
+        "unit": "mEq",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bicarbonate",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "metabolic-acidosis",
+      "label": {
+        "fa": "اسیدوز متابولیک — بزرگسال و کودک ۲ سال به بالا: ۲ تا ۵ mEq/kg در ۴ تا ۸ ساعت",
+        "en": "Metabolic acidosis — adults and children ≥2 y: 2–5 mEq/kg over 4–8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mEq",
+      "dose": {
+        "perKgPerDay": 2,
+        "perKgPerDayMax": 5,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bicarbonate",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس بیکربنات سرم، CO2 کل، pH و وضعیت بالینی. رقیق نشود.",
+            "en": "Guided by serum bicarbonate, total CO2, pH and clinical state. Do not dilute."
+          },
+          "refs": [
+            {
+              "source": "fda-bicarbonate",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-bicarbonate",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "در ایران بیشتر ویال ۷٫۵٪ و ۸٫۴٪ (حدود ۰٫۹ و ۱ mEq/mL) موجود است (دارویاب)؛ حجم را از mEq و غلظت همان ویال حساب کنید. حجم نمایش‌داده‌شده برای محلول ایزوتونیک ۰٫۱۵ mEq/mL است.",
+            "en": "In Iran 7.5% and 8.4% vials (about 0.9 and 1 mEq/mL) are common (Darooyab); compute volume from the mEq dose and that vial’s strength. The volume shown is for the isotonic 0.15 mEq/mL solution."
+          },
+          "refs": [
+            {
+              "source": "darooyab-generic",
+              "section": "G-2505/Sodium-Bicarbonate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "metabolic-acidosis",
+      "label": {
+        "fa": "اسیدوز متابولیک — زیر ۲ سال و نوزاد: ۱ تا ۲ mEq/kg در ۴ تا ۸ ساعت",
+        "en": "Metabolic acidosis — under 2 y and neonates: 1–2 mEq/kg over 4–8 h"
+      },
+      "population": {
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mEq",
+      "dose": {
+        "perKgPerDay": 1,
+        "perKgPerDayMax": 2,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bicarbonate",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بولوس یا تزریق سریع نه.",
+            "en": "Avoid rapid or bolus administration."
+          },
+          "refs": [
+            {
+              "source": "fda-bicarbonate",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "در ایران بیشتر ویال ۷٫۵٪ و ۸٫۴٪ (حدود ۰٫۹ و ۱ mEq/mL) موجود است (دارویاب)؛ حجم را از mEq و غلظت همان ویال حساب کنید. حجم نمایش‌داده‌شده برای محلول ایزوتونیک ۰٫۱۵ mEq/mL است.",
+            "en": "In Iran 7.5% and 8.4% vials (about 0.9 and 1 mEq/mL) are common (Darooyab); compute volume from the mEq dose and that vial’s strength. The volume shown is for the isotonic 0.15 mEq/mL solution."
+          },
+          "refs": [
+            {
+              "source": "darooyab-generic",
+              "section": "G-2505/Sodium-Bicarbonate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "از دست دادن کلر با استفراغ یا ساکشن معده؛ مصرف دیورتیک‌های ایجادکننده آلکالوز هیپوکلرمیک.",
+        "en": "Chloride loss from vomiting or GI suction; diuretics causing hypochloraemic alkalosis."
+      },
+      "refs": [
+        {
+          "source": "fda-bicarbonate",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "bag-015",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 140,
+        "mlPerDose": 933.33,
+        "upperPerDose": 350
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "bag-015",
+      "input": {
+        "ageMonths": 6,
+        "weightKg": 7.5
+      },
+      "expect": {
+        "perDose": 7.5,
+        "mlPerDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "B05XA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08692",
+        "en": "BICARBONATE CARTRIGE",
+        "fa": "بیکربنات کارتریج"
+      },
+      {
+        "code": "01139",
+        "en": "BICARBONATE CONCENTRATE 650 G POWDER",
+        "fa": "پودر بیکربنات ۶۵۰ گرم"
+      },
+      {
+        "code": "06521",
+        "en": "BICARBONATE IDEMSA POWDER",
+        "fa": "پودر بیکربنات ایدمسا"
+      },
+      {
+        "code": "06517",
+        "en": "BICARBONATE SMART CART POWDER",
+        "fa": "پودر بیکربنات سمارت کارت"
+      },
+      {
+        "code": "11409",
+        "en": "BICARBONATE SODIUM,ACETYL SALICILIC ACID TAB",
+        "fa": "قرص بیکربنات سدیم استیل سالیسیلیک اسید"
+      },
+      {
+        "code": "17899",
+        "en": "SODIUM BICARBONATE 7.5% 100ML VIAL",
+        "fa": "ویال سدیم بیکربنات ۷٫۵ درصد ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "20787",
+        "en": "SODIUM BICARBONATE 7.5% 25ML VIAL",
+        "fa": "ویال سدیم بیکربنات ۷٫۵ درصد ۲۵ میلی‌لیتر"
+      },
+      {
+        "code": "17833",
+        "en": "SODIUM BICARBONATE 7.5% 50ML BAG",
+        "fa": "سدیم بیکربنات ۷٫۵ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "01140",
+        "en": "SODIUM BICARBONATE 7.5% 50ML VIAL",
+        "fa": "ویال سدیم بیکربنات ۷٫۵ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "02353",
+        "en": "SODIUM BICARBONATE 8.4% 100ML VIAL",
+        "fa": "ویال سدیم بیکربنات ۸٫۴ درصد ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "07334",
+        "en": "SODIUM BICARBONATE 8.4% 10ML AMP",
+        "fa": "آمپول سدیم بیکربنات ۸٫۴ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "17718",
+        "en": "SODIUM BICARBONATE 8.4% 20ML INJ",
+        "fa": "فرآورده تزریقی سدیم بیکربنات ۸٫۴ درصد ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "13703",
+        "en": "SODIUM BICARBONATE 8.4% 50ML BAG",
+        "fa": "سدیم بیکربنات ۸٫۴ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "07601",
+        "en": "SODIUM BICARBONATE 8.4% 50ML VIAL",
+        "fa": "ویال سدیم بیکربنات ۸٫۴ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "17690",
+        "en": "SODIUM BICARBONATE CARTRIDGE <ITOCHU>  760 CARTRIDGE",
+        "fa": "کارتریج سدیم بیکربنات < ایتوچو > ۷۶۰"
+      },
+      {
+        "code": "01138",
+        "en": "SODIUM BICARBONATE POWDER_BULK",
+        "fa": "پودر سدیم بیکربنات"
+      },
+      {
+        "code": "01678",
+        "en": "SODIUM LACTATE 1/6 MOLAR AMP",
+        "fa": "آمپول سدیم لاکتات ۱ / ۶ مولار"
+      },
+      {
+        "code": "51939",
+        "en": "SODIUM BICARBONATE INJECTION PARENTERAL 8.4 % 10 mL",
+        "fa": "فرآورده تزریقی سدیم بیکربنات ۸٫۴ درصد ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "52605",
+        "en": "SODIUM BICARBONATE POWDER NOT APPLICABLE",
+        "fa": "پودر سدیم بیکربنات غیرقابل‌اعمال"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2505/Sodium-Bicarbonate",
+        "url": "https://www.darooyab.ir/G-2505/Sodium-Bicarbonate"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-bicarbonate",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA218524"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218524",
+      "label": "NDA218524"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b50c858a-00c8-4cb2-ad73-8797f19e656d",
+      "label": "FDA NaHCO3 1.26%"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682001.html",
+      "label": "Sodium Bicarbonate"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625025.html",
+      "label": "Sodium Bicarbonate Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B05XA02",
+      "label": "B05XA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2505/Sodium-Bicarbonate",
+      "label": "Sodium-Bicarbonate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published literature over decades of use have not identified a drug associated risk of major birth defects, miscarriage or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-bicarbonate",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of sodium bicarbonate in either human or animal milk, the effects on the breast-fed infant or the effects on milk production following administration of sodium bicarbonate injection.",
+      "refs": [
+        {
+          "source": "fda-bicarbonate",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Sodium bicarbonate injection is indicated in pediatric patients: • To raise plasma pH in pediatric patients with clinically significant metabolic acidosis • To alkalinize the urine in drug poisoning in cases in which urinary drug elimination is enhanced by urinary alkalinization Rapid injection of sodium bicarbonate …",
+      "refs": [
+        {
+          "source": "fda-bicarbonate",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of sodium bicarbonate injection did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-bicarbonate",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

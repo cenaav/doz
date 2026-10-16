@@ -263,6 +263,115 @@
           ]
         }
       ]
+    },
+    {
+      "id": "headache",
+      "disease": "tension-headache",
+      "label": {
+        "fa": "سردرد کودک",
+        "en": "Headache in children"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "ageBand",
+      "unit": "mg",
+      "dose": {
+        "intervalHours": 4,
+        "bands": [
+          {
+            "minAge": {
+              "value": 2,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "perDose": 160,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 4,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "perDose": 240,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 6,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 9,
+              "unit": "year"
+            },
+            "perDose": 320,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 9,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 11,
+              "unit": "year"
+            },
+            "perDose": 400,
+            "dosesPerDay": 5
+          },
+          {
+            "minAge": {
+              "value": 11,
+              "unit": "year"
+            },
+            "maxAge": {
+              "value": 12,
+              "unit": "year"
+            },
+            "perDose": 480,
+            "dosesPerDay": 5
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Directions"
+        },
+        {
+          "source": "fda-childrens-tylenol",
+          "section": "Uses"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۴ ساعت تا زمانی که علائم هست؛ بیش از ۵ بار در ۲۴ ساعت نه. در صورت امکان بر اساس وزن (جدول وزن/سن برچسب)؛ زیر ۲ سال با پزشک مشورت شود. دوز mg/kg خوراکی در برچسب FDA نیامده و در انتظار منبع دارای مجوز است.",
+            "en": "Every 4 hours while symptoms last; no more than 5 times in 24 h. Use weight if possible (label weight/age chart); under 2 years ask a doctor. Oral mg/kg dosing is not in the FDA label; pending the licensed reference."
+          },
+          "refs": [
+            {
+              "source": "fda-childrens-tylenol",
+              "section": "Directions"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -361,6 +470,18 @@
       },
       "expect": {
         "status": "blocked"
+      }
+    },
+    {
+      "regimen": "headache",
+      "formulation": "susp-160-5",
+      "input": {
+        "ageYears": 11,
+        "weightKg": 36
+      },
+      "expect": {
+        "perDose": 480,
+        "mlPerDose": 15
       }
     }
   ],

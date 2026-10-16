@@ -401,6 +401,61 @@
           ]
         }
       ]
+    },
+    {
+      "id": "tendonitis",
+      "disease": "tendonitis",
+      "label": {
+        "fa": "تاندونیت و بورسیت حاد — بزرگسال",
+        "en": "Acute tendonitis and bursitis — adult"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 4,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-naproxen",
+          "section": "2.4"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 1250,
+        "refs": [
+          {
+            "source": "fda-naproxen",
+            "section": "2.4"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول ۵۰۰ mg، سپس ۲۵۰ mg هر ۶ تا ۸ ساعت در صورت نیاز؛ حداکثر ۱۲۵۰ mg/day.",
+            "en": "First dose 500 mg, then 250 mg every 6–8 h as needed; max 1,250 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-naproxen",
+              "section": "2.4"
+            }
+          ]
+        }
+      ],
+      "allowedFormulations": [
+        "tab-250",
+        "tab-375",
+        "tab-500"
+      ]
     }
   ],
   "contraindications": [
@@ -521,6 +576,18 @@
       "expect": {
         "perDose": 220,
         "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "tendonitis",
+      "formulation": "tab-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "perDay": 1000
       }
     }
   ],

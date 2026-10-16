@@ -1,0 +1,295 @@
+{
+  "id": "insulin-degludec",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "انسولین دگلودک",
+    "en": "Insulin degludec"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "انسولین پایه بسیار طولانی‌اثر",
+    "en": "Ultra-long-acting basal insulin"
+  },
+  "brands": [
+    {
+      "name": "Tresiba",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tresiba",
+    "ترسیبا",
+    "دگلودک"
+  ],
+  "formulations": [
+    {
+      "id": "u100",
+      "form": "injection",
+      "route": "sc",
+      "label": "100 units/mL (U-100) FlexTouch pen or vial",
+      "concentration": {
+        "amount": 100,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tresiba",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "u200",
+      "form": "injection",
+      "route": "sc",
+      "label": "200 units/mL (U-200) FlexTouch pen",
+      "concentration": {
+        "amount": 200,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tresiba",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2-naive",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲، شروع انسولین — ۱۰ واحد یک بار در روز",
+        "en": "Type 2 diabetes, insulin-naive — 10 units once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "unit",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tresiba",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر روز در هر ساعتی؛ تنظیم دوز هر ۳ تا ۴ روز بر اساس قند ناشتا.",
+            "en": "Any time of day; titrate every 3–4 days by fasting glucose."
+          },
+          "refs": [
+            {
+              "source": "fda-tresiba",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t1",
+      "disease": "type-1-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۱ — یک‌سوم تا نیمی از کل دوز روزانه به‌صورت پایه",
+        "en": "Type 1 diabetes — one-third to one-half of total daily insulin as basal"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بیمار بدون انسولین قبلی: کل انسولین روزانه حدود ۰٫۲ تا ۰٫۴ واحد/kg؛ یک‌سوم تا نیمی از آن دگلودک یک بار در روز و بقیه انسولین کوتاه‌اثر با غذا. تنظیم هر ۳ تا ۴ روز.",
+          "en": "Insulin-naive: total daily insulin about 0.2–0.4 units/kg; one-third to one-half as degludec once daily, the rest as short-acting with meals. Titrate every 3–4 days."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-tresiba",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hypo",
+      "severity": "block",
+      "text": {
+        "fa": "هنگام هیپوگلیسمی؛ حساسیت به انسولین یا اجزای فرآورده.",
+        "en": "During episodes of hypoglycaemia; hypersensitivity to the insulin or its excipients."
+      },
+      "refs": [
+        {
+          "source": "fda-tresiba",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هیپوگلیسمی؛ هیپوکالمی؛ قلم مشترک ممنوع؛ برای کتواسیدوز نه.",
+        "en": "Hypoglycaemia; hypokalaemia; never share pens; not for diabetic ketoacidosis."
+      },
+      "refs": [
+        {
+          "source": "fda-tresiba",
+          "section": "5"
+        },
+        {
+          "source": "fda-tresiba",
+          "section": "1"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2-naive",
+      "formulation": "u100",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 90
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 0.1
+      }
+    }
+  ],
+  "atc": [
+    "A10AE06"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Insulin%20degludec"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203314",
+      "label": "BLA203314"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=456c5e87-3dfd-46fa-8ac0-c6128d4c97c6",
+      "label": "FDA Tresiba"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615055.html",
+      "label": "Insulin Degludec (rDNA Origin) Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10AE06",
+      "label": "A10AE06"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from one unpublished trial and the published literature with TRESIBA use during pregnancy have not identified a drug-associated risk of major birth defects, miscarriage, or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-tresiba",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of insulin degludec in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-tresiba",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of TRESIBA to improve glycemic control in pediatric patients 1 year of age and older with diabetes mellitus have been established.",
+      "refs": [
+        {
+          "source": "fda-tresiba",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In controlled clinical trials [see Clinical Studies ( 14 )] a total of 77 (7%) of the 1102 TRESIBA-treated patients with type 1 diabetes were 65 years or older and 9 (1%) were 75 years or older.",
+      "refs": [
+        {
+          "source": "fda-tresiba",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-tresiba",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA203314"
+  }
+}

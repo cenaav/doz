@@ -22,8 +22,10 @@ export interface Result {
   schedule?: ScheduleStep[]; titration?: TitrationPlan
   capsApplied: CapHit[]; warnings: Msg[]; blocks: Msg[]; refs: Ref[]
   egfr?: number; bsa?: number; reason?: I18nText
+  /** Continuous infusion: dose per minute and the pump rate for the chosen bag concentration. */
+  perMin?: number; mlPerHour?: number
   /** Upper end of a dose range, when the source gives one. */
-  upper?: Pick<Result, 'perDose' | 'perDay' | 'mlPerDose' | 'mlPerDoseRounded' | 'mlPerDay' | 'tabletsPerDose' | 'tabletsPerDoseRounded' | 'capsApplied'>
+  upper?: Pick<Result, 'perDose' | 'perDay' | 'mlPerDose' | 'mlPerDoseRounded' | 'mlPerDay' | 'tabletsPerDose' | 'tabletsPerDoseRounded' | 'capsApplied' | 'perMin' | 'mlPerHour'>
 }
 
 const MAX_AGE_DAYS = 120 * 365.25
@@ -33,17 +35,19 @@ export function calculate(drug: Drug, regimenId: string, formulationId: string, 
   const res = calculateOne(drug, regimenId, formulationId, p)
   const reg = drug.regimens.find((r) => r.id === regimenId)
   const d = reg?.dose
-  if (res.status !== 'ok' || !reg || !d || (d.perKgPerDayMax == null && d.perKgPerDoseMax == null && d.perDoseMax == null)) return res
+  if (res.status !== 'ok' || !reg || !d || (d.perKgPerDayMax == null && d.perKgPerDoseMax == null && d.perDoseMax == null && d.perKgPerMinMax == null && d.perMinMax == null)) return res
   const upperDose = {
     ...d,
     perKgPerDay: d.perKgPerDayMax ?? d.perKgPerDay,
     perKgPerDose: d.perKgPerDoseMax ?? d.perKgPerDose,
     perDose: d.perDoseMax ?? d.perDose,
+    perKgPerMin: d.perKgPerMinMax ?? d.perKgPerMin,
+    perMin: d.perMinMax ?? d.perMin,
   }
   const hi = calculateOne({ ...drug, regimens: drug.regimens.map((r) => (r === reg ? { ...r, dose: upperDose } : r)) }, regimenId, formulationId, p)
   if (hi.status !== 'ok') return { ...res, warnings: [...res.warnings, ...hi.blocks] }
-  const { perDose, perDay, mlPerDose, mlPerDoseRounded, mlPerDay, tabletsPerDose, tabletsPerDoseRounded, capsApplied } = hi
-  return { ...res, upper: { perDose, perDay, mlPerDose, mlPerDoseRounded, mlPerDay, tabletsPerDose, tabletsPerDoseRounded, capsApplied } }
+  const { perDose, perDay, mlPerDose, mlPerDoseRounded, mlPerDay, tabletsPerDose, tabletsPerDoseRounded, capsApplied, perMin, mlPerHour } = hi
+  return { ...res, upper: { perDose, perDay, mlPerDose, mlPerDoseRounded, mlPerDay, tabletsPerDose, tabletsPerDoseRounded, capsApplied, perMin, mlPerHour } }
 }
 
 function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: Patient): Result {
@@ -85,6 +89,15 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
   const done = (status: Result['status']): Result => ({ ...res, status, refs: uniqueRefs(refs) })
   if (res.blocks.length) return done('blocked')
   if (reg.type === 'notCalculated') return { ...done('notCalculated'), reason: reg.dose.reason }
+  if (reg.type === 'infusion') {
+    // Rate (mL/h) = dose per minute × 60 ÷ bag concentration (amount per mL).
+    const d = reg.dose
+    const perMin = d.perKgPerMin != null ? d.perKgPerMin * p.weightKg! : d.perMin!
+    const c = form.concentration
+    res.perMin = rDose(perMin)
+    if (c.perVolumeMl) res.mlPerHour = r2((perMin * 60 * c.perVolumeMl) / c.amount)
+    return done('ok')
+  }
 
   const base = baseDose(reg, p)
   if (base.error) {
@@ -153,7 +166,7 @@ function calculateOne(drug: Drug, regimenId: string, formulationId: string, p: P
 
 /** True when the dose, its limits, its population or a contraindication depends on body weight. */
 export function needsWeight(drug: Drug, reg: Drug['regimens'][number]): boolean {
-  if (['weightBased', 'bsa', 'loading', 'weightBand'].includes(reg.type) || reg.dose.weightBands) return true
+  if (['weightBased', 'bsa', 'loading', 'weightBand'].includes(reg.type) || reg.dose.weightBands || reg.dose.perKgPerMin != null) return true
   const hasW = (r?: { minWeightKg?: number | null; maxWeightKg?: number | null }) => r?.minWeightKg != null || r?.maxWeightKg != null
   if (hasW(reg.population) || drug.contraindications.some((c) => hasW(c.rule))) return true
   return reg.limits?.maxPerKgPerDay != null || reg.limits?.maxPerKgPerDose != null

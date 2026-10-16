@@ -1,0 +1,288 @@
+{
+  "id": "dutasteride",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دوتاستراید",
+    "en": "Dutasteride"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "مهارکننده ۵-آلفا ردوکتاز",
+    "en": "5-alpha-reductase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Avodart",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "avodart",
+    "آوودارت",
+    "دوتاستراید"
+  ],
+  "formulations": [
+    {
+      "id": "cap-05",
+      "form": "capsule",
+      "route": "oral",
+      "label": "0.5 mg soft capsule (swallow whole)",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-avodart",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bph",
+      "disease": "bph",
+      "label": {
+        "fa": "BPH علامت‌دار — ۰٫۵ mg یک بار در روز (تنها یا همراه تامسولوسین ۰٫۴ mg)",
+        "en": "Symptomatic BPH — 0.5 mg once daily (alone or with tamsulosin 0.4 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-avodart",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-avodart",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کپسول باز یا جویده نشود (تحریک دهان و حلق). زنان باردار یا احتمال بارداری کپسول را لمس نکنند (جذب پوستی).",
+            "en": "Do not open or chew (oropharyngeal irritation). Pregnant women or those who may become pregnant must not handle capsules (skin absorption)."
+          },
+          "refs": [
+            {
+              "source": "fda-avodart",
+              "section": "2"
+            },
+            {
+              "source": "fda-avodart",
+              "section": "16"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری؛ حساسیت قابل‌توجه به دوتاستراید یا سایر مهارکننده‌های ۵-آلفا ردوکتاز.",
+        "en": "Pregnancy; clinically significant hypersensitivity to dutasteride or other 5-alpha-reductase inhibitors."
+      },
+      "refs": [
+        {
+          "source": "fda-avodart",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "PSA را حدود ۵۰٪ کاهش می‌دهد؛ افزایش تأییدشده PSA بررسی شود. احتمال افزایش سرطان پروستات درجه بالا. ۶ ماه پس از قطع خون اهدا نشود.",
+        "en": "Lowers PSA by about 50%; evaluate any confirmed PSA rise. May increase high-grade prostate cancer. Do not donate blood until 6 months after the last dose."
+      },
+      "refs": [
+        {
+          "source": "fda-avodart",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bph",
+      "formulation": "cap-05",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 0.5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G04CB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06735",
+        "en": "DUTASTERIDE 0.5MG CAP",
+        "fa": "کپسول دوتاستراید ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "06617",
+        "en": "DUTASTERIDE 0.5MG TAB",
+        "fa": "قرص دوتاستراید ۰٫۵ میلی‌گرم"
+      },
+      {
+        "code": "17497",
+        "en": "DUTASTERIDE 15MG TAB",
+        "fa": "قرص دوتاستراید ۱۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3248/Dutasteride",
+        "url": "https://www.darooyab.ir/G-3248/Dutasteride"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021319",
+      "label": "NDA021319"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=960797b3-09b1-4d6a-8ece-8b5d918e93e4",
+      "label": "FDA Avodart"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603001.html",
+      "label": "Dutasteride"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04CB02",
+      "label": "G04CB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3248/Dutasteride",
+      "label": "Dutasteride"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "AVODART is contraindicated for use in: • Pregnancy.",
+      "refs": [
+        {
+          "source": "fda-avodart",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary AVODART is not indicated for use in women.",
+      "refs": [
+        {
+          "source": "fda-avodart",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-avodart",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or efficacy were observed between these subjects and younger subjects.",
+      "refs": [
+        {
+          "source": "fda-avodart",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Males: The effects of dutasteride 0.5 mg/day on semen characteristics were evaluated in normal volunteers aged 18 to 52 years (n = 27 dutasteride, n = 23 placebo) throughout 52 weeks of treatment and 24 weeks of post-treatment follow-up.",
+      "refs": [
+        {
+          "source": "fda-avodart",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-avodart",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021319"
+  }
+}

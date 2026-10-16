@@ -1,0 +1,329 @@
+{
+  "id": "metolazone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متولازون",
+    "en": "Metolazone"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "دیورتیک شبه‌تیازیدی",
+    "en": "Thiazide-like diuretic"
+  },
+  "brands": [
+    {
+      "name": "Zaroxolyn",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zaroxolyn",
+    "متولازون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metolazone",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metolazone",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-metolazone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "edema",
+      "disease": "edema",
+      "label": {
+        "fa": "ادم نارسایی قلبی یا بیماری کلیه — ۵ تا ۲۰ mg یک بار در روز",
+        "en": "Oedema of heart failure or renal disease — 5–20 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-metolazone",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون خفیف تا متوسط — ۲٫۵ تا ۵ mg یک بار در روز",
+        "en": "Mild–moderate hypertension — 2.5–5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "perDoseMax": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-metolazone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با Mykrox جایگزین‌پذیر نیست (فراهمی زیستی متفاوت).",
+            "en": "Not interchangeable with Mykrox (different bioavailability)."
+          },
+          "refs": [
+            {
+              "source": "fda-metolazone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آنوری؛ کمای کبدی یا پیش‌کما؛ حساسیت به متولازون.",
+        "en": "Anuria; hepatic coma or pre-coma; hypersensitivity to metolazone."
+      },
+      "refs": [
+        {
+          "source": "fda-metolazone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "edema",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5,
+        "upperPerDose": 20
+      }
+    },
+    {
+      "regimen": "htn",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 2.5,
+        "upperPerDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "C03BA08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08667",
+        "en": "METOLAZONE 5MG TAB",
+        "fa": "قرص متولازون ۵ میلی‌گرم"
+      },
+      {
+        "code": "52021",
+        "en": "METOLAZONE TABLET ORAL 10 mg",
+        "fa": "قرص متولازون ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1766/Metolazone",
+        "url": "https://www.darooyab.ir/G-1766/Metolazone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213827",
+      "label": "ANDA213827"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbfa3d5c-cce9-4afa-b064-06f1e1041eac",
+      "label": "FDA Metolazone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682345.html",
+      "label": "Metolazone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA08",
+      "label": "C03BA08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1766/Metolazone",
+      "label": "Metolazone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category B Reproduction studies performed in mice, rabbits, and rats treated during the appropriate period of gestation at doses up to 50 mg/kg/day have revealed no evidence of harm to the fetus due to metolazone.",
+      "refs": [
+        {
+          "source": "fda-metolazone",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants from metolazone, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-metolazone",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established in controlled clinical trials.",
+      "refs": [
+        {
+          "source": "fda-metolazone",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-metolazone",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-metolazone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213827"
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "id": "liothyronine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لیوتیرونین (T3)",
+    "en": "Liothyronine (T3)"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "هورمون تیروئید",
+    "en": "Thyroid hormone"
+  },
+  "brands": [
+    {
+      "name": "Cytomel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cytomel",
+    "T3",
+    "لیوتیرونین",
+    "تری یدوتیرونین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mcg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mcg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-liothyronine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mcg tablet (scored)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mcg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-liothyronine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mcg tablet (scored)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mcg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-liothyronine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hypo",
+      "disease": "hypothyroidism",
+      "label": {
+        "fa": "کم‌کاری تیروئید — شروع ۲۵ mcg روزانه؛ نگهدارنده معمولاً ۲۵ تا ۷۵ mcg",
+        "en": "Hypothyroidism — start 25 mcg daily; usual maintenance 25–75 mcg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 25,
+        "perDoseMax": 75,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-liothyronine",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۲۵ mcg هر ۱ تا ۲ هفته بر اساس TSH. سالمند یا بیمار قلبی: شروع ۵ mcg.",
+            "en": "Increase by 25 mcg every 1–2 weeks by TSH. Elderly or cardiac patients: start 5 mcg."
+          },
+          "refs": [
+            {
+              "source": "fda-liothyronine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "adrenal",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی آدرنال اصلاح‌نشده.",
+        "en": "Uncorrected adrenal insufficiency."
+      },
+      "refs": [
+        {
+          "source": "fda-liothyronine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: برای چاقی یا کاهش وزن نه؛ دوز بالا سمیت جدی یا کشنده دارد.",
+        "en": "Boxed warning: not for obesity or weight loss; large doses can cause serious or life-threatening toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-liothyronine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hypo",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 75
+      }
+    }
+  ],
+  "atc": [
+    "H03AA02"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Liothyronine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211510",
+      "label": "ANDA211510"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=548d684a-86f5-4e57-9844-d8cf0a84e068",
+      "label": "FDA Liothyronine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682462.html",
+      "label": "Liothyronine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H03AA02",
+      "label": "H03AA02"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Experience with liothyronine use in pregnant women, including data from post-marketing studies, have not reported increased rates of major birth defects or miscarriages (see Data).",
+      "refs": [
+        {
+          "source": "fda-liothyronine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Limited published studies report that liothyronine is present in human milk.",
+      "refs": [
+        {
+          "source": "fda-liothyronine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The initial dose of liothyronine sodium tablets varies with age and body weight.",
+      "refs": [
+        {
+          "source": "fda-liothyronine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… ronine sodium tablets at less than the full replacement dose [see Dosage and Administration ( 2.3 ) and Warnings and Precautions ( 5.1 )] .",
+      "refs": [
+        {
+          "source": "fda-liothyronine",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-liothyronine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA211510"
+  }
+}

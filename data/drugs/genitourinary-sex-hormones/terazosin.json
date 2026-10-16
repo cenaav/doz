@@ -1,0 +1,314 @@
+{
+  "id": "terazosin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ترازوسین",
+    "en": "Terazosin"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آلفا-۱ بلاکر",
+    "en": "Alpha-1 blocker"
+  },
+  "brands": [
+    {
+      "name": "Hytrin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "hytrin",
+    "ترازوسین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-1",
+      "form": "capsule",
+      "route": "oral",
+      "label": "1 mg capsule",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-terazosin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-2",
+      "form": "capsule",
+      "route": "oral",
+      "label": "2 mg capsule",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-terazosin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "5 mg capsule",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-terazosin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-10",
+      "form": "capsule",
+      "route": "oral",
+      "label": "10 mg capsule",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-terazosin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bph",
+      "disease": "bph",
+      "label": {
+        "fa": "BPH — ۱ mg هنگام خواب، سپس پله‌ای ۲، ۵ و ۱۰ mg روزانه",
+        "en": "BPH — 1 mg at bedtime, then stepwise to 2, 5 and 10 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 1,
+          "targetMin": 10,
+          "targetMax": 10,
+          "max": 20
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-terazosin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز اول از ۱ mg بیشتر نشود. معمولاً ۱۰ mg لازم است و پاسخ پس از ۴ تا ۶ هفته ارزیابی می‌شود؛ داده ۲۰ mg محدود است. اگر چند روز قطع شد از ۱ mg شروع شود.",
+            "en": "Do not exceed 1 mg as the first dose. 10 mg is usually needed; assess response after 4–6 weeks; data at 20 mg are limited. Restart at 1 mg after a break of several days."
+          },
+          "refs": [
+            {
+              "source": "fda-terazosin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ترازوسین.",
+        "en": "Hypersensitivity to terazosin."
+      },
+      "refs": [
+        {
+          "source": "fda-terazosin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "غش و افت فشار با دوز اول (اثر دوز اول).",
+        "en": "Syncope and first-dose hypotension."
+      },
+      "refs": [
+        {
+          "source": "fda-terazosin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bph",
+      "formulation": "cap-1",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 1,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G04CA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01892",
+        "en": "TERAZOSIN 2MG TAB",
+        "fa": "قرص ترازوسین ۲ میلی‌گرم"
+      },
+      {
+        "code": "01893",
+        "en": "TERAZOSIN 5MG TAB",
+        "fa": "قرص ترازوسین ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1902/Terazosin",
+        "url": "https://www.darooyab.ir/G-1902/Terazosin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=074823",
+      "label": "ANDA074823"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5a95be60-b242-9183-e063-6394a90a89e6",
+      "label": "FDA Terazosin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a693046.html",
+      "label": "Terazosin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04CA03",
+      "label": "G04CA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1902/Terazosin",
+      "label": "Terazosin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category C Terazosin capsules were not teratogenic in either rats or rabbits when administered at oral doses up to 280 and 60 times, respectively, the maximum recommended human dose.",
+      "refs": [
+        {
+          "source": "fda-terazosin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in breast milk, caution should be exercised when terazosin capsules are administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-terazosin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been determined.",
+      "refs": [
+        {
+          "source": "fda-terazosin",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-terazosin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA074823"
+  }
+}

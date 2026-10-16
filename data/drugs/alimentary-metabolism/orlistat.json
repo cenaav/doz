@@ -1,0 +1,248 @@
+{
+  "id": "orlistat",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اورلیستات",
+    "en": "Orlistat"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده لیپاز (ضدچاقی)",
+    "en": "Lipase inhibitor (anti-obesity)"
+  },
+  "brands": [
+    {
+      "name": "Xenical",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xenical",
+    "زنیکال",
+    "اورلیستات"
+  ],
+  "formulations": [
+    {
+      "id": "cap-120",
+      "form": "capsule",
+      "route": "oral",
+      "label": "120 mg capsule",
+      "concentration": {
+        "amount": 120,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xenical",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "obesity",
+      "disease": "obesity",
+      "label": {
+        "fa": "چاقی — ۱۲۰ mg سه بار در روز با هر وعده اصلی حاوی چربی",
+        "en": "Obesity — 120 mg three times daily with each fat-containing main meal"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 120,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-xenical",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "حین یا تا ۱ ساعت پس از غذا؛ اگر وعده بدون چربی یا حذف شد، دوز حذف. رژیم کم‌کالری با حدود ۳۰٪ چربی. مولتی‌ویتامین حاوی ویتامین‌های محلول در چربی با ۲ ساعت فاصله.",
+            "en": "During or up to 1 h after the meal; skip if the meal is missed or fat-free. Reduced-calorie diet with about 30% fat. Multivitamin with fat-soluble vitamins 2 h apart."
+          },
+          "refs": [
+            {
+              "source": "fda-xenical",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری؛ سندرم سوءجذب مزمن؛ کلستاز؛ حساسیت.",
+        "en": "Pregnancy; chronic malabsorption; cholestasis; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-xenical",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "obesity",
+      "formulation": "cap-120",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 100
+      },
+      "expect": {
+        "perDose": 120,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A08AB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02283",
+        "en": "ORLISTAT 120MG CAP",
+        "fa": "کپسول اورلیستات ۱۲۰ میلی‌گرم"
+      },
+      {
+        "code": "11883",
+        "en": "ORLISTAT 60MG CAP",
+        "fa": "کپسول اورلیستات ۶۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4071/Orlistat",
+        "url": "https://www.darooyab.ir/G-4071/Orlistat"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-xenical",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020766"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020766",
+      "label": "NDA020766"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6240792b-9224-2d10-e053-2a91aa0a2c3e",
+      "label": "FDA Xenical"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601244.html",
+      "label": "Orlistat"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A08AB01",
+      "label": "A08AB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4071/Orlistat",
+      "label": "Orlistat"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "XENICAL is contraindicated in: Pregnancy [see Use in Specific Populations (8.1) ] Patients with chronic malabsorption syndrome Patients with cholestasis Patients with known hypersensitivity to XENICAL or to any component of this product Pregnancy ( 4 , 8.1 ) Chronic malabsorption syndrome ( 4 ) Cholestasis ( 4 ) Known …",
+      "refs": [
+        {
+          "source": "fda-xenical",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Caution should be exercised when XENICAL is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-xenical",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness in pediatric patients below the age of 12 have not been established.",
+      "refs": [
+        {
+          "source": "fda-xenical",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of XENICAL did not include sufficient numbers of patients aged 65 years and older to determine whether they respond differently from younger patients [see Clinical Studies (14) ] .",
+      "refs": [
+        {
+          "source": "fda-xenical",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

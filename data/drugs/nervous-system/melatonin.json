@@ -1,0 +1,239 @@
+{
+  "id": "melatonin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ملاتونین",
+    "en": "Melatonin"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آگونیست گیرنده ملاتونین",
+    "en": "Melatonin receptor agonist"
+  },
+  "brands": [
+    {
+      "name": "Circadin",
+      "market": "UK"
+    }
+  ],
+  "synonyms": [
+    "circadin",
+    "سیرکادین",
+    "ملاتونین"
+  ],
+  "formulations": [
+    {
+      "id": "pr-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg prolonged-release tablet (swallow whole)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "UK"
+      ],
+      "refs": [
+        {
+          "source": "emc-circadin",
+          "section": "6.5"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "insomnia",
+      "disease": "insomnia",
+      "label": {
+        "fa": "بی‌خوابی اولیه (۵۵ سال به بالا) — ۲ mg یک بار، ۱ تا ۲ ساعت پیش از خواب پس از غذا",
+        "en": "Primary insomnia (≥55 y) — 2 mg once, 1–2 h before bedtime after food"
+      },
+      "population": {
+        "minAge": {
+          "value": 55,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "emc-circadin",
+          "section": "4.2"
+        },
+        {
+          "source": "emc-circadin",
+          "section": "4.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 91
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تا ۱۳ هفته. قرص کامل بلعیده شود. در نارسایی کبد توصیه نمی‌شود؛ بیماری خودایمنی: توصیه نمی‌شود.",
+            "en": "Up to 13 weeks. Swallow whole. Not recommended with hepatic impairment or autoimmune disease."
+          },
+          "refs": [
+            {
+              "source": "emc-circadin",
+              "section": "4.2"
+            },
+            {
+              "source": "emc-circadin",
+              "section": "4.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ملاتونین یا اجزای فرآورده.",
+        "en": "Hypersensitivity to melatonin or excipients."
+      },
+      "refs": [
+        {
+          "source": "emc-circadin",
+          "section": "4.3"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "خواب‌آلودگی؛ در رانندگی احتیاط.",
+        "en": "Drowsiness; caution when driving."
+      },
+      "refs": [
+        {
+          "source": "emc-circadin",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "insomnia",
+      "formulation": "pr-2",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N05CH01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08807",
+        "en": "MELATONIN 5MG SL TAB",
+        "fa": "قرص ملاتونین ۵ میلی‌گرم SL"
+      },
+      {
+        "code": "04482",
+        "en": "MELATONIN 3MG TAB",
+        "fa": "قرص ملاتونین ۳ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3997/Melatonin",
+        "url": "https://www.darooyab.ir/G-3997/Melatonin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05CH01",
+      "label": "N05CH01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3997/Melatonin",
+      "label": "Melatonin"
+    },
+    {
+      "kind": "emc",
+      "url": "https://www.medicines.org.uk/emc/product/2809/smpc",
+      "label": "eMC Circadin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "For melatonin, no clinical data on exposed pregnancies are available.",
+      "refs": [
+        {
+          "source": "emc-circadin",
+          "section": "4.6"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Endogenous melatonin was measured in human breast milk thus exogenous melatonin is probably secreted into human milk.",
+      "refs": [
+        {
+          "source": "emc-circadin",
+          "section": "4.6"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Paediatric population The safety and efficacy of Circadin in children aged 0 to 18 years has not yet been established.",
+      "refs": [
+        {
+          "source": "emc-circadin",
+          "section": "4.2"
+        }
+      ]
+    }
+  }
+}

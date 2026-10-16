@@ -1,0 +1,348 @@
+{
+  "id": "imipenem-cilastatin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایمی‌پنم-سیلاستاتین",
+    "en": "Imipenem-cilastatin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "کارباپنم",
+    "en": "Carbapenem"
+  },
+  "brands": [
+    {
+      "name": "Primaxin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "primaxin",
+    "tienam",
+    "تینام",
+    "ایمی پنم"
+  ],
+  "formulations": [
+    {
+      "id": "vial-500",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "500 mg imipenem + 500 mg cilastatin vial (dose = imipenem)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "sepsis",
+      "label": {
+        "fa": "عفونت‌های شدید بزرگسال (ClCr ≥۹۰) — ۵۰۰ mg هر ۶ ساعت (یا ۱ g هر ۸ ساعت)",
+        "en": "Serious infections, adult (CrCl ≥90) — 500 mg every 6 h (or 1 g every 8 h)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4000,
+        "refs": [
+          {
+            "source": "fda-imipenem",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "برای ارگانیسم با حساسیت کمتر: ۱ g هر ۶ ساعت. دوز بر حسب ایمی‌پنم.",
+            "en": "Less susceptible organisms: 1 g every 6 h. Dose refers to imipenem."
+          },
+          "refs": [
+            {
+              "source": "fda-imipenem",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "sepsis",
+      "label": {
+        "fa": "کودک ۳ ماه به بالا (غیر CNS) — ۱۵ تا ۲۵ mg/kg هر ۶ ساعت",
+        "en": "Child ≥3 months (non-CNS) — 15–25 mg/kg every 6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 15,
+        "perKgPerDoseMax": 25,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 4000,
+        "refs": [
+          {
+            "source": "fda-imipenem",
+            "section": "2.2"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "برای عفونت CNS کودکان توصیه نمی‌شود (خطر تشنج).",
+            "en": "Not recommended for pediatric CNS infections (seizure risk)."
+          },
+          "refs": [
+            {
+              "source": "fda-imipenem",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به هر جزء فرآورده.",
+        "en": "Hypersensitivity to any component."
+      },
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش آلرژیک جدی؛ اسهال مرتبط با کلستریدیوم دیفیسیل؛ تشنج (به‌ویژه در نارسایی کلیه).",
+        "en": "Serious hypersensitivity; Clostridioides difficile-associated diarrhoea; seizures (especially with renal impairment)."
+      },
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 90,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۹۰ طبق جدول برچسب کاهش یابد؛ ClCr زیر ۱۵ فقط با دیالیز.",
+        "en": "Reduce per label table when CrCl <90; CrCl <15 only if dialysis is started within 48 h."
+      },
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [
+    {
+      "with": "valproate",
+      "text": {
+        "fa": "والپروات: کاهش سطح و خطر تشنج — همزمان توصیه نمی‌شود.",
+        "en": "Valproic acid: reduced levels and seizure risk — not recommended."
+      },
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500,
+        "dosesPerDay": 4
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 300,
+        "upperPerDose": 500
+      }
+    }
+  ],
+  "atc": [
+    "J01DH51"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Imipenem-cilastatin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050587",
+      "label": "NDA050587"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41d8abd-7792-4918-1b93-bd83ea01955e",
+      "label": "FDA Primaxin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a686013.html",
+      "label": "Imipenem and Cilastatin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DH51",
+      "label": "J01DH51"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from a small number of postmarketing cases with PRIMAXIN use in pregnancy are not sufficient to identify any drug-associated risks for major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are insufficient data on the presence of imipenem/cilastatin in human milk, and no data on the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "PRIMAXIN is not recommended in pediatric patients with CNS infections because of the risk of seizures.",
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-imipenem",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-imipenem",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA050587"
+  }
+}

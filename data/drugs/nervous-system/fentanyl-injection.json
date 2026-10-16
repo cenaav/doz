@@ -1,0 +1,399 @@
+{
+  "id": "fentanyl-injection",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فنتانیل تزریقی",
+    "en": "Fentanyl (injection)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آگونیست اپیوئیدی (بیهوشی)",
+    "en": "Opioid agonist (anaesthesia)"
+  },
+  "brands": [
+    {
+      "name": "Sublimaze",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sublimaze",
+    "فنتانیل",
+    "fentanyl citrate"
+  ],
+  "formulations": [
+    {
+      "id": "amp-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mcg/mL ampule or vial",
+      "concentration": {
+        "amount": 50,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "premed",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "پیش‌دارو بزرگسال — ۵۰ تا ۱۰۰ mcg عضلانی ۳۰ تا ۶۰ دقیقه پیش از جراحی",
+        "en": "Adult premedication — 50–100 mcg IM 30–60 min before surgery"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 50,
+        "perDoseMax": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط توسط افراد آموزش‌دیده با تجهیزات احیا، اکسیژن و آنتاگونیست اپیوئید در دسترس.",
+            "en": "Only by trained staff with resuscitation equipment, oxygen and an opioid antagonist available."
+          },
+          "refs": [
+            {
+              "source": "fda-fentanyl-inj",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adjunct",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "کمکی بیهوشی عمومی — کم ۲، متوسط ۲ تا ۲۰، زیاد ۲۰ تا ۵۰ mcg/kg",
+        "en": "Adjunct to general anaesthesia — low 2, moderate 2–20, high 20–50 mcg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "جدول برچسب (کل دوز): کم ۲ mcg/kg برای جراحی کوچک؛ متوسط ۲ تا ۲۰ mcg/kg برای جراحی بزرگ؛ زیاد ۲۰ تا ۵۰ mcg/kg برای جراحی قلب باز و اعصاب (تهویه مکانیکی لازم). به‌عنوان بیهوش‌کننده تنها: ۵۰ تا ۱۰۰ و گاه تا ۱۵۰ mcg/kg.",
+          "en": "Label table (total dose): low 2 mcg/kg for minor surgery; moderate 2–20 mcg/kg for major surgery; high 20–50 mcg/kg for open-heart or neuro surgery (ventilation required). As sole anaesthetic: 50–100, sometimes up to 150 mcg/kg."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "2.2, Table 1"
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "کودک ۲ تا ۱۲ سال — القا و نگهداری ۲ تا ۳ mcg/kg",
+        "en": "Children 2–12 y — induction and maintenance 2–3 mcg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب: دوز کاهش‌یافته ۲ تا ۳ mcg/kg برای القا و نگهداری. زیر ۲ سال ایمنی تعیین نشده است.",
+          "en": "Label: reduced dose of 2–3 mcg/kg for induction and maintenance. Safety under 2 y not established."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "8.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فنتانیل (مثلاً آنافیلاکسی).",
+        "en": "Hypersensitivity to fentanyl (e.g. anaphylaxis)."
+      },
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: دپرسیون تنفسی کشنده، اعتیاد، تداخل با بنزودیازپین‌ها و مهارکننده‌های CYP3A4. سفتی عضلات قفسه سینه با دوز بالا یا تزریق سریع.",
+        "en": "Boxed warning: life-threatening respiratory depression, addiction, interactions with benzodiazepines and CYP3A4 inhibitors. Chest-wall rigidity with high doses or rapid injection."
+      },
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "premed",
+      "formulation": "amp-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "mlPerDose": 1,
+        "upperPerDose": 100,
+        "upperMlPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "N01AH01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02545",
+        "en": "FENTANYLE 100MCG/H PATCH",
+        "fa": "پچ پوستی فنتانیل ۱۰۰ میکروگرم / H"
+      },
+      {
+        "code": "01987",
+        "en": "FENTANYLE 25MCG/H PATCH",
+        "fa": "پچ پوستی فنتانیل ۲۵ میکروگرم / H"
+      },
+      {
+        "code": "01988",
+        "en": "FENTANYLE 50MCG/H PATCH",
+        "fa": "پچ پوستی فنتانیل ۵۰ میکروگرم / H"
+      },
+      {
+        "code": "02546",
+        "en": "FENTANYLE 75MCG/H PATCH",
+        "fa": "پچ پوستی فنتانیل ۷۵ میکروگرم / H"
+      },
+      {
+        "code": "01359",
+        "en": "FENTANYLE CITRATE 50MCG/ML 10ML AMP",
+        "fa": "آمپول فنتانیل سیترات ۵۰ میکروگرم / میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "07830",
+        "en": "FENTANYLE CITRATE 50MCG/ML 2ML AMP",
+        "fa": "آمپول فنتانیل سیترات ۵۰ میکروگرم / میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "10376",
+        "en": "FENTANYLE CITRATE 50MCG/ML 5ML AMP",
+        "fa": "آمپول فنتانیل سیترات ۵۰ میکروگرم / میلی‌لیتر ۵ میلی‌لیتر"
+      },
+      {
+        "code": "52261",
+        "en": "FENTANYL (AS CITRATE) INJECTION PARENTERAL 50 ug/1mL 5 mL",
+        "fa": "فرآورده تزریقی فنتانیل (معادل سیترات) ۵۰ میکروگرم / ۱ میلی‌لیتر ۵ میلی‌لیتر"
+      },
+      {
+        "code": "51007",
+        "en": "FENTANYL CITRATE TABLET SUBLINGUAL 100 ug",
+        "fa": "قرص زیرزبانی فنتانیل سیترات ۱۰۰ میکروگرم"
+      },
+      {
+        "code": "51013",
+        "en": "FENTANYL CITRATE TABLET SUBLINGUAL 200 ug",
+        "fa": "قرص زیرزبانی فنتانیل سیترات ۲۰۰ میکروگرم"
+      },
+      {
+        "code": "51014",
+        "en": "FENTANYL CITRATE TABLET SUBLINGUAL 300 ug",
+        "fa": "قرص زیرزبانی فنتانیل سیترات ۳۰۰ میکروگرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-82/Fentanyl",
+        "url": "https://www.darooyab.ir/G-82/Fentanyl"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019115",
+      "label": "NDA019115"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfa8018a-4cbc-434b-e09e-782872b0340a",
+      "label": "FDA Fentanyl inj."
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605043.html",
+      "label": "Fentanyl"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612015.html",
+      "label": "Fentanyl Nasal Spray"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N01AH01",
+      "label": "N01AH01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-82/Fentanyl",
+      "label": "Fentanyl"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Use of opioid analgesics for an extended period of time during pregnancy may cause Neonatal Opioid Withdrawal Syndrome.",
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Fentanyl is present in breast milk.",
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and efficacy of Fentanyl Citrate Injection in children under two years of age has not been established.",
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, use caution when selecting a dosage for an elderly patient, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Use of opioids for an extended period of time may cause reduced fertility in females and males of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-fentanyl-inj",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-fentanyl-inj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019115"
+  }
+}

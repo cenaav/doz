@@ -1,0 +1,253 @@
+{
+  "id": "teriparatide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تری‌پاراتاید",
+    "en": "Teriparatide"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "آنالوگ هورمون پاراتیروئید (آنابولیک استخوان)",
+    "en": "Parathyroid hormone analogue (bone anabolic)"
+  },
+  "brands": [
+    {
+      "name": "Forteo",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "forteo",
+    "فورتئو",
+    "تری پاراتاید",
+    "سینوریتید"
+  ],
+  "formulations": [
+    {
+      "id": "pen",
+      "form": "injection",
+      "route": "sc",
+      "label": "Pen 250 mcg/mL (20 mcg per dose)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-forteo",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "op",
+      "disease": "osteoporosis",
+      "label": {
+        "fa": "پوکی استخوان پرخطر — ۲۰ mcg زیرجلدی یک بار در روز",
+        "en": "High-risk osteoporosis — 20 mcg SC once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-forteo",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در ران یا شکم. دوز اول در وضعیت نشسته یا درازکش (افت فشار وضعیتی).",
+            "en": "Into the thigh or abdomen. Give the first doses sitting or lying down (orthostatic hypotension)."
+          },
+          "refs": [
+            {
+              "source": "fda-forteo",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تری‌پاراتاید یا اجزای فرآورده.",
+        "en": "Hypersensitivity to teriparatide or its excipients."
+      },
+      "refs": [
+        {
+          "source": "fda-forteo",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "op",
+      "formulation": "pen",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 0.08
+      }
+    }
+  ],
+  "atc": [
+    "H05AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11464",
+        "en": "TERIPARATIDE 250MCG/ML 2.4ML INJ",
+        "fa": "فرآورده تزریقی تریپاراتاید ۲۵۰ میکروگرم / میلی‌لیتر ۲٫۴ میلی‌لیتر"
+      },
+      {
+        "code": "06027",
+        "en": "TERIPARATIDE 750MCG/3ML VIAL",
+        "fa": "ویال تریپاراتاید ۷۵۰ میکروگرم / ۳ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1446/Teriparatide",
+        "url": "https://www.darooyab.ir/G-1446/Teriparatide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021318",
+      "label": "NDA021318"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aae667c5-381f-4f92-93df-2ed6158d07b0",
+      "label": "FDA Forteo"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a624051.html",
+      "label": "Palopegteriparatide Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603018.html",
+      "label": "Teriparatide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H05AA02",
+      "label": "H05AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1446/Teriparatide",
+      "label": "Teriparatide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on FORTEO use in pregnant women to evaluate for drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-forteo",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Avoid FORTEO use in women who are breastfeeding.",
+      "refs": [
+        {
+          "source": "fda-forteo",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of FORTEO have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-forteo",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness of FORTEO have been observed between patients 65 years of age and older and younger adult patients.",
+      "refs": [
+        {
+          "source": "fda-forteo",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-forteo",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021318"
+  }
+}

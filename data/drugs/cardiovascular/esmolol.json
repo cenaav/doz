@@ -1,0 +1,325 @@
+{
+  "id": "esmolol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اسمولول",
+    "en": "Esmolol"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "بتابلاکر وریدی کوتاه‌اثر",
+    "en": "Short-acting IV beta-blocker"
+  },
+  "brands": [
+    {
+      "name": "Brevibloc",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "brevibloc",
+    "اسمولول"
+  ],
+  "formulations": [
+    {
+      "id": "bag-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL premixed bag or vial (10,000 mcg/mL)",
+      "concentration": {
+        "amount": 10000,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-brevibloc",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "bag-20",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/mL double-strength bag (20,000 mcg/mL)",
+      "concentration": {
+        "amount": 20000,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-brevibloc",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "svt",
+      "disease": "svt",
+      "label": {
+        "fa": "SVT یا تاکی‌کاردی سینوسی — نگهدارنده ۵۰ mcg/kg/دقیقه (تا ۲۰۰)",
+        "en": "SVT or sinus tachycardia — maintenance 50 mcg/kg/min (up to 200)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 50,
+        "perKgPerMinMax": 200
+      },
+      "refs": [
+        {
+          "source": "fda-brevibloc",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بارگذاری اختیاری ۵۰۰ mcg/kg در ۱ دقیقه، سپس ۵۰ mcg/kg/دقیقه برای ۴ دقیقه؛ تیتراسیون هر ≥۴ دقیقه بر اساس ضربان یا فشار.",
+            "en": "Optional load 500 mcg/kg over 1 min, then 50 mcg/kg/min for 4 min; titrate at ≥4-min intervals by rate or BP."
+          },
+          "refs": [
+            {
+              "source": "fda-brevibloc",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "periop",
+      "disease": "hypertensive-emergency",
+      "label": {
+        "fa": "تاکی‌کاردی و فشار خون حین و پس از عمل — ۵۰ تا ۲۰۰ mcg/kg/دقیقه",
+        "en": "Perioperative tachycardia and hypertension — 50–200 mcg/kg/min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 50,
+        "perKgPerMinMax": 200
+      },
+      "refs": [
+        {
+          "source": "fda-brevibloc",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بارگذاری ۵۰۰ mcg/kg در ۱ دقیقه (کنترل تدریجی) یا ۱ mg/kg در ۳۰ ثانیه (کنترل فوری) طبق برچسب.",
+            "en": "Load 500 mcg/kg over 1 min (gradual control) or 1 mg/kg over 30 s (immediate control) per label."
+          },
+          "refs": [
+            {
+              "source": "fda-brevibloc",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "برادی‌کاردی سینوسی شدید؛ بلوک بالاتر از درجه ۱؛ سندرم سینوس بیمار؛ نارسایی قلب جبران‌نشده؛ شوک کاردیوژنیک؛ پرفشاری ریوی؛ مصرف وریدی وراپامیل اخیر.",
+        "en": "Severe sinus bradycardia; heart block above first degree; sick sinus syndrome; decompensated heart failure; cardiogenic shock; pulmonary hypertension; recent IV verapamil."
+      },
+      "refs": [
+        {
+          "source": "fda-brevibloc",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "svt",
+      "formulation": "bag-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 3500,
+        "mlPerHour": 21,
+        "upperPerMin": 14000,
+        "upperMlPerHour": 84
+      }
+    },
+    {
+      "regimen": "periop",
+      "formulation": "bag-20",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 3500,
+        "mlPerHour": 10.5
+      }
+    }
+  ],
+  "atc": [
+    "C07AB09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06916",
+        "en": "ESMOLOL 100MG VIAL",
+        "fa": "ویال اسمولول ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "20430",
+        "en": "ESMOLOL 10MG VIAL",
+        "fa": "ویال اسمولول ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "01494",
+        "en": "ESMOLOL HCL 250/ML 10ML AMP",
+        "fa": "آمپول اسمولول هیدروکلراید ۲۵۰ / میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "52330",
+        "en": "ESMOLOL HYDROCHLORIDE INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 2500 mg",
+        "fa": "محلول تزریقی اسمولول هیدروکلراید ۲۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1668/Esmolol",
+        "url": "https://www.darooyab.ir/G-1668/Esmolol"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-brevibloc",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019386"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019386",
+      "label": "NDA019386"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=220a07b8-5c68-41a3-8705-fd91f14c50b4",
+      "label": "FDA Brevibloc"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB09",
+      "label": "C07AB09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1668/Esmolol",
+      "label": "Esmolol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "BREVIBLOC injection should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-brevibloc",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from BREVIBLOC injection, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-brevibloc",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of BREVIBLOC injection in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-brevibloc",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should usually start at the low end of the dosing range, reflecting greater frequency of decreased renal or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-brevibloc",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

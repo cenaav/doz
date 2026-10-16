@@ -1,0 +1,390 @@
+{
+  "id": "alteplase",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آلتپلاز (اکتیلیز)",
+    "en": "Alteplase"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "ترومبولیتیک (tPA)",
+    "en": "Thrombolytic (tPA)"
+  },
+  "brands": [
+    {
+      "name": "Activase",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "activase",
+    "actilyse",
+    "tPA",
+    "آلتپلاز",
+    "اکتیلیز"
+  ],
+  "formulations": [
+    {
+      "id": "vial-50",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "50 mg vial (1 mg/mL after reconstitution with 50 mL)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-activase",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-100",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "100 mg vial (1 mg/mL after reconstitution with 100 mL)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-activase",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "stroke",
+      "disease": "acute-ischemic-stroke",
+      "label": {
+        "fa": "سکته ایسکمیک حاد (ظرف ۳ ساعت) — ۰٫۹ mg/kg کل (حداکثر ۹۰ mg)",
+        "en": "Acute ischaemic stroke (within 3 h) — 0.9 mg/kg total (max 90 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.9,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-activase",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-activase",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 90,
+        "refs": [
+          {
+            "source": "fda-activase",
+            "section": "2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "۱۰٪ کل دوز به‌صورت بولوس در ۱ دقیقه، بقیه در ۶۰ دقیقه انفوزیون. فقط پس از رد خونریزی مغزی و رعایت معیارهای منع مصرف.",
+            "en": "10% of the total as a bolus over 1 min, the rest infused over 60 min. Only after excluding haemorrhage and checking contraindications."
+          },
+          "refs": [
+            {
+              "source": "fda-activase",
+              "section": "2"
+            },
+            {
+              "source": "fda-activase",
+              "section": "4.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "disease": "pulmonary-embolism",
+      "label": {
+        "fa": "آمبولی ریه حاد وسیع — ۱۰۰ mg وریدی در ۲ ساعت",
+        "en": "Acute massive pulmonary embolism — 100 mg IV over 2 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-activase",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هپارین پس از پایان انفوزیون وقتی PTT یا زمان ترومبین به ۲ برابر یا کمتر برگشت.",
+            "en": "Start heparin after the infusion once PTT or thrombin time is ≤2× normal."
+          },
+          "refs": [
+            {
+              "source": "fda-activase",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ami",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "انفارکتوس حاد قلبی — رژیم سریع بر اساس وزن (حداکثر ۱۰۰ mg)",
+        "en": "Acute MI — accelerated weight-based regimen (max 100 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "برچسب، جدول ۱: بالای ۶۷ kg ← بولوس ۱۵ mg، ۵۰ mg در ۳۰ دقیقه، ۳۵ mg در ۶۰ دقیقه بعد. ۶۷ kg و کمتر ← بولوس ۱۵ mg، ۰٫۷۵ mg/kg در ۳۰ دقیقه، ۰٫۵ mg/kg در ۶۰ دقیقه. همراه هپارین و آسپرین. جمع حداکثر ۱۰۰ mg.",
+          "en": "Label Table 1: >67 kg → 15 mg bolus, 50 mg over 30 min, 35 mg over the next 60 min. ≤67 kg → 15 mg bolus, 0.75 mg/kg over 30 min, 0.5 mg/kg over 60 min. With heparin and aspirin. Total ≤100 mg."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-activase",
+          "section": "2.2, Table 1"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "general",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی داخلی فعال؛ جراحی یا ضربه اخیر مغز یا نخاع؛ ضایعه داخل جمجمه با خطر خونریزی؛ اختلال خونریزی؛ فشار خون شدید کنترل‌نشده. سکته: خونریزی داخل جمجمه یا زیر عنکبوتیه. MI و PE: سکته اخیر.",
+        "en": "Active internal bleeding; recent intracranial or intraspinal surgery or serious head trauma; intracranial conditions raising bleeding risk; bleeding diathesis; severe uncontrolled hypertension. Stroke: intracranial or subarachnoid haemorrhage. MI and PE: recent stroke."
+      },
+      "refs": [
+        {
+          "source": "fda-activase",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "stroke",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 63,
+        "mlPerDose": 63
+      }
+    },
+    {
+      "regimen": "stroke",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 120
+      },
+      "expect": {
+        "perDose": 90
+      }
+    },
+    {
+      "regimen": "pe",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 100
+      }
+    }
+  ],
+  "atc": [
+    "B01AD02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11407",
+        "en": "ALTEPLASE 10MG VIAL",
+        "fa": "ویال آلتپلاز ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "22174",
+        "en": "ALTEPLASE 20MG VIAL",
+        "fa": "ویال آلتپلاز ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "05775",
+        "en": "ALTEPLASE 50MG VIAL",
+        "fa": "ویال آلتپلاز ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1517/Alteplase",
+        "url": "https://www.darooyab.ir/G-1517/Alteplase"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-activase",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103172"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103172",
+      "label": "BLA103172"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c669f77c-fa48-478b-a14b-80b20a0139c2",
+      "label": "FDA Activase"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625001.html",
+      "label": "Alteplase Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AD02",
+      "label": "B01AD02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1517/Alteplase",
+      "label": "Alteplase"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Published studies and case reports on alteplase use in pregnant women are insufficient to inform a drug associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-activase",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of alteplase in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-activase",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of Activase in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-activase",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Acute Ischemic Stroke In exploratory, multivariate analyses of Studies 1 and 2, age greater than 77 years was one of several interrelated baseline characteristics associated with an increased risk of intracranial hemorrhage.",
+      "refs": [
+        {
+          "source": "fda-activase",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

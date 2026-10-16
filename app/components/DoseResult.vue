@@ -22,6 +22,15 @@ const msg = (m: Msg) => (m.text ? lt(m.text) : t(`engine.${m.code}`, m.params ??
 
     <div v-else-if="result.status === 'notCalculated'" class="rounded-xl border border-amber-300 bg-amber-50 p-3 text-sm dark:border-amber-800 dark:bg-amber-950">⛔ {{ lt(result.reason) }}</div>
 
+    <div v-else-if="result.perMin != null" class="rounded-2xl bg-brand-50 p-4 dark:bg-brand-900/30">
+      <p class="text-sm text-slate-600 dark:text-slate-300">{{ $t('calc.pumpRate') }}</p>
+      <p v-if="result.mlPerHour != null" class="text-2xl font-bold text-brand-700 dark:text-brand-300">
+        {{ fmt(result.mlPerHour) }}<template v-if="result.upper?.mlPerHour != null"> – {{ fmt(result.upper.mlPerHour) }}</template> {{ $t('units.mlPerHour') }}
+      </p>
+      <p class="mt-1 text-sm">= {{ fmt(result.perMin) }}<template v-if="result.upper?.perMin != null"> – {{ fmt(result.upper.perMin) }}</template> {{ u }}/min</p>
+      <p class="mt-1 text-xs text-slate-500">{{ $t('calc.infusionNote') }}</p>
+    </div>
+
     <template v-else>
       <div class="rounded-2xl bg-brand-50 p-4 dark:bg-brand-900/30">
         <p class="text-sm text-slate-600 dark:text-slate-300">{{ $t('calc.perDose') }}</p>

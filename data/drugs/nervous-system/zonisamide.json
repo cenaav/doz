@@ -1,0 +1,284 @@
+{
+  "id": "zonisamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "زونیسامید",
+    "en": "Zonisamide"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدصرع (سولفونامید)",
+    "en": "Antiepileptic (sulfonamide)"
+  },
+  "brands": [
+    {
+      "name": "Zonegran",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zonegran",
+    "زونیسامید"
+  ],
+  "formulations": [
+    {
+      "id": "cap-25",
+      "form": "capsule",
+      "route": "oral",
+      "label": "25 mg capsule",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zonegran",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zonegran",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adj",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع پارشیل (کمکی، بالای ۱۶ سال) — ۱۰۰ mg روزانه، هر ۲ هفته ۱۰۰ mg بیشتر تا ۴۰۰ mg",
+        "en": "Partial seizures (adjunct, >16 y) — 100 mg daily, +100 mg every 2 weeks up to 400 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 100,
+          "increment": 100,
+          "incrementEveryDays": 14,
+          "targetMin": 100,
+          "targetMax": 400,
+          "max": 600
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-zonegran",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یک یا دو بار در روز. ۱۰۰ تا ۶۰۰ mg/روز مؤثر بوده ولی بالای ۴۰۰ پاسخ بیشتری دیده نشده؛ تجربه بالای ۶۰۰ کم است. کپسول کامل بلعیده شود.",
+            "en": "Once or twice daily. 100–600 mg/day effective but no added response above 400; little experience above 600. Swallow capsules whole."
+          },
+          "refs": [
+            {
+              "source": "fda-zonegran",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سولفونامیدها یا زونیسامید.",
+        "en": "Hypersensitivity to sulfonamides or zonisamide."
+      },
+      "refs": [
+        {
+          "source": "fda-zonegran",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش‌های کشنده سولفونامیدی (SJS/TEN، نکروز کبد، آنمی آپلاستیک)؛ کاهش تعریق و هیپرترمی در کودکان؛ اسیدوز متابولیک؛ سنگ کلیه؛ افکار خودکشی.",
+        "en": "Potentially fatal sulfonamide reactions (SJS/TEN, hepatic necrosis, aplastic anaemia); oligohidrosis and hyperthermia in children; metabolic acidosis; kidney stones; suicidal ideation."
+      },
+      "refs": [
+        {
+          "source": "fda-zonegran",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adj",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N03AX15"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "03545",
+        "en": "ZONISAMIDE 100MG CAP",
+        "fa": "کپسول زونیسامید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "09500",
+        "en": "ZONISAMIDE 100MG TAB",
+        "fa": "قرص زونیسامید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "07684",
+        "en": "ZONISAMIDE 25MG CAP",
+        "fa": "کپسول زونیسامید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "07854",
+        "en": "ZONISAMIDE 50MG CAP",
+        "fa": "کپسول زونیسامید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-692/Zonisamide",
+        "url": "https://www.darooyab.ir/G-692/Zonisamide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020789",
+      "label": "NDA020789"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d12de43e-3ac3-4335-bc85-70d7366a91eb",
+      "label": "FDA Zonegran"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603008.html",
+      "label": "Zonisamide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AX15",
+      "label": "N03AX15"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-692/Zonisamide",
+      "label": "Zonisamide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "ZONEGRAN should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-zonegran",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of ZONEGRAN in children under age 16 have not been established.",
+      "refs": [
+        {
+          "source": "fda-zonegran",
+          "section": "Pediatric Use:"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-zonegran",
+          "section": "Geriatric Use:"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-zonegran",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020789"
+  }
+}

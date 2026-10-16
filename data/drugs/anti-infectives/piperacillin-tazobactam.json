@@ -1,0 +1,559 @@
+{
+  "id": "piperacillin-tazobactam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پیپراسیلین-تازوباکتام",
+    "en": "Piperacillin-tazobactam"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "پنی‌سیلین + مهارکننده بتالاکتاماز",
+    "en": "Penicillin + beta-lactamase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Zosyn",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zosyn",
+    "tazocin",
+    "تازوسین",
+    "پیپ تازو"
+  ],
+  "formulations": [
+    {
+      "id": "bulk",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "40.5 g pharmacy bulk bottle (36 g piperacillin + 4.5 g tazobactam)",
+      "concentration": {
+        "amount": 40500,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "عفونت داخل شکم، پوست، لگن، پنومونی اکتسابی — بزرگسال ۳٫۳۷۵ g هر ۶ ساعت",
+        "en": "Intra-abdominal, skin, pelvic infections and CAP — adult 3.375 g every 6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 3375,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر حسب مجموع پیپراسیلین + تازوباکتام؛ انفوزیون ۳۰ دقیقه‌ای. بطری ۴۰٫۵ گرمی فقط داروخانه (فرآورده‌های تک‌دوز ۲٫۲۵/۳٫۳۷۵/۴٫۵ g هم موجود است).",
+            "en": "Dose as total piperacillin + tazobactam; 30-min infusion. 40.5 g bottle is a pharmacy bulk package (single-dose 2.25/3.375/4.5 g also exist)."
+          },
+          "refs": [
+            {
+              "source": "fda-piptazo",
+              "section": "2"
+            },
+            {
+              "source": "fda-piptazo",
+              "section": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hap",
+      "disease": "hospital-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی بیمارستانی — بزرگسال ۴٫۵ g هر ۶ ساعت + آمینوگلیکوزید",
+        "en": "Nosocomial pneumonia — adult 4.5 g every 6 h + an aminoglycoside"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4500,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر حسب مجموع پیپراسیلین + تازوباکتام؛ انفوزیون ۳۰ دقیقه‌ای. بطری ۴۰٫۵ گرمی فقط داروخانه (فرآورده‌های تک‌دوز ۲٫۲۵/۳٫۳۷۵/۴٫۵ g هم موجود است).",
+            "en": "Dose as total piperacillin + tazobactam; 30-min infusion. 40.5 g bottle is a pharmacy bulk package (single-dose 2.25/3.375/4.5 g also exist)."
+          },
+          "refs": [
+            {
+              "source": "fda-piptazo",
+              "section": "2"
+            },
+            {
+              "source": "fda-piptazo",
+              "section": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iai-infant",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "آپاندیسیت یا پریتونیت — شیرخوار ۲ تا ۹ ماه: ۹۰ mg/kg هر ۸ ساعت",
+        "en": "Appendicitis or peritonitis — infant 2–9 months: 90 mg/kg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 9,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 90,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "2.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر حسب مجموع پیپراسیلین + تازوباکتام؛ انفوزیون ۳۰ دقیقه‌ای. بطری ۴۰٫۵ گرمی فقط داروخانه (فرآورده‌های تک‌دوز ۲٫۲۵/۳٫۳۷۵/۴٫۵ g هم موجود است).",
+            "en": "Dose as total piperacillin + tazobactam; 30-min infusion. 40.5 g bottle is a pharmacy bulk package (single-dose 2.25/3.375/4.5 g also exist)."
+          },
+          "refs": [
+            {
+              "source": "fda-piptazo",
+              "section": "2"
+            },
+            {
+              "source": "fda-piptazo",
+              "section": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iai-child",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "آپاندیسیت یا پریتونیت — بالای ۹ ماه تا ۴۰ kg: ۱۱۲٫۵ mg/kg هر ۸ ساعت",
+        "en": "Appendicitis or peritonitis — >9 months up to 40 kg: 112.5 mg/kg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 9,
+          "unit": "month"
+        },
+        "maxWeightKg": 40
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 112.5,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "2.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر حسب مجموع پیپراسیلین + تازوباکتام؛ انفوزیون ۳۰ دقیقه‌ای. بطری ۴۰٫۵ گرمی فقط داروخانه (فرآورده‌های تک‌دوز ۲٫۲۵/۳٫۳۷۵/۴٫۵ g هم موجود است).",
+            "en": "Dose as total piperacillin + tazobactam; 30-min infusion. 40.5 g bottle is a pharmacy bulk package (single-dose 2.25/3.375/4.5 g also exist)."
+          },
+          "refs": [
+            {
+              "source": "fda-piptazo",
+              "section": "2"
+            },
+            {
+              "source": "fda-piptazo",
+              "section": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hap-infant",
+      "disease": "hospital-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی بیمارستانی — شیرخوار ۲ تا ۹ ماه: ۹۰ mg/kg هر ۶ ساعت",
+        "en": "Nosocomial pneumonia — infant 2–9 months: 90 mg/kg every 6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 9,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 90,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "2.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر حسب مجموع پیپراسیلین + تازوباکتام؛ انفوزیون ۳۰ دقیقه‌ای. بطری ۴۰٫۵ گرمی فقط داروخانه (فرآورده‌های تک‌دوز ۲٫۲۵/۳٫۳۷۵/۴٫۵ g هم موجود است).",
+            "en": "Dose as total piperacillin + tazobactam; 30-min infusion. 40.5 g bottle is a pharmacy bulk package (single-dose 2.25/3.375/4.5 g also exist)."
+          },
+          "refs": [
+            {
+              "source": "fda-piptazo",
+              "section": "2"
+            },
+            {
+              "source": "fda-piptazo",
+              "section": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hap-child",
+      "disease": "hospital-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی بیمارستانی — بالای ۹ ماه تا ۴۰ kg: ۱۱۲٫۵ mg/kg هر ۶ ساعت",
+        "en": "Nosocomial pneumonia — >9 months up to 40 kg: 112.5 mg/kg every 6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 9,
+          "unit": "month"
+        },
+        "maxWeightKg": 40
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 112.5,
+        "intervalHours": 6
+      },
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "2.4"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بر حسب مجموع پیپراسیلین + تازوباکتام؛ انفوزیون ۳۰ دقیقه‌ای. بطری ۴۰٫۵ گرمی فقط داروخانه (فرآورده‌های تک‌دوز ۲٫۲۵/۳٫۳۷۵/۴٫۵ g هم موجود است).",
+            "en": "Dose as total piperacillin + tazobactam; 30-min infusion. 40.5 g bottle is a pharmacy bulk package (single-dose 2.25/3.375/4.5 g also exist)."
+          },
+          "refs": [
+            {
+              "source": "fda-piptazo",
+              "section": "2"
+            },
+            {
+              "source": "fda-piptazo",
+              "section": "3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه واکنش آلرژیک به پنی‌سیلین‌ها، سفالوسپورین‌ها یا مهارکننده‌های بتالاکتاماز.",
+        "en": "History of allergic reaction to penicillins, cephalosporins or beta-lactamase inhibitors."
+      },
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش آلرژیک جدی؛ اسهال مرتبط با کلستریدیوم دیفیسیل؛ تشنج (به‌ویژه در نارسایی کلیه).",
+        "en": "Serious hypersensitivity; Clostridioides difficile-associated diarrhoea; seizures (especially with renal impairment)."
+      },
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 40,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۲۰ تا ۴۰ و زیر ۲۰: کاهش دوز طبق جدول برچسب.",
+        "en": "CrCl 20–40 and <20: reduce per label table."
+      },
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "bulk",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 3375,
+        "dosesPerDay": 4
+      }
+    },
+    {
+      "regimen": "iai-child",
+      "formulation": "bulk",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 2250
+      }
+    },
+    {
+      "regimen": "hap-infant",
+      "formulation": "bulk",
+      "input": {
+        "ageMonths": 5,
+        "weightKg": 6
+      },
+      "expect": {
+        "perDose": 540
+      }
+    },
+    {
+      "regimen": "hap",
+      "formulation": "bulk",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4500,
+        "dosesPerDay": 4
+      }
+    },
+    {
+      "regimen": "hap-child",
+      "formulation": "bulk",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 2250,
+        "dosesPerDay": 4
+      }
+    },
+    {
+      "regimen": "iai-infant",
+      "formulation": "bulk",
+      "input": {
+        "ageMonths": 5,
+        "weightKg": 6
+      },
+      "expect": {
+        "perDose": 540,
+        "dosesPerDay": 3
+      }
+    }
+  ],
+  "atc": [
+    "J01CR05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Piperacillin-tazobactam"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203720",
+      "label": "ANDA203720"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8e3cc43-238d-4a23-95dc-157c85f83184",
+      "label": "FDA Pip-tazo"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a694003.html",
+      "label": "Piperacillin and Tazobactam Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01CR05",
+      "label": "J01CR05"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Piperacillin and tazobactam cross the placenta in humans.",
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Piperacillin is excreted in human milk; tazobactam concentrations in human milk have not been studied.",
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of piperacillin and tazobactam for injection for intra-abdominal infections, and nosocomial pneumonia have been established in pediatric patients 2 months of age and older.",
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-piptazo",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-piptazo",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA203720"
+  }
+}

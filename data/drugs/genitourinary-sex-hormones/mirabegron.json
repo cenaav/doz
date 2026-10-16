@@ -1,0 +1,363 @@
+{
+  "id": "mirabegron",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "میرابگرون",
+    "en": "Mirabegron"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آگونیست بتا-۳ آدرنرژیک",
+    "en": "Beta-3 adrenergic agonist"
+  },
+  "brands": [
+    {
+      "name": "Myrbetriq",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "myrbetriq",
+    "betmiga",
+    "میرابگرون"
+  ],
+  "formulations": [
+    {
+      "id": "er-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg extended-release tablet (swallow whole)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "er-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg extended-release tablet (swallow whole)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oab",
+      "disease": "overactive-bladder",
+      "label": {
+        "fa": "مثانه بیش‌فعال — بزرگسال: ۲۵ mg یک بار در روز، پس از ۴ تا ۸ هفته تا ۵۰ mg",
+        "en": "Overactive bladder — adult: 25 mg once daily, up to 50 mg after 4–8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 25,
+          "increment": 25,
+          "incrementEveryDays": 28,
+          "max": 50
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه سولیفناسین: میرابگرون ۲۵ mg + سولیفناسین ۵ mg.",
+            "en": "With solifenacin: mirabegron 25 mg + solifenacin 5 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-myrbetriq",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ndo",
+      "disease": "neurogenic-bladder",
+      "label": {
+        "fa": "مثانه نوروژنیک کودک (۳ سال به بالا، ۳۵ kg به بالا) — ۲۵ mg روزانه، پس از ۴ تا ۸ هفته تا ۵۰ mg",
+        "en": "Pediatric NDO (≥3 y, ≥35 kg) — 25 mg daily, up to 50 mg after 4–8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 35
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 1,
+        "titration": {
+          "start": 25,
+          "increment": 25,
+          "incrementEveryDays": 28,
+          "max": 50
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کودک زیر ۳۵ kg: گرانول Myrbetriq (با قرص mg به mg جایگزین نیست). کودک: همراه غذا.",
+            "en": "Children <35 kg: Myrbetriq Granules (not interchangeable mg-for-mg). Children: take with food."
+          },
+          "refs": [
+            {
+              "source": "fda-myrbetriq",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-myrbetriq",
+              "section": "2.7"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به میرابگرون یا اجزای فرآورده.",
+        "en": "Hypersensitivity to mirabegron or excipients."
+      },
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "افزایش فشار خون (پایش)؛ احتباس ادرار با انسداد خروجی مثانه یا آنتی‌موسکارینی؛ آنژیوادم.",
+        "en": "Raised blood pressure (monitor); urinary retention with outlet obstruction or antimuscarinics; angioedema."
+      },
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "eGFR ۱۵ تا ۲۹: حداکثر ۲۵ mg؛ زیر ۱۵: توصیه نمی‌شود.",
+        "en": "eGFR 15–29: max 25 mg; <15: not recommended."
+      },
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oab",
+      "formulation": "er-25",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "ndo",
+      "formulation": "er-25",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G04BD12"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51204",
+        "en": "MIRABEGRON TABLET, EXTENDED RELEASE ORAL 50 mg",
+        "fa": "قرص آهسته‌رهش میرابگرون ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5511/Mirabegron",
+        "url": "https://www.darooyab.ir/G-5511/Mirabegron"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202611",
+      "label": "NDA202611"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ba9e9e15-e666-4c56-9271-2e24739cfa2d",
+      "label": "FDA Myrbetriq"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612038.html",
+      "label": "Mirabegron"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BD12",
+      "label": "G04BD12"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5511/Mirabegron",
+      "label": "Mirabegron"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no studies with the use of MYRBETRIQ/MYRBETRIQ Granules in pregnant women or adolescents to inform a drug-associated risk of major birth defects, miscarriages, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of mirabegron in human milk, the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness have been established only for the following pediatric indications: • MYRBETRIQ: Treatment of neurogenic detrusor overactivity (NDO) in pediatric patients 3 years of age and older and weighing 35 kg or more. • MYRBETRIQ Granules: Treatment of neurogenic detrusor overactivity (NDO) in …",
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between patients younger than 65 years of age and those 65 years of age or older in these studies.",
+      "refs": [
+        {
+          "source": "fda-myrbetriq",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-myrbetriq",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA202611"
+  }
+}

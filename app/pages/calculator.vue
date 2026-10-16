@@ -7,7 +7,7 @@ const localePath = useLocalePath()
 usePageMeta(() => t('quick.title'), () => t('quick.description'))
 
 type Mode = 'weight' | 'age'
-const MODE_TYPES: Record<Mode, string[]> = { weight: ['weightBased', 'bsa', 'loading', 'weightBand'], age: ['ageBand', 'fixed', 'titration'] }
+const MODE_TYPES: Record<Mode, string[]> = { weight: ['weightBased', 'bsa', 'loading', 'weightBand', 'infusion'], age: ['ageBand', 'fixed', 'titration'] }
 const mode = ref<Mode>('weight')
 const category = ref<string | null>(null)
 const drugId = ref('')

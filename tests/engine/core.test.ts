@@ -164,3 +164,35 @@ describe('vials', () => {
     expect(r.mlPerDose).toBeUndefined()
   })
 })
+
+describe('infusion', () => {
+  // Norepinephrine-like bag: 4 mg in 1000 mL = 4 mcg/mL.
+  const bag: Formulation = { id: 'bag', form: 'injection', route: 'iv', label: '4 mcg/mL', concentration: { amount: 4, unit: 'mcg', perVolumeMl: 1 }, markets: ['US'], refs: R }
+  test('mcg/kg/min → mcg/min and pump rate in mL/h', () => {
+    const r = calculate(drug([{ type: 'infusion', unit: 'mcg', dose: { perKgPerMin: 0.1 } }], [bag]), 'r0', 'bag', { ageDays: yr(40), weightKg: 70 })
+    expect(r).toMatchObject({ status: 'ok', perMin: 7, mlPerHour: 105 })
+  })
+  test('fixed mcg/min ignores weight', () => {
+    const r = calculate(drug([{ type: 'infusion', unit: 'mcg', dose: { perMin: 8 } }], [bag]), 'r0', 'bag', { ageDays: yr(40) })
+    expect(r).toMatchObject({ status: 'ok', perMin: 8, mlPerHour: 120 })
+  })
+  test('range gives upper rate', () => {
+    const r = calculate(drug([{ type: 'infusion', unit: 'mcg', dose: { perKgPerMin: 2, perKgPerMinMax: 20 } }], [bag]), 'r0', 'bag', { ageDays: yr(40), weightKg: 50 })
+    expect(r.perMin).toBe(100)
+    expect(r.mlPerHour).toBe(1500)
+    expect(r.upper?.perMin).toBe(1000)
+    expect(r.upper?.mlPerHour).toBe(15000)
+  })
+  test('weight-based infusion needs weight', () => {
+    const r = calculate(drug([{ type: 'infusion', unit: 'mcg', dose: { perKgPerMin: 5 } }], [bag]), 'r0', 'bag', { ageDays: yr(40) })
+    expect(r.status).toBe('invalidInput')
+  })
+})
+
+describe('mEq unit', () => {
+  test('mEq dose converts to mL like mg', () => {
+    const kcl: Formulation = { id: 'k', form: 'solution', route: 'oral', label: '20 mEq/15 mL', concentration: { amount: 20, unit: 'mEq', perVolumeMl: 15 }, markets: ['US'], refs: R }
+    const r = calculate(drug([{ type: 'fixed', unit: 'mEq', dose: { perDose: 20, dosesPerDay: 2 } }], [kcl]), 'r0', 'k', { ageDays: yr(40), weightKg: 70 })
+    expect(r).toMatchObject({ status: 'ok', unit: 'mEq', perDose: 20, mlPerDose: 15 })
+  })
+})

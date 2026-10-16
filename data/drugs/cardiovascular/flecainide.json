@@ -1,0 +1,386 @@
+{
+  "id": "flecainide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلکائینید",
+    "en": "Flecainide"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "ضدآریتمی کلاس IC",
+    "en": "Class IC antiarrhythmic"
+  },
+  "brands": [
+    {
+      "name": "Tambocor",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tambocor",
+    "فلکاینید",
+    "فلکائینید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet (scored)",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pafpsvt",
+      "disease": "atrial-fibrillation",
+      "label": {
+        "fa": "PAF یا PSVT — ۵۰ mg هر ۱۲ ساعت، افزایش ۵۰ mg دو بار در روز هر ۴ روز، حداکثر ۳۰۰ mg/روز",
+        "en": "PAF or PSVT — 50 mg every 12 h, +50 mg twice daily every 4 days, max 300 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 100,
+          "increment": 100,
+          "incrementEveryDays": 4,
+          "max": 300
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "psvt",
+      "disease": "svt",
+      "label": {
+        "fa": "PSVT — ۵۰ mg هر ۱۲ ساعت (حداکثر ۳۰۰ mg/روز)",
+        "en": "PSVT — 50 mg every 12 h (max 300 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 100,
+          "increment": 100,
+          "incrementEveryDays": 4,
+          "max": 300
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "vt",
+      "disease": "ventricular-arrhythmia",
+      "label": {
+        "fa": "VT پایدار — ۱۰۰ mg هر ۱۲ ساعت، حداکثر ۴۰۰ mg/روز (شروع در بیمارستان)",
+        "en": "Sustained VT — 100 mg every 12 h, max 400 mg/day (start in hospital)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "titration",
+      "unit": "mg",
+      "dose": {
+        "dividedDoses": 2,
+        "titration": {
+          "start": 200,
+          "increment": 100,
+          "incrementEveryDays": 4,
+          "targetMax": 300,
+          "max": 400
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با پایش ریتم در بیمارستان شروع شود؛ بیشتر بیماران بیش از ۱۵۰ mg هر ۱۲ ساعت لازم ندارند. افزایش دوز زودتر از هر ۴ روز نه.",
+            "en": "Start in hospital with rhythm monitoring; most need no more than 150 mg every 12 h. Increase no more often than every 4 days."
+          },
+          "refs": [
+            {
+              "source": "fda-flecainide",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بلوک AV درجه ۲ یا ۳، یا بلوک دودسته‌ای بدون پیس‌میکر؛ شوک کاردیوژنیک؛ حساسیت.",
+        "en": "Pre-existing 2nd/3rd-degree AV block or bifascicular block without a pacemaker; cardiogenic shock; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش مرگ‌ومیر پس از MI (CAST)؛ در AF مزمن توصیه نمی‌شود؛ اثر پروآریتمیک.",
+        "en": "Boxed warning: excess mortality after MI (CAST); not recommended for chronic AF; proarrhythmic effects."
+      },
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pafpsvt",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "vt",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "psvt",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C01BC04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00536",
+        "en": "FLECAINIDE 100MG TAB",
+        "fa": "قرص فلکائینید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "07909",
+        "en": "FLECAINIDE ACETATE 10MG/ML AMP",
+        "fa": "آمپول فلکائینید استات ۱۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "11913",
+        "en": "FLECAINIDE ACETATE 50MG TAB",
+        "fa": "قرص فلکائینید استات ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1684/Flecainide",
+        "url": "https://www.darooyab.ir/G-1684/Flecainide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075442",
+      "label": "ANDA075442"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee9595d5-08a1-4529-9215-ddc3c7f929c4",
+      "label": "FDA Flecainide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608040.html",
+      "label": "Flecainide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BC04",
+      "label": "C01BC04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1684/Flecainide",
+      "label": "Flecainide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C.",
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Results from a multiple dose study conducted in mothers soon after delivery indicates that flecainide is excreted in human breast milk in concentrations as high as 4 times (with average levels about 2.5 times) corresponding plasma levels; assuming a maternal plasma level at the top of the therapeutic range (1 mcg/mL), …",
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of flecainide in the fetus, infant, or child have not been established in double-blind, randomized, placebo-controlled trials.",
+      "refs": [
+        {
+          "source": "fda-flecainide",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-flecainide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075442"
+  }
+}

@@ -28,7 +28,7 @@ export interface Source {
 
 export interface Range { minAge?: Age | null; maxAge?: Age | null; minWeightKg?: number | null; maxWeightKg?: number | null }
 
-export type DoseUnit = 'mg' | 'mcg' | 'g' | 'unit' | 'mL' | 'drop' | 'application' | 'spray'
+export type DoseUnit = 'mg' | 'mcg' | 'g' | 'unit' | 'mEq' | 'mL' | 'drop' | 'application' | 'spray'
 export interface Concentration { amount: number; unit: DoseUnit; perVolumeMl?: number; perUnit?: 'tablet' | 'capsule' | 'sachet' | 'actuation' | 'tube' | 'drop' | 'application' | 'spray' | 'vial'; scored?: boolean }
 export interface Limits { maxPerDose?: number; maxPerDay?: number; maxPerKgPerDose?: number; maxPerKgPerDay?: number; refs: Ref[] }
 export interface Component { name: I18nText; amount: number; unit: DoseUnit; limits?: Limits }
@@ -47,7 +47,7 @@ export interface Note { text: I18nText; refs: Ref[] }
 export interface AgeBandRow { minAge: Age; maxAge: Age | null; perDose: number; dosesPerDay: number; refs?: Ref[] }
 export interface LoadingDay { fromDay: number; toDay: number; perKgPerDay: number; maxPerDay?: number }
 export interface TitrationSteps { start: number; increment?: number; incrementEveryDays?: number; targetMin?: number; targetMax?: number; max: number }
-export type RegimenType = 'weightBased' | 'fixed' | 'ageBand' | 'bsa' | 'loading' | 'titration' | 'weightBand' | 'notCalculated'
+export type RegimenType = 'weightBased' | 'fixed' | 'ageBand' | 'bsa' | 'loading' | 'titration' | 'weightBand' | 'infusion' | 'notCalculated'
 export interface Regimen {
   id: string
   disease: string
@@ -66,6 +66,11 @@ export interface Regimen {
     perDoseMax?: number
     dosesPerDay?: number
     perM2PerDay?: number
+    /** Continuous infusion: dose per kg per minute, or a fixed dose per minute (regimen unit). */
+    perKgPerMin?: number
+    perKgPerMinMax?: number
+    perMin?: number
+    perMinMax?: number
     bands?: AgeBandRow[]
     days?: LoadingDay[]
     titration?: TitrationSteps

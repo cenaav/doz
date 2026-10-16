@@ -500,6 +500,7 @@
         "mcg",
         "g",
         "unit",
+        "mEq",
         "mL",
         "drop",
         "application",
@@ -769,6 +770,7 @@
             "loading",
             "titration",
             "weightBand",
+            "infusion",
             "notCalculated"
           ]
         },
@@ -947,6 +949,22 @@
               "exclusiveMinimum": 0
             },
             "perDoseMax": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "perKgPerMin": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "perKgPerMinMax": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "perMin": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "perMinMax": {
               "type": "number",
               "exclusiveMinimum": 0
             }
@@ -1202,6 +1220,34 @@
               }
             }
           }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "infusion"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dose": {
+                "type": "object",
+                "oneOf": [
+                  {
+                    "required": [
+                      "perKgPerMin"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "perMin"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
         }
       ]
     },
@@ -1289,6 +1335,18 @@
               "type": "number"
             },
             "upperMlPerDoseRounded": {
+              "type": "number"
+            },
+            "perMin": {
+              "type": "number"
+            },
+            "mlPerHour": {
+              "type": "number"
+            },
+            "upperPerMin": {
+              "type": "number"
+            },
+            "upperMlPerHour": {
               "type": "number"
             }
           }
