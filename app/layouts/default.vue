@@ -17,6 +17,7 @@ const isHome = computed(() => route.path.replace(/\/$/, '') === localePath('/').
         <NuxtLink :to="localePath('/about')" class="ms-1 underline">{{ $t('nav.about') }}</NuxtLink> ·
         <NuxtLink :to="localePath('/sources')" class="underline">{{ $t('nav.sources') }}</NuxtLink>
       </p>
+      <p class="font-medium text-slate-600 dark:text-slate-400">{{ $t('footer.liability') }}</p>
       <p>
         {{ $t('footer.inspired') }}
         <a href="https://nameofstone.github.io/Saphira/" target="_blank" rel="noopener" class="underline">Saphira</a>{{ $t('footer.inspiredTail') }}

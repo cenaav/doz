@@ -84,6 +84,9 @@ const msg = (m: Msg) => (m.text ? lt(m.text) : t(`engine.${m.code}`, m.params ??
 
     <div class="text-sm"><span class="font-medium">{{ $t('calc.refsUsed') }}:</span> <RefChips :refs="result.refs" /></div>
     <p v-if="drug.review.status !== 'verified'" class="text-xs font-bold text-amber-700 dark:text-amber-300">⚠ {{ $t('review.unverifiedResult') }}</p>
-    <p class="text-xs text-slate-500">{{ $t('disclaimer.short') }}</p>
+    <div role="alert" class="rounded-xl border-2 border-red-500 bg-red-50 p-3 text-sm leading-7 text-red-700 dark:border-red-700 dark:bg-red-950 dark:text-red-300">
+      <p class="font-bold">{{ $t('calc.warnTitle') }}</p>
+      <p class="font-medium">{{ $t('calc.warnBody') }}</p>
+    </div>
   </div>
 </template>
