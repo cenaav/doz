@@ -1,0 +1,328 @@
+{
+  "id": "romiplostim",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "رومی‌پلوستیم",
+    "en": "Romiplostim"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "آگونیست گیرنده ترومبوپویتین",
+    "en": "Thrombopoietin receptor agonist"
+  },
+  "brands": [
+    {
+      "name": "Nplate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nplate",
+    "ان‌پلیت",
+    "رومیپلوستیم"
+  ],
+  "formulations": [
+    {
+      "id": "vial-250",
+      "form": "powder-for-injection",
+      "route": "sc",
+      "label": "250 mcg vial",
+      "concentration": {
+        "amount": 250,
+        "unit": "mcg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nplate",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-125",
+      "form": "powder-for-injection",
+      "route": "sc",
+      "label": "125 mcg vial",
+      "concentration": {
+        "amount": 125,
+        "unit": "mcg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nplate",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-500",
+      "form": "powder-for-injection",
+      "route": "sc",
+      "label": "500 mcg vial",
+      "concentration": {
+        "amount": 500,
+        "unit": "mcg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nplate",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "itp",
+      "disease": "immune-thrombocytopenia",
+      "label": {
+        "fa": "ITP بزرگسال — شروع ۱ mcg/kg زیرجلدی هفتگی",
+        "en": "Adult ITP — start 1 mcg/kg SC once weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 1,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-nplate",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هفتگی ۱ mcg/kg افزایش تا پلاکت ≥۵۰ هزار؛ حداکثر ۱۰ mcg/kg/هفته؛ وزن واقعی شروع. سرنگ با درجه ۰٫۰۱ mL. اگر پس از ۴ هفته با حداکثر دوز پاسخ نبود قطع.",
+            "en": "Increase weekly by 1 mcg/kg until platelets ≥50×10⁹/L; max 10 mcg/kg/week; use actual body weight at initiation. Syringe with 0.01 mL graduations. Stop if no response after 4 weeks at max dose."
+          },
+          "refs": [
+            {
+              "source": "fda-nplate",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-nplate",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ars",
+      "disease": "acute-radiation-syndrome",
+      "label": {
+        "fa": "پرتوگیری حاد با دوز سرکوب‌کننده مغز استخوان — ۱۰ mcg/kg زیرجلدی یک بار، هرچه زودتر",
+        "en": "Acute exposure to myelosuppressive radiation — 10 mcg/kg SC once, as soon as possible"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-nplate",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پیشرفت سندرم میلودیسپلاستیک به AML؛ ترومبوز؛ از دست رفتن پاسخ.",
+        "en": "Progression of myelodysplastic syndromes to AML; thrombotic events; loss of response."
+      },
+      "refs": [
+        {
+          "source": "fda-nplate",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "itp",
+      "formulation": "vial-250",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 70
+      }
+    },
+    {
+      "regimen": "ars",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 700
+      }
+    }
+  ],
+  "atc": [
+    "B02BX04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17038",
+        "en": "ROMIPLOSTIM 250MCG VIAL",
+        "fa": "ویال رومیپلوستیم ۲۵۰ میکروگرم"
+      },
+      {
+        "code": "17074",
+        "en": "ROMIPLOSTIM 500MCG VIAL",
+        "fa": "ویال رومیپلوستیم ۵۰۰ میکروگرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4799/Romiplostim",
+        "url": "https://www.darooyab.ir/G-4799/Romiplostim"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-nplate",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125268"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125268",
+      "label": "BLA125268"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c45f9a58-37c1-4f76-8e36-97d38c577037",
+      "label": "FDA Nplate"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609008.html",
+      "label": "Romiplostim Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B02BX04",
+      "label": "B02BX04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4799/Romiplostim",
+      "label": "Romiplostim"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal reproduction studies, Nplate may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-nplate",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Due to the potential for serious adverse reactions in a breastfed child from Nplate, advise women not to breastfeed during treatment with Nplate.",
+      "refs": [
+        {
+          "source": "fda-nplate",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of Nplate have been established in pediatric patients age 1 year and older with ITP for at least 6 months evaluated in two randomized, placebo-controlled studies.",
+      "refs": [
+        {
+          "source": "fda-nplate",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose adjustment for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-nplate",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

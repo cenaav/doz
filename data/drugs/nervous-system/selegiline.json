@@ -1,0 +1,267 @@
+{
+  "id": "selegiline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سلژیلین",
+    "en": "Selegiline"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده MAO-B",
+    "en": "MAO-B inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Eldepryl",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "eldepryl",
+    "jumex",
+    "جومکس",
+    "سلژیلین",
+    "سلگیلین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "5 mg capsule",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-selegiline",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pd",
+      "disease": "parkinsons",
+      "label": {
+        "fa": "پارکینسون با پاسخ رو به کاهش به لوودوپا — ۵ mg هنگام صبحانه و ۵ mg هنگام ناهار",
+        "en": "Parkinson disease with waning levodopa response — 5 mg at breakfast and 5 mg at lunch"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-selegiline",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-selegiline",
+            "section": "Dosage and Administration"
+          },
+          {
+            "source": "fda-selegiline",
+            "section": "Warnings"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه لوودوپا/کاربیدوپا؛ پس از ۲ تا ۳ روز می‌توان لوودوپا را ۱۰ تا ۳۰٪ کم کرد. بیش از ۱۰ mg/روز انتخابی بودن MAO-B از بین می‌رود.",
+            "en": "With levodopa/carbidopa; after 2–3 days levodopa may be cut by 10–30%. Above 10 mg/day MAO-B selectivity is lost."
+          },
+          "refs": [
+            {
+              "source": "fda-selegiline",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-selegiline",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سلژیلین؛ مپریدین (و معمولاً سایر اپیوئیدها).",
+        "en": "Hypersensitivity to selegiline; meperidine (often extended to other opioids)."
+      },
+      "refs": [
+        {
+          "source": "fda-selegiline",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "بیش از ۱۰ mg/روز نه (مهار غیرانتخابی MAO)؛ واکنش فشار خون با غذای تیرامین‌دار نادر است.",
+        "en": "Not above 10 mg/day (non-selective MAO inhibition); rare hypertensive reactions with tyramine-rich foods."
+      },
+      "refs": [
+        {
+          "source": "fda-selegiline",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pd",
+      "formulation": "cap-5",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1,
+        "perDay": 10
+      }
+    }
+  ],
+  "atc": [
+    "N04BD01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01121",
+        "en": "SELEGILINE HCL 5MG TAB",
+        "fa": "قرص سلجیلین هیدروکلراید ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2499/Selegiline",
+        "url": "https://www.darooyab.ir/G-2499/Selegiline"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-selegiline",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075321"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075321",
+      "label": "ANDA075321"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1924db3d-6a16-4496-cfd0-6903be146925",
+      "label": "FDA Selegiline caps"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697046.html",
+      "label": "Selegiline"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607003.html",
+      "label": "Selegiline Transdermal Patch"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04BD01",
+      "label": "N04BD01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2499/Selegiline",
+      "label": "Selegiline"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C No teratogenic effects were observed in a study of embryo-fetal development in Sprague-Dawley rats at oral doses of 4, 12, and 36 mg/kg or 4, 12 and 35 times the human therapeutic dose on a mg/m 2 basis.",
+      "refs": [
+        {
+          "source": "fda-selegiline",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, consideration should be given to discontinuing the use of all but absolutely essential drug treatments in nursing women.",
+      "refs": [
+        {
+          "source": "fda-selegiline",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The effects of selegiline hydrochloride in children have not been evaluated.",
+      "refs": [
+        {
+          "source": "fda-selegiline",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

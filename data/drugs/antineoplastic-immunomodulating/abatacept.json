@@ -1,0 +1,362 @@
+{
+  "id": "abatacept",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آباتاسپت",
+    "en": "Abatacept"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "تعدیل‌کننده هم‌تحریکی سلول T",
+    "en": "T-cell co-stimulation modulator"
+  },
+  "brands": [
+    {
+      "name": "Orencia",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "orencia",
+    "اورنسیا",
+    "آباتاسپت"
+  ],
+  "formulations": [
+    {
+      "id": "vial-250",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "250 mg vial",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-orencia",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-125",
+      "form": "injection",
+      "route": "sc",
+      "label": "125 mg/mL prefilled syringe or ClickJect",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-orencia",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ra-iv",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید یا پسوریاتیک بزرگسال (وریدی) — هفته ۰، ۲، ۴ و سپس هر ۴ هفته؛ زیر ۶۰ kg: ۵۰۰، ۶۰ تا ۱۰۰: ۷۵۰، بالای ۱۰۰: ۱۰۰۰ mg",
+        "en": "RA or PsA, adults (IV) — weeks 0, 2, 4 then every 4 weeks; <60 kg: 500, 60–100: 750, >100: 1000 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 59.99,
+            "perDose": 500,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 59.99,
+            "maxWeightKg": 100,
+            "perDose": 750,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 100,
+            "maxWeightKg": null,
+            "perDose": 1000,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-orencia",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-250"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "انفوزیون ۳۰ دقیقه. همراه مهارکننده JAK یا داروی بیولوژیک (مثل ضد TNF) نه.",
+            "en": "30-minute infusion. Not with JAK inhibitors or biologic DMARDs (e.g. TNF antagonists)."
+          },
+          "refs": [
+            {
+              "source": "fda-orencia",
+              "section": "2"
+            },
+            {
+              "source": "fda-orencia",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ra-sc",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید یا پسوریاتیک بزرگسال (زیرجلدی) — ۱۲۵ mg هفتگی",
+        "en": "RA or PsA, adults (SC) — 125 mg once weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 125,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-orencia",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-125"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بارگذاری وریدی اختیاری بر اساس وزن پیش از اولین دوز زیرجلدی.",
+            "en": "Optional weight-based IV loading dose before the first SC dose."
+          },
+          "refs": [
+            {
+              "source": "fda-orencia",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "عفونت (بیشتر با ضد TNF همزمان)؛ حساسیت؛ واکسن زنده نه؛ عوارض بیشتر در COPD؛ فعال شدن CMV و EBV در پیوند.",
+        "en": "Infections (more with concurrent TNF antagonists); hypersensitivity; no live vaccines; more adverse effects in COPD; CMV/EBV reactivation in transplant."
+      },
+      "refs": [
+        {
+          "source": "fda-orencia",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ra-iv",
+      "formulation": "vial-250",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 500
+      }
+    },
+    {
+      "regimen": "ra-iv",
+      "formulation": "vial-250",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 750
+      }
+    },
+    {
+      "regimen": "ra-iv",
+      "formulation": "vial-250",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 110
+      },
+      "expect": {
+        "perDose": 1000
+      }
+    },
+    {
+      "regimen": "ra-sc",
+      "formulation": "pfs-125",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 125,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "L04AA24"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4167/Abatacept",
+        "url": "https://www.darooyab.ir/G-4167/Abatacept"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125118",
+      "label": "BLA125118"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0836c6ac-ee37-5640-2fed-a3185a0b16eb",
+      "label": "FDA Orencia"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a606016.html",
+      "label": "Abatacept Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AA24",
+      "label": "L04AA24"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4167/Abatacept",
+      "label": "Abatacept"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The data with ORENCIA use in pregnant women are insufficient to inform on drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-orencia",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of abatacept in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-orencia",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Polyarticular Juvenile Idiopathic Arthritis The safety and effectiveness of ORENCIA for reducing signs and symptoms in patients 2 years of age and older with moderately to severely active polyarticular juvenile idiopathic arthritis (pJIA) have been established (ORENCIA may be used as monotherapy or concomitantly with …",
+      "refs": [
+        {
+          "source": "fda-orencia",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because there is a higher incidence of infections and malignancies in the geriatric population in general, caution should be used when treating geriatric patients.",
+      "refs": [
+        {
+          "source": "fda-orencia",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-orencia",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125118"
+  }
+}

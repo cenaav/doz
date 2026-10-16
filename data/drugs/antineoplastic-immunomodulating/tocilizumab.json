@@ -1,0 +1,797 @@
+{
+  "id": "tocilizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "توسیلیزوماب",
+    "en": "Tocilizumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد گیرنده IL-6",
+    "en": "Anti-IL-6 receptor antibody"
+  },
+  "brands": [
+    {
+      "name": "Actemra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "actemra",
+    "roactemra",
+    "اکتمرا",
+    "توسیلیزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "vial-20",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/mL vial (80/200/400 mg) for IV infusion",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-162",
+      "form": "injection",
+      "route": "sc",
+      "label": "162 mg/0.9 mL prefilled syringe or ACTPen",
+      "concentration": {
+        "amount": 162,
+        "unit": "mg",
+        "perVolumeMl": 0.9
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ra-iv",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید بزرگسال (وریدی) — شروع ۴ mg/kg هر ۴ هفته؛ افزایش تا ۸ mg/kg",
+        "en": "Rheumatoid arthritis, adults (IV) — start 4 mg/kg every 4 weeks; increase to 8 mg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 4,
+        "perKgPerDoseMax": 8,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-20"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع نکنید اگر ANC <۲۰۰۰، پلاکت <۱۰۰ هزار یا ALT/AST >۱٫۵ برابر حد بالا.",
+            "en": "Do not start if ANC <2000, platelets <100,000 or ALT/AST >1.5× ULN."
+          },
+          "refs": [
+            {
+              "source": "fda-actemra",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ra-sc",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید بزرگسال (زیرجلدی) — ۱۶۲ mg هر ۲ هفته (زیر ۱۰۰ kg؛ افزایش به هفتگی) یا هفتگی (۱۰۰ kg و بالاتر)",
+        "en": "Rheumatoid arthritis, adults (SC) — 162 mg every other week (<100 kg; may increase to weekly) or weekly (≥100 kg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 162,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-162"
+      ]
+    },
+    {
+      "id": "gca-iv",
+      "disease": "giant-cell-arteritis",
+      "label": {
+        "fa": "آرتریت سلول غول‌آسا (وریدی) — ۶ mg/kg هر ۴ هفته همراه کاهش تدریجی گلوکوکورتیکوئید",
+        "en": "Giant cell arteritis (IV) — 6 mg/kg every 4 weeks with tapering glucocorticoids"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 6,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-20"
+      ]
+    },
+    {
+      "id": "gca-sc",
+      "disease": "giant-cell-arteritis",
+      "label": {
+        "fa": "آرتریت سلول غول‌آسا (زیرجلدی) — ۱۶۲ mg هفتگی همراه کاهش گلوکوکورتیکوئید",
+        "en": "Giant cell arteritis (SC) — 162 mg weekly with tapering glucocorticoids"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 162,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-162"
+      ]
+    },
+    {
+      "id": "pjia-s",
+      "disease": "juvenile-arthritis",
+      "label": {
+        "fa": "JIA پلی‌آرتیکولار (وریدی) — زیر ۳۰ kg: ۱۰ mg/kg هر ۴ هفته",
+        "en": "Polyarticular JIA (IV) — <30 kg: 10 mg/kg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxWeightKg": 29.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.5"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-20"
+      ]
+    },
+    {
+      "id": "pjia-l",
+      "disease": "juvenile-arthritis",
+      "label": {
+        "fa": "JIA پلی‌آرتیکولار (وریدی) — ۳۰ kg و بالاتر: ۸ mg/kg هر ۴ هفته",
+        "en": "Polyarticular JIA (IV) — ≥30 kg: 8 mg/kg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "minWeightKg": 30
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 8,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.5"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-20"
+      ]
+    },
+    {
+      "id": "sjia-s",
+      "disease": "juvenile-arthritis",
+      "label": {
+        "fa": "JIA سیستمیک (وریدی) — زیر ۳۰ kg: ۱۲ mg/kg هر ۲ هفته",
+        "en": "Systemic JIA (IV) — <30 kg: 12 mg/kg every 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxWeightKg": 29.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 12,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-20"
+      ]
+    },
+    {
+      "id": "sjia-l",
+      "disease": "juvenile-arthritis",
+      "label": {
+        "fa": "JIA سیستمیک (وریدی) — ۳۰ kg و بالاتر: ۸ mg/kg هر ۲ هفته",
+        "en": "Systemic JIA (IV) — ≥30 kg: 8 mg/kg every 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "minWeightKg": 30
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 8,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-20"
+      ]
+    },
+    {
+      "id": "crs-s",
+      "disease": "cytokine-release-syndrome",
+      "label": {
+        "fa": "سندرم آزادسازی سیتوکین (۲ سال به بالا) — زیر ۳۰ kg: ۱۲ mg/kg انفوزیون ۶۰ دقیقه",
+        "en": "Cytokine release syndrome (≥2 y) — <30 kg: 12 mg/kg over 60 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxWeightKg": 29.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 12,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.7"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-20"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر بهبود نیافت تا ۳ دوز دیگر با فاصله دست‌کم ۸ ساعت. فقط وریدی.",
+            "en": "If no improvement, up to 3 more doses at least 8 h apart. IV only."
+          },
+          "refs": [
+            {
+              "source": "fda-actemra",
+              "section": "2.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crs-l",
+      "disease": "cytokine-release-syndrome",
+      "label": {
+        "fa": "سندرم آزادسازی سیتوکین — ۳۰ kg و بالاتر: ۸ mg/kg انفوزیون ۶۰ دقیقه",
+        "en": "Cytokine release syndrome — ≥30 kg: 8 mg/kg over 60 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "minWeightKg": 30
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 8,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.7"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-20"
+      ]
+    },
+    {
+      "id": "covid",
+      "disease": "covid-19",
+      "label": {
+        "fa": "COVID-19 بستری با کورتیکواستروئید و اکسیژن — ۳۰ kg و بالاتر: ۸ mg/kg یک انفوزیون ۶۰ دقیقه",
+        "en": "Hospitalised COVID-19 on corticosteroids and oxygen — ≥30 kg: 8 mg/kg single 60-min infusion"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "minWeightKg": 30
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 8,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "2.8"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-20"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "زیر ۳۰ kg: ۱۲ mg/kg. اگر بدتر شد یک انفوزیون دیگر دست‌کم ۸ ساعت بعد.",
+            "en": "<30 kg: 12 mg/kg. If worse or no improvement, one more infusion at least 8 h later."
+          },
+          "refs": [
+            {
+              "source": "fda-actemra",
+              "section": "2.8"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شناخته‌شده به توسیلیزوماب.",
+        "en": "Known hypersensitivity to tocilizumab."
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: عفونت‌های جدی (سل، قارچی، فرصت‌طلب) — در عفونت جدی قطع.",
+        "en": "Boxed warning: serious infections (TB, fungal, opportunistic) — interrupt for serious infection."
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سوراخ‌شدگی گوارشی؛ سمیت کبدی؛ نوتروپنی، ترومبوسیتوپنی و افزایش چربی خون؛ بیماری دمیلینه‌کننده.",
+        "en": "GI perforation; hepatotoxicity; neutropenia, thrombocytopenia and lipid elevation; demyelinating disorders."
+      },
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ra-iv",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 280,
+        "mlPerDose": 14,
+        "upperPerDose": 560
+      }
+    },
+    {
+      "regimen": "ra-sc",
+      "formulation": "pfs-162",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 162,
+        "mlPerDose": 0.9
+      }
+    },
+    {
+      "regimen": "gca-iv",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 420,
+        "mlPerDose": 21
+      }
+    },
+    {
+      "regimen": "gca-sc",
+      "formulation": "pfs-162",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 162,
+        "mlPerDose": 0.9
+      }
+    },
+    {
+      "regimen": "pjia-s",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 10
+      }
+    },
+    {
+      "regimen": "pjia-l",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 320,
+        "mlPerDose": 16
+      }
+    },
+    {
+      "regimen": "sjia-s",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 240,
+        "mlPerDose": 12
+      }
+    },
+    {
+      "regimen": "sjia-l",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 320,
+        "mlPerDose": 16
+      }
+    },
+    {
+      "regimen": "crs-s",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 240,
+        "mlPerDose": 12
+      }
+    },
+    {
+      "regimen": "crs-l",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 560,
+        "mlPerDose": 28
+      }
+    },
+    {
+      "regimen": "covid",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 560,
+        "mlPerDose": 28
+      }
+    }
+  ],
+  "atc": [
+    "L04AC07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "15157",
+        "en": "TOCILIZUMAB 400MG/20ML VIAL",
+        "fa": "ویال توسیلیزومب ۴۰۰ میلی‌گرم / ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "16254",
+        "en": "TOCILIZUMAB 80MG/4ML VIAL",
+        "fa": "ویال توسیلیزومب ۸۰ میلی‌گرم / ۴ میلی‌لیتر"
+      },
+      {
+        "code": "50908",
+        "en": "TOCILIZUMAB 200MG/10ML VIAL",
+        "fa": "ویال توسیلیزومب ۲۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "52706",
+        "en": "TOCILIZUMAB 162MG/0.9ML VIAL",
+        "fa": "ویال توسیلیزومب ۱۶۲ میلی‌گرم / ۰٫۹ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4308/Tocilizumab",
+        "url": "https://www.darooyab.ir/G-4308/Tocilizumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-actemra",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125276"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125276",
+      "label": "BLA125276"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2e5365ff-cb2a-4b16-b2c7-e35c6bf2de13",
+      "label": "FDA Actemra"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611004.html",
+      "label": "Tocilizumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AC07",
+      "label": "L04AC07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4308/Tocilizumab",
+      "label": "Tocilizumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The available data with ACTEMRA from a pregnancy exposure registry, retrospective cohort study, pharmacovigilance, and published literature are insufficient to draw conclusions about a drug-associated risk of major birth defects, miscarriage, or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary No information is available on the presence of tocilizumab in human milk, the effects of the drug on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "COVID-19 – Intravenous Use The safety and effectiveness of ACTEMRA have been established for the treatment of pediatric patients aged 2 years and older with COVID-19.",
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "As there is a higher incidence of infections in the elderly population in general, caution should be used when treating the elderly.",
+      "refs": [
+        {
+          "source": "fda-actemra",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

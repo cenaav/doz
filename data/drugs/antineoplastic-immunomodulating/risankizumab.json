@@ -1,0 +1,549 @@
+{
+  "id": "risankizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریسانکیزوماب",
+    "en": "Risankizumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد IL-23",
+    "en": "Anti-IL-23 antibody"
+  },
+  "brands": [
+    {
+      "name": "Skyrizi",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "skyrizi",
+    "اسکایریزی",
+    "ریسانکیزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "pen-150",
+      "form": "injection",
+      "route": "sc",
+      "label": "150 mg/mL pen or syringe",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-55",
+      "form": "injection",
+      "route": "sc",
+      "label": "55 mg/0.37 mL syringe",
+      "concentration": {
+        "amount": 55,
+        "unit": "mg",
+        "perVolumeMl": 0.37
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-600",
+      "form": "injection",
+      "route": "iv",
+      "label": "600 mg/10 mL vial for IV infusion",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perVolumeMl": 10
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cart-180",
+      "form": "injection",
+      "route": "sc",
+      "label": "180 mg/1.2 mL syringe or on-body cartridge",
+      "concentration": {
+        "amount": 180,
+        "unit": "mg",
+        "perVolumeMl": 1.2
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cart-360",
+      "form": "injection",
+      "route": "sc",
+      "label": "360 mg/2.4 mL on-body cartridge",
+      "concentration": {
+        "amount": 360,
+        "unit": "mg",
+        "perVolumeMl": 2.4
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pso",
+      "disease": "psoriasis",
+      "label": {
+        "fa": "پسوریازیس پلاک یا آرتریت پسوریاتیک بزرگسال — ۱۵۰ mg هفته ۰، ۴ و سپس هر ۱۲ هفته",
+        "en": "Plaque psoriasis or psoriatic arthritis, adults — 150 mg at weeks 0, 4, then every 12 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 150,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-skyrizi",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pen-150"
+      ]
+    },
+    {
+      "id": "pso-child",
+      "disease": "psoriasis",
+      "label": {
+        "fa": "پسوریازیس پلاک کودک ۶ سال به بالا — زیر ۴۰ kg: ۵۵ mg؛ ۴۰ kg و بالاتر: ۱۵۰ mg (هفته ۰، ۴، سپس هر ۱۲ هفته)",
+        "en": "Plaque psoriasis, children ≥6 y — <40 kg: 55 mg; ≥40 kg: 150 mg (weeks 0, 4, then every 12 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 39.99,
+            "perDose": 55,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 39.99,
+            "maxWeightKg": null,
+            "perDose": 150,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "cd-ind",
+      "disease": "crohns",
+      "label": {
+        "fa": "کرون بزرگسال — القا ۶۰۰ mg وریدی (دست‌کم ۱ ساعت) هفته ۰، ۴ و ۸",
+        "en": "Crohn disease, adults — induction 600 mg IV (over ≥1 h) at weeks 0, 4 and 8"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-600"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده ۱۸۰ یا ۳۶۰ mg زیرجلدی هفته ۱۲ و سپس هر ۸ هفته (کمترین دوز مؤثر). پیش از شروع آنزیم کبد و بیلی‌روبین.",
+            "en": "Maintenance 180 or 360 mg SC at week 12 then every 8 weeks (lowest effective dose). Check liver enzymes and bilirubin first."
+          },
+          "refs": [
+            {
+              "source": "fda-skyrizi",
+              "section": "2.6"
+            },
+            {
+              "source": "fda-skyrizi",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc-ind",
+      "disease": "ulcerative-colitis",
+      "label": {
+        "fa": "کولیت اولسراتیو بزرگسال — القا ۱۲۰۰ mg وریدی (دست‌کم ۲ ساعت) هفته ۰، ۴ و ۸",
+        "en": "Ulcerative colitis, adults — induction 1200 mg IV (over ≥2 h) at weeks 0, 4 and 8"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "2.7"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-600"
+      ]
+    },
+    {
+      "id": "ibd-m",
+      "disease": "crohns",
+      "label": {
+        "fa": "نگهدارنده کرون یا کولیت — ۱۸۰ یا ۳۶۰ mg زیرجلدی هر ۸ هفته",
+        "en": "Maintenance Crohn or UC — 180 or 360 mg SC every 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 180,
+        "perDoseMax": 360,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "2.6"
+        },
+        {
+          "source": "fda-skyrizi",
+          "section": "2.7"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "cart-180"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت جدی به ریسانکیزوماب.",
+        "en": "History of serious hypersensitivity to risankizumab."
+      },
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "حساسیت؛ عفونت؛ سل (پیش از شروع بررسی)؛ واکسن زنده نه.",
+        "en": "Hypersensitivity; infections; tuberculosis (screen first); no live vaccines."
+      },
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pso",
+      "formulation": "pen-150",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "pso-child",
+      "formulation": "pfs-55",
+      "input": {
+        "ageYears": 9,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 55,
+        "mlPerDose": 0.37
+      }
+    },
+    {
+      "regimen": "pso-child",
+      "formulation": "pen-150",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "cd-ind",
+      "formulation": "vial-600",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600,
+        "mlPerDose": 10
+      }
+    },
+    {
+      "regimen": "uc-ind",
+      "formulation": "vial-600",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1200,
+        "mlPerDose": 20
+      }
+    },
+    {
+      "regimen": "ibd-m",
+      "formulation": "cart-180",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 180,
+        "mlPerDose": 1.2,
+        "upperPerDose": 360
+      }
+    }
+  ],
+  "atc": [
+    "L04AC18"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Risankizumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-skyrizi",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761105"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761105",
+      "label": "BLA761105"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7148c8eb-b39e-e20a-6494-a6df82392858",
+      "label": "FDA Skyrizi"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a619035.html",
+      "label": "Risankizumab-rzaa Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AC18",
+      "label": "L04AC18"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available pharmacovigilance and clinical trial data with risankizumab use in pregnant women are insufficient to establish a drug-associated risk of major birth defects, miscarriage or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of risankizumab-rzaa in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Moderate-to-Severe Plaque Psoriasis The safety and effectiveness of SKYRIZI for the treatment of moderate-to-severe plaque psoriasis have been established in pediatric patients 6 years of age and older who are candidates for systemic therapy or phototherapy.",
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 6,862 subjects exposed to SKYRIZI, a total of 664 were 65 years and older (243 subjects with plaque psoriasis, 246 subjects with psoriatic arthritis, 72 subjects with Crohn’s disease and 103 subjects with ulcerative colitis), and 71 subjects were 75 years and older.",
+      "refs": [
+        {
+          "source": "fda-skyrizi",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

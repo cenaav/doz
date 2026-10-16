@@ -1,0 +1,509 @@
+{
+  "id": "mepolizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مپولیزوماب",
+    "en": "Mepolizumab"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌بادی ضد IL-5",
+    "en": "Anti-IL-5 antibody"
+  },
+  "brands": [
+    {
+      "name": "Nucala",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nucala",
+    "نوکالا",
+    "مپولیزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-100",
+      "form": "injection",
+      "route": "sc",
+      "label": "100 mg/mL prefilled syringe or autoinjector",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-40",
+      "form": "injection",
+      "route": "sc",
+      "label": "40 mg/0.4 mL prefilled syringe",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 0.4
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "asthma",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم شدید ائوزینوفیلیک (۱۲ سال به بالا) — ۱۰۰ mg زیرجلدی هر ۴ هفته",
+        "en": "Severe eosinophilic asthma (≥12 y) — 100 mg SC every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-100"
+      ]
+    },
+    {
+      "id": "asthma-child",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم شدید ائوزینوفیلیک کودک ۶ تا ۱۱ سال — ۴۰ mg هر ۴ هفته",
+        "en": "Severe eosinophilic asthma, children 6–11 y — 40 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-40"
+      ]
+    },
+    {
+      "id": "crswnp",
+      "disease": "nasal-polyps",
+      "label": {
+        "fa": "رینوسینوزیت مزمن با پولیپ بینی بزرگسال — ۱۰۰ mg هر ۴ هفته",
+        "en": "CRSwNP, adults — 100 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-100"
+      ]
+    },
+    {
+      "id": "copd",
+      "disease": "copd",
+      "label": {
+        "fa": "COPD با فنوتیپ ائوزینوفیلیک (افزودنی) بزرگسال — ۱۰۰ mg هر ۴ هفته",
+        "en": "COPD with eosinophilic phenotype (add-on), adults — 100 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-100"
+      ]
+    },
+    {
+      "id": "egpa",
+      "disease": "egpa",
+      "label": {
+        "fa": "EGPA بزرگسال — ۳۰۰ mg هر ۴ هفته (سه تزریق ۱۰۰ mg با ۵ cm فاصله)",
+        "en": "EGPA, adults — 300 mg every 4 weeks (three 100 mg injections ≥5 cm apart)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-100"
+      ]
+    },
+    {
+      "id": "hes",
+      "disease": "hypereosinophilic-syndrome",
+      "label": {
+        "fa": "سندرم هیپرائوزینوفیلیک (۱۲ سال به بالا) — ۳۰۰ mg هر ۴ هفته",
+        "en": "Hypereosinophilic syndrome (≥12 y) — 300 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-100"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به مپولیزوماب.",
+        "en": "History of hypersensitivity to mepolizumab."
+      },
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی؛ برای حمله حاد آسم نیست؛ کورتیکواستروئید را ناگهانی قطع نکنید؛ عفونت کرمی پیش از شروع درمان شود.",
+        "en": "Hypersensitivity; not for acute asthma; do not stop corticosteroids abruptly; treat helminth infection before starting."
+      },
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "هرپس زوستر (واکسن پیش از شروع در نظر گرفته شود).",
+        "en": "Herpes zoster (consider vaccination before starting)."
+      },
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "5.3"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "asthma",
+      "formulation": "pfs-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "asthma-child",
+      "formulation": "pfs-40",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 0.4
+      }
+    },
+    {
+      "regimen": "crswnp",
+      "formulation": "pfs-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "copd",
+      "formulation": "pfs-100",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "egpa",
+      "formulation": "pfs-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 3
+      }
+    },
+    {
+      "regimen": "hes",
+      "formulation": "pfs-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 3
+      }
+    }
+  ],
+  "atc": [
+    "R03DX09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "50765",
+        "en": "MEPOLIZOMAB INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
+        "fa": "پودر برای تهیه محلول تزریقی مپولیزومب ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5503/Mepolizumab",
+        "url": "https://www.darooyab.ir/G-5503/Mepolizumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-nucala",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125526"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125526",
+      "label": "BLA125526"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fefb887c-e4ac-431e-8893-e9d1a5a63fea",
+      "label": "FDA Nucala"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615058.html",
+      "label": "Mepolizumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03DX09",
+      "label": "R03DX09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5503/Mepolizumab",
+      "label": "Mepolizumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The data on pregnancy exposure are insufficient to inform on drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of mepolizumab in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Severe Asthma The safety and effectiveness of NUCALA for severe asthma, and with an eosinophilic phenotype, have been established in pediatric patients aged 6 years and older.",
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety and effectiveness were observed between these patients and younger patients.",
+      "refs": [
+        {
+          "source": "fda-nucala",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

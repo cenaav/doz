@@ -1,0 +1,342 @@
+{
+  "id": "diazoxide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیازوکساید",
+    "en": "Diazoxide"
+  },
+  "category": "various",
+  "class": {
+    "fa": "مهارکننده ترشح انسولین",
+    "en": "Insulin-secretion inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Proglycem",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "proglycem",
+    "پروگلایسم",
+    "دیازوکسید"
+  ],
+  "formulations": [
+    {
+      "id": "susp-50",
+      "form": "suspension",
+      "route": "oral",
+      "label": "50 mg/mL oral suspension",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-proglycem",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "hypoglycemia",
+      "label": {
+        "fa": "هیپوگلیسمی ناشی از هیپرانسولینیسم (بزرگسال و کودک) — شروع ۳ mg/kg/روز در ۳ دوز هر ۸ ساعت؛ حداکثر ۸",
+        "en": "Hyperinsulinaemic hypoglycaemia (adults and children) — start 3 mg/kg/day in 3 doses every 8 h; max 8"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 3,
+        "perKgPerDayMax": 8,
+        "dividedDoses": 3
+      },
+      "refs": [
+        {
+          "source": "fda-proglycem",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا در ۲ دوز هر ۱۲ ساعت. اگر پس از ۲ تا ۳ هفته مؤثر نبود قطع شود.",
+            "en": "Or in 2 doses every 12 h. Stop if ineffective after 2–3 weeks."
+          },
+          "refs": [
+            {
+              "source": "fda-proglycem",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infant",
+      "disease": "hypoglycemia",
+      "label": {
+        "fa": "شیرخوار و نوزاد — شروع ۸ mg/kg/روز در ۳ دوز هر ۸ ساعت؛ حداکثر ۱۵",
+        "en": "Infants and newborns — start 8 mg/kg/day in 3 doses every 8 h; max 15"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 8,
+        "perKgPerDayMax": 15,
+        "dividedDoses": 3
+      },
+      "refs": [
+        {
+          "source": "fda-proglycem",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دقت دوز در شیرخوار بسیار مهم است. فشار ریوی (PH) در نوزاد گزارش شده.",
+            "en": "Dose accuracy is critical in infants. Pulmonary hypertension has been reported in newborns."
+          },
+          "refs": [
+            {
+              "source": "fda-proglycem",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-proglycem",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "هیپوگلیسمی عملکردی؛ حساسیت به دیازوکساید یا تیازیدها.",
+        "en": "Functional hypoglycaemia; hypersensitivity to diazoxide or other thiazides."
+      },
+      "refs": [
+        {
+          "source": "fda-proglycem",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "احتباس مایع و نارسایی قلب؛ کتواسیدوز و کمای هیپراسمولار؛ با تیازید افزایش قند و اسید اوریک.",
+        "en": "Fluid retention and heart failure; ketoacidosis and hyperosmolar coma; thiazides potentiate hyperglycaemia and hyperuricaemia."
+      },
+      "refs": [
+        {
+          "source": "fda-proglycem",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "susp-50",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 0.4,
+        "upperPerDose": 53.33
+      }
+    },
+    {
+      "regimen": "infant",
+      "formulation": "susp-50",
+      "input": {
+        "ageMonths": 4,
+        "weightKg": 6
+      },
+      "expect": {
+        "perDose": 16,
+        "mlPerDose": 0.32,
+        "upperPerDose": 30
+      }
+    }
+  ],
+  "atc": [
+    "V03AH01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00421",
+        "en": "DIAZOXIDE 100MG CAP",
+        "fa": "کپسول دیازوکساید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "05813",
+        "en": "DIAZOXIDE 100MG TAB",
+        "fa": "قرص دیازوکساید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01959",
+        "en": "DIAZOXIDE 25MG CAP",
+        "fa": "کپسول دیازوکساید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "05812",
+        "en": "DIAZOXIDE 25MG TAB",
+        "fa": "قرص دیازوکساید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "01463",
+        "en": "DIAZOXIDE 50MG CAP",
+        "fa": "کپسول دیازوکساید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "13938",
+        "en": "DIAZOXIDE 50MG TAB",
+        "fa": "قرص دیازوکساید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00423",
+        "en": "DIAZOXIDE 50MG/5ML 30ML SYR",
+        "fa": "دیازوکساید ۵۰ میلی‌گرم / ۵ میلی‌لیتر ۳۰ میلی‌لیتر"
+      },
+      {
+        "code": "52351",
+        "en": "DIAZOXIDE TABLET ORAL 50 mg",
+        "fa": "قرص دیازوکساید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52481",
+        "en": "DIAZOXIDE CAPSULE ORAL 25 mg",
+        "fa": "کپسول دیازوکساید ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1632/Diazoxide-Oral",
+        "url": "https://www.darooyab.ir/G-1632/Diazoxide-Oral"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=017453",
+      "label": "NDA017453"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b16c7832-2fd9-49af-b923-1dc0d91fd6e2",
+      "label": "FDA Proglycem"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625073.html",
+      "label": "Diazoxide Choline"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AH01",
+      "label": "V03AH01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1632/Diazoxide-Oral",
+      "label": "Diazoxide-Oral"
+    }
+  ],
+  "populations": {
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Information is not available concerning the passage of diazoxide in breast milk.",
+      "refs": [
+        {
+          "source": "fda-proglycem",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "See INDICATIONS AND USAGE .",
+      "refs": [
+        {
+          "source": "fda-proglycem",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری دیازوکساید خوراکی گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-1632/Diazoxide-Oral — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-1632/Diazoxide-Oral"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-proglycem",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA017453"
+  }
+}

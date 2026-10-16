@@ -1,0 +1,259 @@
+{
+  "id": "flucytosine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلوسیتوزین",
+    "en": "Flucytosine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدقارچ (آنتی‌متابولیت)",
+    "en": "Antifungal (antimetabolite)"
+  },
+  "brands": [
+    {
+      "name": "Ancobon",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ancobon",
+    "فلوسیتوزین",
+    "5-FC"
+  ],
+  "formulations": [
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-flucytosine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-500",
+      "form": "capsule",
+      "route": "oral",
+      "label": "500 mg capsule",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-flucytosine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "std",
+      "disease": "invasive-fungal",
+      "label": {
+        "fa": "عفونت جدی کاندیدا یا کریپتوکوک (همراه آمفوتریسین) — ۵۰ تا ۱۵۰ mg/kg/روز هر ۶ ساعت",
+        "en": "Serious Candida or Cryptococcus infection (with amphotericin B) — 50–150 mg/kg/day every 6 h"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 50,
+        "perKgPerDayMax": 150,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-flucytosine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کپسول‌ها چندتا چندتا طی ۱۵ دقیقه (کاهش تهوع). نارسایی کلیه: دوز پایین‌تر و پایش سطح خونی. به‌تنهایی مقاومت ایجاد می‌شود.",
+            "en": "Give capsules a few at a time over 15 min (less nausea). Renal impairment: lower dose and monitor levels. Resistance develops when used alone."
+          },
+          "refs": [
+            {
+              "source": "fda-flucytosine",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-flucytosine",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فلوسیتوزین.",
+        "en": "Hypersensitivity to flucytosine."
+      },
+      "refs": [
+        {
+          "source": "fda-flucytosine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: در نارسایی کلیه با احتیاط شدید؛ سرکوب مغز استخوان؛ پایش خون، کلیه و کبد.",
+        "en": "Boxed warning: extreme caution in renal impairment; bone-marrow suppression; monitor haematology, renal and hepatic function."
+      },
+      "refs": [
+        {
+          "source": "fda-flucytosine",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "std",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 750,
+        "tabletsPerDoseRounded": 3,
+        "upperPerDose": 2250
+      }
+    }
+  ],
+  "atc": [
+    "J02AX01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00541",
+        "en": "FLUCYTOSINE 500MG TAB",
+        "fa": "قرص فلوسیتوسین ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-718/Flucytosine",
+        "url": "https://www.darooyab.ir/G-718/Flucytosine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-flucytosine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA204652"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204652",
+      "label": "ANDA204652"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfc817db-ab65-5cd7-e053-2995a90a8ee8",
+      "label": "FDA Flucytosine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J02AX01",
+      "label": "J02AX01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-718/Flucytosine",
+      "label": "Flucytosine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Flucytosine Capsules USP should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-flucytosine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from Flucytosine Capsules USP, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-flucytosine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The efficacy and safety of Flucytosine Capsules USP have not been systematically studied in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-flucytosine",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

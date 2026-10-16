@@ -1,0 +1,290 @@
+{
+  "id": "tranylcypromine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ترانیل‌سیپرومین",
+    "en": "Tranylcypromine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده MAO (غیرانتخابی)",
+    "en": "MAO inhibitor (non-selective)"
+  },
+  "brands": [
+    {
+      "name": "Parnate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "parnate",
+    "پارنیت",
+    "ترانیلسیپرومین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tranylcypromine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی اساسی بدون پاسخ کافی به سایر ضدافسردگی‌ها، بزرگسال — ۳۰ mg/روز در دوزهای تقسیمی",
+        "en": "Major depressive disorder without adequate response to other antidepressants, adults — 30 mg/day in divided doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-tranylcypromine",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 60,
+        "refs": [
+          {
+            "source": "fda-tranylcypromine",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پاسخ ناکافی: هر ۱ تا ۳ هفته ۱۰ mg/روز افزایش تا حداکثر ۳۰ mg دو بار. پیش از شروع فشار خون و سابقه مانیا. قطع تدریجی (دلیریوم با قطع ناگهانی). فاصله زمانی با سایر ضدافسردگی‌ها طبق ۲٫۲.",
+            "en": "If inadequate: +10 mg/day every 1–3 weeks to max 30 mg twice daily. Check BP and history of mania first. Taper (delirium on abrupt stop). Washout with other antidepressants per 2.2."
+          },
+          "refs": [
+            {
+              "source": "fda-tranylcypromine",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-tranylcypromine",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-tranylcypromine",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-tranylcypromine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سایر MAOIها، SSRI، SNRI، ضدافسردگی سه‌حلقه‌ای، سمپاتومیمتیک‌ها و بسیاری داروهای دیگر (جدول ۱ برچسب)؛ فئوکروموسیتوم یا پاراگانگلیوم ترشح‌کننده کاتکول‌آمین.",
+        "en": "Other MAOIs, SSRIs, SNRIs, tricyclics, sympathomimetics and many other drugs (label Table 1); pheochromocytoma or catecholamine-releasing paraganglioma."
+      },
+      "refs": [
+        {
+          "source": "fda-tranylcypromine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: خودکشی در کودکان و جوانان؛ بحران فشار خون با مصرف زیاد تیرامین (پنیر کهنه، گوشت فرآوری‌شده…).",
+        "en": "Boxed warning: suicidality in children and young adults; hypertensive crisis with significant tyramine intake (aged cheese, cured meats…)."
+      },
+      "refs": [
+        {
+          "source": "fda-tranylcypromine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سندرم سروتونین؛ مانیا؛ افت فشار؛ سمیت کبد؛ تشنج؛ هیپوگلیسمی در دیابت.",
+        "en": "Serotonin syndrome; mania; hypotension; hepatotoxicity; seizures; hypoglycaemia in diabetics."
+      },
+      "refs": [
+        {
+          "source": "fda-tranylcypromine",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1,
+        "perDay": 30
+      }
+    }
+  ],
+  "atc": [
+    "N06AF04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01241",
+        "en": "TRANYLCYPROMINE 10MG TAB",
+        "fa": "قرص ترانیلسیپرومین ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-613/Tranylcypromine",
+        "url": "https://www.darooyab.ir/G-613/Tranylcypromine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA authorized generic",
+    "refs": [
+      {
+        "source": "fda-tranylcypromine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA012342"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=012342",
+      "label": "NDA012342"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a0b609b-0625-4c26-91a1-59ee3ece3ddf",
+      "label": "FDA Tranylcypromine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682088.html",
+      "label": "Tranylcypromine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AF04",
+      "label": "N06AF04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-613/Tranylcypromine",
+      "label": "Tranylcypromine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are limited published reports of placental infarction and congenital anomalies in association with use of tranylcypromine sulfate tablets during pregnancy; however, these reports may not adequately inform the presence or absence of drug-associated risk with the use of tranylcypromine sulfate tablets …",
+      "refs": [
+        {
+          "source": "fda-tranylcypromine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Tranylcypromine is present in human milk.",
+      "refs": [
+        {
+          "source": "fda-tranylcypromine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Suicidal Thoughts and Behaviors Antidepressants increased the risk of suicidal thoughts and behaviors in pediatric and young adult patients in short-term studies.",
+      "refs": [
+        {
+          "source": "fda-tranylcypromine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-tranylcypromine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "id": "ganciclovir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گان‌سیکلوویر",
+    "en": "Ganciclovir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدویروس CMV",
+    "en": "Anti-CMV antiviral"
+  },
+  "brands": [
+    {
+      "name": "Cytovene",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cytovene",
+    "سایتوون",
+    "گانسیکلوویر"
+  ],
+  "formulations": [
+    {
+      "id": "vial-500",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "500 mg vial",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ind",
+      "disease": "cmv-infection",
+      "label": {
+        "fa": "رتینیت CMV یا پیشگیری در پیوند — القا ۵ mg/kg هر ۱۲ ساعت",
+        "en": "CMV retinitis or transplant prevention — induction 5 mg/kg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-ganciclovir",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 21
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "رتینیت ۱۴ تا ۲۱ روز؛ پیوند ۷ تا ۱۴ روز. انفوزیون ۱ ساعته، نه بولوس.",
+            "en": "Retinitis 14–21 days; transplant 7–14 days. 1-hour infusion, never bolus."
+          },
+          "refs": [
+            {
+              "source": "fda-ganciclovir",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-ganciclovir",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "cmv-infection",
+      "label": {
+        "fa": "نگهدارنده — ۵ mg/kg یک بار در روز (۷ روز در هفته) یا ۶ mg/kg (۵ روز در هفته)",
+        "en": "Maintenance — 5 mg/kg once daily (7 days a week) or 6 mg/kg (5 days a week)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-ganciclovir",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به گان‌سیکلوویر یا والگان‌سیکلوویر.",
+        "en": "Hypersensitivity to ganciclovir or valganciclovir."
+      },
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت خونی (نوتروپنی، کم‌خونی، ترومبوسیتوپنی)، کاهش باروری، سمیت جنینی و سرطان‌زایی.",
+        "en": "Boxed warning: haematological toxicity, impaired fertility, fetal toxicity, mutagenesis and carcinogenesis."
+      },
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 70,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۷۰: کاهش دوز القا و نگهدارنده طبق جدول ۱ برچسب.",
+        "en": "CrCl <70: reduce induction and maintenance doses per label Table 1."
+      },
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "2.5"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ind",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 350
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 350
+      }
+    }
+  ],
+  "atc": [
+    "J05AB06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00581",
+        "en": "GANCICLOVIR 500MG VIAL",
+        "fa": "ویال گان‌سیکلوویر ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "21106",
+        "en": "GANCICLOVIR 5G GEL",
+        "fa": "ژل گان‌سیکلوویر ۵ گرم"
+      },
+      {
+        "code": "51331",
+        "en": "GANCICLOVIR GEL OPHTHALMIC 0.15 % 5 g",
+        "fa": "ژل گان‌سیکلوویر ۰٫۱۵ درصد ۵ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1177/Ganciclovir",
+        "url": "https://www.darooyab.ir/G-1177/Ganciclovir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-ganciclovir",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA204950"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204950",
+      "label": "ANDA204950"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=87afd103-6e64-444f-971d-0e732e9ae995",
+      "label": "FDA Ganciclovir"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605011.html",
+      "label": "Ganciclovir"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a689014.html",
+      "label": "Ganciclovir Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AB06",
+      "label": "J05AB06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1177/Ganciclovir",
+      "label": "Ganciclovir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Fetal Toxicity: Based on animal data, ganciclovir has the potential to cause birth defects in humans [see Warnings and Precautions (5.4) ].",
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Advise nursing mothers that breastfeeding is not recommended during treatment with ganciclovir because of the potential for serious adverse reactions in nursing infants [see Warnings and Precautions (5.1 , 5.3 , 5.4 , 5.5) , Nonclinical Toxicology (13.1) ].",
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and efficacy of ganciclovir have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Because of the mutagenic and teratogenic potential of ganciclovir, females of reproductive potential should be advised to use effective contraception during treatment and for at least 30 days following treatment with ganciclovir [see Dosage and Administration (2.2) , Warnings and Precautions …",
+      "refs": [
+        {
+          "source": "fda-ganciclovir",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

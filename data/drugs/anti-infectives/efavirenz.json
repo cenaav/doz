@@ -1,0 +1,318 @@
+{
+  "id": "efavirenz",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "افاویرنز",
+    "en": "Efavirenz"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "NNRTI",
+    "en": "NNRTI"
+  },
+  "brands": [
+    {
+      "name": "Sustiva",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sustiva",
+    "استوکرین",
+    "افاویرنز",
+    "EFV"
+  ],
+  "formulations": [
+    {
+      "id": "tab-600",
+      "form": "tablet",
+      "route": "oral",
+      "label": "600 mg tablet (do not crush)",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-efavirenz",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hiv",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 — بزرگسال و کودک ≥۴۰ kg: ۶۰۰ mg یک بار، ناشتا ترجیحاً هنگام خواب",
+        "en": "HIV-1 — adults and children ≥40 kg: 600 mg once daily, empty stomach, preferably at bedtime"
+      },
+      "population": {
+        "minWeightKg": 40
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-efavirenz",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-efavirenz",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس (مگر فرآورده کامل).",
+            "en": "Always with other antiretrovirals (unless a complete regimen)."
+          },
+          "refs": [
+            {
+              "source": "fda-efavirenz",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "با ریفامپین (≥۵۰ kg): ۸۰۰ mg. با وریکونازول: افاویرنز ۳۰۰ mg و وریکونازول ۴۰۰ mg هر ۱۲ ساعت. نارسایی متوسط/شدید کبد توصیه نمی‌شود.",
+            "en": "With rifampin (≥50 kg): 800 mg. With voriconazole: efavirenz 300 mg and voriconazole 400 mg every 12 h. Not recommended in moderate/severe hepatic impairment."
+          },
+          "refs": [
+            {
+              "source": "fda-efavirenz",
+              "section": "2"
+            },
+            {
+              "source": "fda-efavirenz",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت قبلی (SJS، اریتم مولتی‌فرم، راش سمی)؛ الباسویر/گرازوپرویر همزمان.",
+        "en": "Prior significant hypersensitivity (SJS, erythema multiforme, toxic rash); concomitant elbasvir/grazoprevir."
+      },
+      "refs": [
+        {
+          "source": "fda-efavirenz",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "علائم روانی و عصبی (رؤیا، سرگیجه، افسردگی)؛ آسیب جنینی (پیشگیری از بارداری)؛ طولانی شدن QT؛ سمیت کبد.",
+        "en": "Psychiatric and nervous-system symptoms (dreams, dizziness, depression); embryo-fetal toxicity (avoid pregnancy); QT prolongation; hepatotoxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-efavirenz",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hiv",
+      "formulation": "tab-600",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J05AG03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09948",
+        "en": "EFAVIRENZ 100MG CAP",
+        "fa": "کپسول افاویرنز ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "09949",
+        "en": "EFAVIRENZ 200MG CAP",
+        "fa": "کپسول افاویرنز ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "10016",
+        "en": "EFAVIRENZ 200MG TAB",
+        "fa": "قرص افاویرنز ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "11647",
+        "en": "EFAVIRENZ 30MG/ML 180ML ORAL SOLUTION",
+        "fa": "محلول خوراکی افاویرنز ۳۰ میلی‌گرم / میلی‌لیتر ۱۸۰ میلی‌لیتر"
+      },
+      {
+        "code": "09947",
+        "en": "EFAVIRENZ 50MG CAP",
+        "fa": "کپسول افاویرنز ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "09946",
+        "en": "EFAVIRENZ 600MG TAB",
+        "fa": "قرص افاویرنز ۶۰۰ میلی‌گرم"
+      },
+      {
+        "code": "53097",
+        "en": "EFAVIRENZ SUSPENSION ORAL 30 mg/1mL 180 mL",
+        "fa": "سوسپانسیون خوراکی افاویرنز ۳۰ میلی‌گرم / ۱ میلی‌لیتر ۱۸۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1170/Efavirenz",
+        "url": "https://www.darooyab.ir/G-1170/Efavirenz"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-efavirenz",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA204766"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204766",
+      "label": "ANDA204766"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=92603fa5-7a2c-4bfb-9a70-aadb4fba952c",
+      "label": "FDA Efavirenz"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699004.html",
+      "label": "Efavirenz"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AG03",
+      "label": "J05AG03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1170/Efavirenz",
+      "label": "Efavirenz"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are retrospective case reports of neural tube defects in infants whose mothers were exposed to efavirenz-containing regimens in the first trimester of pregnancy.",
+      "refs": [
+        {
+          "source": "fda-efavirenz",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for HIV transmission in breastfed infants, advise women not to breastfeed.",
+      "refs": [
+        {
+          "source": "fda-efavirenz",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety, pharmacokinetic profile, and virologic and immunologic responses of efavirenz were evaluated in antiretroviral-naive and -experienced HIV-1 infected pediatric patients 3 months to 21 years of age in three open-label clinical trials [see Adverse Reactions ( 6.2 ), Clinical Pharmacology ( 12.3 ), and …",
+      "refs": [
+        {
+          "source": "fda-efavirenz",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other therapy.",
+      "refs": [
+        {
+          "source": "fda-efavirenz",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females of reproductive potential should use effective contraception during treatment with efavirenz and for 12 weeks after discontinuing efavirenz due to the long half-life of efavirenz.",
+      "refs": [
+        {
+          "source": "fda-efavirenz",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

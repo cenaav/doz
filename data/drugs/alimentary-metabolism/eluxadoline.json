@@ -1,0 +1,255 @@
+{
+  "id": "eluxadoline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "الوکسادولین",
+    "en": "Eluxadoline"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آگونیست گیرنده اپیوئیدی μ/κ روده (ضداسهال)",
+    "en": "Gut mu/kappa opioid agonist (antidiarrhoeal)"
+  },
+  "brands": [
+    {
+      "name": "Viberzi",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "viberzi",
+    "وایبرزی",
+    "الوکسادولین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-viberzi",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-75",
+      "form": "tablet",
+      "route": "oral",
+      "label": "75 mg tablet",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-viberzi",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ibsd",
+      "disease": "ibs",
+      "label": {
+        "fa": "IBS با اسهال بزرگسال — ۱۰۰ mg دو بار با غذا",
+        "en": "IBS with diarrhoea, adults — 100 mg twice daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-viberzi",
+          "section": "2"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-100"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۷۵ mg دو بار: عدم تحمل ۱۰۰ mg، مهارکننده OATP1B1، نارسایی خفیف/متوسط کبد، eGFR زیر ۶۰ یا ESRD بدون دیالیز. در یبوست شدید قطع.",
+            "en": "75 mg twice daily: intolerance of 100 mg, OATP1B1 inhibitors, mild/moderate hepatic impairment, eGFR <60, or ESRD not on dialysis. Stop if severe constipation."
+          },
+          "refs": [
+            {
+              "source": "fda-viberzi",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نداشتن کیسه صفرا؛ انسداد مجرای صفراوی یا اختلال اسفنکتر اودی؛ الکلیسم یا بیش از ۳ نوشیدنی الکلی در روز؛ سابقه پانکراتیت یا بیماری ساختاری پانکراس؛ نارسایی شدید کبد؛ سابقه یبوست شدید یا انسداد مکانیکی روده؛ حساسیت.",
+        "en": "No gallbladder; biliary duct obstruction or sphincter of Oddi disease; alcoholism or >3 alcoholic drinks a day; history of pancreatitis or structural pancreatic disease; severe hepatic impairment; history of severe constipation or mechanical bowel obstruction; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-viberzi",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پانکراتیت؛ اسپاسم اسفنکتر اودی؛ واکنش حساسیتی؛ یبوست.",
+        "en": "Pancreatitis; sphincter of Oddi spasm; hypersensitivity; constipation."
+      },
+      "refs": [
+        {
+          "source": "fda-viberzi",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "warn",
+      "text": {
+        "fa": "eGFR زیر ۶۰ (و ESRD بدون دیالیز): ۷۵ mg دو بار.",
+        "en": "eGFR <60 (and ESRD not on dialysis): 75 mg twice daily."
+      },
+      "refs": [
+        {
+          "source": "fda-viberzi",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ibsd",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A07DA06"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Eluxadoline"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-viberzi",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA206940"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206940",
+      "label": "NDA206940"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7821bd40-4c84-4984-951b-6436ae20421a",
+      "label": "FDA Viberzi"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615054.html",
+      "label": "Eluxadoline"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07DA06",
+      "label": "A07DA06"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no studies with VIBERZI in pregnant women that inform any drug-associated risks.",
+      "refs": [
+        {
+          "source": "fda-viberzi",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary No data are available regarding the presence of eluxadoline in human milk, the effects of eluxadoline on the breastfed infant, or the effects of eluxadoline on milk production.",
+      "refs": [
+        {
+          "source": "fda-viberzi",
+          "section": "8.2"
+        }
+      ]
+    }
+  }
+}

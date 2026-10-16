@@ -1,0 +1,410 @@
+{
+  "id": "anidulafungin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آنیدولافانژین",
+    "en": "Anidulafungin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "اکینوکاندین",
+    "en": "Echinocandin"
+  },
+  "brands": [
+    {
+      "name": "Eraxis",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "eraxis",
+    "اراکسیس",
+    "آنیدولافانژین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-100",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "100 mg vial",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-50",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "50 mg vial",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "invasive-fungal",
+      "label": {
+        "fa": "کاندیدمی — بزرگسال: روز اول بارگذاری ۲۰۰ mg",
+        "en": "Candidaemia — adult: day 1 loading 200 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-100"
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "invasive-fungal",
+      "label": {
+        "fa": "کاندیدمی — بزرگسال: ۱۰۰ mg روزانه از روز ۲، دست‌کم ۱۴ روز پس از آخرین کشت مثبت",
+        "en": "Candidaemia — adult: 100 mg daily from day 2, ≥14 days after the last positive culture"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "2"
+        }
+      ],
+      "allowedFormulations": [
+        "vial-100"
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "invasive-fungal",
+      "label": {
+        "fa": "کاندیدمی — کودک ۱ ماه به بالا: روز اول ۳ mg/kg (حداکثر ۲۰۰)، سپس ۱٫۵ mg/kg روزانه (حداکثر ۱۰۰)",
+        "en": "Candidaemia — children ≥1 month: day 1 3 mg/kg (max 200), then 1.5 mg/kg daily (max 100)"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1.5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 100,
+        "refs": [
+          {
+            "source": "fda-eraxis",
+            "section": "2"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "vial-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عدد ماشین‌حساب دوز نگهدارنده است؛ روز اول ۳ mg/kg. سرعت انفوزیون حداکثر ۱٫۱ mg/دقیقه.",
+            "en": "The calculator gives the maintenance dose; day 1 is 3 mg/kg. Infusion rate max 1.1 mg/min."
+          },
+          "refs": [
+            {
+              "source": "fda-eraxis",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eso",
+      "disease": "esophageal-candidiasis",
+      "label": {
+        "fa": "کاندیدیاز مری — بزرگسال: روز اول ۱۰۰ mg سپس ۵۰ mg روزانه",
+        "en": "Oesophageal candidiasis — adult: 100 mg day 1, then 50 mg daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "2"
+        }
+      ],
+      "allowedFormulations": [
+        "vial-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دست‌کم ۱۴ روز و ۷ روز پس از رفع علائم.",
+            "en": "At least 14 days and 7 days after symptoms resolve."
+          },
+          "refs": [
+            {
+              "source": "fda-eraxis",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آنیدولافانژین یا اکینوکاندین‌ها؛ عدم تحمل ارثی فروکتوز (معلوم یا مشکوک).",
+        "en": "Hypersensitivity to anidulafungin or other echinocandins; known or suspected hereditary fructose intolerance."
+      },
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 30
+      }
+    },
+    {
+      "regimen": "eso",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "J02AX06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "15570",
+        "en": "ANIDULAFUNGIN 100MG/30ML INJ",
+        "fa": "فرآورده تزریقی آنیدولافانجین ۱۰۰ میلی‌گرم / ۳۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-695/Anidulafungin",
+        "url": "https://www.darooyab.ir/G-695/Anidulafungin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-eraxis",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021632"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021632",
+      "label": "NDA021632"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a88d9010-55fb-4a02-baff-042cd27688ea",
+      "label": "FDA Eraxis"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J02AX06",
+      "label": "J02AX06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-695/Anidulafungin",
+      "label": "Anidulafungin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal studies, ERAXIS can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of anidulafungin in human milk, the effects on the breastfed infant or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of ERAXIS for the treatment of candidemia and the following Candida infections: intra-abdominal abscess and peritonitis, have been established in pediatric patients 1 month of age and older.",
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of subjects (N = 197) in the pivotal clinical studies of anidulafungin, 35% were 65 years and over, while 18% were 75 years and over.",
+      "refs": [
+        {
+          "source": "fda-eraxis",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

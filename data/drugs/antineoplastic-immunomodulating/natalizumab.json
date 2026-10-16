@@ -1,0 +1,322 @@
+{
+  "id": "natalizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ناتالیزوماب",
+    "en": "Natalizumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد اینتگرین α4",
+    "en": "Anti-α4 integrin antibody"
+  },
+  "brands": [
+    {
+      "name": "Tysabri",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tysabri",
+    "تیزابری",
+    "ناتالیزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "vial-300",
+      "form": "injection",
+      "route": "iv",
+      "label": "300 mg/15 mL (20 mg/mL) vial for IV infusion",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perVolumeMl": 15
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tysabri",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ms",
+      "disease": "multiple-sclerosis",
+      "label": {
+        "fa": "ام‌اس عودکننده بزرگسال — ۳۰۰ mg انفوزیون وریدی ۱ ساعته هر ۴ هفته",
+        "en": "Relapsing MS, adults — 300 mg IV infusion over 1 h every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tysabri",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط در برنامه TOUCH؛ بولوس نه؛ تا ۴۸ ساعت پس از تهیه. ۱۲ انفوزیون اول یک ساعت پس از آن پایش.",
+            "en": "TOUCH program only; never IV push; use within 48 h of preparation. Observe 1 h after each of the first 12 infusions."
+          },
+          "refs": [
+            {
+              "source": "fda-tysabri",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-tysabri",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cd",
+      "disease": "crohns",
+      "label": {
+        "fa": "کرون متوسط تا شدید بزرگسال — ۳۰۰ mg وریدی هر ۴ هفته (بدون سرکوب‌کننده ایمنی یا ضد TNF همزمان)",
+        "en": "Moderate–severe Crohn disease, adults — 300 mg IV every 4 weeks (no concomitant immunosuppressants or TNF inhibitors)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tysabri",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "PML فعلی یا قبلی؛ حساسیت به ناتالیزوماب.",
+        "en": "Current or past PML; hypersensitivity to natalizumab."
+      },
+      "refs": [
+        {
+          "source": "fda-tysabri",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: لکوآنسفالوپاتی چندکانونی پیشرونده (PML) — خطر با آنتی‌بادی JCV، مدت درمان و سرکوب ایمنی قبلی بیشتر.",
+        "en": "Boxed warning: progressive multifocal leukoencephalopathy (PML) — risk rises with anti-JCV antibodies, treatment duration and prior immunosuppressants."
+      },
+      "refs": [
+        {
+          "source": "fda-tysabri",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "عفونت هرپسی (آنسفالیت، رتینیت)؛ سمیت کبد؛ حساسیت.",
+        "en": "Herpes infections (encephalitis, retinitis); hepatotoxicity; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-tysabri",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ms",
+      "formulation": "vial-300",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 15
+      }
+    },
+    {
+      "regimen": "cd",
+      "formulation": "vial-300",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 15
+      }
+    }
+  ],
+  "atc": [
+    "L04AG03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "12534",
+        "en": "NATALIZUMAB 20MG/ML  VIAL",
+        "fa": "ویال ناتالیزومب ۲۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "11759",
+        "en": "NATALIZUMAB 300 AMP",
+        "fa": "آمپول ناتالیزومب ۳۰۰"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4040/Natalizumab",
+        "url": "https://www.darooyab.ir/G-4040/Natalizumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-tysabri",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125104"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125104",
+      "label": "BLA125104"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5fdde91-1989-4dd2-9129-4f3323ea2962",
+      "label": "FDA Tysabri"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605006.html",
+      "label": "Natalizumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AG03",
+      "label": "L04AG03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4040/Natalizumab",
+      "label": "Natalizumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the risk of major birth defects, miscarriage, or other adverse maternal outcomes associated with the use of TYSABRI in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-tysabri",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Natalizumab has been detected in human milk.",
+      "refs": [
+        {
+          "source": "fda-tysabri",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients with multiple sclerosis or Crohn's disease below the age of 18 years have not been established.",
+      "refs": [
+        {
+          "source": "fda-tysabri",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of TYSABRI did not include sufficient numbers of patients aged 65 years and over to determine whether they respond differently than younger patients.",
+      "refs": [
+        {
+          "source": "fda-tysabri",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

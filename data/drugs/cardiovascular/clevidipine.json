@@ -1,0 +1,241 @@
+{
+  "id": "clevidipine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلودیپین",
+    "en": "Clevidipine"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مسدودکننده کانال کلسیم وریدی",
+    "en": "IV calcium channel blocker"
+  },
+  "brands": [
+    {
+      "name": "Cleviprex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cleviprex",
+    "کلودیپین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-05",
+      "form": "injection",
+      "route": "iv",
+      "label": "0.5 mg/mL emulsion (50, 100, 250 mL)",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cleviprex",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertensive-emergency",
+      "label": {
+        "fa": "کاهش فشار خون وقتی خوراکی ممکن نیست — شروع ۱ تا ۲ mg/ساعت؛ نگهدارنده معمولاً ۴ تا ۶ mg/ساعت",
+        "en": "Blood pressure reduction when oral therapy is not feasible — start 1–2 mg/h; usual maintenance 4–6 mg/h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mg",
+      "dose": {
+        "perMin": 0.01667,
+        "perMinMax": 0.03333
+      },
+      "refs": [
+        {
+          "source": "fda-cleviprex",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "ابتدا هر ۹۰ ثانیه دو برابر؛ نزدیک هدف هر ۵ تا ۱۰ دقیقه کمتر از دو برابر. بیشتر بیماران تا ۱۶ mg/ساعت؛ به‌خاطر بار چربی حداکثر ۱۰۰۰ mL یا میانگین ۲۱ mg/ساعت در ۲۴ ساعت.",
+            "en": "Double every 90 s initially; near goal less-than-double every 5–10 min. Most patients ≤16 mg/h; because of lipid load, no more than 1000 mL or an average 21 mg/h per 24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-cleviprex",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سویا یا تخم‌مرغ؛ اختلال متابولیسم چربی؛ تنگی شدید آئورت.",
+        "en": "Soy or egg allergy; defective lipid metabolism; severe aortic stenosis."
+      },
+      "refs": [
+        {
+          "source": "fda-cleviprex",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "افت فشار و تاکی‌کاردی رفلکسی؛ امولسیون چربی (رعایت سترونی)؛ فشار برگشتی تا ۸ ساعت پس از قطع.",
+        "en": "Hypotension and reflex tachycardia; lipid emulsion (aseptic technique); rebound hypertension up to 8 h after stopping."
+      },
+      "refs": [
+        {
+          "source": "fda-cleviprex",
+          "section": "5"
+        },
+        {
+          "source": "fda-cleviprex",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "vial-05",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "mlPerHour": 2,
+        "upperMlPerHour": 4
+      }
+    }
+  ],
+  "atc": [
+    "C08CA16"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Clevidipine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-cleviprex",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022156"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022156",
+      "label": "NDA022156"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6826aa3-fabb-4ff1-a7a3-cd4c34e3a330",
+      "label": "FDA Cleviprex"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA16",
+      "label": "C08CA16"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category C There are no adequate and well-controlled studies of Cleviprex use in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-cleviprex",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, consider possible infant exposure when Cleviprex is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-cleviprex",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of Cleviprex in children under 18 years of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-cleviprex",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, for an elderly patient doses should be titrated cautiously, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-cleviprex",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

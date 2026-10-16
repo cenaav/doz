@@ -1,0 +1,316 @@
+{
+  "id": "atazanavir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آتازاناویر",
+    "en": "Atazanavir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده پروتئاز",
+    "en": "Protease inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Reyataz",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "reyataz",
+    "ریاتاز",
+    "آتازاناویر",
+    "ATV"
+  ],
+  "formulations": [
+    {
+      "id": "cap-300",
+      "form": "capsule",
+      "route": "oral",
+      "label": "300 mg capsule",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-reyataz",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-200",
+      "form": "capsule",
+      "route": "oral",
+      "label": "200 mg capsule",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-reyataz",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "boost",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 بزرگسال — ۳۰۰ mg + ریتوناویر ۱۰۰ mg یک بار با غذا",
+        "en": "HIV-1 adult — 300 mg + ritonavir 100 mg once daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-reyataz",
+          "section": "2.3"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-300"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس (مگر فرآورده کامل).",
+            "en": "Always with other antiretrovirals (unless a complete regimen)."
+          },
+          "refs": [
+            {
+              "source": "fda-reyataz",
+              "section": "2.3"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "درمان‌نشده: جایگزین ۴۰۰ mg بدون ریتوناویر. با H2 بلاکر یا PPI فاصله زمانی طبق برچسب. آزمایش کلیه پیش و حین درمان.",
+            "en": "Treatment-naive alternative: 400 mg unboosted. Separate from H2 blockers/PPIs per label. Renal tests before and during therapy."
+          },
+          "refs": [
+            {
+              "source": "fda-reyataz",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-reyataz",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-reyataz",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت قبلی (SJS، اریتم مولتی‌فرم)؛ داروهای وابسته به CYP3A یا UGT1A1 با دامنه باریک و القاگرهای قوی (طبق جدول برچسب).",
+        "en": "Prior hypersensitivity (SJS, erythema multiforme); CYP3A/UGT1A1-dependent narrow-index drugs and strong inducers (per label table)."
+      },
+      "refs": [
+        {
+          "source": "fda-reyataz",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "اختلال هدایت قلب (PR)؛ راش؛ هیپربیلی‌روبینمی؛ سنگ کلیه و صفرا؛ نارسایی مزمن کلیه.",
+        "en": "Cardiac conduction abnormalities (PR); rash; hyperbilirubinaemia; nephrolithiasis and cholelithiasis; chronic kidney disease."
+      },
+      "refs": [
+        {
+          "source": "fda-reyataz",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "boost",
+      "formulation": "cap-300",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J05AE08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18488",
+        "en": "ATAZANAVIR 150MG  TAB.",
+        "fa": "قرص آتازاناویر ۱۵۰ میلی‌گرم ."
+      },
+      {
+        "code": "12118",
+        "en": "ATAZANAVIR SULFATE 150MG CAP",
+        "fa": "کپسول آتازاناویر سولفات ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "53102",
+        "en": "ATAZANAVIR 200MG TAB",
+        "fa": "قرص آتازاناویر ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52110",
+        "en": "ATAZANAVIR 200MG CAP",
+        "fa": "کپسول آتازاناویر ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1162/Atazanavir",
+        "url": "https://www.darooyab.ir/G-1162/Atazanavir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-reyataz",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021567"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021567",
+      "label": "NDA021567"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=165cff62-b284-4a27-a65d-9ec8a5bfcdd8",
+      "label": "FDA Reyataz"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603019.html",
+      "label": "Atazanavir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AE08",
+      "label": "J05AE08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1162/Atazanavir",
+      "label": "Atazanavir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Atazanavir has been evaluated in a limited number of women during pregnancy.",
+      "refs": [
+        {
+          "source": "fda-reyataz",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Atazanavir has been detected in human milk.",
+      "refs": [
+        {
+          "source": "fda-reyataz",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "REYATAZ is indicated in combination with other antiretroviral agents for the treatment of pediatric patients with HIV-1, 3 months of age and older weighing at least 5 kg.",
+      "refs": [
+        {
+          "source": "fda-reyataz",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, appropriate caution should be exercised in the administration and monitoring of REYATAZ in elderly patients reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-reyataz",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

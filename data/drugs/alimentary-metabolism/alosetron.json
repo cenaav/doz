@@ -1,0 +1,272 @@
+{
+  "id": "alosetron",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آلوسترون",
+    "en": "Alosetron"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتاگونیست 5-HT3",
+    "en": "5-HT3 antagonist"
+  },
+  "brands": [
+    {
+      "name": "Lotronex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lotronex",
+    "لوترونکس",
+    "آلوسترون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-0-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "0.5 mg tablet",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-alosetron",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-1",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1 mg tablet",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-alosetron",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ibsd",
+      "disease": "ibs",
+      "label": {
+        "fa": "IBS شدید با اسهال در زنان مقاوم به درمان معمول — شروع ۰٫۵ mg دو بار؛ پس از ۴ هفته تا ۱ mg دو بار",
+        "en": "Severe diarrhoea-predominant IBS in women unresponsive to conventional therapy — start 0.5 mg twice daily; after 4 weeks up to 1 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "perDoseMax": 1,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-alosetron",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در یبوست فوراً قطع؛ پس از رفع با ۰٫۵ mg یک بار شروع مجدد؛ اگر تکرار شد قطع دائم. اگر پس از ۴ هفته با ۱ mg دو بار کنترل نشد قطع.",
+            "en": "Stop at once if constipated; after resolution restart at 0.5 mg once daily; stop permanently if it recurs. Stop if not controlled after 4 weeks at 1 mg twice daily."
+          },
+          "refs": [
+            {
+              "source": "fda-alosetron",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "یبوست فعلی؛ سابقه یبوست شدید یا عوارض آن، انسداد، تنگی، مگاکولون توکسیک، سوراخ‌شدگی یا چسبندگی روده؛ کولیت ایسکمیک، اختلال گردش روده، ترومبوفلبیت یا حالت انعقادپذیری؛ کرون یا کولیت اولسراتیو؛ دیورتیکولیت؛ نارسایی شدید کبد؛ فلووکسامین.",
+        "en": "Current constipation; history of severe constipation or its sequelae, obstruction, stricture, toxic megacolon, perforation or adhesions; ischaemic colitis, impaired intestinal circulation, thrombophlebitis or hypercoagulable state; Crohn disease or ulcerative colitis; diverticulitis; severe hepatic impairment; fluvoxamine."
+      },
+      "refs": [
+        {
+          "source": "fda-alosetron",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: عوارض جدی گوارشی (کولیت ایسکمیک، عوارض یبوست) گاه منجر به جراحی یا مرگ — فقط برای زنان با IBS-D شدید مقاوم؛ با یبوست یا خون در مدفوع فوراً قطع.",
+        "en": "Boxed warning: serious GI adverse reactions (ischaemic colitis, complications of constipation) sometimes requiring surgery or causing death — only for women with severe refractory IBS-D; stop immediately with constipation or rectal bleeding."
+      },
+      "refs": [
+        {
+          "source": "fda-alosetron",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ibsd",
+      "formulation": "tab-0-5",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 0.5,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "A03AE01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2534/Alosetron",
+        "url": "https://www.darooyab.ir/G-2534/Alosetron"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211621",
+      "label": "ANDA211621"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d62b2c5a-1693-4e67-96d5-197e1fdc8694",
+      "label": "FDA Alosetron"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601230.html",
+      "label": "Alosetron"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A03AE01",
+      "label": "A03AE01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2534/Alosetron",
+      "label": "Alosetron"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The available data with alosetron tablets use in pregnant women are insufficient to draw conclusions about any drug-associated risks for major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-alosetron",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data regarding the presence of alosetron in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-alosetron",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-alosetron",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In some studies in healthy men or women, plasma concentrations were elevated by approximately 40% in individuals 65 years and older compared to young adults [see Warnings and Precautions ( 5.1 )] .",
+      "refs": [
+        {
+          "source": "fda-alosetron",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-alosetron",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA211621"
+  }
+}

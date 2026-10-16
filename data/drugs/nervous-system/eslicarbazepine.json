@@ -1,0 +1,452 @@
+{
+  "id": "eslicarbazepine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اسلی‌کاربازپین",
+    "en": "Eslicarbazepine acetate"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدتشنج (مسدودکننده کانال سدیم)",
+    "en": "Antiseizure (sodium-channel blocker)"
+  },
+  "brands": [
+    {
+      "name": "Aptiom",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aptiom",
+    "آپتیوم",
+    "zebinix",
+    "اسلیکاربازپین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-800",
+      "form": "tablet",
+      "route": "oral",
+      "label": "800 mg tablet (scored)",
+      "concentration": {
+        "amount": 800,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-400",
+      "form": "tablet",
+      "route": "oral",
+      "label": "400 mg tablet",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet (scored)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-600",
+      "form": "tablet",
+      "route": "oral",
+      "label": "600 mg tablet (scored)",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "تشنج فوکال بزرگسال — نگهدارنده ۸۰۰ تا ۱۶۰۰ mg یک بار در روز (شروع ۴۰۰ mg)",
+        "en": "Focal seizures, adults — maintenance 800–1600 mg once daily (start 400 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 800,
+        "perDoseMax": 1600,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۴۰۰ mg (یا ۸۰۰ mg در صورت نیاز)؛ هفتگی ۴۰۰ تا ۶۰۰ mg افزایش. همراه اکس‌کاربازپین نه.",
+            "en": "Start 400 mg (or 800 mg if needed); increase weekly by 400–600 mg. Not with oxcarbazepine."
+          },
+          "refs": [
+            {
+              "source": "fda-aptiom",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-aptiom",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "تشنج فوکال کودک ۴ تا ۱۷ سال — نگهدارنده یک بار در روز بر اساس وزن (حد پایین محدوده)",
+        "en": "Focal seizures, children 4–17 y — once-daily maintenance by weight (lower end of range)"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 11
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 10.99,
+            "maxWeightKg": 21.99,
+            "perDose": 400,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 21.99,
+            "maxWeightKg": 31.99,
+            "perDose": 500,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 31.99,
+            "maxWeightKg": 38,
+            "perDose": 600,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 38,
+            "maxWeightKg": null,
+            "perDose": 800,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "حد بالای نگهدارنده: ۱۱–۲۱ kg: ۶۰۰؛ ۲۲–۳۱: ۸۰۰؛ ۳۲–۳۸: ۹۰۰؛ >۳۸: ۱۲۰۰ mg. شروع و گام افزایش هفتگی: ۲۰۰ / ۳۰۰ / ۳۰۰ / ۴۰۰ mg.",
+            "en": "Upper maintenance: 11–21 kg: 600; 22–31: 800; 32–38: 900; >38: 1200 mg. Start and weekly step: 200 / 300 / 300 / 400 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-aptiom",
+              "section": "2.2, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اسلی‌کاربازپین یا اکس‌کاربازپین.",
+        "en": "Hypersensitivity to eslicarbazepine acetate or oxcarbazepine."
+      },
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "افکار و رفتار خودکشی؛ قطع ناگهانی نه (خطر تشنج و استاتوس).",
+        "en": "Suicidal thoughts and behaviour; do not stop abruptly (seizures, status epilepticus)."
+      },
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "5.1"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واکنش پوستی شدید و DRESS؛ آنافیلاکسی؛ هیپوناترمی؛ سرگیجه و اختلال تعادل؛ آسیب کبدی. نارسایی شدید کبد توصیه نمی‌شود.",
+        "en": "Serious skin reactions and DRESS; anaphylaxis; hyponatraemia; dizziness and gait disturbance; liver injury. Not recommended in severe hepatic impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "5"
+        },
+        {
+          "source": "fda-aptiom",
+          "section": "2.5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 50,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۵۰: دوز شروع، تیتراسیون و نگهدارنده ۵۰٪ کم شود.",
+        "en": "CrCl <50: reduce initial, titration and maintenance doses by 50%."
+      },
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-800",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 800,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 1600
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 2.5
+      }
+    }
+  ],
+  "atc": [
+    "N03AF04"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Eslicarbazepine%20acetate"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-aptiom",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022416"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022416",
+      "label": "NDA022416"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3d0c9554-eaeb-4694-8089-00133fcadce3",
+      "label": "FDA Aptiom"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614032.html",
+      "label": "Eslicarbazepine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AF04",
+      "label": "N03AF04"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited available data with APTIOM use in pregnant women are insufficient to inform a drug-associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Eslicarbazepine is present in human milk.",
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of APTIOM have been established in the age groups 4 to 17 years.",
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Although the pharmacokinetics of eslicarbazepine are not affected by age independently, dose selection should take in consideration the greater frequency of renal impairment and other concomitant medical conditions and drug therapies in the elderly patient.",
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Use of APTIOM with hormonal contraceptives containing ethinylestradiol or levonorgestrel is associated with lower plasma levels of these hormones.",
+      "refs": [
+        {
+          "source": "fda-aptiom",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

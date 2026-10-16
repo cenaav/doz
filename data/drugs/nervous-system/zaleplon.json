@@ -1,0 +1,326 @@
+{
+  "id": "zaleplon",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "زالپلون",
+    "en": "Zaleplon"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "خواب‌آور غیربنزودیازپینی (Z-drug)",
+    "en": "Non-benzodiazepine hypnotic (Z-drug)"
+  },
+  "brands": [
+    {
+      "name": "Sonata",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sonata",
+    "سوناتا",
+    "زالپلون"
+  ],
+  "formulations": [
+    {
+      "id": "cap-10",
+      "form": "capsule",
+      "route": "oral",
+      "label": "10 mg capsule",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zaleplon",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "5 mg capsule",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zaleplon",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ins",
+      "disease": "insomnia",
+      "label": {
+        "fa": "بی‌خوابی (کوتاه‌مدت) بزرگسال — ۱۰ mg درست پیش از خواب",
+        "en": "Insomnia (short-term), adults — 10 mg immediately before bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 65,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zaleplon",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا پس از رفتن به رختخواب و ناتوانی در خوابیدن. وزن کم: ۵ mg ممکن است کافی باشد. بیش از ۲۰ mg توصیه نمی‌شود.",
+            "en": "Or after going to bed with difficulty falling asleep. Low weight: 5 mg may suffice. Not above 20 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-zaleplon",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eld",
+      "disease": "insomnia",
+      "label": {
+        "fa": "سالمند یا ناتوان — ۵ mg",
+        "en": "Elderly or debilitated — 5 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 65,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zaleplon",
+          "section": "Precautions"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه رفتار پیچیده خواب با زالپلون؛ حساسیت.",
+        "en": "Prior complex sleep behaviours with zaleplon; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-zaleplon",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: رفتارهای پیچیده خواب (راه رفتن یا رانندگی در خواب) گاه با آسیب جدی یا مرگ — در صورت بروز فوراً قطع شود.",
+        "en": "Boxed warning: complex sleep behaviours (sleep-walking, sleep-driving) sometimes causing serious injury or death — stop immediately if they occur."
+      },
+      "refs": [
+        {
+          "source": "fda-zaleplon",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ins",
+      "formulation": "cap-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 20
+      }
+    },
+    {
+      "regimen": "eld",
+      "formulation": "cap-5",
+      "input": {
+        "ageYears": 72,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N05CF03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07129",
+        "en": "ZALEPLON 10MG CAP",
+        "fa": "کپسول زالپلون ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "17947",
+        "en": "ZALEPLON 5MG CAP",
+        "fa": "کپسول زالپلون ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1368/Zaleplon",
+        "url": "https://www.darooyab.ir/G-1368/Zaleplon"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-zaleplon",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077237"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077237",
+      "label": "ANDA077237"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cadd9d75-2139-4fab-94ce-2992e6a55780",
+      "label": "FDA Zaleplon"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601251.html",
+      "label": "Zaleplon"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05CF03",
+      "label": "N05CF03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1368/Zaleplon",
+      "label": "Zaleplon"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "In embryofetal development studies in rats and rabbits, oral administration of up to 100 mg/kg/day and 50 mg/kg/day, respectively, to pregnant animals throughout organogenesis produced no evidence of teratogenicity.",
+      "refs": [
+        {
+          "source": "fda-zaleplon",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "A study in lactating mothers indicated that the clearance and half-life of zaleplon is similar to that in young normal subjects.",
+      "refs": [
+        {
+          "source": "fda-zaleplon",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of zaleplon in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-zaleplon",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In both sleep laboratory and outpatient studies, elderly patients with insomnia responded to a 5 mg dose with a reduced sleep latency, and thus 5 mg is the recommended dose in this population.",
+      "refs": [
+        {
+          "source": "fda-zaleplon",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "id": "plecanatide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پلکاناتاید",
+    "en": "Plecanatide"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آگونیست گوانیلات سیکلاز-C",
+    "en": "Guanylate cyclase-C agonist"
+  },
+  "brands": [
+    {
+      "name": "Trulance",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "trulance",
+    "ترولانس",
+    "پلکاناتید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-3",
+      "form": "tablet",
+      "route": "oral",
+      "label": "3 mg tablet",
+      "concentration": {
+        "amount": 3,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-trulance",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cic",
+      "disease": "chronic-idiopathic-constipation",
+      "label": {
+        "fa": "یبوست مزمن ایدیوپاتیک بزرگسال — ۳ mg یک بار",
+        "en": "Chronic idiopathic constipation, adults — 3 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 3,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-trulance",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "ibsc",
+      "disease": "ibs",
+      "label": {
+        "fa": "IBS با یبوست بزرگسال — ۳ mg یک بار",
+        "en": "IBS with constipation, adults — 3 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 3,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-trulance",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "کودک زیر ۶ سال (کم‌آبی شدید)؛ انسداد مکانیکی گوارش.",
+        "en": "Children under 6 years (serious dehydration); mechanical GI obstruction."
+      },
+      "refs": [
+        {
+          "source": "fda-trulance",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: کم‌آبی شدید در کودکان — زیر ۶ سال منع، ۶ تا ۱۸ سال پرهیز. اسهال شدید.",
+        "en": "Boxed warning: serious dehydration in children — contraindicated under 6 y, avoid 6–<18 y. Severe diarrhoea."
+      },
+      "refs": [
+        {
+          "source": "fda-trulance",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-trulance",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cic",
+      "formulation": "tab-3",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 3,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "ibsc",
+      "formulation": "tab-3",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 3,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A06AX07"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Plecanatide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-trulance",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA208745"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208745",
+      "label": "NDA208745"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fe2895bf-71a6-493a-b0ca-e06b2dfefc82",
+      "label": "FDA Trulance"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a617020.html",
+      "label": "Plecanatide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A06AX07",
+      "label": "A06AX07"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: جذب سیستمیک ناچیز؛ مواجهه جنین انتظار نمی‌رود.",
+        "en": "Label: minimal systemic absorption; fetal exposure not expected."
+      },
+      "quote": "Risk Summary Plecanatide and its active metabolite are negligibly absorbed systemically following oral administration [see Clinical Pharmacology (12.3) ] and maternal use is not expected to result in fetal exposure to the drug.",
+      "refs": [
+        {
+          "source": "fda-trulance",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary After administration of multiple doses of TRULANCE 3 mg once daily for 2 weeks to nursing mothers, plecanatide and its active metabolite were not measurable in breast milk collected at 2 hours, 6 hours, and 12 hours post-dosing.",
+      "refs": [
+        {
+          "source": "fda-trulance",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در کودکان زیر سن مشخص منع مصرف دارد.",
+        "en": "Label: contraindicated in children below a stated age."
+      },
+      "quote": "TRULANCE is contraindicated in: Patients less than 6 years of age due to the risk of serious dehydration [see Warnings and Precautions (5.1) , Use in Specific Populations (8.4) ] .",
+      "refs": [
+        {
+          "source": "fda-trulance",
+          "section": "4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Chronic Idiopathic Constipation (CIC) Of 2,601 subjects in placebo-controlled clinical trials of TRULANCE, 273 (10%) were 65 years of age and over, and 47 (2%) were 75 years and over.",
+      "refs": [
+        {
+          "source": "fda-trulance",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

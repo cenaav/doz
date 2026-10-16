@@ -1,0 +1,429 @@
+{
+  "id": "dalteparin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دالته‌پارین",
+    "en": "Dalteparin"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "هپارین با وزن مولکولی کم",
+    "en": "Low-molecular-weight heparin"
+  },
+  "brands": [
+    {
+      "name": "Fragmin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "fragmin",
+    "فرگمین",
+    "دالتپارین"
+  ],
+  "formulations": [
+    {
+      "id": "syr-5000",
+      "form": "injection",
+      "route": "sc",
+      "label": "5,000 units/0.2 mL syringe (also 2,500–18,000 units)",
+      "concentration": {
+        "amount": 25000,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "syr-2500",
+      "form": "injection",
+      "route": "sc",
+      "label": "2,500 units/0.2 mL syringe",
+      "concentration": {
+        "amount": 12500,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acs",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "آنژین ناپایدار و MI بدون موج Q — ۱۲۰ واحد/kg هر ۱۲ ساعت (حداکثر ۱۰٬۰۰۰ واحد)",
+        "en": "Unstable angina and non-Q-wave MI — 120 units/kg every 12 h (max 10,000 units)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDose": 120,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 10000,
+        "refs": [
+          {
+            "source": "fda-fragmin",
+            "section": "2.1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 8
+      },
+      "allowedFormulations": [
+        "syr-5000"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه آسپرین ۷۵ تا ۱۶۵ mg روزانه تا پایداری بالینی.",
+            "en": "With aspirin 75–165 mg daily until clinically stable."
+          },
+          "refs": [
+            {
+              "source": "fda-fragmin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proph",
+      "disease": "dvt-prophylaxis",
+      "label": {
+        "fa": "پیشگیری DVT در بیمار داخلی یا جراحی شکم پرخطر — ۵۰۰۰ واحد یک بار در روز",
+        "en": "DVT prophylaxis in medical or high-risk abdominal surgery — 5,000 units once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "unit",
+      "dose": {
+        "perDose": 5000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "syr-5000"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "جراحی شکم کم‌خطر: ۲۵۰۰ واحد. تعویض لگن: شروع ۲۵۰۰ واحد ۴ تا ۸ ساعت پس از جراحی سپس ۵۰۰۰ واحد روزانه (یا رژیم‌های پیش از عمل طبق برچسب).",
+            "en": "Lower-risk abdominal surgery: 2,500 units. Hip replacement: 2,500 units 4–8 h after surgery then 5,000 units daily (or the pre-operative schemes per label)."
+          },
+          "refs": [
+            {
+              "source": "fda-fragmin",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vte-cancer",
+      "disease": "venous-thromboembolism",
+      "label": {
+        "fa": "VTE در بیمار سرطانی — ماه اول ۲۰۰ واحد/kg یک بار در روز (حداکثر ۱۸٬۰۰۰ واحد)",
+        "en": "Cancer-associated VTE — first month 200 units/kg once daily (max 18,000 units)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDose": 200,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 18000,
+        "refs": [
+          {
+            "source": "fda-fragmin",
+            "section": "2.3"
+          }
+        ]
+      },
+      "allowedFormulations": [
+        "syr-5000"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "ماه ۲ تا ۶: حدود ۱۵۰ واحد/kg روزانه طبق جدول برچسب. ClCr زیر ۳۰: پایش anti-Xa.",
+            "en": "Months 2–6: about 150 units/kg daily per label table. CrCl <30: monitor anti-Xa."
+          },
+          "refs": [
+            {
+              "source": "fda-fragmin",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-fragmin",
+              "section": "2.6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی فعال شدید؛ سابقه HIT؛ حساسیت به دالته‌پارین؛ بی‌حسی نخاعی/اپیدورال حین درمان دوز درمانی (آنژین ناپایدار، VTE).",
+        "en": "Active major bleeding; history of HIT; hypersensitivity to dalteparin; neuraxial anaesthesia during therapeutic-dose treatment (unstable angina, VTE)."
+      },
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: هماتوم نخاعی یا اپیدورال با بی‌حسی نخاعی یا پونکسیون (فلج).",
+        "en": "Boxed warning: spinal/epidural haematoma with neuraxial anaesthesia or puncture (paralysis)."
+      },
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acs",
+      "formulation": "syr-5000",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 8400,
+        "mlPerDose": 0.34
+      }
+    },
+    {
+      "regimen": "proph",
+      "formulation": "syr-5000",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5000,
+        "mlPerDose": 0.2
+      }
+    },
+    {
+      "regimen": "vte-cancer",
+      "formulation": "syr-5000",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 14000,
+        "mlPerDose": 0.56
+      }
+    }
+  ],
+  "atc": [
+    "B01AB04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02263",
+        "en": "DALTEPARIN SODIUM 10000U/0.4ML SYRINGE",
+        "fa": "سرنگ دالتپارین سدیم ۱۰۰۰۰ واحد / ۰٫۴ میلی‌لیتر"
+      },
+      {
+        "code": "02262",
+        "en": "DALTEPARIN SODIUM 2500U/0.2ML SYRINGE",
+        "fa": "سرنگ دالتپارین سدیم ۲۵۰۰ واحد / ۰٫۲ میلی‌لیتر"
+      },
+      {
+        "code": "02259",
+        "en": "DALTEPARIN SODIUM 5000U/0.2ML SYRINGE",
+        "fa": "سرنگ دالتپارین سدیم ۵۰۰۰ واحد / ۰٫۲ میلی‌لیتر"
+      },
+      {
+        "code": "02354",
+        "en": "DALTEPARIN SODIUM 7500U/0.3ML SYRINGE",
+        "fa": "سرنگ دالتپارین سدیم ۷۵۰۰ واحد / ۰٫۳ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1620/Dalteparin",
+        "url": "https://www.darooyab.ir/G-1620/Dalteparin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-fragmin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020287"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020287",
+      "label": "NDA020287"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23527b8b-9b28-4e6d-9751-33b143975ac7",
+      "label": "FDA Fragmin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a696006.html",
+      "label": "Dalteparin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AB04",
+      "label": "B01AB04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1620/Dalteparin",
+      "label": "Dalteparin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published literature and postmarketing reports have not reported a clear association with FRAGMIN and adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Limited published data indicate that dalteparin is present in human milk in small amounts (see Data ) .",
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of FRAGMIN for the treatment of symptomatic venous thromboembolism (VTE) in patients have been established in pediatric patients from birth (gestational age at least 35 weeks) to less than 17 years of age.",
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… ticularly in those with low body weight (<45 kg) and those predisposed to decreased renal function [see Warnings and Precautions (5) and Clinical Pharmacology (12) ] .",
+      "refs": [
+        {
+          "source": "fda-fragmin",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

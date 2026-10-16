@@ -1,0 +1,325 @@
+{
+  "id": "zafirlukast",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "زافیرلوکاست",
+    "en": "Zafirlukast"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتاگونیست گیرنده لکوترین",
+    "en": "Leukotriene receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Accolate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "accolate",
+    "آکولیت",
+    "زافیرلوکاست"
+  ],
+  "formulations": [
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zafirlukast",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zafirlukast",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "asthma",
+      "label": {
+        "fa": "پیشگیری و درمان مزمن آسم (۱۲ سال به بالا) — ۲۰ mg دو بار در روز",
+        "en": "Asthma prophylaxis and chronic treatment (≥12 y) — 20 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-zafirlukast",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-20"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دست‌کم ۱ ساعت قبل یا ۲ ساعت بعد از غذا. برای برونکواسپاسم حاد نیست.",
+            "en": "At least 1 h before or 2 h after meals. Not for acute bronchospasm."
+          },
+          "refs": [
+            {
+              "source": "fda-zafirlukast",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "asthma",
+      "label": {
+        "fa": "کودک ۵ تا ۱۱ سال — ۱۰ mg دو بار در روز",
+        "en": "Children 5–11 y — 10 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-zafirlukast",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-10"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به زافیرلوکاست؛ نارسایی کبد از جمله سیروز.",
+        "en": "Hypersensitivity to zafirlukast; hepatic impairment including cirrhosis."
+      },
+      "refs": [
+        {
+          "source": "fda-zafirlukast",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سمیت کبدی و نارسایی کبد تهدیدکننده حیات — با علائم کبدی قطع و آزمایش.",
+        "en": "Hepatotoxicity including life-threatening hepatic failure — stop and test if hepatic symptoms."
+      },
+      "refs": [
+        {
+          "source": "fda-zafirlukast",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "R03DC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01894",
+        "en": "ZAFIRLUKAST 20MG TAB",
+        "fa": "قرص زافیرلوکاست ۲۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1501/Zafirlukast",
+        "url": "https://www.darooyab.ir/G-1501/Zafirlukast"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA authorized generic",
+    "refs": [
+      {
+        "source": "fda-zafirlukast",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020547"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020547",
+      "label": "NDA020547"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=baba507f-6557-4551-815c-9ab6606e4ee1",
+      "label": "FDA Zafirlukast"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697007.html",
+      "label": "Zafirlukast"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03DC01",
+      "label": "R03DC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1501/Zafirlukast",
+      "label": "Zafirlukast"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Category B: No teratogenicity was observed at oral doses up to 1600 mg/kg/day in mice (approximately 160 times the maximum recommended daily oral dose in adults on a mg/m 2 basis), up to 2000 mg/kg/day in rats (approximately 410 times the maximum recommended daily oral dose in adults on a mg/m 2 basis) and up to 2000 …",
+      "refs": [
+        {
+          "source": "fda-zafirlukast",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Zafirlukast is excreted in breast milk.",
+      "refs": [
+        {
+          "source": "fda-zafirlukast",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of zafirlukast for pediatric patients less than 5 years of age has not been established.",
+      "refs": [
+        {
+          "source": "fda-zafirlukast",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Based on cross-study comparison, the clearance of zafirlukast is reduced in patients 65 years of age and older such that C max and AUC are approximately 2- to 3-fold greater than those of younger patients (see",
+      "refs": [
+        {
+          "source": "fda-zafirlukast",
+          "section": "Precautions/Warnings – Geriatric Use"
+        }
+      ]
+    }
+  }
+}

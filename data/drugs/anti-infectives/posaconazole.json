@@ -1,0 +1,386 @@
+{
+  "id": "posaconazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پوساکونازول",
+    "en": "Posaconazole"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضدقارچ آزولی",
+    "en": "Azole antifungal"
+  },
+  "brands": [
+    {
+      "name": "Noxafil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "noxafil",
+    "نوکسافیل",
+    "پوساکونازول"
+  ],
+  "formulations": [
+    {
+      "id": "dr-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg delayed-release tablet (NOT interchangeable with suspension)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "susp-40",
+      "form": "suspension",
+      "route": "oral",
+      "label": "40 mg/mL oral suspension (NOT interchangeable with tablets)",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "proph",
+      "disease": "invasive-fungal",
+      "label": {
+        "fa": "پیشگیری از آسپرژیلوس و کاندیدا (سرکوب ایمنی شدید) — قرص: روز اول ۳۰۰ mg دو بار، سپس ۳۰۰ mg یک بار در روز",
+        "en": "Aspergillus/Candida prophylaxis (severe immunosuppression) — tablets: 300 mg twice on day 1, then 300 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        },
+        "minWeightKg": 40.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "dr-100"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "روز اول بارگذاری ۳۰۰ mg دو بار. قرص آهسته‌رهش و سوسپانسیون جایگزین هم نیستند.",
+            "en": "Day 1 loading 300 mg twice. Delayed-release tablets and suspension are not interchangeable."
+          },
+          "refs": [
+            {
+              "source": "fda-noxafil",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-noxafil",
+              "section": "2.9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asperg",
+      "disease": "invasive-fungal",
+      "label": {
+        "fa": "درمان آسپرژیلوز تهاجمی — قرص: روز اول ۳۰۰ mg دو بار، سپس ۳۰۰ mg یک بار (۶ تا ۱۲ هفته)",
+        "en": "Invasive aspergillosis — tablets: 300 mg twice on day 1, then 300 mg once daily (6–12 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "dr-100"
+      ]
+    },
+    {
+      "id": "proph-susp",
+      "disease": "invasive-fungal",
+      "label": {
+        "fa": "پیشگیری — سوسپانسیون: ۲۰۰ mg (۵ mL) سه بار در روز",
+        "en": "Prophylaxis — suspension: 200 mg (5 mL) three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "susp-40"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به پوساکونازول یا سایر آزول‌ها؛ سیرولیموس؛ پیموزاید و کینیدین (QT)؛ استاتین‌های وابسته به CYP3A4 (سیمواستاتین، لواستاتین، آتورواستاتین)؛ آلکالوئیدهای ارگوت؛ ونتوکلاکس در شروع درمان CLL.",
+        "en": "Hypersensitivity to posaconazole or other azoles; sirolimus; pimozide and quinidine (QT); CYP3A4-metabolised statins (simvastatin, lovastatin, atorvastatin); ergot alkaloids; venetoclax at initiation for CLL."
+      },
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "طولانی شدن QT؛ سمیت کبد؛ تداخل زیاد با داروهای CYP3A4.",
+        "en": "QT prolongation; hepatotoxicity; many CYP3A4 drug interactions."
+      },
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "proph",
+      "formulation": "dr-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "asperg",
+      "formulation": "dr-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "proph-susp",
+      "formulation": "susp-40",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "J02AC04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08519",
+        "en": "POSACONAZOL 40MG/ML SUSP",
+        "fa": "سوسپانسیون پوساکونازول ۴۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "50722",
+        "en": "POSACONAZOLE SUSPENSION ORAL 40 mg/1mL 105 mL",
+        "fa": "سوسپانسیون خوراکی پوساکونازول ۴۰ میلی‌گرم / ۱ میلی‌لیتر ۱۰۵ میلی‌لیتر"
+      },
+      {
+        "code": "51840",
+        "en": "POSACONAZOLE TABLET, DELAYED RELEASE ORAL 100 mg",
+        "fa": "قرص انتریک‌کوتد پوساکونازول ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52742",
+        "en": "POSACONAZOLE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 300 mg/16.7mL",
+        "fa": "کنسانتره محلول تزریقی پوساکونازول ۳۰۰ میلی‌گرم / ۱۶٫۷ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-739/Posaconazole",
+        "url": "https://www.darooyab.ir/G-739/Posaconazole"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-noxafil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022003"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022003",
+      "label": "NDA022003"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b073b082-7b57-4423-8c06-4fd4263d6f84",
+      "label": "FDA Noxafil"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607036.html",
+      "label": "Posaconazole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616017.html",
+      "label": "Posaconazole Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J02AC04",
+      "label": "J02AC04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-739/Posaconazole",
+      "label": "Posaconazole"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal data, Noxafil may cause fetal harm when administered to pregnant women.",
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of posaconazole in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Treatment of Invasive Aspergillosis The safety and effectiveness of Noxafil (injection and delayed-release tablets) have been established for the treatment of invasive aspergillosis in pediatric patients 2 years of age and older .",
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in the safety or effectiveness of Noxafil injection, Noxafil delayed-release tablets, and Noxafil oral suspension have been observed between geriatric patients and younger adult patients in the clinical trials; therefore, the recommended dosage in geriatric patients is the same as that for …",
+      "refs": [
+        {
+          "source": "fda-noxafil",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

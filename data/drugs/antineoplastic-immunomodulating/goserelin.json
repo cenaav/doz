@@ -1,0 +1,385 @@
+{
+  "id": "goserelin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گوسرلین",
+    "en": "Goserelin"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آگونیست GnRH (ایمپلنت)",
+    "en": "GnRH agonist (implant)"
+  },
+  "brands": [
+    {
+      "name": "Zoladex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zoladex",
+    "زولادکس",
+    "گوسرلین"
+  ],
+  "formulations": [
+    {
+      "id": "impl-3-6",
+      "form": "injection",
+      "route": "sc",
+      "label": "3.6 mg implant in prefilled syringe",
+      "concentration": {
+        "amount": 3.6,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zoladex",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pca",
+      "disease": "prostate-cancer",
+      "label": {
+        "fa": "سرطان پروستات — ۳٫۶ mg زیرجلد شکم هر ۲۸ روز",
+        "en": "Prostate cancer — 3.6 mg SC into the abdominal wall every 28 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 3.6,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zoladex",
+          "section": "2"
+        },
+        {
+          "source": "fda-zoladex",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه رادیوتراپی و فلوتامید (T2b-T4): ۸ هفته پیش از رادیوتراپی شروع شود.",
+            "en": "With radiotherapy and flutamide (T2b–T4): start 8 weeks before radiotherapy."
+          },
+          "refs": [
+            {
+              "source": "fda-zoladex",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bca",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پیشرفته پستان — ۳٫۶ mg زیرجلد هر ۲۸ روز",
+        "en": "Advanced breast cancer — 3.6 mg SC every 28 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 3.6,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zoladex",
+          "section": "2"
+        },
+        {
+          "source": "fda-zoladex",
+          "section": "2.5"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "endo",
+      "disease": "endometriosis",
+      "label": {
+        "fa": "اندومتریوز — ۳٫۶ mg زیرجلد هر ۲۸ روز، ۶ ماه",
+        "en": "Endometriosis — 3.6 mg SC every 28 days for 6 months"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 3.6,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zoladex",
+          "section": "2"
+        },
+        {
+          "source": "fda-zoladex",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بیش از ۶ ماه و درمان مجدد توصیه نمی‌شود (داده ایمنی نیست). نازک کردن آندومتر پیش از ابلیشن: ۱ یا ۲ دوز با ۴ هفته فاصله.",
+            "en": "Not beyond 6 months and no retreatment (no safety data). Endometrial thinning before ablation: 1 or 2 depots 4 weeks apart."
+          },
+          "refs": [
+            {
+              "source": "fda-zoladex",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-zoladex",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ بارداری مگر برای درمان سرطان پیشرفته پستان.",
+        "en": "Hypersensitivity; pregnancy unless used for advanced breast cancer."
+      },
+      "refs": [
+        {
+          "source": "fda-zoladex",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پیش از شروع بارداری رد شود و پیشگیری غیرهورمونی؛ شعله‌ور شدن تومور؛ هیپرگلیسمی؛ بیماری قلبی‌عروقی؛ هیپرکلسمی؛ QT؛ آسیب محل تزریق (عروق اپی‌گاستریک)؛ افسردگی.",
+        "en": "Exclude pregnancy and use non-hormonal contraception; tumour flare; hyperglycaemia; cardiovascular disease; hypercalcaemia; QT; injection-site injury (epigastric vessels); depression."
+      },
+      "refs": [
+        {
+          "source": "fda-zoladex",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pca",
+      "formulation": "impl-3-6",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 3.6
+      }
+    },
+    {
+      "regimen": "bca",
+      "formulation": "impl-3-6",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 3.6
+      }
+    },
+    {
+      "regimen": "endo",
+      "formulation": "impl-3-6",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 3.6
+      }
+    }
+  ],
+  "atc": [
+    "L02AE03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07969",
+        "en": "GOSERELIN ACETATE 10.8MG SYRINGE",
+        "fa": "سرنگ گوسرلین استات ۱۰٫۸ میلی‌گرم"
+      },
+      {
+        "code": "09506",
+        "en": "GOSERELIN ACETATE 3.6MG AMP",
+        "fa": "آمپول گوسرلین استات ۳٫۶ میلی‌گرم"
+      },
+      {
+        "code": "50097",
+        "en": "GOSERELIN (AS ACETATE) IMPLANT PARENTERAL 10.8 mg",
+        "fa": "ایمپلنت گوسرلین (معادل استات) ۱۰٫۸ میلی‌گرم"
+      },
+      {
+        "code": "50096",
+        "en": "GOSERELIN (AS ACETATE) IMPLANT PARENTERAL 3.6 mg",
+        "fa": "ایمپلنت گوسرلین (معادل استات) ۳٫۶ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2699/Goserelin",
+        "url": "https://www.darooyab.ir/G-2699/Goserelin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-zoladex",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019726"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019726",
+      "label": "NDA019726"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=294b168b-6e5f-4db9-bf70-d599271458b3",
+      "label": "FDA Zoladex 3.6"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601002.html",
+      "label": "Goserelin Implant"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02AE03",
+      "label": "L02AE03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2699/Goserelin",
+      "label": "Goserelin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "…  agonist analogues or any of the components in ZOLADEX [see Warnings and Precautions ( 5.6 )]. 4.2 Pregnancy ZOLADEX is contraindicated during pregnancy unless ZOLADEX is being used for palliative treatment of advanced breast cancer.",
+      "refs": [
+        {
+          "source": "fda-zoladex",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "It is not known if goserelin is excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-zoladex",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-zoladex",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "There is no need for any dosage adjustment when administering ZOLADEX to male geriatric patients.",
+      "refs": [
+        {
+          "source": "fda-zoladex",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

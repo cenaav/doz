@@ -1,0 +1,266 @@
+{
+  "id": "nitroprusside",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سدیم نیتروپروساید",
+    "en": "Sodium nitroprusside"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "گشادکننده مستقیم عروق",
+    "en": "Direct vasodilator"
+  },
+  "brands": [
+    {
+      "name": "Nipride RTU",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nipride",
+    "nitropress",
+    "نیتروپروساید",
+    "نیپراید"
+  ],
+  "formulations": [
+    {
+      "id": "vial-200",
+      "form": "injection",
+      "route": "iv",
+      "label": "0.2 mg/mL ready-to-use (= 200 mcg/mL)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nipride",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-500",
+      "form": "injection",
+      "route": "iv",
+      "label": "0.5 mg/mL ready-to-use (= 500 mcg/mL)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nipride",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertensive-emergency",
+      "label": {
+        "fa": "بحران فشار خون، نارسایی حاد قلب، کاهش کنترل‌شده فشار — شروع ۰٫۳ mcg/kg/دقیقه، حداکثر ۱۰",
+        "en": "Hypertensive crisis, acute heart failure, controlled hypotension — start 0.3 mcg/kg/min, max 10"
+      },
+      "population": {},
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 0.3,
+        "perKgPerMinMax": 10
+      },
+      "refs": [
+        {
+          "source": "fda-nipride",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پایش مداوم فشار؛ دست‌کم ۵ دقیقه صبر پیش از تغییر. فقط با پمپ حجمی. محلول آبی، سبز یا قرمز روشن مصرف نشود. با حداکثر سرعت، ظرف کمتر از ۱ ساعت ظرفیت سم‌زدایی سیانید پر می‌شود.",
+            "en": "Continuous BP monitoring; wait ≥5 min before changing. Volumetric pump only. Do not use blue, green or bright-red solution. At the maximum rate, cyanide buffering capacity is exceeded in under 1 h."
+          },
+          "refs": [
+            {
+              "source": "fda-nipride",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-nipride",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-nipride",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-nipride",
+              "section": "Boxed Warning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "فشار جبرانی (کوآرکتاسیون آئورت، شانت شریانی-وریدی)؛ خونرسانی ناکافی مغز یا بیمار در حال مرگ (ASA 5E)؛ آتروفی عصب بینایی لبر یا آمبلیوپی تنباکو؛ نارسایی حاد قلب با مقاومت عروقی پایین؛ سیلدنافیل، تادالافیل، واردنافیل یا ریوسیگوات.",
+        "en": "Compensatory hypertension (aortic coarctation, AV shunting); inadequate cerebral circulation or moribund patients (ASA 5E); Leber’s optic atrophy or tobacco amblyopia; acute heart failure with reduced peripheral resistance; sildenafil, tadalafil, vardenafil or riociguat."
+      },
+      "refs": [
+        {
+          "source": "fda-nipride",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افت شدید فشار (آسیب ایسکمیک یا مرگ)؛ مسمومیت سیانید وابسته به دوز — مدت انفوزیون با حداکثر سرعت محدود شود.",
+        "en": "Boxed warning: precipitous hypotension (ischaemic injury or death); dose-related, potentially lethal cyanide toxicity — limit time at the maximum rate."
+      },
+      "refs": [
+        {
+          "source": "fda-nipride",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "vial-200",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 21,
+        "mlPerHour": 6.3,
+        "upperPerMin": 700,
+        "upperMlPerHour": 210
+      }
+    }
+  ],
+  "atc": [
+    "C02DD01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00916",
+        "en": "NITROPRUSSIDE SODIUM 50MG AMP",
+        "fa": "آمپول نیتروپروسساید سدیم ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1884/Sodium-Nitroprusside",
+        "url": "https://www.darooyab.ir/G-1884/Sodium-Nitroprusside"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-nipride",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA209387"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209387",
+      "label": "NDA209387"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5acf0836-93ff-4064-b888-3f560e8a558d",
+      "label": "FDA Nipride RTU"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02DD01",
+      "label": "C02DD01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1884/Sodium-Nitroprusside",
+      "label": "Sodium-Nitroprusside"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on animal data and mechanism of action, sodium nitroprusside may lead to cyanide exposure and potential adverse effects in the fetus [see Clinical Pharmacology ( 12.3 ) and Clinical Considerations] .",
+      "refs": [
+        {
+          "source": "fda-nipride",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information about the presence of sodium nitroprusside in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-nipride",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Efficacy in the pediatric population was established based on adult trials and supported by the dose-ranging trial (Study 1) and an open label trial of at least 12 hour infusion at a rate that achieved adequate MAP control (Study 2) with pediatric patients on sodium nitroprusside.",
+      "refs": [
+        {
+          "source": "fda-nipride",
+          "section": "8.4"
+        }
+      ]
+    }
+  }
+}

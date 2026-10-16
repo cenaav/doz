@@ -1,0 +1,315 @@
+{
+  "id": "silodosin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیلودوزین",
+    "en": "Silodosin"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آلفا-۱A بلاکر",
+    "en": "Alpha-1A blocker"
+  },
+  "brands": [
+    {
+      "name": "Rapaflo",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rapaflo",
+    "رپافلو",
+    "urorec",
+    "سیلودوزین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-8",
+      "form": "capsule",
+      "route": "oral",
+      "label": "8 mg capsule",
+      "concentration": {
+        "amount": 8,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-4",
+      "form": "capsule",
+      "route": "oral",
+      "label": "4 mg capsule",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bph",
+      "disease": "bph",
+      "label": {
+        "fa": "علائم هیپرپلازی خوش‌خیم پروستات — ۸ mg یک بار با غذا",
+        "en": "Symptoms of benign prostatic hyperplasia — 8 mg once daily with a meal"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 8,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "2.1"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-8"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در مشکل بلع می‌توان کپسول را باز و روی پوره سیب ریخت.",
+            "en": "If swallowing is difficult, the capsule may be opened onto applesauce."
+          },
+          "refs": [
+            {
+              "source": "fda-silodosin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی شدید کلیه (ClCr زیر ۳۰)؛ نارسایی شدید کبد (Child-Pugh ≥۱۰)؛ مهارکننده‌های قوی CYP3A4؛ حساسیت.",
+        "en": "Severe renal impairment (CrCl <30); severe hepatic impairment (Child-Pugh ≥10); strong CYP3A4 inhibitors; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "افت فشار وضعیتی و سنکوپ؛ سرطان پروستات پیش از شروع رد شود؛ سندرم عنبیه شل حین جراحی آب مروارید (IFIS).",
+        "en": "Postural hypotension and syncope; exclude prostate cancer first; intraoperative floppy iris syndrome (IFIS) in cataract surgery."
+      },
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 50,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۳۰ تا ۵۰: ۴ mg یک بار؛ زیر ۳۰ منع مصرف.",
+        "en": "CrCl 30–50: 4 mg once daily; below 30 contraindicated."
+      },
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bph",
+      "formulation": "cap-8",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 8,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G04CA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "53409",
+        "en": "SILODOSIN 8 mg CAPSULE",
+        "fa": "کپسول سیلودوسین ۸ میلی‌گرم"
+      },
+      {
+        "code": "53408",
+        "en": "SILODOSIN 4 mg CAPSULE",
+        "fa": "کپسول سیلودوسین ۴ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5335/Silodosin",
+        "url": "https://www.darooyab.ir/G-5335/Silodosin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-silodosin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA210687"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210687",
+      "label": "ANDA210687"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee8d577e-948d-4164-9671-c876544ac83b",
+      "label": "FDA Silodosin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609002.html",
+      "label": "Silodosin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04CA04",
+      "label": "G04CA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5335/Silodosin",
+      "label": "Silodosin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Silodosin is not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Silodosin is not indicated for use in females.",
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In double-blind, placebo-controlled, 12-week clinical studies of silodosin, 259 (55.6%) were under 65 years of age, 207 (44.4%) patients were 65 years of age and over, while 60 (12.9%) patients were 75 years of age and over.Orthostatic hypotension was reported in 2.3% of silodosin patients < 65 years of age (1.2% for …",
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Males Possible effects on male fertility could be observed based on findings in rats at exposures that were at least two times higher than at the MRHD (based on AUC).",
+      "refs": [
+        {
+          "source": "fda-silodosin",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

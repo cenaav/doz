@@ -1,0 +1,308 @@
+{
+  "id": "anakinra",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آناکینرا",
+    "en": "Anakinra"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتاگونیست گیرنده IL-1",
+    "en": "IL-1 receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Kineret",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "kineret",
+    "کینرت",
+    "آناکینرا"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-100",
+      "form": "injection",
+      "route": "sc",
+      "label": "100 mg/0.67 mL graduated prefilled syringe (20–100 mg)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 0.67
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kineret",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید بزرگسال — ۱۰۰ mg زیرجلدی روزانه",
+        "en": "Rheumatoid arthritis, adults — 100 mg SC daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-kineret",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "caps",
+      "disease": "caps",
+      "label": {
+        "fa": "NOMID/CAPS و DIRA — شروع ۱ تا ۲ mg/kg زیرجلدی روزانه (حداکثر ۸ mg/kg)",
+        "en": "NOMID/CAPS and DIRA — start 1–2 mg/kg SC daily (max 8 mg/kg)"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1,
+        "perKgPerDoseMax": 2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-kineret",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-kineret",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تنظیم با گام ۰٫۵ تا ۱ mg/kg تا حداکثر ۸ mg/kg روزانه؛ می‌تواند در ۲ دوز. هر سرنگ یک بار.",
+            "en": "Adjust in 0.5–1 mg/kg steps up to max 8 mg/kg daily; may be split twice daily. One syringe per dose."
+          },
+          "refs": [
+            {
+              "source": "fda-kineret",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به پروتئین‌های مشتق E. coli یا آناکینرا.",
+        "en": "Hypersensitivity to E. coli-derived proteins or anakinra."
+      },
+      "refs": [
+        {
+          "source": "fda-kineret",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "عفونت جدی؛ همراه مهارکننده TNF نه؛ حساسیت؛ نوتروپنی (شمارش نوتروفیل پایه، ماهانه ۳ ماه، سپس هر ۳ ماه)؛ واکسن زنده نه.",
+        "en": "Serious infections; not with TNF blockers; hypersensitivity; neutropenia (ANC baseline, monthly for 3 months, then quarterly); no live vaccines."
+      },
+      "refs": [
+        {
+          "source": "fda-kineret",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۳۰ یا ESRD: همان دوز یک روز در میان.",
+        "en": "CrCl <30 or ESRD: same dose every other day."
+      },
+      "refs": [
+        {
+          "source": "fda-kineret",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ra",
+      "formulation": "pfs-100",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 0.67
+      }
+    },
+    {
+      "regimen": "caps",
+      "formulation": "pfs-100",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 20,
+        "upperPerDose": 40
+      }
+    }
+  ],
+  "atc": [
+    "L04AC03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18006",
+        "en": "ANAKINRA 100 MG  SYRING",
+        "fa": "سرنگ آناکینرا ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-16/Anakinra",
+        "url": "https://www.darooyab.ir/G-16/Anakinra"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-kineret",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103950"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103950",
+      "label": "BLA103950"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9d74915-6606-4570-9c52-c4001d3177de",
+      "label": "FDA Kineret"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a602001.html",
+      "label": "Anakinra"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AC03",
+      "label": "L04AC03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-16/Anakinra",
+      "label": "Anakinra"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from retrospective studies and case reports on KINERET use in pregnant women are insufficient to identify a drug associated risk of major birth defects, miscarriage, or maternal and fetal adverse events.",
+      "refs": [
+        {
+          "source": "fda-kineret",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of anakinra in either human or animal milk or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-kineret",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در NOMID کودکان (از زیر ۲ سال) با ۱ تا ۲ mg/kg/روز استفاده شده؛ در JRA ثابت نشده.",
+        "en": "Label: used in paediatric NOMID (including under 2 y) at 1–2 mg/kg/day; not established for JRA."
+      },
+      "quote": "The NOMID study included 36 pediatric patients: 13 below 2 years, 18 between 2 and 11 years, and 5 between 12 and 17 years of age.",
+      "refs": [
+        {
+          "source": "fda-kineret",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because there is a higher incidence of infections in the elderly population in general, caution should be used in treating the elderly.",
+      "refs": [
+        {
+          "source": "fda-kineret",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

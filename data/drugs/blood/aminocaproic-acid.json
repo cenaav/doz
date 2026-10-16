@@ -1,0 +1,281 @@
+{
+  "id": "aminocaproic-acid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمینوکاپروئیک اسید",
+    "en": "Aminocaproic acid"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "ضدفیبرینولیز",
+    "en": "Antifibrinolytic"
+  },
+  "brands": [
+    {
+      "name": "Amicar",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "amicar",
+    "آمیکار",
+    "آمینوکاپروئیک"
+  ],
+  "formulations": [
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet (scored)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aminocaproic",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-1000",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1000 mg tablet (scored)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aminocaproic",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bleed",
+      "disease": "fibrinolytic-bleeding",
+      "label": {
+        "fa": "خونریزی حاد از فیبرینولیز زیاد — ساعت اول ۵ g، سپس ۱ g در ساعت حدود ۸ ساعت",
+        "en": "Acute bleeding from elevated fibrinolysis — 5 g in the first hour, then 1 g per hour for about 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1000,
+        "dosesPerDay": 8
+      },
+      "refs": [
+        {
+          "source": "fda-aminocaproic",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عدد ماشین‌حساب دوز ساعتی ۱ g است؛ ساعت اول ۵ g. تا کنترل خونریزی. فقط با تأیید فیبرینولیز اولیه، نه DIC.",
+            "en": "The calculator gives the hourly 1 g dose; the first hour is 5 g. Continue until bleeding is controlled. Only with confirmed primary fibrinolysis, not DIC."
+          },
+          "refs": [
+            {
+              "source": "fda-aminocaproic",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-aminocaproic",
+              "section": "Contraindications"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "dic",
+      "severity": "block",
+      "text": {
+        "fa": "شواهد فرایند انعقاد فعال داخل عروقی (DIC).",
+        "en": "Evidence of an active intravascular clotting process (DIC)."
+      },
+      "refs": [
+        {
+          "source": "fda-aminocaproic",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "خونریزی دستگاه ادراری فوقانی: خطر انسداد با لخته؛ میوپاتی و رابدومیولیز در مصرف طولانی.",
+        "en": "Upper urinary tract bleeding: risk of obstructing clots; myopathy and rhabdomyolysis with prolonged use."
+      },
+      "refs": [
+        {
+          "source": "fda-aminocaproic",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bleed",
+      "formulation": "tab-1000",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 1000,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "B02AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02077",
+        "en": "AMINOCAPROIC ACID 250MG/ML AMP",
+        "fa": "آمپول آمینوکاپروئیک اسید ۲۵۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "02078",
+        "en": "AMINOCAPROIC ACID 4G/10ML AMP",
+        "fa": "آمپول آمینوکاپروئیک اسید ۴ گرم / ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1377/Aminocaproic-Acid",
+        "url": "https://www.darooyab.ir/G-1377/Aminocaproic-Acid"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-aminocaproic",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA213944"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213944",
+      "label": "ANDA213944"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae768406-955e-4863-9549-6c43662e5295",
+      "label": "FDA Aminocaproic acid"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608023.html",
+      "label": "Aminocaproic Acid"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608024.html",
+      "label": "Aminocaproic Acid Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B02AA01",
+      "label": "B02AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1377/Aminocaproic-Acid",
+      "label": "Aminocaproic-Acid"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Animal reproduction studies have not been conducted with aminocaproic acid tablets.",
+      "refs": [
+        {
+          "source": "fda-aminocaproic",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when aminocaproic acid tablets are administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-aminocaproic",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-aminocaproic",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

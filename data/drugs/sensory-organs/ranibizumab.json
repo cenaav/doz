@@ -1,0 +1,405 @@
+{
+  "id": "ranibizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "رانی‌بیزوماب",
+    "en": "Ranibizumab"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "مهارکننده VEGF (داخل زجاجیه)",
+    "en": "VEGF inhibitor (intravitreal)"
+  },
+  "brands": [
+    {
+      "name": "Lucentis",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lucentis",
+    "لوسنتیس",
+    "رانیبیزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-0-5",
+      "form": "injection",
+      "route": "ophthalmic",
+      "label": "0.5 mg (0.05 mL of 10 mg/mL) prefilled syringe",
+      "concentration": {
+        "amount": 0.5,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-0-3",
+      "form": "injection",
+      "route": "ophthalmic",
+      "label": "0.3 mg (0.05 mL of 6 mg/mL) prefilled syringe",
+      "concentration": {
+        "amount": 0.3,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "amd",
+      "disease": "wet-amd",
+      "label": {
+        "fa": "AMD مرطوب — ۰٫۵ mg داخل زجاجیه ماهانه",
+        "en": "Wet AMD — 0.5 mg intravitreal monthly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-0-5"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط توسط چشم‌پزشک. با کارایی کمتر: ۳ دوز ماهانه سپس فواصل بیشتر با پایش.",
+            "en": "Ophthalmologist only. Less effective alternative: 3 monthly doses then less frequent with monitoring."
+          },
+          "refs": [
+            {
+              "source": "fda-lucentis",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rvo",
+      "disease": "retinal-vein-occlusion",
+      "label": {
+        "fa": "ادم ماکولا پس از انسداد ورید شبکیه — ۰٫۵ mg ماهانه",
+        "en": "Macular oedema after RVO — 0.5 mg monthly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-0-5"
+      ]
+    },
+    {
+      "id": "dme",
+      "disease": "diabetic-macular-edema",
+      "label": {
+        "fa": "ادم ماکولای دیابتی و رتینوپاتی دیابتی — ۰٫۳ mg ماهانه",
+        "en": "DME and diabetic retinopathy — 0.3 mg monthly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.3,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-0-3"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت چشم یا اطراف چشم؛ حساسیت به رانی‌بیزوماب.",
+        "en": "Ocular or periocular infection; hypersensitivity to ranibizumab."
+      },
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "اندوفتالمیت و جداشدگی شبکیه پس از تزریق؛ افزایش فشار چشم؛ رویدادهای ترومبوآمبولیک شریانی.",
+        "en": "Endophthalmitis and retinal detachment after injection; raised intraocular pressure; arterial thromboembolic events."
+      },
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واسکولیت شبکیه.",
+        "en": "Retinal vasculitis."
+      },
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "5.5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "amd",
+      "formulation": "pfs-0-5",
+      "input": {
+        "ageYears": 75,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5
+      }
+    },
+    {
+      "regimen": "rvo",
+      "formulation": "pfs-0-5",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.5
+      }
+    },
+    {
+      "regimen": "dme",
+      "formulation": "pfs-0-3",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 0.3
+      }
+    }
+  ],
+  "atc": [
+    "S01LA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "19598",
+        "en": "RANIBIZUMAB 0.5MG/0.05ML 0.23ML VIAL",
+        "fa": "ویال رانیبیزومب ۰٫۵ میلی‌گرم / ۰٫۰۵ میلی‌لیتر ۰٫۲۳ میلی‌لیتر"
+      },
+      {
+        "code": "11416",
+        "en": "RANIBIZUMAB 10MG/ML AMP",
+        "fa": "آمپول رانیبیزومب ۱۰ میلی‌گرم / میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4793/Ranibizumab",
+        "url": "https://www.darooyab.ir/G-4793/Ranibizumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-lucentis",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125156"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125156",
+      "label": "BLA125156"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=de4e66cc-ca05-4dc9-8262-e00e9b41c36d",
+      "label": "FDA Lucentis"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625086.html",
+      "label": "Ranibizumab Implant"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607044.html",
+      "label": "Ranibizumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01LA04",
+      "label": "S01LA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4793/Ranibizumab",
+      "label": "Ranibizumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies of LUCENTIS administration in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, and because the potential for absorption and harm to infant growth and development exists, caution should be exercised when LUCENTIS is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of LUCENTIS in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In the clinical studies, approximately 76% (2449 of 3227) of patients randomized to treatment with LUCENTIS were ≥ 65 years of age and approximately 51% (1644 of 3227) were ≥ 75 years of age [see Clinical Studies (14) ].",
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Based on the anti-VEGF mechanism of action for ranibizumab, treatment with LUCENTIS may pose a risk to reproductive capacity.",
+      "refs": [
+        {
+          "source": "fda-lucentis",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

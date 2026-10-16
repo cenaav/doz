@@ -1,0 +1,260 @@
+{
+  "id": "probenecid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پروبنسید",
+    "en": "Probenecid"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "اوریکوزوریک",
+    "en": "Uricosuric"
+  },
+  "brands": [
+    {
+      "name": "Probenecid",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "benemid",
+    "پروبنسید",
+    "probenecid"
+  ],
+  "formulations": [
+    {
+      "id": "tab-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg tablet (scored)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-probenecid",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "gout",
+      "disease": "gout",
+      "label": {
+        "fa": "هیپراوریسمی نقرس (بین حملات) — ۲۵۰ mg دو بار یک هفته، سپس ۵۰۰ mg دو بار",
+        "en": "Hyperuricaemia of gout (between attacks) — 250 mg twice daily for one week, then 500 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "perDoseMax": 500,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-probenecid",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 2000,
+        "refs": [
+          {
+            "source": "fda-probenecid",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تا حمله حاد فروکش نکرده شروع نشود. در صورت نیاز هر ۴ هفته ۵۰۰ mg/روز افزایش (معمولاً تا ۲۰۰۰ mg/روز). مایعات فراوان.",
+            "en": "Do not start until an acute attack subsides. If needed, +500 mg/day every 4 weeks (usually up to 2000 mg/day). Plenty of fluids."
+          },
+          "refs": [
+            {
+              "source": "fda-probenecid",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ کودک زیر ۲ سال؛ دیسکرازی خونی یا سنگ اسید اوریک کلیه؛ شروع حین حمله حاد نقرس.",
+        "en": "Hypersensitivity; children under 2; blood dyscrasias or uric acid kidney stones; starting during an acute gout attack."
+      },
+      "refs": [
+        {
+          "source": "fda-probenecid",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "تشدید حمله نقرس؛ افزایش سطح متوترکسات؛ سالیسیلات‌ها اثر را خنثی می‌کنند.",
+        "en": "Gout flare; raises methotrexate levels; salicylates antagonise the effect."
+      },
+      "refs": [
+        {
+          "source": "fda-probenecid",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "GFR ۳۰ یا کمتر: احتمالاً بی‌اثر.",
+        "en": "GFR ≤30: may be ineffective."
+      },
+      "refs": [
+        {
+          "source": "fda-probenecid",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "gout",
+      "formulation": "tab-500",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 85
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 0.5,
+        "upperPerDose": 500
+      }
+    }
+  ],
+  "atc": [
+    "M04AB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "10385",
+        "en": "PROBENECID 100MG TAB",
+        "fa": "قرص پروبنسید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "08079",
+        "en": "PROBENECID 500MG TAB",
+        "fa": "قرص پروبنسید ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-760/Probenecid",
+        "url": "https://www.darooyab.ir/G-760/Probenecid"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-probenecid",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA217020"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217020",
+      "label": "ANDA217020"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2375d90-4132-4fb6-aee7-c4f9d11e98d5",
+      "label": "FDA Probenecid"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682395.html",
+      "label": "Probenecid"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M04AB01",
+      "label": "M04AB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-760/Probenecid",
+      "label": "Probenecid"
+    }
+  ],
+  "populations": {
+    "pediatric": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در کودکان زیر سن مشخص منع مصرف دارد.",
+        "en": "Label: contraindicated in children below a stated age."
+      },
+      "quote": "Children under 2 years of age.",
+      "refs": [
+        {
+          "source": "fda-probenecid",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری پروبنسید گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-760/Probenecid — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-760/Probenecid"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "id": "ethacrynic-acid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اتاکرینیک اسید",
+    "en": "Ethacrynic acid"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "دیورتیک لوپ (غیرسولفونامیدی)",
+    "en": "Loop diuretic (non-sulfonamide)"
+  },
+  "brands": [
+    {
+      "name": "Edecrin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "edecrin",
+    "اتاکرینیک اسید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet (scored)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "vial-50",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "Sodium Edecrin 50 mg vial",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oral",
+      "disease": "edema",
+      "label": {
+        "fa": "ادم (نارسایی قلب، سیروز، کلیه) — بزرگسال: شروع ۵۰ mg پس از غذا؛ معمولاً ۵۰ تا ۲۰۰ mg/روز",
+        "en": "Oedema (HF, cirrhosis, renal) — adult: start 50 mg after a meal; usually 50–200 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "perDoseMax": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تنظیم با پله ۲۵ تا ۵۰ mg؛ بیمار روزانه وزن شود. روز ۲: ۵۰ mg دو بار؛ روز ۳: ۱۰۰ mg صبح و ۵۰ تا ۱۰۰ mg عصر در صورت نیاز. جایگزین مناسب در حساسیت به سولفونامید.",
+            "en": "Adjust in 25–50 mg steps; weigh daily. Day 2: 50 mg twice; day 3: 100 mg morning and 50–100 mg evening if needed. Option in sulfonamide allergy."
+          },
+          "refs": [
+            {
+              "source": "fda-edecrin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv",
+      "disease": "acute-pulmonary-edema",
+      "label": {
+        "fa": "وریدی (ادم حاد ریه یا ناتوانی در خوراکی) — ۰٫۵ تا ۱ mg/kg (معمولاً ۵۰ mg)؛ هر دوز حداکثر ۱۰۰ mg",
+        "en": "IV (acute pulmonary oedema or no oral route) — 0.5–1 mg/kg (usually 50 mg); single dose max 100 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.5,
+        "perKgPerDoseMax": 1,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 100,
+        "refs": [
+          {
+            "source": "fda-edecrin",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "معمولاً یک دوز کافی است؛ دوز دوم در محل جدید (فلبیت).",
+            "en": "Usually one dose; a second dose at a new site (thrombophlebitis)."
+          },
+          "refs": [
+            {
+              "source": "fda-edecrin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "edema",
+      "label": {
+        "fa": "کودک (غیر شیرخوار) — شروع ۲۵ mg خوراکی، افزایش ۲۵ mg",
+        "en": "Children (not infants) — start 25 mg orally, increase in 25 mg steps"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-25"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آنوری؛ شیرخواران؛ اسهال شدید آبکی قبلی با دارو؛ حساسیت.",
+        "en": "Anuria; infants; prior severe watery diarrhoea with the drug; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "دیورز شدید و کم‌آبی، اختلال الکترولیت (هیپوکالمی)؛ سمیت گوش به‌ویژه وریدی یا با آمینوگلیکوزید.",
+        "en": "Profound diuresis and dehydration, electrolyte loss (hypokalaemia); ototoxicity especially IV or with aminoglycosides."
+      },
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oral",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 2,
+        "upperPerDose": 100
+      }
+    },
+    {
+      "regimen": "iv",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 35,
+        "upperPerDose": 70
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C03CC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00506",
+        "en": "ETHACRIDINE LACTATE_RIVANOL_BULK",
+        "fa": "ماده اولیه اتاکریدین لاکتات ریوانول"
+      },
+      {
+        "code": "00507",
+        "en": "ETHACRYNIC ACID 50MG TAB",
+        "fa": "قرص اتاکرینیک اسید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1669/Etacrynic-Acid",
+        "url": "https://www.darooyab.ir/G-1669/Etacrynic-Acid"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=016092",
+      "label": "NDA016092"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1efe378e-fee1-4ae9-8ea5-0fe2265fe2d8",
+      "label": "FDA Edecrin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682857.html",
+      "label": "Ethacrynic Acid"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CC01",
+      "label": "C03CC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1669/Etacrynic-Acid",
+      "label": "Etacrynic-Acid"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Since animal reproduction studies are not always predictive of human response, EDECRIN should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from EDECRIN, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: مصرف خوراکی در کودکان (غیر از شیرخوار) بر اساس تجربه؛ شیرخوار و وریدی در کودکان ثابت نشده.",
+        "en": "Label: oral use in children (not infants) supported by empiric use; infants and IV use in children not established."
+      },
+      "quote": "The information on oral dosing in pediatric patients, other than infants, is supported by evidence from empiric use in this age group.",
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-edecrin",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-edecrin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA016092"
+  }
+}

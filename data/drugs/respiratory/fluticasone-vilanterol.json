@@ -1,0 +1,402 @@
+{
+  "id": "fluticasone-vilanterol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلوتیکازون فوروات/ویلانترول",
+    "en": "Fluticasone furoate/vilanterol"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "کورتیکواستروئید استنشاقی + LABA",
+    "en": "Inhaled corticosteroid + LABA"
+  },
+  "brands": [
+    {
+      "name": "Breo Ellipta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "breo",
+    "relvar",
+    "رلوار",
+    "برئو",
+    "vilanterol",
+    "ویلانترول"
+  ],
+  "formulations": [
+    {
+      "id": "e-100",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "100/25 mcg per actuation (fluticasone furoate dose shown)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "e-200",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "200/25 mcg per actuation",
+      "concentration": {
+        "amount": 200,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "e-50",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "50/25 mcg per actuation",
+      "concentration": {
+        "amount": 50,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "copd",
+      "disease": "copd",
+      "label": {
+        "fa": "نگهدارنده COPD — یک استنشاق ۱۰۰/۲۵ mcg یک بار در روز",
+        "en": "COPD maintenance — 1 inhalation of 100/25 mcg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "2.1"
+        }
+      ],
+      "doseComponent": "fluticasone furoate",
+      "allowedFormulations": [
+        "e-100"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از استنشاق دهان شسته شود (کاندیدیاز). بیش از یک بار در ۲۴ ساعت نه. برای تنگی نفس بین دوزها از SABA استفاده شود.",
+            "en": "Rinse mouth after use (candidiasis). Not more than once every 24 h. Use a SABA for breathlessness between doses."
+          },
+          "refs": [
+            {
+              "source": "fda-breo",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-breo",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asthma",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم بزرگسال — یک استنشاق ۱۰۰/۲۵ یا ۲۰۰/۲۵ mcg یک بار",
+        "en": "Asthma, adults — 1 inhalation of 100/25 or 200/25 mcg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 100,
+        "perDoseMax": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "2.2"
+        }
+      ],
+      "doseComponent": "fluticasone furoate"
+    },
+    {
+      "id": "asthma-teen",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم ۱۲ تا ۱۷ سال — یک استنشاق ۱۰۰/۲۵ mcg یک بار",
+        "en": "Asthma, 12–17 y — 1 inhalation of 100/25 mcg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "2"
+        }
+      ],
+      "doseComponent": "fluticasone furoate",
+      "allowedFormulations": [
+        "e-100"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "درمان اولیه استاتوس آسماتیکوس یا حمله حاد COPD/آسم؛ حساسیت شدید به پروتئین شیر یا فلوتیکازون فوروات/ویلانترول.",
+        "en": "Primary treatment of status asthmaticus or acute COPD/asthma episodes; severe milk-protein hypersensitivity or hypersensitivity to fluticasone furoate/vilanterol."
+      },
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "رویدادهای جدی آسم با LABA؛ کاندیدیاز دهان؛ پنومونی در COPD؛ سرکوب ایمنی و آدرنال؛ مهارکننده قوی CYP3A4؛ کاهش تراکم استخوان؛ تأثیر بر رشد؛ گلوکوم و آب مروارید.",
+        "en": "Serious asthma events with LABA; oral candidiasis; pneumonia in COPD; immunosuppression and adrenal suppression; strong CYP3A4 inhibitors; reduced bone density; effect on growth; glaucoma and cataract."
+      },
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "copd",
+      "formulation": "e-100",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "asthma",
+      "formulation": "e-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "asthma-teen",
+      "formulation": "e-100",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "R03AK10"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "53247",
+        "en": "VILANTEROL/FLUTICASONE CAPSULE RESPIRATORY 0.1 mg/0.025 mg",
+        "fa": "کپسول ویلانترول / فلوتیکازون ۰٫۱ میلی‌گرم / ۰٫۰۲۵ میلی‌گرم"
+      },
+      {
+        "code": "53248",
+        "en": "VILANTEROL/FLUTICASONE CAPSULE RESPIRATORY 0.2 mg/0.025 mg",
+        "fa": "کپسول ویلانترول / فلوتیکازون ۰٫۲ میلی‌گرم / ۰٫۰۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5553/Fluticasone-Vilanterol",
+        "url": "https://www.darooyab.ir/G-5553/Fluticasone-Vilanterol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204275",
+      "label": "NDA204275"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96428df1-ea05-431a-98d3-1ec2c4b63878",
+      "label": "FDA Breo Ellipta"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613037.html",
+      "label": "Fluticasone and Vilanterol Oral Inhalation"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618017.html",
+      "label": "Fluticasone, Umeclidinium, and Vilanterol Oral Inhalation"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03AK10",
+      "label": "R03AK10"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5553/Fluticasone-Vilanterol",
+      "label": "Fluticasone-Vilanterol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are insufficient data on the use of BREO ELLIPTA or its individual components, fluticasone furoate and vilanterol, in pregnant women to inform a drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information available on the presence of fluticasone furoate or vilanterol in human milk, the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of BREO ELLIPTA for the maintenance treatment of asthma in pediatric patients 5 years of age and older have been established.",
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these subjects and younger subjects, and other reported clinical experience has not identified differences in responses between the elderly and younger patients.",
+      "refs": [
+        {
+          "source": "fda-breo",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-breo",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204275"
+  }
+}

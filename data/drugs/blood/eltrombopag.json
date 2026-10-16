@@ -1,0 +1,593 @@
+{
+  "id": "eltrombopag",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "التروم‌بوپاگ",
+    "en": "Eltrombopag"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "آگونیست گیرنده ترومبوپویتین",
+    "en": "Thrombopoietin receptor agonist"
+  },
+  "brands": [
+    {
+      "name": "Promacta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "promacta",
+    "پروماکتا",
+    "revolade",
+    "رevolade",
+    "التromبوپاگ",
+    "التروم بوپاگ"
+  ],
+  "formulations": [
+    {
+      "id": "tab-12-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "12.5 mg tablet",
+      "concentration": {
+        "amount": 12.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-75",
+      "form": "tablet",
+      "route": "oral",
+      "label": "75 mg tablet",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "itp",
+      "disease": "immune-thrombocytopenia",
+      "label": {
+        "fa": "ITP مزمن (بزرگسال و کودک ۶ سال به بالا) — شروع ۵۰ mg یک بار",
+        "en": "Chronic ITP (adults and children ≥6 y) — start 50 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 75,
+        "refs": [
+          {
+            "source": "fda-promacta",
+            "section": "2.1"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تبار آسیای شرقی یا نارسایی کبد: شروع ۲۵ mg. هدف پلاکت ≥۵۰ هزار، نه طبیعی کردن.",
+            "en": "East-/Southeast-Asian ancestry or hepatic impairment: start 25 mg. Target platelets ≥50×10⁹/L, not normalisation."
+          },
+          "refs": [
+            {
+              "source": "fda-promacta",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "ناشتا یا با غذای کم‌کلسیم؛ ۲ ساعت قبل یا ۴ ساعت بعد از آنتی‌اسید، لبنیات و مکمل‌های آهن/کلسیم/روی.",
+            "en": "Fasting or with a low-calcium meal; 2 h before or 4 h after antacids, dairy and iron/calcium/zinc supplements."
+          },
+          "refs": [
+            {
+              "source": "fda-promacta",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itp-young",
+      "disease": "immune-thrombocytopenia",
+      "label": {
+        "fa": "ITP — کودک ۱ تا ۵ سال: شروع ۲۵ mg یک بار",
+        "en": "ITP — children 1–5 y: start 25 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 75,
+        "refs": [
+          {
+            "source": "fda-promacta",
+            "section": "2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hcv",
+      "disease": "hepatitis-c",
+      "label": {
+        "fa": "ترومبوسیتوپنی هپاتیت C (برای شروع اینترفرون) — شروع ۲۵ mg یک بار",
+        "en": "Hepatitis C thrombocytopenia (to start interferon) — start 25 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 100,
+        "refs": [
+          {
+            "source": "fda-promacta",
+            "section": "2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "saa12",
+      "disease": "aplastic-anemia",
+      "label": {
+        "fa": "آنمی آپلاستیک شدید خط اول (۱۲ سال به بالا) — ۱۵۰ mg یک بار، ۶ ماه همراه درمان سرکوب ایمنی",
+        "en": "First-line severe aplastic anaemia (≥12 y) — 150 mg once daily for 6 months with immunosuppressive therapy"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 150,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "2.3, Table 3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "از دوز اولیه بالاتر نرود. تبار آسیای شرقی دوز کمتر طبق جدول.",
+            "en": "Do not exceed the initial dose. East-/Southeast-Asian ancestry: reduced dose per table."
+          },
+          "refs": [
+            {
+              "source": "fda-promacta",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saa6",
+      "disease": "aplastic-anemia",
+      "label": {
+        "fa": "آنمی آپلاستیک شدید — کودک ۶ تا ۱۱ سال: ۷۵ mg یک بار، ۶ ماه",
+        "en": "Severe aplastic anaemia — children 6–11 y: 75 mg once daily for 6 months"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 75,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "2.3, Table 3"
+        }
+      ]
+    },
+    {
+      "id": "saa2",
+      "disease": "aplastic-anemia",
+      "label": {
+        "fa": "آنمی آپلاستیک شدید — کودک ۲ تا ۵ سال: ۲٫۵ mg/kg یک بار، ۶ ماه",
+        "en": "Severe aplastic anaemia — children 2–5 y: 2.5 mg/kg once daily for 6 months"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 6,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2.5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "2.3, Table 3"
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: جبران‌ناپذیری کبد در هپاتیت C با اینترفرون/ریباویرین؛ سمیت کبدی — آزمایش کبد پایش شود.",
+        "en": "Boxed warning: hepatic decompensation in hepatitis C with interferon/ribavirin; hepatotoxicity — monitor liver tests."
+      },
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "ترومبوز؛ آب مروارید؛ خطر پیشرفت MDS.",
+        "en": "Thrombotic events; cataracts; risk of MDS progression."
+      },
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "itp",
+      "formulation": "tab-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "itp-young",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 3,
+        "weightKg": 14
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "hcv",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "saa12",
+      "formulation": "tab-75",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "saa6",
+      "formulation": "tab-75",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 75,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "saa2",
+      "formulation": "tab-12-5",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 37.5,
+        "tabletsPerDoseRounded": 3
+      }
+    }
+  ],
+  "atc": [
+    "B02BX05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51000",
+        "en": "ELTROMBOPAG 25 mg TABLET",
+        "fa": "قرص الترومبوپاگ ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "51001",
+        "en": "ELTROMBOPAG 50 mg TABLET",
+        "fa": "قرص الترومبوپاگ ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4913/Eltrombopag",
+        "url": "https://www.darooyab.ir/G-4913/Eltrombopag"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-promacta",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022291"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022291",
+      "label": "NDA022291"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7714a0ed-34bb-46e6-a0a5-b363908b22c2",
+      "label": "FDA Promacta"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609011.html",
+      "label": "Eltrombopag"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B02BX05",
+      "label": "B02BX05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4913/Eltrombopag",
+      "label": "Eltrombopag"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from a small number of published case reports and postmarketing experience with PROMACTA use in pregnant women are insufficient to assess any drug-associated risks for major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Due to the potential for serious adverse reactions in a breastfed child from PROMACTA, breastfeeding is not recommended during treatment.",
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of PROMACTA have been established in pediatric patients 1 year and older with persistent or chronic ITP and in pediatric patients 2 years and older with IST-naïve severe aplastic anemia (in combination with h-ATG and cyclosporine).",
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these patients and younger patients.",
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Based on animal reproduction studies, PROMACTA can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-promacta",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

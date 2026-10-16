@@ -1,0 +1,302 @@
+{
+  "id": "vilazodone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ویلازودون",
+    "en": "Vilazodone"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدافسردگی (SSRI + آگونیست نسبی 5-HT1A)",
+    "en": "Antidepressant (SSRI + 5-HT1A partial agonist)"
+  },
+  "brands": [
+    {
+      "name": "Viibryd",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "viibryd",
+    "ویبرید",
+    "ویلازودون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-viibryd",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-viibryd",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-viibryd",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی اساسی بزرگسال — هدف ۲۰ تا ۴۰ mg یک بار با غذا",
+        "en": "Major depressive disorder, adults — target 20–40 mg once daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "perDoseMax": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-viibryd",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۱۰ mg ۷ روز، سپس ۲۰ mg؛ پس از دست‌کم ۷ روز تا ۴۰ mg. پیش از شروع اختلال دوقطبی بررسی شود. قطع تدریجی.",
+            "en": "Start 10 mg for 7 days, then 20 mg; after ≥7 days up to 40 mg. Screen for bipolar disorder first. Taper when stopping."
+          },
+          "refs": [
+            {
+              "source": "fda-viibryd",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-viibryd",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "maoi",
+      "severity": "block",
+      "text": {
+        "fa": "مهارکننده MAO همزمان، ظرف ۱۴ روز پس از قطع آن، یا ظرف 14 روز پس از قطع این دارو؛ لینزولید یا متیلن بلو وریدی (سندرم سروتونین).",
+        "en": "MAOIs concomitantly, within 14 days of stopping them, or within 14 days of stopping this drug; linezolid or IV methylene blue (serotonin syndrome)."
+      },
+      "refs": [
+        {
+          "source": "fda-viibryd",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش افکار و رفتار خودکشی در کودکان و جوانان — پایش بدتر شدن بالینی.",
+        "en": "Boxed warning: increased suicidal thoughts and behaviours in children and young adults — monitor for clinical worsening."
+      },
+      "refs": [
+        {
+          "source": "fda-viibryd",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سندرم سروتونین؛ تشنج؛ اختلال عملکرد جنسی.",
+        "en": "Serotonin syndrome; seizures; sexual dysfunction."
+      },
+      "refs": [
+        {
+          "source": "fda-viibryd",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 40
+      }
+    }
+  ],
+  "atc": [
+    "N06AX24"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "19933",
+        "en": "VILAZODONE 20MG TAB",
+        "fa": "قرص ویلازودون ۲۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4709/VILAZODONE",
+        "url": "https://www.darooyab.ir/G-4709/VILAZODONE"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-viibryd",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022567"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022567",
+      "label": "NDA022567"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c55ccfb-c4cf-11df-851a-0800200c9a66",
+      "label": "FDA Viibryd"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611020.html",
+      "label": "Vilazodone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AX24",
+      "label": "N06AX24"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4709/VILAZODONE",
+      "label": "VILAZODONE"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on data from published observational studies, exposure to SSRIs, particularly in the month before delivery, has been associated with a less than 2-fold increase in the risk of postpartum hemorrhage [see Warnings and Precautions ( 5.3 ) and Clinical Considerations] .",
+      "refs": [
+        {
+          "source": "fda-viibryd",
+          "section": "8.1"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Antidepressants increased the risk of suicidal thoughts and behavi ors in pediatric and young adult patients in short-term studies.",
+      "refs": [
+        {
+          "source": "fda-viibryd",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Serotonergic antidepressants have been associated with cases of clinically significant hyponatremia in elderly patients, who may be at greater risk for this adverse reaction [see Warnings and Precautions ( 5.8 )] .",
+      "refs": [
+        {
+          "source": "fda-viibryd",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

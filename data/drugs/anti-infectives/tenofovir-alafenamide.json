@@ -1,0 +1,239 @@
+{
+  "id": "tenofovir-alafenamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تنوفوویر آلافنامید",
+    "en": "Tenofovir alafenamide"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده نوکلئوتیدی (HBV)",
+    "en": "Nucleotide reverse transcriptase inhibitor (HBV)"
+  },
+  "brands": [
+    {
+      "name": "Vemlidy",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vemlidy",
+    "ومیلیدی",
+    "TAF",
+    "تنوفوویر آلافنامید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vemlidy",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hbv",
+      "disease": "hepatitis-b",
+      "label": {
+        "fa": "هپاتیت B مزمن (کبد جبران‌شده) — بزرگسال و کودک ۶ سال و ≥۲۵ kg: ۲۵ mg یک بار با غذا",
+        "en": "Chronic hepatitis B (compensated) — adults and children ≥6 y and ≥25 kg: 25 mg once daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "minWeightKg": 25
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-vemlidy",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع HIV چک شود. ClCr ۱۵ و بالاتر تنظیم ندارد؛ ESRD بدون دیالیز توصیه نمی‌شود؛ روزهای دیالیز پس از دیالیز. Child-Pugh B یا C توصیه نمی‌شود.",
+            "en": "Test for HIV before starting. No adjustment at CrCl ≥15; ESRD not on dialysis not recommended; on dialysis days give after dialysis. Not recommended in Child-Pugh B or C."
+          },
+          "refs": [
+            {
+              "source": "fda-vemlidy",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-vemlidy",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-vemlidy",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: تشدید شدید هپاتیت B پس از قطع در عفونت همزمان HBV — پایش کبد چند ماه.",
+        "en": "Boxed warning: severe acute exacerbation of hepatitis B after discontinuation in HBV co-infection — monitor the liver for several months."
+      },
+      "refs": [
+        {
+          "source": "fda-vemlidy",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hbv",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J05AF13"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Tenofovir%20alafenamide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-vemlidy",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA208464"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208464",
+      "label": "NDA208464"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=72e6b33c-0351-4070-9172-eeaa186c01d2",
+      "label": "FDA Vemlidy"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a602018.html",
+      "label": "Tenofovir alafenamide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AF13",
+      "label": "J05AF13"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های رجیستری بارداری (APR) تفاوتی با میزان زمینه‌ای نقص مادرزادی نشان نمی‌دهد.",
+        "en": "Label: Antiretroviral Pregnancy Registry data show no difference from the background birth-defect rate."
+      },
+      "quote": "Available data from the APR show no statistically significant difference in the overall risk of birth defects for tenofovir alafenamide (TAF) compared with the background rate for major birth defects of 2.7% in the U.S. reference population of the Metropolitan Atlanta Congenital Defects Program (MACDP).",
+      "refs": [
+        {
+          "source": "fda-vemlidy",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from the published literature report the presence of TAF and tenofovir in human milk.",
+      "refs": [
+        {
+          "source": "fda-vemlidy",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The pharmacokinetics, safety, and effectiveness of VEMLIDY for the treatment of chronic HBV infection have been established in pediatric patients between the ages of 6 to less than 18 years and weighing at least 25 kg (N=59) in Trial 1092 up to 96 weeks.",
+      "refs": [
+        {
+          "source": "fda-vemlidy",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In clinical trials, VEMLIDY was administered to 89 subjects aged 65 and over.",
+      "refs": [
+        {
+          "source": "fda-vemlidy",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

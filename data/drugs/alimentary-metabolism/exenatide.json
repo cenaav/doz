@@ -1,0 +1,277 @@
+{
+  "id": "exenatide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اگزناتاید",
+    "en": "Exenatide"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آگونیست گیرنده GLP-1",
+    "en": "GLP-1 receptor agonist"
+  },
+  "brands": [
+    {
+      "name": "Byetta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "byetta",
+    "بایتا",
+    "اگزناتید",
+    "اکسناتاید"
+  ],
+  "formulations": [
+    {
+      "id": "pen-250",
+      "form": "injection",
+      "route": "sc",
+      "label": "250 mcg/mL prefilled pen (5 or 10 mcg per dose)",
+      "concentration": {
+        "amount": 250,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-byetta",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2dm",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ — ۵ mcg زیرجلدی دو بار در روز ظرف ۶۰ دقیقه پیش از صبحانه و شام؛ پس از ۱ ماه تا ۱۰ mcg",
+        "en": "Type 2 diabetes — 5 mcg SC twice daily within 60 min before morning and evening meals; 10 mcg after 1 month"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-byetta",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از غذا تزریق نشود. قلم بین بیماران مشترک نشود.",
+            "en": "Do not inject after a meal. Never share a pen between patients."
+          },
+          "refs": [
+            {
+              "source": "fda-byetta",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-byetta",
+              "section": "5.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شدید قبلی به اگزناتاید؛ سابقه ترومبوسیتوپنی ایمنی ناشی از فرآورده‌های اگزناتاید.",
+        "en": "Prior severe hypersensitivity to exenatide; history of drug-induced immune-mediated thrombocytopenia from exenatide products."
+      },
+      "refs": [
+        {
+          "source": "fda-byetta",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پانکراتیت حاد؛ هیپوگلیسمی با سولفونیل‌اوره یا انسولین؛ آسیب حاد کلیه با کاهش حجم؛ عوارض شدید گوارشی؛ ترومبوسیتوپنی؛ بیماری کیسه صفرا؛ آسپیراسیون ریوی حین بیهوشی.",
+        "en": "Acute pancreatitis; hypoglycaemia with sulfonylureas or insulin; acute kidney injury from volume depletion; severe GI reactions; thrombocytopenia; gallbladder disease; pulmonary aspiration during anaesthesia."
+      },
+      "refs": [
+        {
+          "source": "fda-byetta",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "block",
+      "text": {
+        "fa": "ClCr زیر ۳۰ یا ESRD: توصیه نمی‌شود.",
+        "en": "CrCl <30 or ESRD: not recommended."
+      },
+      "refs": [
+        {
+          "source": "fda-byetta",
+          "section": "8.6"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2dm",
+      "formulation": "pen-250",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 90
+      },
+      "expect": {
+        "perDose": 5,
+        "mlPerDose": 0.02,
+        "upperPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "A10BJ01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51329",
+        "en": "EXENATIDE INJECTION, SUSPENSION, EXTENDED RELEASE PARENTERAL 2 mg",
+        "fa": "فرآورده تزریقی اکسناتاید ۲ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4914/Exenatide",
+        "url": "https://www.darooyab.ir/G-4914/Exenatide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-byetta",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021773"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021773",
+      "label": "NDA021773"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=53d03c03-ebf7-418d-88a8-533eabd2ee4f",
+      "label": "FDA Byetta"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605034.html",
+      "label": "Exenatide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BJ01",
+      "label": "A10BJ01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4914/Exenatide",
+      "label": "Exenatide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited data with BYETTA in pregnant women are not sufficient to determine a drug-associated risk for major birth defects or miscarriage.",
+      "refs": [
+        {
+          "source": "fda-byetta",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of BYETTA, in human milk, the effects of BYETTA on the breastfed infant, or the effects of BYETTA on milk production.",
+      "refs": [
+        {
+          "source": "fda-byetta",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of BYETTA have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-byetta",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection in the elderly based on renal function.",
+      "refs": [
+        {
+          "source": "fda-byetta",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

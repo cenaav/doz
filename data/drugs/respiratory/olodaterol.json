@@ -1,0 +1,247 @@
+{
+  "id": "olodaterol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اولوداترول",
+    "en": "Olodaterol"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آگونیست بتا-۲ طولانی‌اثر (LABA)",
+    "en": "Long-acting beta2-agonist (LABA)"
+  },
+  "brands": [
+    {
+      "name": "Striverdi Respimat",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "striverdi",
+    "استریوردی",
+    "اولوداترول"
+  ],
+  "formulations": [
+    {
+      "id": "respimat",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "2.5 mcg per actuation (Respimat); 1 dose = 2 actuations",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-striverdi",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "copd",
+      "disease": "copd",
+      "label": {
+        "fa": "نگهدارنده COPD — دو استنشاق (۵ mcg) یک بار در روز",
+        "en": "COPD maintenance — 2 inhalations (5 mcg) once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-striverdi",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بیش از ۲ استنشاق در ۲۴ ساعت نه. برای آسم اندیکاسیون ندارد.",
+            "en": "Not more than 2 inhalations every 24 h. Not indicated for asthma."
+          },
+          "refs": [
+            {
+              "source": "fda-striverdi",
+              "section": "2"
+            },
+            {
+              "source": "fda-striverdi",
+              "section": "4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "asthma",
+      "severity": "block",
+      "text": {
+        "fa": "LABA بدون کورتیکواستروئید استنشاقی در آسم.",
+        "en": "LABA without an inhaled corticosteroid in asthma."
+      },
+      "refs": [
+        {
+          "source": "fda-striverdi",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "رویدادهای جدی مرتبط با آسم؛ برای حمله حاد نیست؛ مصرف بیش از حد خطرناک است؛ برونکواسپاسم متناقض؛ اثرات قلبی؛ هیپوکالمی و هیپرگلیسمی.",
+        "en": "Serious asthma-related events; not for acute episodes; excessive use is dangerous; paradoxical bronchospasm; cardiovascular effects; hypokalaemia and hyperglycaemia."
+      },
+      "refs": [
+        {
+          "source": "fda-striverdi",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "copd",
+      "formulation": "respimat",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "R03AC19"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Olodaterol"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-striverdi",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA203108"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203108",
+      "label": "NDA203108"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d9a5433-857e-44ea-b3d6-2a400ca0cef5",
+      "label": "FDA Striverdi Respimat"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615019.html",
+      "label": "Olodaterol Oral Inhalation"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03AC19",
+      "label": "R03AC19"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled clinical studies with STRIVERDI RESPIMAT in pregnant women to inform of drug-associated risk of adverse pregnancy-related outcomes.",
+      "refs": [
+        {
+          "source": "fda-striverdi",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no available data on the presence of olodaterol in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-striverdi",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of STRIVERDI RESPIMAT in the pediatric population have not been established.",
+      "refs": [
+        {
+          "source": "fda-striverdi",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in effectiveness were observed, and in the 1-year pooled data, the adverse drug reaction profiles were similar in the older population compared to the patient population overall.",
+      "refs": [
+        {
+          "source": "fda-striverdi",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

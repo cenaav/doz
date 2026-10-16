@@ -1,0 +1,364 @@
+{
+  "id": "darunavir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "داروناویر",
+    "en": "Darunavir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده پروتئاز (با ریتوناویر)",
+    "en": "Protease inhibitor (boosted with ritonavir)"
+  },
+  "brands": [
+    {
+      "name": "Prezista",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "prezista",
+    "پرزیستا",
+    "داروناویر",
+    "DRV"
+  ],
+  "formulations": [
+    {
+      "id": "tab-800",
+      "form": "tablet",
+      "route": "oral",
+      "label": "800 mg tablet",
+      "concentration": {
+        "amount": 800,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-600",
+      "form": "tablet",
+      "route": "oral",
+      "label": "600 mg tablet",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "naive",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 درمان‌نشده یا بدون جهش مقاومت — ۸۰۰ mg + ریتوناویر ۱۰۰ mg یک بار با غذا",
+        "en": "HIV-1 naive or no darunavir resistance — 800 mg + ritonavir 100 mg once daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 800,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "2.3"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-800"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس (مگر فرآورده کامل).",
+            "en": "Always with other antiretrovirals (unless a complete regimen)."
+          },
+          "refs": [
+            {
+              "source": "fda-prezista",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exp",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 با دست‌کم یک جهش مقاومت، یا بارداری — ۶۰۰ mg + ریتوناویر ۱۰۰ mg دو بار با غذا",
+        "en": "HIV-1 with ≥1 darunavir resistance substitution, or pregnancy — 600 mg + ritonavir 100 mg twice daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-prezista",
+          "section": "2.4"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-600"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس (مگر فرآورده کامل).",
+            "en": "Always with other antiretrovirals (unless a complete regimen)."
+          },
+          "refs": [
+            {
+              "source": "fda-prezista",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "داروهای با پاکسازی وابسته به CYP3A و دامنه درمانی باریک (آلفوزوسین، رانولازین، دروندارون، کلشی‌سین در نارسایی کلیه/کبد، لوراسیدون، پیموزاید، میدازولام خوراکی، تریازولام، سیلدنافیل برای PAH، سیمواستاتین، لواستاتین، ارگوت…) و القاگرهای قوی (ریفامپین، گل راعی).",
+        "en": "Drugs highly dependent on CYP3A with narrow therapeutic index (alfuzosin, ranolazine, dronedarone, colchicine in renal/hepatic impairment, lurasidone, pimozide, oral midazolam, triazolam, sildenafil for PAH, simvastatin, lovastatin, ergots…) and strong inducers (rifampin, St John’s wort)."
+      },
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سمیت کبد؛ واکنش شدید پوستی؛ داروناویر سولفونامید دارد (احتیاط در حساسیت به سولفا).",
+        "en": "Hepatotoxicity; severe skin reactions; contains a sulfonamide moiety (caution in sulfa allergy)."
+      },
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "naive",
+      "formulation": "tab-800",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 800,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "exp",
+      "formulation": "tab-600",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J05AE10"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "50333",
+        "en": "DARUNAVIR (AS ETHANOLATE) TABLET ORAL 150 mg",
+        "fa": "قرص داروناویر (معادل اتانولات) ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "22525",
+        "en": "DARUNAVIR (AS ETHANOLATE) TABLET ORAL 600 mg",
+        "fa": "قرص داروناویر (معادل اتانولات) ۶۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52875",
+        "en": "DARUNAVIR (AS ETHANOLATE) TABLET ORAL 800 mg",
+        "fa": "قرص داروناویر (معادل اتانولات) ۸۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4695/Darunavir",
+        "url": "https://www.darooyab.ir/G-4695/Darunavir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-prezista",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021976"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021976",
+      "label": "NDA021976"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=814301f9-c990-46a5-b481-2879a521a16f",
+      "label": "FDA Prezista"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607042.html",
+      "label": "Darunavir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AE10",
+      "label": "J05AE10"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4695/Darunavir",
+      "label": "Darunavir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Prospective pregnancy data from the APR are not sufficient to adequately assess the risk of birth defects or miscarriage.",
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary The Centers for Disease Control and Prevention recommend that HIV-infected mothers not breastfeed their infants to avoid risking postnatal transmission of HIV.",
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "PREZISTA/ritonavir is not recommended in pediatric patients below 3 years of age because of toxicity and mortality observed in juvenile rats dosed with darunavir (from 20 mg/kg to 1000 mg/kg) up to days 23 to 26 of age [see Warnings and Precautions (5.10) , Use in Specific Populations (8.1) and Clinical Pharmacology …",
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, caution should be exercised in the administration and monitoring of PREZISTA in elderly patients, reflecting the greater frequency of decreased hepatic function, and of concomitant disease or other drug therapy [see Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Use of PREZISTA may reduce the efficacy of combined hormonal contraceptives and the progestin only pill.",
+      "refs": [
+        {
+          "source": "fda-prezista",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

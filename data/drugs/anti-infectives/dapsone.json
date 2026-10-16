@@ -1,0 +1,330 @@
+{
+  "id": "dapsone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "داپسون",
+    "en": "Dapsone"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سولفون (ضدجذام)",
+    "en": "Sulfone (antileprotic)"
+  },
+  "brands": [
+    {
+      "name": "Dapsone",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "dapsone",
+    "داپسون",
+    "DDS"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dapsone",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dapsone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "lep",
+      "disease": "leprosy",
+      "label": {
+        "fa": "جذام — ۱۰۰ mg روزانه بدون وقفه همراه سایر داروهای ضدجذام",
+        "en": "Leprosy — 100 mg daily without interruption, with other antileprosy drugs"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-dapsone",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "dh",
+      "disease": "dermatitis-herpetiformis",
+      "label": {
+        "fa": "درماتیت هرپتی‌فرم — شروع ۵۰ mg روزانه (۵۰ تا ۳۰۰ mg)",
+        "en": "Dermatitis herpetiformis — start 50 mg daily (50–300 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-dapsone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تیتراسیون تا کنترل؛ در اسرع وقت به کمترین دوز نگهدارنده کاهش. کودک دوز کمتر.",
+            "en": "Titrate to control; reduce to the minimum maintenance dose as soon as possible. Children: smaller doses."
+          },
+          "refs": [
+            {
+              "source": "fda-dapsone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به داپسون یا مشتقات آن.",
+        "en": "Hypersensitivity to dapsone or its derivatives."
+      },
+      "refs": [
+        {
+          "source": "fda-dapsone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آگرانولوسیتوز، آنمی آپلاستیک و دیسکرازی خونی کشنده — CBC مکرر؛ همولیز (به‌ویژه کمبود G6PD)؛ مت‌هموگلوبینمی.",
+        "en": "Fatal agranulocytosis, aplastic anaemia and blood dyscrasias — frequent CBC; haemolysis (especially G6PD deficiency); methaemoglobinaemia."
+      },
+      "refs": [
+        {
+          "source": "fda-dapsone",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "lep",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "dh",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 50,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "J04BA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00383",
+        "en": "DAPSONE 100MG TAB",
+        "fa": "قرص داپسون ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01456",
+        "en": "DAPSONE 50MG TAB",
+        "fa": "قرص داپسون ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "51371",
+        "en": "DAPSONE GEL TOPICAL 5 % 30 g",
+        "fa": "ژل موضعی داپسون ۵ درصد ۳۰ گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-378/Dapsone",
+        "url": "https://www.darooyab.ir/G-378/Dapsone"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-dapsone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA218335"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218335",
+      "label": "ANDA218335"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=839d7440-ba0e-4c56-b648-d374b155cf03",
+      "label": "FDA Dapsone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682128.html",
+      "label": "Dapsone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616045.html",
+      "label": "Dapsone Topical"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J04BA02",
+      "label": "J04BA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-378/Dapsone",
+      "label": "Dapsone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects: Animal reproduction studies have not been conducted with dapsone.",
+      "refs": [
+        {
+          "source": "fda-dapsone",
+          "section": "Pregnancy:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Dapsone is excreted in breast milk in substantial amounts.",
+      "refs": [
+        {
+          "source": "fda-dapsone",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Pediatric patients are treated on the same schedule as adults but with correspondingly smaller doses.",
+      "refs": [
+        {
+          "source": "fda-dapsone",
+          "section": "Pediatric Use:"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "",
+      "refs": [
+        {
+          "source": "fda-dapsone",
+          "section": "GERIATRIC USE"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,541 @@
+{
+  "id": "certolizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سرتولیزوماب پگول",
+    "en": "Certolizumab pegol"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده TNF",
+    "en": "TNF blocker"
+  },
+  "brands": [
+    {
+      "name": "Cimzia",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cimzia",
+    "سیمزیا",
+    "سرتولیزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-200",
+      "form": "injection",
+      "route": "sc",
+      "label": "200 mg/mL prefilled syringe",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "بارگذاری (آرتریت روماتوئید، پسوریاتیک، اسپوندیلیت، کرون) — ۴۰۰ mg (دو تزریق ۲۰۰) هفته ۰، ۲ و ۴",
+        "en": "Loading (RA, PsA, axSpA, Crohn) — 400 mg (two 200 mg injections) at weeks 0, 2 and 4"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-cimzia",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-cimzia",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-cimzia",
+          "section": "2.5"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع: بررسی سل فعال و نهفته (درمان سل نهفته قبل از شروع) و واکسن‌های مناسب سن.",
+            "en": "Before starting: screen for active and latent TB (treat latent TB first) and complete age-appropriate vaccines."
+          },
+          "refs": [
+            {
+              "source": "fda-cimzia",
+              "section": "2.10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "نگهدارنده آرتریت روماتوئید یا پسوریاتیک — ۲۰۰ mg هر ۲ هفته (یا ۴۰۰ mg هر ۴ هفته)",
+        "en": "Maintenance RA or PsA — 200 mg every 2 weeks (or 400 mg every 4 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-cimzia",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "as",
+      "disease": "ankylosing-spondylitis",
+      "label": {
+        "fa": "نگهدارنده اسپوندیلیت آنکیلوزان یا axSpA غیررادیوگرافیک — ۲۰۰ mg هر ۲ هفته یا ۴۰۰ mg هر ۴ هفته",
+        "en": "Maintenance AS or non-radiographic axSpA — 200 mg every 2 weeks or 400 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "2.5"
+        },
+        {
+          "source": "fda-cimzia",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "cd",
+      "disease": "crohns",
+      "label": {
+        "fa": "نگهدارنده کرون — ۴۰۰ mg هر ۴ هفته",
+        "en": "Maintenance Crohn disease — 400 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "pso",
+      "disease": "psoriasis",
+      "label": {
+        "fa": "پسوریازیس پلاک متوسط تا شدید — ۴۰۰ mg هر ۲ هفته",
+        "en": "Moderate–severe plaque psoriasis — 400 mg every other week"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "2.7"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "وزن ۹۰ kg یا کمتر: می‌توان ۴۰۰ mg هفته ۰، ۲، ۴ سپس ۲۰۰ mg هر ۲ هفته.",
+            "en": "≤90 kg: may use 400 mg at weeks 0, 2, 4 then 200 mg every other week."
+          },
+          "refs": [
+            {
+              "source": "fda-cimzia",
+              "section": "2.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pjia",
+      "disease": "juvenile-arthritis",
+      "label": {
+        "fa": "JIA پلی‌آرتیکولار (۲ سال به بالا) — نگهدارنده از هفته ۶ هر ۲ هفته بر اساس وزن",
+        "en": "Polyarticular JIA (≥2 y) — maintenance from week 6 every 2 weeks by weight"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "minWeightKg": 10
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 9.99,
+            "maxWeightKg": 19.99,
+            "perDose": 50,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 19.99,
+            "maxWeightKg": 39.99,
+            "perDose": 100,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 39.99,
+            "maxWeightKg": null,
+            "perDose": 200,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بارگذاری هفته ۰، ۲، ۴: ۱۰ تا <۲۰ kg: ۱۰۰؛ ۲۰ تا <۴۰: ۲۰۰؛ ≥۴۰: ۴۰۰ mg.",
+            "en": "Loading at weeks 0, 2, 4: 10–<20 kg: 100; 20–<40: 200; ≥40: 400 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-cimzia",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی به سرتولیزوماب (آنژیوادم، آنافیلاکسی، بیماری سرم).",
+        "en": "Serious hypersensitivity to certolizumab (angioedema, anaphylaxis, serum sickness)."
+      },
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: عفونت‌های جدی (سل، قارچی تهاجمی، فرصت‌طلب) و بدخیمی (لنفوم، به‌ویژه در کودکان) — پیش از شروع تست سل نهفته و HBV.",
+        "en": "Boxed warning: serious infections (TB, invasive fungal, opportunistic) and malignancy (lymphoma, especially in children) — test for latent TB and HBV first."
+      },
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "نارسایی قلب؛ فعال شدن HBV؛ بیماری دمیلینه‌کننده؛ سیتوپنی؛ سندرم شبه‌لوپوس؛ همراه داروهای بیولوژیک دیگر نه.",
+        "en": "Heart failure; HBV reactivation; demyelinating disease; cytopenias; lupus-like syndrome; not with other biologics."
+      },
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "pfs-200",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "ra",
+      "formulation": "pfs-200",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "as",
+      "formulation": "pfs-200",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "cd",
+      "formulation": "pfs-200",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "pso",
+      "formulation": "pfs-200",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 95
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 2
+      }
+    },
+    {
+      "regimen": "pjia",
+      "formulation": "pfs-200",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "L04AB05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2927/Certolizumab-Pegol",
+        "url": "https://www.darooyab.ir/G-2927/Certolizumab-Pegol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125160",
+      "label": "BLA125160"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b4c2c9dc-a0bb-4d64-a667-a67ebe88392d",
+      "label": "FDA Cimzia"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608041.html",
+      "label": "Certolizumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AB05",
+      "label": "L04AB05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2927/Certolizumab-Pegol",
+      "label": "Certolizumab-Pegol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited data from an ongoing pregnancy exposure registry on use of CIMZIA in pregnant women are not sufficient to inform a risk of major birth defects or other adverse pregnancy outcomes.",
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary In a multicenter clinical study of 17 lactating women treated with CIMZIA at 200 mg every 2 weeks or 400 mg every 4 weeks, minimal certolizumab pegol concentrations were observed in breast milk.",
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در JIA پلی‌آرتیکولار از ۲ سالگی ثابت شده؛ هشدار جعبه‌ای لنفوم و بدخیمی در کودکان و نوجوانان.",
+        "en": "Label: established for polyarticular JIA from 2 y; boxed warning of lymphoma and malignancy in children and adolescents."
+      },
+      "quote": "The safety and effectiveness of CIMZIA for active polyarticular juvenile idiopathic arthritis has been established in pediatric patients 2 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because there is a higher incidence of infections in the elderly population in general, use caution when treating the elderly with CIMZIA [see Warnings and Precautions (5.1) ] .",
+      "refs": [
+        {
+          "source": "fda-cimzia",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-cimzia",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125160"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "id": "dornase-alfa",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دورناز آلفا",
+    "en": "Dornase alfa"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنزیم موکولیتیک (DNase)",
+    "en": "Mucolytic enzyme (DNase)"
+  },
+  "brands": [
+    {
+      "name": "Pulmozyme",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "pulmozyme",
+    "پالموزایم",
+    "dornase",
+    "دورناز"
+  ],
+  "formulations": [
+    {
+      "id": "amp-2-5",
+      "form": "solution",
+      "route": "inhaled",
+      "label": "2.5 mg/2.5 mL ampule for nebulizer",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-pulmozyme",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cf",
+      "disease": "cystic-fibrosis",
+      "label": {
+        "fa": "فیبروز کیستیک — ۲٫۵ mg (یک آمپول) یک بار در روز با نبولایزر توصیه‌شده",
+        "en": "Cystic fibrosis — 2.5 mg (one ampule) once daily via a recommended nebulizer"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-pulmozyme",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "برخی بیماران از دو بار در روز سود می‌برند. با سایر داروها در نبولایزر مخلوط نشود.",
+            "en": "Some patients may benefit from twice daily. Do not mix with other drugs in the nebulizer."
+          },
+          "refs": [
+            {
+              "source": "fda-pulmozyme",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-pulmozyme",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دورناز آلفا یا فرآورده‌های سلول تخمدان همستر چینی.",
+        "en": "Hypersensitivity to dornase alfa or Chinese hamster ovary cell products."
+      },
+      "refs": [
+        {
+          "source": "fda-pulmozyme",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cf",
+      "formulation": "amp-2-5",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 2.5,
+        "mlPerDose": 2.5
+      }
+    }
+  ],
+  "atc": [
+    "R05CB13"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08081",
+        "en": "DORNASE ALFA 2500IU AMP",
+        "fa": "آمپول دورناس آلفا ۲۵۰۰ واحد بین‌المللی"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2162/Dornase-Alfa",
+        "url": "https://www.darooyab.ir/G-2162/Dornase-Alfa"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-pulmozyme",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103532"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103532",
+      "label": "BLA103532"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d8c78a7e-ff99-48f3-8952-643ec2ea0f86",
+      "label": "FDA Pulmozyme"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a694002.html",
+      "label": "Dornase Alfa"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R05CB13",
+      "label": "R05CB13"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2162/Dornase-Alfa",
+      "label": "Dornase-Alfa"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies with PULMOZYME in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-pulmozyme",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "In a pharmacokinetic study in Cynomolgus monkeys, levels of dornase alfa detected in milk were less than 0.1% of the maternal serum concentration at 24 hours after dosing [intravenous bolus dose (0.1 mg/kg) of dornase alfa followed by an intravenous infusion (0.080 mg/kg/hr) over a 6-hour period] on post-partum day 14.",
+      "refs": [
+        {
+          "source": "fda-pulmozyme",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of PULMOZYME in conjunction with standard therapies for cystic fibrosis have been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-pulmozyme",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Cystic fibrosis is primarily a disease of children and young adults.",
+      "refs": [
+        {
+          "source": "fda-pulmozyme",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

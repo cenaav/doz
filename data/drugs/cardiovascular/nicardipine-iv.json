@@ -1,0 +1,279 @@
+{
+  "id": "nicardipine-iv",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نیکاردیپین وریدی",
+    "en": "Nicardipine (IV)"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مسدودکننده کانال کلسیم دی‌هیدروپیریدینی",
+    "en": "Dihydropyridine calcium channel blocker"
+  },
+  "brands": [
+    {
+      "name": "Cardene IV",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cardene",
+    "کاردن",
+    "نیکاردیپین"
+  ],
+  "formulations": [
+    {
+      "id": "bag-01",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/200 mL premixed (0.1 mg/mL)",
+      "concentration": {
+        "amount": 0.1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cardene-iv",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "bag-02",
+      "form": "injection",
+      "route": "iv",
+      "label": "40 mg/200 mL premixed (0.2 mg/mL)",
+      "concentration": {
+        "amount": 0.2,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cardene-iv",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "htn",
+      "disease": "hypertensive-emergency",
+      "label": {
+        "fa": "افزایش شدید فشار خون (وقتی خوراکی ممکن نیست) — شروع ۵ mg/ساعت، حداکثر ۱۵ mg/ساعت",
+        "en": "Severe hypertension when oral therapy is not feasible — start 5 mg/h, max 15 mg/h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mg",
+      "dose": {
+        "perMin": 0.08333,
+        "perMinMax": 0.25
+      },
+      "refs": [
+        {
+          "source": "fda-cardene-iv",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۵ mg/ساعت؛ هر ۵ تا ۱۵ دقیقه ۲٫۵ mg/ساعت بیشتر تا حداکثر ۱۵ mg/ساعت. ماشین‌حساب سرعت mL/ساعت کیسه را نشان می‌دهد. از ورید مرکزی یا محیطی بزرگ؛ محل محیطی هر ۱۲ ساعت عوض شود.",
+            "en": "Start 5 mg/h; increase by 2.5 mg/h every 5–15 min to max 15 mg/h. The calculator shows bag mL/h. Central or large peripheral vein; change peripheral site every 12 h."
+          },
+          "refs": [
+            {
+              "source": "fda-cardene-iv",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-cardene-iv",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "as",
+      "severity": "block",
+      "text": {
+        "fa": "تنگی پیشرفته دریچه آئورت.",
+        "en": "Advanced aortic stenosis."
+      },
+      "refs": [
+        {
+          "source": "fda-cardene-iv",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پایش دقیق در آنژین، نارسایی قلب، کبد یا کلیه؛ از وریدهای کوچک دست استفاده نشود (ترومبوز و فلبیت)؛ از تزریق داخل شریان یا نشت پرهیز.",
+        "en": "Monitor closely in angina, heart failure, hepatic or renal impairment; avoid small hand/wrist veins (thrombosis, phlebitis); avoid intra-arterial injection or extravasation."
+      },
+      "refs": [
+        {
+          "source": "fda-cardene-iv",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "htn",
+      "formulation": "bag-01",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "mlPerHour": 50,
+        "upperMlPerHour": 150
+      }
+    }
+  ],
+  "atc": [
+    "C08CA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52516",
+        "en": "NICARDIPINE HYDROCHLORIDE CAPSULE ORAL 20 mg",
+        "fa": "کپسول نیکاردیپین هیدروکلراید ۲۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1790/Nicardipine",
+        "url": "https://www.darooyab.ir/G-1790/Nicardipine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-cardene-iv",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019734"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019734",
+      "label": "NDA019734"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5499cfac-9147-4d5d-a8cb-f8d64f1481af",
+      "label": "FDA Cardene IV"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a695032.html",
+      "label": "Nicardipine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA04",
+      "label": "C08CA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1790/Nicardipine",
+      "label": "Nicardipine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published literature (clinical trials and case series) over decades of use of intravenous nicardipine during pregnancy have not identified a drug-associated risk of major birth defects or miscarriage.",
+      "refs": [
+        {
+          "source": "fda-cardene-iv",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Nicardipine is present in human milk in low amounts.",
+      "refs": [
+        {
+          "source": "fda-cardene-iv",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of CARDENE I.V. have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-cardene-iv",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The steady-state pharmacokinetics of nicardipine are similar in elderly hypertensive patients (>65 years) and young healthy adults.",
+      "refs": [
+        {
+          "source": "fda-cardene-iv",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

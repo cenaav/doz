@@ -1,0 +1,229 @@
+{
+  "id": "aclidinium",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آکلیدینیوم",
+    "en": "Aclidinium"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌موسکارینی طولانی‌اثر (LAMA)",
+    "en": "Long-acting muscarinic antagonist (LAMA)"
+  },
+  "brands": [
+    {
+      "name": "Tudorza Pressair",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tudorza",
+    "eklira",
+    "آکلیدینیوم"
+  ],
+  "formulations": [
+    {
+      "id": "pressair",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "400 mcg per actuation (Pressair)",
+      "concentration": {
+        "amount": 400,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tudorza",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "copd",
+      "disease": "copd",
+      "label": {
+        "fa": "نگهدارنده COPD — یک استنشاق ۴۰۰ mcg دو بار در روز (صبح و شب)",
+        "en": "COPD maintenance — 1 inhalation of 400 mcg twice daily (morning and evening)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tudorza",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شدید به پروتئین شیر؛ حساسیت به آکلیدینیوم.",
+        "en": "Severe hypersensitivity to milk proteins; hypersensitivity to aclidinium."
+      },
+      "refs": [
+        {
+          "source": "fda-tudorza",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "برای حمله حاد نیست؛ برونکواسپاسم متناقض؛ تشدید گلوکوم زاویه بسته و احتباس ادرار؛ حساسیت.",
+        "en": "Not for acute episodes; paradoxical bronchospasm; worsening narrow-angle glaucoma and urinary retention; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-tudorza",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "copd",
+      "formulation": "pressair",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "R03BB05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Aclidinium"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-tudorza",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA202450"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202450",
+      "label": "NDA202450"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f92cceb-a63f-4470-99b6-56179d98f10f",
+      "label": "FDA Tudorza Pressair"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613001.html",
+      "label": "Aclidinium Oral Inhalation"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03BB05",
+      "label": "R03BB05"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well controlled studies of TUDORZA PRESSAIR in pregnant women to inform drug associated risks.",
+      "refs": [
+        {
+          "source": "fda-tudorza",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no available data on the effects of TUDORZA PRESSAIR or aclidinium bromide on the breastfed child or on milk production or presence in human milk.",
+      "refs": [
+        {
+          "source": "fda-tudorza",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of TUDORZA PRESSAIR in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-tudorza",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these subjects and younger subjects.",
+      "refs": [
+        {
+          "source": "fda-tudorza",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

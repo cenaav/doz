@@ -1,0 +1,315 @@
+{
+  "id": "milrinone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "میلرینون",
+    "en": "Milrinone"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "مهارکننده فسفودی‌استراز ۳ (اینوتروپ)",
+    "en": "PDE3 inhibitor (inotrope)"
+  },
+  "brands": [
+    {
+      "name": "Primacor",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "primacor",
+    "میلرینون",
+    "میلرینون لاکتات"
+  ],
+  "formulations": [
+    {
+      "id": "dil-200",
+      "form": "injection",
+      "route": "iv",
+      "label": "Diluted to 200 mcg/mL (per label table)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-milrinone",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "vial-1",
+      "form": "injection",
+      "route": "iv",
+      "label": "1 mg/mL vial (= 1000 mcg/mL, for loading)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-milrinone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نارسایی حاد قلب — دوز بارگذاری ۵۰ mcg/kg آهسته در ۱۰ دقیقه",
+        "en": "Acute decompensated heart failure — loading 50 mcg/kg slowly over 10 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 50,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-milrinone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-1"
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "heart-failure",
+      "label": {
+        "fa": "نگهدارنده — ۰٫۳۷۵ تا ۰٫۷۵ mcg/kg/دقیقه (استاندارد ۰٫۵)",
+        "en": "Maintenance — 0.375–0.75 mcg/kg/min (standard 0.5)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 0.375,
+        "perKgPerMinMax": 0.75
+      },
+      "refs": [
+        {
+          "source": "fda-milrinone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "dil-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بیش از ۴۸ ساعت ایمنی یا اثر ثابت نشده. نارسایی کلیه: کاهش سرعت طبق جدول برچسب.",
+            "en": "Not shown safe or effective beyond 48 h. Renal impairment: reduce rate per label table."
+          },
+          "refs": [
+            {
+              "source": "fda-milrinone",
+              "section": "Warnings"
+            },
+            {
+              "source": "fda-milrinone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به میلرینون.",
+        "en": "Hypersensitivity to milrinone."
+      },
+      "refs": [
+        {
+          "source": "fda-milrinone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آریتمی بطنی و فوق‌بطنی؛ افت فشار؛ مصرف طولانی خوراکی در نارسایی شدید مرگ بیشتر.",
+        "en": "Ventricular and supraventricular arrhythmias; hypotension; long-term oral use in severe HF increased mortality."
+      },
+      "refs": [
+        {
+          "source": "fda-milrinone",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "vial-1",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 3500,
+        "mlPerDose": 3.5
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "dil-200",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 26.25,
+        "mlPerHour": 7.88,
+        "upperPerMin": 52.5,
+        "upperMlPerHour": 15.75
+      }
+    }
+  ],
+  "atc": [
+    "C01CE02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01877",
+        "en": "MILRINONE LACTATE 10MG/10ML INJ",
+        "fa": "فرآورده تزریقی میلرینون لاکتات ۱۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1772/Milrinone",
+        "url": "https://www.darooyab.ir/G-1772/Milrinone"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-milrinone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA216373"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216373",
+      "label": "ANDA216373"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=07dddead-22ed-004c-e063-6294a90a76fc",
+      "label": "FDA Milrinone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a626002.html",
+      "label": "Milrinone Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01CE02",
+      "label": "C01CE02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1772/Milrinone",
+      "label": "Milrinone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Milrinone should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-milrinone",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "",
+      "refs": [
+        {
+          "source": "fda-milrinone",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-milrinone",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

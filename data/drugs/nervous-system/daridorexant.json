@@ -1,0 +1,276 @@
+{
+  "id": "daridorexant",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "داریدورکسانت",
+    "en": "Daridorexant"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتاگونیست گیرنده اورکسین (DORA)",
+    "en": "Dual orexin receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Quviviq",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "quviviq",
+    "کوویویک",
+    "داریدورکسانت"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-quviviq",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-quviviq",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ins",
+      "disease": "insomnia",
+      "label": {
+        "fa": "بی‌خوابی بزرگسال — ۲۵ تا ۵۰ mg ظرف ۳۰ دقیقه پیش از خواب",
+        "en": "Insomnia, adults — 25–50 mg within 30 min before bedtime"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "perDoseMax": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-quviviq",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "حداکثر یک بار در شب، دست‌کم ۷ ساعت تا بیداری. نارسایی متوسط کبد حداکثر ۲۵ mg؛ شدید توصیه نمی‌شود.",
+            "en": "No more than once a night, ≥7 h before awakening. Moderate hepatic impairment max 25 mg; severe not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-quviviq",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-quviviq",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارکولپسی؛ حساسیت به داریدورکسانت (آنژیوادم).",
+        "en": "Narcolepsy; hypersensitivity to daridorexant (angioedema)."
+      },
+      "refs": [
+        {
+          "source": "fda-quviviq",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "تضعیف CNS و اختلال عملکرد روز بعد؛ فلج خواب و توهم هیپناگوژیک؛ رفتارهای پیچیده خواب؛ اختلال تنفسی؛ تشدید افسردگی و افکار خودکشی.",
+        "en": "CNS depression and next-day impairment; sleep paralysis and hypnagogic hallucinations; complex sleep behaviours; compromised respiratory function; worsening depression and suicidal ideation."
+      },
+      "refs": [
+        {
+          "source": "fda-quviviq",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ins",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "N05CJ03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5578/Daridorexant",
+        "url": "https://www.darooyab.ir/G-5578/Daridorexant"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=214985",
+      "label": "NDA214985"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a2d1503-b816-40c9-9fac-7e03c5a3bcef",
+      "label": "FDA Quviviq"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a622034.html",
+      "label": "Daridorexant"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05CJ03",
+      "label": "N05CJ03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5578/Daridorexant",
+      "label": "Daridorexant"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on QUVIVIQ use in pregnant women to evaluate for drug-associated risks of major birth defects, miscarriage, or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-quviviq",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Daridorexant is present in human breast milk in low amounts.",
+      "refs": [
+        {
+          "source": "fda-quviviq",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of QUVIVIQ have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-quviviq",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because QUVIVIQ can increase somnolence and drowsiness, patients, particularly the elderly, are at higher risk of falls [see Warnings and Precautions (5.1) ] .",
+      "refs": [
+        {
+          "source": "fda-quviviq",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-quviviq",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA214985"
+  }
+}

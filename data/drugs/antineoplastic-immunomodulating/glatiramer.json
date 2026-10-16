@@ -1,0 +1,345 @@
+{
+  "id": "glatiramer",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گلاتیرامر استات",
+    "en": "Glatiramer acetate"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "تعدیل‌کننده ایمنی ام‌اس",
+    "en": "MS immunomodulator"
+  },
+  "brands": [
+    {
+      "name": "Copaxone",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "copaxone",
+    "کوپاکسون",
+    "گلاتیرامر",
+    "سیناژن کوپاکسون"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-20",
+      "form": "injection",
+      "route": "sc",
+      "label": "20 mg/mL prefilled syringe (white plunger)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-40",
+      "form": "injection",
+      "route": "sc",
+      "label": "40 mg/mL prefilled syringe (blue plunger)",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "d20",
+      "disease": "multiple-sclerosis",
+      "label": {
+        "fa": "ام‌اس عودکننده بزرگسال — ۲۰ mg زیرجلدی روزانه",
+        "en": "Relapsing MS, adults — 20 mg SC daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "2.1"
+        }
+      ],
+      "allowedFormulations": [
+        "pfs-20"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۲۰ mg و ۴۰ mg جایگزین هم نیستند. وریدی نه. پیش از تزریق به دمای اتاق برسد.",
+            "en": "20 mg and 40 mg are not interchangeable. Never IV. Warm to room temperature first."
+          },
+          "refs": [
+            {
+              "source": "fda-copaxone",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-copaxone",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w40",
+      "disease": "multiple-sclerosis",
+      "label": {
+        "fa": "ام‌اس عودکننده بزرگسال — ۴۰ mg زیرجلدی سه بار در هفته (دست‌کم ۴۸ ساعت فاصله)",
+        "en": "Relapsing MS, adults — 40 mg SC three times a week (at least 48 h apart)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-40"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به گلاتیرامر یا مانیتول.",
+        "en": "Hypersensitivity to glatiramer acetate or mannitol."
+      },
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: آنافیلاکسی تهدیدکننده حیات، از اولین دوز تا سال‌ها بعد.",
+        "en": "Boxed warning: life-threatening anaphylaxis, from the first dose up to years later."
+      },
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واکنش فوری پس از تزریق؛ درد قفسه سینه؛ لیپوآتروفی و نکروز پوست؛ آسیب کبد.",
+        "en": "Immediate post-injection reaction; chest pain; lipoatrophy and skin necrosis; liver injury."
+      },
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "d20",
+      "formulation": "pfs-20",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "w40",
+      "formulation": "pfs-40",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "L03AX13"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "10683",
+        "en": "GLATIRAMER ACETATE 20MG/ML PREFILLED SYRINGE",
+        "fa": "سرنگ از پیش پرشده گلاتیرامر استات ۲۰ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "23125",
+        "en": "GLATIRAMER ACETATE 40MG/ML PREFILLED SYRINGE",
+        "fa": "سرنگ از پیش پرشده گلاتیرامر استات ۴۰ میلی‌گرم / میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3869/Glatiramer-Acetate",
+        "url": "https://www.darooyab.ir/G-3869/Glatiramer-Acetate"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-copaxone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020622"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020622",
+      "label": "NDA020622"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa88f583-4f5f-433b-80b4-1f4c9fb28357",
+      "label": "FDA Copaxone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603016.html",
+      "label": "Glatiramer Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L03AX13",
+      "label": "L03AX13"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3869/Glatiramer-Acetate",
+      "label": "Glatiramer-Acetate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from pharmacovigilance and published observational studies over decades of use with glatiramer acetate during pregnancy have not identified a drug-associated risk of major birth defects, miscarriage, or other adverse maternal or fetal outcomes (see Data) .",
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of glatiramer acetate in human milk.",
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of COPAXONE have not been established in patients under 18 years of age.",
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "COPAXONE has not been studied in elderly patients.",
+      "refs": [
+        {
+          "source": "fda-copaxone",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

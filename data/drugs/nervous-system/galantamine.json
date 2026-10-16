@@ -1,0 +1,341 @@
+{
+  "id": "galantamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گالانتامین",
+    "en": "Galantamine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده کولین‌استراز",
+    "en": "Cholinesterase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Razadyne",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "razadyne",
+    "reminyl",
+    "رمینیل",
+    "گالانتامین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-4",
+      "form": "tablet",
+      "route": "oral",
+      "label": "4 mg tablet",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-galantamine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-8",
+      "form": "tablet",
+      "route": "oral",
+      "label": "8 mg tablet",
+      "concentration": {
+        "amount": 8,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-galantamine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-12",
+      "form": "tablet",
+      "route": "oral",
+      "label": "12 mg tablet",
+      "concentration": {
+        "amount": 12,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-galantamine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ad",
+      "disease": "alzheimers",
+      "label": {
+        "fa": "دمانس خفیف تا متوسط آلزایمر — نگهدارنده ۸ mg دو بار (تا ۱۲ mg دو بار)؛ شروع ۴ mg دو بار",
+        "en": "Mild to moderate Alzheimer dementia — maintenance 8 mg twice daily (up to 12 mg twice daily); start 4 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 8,
+        "perDoseMax": 12,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-galantamine",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۴ mg دو بار، پس از دست‌کم ۴ هفته ۸ mg دو بار و پس از ۴ هفته دیگر تا ۱۲ mg دو بار. با غذا و مایعات کافی. نارسایی متوسط کبد حداکثر ۱۶ mg/روز؛ شدید توصیه نمی‌شود.",
+            "en": "Start 4 mg twice daily; after ≥4 weeks 8 mg twice daily; after another 4 weeks up to 12 mg twice daily. With meals and adequate fluids. Moderate hepatic impairment max 16 mg/day; severe not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-galantamine",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-galantamine",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به گالانتامین.",
+        "en": "Hypersensitivity to galantamine."
+      },
+      "refs": [
+        {
+          "source": "fda-galantamine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش پوستی شدید (SJS)؛ برادیکاردی و بلوک قلبی؛ خونریزی گوارشی؛ انسداد ادراری؛ تشنج؛ تشدید آسم/COPD؛ تشدید شل‌کننده‌های عضلانی سوکسینیل‌کولینی در بیهوشی.",
+        "en": "Serious skin reactions (SJS); bradycardia and heart block; GI bleeding; urinary outflow obstruction; seizures; asthma/COPD; exaggerates succinylcholine-type relaxation in anaesthesia."
+      },
+      "refs": [
+        {
+          "source": "fda-galantamine",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۹ تا ۵۹: حداکثر ۱۶ mg/روز؛ زیر ۹ توصیه نمی‌شود.",
+        "en": "CrCl 9–59: max 16 mg/day; below 9 not recommended."
+      },
+      "refs": [
+        {
+          "source": "fda-galantamine",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ad",
+      "formulation": "tab-4",
+      "input": {
+        "ageYears": 75,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 8,
+        "tabletsPerDoseRounded": 2,
+        "upperPerDose": 12
+      }
+    }
+  ],
+  "atc": [
+    "N06DA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21701",
+        "en": "GALANTAMINE 12MG CAP",
+        "fa": "کپسول گالانتامین ۱۲ میلی‌گرم"
+      },
+      {
+        "code": "04956",
+        "en": "GALANTAMINE 12MG TAB",
+        "fa": "قرص گالانتامین ۱۲ میلی‌گرم"
+      },
+      {
+        "code": "16777",
+        "en": "GALANTAMINE 16MG ER CAP",
+        "fa": "کپسول آهسته‌رهش گالانتامین ۱۶ میلی‌گرم"
+      },
+      {
+        "code": "16778",
+        "en": "GALANTAMINE 24MG ER CAP",
+        "fa": "کپسول آهسته‌رهش گالانتامین ۲۴ میلی‌گرم"
+      },
+      {
+        "code": "04954",
+        "en": "GALANTAMINE 4MG TAB",
+        "fa": "قرص گالانتامین ۴ میلی‌گرم"
+      },
+      {
+        "code": "16776",
+        "en": "GALANTAMINE 8MG ER CAP",
+        "fa": "کپسول آهسته‌رهش گالانتامین ۸ میلی‌گرم"
+      },
+      {
+        "code": "04955",
+        "en": "GALANTAMINE 8MG TAB",
+        "fa": "قرص گالانتامین ۸ میلی‌گرم"
+      },
+      {
+        "code": "51328",
+        "en": "GALANTAMINE (AS HYDROBROMIDE) SOLUTION ORAL 4 mg/1mL",
+        "fa": "محلول خوراکی گالانتامین (معادل هیدروبروماید) ۴ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3046/Galantamine",
+        "url": "https://www.darooyab.ir/G-3046/Galantamine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-galantamine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077604"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077604",
+      "label": "ANDA077604"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10497273-d907-0514-e063-6294a90a1362",
+      "label": "FDA Galantamine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699058.html",
+      "label": "Galantamine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06DA04",
+      "label": "N06DA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3046/Galantamine",
+      "label": "Galantamine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of galantamine tablets in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-galantamine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-galantamine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Eight double-blind, placebo-controlled clinical trials and 5 open-label trials in a total of 6519 patients have investigated galantamine tablets in the treatment of mild to moderate dementia of the Alzheimer’s type [see Adverse Reactions (6.1) and Clinical Studies (14) ] .",
+      "refs": [
+        {
+          "source": "fda-galantamine",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

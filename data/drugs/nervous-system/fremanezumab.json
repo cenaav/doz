@@ -1,0 +1,276 @@
+{
+  "id": "fremanezumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فرمانزوماب",
+    "en": "Fremanezumab"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتی‌بادی ضد CGRP",
+    "en": "Anti-CGRP monoclonal antibody"
+  },
+  "brands": [
+    {
+      "name": "Ajovy",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ajovy",
+    "آجووی",
+    "فرمانزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-225",
+      "form": "injection",
+      "route": "sc",
+      "label": "225 mg/1.5 mL prefilled syringe or autoinjector",
+      "concentration": {
+        "amount": 225,
+        "unit": "mg",
+        "perVolumeMl": 1.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ajovy",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "m",
+      "disease": "migraine-prophylaxis",
+      "label": {
+        "fa": "پیشگیری میگرن — ۲۲۵ mg زیرجلدی ماهانه (بزرگسال؛ کودک ۶ تا ۱۷ سال ≥۴۵ kg برای اپیزودیک)",
+        "en": "Migraine prevention — 225 mg SC monthly (adults; children 6–17 y ≥45 kg for episodic)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "minWeightKg": 45
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 225,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ajovy",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "q",
+      "disease": "migraine-prophylaxis",
+      "label": {
+        "fa": "پیشگیری میگرن بزرگسال — ۶۷۵ mg هر ۳ ماه (سه تزریق پشت سر هم ۲۲۵ mg)",
+        "en": "Migraine prevention, adults — 675 mg every 3 months (three consecutive 225 mg injections)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 675,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ajovy",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی به فرمانزوماب (آنافیلاکسی، آنژیوادم).",
+        "en": "Serious hypersensitivity to fremanezumab (anaphylaxis, angioedema)."
+      },
+      "refs": [
+        {
+          "source": "fda-ajovy",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی؛ یبوست با عوارض جدی؛ فشار خون بالا؛ پدیده رینود.",
+        "en": "Hypersensitivity; constipation with serious complications; hypertension; Raynaud phenomenon."
+      },
+      "refs": [
+        {
+          "source": "fda-ajovy",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "m",
+      "formulation": "pfs-225",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 225,
+        "mlPerDose": 1.5
+      }
+    },
+    {
+      "regimen": "q",
+      "formulation": "pfs-225",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 675,
+        "mlPerDose": 4.5
+      }
+    }
+  ],
+  "atc": [
+    "N02CD03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Fremanezumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-ajovy",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761089"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761089",
+      "label": "BLA761089"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98e344ea-5916-4947-b6f2-4a76ccc04b6b",
+      "label": "FDA Ajovy"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618053.html",
+      "label": "Fremanezumab-vfrm Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02CD03",
+      "label": "N02CD03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of AJOVY in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-ajovy",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of fremanezumab-vfrm in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-ajovy",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Episodic Migraine The safety and effectiveness of AJOVY have been established in an adequate and well-controlled study for the preventive treatment of episodic migraine in pediatric patients who are 6 to 17 years of age and who weigh 45 kg or more (Study 3).",
+      "refs": [
+        {
+          "source": "fda-ajovy",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of AJOVY did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-ajovy",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

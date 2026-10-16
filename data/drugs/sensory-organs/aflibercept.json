@@ -1,0 +1,359 @@
+{
+  "id": "aflibercept",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "افلیبرسپت (چشمی)",
+    "en": "Aflibercept (ophthalmic)"
+  },
+  "category": "sensory-organs",
+  "class": {
+    "fa": "مهارکننده VEGF (داخل زجاجیه)",
+    "en": "VEGF inhibitor (intravitreal)"
+  },
+  "brands": [
+    {
+      "name": "Eylea",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "eylea",
+    "آیلیا",
+    "افلیبرسپت"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-2",
+      "form": "injection",
+      "route": "ophthalmic",
+      "label": "2 mg (0.05 mL of 40 mg/mL) syringe or vial",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "amd",
+      "disease": "wet-amd",
+      "label": {
+        "fa": "AMD مرطوب — ۲ mg داخل زجاجیه هر ۴ هفته ×۳، سپس هر ۸ هفته",
+        "en": "Wet AMD — 2 mg intravitreal every 4 weeks ×3, then every 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "2.5"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "rvo",
+      "disease": "retinal-vein-occlusion",
+      "label": {
+        "fa": "ادم ماکولا پس از انسداد ورید شبکیه — ۲ mg هر ۴ هفته",
+        "en": "Macular oedema after RVO — 2 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "dme",
+      "disease": "diabetic-macular-edema",
+      "label": {
+        "fa": "ادم ماکولای دیابتی یا رتینوپاتی دیابتی — ۲ mg هر ۴ هفته برای ۵ تزریق، سپس هر ۸ هفته",
+        "en": "DME or diabetic retinopathy — 2 mg every 4 weeks for 5 injections, then every 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "2.7"
+        },
+        {
+          "source": "fda-eylea",
+          "section": "2.8"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت چشم یا اطراف چشم؛ التهاب فعال داخل چشم؛ حساسیت.",
+        "en": "Ocular or periocular infection; active intraocular inflammation; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "اندوفتالمیت و جداشدگی شبکیه پس از تزریق؛ افزایش فشار چشم؛ رویدادهای ترومبوآمبولیک شریانی.",
+        "en": "Endophthalmitis and retinal detachment after injection; raised intraocular pressure; arterial thromboembolic events."
+      },
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "amd",
+      "formulation": "pfs-2",
+      "input": {
+        "ageYears": 75,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2
+      }
+    },
+    {
+      "regimen": "rvo",
+      "formulation": "pfs-2",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2
+      }
+    },
+    {
+      "regimen": "dme",
+      "formulation": "pfs-2",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "S01LA05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "22646",
+        "en": "AFLIBERCEPT 40 mg/1mL 0.1ML INJECTION",
+        "fa": "فرآورده تزریقی آفلیبرسپت ۴۰ میلی‌گرم / ۱ میلی‌لیتر ۰٫۱ میلی‌لیتر"
+      },
+      {
+        "code": "22456",
+        "en": "AFLIBERCEPT INJECTION, SOLUTION, CONCENTRATE PARENTERAL 25 mg/1mL 4 mL",
+        "fa": "کنسانتره محلول تزریقی آفلیبرسپت ۲۵ میلی‌گرم / ۱ میلی‌لیتر ۴ میلی‌لیتر"
+      },
+      {
+        "code": "52858",
+        "en": "AFLIBERCEPT INJECTION, SOLUTION, CONCENTRATE PARENTERAL 25 mg/1mL 8 mL",
+        "fa": "کنسانتره محلول تزریقی آفلیبرسپت ۲۵ میلی‌گرم / ۱ میلی‌لیتر ۸ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4783/Aflibercept",
+        "url": "https://www.darooyab.ir/G-4783/Aflibercept"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-eylea",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125387"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125387",
+      "label": "BLA125387"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f96cfd69-da34-41ee-90a9-610a4655cd1c",
+      "label": "FDA Eylea"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612004.html",
+      "label": "Aflibercept Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613003.html",
+      "label": "Ziv-aflibercept Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=S01LA05",
+      "label": "S01LA05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4783/Aflibercept",
+      "label": "Aflibercept"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Adequate and well-controlled studies with EYLEA have not been conducted in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of aflibercept in human milk, the effects of the drug on the breastfed infant, or the effects of the drug on milk production/excretion.",
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of EYLEA have been demonstrated in two clinical studies of pre-term infants with ROP.",
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In the clinical studies, approximately 76% (2049/2701) of patients randomized to treatment with EYLEA were ≥65 years of age and approximately 46% (1250/2701) were ≥75 years of age.",
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females of reproductive potential are advised to use effective contraception prior to the initial dose, during treatment, and for at least 3 months after the last intravitreal injection of EYLEA.",
+      "refs": [
+        {
+          "source": "fda-eylea",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

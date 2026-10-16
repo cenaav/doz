@@ -1,0 +1,405 @@
+{
+  "id": "glycopyrrolate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گلیکوپیرولات (تزریقی)",
+    "en": "Glycopyrrolate (injection)"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتی‌کولینرژیک (آنتی‌موسکارینی)",
+    "en": "Anticholinergic (antimuscarinic)"
+  },
+  "brands": [
+    {
+      "name": "Robinul",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "robinul",
+    "روبینول",
+    "glycopyrronium",
+    "گلیکوپیرونیوم",
+    "گلیکوپیرولات"
+  ],
+  "formulations": [
+    {
+      "id": "vial-0-2",
+      "form": "injection",
+      "route": "iv",
+      "label": "0.2 mg/mL vial (IM or IV)",
+      "concentration": {
+        "amount": 0.2,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "premed",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "پیش‌دارو پیش از بیهوشی (کاهش ترشحات، مهار رفلکس واگ) — ۰٫۰۰۴ mg/kg عضلانی ۳۰ تا ۶۰ دقیقه پیش از القا",
+        "en": "Pre-anaesthetic medication (reduce secretions, block vagal reflexes) — 0.004 mg/kg IM 30–60 min before induction"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.004,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "premed-inf",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "پیش‌دارو — شیرخوار ۱ ماه تا ۲ سال: ۰٫۰۰۴ تا ۰٫۰۰۹ mg/kg عضلانی",
+        "en": "Pre-anaesthetic — infants 1 month–2 y: 0.004–0.009 mg/kg IM"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.004,
+        "perKgPerDoseMax": 0.009,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "rev",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "برگشت بلوک عصبی-عضلانی — ۰٫۲ mg به‌ازای هر ۱ mg نئوستیگمین (یا ۵ mg پیریدوستیگمین)، وریدی همزمان",
+        "en": "Reversal of neuromuscular blockade — 0.2 mg per 1 mg neostigmine (or 5 mg pyridostigmine), IV together"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.2,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عدد ماشین‌حساب به‌ازای هر ۱ mg نئوستیگمین است؛ برای دوز کل در mg نئوستیگمین ضرب شود. می‌تواند در یک سرنگ مخلوط شود.",
+            "en": "The calculator figure is per 1 mg neostigmine; multiply by the neostigmine mg for the total. May be mixed in the same syringe."
+          },
+          "refs": [
+            {
+              "source": "fda-glycopyrrolate-inj",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pud",
+      "disease": "peptic-ulcer-disease",
+      "label": {
+        "fa": "زخم پپتیک بزرگسال (کمکی، وقتی خوراکی ممکن نیست) — ۰٫۱ mg وریدی یا عضلانی هر ۴ ساعت، ۳ تا ۴ بار",
+        "en": "Peptic ulcer, adults (adjunct when oral not tolerated) — 0.1 mg IV or IM every 4 h, 3–4 times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.1,
+        "perDoseMax": 0.2,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اثر قوی‌تر: ۰٫۲ mg. حداکثر ۴ بار در روز. برای زخم پپتیک در کودکان توصیه نمی‌شود.",
+            "en": "Stronger effect: 0.2 mg. Max four times daily. Not recommended for peptic ulcer in children."
+          },
+          "refs": [
+            {
+              "source": "fda-glycopyrrolate-inj",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ در درمان طولانی زخم پپتیک: گلوکوم، انسداد ادراری، انسداد گوارشی، ایلئوس فلجی، آتونی روده، وضعیت قلبی ناپایدار، کولیت اولسراتیو شدید، میاستنی گراو.",
+        "en": "Hypersensitivity; for prolonged peptic-ulcer therapy: glaucoma, obstructive uropathy, GI obstruction, paralytic ileus, intestinal atony, unstable cardiovascular status, severe ulcerative colitis, myasthenia gravis."
+      },
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "گلوکوم؛ بنزیل الکل (سمیت و کرن‌ایکتروس در نوزاد نارس).",
+        "en": "Glaucoma; benzyl alcohol (toxicity and kernicterus in preterm neonates)."
+      },
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "premed",
+      "formulation": "vial-0-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.28,
+        "mlPerDose": 1.4
+      }
+    },
+    {
+      "regimen": "premed-inf",
+      "formulation": "vial-0-2",
+      "input": {
+        "ageMonths": 10,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 0.04,
+        "mlPerDose": 0.2,
+        "upperPerDose": 0.09
+      }
+    },
+    {
+      "regimen": "rev",
+      "formulation": "vial-0-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.2,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "pud",
+      "formulation": "vial-0-2",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.1,
+        "mlPerDose": 0.5,
+        "upperPerDose": 0.2
+      }
+    }
+  ],
+  "atc": [
+    "A03AB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "14901",
+        "en": "GLYCOPYRRONIUM BROMIDE 0.2MG/ML AMP",
+        "fa": "آمپول گلیکوپیررونیوم بروماید ۰٫۲ میلی‌گرم / میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-892/Glycopyrronium",
+        "url": "https://www.darooyab.ir/G-892/Glycopyrronium"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=089335",
+      "label": "ANDA089335"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=62267afe-1a73-4623-984e-646db590ec5b",
+      "label": "FDA Glycopyrrolate inj"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a602014.html",
+      "label": "Glycopyrrolate"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618016.html",
+      "label": "Glycopyrrolate Oral Inhalation"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A03AB02",
+      "label": "A03AB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-892/Glycopyrronium",
+      "label": "Glycopyrronium"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category B: Reproduction studies with glycopyrrolate were performed in rats at a dietary dose of approximately 65 mg/kg/day (exposure was approximately 320 times the maximum recommended daily human dose of 2 mg on a mg/m 2 basis) and rabbits at intramuscular doses of up to 0.5 mg/kg/day …",
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when glycopyrrolate injection is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: پیش‌داروی بیهوشی در کودکان (۰٫۰۰۴ mg/kg) دارد؛ نوزاد زیر ۱ ماه نه (بنزیل الکل)؛ برای زخم پپتیک ثابت نشده.",
+        "en": "Label: paediatric pre-anaesthetic dosing (0.004 mg/kg); not in neonates under 1 month (benzyl alcohol); not established for peptic ulcer."
+      },
+      "quote": "Due to its benzyl alcohol content, glycopyrrolate injection should not be used in neonates, i.e., patients less than 1 month of age.",
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other therapy.",
+      "refs": [
+        {
+          "source": "fda-glycopyrrolate-inj",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-glycopyrrolate-inj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA089335"
+  }
+}

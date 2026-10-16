@@ -1,0 +1,335 @@
+{
+  "id": "palonosetron",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پالونوسترون",
+    "en": "Palonosetron"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتاگونیست 5-HT3 (طولانی‌اثر)",
+    "en": "Long-acting 5-HT3 antagonist"
+  },
+  "brands": [
+    {
+      "name": "Aloxi",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aloxi",
+    "آلوکسی",
+    "پالونوسترون"
+  ],
+  "formulations": [
+    {
+      "id": "vial-0-05",
+      "form": "injection",
+      "route": "iv",
+      "label": "0.05 mg/mL (0.25 mg/5 mL) vial",
+      "concentration": {
+        "amount": 0.05,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-palonosetron",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cinv",
+      "disease": "cinv",
+      "label": {
+        "fa": "پیشگیری تهوع شیمی‌درمانی بزرگسال — ۰٫۲۵ mg وریدی طی ۳۰ ثانیه، ۳۰ دقیقه پیش از شیمی‌درمانی",
+        "en": "CINV prevention, adults — 0.25 mg IV over 30 s, 30 min before chemotherapy"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-palonosetron",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "cinv-child",
+      "disease": "cinv",
+      "label": {
+        "fa": "کودک ۱ ماه تا <۱۷ سال — ۲۰ mcg/kg (حداکثر ۱٫۵ mg) طی ۱۵ دقیقه",
+        "en": "Children 1 month–<17 y — 20 mcg/kg (max 1.5 mg) over 15 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.02,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-palonosetron",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 1.5,
+        "refs": [
+          {
+            "source": "fda-palonosetron",
+            "section": "2.1, Table 1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "ponv",
+      "disease": "ponv",
+      "label": {
+        "fa": "پیشگیری تهوع پس از جراحی بزرگسال — ۰٫۰۷۵ mg وریدی طی ۱۰ ثانیه درست پیش از القای بیهوشی",
+        "en": "PONV prevention, adults — 0.075 mg IV over 10 s immediately before induction"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.075,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-palonosetron",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به پالونوسترون.",
+        "en": "Hypersensitivity to palonosetron."
+      },
+      "refs": [
+        {
+          "source": "fda-palonosetron",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی (حتی با حساسیت به سایر 5-HT3)؛ سندرم سروتونین.",
+        "en": "Hypersensitivity (including in those allergic to other 5-HT3 antagonists); serotonin syndrome."
+      },
+      "refs": [
+        {
+          "source": "fda-palonosetron",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cinv",
+      "formulation": "vial-0-05",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.25,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "cinv-child",
+      "formulation": "vial-0-05",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 0.4,
+        "mlPerDose": 8
+      }
+    },
+    {
+      "regimen": "ponv",
+      "formulation": "vial-0-05",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.075,
+        "mlPerDose": 1.5
+      }
+    }
+  ],
+  "atc": [
+    "A04AA05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2624/Palonosetron",
+        "url": "https://www.darooyab.ir/G-2624/Palonosetron"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201533",
+      "label": "ANDA201533"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee6f6f94-1ca7-481e-9909-b19ae64e80c2",
+      "label": "FDA Palonosetron"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a610002.html",
+      "label": "Palonosetron Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A04AA05",
+      "label": "A04AA05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2624/Palonosetron",
+      "label": "Palonosetron"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on palonosetron HCl use in pregnant women to inform a drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-palonosetron",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of palonosetron in human milk, the effects of palonosetron on the breastfed infant, or the effects of palonosetron on milk production.",
+      "refs": [
+        {
+          "source": "fda-palonosetron",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Chemotherapy-Induced Nausea and Vomiting Safety and effectiveness of palonosetron hydrochloride injection have been established in pediatric patients aged 1 month to less than 17 years for the prevention of acute nausea and vomiting associated with initial and repeat courses of emetogenic cancer chemotherapy, …",
+      "refs": [
+        {
+          "source": "fda-palonosetron",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dose adjustment is required for geriatric patients.",
+      "refs": [
+        {
+          "source": "fda-palonosetron",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-palonosetron",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA201533"
+  }
+}

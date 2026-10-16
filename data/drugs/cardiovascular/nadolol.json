@@ -1,0 +1,363 @@
+{
+  "id": "nadolol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نادولول",
+    "en": "Nadolol"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "بتابلاکر غیرانتخابی",
+    "en": "Non-selective beta-blocker"
+  },
+  "brands": [
+    {
+      "name": "Corgard",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "corgard",
+    "کورگارد",
+    "نادولول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (scored)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet (scored)",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-80",
+      "form": "tablet",
+      "route": "oral",
+      "label": "80 mg tablet (scored)",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "angina",
+      "disease": "angina",
+      "label": {
+        "fa": "آنژین صدری — شروع ۴۰ mg یک بار؛ نگهدارنده ۴۰ تا ۸۰ mg (تا ۲۴۰)",
+        "en": "Angina — start 40 mg once daily; maintenance 40–80 mg (up to 240)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "perDoseMax": 80,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 240,
+        "refs": [
+          {
+            "source": "fda-nadolol",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۴۰ تا ۸۰ mg هر ۳ تا ۷ روز. قطع ناگهانی خطر تشدید آنژین و MI دارد.",
+            "en": "Increase by 40–80 mg every 3–7 days. Abrupt cessation may exacerbate angina and MI."
+          },
+          "refs": [
+            {
+              "source": "fda-nadolol",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-nadolol",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "htn",
+      "disease": "hypertension",
+      "label": {
+        "fa": "فشار خون — شروع ۴۰ mg یک بار؛ نگهدارنده ۴۰ تا ۸۰ mg (تا ۳۲۰)",
+        "en": "Hypertension — start 40 mg once daily; maintenance 40–80 mg (up to 320)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 40,
+        "perDoseMax": 80,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 320,
+        "refs": [
+          {
+            "source": "fda-nadolol",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آسم برونشیال؛ برادی‌کاردی سینوسی و بلوک بالاتر از درجه ۱؛ شوک کاردیوژنیک؛ نارسایی آشکار قلب.",
+        "en": "Bronchial asthma; sinus bradycardia and greater than first-degree block; cardiogenic shock; overt cardiac failure."
+      },
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "قطع ناگهانی — تشدید آنژین و گاه MI؛ کاهش تدریجی.",
+        "en": "Abrupt withdrawal — exacerbated angina and occasionally MI; taper gradually."
+      },
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 50,
+      "severity": "warn",
+      "text": {
+        "fa": "نارسایی کلیه: افزایش فاصله دوز طبق ClCr (برچسب).",
+        "en": "Renal failure: extend the dosing interval by CrCl (per label)."
+      },
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "angina",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 80
+      }
+    },
+    {
+      "regimen": "htn",
+      "formulation": "tab-40",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 40,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 80
+      }
+    }
+  ],
+  "atc": [
+    "C07AA12"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01604",
+        "en": "NADOLOL 80 MG TAB",
+        "fa": "قرص نادولول ۸۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1781/Nadolol",
+        "url": "https://www.darooyab.ir/G-1781/Nadolol"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-nadolol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA201893"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201893",
+      "label": "ANDA201893"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f11553f1-18ec-41b0-a7ad-1c9f21ef2c9f",
+      "label": "FDA Nadolol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682666.html",
+      "label": "Nadolol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AA12",
+      "label": "C07AA12"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1781/Nadolol",
+      "label": "Nadolol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Nadolol should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "PREGNANCY"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Nadolol is excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "NURSING MOTHERS"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-nadolol",
+          "section": "PEDIATRIC USE"
+        }
+      ]
+    }
+  }
+}

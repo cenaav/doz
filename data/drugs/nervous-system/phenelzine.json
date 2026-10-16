@@ -1,0 +1,246 @@
+{
+  "id": "phenelzine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فنلزین",
+    "en": "Phenelzine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "مهارکننده MAO (غیرانتخابی)",
+    "en": "MAO inhibitor (non-selective)"
+  },
+  "brands": [
+    {
+      "name": "Nardil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nardil",
+    "ناردیل",
+    "فنلزین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nardil",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "dep",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی (آتیپیک، غیرآندوژن یا نوروتیک) بزرگسال — شروع ۱۵ mg سه بار در روز",
+        "en": "Depression (atypical, non-endogenous or neurotic), adults — start 15 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-nardil",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 90,
+        "refs": [
+          {
+            "source": "fda-nardil",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "به‌سرعت تا دست‌کم ۶۰ mg/روز؛ گاه تا ۹۰ mg/روز. پاسخ ممکن است ۴ هفته با ۶۰ mg طول بکشد. نگهدارنده تا ۱۵ mg روزانه یا یک روز در میان، با کاهش آهسته.",
+            "en": "Increase fairly rapidly to at least 60 mg/day; up to 90 mg/day if needed. Response may take 4 weeks at 60 mg. Maintenance as low as 15 mg daily or every other day, reduced slowly."
+          },
+          "refs": [
+            {
+              "source": "fda-nardil",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت؛ فئوکروموسیتوم؛ نارسایی احتقانی قلب؛ نارسایی شدید یا بیماری کلیه؛ سابقه بیماری کبد یا آزمایش کبد غیرطبیعی؛ داروهای سمپاتومیمتیک (آمفتامین، کوکائین، متیل‌فنیدیت، دوپامین، اپی‌نفرین…) و غذای پرتیرامین (بحران فشار خون).",
+        "en": "Hypersensitivity; pheochromocytoma; congestive heart failure; severe renal impairment or renal disease; history of liver disease or abnormal liver tests; sympathomimetic drugs (amphetamines, cocaine, methylphenidate, dopamine, epinephrine…) and high-tyramine foods (hypertensive crisis)."
+      },
+      "refs": [
+        {
+          "source": "fda-nardil",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: خودکشی با ضدافسردگی‌ها در کودکان، نوجوانان و جوانان.",
+        "en": "Boxed warning: suicidality with antidepressants in children, adolescents and young adults."
+      },
+      "refs": [
+        {
+          "source": "fda-nardil",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "dep",
+      "formulation": "tab-15",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15,
+        "tabletsPerDoseRounded": 1,
+        "perDay": 45
+      }
+    }
+  ],
+  "atc": [
+    "N06AF03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-605/Phenelzine-Sulfate",
+        "url": "https://www.darooyab.ir/G-605/Phenelzine-Sulfate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=011909",
+      "label": "NDA011909"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=513a41d0-37d4-4355-8a6d-a2c643bce6fa",
+      "label": "FDA Nardil"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682089.html",
+      "label": "Phenelzine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AF03",
+      "label": "N06AF03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-605/Phenelzine-Sulfate",
+      "label": "Phenelzine-Sulfate"
+    }
+  ],
+  "populations": {
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Nardil is not approved for use in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-nardil",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-nardil",
+          "section": "Geriatric Use"
+        }
+      ]
+    },
+    "pregnancy": {
+      "level": "caution",
+      "quote": "مصرف در بارداری فنلزین سولفات گروه C در شرايط خاص و نظارت ويژه پزشك قابل استفاده است:",
+      "text": {
+        "fa": "دارویاب: گروه C — فقط اگر فایده بیشتر از خطر باشد.",
+        "en": "Darooyab: category C — only if benefit outweighs risk."
+      },
+      "refs": [
+        {
+          "source": "darooyab-generic",
+          "section": "G-605/Phenelzine-Sulfate — مصرف در بارداری",
+          "url": "https://www.darooyab.ir/G-605/Phenelzine-Sulfate"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-nardil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA011909"
+  }
+}

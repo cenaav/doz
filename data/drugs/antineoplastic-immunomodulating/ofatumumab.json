@@ -1,0 +1,290 @@
+{
+  "id": "ofatumumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اوفاتوموماب",
+    "en": "Ofatumumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد CD20 (زیرجلدی)",
+    "en": "Anti-CD20 antibody (SC)"
+  },
+  "brands": [
+    {
+      "name": "Kesimpta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "kesimpta",
+    "کسیمپتا",
+    "اوفاتوموماب"
+  ],
+  "formulations": [
+    {
+      "id": "pen-20",
+      "form": "injection",
+      "route": "sc",
+      "label": "20 mg/0.4 mL Sensoready pen or syringe",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 0.4
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kesimpta",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ms",
+      "disease": "multiple-sclerosis",
+      "label": {
+        "fa": "ام‌اس عودکننده بزرگسال — ۲۰ mg زیرجلدی هفته ۰، ۱ و ۲، سپس ماهانه از هفته ۴",
+        "en": "Relapsing MS, adults — 20 mg SC at weeks 0, 1 and 2, then monthly from week 4"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-kesimpta",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع HBV، ایمونوگلوبولین و آنزیم کبد.",
+            "en": "Screen HBV, immunoglobulins and liver tests before starting."
+          },
+          "refs": [
+            {
+              "source": "fda-kesimpta",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت فعال HBV؛ سابقه حساسیت یا واکنش تزریقی تهدیدکننده حیات.",
+        "en": "Active HBV infection; prior hypersensitivity or life-threatening injection reaction."
+      },
+      "refs": [
+        {
+          "source": "fda-kesimpta",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "عفونت (HBV پیش از شروع)؛ PML؛ کاهش ایمونوگلوبولین‌ها؛ آسیب کبد.",
+        "en": "Infections (screen HBV first); PML; reduced immunoglobulins; liver injury."
+      },
+      "refs": [
+        {
+          "source": "fda-kesimpta",
+          "section": "5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واکنش تزریقی؛ خطر جنینی (پیشگیری تا ۶ ماه).",
+        "en": "Injection-related reactions; fetal risk (contraception for 6 months)."
+      },
+      "refs": [
+        {
+          "source": "fda-kesimpta",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ms",
+      "formulation": "pen-20",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 20,
+        "mlPerDose": 0.4
+      }
+    }
+  ],
+  "atc": [
+    "L04AG12"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51632",
+        "en": "OFATUMUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 20 mg/1mL 5 mL",
+        "fa": "کنسانتره محلول تزریقی افاتومومب ۲۰ میلی‌گرم / ۱ میلی‌لیتر ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5290/Ofatumumab",
+        "url": "https://www.darooyab.ir/G-5290/Ofatumumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-kesimpta",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125326"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125326",
+      "label": "BLA125326"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6a8a3f53-2062-48ff-9dbe-b939df133ca3",
+      "label": "FDA Kesimpta"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a610009.html",
+      "label": "Ofatumumab Injection (Chronic Lymphocytic Leukemia)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a621050.html",
+      "label": "Ofatumumab Injection (Multiple Sclerosis)"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AG12",
+      "label": "L04AG12"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5290/Ofatumumab",
+      "label": "Ofatumumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of KESIMPTA in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-kesimpta",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of ofatumumab in human milk, the effects on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-kesimpta",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-kesimpta",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of KESIMPTA did not include sufficient numbers of geriatric patients to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-kesimpta",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females of childbearing potential should use effective contraception while receiving KESIMPTA and for 6 months after the last treatment of KESIMPTA.",
+      "refs": [
+        {
+          "source": "fda-kesimpta",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

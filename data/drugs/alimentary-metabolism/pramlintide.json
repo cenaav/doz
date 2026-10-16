@@ -1,0 +1,323 @@
+{
+  "id": "pramlintide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پراملینتاید",
+    "en": "Pramlintide"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنالوگ آمیلین",
+    "en": "Amylin analogue"
+  },
+  "brands": [
+    {
+      "name": "Symlin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "symlin",
+    "سیملین",
+    "پراملینتید"
+  ],
+  "formulations": [
+    {
+      "id": "pen-1000",
+      "form": "injection",
+      "route": "sc",
+      "label": "1000 mcg/mL SymlinPen (dial the mcg dose on the pen; do not measure by mL)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-symlin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ با انسولین وعده — ۶۰ mcg پیش از هر وعده اصلی؛ تا ۱۲۰ mcg",
+        "en": "Type 2 diabetes on mealtime insulin — 60 mcg before each major meal; up to 120 mcg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 60,
+        "perDoseMax": 120,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-symlin",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هنگام شروع، انسولین وعده ۵۰٪ کم شود. فقط پیش از وعده اصلی (≥۲۵۰ kcal یا ≥۳۰ g کربوهیدرات)، شکم یا ران، جدا از انسولین. دست‌کم ۳ روز بین افزایش‌ها.",
+            "en": "On initiation reduce mealtime insulin by 50%. Only before major meals (≥250 kcal or ≥30 g carbohydrate), abdomen or thigh, separate from insulin. At least 3 days between titration steps."
+          },
+          "refs": [
+            {
+              "source": "fda-symlin",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-symlin",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t1",
+      "disease": "type-1-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۱ — ۱۵ mcg پیش از هر وعده اصلی؛ با گام ۱۵ تا ۳۰ (حداکثر ۶۰) mcg",
+        "en": "Type 1 diabetes — 15 mcg before each major meal; steps of 15 to 30 (max 60) mcg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 15,
+        "perDoseMax": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-symlin",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هنگام شروع، انسولین وعده ۵۰٪ کم شود. فقط پیش از وعده اصلی (≥۲۵۰ kcal یا ≥۳۰ g کربوهیدرات)، شکم یا ران، جدا از انسولین. دست‌کم ۳ روز بین افزایش‌ها.",
+            "en": "On initiation reduce mealtime insulin by 50%. Only before major meals (≥250 kcal or ≥30 g carbohydrate), abdomen or thigh, separate from insulin. At least 3 days between titration steps."
+          },
+          "refs": [
+            {
+              "source": "fda-symlin",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-symlin",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی؛ عدم درک هیپوگلیسمی؛ گاستروپارزی تأییدشده.",
+        "en": "Serious hypersensitivity; hypoglycaemia unawareness; confirmed gastroparesis."
+      },
+      "refs": [
+        {
+          "source": "fda-symlin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: هیپوگلیسمی شدید با انسولین، به‌ویژه دیابت نوع ۱، ظرف ۳ ساعت پس از تزریق. هرگز با انسولین مخلوط نشود.",
+        "en": "Boxed warning: severe hypoglycaemia with insulin, especially type 1, within 3 h of injection. Never mix with insulin."
+      },
+      "refs": [
+        {
+          "source": "fda-symlin",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-symlin",
+          "section": "5.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2",
+      "formulation": "pen-1000",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 90
+      },
+      "expect": {
+        "perDose": 60,
+        "mlPerDose": 0.06,
+        "upperPerDose": 120
+      }
+    },
+    {
+      "regimen": "t1",
+      "formulation": "pen-1000",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15,
+        "upperPerDose": 60
+      }
+    }
+  ],
+  "atc": [
+    "A10BX05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-647/Pramlintide",
+        "url": "https://www.darooyab.ir/G-647/Pramlintide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021332",
+      "label": "NDA021332"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4aea30ff-eb0d-45c1-b114-3127966328ff",
+      "label": "FDA Symlin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605031.html",
+      "label": "Pramlintide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BX05",
+      "label": "A10BX05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-647/Pramlintide",
+      "label": "Pramlintide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from a small number of reports in the manufacturer’s safety database on SYMLIN use in pregnant women are not sufficient to determine a drug-associated risk for major birth defects, miscarriage, or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-symlin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no data on the presence of pramlintide in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-symlin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of SYMLIN in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-symlin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "SYMLIN has been studied in patients ranging in age from 15 to 84 years of age, including 769 patients ≥65 to 75 years of age and 87 patients ≥75 years of age.",
+      "refs": [
+        {
+          "source": "fda-symlin",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-symlin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021332"
+  }
+}

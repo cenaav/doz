@@ -1,0 +1,320 @@
+{
+  "id": "isoproterenol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایزوپروترنول",
+    "en": "Isoproterenol"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آگونیست بتا-آدرنرژیک",
+    "en": "Beta-adrenergic agonist"
+  },
+  "brands": [
+    {
+      "name": "Isuprel",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "isuprel",
+    "isoprenaline",
+    "ایزوپرنالین",
+    "ایزوپروترنول"
+  ],
+  "formulations": [
+    {
+      "id": "dil-2",
+      "form": "injection",
+      "route": "iv",
+      "label": "1 mg in 500 mL D5W (2 mcg/mL)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isoproterenol",
+          "section": "2.2"
+        }
+      ]
+    },
+    {
+      "id": "amp",
+      "form": "injection",
+      "route": "iv",
+      "label": "0.2 mg/mL vial",
+      "concentration": {
+        "amount": 200,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isoproterenol",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "shock",
+      "disease": "shock",
+      "label": {
+        "fa": "شوک و کاهش خونرسانی — بزرگسال ۰٫۵ تا ۵ mcg/دقیقه",
+        "en": "Shock and hypoperfusion — adult 0.5–5 mcg/min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perMin": 0.5,
+        "perMinMax": 5
+      },
+      "refs": [
+        {
+          "source": "fda-isoproterenol",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "dil-2"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع با کمترین دوز و افزایش تدریجی. بالای ۳۰ mcg/دقیقه در شوک پیشرفته به کار رفته است.",
+            "en": "Start at the lowest dose and increase gradually. Rates over 30 mcg/min have been used in advanced shock."
+          },
+          "refs": [
+            {
+              "source": "fda-isoproterenol",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bronch",
+      "disease": "asthma",
+      "label": {
+        "fa": "برونکواسپاسم حین بیهوشی — ۱۰ تا ۲۰ mcg وریدی",
+        "en": "Bronchospasm during anaesthesia — 10–20 mcg IV"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-isoproterenol",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "amp"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "تاکی‌کاردی؛ آریتمی بطنی؛ آنژین صدری.",
+        "en": "Tachycardia; ventricular arrhythmias; angina pectoris."
+      },
+      "refs": [
+        {
+          "source": "fda-isoproterenol",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "shock",
+      "formulation": "dil-2",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 0.5,
+        "mlPerHour": 15,
+        "upperPerMin": 5,
+        "upperMlPerHour": 150
+      }
+    },
+    {
+      "regimen": "bronch",
+      "formulation": "amp",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 0.05,
+        "upperPerDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "C01CA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05758",
+        "en": "ISOPRENALINE 0.2MG AMP",
+        "fa": "آمپول ایسوپرنالین ۰٫۲ میلی‌گرم"
+      },
+      {
+        "code": "01558",
+        "en": "ISOPROTERENOL HCl 0.2MG/ML AMP",
+        "fa": "آمپول ایسوپروترنول هیدروکلراید ۰٫۲ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "00716",
+        "en": "ISOPROTERENOL HCL 2MG/2ML AMP",
+        "fa": "آمپول ایسوپروترنول هیدروکلراید ۲ میلی‌گرم / ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1719/Isoproterenol",
+        "url": "https://www.darooyab.ir/G-1719/Isoproterenol"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-isoproterenol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA210106"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210106",
+      "label": "ANDA210106"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=86b2455a-0489-405e-bd0b-9f79d3c5350d",
+      "label": "FDA Isoproterenol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01CA02",
+      "label": "C01CA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1719/Isoproterenol",
+      "label": "Isoproterenol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Prolonged experience with isoproterenol use in pregnant women over several decades, based on published literature, do not identify a drug associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-isoproterenol",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of isoproterenol in milk or the effects of isoproterenol on the breastfed infant or on milk production.",
+      "refs": [
+        {
+          "source": "fda-isoproterenol",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and efficacy of isoproterenol in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-isoproterenol",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for elderly patients should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal or cardiac function and of concomitant diseases or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-isoproterenol",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

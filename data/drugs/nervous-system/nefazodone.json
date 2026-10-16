@@ -1,0 +1,271 @@
+{
+  "id": "nefazodone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نفازودون",
+    "en": "Nefazodone"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدافسردگی فنیل‌پیپرازین",
+    "en": "Phenylpiperazine antidepressant"
+  },
+  "brands": [
+    {
+      "name": "Nefazodone",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "serzone",
+    "نفازودون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet (scored)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nefazodone",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nefazodone",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mdd",
+      "disease": "mdd",
+      "label": {
+        "fa": "افسردگی اساسی بزرگسال — شروع ۱۰۰ mg دو بار در روز؛ محدوده مؤثر ۳۰۰ تا ۶۰۰ mg/روز",
+        "en": "Major depressive disorder, adults — start 100 mg twice daily; effective range 300–600 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "perDoseMax": 300,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-nefazodone",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش ۱۰۰ تا ۲۰۰ mg/روز با فاصله دست‌کم ۱ هفته. سالمند یا ناتوان: شروع ۵۰ mg دو بار. خطر نارسایی کبد در انتخاب دارو لحاظ شود.",
+            "en": "Increase by 100–200 mg/day at intervals of at least 1 week. Elderly or debilitated: start 50 mg twice daily. Weigh hepatic failure risk when choosing."
+          },
+          "refs": [
+            {
+              "source": "fda-nefazodone",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "ترفنادین، آستمیزول، سیزاپراید، پیموزاید یا کاربامازپین همزمان؛ سابقه قطع نفازودون به‌دلیل آسیب کبدی؛ حساسیت به نفازودون یا ضدافسردگی‌های فنیل‌پیپرازین. تریازولام در بیشتر بیماران پرهیز شود.",
+        "en": "Concomitant terfenadine, astemizole, cisapride, pimozide or carbamazepine; prior withdrawal from nefazodone for liver injury; hypersensitivity to nefazodone or phenylpiperazine antidepressants. Avoid triazolam in most patients."
+      },
+      "refs": [
+        {
+          "source": "fda-nefazodone",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: نارسایی کبد تهدیدکننده حیات (حدود ۱ مورد مرگ یا پیوند در ۲۵۰ تا ۳۰۰ هزار بیمار-سال)؛ خودکشی در کودکان و جوانان.",
+        "en": "Boxed warning: life-threatening hepatic failure (about 1 death or transplant per 250,000–300,000 patient-years); suicidality in children and young adults."
+      },
+      "refs": [
+        {
+          "source": "fda-nefazodone",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mdd",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 300
+      }
+    }
+  ],
+  "atc": [
+    "N06AX06"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-599/Nefazodone",
+        "url": "https://www.darooyab.ir/G-599/Nefazodone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=076037",
+      "label": "ANDA076037"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51ff7db5-aaf9-4c3c-86e6-958ebf16b60f",
+      "label": "FDA Nefazodone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a695005.html",
+      "label": "Nefazodone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06AX06",
+      "label": "N06AX06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-599/Nefazodone",
+      "label": "Nefazodone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Patients should be advised to notify their physician if they become pregnant or intend to become pregnant during therapy.",
+      "refs": [
+        {
+          "source": "fda-nefazodone",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when nefazodone is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-nefazodone",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "هشدار جعبه‌ای برچسب درباره کودکان.",
+        "en": "Boxed warning in the label about children."
+      },
+      "quote": "Nefazodone hydrochloride tablets are not approved for use in pediatric patients (see WARNINGS, Clinical Worsening and Suicide Risk ;",
+      "refs": [
+        {
+          "source": "fda-nefazodone",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The usual precautions should be observed in elderly patients who have concomitant medical illnesses or who are receiving concomitant drugs.",
+      "refs": [
+        {
+          "source": "fda-nefazodone",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-nefazodone",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA076037"
+  }
+}

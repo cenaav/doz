@@ -1,0 +1,365 @@
+{
+  "id": "abacavir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آباکاویر",
+    "en": "Abacavir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "NRTI",
+    "en": "NRTI"
+  },
+  "brands": [
+    {
+      "name": "Ziagen",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ziagen",
+    "زیاژن",
+    "آباکاویر",
+    "ABC"
+  ],
+  "formulations": [
+    {
+      "id": "tab-300",
+      "form": "tablet",
+      "route": "oral",
+      "label": "300 mg tablet (scored)",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-abacavir",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 بزرگسال — ۳۰۰ mg دو بار یا ۶۰۰ mg یک بار",
+        "en": "HIV-1 adult — 300 mg twice daily or 600 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-abacavir",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس (مگر فرآورده کامل).",
+            "en": "Always with other antiretrovirals (unless a complete regimen)."
+          },
+          "refs": [
+            {
+              "source": "fda-abacavir",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "پیش از شروع HLA-B*5701 چک شود. نارسایی خفیف کبد: ۲۰۰ mg دو بار (محلول خوراکی).",
+            "en": "Screen for HLA-B*5701 before starting. Mild hepatic impairment: 200 mg twice daily (oral solution)."
+          },
+          "refs": [
+            {
+              "source": "fda-abacavir",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-abacavir",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "hiv",
+      "label": {
+        "fa": "کودک ≥۱۴ kg (قرص شیاردار) — یک بار: ۳۰۰ / ۴۵۰ / ۶۰۰ mg بر اساس وزن",
+        "en": "Children ≥14 kg (scored tablet) — once daily: 300 / 450 / 600 mg by weight"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 14
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 13.99,
+            "maxWeightKg": 19.99,
+            "perDose": 300,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 19.99,
+            "maxWeightKg": 24.99,
+            "perDose": 450,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 24.99,
+            "maxWeightKg": null,
+            "perDose": 600,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-abacavir",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس (مگر فرآورده کامل).",
+            "en": "Always with other antiretrovirals (unless a complete regimen)."
+          },
+          "refs": [
+            {
+              "source": "fda-abacavir",
+              "section": "2.3"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "یا دو بار در روز طبق همان جدول. ناتوان در بلع قرص: محلول خوراکی.",
+            "en": "Or twice daily per the same table. Unable to swallow tablets: oral solution."
+          },
+          "refs": [
+            {
+              "source": "fda-abacavir",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "ناقل HLA-B*5701؛ حساسیت قبلی به آباکاویر؛ نارسایی متوسط یا شدید کبد.",
+        "en": "HLA-B*5701 carriers; prior abacavir hypersensitivity; moderate or severe hepatic impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-abacavir",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: واکنش حساسیتی جدی و گاه کشنده (بیشتر در HLA-B*5701) — پس از واکنش هرگز دوباره نه.",
+        "en": "Boxed warning: serious, sometimes fatal hypersensitivity (higher with HLA-B*5701) — never rechallenge after a reaction."
+      },
+      "refs": [
+        {
+          "source": "fda-abacavir",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-300",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-300",
+      "input": {
+        "ageYears": 7,
+        "weightKg": 22
+      },
+      "expect": {
+        "perDose": 450,
+        "tabletsPerDoseRounded": 1.5
+      }
+    }
+  ],
+  "atc": [
+    "J05AF06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "20003",
+        "en": "ABACAVIR 300MG TAB",
+        "fa": "قرص آباکاویر ۳۰۰ میلی‌گرم"
+      },
+      {
+        "code": "24746",
+        "en": "ABACAVIR (AS SULFATE) SOLUTION ORAL 20 mg/1mL 240 mL",
+        "fa": "محلول خوراکی آباکاویر (معادل سولفات) ۲۰ میلی‌گرم / ۱ میلی‌لیتر ۲۴۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1158/Abacavir",
+        "url": "https://www.darooyab.ir/G-1158/Abacavir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-abacavir",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077844"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077844",
+      "label": "ANDA077844"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5409c8ed-17c3-454f-bb88-d597ba8f84ec",
+      "label": "FDA Abacavir"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699012.html",
+      "label": "Abacavir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AF06",
+      "label": "J05AF06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1158/Abacavir",
+      "label": "Abacavir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های رجیستری بارداری (APR) تفاوتی با میزان زمینه‌ای نقص مادرزادی نشان نمی‌دهد.",
+        "en": "Label: Antiretroviral Pregnancy Registry data show no difference from the background birth-defect rate."
+      },
+      "quote": "Available data from the APR show no difference in the overall risk of birth defects for abacavir compared with the background rate for birth defects of 2.7% in the Metropolitan Atlanta Congenital Defects Program (MACDP) reference population.",
+      "refs": [
+        {
+          "source": "fda-abacavir",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary The Centers for Disease Control and Prevention recommends that HIV-1-infected mothers in the United States not breastfeed their infants to avoid risking postnatal transmission of HIV-1 infection.",
+      "refs": [
+        {
+          "source": "fda-abacavir",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of abacavir have been established in pediatric patients aged 3 months and older.",
+      "refs": [
+        {
+          "source": "fda-abacavir",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, caution should be exercised in the administration of abacavir in elderly patients reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-abacavir",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

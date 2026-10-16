@@ -1,0 +1,383 @@
+{
+  "id": "guselkumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گوسلکوماب",
+    "en": "Guselkumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد IL-23",
+    "en": "Anti-IL-23 antibody"
+  },
+  "brands": [
+    {
+      "name": "Tremfya",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tremfya",
+    "ترمفیا",
+    "گوسلکوماب"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-100",
+      "form": "injection",
+      "route": "sc",
+      "label": "100 mg/mL syringe, pen or One-Press",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-200",
+      "form": "injection",
+      "route": "iv",
+      "label": "200 mg/20 mL (10 mg/mL) vial for IV infusion",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 20
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pso",
+      "disease": "psoriasis",
+      "label": {
+        "fa": "پسوریازیس پلاک متوسط تا شدید (بزرگسال و کودک ۶ سال و ≥۴۰ kg) — ۱۰۰ mg هفته ۰، ۴ و سپس هر ۸ هفته",
+        "en": "Moderate–severe plaque psoriasis (adults and children ≥6 y and ≥40 kg) — 100 mg at weeks 0, 4, then every 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "minWeightKg": 40
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-100"
+      ]
+    },
+    {
+      "id": "psa",
+      "disease": "psoriatic-arthritis",
+      "label": {
+        "fa": "آرتریت پسوریاتیک (بزرگسال و کودک ۶ سال و ≥۴۰ kg) — ۱۰۰ mg هفته ۰، ۴ و سپس هر ۸ هفته",
+        "en": "Psoriatic arthritis (adults and children ≥6 y and ≥40 kg) — 100 mg at weeks 0, 4, then every 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "minWeightKg": 40
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-100"
+      ]
+    },
+    {
+      "id": "uc-ind",
+      "disease": "ulcerative-colitis",
+      "label": {
+        "fa": "کولیت اولسراتیو بزرگسال — القا ۲۰۰ mg وریدی (دست‌کم ۱ ساعت) هفته ۰، ۴ و ۸",
+        "en": "Ulcerative colitis, adults — induction 200 mg IV (over ≥1 h) at weeks 0, 4 and 8"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۴۰۰ mg زیرجلدی (دو تزریق ۲۰۰) همان هفته‌ها. نگهدارنده: ۱۰۰ mg زیرجلدی هفته ۱۶ و سپس هر ۸ هفته. پیش از شروع آنزیم کبد و بیلی‌روبین.",
+            "en": "Or 400 mg SC (two 200 mg injections) at the same weeks. Maintenance: 100 mg SC at week 16 then every 8 weeks. Check liver enzymes and bilirubin first."
+          },
+          "refs": [
+            {
+              "source": "fda-tremfya",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-tremfya",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت جدی به گوسلکوماب.",
+        "en": "History of serious hypersensitivity to guselkumab."
+      },
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "حساسیت؛ عفونت؛ سل (پیش از شروع بررسی)؛ واکسن زنده نه.",
+        "en": "Hypersensitivity; infections; tuberculosis (screen first); no live vaccines."
+      },
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سمیت کبدی (به‌ویژه دوزهای القای IBD).",
+        "en": "Hepatotoxicity (especially IBD induction doses)."
+      },
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "5.4"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pso",
+      "formulation": "pfs-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "psa",
+      "formulation": "pfs-100",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "uc-ind",
+      "formulation": "vial-200",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "L04AC16"
+  ],
+  "iran": {
+    "status": "registered",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5574/Guselkumab",
+        "url": "https://www.darooyab.ir/G-5574/Guselkumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-tremfya",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761061"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761061",
+      "label": "BLA761061"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e6dc9ae-1c4c-42d9-87aa-c315ecc51b56",
+      "label": "FDA Tremfya"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a617036.html",
+      "label": "Guselkumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AC16",
+      "label": "L04AC16"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5574/Guselkumab",
+      "label": "Guselkumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from literature, post-marketing reports, and ongoing pregnancy registry with TREMFYA use in pregnant women are insufficient to establish a drug-associated risk of major birth defects, miscarriage or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of guselkumab in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Plaque Psoriasis The safety and effectiveness of TREMFYA for the treatment of moderate-to-severe plaque psoriasis have been established in pediatric patients 6 years of age and older who are candidates for systemic therapy or phototherapy [see Adverse Reactions (6.1) and Clinical Studies (14.1) ] .",
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 6418 subjects with plaque psoriasis, psoriatic arthritis, ulcerative colitis, or Crohn's disease exposed to TREMFYA, a total of 489 subjects were 65 years or older, and 55 subjects were 75 years or older.",
+      "refs": [
+        {
+          "source": "fda-tremfya",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

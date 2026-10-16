@@ -1,0 +1,577 @@
+{
+  "id": "daptomycin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "داپتومایسین",
+    "en": "Daptomycin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "لیپوپپتید حلقوی",
+    "en": "Cyclic lipopeptide"
+  },
+  "brands": [
+    {
+      "name": "Cubicin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cubicin",
+    "کوبیسین",
+    "داپتومایسین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-500",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "500 mg vial",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "sssi",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت عارضه‌دار پوست — بزرگسال ۴ mg/kg هر ۲۴ ساعت، ۷ تا ۱۴ روز",
+        "en": "cSSSI — adult 4 mg/kg every 24 h, 7–14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 4,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 14
+      }
+    },
+    {
+      "id": "bac",
+      "disease": "sepsis",
+      "label": {
+        "fa": "باکتریمی استاف اورئوس (و اندوکاردیت راست) — بزرگسال ۶ mg/kg هر ۲۴ ساعت، ۲ تا ۶ هفته",
+        "en": "S. aureus bacteraemia (incl. right-sided endocarditis) — adult 6 mg/kg every 24 h, 2–6 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 6,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "2.4"
+        }
+      ]
+    },
+    {
+      "id": "sssi-12",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "پوست — کودک ۱۲ تا ۱۷ سال: ۵ mg/kg هر ۲۴ ساعت",
+        "en": "cSSSI — children 12–17 y: 5 mg/kg every 24 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "id": "sssi-7",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "پوست — کودک ۷ تا ۱۱ سال: ۷ mg/kg هر ۲۴ ساعت",
+        "en": "cSSSI — children 7–11 y: 7 mg/kg every 24 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 7,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 7,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "id": "sssi-2",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "پوست — کودک ۲ تا ۶ سال: ۹ mg/kg هر ۲۴ ساعت",
+        "en": "cSSSI — children 2–6 y: 9 mg/kg every 24 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 7,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 9,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "id": "sssi-1",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "پوست — کودک ۱ تا <۲ سال: ۱۰ mg/kg هر ۲۴ ساعت",
+        "en": "cSSSI — children 1–<2 y: 10 mg/kg every 24 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      }
+    },
+    {
+      "id": "bac-12",
+      "disease": "sepsis",
+      "label": {
+        "fa": "باکتریمی — کودک ۱۲ تا ۱۷ سال: ۷ mg/kg هر ۲۴ ساعت",
+        "en": "Bacteraemia — children 12–17 y: 7 mg/kg every 24 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 7,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "2.5, Table 2"
+        }
+      ]
+    },
+    {
+      "id": "bac-7",
+      "disease": "sepsis",
+      "label": {
+        "fa": "باکتریمی — کودک ۷ تا ۱۱ سال: ۹ mg/kg هر ۲۴ ساعت",
+        "en": "Bacteraemia — children 7–11 y: 9 mg/kg every 24 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 7,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 9,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "2.5, Table 2"
+        }
+      ]
+    },
+    {
+      "id": "bac-1",
+      "disease": "sepsis",
+      "label": {
+        "fa": "باکتریمی — کودک ۱ تا ۶ سال: ۱۲ mg/kg هر ۲۴ ساعت",
+        "en": "Bacteraemia — children 1–6 y: 12 mg/kg every 24 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 7,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 12,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "2.5, Table 2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به داپتومایسین.",
+        "en": "Hypersensitivity to daptomycin."
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "میوپاتی و رابدومیولیز (CPK هفتگی)؛ پنومونی ائوزینوفیلیک؛ برای پنومونی مؤثر نیست؛ زیر ۱ سال نه (اثر عضلانی).",
+        "en": "Myopathy and rhabdomyolysis (weekly CPK); eosinophilic pneumonia; not effective for pneumonia; not under 1 y (muscular effects)."
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "بزرگسال ClCr زیر ۳۰ و دیالیز: همان mg/kg هر ۴۸ ساعت (پس از دیالیز). کودکان تنظیم کلیوی تعیین نشده.",
+        "en": "Adults CrCl <30 incl. dialysis: same mg/kg every 48 h (after dialysis). No paediatric renal adjustment established."
+      },
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "2.6"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "sssi",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 280
+      }
+    },
+    {
+      "regimen": "bac",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 420
+      }
+    },
+    {
+      "regimen": "sssi-12",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 250
+      }
+    },
+    {
+      "regimen": "sssi-7",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 175
+      }
+    },
+    {
+      "regimen": "sssi-2",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 135
+      }
+    },
+    {
+      "regimen": "sssi-1",
+      "formulation": "vial-500",
+      "input": {
+        "ageMonths": 18,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 100
+      }
+    },
+    {
+      "regimen": "bac-12",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 350
+      }
+    },
+    {
+      "regimen": "bac-7",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 225
+      }
+    },
+    {
+      "regimen": "bac-1",
+      "formulation": "vial-500",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 15
+      },
+      "expect": {
+        "perDose": 180
+      }
+    }
+  ],
+  "atc": [
+    "J01XX09"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-379/Daptomycin",
+        "url": "https://www.darooyab.ir/G-379/Daptomycin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0b1a8885-2198-4a0e-8105-0c76c1cba6c2",
+      "label": "FDA Cubicin RF"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608045.html",
+      "label": "Daptomycin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01XX09",
+      "label": "J01XX09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-379/Daptomycin",
+      "label": "Daptomycin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited published data on use of CUBICIN RF in pregnant women are insufficient to inform a drug-associated risk for major birth defects and miscarriage.",
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Limited published data report that daptomycin is present in human milk at infant doses of 0.1% of the maternal dose (see Data ) 2,3,4 .",
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در عفونت پوست و باکتریمی استاف از ۱ تا ۱۷ سال ثابت شده؛ زیر ۱ سال نه.",
+        "en": "Label: established for cSSSI and S. aureus bacteraemia at 1–17 y; not under 1 y."
+      },
+      "quote": "The safety and effectiveness of CUBICIN RF in the treatment of cSSSI and S. aureus bloodstream infections (bacteremia) have been established in the age groups 1 to 17 years of age.",
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 534 adult patients treated with CUBICIN in Phase 3 controlled clinical trials of complicated skin and skin structure infections (cSSSI), 27% were 65 years of age or older and 12% were 75 years of age or older.",
+      "refs": [
+        {
+          "source": "fda-cubicin-rf",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

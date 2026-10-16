@@ -1,0 +1,301 @@
+{
+  "id": "zanamivir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "زانامیویر",
+    "en": "Zanamivir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده نورآمینیداز استنشاقی",
+    "en": "Inhaled neuraminidase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Relenza",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "relenza",
+    "رلنزا",
+    "زانامیویر"
+  ],
+  "formulations": [
+    {
+      "id": "diskhaler",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "5 mg per blister (Diskhaler); dose = 2 inhalations",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-relenza",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "tx",
+      "disease": "influenza",
+      "label": {
+        "fa": "درمان آنفلوانزا (۷ سال به بالا) — ۱۰ mg (۲ استنشاق) دو بار در روز، ۵ روز",
+        "en": "Influenza treatment (≥7 y) — 10 mg (2 inhalations) twice daily for 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 7,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-relenza",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      }
+    },
+    {
+      "id": "proph",
+      "disease": "influenza-prophylaxis",
+      "label": {
+        "fa": "پیشگیری خانگی (۵ سال به بالا) — ۱۰ mg یک بار در روز، ۱۰ روز",
+        "en": "Household prophylaxis (≥5 y) — 10 mg once daily for 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-relenza",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همه‌گیری جامعه (بزرگسال و نوجوان): ۱۰ mg روزانه ۲۸ روز.",
+            "en": "Community outbreaks (adults and adolescents): 10 mg daily for 28 days."
+          },
+          "refs": [
+            {
+              "source": "fda-relenza",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه آلرژی به اجزای فرآورده از جمله پروتئین شیر.",
+        "en": "History of allergy to any ingredient, including milk proteins."
+      },
+      "refs": [
+        {
+          "source": "fda-relenza",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "برونکواسپاسم (گاه کشنده) — در آسم یا COPD توصیه نمی‌شود.",
+        "en": "Bronchospasm (sometimes fatal) — not recommended in asthma or COPD."
+      },
+      "refs": [
+        {
+          "source": "fda-relenza",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "tx",
+      "formulation": "diskhaler",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "proph",
+      "formulation": "diskhaler",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "J05AH01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "10015",
+        "en": "ZANAMIVIR 5MG POWDER FOR INHALATION",
+        "fa": "پودر زانامیویر ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1215/Zanamivir",
+        "url": "https://www.darooyab.ir/G-1215/Zanamivir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-relenza",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021036"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021036",
+      "label": "NDA021036"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7c3bcc3-0c0d-4068-fd80-88cf54a376ef",
+      "label": "FDA Relenza"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699021.html",
+      "label": "Zanamivir Oral Inhalation"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AH01",
+      "label": "J05AH01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1215/Zanamivir",
+      "label": "Zanamivir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published studies suggest that use of RELENZA during pregnancy is not associated with an increased risk of birth defects or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-relenza",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of zanamivir in human milk or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-relenza",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Treatment of Influenza Safety and effectiveness of RELENZA for treatment of influenza have not been assessed in pediatric patients younger than 7 years, but were studied in a Phase 3 treatment trial in pediatric subjects, where 471 children aged 5 to 12 years received zanamivir or placebo [see Clinical Studies ( 14.1 …",
+      "refs": [
+        {
+          "source": "fda-relenza",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of subjects in 6 clinical trials of RELENZA for treatment of influenza, 59 subjects were aged 65 years and older, while 24 subjects were aged 75 years and older.",
+      "refs": [
+        {
+          "source": "fda-relenza",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

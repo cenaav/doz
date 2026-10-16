@@ -1,0 +1,270 @@
+{
+  "id": "dronedarone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "درونادارون",
+    "en": "Dronedarone"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "ضدآریتمی",
+    "en": "Antiarrhythmic"
+  },
+  "brands": [
+    {
+      "name": "Multaq",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "multaq",
+    "مولتاک",
+    "درونادارون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-400",
+      "form": "tablet",
+      "route": "oral",
+      "label": "400 mg tablet",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-multaq",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "af",
+      "disease": "atrial-fibrillation",
+      "label": {
+        "fa": "کاهش بستری در AF حمله‌ای یا پایدار (غیردائمی) — ۴۰۰ mg دو بار با صبحانه و شام",
+        "en": "Reduce hospitalisation in paroxysmal or persistent (non-permanent) AF — 400 mg twice daily with meals"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-multaq",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "ضدآریتمی‌های کلاس I یا III و مهارکننده قوی CYP3A پیش از شروع قطع شوند. رد بارداری در زن در سن باروری.",
+            "en": "Stop class I/III antiarrhythmics and strong CYP3A inhibitors before starting. Exclude pregnancy in women of reproductive potential."
+          },
+          "refs": [
+            {
+              "source": "fda-multaq",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "AF دائمی؛ نارسایی قلبی علامت‌دار با بستری اخیر یا NYHA IV؛ بلوک AV درجه ۲ یا ۳ یا سینوس بیمار بدون پیس‌میکر؛ ضربان زیر ۵۰؛ مهارکننده قوی CYP3A و اریترومایسین؛ داروهای افزاینده QT؛ QTc بالای ۵۰۰ یا PR بالای ۲۸۰ ms؛ سمیت کبد یا ریه با آمیودارون قبلی؛ نارسایی شدید کبد؛ حساسیت.",
+        "en": "Permanent AF; symptomatic HF with recent decompensation or NYHA IV; 2nd/3rd-degree AV block or sick sinus without pacemaker; HR <50; strong CYP3A inhibitors and erythromycin; QT-prolonging drugs; QTc >500 or PR >280 ms; prior amiodarone liver or lung toxicity; severe hepatic impairment; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-multaq",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: در نارسایی قلبی اخیر یا NYHA IV و در AF دائمی خطر مرگ، سکته و نارسایی قلب دو برابر.",
+        "en": "Boxed warning: doubles the risk of death, stroke and HF in recent decompensated/NYHA IV heart failure and in permanent AF."
+      },
+      "refs": [
+        {
+          "source": "fda-multaq",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "af",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C01BD07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "19067",
+        "en": "DRONEDARON 400MG TAB",
+        "fa": "قرص دروندارون ۴۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4725/Dronedarone",
+        "url": "https://www.darooyab.ir/G-4725/Dronedarone"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-multaq",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022425"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022425",
+      "label": "NDA022425"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7fa41601-7fb5-4155-8e50-2ae903f0d2d6",
+      "label": "FDA Multaq"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609034.html",
+      "label": "Dronedarone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD07",
+      "label": "C01BD07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4725/Dronedarone",
+      "label": "Dronedarone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary MULTAQ may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-multaq",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants from MULTAQ like the adverse effects in adults, (liver injury, and pulmonary toxicity), advise patients not to breastfeed during treatment with MULTAQ and for 5 days (about 6 half-lives) after the last dose.",
+      "refs": [
+        {
+          "source": "fda-multaq",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and efficacy in children below the age of 18 years have not been established.",
+      "refs": [
+        {
+          "source": "fda-multaq",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "More than 4500 patients with AF or AFL aged 65 years or above were included in the MULTAQ clinical program (of whom more than 2000 patients were 75 years or older).",
+      "refs": [
+        {
+          "source": "fda-multaq",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Advise female patients of reproductive potential to use effective contraception during treatment with MULTAQ and for 5 days after the final dose.",
+      "refs": [
+        {
+          "source": "fda-multaq",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

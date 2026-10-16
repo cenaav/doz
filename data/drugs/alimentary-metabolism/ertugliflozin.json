@@ -1,0 +1,286 @@
+{
+  "id": "ertugliflozin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ارتوگلیفلوزین",
+    "en": "Ertugliflozin"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده SGLT2",
+    "en": "SGLT2 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Steglatro",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "steglatro",
+    "استگلاترو",
+    "ارتوگلیفلوزین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-steglatro",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-15",
+      "form": "tablet",
+      "route": "oral",
+      "label": "15 mg tablet",
+      "concentration": {
+        "amount": 15,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-steglatro",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2dm",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ بزرگسال — ۵ mg صبح؛ تا ۱۵ mg یک بار",
+        "en": "Type 2 diabetes, adults — 5 mg in the morning; up to 15 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 15,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-steglatro",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع کمبود حجم اصلاح شود. دست‌کم ۴ روز پیش از جراحی قطع.",
+            "en": "Correct volume depletion first. Withhold ≥4 days before surgery."
+          },
+          "refs": [
+            {
+              "source": "fda-steglatro",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-steglatro",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ارتوگلیفلوزین.",
+        "en": "Hypersensitivity to ertugliflozin."
+      },
+      "refs": [
+        {
+          "source": "fda-steglatro",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کتواسیدوز (حتی با قند نه‌چندان بالا)؛ قطع عضو تحتانی؛ کاهش حجم؛ عفونت ادراری-تناسلی و گانگرن فورنیه؛ هیپوگلیسمی با انسولین یا سولفونیل‌اوره.",
+        "en": "Ketoacidosis (even with modest glucose); lower-limb amputation; volume depletion; genitourinary infections incl. urosepsis; hypoglycaemia with insulin or sulfonylureas."
+      },
+      "refs": [
+        {
+          "source": "fda-steglatro",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 45,
+      "severity": "block",
+      "text": {
+        "fa": "eGFR زیر ۴۵: توصیه نمی‌شود.",
+        "en": "eGFR <45: not recommended."
+      },
+      "refs": [
+        {
+          "source": "fda-steglatro",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2dm",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 15
+      }
+    }
+  ],
+  "atc": [
+    "A10BK04"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Ertugliflozin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-steglatro",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA209803"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209803",
+      "label": "NDA209803"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6f3e718-bb99-48f1-ab94-b9f0af05fed6",
+      "label": "FDA Steglatro"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618011.html",
+      "label": "Ertugliflozin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BK04",
+      "label": "A10BK04"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on animal data showing adverse renal effects, STEGLATRO is not recommended during the second and third trimesters of pregnancy.",
+      "refs": [
+        {
+          "source": "fda-steglatro",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of STEGLATRO in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-steglatro",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of STEGLATRO in pediatric patients under 18 years of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-steglatro",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… %, and 2.6% of patients treated with comparator, STEGLATRO 5 mg, and STEGLATRO 15 mg, respectively [see Warnings and Precautions (5.3) and Adverse Reactions (6.1) ] .",
+      "refs": [
+        {
+          "source": "fda-steglatro",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

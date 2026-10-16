@@ -1,0 +1,263 @@
+{
+  "id": "tedizolid",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تدیزولید",
+    "en": "Tedizolid"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "اکسازولیدینون",
+    "en": "Oxazolidinone"
+  },
+  "brands": [
+    {
+      "name": "Sivextro",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sivextro",
+    "سیوکسترو",
+    "تدیزولید"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sivextro",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-200",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "200 mg vial",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sivextro",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "absssi",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت حاد باکتریایی پوست — ۲۰۰ mg یک بار در روز، ۶ روز (خوراکی یا وریدی)",
+        "en": "Acute bacterial skin infection — 200 mg once daily for 6 days (oral or IV)"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "minWeightKg": 35
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-sivextro",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 6,
+        "max": 6
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "قرص در کودک زیر ۳۵ kg داده نشود. تغییر وریدی به خوراکی بدون تنظیم دوز.",
+            "en": "Do not give tablets to children under 35 kg. IV-to-oral switch needs no adjustment."
+          },
+          "refs": [
+            {
+              "source": "fda-sivextro",
+              "section": "2"
+            },
+            {
+              "source": "fda-sivextro",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "در نوتروپنی اثر بررسی نشده؛ اسهال C. difficile.",
+        "en": "Not evaluated in neutropenic patients; C. difficile diarrhoea."
+      },
+      "refs": [
+        {
+          "source": "fda-sivextro",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "absssi",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J01XX11"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Tedizolid"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-sivextro",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA205435"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205435",
+      "label": "NDA205435"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=75672079-589f-451a-bdbf-eaebcfcc80a9",
+      "label": "FDA Sivextro"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614038.html",
+      "label": "Tedizolid"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614039.html",
+      "label": "Tedizolid Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01XX11",
+      "label": "J01XX11"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on animal reproduction studies, SIVEXTRO may cause fetal harm when administered to pregnant women.",
+      "refs": [
+        {
+          "source": "fda-sivextro",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information on the presence of tedizolid in human milk.",
+      "refs": [
+        {
+          "source": "fda-sivextro",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of SIVEXTRO for the treatment of ABSSSI have been established in pediatric patients at least 26 weeks gestational age and weighing at least 1 kg.",
+      "refs": [
+        {
+          "source": "fda-sivextro",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in pharmacokinetics were observed between elderly subjects and younger subjects.",
+      "refs": [
+        {
+          "source": "fda-sivextro",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

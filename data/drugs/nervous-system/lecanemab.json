@@ -1,0 +1,267 @@
+{
+  "id": "lecanemab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لکانماب",
+    "en": "Lecanemab"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتی‌بادی ضدآمیلوئید بتا",
+    "en": "Anti-amyloid-beta antibody"
+  },
+  "brands": [
+    {
+      "name": "Leqembi",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "leqembi",
+    "لکمبی",
+    "لکانماب"
+  ],
+  "formulations": [
+    {
+      "id": "vial-100",
+      "form": "injection",
+      "route": "iv",
+      "label": "100 mg/mL vial (500 mg/5 mL, 200 mg/2 mL)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-leqembi",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "iv",
+      "disease": "alzheimers",
+      "label": {
+        "fa": "آلزایمر زودرس (MCI یا دمانس خفیف) با آمیلوئید تأییدشده — ۱۰ mg/kg وریدی هر ۲ هفته طی حدود ۱ ساعت",
+        "en": "Early Alzheimer disease (MCI or mild dementia) with confirmed amyloid — 10 mg/kg IV every 2 weeks over about 1 hour"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-leqembi",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از ۱۸ ماه: ادامه یا نگهدارنده ۱۰ mg/kg هر ۴ هفته. زیرجلدی: شروع ۵۰۰ mg هفتگی، نگهدارنده ۳۶۰ mg هفتگی. پیش از شروع ژنوتیپ ApoE ε4 و MRI پایه؛ MRI در ماه ۱، ۲، ۳ و ۶.",
+            "en": "After 18 months: continue, or maintenance 10 mg/kg every 4 weeks. Subcutaneous: start 500 mg weekly, maintenance 360 mg weekly. Before starting: ApoE ε4 testing and baseline MRI; MRI at months 1, 2, 3 and 6."
+          },
+          "refs": [
+            {
+              "source": "fda-leqembi",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-leqembi",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-leqembi",
+              "section": "Boxed Warning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی به لکانماب (آنژیوادم، آنافیلاکسی).",
+        "en": "Serious hypersensitivity to lecanemab (angioedema, anaphylaxis)."
+      },
+      "refs": [
+        {
+          "source": "fda-leqembi",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: ناهنجاری تصویربرداری مرتبط با آمیلوئید (ARIA: ادم و هموسیدرین)، گاه کشنده؛ خونریزی مغزی بیش از ۱ cm؛ در هموزیگوت ApoE ε4 شایع‌تر؛ احتیاط با ضدانعقاد و ترومبولیتیک.",
+        "en": "Boxed warning: amyloid-related imaging abnormalities (ARIA-E/ARIA-H), sometimes fatal; intracerebral haemorrhage >1 cm; more frequent in ApoE ε4 homozygotes; caution with anticoagulants and thrombolytics."
+      },
+      "refs": [
+        {
+          "source": "fda-leqembi",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واکنش انفوزیون و حساسیت.",
+        "en": "Infusion-related and hypersensitivity reactions."
+      },
+      "refs": [
+        {
+          "source": "fda-leqembi",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "iv",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 72,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 700,
+        "mlPerDose": 7
+      }
+    }
+  ],
+  "atc": [
+    "N06DX04"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Lecanemab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-leqembi",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761269"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761269",
+      "label": "BLA761269"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9d1ff786-e577-410a-a273-c4d7d0e4e975",
+      "label": "FDA Leqembi"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a623004.html",
+      "label": "Lecanemab-irmb Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06DX04",
+      "label": "N06DX04"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on LEQEMBI use in pregnant women to evaluate for a drug-associated risk of major birth defects, miscarriage, or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-leqembi",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of lecanemab-irmb in human milk, the effects on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-leqembi",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of LEQEMBI in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-leqembi",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness of LEQEMBI have been observed between patients 65 years of age and older and younger adult patients.",
+      "refs": [
+        {
+          "source": "fda-leqembi",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

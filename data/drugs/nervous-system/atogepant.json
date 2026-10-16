@@ -1,0 +1,343 @@
+{
+  "id": "atogepant",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آتوجپانت",
+    "en": "Atogepant"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "آنتاگونیست گیرنده CGRP (جپانت)",
+    "en": "CGRP receptor antagonist (gepant)"
+  },
+  "brands": [
+    {
+      "name": "Qulipta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "qulipta",
+    "کولیپتا",
+    "آتوجپانت"
+  ],
+  "formulations": [
+    {
+      "id": "tab-60",
+      "form": "tablet",
+      "route": "oral",
+      "label": "60 mg tablet",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-30",
+      "form": "tablet",
+      "route": "oral",
+      "label": "30 mg tablet",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "epi",
+      "disease": "migraine-prophylaxis",
+      "label": {
+        "fa": "پیشگیری میگرن اپیزودیک بزرگسال — ۱۰، ۳۰ یا ۶۰ mg یک بار در روز",
+        "en": "Episodic migraine prevention, adults — 10, 30 or 60 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "مهارکننده قوی CYP3A4: ۱۰ mg؛ القاگر قوی CYP3A4: ۶۰ mg (در میگرن مزمن توصیه نمی‌شود). سایر تداخل‌ها طبق جدول ۱.",
+            "en": "Strong CYP3A4 inhibitors: 10 mg; strong CYP3A4 inducers: 60 mg (not recommended in chronic migraine). Other interactions per Table 1."
+          },
+          "refs": [
+            {
+              "source": "fda-qulipta",
+              "section": "2.2, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chronic",
+      "disease": "migraine-prophylaxis",
+      "label": {
+        "fa": "پیشگیری میگرن مزمن بزرگسال — ۶۰ mg یک بار در روز",
+        "en": "Chronic migraine prevention, adults — 60 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "2.1"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-60"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به آتوجپانت (آنافیلاکسی، تنگی نفس).",
+        "en": "History of hypersensitivity to atogepant (anaphylaxis, dyspnoea)."
+      },
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی.",
+        "en": "Hypersensitivity reactions."
+      },
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۳۰ یا ESRD: اپیزودیک ۱۰ mg؛ مزمن توصیه نمی‌شود.",
+        "en": "CrCl <30 or ESRD: episodic 10 mg; chronic not recommended."
+      },
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "epi",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "chronic",
+      "formulation": "tab-60",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 60,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N02CD07"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Atogepant"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-qulipta",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA215206"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215206",
+      "label": "NDA215206"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8c8ab8f4-32bd-497a-befa-70c8a51d8d52",
+      "label": "FDA Qulipta"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a621052.html",
+      "label": "Atogepant"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02CD07",
+      "label": "N02CD07"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of QULIPTA in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Data from a lactation study in twelve healthy adult females indicate that atogepant is excreted in breast milk in low amounts.",
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-qulipta",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

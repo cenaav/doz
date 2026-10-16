@@ -1,0 +1,344 @@
+{
+  "id": "canagliflozin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کاناگلیفلوزین",
+    "en": "Canagliflozin"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده SGLT2",
+    "en": "SGLT2 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Invokana",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "invokana",
+    "اینووکانا",
+    "کاناگلیفلوزین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-300",
+      "form": "tablet",
+      "route": "oral",
+      "label": "300 mg tablet",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2dm",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ (بزرگسال و کودک ۱۰ سال به بالا) — ۱۰۰ mg یک بار پیش از اولین وعده؛ تا ۳۰۰ mg اگر eGFR ۶۰ به بالا",
+        "en": "Type 2 diabetes (adults and children ≥10 y) — 100 mg once daily before the first meal; up to 300 mg if eGFR ≥60"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "perDoseMax": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع کمبود حجم اصلاح شود. دست‌کم ۳ روز پیش از جراحی قطع. با القاگر UGT (ریفامپین، فنی‌توئین…) افزایش به ۲۰۰ mg.",
+            "en": "Correct volume depletion first. Withhold ≥3 days before surgery. With UGT inducers (rifampin, phenytoin…) increase to 200 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-invokana",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-invokana",
+              "section": "2.5"
+            },
+            {
+              "source": "fda-invokana",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ckd",
+      "disease": "diabetic-nephropathy",
+      "label": {
+        "fa": "کاهش خطر قلبی‌عروقی و نفروپاتی دیابتی با آلبومینوری — ۱۰۰ mg یک بار",
+        "en": "Cardiovascular risk and diabetic nephropathy with albuminuria — 100 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-invokana",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "واکنش حساسیتی جدی به کاناگلیفلوزین (آنافیلاکسی، آنژیوادم).",
+        "en": "Serious hypersensitivity to canagliflozin (anaphylaxis, angioedema)."
+      },
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کتواسیدوز (حتی با قند نه‌چندان بالا)؛ قطع عضو تحتانی؛ کاهش حجم؛ عفونت ادراری-تناسلی و گانگرن فورنیه؛ هیپوگلیسمی با انسولین یا سولفونیل‌اوره.",
+        "en": "Ketoacidosis (even with modest glucose); lower-limb amputation; volume depletion; genitourinary infections incl. urosepsis; hypoglycaemia with insulin or sulfonylureas."
+      },
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "شکستگی استخوان.",
+        "en": "Bone fracture."
+      },
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "5.7"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "warn",
+      "text": {
+        "fa": "eGFR ۳۰ تا <۶۰: حداکثر ۱۰۰ mg. زیر ۳۰: شروع توصیه نمی‌شود (با آلبومینوری >۳۰۰ mg/روز ادامه ۱۰۰ mg مجاز).",
+        "en": "eGFR 30–<60: max 100 mg. Below 30: initiation not recommended (may continue 100 mg if albuminuria >300 mg/day)."
+      },
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2dm",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 300
+      }
+    },
+    {
+      "regimen": "ckd",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A10BK02"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Canagliflozin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-invokana",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204042"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204042",
+      "label": "NDA204042"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b9057d3b-b104-4f09-8a61-c61ef9d4a3f3",
+      "label": "FDA Invokana"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613033.html",
+      "label": "Canagliflozin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BK02",
+      "label": "A10BK02"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Based on juvenile animal data showing adverse renal effects, INVOKANA is not recommended during the second and third trimesters of pregnancy.",
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of INVOKANA in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of INVOKANA as an adjunct to diet and exercise to improve glycemic control in type 2 diabetes mellitus have been established in pediatric patients aged 10 years and older.",
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Patients 65 years and older had a higher incidence of adverse reactions related to reduced intravascular volume with INVOKANA (such as hypotension, postural dizziness, orthostatic hypotension, syncope, and dehydration), particularly with the 300 mg daily dose, compared to younger patients; a more prominent increase in …",
+      "refs": [
+        {
+          "source": "fda-invokana",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

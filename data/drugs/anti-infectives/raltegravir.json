@@ -1,0 +1,342 @@
+{
+  "id": "raltegravir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "رالتگراویر",
+    "en": "Raltegravir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده اینتگراز (INSTI)",
+    "en": "Integrase inhibitor (INSTI)"
+  },
+  "brands": [
+    {
+      "name": "Isentress",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "isentress",
+    "ایزنترس",
+    "رالتگراویر",
+    "RAL"
+  ],
+  "formulations": [
+    {
+      "id": "tab-400",
+      "form": "tablet",
+      "route": "oral",
+      "label": "400 mg film-coated tablet",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isentress",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-600",
+      "form": "tablet",
+      "route": "oral",
+      "label": "600 mg HD tablet",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-isentress",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hiv",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 — بزرگسال: ۴۰۰ mg دو بار در روز (یا ۱۲۰۰ mg یک بار در درمان‌نشده)",
+        "en": "HIV-1 — adult: 400 mg twice daily (or 1200 mg once daily if treatment-naive)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-isentress",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-400"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس (مگر فرآورده کامل).",
+            "en": "Always with other antiretrovirals (unless a complete regimen)."
+          },
+          "refs": [
+            {
+              "source": "fda-isentress",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "با ریفامپین: ۸۰۰ mg دو بار. قرص جویدنی و سوسپانسیون جایگزین قرص روکش‌دار نیستند.",
+            "en": "With rifampin: 800 mg twice daily. Chewable tablets and suspension are not interchangeable with film-coated tablets."
+          },
+          "refs": [
+            {
+              "source": "fda-isentress",
+              "section": "2.2, Table 1"
+            },
+            {
+              "source": "fda-isentress",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hiv-hd",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 درمان‌نشده یا سرکوب‌شده — ۱۲۰۰ mg (۲ × ۶۰۰ mg) یک بار در روز",
+        "en": "HIV-1 naive or suppressed — 1200 mg (2 × 600 mg) once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-isentress",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-600"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس (مگر فرآورده کامل).",
+            "en": "Always with other antiretrovirals (unless a complete regimen)."
+          },
+          "refs": [
+            {
+              "source": "fda-isentress",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش شدید پوستی و حساسیت (SJS، DRESS)؛ رابدومیولیز؛ سندرم بازسازی ایمنی.",
+        "en": "Severe skin and hypersensitivity reactions (SJS, DRESS); rhabdomyolysis; immune reconstitution syndrome."
+      },
+      "refs": [
+        {
+          "source": "fda-isentress",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hiv",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "hiv-hd",
+      "formulation": "tab-600",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1200,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "J05AJ01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "22527",
+        "en": "RALTEGRAVIR TABLET ORAL 400 mg",
+        "fa": "قرص رالتگراویر ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "24689",
+        "en": "RALTEGRAVIR TABLET, CHEWABLE ORAL 100 mg",
+        "fa": "قرص جویدنی رالتگراویر ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5318/Raltegravir",
+        "url": "https://www.darooyab.ir/G-5318/Raltegravir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-isentress",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022145"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022145",
+      "label": "NDA022145"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89a5ec53-d956-4329-8004-0f40f51c88a3",
+      "label": "FDA Isentress"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608004.html",
+      "label": "Raltegravir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AJ01",
+      "label": "J05AJ01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5318/Raltegravir",
+      "label": "Raltegravir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های رجیستری بارداری (APR) تفاوتی با میزان زمینه‌ای نقص مادرزادی نشان نمی‌دهد.",
+        "en": "Label: Antiretroviral Pregnancy Registry data show no difference from the background birth-defect rate."
+      },
+      "quote": "Available data from the APR show no difference in the rate of overall birth defects for raltegravir compared to the background rate for major birth defects of 2.7% in the U.S. reference population of the Metropolitan Atlanta Congenital Defects Program (MACDP).",
+      "refs": [
+        {
+          "source": "fda-isentress",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary The Centers for Disease Control and Prevention recommend that HIV-1 infected mothers in the United States not breastfeed their infants to avoid risking postnatal transmission of HIV-1 infection.",
+      "refs": [
+        {
+          "source": "fda-isentress",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "ISENTRESS HIV-1 Infected Children The safety, tolerability, pharmacokinetic profile, and efficacy of twice daily ISENTRESS were evaluated in HIV-1 infected infants, children and adolescents 4 weeks to 18 years of age in an open-label, multicenter clinical trial, IMPAACT P1066 [see Dosage and Administration (2.3) , …",
+      "refs": [
+        {
+          "source": "fda-isentress",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-isentress",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

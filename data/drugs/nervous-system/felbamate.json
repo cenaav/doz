@@ -1,0 +1,393 @@
+{
+  "id": "felbamate",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلبامات",
+    "en": "Felbamate"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "ضدتشنج (دی‌کاربامات)",
+    "en": "Antiseizure (dicarbamate)"
+  },
+  "brands": [
+    {
+      "name": "Felbatol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "felbatol",
+    "فلباتول",
+    "فلبامات"
+  ],
+  "formulations": [
+    {
+      "id": "tab-400",
+      "form": "tablet",
+      "route": "oral",
+      "label": "400 mg tablet (scored)",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-600",
+      "form": "tablet",
+      "route": "oral",
+      "label": "600 mg tablet (scored)",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "susp-600",
+      "form": "suspension",
+      "route": "oral",
+      "label": "600 mg/5 mL oral suspension",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perVolumeMl": 5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "epilepsy",
+      "label": {
+        "fa": "صرع شدید مقاوم بزرگسال و ۱۴ سال به بالا — شروع ۱۲۰۰ mg/روز در ۳ دوز؛ تا ۳۶۰۰ mg/روز",
+        "en": "Severe refractory epilepsy, adults and ≥14 y — start 1200 mg/day in 3 doses; up to 3600 mg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 14,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "perDoseMax": 1200,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا در ۴ دوز. افزودنی: داروهای ضدصرع دیگر ۲۰٪ (تا ۳۳٪) کم شوند؛ هفتگی ۱۲۰۰ mg/روز افزایش. فقط وقتی صرع آن‌قدر شدید است که خطر آنمی آپلاستیک پذیرفتنی باشد.",
+            "en": "Or in 4 doses. Adjunct: reduce other AEDs by 20% (up to 33%); increase by 1200 mg/day weekly. Only when epilepsy is severe enough that aplastic anaemia risk is acceptable."
+          },
+          "refs": [
+            {
+              "source": "fda-felbatol",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-felbatol",
+              "section": "Boxed Warning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lgs",
+      "disease": "lennox-gastaut",
+      "label": {
+        "fa": "لنوکس-گاستو کودک ۲ تا ۱۴ سال (افزودنی) — شروع ۱۵ mg/kg/روز در ۳ دوز؛ هفتگی تا ۴۵ mg/kg/روز",
+        "en": "Lennox-Gastaut, children 2–14 y (adjunct) — start 15 mg/kg/day in 3 doses; weekly up to 45 mg/kg/day"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 14,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 15,
+        "perKgPerDayMax": 45,
+        "dividedDoses": 3
+      },
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا در ۴ دوز. داروهای ضدصرع همزمان ۲۰٪ کم شوند.",
+            "en": "Or in 4 doses. Reduce concomitant AEDs by 20%."
+          },
+          "refs": [
+            {
+              "source": "fda-felbatol",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فلبامات یا سایر کاربامات‌ها؛ سابقه دیسکرازی خونی یا اختلال کبدی.",
+        "en": "Hypersensitivity to felbamate or other carbamates; history of blood dyscrasia or hepatic dysfunction."
+      },
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: آنمی آپلاستیک (بیش از ۱۰۰ برابر) و نارسایی کبد — فقط در صرع بسیار شدید، با مشاوره خون و رضایت آگاهانه.",
+        "en": "Boxed warning: aplastic anaemia (>100-fold) and hepatic failure — only in very severe epilepsy, with haematology consultation and informed consent."
+      },
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "افکار و رفتار خودکشی؛ قطع ناگهانی نه (خطر تشنج و استاتوس).",
+        "en": "Suicidal thoughts and behaviour; do not stop abruptly (seizures, status epilepticus)."
+      },
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "warn",
+      "text": {
+        "fa": "اختلال کلیه: دوز شروع و نگهدارنده نصف شود.",
+        "en": "Renal impairment: halve the starting and maintenance doses."
+      },
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-400",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 1200
+      }
+    },
+    {
+      "regimen": "lgs",
+      "formulation": "susp-600",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 0.83,
+        "upperPerDose": 300
+      }
+    }
+  ],
+  "atc": [
+    "N03AX10"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01504",
+        "en": "FELBAMATE 400MG TAB",
+        "fa": "قرص فلبامات ۴۰۰ میلی‌گرم"
+      },
+      {
+        "code": "20731",
+        "en": "FELBAMATE 600MG TAB",
+        "fa": "قرص فلبامات ۶۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-665/Felbamate",
+        "url": "https://www.darooyab.ir/G-665/Felbamate"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-felbatol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020189"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020189",
+      "label": "NDA020189"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2f522701-397a-11de-8a39-0800200c9a66",
+      "label": "FDA Felbatol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a606011.html",
+      "label": "Felbamate"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N03AX10",
+      "label": "N03AX10"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-665/Felbamate",
+      "label": "Felbamate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Patients should be encouraged to enroll in the North American Antiepileptic Drug (NAAED) Pregnancy Registry if they become pregnant.",
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Felbamate has been detected in human milk.",
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: فقط در لنوکس-گاستو کودکان ثابت شده؛ سایر کودکان ثابت نشده.",
+        "en": "Label: established only for Lennox-Gastaut in children; not established in other children."
+      },
+      "quote": "The safety and effectiveness of Felbatol in children other than those with Lennox-Gastaut syndrome has not been established.",
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dosage selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-felbatol",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

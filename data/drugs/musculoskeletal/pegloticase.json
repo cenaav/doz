@@ -1,0 +1,272 @@
+{
+  "id": "pegloticase",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پگلوتیکاز",
+    "en": "Pegloticase"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "اوریکاز پگیله",
+    "en": "PEGylated uricase"
+  },
+  "brands": [
+    {
+      "name": "Krystexxa",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "krystexxa",
+    "کریستکسا",
+    "پگلوتیکاز"
+  ],
+  "formulations": [
+    {
+      "id": "vial-8",
+      "form": "injection",
+      "route": "iv",
+      "label": "8 mg/mL vial (to be diluted)",
+      "concentration": {
+        "amount": 8,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-krystexxa",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "gout",
+      "disease": "gout",
+      "label": {
+        "fa": "نقرس مزمن مقاوم بزرگسال — ۸ mg انفوزیون وریدی هر ۲ هفته همراه متوترکسات ۱۵ mg هفتگی",
+        "en": "Refractory chronic gout, adults — 8 mg IV infusion every 2 weeks with methotrexate 15 mg weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 8,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-krystexxa",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "متوترکسات و اسید فولیک دست‌کم ۴ هفته پیش از شروع. داروهای خوراکی کاهنده اسید اوریک قطع شود. پیش‌دارو آنتی‌هیستامین و کورتیکواستروئید. اسید اوریک پیش از هر انفوزیون (دو بار پیاپی بالای ۶ mg/dL: قطع).",
+            "en": "Methotrexate and folic acid at least 4 weeks before. Stop oral urate-lowering drugs. Premedicate with antihistamine and corticosteroid. Check uric acid before each infusion (two consecutive >6 mg/dL: stop)."
+          },
+          "refs": [
+            {
+              "source": "fda-krystexxa",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-krystexxa",
+              "section": "2"
+            },
+            {
+              "source": "fda-krystexxa",
+              "section": "Boxed Warning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "کمبود G6PD؛ سابقه حساسیت جدی به پگلوتیکاز.",
+        "en": "G6PD deficiency; prior serious hypersensitivity to pegloticase."
+      },
+      "refs": [
+        {
+          "source": "fda-krystexxa",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: آنافیلاکسی و واکنش انفوزیون (فقط در مرکز درمانی)؛ همولیز و مت‌هموگلوبینمی در کمبود G6PD — پیش از شروع تست G6PD.",
+        "en": "Boxed warning: anaphylaxis and infusion reactions (healthcare setting only); haemolysis and methaemoglobinaemia in G6PD deficiency — screen for G6PD first."
+      },
+      "refs": [
+        {
+          "source": "fda-krystexxa",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "حمله نقرس در شروع؛ نارسایی قلب.",
+        "en": "Gout flares at initiation; congestive heart failure."
+      },
+      "refs": [
+        {
+          "source": "fda-krystexxa",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "gout",
+      "formulation": "vial-8",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 85
+      },
+      "expect": {
+        "perDose": 8,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "M04AX02"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4694/Pegloticase",
+        "url": "https://www.darooyab.ir/G-4694/Pegloticase"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125293",
+      "label": "BLA125293"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6e566303-d93a-4130-b764-25749829aa95",
+      "label": "FDA Krystexxa"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611015.html",
+      "label": "Pegloticase Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M04AX02",
+      "label": "M04AX02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4694/Pegloticase",
+      "label": "Pegloticase"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies of KRYSTEXXA in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-krystexxa",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Therefore, KRYSTEXXA should not be used when breastfeeding unless the clear benefit to the mother can overcome the unknown risk to the newborn/infant.",
+      "refs": [
+        {
+          "source": "fda-krystexxa",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of KRYSTEXXA in pediatric patients less than 18 years of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-krystexxa",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dose adjustment is needed for patients 65 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-krystexxa",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-krystexxa",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125293"
+  }
+}

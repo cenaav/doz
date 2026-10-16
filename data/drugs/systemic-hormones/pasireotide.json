@@ -1,0 +1,291 @@
+{
+  "id": "pasireotide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پاسیرئوتید",
+    "en": "Pasireotide"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "آنالوگ سوماتوستاتین",
+    "en": "Somatostatin analogue"
+  },
+  "brands": [
+    {
+      "name": "Signifor",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "signifor",
+    "سیگنیفور",
+    "پاسیرئوتید"
+  ],
+  "formulations": [
+    {
+      "id": "amp-0-3",
+      "form": "injection",
+      "route": "sc",
+      "label": "0.3 mg/mL ampule",
+      "concentration": {
+        "amount": 0.3,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-signifor",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "amp-0-6",
+      "form": "injection",
+      "route": "sc",
+      "label": "0.6 mg/mL ampule",
+      "concentration": {
+        "amount": 0.6,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-signifor",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "amp-0-9",
+      "form": "injection",
+      "route": "sc",
+      "label": "0.9 mg/mL ampule",
+      "concentration": {
+        "amount": 0.9,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-signifor",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cush",
+      "disease": "cushing-disease",
+      "label": {
+        "fa": "بیماری کوشینگ (جراحی ناممکن یا ناموفق) — ۰٫۶ یا ۰٫۹ mg زیرجلد دو بار در روز",
+        "en": "Cushing disease (surgery not an option or failed) — 0.6 or 0.9 mg SC twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.6,
+        "perDoseMax": 0.9,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-signifor",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "محدوده ۰٫۳ تا ۰٫۹ mg دو بار؛ تیتراسیون با کورتیزول ادرار. پیش از شروع: قند ناشتا، HbA1c، کبد، ECG، سونوگرافی کیسه صفرا، پتاسیم و منیزیم. Child-Pugh B: شروع ۰٫۳، حداکثر ۰٫۶ mg دو بار؛ Child-Pugh C پرهیز.",
+            "en": "Range 0.3–0.9 mg twice daily; titrate by urinary free cortisol. Before starting: FPG, HbA1c, liver tests, ECG, gallbladder ultrasound, potassium and magnesium. Child-Pugh B: start 0.3, max 0.6 mg twice daily; avoid in Child-Pugh C."
+          },
+          "refs": [
+            {
+              "source": "fda-signifor",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-signifor",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-signifor",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کمبود کورتیزول؛ هیپرگلیسمی و دیابت (شایع)؛ برادیکاردی و QT؛ افزایش آنزیم کبد؛ سنگ صفرا؛ کمبود سایر هورمون‌های هیپوفیز.",
+        "en": "Hypocortisolism; hyperglycaemia and diabetes (common); bradycardia and QT prolongation; liver test elevations; cholelithiasis; deficiency of other pituitary hormones."
+      },
+      "refs": [
+        {
+          "source": "fda-signifor",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cush",
+      "formulation": "amp-0-6",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 0.6,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "H01CB05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Pasireotide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-signifor",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA200677"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=200677",
+      "label": "NDA200677"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a09a25fc-a5a3-0c82-e053-2995a90a5d74",
+      "label": "FDA Signifor"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a622029.html",
+      "label": "Pasireotide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H01CB05",
+      "label": "H01CB05"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The limited data with SIGNIFOR in pregnant women are insufficient to inform a drug-associated risk for major birth defects and miscarriage.",
+      "refs": [
+        {
+          "source": "fda-signifor",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information available on the presence of SIGNIFOR in human milk, the effects of the drug on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-signifor",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of SIGNIFOR have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-signifor",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and concomitant disease or other drug therapy [see Clinical Pharmacology (12.3)] .",
+      "refs": [
+        {
+          "source": "fda-signifor",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "… zation of serum cortisol levels in female patients with Cushing's disease treated with pasireotide may lead to improved fertility.",
+      "refs": [
+        {
+          "source": "fda-signifor",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

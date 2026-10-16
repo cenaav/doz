@@ -1,0 +1,313 @@
+{
+  "id": "degarelix",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دگارلیکس",
+    "en": "Degarelix"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتاگونیست GnRH",
+    "en": "GnRH antagonist"
+  },
+  "brands": [
+    {
+      "name": "Firmagon",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "firmagon",
+    "فیرماگون",
+    "دگارلیکس"
+  ],
+  "formulations": [
+    {
+      "id": "vial-120",
+      "form": "powder-for-injection",
+      "route": "sc",
+      "label": "120 mg vial (starting dose = 2 vials)",
+      "concentration": {
+        "amount": 120,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-80",
+      "form": "powder-for-injection",
+      "route": "sc",
+      "label": "80 mg vial (maintenance)",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "start",
+      "disease": "prostate-cancer",
+      "label": {
+        "fa": "سرطان پیشرفته پروستات — شروع ۲۴۰ mg (دو تزریق ۱۲۰ mg زیرجلد شکم)",
+        "en": "Advanced prostate cancer — start 240 mg (two 120 mg SC abdominal injections)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 240,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-120"
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "prostate-cancer",
+      "label": {
+        "fa": "نگهدارنده — ۸۰ mg زیرجلد هر ۲۸ روز (اولین ۲۸ روز پس از شروع)",
+        "en": "Maintenance — 80 mg SC every 28 days (first 28 days after the starting dose)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 80,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-80"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت شدید به دگارلیکس.",
+        "en": "History of severe hypersensitivity to degarelix."
+      },
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی؛ طولانی شدن QT؛ سمیت جنینی.",
+        "en": "Hypersensitivity reactions; QT prolongation; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "start",
+      "formulation": "vial-120",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 240
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "vial-80",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 80
+      }
+    }
+  ],
+  "atc": [
+    "L02BX02"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Degarelix"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-firmagon",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022201"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022201",
+      "label": "NDA022201"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b",
+      "label": "FDA Firmagon"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609022.html",
+      "label": "Degarelix Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BX02",
+      "label": "L02BX02"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Based on findings in animal studies and mechanism of action, FIRMAGON can cause fetal harm and loss of pregnancy when administered to a pregnant woman [ see Clinical Pharmacology (12.1) ].",
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "The safety and efficacy of FIRMAGON have not been established in females.",
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of subjects in clinical studies of FIRMAGON, 82% were age 65 and over, while 42% were age 75 and over.",
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Based on findings in animals and mechanism of action, degarelix may impair fertility in males and females of reproductive potential [see Nonclinical Toxicology (13.1) ].",
+      "refs": [
+        {
+          "source": "fda-firmagon",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

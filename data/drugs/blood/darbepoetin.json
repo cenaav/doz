@@ -1,0 +1,447 @@
+{
+  "id": "darbepoetin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "داربپوئتین آلفا",
+    "en": "Darbepoetin alfa"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "محرک خون‌سازی (ESA) طولانی‌اثر",
+    "en": "Long-acting erythropoiesis-stimulating agent"
+  },
+  "brands": [
+    {
+      "name": "Aranesp",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aranesp",
+    "آرانسپ",
+    "داربپوئتین"
+  ],
+  "formulations": [
+    {
+      "id": "syr-40",
+      "form": "injection",
+      "route": "sc",
+      "label": "40 mcg/0.4 mL prefilled syringe",
+      "concentration": {
+        "amount": 40,
+        "unit": "mcg",
+        "perVolumeMl": 0.4
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "syr-100",
+      "form": "injection",
+      "route": "sc",
+      "label": "100 mcg/0.5 mL prefilled syringe",
+      "concentration": {
+        "amount": 100,
+        "unit": "mcg",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "syr-500",
+      "form": "injection",
+      "route": "sc",
+      "label": "500 mcg/1 mL prefilled syringe",
+      "concentration": {
+        "amount": 500,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "dial",
+      "disease": "anemia-ckd",
+      "label": {
+        "fa": "کم‌خونی CKD روی دیالیز — شروع ۰٫۴۵ mcg/kg هفتگی (یا ۰٫۷۵ هر ۲ هفته)، وریدی ترجیحاً",
+        "en": "CKD anaemia on dialysis — start 0.45 mcg/kg weekly (or 0.75 every 2 weeks), IV preferred"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 0.45,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هموگلوبین را بالای ۱۱ g/dL هدف نگیرید؛ کمترین دوز برای کاهش تزریق خون. پیش از شروع آهن (فریتین <۱۰۰ یا اشباع <۲۰٪ مکمل).",
+            "en": "Do not target haemoglobin >11 g/dL; lowest dose to reduce transfusions. Check iron first (supplement if ferritin <100 or saturation <20%)."
+          },
+          "refs": [
+            {
+              "source": "fda-aranesp",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-aranesp",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nondial",
+      "disease": "anemia-ckd",
+      "label": {
+        "fa": "کم‌خونی CKD بدون دیالیز — شروع ۰٫۴۵ mcg/kg هر ۴ هفته",
+        "en": "CKD anaemia not on dialysis — start 0.45 mcg/kg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 0.45,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "child",
+      "disease": "anemia-ckd",
+      "label": {
+        "fa": "کودک با CKD — شروع ۰٫۴۵ mcg/kg هفتگی (بدون دیالیز: یا ۰٫۷۵ هر ۲ هفته)",
+        "en": "Children with CKD — start 0.45 mcg/kg weekly (not on dialysis: or 0.75 every 2 weeks)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 0.45,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "chemo",
+      "disease": "chemotherapy-induced-anemia",
+      "label": {
+        "fa": "کم‌خونی ناشی از شیمی‌درمانی (Hb <۱۰) — ۲٫۲۵ mcg/kg زیرجلدی هفتگی",
+        "en": "Chemotherapy-induced anaemia (Hb <10) — 2.25 mcg/kg SC weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 2.25,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۵۰۰ mcg هر ۳ هفته. فقط اگر دست‌کم ۲ ماه شیمی‌درمانی باقی است؛ تا پایان دوره.",
+            "en": "Or 500 mcg every 3 weeks. Only with ≥2 more months of planned chemotherapy; until the course ends."
+          },
+          "refs": [
+            {
+              "source": "fda-aranesp",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "فشار خون کنترل‌نشده؛ آپلازی خالص گلبول قرمز پس از ESA؛ واکنش آلرژیک جدی.",
+        "en": "Uncontrolled hypertension; pure red cell aplasia after ESA therapy; serious allergic reactions."
+      },
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش مرگ، MI، سکته، ترومبوز و رشد تومور؛ در سرطان فقط کم‌خونی ناشی از شیمی‌درمانی میلوساپرسیو، نه درمان علاج‌بخش. فشار خون؛ تشنج.",
+        "en": "Boxed warning: increased death, MI, stroke, thrombosis and tumour progression; in cancer only for myelosuppressive-chemotherapy anaemia, not curative intent. Hypertension; seizures."
+      },
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-aranesp",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "dial",
+      "formulation": "syr-40",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 31.5,
+        "mlPerDose": 0.32
+      }
+    },
+    {
+      "regimen": "nondial",
+      "formulation": "syr-40",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 31.5,
+        "mlPerDose": 0.32
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "syr-40",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 9,
+        "mlPerDose": 0.09
+      }
+    },
+    {
+      "regimen": "chemo",
+      "formulation": "syr-500",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 157.5,
+        "mlPerDose": 0.32
+      }
+    }
+  ],
+  "atc": [
+    "B03XA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18988",
+        "en": "ARANESP 100MCG VIAL",
+        "fa": "ویال آرانسپ ۱۰۰ میکروگرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1386/Darbepoetin-Alfa",
+        "url": "https://www.darooyab.ir/G-1386/Darbepoetin-Alfa"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-aranesp",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103951"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103951",
+      "label": "BLA103951"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0fd36cb9-c4f6-4167-93c9-8530865db3f9",
+      "label": "FDA Aranesp"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604022.html",
+      "label": "Darbepoetin Alfa Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B03XA02",
+      "label": "B03XA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1386/Darbepoetin-Alfa",
+      "label": "Darbepoetin-Alfa"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The limited available data on Aranesp use in pregnant women are insufficient to determine a drug-associated risk of major birth defects or miscarriage.",
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of Aranesp in human milk, the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Pediatric Patients with CKD The safety and effectiveness of Aranesp in pediatric patients with CKD receiving and not receiving dialysis have been established in the age groups 1 month to 16 years old.",
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 1801 patients with CKD in clinical studies of Aranesp, 44% were age 65 and over, while 17% were age 75 and over.",
+      "refs": [
+        {
+          "source": "fda-aranesp",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

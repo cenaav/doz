@@ -1,0 +1,271 @@
+{
+  "id": "trospium",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تروسپیوم",
+    "en": "Trospium"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آنتی‌موسکارینی (آمین چهارتایی)",
+    "en": "Quaternary-amine antimuscarinic"
+  },
+  "brands": [
+    {
+      "name": "Sanctura",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sanctura",
+    "spasmex",
+    "تروسپیوم"
+  ],
+  "formulations": [
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-trospium",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oab",
+      "disease": "overactive-bladder",
+      "label": {
+        "fa": "مثانه بیش‌فعال بزرگسال — ۲۰ mg دو بار، دست‌کم ۱ ساعت پیش از غذا",
+        "en": "Overactive bladder, adults — 20 mg twice daily, at least 1 h before meals"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-trospium",
+          "section": "2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "۷۵ سال به بالا: بر اساس تحمل تا ۲۰ mg یک بار.",
+            "en": "≥75 y: may reduce to 20 mg once daily by tolerability."
+          },
+          "refs": [
+            {
+              "source": "fda-trospium",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "احتباس ادرار؛ احتباس معده؛ گلوکوم زاویه بسته کنترل‌نشده؛ حساسیت.",
+        "en": "Urinary retention; gastric retention; uncontrolled narrow-angle glaucoma; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-trospium",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "احتباس ادرار (به‌ویژه با انسداد خروجی مثانه)؛ آنژیوادم؛ کاهش حرکات گوارش؛ عوارض CNS (گیجی، خواب‌آلودگی).",
+        "en": "Urinary retention (especially with bladder outlet obstruction); angioedema; decreased GI motility; CNS effects (confusion, somnolence)."
+      },
+      "refs": [
+        {
+          "source": "fda-trospium",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۳۰: ۲۰ mg یک بار هنگام خواب.",
+        "en": "CrCl <30: 20 mg once daily at bedtime."
+      },
+      "refs": [
+        {
+          "source": "fda-trospium",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oab",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G04BD09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "16102",
+        "en": "TROSPIUM 20MG TAB",
+        "fa": "قرص تروسپیوم ۲۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-932/Trospium-Chloride",
+        "url": "https://www.darooyab.ir/G-932/Trospium-Chloride"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204945",
+      "label": "ANDA204945"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=570c3ae7-8011-4944-8935-57d0a66102aa",
+      "label": "FDA Trospium"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604037.html",
+      "label": "Trospium"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BD09",
+      "label": "G04BD09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-932/Trospium-Chloride",
+      "label": "Trospium-Chloride"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category C: There are no adequate and well-controlled studies of trospium chloride in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-trospium",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Trospium chloride (2 mg/kg orally and 50 mcg/kg intravenously) was excreted, to a limited extent (less than 1%), into the milk of lactating rats (primarily as parent compound).",
+      "refs": [
+        {
+          "source": "fda-trospium",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of trospium chloride in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-trospium",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Therefore, based upon tolerability, the dose frequency of trospium chloride may be reduced to 20 mg once daily in patients 75 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-trospium",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-trospium",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA204945"
+  }
+}

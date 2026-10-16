@@ -1,0 +1,245 @@
+{
+  "id": "tezepelumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تزپلوماب",
+    "en": "Tezepelumab"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آنتی‌بادی ضد TSLP",
+    "en": "Anti-TSLP antibody"
+  },
+  "brands": [
+    {
+      "name": "Tezspire",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tezspire",
+    "تزسپایر",
+    "تزپلوماب"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-210",
+      "form": "injection",
+      "route": "sc",
+      "label": "210 mg/1.91 mL (110 mg/mL) syringe, pen or vial",
+      "concentration": {
+        "amount": 210,
+        "unit": "mg",
+        "perVolumeMl": 1.91
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tezspire",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "asthma",
+      "disease": "asthma",
+      "label": {
+        "fa": "آسم شدید (افزودنی، ۱۲ سال به بالا) — ۲۱۰ mg زیرجلدی هر ۴ هفته",
+        "en": "Severe asthma (add-on, ≥12 y) — 210 mg SC every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 210,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tezspire",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به تزپلوماب.",
+        "en": "Hypersensitivity to tezepelumab."
+      },
+      "refs": [
+        {
+          "source": "fda-tezspire",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی؛ برای حمله حاد آسم نیست؛ کورتیکواستروئید را ناگهانی قطع نکنید؛ عفونت کرمی پیش از شروع درمان شود.",
+        "en": "Hypersensitivity; not for acute asthma; do not stop corticosteroids abruptly; treat helminth infection before starting."
+      },
+      "refs": [
+        {
+          "source": "fda-tezspire",
+          "section": "5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واکسن زنده در طول درمان نه.",
+        "en": "Avoid live attenuated vaccines."
+      },
+      "refs": [
+        {
+          "source": "fda-tezspire",
+          "section": "5.5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "asthma",
+      "formulation": "pfs-210",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 210,
+        "mlPerDose": 1.91
+      }
+    }
+  ],
+  "atc": [
+    "R03DX11"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Tezepelumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-tezspire",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761224"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761224",
+      "label": "BLA761224"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=60f0aa03-ad25-4d48-80ce-7fcfa76f325f",
+      "label": "FDA Tezspire"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a622010.html",
+      "label": "Tezepelumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03DX11",
+      "label": "R03DX11"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on TEZSPIRE use in pregnant women to evaluate for any drug-associated risk of major birth defects, miscarriage, or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-tezspire",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of tezepelumab-ekko in human milk, its effects on the breastfed infant, or its effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-tezspire",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Asthma The safety and effectiveness of TEZSPIRE for the add-on maintenance treatment of severe asthma have been established in pediatric patients aged 12 years and older [see Adverse Reactions (6.1) and Clinical Studies (14.1)] .",
+      "refs": [
+        {
+          "source": "fda-tezspire",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness of TEZSPIRE have been observed between patients 65 years of age and older and younger patients [see Adverse Reactions (6.1) and Clinical Studies (14.1) ] .",
+      "refs": [
+        {
+          "source": "fda-tezspire",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

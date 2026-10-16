@@ -1,0 +1,310 @@
+{
+  "id": "acitretin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آسیترتین",
+    "en": "Acitretin"
+  },
+  "category": "dermatology",
+  "class": {
+    "fa": "رتینوئید سیستمیک",
+    "en": "Systemic retinoid"
+  },
+  "brands": [
+    {
+      "name": "Soriatane",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "soriatane",
+    "neotigason",
+    "نئوتیگازون",
+    "آسیترتین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-25",
+      "form": "capsule",
+      "route": "oral",
+      "label": "25 mg capsule",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acitretin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-10",
+      "form": "capsule",
+      "route": "oral",
+      "label": "10 mg capsule",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acitretin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-17-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "17.5 mg capsule",
+      "concentration": {
+        "amount": 17.5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-acitretin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pso",
+      "disease": "psoriasis",
+      "label": {
+        "fa": "پسوریازیس شدید بزرگسال — ۲۵ تا ۵۰ mg یک بار با وعده اصلی",
+        "en": "Severe psoriasis, adults — 25–50 mg once daily with the main meal"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "perDoseMax": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-acitretin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده ۲۵ تا ۵۰ mg بر اساس پاسخ. با فوتوتراپی دوز نور کم شود. حداکثر یک ماه دارو در هر بار تحویل.",
+            "en": "Maintenance 25–50 mg by response. Reduce phototherapy dose if combined. Dispense no more than a month at a time."
+          },
+          "refs": [
+            {
+              "source": "fda-acitretin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری یا قصد بارداری حین درمان و تا ۳ سال پس از قطع؛ نارسایی شدید کبد یا کلیه؛ چربی خون بالای مزمن؛ متوترکسات همزمان (هپاتیت)؛ تتراسایکلین‌ها (فشار داخل جمجمه)؛ الکل در زنان (تبدیل به اترتینات).",
+        "en": "Pregnancy or intended pregnancy during and for 3 years after; severe hepatic or renal impairment; chronic hyperlipidaemia; concomitant methotrexate (hepatitis); tetracyclines (raised intracranial pressure); alcohol in women (converts to etretinate)."
+      },
+      "refs": [
+        {
+          "source": "fda-acitretin",
+          "section": "Contraindications"
+        },
+        {
+          "source": "fda-acitretin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: ناهنجاری شدید جنینی — زنان تا ۳ سال پس از قطع پیشگیری مطمئن (دو روش) و الکل ممنوع؛ سمیت کبدی.",
+        "en": "Boxed warning: severe birth defects — women need reliable contraception (two methods) and no alcohol for 3 years after stopping; hepatotoxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-acitretin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pso",
+      "formulation": "cap-25",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 50
+      }
+    }
+  ],
+  "atc": [
+    "D05BB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00017",
+        "en": "ACITRETIN 10MG CAP",
+        "fa": "کپسول آسیترتین ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00018",
+        "en": "ACITRETIN 25MG CAP",
+        "fa": "کپسول آسیترتین ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2238/Acitretin",
+        "url": "https://www.darooyab.ir/G-2238/Acitretin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-acitretin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA204633"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204633",
+      "label": "ANDA204633"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6546625-acb8-460e-b34e-f795bfb3680a",
+      "label": "FDA Acitretin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601010.html",
+      "label": "Acitretin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=D05BB02",
+      "label": "D05BB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2238/Acitretin",
+      "label": "Acitretin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Pregnancy: S ee boxed CONTRAINDICATIONS AND WARNINGS .",
+      "refs": [
+        {
+          "source": "fda-acitretin",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Studies on lactating rats have shown that etretinate is excreted in the milk.",
+      "refs": [
+        {
+          "source": "fda-acitretin",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-acitretin",
+          "section": "Pediatric Use:"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-acitretin",
+          "section": "Geriatric Use:"
+        }
+      ]
+    }
+  }
+}

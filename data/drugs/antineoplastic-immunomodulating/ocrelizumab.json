@@ -1,0 +1,369 @@
+{
+  "id": "ocrelizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اوکرلیزوماب",
+    "en": "Ocrelizumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد CD20",
+    "en": "Anti-CD20 antibody"
+  },
+  "brands": [
+    {
+      "name": "Ocrevus",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ocrevus",
+    "اوکرووس",
+    "اکرلیزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "vial-300",
+      "form": "injection",
+      "route": "iv",
+      "label": "300 mg/10 mL (30 mg/mL) vial",
+      "concentration": {
+        "amount": 300,
+        "unit": "mg",
+        "perVolumeMl": 10
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "start",
+      "disease": "multiple-sclerosis",
+      "label": {
+        "fa": "ام‌اس عودکننده یا پیشرونده اولیه — شروع: دو انفوزیون با ۲ هفته فاصله؛ ≥۳۵ kg: ۳۰۰ mg هر بار؛ کودک ۱۰ سال، ۲۵ تا <۳۵ kg: ۱۵۰ mg",
+        "en": "Relapsing or primary progressive MS — start: two infusions 2 weeks apart; ≥35 kg: 300 mg each; children ≥10 y, 25–<35 kg: 150 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        },
+        "minWeightKg": 25
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 24.99,
+            "maxWeightKg": 34.99,
+            "perDose": 150,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 34.99,
+            "maxWeightKg": null,
+            "perDose": 300,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش‌دارو متیل‌پردنیزولون و آنتی‌هیستامین پیش از هر انفوزیون؛ پایش تا ۱ ساعت بعد. پیش از شروع HBV، ایمونوگلوبولین و آنزیم کبد.",
+            "en": "Premedicate with methylprednisolone and an antihistamine before each infusion; observe for 1 h after. Screen HBV, immunoglobulins and liver tests first."
+          },
+          "refs": [
+            {
+              "source": "fda-ocrevus",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-ocrevus",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "multiple-sclerosis",
+      "label": {
+        "fa": "نگهدارنده هر ۶ ماه — ≥۳۵ kg: ۶۰۰ mg؛ ۲۵ تا <۳۵ kg: ۳۰۰ mg",
+        "en": "Maintenance every 6 months — ≥35 kg: 600 mg; 25–<35 kg: 300 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        },
+        "minWeightKg": 25
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 24.99,
+            "maxWeightKg": 34.99,
+            "perDose": 300,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 34.99,
+            "maxWeightKg": null,
+            "perDose": 600,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "عفونت فعال HBV؛ سابقه واکنش انفوزیون تهدیدکننده حیات به اوکرلیزوماب.",
+        "en": "Active HBV infection; history of life-threatening infusion reaction to ocrelizumab."
+      },
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "عفونت (HBV پیش از شروع)؛ PML؛ کاهش ایمونوگلوبولین‌ها؛ آسیب کبد.",
+        "en": "Infections (screen HBV first); PML; reduced immunoglobulins; liver injury."
+      },
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واکنش انفوزیون؛ بدخیمی (پستان)؛ کولیت ایمنی.",
+        "en": "Infusion reactions; malignancies (breast); immune-mediated colitis."
+      },
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "start",
+      "formulation": "vial-300",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 300,
+        "mlPerDose": 10
+      }
+    },
+    {
+      "regimen": "start",
+      "formulation": "vial-300",
+      "input": {
+        "ageYears": 11,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "vial-300",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 600,
+        "mlPerDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "L04AG08"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52172",
+        "en": "OCRELIZUMAB 300 MG/10 ML INJECTION",
+        "fa": "فرآورده تزریقی اکرلیزومب ۳۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1720/Ocrelizumab",
+        "url": "https://www.darooyab.ir/G-1720/Ocrelizumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-ocrevus",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761053"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761053",
+      "label": "BLA761053"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9da42362-3bb5-4b83-b4bb-b59fd4e55f0d",
+      "label": "FDA Ocrevus"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a617026.html",
+      "label": "Ocrelizumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AG08",
+      "label": "L04AG08"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1720/Ocrelizumab",
+      "label": "Ocrelizumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary OCREVUS is a humanized monoclonal antibody of an immunoglobulin G1 subtype and immunoglobulins are known to cross the placental barrier.",
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of ocrelizumab in human milk, the effects on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of OCREVUS for the treatment of relapsing-remitting MS have been established in pediatric patients 10 years of age and older who weigh 25 kg or more.",
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of OCREVUS did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females of reproductive potential should use effective contraception while receiving OCREVUS and for 6 months after the last infusion of OCREVUS [see Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-ocrevus",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

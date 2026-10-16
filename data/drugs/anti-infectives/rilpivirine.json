@@ -1,0 +1,262 @@
+{
+  "id": "rilpivirine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریلپیویرین",
+    "en": "Rilpivirine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "NNRTI",
+    "en": "NNRTI"
+  },
+  "brands": [
+    {
+      "name": "Edurant",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "edurant",
+    "ادورانت",
+    "ریلپیویرین",
+    "RPV"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-edurant",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hiv",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 درمان‌نشده — ≥۲۵ kg: ۲۵ mg یک بار با غذا",
+        "en": "HIV-1 treatment-naive — ≥25 kg: 25 mg once daily with a meal"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "minWeightKg": 25
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-edurant",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همیشه همراه سایر داروهای ضدرتروویروس (مگر فرآورده کامل).",
+            "en": "Always with other antiretrovirals (unless a complete regimen)."
+          },
+          "refs": [
+            {
+              "source": "fda-edurant",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "با ریفابوتین: ۵۰ mg روزانه. ۱۴ تا <۲۵ kg: Edurant PED (mg به mg جایگزین نیست).",
+            "en": "With rifabutin: 50 mg daily. 14–<25 kg: Edurant PED (not interchangeable mg-for-mg)."
+          },
+          "refs": [
+            {
+              "source": "fda-edurant",
+              "section": "2.7"
+            },
+            {
+              "source": "fda-edurant",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "القاگرهای CYP3A یا افزاینده pH معده که سطح را شدیداً کم می‌کنند: کاربامازپین، اکس‌کاربازپین، فنوباربیتال، فنی‌توئین، ریفامپین، ریفاپنتین، PPIها، دگزامتازون چنددوزی، گل راعی.",
+        "en": "CYP3A inducers or gastric pH-raising drugs that markedly lower levels: carbamazepine, oxcarbazepine, phenobarbital, phenytoin, rifampin, rifapentine, proton-pump inhibitors, multiple-dose dexamethasone, St John’s wort."
+      },
+      "refs": [
+        {
+          "source": "fda-edurant",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش پوستی و حساسیت (DRESS)؛ افسردگی؛ سمیت کبد؛ طولانی شدن QT در دوز بالا.",
+        "en": "Skin and hypersensitivity reactions (DRESS); depressive disorders; hepatotoxicity; QT prolongation at supratherapeutic doses."
+      },
+      "refs": [
+        {
+          "source": "fda-edurant",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hiv",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J05AG05"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Rilpivirine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-edurant",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA202022"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202022",
+      "label": "NDA202022"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03880372-2c68-45c6-a53a-f420c49541d6",
+      "label": "FDA Edurant"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611037.html",
+      "label": "Rilpivirine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AG05",
+      "label": "J05AG05"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های رجیستری بارداری (APR) تفاوتی با میزان زمینه‌ای نقص مادرزادی نشان نمی‌دهد.",
+        "en": "Label: Antiretroviral Pregnancy Registry data show no difference from the background birth-defect rate."
+      },
+      "quote": "Available data from the APR show no difference in the overall risk of birth defects for rilpivirine compared with the background rate for major birth defects of 2.7% in the Metropolitan Atlanta Congenital Defects Program (MACDP) reference population.",
+      "refs": [
+        {
+          "source": "fda-edurant",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Based on limited data after oral administration, rilpivirine is present in human breast milk.",
+      "refs": [
+        {
+          "source": "fda-edurant",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of EDURANT and EDURANT PED has been established for the treatment of HIV-1 infection in treatment-naïve pediatric patients 2 years of age and older and weighing at least 14 kg.",
+      "refs": [
+        {
+          "source": "fda-edurant",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, caution should be exercised in the administration and monitoring of EDURANT in elderly patients reflecting the greater frequency of decreased renal and hepatic function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-edurant",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

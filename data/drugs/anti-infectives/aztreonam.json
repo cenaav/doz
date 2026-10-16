@@ -1,0 +1,370 @@
+{
+  "id": "aztreonam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آزترئونام",
+    "en": "Aztreonam"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مونوباکتام",
+    "en": "Monobactam"
+  },
+  "brands": [
+    {
+      "name": "Azactam",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "azactam",
+    "آزترئونام",
+    "آزترونام"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g vial",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "vial-2g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "2 g vial",
+      "concentration": {
+        "amount": 2000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "uti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "UTI — بزرگسال ۵۰۰ mg یا ۱ g هر ۸ تا ۱۲ ساعت",
+        "en": "UTI — adult 500 mg or 1 g every 8–12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "perDoseMax": 1000,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "severe",
+      "disease": "sepsis",
+      "label": {
+        "fa": "عفونت شدید یا تهدیدکننده حیات (پسودوموناس) — بزرگسال ۲ g هر ۶ تا ۸ ساعت",
+        "en": "Severe or life-threatening infection (Pseudomonas) — adult 2 g every 6–8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2000,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 8000,
+        "refs": [
+          {
+            "source": "fda-azactam",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عفونت سیستمیک متوسط: ۱ یا ۲ g هر ۸ تا ۱۲ ساعت. حداکثر ۸ g/روز. حساسیت متقاطع با سایر بتالاکتام‌ها نادر است.",
+            "en": "Moderately severe systemic: 1 or 2 g every 8–12 h. Max 8 g/day. Cross-reactivity with other beta-lactams is rare."
+          },
+          "refs": [
+            {
+              "source": "fda-azactam",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-azactam",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "sepsis",
+      "label": {
+        "fa": "کودک ۹ ماه تا ۱۶ سال — ۳۰ mg/kg هر ۶ تا ۸ ساعت (حداکثر ۱۲۰ mg/kg/روز)",
+        "en": "Children 9 months–16 y — 30 mg/kg every 6–8 h (max 120 mg/kg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 9,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 30,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 120,
+        "refs": [
+          {
+            "source": "fda-azactam",
+            "section": "Dosage and Administration"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آزترئونام.",
+        "en": "Hypersensitivity to aztreonam."
+      },
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش آلرژیک جدی؛ اسهال مرتبط با کلستریدیوئیدس دیفیسیل.",
+        "en": "Serious hypersensitivity; Clostridioides difficile-associated diarrhoea."
+      },
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "uti",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500,
+        "upperPerDose": 1000
+      }
+    },
+    {
+      "regimen": "severe",
+      "formulation": "vial-2g",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2000,
+        "dosesPerDay": 3
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 600
+      }
+    }
+  ],
+  "atc": [
+    "J01DF01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-288/Aztreonam",
+        "url": "https://www.darooyab.ir/G-288/Aztreonam"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050580",
+      "label": "NDA050580"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a105eaf-ee77-4016-beeb-d425a5565db2",
+      "label": "FDA Azactam"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a687010.html",
+      "label": "Aztreonam Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DF01",
+      "label": "J01DF01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-288/Aztreonam",
+      "label": "Aztreonam"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, aztreonam should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Aztreonam is excreted in human milk in concentrations that are less than 1% of concentrations determined in simultaneously obtained maternal serum; consideration should be given to temporary discontinuation of nursing and use of formula feedings.",
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of intravenous AZACTAM have been established in the age groups 9 months to 16 years.",
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-azactam",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-azactam",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA050580"
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "id": "aprepitant",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آپری‌پیتانت",
+    "en": "Aprepitant"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتاگونیست گیرنده NK1",
+    "en": "NK1 receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Emend",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "emend",
+    "امند",
+    "آپرپیتانت",
+    "آپریپیتانت"
+  ],
+  "formulations": [
+    {
+      "id": "cap-125",
+      "form": "capsule",
+      "route": "oral",
+      "label": "125 mg capsule",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perUnit": "capsule"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-80",
+      "form": "capsule",
+      "route": "oral",
+      "label": "80 mg capsule",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "capsule"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "d1",
+      "disease": "cinv",
+      "label": {
+        "fa": "پیشگیری تهوع شیمی‌درمانی (بزرگسال و ۱۲ سال به بالا) — روز ۱: ۱۲۵ mg، ۱ ساعت پیش از شیمی‌درمانی",
+        "en": "CINV prevention (adults and ≥12 y) — day 1: 125 mg, 1 h before chemotherapy"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 125,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "cap-125"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه کورتیکواستروئید و آنتاگونیست 5-HT3. ۶ ماه تا <۱۲ سال یا ناتوان از بلع: سوسپانسیون طبق جدول ۳.",
+            "en": "With a corticosteroid and a 5-HT3 antagonist. 6 months to <12 y or unable to swallow: suspension per Table 3."
+          },
+          "refs": [
+            {
+              "source": "fda-emend",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d23",
+      "disease": "cinv",
+      "label": {
+        "fa": "روز ۲ و ۳: ۸۰ mg یک بار (صبح اگر شیمی‌درمانی نیست)",
+        "en": "Days 2 and 3: 80 mg once daily (in the morning if no chemotherapy)"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 80,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 2,
+        "max": 2
+      },
+      "allowedFormulations": [
+        "cap-80"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزای فرآورده؛ پیموزاید همزمان (QT).",
+        "en": "Hypersensitivity to any component; concomitant pimozide (QT prolongation)."
+      },
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "تداخل مهم CYP3A4؛ کاهش INR با وارفارین (پایش ۷ تا ۱۰ روز)؛ کاهش اثر ضدبارداری هورمونی تا ۲۸ روز.",
+        "en": "Clinically significant CYP3A4 interactions; decreased INR with warfarin (monitor days 7–10); reduced hormonal contraceptive efficacy for 28 days."
+      },
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "d1",
+      "formulation": "cap-125",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 125,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "d23",
+      "formulation": "cap-80",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 80,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A04AD12"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18986",
+        "en": "APREPITANT 125/80/80MG CAP",
+        "fa": "کپسول اپرپیتانت ۱۲۵ / ۸۰ / ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "12008",
+        "en": "APREPITANT 125/80/80MG TAB",
+        "fa": "قرص اپرپیتانت ۱۲۵ / ۸۰ / ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "13434",
+        "en": "APREPITANT 125MG CAP",
+        "fa": "کپسول اپرپیتانت ۱۲۵ میلی‌گرم"
+      },
+      {
+        "code": "13435",
+        "en": "APREPITANT 80MG CAP",
+        "fa": "کپسول اپرپیتانت ۸۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2543/Aprepitant",
+        "url": "https://www.darooyab.ir/G-2543/Aprepitant"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-emend",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021549"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021549",
+      "label": "NDA021549"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=696f9e80-9cae-403b-de9e-078343ce4713",
+      "label": "FDA Emend"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a604003.html",
+      "label": "Aprepitant"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a617042.html",
+      "label": "Aprepitant/Fosaprepitant Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A04AD12",
+      "label": "A04AD12"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2543/Aprepitant",
+      "label": "Aprepitant"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are insufficient data on use of EMEND in pregnant women to inform a drug associated risk.",
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Lactation studies have not been conducted to assess the presence of aprepitant in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of EMEND for oral suspension have been established in pediatric patients 6 months of age and older and EMEND capsules in pediatric patients 12 years of age and older for the prevention of acute and delayed nausea and vomiting associated with initial and repeat courses of HEC, including …",
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, use caution when dosing elderly patients as they have a greater frequency of decreased hepatic, renal or cardiac function and concomitant disease or other drug therapy [see Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Upon administration of EMEND, the efficacy of hormonal contraceptives may be reduced.",
+      "refs": [
+        {
+          "source": "fda-emend",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

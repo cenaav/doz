@@ -1,0 +1,282 @@
+{
+  "id": "dipyridamole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دی‌پیریدامول",
+    "en": "Dipyridamole"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مهارکننده پلاکت",
+    "en": "Platelet inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Persantine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "persantine",
+    "پرسانتین",
+    "دیپیریدامول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dipyridamole",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-50",
+      "form": "tablet",
+      "route": "oral",
+      "label": "50 mg tablet",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dipyridamole",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "tab-75",
+      "form": "tablet",
+      "route": "oral",
+      "label": "75 mg tablet",
+      "concentration": {
+        "amount": 75,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dipyridamole",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "valve",
+      "disease": "valve-thromboprophylaxis",
+      "label": {
+        "fa": "پیشگیری از ترومبوآمبولی پس از تعویض دریچه (همراه وارفارین) — ۷۵ تا ۱۰۰ mg چهار بار در روز",
+        "en": "After heart-valve replacement (with warfarin) — 75–100 mg four times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 75,
+        "perDoseMax": 100,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-dipyridamole",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه وارفارین؛ آسپرین همزمان با کومارین داده نشود.",
+            "en": "With warfarin; do not give aspirin with coumarin anticoagulants."
+          },
+          "refs": [
+            {
+              "source": "fda-dipyridamole",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به دی‌پیریدامول.",
+        "en": "Hypersensitivity to dipyridamole."
+      },
+      "refs": [
+        {
+          "source": "fda-dipyridamole",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "valve",
+      "formulation": "tab-75",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 75,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "B01AC07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00459",
+        "en": "DIPYRIDAMOLE 10MG/2ML AMP",
+        "fa": "آمپول دی‌پیریدامول ۱۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "00460",
+        "en": "DIPYRIDAMOLE 25MG TAB",
+        "fa": "قرص دی‌پیریدامول ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00461",
+        "en": "DIPYRIDAMOLE 75MG TAB",
+        "fa": "قرص دی‌پیریدامول ۷۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1644/Dipyridamole",
+        "url": "https://www.darooyab.ir/G-1644/Dipyridamole"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-dipyridamole",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA040782"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=040782",
+      "label": "ANDA040782"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a18b2af5-7c4a-4b7f-92c7-8a76e34da373",
+      "label": "FDA Dipyridamole"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682830.html",
+      "label": "Dipyridamole"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC07",
+      "label": "B01AC07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1644/Dipyridamole",
+      "label": "Dipyridamole"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Because animal reproduction studies are not always predictive of human response, dipyridamole tablets should be used during pregnancy only if clearly needed.",
+      "refs": [
+        {
+          "source": "fda-dipyridamole",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "As dipyridamole is excreted in human milk, caution should be exercised when dipyridamole tablets are administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-dipyridamole",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness in the pediatric population below the age of 12 years have not been established.",
+      "refs": [
+        {
+          "source": "fda-dipyridamole",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

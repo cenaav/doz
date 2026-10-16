@@ -1,0 +1,364 @@
+{
+  "id": "lubiprostone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لوبی‌پروستون",
+    "en": "Lubiprostone"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "فعال‌کننده کانال کلر (ملین)",
+    "en": "Chloride-channel activator (laxative)"
+  },
+  "brands": [
+    {
+      "name": "Amitiza",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "amitiza",
+    "آمیتیزا",
+    "لوبیپروستون"
+  ],
+  "formulations": [
+    {
+      "id": "cap-24",
+      "form": "capsule",
+      "route": "oral",
+      "label": "24 mcg capsule",
+      "concentration": {
+        "amount": 24,
+        "unit": "mcg",
+        "perUnit": "capsule"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "cap-8",
+      "form": "capsule",
+      "route": "oral",
+      "label": "8 mcg capsule",
+      "concentration": {
+        "amount": 8,
+        "unit": "mcg",
+        "perUnit": "capsule"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cic",
+      "disease": "chronic-idiopathic-constipation",
+      "label": {
+        "fa": "یبوست مزمن ایدیوپاتیک بزرگسال — ۲۴ mcg دو بار با غذا",
+        "en": "Chronic idiopathic constipation, adults — 24 mcg twice daily with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 24,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-24"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نارسایی متوسط کبد: ۱۶ mcg دو بار؛ شدید: ۸ mcg دو بار. کامل بلعیده شود.",
+            "en": "Moderate hepatic impairment: 16 mcg twice daily; severe: 8 mcg twice daily. Swallow whole."
+          },
+          "refs": [
+            {
+              "source": "fda-amitiza",
+              "section": "2.1, Table 1"
+            },
+            {
+              "source": "fda-amitiza",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oic",
+      "disease": "opioid-induced-constipation",
+      "label": {
+        "fa": "یبوست ناشی از اپیوئید در درد مزمن غیرسرطانی — ۲۴ mcg دو بار",
+        "en": "Opioid-induced constipation in chronic non-cancer pain — 24 mcg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 24,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-24"
+      ]
+    },
+    {
+      "id": "ibsc",
+      "disease": "ibs",
+      "label": {
+        "fa": "IBS با یبوست در زنان ۱۸ سال به بالا — ۸ mcg دو بار",
+        "en": "IBS with constipation in women ≥18 y — 8 mcg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 8,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "cap-8"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "انسداد مکانیکی گوارش (شناخته یا مشکوک).",
+        "en": "Known or suspected mechanical GI obstruction."
+      },
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "تهوع؛ اسهال؛ سنکوپ و افت فشار؛ تنگی نفس.",
+        "en": "Nausea; diarrhoea; syncope and hypotension; dyspnoea."
+      },
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cic",
+      "formulation": "cap-24",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 24,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "oic",
+      "formulation": "cap-24",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 24,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "ibsc",
+      "formulation": "cap-8",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 8,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A06AX03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "51409",
+        "en": "LUBIPROSTONE 8 ug CAPSULE",
+        "fa": "کپسول لوبیپروستون ۸ میکروگرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5501/lubiprostone",
+        "url": "https://www.darooyab.ir/G-5501/lubiprostone"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-amitiza",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021908"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021908",
+      "label": "NDA021908"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=164a2b47-0a52-4bb4-9e71-5342c2e951f4",
+      "label": "FDA Amitiza"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607034.html",
+      "label": "Lubiprostone"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A06AX03",
+      "label": "A06AX03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5501/lubiprostone",
+      "label": "lubiprostone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Following oral administration, concentrations of lubiprostone in plasma are below the level of quantitation; however, one of the metabolites, M3, has measurable systemic concentrations [see Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data available on the presence of lubiprostone in human milk or the effect of lubiprostone on milk production.",
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have not been established in pediatric patients with IBS-C, pediatric functional constipation (PFC), and OIC.",
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Chronic Idiopathic Constipation The efficacy of Amitiza 24 mcg twice daily in the elderly (at least 65 years of age) subpopulation with CIC was consistent with the efficacy in the overall study population.",
+      "refs": [
+        {
+          "source": "fda-amitiza",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

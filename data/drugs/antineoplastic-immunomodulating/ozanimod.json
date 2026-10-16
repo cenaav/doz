@@ -1,0 +1,308 @@
+{
+  "id": "ozanimod",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اوزانیمود",
+    "en": "Ozanimod"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "تعدیل‌کننده گیرنده S1P",
+    "en": "S1P receptor modulator"
+  },
+  "brands": [
+    {
+      "name": "Zeposia",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zeposia",
+    "زپوسیا",
+    "اوزانیمود"
+  ],
+  "formulations": [
+    {
+      "id": "cap-0-92",
+      "form": "capsule",
+      "route": "oral",
+      "label": "0.92 mg capsule",
+      "concentration": {
+        "amount": 0.92,
+        "unit": "mg",
+        "perUnit": "capsule"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zeposia",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ms",
+      "disease": "multiple-sclerosis",
+      "label": {
+        "fa": "ام‌اس عودکننده بزرگسال — ۰٫۹۲ mg یک بار از روز ۸ پس از تیتراسیون ۷ روزه",
+        "en": "Relapsing MS, adults — 0.92 mg once daily from day 8 after a 7-day titration"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.92,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zeposia",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "روز ۱–۴: ۰٫۲۳ mg؛ روز ۵–۷: ۰٫۴۶ mg. نارسایی خفیف/متوسط کبد: ۰٫۹۲ mg یک روز در میان. فراموشی دوز در ۲ هفته اول: تیتراسیون از نو.",
+            "en": "Days 1–4: 0.23 mg; days 5–7: 0.46 mg. Mild/moderate hepatic impairment: 0.92 mg every other day. Missed dose in the first 2 weeks: restart titration."
+          },
+          "refs": [
+            {
+              "source": "fda-zeposia",
+              "section": "2.2, Table 1"
+            },
+            {
+              "source": "fda-zeposia",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-zeposia",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc",
+      "disease": "ulcerative-colitis",
+      "label": {
+        "fa": "کولیت اولسراتیو متوسط تا شدید بزرگسال — ۰٫۹۲ mg یک بار از روز ۸ پس از تیتراسیون",
+        "en": "Moderate–severe ulcerative colitis, adults — 0.92 mg once daily from day 8 after titration"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.92,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-zeposia",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "در ۶ ماه اخیر: MI، آنژین ناپایدار، سکته، TIA، نارسایی قلب جبران‌نشده یا کلاس III/IV؛ بلوک AV موبیتز II یا درجه ۳ یا سندرم سینوس بیمار بدون پیس‌میکر؛ آپنه خواب شدید درمان‌نشده؛ مهارکننده MAO همزمان.",
+        "en": "Within 6 months: MI, unstable angina, stroke, TIA, decompensated or class III/IV heart failure; Mobitz II or third-degree AV block or sick sinus syndrome without a pacemaker; severe untreated sleep apnoea; concomitant MAO inhibitors."
+      },
+      "refs": [
+        {
+          "source": "fda-zeposia",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "عفونت و PML؛ ادم ماکولا؛ برادی‌آریتمی در شروع؛ اثر تنفسی؛ آسیب کبد؛ سرطان پوست؛ افزایش فشار خون؛ خطر جنینی؛ تشدید شدید ناتوانی پس از قطع.",
+        "en": "Infections and PML; macular oedema; bradyarrhythmia at initiation; respiratory effects; liver injury; skin cancer; raised blood pressure; fetal risk; severe disability increase after stopping."
+      },
+      "refs": [
+        {
+          "source": "fda-zeposia",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ms",
+      "formulation": "cap-0-92",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 0.92,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "uc",
+      "formulation": "cap-0-92",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 0.92,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L04AE02"
+  ],
+  "iran": {
+    "status": "registered",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5538/Ozanimod",
+        "url": "https://www.darooyab.ir/G-5538/Ozanimod"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-zeposia",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA209899"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209899",
+      "label": "NDA209899"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=93ce2fab-edfb-4804-8074-963071de51e4",
+      "label": "FDA Zeposia"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620029.html",
+      "label": "Ozanimod"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AE02",
+      "label": "L04AE02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5538/Ozanimod",
+      "label": "Ozanimod"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate data on the developmental risk associated with the use of ZEPOSIA in pregnant women .",
+      "refs": [
+        {
+          "source": "fda-zeposia",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of ozanimod in human milk, the effects on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-zeposia",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-zeposia",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Monitor elderly patients for cardiac and hepatic adverse reactions, because of the greater frequency of reduced cardiac and hepatic function in the elderly population.",
+      "refs": [
+        {
+          "source": "fda-zeposia",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Before initiation of ZEPOSIA treatment, women of childbearing potential should be counseled on the potential for a serious risk to the fetus and the need for contraception during treatment with ZEPOSIA [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-zeposia",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

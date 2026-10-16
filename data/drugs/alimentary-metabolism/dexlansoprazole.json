@@ -1,0 +1,377 @@
+{
+  "id": "dexlansoprazole",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دکس‌لانزوپرازول",
+    "en": "Dexlansoprazole"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده پمپ پروتون",
+    "en": "Proton-pump inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Dexilant",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "dexilant",
+    "دکسیلانت",
+    "دکسلانزوپرازول"
+  ],
+  "formulations": [
+    {
+      "id": "dr-60",
+      "form": "capsule",
+      "route": "oral",
+      "label": "60 mg delayed-release capsule",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "capsule"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "dr-30",
+      "form": "capsule",
+      "route": "oral",
+      "label": "30 mg delayed-release capsule",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "capsule"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ee",
+      "disease": "erosive-esophagitis",
+      "label": {
+        "fa": "درمان ازوفاژیت اروزیو (۱۲ سال به بالا) — ۶۰ mg یک بار، تا ۸ هفته",
+        "en": "Healing of erosive oesophagitis (≥12 y) — 60 mg once daily up to 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 60,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 56
+      },
+      "allowedFormulations": [
+        "dr-60"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بدون توجه به غذا؛ کامل بلعیده شود. نارسایی متوسط کبد: ۳۰ mg تا ۸ هفته؛ شدید توصیه نمی‌شود.",
+            "en": "Without regard to food; swallow whole. Moderate hepatic impairment: 30 mg up to 8 weeks; severe not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-dexilant",
+              "section": "2"
+            },
+            {
+              "source": "fda-dexilant",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "erosive-esophagitis",
+      "label": {
+        "fa": "نگهداری ازوفاژیت بهبودیافته و رفع سوزش سر دل — ۳۰ mg یک بار",
+        "en": "Maintenance of healed EE and heartburn relief — 30 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "dr-30"
+      ]
+    },
+    {
+      "id": "nerd",
+      "disease": "gerd",
+      "label": {
+        "fa": "GERD غیراروزیو علامت‌دار — ۳۰ mg یک بار، ۴ هفته",
+        "en": "Symptomatic non-erosive GERD — 30 mg once daily for 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 30,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 28,
+        "max": 28
+      },
+      "allowedFormulations": [
+        "dr-30"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اجزای فرآورده (آنافیلاکسی، نفریت بینابینی)؛ فرآورده‌های حاوی ریلپیویرین.",
+        "en": "Hypersensitivity to any component (anaphylaxis, interstitial nephritis); rilpivirine-containing products."
+      },
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پوشاندن بدخیمی معده؛ نفریت توبولواینترستیشیال؛ اسهال C. difficile؛ شکستگی استخوان؛ لوپوس؛ کمبود B12 و منیزیم با مصرف طولانی.",
+        "en": "Masking gastric malignancy; tubulointerstitial nephritis; C. difficile diarrhoea; bone fracture; lupus; vitamin B12 and magnesium deficiency with long use."
+      },
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ee",
+      "formulation": "dr-60",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 60,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "dr-30",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 30,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "nerd",
+      "formulation": "dr-30",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 30,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A02BC06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "53447",
+        "en": "DEXLANSOPRAZOLE 60 MG CAPSULE",
+        "fa": "کپسول دکسلانسوپرازول ۶۰ میلی‌گرم"
+      },
+      {
+        "code": "53446",
+        "en": "DEXLANSOPRAZOLE 30 MG CAPSULE",
+        "fa": "کپسول دکسلانسوپرازول ۳۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4911/Dexlansoprazole",
+        "url": "https://www.darooyab.ir/G-4911/Dexlansoprazole"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-dexilant",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022287"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022287",
+      "label": "NDA022287"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9819f033-3bbe-442e-8e92-45fec77b237d",
+      "label": "FDA Dexilant"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609017.html",
+      "label": "Dexlansoprazole"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A02BC06",
+      "label": "A02BC06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4911/Dexlansoprazole",
+      "label": "Dexlansoprazole"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no studies with dexlansoprazole use in pregnant women to inform a drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of dexlansoprazole in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of DEXILANT have been established in pediatric patients 12 years to 17 years of age for the healing of all grades of EE, the maintenance of healed EE and relief of heartburn, and treatment of heartburn associated with symptomatic non-erosive GERD.",
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of patients (n=4,548) in clinical studies of DEXILANT, 11% of patients were aged 65 years and over, while 2% were 75 years and over.",
+      "refs": [
+        {
+          "source": "fda-dexilant",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

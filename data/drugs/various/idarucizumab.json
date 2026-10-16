@@ -1,0 +1,229 @@
+{
+  "id": "idarucizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایداروسیزوماب",
+    "en": "Idarucizumab"
+  },
+  "category": "various",
+  "class": {
+    "fa": "آنتی‌دوت اختصاصی دابیگاتران",
+    "en": "Specific dabigatran reversal agent"
+  },
+  "brands": [
+    {
+      "name": "Praxbind",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "praxbind",
+    "پراکسبایند",
+    "آنتی دوت دابیگاتران"
+  ],
+  "formulations": [
+    {
+      "id": "vial-25",
+      "form": "injection",
+      "route": "iv",
+      "label": "2.5 g/50 mL vial (dose = 2 vials)",
+      "concentration": {
+        "amount": 2500,
+        "unit": "mg",
+        "perVolumeMl": 50
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-praxbind",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "rev",
+      "disease": "anticoagulant-reversal",
+      "label": {
+        "fa": "برگرداندن اثر دابیگاتران (جراحی اورژانس یا خونریزی تهدیدکننده) — ۵ g وریدی",
+        "en": "Dabigatran reversal (emergency surgery or life-threatening bleeding) — 5 g IV"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-praxbind",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دو ویال ۲٫۵ g پشت سر هم (انفوزیون یا بولوس). داده محدود برای ۵ g دوم. ضدانعقاد هرچه زودتر از نظر پزشکی شروع مجدد شود؛ دابیگاتران ۲۴ ساعت بعد.",
+            "en": "Two 2.5 g vials consecutively (infusions or bolus). Limited data for a second 5 g. Restart anticoagulation as soon as medically appropriate; dabigatran after 24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-praxbind",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-praxbind",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-praxbind",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "rev",
+      "formulation": "vial-25",
+      "input": {
+        "ageYears": 75,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5000,
+        "mlPerDose": 100
+      }
+    }
+  ],
+  "atc": [
+    "V03AB37"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52463",
+        "en": "IDARUCIZUMAB INJECTION, SOLUTION PARENTERAL 2.5 g/50mL",
+        "fa": "محلول تزریقی ایداروسیزومب ۲٫۵ گرم / ۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5494/Idarucizumab",
+        "url": "https://www.darooyab.ir/G-5494/Idarucizumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-praxbind",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761025"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761025",
+      "label": "BLA761025"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c7400f8a-dcf4-a6df-6d07-983081b1bf34",
+      "label": "FDA Praxbind"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AB37",
+      "label": "V03AB37"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5494/Idarucizumab",
+      "label": "Idarucizumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on PRAXBIND use in pregnant women to inform a drug-associated risk of major birth defects and miscarriage.",
+      "refs": [
+        {
+          "source": "fda-praxbind",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when PRAXBIND is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-praxbind",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-praxbind",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "A total of 454 (90%) patients treated with idarucizumab in the case series trial were 65 years of age and older, and 318 (63%) were 75 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-praxbind",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

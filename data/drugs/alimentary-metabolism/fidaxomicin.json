@@ -1,0 +1,318 @@
+{
+  "id": "fidaxomicin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فیداکسومایسین",
+    "en": "Fidaxomicin"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتی‌بیوتیک ماکروسیکلیک",
+    "en": "Macrocyclic antibiotic"
+  },
+  "brands": [
+    {
+      "name": "Dificid",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "dificid",
+    "دیفیسید",
+    "فیداکسومایسین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dificid",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "susp-40",
+      "form": "suspension",
+      "route": "oral",
+      "label": "40 mg/mL oral suspension",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-dificid",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "c-diff",
+      "label": {
+        "fa": "اسهال کلستریدیوئیدس دیفیسیل — بزرگسال ۲۰۰ mg دو بار در روز، ۱۰ روز",
+        "en": "C. difficile diarrhoea — adult 200 mg twice daily for 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-dificid",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "allowedFormulations": [
+        "tab-200"
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "c-diff",
+      "label": {
+        "fa": "کودک ۶ ماه تا <۱۸ سال (سوسپانسیون) — ۸۰ / ۱۲۰ / ۱۶۰ / ۲۰۰ mg دو بار در روز بر اساس وزن، ۱۰ روز",
+        "en": "Children 6 months–<18 y (suspension) — 80 / 120 / 160 / 200 mg twice daily by weight, 10 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 4
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 3.99,
+            "maxWeightKg": 6.99,
+            "perDose": 80,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 6.99,
+            "maxWeightKg": 8.99,
+            "perDose": 120,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 8.99,
+            "maxWeightKg": 12.49,
+            "perDose": 160,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 12.49,
+            "maxWeightKg": null,
+            "perDose": 200,
+            "dosesPerDay": 2
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-dificid",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 10,
+        "max": 10
+      },
+      "allowedFormulations": [
+        "susp-40"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فیداکسومایسین.",
+        "en": "Hypersensitivity to fidaxomicin."
+      },
+      "refs": [
+        {
+          "source": "fda-dificid",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "susp-40",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 160,
+        "mlPerDose": 4
+      }
+    }
+  ],
+  "atc": [
+    "A07AA12"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Fidaxomicin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-dificid",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA201699"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201699",
+      "label": "NDA201699"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dd966338-c820-4270-b704-09ef75fa3ceb",
+      "label": "FDA Dificid"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611040.html",
+      "label": "Fidaxomicin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A07AA12",
+      "label": "A07AA12"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The limited available data on use of DIFICID in pregnant women are insufficient to inform any drug-associated risk for major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-dificid",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information on the presence of fidaxomicin or its main metabolite, OP-1118, in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-dificid",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of DIFICID for the treatment of CDAD have been established in pediatric patients 6 months to less than 18 years of age.",
+      "refs": [
+        {
+          "source": "fda-dificid",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dose adjustment is recommended for elderly patients.",
+      "refs": [
+        {
+          "source": "fda-dificid",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

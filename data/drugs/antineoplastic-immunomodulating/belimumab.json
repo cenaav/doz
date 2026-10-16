@@ -1,0 +1,420 @@
+{
+  "id": "belimumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بلیموماب",
+    "en": "Belimumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد BLyS",
+    "en": "Anti-BLyS antibody"
+  },
+  "brands": [
+    {
+      "name": "Benlysta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "benlysta",
+    "بنلیستا",
+    "بلیموماب"
+  ],
+  "formulations": [
+    {
+      "id": "vial-400",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "400 mg vial",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-120",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "120 mg vial",
+      "concentration": {
+        "amount": 120,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "ai-200",
+      "form": "injection",
+      "route": "sc",
+      "label": "200 mg/mL autoinjector or prefilled syringe",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "iv",
+      "disease": "lupus",
+      "label": {
+        "fa": "لوپوس فعال یا نفریت لوپوسی (۵ سال به بالا) — ۱۰ mg/kg وریدی هر ۲ هفته برای ۳ دوز، سپس هر ۴ هفته",
+        "en": "Active SLE or lupus nephritis (≥5 y) — 10 mg/kg IV every 2 weeks for 3 doses, then every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 5,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "vial-400",
+        "vial-120"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "انفوزیون ۱ ساعته؛ پیش‌دارو برای واکنش انفوزیون در نظر گرفته شود.",
+            "en": "1-hour infusion; consider premedication for infusion reactions."
+          },
+          "refs": [
+            {
+              "source": "fda-benlysta",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sc",
+      "disease": "lupus",
+      "label": {
+        "fa": "لوپوس فعال بزرگسال (زیرجلدی) — ۲۰۰ mg هفتگی",
+        "en": "Active SLE, adults (SC) — 200 mg once weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "ai-200"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کودک ۵ سال به بالا: ≥۴۰ kg ۲۰۰ mg هفتگی؛ ۱۵ تا <۴۰ kg ۲۰۰ mg هر ۲ هفته (فقط اتواینجکتور).",
+            "en": "Children ≥5 y: ≥40 kg 200 mg weekly; 15–<40 kg 200 mg every 2 weeks (autoinjector only)."
+          },
+          "refs": [
+            {
+              "source": "fda-benlysta",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ln-sc",
+      "disease": "lupus-nephritis",
+      "label": {
+        "fa": "نفریت لوپوسی بزرگسال (زیرجلدی) — ۴۰۰ mg هفتگی برای ۴ دوز، سپس ۲۰۰ mg هفتگی",
+        "en": "Lupus nephritis, adults (SC) — 400 mg weekly for 4 doses, then 200 mg weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "ai-200"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه آنافیلاکسی، SJS یا TEN با بلیموماب.",
+        "en": "Prior anaphylaxis, SJS or TEN with belimumab."
+      },
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "عفونت جدی؛ حساسیت و آنافیلاکسی (گاه تأخیری)؛ SJS/TEN؛ افسردگی و خودکشی؛ بدخیمی؛ واکسن زنده نه.",
+        "en": "Serious infections; hypersensitivity and anaphylaxis (sometimes delayed); SJS/TEN; depression and suicidality; malignancy; no live vaccines."
+      },
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "iv",
+      "formulation": "vial-400",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 700
+      }
+    },
+    {
+      "regimen": "sc",
+      "formulation": "ai-200",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "ln-sc",
+      "formulation": "ai-200",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 2
+      }
+    }
+  ],
+  "atc": [
+    "L04AG04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17619",
+        "en": "BELIMUMAB 120MG 5ML VIAL",
+        "fa": "ویال بلیمومب ۱۲۰ میلی‌گرم ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4850/belimumab",
+        "url": "https://www.darooyab.ir/G-4850/belimumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-benlysta",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125370"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125370",
+      "label": "BLA125370"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fa3c528-1777-4628-8a55-a69dae2381a3",
+      "label": "FDA Benlysta"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611027.html",
+      "label": "Belimumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AG04",
+      "label": "L04AG04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4850/belimumab",
+      "label": "belimumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data on use of BENLYSTA in pregnant women, from observational studies, published case reports, and postmarketing surveillance, are insufficient to determine whether there is a drug-associated risk for major birth defects or miscarriage.",
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary No information is available on the presence of belimumab in human milk, the effects of the drug on the breastfed infant, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of BENLYSTA have been established for the treatment of active SLE and active lupus nephritis in pediatric patients 5 years of age and older who are receiving standard therapy.",
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Use with caution in geriatric patients.",
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Following an assessment of benefit versus risk, if prevention of pregnancy is warranted, females of reproductive potential should use effective contraception during treatment and for at least 4 months after the final treatment.",
+      "refs": [
+        {
+          "source": "fda-benlysta",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

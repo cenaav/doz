@@ -1,0 +1,322 @@
+{
+  "id": "dantrolene",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دانترولن",
+    "en": "Dantrolene"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "شل‌کننده عضلانی مستقیم",
+    "en": "Direct-acting muscle relaxant"
+  },
+  "brands": [
+    {
+      "name": "Ryanodex / Dantrium",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ryanodex",
+    "dantrium",
+    "دانترولن",
+    "دانتریوم"
+  ],
+  "formulations": [
+    {
+      "id": "vial-250",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "250 mg vial → 50 mg/mL suspension after 5 mL water",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ryanodex",
+          "section": "3"
+        },
+        {
+          "source": "fda-ryanodex",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "tx",
+      "disease": "malignant-hyperthermia",
+      "label": {
+        "fa": "درمان هیپرترمی بدخیم — دست‌کم ۱ mg/kg وریدی سریع؛ تکرار تا حداکثر تجمعی ۱۰ mg/kg",
+        "en": "Treatment of malignant hyperthermia — at least 1 mg/kg IV push; repeat up to 10 mg/kg cumulative"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 1,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-ryanodex",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-ryanodex",
+          "section": "2.3"
+        }
+      ],
+      "limits": {
+        "maxPerKgPerDay": 10,
+        "refs": [
+          {
+            "source": "fda-ryanodex",
+            "section": "2.1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همزمان: قطع گازهای بیهوشی و سوکسینیل‌کولین، اصلاح اسیدوز، سرد کردن، دیورتیک (مانیتول فرآورده کافی نیست). کودک همان دوز بر kg.",
+            "en": "Also: stop volatile agents and succinylcholine, correct acidosis, cool, give diuretics (product mannitol is insufficient). Children: same mg/kg."
+          },
+          "refs": [
+            {
+              "source": "fda-ryanodex",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-ryanodex",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prev",
+      "disease": "malignant-hyperthermia",
+      "label": {
+        "fa": "پیشگیری در بیمار پرخطر — ۲٫۵ mg/kg وریدی حدود ۷۵ دقیقه پیش از جراحی",
+        "en": "Prevention in high-risk patients — 2.5 mg/kg IV about 75 min before surgery"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2.5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-ryanodex",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-ryanodex",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "ضعف عضلانی و اشکال بلع یا تنفس پس از تزریق؛ خواب‌آلودگی.",
+        "en": "Muscle weakness and difficulty swallowing or breathing after administration; drowsiness."
+      },
+      "refs": [
+        {
+          "source": "fda-ryanodex",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "tx",
+      "formulation": "vial-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 70,
+        "mlPerDose": 1.4
+      }
+    },
+    {
+      "regimen": "prev",
+      "formulation": "vial-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 175,
+        "mlPerDose": 3.5
+      }
+    }
+  ],
+  "atc": [
+    "M03CA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17035",
+        "en": "DANTROLENE SODIUM 100MG CAP",
+        "fa": "کپسول دانترولن سدیم ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00382",
+        "en": "DANTROLENE SODIUM 20MG/60ML VIAL",
+        "fa": "ویال دانترولن سدیم ۲۰ میلی‌گرم / ۶۰ میلی‌لیتر"
+      },
+      {
+        "code": "00381",
+        "en": "DANTROLENE SODIUM 25MG CAP",
+        "fa": "کپسول دانترولن سدیم ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "08172",
+        "en": "DANTROLENE SODIUM 25MG GEL",
+        "fa": "ژل دانترولن سدیم ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "51370",
+        "en": "DANTROLENE SODIUM CAPSULE ORAL 25 mg",
+        "fa": "کپسول دانترولن سدیم ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2791/Dantrolene",
+        "url": "https://www.darooyab.ir/G-2791/Dantrolene"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-ryanodex",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA205579"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205579",
+      "label": "NDA205579"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f7b3ac0-604d-4c78-b545-5e0f8ea3d698",
+      "label": "FDA Ryanodex"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682576.html",
+      "label": "Dantrolene"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M03CA01",
+      "label": "M03CA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2791/Dantrolene",
+      "label": "Dantrolene"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published case reports with RYANODEX use in pregnant women are insufficient to evaluate for a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-ryanodex",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in the breastfed infant, including respiratory depression and muscle weakness, advise patients that breastfeeding is not recommended during treatment with RYANODEX, and for 3 days after the last dose.",
+      "refs": [
+        {
+          "source": "fda-ryanodex",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of RYANODEX in the treatment and prevention of malignant hyperthermia in pediatric patients is based on clinical experience with other intravenous dantrolene sodium products, which suggests adult weight-based doses are appropriate for pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-ryanodex",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-ryanodex",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

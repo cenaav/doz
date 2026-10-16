@@ -1,0 +1,321 @@
+{
+  "id": "loxapine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لوکساپین",
+    "en": "Loxapine"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "دی‌بنزوکسازپین (ضدروان‌پریشی تیپیک)",
+    "en": "Dibenzoxazepine (typical antipsychotic)"
+  },
+  "brands": [
+    {
+      "name": "Loxitane",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "loxitane",
+    "لوکساپین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-10",
+      "form": "capsule",
+      "route": "oral",
+      "label": "10 mg capsule",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-25",
+      "form": "capsule",
+      "route": "oral",
+      "label": "25 mg capsule",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "5 mg capsule",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-50",
+      "form": "capsule",
+      "route": "oral",
+      "label": "50 mg capsule",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "scz",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی بزرگسال — شروع ۱۰ mg دو بار در روز",
+        "en": "Schizophrenia, adults — start 10 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 250,
+        "refs": [
+          {
+            "source": "fda-loxapine",
+            "section": "Dosage and Administration"
+          }
+        ]
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش طی ۷ تا ۱۰ روز؛ محدوده معمول ۶۰ تا ۱۰۰ mg/روز در ۲ تا ۴ دوز؛ بیش از ۲۵۰ mg/روز نه. نگهدارنده اغلب ۲۰ تا ۶۰ mg/روز.",
+            "en": "Increase over 7–10 days; usual range 60–100 mg/day in 2–4 doses; not above 250 mg/day. Maintenance often 20–60 mg/day."
+          },
+          "refs": [
+            {
+              "source": "fda-loxapine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "کما یا افسردگی شدید ناشی از دارو (الکل، باربیتورات، مخدر)؛ حساسیت به دی‌بنزوکسازپین‌ها.",
+        "en": "Coma or severe drug-induced depressed states (alcohol, barbiturates, opioids); hypersensitivity to dibenzoxazepines."
+      },
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش مرگ در سالمندان مبتلا به سایکوز ناشی از دمانس — برای این کاربرد تأیید نشده.",
+        "en": "Boxed warning: increased mortality in elderly patients with dementia-related psychosis — not approved for this use."
+      },
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "scz",
+      "formulation": "cap-10",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1,
+        "perDay": 20
+      }
+    }
+  ],
+  "atc": [
+    "N05AH01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1297/Loxapine",
+        "url": "https://www.darooyab.ir/G-1297/Loxapine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=072204",
+      "label": "ANDA072204"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6107bb1-3e23-4c5d-bbf4-5e29deff6728",
+      "label": "FDA Loxapine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682311.html",
+      "label": "Loxapine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05AH01",
+      "label": "N05AH01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1297/Loxapine",
+      "label": "Loxapine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Loxapine succinate should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "The extent of the excretion of loxapine or its metabolites in human milk is not known.",
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of loxapine in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: در سالمندان هشدار جدی یا پرهیز.",
+        "en": "Label: serious warning or avoid in older adults."
+      },
+      "quote": "Increased Mortality in Elderly Patients with Dementia-Related Psychosis Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death.",
+      "refs": [
+        {
+          "source": "fda-loxapine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-loxapine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA072204"
+  }
+}

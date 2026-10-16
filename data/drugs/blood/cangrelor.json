@@ -1,0 +1,265 @@
+{
+  "id": "cangrelor",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کانگرلور",
+    "en": "Cangrelor"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "مهارکننده وریدی P2Y12",
+    "en": "IV P2Y12 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Kengreal",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "kengreal",
+    "کانگرلور"
+  ],
+  "formulations": [
+    {
+      "id": "dil-200",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mg vial diluted in 250 mL (200 mcg/mL)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kengreal",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bolus",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "PCI — بولوس ۳۰ mcg/kg پیش از PCI",
+        "en": "PCI — 30 mcg/kg bolus before PCI"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 30,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-kengreal",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "inf",
+      "disease": "acute-coronary-syndrome",
+      "label": {
+        "fa": "انفوزیون ۴ mcg/kg/دقیقه بلافاصله پس از بولوس، دست‌کم ۲ ساعت یا تا پایان PCI",
+        "en": "Infusion 4 mcg/kg/min right after the bolus, ≥2 h or the duration of PCI"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 4
+      },
+      "refs": [
+        {
+          "source": "fda-kengreal",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پس از قطع، P2Y12 خوراکی: تیکاگرلور ۱۸۰ mg حین یا بلافاصله پس از انفوزیون؛ پراسوگرل ۶۰ mg یا کلوپیدوگرل ۶۰۰ mg بلافاصله پس از قطع.",
+            "en": "After stopping, oral P2Y12: ticagrelor 180 mg during or right after; prasugrel 60 mg or clopidogrel 600 mg immediately after discontinuation."
+          },
+          "refs": [
+            {
+              "source": "fda-kengreal",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی فعال قابل‌توجه؛ حساسیت به کانگرلور.",
+        "en": "Significant active bleeding; hypersensitivity to cangrelor."
+      },
+      "refs": [
+        {
+          "source": "fda-kengreal",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bolus",
+      "formulation": "dil-200",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2100,
+        "mlPerDose": 10.5
+      }
+    },
+    {
+      "regimen": "inf",
+      "formulation": "dil-200",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 280,
+        "mlPerHour": 84
+      }
+    }
+  ],
+  "atc": [
+    "B01AC25"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Cangrelor"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-kengreal",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204958"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204958",
+      "label": "NDA204958"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88b434fa-8891-4fd5-9d86-7ea64667c08f",
+      "label": "FDA Kengreal"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC25",
+      "label": "B01AC25"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on cangrelor use in pregnant women to evaluate for a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-kengreal",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of cangrelor in human milk or animal milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-kengreal",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-kengreal",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these patients and those patients <75 years [see Clinical Studies ( 14.1 )] .",
+      "refs": [
+        {
+          "source": "fda-kengreal",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "id": "golimumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گولیموماب",
+    "en": "Golimumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده TNF",
+    "en": "TNF blocker"
+  },
+  "brands": [
+    {
+      "name": "Simponi",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "simponi",
+    "سیمپونی",
+    "گولیموماب"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-50",
+      "form": "injection",
+      "route": "sc",
+      "label": "50 mg/0.5 mL syringe or SmartJect",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-simponi",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-100",
+      "form": "injection",
+      "route": "sc",
+      "label": "100 mg/mL syringe or SmartJect",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-simponi",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ra",
+      "disease": "rheumatoid-arthritis",
+      "label": {
+        "fa": "آرتریت روماتوئید (با متوترکسات)، پسوریاتیک یا اسپوندیلیت آنکیلوزان بزرگسال — ۵۰ mg زیرجلدی ماهانه",
+        "en": "RA (with methotrexate), PsA or AS, adults — 50 mg SC once a month"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 50,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-simponi",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع: بررسی سل فعال و نهفته (درمان سل نهفته قبل از شروع) و واکسن‌های مناسب سن.",
+            "en": "Before starting: screen for active and latent TB (treat latent TB first) and complete age-appropriate vaccines."
+          },
+          "refs": [
+            {
+              "source": "fda-simponi",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uc",
+      "disease": "ulcerative-colitis",
+      "label": {
+        "fa": "کولیت اولسراتیو (≥۱۵ kg) — نگهدارنده از هفته ۶ هر ۴ هفته بر اساس وزن",
+        "en": "Ulcerative colitis (≥15 kg) — maintenance from week 6 every 4 weeks by weight"
+      },
+      "population": {
+        "minWeightKg": 15
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 14.99,
+            "maxWeightKg": 39.99,
+            "perDose": 50,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 39.99,
+            "maxWeightKg": null,
+            "perDose": 100,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-simponi",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "القا: ≥۴۰ kg: ۲۰۰ mg هفته ۰ و ۱۰۰ mg هفته ۲؛ ۱۵ تا <۴۰ kg: ۱۰۰ و ۵۰ mg.",
+            "en": "Induction: ≥40 kg: 200 mg week 0 and 100 mg week 2; 15–<40 kg: 100 and 50 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-simponi",
+              "section": "2.3, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: عفونت‌های جدی (سل، قارچی تهاجمی، فرصت‌طلب) و بدخیمی (لنفوم، به‌ویژه در کودکان) — پیش از شروع تست سل نهفته و HBV.",
+        "en": "Boxed warning: serious infections (TB, invasive fungal, opportunistic) and malignancy (lymphoma, especially in children) — test for latent TB and HBV first."
+      },
+      "refs": [
+        {
+          "source": "fda-simponi",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "نارسایی قلب؛ دمیلینه شدن؛ فعال شدن HBV؛ سیتوپنی؛ همراه آباتاسپت یا آناکینرا نه.",
+        "en": "Heart failure; demyelination; HBV reactivation; cytopenias; not with abatacept or anakinra."
+      },
+      "refs": [
+        {
+          "source": "fda-simponi",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ra",
+      "formulation": "pfs-50",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 50,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "uc",
+      "formulation": "pfs-100",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "uc",
+      "formulation": "pfs-50",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 50,
+        "mlPerDose": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "L04AB06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17284",
+        "en": "GOLIMUMAB 50MG/0.5ML VIAL",
+        "fa": "ویال گولیمومب ۵۰ میلی‌گرم / ۰٫۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4758/Golimumab",
+        "url": "https://www.darooyab.ir/G-4758/Golimumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-simponi",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125289"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125289",
+      "label": "BLA125289"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f86cb4a7-c358-4136-ae57-b32bda9bba00",
+      "label": "FDA Simponi"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a610010.html",
+      "label": "Golimumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AB06",
+      "label": "L04AB06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4758/Golimumab",
+      "label": "Golimumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from postmarketing case reports with golimumab use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-simponi",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of SIMPONI in human milk, the effects on breastfed infants, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-simponi",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در کولیت اولسراتیو کودکان ≥۱۵ kg ثابت شده؛ هشدار جعبه‌ای لنفوم و بدخیمی در کودکان و نوجوانان.",
+        "en": "Label: established for ulcerative colitis in children ≥15 kg; boxed warning of lymphoma and malignancy in children and adolescents."
+      },
+      "quote": "The safety and effectiveness of SIMPONI for the treatment of moderately to severely active ulcerative colitis have been established in pediatric patients weighing at least 15 kg.",
+      "refs": [
+        {
+          "source": "fda-simponi",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because there is a higher incidence of infections in the geriatric population in general, caution should be used in treating geriatric patients with SIMPONI [see Warnings and Precautions (5.1 , 5.5) ] .",
+      "refs": [
+        {
+          "source": "fda-simponi",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

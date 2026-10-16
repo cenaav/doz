@@ -1,0 +1,449 @@
+{
+  "id": "ixekizumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایکسکیزوماب",
+    "en": "Ixekizumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد IL-17A",
+    "en": "Anti-IL-17A antibody"
+  },
+  "brands": [
+    {
+      "name": "Taltz",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "taltz",
+    "تالتز",
+    "ایکسکیزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "ai-80",
+      "form": "injection",
+      "route": "sc",
+      "label": "80 mg/mL autoinjector or syringe",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-40",
+      "form": "injection",
+      "route": "sc",
+      "label": "40 mg/0.5 mL syringe",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 0.5
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pso",
+      "disease": "psoriasis",
+      "label": {
+        "fa": "پسوریازیس پلاک بزرگسال — ۱۶۰ mg هفته ۰، سپس ۸۰ mg هفته ۲ تا ۱۲ هر ۲ هفته، سپس ۸۰ mg هر ۴ هفته",
+        "en": "Plaque psoriasis, adults — 160 mg at week 0, then 80 mg every 2 weeks to week 12, then 80 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 80,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "ai-80"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع: بررسی سل فعال و نهفته (درمان سل نهفته قبل از شروع) و واکسن‌های مناسب سن.",
+            "en": "Before starting: screen for active and latent TB (treat latent TB first) and complete age-appropriate vaccines."
+          },
+          "refs": [
+            {
+              "source": "fda-taltz",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pso-child",
+      "disease": "psoriasis",
+      "label": {
+        "fa": "پسوریازیس پلاک کودک ۶ سال به بالا — هر ۴ هفته: ۲۵ تا ۵۰ kg: ۴۰ mg؛ بالای ۵۰ kg: ۸۰ mg",
+        "en": "Plaque psoriasis, children ≥6 y — every 4 weeks: 25–50 kg: 40 mg; >50 kg: 80 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 25
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 24.99,
+            "maxWeightKg": 50,
+            "perDose": 40,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 50,
+            "maxWeightKg": null,
+            "perDose": 80,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز شروع (هفته ۰): ۲۵ تا ۵۰ kg: ۸۰ mg؛ بالای ۵۰ kg: ۱۶۰ mg.",
+            "en": "Starting dose (week 0): 25–50 kg: 80 mg; >50 kg: 160 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-taltz",
+              "section": "2.3, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psa",
+      "disease": "psoriatic-arthritis",
+      "label": {
+        "fa": "آرتریت پسوریاتیک — ۱۶۰ mg هفته ۰، سپس ۸۰ mg هر ۴ هفته",
+        "en": "Psoriatic arthritis — 160 mg at week 0, then 80 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 80,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "ai-80"
+      ]
+    },
+    {
+      "id": "as",
+      "disease": "ankylosing-spondylitis",
+      "label": {
+        "fa": "اسپوندیلیت آنکیلوزان — ۱۶۰ mg هفته ۰، سپس ۸۰ mg هر ۴ هفته (nr-axSpA: ۸۰ mg هر ۴ هفته)",
+        "en": "Ankylosing spondylitis — 160 mg at week 0, then 80 mg every 4 weeks (nr-axSpA: 80 mg every 4 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 80,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "2.5"
+        },
+        {
+          "source": "fda-taltz",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "ai-80"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی به ایکسکیزوماب.",
+        "en": "Serious hypersensitivity to ixekizumab."
+      },
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "عفونت؛ سل (پیش از شروع بررسی)؛ حساسیت؛ ضایعات اگزمایی؛ بیماری التهابی روده (شروع یا تشدید)؛ واکسن زنده نه.",
+        "en": "Infections; TB (screen first); hypersensitivity; eczematous eruptions; inflammatory bowel disease (new or worse); no live vaccines."
+      },
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pso",
+      "formulation": "ai-80",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 80,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "pso-child",
+      "formulation": "pfs-40",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 35
+      },
+      "expect": {
+        "perDose": 40,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "pso-child",
+      "formulation": "ai-80",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 80,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "psa",
+      "formulation": "ai-80",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 80,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "as",
+      "formulation": "ai-80",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 80,
+        "mlPerDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "L04AC13"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Ixekizumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-taltz",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125521"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125521",
+      "label": "BLA125521"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ac96658a-d7dc-4c7c-8928-2adcdf4318b2",
+      "label": "FDA Taltz"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616025.html",
+      "label": "Ixekizumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L04AC13",
+      "label": "L04AC13"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from the published literature and the pharmacovigilance database with TALTZ use in pregnant women are insufficient to evaluate for a drug-associated risk of major birth defects, miscarriage or other adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no available data on the presence of ixekizumab in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of TALTZ have been established in pediatric subjects aged 6 years to less than 18 years with moderate-to-severe plaque psoriasis.",
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 4204 adult psoriasis subjects exposed to TALTZ, a total of 301 were 65 years or older, and 36 subjects were 75 years or older.",
+      "refs": [
+        {
+          "source": "fda-taltz",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}
