@@ -1,0 +1,313 @@
+{
+  "id": "ifosfamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایفوسفامید",
+    "en": "Ifosfamide"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "عامل آلکیله‌کننده",
+    "en": "Alkylating agent"
+  },
+  "brands": [
+    {
+      "name": "Ifex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ifex",
+    "holoxan",
+    "هولوکسان",
+    "ایفوسفامید"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g vial (also 3 g)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ifosfamide",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "testis",
+      "disease": "testicular-cancer",
+      "label": {
+        "fa": "سرطان بیضه ژرم‌سل (خط سوم، ترکیبی) — ۱٫۲ g/m²/روز وریدی آهسته ۵ روز متوالی، هر ۳ هفته",
+        "en": "Germ-cell testicular cancer (third line, combination) — 1.2 g/m²/day slow IV for 5 consecutive days, every 3 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 1200,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ifosfamide",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-ifosfamide",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "همیشه همراه مسنا و هیدراتاسیون حداقل ۲ لیتر در روز (پیشگیری از سیستیت هموراژیک). انفوزیون حداقل ۳۰ دقیقه.",
+            "en": "Always with mesna and at least 2 L/day hydration (haemorrhagic cystitis prevention). Infuse over at least 30 min."
+          },
+          "refs": [
+            {
+              "source": "fda-ifosfamide",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ایفوسفامید؛ انسداد مجرای خروجی ادرار.",
+        "en": "Hypersensitivity to ifosfamide; urinary outflow obstruction."
+      },
+      "refs": [
+        {
+          "source": "fda-ifosfamide",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سرکوب مغز استخوان، انسفالوپاتی (گاه کشنده)، نفروتوکسیسیتی و سیستیت هموراژیک.",
+        "en": "Boxed warning: myelosuppression, encephalopathy (sometimes fatal), nephrotoxicity and haemorrhagic cystitis."
+      },
+      "refs": [
+        {
+          "source": "fda-ifosfamide",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سمیت قلب و ریه؛ بدخیمی ثانویه؛ بیماری انسدادی وریدهای کبد؛ سمیت جنینی؛ ناباروری.",
+        "en": "Cardiac and pulmonary toxicity; secondary malignancy; hepatic veno-occlusive disease; embryo-fetal toxicity; infertility."
+      },
+      "refs": [
+        {
+          "source": "fda-ifosfamide",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "testis",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 2400
+      }
+    }
+  ],
+  "atc": [
+    "L01AA06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00662",
+        "en": "IFOSFAMIDE 1 G VIAL",
+        "fa": "ویال ایفوسفامید ۱ گرم"
+      },
+      {
+        "code": "02138",
+        "en": "IFOSFAMIDE 2 G VIAL",
+        "fa": "ویال ایفوسفامید ۲ گرم"
+      },
+      {
+        "code": "51136",
+        "en": "IFOSFAMIDE INJECTION, SOLUTION PARENTERAL 40 mg/1mL 25 mL",
+        "fa": "محلول تزریقی ایفوسفامید ۴۰ میلی‌گرم / ۱ میلی‌لیتر ۲۵ میلی‌لیتر"
+      },
+      {
+        "code": "53052",
+        "en": "IFOSFAMIDE INJECTION, SOLUTION PARENTERAL 40 mg/1mL 50 mL",
+        "fa": "محلول تزریقی ایفوسفامید ۴۰ میلی‌گرم / ۱ میلی‌لیتر ۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1015/Ifosfamide",
+        "url": "https://www.darooyab.ir/G-1015/Ifosfamide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-ifosfamide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019763"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019763",
+      "label": "NDA019763"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=91e433a9-6800-43a6-ac13-a49a04a5aecd",
+      "label": "FDA Ifosfamide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a695023.html",
+      "label": "Ifosfamide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01AA06",
+      "label": "L01AA06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1015/Ifosfamide",
+      "label": "Ifosfamide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on mechanism of action [see Clinical Pharmacology (12.1) ] , and human and animal data (see Data) , Ifosfamide for Injection can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-ifosfamide",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse events, and the tumorigenicity shown for ifosfamide in animal studies, advise women not to breastfeed during treatment with Ifosfamide for Injection and for one week after the last dose.",
+      "refs": [
+        {
+          "source": "fda-ifosfamide",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-ifosfamide",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, closely monitor for adverse reactions and monitor renal function as clinically indicated.",
+      "refs": [
+        {
+          "source": "fda-ifosfamide",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise female patients of reproductive potential to use effective contraception during treatment with Ifosfamide for Injection and for 12 months after the last dose.",
+      "refs": [
+        {
+          "source": "fda-ifosfamide",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "id": "iron-dextran",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آیرون دکستران",
+    "en": "Iron dextran"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "آهن تزریقی",
+    "en": "Parenteral iron"
+  },
+  "brands": [
+    {
+      "name": "INFeD",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "infed",
+    "cosmofer",
+    "کاسموفر",
+    "آیرون دکستران",
+    "آهن دکستران"
+  ],
+  "formulations": [
+    {
+      "id": "inj-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mg/mL, 2 mL vial (IV or IM)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-infed",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ida",
+      "disease": "iron-deficiency-anemia",
+      "label": {
+        "fa": "فقر آهن وقتی آهن خوراکی ممکن نیست — دوز کل از جدول یا فرمول برچسب (هموگلوبین و وزن)",
+        "en": "Iron deficiency when oral iron is not possible — total dose from the label table or formula (haemoglobin and weight)"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "month"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "بزرگسال و کودک بالای ۱۵ kg: حجم (mL) = ۰٫۰۴۴۲ × (Hb هدف − Hb فعلی) × وزن بدون چربی + ۰٫۲۶ × وزن بدون چربی (هدف ۱۴٫۸). ۵ تا ۱۵ kg: با وزن واقعی و هدف ۱۲. ابتدا دوز آزمایشی ۰٫۵ mL و ۱ ساعت صبر؛ حداکثر روزانه ۲ mL (۱۰۰ mg)؛ سرعت حداکثر ۵۰ mg/دقیقه.",
+          "en": "Adults and children >15 kg: volume (mL) = 0.0442 × (target Hb − observed Hb) × lean body weight + 0.26 × LBW (target 14.8). 5–15 kg: actual weight and target 12. Give a 0.5 mL test dose first and wait 1 h; max daily 2 mL (100 mg); rate max 50 mg/min."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-infed",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-infed",
+          "section": "2.4"
+        },
+        {
+          "source": "fda-infed",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به آیرون دکستران.",
+        "en": "Previous hypersensitivity to iron dextran."
+      },
+      "refs": [
+        {
+          "source": "fda-infed",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: واکنش‌های آنافیلاکتیک کشنده — دوز آزمایشی پیش از اولین دوز درمانی و امکانات احیا در دسترس.",
+        "en": "Boxed warning: fatal anaphylactic-type reactions — test dose before the first therapeutic dose, resuscitation equipment at hand."
+      },
+      "refs": [
+        {
+          "source": "fda-infed",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "واکنش تأخیری (آرترالژی، میالژی، تب) ۱ تا ۲ روز بعد؛ اضافه بار آهن.",
+        "en": "Delayed reactions (arthralgia, myalgia, fever) 1–2 days later; iron overload."
+      },
+      "refs": [
+        {
+          "source": "fda-infed",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [],
+  "atc": [
+    "B03AC"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2895/Iron-Dextran",
+        "url": "https://www.darooyab.ir/G-2895/Iron-Dextran"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=017441",
+      "label": "NDA017441"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=94b01b1e-794b-4bea-8e24-2e54683fc023",
+      "label": "FDA INFeD"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614033.html",
+      "label": "Iron Dextran Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B03AC",
+      "label": "B03AC"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2895/Iron-Dextran",
+      "label": "Iron-Dextran"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Parenteral iron administration may be associated with hypersensitivity reactions [see Warnings and Precautions ( 5.1 )] , which may have serious consequences, such as fetal bradycardia (see Clinical Considerations).",
+      "refs": [
+        {
+          "source": "fda-infed",
+          "section": "8.1"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "INFeD is not recommended for use in infants under 4 months of age [s ee Dosage and Administration ( 2.2 ) ].",
+      "refs": [
+        {
+          "source": "fda-infed",
+          "section": "8.4"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-infed",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA017441"
+  }
+}

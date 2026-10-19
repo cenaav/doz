@@ -1,0 +1,317 @@
+{
+  "id": "azacitidine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آزاسیتیدین",
+    "en": "Azacitidine"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "عامل هیپومتیله‌کننده",
+    "en": "Hypomethylating agent"
+  },
+  "brands": [
+    {
+      "name": "Vidaza",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vidaza",
+    "ویدازا",
+    "آزاسیتیدین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-100",
+      "form": "powder-for-injection",
+      "route": "sc",
+      "label": "100 mg vial (25 mg/mL after reconstitution for SC)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vidaza",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mds",
+      "disease": "myelodysplastic-syndrome",
+      "label": {
+        "fa": "سندرم میلودیسپلاستیک بزرگسال — ۷۵ mg/m² زیرجلدی یا وریدی روزانه ۷ روز، هر ۴ هفته",
+        "en": "Myelodysplastic syndromes, adults — 75 mg/m² SC or IV daily for 7 days every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 75,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-vidaza",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-vidaza",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 7,
+        "max": 7
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-vidaza",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "پس از ۲ دوره بدون پاسخ و بدون سمیت (جز تهوع) تا ۱۰۰ mg/m². حداقل ۴ تا ۶ دوره. با آزاسیتیدین خوراکی جایگزین نشود.",
+            "en": "May increase to 100 mg/m² after 2 cycles without benefit or toxicity (other than nausea). At least 4–6 cycles. Not interchangeable with oral azacitidine."
+          },
+          "refs": [
+            {
+              "source": "fda-vidaza",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-vidaza",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "liver",
+      "severity": "block",
+      "text": {
+        "fa": "تومورهای بدخیم پیشرفته کبد.",
+        "en": "Advanced malignant hepatic tumours."
+      },
+      "refs": [
+        {
+          "source": "fda-vidaza",
+          "section": "4.1"
+        }
+      ]
+    },
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آزاسیتیدین یا مانیتول.",
+        "en": "Hypersensitivity to azacitidine or mannitol."
+      },
+      "refs": [
+        {
+          "source": "fda-vidaza",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کم‌خونی، نوتروپنی و ترومبوسیتوپنی؛ سمیت کبدی در نارسایی شدید کبد؛ سمیت کلیه؛ سندرم لیز تومور؛ سمیت جنینی.",
+        "en": "Anaemia, neutropenia and thrombocytopenia; hepatotoxicity with severe hepatic impairment; renal toxicity; tumour lysis syndrome; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-vidaza",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mds",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 150
+      }
+    }
+  ],
+  "atc": [
+    "L01BC07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09486",
+        "en": "AZACITIDINE 100MG AMP",
+        "fa": "آمپول آزاسیتیدین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "15946",
+        "en": "AZACITIDINE 25MG AMP",
+        "fa": "آمپول آزاسیتیدین ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-949/Azacitidine",
+        "url": "https://www.darooyab.ir/G-949/Azacitidine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050794",
+      "label": "NDA050794"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3495a71a-cc04-4776-851f-f185956f32af",
+      "label": "FDA Vidaza"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620060.html",
+      "label": "Azacitidine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607068.html",
+      "label": "Azacitidine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01BC07",
+      "label": "L01BC07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-949/Azacitidine",
+      "label": "Azacitidine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on its mechanism of action and findings in animals, VIDAZA can cause fetal harm when administered to a pregnant woman [see Clinical Pharmacology ( 12.1 )].",
+      "refs": [
+        {
+          "source": "fda-vidaza",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "… s [see Nonclinical Toxicology ( 13.1 )] and the potential for serious adverse reactions in nursing infants from VIDAZA, advise patients not to breastfeed during treatment with VIDAZA and for 1 week after the last dose.",
+      "refs": [
+        {
+          "source": "fda-vidaza",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of VIDAZA have been established in pediatric patients with newly diagnosed JMML aged 1 month and older and the information on this use is discussed throughout the labeling.",
+      "refs": [
+        {
+          "source": "fda-vidaza",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Monitor renal function in these patients [see Dosage and Administration ( 2.7 ) and Warnings and Precautions ( 5.4 )].",
+      "refs": [
+        {
+          "source": "fda-vidaza",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise pregnant women of the potential risk to a fetus.",
+      "refs": [
+        {
+          "source": "fda-vidaza",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-vidaza",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA050794"
+  }
+}

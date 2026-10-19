@@ -105,6 +105,26 @@
           "section": "How Supplied"
         }
       ]
+    },
+    {
+      "id": "dec-25",
+      "form": "injection",
+      "route": "im",
+      "label": "Fluphenazine decanoate 25 mg/mL (IM or SC)",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fluphenazine-decanoate",
+          "section": "How Supplied"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -133,6 +153,64 @@
         {
           "source": "fda-fluphenazine",
           "section": "Dosage and Administration"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-1",
+        "tab-2-5",
+        "tab-5",
+        "tab-10"
+      ]
+    },
+    {
+      "id": "dec",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی (دکانوات) — شروع ۱۲٫۵ تا ۲۵ mg عضلانی یا زیرجلدی",
+        "en": "Schizophrenia (decanoate) — initial 12.5–25 mg IM or SC"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 12.5,
+        "perDoseMax": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fluphenazine-decanoate",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "dec-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز و فاصله بعدی بر اساس پاسخ؛ یک تزریق معمولاً تا ۴ هفته یا بیشتر اثر دارد. سرنگ و سوزن خشک (حداقل گیج ۲۱). زیر ۱۲ سال منع مصرف.",
+            "en": "Subsequent dose and interval by response; one injection usually lasts up to 4 weeks or longer. Dry syringe and needle (at least 21 G). Not for children under 12."
+          },
+          "refs": [
+            {
+              "source": "fda-fluphenazine-decanoate",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-fluphenazine-decanoate",
+              "section": "Contraindications"
+            }
+          ]
         }
       ]
     }
@@ -187,7 +265,21 @@
     "reviewer": null,
     "date": null
   },
-  "examples": [],
+  "examples": [
+    {
+      "regimen": "dec",
+      "formulation": "dec-25",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 12.5,
+        "mlPerDose": 0.5,
+        "upperPerDose": 25
+      }
+    }
+  ],
   "atc": [
     "N05AB02"
   ],

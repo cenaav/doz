@@ -1,0 +1,368 @@
+{
+  "id": "calcitonin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلسی‌تونین سالمون",
+    "en": "Calcitonin salmon"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "هورمون تنظیم‌کننده کلسیم",
+    "en": "Calcium-regulating hormone"
+  },
+  "brands": [
+    {
+      "name": "Miacalcin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "miacalcin",
+    "calcitonin",
+    "میاکلسین",
+    "کلسی تونین"
+  ],
+  "formulations": [
+    {
+      "id": "inj-200",
+      "form": "injection",
+      "route": "sc",
+      "label": "200 units/mL, 2 mL multi-dose vial (SC or IM)",
+      "concentration": {
+        "amount": 200,
+        "unit": "unit",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-miacalcin-inj",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "paget",
+      "disease": "pagets-disease",
+      "label": {
+        "fa": "بیماری پاژه علامت‌دار — ۱۰۰ واحد زیرجلدی یا عضلانی روزانه",
+        "en": "Symptomatic Paget disease of bone — 100 units SC or IM daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "unit",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-miacalcin-inj",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "op",
+      "disease": "osteoporosis",
+      "label": {
+        "fa": "پوکی استخوان پس از یائسگی (بیش از ۵ سال) — ۱۰۰ واحد روزانه",
+        "en": "Postmenopausal osteoporosis (>5 years after menopause) — 100 units daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "unit",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-miacalcin-inj",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کلسیم حداقل ۱۰۰۰ mg و ویتامین D حداقل ۴۰۰ واحد روزانه.",
+            "en": "Calcium at least 1000 mg and vitamin D at least 400 IU daily."
+          },
+          "refs": [
+            {
+              "source": "fda-miacalcin-inj",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hypercal",
+      "disease": "hypercalcemia",
+      "label": {
+        "fa": "هیپرکلسمی — شروع ۴ واحد/kg هر ۱۲ ساعت؛ تا ۸ واحد/kg هر ۱۲ ساعت (سپس حداکثر ۸ واحد/kg هر ۶ ساعت)",
+        "en": "Hypercalcaemia — start 4 units/kg every 12 h; up to 8 units/kg every 12 h (then max 8 units/kg every 6 h)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDose": 4,
+        "perKgPerDoseMax": 8,
+        "intervalHours": 12
+      },
+      "refs": [
+        {
+          "source": "fda-miacalcin-inj",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "اگر پس از ۱ تا ۲ روز پاسخ نبود ۸ واحد/kg هر ۱۲ ساعت؛ اگر ۲ روز بعد هم نبود حداکثر ۸ واحد/kg هر ۶ ساعت.",
+            "en": "If no response after 1–2 days, 8 units/kg every 12 h; if still none after 2 more days, max 8 units/kg every 6 h."
+          },
+          "refs": [
+            {
+              "source": "fda-miacalcin-inj",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به کلسی‌تونین سالمون یا اجزا (آنافیلاکسی کشنده گزارش شده).",
+        "en": "Hypersensitivity to calcitonin salmon or excipients (fatal anaphylaxis reported)."
+      },
+      "refs": [
+        {
+          "source": "fda-miacalcin-inj",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "حساسیت؛ هیپوکلسمی (تتانی)؛ بدخیمی در مصرف طولانی؛ تشکیل آنتی‌بادی.",
+        "en": "Hypersensitivity; hypocalcaemia (tetany); malignancy with long-term use; antibody formation."
+      },
+      "refs": [
+        {
+          "source": "fda-miacalcin-inj",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "paget",
+      "formulation": "inj-200",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "op",
+      "formulation": "inj-200",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 0.5
+      }
+    },
+    {
+      "regimen": "hypercal",
+      "formulation": "inj-200",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 280,
+        "mlPerDose": 1.4,
+        "upperPerDose": 560
+      }
+    }
+  ],
+  "atc": [
+    "H05BA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02312",
+        "en": "CALCITONIN 100 IU/ML AMP",
+        "fa": "آمپول کلسی‌تونین ۱۰۰ واحد بین‌المللی / میلی‌لیتر"
+      },
+      {
+        "code": "00194",
+        "en": "CALCITONIN 50 IU/ML AMP",
+        "fa": "آمپول کلسی‌تونین ۵۰ واحد بین‌المللی / میلی‌لیتر"
+      },
+      {
+        "code": "01415",
+        "en": "CALCITONIN,SALMON 100 IU/DOS NASAL SPRAY",
+        "fa": "اسپری بینی کلسی‌تونین سالمون ۱۰۰ واحد بین‌المللی / دوس"
+      },
+      {
+        "code": "01738",
+        "en": "CALCITONIN,SALMON 200 IU/DOS NASAL SPRAY",
+        "fa": "اسپری بینی کلسی‌تونین سالمون ۲۰۰ واحد بین‌المللی / دوس"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1430/Calcitonin",
+        "url": "https://www.darooyab.ir/G-1430/Calcitonin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=017808",
+      "label": "NDA017808"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26caf31f-7f7c-48a8-a1ac-35d2ceefda2b",
+      "label": "FDA Miacalcin inj"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682788.html",
+      "label": "Calcitonin Salmon Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a601031.html",
+      "label": "Calcitonin Salmon Nasal Spray"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H05BA01",
+      "label": "H05BA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1430/Calcitonin",
+      "label": "Calcitonin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no studies with Miacalcin injection in pregnant women to inform a drug associated risk for birth defects or miscarriage.",
+      "refs": [
+        {
+          "source": "fda-miacalcin-inj",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information on the presence of calcitonin salmon in human milk, the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-miacalcin-inj",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-miacalcin-inj",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-miacalcin-inj",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-miacalcin-inj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA017808"
+  }
+}

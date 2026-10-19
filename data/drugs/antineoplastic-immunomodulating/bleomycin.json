@@ -1,0 +1,282 @@
+{
+  "id": "bleomycin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بلئومایسین",
+    "en": "Bleomycin"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بیوتیک ضدتومور",
+    "en": "Antitumour antibiotic"
+  },
+  "brands": [
+    {
+      "name": "Blenoxane",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "blenoxane",
+    "بلنوکسان",
+    "بلئومایسین",
+    "bleo"
+  ],
+  "formulations": [
+    {
+      "id": "vial-30",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "30 units vial (also 15 units)",
+      "concentration": {
+        "amount": 30,
+        "unit": "unit",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bleomycin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "tumour",
+      "disease": "testicular-cancer",
+      "label": {
+        "fa": "سرطان بیضه، لنفوم هوچکین و غیرهوچکین، سلول سنگفرشی — ۱۰ تا ۲۰ واحد/m² (۰٫۲۵ تا ۰٫۵ واحد/kg) هفته‌ای ۱ یا ۲ بار",
+        "en": "Testicular carcinoma, Hodgkin and non-Hodgkin lymphoma, squamous cell carcinoma — 10–20 units/m² (0.25–0.5 units/kg) once or twice weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "unit",
+      "dose": {
+        "perM2PerDay": 10,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bleomycin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-bleomycin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "عدد ماشین‌حساب حد پایین است. لنفوم: ۲ دوز اول ۲ واحد یا کمتر (واکنش آنافیلاکتوئید). سمیت ریه با دوز کل بالای ۴۰۰ واحد به‌شدت بیشتر می‌شود.",
+            "en": "Calculator gives the lower bound. Lymphoma: first 2 doses 2 units or less (anaphylactoid reaction). Pulmonary toxicity rises sharply above 400 units total."
+          },
+          "refs": [
+            {
+              "source": "fda-bleomycin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه واکنش حساسیتی یا ایدیوسنکراتیک به بلئومایسین.",
+        "en": "Prior hypersensitive or idiosyncratic reaction to bleomycin."
+      },
+      "refs": [
+        {
+          "source": "fda-bleomycin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سمیت ریوی (پنومونیت تا فیبروز، حدود ۱۰٪)؛ واکنش ایدیوسنکراتیک شبیه آنافیلاکسی در لنفوم؛ احتیاط در نارسایی کلیه یا ریه.",
+        "en": "Pulmonary toxicity (pneumonitis to fibrosis, about 10%); idiosyncratic anaphylaxis-like reactions in lymphoma; caution in renal or pulmonary impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-bleomycin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "tumour",
+      "formulation": "vial-30",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "L01DC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00170",
+        "en": "BLEOMYCIN SULFATE 15MG VIAL",
+        "fa": "ویال بلئومایسین سولفات ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "19196",
+        "en": "BLEOMYCIN SULFATE 5MG INJ",
+        "fa": "فرآورده تزریقی بلئومایسین سولفات ۵ میلی‌گرم"
+      },
+      {
+        "code": "52471",
+        "en": "BLEOMYCIN INJECTION PARENTERAL 15 [iU]",
+        "fa": "فرآورده تزریقی بلئومایسین ۱۵ واحد بین‌المللی"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-956/Bleomycin-Sulfate",
+        "url": "https://www.darooyab.ir/G-956/Bleomycin-Sulfate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205030",
+      "label": "ANDA205030"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=640602f9-a7df-46f0-a9b1-19c471008bee",
+      "label": "FDA Bleomycin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682125.html",
+      "label": "Bleomycin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01DC01",
+      "label": "L01DC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-956/Bleomycin-Sulfate",
+      "label": "Bleomycin-Sulfate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Bleomycin can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-bleomycin",
+          "section": "Pregnancy “Category D”"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants, it is recommended that nursing be discontinued by women receiving bleomycin therapy.",
+      "refs": [
+        {
+          "source": "fda-bleomycin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of bleomycin in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-bleomycin",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-bleomycin",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-bleomycin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA205030"
+  }
+}

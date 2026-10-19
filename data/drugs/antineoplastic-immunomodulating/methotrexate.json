@@ -42,6 +42,26 @@
           "section": "3"
         }
       ]
+    },
+    {
+      "id": "inj-25",
+      "form": "injection",
+      "route": "iv",
+      "label": "25 mg/mL preservative-free (50 mg/2 mL, 250 mg/10 mL, 1 g/40 mL) — IV, IM, SC or intrathecal",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mtx-injection",
+          "section": "3"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -75,6 +95,9 @@
           "source": "fda-methotrexate-tab",
           "section": "2.1"
         }
+      ],
+      "allowedFormulations": [
+        "tab-2-5"
       ]
     },
     {
@@ -107,6 +130,9 @@
           "source": "fda-methotrexate-tab",
           "section": "2"
         }
+      ],
+      "allowedFormulations": [
+        "tab-2-5"
       ]
     },
     {
@@ -139,6 +165,408 @@
           "source": "fda-methotrexate-tab",
           "section": "2"
         }
+      ],
+      "allowedFormulations": [
+        "tab-2-5"
+      ]
+    },
+    {
+      "id": "osteo",
+      "disease": "osteosarcoma",
+      "label": {
+        "fa": "استئوسارکوم — ۱۲ g/m² وریدی طی ۴ ساعت (حداکثر ۲۰ g در هر دوز) با نجات لکوورین",
+        "en": "Osteosarcoma — 12 g/m² IV over 4 h (max 20 g per dose) with leucovorin rescue"
+      },
+      "population": {},
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 12000,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mtx-injection",
+          "section": "2.6"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 20000,
+        "refs": [
+          {
+            "source": "fda-mtx-injection",
+            "section": "2.6"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.6"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "دوز بالا: نجات لکوورین، هیدراتاسیون، قلیایی‌سازی ادرار و پایش سطح متوترکسات الزامی.",
+            "en": "High dose: leucovorin rescue, hydration, urine alkalinisation and methotrexate level monitoring are mandatory."
+          },
+          "refs": [
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scchn",
+      "disease": "head-neck-cancer",
+      "label": {
+        "fa": "سرطان سلول سنگفرشی سر و گردن — ۴۰ تا ۶۰ mg/m² وریدی هفته‌ای یک بار",
+        "en": "Squamous cell head and neck cancer — 40–60 mg/m² IV once weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 40,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mtx-injection",
+          "section": "2.8"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "breast",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان — ۴۰ mg/m² وریدی در رژیم چنددارویی با سیکلوفسفامید و فلوئوروراسیل",
+        "en": "Breast cancer — 40 mg/m² IV within a cyclophosphamide- and fluorouracil-based regimen"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 40,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mtx-injection",
+          "section": "2.7"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "it-0",
+      "disease": "acute-lymphoblastic-leukemia",
+      "label": {
+        "fa": "لوسمی مننژیال (پیشگیری/درمان) — داخل نخاعی، زیر ۱ سال: ۶ mg",
+        "en": "Meningeal leukaemia (prophylaxis/treatment) — intrathecal, under 1 year: 6 mg"
+      },
+      "population": {
+        "maxAge": {
+          "value": 1,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 6,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mtx-injection",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط فرآورده بدون نگهدارنده، رقیق‌شده تا ۱ mg/mL در سالین بدون نگهدارنده. درمان: هر ۲ تا ۵ روز تا پاکسازی CSF.",
+            "en": "Preservative-free product only, diluted to 1 mg/mL in preservative-free saline. Treatment: every 2–5 days until CSF clears."
+          },
+          "refs": [
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "it-1",
+      "disease": "acute-lymphoblastic-leukemia",
+      "label": {
+        "fa": "لوسمی مننژیال — داخل نخاعی، ۱ تا <۲ سال: ۸ mg",
+        "en": "Meningeal leukaemia — intrathecal, 1 to <2 years: 8 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 8,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mtx-injection",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط فرآورده بدون نگهدارنده، رقیق‌شده تا ۱ mg/mL در سالین بدون نگهدارنده. درمان: هر ۲ تا ۵ روز تا پاکسازی CSF.",
+            "en": "Preservative-free product only, diluted to 1 mg/mL in preservative-free saline. Treatment: every 2–5 days until CSF clears."
+          },
+          "refs": [
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "it-2",
+      "disease": "acute-lymphoblastic-leukemia",
+      "label": {
+        "fa": "لوسمی مننژیال — داخل نخاعی، ۲ تا <۳ سال: ۱۰ mg",
+        "en": "Meningeal leukaemia — intrathecal, 2 to <3 years: 10 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 3,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mtx-injection",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط فرآورده بدون نگهدارنده، رقیق‌شده تا ۱ mg/mL در سالین بدون نگهدارنده. درمان: هر ۲ تا ۵ روز تا پاکسازی CSF.",
+            "en": "Preservative-free product only, diluted to 1 mg/mL in preservative-free saline. Treatment: every 2–5 days until CSF clears."
+          },
+          "refs": [
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "it-3",
+      "disease": "acute-lymphoblastic-leukemia",
+      "label": {
+        "fa": "لوسمی مننژیال — داخل نخاعی، ۳ سال و بالاتر: ۱۲ mg (۹ سال به بالا ۱۲ تا ۱۵ mg)",
+        "en": "Meningeal leukaemia — intrathecal, 3 years and older: 12 mg (≥9 years 12–15 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 12,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mtx-injection",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "inj-25"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط فرآورده بدون نگهدارنده، رقیق‌شده تا ۱ mg/mL در سالین بدون نگهدارنده. درمان: هر ۲ تا ۵ روز تا پاکسازی CSF.",
+            "en": "Preservative-free product only, diluted to 1 mg/mL in preservative-free saline. Treatment: every 2–5 days until CSF clears."
+          },
+          "refs": [
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-mtx-injection",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "all",
+      "disease": "acute-lymphoblastic-leukemia",
+      "label": {
+        "fa": "لوسمی لنفوبلاستیک حاد — جزئی از رژیم چنددارویی، ۱۰ تا ۵۰۰۰ mg/m²",
+        "en": "Acute lymphoblastic leukaemia — part of a multi-drug regimen, 10–5000 mg/m²"
+      },
+      "population": {},
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "دوز و برنامه بر اساس پروتکل، گروه خطر و فاز درمان فردی می‌شود (عضلانی ۲۰ تا ۳۰ mg/m²/هفته). ۵۰۰ mg/m² و بیشتر: نجات لکوورین الزامی.",
+          "en": "Dose and schedule are individualised by protocol, risk group and phase (IM 20–30 mg/m²/week). 500 mg/m² or more: leucovorin rescue mandatory."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-mtx-injection",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-mtx-injection",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "inj-25"
       ]
     }
   ],
@@ -180,7 +608,108 @@
     "reviewer": null,
     "date": null
   },
-  "examples": [],
+  "examples": [
+    {
+      "regimen": "osteo",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 25,
+        "heightCm": 144
+      },
+      "expect": {
+        "perDose": 12000,
+        "mlPerDose": 480
+      }
+    },
+    {
+      "regimen": "osteo",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 18,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 20000,
+        "mlPerDose": 800
+      }
+    },
+    {
+      "regimen": "scchn",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 80,
+        "mlPerDose": 3.2
+      }
+    },
+    {
+      "regimen": "breast",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 80,
+        "mlPerDose": 3.2
+      }
+    },
+    {
+      "regimen": "it-0",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 0.5,
+        "weightKg": 7
+      },
+      "expect": {
+        "perDose": 6,
+        "mlPerDose": 0.24
+      }
+    },
+    {
+      "regimen": "it-1",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 1.5,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 8,
+        "mlPerDose": 0.32
+      }
+    },
+    {
+      "regimen": "it-2",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 2.5,
+        "weightKg": 13
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 0.4
+      }
+    },
+    {
+      "regimen": "it-3",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 12,
+        "mlPerDose": 0.48
+      }
+    }
+  ],
   "atc": [
     "L04AX03"
   ],

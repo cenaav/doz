@@ -1,0 +1,313 @@
+{
+  "id": "sufentanil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سوفنتانیل",
+    "en": "Sufentanil"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "اپیوئید قوی (بیهوشی)",
+    "en": "Potent opioid (anaesthesia)"
+  },
+  "brands": [
+    {
+      "name": "Sufenta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "sufenta",
+    "سوفنتا",
+    "سوفنتانیل"
+  ],
+  "formulations": [
+    {
+      "id": "amp-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mcg/mL (1 mL vial)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-sufentanil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "short",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "جزء مسکن بیهوشی عمومی (۱ تا ۲ ساعت) — کل ۱ تا ۲ mcg/kg",
+        "en": "Analgesic component of general anaesthesia (1–2 h) — total 1–2 mcg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerDose": 1,
+        "perKgPerDoseMax": 2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-sufentanil",
+          "section": "2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حدود ۷۵٪ یا بیشتر پیش از لوله‌گذاری؛ سپس ۱۰ تا ۲۵ mcg در صورت نیاز. نیاز کل ۱ mcg/kg/ساعت یا کمتر توصیه می‌شود. دوز فردی بر اساس سن، وزن و وضعیت.",
+            "en": "About 75% or more before intubation; then 10–25 mcg increments as needed. Total requirements of ≤1 mcg/kg/h recommended. Individualise by age, weight and status."
+          },
+          "refs": [
+            {
+              "source": "fda-sufentanil",
+              "section": "2, Table 1"
+            },
+            {
+              "source": "fda-sufentanil",
+              "section": "2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط توسط فرد آموزش‌دیده در بیهوشی، با امکانات راه هوایی، تهویه و احیا.",
+            "en": "Only by personnel trained in anaesthesia, with airway, ventilation and resuscitation equipment at hand."
+          },
+          "refs": [
+            {
+              "source": "fda-sufentanil",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به سوفنتانیل.",
+        "en": "Hypersensitivity to sufentanil."
+      },
+      "refs": [
+        {
+          "source": "fda-sufentanil",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: اعتیاد و سوءمصرف؛ دپرسیون تنفسی تهدیدکننده حیات؛ خطر با بنزودیازپین‌ها و سایر مضعف‌های CNS.",
+        "en": "Boxed warning: addiction and misuse; life-threatening respiratory depression; risks with benzodiazepines and other CNS depressants."
+      },
+      "refs": [
+        {
+          "source": "fda-sufentanil",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سفتی عضلانی؛ دپرسیون شدید قلبی‌عروقی؛ تزریق اپیدورال نادرست؛ افزایش فشار داخل جمجمه.",
+        "en": "Muscle rigidity; severe cardiovascular depression; improper epidural injection; raised intracranial pressure."
+      },
+      "refs": [
+        {
+          "source": "fda-sufentanil",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "short",
+      "formulation": "amp-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 70,
+        "mlPerDose": 1.4,
+        "upperPerDose": 140
+      }
+    }
+  ],
+  "atc": [
+    "N01AH03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "10214",
+        "en": "SUFENTANIL 10MCG/2ML AMP",
+        "fa": "آمپول سوفنتانیل ۱۰ میکروگرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "21744",
+        "en": "SUFENTANIL 250MCG/5ML AMP",
+        "fa": "آمپول سوفنتانیل ۲۵۰ میکروگرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "10216",
+        "en": "SUFENTANIL 25MCG/5ML AMP",
+        "fa": "آمپول سوفنتانیل ۲۵ میکروگرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "01366",
+        "en": "SUFENTANIL 50MCG/10ML AMP",
+        "fa": "آمپول سوفنتانیل ۵۰ میکروگرم / ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-192/Sufentanil",
+        "url": "https://www.darooyab.ir/G-192/Sufentanil"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-sufentanil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA074534"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=074534",
+      "label": "ANDA074534"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20293943-46ff-4345-1aa4-929b4e017a25",
+      "label": "FDA Sufentanil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N01AH03",
+      "label": "N01AH03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-192/Sufentanil",
+      "label": "Sufentanil"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Use of opioid analgesics for an extended period of time during pregnancy may cause neonatal opioid withdrawal syndrome.",
+      "refs": [
+        {
+          "source": "fda-sufentanil",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for Sufentanil Citrate Injection and any potential adverse effects on the breastfed infant from Sufentanil Citrate Injection or from the underlying maternal condition.",
+      "refs": [
+        {
+          "source": "fda-sufentanil",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of intravenous sufentanil in pediatric patients as young as 1 day old undergoing cardiovascular surgery have been documented in a limited number of cases.",
+      "refs": [
+        {
+          "source": "fda-sufentanil",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, use caution when selecting a dosage for an elderly patient, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-sufentanil",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Use of opioids for an extended period of time may cause reduced fertility in females and males of reproductive potential.",
+      "refs": [
+        {
+          "source": "fda-sufentanil",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

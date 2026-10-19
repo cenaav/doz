@@ -1,0 +1,326 @@
+{
+  "id": "cisatracurium",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیس‌آتراکوریوم",
+    "en": "Cisatracurium"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "شل‌کننده عضلانی غیردپلاریزان (بنزیل‌ایزوکینولین)",
+    "en": "Non-depolarising neuromuscular blocker (benzylisoquinolinium)"
+  },
+  "brands": [
+    {
+      "name": "Nimbex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nimbex",
+    "نیمبکس",
+    "سیس آتراکوریوم"
+  ],
+  "formulations": [
+    {
+      "id": "vial-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL (200 mg/20 mL)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cisatracurium",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "intub",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "لوله‌گذاری تراشه بزرگسال — ۰٫۱۵ تا ۰٫۲ mg/kg بولوس وریدی",
+        "en": "Tracheal intubation, adults — 0.15–0.2 mg/kg IV bolus"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.15,
+        "perKgPerDoseMax": 0.2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cisatracurium",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده ۰٫۰۳ mg/kg، اولین بار ۴۰ تا ۵۰ دقیقه پس از ۰٫۱۵ mg/kg. شیرخوار ۱ تا ۲۳ ماه: ۰٫۱۵ mg/kg. سوختگی: مقاومت (دوز بیشتر). پایش با محرک عصب محیطی.",
+            "en": "Maintenance 0.03 mg/kg, first at 40–50 min after 0.15 mg/kg. Infants 1–23 months: 0.15 mg/kg. Burns: resistance (higher doses). Monitor with a nerve stimulator."
+          },
+          "refs": [
+            {
+              "source": "fda-cisatracurium",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-cisatracurium",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-cisatracurium",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-cisatracurium",
+              "section": "2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط توسط فرد آموزش‌دیده در بیهوشی، با امکانات راه هوایی، تهویه و احیا.",
+            "en": "Only by personnel trained in anaesthesia, with airway, ventilation and resuscitation equipment at hand."
+          },
+          "refs": [
+            {
+              "source": "fda-cisatracurium",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infant",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "لوله‌گذاری شیرخوار ۱ تا ۲۳ ماه — ۰٫۱۵ mg/kg طی ۵ تا ۱۰ ثانیه",
+        "en": "Intubation, infants 1–23 months — 0.15 mg/kg over 5–10 s"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.15,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cisatracurium",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شناخته‌شده به سیس‌آتراکوریوم.",
+        "en": "Known hypersensitivity to cisatracurium."
+      },
+      "refs": [
+        {
+          "source": "fda-cisatracurium",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "فقط با امکانات تنفس مصنوعی؛ هوشیاری را از بین نمی‌برد (بیهوشی کافی لازم)؛ آنافیلاکسی؛ فلج باقی‌مانده — پایش با محرک عصب محیطی.",
+        "en": "Only with ventilatory support available; does not cause unconsciousness (adequate anaesthesia required); anaphylaxis; residual paralysis — monitor with a peripheral nerve stimulator."
+      },
+      "refs": [
+        {
+          "source": "fda-cisatracurium",
+          "section": "5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "خطای دارویی مرگبار (برچسب‌گذاری و نگهداری جدا)؛ تشنج (لادانوزین)؛ هیپرترمی بدخیم.",
+        "en": "Fatal medication errors (separate storage and labelling); seizures (laudanosine); malignant hyperthermia."
+      },
+      "refs": [
+        {
+          "source": "fda-cisatracurium",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "intub",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 10.5,
+        "mlPerDose": 1.05,
+        "upperPerDose": 14
+      }
+    },
+    {
+      "regimen": "infant",
+      "formulation": "vial-10",
+      "input": {
+        "ageMonths": 10,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 1.5,
+        "mlPerDose": 0.15
+      }
+    }
+  ],
+  "atc": [
+    "M03AC11"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Cisatracurium"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cisatracurium",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA216539"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216539",
+      "label": "ANDA216539"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1c6a8b98-deac-4e25-b4a0-5d0af5090281",
+      "label": "FDA Cisatracurium"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M03AC11",
+      "label": "M03AC11"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The 10 mL Cisatracurium Besylate Injection multiple-dose vials contain the preservative benzyl alcohol.",
+      "refs": [
+        {
+          "source": "fda-cisatracurium",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary The 10 mL Cisatracurium Besylate Injection multiple-dose vials contain the preservative benzyl alcohol.",
+      "refs": [
+        {
+          "source": "fda-cisatracurium",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Cisatracurium Besylate Injection have not been established in pediatric patients less than 1 month of age.",
+      "refs": [
+        {
+          "source": "fda-cisatracurium",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of subjects (135) in clinical studies of Cisatracurium Besylate Injection, 57, 63, and 15 subjects were 65 to 70 years old, 70 to 80 years old, and greater than 80 years old, respectively.",
+      "refs": [
+        {
+          "source": "fda-cisatracurium",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

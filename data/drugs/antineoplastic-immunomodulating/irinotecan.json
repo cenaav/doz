@@ -1,0 +1,452 @@
+{
+  "id": "irinotecan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایرینوتکان",
+    "en": "Irinotecan"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده توپوایزومراز I",
+    "en": "Topoisomerase I inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Camptosar",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "camptosar",
+    "campto",
+    "کمپتو",
+    "ایرینوتکان"
+  ],
+  "formulations": [
+    {
+      "id": "inj-20",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/mL (40 mg/2 mL, 100 mg/5 mL)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "weekly",
+      "disease": "colorectal-cancer",
+      "label": {
+        "fa": "سرطان کولورکتال (ترکیبی رژیم ۱، با LV/5-FU) — ۱۲۵ mg/m² وریدی ۹۰ دقیقه، روز ۱، ۸، ۱۵، ۲۲ هر ۶ هفته",
+        "en": "Colorectal cancer (combination regimen 1, with LV/5-FU) — 125 mg/m² IV over 90 min on days 1, 8, 15, 22 every 6 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 125,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-irinotecan",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "تک‌دارویی هفتگی هم ۱۲۵ mg/m² (روز ۱، ۸، ۱۵، ۲۲ هر ۶ هفته). UGT1A1*28 هموزیگوت: کاهش یک سطح دوز.",
+            "en": "Single-agent weekly is also 125 mg/m² (days 1, 8, 15, 22 every 6 weeks). UGT1A1*28 homozygous: reduce by one dose level."
+          },
+          "refs": [
+            {
+              "source": "fda-irinotecan",
+              "section": "2.2, Table 3"
+            },
+            {
+              "source": "fda-irinotecan",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2w",
+      "disease": "colorectal-cancer",
+      "label": {
+        "fa": "سرطان کولورکتال (ترکیبی رژیم ۲، با LV/5-FU) — ۱۸۰ mg/m² روز ۱، ۱۵، ۲۹ هر ۶ هفته",
+        "en": "Colorectal cancer (combination regimen 2, with LV/5-FU) — 180 mg/m² on days 1, 15, 29 every 6 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 180,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-irinotecan",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q3w",
+      "disease": "colorectal-cancer",
+      "label": {
+        "fa": "سرطان کولورکتال تک‌دارویی (رژیم ۲) — ۳۵۰ mg/m² وریدی هر ۳ هفته",
+        "en": "Colorectal cancer single agent (regimen 2) — 350 mg/m² IV every 3 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 350,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "2.2, Table 3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-irinotecan",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ایرینوتکان یا اجزا.",
+        "en": "Hypersensitivity to irinotecan or excipients."
+      },
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: اسهال زودرس (کولینرژیک — آتروپین) و دیررس تهدیدکننده حیات (لوپرامید فوری)؛ سرکوب شدید مغز استخوان.",
+        "en": "Boxed warning: early (cholinergic — atropine) and late life-threatening diarrhoea (prompt loperamide); severe myelosuppression."
+      },
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "نوتروپنی بیشتر با کاهش فعالیت UGT1A1؛ حساسیت؛ نارسایی کلیه؛ سمیت ریوی؛ سمیت جنینی.",
+        "en": "Higher neutropenia risk with reduced UGT1A1 activity; hypersensitivity; renal failure; pulmonary toxicity; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "weekly",
+      "formulation": "inj-20",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 250,
+        "mlPerDose": 12.5
+      }
+    },
+    {
+      "regimen": "q2w",
+      "formulation": "inj-20",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 360,
+        "mlPerDose": 18
+      }
+    },
+    {
+      "regimen": "q3w",
+      "formulation": "inj-20",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 700,
+        "mlPerDose": 35
+      }
+    }
+  ],
+  "atc": [
+    "L01CE02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02088",
+        "en": "IRINOTECAN HCL 100MG/5ML POWDER VIAL",
+        "fa": "ویال ایرینوتکان هیدروکلراید ۱۰۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "02090",
+        "en": "IRINOTECAN HCL 100MG/5ML SOLUTION FOR INFUSION",
+        "fa": "محلول انفوزیون ایرینوتکان هیدروکلراید ۱۰۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "21460",
+        "en": "IRINOTECAN HCL 300MG/15ML SOLUTION FOR INFUSION",
+        "fa": "محلول انفوزیون ایرینوتکان هیدروکلراید ۳۰۰ میلی‌گرم / ۱۵ میلی‌لیتر"
+      },
+      {
+        "code": "01900",
+        "en": "IRINOTECAN HCL 40MG/2ML POWDER VIAL",
+        "fa": "ویال ایرینوتکان هیدروکلراید ۴۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "02089",
+        "en": "IRINOTECAN HCL 40MG/2ML SOLUTION FOR INFUSION",
+        "fa": "محلول انفوزیون ایرینوتکان هیدروکلراید ۴۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "18556",
+        "en": "IRINOTECAN 300MG/15ML VIAL",
+        "fa": "ویال ایرینوتکان ۳۰۰ میلی‌گرم / ۱۵ میلی‌لیتر"
+      },
+      {
+        "code": "20298",
+        "en": "IRINOTECAN HYDROCHLORIDE INJECTION, POWDER, FOR SOLUTION INTRAVENOUS 40 mg",
+        "fa": "پودر تزریقی ایرینوتکان هیدروکلراید ۴۰ میلی‌گرم"
+      },
+      {
+        "code": "20299",
+        "en": "IRINOTECAN HYDROCHLORIDE INJECTION, POWDER, FOR SOLUTION INTRAVENOUS 100 mg",
+        "fa": "پودر تزریقی ایرینوتکان هیدروکلراید ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1018/Irinotecan",
+        "url": "https://www.darooyab.ir/G-1018/Irinotecan"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-irinotecan",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA078589"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=078589",
+      "label": "ANDA078589"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e1fdcaa-918f-4cd8-9c7a-4c538d866198",
+      "label": "FDA Irinotecan"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608043.html",
+      "label": "Irinotecan Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01CE02",
+      "label": "L01CE02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1018/Irinotecan",
+      "label": "Irinotecan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal studies and its mechanism of action, Irinotecan Hydrochloride Injection can cause fetal harm when administered to a pregnant woman [see Clinical Pharmacology ( 12.1 )] .",
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions from Irinotecan Hydrochloride Injection in the breastfed child, advise lactating women not to breastfeed during treatment with Irinotecan Hydrochloride Injection and for 7 days after the final dose.",
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The effectiveness of irinotecan in pediatric patients has not been established.",
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Patients greater than 65 years of age should be closely monitored because of a greater risk of early and late diarrhea in this population [see Clinical Pharmacology (12.3) and Adverse Reactions (6.1) ] .",
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Irinotecan Hydrochloride Injection can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-irinotecan",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

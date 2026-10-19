@@ -1,0 +1,309 @@
+{
+  "id": "durvalumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دوروالوماب",
+    "en": "Durvalumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده PD-L1",
+    "en": "PD-L1 blocking antibody"
+  },
+  "brands": [
+    {
+      "name": "Imfinzi",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "imfinzi",
+    "ایمفینزی",
+    "دوروالوماب"
+  ],
+  "formulations": [
+    {
+      "id": "inj-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mg/mL (120 mg/2.4 mL, 500 mg/10 mL)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-imfinzi",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "fixed",
+      "disease": "lung-cancer",
+      "label": {
+        "fa": "NSCLC، SCLC، سرطان مجاری صفراوی، کبد و سایر — وزن ۳۰ kg به بالا: ۱۵۰۰ mg وریدی هر ۳ یا ۴ هفته طبق رژیم",
+        "en": "NSCLC, SCLC, biliary tract, liver and other cancers — weight ≥30 kg: 1500 mg IV every 3 or 4 weeks by regimen"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 30
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1500,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-imfinzi",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-imfinzi",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "light",
+      "disease": "lung-cancer",
+      "label": {
+        "fa": "وزن زیر ۳۰ kg — ۲۰ mg/kg وریدی هر ۳ یا ۴ هفته",
+        "en": "Weight under 30 kg — 20 mg/kg IV every 3 or 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxWeightKg": 29.99
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 20,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-imfinzi",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-imfinzi",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش‌های ایمنی شدید و کشنده (پنومونیت، کولیت، هپاتیت، اندوکرینوپاتی، نفریت، پوستی)؛ واکنش انفوزیون؛ عوارض پیوند آلوژن مغز استخوان؛ سمیت جنینی.",
+        "en": "Severe and fatal immune-mediated reactions (pneumonitis, colitis, hepatitis, endocrinopathies, nephritis, skin); infusion reactions; complications of allogeneic HSCT; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-imfinzi",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "fixed",
+      "formulation": "inj-50",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1500,
+        "mlPerDose": 30
+      }
+    },
+    {
+      "regimen": "light",
+      "formulation": "inj-50",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 28
+      },
+      "expect": {
+        "perDose": 560,
+        "mlPerDose": 11.2
+      }
+    }
+  ],
+  "atc": [
+    "L01FF03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5560/Durvalumab",
+        "url": "https://www.darooyab.ir/G-5560/Durvalumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-imfinzi",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761069"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761069",
+      "label": "BLA761069"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8baba4ea-2855-42fa-9bd9-5a7548d4cec3",
+      "label": "FDA Imfinzi"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a617030.html",
+      "label": "Durvalumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01FF03",
+      "label": "L01FF03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5560/Durvalumab",
+      "label": "Durvalumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal studies and its mechanism of action, IMFINZI can cause fetal harm when administered to a pregnant woman [see Clinical Pharmacology (12.1) ] .",
+      "refs": [
+        {
+          "source": "fda-imfinzi",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for adverse reactions in a breastfed child, advise women not to breastfeed during treatment with IMFINZI and for 3 months after the last dose.",
+      "refs": [
+        {
+          "source": "fda-imfinzi",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of IMFINZI have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-imfinzi",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between patients 65 years or older and younger patients.",
+      "refs": [
+        {
+          "source": "fda-imfinzi",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females IMFINZI can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-imfinzi",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

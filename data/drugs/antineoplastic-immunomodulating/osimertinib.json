@@ -1,0 +1,297 @@
+{
+  "id": "osimertinib",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اوسیمرتینیب",
+    "en": "Osimertinib"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده EGFR نسل سوم",
+    "en": "Third-generation EGFR inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Tagrisso",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tagrisso",
+    "تاگریسو",
+    "اوسیمرتینیب"
+  ],
+  "formulations": [
+    {
+      "id": "tab-40",
+      "form": "tablet",
+      "route": "oral",
+      "label": "40 mg tablet",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tagrisso",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-80",
+      "form": "tablet",
+      "route": "oral",
+      "label": "80 mg tablet",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tagrisso",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "nsclc",
+      "disease": "lung-cancer",
+      "label": {
+        "fa": "NSCLC با جهش EGFR (حذف اگزون ۱۹ یا L858R) — ۸۰ mg یک بار در روز",
+        "en": "EGFR-mutated NSCLC (exon 19 deletion or L858R) — 80 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 80,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-tagrisso",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-tagrisso",
+              "section": "2.3"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "درمان کمکی پس از جراحی: حداکثر ۳ سال. انتخاب بیمار با تست مورد تأیید FDA.",
+            "en": "Adjuvant after resection: up to 3 years. Select patients with an FDA-approved test."
+          },
+          "refs": [
+            {
+              "source": "fda-tagrisso",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-tagrisso",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "بیماری بینابینی ریه؛ طولانی شدن QT؛ کاردیومیوپاتی؛ کراتیت؛ SJS؛ واسکولیت پوستی؛ آنمی آپلاستیک؛ میوزیت؛ سمیت جنینی.",
+        "en": "Interstitial lung disease; QT prolongation; cardiomyopathy; keratitis; SJS; cutaneous vasculitis; aplastic anaemia; myositis; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-tagrisso",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "nsclc",
+      "formulation": "tab-80",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 80,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L01EB04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "50911",
+        "en": "OSIMERTINIB 80 mg TABLET",
+        "fa": "قرص اسیمرتینیب ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "50910",
+        "en": "OSIMERTINIB 40 mg TABLET",
+        "fa": "قرص اسیمرتینیب ۴۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5379/Osimertinib",
+        "url": "https://www.darooyab.ir/G-5379/Osimertinib"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-tagrisso",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA208065"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208065",
+      "label": "NDA208065"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5e81b4a7-b971-45e1-9c31-29cea8c87ce7",
+      "label": "FDA Tagrisso"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616005.html",
+      "label": "Osimertinib"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01EB04",
+      "label": "L01EB04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5379/Osimertinib",
+      "label": "Osimertinib"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on data from animal studies and its mechanism of action [see Clinical Pharmacology (12.1) ] , TAGRISSO can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-tagrisso",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants from osimertinib, advise women not to breastfeed during treatment with TAGRISSO and for 2 weeks after the last dose.",
+      "refs": [
+        {
+          "source": "fda-tagrisso",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of TAGRISSO in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-tagrisso",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between patients 65 years or older and younger patients.",
+      "refs": [
+        {
+          "source": "fda-tagrisso",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise females of reproductive potential to use effective contraception during treatment with TAGRISSO and for 6 weeks after the last dose [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-tagrisso",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

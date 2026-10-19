@@ -1,0 +1,511 @@
+{
+  "id": "bosentan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بوسنتان",
+    "en": "Bosentan"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آنتاگونیست گیرنده اندوتلین",
+    "en": "Endothelin receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Tracleer",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tracleer",
+    "تراکلیر",
+    "بوسنتان"
+  ],
+  "formulations": [
+    {
+      "id": "tab-62-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "62.5 mg tablet",
+      "concentration": {
+        "amount": 62.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-125",
+      "form": "tablet",
+      "route": "oral",
+      "label": "125 mg tablet",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "disp-32",
+      "form": "tablet",
+      "route": "oral",
+      "label": "32 mg tablet for oral suspension (scored)",
+      "concentration": {
+        "amount": 32,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "start",
+      "disease": "pulmonary-arterial-hypertension",
+      "label": {
+        "fa": "PAH بالای ۱۲ سال — ۶۲٫۵ mg دو بار در روز (۴ هفته اول؛ زیر ۴۰ kg همین دوز ادامه)",
+        "en": "PAH, over 12 years — 62.5 mg twice daily (first 4 weeks; continue this dose if under 40 kg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 62.5,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-62-5"
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "pulmonary-arterial-hypertension",
+      "label": {
+        "fa": "PAH بالای ۱۲ سال و بالای ۴۰ kg — نگهدارنده ۱۲۵ mg دو بار در روز پس از ۴ هفته",
+        "en": "PAH, over 12 years and over 40 kg — maintenance 125 mg twice daily after 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "minWeightKg": 40
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 125,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-125"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بالاتر از ۱۲۵ mg دو بار در روز سود اضافه ندارد و خطر کبدی بیشتر است.",
+            "en": "Doses above 125 mg twice daily gave no added benefit offsetting liver risk."
+          },
+          "refs": [
+            {
+              "source": "fda-tracleer",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "pulmonary-arterial-hypertension",
+      "label": {
+        "fa": "PAH ۱۲ سال و کمتر — دو بار در روز بر اساس وزن: ۴ تا ۸ kg: ۱۶ mg؛ ۸ تا ۱۶: ۳۲؛ ۱۶ تا ۲۴: ۴۸؛ ۲۴ تا ۴۰: ۶۴ mg",
+        "en": "PAH, 12 years and under — twice daily by weight: 4–8 kg: 16 mg; 8–16: 32; 16–24: 48; 24–40: 64 mg"
+      },
+      "population": {
+        "maxAge": {
+          "value": 12,
+          "unit": "year"
+        },
+        "minWeightKg": 4,
+        "maxWeightKg": 40
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 3.99,
+            "maxWeightKg": 8,
+            "perDose": 16,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 8,
+            "maxWeightKg": 16,
+            "perDose": 32,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 16,
+            "maxWeightKg": 24,
+            "perDose": 48,
+            "dosesPerDay": 2
+          },
+          {
+            "minWeightKg": 24,
+            "maxWeightKg": 40,
+            "perDose": 64,
+            "dosesPerDay": 2
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "disp-32"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "preg",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری.",
+        "en": "Pregnancy."
+      },
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "4.1"
+        }
+      ]
+    },
+    {
+      "id": "csa",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف همزمان سیکلوسپورین A.",
+        "en": "Concomitant cyclosporine A."
+      },
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "4.2"
+        }
+      ]
+    },
+    {
+      "id": "glyb",
+      "severity": "block",
+      "text": {
+        "fa": "مصرف همزمان گلی‌بن‌کلامید (گلیبوراید).",
+        "en": "Concomitant glyburide (glibenclamide)."
+      },
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بوسنتان (DRESS، آنافیلاکسی، آنژیوادم).",
+        "en": "Hypersensitivity to bosentan (DRESS, anaphylaxis, angioedema)."
+      },
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "4.4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت کبدی — آنزیم‌های کبد پیش از شروع و ماهانه؛ فقط از طریق برنامه REMS.",
+        "en": "Boxed warning: hepatotoxicity — liver enzymes before starting and monthly; available only through REMS."
+      },
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-tracleer",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — در بارداری منع مصرف؛ پیش از شروع و ماهانه تست بارداری، پیشگیری مؤثر تا ۱ ماه پس از قطع (برنامه REMS).",
+        "en": "Boxed warning: embryo-fetal toxicity — contraindicated in pregnancy; pregnancy test before and monthly, effective contraception until 1 month after stopping (REMS)."
+      },
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "احتباس مایع؛ ادم ریه با بیماری انسدادی وریدهای ریه؛ کاهش اسپرم؛ کاهش هموگلوبین.",
+        "en": "Fluid retention; pulmonary oedema with veno-occlusive disease; decreased sperm counts; haemoglobin decrease."
+      },
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "start",
+      "formulation": "tab-62-5",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 62.5,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "tab-125",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 125,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "disp-32",
+      "input": {
+        "ageYears": 1,
+        "weightKg": 7
+      },
+      "expect": {
+        "perDose": 16,
+        "tabletsPerDoseRounded": 0.5
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "disp-32",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 48,
+        "tabletsPerDoseRounded": 1.5
+      }
+    }
+  ],
+  "atc": [
+    "C02KX01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07848",
+        "en": "BOSENTAN 125MG TAB",
+        "fa": "قرص بوسنتان ۱۲۵ میلی‌گرم"
+      },
+      {
+        "code": "12114",
+        "en": "BOSENTAN 62.5MG TAB",
+        "fa": "قرص بوسنتان ۶۲٫۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1563/Bosentan",
+        "url": "https://www.darooyab.ir/G-1563/Bosentan"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-tracleer",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021290"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021290",
+      "label": "NDA021290"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=749e42fb-2fe0-45dd-9268-b43bb3f4081c",
+      "label": "FDA Tracleer"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605001.html",
+      "label": "Bosentan"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02KX01",
+      "label": "C02KX01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1563/Bosentan",
+      "label": "Bosentan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Hypersensitivity ( 4.4 ). 4.1 Pregnancy Use of TRACLEER is contraindicated in females who are pregnant [see Boxed Warning , Dosage and Administration (2.1) , Warnings and Precautions (5.3) , Use in Specific Populations (8.1) ] . 4.2 Use with Cyclosporine A Co-administration of cyclosporine A and bosentan resulted in …",
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions, such as fluid retention and hepatotoxicity, in breastfed infants from TRACLEER, advise women not to breastfeed during treatment with TRACLEER.",
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The efficacy of TRACLEER in patients <18 years is supported by data from an uncontrolled trial in which 19 pediatric patients were treated with TRACLEER.",
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies of TRACLEER did not include sufficient numbers of subjects aged 65 and older to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Drug interaction studies show that bosentan reduces serum levels of the estrogen and progestin in oral contraceptives.",
+      "refs": [
+        {
+          "source": "fda-tracleer",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

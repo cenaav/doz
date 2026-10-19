@@ -1,0 +1,270 @@
+{
+  "id": "fibrinogen",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کنسانتره فیبرینوژن",
+    "en": "Fibrinogen concentrate (human)"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "فاکتور انعقادی",
+    "en": "Coagulation factor"
+  },
+  "brands": [
+    {
+      "name": "RiaSTAP",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "riastap",
+    "haemocomplettan",
+    "فیبرینوژن",
+    "هموکمپلتان"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "About 1 g vial (actual potency on label)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-riastap",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "unknown",
+      "disease": "fibrinogen-deficiency",
+      "label": {
+        "fa": "خونریزی حاد در کمبود مادرزادی فیبرینوژن (سطح نامعلوم) — ۷۰ mg/kg وریدی آهسته",
+        "en": "Acute bleeding in congenital fibrinogen deficiency (level unknown) — 70 mg/kg slow IV"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 70,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-riastap",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "سطح معلوم: دوز (mg/kg) = (سطح هدف − سطح فعلی mg/dL) ÷ ۱٫۷. هدف ۱۰۰ mg/dL تا هموستاز. سرعت حداکثر ۵ mL/دقیقه.",
+            "en": "Known level: dose (mg/kg) = (target − measured, mg/dL) ÷ 1.7. Target 100 mg/dL until haemostasis. Rate max 5 mL/min."
+          },
+          "refs": [
+            {
+              "source": "fda-riastap",
+              "section": "2"
+            },
+            {
+              "source": "fda-riastap",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "آنافیلاکسی یا واکنش شدید به فرآورده‌های پلاسمای انسانی.",
+        "en": "Anaphylactic or severe reactions to human plasma-derived products."
+      },
+      "refs": [
+        {
+          "source": "fda-riastap",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی؛ ترومبوز.",
+        "en": "Hypersensitivity; thrombosis."
+      },
+      "refs": [
+        {
+          "source": "fda-riastap",
+          "section": "5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "فرآورده مشتق از پلاسمای انسانی — خطر نظری انتقال عوامل عفونی.",
+        "en": "Human plasma-derived — theoretical risk of transmitting infectious agents."
+      },
+      "refs": [
+        {
+          "source": "fda-riastap",
+          "section": "5.3"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "unknown",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 20,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 1400
+      }
+    }
+  ],
+  "atc": [
+    "B02BB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00532",
+        "en": "FIBRINOGEN 1G VIAL",
+        "fa": "ویال فیبرینوژن ۱ گرم"
+      },
+      {
+        "code": "16757",
+        "en": "FIBRINOGEN/THROMBIN 5.5MG/2IU TRANSDERMAL PATCH",
+        "fa": "پچ پوستی فیبرینوژن / ترومبین ۵٫۵ میلی‌گرم / ۲ واحد بین‌المللی"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1402/Fibrinogen",
+        "url": "https://www.darooyab.ir/G-1402/Fibrinogen"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125317",
+      "label": "BLA125317"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=903dc8d0-39da-462c-9dac-004e0c7a26cc",
+      "label": "FDA RiaSTAP"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B02BB01",
+      "label": "B02BB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1402/Fibrinogen",
+      "label": "Fibrinogen"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no studies of RIASTAP use in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-riastap",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of RIASTAP in human milk, its effects on the breastfed infant, or its effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-riastap",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "RIASTAP studies have included subjects below the age of 16 years.",
+      "refs": [
+        {
+          "source": "fda-riastap",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The safety and efficacy of RIASTAP in the geriatric population has not been studied.",
+      "refs": [
+        {
+          "source": "fda-riastap",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-riastap",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125317"
+  }
+}

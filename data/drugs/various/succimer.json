@@ -1,0 +1,261 @@
+{
+  "id": "succimer",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سوکسیمر (DMSA)",
+    "en": "Succimer (DMSA)"
+  },
+  "category": "various",
+  "class": {
+    "fa": "شلات‌کننده خوراکی سرب",
+    "en": "Oral lead chelator"
+  },
+  "brands": [
+    {
+      "name": "Chemet",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "chemet",
+    "dmsa",
+    "کمت",
+    "سوکسیمر"
+  ],
+  "formulations": [
+    {
+      "id": "cap-100",
+      "form": "capsule",
+      "route": "oral",
+      "label": "100 mg capsule (may be sprinkled on food)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-chemet",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "lead",
+      "disease": "heavy-metal-poisoning",
+      "label": {
+        "fa": "مسمومیت سرب کودکان — ۱۰ mg/kg هر ۸ ساعت ۵ روز، سپس هر ۱۲ ساعت ۱۴ روز",
+        "en": "Lead poisoning in children — 10 mg/kg every 8 h for 5 days, then every 12 h for 14 days"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-chemet",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۳۵۰ mg/m². کل دوره ۱۹ روز. پیش از شروع منبع سرب حذف؛ CBC، ANC >۱۵۰۰ و آنزیم کبد. هیدراتاسیون کافی.",
+            "en": "Or 350 mg/m². Total course 19 days. Remove the lead source first; CBC, ANC >1500 and transaminases. Keep well hydrated."
+          },
+          "refs": [
+            {
+              "source": "fda-chemet",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-chemet",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-chemet",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به سوکسیمر.",
+        "en": "History of hypersensitivity to succimer."
+      },
+      "refs": [
+        {
+          "source": "fda-chemet",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش پوستی و حساسیت؛ نوتروپنی؛ سمیت کبد؛ سمیت جنینی.",
+        "en": "Skin and hypersensitivity reactions; neutropenia; hepatotoxicity; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-chemet",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "lead",
+      "formulation": "cap-100",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02400",
+        "en": "SUCCIMER 100MG CAP",
+        "fa": "کپسول سوکسیمر ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "07913",
+        "en": "SUCCIMER 200MG CAP",
+        "fa": "کپسول سوکسیمر ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1985/Succimer",
+        "url": "https://www.darooyab.ir/G-1985/Succimer"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-chemet",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019998"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019998",
+      "label": "NDA019998"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=62035612-9505-3a3f-1ac8-e2dbd711d24e",
+      "label": "FDA Chemet"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1985/Succimer",
+      "label": "Succimer"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no studies with the use of CHEMET in pregnant women to inform drug-associated risks.",
+      "refs": [
+        {
+          "source": "fda-chemet",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of succimer or its metabolite in either human or animal milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-chemet",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of CHEMET for the treatment of lead poisoning in patients with blood levels above 45 mcg/mL have been established in pediatric patients aged 1 year and older.",
+      "refs": [
+        {
+          "source": "fda-chemet",
+          "section": "8.4"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise females of reproductive potential to use effective contraception during treatment with CHEMET and for 14 days after the final dose.",
+      "refs": [
+        {
+          "source": "fda-chemet",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

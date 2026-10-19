@@ -1,0 +1,272 @@
+{
+  "id": "vinblastine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "وین‌بلاستین",
+    "en": "Vinblastine"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آلکالوئید وینکا",
+    "en": "Vinca alkaloid"
+  },
+  "brands": [
+    {
+      "name": "Velban",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "velban",
+    "ولبان",
+    "وینبلاستین"
+  ],
+  "formulations": [
+    {
+      "id": "inj-1",
+      "form": "injection",
+      "route": "iv",
+      "label": "1 mg/mL, 10 mL vial",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vinblastine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "start",
+      "disease": "hodgkin-lymphoma",
+      "label": {
+        "fa": "لنفوم هوچکین، سرطان بیضه و سایر بدخیمی‌های پاسخ‌ده (تسکینی) — دوز اول ۳٫۷ mg/m² وریدی، سپس افزایش هفتگی",
+        "en": "Hodgkin lymphoma, testicular cancer and other responsive malignancies (palliative) — first dose 3.7 mg/m² IV, then weekly increments"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 3.7,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-vinblastine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-vinblastine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "افزایش هفتگی بر اساس WBC: ۵٫۵، ۷٫۴، ۹٫۲۵، ۱۱٫۱ mg/m²؛ حداکثر ۱۸٫۵ mg/m². فقط وریدی — تزریق داخل نخاعی کشنده است.",
+            "en": "Weekly increments by WBC: 5.5, 7.4, 9.25, 11.1 mg/m²; max 18.5 mg/m². IV only — intrathecal injection is fatal."
+          },
+          "refs": [
+            {
+              "source": "fda-vinblastine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "گرانولوسیتوپنی قابل‌توجه (مگر ناشی از خود بیماری)؛ عفونت باکتریال کنترل‌نشده.",
+        "en": "Significant granulocytopenia (unless due to the disease treated); uncontrolled bacterial infection."
+      },
+      "refs": [
+        {
+          "source": "fda-vinblastine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: فقط وریدی — تزریق از راه دیگر کشنده است. نشت از رگ باعث آسیب شدید بافت می‌شود.",
+        "en": "Boxed warning: IV only — fatal if given by other routes. Extravasation causes severe tissue injury."
+      },
+      "refs": [
+        {
+          "source": "fda-vinblastine",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-vinblastine",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "start",
+      "formulation": "inj-1",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 7.4,
+        "mlPerDose": 7.4
+      }
+    }
+  ],
+  "atc": [
+    "L01CA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01283",
+        "en": "VINBLASTINE SULFATE 10MG VIAL",
+        "fa": "ویال وینبلاستین سولفات ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "12261",
+        "en": "VINBLASTINE SULFATE 5MG VIAL",
+        "fa": "ویال وینبلاستین سولفات ۵ میلی‌گرم"
+      },
+      {
+        "code": "52631",
+        "en": "VINBLASTINE SULFATE INJECTION, SOLUTION PARENTERAL 1 mg/1mL 10 mL",
+        "fa": "محلول تزریقی وینبلاستین سولفات ۱ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1090/Vinblastine",
+        "url": "https://www.darooyab.ir/G-1090/Vinblastine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-vinblastine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA089515"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=089515",
+      "label": "ANDA089515"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f073b58e-56d6-4c8d-a2ce-b37719402d77",
+      "label": "FDA Vinblastine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682848.html",
+      "label": "Vinblastine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01CA01",
+      "label": "L01CA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1090/Vinblastine",
+      "label": "Vinblastine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Vinblastine sulfate can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-vinblastine",
+          "section": "Pregnancy Category D"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions from vinblastine sulfate in nursing infants, a decision should be made whether to discontinue nursing or the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-vinblastine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The dosage schedule for pediatric patients is indicated under DOSAGE AND ADMINISTRATION .",
+      "refs": [
+        {
+          "source": "fda-vinblastine",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

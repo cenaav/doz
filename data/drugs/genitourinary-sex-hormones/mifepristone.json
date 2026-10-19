@@ -1,0 +1,263 @@
+{
+  "id": "mifepristone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "میفپریستون",
+    "en": "Mifepristone"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آنتاگونیست پروژسترون",
+    "en": "Progestin antagonist"
+  },
+  "brands": [
+    {
+      "name": "Mifeprex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mifeprex",
+    "ru-486",
+    "میفپرکس",
+    "میفپریستون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mifeprex",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mtop",
+      "disease": "pregnancy-termination",
+      "label": {
+        "fa": "ختم دارویی بارداری داخل رحمی تا ۷۰ روز — ۲۰۰ mg خوراکی روز ۱، سپس ۲۴ تا ۴۸ ساعت بعد میزوپروستول ۸۰۰ mcg باکال",
+        "en": "Medical termination of intrauterine pregnancy through 70 days — 200 mg orally on day 1, then misoprostol 800 mcg buccally 24–48 h later"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mifeprex",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "IUD پیش از شروع خارج شود. پیگیری ۷ تا ۱۴ روز بعد برای تأیید ختم کامل الزامی است.",
+            "en": "Remove any IUD before starting. Follow-up at 7–14 days to confirm complete termination is required."
+          },
+          "refs": [
+            {
+              "source": "fda-mifeprex",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-mifeprex",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حاملگی خارج رحمی قطعی یا مشکوک یا توده آدنکس تشخیص‌داده‌نشده؛ IUD در محل؛ نارسایی مزمن آدرنال؛ کورتیکواستروئید طولانی‌مدت؛ حساسیت به میفپریستون، میزوپروستول یا پروستاگلاندین‌ها؛ اختلال خونریزی یا داروی ضدانعقاد؛ پورفیری ارثی.",
+        "en": "Confirmed or suspected ectopic pregnancy or undiagnosed adnexal mass; IUD in place; chronic adrenal failure; long-term corticosteroid therapy; allergy to mifepristone, misoprostol or prostaglandins; haemorrhagic disorders or anticoagulant therapy; inherited porphyrias."
+      },
+      "refs": [
+        {
+          "source": "fda-mifeprex",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: عفونت و خونریزی جدی و گاه کشنده (عفونت ممکن است بدون تب باشد). فقط از طریق برنامه REMS.",
+        "en": "Boxed warning: serious and sometimes fatal infections and bleeding (infection may present without fever). Available only through REMS."
+      },
+      "refs": [
+        {
+          "source": "fda-mifeprex",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "حاملگی خارج رحمی را درمان نمی‌کند؛ ایمن‌سازی Rh (ایمونوگلوبولین anti-D در Rh منفی).",
+        "en": "Does not treat ectopic pregnancy; Rh immunisation (anti-D immune globulin if Rh-negative)."
+      },
+      "refs": [
+        {
+          "source": "fda-mifeprex",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mtop",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 28,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "G03XB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "12366",
+        "en": "MIFEPRISTON 200MG TAB",
+        "fa": "قرص میفپریستون ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3284/Mifepristone",
+        "url": "https://www.darooyab.ir/G-3284/Mifepristone"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-mifeprex",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020687"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020687",
+      "label": "NDA020687"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=61626f72-7469-6f6e-4953-6d7572646572",
+      "label": "FDA Mifeprex"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614005.html",
+      "label": "Mifepristone (Korlym)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a600042.html",
+      "label": "Mifepristone (Mifeprex)"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03XB01",
+      "label": "G03XB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3284/Mifepristone",
+      "label": "Mifepristone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Administration of MIFEPREX and misoprostol for the termination of pregnancy (the “treatment procedure”) is contraindicated in patients with any of the following conditions: Confirmed or suspected ectopic pregnancy or undiagnosed adnexal mass (the treatment procedure will not be effective to terminate an ectopic …",
+      "refs": [
+        {
+          "source": "fda-mifeprex",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "MIFEPREX is present in human milk.",
+      "refs": [
+        {
+          "source": "fda-mifeprex",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and efficacy of MIFEPREX have been established in pregnant females.",
+      "refs": [
+        {
+          "source": "fda-mifeprex",
+          "section": "8.4"
+        }
+      ]
+    }
+  }
+}

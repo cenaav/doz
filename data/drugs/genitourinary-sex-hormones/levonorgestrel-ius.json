@@ -1,0 +1,337 @@
+{
+  "id": "levonorgestrel-ius",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیستم داخل رحمی لوونورژسترل (میرنا)",
+    "en": "Levonorgestrel intrauterine system 52 mg"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "پروژستین داخل رحمی",
+    "en": "Intrauterine progestin"
+  },
+  "brands": [
+    {
+      "name": "Mirena",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mirena",
+    "میرنا",
+    "آی یو دی هورمونی",
+    "LNG-IUS",
+    "IUD"
+  ],
+  "formulations": [
+    {
+      "id": "ius",
+      "form": "intrauterine-system",
+      "route": "intrauterine",
+      "label": "One T-shaped system with 52 mg levonorgestrel (about 21 mcg/day at first)",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mirena",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "contra",
+      "disease": "contraception",
+      "label": {
+        "fa": "پیشگیری از بارداری تا ۸ سال — یک سیستم داخل رحمی",
+        "en": "Prevention of pregnancy for up to 8 years — one intrauterine system"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mirena",
+          "section": "1"
+        },
+        {
+          "source": "fda-mirena",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "گذاشتن توسط فرد آموزش‌دیده با روش استریل؛ معاینه مجدد ۴ تا ۶ هفته بعد و سپس سالانه.",
+            "en": "Inserted by a trained provider with strict asepsis; re-examine at 4–6 weeks and then yearly."
+          },
+          "refs": [
+            {
+              "source": "fda-mirena",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-mirena",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hmb",
+      "disease": "heavy-menstrual-bleeding",
+      "label": {
+        "fa": "خونریزی شدید قاعدگی در زنانی که IUD را برای پیشگیری انتخاب کرده‌اند — تا ۵ سال",
+        "en": "Heavy menstrual bleeding in women choosing intrauterine contraception — up to 5 years"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mirena",
+          "section": "1"
+        },
+        {
+          "source": "fda-mirena",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری یا شک به آن؛ پیشگیری اورژانسی؛ ناهنجاری رحم که حفره را تغییر دهد؛ PID حاد یا سابقه آن؛ اندومتریت پس از زایمان یا سقط عفونی در ۳ ماه اخیر؛ سرطان پستان یا سرطان حساس به پروژستین؛ سرطان رحم یا دهانه رحم؛ بیماری حاد کبد یا تومور کبد.",
+        "en": "Pregnancy or suspicion; emergency contraception; uterine anomaly distorting the cavity; acute or prior PID; postpartum endometritis or infected abortion in the past 3 months; breast or progestin-sensitive cancer; uterine or cervical malignancy; acute liver disease or liver tumour."
+      },
+      "refs": [
+        {
+          "source": "fda-mirena",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "حاملگی خارج رحمی؛ خطرات بارداری داخل رحمی با IUD؛ سپسیس؛ عفونت لگن؛ سوراخ شدن رحم؛ خروج خودبه‌خود؛ کیست تخمدان؛ تغییر الگوی خونریزی.",
+        "en": "Ectopic pregnancy; risks of intrauterine pregnancy with the device; sepsis; pelvic infection; perforation; expulsion; ovarian cysts; bleeding pattern changes."
+      },
+      "refs": [
+        {
+          "source": "fda-mirena",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "contra",
+      "formulation": "ius",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1
+      }
+    },
+    {
+      "regimen": "hmb",
+      "formulation": "ius",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "G02BA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00750",
+        "en": "LEVONORGESTREL 0.03MG TAB",
+        "fa": "قرص لوونورژسترل ۰٫۰۳ میلی‌گرم"
+      },
+      {
+        "code": "02441",
+        "en": "LEVONORGESTREL 0.75MG TAB",
+        "fa": "قرص لوونورژسترل ۰٫۷۵ میلی‌گرم"
+      },
+      {
+        "code": "16870",
+        "en": "LEVONORGESTREL 1.5MG TAB",
+        "fa": "قرص لوونورژسترل ۱٫۵ میلی‌گرم"
+      },
+      {
+        "code": "08959",
+        "en": "LEVONORGESTREL 52MG IUD",
+        "fa": "آی‌یودی لوونورژسترل ۵۲ میلی‌گرم"
+      },
+      {
+        "code": "01572",
+        "en": "LEVONORGESTREL 6X36MG IMPLANT",
+        "fa": "ایمپلنت لوونورژسترل ۶ X ۳۶ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3293/Levonorgestrel",
+        "url": "https://www.darooyab.ir/G-3293/Levonorgestrel"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021225",
+      "label": "NDA021225"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dcbd6aa2-b3fa-479a-a676-56ea742962fc",
+      "label": "FDA Mirena"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a613047.html",
+      "label": "Levonorgestrel Intrauterine System"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G02BA03",
+      "label": "G02BA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3293/Levonorgestrel",
+      "label": "Levonorgestrel"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "The use of Mirena is contraindicated when one or more of the following conditions exist: • Pregnancy or suspicion of pregnancy [see Warnings and Precautions ( 5.2 ), Use in Specific Populations ( 8.1 )] • For use as post-coital contraception (emergency contraception) • Congenital or acquired uterine anomaly including …",
+      "refs": [
+        {
+          "source": "fda-mirena",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary Published studies report the presence of LNG in human milk.",
+      "refs": [
+        {
+          "source": "fda-mirena",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and efficacy of Mirena have been established in women of reproductive age.",
+      "refs": [
+        {
+          "source": "fda-mirena",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Mirena has not been studied in women over age 65 and is not approved for use in this population.",
+      "refs": [
+        {
+          "source": "fda-mirena",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Return to Fertility After Discontinuing Mirena In two studies, return to fertility was investigated in a total of 229 women who desired pregnancy after study discontinuation and provided follow-up information.",
+      "refs": [
+        {
+          "source": "fda-mirena",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-mirena",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021225"
+  }
+}

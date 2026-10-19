@@ -1,0 +1,294 @@
+{
+  "id": "daratumumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "داراتوموماب",
+    "en": "Daratumumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد CD38",
+    "en": "CD38-directed antibody"
+  },
+  "brands": [
+    {
+      "name": "Darzalex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "darzalex",
+    "دارزالکس",
+    "داراتوموماب"
+  ],
+  "formulations": [
+    {
+      "id": "inj-20",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/mL (100 mg/5 mL, 400 mg/20 mL) — IV",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-darzalex",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mm",
+      "disease": "multiple-myeloma",
+      "label": {
+        "fa": "مولتیپل میلوما — ۱۶ mg/kg وزن واقعی، انفوزیون وریدی؛ برنامه طبق رژیم ترکیبی",
+        "en": "Multiple myeloma — 16 mg/kg actual body weight IV infusion; schedule by combination regimen"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 16,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-darzalex",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-darzalex",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "پیش‌دارو: کورتیکواستروئید، ضدتب و آنتی‌هیستامین؛ داروهای پس از انفوزیون. پیش از شروع گروه خون و غربالگری آنتی‌بادی (تداخل با کراس‌مچ).",
+            "en": "Premedicate with corticosteroid, antipyretic and antihistamine; post-infusion medicines. Type and screen before starting (cross-match interference)."
+          },
+          "refs": [
+            {
+              "source": "fda-darzalex",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-darzalex",
+              "section": "5.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت شدید (آنافیلاکسی) به داراتوموماب یا اجزا.",
+        "en": "History of severe hypersensitivity (anaphylaxis) to daratumumab or components."
+      },
+      "refs": [
+        {
+          "source": "fda-darzalex",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش انفوزیون؛ تداخل با آزمایش سرولوژی و تعیین پاسخ؛ عفونت؛ نوتروپنی؛ ترومبوسیتوپنی؛ سمیت جنینی.",
+        "en": "Infusion reactions; interference with serological testing and response assessment; infections; neutropenia; thrombocytopenia; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-darzalex",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mm",
+      "formulation": "inj-20",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1120,
+        "mlPerDose": 56
+      }
+    }
+  ],
+  "atc": [
+    "L01FC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52628",
+        "en": "DARATUMUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 20 mg/1mL 20 mL",
+        "fa": "کنسانتره محلول تزریقی داراتومومب ۲۰ میلی‌گرم / ۱ میلی‌لیتر ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "52627",
+        "en": "DARATUMUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 20 mg/1mL 5 mL",
+        "fa": "کنسانتره محلول تزریقی داراتومومب ۲۰ میلی‌گرم / ۱ میلی‌لیتر ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5483/Daratumumab",
+        "url": "https://www.darooyab.ir/G-5483/Daratumumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-darzalex",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA761036"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761036",
+      "label": "BLA761036"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4d0efe9-5e54-467e-9eb4-56fa7d53b60b",
+      "label": "FDA Darzalex"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616002.html",
+      "label": "Daratumumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01FC01",
+      "label": "L01FC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5483/Daratumumab",
+      "label": "Daratumumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: ترکیب با لنالیدومید، پومالیدومید یا تالیدومید در بارداری منع مصرف است.",
+        "en": "Label: combination with lenalidomide, pomalidomide or thalidomide is contraindicated in pregnancy."
+      },
+      "quote": "The combination of DARZALEX and lenalidomide, pomalidomide, or thalidomide is contraindicated in pregnant women, because lenalidomide, pomalidomide, and thalidomide may cause birth defects and death of the unborn child.",
+      "refs": [
+        {
+          "source": "fda-darzalex",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in the breastfed child when DARZALEX is administered with lenalidomide, pomalidomide, or thalidomide, advise women not to breastfeed during treatment with DARZALEX.",
+      "refs": [
+        {
+          "source": "fda-darzalex",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of DARZALEX in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-darzalex",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in effectiveness were observed between these patients and younger patients.",
+      "refs": [
+        {
+          "source": "fda-darzalex",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Advise females of reproductive potential to use effective contraception during treatment with DARZALEX and for 3 months after the last dose.",
+      "refs": [
+        {
+          "source": "fda-darzalex",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

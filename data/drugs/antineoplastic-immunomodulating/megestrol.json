@@ -1,0 +1,244 @@
+{
+  "id": "megestrol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مژسترول استات",
+    "en": "Megestrol acetate"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "پروژستین",
+    "en": "Progestin"
+  },
+  "brands": [
+    {
+      "name": "Megace",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "megace",
+    "مگیس",
+    "مژسترول",
+    "megestrol acetate"
+  ],
+  "formulations": [
+    {
+      "id": "susp-40",
+      "form": "suspension",
+      "route": "oral",
+      "label": "40 mg/mL oral suspension",
+      "concentration": {
+        "amount": 40,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-megestrol-susp",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "aids",
+      "disease": "aids-anorexia",
+      "label": {
+        "fa": "بی‌اشتهایی، کاشکسی یا کاهش وزن قابل‌توجه در ایدز — ۸۰۰ mg (۲۰ mL) یک بار در روز",
+        "en": "Anorexia, cachexia or significant weight loss in AIDS — 800 mg (20 mL) once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 800,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-megestrol-susp",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوزهای ۴۰۰ و ۸۰۰ mg/روز در کارآزمایی‌ها مؤثر بودند. پیش از مصرف خوب تکان داده شود.",
+            "en": "Daily doses of 400 and 800 mg were effective in trials. Shake well before use."
+          },
+          "refs": [
+            {
+              "source": "fda-megestrol-susp",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مژسترول؛ بارداری قطعی یا مشکوک.",
+        "en": "Hypersensitivity to megestrol acetate; known or suspected pregnancy."
+      },
+      "refs": [
+        {
+          "source": "fda-megestrol-susp",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آسیب جنینی؛ سرکوب آدرنال و کوشینگ با مصرف طولانی یا قطع؛ ترومبوآمبولی.",
+        "en": "Fetal harm; adrenal suppression and Cushingoid effects with chronic use or withdrawal; thromboembolism."
+      },
+      "refs": [
+        {
+          "source": "fda-megestrol-susp",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "aids",
+      "formulation": "susp-40",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 800,
+        "mlPerDose": 20
+      }
+    }
+  ],
+  "atc": [
+    "L02AB01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Megestrol%20acetate"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-megestrol-susp",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075671"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075671",
+      "label": "ANDA075671"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46622697-2c51-44d5-9f1f-e48f8526f132",
+      "label": "FDA Megestrol susp"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682003.html",
+      "label": "Megestrol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02AB01",
+      "label": "L02AB01"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Known or suspected pregnancy.",
+      "refs": [
+        {
+          "source": "fda-megestrol-susp",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because of the potential for adverse effects on the newborn, nursing should be discontinued if megestrol acetate oral suspension is required.",
+      "refs": [
+        {
+          "source": "fda-megestrol-susp",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-megestrol-susp",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease of other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-megestrol-susp",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

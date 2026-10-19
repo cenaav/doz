@@ -1,0 +1,333 @@
+{
+  "id": "penicillamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پنی‌سیلامین",
+    "en": "Penicillamine"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "شلات‌کننده (مس، سیستین)",
+    "en": "Chelating agent (copper, cystine)"
+  },
+  "brands": [
+    {
+      "name": "Cuprimine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cuprimine",
+    "depen",
+    "کوپریمین",
+    "پنی سیلامین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cuprimine",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "wilson",
+      "disease": "wilson-disease",
+      "label": {
+        "fa": "بیماری ویلسون — ۰٫۷۵ تا ۱٫۵ g/روز تقسیمی، تنظیم با مس ادرار ۲۴ ساعته",
+        "en": "Wilson disease — 0.75–1.5 g/day divided, titrated to 24-h urinary copper"
+      },
+      "population": {},
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "دوز با دفع مس ادرار و مس آزاد سرم تنظیم می‌شود. ناشتا (۱ ساعت قبل یا ۲ ساعت بعد غذا) و جدا از سایر داروها و شیر. ممکن است مکمل پیریدوکسین لازم باشد.",
+          "en": "Titrated to urinary copper excretion and free serum copper. On an empty stomach (1 h before or 2 h after food), apart from other drugs and milk. Pyridoxine supplement may be needed."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-cuprimine",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "cyst",
+      "disease": "cystinuria",
+      "label": {
+        "fa": "سیستینوری بزرگسال — ۲ g/روز در ۴ دوز (۱ تا ۴ g)",
+        "en": "Cystinuria, adults — 2 g/day in 4 doses (1–4 g)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-cuprimine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "کودک: ۳۰ mg/kg/روز در ۴ دوز. همراه درمان معمول (مایعات فراوان).",
+            "en": "Children: 30 mg/kg/day in 4 doses. With conventional therapy (high fluid intake)."
+          },
+          "refs": [
+            {
+              "source": "fda-cuprimine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyst-child",
+      "disease": "cystinuria",
+      "label": {
+        "fa": "سیستینوری کودکان — ۳۰ mg/kg/روز در ۴ دوز",
+        "en": "Cystinuria, children — 30 mg/kg/day in 4 doses"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 30,
+        "dividedDoses": 4
+      },
+      "refs": [
+        {
+          "source": "fda-cuprimine",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری (جز ویلسون یا برخی بیماران سیستینوری)؛ شیردهی؛ سابقه آنمی آپلاستیک یا آگرانولوسیتوز با پنی‌سیلامین؛ آرتریت روماتوئید با سابقه یا شواهد نارسایی کلیه.",
+        "en": "Pregnancy (except Wilson disease or some cystinuria); breastfeeding; prior penicillamine-related aplastic anaemia or agranulocytosis; rheumatoid arthritis with history or evidence of renal insufficiency."
+      },
+      "refs": [
+        {
+          "source": "fda-cuprimine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "مرگ از آنمی آپلاستیک، آگرانولوسیتوز، ترومبوسیتوپنی، گودپاسچر و میاستنی — آزمایش ادرار و CBC دو بار در هفته در ابتدا.",
+        "en": "Fatalities from aplastic anaemia, agranulocytosis, thrombocytopenia, Goodpasture syndrome and myasthenia gravis — urinalysis and CBC twice weekly initially."
+      },
+      "refs": [
+        {
+          "source": "fda-cuprimine",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cyst",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "cyst-child",
+      "formulation": "cap-250",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 36
+      },
+      "expect": {
+        "perDose": 270,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "M01CC01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08800",
+        "en": "PENICILLAMINE 125MG CAP",
+        "fa": "کپسول پنی‌سیلامین ۱۲۵ میلی‌گرم"
+      },
+      {
+        "code": "10996",
+        "en": "PENICILLAMINE 125MG TAB",
+        "fa": "قرص پنی‌سیلامین ۱۲۵ میلی‌گرم"
+      },
+      {
+        "code": "01714",
+        "en": "PENICILLAMINE 250MG CAP",
+        "fa": "کپسول پنی‌سیلامین ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00967",
+        "en": "PENICILLAMINE 250MG TAB",
+        "fa": "قرص پنی‌سیلامین ۲۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1972/Penicillamine",
+        "url": "https://www.darooyab.ir/G-1972/Penicillamine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-cuprimine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA019853"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019853",
+      "label": "NDA019853"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80e736d3-2017-4d68-94b4-38255c3c59c6",
+      "label": "FDA Cuprimine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a618021.html",
+      "label": "Penicillamine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M01CC01",
+      "label": "M01CC01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1972/Penicillamine",
+      "label": "Penicillamine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Except for the treatment of Wilson’s disease or certain patients with cystinuria, use of penicillamine during pregnancy is contraindicated (see WARNINGS ).",
+      "refs": [
+        {
+          "source": "fda-cuprimine",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "See CONTRAINDICATIONS .",
+      "refs": [
+        {
+          "source": "fda-cuprimine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The efficacy of CUPRIMINE in juvenile rheumatoid arthritis has not been established.",
+      "refs": [
+        {
+          "source": "fda-cuprimine",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drugs.",
+      "refs": [
+        {
+          "source": "fda-cuprimine",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

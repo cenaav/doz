@@ -1,0 +1,270 @@
+{
+  "id": "sorafenib",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سورافنیب",
+    "en": "Sorafenib"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده چندکینازی",
+    "en": "Multikinase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Nexavar",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "nexavar",
+    "نکساوار",
+    "سورافنیب"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nexavar",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hcc",
+      "disease": "hepatocellular-carcinoma",
+      "label": {
+        "fa": "کارسینوم هپاتوسلولار غیرقابل‌جراحی، RCC پیشرفته و سرطان تمایزیافته تیروئید مقاوم به ید — ۴۰۰ mg دو بار در روز بدون غذا",
+        "en": "Unresectable HCC, advanced RCC and RAI-refractory differentiated thyroid cancer — 400 mg twice daily without food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-nexavar",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-nexavar",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شدید به سورافنیب؛ همراه کربوپلاتین و پاکلی‌تاکسل در سرطان سلول سنگفرشی ریه.",
+        "en": "Severe hypersensitivity to sorafenib; with carboplatin and paclitaxel in squamous cell lung cancer."
+      },
+      "refs": [
+        {
+          "source": "fda-nexavar",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "ایسکمی قلب؛ خونریزی؛ فشار خون؛ واکنش پوستی (دست و پا)؛ سوراخ شدن گوارش؛ اختلال ترمیم زخم؛ طولانی شدن QT؛ آسیب کبدی؛ سمیت جنینی.",
+        "en": "Cardiac ischaemia; haemorrhage; hypertension; skin toxicity (hand-foot); GI perforation; impaired wound healing; QT prolongation; liver injury; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-nexavar",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hcc",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "L01EX02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08448",
+        "en": "SORAFENIB 200MG TAB",
+        "fa": "قرص سورافنیب ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4808/Sorafenib",
+        "url": "https://www.darooyab.ir/G-4808/Sorafenib"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-nexavar",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021923"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021923",
+      "label": "NDA021923"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b50667e4-5ebc-4968-a646-d605058dbef0",
+      "label": "FDA Nexavar"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607051.html",
+      "label": "Sorafenib"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01EX02",
+      "label": "L01EX02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4808/Sorafenib",
+      "label": "Sorafenib"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal studies and its mechanism of action [see Clinical Pharmacology ( 12.1 )] , NEXAVAR may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-nexavar",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in a breastfed child from NEXAVAR, advise women not to breastfeed during treatment with NEXAVAR and for 2 weeks after the last dose.",
+      "refs": [
+        {
+          "source": "fda-nexavar",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of NEXAVAR have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-nexavar",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In total, 59% of HCC patients treated with NEXAVAR were age 65 years or older and 19% were 75 and older.",
+      "refs": [
+        {
+          "source": "fda-nexavar",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise females of reproductive potential to use effective contraception during treatment and for 6 months following the last dose of NEXAVAR.",
+      "refs": [
+        {
+          "source": "fda-nexavar",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

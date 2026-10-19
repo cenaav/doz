@@ -1,0 +1,293 @@
+{
+  "id": "factor-viii",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فاکتور ۸ نوترکیب",
+    "en": "Antihemophilic factor VIII (recombinant)"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "فاکتور انعقادی",
+    "en": "Coagulation factor"
+  },
+  "brands": [
+    {
+      "name": "Advate",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "advate",
+    "factor 8",
+    "فاکتور هشت",
+    "فاکتور VIII",
+    "آدویت"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1000",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1000 IU vial (also 250–4000 IU)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "unit",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-advate",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "proph",
+      "disease": "hemophilia-a",
+      "label": {
+        "fa": "پیشگیری روتین هموفیلی A — ۲۰ تا ۴۰ IU/kg یک روز در میان (۳ تا ۴ بار در هفته)",
+        "en": "Routine prophylaxis in haemophilia A — 20–40 IU/kg every other day (3–4 times weekly)"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDose": 20,
+        "perKgPerDoseMax": 40,
+        "intervalHours": 48
+      },
+      "refs": [
+        {
+          "source": "fda-advate",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "درمان خونریزی یا جراحی: دوز (IU) = وزن (kg) × افزایش مطلوب فاکتور ۸ (٪) × ۰٫۵؛ دفعات طبق نوع خونریزی. یا هر ۳ روز با هدف حداقل ۱٪.",
+            "en": "Bleeding or surgery: dose (IU) = weight (kg) × desired FVIII rise (%) × 0.5; frequency by bleed type. Or every third day targeting trough ≥1%."
+          },
+          "refs": [
+            {
+              "source": "fda-advate",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت تهدیدکننده حیات به پروتئین موش یا همستر یا اجزای فرآورده.",
+        "en": "Life-threatening hypersensitivity to mouse or hamster protein or product constituents."
+      },
+      "refs": [
+        {
+          "source": "fda-advate",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی؛ آنتی‌بادی مهارکننده (inhibitor) — اگر پاسخ مورد انتظار نبود بررسی شود.",
+        "en": "Hypersensitivity; neutralising antibodies (inhibitors) — test if the expected response is not achieved."
+      },
+      "refs": [
+        {
+          "source": "fda-advate",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "proph",
+      "formulation": "vial-1000",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 400,
+        "upperPerDose": 800
+      }
+    }
+  ],
+  "atc": [
+    "B02BD02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13238",
+        "en": "ANTIHEMOPHILIC FACTOR VIII (RECOMBINANT) 250U VIAL",
+        "fa": "ویال ضدهموفیلی فاکتور VIII (نوترکیب) ۲۵۰ واحد"
+      },
+      {
+        "code": "12544",
+        "en": "ANTIHEMOPHILIC FACTOR VIII (RECOMBINANT) 500U VIAL",
+        "fa": "ویال ضدهموفیلی فاکتور VIII (نوترکیب) ۵۰۰ واحد"
+      },
+      {
+        "code": "05728",
+        "en": "ANTIHEMOPHILIC FACTOR VIII 1000U VIAL",
+        "fa": "ویال ضدهموفیلی فاکتور VIII ۱۰۰۰ واحد"
+      },
+      {
+        "code": "00089",
+        "en": "ANTIHEMOPHILIC FACTOR VIII 250U VIAL",
+        "fa": "ویال ضدهموفیلی فاکتور VIII ۲۵۰ واحد"
+      },
+      {
+        "code": "00090",
+        "en": "ANTIHEMOPHILIC FACTOR VIII 500U VIAL",
+        "fa": "ویال ضدهموفیلی فاکتور VIII ۵۰۰ واحد"
+      },
+      {
+        "code": "21779",
+        "en": "ANTIHEMOPHILIC FACTOR VIII500IU  VIAL",
+        "fa": "ویال ضدهموفیلی فاکتور VIII ۵۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "52879",
+        "en": "COAGULATION FACTOR VIII (RECOMBINANT) INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 500 [iU]",
+        "fa": "محلول تزریقی انعقادی فاکتور VIII (نوترکیب) ۵۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "52878",
+        "en": "COAGULATION FACTOR VIII (RECOMBINANT) INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 250 [iU]",
+        "fa": "محلول تزریقی انعقادی فاکتور VIII (نوترکیب) ۲۵۰ واحد بین‌المللی"
+      },
+      {
+        "code": "52880",
+        "en": "COAGULATION FACTOR VIII (RECOMBINANT) INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 1000 [iU]",
+        "fa": "محلول تزریقی انعقادی فاکتور VIII (نوترکیب) ۱۰۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "52933",
+        "en": "EFMOROCTOCOG ALFA INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 [iU]",
+        "fa": "پودر برای تهیه محلول تزریقی افموروکتوکوگ آلفا ۵۰۰ واحد بین‌المللی"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1397/Factor-VIII",
+        "url": "https://www.darooyab.ir/G-1397/Factor-VIII"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125063",
+      "label": "BLA125063"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80fa03d2-cd4c-4155-9b57-1396c4fa42da",
+      "label": "FDA Advate"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B02BD02",
+      "label": "B02BD02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1397/Factor-VIII",
+      "label": "Factor-VIII"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no data with ADVATE use in pregnant women to inform a drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-advate",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of ADVATE in human milk, the effect on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-advate",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Pharmacokinetic studies in children have demonstrated higher clearance, a shorter half-life and lower recovery of factor VIII compared to adults [see Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-advate",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease and other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-advate",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-advate",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125063"
+  }
+}

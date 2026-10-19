@@ -1,0 +1,341 @@
+{
+  "id": "cetuximab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ستوکسیماب",
+    "en": "Cetuximab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد EGFR",
+    "en": "EGFR antagonist antibody"
+  },
+  "brands": [
+    {
+      "name": "Erbitux",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "erbitux",
+    "اربیتوکس",
+    "ستوکسیماب"
+  ],
+  "formulations": [
+    {
+      "id": "inj-2",
+      "form": "injection",
+      "route": "iv",
+      "label": "2 mg/mL (100 mg/50 mL, 200 mg/100 mL)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-erbitux",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "colorectal-cancer",
+      "label": {
+        "fa": "سرطان کولورکتال RAS وحشی و سر و گردن — دوز اول ۴۰۰ mg/m² وریدی ۱۲۰ دقیقه",
+        "en": "RAS wild-type colorectal and head-and-neck cancer — initial dose 400 mg/m² IV over 120 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 400,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-erbitux",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-erbitux",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-erbitux",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weekly",
+      "disease": "colorectal-cancer",
+      "label": {
+        "fa": "ادامه هفتگی — ۲۵۰ mg/m² وریدی ۶۰ دقیقه هر هفته (یا ۵۰۰ mg/m² هر ۲ هفته)",
+        "en": "Weekly continuation — 250 mg/m² IV over 60 min every week (or 500 mg/m² every 2 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 250,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-erbitux",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-erbitux",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-erbitux",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: واکنش انفوزیون جدی و کشنده؛ ایست قلبی‌ریوی یا مرگ ناگهانی (پایش الکترولیت‌ها).",
+        "en": "Boxed warning: serious and fatal infusion reactions; cardiopulmonary arrest or sudden death (monitor electrolytes)."
+      },
+      "refs": [
+        {
+          "source": "fda-erbitux",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سمیت ریوی؛ سمیت پوستی؛ هیپومنیزیمی؛ پیشرفت تومور و مرگ بیشتر در RAS جهش‌یافته؛ سمیت جنینی.",
+        "en": "Pulmonary toxicity; dermatologic toxicity; hypomagnesaemia; increased progression and mortality in RAS-mutant disease; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-erbitux",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "inj-2",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 800,
+        "mlPerDose": 400
+      }
+    },
+    {
+      "regimen": "weekly",
+      "formulation": "inj-2",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 500,
+        "mlPerDose": 250
+      }
+    }
+  ],
+  "atc": [
+    "L01FE01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "04258",
+        "en": "CETUXIMAB 100MG/50ML VIAL",
+        "fa": "ویال ستوکسیمب ۱۰۰ میلی‌گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "15691",
+        "en": "CETUXIMAB 5MG/ML 20ML VIAL",
+        "fa": "ویال ستوکسیمب ۵ میلی‌گرم / میلی‌لیتر ۲۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-966/Cetuximab",
+        "url": "https://www.darooyab.ir/G-966/Cetuximab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-erbitux",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125084"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125084",
+      "label": "BLA125084"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bc6397e-4bd8-4d37-a007-a327e4da34d9",
+      "label": "FDA Erbitux"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607041.html",
+      "label": "Cetuximab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01FE01",
+      "label": "L01FE01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-966/Cetuximab",
+      "label": "Cetuximab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal studies and its mechanism of action [see Clinical Pharmacology ( 12.1 )] , ERBITUX can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-erbitux",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Due to the potential for serious adverse reactions in breastfed infants from ERBITUX, advise women not to breastfeed during treatment with ERBITUX and for 2 months after the last dose of ERBITUX.",
+      "refs": [
+        {
+          "source": "fda-erbitux",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of ERBITUX in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-erbitux",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or efficacy were observed between these patients and younger patients.",
+      "refs": [
+        {
+          "source": "fda-erbitux",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Based on its mechanism of action, ERBITUX can cause harm to the fetus when administered to a pregnant woman [see Use in Specific Populations ( 8.1 )] .",
+      "refs": [
+        {
+          "source": "fda-erbitux",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

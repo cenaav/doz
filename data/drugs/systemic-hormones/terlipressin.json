@@ -1,0 +1,269 @@
+{
+  "id": "terlipressin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ترلیپرسین",
+    "en": "Terlipressin"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "آنالوگ وازوپرسین",
+    "en": "Vasopressin analogue"
+  },
+  "brands": [
+    {
+      "name": "Terlivaz",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "terlivaz",
+    "glypressin",
+    "گلیپرسین",
+    "ترلیپرسین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-0-85",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "0.85 mg vial",
+      "concentration": {
+        "amount": 0.85,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-terlivaz",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hrs",
+      "disease": "hepatorenal-syndrome",
+      "label": {
+        "fa": "سندرم هپاتورنال با کاهش سریع عملکرد کلیه — ۰٫۸۵ mg بولوس وریدی آهسته (۲ دقیقه) هر ۶ ساعت، روز ۱ تا ۳",
+        "en": "Hepatorenal syndrome with rapid reduction in kidney function — 0.85 mg slow IV bolus (2 min) every 6 h, days 1–3"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 0.85,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-terlivaz",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "روز ۴: اگر کراتینین ۳۰٪ یا بیشتر کاهش یافته ادامه؛ کمتر: طبق نمودار برچسب افزایش تا ۱٫۷ mg. پیش از شروع SpO2 و درجه ACLF؛ پالس‌اکسی‌متری مداوم.",
+            "en": "Day 4: continue if creatinine fell ≥30%; less: may increase per label chart (to 1.7 mg). Check SpO2 and ACLF grade first; continuous pulse oximetry."
+          },
+          "refs": [
+            {
+              "source": "fda-terlivaz",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-terlivaz",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-terlivaz",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "هیپوکسی یا بدتر شدن علائم تنفسی؛ ایسکمی کرونر، محیطی یا مزانتریک فعال.",
+        "en": "Hypoxia or worsening respiratory symptoms; ongoing coronary, peripheral or mesenteric ischaemia."
+      },
+      "refs": [
+        {
+          "source": "fda-terlivaz",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: نارسایی تنفسی جدی یا کشنده (بیشتر با حجم اضافه یا ACLF درجه ۳) — SpO2 زیر ۹۰٪ شروع نشود یا قطع شود.",
+        "en": "Boxed warning: serious or fatal respiratory failure (higher with volume overload or ACLF grade 3) — do not start or stop if SpO2 <90%."
+      },
+      "refs": [
+        {
+          "source": "fda-terlivaz",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "ایسکمی؛ عدم واجد شرایط شدن برای پیوند کبد؛ سمیت جنینی.",
+        "en": "Ischaemic events; ineligibility for liver transplant; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-terlivaz",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hrs",
+      "formulation": "vial-0-85",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 0.85,
+        "dosesPerDay": 4
+      }
+    }
+  ],
+  "atc": [
+    "H01BA04"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2721/Terlipressin",
+        "url": "https://www.darooyab.ir/G-2721/Terlipressin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022231",
+      "label": "NDA022231"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a35b86c-f451-4fac-8499-43019e4da354",
+      "label": "FDA Terlivaz"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625010.html",
+      "label": "Terlipressin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H01BA04",
+      "label": "H01BA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2721/Terlipressin",
+      "label": "Terlipressin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from the published literature and on its mechanism of action, TERLIVAZ may cause fetal harm when administered to a pregnant woman [see Clinical Pharmacology (12.1) ] .",
+      "refs": [
+        {
+          "source": "fda-terlivaz",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of terlipressin in human or animal milk, the effects on the breastfed infant, or the effect on milk production.",
+      "refs": [
+        {
+          "source": "fda-terlivaz",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of TERLIVAZ have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-terlivaz",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of patients in clinical studies treated with TERLIVAZ, 55 (16%) were ≥65 years of age.",
+      "refs": [
+        {
+          "source": "fda-terlivaz",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-terlivaz",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022231"
+  }
+}

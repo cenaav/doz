@@ -1,0 +1,333 @@
+{
+  "id": "pertuzumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پرتوزوماب",
+    "en": "Pertuzumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد HER2",
+    "en": "HER2-directed antibody"
+  },
+  "brands": [
+    {
+      "name": "Perjeta",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "perjeta",
+    "پرجتا",
+    "پرتوزوماب"
+  ],
+  "formulations": [
+    {
+      "id": "inj-30",
+      "form": "injection",
+      "route": "iv",
+      "label": "30 mg/mL, 420 mg/14 mL vial",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-perjeta",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان HER2 مثبت (با تراستوزوماب) — دوز اول ۸۴۰ mg وریدی ۶۰ دقیقه",
+        "en": "HER2-positive breast cancer (with trastuzumab) — initial dose 840 mg IV over 60 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 840,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-perjeta",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-perjeta",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maint",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "ادامه — ۴۲۰ mg وریدی هر ۳ هفته",
+        "en": "Continuation — 420 mg IV every 3 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 420,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-perjeta",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "تراستوزوماب همراه: ۸ mg/kg سپس ۶ mg/kg هر ۳ هفته. فقط انفوزیون وریدی، نه پوش یا بولوس. LVEF پیش و حین درمان.",
+            "en": "Trastuzumab with it: 8 mg/kg then 6 mg/kg every 3 weeks. IV infusion only, not push or bolus. LVEF before and during."
+          },
+          "refs": [
+            {
+              "source": "fda-perjeta",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-perjeta",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به پرتوزوماب یا اجزا.",
+        "en": "Hypersensitivity to pertuzumab or excipients."
+      },
+      "refs": [
+        {
+          "source": "fda-perjeta",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: اختلال عملکرد بطن چپ و نارسایی قلب؛ سمیت جنینی (مرگ جنین و نقص مادرزادی).",
+        "en": "Boxed warning: left ventricular dysfunction and heart failure; embryo-fetal toxicity (fetal death and birth defects)."
+      },
+      "refs": [
+        {
+          "source": "fda-perjeta",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load",
+      "formulation": "inj-30",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 840,
+        "mlPerDose": 28
+      }
+    },
+    {
+      "regimen": "maint",
+      "formulation": "inj-30",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 420,
+        "mlPerDose": 14
+      }
+    }
+  ],
+  "atc": [
+    "L01FD02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "23986",
+        "en": "PERTUZUMAB CONCENTRATESOLUTION 30 mg/1mL Amp",
+        "fa": "آمپول پرتوزومب کونسنتراتسولوشن ۳۰ میلی‌گرم / ۱ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5442/Pertuzumab",
+        "url": "https://www.darooyab.ir/G-5442/Pertuzumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-perjeta",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125409"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125409",
+      "label": "BLA125409"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17f85d17-ab71-4f5b-9fe3-0b8c822f69ff",
+      "label": "FDA Perjeta"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612027.html",
+      "label": "Pertuzumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01FD02",
+      "label": "L01FD02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5442/Pertuzumab",
+      "label": "Pertuzumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Embryo-fetal Toxicity: Exposure to PERJETA can cause embryo-fetal death and birth defects.",
+      "refs": [
+        {
+          "source": "fda-perjeta",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of pertuzumab in human milk, the effects on the breastfed infant or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-perjeta",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of PERJETA have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-perjeta",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in efficacy of PERJETA were observed in patients aged ≥ 65 and <65 years of age.",
+      "refs": [
+        {
+          "source": "fda-perjeta",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Based on the mechanism of action and animal data, PERJETA can cause embryo-fetal harm when administered during pregnancy.",
+      "refs": [
+        {
+          "source": "fda-perjeta",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

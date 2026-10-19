@@ -1,0 +1,267 @@
+{
+  "id": "pazopanib",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پازوپانیب",
+    "en": "Pazopanib"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده چندکینازی",
+    "en": "Multikinase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Votrient",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "votrient",
+    "ووترینت",
+    "پازوپانیب"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-votrient",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "rcc",
+      "disease": "renal-cell-carcinoma",
+      "label": {
+        "fa": "RCC پیشرفته و سارکوم بافت نرم پیشرفته — ۸۰۰ mg یک بار در روز بدون غذا",
+        "en": "Advanced RCC and advanced soft-tissue sarcoma — 800 mg once daily without food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 800,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-votrient",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-votrient",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "نارسایی متوسط کبد: ۲۰۰ mg یک بار در روز.",
+            "en": "Moderate hepatic impairment: 200 mg once daily."
+          },
+          "refs": [
+            {
+              "source": "fda-votrient",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت کبدی شدید و کشنده — پایش عملکرد کبد.",
+        "en": "Boxed warning: severe and fatal hepatotoxicity — monitor liver function."
+      },
+      "refs": [
+        {
+          "source": "fda-votrient",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "QT طولانی؛ اختلال عملکرد قلب؛ خونریزی؛ ترومبوز شریانی و وریدی؛ TMA؛ سوراخ شدن گوارش؛ پنومونیت؛ PRES؛ فشار خون.",
+        "en": "QT prolongation; cardiac dysfunction; haemorrhage; arterial and venous thrombosis; TMA; GI perforation; pneumonitis; PRES; hypertension."
+      },
+      "refs": [
+        {
+          "source": "fda-votrient",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "rcc",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 800,
+        "tabletsPerDoseRounded": 4
+      }
+    }
+  ],
+  "atc": [
+    "L01EX03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Pazopanib"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-votrient",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022465"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022465",
+      "label": "NDA022465"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eeaaaf38-fb86-4d9f-a19d-0f61daac2fd7",
+      "label": "FDA Votrient"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a610013.html",
+      "label": "Pazopanib"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01EX03",
+      "label": "L01EX03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on animal reproduction studies and its mechanism of action [see Clinical Pharmacology (12.1)] , VOTRIENT can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-votrient",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants, advise women not to breastfeed during treatment with VOTRIENT and for 2 weeks after the final dose.",
+      "refs": [
+        {
+          "source": "fda-votrient",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of VOTRIENT in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-votrient",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "More patients ≥ 65 years had ALT elevations > 3 × ULN compared to patients < 65 years (23% versus 18%) [see Warnings and Precautions (5.1)] .",
+      "refs": [
+        {
+          "source": "fda-votrient",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise females of reproductive potential to use effective contraception during treatment with VOTRIENT and for at least 2 weeks after the last dose.",
+      "refs": [
+        {
+          "source": "fda-votrient",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

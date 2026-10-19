@@ -147,6 +147,26 @@
           "section": "3"
         }
       ]
+    },
+    {
+      "id": "am-400",
+      "form": "powder-for-injection",
+      "route": "im",
+      "label": "Abilify Maintena 400 mg vial or prefilled syringe (also 300 mg)",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-abilify-maintena",
+          "section": "3"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -199,6 +219,14 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-2",
+        "tab-5",
+        "tab-10",
+        "tab-15",
+        "tab-20",
+        "tab-30"
       ]
     },
     {
@@ -264,6 +292,14 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-2",
+        "tab-5",
+        "tab-10",
+        "tab-15",
+        "tab-20",
+        "tab-30"
       ]
     },
     {
@@ -315,6 +351,14 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-2",
+        "tab-5",
+        "tab-10",
+        "tab-15",
+        "tab-20",
+        "tab-30"
       ]
     },
     {
@@ -353,6 +397,77 @@
             {
               "source": "fda-aripiprazole",
               "section": "2.1"
+            }
+          ]
+        }
+      ],
+      "allowedFormulations": [
+        "tab-2",
+        "tab-5",
+        "tab-10",
+        "tab-15",
+        "tab-20",
+        "tab-30"
+      ]
+    },
+    {
+      "id": "maintena",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی و نگهدارنده دوقطبی I (Abilify Maintena) بزرگسال — ۴۰۰ mg عضلانی ماهانه",
+        "en": "Schizophrenia and bipolar I maintenance (Abilify Maintena), adults — 400 mg IM monthly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-abilify-maintena",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "am-400"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط تزریق عضلانی توسط کادر درمان. در بیمارانی که قبلاً این دارو را نگرفته‌اند ابتدا تحمل شکل خوراکی سنجیده شود.",
+            "en": "IM injection by a healthcare professional only. Establish tolerability with the oral form first in patients new to the drug."
+          },
+          "refs": [
+            {
+              "source": "fda-abilify-maintena",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "حداقل ۲۶ روز فاصله. شروع: یا دو تزریق ۴۰۰ mg در یک روز + ۲۰ mg خوراکی، یا یک تزریق + ادامه خوراکی ۱۴ روز. عارضه: کاهش به ۳۰۰ mg. CYP2D6 ضعیف یا مهارکننده‌ها: جدول ۱ و ۲.",
+            "en": "At least 26 days apart. Start: either two 400 mg injections on one day plus 20 mg oral, or one injection plus 14 days of oral. Adverse reactions: reduce to 300 mg. CYP2D6 poor metabolisers or inhibitors: Tables 1 and 2."
+          },
+          "refs": [
+            {
+              "source": "fda-abilify-maintena",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-abilify-maintena",
+              "section": "2.4"
             }
           ]
         }
@@ -453,6 +568,17 @@
       "expect": {
         "perDose": 10,
         "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "maintena",
+      "formulation": "am-400",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 400
       }
     }
   ],

@@ -1,0 +1,275 @@
+{
+  "id": "ipilimumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایپیلیموماب",
+    "en": "Ipilimumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده CTLA-4",
+    "en": "CTLA-4 blocking antibody"
+  },
+  "brands": [
+    {
+      "name": "Yervoy",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "yervoy",
+    "یروی",
+    "ایپیلیموماب"
+  ],
+  "formulations": [
+    {
+      "id": "inj-5",
+      "form": "injection",
+      "route": "iv",
+      "label": "5 mg/mL (50 mg/10 mL, 200 mg/40 mL)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-yervoy",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mel",
+      "disease": "melanoma",
+      "label": {
+        "fa": "ملانوم غیرقابل‌جراحی یا متاستاتیک (۱۲ سال به بالا) — ۳ mg/kg وریدی هر ۳ هفته، حداکثر ۴ دوز",
+        "en": "Unresectable or metastatic melanoma (≥12 years) — 3 mg/kg IV every 3 weeks, max 4 doses"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 3,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-yervoy",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-yervoy",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "ترکیب با نیوولوماب و سایر اندیکاسیون‌ها (کلیه، کولورکتال، کبد، ریه، مزوتلیوما): دوز و فاصله متفاوت طبق بخش ۲.",
+            "en": "Combinations with nivolumab and other indications (renal, colorectal, liver, lung, mesothelioma): different dose and interval per section 2."
+          },
+          "refs": [
+            {
+              "source": "fda-yervoy",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش‌های ایمنی شدید و کشنده (پنومونیت، کولیت، هپاتیت، اندوکرینوپاتی، نفریت، پوستی)؛ واکنش انفوزیون؛ عوارض پیوند آلوژن مغز استخوان؛ سمیت جنینی.",
+        "en": "Severe and fatal immune-mediated reactions (pneumonitis, colitis, hepatitis, endocrinopathies, nephritis, skin); infusion reactions; complications of allogeneic HSCT; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-yervoy",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mel",
+      "formulation": "inj-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 210,
+        "mlPerDose": 42
+      }
+    }
+  ],
+  "atc": [
+    "L01FX04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21572",
+        "en": "IPILIMUMAB 200MG/40ML VIAL",
+        "fa": "ویال ایپیلیمومب ۲۰۰ میلی‌گرم / ۴۰ میلی‌لیتر"
+      },
+      {
+        "code": "23984",
+        "en": "IPILIMUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 5 mg/1mL 10 mL",
+        "fa": "کنسانتره محلول تزریقی ایپیلیمومب ۵ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4764/Ipilimumab",
+        "url": "https://www.darooyab.ir/G-4764/Ipilimumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-yervoy",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125377"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125377",
+      "label": "BLA125377"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2265ef30-253e-11df-8a39-0800200c9a66",
+      "label": "FDA Yervoy"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611023.html",
+      "label": "Ipilimumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01FX04",
+      "label": "L01FX04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4764/Ipilimumab",
+      "label": "Ipilimumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal studies and its mechanism of action [see Clinical Pharmacology (12.1) ] , YERVOY can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-yervoy",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed children, advise women not to breastfeed during treatment with YERVOY and for 3 months following the last dose.",
+      "refs": [
+        {
+          "source": "fda-yervoy",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of YERVOY have been established in pediatric patients aged 12 years and older for the following indications: as a single agent and in combination with nivolumab for unresectable or metastatic melanoma, in combination with nivolumab for the treatment of MSI-H or dMMR unresectable and …",
+      "refs": [
+        {
+          "source": "fda-yervoy",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these patients and younger patients.",
+      "refs": [
+        {
+          "source": "fda-yervoy",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception YERVOY can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-yervoy",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

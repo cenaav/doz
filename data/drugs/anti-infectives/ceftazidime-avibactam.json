@@ -1,0 +1,481 @@
+{
+  "id": "ceftazidime-avibactam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفتازیدیم-آویباکتام",
+    "en": "Ceftazidime-avibactam"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین + مهارکننده بتالاکتاماز",
+    "en": "Cephalosporin + beta-lactamase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Avycaz",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "avycaz",
+    "zavicefta",
+    "آویکاز",
+    "زاویسفتا",
+    "سفتازیدیم آویباکتام"
+  ],
+  "formulations": [
+    {
+      "id": "vial-2-5",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "2.5 g vial (ceftazidime 2 g + avibactam 0.5 g)",
+      "concentration": {
+        "amount": 2500,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "عفونت عارضه‌دار داخل شکم، ادراری (پیلونفریت) و پنومونی بیمارستانی/ونتیلاتور — بزرگسال ۲٫۵ g هر ۸ ساعت",
+        "en": "Complicated intra-abdominal and urinary infections (pyelonephritis), HABP/VABP — adult 2.5 g every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2500,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت مجموع سفتازیدیم + آویباکتام (۴:۱). انفوزیون ۲ ساعته هر ۸ ساعت. cIAI همراه مترونیدازول. مدت: cIAI ۵ تا ۱۴، cUTI و پنومونی ۷ تا ۱۴ روز.",
+            "en": "Dose as total ceftazidime + avibactam (4:1). 2-hour infusion every 8 h. cIAI with metronidazole. Duration: cIAI 5–14, cUTI and pneumonia 7–14 days."
+          },
+          "refs": [
+            {
+              "source": "fda-avycaz",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-avycaz",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "کودک ۶ ماه تا <۱۸ سال — ۶۲٫۵ mg/kg هر ۸ ساعت (حداکثر ۲٫۵ g)",
+        "en": "Children 6 months to <18 years — 62.5 mg/kg every 8 h (max 2.5 g)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 62.5,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 2500,
+        "refs": [
+          {
+            "source": "fda-avycaz",
+            "section": "2.2, Table 2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت مجموع سفتازیدیم + آویباکتام (۴:۱). انفوزیون ۲ ساعته هر ۸ ساعت. cIAI همراه مترونیدازول. مدت: cIAI ۵ تا ۱۴، cUTI و پنومونی ۷ تا ۱۴ روز.",
+            "en": "Dose as total ceftazidime + avibactam (4:1). 2-hour infusion every 8 h. cIAI with metronidazole. Duration: cIAI 5–14, cUTI and pneumonia 7–14 days."
+          },
+          "refs": [
+            {
+              "source": "fda-avycaz",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-avycaz",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infant",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "شیرخوار ۳ تا <۶ ماه — ۵۰ mg/kg هر ۸ ساعت",
+        "en": "Infants 3 to <6 months — 50 mg/kg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 6,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 50,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 2500,
+        "refs": [
+          {
+            "source": "fda-avycaz",
+            "section": "2.2, Table 2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت مجموع سفتازیدیم + آویباکتام (۴:۱). انفوزیون ۲ ساعته هر ۸ ساعت. cIAI همراه مترونیدازول. مدت: cIAI ۵ تا ۱۴، cUTI و پنومونی ۷ تا ۱۴ روز.",
+            "en": "Dose as total ceftazidime + avibactam (4:1). 2-hour infusion every 8 h. cIAI with metronidazole. Duration: cIAI 5–14, cUTI and pneumonia 7–14 days."
+          },
+          "refs": [
+            {
+              "source": "fda-avycaz",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-avycaz",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "young",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "شیرخوار بالای ۲۸ روز تا <۳ ماه — ۳۷٫۵ mg/kg هر ۸ ساعت",
+        "en": "Infants >28 days to <3 months — 37.5 mg/kg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 29,
+          "unit": "day"
+        },
+        "maxAge": {
+          "value": 3,
+          "unit": "month"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 37.5,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 2500,
+        "refs": [
+          {
+            "source": "fda-avycaz",
+            "section": "2.2, Table 2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت مجموع سفتازیدیم + آویباکتام (۴:۱). انفوزیون ۲ ساعته هر ۸ ساعت. cIAI همراه مترونیدازول. مدت: cIAI ۵ تا ۱۴، cUTI و پنومونی ۷ تا ۱۴ روز.",
+            "en": "Dose as total ceftazidime + avibactam (4:1). 2-hour infusion every 8 h. cIAI with metronidazole. Duration: cIAI 5–14, cUTI and pneumonia 7–14 days."
+          },
+          "refs": [
+            {
+              "source": "fda-avycaz",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-avycaz",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی به سفتازیدیم، آویباکتام، فرآورده‌های حاوی آویباکتام یا سایر سفالوسپورین‌ها.",
+        "en": "Serious hypersensitivity to ceftazidime, avibactam, avibactam-containing products or other cephalosporins."
+      },
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کاهش پاسخ بالینی در cIAI با ClCr ۳۰ تا ۵۰؛ حساسیت (واکنش متقاطع با پنی‌سیلین)؛ اسهال C. difficile؛ سمیت عصبی (تشنج، انسفالوپاتی) در نارسایی کلیه بدون تنظیم دوز.",
+        "en": "Decreased clinical response in cIAI with CrCl 30–50; hypersensitivity (penicillin cross-reactivity); C. difficile diarrhoea; neurotoxicity (seizures, encephalopathy) with unadjusted renal impairment."
+      },
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 51,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۵۰ و کمتر: ۳۱ تا ۵۰ → ۱٫۲۵ g هر ۸ ساعت؛ ۱۶ تا ۳۰ → ۰٫۹۴ g هر ۱۲ ساعت؛ کمتر طبق جدول ۳. کودک زیر ۲ سال با نارسایی کلیه: داده کافی نیست.",
+        "en": "CrCl ≤50: 31–50 → 1.25 g every 8 h; 16–30 → 0.94 g every 12 h; lower per Table 3. Children under 2 with renal impairment: insufficient data."
+      },
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-2-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2500,
+        "dosesPerDay": 3
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-2-5",
+      "input": {
+        "ageYears": 2,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 625
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-2-5",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 2500
+      }
+    },
+    {
+      "regimen": "infant",
+      "formulation": "vial-2-5",
+      "input": {
+        "ageYears": 0.4,
+        "weightKg": 6
+      },
+      "expect": {
+        "perDose": 300
+      }
+    },
+    {
+      "regimen": "young",
+      "formulation": "vial-2-5",
+      "input": {
+        "ageYears": 0.15,
+        "weightKg": 4
+      },
+      "expect": {
+        "perDose": 150
+      }
+    }
+  ],
+  "atc": [
+    "J01DD52"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Ceftazidime-avibactam"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-avycaz",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA206494"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206494",
+      "label": "NDA206494"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d9c2803f-dc9c-4b19-b4a3-8303bc8c15fd",
+      "label": "FDA Avycaz"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615018.html",
+      "label": "Ceftazidime and Avibactam Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DD52",
+      "label": "J01DD52"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies of AVYCAZ, ceftazidime, or avibactam in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "8.1"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of AVYCAZ in the treatment of cUTI, cIAI, and HABP/VABP have been established in pediatric patients at least 31 weeks gestational age and older.",
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-avycaz",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

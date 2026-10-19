@@ -1,0 +1,398 @@
+{
+  "id": "ceftolozane-tazobactam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفتولوزان-تازوباکتام",
+    "en": "Ceftolozane-tazobactam"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین + مهارکننده بتالاکتاماز",
+    "en": "Cephalosporin + beta-lactamase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Zerbaxa",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "zerbaxa",
+    "زرباکسا",
+    "سفتولوزان تازوباکتام"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1-5",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1.5 g vial (ceftolozane 1 g + tazobactam 0.5 g)",
+      "concentration": {
+        "amount": 1500,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ciai",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "عفونت عارضه‌دار داخل شکم (۴ تا ۱۴ روز) و ادراری/پیلونفریت (۷ روز) — بزرگسال ۱٫۵ g هر ۸ ساعت",
+        "en": "Complicated intra-abdominal (4–14 days) and urinary/pyelonephritis (7 days) — adult 1.5 g every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 1500,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 4,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت مجموع سفتولوزان + تازوباکتام (۲:۱). انفوزیون ۱ ساعته هر ۸ ساعت. cIAI همراه مترونیدازول.",
+            "en": "Dose as total ceftolozane + tazobactam (2:1). 1-hour infusion every 8 h. cIAI with metronidazole."
+          },
+          "refs": [
+            {
+              "source": "fda-zerbaxa",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hap",
+      "disease": "hospital-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی بیمارستانی و ونتیلاتور — بزرگسال ۳ g هر ۸ ساعت، ۸ تا ۱۴ روز",
+        "en": "HABP/VABP — adult 3 g every 8 h for 8–14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 3000,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 8,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت مجموع سفتولوزان + تازوباکتام (۲:۱). انفوزیون ۱ ساعته هر ۸ ساعت. cIAI همراه مترونیدازول.",
+            "en": "Dose as total ceftolozane + tazobactam (2:1). 1-hour infusion every 8 h. cIAI with metronidazole."
+          },
+          "refs": [
+            {
+              "source": "fda-zerbaxa",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "intra-abdominal-infection",
+      "label": {
+        "fa": "کودکان (از ۳۲ هفته سن بارداری) cIAI و cUTI — ۳۰ mg/kg هر ۸ ساعت (حداکثر ۱٫۵ g)",
+        "en": "Children (from 32 weeks gestational age), cIAI and cUTI — 30 mg/kg every 8 h (max 1.5 g)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 30,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 1500,
+        "refs": [
+          {
+            "source": "fda-zerbaxa",
+            "section": "2.2, Table 2"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 5,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "پنومونی بیمارستانی کودکان: دوز بالاتر و انفوزیون ۲ ساعته طبق جدول ۲.",
+            "en": "Paediatric HABP/VABP: higher dose and 2-hour infusion per Table 2."
+          },
+          "refs": [
+            {
+              "source": "fda-zerbaxa",
+              "section": "2.2, Table 2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی به سفتولوزان، تازوباکتام، پیپراسیلین-تازوباکتام یا سایر بتالاکتام‌ها.",
+        "en": "Serious hypersensitivity to ceftolozane, tazobactam, piperacillin-tazobactam or other beta-lactams."
+      },
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کاهش اثر در ClCr پایه ۳۰ تا ۵۰؛ حساسیت؛ اسهال C. difficile؛ مقاومت دارویی.",
+        "en": "Decreased efficacy with baseline CrCl 30–50; hypersensitivity; C. difficile diarrhoea; drug-resistant bacteria."
+      },
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 51,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۵۰ و کمتر: cIAI/cUTI ۳۰ تا ۵۰ → ۷۵۰ mg، ۱۵ تا ۲۹ → ۳۷۵ mg هر ۸ ساعت؛ پنومونی ۳۰ تا ۵۰ → ۱٫۵ g، ۱۵ تا ۲۹ → ۷۵۰ mg؛ ESRD طبق جدول ۳.",
+        "en": "CrCl ≤50: cIAI/cUTI 30–50 → 750 mg, 15–29 → 375 mg every 8 h; pneumonia 30–50 → 1.5 g, 15–29 → 750 mg; ESRD per Table 3."
+      },
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "2.3, Table 3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ciai",
+      "formulation": "vial-1-5",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1500,
+        "dosesPerDay": 3
+      }
+    },
+    {
+      "regimen": "hap",
+      "formulation": "vial-1-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 3000,
+        "dosesPerDay": 3
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-1-5",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 600
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-1-5",
+      "input": {
+        "ageYears": 15,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 1500
+      }
+    }
+  ],
+  "atc": [
+    "J01DI54"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5364/Ceftolozane-Tazobactam",
+        "url": "https://www.darooyab.ir/G-5364/Ceftolozane-Tazobactam"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206829",
+      "label": "NDA206829"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=70ac1d90-eff3-4f0b-9f46-5846c571b32f",
+      "label": "FDA Zerbaxa"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615010.html",
+      "label": "Ceftolozane and Tazobactam Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DI54",
+      "label": "J01DI54"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5364/Ceftolozane-Tazobactam",
+      "label": "Ceftolozane-Tazobactam"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no data available on ZERBAXA, ceftolozane or tazobactam use in pregnant women to allow assessment of a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of ceftolozane or tazobactam in human milk.",
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of ZERBAXA for the treatment of cIAI, cUTI, and HABP/VABP have been established in pediatric patients at least 32 weeks gestational age and older.",
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-zerbaxa",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-zerbaxa",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA206829"
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "id": "vecuronium",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "وکورونیوم",
+    "en": "Vecuronium"
+  },
+  "category": "musculoskeletal",
+  "class": {
+    "fa": "شل‌کننده عضلانی غیردپلاریزان",
+    "en": "Non-depolarising neuromuscular blocker"
+  },
+  "brands": [
+    {
+      "name": "Vecuronium",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "norcuron",
+    "نورکورون",
+    "وکورونیوم"
+  ],
+  "formulations": [
+    {
+      "id": "vial-10",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "10 mg vial",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vecuronium",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "intub",
+      "disease": "intubation-nmb",
+      "label": {
+        "fa": "لوله‌گذاری تراشه — ۰٫۰۸ تا ۰٫۱ mg/kg وریدی (بزرگسال و کودک ۱۰ سال به بالا)",
+        "en": "Tracheal intubation — 0.08–0.1 mg/kg IV (adults and children ≥10 y)"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.08,
+        "perKgPerDoseMax": 0.1,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-vecuronium",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نگهدارنده ۰٫۰۱ تا ۰٫۰۱۵ mg/kg، اولین بار ۲۵ تا ۴۰ دقیقه بعد و سپس هر ۱۲ تا ۱۵ دقیقه. با هوشبرهای استنشاقی اثر بیشتر. شیرخوار ۷ هفته تا ۱ سال حساس‌تر و بهبود کندتر.",
+            "en": "Maintenance 0.01–0.015 mg/kg, first at 25–40 min then about every 12–15 min. Potentiated by inhaled anaesthetics. Infants 7 weeks–1 y are more sensitive and recover more slowly."
+          },
+          "refs": [
+            {
+              "source": "fda-vecuronium",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-vecuronium",
+              "section": "Pediatric Use"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط توسط فرد آموزش‌دیده در بیهوشی، با امکانات راه هوایی، تهویه و احیا.",
+            "en": "Only by personnel trained in anaesthesia, with airway, ventilation and resuscitation equipment at hand."
+          },
+          "refs": [
+            {
+              "source": "fda-vecuronium",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به وکورونیوم.",
+        "en": "Hypersensitivity to vecuronium."
+      },
+      "refs": [
+        {
+          "source": "fda-vecuronium",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "فقط با امکانات تنفس مصنوعی؛ هوشیاری را از بین نمی‌برد (بیهوشی کافی لازم)؛ آنافیلاکسی؛ فلج باقی‌مانده — پایش با محرک عصب محیطی.",
+        "en": "Only with ventilatory support available; does not cause unconsciousness (adequate anaesthesia required); anaphylaxis; residual paralysis — monitor with a peripheral nerve stimulator."
+      },
+      "refs": [
+        {
+          "source": "fda-vecuronium",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "intub",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 5.6,
+        "upperPerDose": 7
+      }
+    }
+  ],
+  "atc": [
+    "M03AC03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01705",
+        "en": "VECURONIUM BROMIDE 10MG VIAL",
+        "fa": "ویال وکورونیوم بروماید ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2814/Vecuronium-Bromide",
+        "url": "https://www.darooyab.ir/G-2814/Vecuronium-Bromide"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=079001",
+      "label": "ANDA079001"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a14da3ee-a731-4282-be9d-407473517470",
+      "label": "FDA Vecuronium"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=M03AC03",
+      "label": "M03AC03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2814/Vecuronium-Bromide",
+      "label": "Vecuronium-Bromide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Animal reproduction studies have not been conducted with vecuronium.",
+      "refs": [
+        {
+          "source": "fda-vecuronium",
+          "section": "Pregnancy: Teratogenic Effects; Pregnancy Category C:"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when vecuronium is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-vecuronium",
+          "section": "Nursing Mothers:"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of vecuronium in pediatric patients less than 7 weeks of age have not been established.",
+      "refs": [
+        {
+          "source": "fda-vecuronium",
+          "section": "Pediatric Use:"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Dose selections for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-vecuronium",
+          "section": "Geriatric Use:"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-vecuronium",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA079001"
+  }
+}

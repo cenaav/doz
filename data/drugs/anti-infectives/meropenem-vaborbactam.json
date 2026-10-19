@@ -1,0 +1,281 @@
+{
+  "id": "meropenem-vaborbactam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مروپنم-واباربکتام",
+    "en": "Meropenem-vaborbactam"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "کارباپنم + مهارکننده بتالاکتاماز",
+    "en": "Carbapenem + beta-lactamase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Vabomere",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vabomere",
+    "vaborem",
+    "وابومر",
+    "مروپنم واباربکتام"
+  ],
+  "formulations": [
+    {
+      "id": "vial-2",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "2 g vial (meropenem 1 g + vaborbactam 1 g)",
+      "concentration": {
+        "amount": 2000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vabomere",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cuti",
+      "disease": "urinary-tract-infection",
+      "label": {
+        "fa": "عفونت ادراری عارضه‌دار و پیلونفریت (۱۸ سال به بالا) — ۴ g هر ۸ ساعت، انفوزیون ۳ ساعته، تا ۱۴ روز",
+        "en": "Complicated UTI including pyelonephritis (≥18 years) — 4 g every 8 h as a 3-hour infusion, up to 14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4000,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-vabomere",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 14
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز به‌صورت مجموع مروپنم + واباربکتام (۲ ویال). فقط با سالین ۰٫۹٪ سازگار است.",
+            "en": "Dose as total meropenem + vaborbactam (2 vials). Compatible only with 0.9% sodium chloride."
+          },
+          "refs": [
+            {
+              "source": "fda-vabomere",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-vabomere",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به مروپنم، واباربکتام یا هم‌گروه‌ها؛ آنافیلاکسی با بتالاکتام‌ها.",
+        "en": "Hypersensitivity to meropenem, vaborbactam or same-class drugs; anaphylaxis with beta-lactams."
+      },
+      "refs": [
+        {
+          "source": "fda-vabomere",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "حساسیت؛ تشنج؛ کاهش سطح والپروئیک‌اسید و تشنج ناگهانی؛ ترومبوسیتوپنی؛ اسهال C. difficile؛ رابدومیولیز.",
+        "en": "Hypersensitivity; seizures; reduced valproic acid levels with breakthrough seizures; thrombocytopenia; C. difficile diarrhoea; rhabdomyolysis."
+      },
+      "refs": [
+        {
+          "source": "fda-vabomere",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 50,
+      "severity": "warn",
+      "text": {
+        "fa": "eGFR زیر ۵۰: ۳۰ تا ۴۹ → ۲ g هر ۸ ساعت؛ ۱۵ تا ۲۹ → ۲ g هر ۱۲ ساعت؛ زیر ۱۵ → ۱ g هر ۱۲ ساعت؛ همودیالیز: پس از دیالیز.",
+        "en": "eGFR <50: 30–49 → 2 g every 8 h; 15–29 → 2 g every 12 h; <15 → 1 g every 12 h; haemodialysis: after dialysis."
+      },
+      "refs": [
+        {
+          "source": "fda-vabomere",
+          "section": "2.2, Table 1"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cuti",
+      "formulation": "vial-2",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4000,
+        "dosesPerDay": 3
+      }
+    }
+  ],
+  "atc": [
+    "J01DH52"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Meropenem-vaborbactam"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-vabomere",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA209776"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209776",
+      "label": "NDA209776"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e237fd0f-3050-42a3-b43e-b6fb4824e93d",
+      "label": "FDA Vabomere"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a617048.html",
+      "label": "Meropenem and Vaborbactam Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DH52",
+      "label": "J01DH52"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Fetal malformations were observed in vaborbactam-treated rabbits, therefore advise pregnant women of the potential risks to the fetus.",
+      "refs": [
+        {
+          "source": "fda-vabomere",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Meropenem has been reported to be excreted in human milk.",
+      "refs": [
+        {
+          "source": "fda-vabomere",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of VABOMERE in pediatric patients (younger than 18 years of age) has not been established.",
+      "refs": [
+        {
+          "source": "fda-vabomere",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-vabomere",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Use of VABOMERE may reduce the effectiveness of hormonal contraceptives.",
+      "refs": [
+        {
+          "source": "fda-vabomere",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "id": "remifentanil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "رمی‌فنتانیل",
+    "en": "Remifentanil"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "اپیوئید بسیار کوتاه‌اثر",
+    "en": "Ultra-short-acting opioid"
+  },
+  "brands": [
+    {
+      "name": "Ultiva",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ultiva",
+    "اولتیوا",
+    "رمیفنتانیل"
+  ],
+  "formulations": [
+    {
+      "id": "dil-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "Diluted 50 mcg/mL (1 mg in 20 mL)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mcg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "2, Table 5"
+        }
+      ]
+    },
+    {
+      "id": "vial-1",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 mg vial (dilute before use)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mcg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "maint",
+      "disease": "general-anesthesia",
+      "label": {
+        "fa": "نگهداری بیهوشی (با پروپوفول یا ایزوفلوران) — ۰٫۲۵ mcg/kg/دقیقه (۰٫۰۵ تا ۲)",
+        "en": "Maintenance of anaesthesia (with propofol or isoflurane) — 0.25 mcg/kg/min (0.05–2)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 0.25,
+        "perKgPerMinMax": 2
+      },
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "dil-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "القا: ۰٫۵ تا ۱ mcg/kg/دقیقه؛ بولوس اولیه ۱ mcg/kg طی ۳۰ تا ۶۰ ثانیه. با نیتروس اکساید ۰٫۴ mcg/kg/دقیقه. سالمند بالای ۶۵: نصف دوز شروع. چاقی: وزن ایده‌آل. فقط با پمپ؛ به‌تنهایی برای بیهوشی کافی نیست.",
+            "en": "Induction: 0.5–1 mcg/kg/min; initial bolus 1 mcg/kg over 30–60 s. With nitrous oxide 0.4 mcg/kg/min. Over 65: halve the starting dose. Obesity: ideal body weight. Infusion device only; not adequate as sole anaesthetic."
+          },
+          "refs": [
+            {
+              "source": "fda-ultiva",
+              "section": "2.2, Table 1"
+            },
+            {
+              "source": "fda-ultiva",
+              "section": "2.6"
+            },
+            {
+              "source": "fda-ultiva",
+              "section": "2.9"
+            },
+            {
+              "source": "fda-ultiva",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط توسط فرد آموزش‌دیده در بیهوشی، با امکانات راه هوایی، تهویه و احیا.",
+            "en": "Only by personnel trained in anaesthesia, with airway, ventilation and resuscitation equipment at hand."
+          },
+          "refs": [
+            {
+              "source": "fda-ultiva",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "postop",
+      "disease": "severe-pain",
+      "label": {
+        "fa": "ادامه به‌عنوان مسکن در ریکاوری یا ICU — شروع ۰٫۱ mcg/kg/دقیقه (۰٫۰۲۵ تا ۰٫۲)",
+        "en": "Continuation as analgesic into recovery/ICU — start 0.1 mcg/kg/min (0.025–0.2)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "infusion",
+      "unit": "mcg",
+      "dose": {
+        "perKgPerMin": 0.1,
+        "perKgPerMinMax": 0.2
+      },
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "2.3"
+        }
+      ],
+      "allowedFormulations": [
+        "dil-50"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "هر ۵ دقیقه ۰٫۰۲۵ mcg/kg/دقیقه تنظیم؛ بولوس برای درد پس از عمل توصیه نمی‌شود. پیش از قطع، مسکن جایگزین شروع شود.",
+            "en": "Adjust by 0.025 mcg/kg/min every 5 min; boluses not recommended for postoperative pain. Establish alternative analgesia before stopping."
+          },
+          "refs": [
+            {
+              "source": "fda-ultiva",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-ultiva",
+              "section": "2.5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "تزریق اپیدورال یا اینتراتکال (گلیسین)؛ حساسیت به رمی‌فنتانیل.",
+        "en": "Epidural or intrathecal use (contains glycine); hypersensitivity to remifentanil."
+      },
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: اعتیاد و سوءمصرف؛ دپرسیون تنفسی تهدیدکننده حیات؛ خطر با بنزودیازپین‌ها و سایر مضعف‌های CNS.",
+        "en": "Boxed warning: addiction and misuse; life-threatening respiratory depression; risks with benzodiazepines and other CNS depressants."
+      },
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سفتی عضلات اسکلتی؛ برادیکاردی و افت فشار؛ قطع سریع اثر؛ هایپرآلژزی.",
+        "en": "Skeletal muscle rigidity; bradycardia and hypotension; rapid offset; opioid-induced hyperalgesia."
+      },
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "maint",
+      "formulation": "dil-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 17.5,
+        "mlPerHour": 21,
+        "upperPerMin": 140,
+        "upperMlPerHour": 168
+      }
+    },
+    {
+      "regimen": "postop",
+      "formulation": "dil-50",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perMin": 7,
+        "mlPerHour": 8.4,
+        "upperPerMin": 14,
+        "upperMlPerHour": 16.8
+      }
+    }
+  ],
+  "atc": [
+    "N01AH06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02182",
+        "en": "REMIFENTANIL HCL 1MG VIAL",
+        "fa": "ویال رمیفنتانیل هیدروکلراید ۱ میلی‌گرم"
+      },
+      {
+        "code": "02183",
+        "en": "REMIFENTANIL HCL 2MG VIAL",
+        "fa": "ویال رمیفنتانیل هیدروکلراید ۲ میلی‌گرم"
+      },
+      {
+        "code": "02184",
+        "en": "REMIFENTANIL HCL 5MG VIAL",
+        "fa": "ویال رمیفنتانیل هیدروکلراید ۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-179/Remifentanil",
+        "url": "https://www.darooyab.ir/G-179/Remifentanil"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-ultiva",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020630"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020630",
+      "label": "NDA020630"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4dbcb8f9-1987-4b66-bd2f-d251fda0be10",
+      "label": "FDA Ultiva"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N01AH06",
+      "label": "N01AH06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-179/Remifentanil",
+      "label": "Remifentanil"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Use of opioid analgesics for an extended period of time during pregnancy may cause neonatal opioid withdrawal syndrome.",
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because fentanyl analogs are excreted in human milk, caution should be exercised when ULTIVA is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The efficacy and safety of ULTIVA as an analgesic agent for use in the maintenance of general anesthesia in outpatient and inpatient pediatric surgery have been established in controlled clinical studies in pediatric patients from birth to 12 years [see Clinical Studies (14.4) ] .",
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Titrate the dosage of ULTIVA slowly in geriatric patients and frequently reevaluate the patient for signs of central nervous system and respiratory depression [see Warnings and Precautions (5.2) ] .",
+      "refs": [
+        {
+          "source": "fda-ultiva",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

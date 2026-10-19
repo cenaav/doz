@@ -1,0 +1,328 @@
+{
+  "id": "albumin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آلبومین انسانی ۲۵٪",
+    "en": "Albumin (human) 25%"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "کلوئید پلاسمایی",
+    "en": "Plasma colloid"
+  },
+  "brands": [
+    {
+      "name": "Albuminex",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "albumin",
+    "آلبومین",
+    "human albumin"
+  ],
+  "formulations": [
+    {
+      "id": "vial-25",
+      "form": "injection",
+      "route": "iv",
+      "label": "25% (25 g/100 mL; 12.5 g/50 mL)",
+      "concentration": {
+        "amount": 0.25,
+        "unit": "g",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-albuminex-25",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hypovol",
+      "disease": "shock",
+      "label": {
+        "fa": "هیپوولمی بزرگسال — شروع ۲۵ g؛ در صورت عدم ثبات طی ۱۵ تا ۳۰ دقیقه دوز دیگر",
+        "en": "Hypovolaemia, adults — initial 25 g; repeat if not stable within 15–30 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "g",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-albuminex-25",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "نارسایی حاد کبد: ۱۲ تا ۲۵ g. سرعت معمول ۱ تا ۲ mL/دقیقه. هرگز با آب مقطر رقیق نشود (همولیز).",
+            "en": "Acute liver failure: 12–25 g. Usual rate 1–2 mL/min. Never dilute with sterile water (haemolysis)."
+          },
+          "refs": [
+            {
+              "source": "fda-albuminex-25",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-albuminex-25",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "para",
+      "disease": "cirrhosis-ascites",
+      "label": {
+        "fa": "پیشگیری از کاهش حجم مرکزی پس از پاراسنتز آسیت سیروزی — ۸ g به‌ازای هر ۱۰۰۰ mL مایع خارج‌شده",
+        "en": "Prevention of central volume depletion after paracentesis — 8 g per 1000 mL of ascitic fluid removed"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "دوز به حجم مایع خارج‌شده بستگی دارد (نه وزن): مثلاً ۵ لیتر → ۴۰ g. هیپوآلبومینمی و سوختگی: ۵۰ تا ۷۵ g.",
+          "en": "Dose depends on volume removed, not weight: e.g. 5 L → 40 g. Hypoalbuminaemia and burns: 50–75 g."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-albuminex-25",
+          "section": "2.1"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آلبومین؛ کم‌خونی شدید یا نارسایی قلب با حجم داخل‌عروقی طبیعی یا بالا.",
+        "en": "Hypersensitivity to albumin; severe anaemia or cardiac failure with normal or increased intravascular volume."
+      },
+      "refs": [
+        {
+          "source": "fda-albuminex-25",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هیپرولمی و ادم ریه (سرعت متناسب با همودینامیک)؛ حساسیت.",
+        "en": "Hypervolaemia and pulmonary oedema (match rate to haemodynamics); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-albuminex-25",
+          "section": "5"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "فرآورده مشتق از پلاسمای انسانی — خطر نظری انتقال عوامل عفونی.",
+        "en": "Human plasma-derived — theoretical risk of transmitting infectious agents."
+      },
+      "refs": [
+        {
+          "source": "fda-albuminex-25",
+          "section": "5.6"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hypovol",
+      "formulation": "vial-25",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "mlPerDose": 100
+      }
+    }
+  ],
+  "atc": [
+    "B05AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "06888",
+        "en": "ALBUMIN (HUMAN) 20% 100ML INF",
+        "fa": "محلول انفوزیون آلبومین انسانی ۲۰ درصد ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00027",
+        "en": "ALBUMIN (HUMAN) 20% 50ML VIAL",
+        "fa": "ویال آلبومین انسانی ۲۰ درصد ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00028",
+        "en": "ALBUMIN (HUMAN) 5% 100ML VIAL",
+        "fa": "ویال آلبومین انسانی ۵ درصد ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "12520",
+        "en": "ALBUMIN (HUMAN) 5% 500ML VIAL",
+        "fa": "ویال آلبومین انسانی ۵ درصد ۵۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "11504",
+        "en": "ALBUMIN 5% 250ML VIAL",
+        "fa": "ویال آلبومین ۵ درصد ۲۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00029",
+        "en": "ALBUMIN SP 15%",
+        "fa": "آلبومین SP، ۱۵ درصد"
+      },
+      {
+        "code": "50954",
+        "en": "ALBUMIN (HUMAN) INJECTION, SOLUTION PARENTERAL 20 % 250 mL",
+        "fa": "محلول تزریقی آلبومین (انسانی) ۲۰ درصد ۲۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1375/Albumin",
+        "url": "https://www.darooyab.ir/G-1375/Albumin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-albuminex-25",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125644"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125644",
+      "label": "BLA125644"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=167f48d0-8ae5-4f7e-b050-9673dad78acc",
+      "label": "FDA Albuminex 25%"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B05AA01",
+      "label": "B05AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1375/Albumin",
+      "label": "Albumin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no data with ALBUMINEX 25% use in pregnant women to inform on drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-albuminex-25",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of ALBUMINEX 25% in human milk, the effects on the breast-fed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-albuminex-25",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "No human or animal data.",
+      "refs": [
+        {
+          "source": "fda-albuminex-25",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "No human or animal data.",
+      "refs": [
+        {
+          "source": "fda-albuminex-25",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

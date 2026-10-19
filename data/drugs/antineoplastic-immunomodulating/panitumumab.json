@@ -1,0 +1,287 @@
+{
+  "id": "panitumumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پانیتوموماب",
+    "en": "Panitumumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد EGFR",
+    "en": "EGFR antagonist antibody"
+  },
+  "brands": [
+    {
+      "name": "Vectibix",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vectibix",
+    "وکتیبیکس",
+    "پانیتوموماب"
+  ],
+  "formulations": [
+    {
+      "id": "inj-20",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/mL (100 mg/5 mL, 400 mg/20 mL)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vectibix",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "crc",
+      "disease": "colorectal-cancer",
+      "label": {
+        "fa": "سرطان کولورکتال متاستاتیک RAS وحشی — ۶ mg/kg وریدی هر ۱۴ روز",
+        "en": "RAS wild-type metastatic colorectal cancer — 6 mg/kg IV every 14 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 6,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-vectibix",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-vectibix",
+              "section": "2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "انفوزیون ۶۰ دقیقه (تا ۱۰۰۰ mg) یا ۹۰ دقیقه (بیشتر). جهش KRAS G12C: همراه سوتوراسیب.",
+            "en": "Infuse over 60 min (≤1000 mg) or 90 min (>1000 mg). KRAS G12C: with sotorasib."
+          },
+          "refs": [
+            {
+              "source": "fda-vectibix",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت پوستی (۹۰٪، شدید ۱۵٪).",
+        "en": "Boxed warning: dermatologic toxicity (90%, severe in 15%)."
+      },
+      "refs": [
+        {
+          "source": "fda-vectibix",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "کاهش الکترولیت؛ واکنش انفوزیون؛ نارسایی حاد کلیه؛ بیماری بینابینی ریه؛ حساسیت به نور؛ سمیت چشمی؛ سمیت جنینی.",
+        "en": "Electrolyte depletion; infusion reactions; acute renal failure; interstitial lung disease; photosensitivity; ocular toxicity; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-vectibix",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "crc",
+      "formulation": "inj-20",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 420,
+        "mlPerDose": 21
+      }
+    }
+  ],
+  "atc": [
+    "L01FE02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "12541",
+        "en": "PANITUMUMAB 20MG/ML 20ML AMP",
+        "fa": "آمپول پانیتومومب ۲۰ میلی‌گرم / میلی‌لیتر ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "12540",
+        "en": "PANITUMUMAB 20MG/ML 5ML AMP",
+        "fa": "آمپول پانیتومومب ۲۰ میلی‌گرم / میلی‌لیتر ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4787/Panitumumab",
+        "url": "https://www.darooyab.ir/G-4787/Panitumumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-vectibix",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125147"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125147",
+      "label": "BLA125147"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0fa4bca-f245-4d92-ae29-b0c630a315c2",
+      "label": "FDA Vectibix"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607066.html",
+      "label": "Panitumumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01FE02",
+      "label": "L01FE02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4787/Panitumumab",
+      "label": "Panitumumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on data from animal studies and its mechanism of action, Vectibix can cause fetal harm when administered to pregnant women [see Clinical Pharmacology (12.1) ] .",
+      "refs": [
+        {
+          "source": "fda-vectibix",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants from Vectibix, advise women not to breastfeed during treatment with Vectibix and for 2 months after the last dose.",
+      "refs": [
+        {
+          "source": "fda-vectibix",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Vectibix have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-vectibix",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or efficacy were observed in elderly patients (≥ 65 years of age) treated with Vectibix monotherapy.",
+      "refs": [
+        {
+          "source": "fda-vectibix",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Vectibix can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-vectibix",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

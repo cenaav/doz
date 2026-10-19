@@ -1,0 +1,283 @@
+{
+  "id": "botulism-antitoxin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آنتی‌توکسین بوتولیسم هفت‌ظرفیتی (BAT)",
+    "en": "Botulism antitoxin heptavalent (BAT)"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "آنتی‌توکسین اسبی",
+    "en": "Equine antitoxin"
+  },
+  "brands": [
+    {
+      "name": "BAT",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "bat",
+    "botulism antitoxin",
+    "ضد سم بوتولیسم",
+    "آنتی توکسین بوتولیسم"
+  ],
+  "formulations": [
+    {
+      "id": "vial",
+      "form": "injection",
+      "route": "iv",
+      "label": "Single-use vial (A–G antitoxin; dilute 1:10)",
+      "concentration": {
+        "amount": 1,
+        "unit": "application",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bat-antitoxin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "botulism",
+      "label": {
+        "fa": "بوتولیسم علامت‌دار (۱۷ سال به بالا) — یک ویال انفوزیون وریدی آهسته پس از رقیق‌سازی ۱:۱۰",
+        "en": "Symptomatic botulism (≥17 y) — one vial by slow IV infusion after 1:10 dilution"
+      },
+      "population": {
+        "minAge": {
+          "value": 17,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "application",
+      "dose": {
+        "perDose": 1,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bat-antitoxin",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۰٫۵ mL/دقیقه ۳۰ دقیقه، سپس هر ۳۰ دقیقه دو برابر تا ۲ mL/دقیقه. کودک ۱ تا <۱۷ سال: ۲۰ تا ۱۰۰٪ دوز بزرگسال بر اساس وزن (جدول ۲). علائم حیاتی در طول انفوزیون پایش.",
+            "en": "Start 0.5 mL/min for 30 min, then double every 30 min to 2 mL/min. Children 1–<17 y: 20–100% of adult dose by weight (Table 2). Monitor vitals throughout."
+          },
+          "refs": [
+            {
+              "source": "fda-bat-antitoxin",
+              "section": "2.1, Table 1"
+            },
+            {
+              "source": "fda-bat-antitoxin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی و آنافیلاکسی (پروتئین اسبی)؛ بیماری سرم تأخیری؛ واکنش انفوزیون؛ تداخل با برخی گلوکومترها (مالتوز).",
+        "en": "Hypersensitivity and anaphylaxis (equine protein); delayed serum sickness; infusion reactions; interference with some glucose meters (maltose)."
+      },
+      "refs": [
+        {
+          "source": "fda-bat-antitoxin",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1
+      }
+    }
+  ],
+  "atc": [
+    "J06AA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01875",
+        "en": "BOTULINIUM A ANTITOXIN 1 ML AMP",
+        "fa": "آمپول بوتولینوم A آنتی‌توکسین ۱ میلی‌لیتر"
+      },
+      {
+        "code": "01874",
+        "en": "BOTULINIUM B ANTITOXIN 5000 IU AMP",
+        "fa": "آمپول بوتولینوم B آنتی‌توکسین ۵۰۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "05014",
+        "en": "BOTULINIUM E ANTITOXIN 10,000 IU AMP",
+        "fa": "آمپول بوتولینوم E آنتی‌توکسین ۱۰۰۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "01411",
+        "en": "BOTULISM MONOVALENT (ANTITOXIN) E AMP",
+        "fa": "آمپول بوتولیسم تک‌ظرفیتی (آنتی‌توکسین) E"
+      },
+      {
+        "code": "01412",
+        "en": "BOTULISM POLYVALENT (ANTITOXIN) A+B+E 10ML AMP",
+        "fa": "آمپول بوتولیسم چندظرفیتی (آنتی‌توکسین) A + B + E ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "50627",
+        "en": "BOTULISM ANTITOXIN MONOVALENT TYPE A (EQUINE) INJECTION PARENTERAL 5000 [iU]/1mL 10 mL",
+        "fa": "فرآورده تزریقی بوتولیسم آنتی‌توکسین تک‌ظرفیتی نوع A (اسبی) ۵۰۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "52775",
+        "en": "BOTULISM ANTITOXIN MONOVALENT TYPE B (EQUINE) INJECTION PARENTERAL 500 [iU]/1mL 10 mL",
+        "fa": "فرآورده تزریقی بوتولیسم آنتی‌توکسین تک‌ظرفیتی نوع B (اسبی) ۵۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "52776",
+        "en": "BOTULISM ANTITOXIN MONOVALENT TYPE E (EQUINE) INJECTION PARENTERAL 1000 [iU]/1mL 10 mL",
+        "fa": "فرآورده تزریقی بوتولیسم آنتی‌توکسین تک‌ظرفیتی نوع E (اسبی) ۱۰۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "51179",
+        "en": "BOTULISM ANTITOXIN POLYVALENT A+B+E (EQUINE) INJECTION PARENTERAL 6500 [iU]/1mL 10 mL",
+        "fa": "فرآورده تزریقی بوتولیسم آنتی‌توکسین چندظرفیتی A + B + E (اسبی) ۶۵۰۰ واحد بین‌المللی / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3429/Botulism-Antitoxins",
+        "url": "https://www.darooyab.ir/G-3429/Botulism-Antitoxins"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125462",
+      "label": "BLA125462"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f3c4292-8773-4781-8264-d71c80d3eabd",
+      "label": "FDA BAT"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J06AA04",
+      "label": "J06AA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3429/Botulism-Antitoxins",
+      "label": "Botulism-Antitoxins"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no human or animal data to establish the presence or absence of BAT associated risk.",
+      "refs": [
+        {
+          "source": "fda-bat-antitoxin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data to assess the presence or absence of BAT in human milk, the effects on the breastfed child, or the effects on milk production/excretion.",
+      "refs": [
+        {
+          "source": "fda-bat-antitoxin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The effectiveness of BAT has not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-bat-antitoxin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The safety, pharmacokinetics, and effectiveness of BAT have not been established in geriatric subjects.",
+      "refs": [
+        {
+          "source": "fda-bat-antitoxin",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-bat-antitoxin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125462"
+  }
+}

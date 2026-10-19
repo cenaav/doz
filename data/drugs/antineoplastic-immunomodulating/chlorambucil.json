@@ -1,0 +1,262 @@
+{
+  "id": "chlorambucil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کلرامبوسیل",
+    "en": "Chlorambucil"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "عامل آلکیله‌کننده خوراکی",
+    "en": "Oral alkylating agent"
+  },
+  "brands": [
+    {
+      "name": "Leukeran",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "leukeran",
+    "لوکران",
+    "کلرامبوسیل"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-leukeran",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cll",
+      "disease": "chronic-lymphocytic-leukemia",
+      "label": {
+        "fa": "CLL و لنفوم‌های بدخیم (تسکینی) — ۰٫۱ تا ۰٫۲ mg/kg خوراکی روزانه ۳ تا ۶ هفته",
+        "en": "CLL and malignant lymphomas (palliative) — 0.1–0.2 mg/kg orally daily for 3–6 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDay": 0.1,
+        "perKgPerDayMax": 0.2,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-leukeran",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 21,
+        "max": 42
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "معمولاً ۴ تا ۱۰ mg در روز؛ کل دوز یکجا. با پاسخ و شمارش خون تنظیم و در صورت افت کاهش یابد.",
+            "en": "Usually 4–10 mg/day; whole dose at once. Adjust to response and counts; reduce if counts fall."
+          },
+          "refs": [
+            {
+              "source": "fda-leukeran",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "مقاومت قبلی بیماری به کلرامبوسیل؛ حساسیت به کلرامبوسیل (حساسیت متقاطع پوستی با سایر آلکیله‌کننده‌ها).",
+        "en": "Prior disease resistance to chlorambucil; hypersensitivity (possible cross skin hypersensitivity with other alkylators)."
+      },
+      "refs": [
+        {
+          "source": "fda-leukeran",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سرطان‌زا — فقط برای CLL یا لنفوم. تشنج، ناباروری، لوسمی و بدخیمی ثانویه؛ سرکوب مغز استخوان.",
+        "en": "Carcinogenic — only for CLL or lymphoma. Seizures, infertility, leukaemia and secondary malignancy; bone-marrow suppression."
+      },
+      "refs": [
+        {
+          "source": "fda-leukeran",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cll",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 8,
+        "tabletsPerDoseRounded": 4,
+        "upperPerDose": 16
+      }
+    }
+  ],
+  "atc": [
+    "L01AA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00262",
+        "en": "CHLORAMBUCIL 2MG TAB",
+        "fa": "قرص کلرامبوسیل ۲ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-967/Chlorambucil",
+        "url": "https://www.darooyab.ir/G-967/Chlorambucil"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=010669",
+      "label": "NDA010669"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58a3c995-5ad6-465d-8437-5970c9088213",
+      "label": "FDA Leukeran"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682899.html",
+      "label": "Chlorambucil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01AA02",
+      "label": "L01AA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-967/Chlorambucil",
+      "label": "Chlorambucil"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Chlorambucil can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-leukeran",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from chlorambucil, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-leukeran",
+          "section": "Lactation"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-leukeran",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-leukeran",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-leukeran",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA010669"
+  }
+}

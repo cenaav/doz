@@ -1,0 +1,313 @@
+{
+  "id": "ambrisentan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمبریسنتان",
+    "en": "Ambrisentan"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آنتاگونیست گیرنده اندوتلین",
+    "en": "Endothelin receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Letairis",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "letairis",
+    "volibris",
+    "لتایریس",
+    "آمبریسنتان"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet (do not split)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pah",
+      "disease": "pulmonary-arterial-hypertension",
+      "label": {
+        "fa": "PAH بزرگسال — شروع ۵ mg یک بار در روز (با یا بدون تادالافیل)؛ تا ۱۰ mg",
+        "en": "PAH, adults — start 5 mg once daily (with or without tadalafil); up to 10 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 5,
+        "perDoseMax": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "افزایش با فاصله ۴ هفته. قرص شکسته، خرد یا جویده نشود.",
+            "en": "Titrate at 4-week intervals. Do not split, crush or chew."
+          },
+          "refs": [
+            {
+              "source": "fda-letairis",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "preg",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری.",
+        "en": "Pregnancy."
+      },
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "4.1"
+        }
+      ]
+    },
+    {
+      "id": "ipf",
+      "severity": "block",
+      "text": {
+        "fa": "فیبروز ایدیوپاتیک ریه (شامل فشار ریوی گروه ۳).",
+        "en": "Idiopathic pulmonary fibrosis (including WHO group 3 pulmonary hypertension)."
+      },
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — در بارداری منع مصرف؛ پیش از شروع و ماهانه تست بارداری، پیشگیری مؤثر تا ۱ ماه پس از قطع (برنامه REMS).",
+        "en": "Boxed warning: embryo-fetal toxicity — contraindicated in pregnancy; pregnancy test before and monthly, effective contraception until 1 month after stopping (REMS)."
+      },
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "احتباس مایع؛ ادم ریه با بیماری انسدادی وریدهای ریه؛ کاهش اسپرم؛ کاهش هموگلوبین.",
+        "en": "Fluid retention; pulmonary oedema with veno-occlusive disease; decreased sperm counts; haemoglobin decrease."
+      },
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pah",
+      "formulation": "tab-5",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 5,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 10
+      }
+    }
+  ],
+  "atc": [
+    "C02KX02"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4906/Ambrisentan",
+        "url": "https://www.darooyab.ir/G-4906/Ambrisentan"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022081",
+      "label": "NDA022081"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844",
+      "label": "FDA Letairis"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612023.html",
+      "label": "Ambrisentan"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02KX02",
+      "label": "C02KX02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4906/Ambrisentan",
+      "label": "Ambrisentan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "Letairis is contraindicated in females who are pregnant.",
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are present in human milk and because of the potential for serious adverse reactions in breastfed infants from Letairis, a decision should be made whether to discontinue breastfeeding or discontinue Letairis, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of Letairis in pediatric patients have not been established .",
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "The elderly (age ≥65 years) showed less improvement in walk distances with Letairis than younger patients did, but the results of such subgroup analyses must be interpreted cautiously.",
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Patients who can become pregnant who are using ambrisentan should use effective contraception prior to initiation of treatment, during treatment, and for one month after discontinuation of treatment with ambrisentan to prevent pregnancy [see Warnings and Precautions (5.1) ] .",
+      "refs": [
+        {
+          "source": "fda-letairis",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-letairis",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022081"
+  }
+}

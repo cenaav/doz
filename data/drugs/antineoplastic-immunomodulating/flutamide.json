@@ -1,0 +1,205 @@
+{
+  "id": "flutamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلوتامید",
+    "en": "Flutamide"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "ضدآندروژن غیراستروئیدی",
+    "en": "Non-steroidal antiandrogen"
+  },
+  "brands": [
+    {
+      "name": "Eulexin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "eulexin",
+    "اولکسین",
+    "فلوتامید"
+  ],
+  "formulations": [
+    {
+      "id": "cap-125",
+      "form": "capsule",
+      "route": "oral",
+      "label": "125 mg capsule",
+      "concentration": {
+        "amount": 125,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-eulexin",
+          "section": "Description"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "prostate",
+      "disease": "prostate-cancer",
+      "label": {
+        "fa": "سرطان پروستات مرحله B2-C و D2 (با آگونیست LHRH) — ۲۵۰ mg (۲ کپسول) سه بار در روز هر ۸ ساعت",
+        "en": "Stage B2-C and D2 prostate cancer (with LHRH agonist) — 250 mg (2 capsules) three times daily every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 250,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-eulexin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فلوتامید؛ نارسایی شدید کبد (آنزیم‌های کبد پیش از شروع).",
+        "en": "Hypersensitivity to flutamide; severe hepatic impairment (check liver enzymes before starting)."
+      },
+      "refs": [
+        {
+          "source": "fda-eulexin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آسیب کبدی — بستری و به‌ندرت مرگ از نارسایی کبد؛ آنزیم کبد پایه، ماهانه ۴ ماه و سپس دوره‌ای.",
+        "en": "Hepatic injury — hospitalisation and rarely death from liver failure; baseline liver enzymes, monthly for 4 months, then periodically."
+      },
+      "refs": [
+        {
+          "source": "fda-eulexin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "prostate",
+      "formulation": "cap-125",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 250,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "L02BB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21780",
+        "en": "EULEXIN250MG  TAB",
+        "fa": "قرص اولکسین ۲۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00560",
+        "en": "FLUTAMIDE 250MG TAB",
+        "fa": "قرص فلوتامید ۲۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1004/Flutamide",
+        "url": "https://www.darooyab.ir/G-1004/Flutamide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-eulexin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075298"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075298",
+      "label": "ANDA075298"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a905e25-42b6-4937-a689-f01a8f22e644",
+      "label": "FDA Eulexin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697045.html",
+      "label": "Flutamide"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BB01",
+      "label": "L02BB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1004/Flutamide",
+      "label": "Flutamide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Pregnancy Category D There was decreased 24 hour survival in the offspring of pregnant rats treated with Eulexin ® at doses of 30, 100 or 200 mg/kg/day (approximately 3, 9 and 19 times the human dose).",
+      "refs": [
+        {
+          "source": "fda-eulexin",
+          "section": "Pregnancy"
+        }
+      ]
+    }
+  }
+}

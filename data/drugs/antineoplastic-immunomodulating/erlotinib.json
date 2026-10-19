@@ -1,0 +1,354 @@
+{
+  "id": "erlotinib",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ارلوتینیب",
+    "en": "Erlotinib"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده EGFR",
+    "en": "EGFR inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Tarceva",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "tarceva",
+    "تارسوا",
+    "ارلوتینیب"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "nsclc",
+      "disease": "lung-cancer",
+      "label": {
+        "fa": "NSCLC متاستاتیک با جهش EGFR — ۱۵۰ mg ناشتا یک بار در روز",
+        "en": "Metastatic EGFR-mutated NSCLC — 150 mg on an empty stomach once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 150,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-erlotinib",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pancreas",
+      "disease": "pancreatic-cancer",
+      "label": {
+        "fa": "سرطان پانکراس (با جمسیتابین) — ۱۰۰ mg ناشتا یک بار در روز",
+        "en": "Pancreatic cancer (with gemcitabine) — 100 mg on an empty stomach once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 100,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص انکولوژی؛ ادامه تا پیشرفت بیماری یا سمیت غیرقابل‌قبول. تنظیم دوز برای عوارض و تداخل‌ها طبق برچسب.",
+            "en": "Only under an oncologist; continue until progression or unacceptable toxicity. Dose adjustments for toxicity and interactions per label."
+          },
+          "refs": [
+            {
+              "source": "fda-erlotinib",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "بیماری بینابینی ریه؛ نارسایی کلیه؛ سمیت کبدی؛ سوراخ شدن گوارش؛ واکنش پوستی تاولی؛ سکته مغزی؛ کم‌خونی همولیتیک میکروآنژیوپاتیک؛ اختلال چشمی؛ خونریزی با وارفارین؛ سمیت جنینی.",
+        "en": "Interstitial lung disease; renal failure; hepatotoxicity; GI perforation; bullous skin disorders; stroke; microangiopathic haemolytic anaemia; ocular disorders; bleeding with warfarin; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "nsclc",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 150,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "pancreas",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L01EB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "14887",
+        "en": "ERLOTINIB 100MG TAB",
+        "fa": "قرص ارلوتینیب ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "06154",
+        "en": "ERLOTINIB 150MG TAB",
+        "fa": "قرص ارلوتینیب ۱۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4743/Erlotinib",
+        "url": "https://www.darooyab.ir/G-4743/Erlotinib"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-erlotinib",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA091059"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=091059",
+      "label": "ANDA091059"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d97f401-4853-4a9a-907d-21e8a4d16088",
+      "label": "FDA Erlotinib"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605008.html",
+      "label": "Erlotinib"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01EB02",
+      "label": "L01EB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4743/Erlotinib",
+      "label": "Erlotinib"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on animal data and its mechanism of action, erlotinib can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Advise a lactating woman not to breastfeed during treatment with erlotinib tablets and for 2 weeks after the final dose.",
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of erlotinib in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or efficacy were observed between subjects 65 years and older and those younger than 65.",
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Erlotinib can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations ( 8.1 )] .",
+      "refs": [
+        {
+          "source": "fda-erlotinib",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

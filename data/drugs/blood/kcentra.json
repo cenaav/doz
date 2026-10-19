@@ -1,0 +1,365 @@
+{
+  "id": "kcentra",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کنسانتره کمپلکس پروترومبین ۴ فاکتوری (PCC)",
+    "en": "Prothrombin complex concentrate, 4-factor (Kcentra)"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "فاکتورهای انعقادی II، VII، IX، X",
+    "en": "Coagulation factors II, VII, IX, X"
+  },
+  "brands": [
+    {
+      "name": "Kcentra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "kcentra",
+    "pcc",
+    "beriplex",
+    "برپلکس",
+    "کمپلکس پروترومبین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1000",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1000 unit vial (factor IX units; actual potency on carton)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "unit",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "inr2",
+      "disease": "anticoagulant-reversal",
+      "label": {
+        "fa": "برگشت اثر وارفارین در خونریزی حاد یا جراحی فوری — INR ۲ تا <۴: ۲۵ واحد/kg (حداکثر ۲۵۰۰)",
+        "en": "Reversal of warfarin for acute major bleeding or urgent surgery — INR 2–<4: 25 units/kg (max 2500)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDose": 25,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 2500,
+        "refs": [
+          {
+            "source": "fda-kcentra",
+            "section": "2.1, Table 1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "inr4",
+      "disease": "anticoagulant-reversal",
+      "label": {
+        "fa": "برگشت اثر وارفارین — INR ۴ تا ۶: ۳۵ واحد/kg (حداکثر ۳۵۰۰)",
+        "en": "Warfarin reversal — INR 4–6: 35 units/kg (max 3500)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDose": 35,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 3500,
+        "refs": [
+          {
+            "source": "fda-kcentra",
+            "section": "2.1, Table 1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "inr6",
+      "disease": "anticoagulant-reversal",
+      "label": {
+        "fa": "برگشت اثر وارفارین — INR بالای ۶: ۵۰ واحد/kg (حداکثر ۵۰۰۰)",
+        "en": "Warfarin reversal — INR >6: 50 units/kg (max 5000)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDose": 50,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 5000,
+        "refs": [
+          {
+            "source": "fda-kcentra",
+            "section": "2.1, Table 1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آنافیلاکسی یا واکنش شدید به اجزا (هپارین، فاکتورها، پروتئین C و S، آنتی‌ترومبین، آلبومین)؛ DIC؛ HIT شناخته‌شده (حاوی هپارین).",
+        "en": "Anaphylaxis or severe reaction to any component (heparin, factors, proteins C and S, antithrombin, albumin); DIC; known HIT (contains heparin)."
+      },
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: ترومبوآمبولی شریانی و وریدی (کشنده و غیرکشنده). همراه ویتامین K داده شود؛ تکرار دوز توصیه نمی‌شود؛ وزن بالای ۱۰۰ kg = ۱۰۰ kg.",
+        "en": "Boxed warning: arterial and venous thromboembolism (fatal and non-fatal). Give with vitamin K; repeat dosing not recommended; weight above 100 kg counts as 100 kg."
+      },
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-kcentra",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "فرآورده مشتق از پلاسمای انسانی — خطر نظری انتقال عوامل عفونی.",
+        "en": "Human plasma-derived — theoretical risk of transmitting infectious agents."
+      },
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "5.3"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "inr2",
+      "formulation": "vial-1000",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 1750
+      }
+    },
+    {
+      "regimen": "inr4",
+      "formulation": "vial-1000",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 2450
+      }
+    },
+    {
+      "regimen": "inr6",
+      "formulation": "vial-1000",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 3500
+      }
+    },
+    {
+      "regimen": "inr6",
+      "formulation": "vial-1000",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 120
+      },
+      "expect": {
+        "perDose": 5000
+      }
+    }
+  ],
+  "atc": [
+    "B02BD01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Prothrombin%20complex%20concentrate%2C%204-factor"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-kcentra",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125421"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125421",
+      "label": "BLA125421"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eee1afb8-324c-42e4-8bf0-f0c9da5e6d42",
+      "label": "FDA Kcentra"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B02BD01",
+      "label": "B02BD01"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no data with KCENTRA use in pregnancy to inform on drug-associated risk.",
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the excretion of KCENTRA in human milk, the effect on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of KCENTRA in the pediatric population has not been studied.",
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the total number of subjects (431) with acute major bleeding or with the need for an urgent surgery/invasive procedure treated to reverse VKA anticoagulation in three clinical studies, 66% were 65 years old or greater and 39% were 75 years old or greater.",
+      "refs": [
+        {
+          "source": "fda-kcentra",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

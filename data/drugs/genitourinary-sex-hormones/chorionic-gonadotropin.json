@@ -1,0 +1,333 @@
+{
+  "id": "chorionic-gonadotropin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گنادوتروپین جفتی انسانی (hCG)",
+    "en": "Chorionic gonadotropin (hCG)"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "گنادوتروپین",
+    "en": "Gonadotropin"
+  },
+  "brands": [
+    {
+      "name": "Novarel",
+      "market": "US"
+    },
+    {
+      "name": "Pregnyl",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "hcg",
+    "novarel",
+    "pregnyl",
+    "پرگنیل",
+    "اچ سی جی",
+    "گنادوتروپین کوریونیک"
+  ],
+  "formulations": [
+    {
+      "id": "vial-10000",
+      "form": "powder-for-injection",
+      "route": "im",
+      "label": "10,000 USP units vial (also 5,000) — IM only",
+      "concentration": {
+        "amount": 10000,
+        "unit": "unit",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-novarel",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ovul",
+      "disease": "female-infertility",
+      "label": {
+        "fa": "القای تخمک‌گذاری پس از منوتروپین‌ها — ۵۰۰۰ تا ۱۰۰۰۰ واحد عضلانی یک روز پس از آخرین دوز منوتروپین",
+        "en": "Ovulation induction after menotropins — 5,000–10,000 units IM one day after the last menotropins dose"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "unit",
+      "dose": {
+        "perDose": 5000,
+        "perDoseMax": 10000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-novarel",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط توسط پزشک باتجربه در ناباروری. در خطر OHSS در پایش تخمدان، hCG داده نشود.",
+            "en": "Only by physicians experienced in infertility. Withhold hCG if ovarian monitoring suggests OHSS risk."
+          },
+          "refs": [
+            {
+              "source": "fda-novarel",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crypt",
+      "disease": "cryptorchidism",
+      "label": {
+        "fa": "بیضه نزول‌نکرده پیش از بلوغ (بدون انسداد آناتومیک) — رژیم‌های عضلانی برچسب",
+        "en": "Prepubertal cryptorchidism (not due to anatomical obstruction) — labelled IM regimens"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "یکی از رژیم‌ها: ۴۰۰۰ واحد سه بار در هفته ۳ هفته؛ ۵۰۰۰ واحد یک روز در میان ۴ تزریق؛ ۱۵ تزریق ۵۰۰ تا ۱۰۰۰ واحد طی ۶ هفته؛ ۵۰۰ واحد سه بار در هفته ۴ تا ۶ هفته.",
+          "en": "One of: 4,000 units three times weekly for 3 weeks; 5,000 units every other day for 4 injections; 15 injections of 500–1,000 units over 6 weeks; 500 units three times weekly for 4–6 weeks."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-novarel",
+          "section": "Dosage and Administration"
+        }
+      ]
+    },
+    {
+      "id": "hypogon",
+      "disease": "male-hypogonadism",
+      "label": {
+        "fa": "هیپوگنادیسم هیپوگنادوتروپیک مردان (موارد منتخب) — رژیم‌های عضلانی برچسب",
+        "en": "Selected hypogonadotropic hypogonadism in males — labelled IM regimens"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "notCalculated",
+      "unit": "mg",
+      "dose": {
+        "reason": {
+          "fa": "۵۰۰ تا ۱۰۰۰ واحد سه بار در هفته ۳ هفته، سپس همان دوز دو بار در هفته ۳ هفته؛ یا ۴۰۰۰ واحد سه بار در هفته ۶ تا ۹ ماه، سپس ۲۰۰۰ واحد سه بار در هفته ۳ ماه دیگر.",
+          "en": "500–1,000 units three times weekly for 3 weeks, then twice weekly for 3 weeks; or 4,000 units three times weekly for 6–9 months, then 2,000 units three times weekly for 3 more months."
+        }
+      },
+      "refs": [
+        {
+          "source": "fda-novarel",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بلوغ زودرس؛ سرطان پروستات یا سایر نئوپلاسم‌های وابسته به آندروژن؛ سابقه حساسیت به hCG.",
+        "en": "Precocious puberty; prostatic carcinoma or other androgen-dependent neoplasm; prior allergic reaction to hCG."
+      },
+      "refs": [
+        {
+          "source": "fda-novarel",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سندرم تحریک بیش از حد تخمدان (OHSS)؛ پارگی کیست تخمدان؛ بارداری چندقلو؛ ترومبوآمبولی. برای کاهش وزن مؤثر نیست.",
+        "en": "Ovarian hyperstimulation syndrome; ovarian cyst rupture; multiple births; thromboembolism. Not effective for weight loss."
+      },
+      "refs": [
+        {
+          "source": "fda-novarel",
+          "section": "Warnings"
+        },
+        {
+          "source": "fda-novarel",
+          "section": "Indications and Usage"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ovul",
+      "formulation": "vial-10000",
+      "input": {
+        "ageYears": 32,
+        "weightKg": 60
+      },
+      "expect": {
+        "perDose": 5000,
+        "upperPerDose": 10000
+      }
+    }
+  ],
+  "atc": [
+    "G03GA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "11405",
+        "en": "CHORIO GONADOTROPIN ALFA 250MCG/0.5ML SOL FOR INJ",
+        "fa": "فرآورده تزریقی چوریو گنادوتروپین آلفا ۲۵۰ میکروگرم / ۰٫۵ میلی‌لیتر"
+      },
+      {
+        "code": "00284",
+        "en": "CHORIONIC GONADOTROPHIN (HUMAN) 1500 U VIAL",
+        "fa": "ویال کوریونی گنادوتروپین (انسانی) ۱۵۰۰ واحد"
+      },
+      {
+        "code": "08716",
+        "en": "CHORIONIC GONADOTROPHIN (HUMAN) 2000IU VIAL",
+        "fa": "ویال کوریونی گنادوتروپین (انسانی) ۲۰۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "07390",
+        "en": "CHORIONIC GONADOTROPHIN (HUMAN) 2500IU VIAL",
+        "fa": "ویال کوریونی گنادوتروپین (انسانی) ۲۵۰۰ واحد بین‌المللی"
+      },
+      {
+        "code": "00285",
+        "en": "CHORIONIC GONADOTROPHIN (HUMAN) 500 U VIAL",
+        "fa": "ویال کوریونی گنادوتروپین (انسانی) ۵۰۰ واحد"
+      },
+      {
+        "code": "00286",
+        "en": "CHORIONIC GONADOTROPHIN (HUMAN) 5000 U VIAL",
+        "fa": "ویال کوریونی گنادوتروپین (انسانی) ۵۰۰۰ واحد"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2689/Human-Chorionic-Gonadotrophin",
+        "url": "https://www.darooyab.ir/G-2689/Human-Chorionic-Gonadotrophin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=017016",
+      "label": "BLA017016"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ac6918ff-9dc3-40d9-8619-54b26e4bdfc8",
+      "label": "FDA Novarel"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03GA01",
+      "label": "G03GA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2689/Human-Chorionic-Gonadotrophin",
+      "label": "Human-Chorionic-Gonadotrophin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "HCG may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-novarel",
+          "section": "CONTRAINDICATIONS"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when HCG is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-novarel",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness in children below the age of 4 have not been established.",
+      "refs": [
+        {
+          "source": "fda-novarel",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-novarel",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA017016"
+  }
+}

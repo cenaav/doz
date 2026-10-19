@@ -84,6 +84,47 @@
           "section": "3"
         }
       ]
+    },
+    {
+      "id": "tab-20",
+      "form": "tablet",
+      "route": "oral",
+      "label": "20 mg tablet (Revatio)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-revatio",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "susp-10",
+      "form": "suspension",
+      "route": "oral",
+      "label": "10 mg/mL oral suspension (Revatio, after reconstitution)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-revatio",
+          "section": "3"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -142,6 +183,115 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "tab-25",
+        "tab-50",
+        "tab-100"
+      ]
+    },
+    {
+      "id": "pah",
+      "disease": "pulmonary-arterial-hypertension",
+      "label": {
+        "fa": "فشار خون شریان ریوی (WHO گروه ۱) بزرگسال — ۲۰ mg سه بار در روز",
+        "en": "PAH (WHO group 1), adults — 20 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-revatio",
+          "section": "2.1"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-20",
+        "susp-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بر اساس علائم و تحمل تا حداکثر ۸۰ mg سه بار در روز قابل افزایش. تزریقی: ۱۰ mg وریدی بولوس سه بار در روز (معادل ۲۰ mg خوراکی).",
+            "en": "May be titrated by symptoms and tolerability up to 80 mg three times daily. Injection: 10 mg IV bolus three times daily (equivalent to 20 mg oral)."
+          },
+          "refs": [
+            {
+              "source": "fda-revatio",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pah-child",
+      "disease": "pulmonary-arterial-hypertension",
+      "label": {
+        "fa": "PAH کودکان ۱ تا ۱۷ سال — ۲۰ kg و کمتر: ۱۰ mg؛ بالای ۲۰ kg: ۲۰ mg سه بار در روز",
+        "en": "PAH, children 1–17 years — ≤20 kg: 10 mg; >20 kg: 20 mg three times daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 1,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 0,
+            "maxWeightKg": 20,
+            "perDose": 10,
+            "dosesPerDay": 3
+          },
+          {
+            "minWeightKg": 20,
+            "maxWeightKg": 150,
+            "perDose": 20,
+            "dosesPerDay": 3
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-revatio",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-20",
+        "susp-10"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بالای ۴۵ kg ممکن است تا ۴۰ mg سه بار در روز افزایش یابد. استفاده طولانی در کودکان با مرگ بیشتر در دوزهای بالاتر همراه بوده است.",
+            "en": "Above 45 kg may be titrated to 40 mg three times daily. Long-term use in children was associated with higher mortality at higher doses."
+          },
+          "refs": [
+            {
+              "source": "fda-revatio",
+              "section": "2.2"
+            }
+          ]
+        }
       ]
     }
   ],
@@ -157,26 +307,6 @@
         {
           "source": "fda-sildenafil",
           "section": "4"
-        }
-      ]
-    },
-    {
-      "id": "child",
-      "severity": "block",
-      "rule": {
-        "maxAge": {
-          "value": 18,
-          "unit": "year"
-        }
-      },
-      "text": {
-        "fa": "برای کودکان نیست.",
-        "en": "Not indicated in children."
-      },
-      "refs": [
-        {
-          "source": "fda-sildenafil",
-          "section": "8.4"
         }
       ]
     }
@@ -200,6 +330,42 @@
       },
       "expect": {
         "perDose": 50
+      }
+    },
+    {
+      "regimen": "pah",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "pah-child",
+      "formulation": "susp-10",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16
+      },
+      "expect": {
+        "perDose": 10,
+        "mlPerDose": 1
+      }
+    },
+    {
+      "regimen": "pah-child",
+      "formulation": "tab-20",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
       }
     }
   ],
@@ -317,13 +483,13 @@
     "pediatric": {
       "level": "caution",
       "text": {
-        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
-        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+        "fa": "برچسب Revatio: برای PAH در کودکان ۱ تا ۱۷ سال تأیید شده؛ برای اختلال نعوظ در کودکان کاربرد ندارد.",
+        "en": "Revatio label: approved for PAH in children 1–17 years; erectile-dysfunction use does not apply to children."
       },
-      "quote": "Safety and effectiveness have not been established in pediatric patients.",
+      "quote": "The safety and efficacy of REVATIO have been established in pediatric patients 1 to 17 years old, for the treatment of PAH (WHO Group I) to improve exercise ability and, in patients too young to perform standard exercising testing, pulmonary hemodynamics thought to underlie improvements in exercise.",
       "refs": [
         {
-          "source": "fda-sildenafil",
+          "source": "fda-revatio",
           "section": "8.4"
         }
       ]

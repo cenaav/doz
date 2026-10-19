@@ -1,0 +1,347 @@
+{
+  "id": "bendamustine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بنداموستین",
+    "en": "Bendamustine"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "عامل آلکیله‌کننده",
+    "en": "Alkylating agent"
+  },
+  "brands": [
+    {
+      "name": "Bendeka",
+      "market": "US"
+    },
+    {
+      "name": "Treanda",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "bendeka",
+    "treanda",
+    "ribomustin",
+    "ریبوموستین",
+    "بنداموستین"
+  ],
+  "formulations": [
+    {
+      "id": "inj-25",
+      "form": "injection",
+      "route": "iv",
+      "label": "25 mg/mL, 100 mg/4 mL multiple-dose vial",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bendeka",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cll",
+      "disease": "chronic-lymphocytic-leukemia",
+      "label": {
+        "fa": "CLL — ۱۰۰ mg/m² وریدی ۱۰ دقیقه، روز ۱ و ۲ هر ۲۸ روز، تا ۶ دوره",
+        "en": "CLL — 100 mg/m² IV over 10 min on days 1 and 2 every 28 days, up to 6 cycles"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 100,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bendeka",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 2,
+        "max": 2
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-bendeka",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhl",
+      "disease": "b-cell-lymphoma",
+      "label": {
+        "fa": "لنفوم غیرهوچکین سلول B ایندولنت پیشرفته پس از ریتوکسیماب — ۱۲۰ mg/m² روز ۱ و ۲ هر ۲۱ روز، تا ۸ دوره",
+        "en": "Indolent B-cell NHL progressing after rituximab — 120 mg/m² on days 1 and 2 every 21 days, up to 8 cycles"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 120,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-bendeka",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 2,
+        "max": 2
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-bendeka",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بنداموستین، پلی‌اتیلن گلیکول ۴۰۰، پروپیلن گلیکول یا مونوتیوگلیسرول.",
+        "en": "Hypersensitivity to bendamustine, polyethylene glycol 400, propylene glycol or monothioglycerol."
+      },
+      "refs": [
+        {
+          "source": "fda-bendeka",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سرکوب مغز استخوان؛ عفونت (شامل PML)؛ آنافیلاکسی و واکنش انفوزیون؛ سندرم لیز تومور؛ واکنش پوستی شدید؛ سمیت کبدی؛ بدخیمی دیگر؛ آسیب نشت؛ سمیت جنینی.",
+        "en": "Myelosuppression; infections (including PML); anaphylaxis and infusion reactions; tumour lysis syndrome; severe skin reactions; hepatotoxicity; other malignancies; extravasation injury; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-bendeka",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cll",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 8
+      }
+    },
+    {
+      "regimen": "nhl",
+      "formulation": "inj-25",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 240,
+        "mlPerDose": 9.6
+      }
+    }
+  ],
+  "atc": [
+    "L01AA09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13245",
+        "en": "BENDAMUSTIN 100MG  INJ",
+        "fa": "فرآورده تزریقی بنداموستین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "17381",
+        "en": "BENDAMUSTIN 25MG  INJ",
+        "fa": "فرآورده تزریقی بنداموستین ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "52690",
+        "en": "BENDAMUSTINE HYDROCHLORIDE INJECTION PARENTERAL 25 mg/1mL 4 mL",
+        "fa": "فرآورده تزریقی بنداموستین هیدروکلراید ۲۵ میلی‌گرم / ۱ میلی‌لیتر ۴ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-951/Bendamustine",
+        "url": "https://www.darooyab.ir/G-951/Bendamustine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208194",
+      "label": "NDA208194"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ace9a43b-f9bd-4896-abfe-0ef4fec67ddf",
+      "label": "FDA Bendeka"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608034.html",
+      "label": "Bendamustine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01AA09",
+      "label": "L01AA09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-951/Bendamustine",
+      "label": "Bendamustine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب برساند؛ پیشگیری مؤثر لازم است.",
+        "en": "Label: can cause fetal harm; effective contraception required."
+      },
+      "quote": "Can cause fetal harm. Advise females of reproductive potential and males with female partners of reproductive potential of the potential risk to a fetus and to use an effective method of contraception.",
+      "refs": [
+        {
+          "source": "fda-bendeka",
+          "section": "5.10"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in the breastfed child, advise patients that breastfeeding is not recommended during treatment with BENDEKA, and for 1 week after the last dose.",
+      "refs": [
+        {
+          "source": "fda-bendeka",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-bendeka",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety were observed between patients ≥65 years of age and younger patients.",
+      "refs": [
+        {
+          "source": "fda-bendeka",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise female patients of reproductive potential to use effective contraception during treatment with BENDEKA and for 6 months after the last dose.",
+      "refs": [
+        {
+          "source": "fda-bendeka",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-bendeka",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA208194"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "id": "macitentan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ماسیتنتان",
+    "en": "Macitentan"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "آنتاگونیست گیرنده اندوتلین",
+    "en": "Endothelin receptor antagonist"
+  },
+  "brands": [
+    {
+      "name": "Opsumit",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "opsumit",
+    "اپسومیت",
+    "ماسیتنتان"
+  ],
+  "formulations": [
+    {
+      "id": "tab-10",
+      "form": "tablet",
+      "route": "oral",
+      "label": "10 mg tablet",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pah",
+      "disease": "pulmonary-arterial-hypertension",
+      "label": {
+        "fa": "PAH بزرگسال — ۱۰ mg یک بار در روز",
+        "en": "PAH, adults — 10 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوز بالاتر از ۱۰ mg بررسی نشده و توصیه نمی‌شود.",
+            "en": "Doses above 10 mg have not been studied and are not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-opsumit",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "preg",
+      "severity": "block",
+      "text": {
+        "fa": "بارداری.",
+        "en": "Pregnancy."
+      },
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "4.1"
+        }
+      ]
+    },
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ماسیتنتان.",
+        "en": "Hypersensitivity to macitentan."
+      },
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "4.2"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت جنینی — در بارداری منع مصرف؛ پیش از شروع و ماهانه تست بارداری، پیشگیری مؤثر تا ۱ ماه پس از قطع (برنامه REMS).",
+        "en": "Boxed warning: embryo-fetal toxicity — contraindicated in pregnancy; pregnancy test before and monthly, effective contraception until 1 month after stopping (REMS)."
+      },
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سمیت کبدی؛ احتباس مایع؛ کاهش هموگلوبین؛ ادم ریه با بیماری انسدادی وریدهای ریه؛ کاهش اسپرم.",
+        "en": "Hepatotoxicity; fluid retention; haemoglobin decrease; pulmonary oedema with veno-occlusive disease; decreased sperm counts."
+      },
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pah",
+      "formulation": "tab-10",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C02KX04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52255",
+        "en": "MACITENTAN ORAL 10 mg TABLET",
+        "fa": "قرص ماسیتنتان ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5425/Macitentan",
+        "url": "https://www.darooyab.ir/G-5425/Macitentan"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-opsumit",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204410"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204410",
+      "label": "NDA204410"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e484a50-55db-4b85-8c57-6cd1b0353abd",
+      "label": "FDA Opsumit"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615033.html",
+      "label": "Macitentan"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02KX04",
+      "label": "C02KX04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5425/Macitentan",
+      "label": "Macitentan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "contraindicated",
+      "text": {
+        "fa": "برچسب: در بارداری منع مصرف دارد.",
+        "en": "Label: contraindicated in pregnancy."
+      },
+      "quote": "OPSUMIT is contraindicated in females who are pregnant.",
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "4"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants from OPSUMIT advise women not to breastfeed during treatment with OPSUMIT.",
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of OPSUMIT in pediatric patients have not been established for the treatment of PAH.",
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these subjects and younger subjects.",
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Patients who can become pregnant who are using OPSUMIT should use an effective method of contraception prior to initiation of treatment, during treatment, and for one month after discontinuation of treatment with OPSUMIT to prevent pregnancy [see Warnings and Precautions (5.1) ] .",
+      "refs": [
+        {
+          "source": "fda-opsumit",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

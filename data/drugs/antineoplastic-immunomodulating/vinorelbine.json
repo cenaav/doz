@@ -1,0 +1,303 @@
+{
+  "id": "vinorelbine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "وینورلبین",
+    "en": "Vinorelbine"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آلکالوئید وینکا",
+    "en": "Vinca alkaloid"
+  },
+  "brands": [
+    {
+      "name": "Navelbine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "navelbine",
+    "ناولبین",
+    "وینورلبین"
+  ],
+  "formulations": [
+    {
+      "id": "inj-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL (10 mg/1 mL, 50 mg/5 mL)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vinorelbine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "nsclc",
+      "disease": "lung-cancer",
+      "label": {
+        "fa": "سرطان ریه غیرسلول کوچک — ۳۰ mg/m² وریدی هفته‌ای یک بار (تک‌دارویی یا با سیس‌پلاتین ۲۵ تا ۳۰)",
+        "en": "Non-small-cell lung cancer — 30 mg/m² IV once weekly (single agent, or 25–30 with cisplatin)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 30,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-vinorelbine",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-vinorelbine",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "با کاهش نوتروفیل یا افزایش بیلی‌روبین طبق جداول ۲.۲ کم یا قطع شود. فقط وریدی.",
+            "en": "Reduce or withhold for low neutrophils or raised bilirubin per 2.2 tables. IV only."
+          },
+          "refs": [
+            {
+              "source": "fda-vinorelbine",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سرکوب شدید مغز استخوان (عفونت، شوک سپتیک، مرگ).",
+        "en": "Boxed warning: severe myelosuppression (infection, septic shock, death)."
+      },
+      "refs": [
+        {
+          "source": "fda-vinorelbine",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سمیت کبدی؛ یبوست شدید و انسداد روده؛ نشت از رگ؛ نوروپاتی؛ سمیت ریوی؛ سمیت جنینی.",
+        "en": "Hepatotoxicity; severe constipation and bowel obstruction; extravasation; neuropathy; pulmonary toxicity; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-vinorelbine",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "nsclc",
+      "formulation": "inj-10",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 60,
+        "mlPerDose": 6
+      }
+    }
+  ],
+  "atc": [
+    "L01CA04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05005",
+        "en": "VINORELBINE 10MG/1ML VIAL",
+        "fa": "ویال وینورلبین ۱۰ میلی‌گرم / ۱ میلی‌لیتر"
+      },
+      {
+        "code": "13254",
+        "en": "VINORELBINE 20MG CAP",
+        "fa": "کپسول وینورلبین ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "08133",
+        "en": "VINORELBINE 30MG CAP",
+        "fa": "کپسول وینورلبین ۳۰ میلی‌گرم"
+      },
+      {
+        "code": "20043",
+        "en": "VINORELBINE 500MG/10ML VIAL",
+        "fa": "ویال وینورلبین ۵۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "05006",
+        "en": "VINORELBINE 50MG/5ML VIAL",
+        "fa": "ویال وینورلبین ۵۰ میلی‌گرم / ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1093/Vinorelbine",
+        "url": "https://www.darooyab.ir/G-1093/Vinorelbine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-vinorelbine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA091106"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=091106",
+      "label": "ANDA091106"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10a70995-e04d-4044-b1dc-c9aa27460397",
+      "label": "FDA Vinorelbine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a695013.html",
+      "label": "Vinorelbine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01CA04",
+      "label": "L01CA04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1093/Vinorelbine",
+      "label": "Vinorelbine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal studies and its mechanism of action [see Clinical Pharmacology ( 12.1 )] , vinorelbine can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-vinorelbine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants from vinorelbine, advise women not to breastfeed during treatment with vinorelbine and for 9 days after the final dose.",
+      "refs": [
+        {
+          "source": "fda-vinorelbine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of vinorelbine in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-vinorelbine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety, efficacy and pharmacokinetic parameters were observed between these patients and younger patients [see Clinical Pharmacology ( 12.3 )] .",
+      "refs": [
+        {
+          "source": "fda-vinorelbine",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Vinorelbine can cause fetal harm when administered to pregnant women [see Use in Specific Populations ( 8.1 )] .",
+      "refs": [
+        {
+          "source": "fda-vinorelbine",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "id": "melphalan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ملفالان",
+    "en": "Melphalan"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "عامل آلکیله‌کننده",
+    "en": "Alkylating agent"
+  },
+  "brands": [
+    {
+      "name": "Evomela",
+      "market": "US"
+    },
+    {
+      "name": "Alkeran",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "evomela",
+    "alkeran",
+    "آلکران",
+    "ملفالان"
+  ],
+  "formulations": [
+    {
+      "id": "vial-50",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "50 mg vial",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-evomela",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "asct",
+      "disease": "multiple-myeloma",
+      "label": {
+        "fa": "آماده‌سازی پیش از پیوند اتولوگ در مولتیپل میلوما — ۱۰۰ mg/m²/روز وریدی ۳۰ دقیقه، روز ‎-۳ و ‎-۲",
+        "en": "Conditioning before autologous stem-cell transplant in multiple myeloma — 100 mg/m²/day IV over 30 min on days −3 and −2"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 100,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-evomela",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 2,
+        "max": 2
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-evomela",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "وزن بالای ۱۳۰٪ وزن ایده‌آل: سطح بدن با وزن ایده‌آل تعدیل‌شده.",
+            "en": "Weight above 130% of ideal: compute BSA from adjusted ideal body weight."
+          },
+          "refs": [
+            {
+              "source": "fda-evomela",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه واکنش آلرژیک جدی به ملفالان.",
+        "en": "History of serious allergic reaction to melphalan."
+      },
+      "refs": [
+        {
+          "source": "fda-evomela",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سرکوب شدید مغز استخوان؛ حساسیت (آنافیلاکسی ~۲٪)؛ لوسمی ثانویه.",
+        "en": "Boxed warning: severe bone-marrow suppression; hypersensitivity (anaphylaxis ~2%); secondary leukaemia."
+      },
+      "refs": [
+        {
+          "source": "fda-evomela",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سمیت گوارشی؛ سمیت کبدی؛ سمیت جنینی؛ ناباروری.",
+        "en": "GI toxicity; hepatotoxicity; embryo-fetal toxicity; infertility."
+      },
+      "refs": [
+        {
+          "source": "fda-evomela",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "asct",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 200
+      }
+    }
+  ],
+  "atc": [
+    "L01AA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "08228",
+        "en": "MELPHALAN 100MG VIAL",
+        "fa": "ویال ملفالان ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "13165",
+        "en": "MELPHALAN 25MG  TAB",
+        "fa": "قرص ملفالان ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00803",
+        "en": "MELPHALAN 2MG TAB",
+        "fa": "قرص ملفالان ۲ میلی‌گرم"
+      },
+      {
+        "code": "19193",
+        "en": "MELPHALAN 50MG TAB",
+        "fa": "قرص ملفالان ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02153",
+        "en": "MELPHALAN 50MG VIAL",
+        "fa": "ویال ملفالان ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1026/Melphalan",
+        "url": "https://www.darooyab.ir/G-1026/Melphalan"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207155",
+      "label": "NDA207155"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=69f55869-dc11-408e-8fc7-47634269a52c",
+      "label": "FDA Evomela"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682220.html",
+      "label": "Melphalan"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a612019.html",
+      "label": "Melphalan Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01AA03",
+      "label": "L01AA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1026/Melphalan",
+      "label": "Melphalan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on its mechanism of action, Evomela can cause fetal harm when administered to a pregnant woman, including teratogenicity and/or embryo-fetal lethality [see Clinical Pharmacology ( 12.1 )] .",
+      "refs": [
+        {
+          "source": "fda-evomela",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing children from melphalan, breastfeeding is not recommended during treatment with Evomela and for one week after the last dose.",
+      "refs": [
+        {
+          "source": "fda-evomela",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-evomela",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed between these subjects and younger subjects.",
+      "refs": [
+        {
+          "source": "fda-evomela",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise females of reproductive potential to use effective contraception during treatment with Evomela and for 6 months after the last dose.",
+      "refs": [
+        {
+          "source": "fda-evomela",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-evomela",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA207155"
+  }
+}

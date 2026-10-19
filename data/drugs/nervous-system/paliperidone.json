@@ -84,6 +84,26 @@
           "section": "3"
         }
       ]
+    },
+    {
+      "id": "lai",
+      "form": "injection",
+      "route": "im",
+      "label": "Invega Sustenna 156 mg/mL prefilled syringes (39, 78, 117, 156, 234 mg)",
+      "concentration": {
+        "amount": 156,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-invega-sustenna",
+          "section": "3"
+        }
+      ]
     }
   ],
   "regimens": [
@@ -134,6 +154,11 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "er-3",
+        "er-6",
+        "er-9"
       ]
     },
     {
@@ -178,6 +203,11 @@
             }
           ]
         }
+      ],
+      "allowedFormulations": [
+        "er-3",
+        "er-6",
+        "er-9"
       ]
     },
     {
@@ -213,7 +243,106 @@
             "section": "2.2"
           }
         ]
-      }
+      },
+      "allowedFormulations": [
+        "er-3",
+        "er-6",
+        "er-9"
+      ]
+    },
+    {
+      "id": "lai-start",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "اسکیزوفرنی و اسکیزوافکتیو (Invega Sustenna) — شروع: روز ۱ ۲۳۴ mg، روز ۸ ۱۵۶ mg در عضله دلتوئید",
+        "en": "Schizophrenia and schizoaffective disorder (Invega Sustenna) — initiation: day 1 234 mg, day 8 156 mg into the deltoid"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 234,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-invega-sustenna",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "lai"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط تزریق عضلانی توسط کادر درمان. در بیمارانی که قبلاً این دارو را نگرفته‌اند ابتدا تحمل شکل خوراکی سنجیده شود.",
+            "en": "IM injection by a healthcare professional only. Establish tolerability with the oral form first in patients new to the drug."
+          },
+          "refs": [
+            {
+              "source": "fda-invega-sustenna",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lai-maint",
+      "disease": "schizophrenia",
+      "label": {
+        "fa": "نگهدارنده ماهانه Invega Sustenna — اسکیزوفرنی ۱۱۷ mg (۳۹ تا ۲۳۴ mg)؛ اسکیزوافکتیو ۷۸ تا ۲۳۴ mg",
+        "en": "Invega Sustenna monthly maintenance — schizophrenia 117 mg (39–234 mg); schizoaffective 78–234 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 117,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-invega-sustenna",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "lai"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "نخستین دوز نگهدارنده ۵ هفته پس از تزریق اول، در دلتوئید یا گلوتئال.",
+            "en": "First maintenance dose 5 weeks after the first injection, deltoid or gluteal."
+          },
+          "refs": [
+            {
+              "source": "fda-invega-sustenna",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
     }
   ],
   "contraindications": [
@@ -315,6 +444,30 @@
       "expect": {
         "perDose": 6,
         "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "lai-start",
+      "formulation": "lai",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 234,
+        "mlPerDose": 1.5
+      }
+    },
+    {
+      "regimen": "lai-maint",
+      "formulation": "lai",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 117,
+        "mlPerDose": 0.75
       }
     }
   ],

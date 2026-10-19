@@ -1,0 +1,232 @@
+{
+  "id": "dimercaprol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دیمرکاپرول (BAL)",
+    "en": "Dimercaprol (BAL)"
+  },
+  "category": "various",
+  "class": {
+    "fa": "شلات‌کننده فلزات سنگین",
+    "en": "Heavy-metal chelator"
+  },
+  "brands": [
+    {
+      "name": "BAL in Oil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "bal",
+    "بال",
+    "دیمرکاپرول",
+    "british anti-lewisite"
+  ],
+  "formulations": [
+    {
+      "id": "amp-100",
+      "form": "injection",
+      "route": "im",
+      "label": "100 mg/mL in oil, 3 mL ampoule (deep IM only)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-bal-in-oil",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "as-mild",
+      "disease": "heavy-metal-poisoning",
+      "label": {
+        "fa": "مسمومیت خفیف آرسنیک یا طلا — ۲٫۵ mg/kg عضلانی عمقی ۴ بار در روز، ۲ روز",
+        "en": "Mild arsenic or gold poisoning — 2.5 mg/kg deep IM four times daily for 2 days"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2.5,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-bal-in-oil",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سپس روز سوم دو بار و بعد روزانه تا ۱۰ روز. شدید: ۳ mg/kg هر ۴ ساعت ۲ روز. جیوه: ۵ mg/kg سپس ۲٫۵ mg/kg یک یا دو بار در روز ۱۰ روز. فقط عضلانی عمقی.",
+            "en": "Then twice on day 3 and daily for 10 days. Severe: 3 mg/kg every 4 h for 2 days. Mercury: 5 mg/kg then 2.5 mg/kg once or twice daily for 10 days. Deep IM only."
+          },
+          "refs": [
+            {
+              "source": "fda-bal-in-oil",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lead",
+      "disease": "heavy-metal-poisoning",
+      "label": {
+        "fa": "انسفالوپاتی حاد سرب — ۴ mg/kg عضلانی، سپس هر ۴ ساعت همراه EDTA در محل جدا",
+        "en": "Acute lead encephalopathy — 4 mg/kg IM, then every 4 h with edetate calcium disodium at a separate site"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 4,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-bal-in-oil",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "اغلب موارد نارسایی کبد (جز زردی پس از آرسنیک)؛ در نارسایی حاد کلیه قطع یا احتیاط شدید.",
+        "en": "Most cases of hepatic insufficiency (except post-arsenical jaundice); stop or use extreme caution if acute renal failure develops."
+      },
+      "refs": [
+        {
+          "source": "fda-bal-in-oil",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "درد محل تزریق؛ تب در حدود ۳۰٪ کودکان؛ کاهش گذرای نوتروفیل.",
+        "en": "Injection-site pain; fever in about 30% of children; transient neutrophil reduction."
+      },
+      "refs": [
+        {
+          "source": "fda-bal-in-oil",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "as-mild",
+      "formulation": "amp-100",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 175,
+        "mlPerDose": 1.75
+      }
+    },
+    {
+      "regimen": "lead",
+      "formulation": "amp-100",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 80,
+        "mlPerDose": 0.8
+      }
+    }
+  ],
+  "atc": [
+    "V03AB09"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02506",
+        "en": "DIMERCAPROL 200MG/2ML AMP",
+        "fa": "آمپول دی‌مرکاپرول ۲۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "00449",
+        "en": "DIMERCAPROL 300MG/3ML IM AMP",
+        "fa": "آمپول دی‌مرکاپرول ۳۰۰ میلی‌گرم / ۳ میلی‌لیتر عضلانی"
+      },
+      {
+        "code": "50079",
+        "en": "DIMERCAPROL INJECTION PARENTERAL 50 mg/1mL 2 mL",
+        "fa": "فرآورده تزریقی دی‌مرکاپرول ۵۰ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1950/Dimercaprol",
+        "url": "https://www.darooyab.ir/G-1950/Dimercaprol"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ed1fc15-ca74-400e-bfdb-64483b2c590b",
+      "label": "FDA BAL in Oil"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AB09",
+      "label": "V03AB09"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1950/Dimercaprol",
+      "label": "Dimercaprol"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Animal reproduction studies have not been conducted with BAL in Oil.",
+      "refs": [
+        {
+          "source": "fda-bal-in-oil",
+          "section": "Pregnancy Category C"
+        }
+      ]
+    }
+  }
+}

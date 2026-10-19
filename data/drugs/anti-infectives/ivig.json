@@ -1,0 +1,425 @@
+{
+  "id": "ivig",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ایمونوگلوبولین وریدی (IVIG)",
+    "en": "Immune globulin intravenous (IVIG) 10%"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ایمونوگلوبولین انسانی",
+    "en": "Human immune globulin"
+  },
+  "brands": [
+    {
+      "name": "Gammagard Liquid",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ivig",
+    "immune globulin",
+    "ایمونوگلوبولین",
+    "آی وی آی جی",
+    "gammagard"
+  ],
+  "formulations": [
+    {
+      "id": "sol-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10% (100 mg/mL)",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-gammagard",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pi",
+      "disease": "primary-immunodeficiency",
+      "label": {
+        "fa": "نقص ایمنی اولیه — ۳۰۰ تا ۶۰۰ mg/kg وریدی هر ۳ تا ۴ هفته",
+        "en": "Primary immunodeficiency — 300–600 mg/kg IV every 3–4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 300,
+        "perKgPerDoseMax": 600,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-gammagard",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "شروع ۰٫۵ mL/kg/ساعت ۳۰ دقیقه، سپس هر ۳۰ دقیقه افزایش تا ۵ mL/kg/ساعت. تنظیم با سطح IgG.",
+            "en": "Start 0.5 mL/kg/h for 30 min, then increase every 30 min up to 5 mL/kg/h. Adjust to IgG levels."
+          },
+          "refs": [
+            {
+              "source": "fda-gammagard",
+              "section": "2.1, Table 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cidp",
+      "disease": "cidp",
+      "label": {
+        "fa": "CIDP بزرگسال — القا ۲ g/kg تقسیم طی ۲ تا ۵ روز؛ نگهدارنده ۱ g/kg هر ۳ هفته",
+        "en": "CIDP, adults — induction 2 g/kg divided over 2–5 days; maintenance 1 g/kg every 3 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2000,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-gammagard",
+          "section": "2.3, Table 5"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عدد ماشین‌حساب کل دوز القا است (تقسیم طی ۲ تا ۵ روز). نوروپاتی حرکتی چندکانونی: ۰٫۵ تا ۲٫۴ g/kg/ماه.",
+            "en": "The calculator gives the total induction dose (divide over 2–5 days). Multifocal motor neuropathy: 0.5–2.4 g/kg/month."
+          },
+          "refs": [
+            {
+              "source": "fda-gammagard",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-gammagard",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "آنافیلاکسی یا حساسیت شدید به ایمونوگلوبولین انسانی؛ کمبود IgA با آنتی‌بادی ضد IgA و سابقه حساسیت.",
+        "en": "Anaphylaxis or severe hypersensitivity to human immune globulin; IgA deficiency with anti-IgA antibodies and history of hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-gammagard",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: ترومبوز؛ اختلال و نارسایی حاد کلیه — کمترین غلظت و سرعت در بیماران پرخطر، هیدراتاسیون کافی.",
+        "en": "Boxed warning: thrombosis; renal dysfunction and acute renal failure — use minimum concentration and rate in at-risk patients, ensure hydration."
+      },
+      "refs": [
+        {
+          "source": "fda-gammagard",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "مننژیت آسپتیک؛ همولیز؛ TRALI؛ افزایش ویسکوزیته.",
+        "en": "Aseptic meningitis; haemolysis; TRALI; hyperviscosity."
+      },
+      "refs": [
+        {
+          "source": "fda-gammagard",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pi",
+      "formulation": "sol-10",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 21000,
+        "mlPerDose": 210,
+        "upperPerDose": 42000
+      }
+    },
+    {
+      "regimen": "cidp",
+      "formulation": "sol-10",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 140000,
+        "mlPerDose": 1400
+      }
+    }
+  ],
+  "atc": [
+    "J06BA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "15813",
+        "en": "IMMUNE GLOBULIN (I.V) 9G/150ML VIAL",
+        "fa": "ویال ایمونوگلوبولین (ای.و) ۹ گرم / ۱۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "01763",
+        "en": "IMMUNE GLOBULIN 10 G (IV )VIAL",
+        "fa": "ویال ایمونوگلوبولین ۱۰ گرم (وریدی)"
+      },
+      {
+        "code": "17772",
+        "en": "IMMUNE GLOBULIN 10G/100ML VIAL",
+        "fa": "ویال ایمونوگلوبولین ۱۰ گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "11694",
+        "en": "IMMUNE GLOBULIN 12G VIAL",
+        "fa": "ویال ایمونوگلوبولین ۱۲ گرم"
+      },
+      {
+        "code": "00919",
+        "en": "IMMUNE GLOBULIN 1G (IV ) VIAL",
+        "fa": "ویال ایمونوگلوبولین ۱ گرم (وریدی)"
+      },
+      {
+        "code": "00918",
+        "en": "IMMUNE GLOBULIN 2.5 G INJECTION POWDER (IV) VIAL",
+        "fa": "پودر تزریقی ایمونوگلوبولین ۲٫۵ گرم (وریدی)"
+      },
+      {
+        "code": "17770",
+        "en": "IMMUNE GLOBULIN 2.5G/25ML VIAL",
+        "fa": "ویال ایمونوگلوبولین ۲٫۵ گرم / ۲۵ میلی‌لیتر"
+      },
+      {
+        "code": "05843",
+        "en": "IMMUNE GLOBULIN 2.5G/50ML (IV) VIAL",
+        "fa": "ویال ایمونوگلوبولین ۲٫۵ گرم / ۵۰ میلی‌لیتر (وریدی)"
+      },
+      {
+        "code": "13516",
+        "en": "IMMUNE GLOBULIN 20G/200ML VIAL",
+        "fa": "ویال ایمونوگلوبولین ۲۰ گرم / ۲۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00920",
+        "en": "IMMUNE GLOBULIN 3G VIAL",
+        "fa": "ویال ایمونوگلوبولین ۳ گرم"
+      },
+      {
+        "code": "00878",
+        "en": "IMMUNE GLOBULIN 5G INJECTION POWDER (IV) VIAL",
+        "fa": "پودر تزریقی ایمونوگلوبولین ۵ گرم (وریدی)"
+      },
+      {
+        "code": "05842",
+        "en": "IMMUNE GLOBULIN 5G/100ML VIAL",
+        "fa": "ویال ایمونوگلوبولین ۵ گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "17773",
+        "en": "IMMUNE GLOBULIN 5G/50ML VIAL",
+        "fa": "ویال ایمونوگلوبولین ۵ گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00879",
+        "en": "IMMUNE GLOBULIN 6G (IV ) VIAL",
+        "fa": "ویال ایمونوگلوبولین ۶ گرم (وریدی)"
+      },
+      {
+        "code": "50894",
+        "en": "IMMUNE GLOBULIN INJECTION INTRAVENOUS 50 mg/1mL 20 mL",
+        "fa": "فرآورده تزریقی ایمونوگلوبولین ۵۰ میلی‌گرم / ۱ میلی‌لیتر ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "50893",
+        "en": "IMMUNE GLOBULIN INJECTION INTRAVENOUS 50 mg/1mL 200 mL",
+        "fa": "فرآورده تزریقی ایمونوگلوبولین ۵۰ میلی‌گرم / ۱ میلی‌لیتر ۲۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "50081",
+        "en": "IMMUNE GLOBULIN INJECTION PARENTERAL 200 mg/1mL 5 mL",
+        "fa": "فرآورده تزریقی ایمونوگلوبولین ۲۰۰ میلی‌گرم / ۱ میلی‌لیتر ۵ میلی‌لیتر"
+      },
+      {
+        "code": "50082",
+        "en": "IMMUNE GLOBULIN INJECTION PARENTERAL 200 mg/1mL 10 mL",
+        "fa": "فرآورده تزریقی ایمونوگلوبولین ۲۰۰ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "50083",
+        "en": "IMMUNE GLOBULIN INJECTION PARENTERAL 200 mg/1mL 20 mL",
+        "fa": "فرآورده تزریقی ایمونوگلوبولین ۲۰۰ میلی‌گرم / ۱ میلی‌لیتر ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "52194",
+        "en": "IMMUNE GLOBULIN INJECTION INTRAVENOUS 50 mg/1mL 10 mL",
+        "fa": "فرآورده تزریقی ایمونوگلوبولین ۵۰ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4557/Immune-Globulin-Intravenous",
+        "url": "https://www.darooyab.ir/G-4557/Immune-Globulin-Intravenous"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-gammagard",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA125105"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125105",
+      "label": "BLA125105"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9d42adca-0dd7-4df7-864d-5a7feee52130",
+      "label": "FDA Gammagard Liquid"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J06BA02",
+      "label": "J06BA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4557/Immune-Globulin-Intravenous",
+      "label": "Immune-Globulin-Intravenous"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: مطالعه حیوانی نشده و خطر جنینی نامعلوم است؛ فقط در صورت نیاز واضح.",
+        "en": "Label: no animal studies and fetal risk unknown; give only if clearly needed."
+      },
+      "quote": "It is not known whether GAMMAGARD LIQUID can cause fetal harm when administered to a pregnant woman or can affect reproduction capacity. Immune globulins cross the placenta from maternal circulation increasingly after 30 weeks of gestation. GAMMAGARD LIQUID should be given to a pregnant woman only if clearly indicated.",
+      "refs": [
+        {
+          "source": "fda-gammagard",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of GAMMAGARD LIQUID in human milk, its effects on the breastfed infant or its effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-gammagard",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and efficacy of GAMMAGARD LIQUID in pediatric patients below the age of 2 have not been established.",
+      "refs": [
+        {
+          "source": "fda-gammagard",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Infuse at the minimum intravenous infusion rate practicable [see Boxed Warning , Warnings and Precautions (5.2 , 5.4) and Dosage and Administration (2.5) ] .",
+      "refs": [
+        {
+          "source": "fda-gammagard",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

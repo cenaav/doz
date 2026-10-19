@@ -1,0 +1,264 @@
+{
+  "id": "busulfan",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بوسولفان",
+    "en": "Busulfan"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "عامل آلکیله‌کننده",
+    "en": "Alkylating agent"
+  },
+  "brands": [
+    {
+      "name": "Myleran",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "myleran",
+    "busulfex",
+    "مایلران",
+    "بوسولفان"
+  ],
+  "formulations": [
+    {
+      "id": "tab-2",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2 mg tablet",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-myleran",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cml",
+      "disease": "chronic-myeloid-leukemia",
+      "label": {
+        "fa": "CML (تسکینی) — القای بهبود: ۴ تا ۸ mg خوراکی روزانه (حدود ۶۰ mcg/kg یا ۱٫۸ mg/m²)",
+        "en": "CML (palliative) — remission induction: 4–8 mg orally daily (about 60 mcg/kg or 1.8 mg/m²)"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4,
+        "perDoseMax": 8,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-myleran",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "سرعت افت WBC به دوز وابسته است؛ دوز بالای ۴ mg/روز فقط با پاسخ کافی نیاز. کودک: همان دوز وزنی. شمارش خون هفتگی.",
+            "en": "WBC fall is dose-related; above 4 mg/day only if response is insufficient. Children: same weight-based dose. Weekly counts."
+          },
+          "refs": [
+            {
+              "source": "fda-myleran",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "CML بدون تشخیص قطعی؛ سابقه حساسیت به بوسولفان.",
+        "en": "CML diagnosis not firmly established; prior hypersensitivity to busulfan."
+      },
+      "refs": [
+        {
+          "source": "fda-myleran",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "نارسایی مغز استخوان و پان‌سیتوپنی طولانی؛ فیبروز ریه؛ بدخیمی ثانویه.",
+        "en": "Bone-marrow failure and prolonged pancytopenia; pulmonary fibrosis; secondary malignancy."
+      },
+      "refs": [
+        {
+          "source": "fda-myleran",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cml",
+      "formulation": "tab-2",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4,
+        "tabletsPerDoseRounded": 2,
+        "upperPerDose": 8
+      }
+    }
+  ],
+  "atc": [
+    "L01AB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00186",
+        "en": "BUSULFAN 2MG TAB",
+        "fa": "قرص بوسولفان ۲ میلی‌گرم"
+      },
+      {
+        "code": "06700",
+        "en": "BUSULFAN 6MG/ML AMP",
+        "fa": "آمپول بوسولفان ۶ میلی‌گرم / میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-960/Busulfan",
+        "url": "https://www.darooyab.ir/G-960/Busulfan"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=009386",
+      "label": "NDA009386"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2da33e5b-dcfb-4cdf-b163-50398e42f41c",
+      "label": "FDA Myleran"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682248.html",
+      "label": "Busulfan"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611033.html",
+      "label": "Busulfan Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01AB01",
+      "label": "L01AB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-960/Busulfan",
+      "label": "Busulfan"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Busulfan may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-myleran",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for tumorigenicity shown for busulfan in animal and human studies, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-myleran",
+          "section": "Lactation"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "See INDICATIONS AND USAGE and DOSAGE AND ADMINISTRATION sections.",
+      "refs": [
+        {
+          "source": "fda-myleran",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-myleran",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-myleran",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA009386"
+  }
+}

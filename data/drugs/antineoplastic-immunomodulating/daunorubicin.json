@@ -1,0 +1,313 @@
+{
+  "id": "daunorubicin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "داونوروبیسین",
+    "en": "Daunorubicin"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتراسایکلین",
+    "en": "Anthracycline"
+  },
+  "brands": [
+    {
+      "name": "Cerubidine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cerubidine",
+    "daunomycin",
+    "داونومایسین",
+    "داونوروبیسین"
+  ],
+  "formulations": [
+    {
+      "id": "inj-5",
+      "form": "injection",
+      "route": "iv",
+      "label": "5 mg/mL (20 mg/4 mL, 50 mg/10 mL)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-daunorubicin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "aml",
+      "disease": "acute-myeloid-leukemia",
+      "label": {
+        "fa": "القای AML بزرگسال زیر ۶۰ سال — ۴۵ mg/m²/روز وریدی روز ۱ تا ۳ (دوره‌های بعد روز ۱ و ۲) با سیتارابین",
+        "en": "AML induction, adults under 60 — 45 mg/m²/day IV on days 1–3 (later courses days 1–2) with cytarabine"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 60,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 45,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-daunorubicin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-daunorubicin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aml-60",
+      "disease": "acute-myeloid-leukemia",
+      "label": {
+        "fa": "القای AML ۶۰ سال و بالاتر — ۳۰ mg/m²/روز روز ۱ تا ۳ با سیتارابین",
+        "en": "AML induction, 60 years and over — 30 mg/m²/day on days 1–3 with cytarabine"
+      },
+      "population": {
+        "minAge": {
+          "value": 60,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 30,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-daunorubicin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 3,
+        "max": 3
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-daunorubicin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به داونوروبیسین.",
+        "en": "Hypersensitivity to daunorubicin."
+      },
+      "refs": [
+        {
+          "source": "fda-daunorubicin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سمیت قلبی با دوز تجمعی بالای ۴۰۰ تا ۵۵۰ mg/m² در بزرگسال (۳۰۰ mg/m² در کودک بالای ۲ سال، ۱۰ mg/kg زیر ۲ سال)؛ سرکوب شدید مغز استخوان؛ فقط توسط پزشک باتجربه در لوسمی.",
+        "en": "Cardiotoxicity above cumulative 400–550 mg/m² in adults (300 mg/m² in children over 2, 10 mg/kg under 2); severe myelosuppression; only by physicians experienced in leukaemia therapy."
+      },
+      "refs": [
+        {
+          "source": "fda-daunorubicin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "aml",
+      "formulation": "inj-5",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 90,
+        "mlPerDose": 18
+      }
+    },
+    {
+      "regimen": "aml-60",
+      "formulation": "inj-5",
+      "input": {
+        "ageYears": 65,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 60,
+        "mlPerDose": 12
+      }
+    }
+  ],
+  "atc": [
+    "L01DB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00384",
+        "en": "DAUNORUBICIN HCL 20MG VIAL",
+        "fa": "ویال داونوروبیسین هیدروکلراید ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "52506",
+        "en": "DAUNORUBICIN (AS HYDROCHLORIDE) INJECTION, SOLUTION PARENTERAL 2 mg/1mL 10 mL",
+        "fa": "محلول تزریقی داونوروبیسین (معادل هیدروکلراید) ۲ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-979/Daunorubicin",
+        "url": "https://www.darooyab.ir/G-979/Daunorubicin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208759",
+      "label": "ANDA208759"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9705fa12-499e-41a3-8fb4-f6df0858b851",
+      "label": "FDA Daunorubicin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682289.html",
+      "label": "Daunorubicin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01DB02",
+      "label": "L01DB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-979/Daunorubicin",
+      "label": "Daunorubicin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Daunorubicin hydrochloride may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-daunorubicin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from daunorubicin, mothers should be advised to discontinue nursing during daunorubicin therapy.",
+      "refs": [
+        {
+          "source": "fda-daunorubicin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در کودکان حد دوز تجمعی کمتر است (۳۰۰ mg/m² بالای ۲ سال، ۱۰ mg/kg زیر ۲ سال) — سمیت قلبی.",
+        "en": "Label: children have lower cumulative limits (300 mg/m² over 2 years, 10 mg/kg under 2) — cardiotoxicity."
+      },
+      "quote": "The incidence of myocardial toxicity increases after a total cumulative dose exceeding 400 to 550 mg/m 2 in adults, 300 mg/m 2 in children more than 2 years of age, or 10 mg/kg in children less than 2 years of age.",
+      "refs": [
+        {
+          "source": "fda-daunorubicin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-daunorubicin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA208759"
+  }
+}

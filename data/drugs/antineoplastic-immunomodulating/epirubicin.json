@@ -1,0 +1,311 @@
+{
+  "id": "epirubicin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اپی‌روبیسین",
+    "en": "Epirubicin"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتراسایکلین",
+    "en": "Anthracycline"
+  },
+  "brands": [
+    {
+      "name": "Ellence",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "ellence",
+    "pharmorubicin",
+    "اپیروبیسین"
+  ],
+  "formulations": [
+    {
+      "id": "inj-2",
+      "form": "injection",
+      "route": "iv",
+      "label": "2 mg/mL (50 mg/25 mL, 200 mg/100 mL)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-ellence",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "breast",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان کمکی (گره مثبت) — ۱۰۰ تا ۱۲۰ mg/m² وریدی هر ۳ تا ۴ هفته (روز ۱ یا تقسیم روز ۱ و ۸)",
+        "en": "Adjuvant node-positive breast cancer — 100–120 mg/m² IV every 3–4 weeks (day 1, or split days 1 and 8)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 100,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-ellence",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-ellence",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "عدد ماشین‌حساب حد پایین است. CEF-120: ۶۰ mg/m² روز ۱ و ۸؛ FEC-100: ۱۰۰ mg/m² روز ۱.",
+            "en": "Calculator gives the lower bound. CEF-120: 60 mg/m² days 1 and 8; FEC-100: 100 mg/m² day 1."
+          },
+          "refs": [
+            {
+              "source": "fda-ellence",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی شدید میوکارد؛ انفارکتوس اخیر یا آریتمی شدید؛ دریافت قبلی حداکثر دوز تجمعی آنتراسایکلین؛ سرکوب پایدار شدید مغز استخوان؛ نارسایی شدید کبد (Child-Pugh C یا بیلی‌روبین بالای ۵)؛ حساسیت شدید به آنتراسایکلین‌ها.",
+        "en": "Severe myocardial insufficiency; recent MI or severe arrhythmias; prior maximum cumulative anthracycline dose; severe persistent myelosuppression; severe hepatic impairment (Child-Pugh C or bilirubin >5 mg/dL); severe hypersensitivity to anthracyclines."
+      },
+      "refs": [
+        {
+          "source": "fda-ellence",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت قلبی وابسته به دوز تجمعی (۰٫۹٪ در ۵۵۰ mg/m² تا ۳٫۳٪ در ۹۰۰)؛ بدخیمی ثانویه (AML)؛ نکروز بافت با نشت؛ سرکوب شدید مغز استخوان.",
+        "en": "Boxed warning: cumulative-dose cardiotoxicity (0.9% at 550 mg/m² to 3.3% at 900); secondary malignancies (AML); tissue necrosis with extravasation; severe myelosuppression."
+      },
+      "refs": [
+        {
+          "source": "fda-ellence",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "breast",
+      "formulation": "inj-2",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 200,
+        "mlPerDose": 100
+      }
+    }
+  ],
+  "atc": [
+    "L01DB03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00491",
+        "en": "EPIRUBICIN HCL 10MG VIAL",
+        "fa": "ویال اپی‌روبیسین هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "20696",
+        "en": "EPIRUBICIN HCL 200MG VIAL",
+        "fa": "ویال اپی‌روبیسین هیدروکلراید ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "15976",
+        "en": "EPIRUBICIN HCL 2MG/ML 10ML VIAL",
+        "fa": "ویال اپی‌روبیسین هیدروکلراید ۲ میلی‌گرم / میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "14532",
+        "en": "EPIRUBICIN HCL 2MG/ML 25ML VIAL",
+        "fa": "ویال اپی‌روبیسین هیدروکلراید ۲ میلی‌گرم / میلی‌لیتر ۲۵ میلی‌لیتر"
+      },
+      {
+        "code": "18435",
+        "en": "EPIRUBICIN HCL 2MG/ML 5ML VIAL",
+        "fa": "ویال اپی‌روبیسین هیدروکلراید ۲ میلی‌گرم / میلی‌لیتر ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00492",
+        "en": "EPIRUBICIN HCL 50MG VIAL",
+        "fa": "ویال اپی‌روبیسین هیدروکلراید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-992/Epirubicin",
+        "url": "https://www.darooyab.ir/G-992/Epirubicin"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050778",
+      "label": "NDA050778"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a03c798-a652-4895-b29c-3b521a89ba42",
+      "label": "FDA Ellence"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603003.html",
+      "label": "Epirubicin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01DB03",
+      "label": "L01DB03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-992/Epirubicin",
+      "label": "Epirubicin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings from animal studies and its mechanism of action, ELLENCE can cause fetal harm when administered to a pregnant woman [see Clinical Pharmacology (12.1) ] ; avoid the use of ELLENCE during the 1 st trimester.",
+      "refs": [
+        {
+          "source": "fda-ellence",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in the breastfed child, advise lactating women not to breastfeed during treatment with ELLENCE and for at least 7 days after the last dose.",
+      "refs": [
+        {
+          "source": "fda-ellence",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of ELLENCE have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-ellence",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In elderly female patients, closely monitor for increased toxicity due to the risk of decreased clearance of epirubicin [see Clinical Pharmacology (12.3) ].",
+      "refs": [
+        {
+          "source": "fda-ellence",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females ELLENCE can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-ellence",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-ellence",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA050778"
+  }
+}
