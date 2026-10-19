@@ -1,0 +1,355 @@
+{
+  "id": "paclitaxel",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پاکلی‌تاکسل",
+    "en": "Paclitaxel"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "تاکسان",
+    "en": "Taxane"
+  },
+  "brands": [
+    {
+      "name": "Taxol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "taxol",
+    "تاکسول",
+    "پاکلیتاکسل"
+  ],
+  "formulations": [
+    {
+      "id": "vial-6",
+      "form": "injection",
+      "route": "iv",
+      "label": "6 mg/mL (30/100/150/300 mg)",
+      "concentration": {
+        "amount": 6,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-paclitaxel",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ovary",
+      "disease": "ovarian-cancer",
+      "label": {
+        "fa": "سرطان تخمدان درمان‌نشده — ۱۷۵ mg/m² طی ۳ ساعت (سپس سیس‌پلاتین ۷۵) هر ۳ هفته",
+        "en": "Untreated ovarian cancer — 175 mg/m² over 3 h (then cisplatin 75) every 3 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 175,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-paclitaxel",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۱۳۵ mg/m² طی ۲۴ ساعت. پیش‌دارو: دگزامتازون ۲۰ mg خوراکی ۱۲ و ۶ ساعت قبل، دیفن‌هیدرامین ۵۰ mg و سایمتیدین ۳۰۰ mg وریدی ۳۰ تا ۶۰ دقیقه قبل. ست بدون PVC.",
+            "en": "Or 135 mg/m² over 24 h. Premedicate: dexamethasone 20 mg PO 12 and 6 h before, diphenhydramine 50 mg and cimetidine 300 mg IV 30–60 min before. Non-PVC sets."
+          },
+          "refs": [
+            {
+              "source": "fda-paclitaxel",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-paclitaxel",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "breast",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان (کمکی با گره مثبت) — ۱۷۵ mg/m² طی ۳ ساعت هر ۳ هفته، ۴ دوره پس از AC",
+        "en": "Breast cancer (node-positive adjuvant) — 175 mg/m² over 3 h every 3 weeks for 4 courses after AC"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 175,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-paclitaxel",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به پاکلی‌تاکسل یا داروهای با روغن کرچک پلی‌اکسیل ۳۵؛ نوتروفیل پایه زیر ۱۵۰۰ (تومور جامد) یا زیر ۱۰۰۰ (کاپوسی).",
+        "en": "History of hypersensitivity to paclitaxel or polyoxyl 35 castor oil drugs; baseline neutrophils <1,500 (solid tumours) or <1,000 (Kaposi sarcoma)."
+      },
+      "refs": [
+        {
+          "source": "fda-paclitaxel",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: آنافیلاکسی و حساسیت شدید (حتی با پیش‌دارو، گاه کشنده)؛ سرکوب مغز استخوان — با نوتروفیل زیر ۱۵۰۰ نه.",
+        "en": "Boxed warning: anaphylaxis and severe hypersensitivity (fatal despite premedication); myelosuppression — not with neutrophils <1,500."
+      },
+      "refs": [
+        {
+          "source": "fda-paclitaxel",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ovary",
+      "formulation": "vial-6",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 350,
+        "mlPerDose": 58.33
+      }
+    },
+    {
+      "regimen": "breast",
+      "formulation": "vial-6",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 350,
+        "mlPerDose": 58.33
+      }
+    }
+  ],
+  "atc": [
+    "L01CD01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "13879",
+        "en": "PACLITAXEL 100MG INJ",
+        "fa": "فرآورده تزریقی پاکلی‌تاکسل ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "02395",
+        "en": "PACLITAXEL 150MG/25ML VIAL",
+        "fa": "ویال پاکلی‌تاکسل ۱۵۰ میلی‌گرم / ۲۵ میلی‌لیتر"
+      },
+      {
+        "code": "04098",
+        "en": "PACLITAXEL 300MG/50ML VIAL",
+        "fa": "ویال پاکلی‌تاکسل ۳۰۰ میلی‌گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00943",
+        "en": "PACLITAXEL 30MG/5ML VIAL",
+        "fa": "ویال پاکلی‌تاکسل ۳۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "02674",
+        "en": "PACLITAXEL 50MG/25MG VIAL",
+        "fa": "ویال پاکلی‌تاکسل ۵۰ میلی‌گرم / ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "02396",
+        "en": "PACLITAXEL 6MG/ML 16.7ML VIAL",
+        "fa": "ویال پاکلی‌تاکسل ۶ میلی‌گرم / میلی‌لیتر ۱۶٫۷ میلی‌لیتر"
+      },
+      {
+        "code": "15260",
+        "en": "PACLITAXEL ALBUMIN BOUND 100MG VIAL",
+        "fa": "ویال پاکلی‌تاکسل آلبومین بووند ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "50293",
+        "en": "PACLITAXEL INJECTION PARENTERAL 6 mg/1mL 50 mL",
+        "fa": "فرآورده تزریقی پاکلی‌تاکسل ۶ میلی‌گرم / ۱ میلی‌لیتر ۵۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1044/Paclitaxel",
+        "url": "https://www.darooyab.ir/G-1044/Paclitaxel"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-paclitaxel",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA075184"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=075184",
+      "label": "ANDA075184"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4be6cbf-72b9-4f7f-9b1b-459b2d35961a",
+      "label": "FDA Paclitaxel"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a619008.html",
+      "label": "Paclitaxel (with albumin) Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607070.html",
+      "label": "Paclitaxel (with polyoxyethylated castor oil) Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01CD01",
+      "label": "L01CD01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1044/Paclitaxel",
+      "label": "Paclitaxel"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Paclitaxel injection can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-paclitaxel",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Following intravenous administration of carbon 14 labeled paclitaxel to rats on days 9 to 10 postpartum, concentrations of radioactivity in milk were higher than in plasma and declined in parallel with the plasma concentrations.",
+      "refs": [
+        {
+          "source": "fda-paclitaxel",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of paclitaxel injection in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-paclitaxel",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of 2228 patients who received paclitaxel in 8 clinical studies evaluating its safety and effectiveness in the treatment of advanced ovarian cancer, breast carcinoma, or NSCLC, and 1570 patients who were randomized to receive paclitaxel in the adjuvant breast cancer study, 649 patients (17%) were 65 years or older and …",
+      "refs": [
+        {
+          "source": "fda-paclitaxel",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

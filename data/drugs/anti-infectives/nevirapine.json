@@ -1,0 +1,337 @@
+{
+  "id": "nevirapine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نویراپین",
+    "en": "Nevirapine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "NNRTI",
+    "en": "NNRTI"
+  },
+  "brands": [
+    {
+      "name": "Viramune",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "viramune",
+    "ویرامون",
+    "نویراپین",
+    "NVP"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg tablet (scored)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": true
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-nevirapine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 بزرگسال (۱۶ سال به بالا) — ۲۰۰ mg یک بار ۱۴ روز، سپس ۲۰۰ mg دو بار",
+        "en": "HIV-1, adults (≥16 y) — 200 mg once daily for 14 days, then 200 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-nevirapine",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "دوره آغازین ۱۴ روزه حتماً رعایت شود (کاهش راش). اگر در این دوره راش آمد افزایش نده؛ بیش از ۲۸ روز ادامه نده. وقفه بیش از ۷ روز: دوره آغازین از نو. همراه سایر ضدرتروویروس‌ها.",
+            "en": "The 14-day lead-in must be followed (fewer rashes). Do not escalate with rash during lead-in; do not extend beyond 28 days. Interruption >7 days: restart lead-in. With other antiretrovirals."
+          },
+          "refs": [
+            {
+              "source": "fda-nevirapine",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-nevirapine",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "hiv",
+      "label": {
+        "fa": "کودک ۱۵ روزه به بالا — ۱۵۰ mg/m² یک بار ۱۴ روز، سپس ۱۵۰ mg/m² دو بار (حداکثر ۴۰۰ mg/روز)",
+        "en": "Children ≥15 days — 150 mg/m² once daily for 14 days, then 150 mg/m² twice daily (max 400 mg/day)"
+      },
+      "population": {
+        "minAge": {
+          "value": 15,
+          "unit": "day"
+        },
+        "maxAge": {
+          "value": 16,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 300,
+        "dividedDoses": 2
+      },
+      "refs": [
+        {
+          "source": "fda-nevirapine",
+          "section": "2.2"
+        }
+      ],
+      "limits": {
+        "maxPerDay": 400,
+        "refs": [
+          {
+            "source": "fda-nevirapine",
+            "section": "2.2"
+          }
+        ]
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی متوسط یا شدید کبد (Child-Pugh B/C)؛ استفاده در پیشگیری پس از مواجهه (PEP).",
+        "en": "Moderate or severe hepatic impairment (Child-Pugh B/C); use in post-exposure prophylaxis (PEP)."
+      },
+      "refs": [
+        {
+          "source": "fda-nevirapine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سمیت کبدی کشنده (به‌ویژه ۱۸ هفته اول، زنان و CD4 بالا) و واکنش پوستی کشنده (SJS/TEN) — پایش شدید ۱۸ هفته اول.",
+        "en": "Boxed warning: fatal hepatotoxicity (especially first 18 weeks, women and higher CD4) and fatal skin reactions (SJS/TEN) — intensive monitoring for the first 18 weeks."
+      },
+      "refs": [
+        {
+          "source": "fda-nevirapine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 4,
+        "weightKg": 16,
+        "heightCm": 100
+      },
+      "expect": {
+        "perDose": 100,
+        "tabletsPerDoseRounded": 0.5
+      }
+    }
+  ],
+  "atc": [
+    "J05AG01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05516",
+        "en": "NEVIRAPIN 50MG/5ML ORAL SOLUTION",
+        "fa": "محلول خوراکی نویراپین ۵۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "03375",
+        "en": "NEVIRAPINE 200MG TAB",
+        "fa": "قرص نویراپین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "50473",
+        "en": "NEVIRAPINE SUSPENSION ORAL 50 mg/5mL 100 mL",
+        "fa": "سوسپانسیون خوراکی نویراپین ۵۰ میلی‌گرم / ۵ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1191/Nevirapine",
+        "url": "https://www.darooyab.ir/G-1191/Nevirapine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-nevirapine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077521"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077521",
+      "label": "ANDA077521"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f6c3eed-2a5d-46ed-9a7c-59715f338a15",
+      "label": "FDA Nevirapine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a600035.html",
+      "label": "Nevirapine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AG01",
+      "label": "J05AG01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1191/Nevirapine",
+      "label": "Nevirapine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های رجیستری بارداری (APR) تفاوتی با میزان زمینه‌ای نقص مادرزادی نشان نمی‌دهد.",
+        "en": "Label: Antiretroviral Pregnancy Registry data show no difference from the background birth-defect rate."
+      },
+      "quote": "Available data from the APR show no difference in the risk of overall major birth defects for nevirapine compared with the background rate for major birth defects of 2.7% in the U.S. reference population of the Metropolitan Atlanta Congenital Defects Program (MACDP).",
+      "refs": [
+        {
+          "source": "fda-nevirapine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "… 2) developing viral resistance (in HIV-positive infants), and (3) serious adverse reactions in nursing infants, mothers should not breastfeed if they are receiving nevirapine.",
+      "refs": [
+        {
+          "source": "fda-nevirapine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety, pharmacokinetic profile, and virologic and immunologic responses of nevirapine have been evaluated in HIV-1 infected pediatric subjects aged 3 months to 18 years [see Adverse Reactions (6.1) and Clinical Studies (14.2) ].",
+      "refs": [
+        {
+          "source": "fda-nevirapine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-nevirapine",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Limited human data are insufficient to determine the risk of infertility in humans.",
+      "refs": [
+        {
+          "source": "fda-nevirapine",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

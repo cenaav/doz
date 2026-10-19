@@ -1,0 +1,315 @@
+{
+  "id": "bortezomib",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "بورتزومیب",
+    "en": "Bortezomib"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده پروتئازوم",
+    "en": "Proteasome inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Velcade",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "velcade",
+    "ولکید",
+    "بورتزومیب"
+  ],
+  "formulations": [
+    {
+      "id": "vial-3-5",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "3.5 mg vial (IV 1 mg/mL or SC 2.5 mg/mL after reconstitution)",
+      "concentration": {
+        "amount": 3.5,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-velcade",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mm",
+      "disease": "multiple-myeloma",
+      "label": {
+        "fa": "مولتیپل میلوما — ۱٫۳ mg/m² وریدی یا زیرجلدی در هر دوز (برنامه دوره‌ای)",
+        "en": "Multiple myeloma — 1.3 mg/m² IV or SC per dose (cyclical schedule)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 1.3,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-velcade",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-velcade",
+          "section": "2.2"
+        },
+        {
+          "source": "fda-velcade",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عودکننده: دو بار در هفته روزهای ۱، ۴، ۸، ۱۱ سپس ۱۰ روز استراحت. درمان‌نشده: با ملفالان و پردنیزون طبق جدول ۱. دست‌کم ۷۲ ساعت بین دوزها. غلظت وریدی و زیرجلدی متفاوت است — حجم را با دقت حساب کنید. نارسایی متوسط/شدید کبد: ۰٫۷ mg/m².",
+            "en": "Relapsed: twice weekly on days 1, 4, 8, 11 then 10-day rest. Untreated: with melphalan and prednisone per Table 1. At least 72 h between doses. IV and SC concentrations differ — calculate the volume carefully. Moderate/severe hepatic impairment: 0.7 mg/m²."
+          },
+          "refs": [
+            {
+              "source": "fda-velcade",
+              "section": "2.6"
+            },
+            {
+              "source": "fda-velcade",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-velcade",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-velcade",
+              "section": "2.8"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص انکولوژی؛ پروتکل، فاصله دوره‌ها و تنظیم با تیم درمان.",
+            "en": "Only under an oncologist; protocol, cycle interval and adjustment rest with the treating team."
+          },
+          "refs": [
+            {
+              "source": "fda-velcade",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به بورتزومیب، بور یا مانیتول؛ تزریق داخل نخاعی (کشنده).",
+        "en": "Hypersensitivity to bortezomib, boron or mannitol; intrathecal administration (fatal)."
+      },
+      "refs": [
+        {
+          "source": "fda-velcade",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "نوروپاتی محیطی؛ افت فشار؛ سمیت قلبی و ریوی؛ PRES؛ سمیت گوارشی؛ ترومبوسیتوپنی و نوتروپنی؛ لیز تومور؛ سمیت کبد؛ TMA؛ سمیت جنینی.",
+        "en": "Peripheral neuropathy; hypotension; cardiac and pulmonary toxicity; PRES; GI toxicity; thrombocytopenia and neutropenia; tumour lysis; hepatotoxicity; TMA; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-velcade",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mm",
+      "formulation": "vial-3-5",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 2.6
+      }
+    }
+  ],
+  "atc": [
+    "L01XG01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "07088",
+        "en": "BORTEZOMIB 3.5MG INJ",
+        "fa": "فرآورده تزریقی بورتزومیب ۳٫۵ میلی‌گرم"
+      },
+      {
+        "code": "51127",
+        "en": "BORTEZOMIB 1 MG INJ",
+        "fa": "فرآورده تزریقی بورتزومیب ۱ میلی‌گرم"
+      },
+      {
+        "code": "53334",
+        "en": "BORTEZOMIB 2.5  MG INJ",
+        "fa": "فرآورده تزریقی بورتزومیب ۲٫۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-957/Bortezomib",
+        "url": "https://www.darooyab.ir/G-957/Bortezomib"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-velcade",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021602"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021602",
+      "label": "NDA021602"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1521d321-e724-4ffc-adad-34bf4f44fac7",
+      "label": "FDA Velcade"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607007.html",
+      "label": "Bortezomib Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01XG01",
+      "label": "L01XG01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-957/Bortezomib",
+      "label": "Bortezomib"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on its mechanism of action [see Clinical Pharmacology (12.1) ] and findings in animals, VELCADE can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-velcade",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of bortezomib or its metabolites in human milk, the effects of the drug on the breastfed child, or the effects of the drug on milk production.",
+      "refs": [
+        {
+          "source": "fda-velcade",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-velcade",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 669 patients enrolled in the relapsed multiple myeloma study, 245 (37%) were 65 years of age or older: 125 (38%) on the VELCADE arm and 120 (36%) on the dexamethasone arm.",
+      "refs": [
+        {
+          "source": "fda-velcade",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise females of reproductive potential to use effective contraception during treatment with VELCADE and for seven months after the last dose.",
+      "refs": [
+        {
+          "source": "fda-velcade",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

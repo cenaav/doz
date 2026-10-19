@@ -1,0 +1,418 @@
+{
+  "id": "methylnaltrexone",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "متیل‌نالترکسون",
+    "en": "Methylnaltrexone"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتاگونیست محیطی گیرنده اپیوئید (PAMORA)",
+    "en": "Peripherally acting opioid antagonist (PAMORA)"
+  },
+  "brands": [
+    {
+      "name": "Relistor",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "relistor",
+    "رلیستور",
+    "متیل نالترکسون"
+  ],
+  "formulations": [
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-12",
+      "form": "injection",
+      "route": "sc",
+      "label": "12 mg/0.6 mL vial or syringe (8 mg/0.4 mL syringe)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "cncp-po",
+      "disease": "opioid-induced-constipation",
+      "label": {
+        "fa": "یبوست ناشی از اپیوئید در درد مزمن غیرسرطانی — ۴۵۰ mg خوراکی صبح",
+        "en": "OIC in chronic non-cancer pain — 450 mg orally each morning"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 450,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "tab-150"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "ملین نگهدارنده پیش از شروع قطع. نزدیک دستشویی باشد. با قطع اپیوئید قطع شود.",
+            "en": "Stop maintenance laxatives before starting. Stay near a toilet. Stop when the opioid is stopped."
+          },
+          "refs": [
+            {
+              "source": "fda-relistor",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cncp-sc",
+      "disease": "opioid-induced-constipation",
+      "label": {
+        "fa": "یبوست ناشی از اپیوئید در درد مزمن غیرسرطانی — ۱۲ mg زیرجلدی روزانه",
+        "en": "OIC in chronic non-cancer pain — 12 mg SC daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 12,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "2.2"
+        }
+      ],
+      "allowedFormulations": [
+        "pfs-12"
+      ]
+    },
+    {
+      "id": "adv",
+      "disease": "opioid-induced-constipation",
+      "label": {
+        "fa": "یبوست ناشی از اپیوئید در بیماری پیشرفته — یک روز در میان: ۳۸ تا <۶۲ kg: ۸ mg؛ ۶۲ تا ۱۱۴ kg: ۱۲ mg",
+        "en": "OIC in advanced illness — every other day: 38–<62 kg: 8 mg; 62–114 kg: 12 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 38,
+        "maxWeightKg": 114
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 37.99,
+            "maxWeightKg": 61.99,
+            "perDose": 8,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 61.99,
+            "maxWeightKg": 114,
+            "perDose": 12,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "2.3, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-12"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "زیر ۳۸ یا بالای ۱۱۴ kg: ۰٫۱۵ mg/kg. بیش از یک دوز در ۲۴ ساعت نه.",
+            "en": "<38 or >114 kg: 0.15 mg/kg. Not more than one dose per 24 h."
+          },
+          "refs": [
+            {
+              "source": "fda-relistor",
+              "section": "2.3, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "انسداد گوارشی شناخته یا مشکوک و خطر انسداد مجدد.",
+        "en": "Known or suspected GI obstruction and risk of recurrent obstruction."
+      },
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سوراخ‌شدگی گوارش؛ اسهال یا درد شکمی شدید؛ علائم ترک اپیوئید.",
+        "en": "GI perforation; severe diarrhoea or abdominal pain; opioid withdrawal."
+      },
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۶۰: قرص ۱۵۰ mg؛ تزریق ۶ mg (درد غیرسرطانی)؛ بیماری پیشرفته نصف دوز جدول.",
+        "en": "CrCl <60: tablets 150 mg; injection 6 mg (non-cancer pain); advanced illness half the table dose."
+      },
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "2.4"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "cncp-po",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 450,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "cncp-sc",
+      "formulation": "pfs-12",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 12,
+        "mlPerDose": 0.6
+      }
+    },
+    {
+      "regimen": "adv",
+      "formulation": "pfs-12",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 55
+      },
+      "expect": {
+        "perDose": 8,
+        "mlPerDose": 0.4
+      }
+    },
+    {
+      "regimen": "adv",
+      "formulation": "pfs-12",
+      "input": {
+        "ageYears": 70,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 12,
+        "mlPerDose": 0.6
+      }
+    }
+  ],
+  "atc": [
+    "A06AH01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-5289/Methylnaltrexone",
+        "url": "https://www.darooyab.ir/G-5289/Methylnaltrexone"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208271",
+      "label": "NDA208271"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c488fb7c-0a5b-487c-b452-996809d1cb99",
+      "label": "FDA Relistor"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616047.html",
+      "label": "Methylnaltrexone"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608052.html",
+      "label": "Methylnaltrexone Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A06AH01",
+      "label": "A06AH01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-5289/Methylnaltrexone",
+      "label": "Methylnaltrexone"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary The limited available data with RELISTOR in pregnant women are not sufficient to inform a drug-associated risk for major birth defects and miscarriages.",
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions, including opioid withdrawal, in breastfed infants, advise women that breastfeeding is not recommended during treatment with RELISTOR.",
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Safety and effectiveness of RELISTOR tablets and injection have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Monitor elderly patients for adverse reactions.",
+      "refs": [
+        {
+          "source": "fda-relistor",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-relistor",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA208271"
+  }
+}

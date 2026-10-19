@@ -1,0 +1,288 @@
+{
+  "id": "naloxegol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نالوکسگول",
+    "en": "Naloxegol"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "آنتاگونیست محیطی گیرنده اپیوئید (PAMORA)",
+    "en": "Peripherally acting opioid antagonist (PAMORA)"
+  },
+  "brands": [
+    {
+      "name": "Movantik",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "movantik",
+    "موونتیک",
+    "نالوکسگول"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-movantik",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-12-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "12.5 mg tablet",
+      "concentration": {
+        "amount": 12.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-movantik",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oic",
+      "disease": "opioid-induced-constipation",
+      "label": {
+        "fa": "یبوست ناشی از اپیوئید در درد مزمن غیرسرطانی — ۲۵ mg صبح ناشتا",
+        "en": "OIC in chronic non-cancer pain — 25 mg each morning on an empty stomach"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-movantik",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "عدم تحمل: ۱۲٫۵ mg. مهارکننده متوسط CYP3A4: پرهیز یا ۱۲٫۵ mg. ملین نگهدارنده قطع شود.",
+            "en": "If not tolerated: 12.5 mg. Moderate CYP3A4 inhibitors: avoid or 12.5 mg. Stop maintenance laxatives."
+          },
+          "refs": [
+            {
+              "source": "fda-movantik",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-movantik",
+              "section": "2.4"
+            },
+            {
+              "source": "fda-movantik",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "انسداد گوارشی شناخته یا مشکوک؛ مهارکننده‌های قوی CYP3A4 (کلاریترومایسین، کتوکونازول)؛ حساسیت.",
+        "en": "Known or suspected GI obstruction; strong CYP3A4 inhibitors (clarithromycin, ketoconazole); hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-movantik",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سوراخ‌شدگی گوارش؛ اسهال یا درد شکمی شدید؛ علائم ترک اپیوئید.",
+        "en": "GI perforation; severe diarrhoea or abdominal pain; opioid withdrawal."
+      },
+      "refs": [
+        {
+          "source": "fda-movantik",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 60,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۶۰: شروع ۱۲٫۵ mg.",
+        "en": "CrCl <60: start 12.5 mg."
+      },
+      "refs": [
+        {
+          "source": "fda-movantik",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oic",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "A06AH03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Naloxegol"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-movantik",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA204760"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204760",
+      "label": "NDA204760"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=28596788-b73f-4247-85fc-3105f51fff5a",
+      "label": "FDA Movantik"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615016.html",
+      "label": "Naloxegol"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A06AH03",
+      "label": "A06AH03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited available data with MOVANTIK use in pregnant women are insufficient to inform a drug associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-movantik",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for adverse reactions, including opioid withdrawal in breastfed infants, advise women that breastfeeding is not recommended during treatment with MOVANTIK.",
+      "refs": [
+        {
+          "source": "fda-movantik",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of MOVANTIK have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-movantik",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dosage adjustment is needed in elderly patients.",
+      "refs": [
+        {
+          "source": "fda-movantik",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

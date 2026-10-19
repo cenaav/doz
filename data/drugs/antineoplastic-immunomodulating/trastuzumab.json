@@ -1,0 +1,428 @@
+{
+  "id": "trastuzumab",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "تراستوزوماب",
+    "en": "Trastuzumab"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌بادی ضد HER2",
+    "en": "Anti-HER2 antibody"
+  },
+  "brands": [
+    {
+      "name": "Herceptin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "herceptin",
+    "هرسپتین",
+    "تراستوزوماب",
+    "aryotrust",
+    "آریوتراست"
+  ],
+  "formulations": [
+    {
+      "id": "vial-150",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "150 mg vial",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "load3w",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان HER2 مثبت (کمکی) یا معده — دوز اول ۸ mg/kg طی ۹۰ دقیقه",
+        "en": "HER2-positive breast (adjuvant) or gastric cancer — first dose 8 mg/kg over 90 min"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 8,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "سپس ۶ mg/kg هر ۳ هفته (کمکی تا ۵۲ هفته). پیش از شروع و منظم LVEF. با تراستوزوماب امتانسین یا دروکستکان جایگزین نشود. وریدی، بولوس نه.",
+            "en": "Then 6 mg/kg every 3 weeks (adjuvant up to 52 weeks). LVEF before and regularly. Not interchangeable with ado-trastuzumab emtansine or fam-trastuzumab deruxtecan. IV infusion, never bolus."
+          },
+          "refs": [
+            {
+              "source": "fda-herceptin",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-herceptin",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص انکولوژی؛ پروتکل، فاصله دوره‌ها و تنظیم با تیم درمان.",
+            "en": "Only under an oncologist; protocol, cycle interval and adjustment rest with the treating team."
+          },
+          "refs": [
+            {
+              "source": "fda-herceptin",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3w",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "نگهدارنده — ۶ mg/kg هر ۳ هفته",
+        "en": "Maintenance — 6 mg/kg every 3 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 6,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "load1w",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "رژیم هفتگی (کمکی یا متاستاتیک) — دوز اول ۴ mg/kg، سپس ۲ mg/kg هفتگی",
+        "en": "Weekly regimen (adjuvant or metastatic) — first dose 4 mg/kg, then 2 mg/kg weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 4,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "m1w",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "نگهدارنده هفتگی — ۲ mg/kg",
+        "en": "Weekly maintenance — 2 mg/kg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: کاردیومیوپاتی (بیشتر با آنتراسایکلین)؛ واکنش انفوزیون و سمیت ریوی؛ سمیت جنینی (الیگوهیدرآمنیوس).",
+        "en": "Boxed warning: cardiomyopathy (higher with anthracyclines); infusion reactions and pulmonary toxicity; embryo-fetal toxicity (oligohydramnios)."
+      },
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "load3w",
+      "formulation": "vial-150",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 560
+      }
+    },
+    {
+      "regimen": "m3w",
+      "formulation": "vial-150",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 420
+      }
+    },
+    {
+      "regimen": "load1w",
+      "formulation": "vial-150",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 280
+      }
+    },
+    {
+      "regimen": "m1w",
+      "formulation": "vial-150",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 140
+      }
+    }
+  ],
+  "atc": [
+    "L01FD01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "05283",
+        "en": "TRASTUZUMAB 150MG VIAL",
+        "fa": "ویال تراستوزومب ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02481",
+        "en": "TRASTUZUMAB 440MG VIAL",
+        "fa": "ویال تراستوزومب ۴۴۰ میلی‌گرم"
+      },
+      {
+        "code": "50986",
+        "en": "TRASTUZUMAB 100MG VIAL",
+        "fa": "ویال تراستوزومب ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "50882",
+        "en": "TRASTUZUMAB 160MG VIAL",
+        "fa": "ویال تراستوزومب ۱۶۰ میلی‌گرم"
+      },
+      {
+        "code": "52414",
+        "en": "TRASTUZUMAB INJECTION, SOLUTION PARENTERAL 600 mg/5mL",
+        "fa": "محلول تزریقی تراستوزومب ۶۰۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "53090",
+        "en": "TRASTUZUMAB DERUXTECAN INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
+        "fa": "پودر برای تهیه محلول تزریقی تراستوزومب دروکستکان ۱۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1083/Trastuzumab",
+        "url": "https://www.darooyab.ir/G-1083/Trastuzumab"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-herceptin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103792"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103792",
+      "label": "BLA103792"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=492dbdb2-077e-4064-bff3-372d6af0a7a2",
+      "label": "FDA Herceptin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a620006.html",
+      "label": "Fam-trastuzumab deruxtecan-nxki Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699019.html",
+      "label": "Trastuzumab Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01FD01",
+      "label": "L01FD01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1083/Trastuzumab",
+      "label": "Trastuzumab"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "WARNING: CARDIOMYOPATHY, INFUSION REACTIONS, EMBRYO-FETAL TOXICITY, and PULMONARY TOXICITY See full prescribing information for complete boxed warning Cardiomyopathy: Herceptin can result in subclinical and clinical cardiac failure manifesting as CHF, and decreased LVEF, with greatest risk when administered …",
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of trastuzumab in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of Herceptin in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in safety or effectiveness were observed.",
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Herceptin can cause embryo-fetal harm when administered during pregnancy.",
+      "refs": [
+        {
+          "source": "fda-herceptin",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

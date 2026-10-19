@@ -1,0 +1,428 @@
+{
+  "id": "amphetamine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "آمفتامین (نمک‌های ترکیبی، آهسته‌رهش)",
+    "en": "Mixed amphetamine salts (extended-release)"
+  },
+  "category": "nervous-system",
+  "class": {
+    "fa": "محرک CNS",
+    "en": "CNS stimulant"
+  },
+  "brands": [
+    {
+      "name": "Adderall XR",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "adderall",
+    "آدرال",
+    "dextroamphetamine",
+    "دکستروآمفتامین",
+    "آمفتامین"
+  ],
+  "formulations": [
+    {
+      "id": "xr-10",
+      "form": "capsule",
+      "route": "oral",
+      "label": "10 mg XR capsule",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "xr-20",
+      "form": "capsule",
+      "route": "oral",
+      "label": "20 mg XR capsule",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "xr-5",
+      "form": "capsule",
+      "route": "oral",
+      "label": "5 mg XR capsule",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "xr-30",
+      "form": "capsule",
+      "route": "oral",
+      "label": "30 mg XR capsule",
+      "concentration": {
+        "amount": 30,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "c6",
+      "disease": "adhd",
+      "label": {
+        "fa": "ADHD کودک ۶ تا ۱۲ سال — ۱۰ mg صبح؛ هفتگی ۵ یا ۱۰ mg افزایش تا حداکثر ۳۰ mg",
+        "en": "ADHD, children 6–12 y — 10 mg in the morning; +5 or 10 mg weekly to max 30 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 30,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "2.3"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "پیش از شروع بیماری قلبی و تیک بررسی شود. کپسول کامل یا محتوا روی پوره سیب.",
+            "en": "Screen for cardiac disease and tics first. Swallow whole or sprinkle on applesauce."
+          },
+          "refs": [
+            {
+              "source": "fda-adderall-xr",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-adderall-xr",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "disease": "adhd",
+      "label": {
+        "fa": "ADHD نوجوان ۱۳ تا ۱۷ سال — ۱۰ mg؛ پس از یک هفته تا ۲۰ mg",
+        "en": "ADHD, adolescents 13–17 y — 10 mg; may increase to 20 mg after one week"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 10,
+        "perDoseMax": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "2.4"
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "disease": "adhd",
+      "label": {
+        "fa": "ADHD بزرگسال — ۲۰ mg صبح",
+        "en": "ADHD, adults — 20 mg in the morning"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 20,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "2.5"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به آمفتامین؛ MAOI همزمان یا ظرف ۱۴ روز (بحران فشار خون).",
+        "en": "Hypersensitivity to amphetamine; MAOIs concomitantly or within 14 days (hypertensive crisis)."
+      },
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: پتانسیل بالای سوءمصرف، اعتیاد، بیش‌مصرفی و مرگ.",
+        "en": "Boxed warning: high potential for abuse, misuse and addiction, overdose and death."
+      },
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "خطر در بیماری قلبی جدی؛ افزایش فشار و ضربان؛ عوارض روانی؛ مهار رشد؛ تشنج؛ رینود؛ سندرم سروتونین؛ تیک.",
+        "en": "Risk in serious cardiac disease; raised BP and HR; psychiatric reactions; growth suppression; seizures; Raynaud; serotonin syndrome; tics."
+      },
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "GFR ۱۵ تا <۳۰: بزرگسال ۱۵ mg، کودک ۵ mg (۶ تا ۱۲ سال حداکثر ۲۰)؛ ESRD توصیه نمی‌شود.",
+        "en": "GFR 15–<30: adults 15 mg, children 5 mg (6–12 y max 20); ESRD not recommended."
+      },
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "2.6"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "c6",
+      "formulation": "xr-10",
+      "input": {
+        "ageYears": 8,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 30
+      }
+    },
+    {
+      "regimen": "c13",
+      "formulation": "xr-10",
+      "input": {
+        "ageYears": 14,
+        "weightKg": 50
+      },
+      "expect": {
+        "perDose": 10,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 20
+      }
+    },
+    {
+      "regimen": "adult",
+      "formulation": "xr-20",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 20,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "N06BA01"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-3363/Amfetamine",
+        "url": "https://www.darooyab.ir/G-3363/Amfetamine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021303",
+      "label": "NDA021303"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aff45863-ffe1-4d4f-8acf-c7081512a6c0",
+      "label": "FDA Adderall XR"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06BA01",
+      "label": "N06BA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-3363/Amfetamine",
+      "label": "Amfetamine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Available data from published epidemiologic studies and postmarketing reports on use of prescription amphetamine in pregnant women have not identified a drug-associated risk of major birth defects and miscarriage (see Data ) .",
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in nursing infants, advise patients that breastfeeding is not recommended during treatment with ADDERALL XR.",
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of ADDERALL XR have been established in pediatric patients with ADHD 6 years of age and older.",
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "ADDERALL XR has not been studied in the geriatric population.",
+      "refs": [
+        {
+          "source": "fda-adderall-xr",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-adderall-xr",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021303"
+  }
+}

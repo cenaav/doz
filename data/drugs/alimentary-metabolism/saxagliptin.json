@@ -1,0 +1,286 @@
+{
+  "id": "saxagliptin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ساکساگلیپتین",
+    "en": "Saxagliptin"
+  },
+  "category": "alimentary-metabolism",
+  "class": {
+    "fa": "مهارکننده DPP-4",
+    "en": "DPP-4 inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Onglyza",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "onglyza",
+    "انگلیزا",
+    "ساکساگلیپتین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "5 mg tablet",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-saxagliptin",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-2-5",
+      "form": "tablet",
+      "route": "oral",
+      "label": "2.5 mg tablet",
+      "concentration": {
+        "amount": 2.5,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-saxagliptin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "t2dm",
+      "disease": "type-2-diabetes",
+      "label": {
+        "fa": "دیابت نوع ۲ بزرگسال — ۲٫۵ یا ۵ mg یک بار",
+        "en": "Type 2 diabetes, adults — 2.5 or 5 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 2.5,
+        "perDoseMax": 5,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-saxagliptin",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با مهارکننده قوی CYP3A4/5 حداکثر ۲٫۵ mg. قرص خرد یا جویده نشود.",
+            "en": "With strong CYP3A4/5 inhibitors max 2.5 mg. Do not cut, crush or chew."
+          },
+          "refs": [
+            {
+              "source": "fda-saxagliptin",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-saxagliptin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت جدی به ساکساگلیپتین (آنافیلاکسی، آنژیوادم، ضایعات پوستی اکسفولیاتیو).",
+        "en": "History of serious hypersensitivity to saxagliptin (anaphylaxis, angioedema, exfoliative skin conditions)."
+      },
+      "refs": [
+        {
+          "source": "fda-saxagliptin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "پانکراتیت؛ نارسایی قلب؛ هیپوگلیسمی با انسولین یا سولفونیل‌اوره؛ واکنش حساسیتی؛ درد مفصلی شدید؛ پمفیگوئید بولوز.",
+        "en": "Pancreatitis; heart failure; hypoglycaemia with insulin or sulfonylureas; hypersensitivity; severe arthralgia; bullous pemphigoid."
+      },
+      "refs": [
+        {
+          "source": "fda-saxagliptin",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 45,
+      "severity": "warn",
+      "text": {
+        "fa": "eGFR زیر ۴۵: ۲٫۵ mg یک بار.",
+        "en": "eGFR <45: 2.5 mg once daily."
+      },
+      "refs": [
+        {
+          "source": "fda-saxagliptin",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "t2dm",
+      "formulation": "tab-2-5",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 2.5,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "A10BH03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Saxagliptin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-saxagliptin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA205994"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205994",
+      "label": "ANDA205994"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e286ffd4-c598-47fb-af06-2e15f7e6f99f",
+      "label": "FDA Saxagliptin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a610003.html",
+      "label": "Saxagliptin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A10BH03",
+      "label": "A10BH03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited data with saxagliptin in pregnant women are not sufficient to determine a drug-associated risk for major birth defects or miscarriages.",
+      "refs": [
+        {
+          "source": "fda-saxagliptin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information regarding the presence of saxagliptin in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-saxagliptin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of saxagliptin as an adjunct to diet and exercise to improve glycemic control in patients with type 2 diabetes mellitus have not been established. in pediatric patients..",
+      "refs": [
+        {
+          "source": "fda-saxagliptin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection in the elderly based on renal function [ see Dosage and Administration (2.2)and Clinical Pharmacology (12.3) ].",
+      "refs": [
+        {
+          "source": "fda-saxagliptin",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "id": "levalbuterol",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لِوآلبوترول",
+    "en": "Levalbuterol"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "آگونیست بتا-۲ کوتاه‌اثر (SABA)",
+    "en": "Short-acting beta2-agonist (SABA)"
+  },
+  "brands": [
+    {
+      "name": "Xopenex HFA",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "xopenex",
+    "زوپنکس",
+    "levosalbutamol",
+    "لووسالبوتامول"
+  ],
+  "formulations": [
+    {
+      "id": "hfa",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "45 mcg per actuation (HFA)",
+      "concentration": {
+        "amount": 45,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-xopenex-hfa",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bs",
+      "disease": "asthma",
+      "label": {
+        "fa": "برونکواسپاسم (۴ سال به بالا) — ۲ پاف (۹۰ mcg) هر ۴ تا ۶ ساعت",
+        "en": "Bronchospasm (≥4 y) — 2 puffs (90 mcg) every 4–6 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 4,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 90,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-xopenex-hfa",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "برخی بیماران با ۱ پاف هر ۴ ساعت کافی است. نیاز بیشتر نشانه بدتر شدن آسم است. پیش از اولین استفاده یا پس از ۳ روز، ۴ پاف در هوا.",
+            "en": "Some patients need only 1 puff every 4 h. Needing more signals worsening asthma. Prime with 4 sprays before first use or after 3 days."
+          },
+          "refs": [
+            {
+              "source": "fda-xopenex-hfa",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-xopenex-hfa",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به لووآلبوترول یا آلبوترول راسمیک.",
+        "en": "Hypersensitivity to levalbuterol or racemic albuterol."
+      },
+      "refs": [
+        {
+          "source": "fda-xopenex-hfa",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "برونکواسپاسم متناقض؛ بدتر شدن آسم؛ اثرات قلبی؛ بیش از دوز توصیه‌شده نه؛ هیپوکالمی.",
+        "en": "Paradoxical bronchospasm; deteriorating asthma; cardiovascular effects; do not exceed recommended dose; hypokalaemia."
+      },
+      "refs": [
+        {
+          "source": "fda-xopenex-hfa",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bs",
+      "formulation": "hfa",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 30
+      },
+      "expect": {
+        "perDose": 90,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1473/Levosalbutamol-Oral-Inhalation",
+        "url": "https://www.darooyab.ir/G-1473/Levosalbutamol-Oral-Inhalation"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021730",
+      "label": "NDA021730"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=70a35706-d7a8-4a48-98c6-1cab1c42fe8d",
+      "label": "FDA Xopenex HFA"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a603025.html",
+      "label": "Levalbuterol Oral Inhalation"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1473/Levosalbutamol-Oral-Inhalation",
+      "label": "Levosalbutamol-Oral-Inhalation"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate and well-controlled studies of XOPENEX HFA in pregnant women.",
+      "refs": [
+        {
+          "source": "fda-xopenex-hfa",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no available data on the presence of levalbuterol in human milk, the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-xopenex-hfa",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Pediatric Patients 4 Years of Age and Older The safety and efficacy of XOPENEX HFA have been established in pediatric patients 4 years of age and older in an adequate and well-controlled clinical trial [see Adverse Reactions (6) and Clinical Studies (14) ].",
+      "refs": [
+        {
+          "source": "fda-xopenex-hfa",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant diseases or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-xopenex-hfa",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-xopenex-hfa",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021730"
+  }
+}

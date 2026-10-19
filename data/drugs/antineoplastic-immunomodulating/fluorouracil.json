@@ -1,0 +1,414 @@
+{
+  "id": "fluorouracil",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فلوئورویوراسیل",
+    "en": "Fluorouracil"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌متابولیت پیریمیدین",
+    "en": "Pyrimidine antimetabolite"
+  },
+  "brands": [
+    {
+      "name": "Adrucil",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "5-FU",
+    "adrucil",
+    "فلورواوراسیل",
+    "فلوئورواوراسیل"
+  ],
+  "formulations": [
+    {
+      "id": "vial-50",
+      "form": "injection",
+      "route": "iv",
+      "label": "50 mg/mL (2.5 g/50 mL pharmacy bulk)",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "crc",
+      "disease": "colorectal-cancer",
+      "label": {
+        "fa": "سرطان کولورکتال (رژیم انفوزیونی با لکوورین) — بولوس ۴۰۰ mg/m² روز ۱، سپس ۲۴۰۰ تا ۳۰۰۰ mg/m² انفوزیون ۴۶ ساعته هر ۲ هفته",
+        "en": "Colorectal cancer (infusional with leucovorin) — 400 mg/m² bolus day 1, then 2400–3000 mg/m² over 46 h every 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 400,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عدد ماشین‌حساب بولوس است. رژیم بولوس: ۵۰۰ mg/m² روزهای ۱، ۸، ۱۵، ۲۲، ۲۹، ۳۶ در دوره ۸ هفته‌ای. پیش از شروع ژنوتیپ DPYD.",
+            "en": "The calculator gives the bolus. Bolus regimen: 500 mg/m² on days 1, 8, 15, 22, 29, 36 of 8-week cycles. Test DPYD before starting."
+          },
+          "refs": [
+            {
+              "source": "fda-fluorouracil",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-fluorouracil",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-fluorouracil",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "breast",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان (رژیم بر پایه سیکلوفسفامید) — ۵۰۰ یا ۶۰۰ mg/m² روزهای ۱ و ۸ هر ۲۸ روز، ۶ دوره",
+        "en": "Breast cancer (cyclophosphamide-based) — 500 or 600 mg/m² on days 1 and 8 every 28 days for 6 cycles"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 500,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "pancreas",
+      "disease": "pancreatic-cancer",
+      "label": {
+        "fa": "سرطان پانکراس — بولوس ۴۰۰ mg/m² روز ۱، سپس ۲۴۰۰ mg/m² طی ۴۶ ساعت هر ۲ هفته",
+        "en": "Pancreatic cancer — 400 mg/m² bolus day 1, then 2400 mg/m² over 46 h every 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 400,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "2.6"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: واکنش جدی یا مرگ در کمبود کامل DPD — پیش از شروع ژنوتیپ DPYD.",
+        "en": "Boxed warning: serious reactions or death with complete DPD deficiency — test DPYD variants first."
+      },
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سمیت قلبی؛ انسفالوپاتی هیپرآمونمیک؛ سمیت عصبی؛ اسهال؛ سندرم دست-پا؛ سرکوب مغز استخوان؛ موکوزیت؛ افزایش INR با وارفارین.",
+        "en": "Cardiotoxicity; hyperammonaemic encephalopathy; neurotoxicity; diarrhoea; hand-foot syndrome; myelosuppression; mucositis; raised INR with warfarin."
+      },
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "crc",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 800,
+        "mlPerDose": 16
+      }
+    },
+    {
+      "regimen": "breast",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 1000,
+        "mlPerDose": 20
+      }
+    },
+    {
+      "regimen": "pancreas",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 800,
+        "mlPerDose": 16
+      }
+    }
+  ],
+  "atc": [
+    "L01BC02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "14530",
+        "en": "FLUOROURACIL 1G/20ML AMP",
+        "fa": "آمپول فلورواوراسیل ۱ گرم / ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "19435",
+        "en": "FLUOROURACIL 2500MG/50ML INJ",
+        "fa": "فرآورده تزریقی فلورواوراسیل ۲۵۰۰ میلی‌گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00550",
+        "en": "FLUOROURACIL 250MG/5ML AMP",
+        "fa": "آمپول فلورواوراسیل ۲۵۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00549",
+        "en": "FLUOROURACIL 5% 20GR CREAM",
+        "fa": "کرم فلورواوراسیل ۵ درصد ۲۰ گرم"
+      },
+      {
+        "code": "12007",
+        "en": "FLUOROURACIL 5% OINT",
+        "fa": "پماد فلورواوراسیل ۵ درصد"
+      },
+      {
+        "code": "14528",
+        "en": "FLUOROURACIL 500MG/10ML AMP",
+        "fa": "آمپول فلورواوراسیل ۵۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "20330",
+        "en": "FLUOROURACIL 50MG/5ML AMP",
+        "fa": "آمپول فلورواوراسیل ۵۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "21001",
+        "en": "FLUOROURACIL 5G/100ML INJ",
+        "fa": "فرآورده تزریقی فلورواوراسیل ۵ گرم / ۱۰۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1003/Fluorouracil",
+        "url": "https://www.darooyab.ir/G-1003/Fluorouracil"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-fluorouracil",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA217295"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217295",
+      "label": "ANDA217295"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6b34cbf2-66f9-48a4-b41f-deb84ba8e8c4",
+      "label": "FDA Fluorouracil"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682708.html",
+      "label": "Fluorouracil Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a605010.html",
+      "label": "Fluorouracil Topical"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01BC02",
+      "label": "L01BC02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1003/Fluorouracil",
+      "label": "Fluorouracil"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Based on its mechanism of action, Fluorouracil can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because many drugs are present in human milk and because of the potential for serious adverse reactions in nursing infants from Fluorouracil, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "8.3"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Reported clinical experience has not identified differences in safety or effectiveness between the elderly and younger patients.",
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Based on its mechanism of action, Fluorouracil can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-fluorouracil",
+          "section": "8.6"
+        }
+      ]
+    }
+  }
+}

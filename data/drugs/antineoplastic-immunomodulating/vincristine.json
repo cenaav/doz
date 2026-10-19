@@ -1,0 +1,354 @@
+{
+  "id": "vincristine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "وینکریستین",
+    "en": "Vincristine"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آلکالوئید وینکا",
+    "en": "Vinca alkaloid"
+  },
+  "brands": [
+    {
+      "name": "Oncovin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "oncovin",
+    "انکووین",
+    "وینکریستین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1",
+      "form": "injection",
+      "route": "iv",
+      "label": "1 mg/mL (1 mg, 2 mg vials)",
+      "concentration": {
+        "amount": 1,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-vincristine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "acute-lymphoblastic-leukemia",
+      "label": {
+        "fa": "بزرگسال (لوسمی حاد و سایر بدخیمی‌ها) — ۱٫۴ mg/m² وریدی هفتگی",
+        "en": "Adults (acute leukaemia and other malignancies) — 1.4 mg/m² IV weekly"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 1.4,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-vincristine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط وریدی — تزریق داخل نخاعی کشنده است. بیلی‌روبین مستقیم بالای ۳: ۵۰٪ دوز. محاسبه دوز با دقت زیاد (بیش‌مصرفی کشنده).",
+            "en": "IV only — intrathecal injection is fatal. Direct bilirubin >3 mg/dL: 50% dose. Calculate with extreme care (overdose can be fatal)."
+          },
+          "refs": [
+            {
+              "source": "fda-vincristine",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-vincristine",
+              "section": "Warnings"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-vincristine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "acute-lymphoblastic-leukemia",
+      "label": {
+        "fa": "کودک — ۱٫۵ تا ۲ mg/m² وریدی هفتگی (≤۱۰ kg: ۰٫۰۵ mg/kg)",
+        "en": "Children — 1.5–2 mg/m² IV weekly (≤10 kg: 0.05 mg/kg)"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 10.01
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 1.5,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-vincristine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "infant",
+      "disease": "acute-lymphoblastic-leukemia",
+      "label": {
+        "fa": "کودک ۱۰ kg یا کمتر — شروع ۰٫۰۵ mg/kg هفتگی",
+        "en": "Children ≤10 kg — start 0.05 mg/kg weekly"
+      },
+      "population": {
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxWeightKg": 10
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.05,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-vincristine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "فرم دمیلینه‌کننده سندرم شارکو-ماری-توث.",
+        "en": "Demyelinating form of Charcot–Marie–Tooth syndrome."
+      },
+      "refs": [
+        {
+          "source": "fda-vincristine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: فقط وریدی — داخل نخاعی کشنده؛ نشت به بافت تحریک شدید. نوروتوکسیسیتی وابسته به دوز.",
+        "en": "Boxed warning: IV only — fatal if given intrathecally; extravasation causes severe irritation. Dose-related neurotoxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-vincristine",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-1",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 2.8,
+        "mlPerDose": 2.8
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-1",
+      "input": {
+        "ageYears": 12,
+        "weightKg": 25,
+        "heightCm": 144
+      },
+      "expect": {
+        "perDose": 1.5,
+        "mlPerDose": 1.5
+      }
+    },
+    {
+      "regimen": "infant",
+      "formulation": "vial-1",
+      "input": {
+        "ageMonths": 10,
+        "weightKg": 8
+      },
+      "expect": {
+        "perDose": 0.4,
+        "mlPerDose": 0.4
+      }
+    }
+  ],
+  "atc": [
+    "L01CA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01284",
+        "en": "VINCRISTINE SULFATE 1MG VIAL",
+        "fa": "ویال وین‌کریستین سولفات ۱ میلی‌گرم"
+      },
+      {
+        "code": "02194",
+        "en": "VINCRISTINE SULFATE 1MG/ML AMP",
+        "fa": "آمپول وین‌کریستین سولفات ۱ میلی‌گرم / میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1091/Vincristine",
+        "url": "https://www.darooyab.ir/G-1091/Vincristine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-vincristine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA071484"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=071484",
+      "label": "ANDA071484"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b22e4c8e-dbe1-4d4b-a026-e1812974071c",
+      "label": "FDA Vincristine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682822.html",
+      "label": "Vincristine Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01CA02",
+      "label": "L01CA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1091/Vincristine",
+      "label": "Vincristine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Vincristine sulfate can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-vincristine",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions due to vincristine sulfate in nursing infants, a decision should be made either to discontinue nursing or the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-vincristine",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "See DOSAGE AND ADMINISTRATION section.",
+      "refs": [
+        {
+          "source": "fda-vincristine",
+          "section": "Pediatric Use"
+        }
+      ]
+    }
+  }
+}

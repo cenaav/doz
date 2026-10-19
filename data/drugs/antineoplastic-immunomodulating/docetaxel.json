@@ -1,0 +1,455 @@
+{
+  "id": "docetaxel",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دوستاکسل",
+    "en": "Docetaxel"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "تاکسان",
+    "en": "Taxane"
+  },
+  "brands": [
+    {
+      "name": "Taxotere",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "taxotere",
+    "تاکسوتر",
+    "دوستاکسل",
+    "docetaxel"
+  ],
+  "formulations": [
+    {
+      "id": "vial-20",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/mL (160 mg/8 mL)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "breast",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان پیشرفته پس از شکست شیمی‌درمانی — ۶۰ تا ۱۰۰ mg/m² طی ۱ ساعت هر ۳ هفته",
+        "en": "Advanced breast cancer after prior chemotherapy — 60–100 mg/m² over 1 h every 3 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 60,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "حد پایین در ماشین‌حساب. کمکی (TAC): ۷۵ mg/m² یک ساعت پس از دوکسوروبیسین ۵۰ و سیکلوفسفامید ۵۰۰. پیش‌دارو دگزامتازون ۸ mg دو بار ۳ روز از روز قبل.",
+            "en": "Calculator gives the lower bound. Adjuvant (TAC): 75 mg/m² 1 h after doxorubicin 50 and cyclophosphamide 500. Premedicate dexamethasone 8 mg twice daily for 3 days starting the day before."
+          },
+          "refs": [
+            {
+              "source": "fda-docetaxel",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-docetaxel",
+              "section": "2.6"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-docetaxel",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nsclc",
+      "disease": "lung-cancer",
+      "label": {
+        "fa": "NSCLC پس از شکست پلاتین — ۷۵ mg/m² طی ۱ ساعت هر ۳ هفته",
+        "en": "NSCLC after platinum failure — 75 mg/m² over 1 h every 3 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 75,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "prostate",
+      "disease": "prostate-cancer",
+      "label": {
+        "fa": "سرطان پروستات مقاوم به اخته — ۷۵ mg/m² هر ۳ هفته همراه پردنیزون ۵ mg دو بار",
+        "en": "Castration-resistant prostate cancer — 75 mg/m² every 3 weeks with prednisone 5 mg twice daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 75,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "gastric",
+      "disease": "gastric-cancer",
+      "label": {
+        "fa": "آدنوکارسینوم معده — ۷۵ mg/m² روز ۱ (با سیس‌پلاتین و فلوئورویوراسیل) هر ۳ هفته",
+        "en": "Gastric adenocarcinoma — 75 mg/m² on day 1 (with cisplatin and fluorouracil) every 3 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 75,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نوتروفیل زیر ۱۵۰۰؛ سابقه حساسیت شدید به دوستاکسل یا پلی‌سوربات ۸۰.",
+        "en": "Neutrophils <1,500; history of severe hypersensitivity to docetaxel or polysorbate 80."
+      },
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: مرگ مرتبط با درمان (بیشتر با اختلال کبد، دوز بالا، NSCLC پس از پلاتین با ۱۰۰ mg/m²)؛ بیلی‌روبین بالای حد طبیعی یا AST/ALT >۱٫۵× با ALP >۲٫۵× نه؛ نوتروپنی؛ حساسیت شدید؛ احتباس مایع.",
+        "en": "Boxed warning: treatment-related deaths (more with hepatic impairment, higher doses, NSCLC after platinum at 100 mg/m²); avoid if bilirubin >ULN or AST/ALT >1.5× ULN with ALP >2.5× ULN; neutropenia; severe hypersensitivity; fluid retention."
+      },
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "breast",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 120,
+        "mlPerDose": 6
+      }
+    },
+    {
+      "regimen": "nsclc",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 7.5
+      }
+    },
+    {
+      "regimen": "prostate",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 7.5
+      }
+    },
+    {
+      "regimen": "gastric",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 150,
+        "mlPerDose": 7.5
+      }
+    }
+  ],
+  "atc": [
+    "L01CD02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "17753",
+        "en": "DOCETAXEL 160MG/16ML VIAL",
+        "fa": "ویال دوستاکسل ۱۶۰ میلی‌گرم / ۱۶ میلی‌لیتر"
+      },
+      {
+        "code": "01716",
+        "en": "DOCETAXEL 20MG VIAL",
+        "fa": "ویال دوستاکسل ۲۰ میلی‌گرم"
+      },
+      {
+        "code": "21240",
+        "en": "DOCETAXEL 20MG/ML 4ML VIAL",
+        "fa": "ویال دوستاکسل ۲۰ میلی‌گرم / میلی‌لیتر ۴ میلی‌لیتر"
+      },
+      {
+        "code": "21241",
+        "en": "DOCETAXEL 20MG/ML 8ML VIAL",
+        "fa": "ویال دوستاکسل ۲۰ میلی‌گرم / میلی‌لیتر ۸ میلی‌لیتر"
+      },
+      {
+        "code": "01478",
+        "en": "DOCETAXEL 80MG VIAL",
+        "fa": "ویال دوستاکسل ۸۰ میلی‌گرم"
+      },
+      {
+        "code": "52349",
+        "en": "DOCETAXEL INJECTION, SOLUTION INTRAVENOUS 20 mg/1mL 1 mL",
+        "fa": "فرآورده تزریقی دوستاکسل ۲۰ میلی‌گرم / ۱ میلی‌لیتر ۱ میلی‌لیتر"
+      },
+      {
+        "code": "50298",
+        "en": "DOCETAXEL INJECTION, SOLUTION INTRAVENOUS 10 mg/1mL 2 mL",
+        "fa": "فرآورده تزریقی دوستاکسل ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "50299",
+        "en": "DOCETAXEL INJECTION, SOLUTION INTRAVENOUS 10 mg/1mL 8 mL",
+        "fa": "فرآورده تزریقی دوستاکسل ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۸ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-984/Docetaxel",
+        "url": "https://www.darooyab.ir/G-984/Docetaxel"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-docetaxel",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA208137"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208137",
+      "label": "ANDA208137"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6417655-9448-4886-ba03-f57f36bcbd14",
+      "label": "FDA Docetaxel"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a696031.html",
+      "label": "Docetaxel Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01CD02",
+      "label": "L01CD02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-984/Docetaxel",
+      "label": "Docetaxel"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings in animal reproduction studies and its mechanism of action, docetaxel injection can cause fetal harm when administered to a pregnant woman [see Clinical Pharmacology (12.1) ] .",
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in a breastfed child, advise women not to breastfeed during treatment with docetaxel injection and for 1 week after the last dose.",
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The efficacy of docetaxel injection in pediatric patients as monotherapy or in combination has not been established.",
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy in elderly patients.",
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Based on genetic toxicity findings, advise females of reproductive potential to use effective contraception during treatment and for 2 months after the last dose of docetaxel injection.",
+      "refs": [
+        {
+          "source": "fda-docetaxel",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "id": "mexiletine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مگزیلتین",
+    "en": "Mexiletine"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "ضدآریتمی کلاس IB",
+    "en": "Class IB antiarrhythmic"
+  },
+  "brands": [
+    {
+      "name": "Mexiletine",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mexitil",
+    "مکزیلتین",
+    "مگزیلتین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-200",
+      "form": "capsule",
+      "route": "oral",
+      "label": "200 mg capsule",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mexiletine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-150",
+      "form": "capsule",
+      "route": "oral",
+      "label": "150 mg capsule",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mexiletine",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "cap-250",
+      "form": "capsule",
+      "route": "oral",
+      "label": "250 mg capsule",
+      "concentration": {
+        "amount": 250,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mexiletine",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "va",
+      "disease": "ventricular-arrhythmia",
+      "label": {
+        "fa": "آریتمی بطنی تهدیدکننده حیات — شروع ۲۰۰ mg هر ۸ ساعت با غذا",
+        "en": "Life-threatening ventricular arrhythmia — start 200 mg every 8 h with food"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 200,
+        "perDoseMax": 300,
+        "dosesPerDay": 3
+      },
+      "refs": [
+        {
+          "source": "fda-mexiletine",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بیشتر بیماران با ۲۰۰ تا ۳۰۰ mg هر ۸ ساعت کنترل می‌شوند؛ تغییر ۵۰ یا ۱۰۰ mg با فاصله ۲ تا ۳ روز. کنترل سریع: بارگذاری ۴۰۰ mg و ۸ ساعت بعد ۲۰۰ mg. ECG و هولتر.",
+            "en": "Most are controlled by 200–300 mg every 8 h; adjust by 50 or 100 mg every 2–3 days. Rapid control: 400 mg loading then 200 mg 8 h later. ECG and Holter monitoring."
+          },
+          "refs": [
+            {
+              "source": "fda-mexiletine",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "شوک کاردیوژنیک؛ بلوک AV درجه ۲ یا ۳ بدون پیس‌میکر.",
+        "en": "Cardiogenic shock; second- or third-degree AV block without a pacemaker."
+      },
+      "refs": [
+        {
+          "source": "fda-mexiletine",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: افزایش مرگ با ضدآریتمی‌های کلاس I پس از MI (مطالعه CAST) — فقط برای آریتمی بطنی تهدیدکننده حیات.",
+        "en": "Boxed warning: increased mortality with class I antiarrhythmics after MI (CAST) — reserve for life-threatening ventricular arrhythmia."
+      },
+      "refs": [
+        {
+          "source": "fda-mexiletine",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "va",
+      "formulation": "cap-200",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 200,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C01BB02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00848",
+        "en": "MEXILETINE HCL 100MG CAP",
+        "fa": "کپسول مکزیلتین هیدروکلراید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "14557",
+        "en": "MEXILETINE HCL 100MG TAB",
+        "fa": "قرص مکزیلتین هیدروکلراید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00849",
+        "en": "MEXILETINE HCL 200MG CAP",
+        "fa": "کپسول مکزیلتین هیدروکلراید ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "17782",
+        "en": "MEXILETINE HCL 200MG TAB",
+        "fa": "قرص مکزیلتین هیدروکلراید ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "09574",
+        "en": "MEXILETINE HCL 50MG TAB",
+        "fa": "قرص مکزیلتین هیدروکلراید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1769/Mexiletine",
+        "url": "https://www.darooyab.ir/G-1769/Mexiletine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-mexiletine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA214089"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=214089",
+      "label": "ANDA214089"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=58b7a7f5-5ae0-2f60-e063-6394a90a37dd",
+      "label": "FDA Mexiletine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607064.html",
+      "label": "Mexiletine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BB02",
+      "label": "C01BB02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1769/Mexiletine",
+      "label": "Mexiletine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Reproduction studies performed with mexiletine in rats, mice and rabbits at doses up to four times the maximum human oral dose (24 mg/kg in a 50 kg patient) revealed no evidence of teratogenicity or impaired fertility but did show an increase in fetal resorption.",
+      "refs": [
+        {
+          "source": "fda-mexiletine",
+          "section": "Precautions/Warnings – Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Mexiletine appears in human milk in concentrations similar to those observed in plasma.",
+      "refs": [
+        {
+          "source": "fda-mexiletine",
+          "section": "Precautions/Warnings – Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-mexiletine",
+          "section": "Precautions/Warnings – Pediatric Use"
+        }
+      ]
+    }
+  }
+}

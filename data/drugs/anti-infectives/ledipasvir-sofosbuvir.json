@@ -1,0 +1,344 @@
+{
+  "id": "ledipasvir-sofosbuvir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لدیپاسویر/سوفوسبوویر",
+    "en": "Ledipasvir/sofosbuvir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضد ویروس مستقیم HCV",
+    "en": "HCV direct-acting antiviral"
+  },
+  "brands": [
+    {
+      "name": "Harvoni",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "harvoni",
+    "هاروونی",
+    "ledipasvir",
+    "لدیپاسویر",
+    "sovodak"
+  ],
+  "formulations": [
+    {
+      "id": "tab-90",
+      "form": "tablet",
+      "route": "oral",
+      "label": "90 mg ledipasvir / 400 mg sofosbuvir tablet",
+      "concentration": {
+        "amount": 90,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "tab-45",
+      "form": "tablet",
+      "route": "oral",
+      "label": "45 mg / 200 mg tablet",
+      "concentration": {
+        "amount": 45,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hcv",
+      "disease": "hepatitis-c",
+      "label": {
+        "fa": "هپاتیت C ژنوتیپ ۱، ۴، ۵، ۶ — یک قرص ۹۰/۴۰۰ mg یک بار (معمولاً ۱۲ هفته)",
+        "en": "Hepatitis C genotype 1, 4, 5, 6 — one 90/400 mg tablet once daily (usually 12 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        },
+        "minWeightKg": 35
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 90,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-harvoni",
+          "section": "2.4, Table 2"
+        }
+      ],
+      "doseComponent": "ledipasvir",
+      "notes": [
+        {
+          "text": {
+            "fa": "مدت طبق جدول ۱ (۸ تا ۲۴ هفته؛ با یا بدون ریباویرین). کودک ۱۷ تا <۳۵ kg: ۴۵/۲۰۰ mg؛ زیر ۱۷ kg: پلت ۳۳٫۷۵/۱۵۰ mg. نارسایی کلیه تنظیم ندارد.",
+            "en": "Duration per Table 1 (8–24 weeks; with or without ribavirin). Children 17–<35 kg: 45/200 mg; <17 kg: 33.75/150 mg pellets. No renal adjustment."
+          },
+          "refs": [
+            {
+              "source": "fda-harvoni",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-harvoni",
+              "section": "2.4, Table 2"
+            },
+            {
+              "source": "fda-harvoni",
+              "section": "2.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "hepatitis-c",
+      "label": {
+        "fa": "کودک ۳ سال به بالا، ۱۷ تا <۳۵ kg — ۴۵/۲۰۰ mg یک بار",
+        "en": "Children ≥3 y, 17–<35 kg — 45/200 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        },
+        "minWeightKg": 17,
+        "maxWeightKg": 34.99
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 45,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "2.4, Table 2"
+        }
+      ],
+      "doseComponent": "ledipasvir",
+      "allowedFormulations": [
+        "tab-45"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "در صورت مصرف همراه ریباویرین، منع مصرف‌های ریباویرین هم صدق می‌کند.",
+        "en": "When given with ribavirin, ribavirin contraindications also apply."
+      },
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: فعال شدن مجدد HBV در عفونت همزمان (گاه نارسایی کبد و مرگ) — پیش از شروع HBsAg و anti-HBc.",
+        "en": "Boxed warning: HBV reactivation in HCV/HBV co-infection (sometimes fulminant hepatitis and death) — test HBsAg and anti-HBc first."
+      },
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "برادیکاردی شدید علامت‌دار با آمیودارون (همزمان توصیه نمی‌شود)؛ کاهش اثر با القاگرهای P-gp (ریفامپین، گل راعی).",
+        "en": "Serious symptomatic bradycardia with amiodarone (not recommended together); reduced effect with P-gp inducers (rifampin, St John’s wort)."
+      },
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hcv",
+      "formulation": "tab-90",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 90,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "tab-45",
+      "input": {
+        "ageYears": 7,
+        "weightKg": 25
+      },
+      "expect": {
+        "perDose": 45,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "J05AP51"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Ledipasvir/sofosbuvir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-harvoni",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA205834"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=205834",
+      "label": "NDA205834"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4ec77e4-bae8-4db0-b3d5-bde09c5fa075",
+      "label": "FDA Harvoni"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AP51",
+      "label": "J05AP51"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده انسانی کافی نیست؛ در مطالعات حیوانی عارضه‌ای دیده نشد. همراه ریباویرین در بارداری منع مصرف است.",
+        "en": "Label: no adequate human data; no adverse developmental outcomes in animals. With ribavirin the combination is contraindicated in pregnancy."
+      },
+      "quote": "No adequate human data are available to establish whether or not HARVONI poses a risk to pregnancy outcomes. In animal reproduction studies, no evidence of adverse developmental outcomes was observed with the components of HARVONI.",
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "When administered to lactating rats, ledipasvir was detected in the plasma of nursing pups likely due to the presence of ledipasvir in milk, without clear effects on nursing pups [see Data ].",
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety, pharmacokinetics, and efficacy of HARVONI for treatment of HCV genotype 1 and 4 infection in treatment-naïve and treatment-experienced pediatric patients 3 years of age and older without cirrhosis or with compensated cirrhosis have been established in an open-label, multicenter clinical trial (Study 1116, …",
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dosage adjustment of HARVONI is warranted in geriatric patients [see Clinical Pharmacology (12.3) ] .",
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "If HARVONI is administered with ribavirin, the information for ribavirin with regard to pregnancy testing, contraception, and infertility also applies to this combination regimen.",
+      "refs": [
+        {
+          "source": "fda-harvoni",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

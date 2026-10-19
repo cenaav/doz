@@ -1,0 +1,338 @@
+{
+  "id": "oxaliplatin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اگزالی‌پلاتین",
+    "en": "Oxaliplatin"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "ترکیب پلاتین",
+    "en": "Platinum compound"
+  },
+  "brands": [
+    {
+      "name": "Eloxatin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "eloxatin",
+    "الوکساتین",
+    "اگزالیپلاتین",
+    "FOLFOX"
+  ],
+  "formulations": [
+    {
+      "id": "vial-5",
+      "form": "injection",
+      "route": "iv",
+      "label": "5 mg/mL (50/100/200 mg)",
+      "concentration": {
+        "amount": 5,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "crc",
+      "disease": "colorectal-cancer",
+      "label": {
+        "fa": "سرطان کولورکتال (FOLFOX: کمکی یا پیشرفته) — ۸۵ mg/m² طی ۱۲۰ دقیقه روز ۱ هر ۲ هفته",
+        "en": "Colorectal cancer (FOLFOX: adjuvant or advanced) — 85 mg/m² over 120 min on day 1 every 2 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 85,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همزمان با لکوورین ۲۰۰ mg/m² (کیسه جدا)، سپس فلوئورویوراسیل. کمکی تا ۱۲ دوره. در واکنش حاد انفوزیون تا ۶ ساعت طولانی شود.",
+            "en": "Concurrently with leucovorin 200 mg/m² (separate bag), then fluorouracil. Adjuvant up to 12 cycles. Prolong to 6 h for acute infusion reactions."
+          },
+          "refs": [
+            {
+              "source": "fda-oxaliplatin",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-oxaliplatin",
+              "section": "2.2"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-oxaliplatin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به اگزالی‌پلاتین یا سایر داروهای پلاتین.",
+        "en": "History of hypersensitivity to oxaliplatin or other platinum drugs."
+      },
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: واکنش حساسیتی و آنافیلاکسی کشنده در هر دوره — قطع دائم.",
+        "en": "Boxed warning: serious and fatal hypersensitivity/anaphylaxis in any cycle — stop permanently."
+      },
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "نوروپاتی حسی (تشدید با سرما)؛ سرکوب شدید مغز استخوان؛ PRES؛ سمیت ریوی و کبدی؛ QT؛ رابدومیولیز؛ خونریزی؛ سمیت جنینی.",
+        "en": "Sensory neuropathy (cold-induced); severe myelosuppression; PRES; pulmonary and hepatic toxicity; QT; rhabdomyolysis; haemorrhage; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۳۰: ۶۵ mg/m².",
+        "en": "CrCl <30: 65 mg/m²."
+      },
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "crc",
+      "formulation": "vial-5",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 170,
+        "mlPerDose": 34
+      }
+    }
+  ],
+  "atc": [
+    "L01XA03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01916",
+        "en": "OXALIPLATIN 100MG VIAL",
+        "fa": "ویال اگزالی‌پلاتین ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "07040",
+        "en": "OXALIPLATIN 100MG/20ML VIAL",
+        "fa": "ویال اگزالی‌پلاتین ۱۰۰ میلی‌گرم / ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "09749",
+        "en": "OXALIPLATIN 200MG VIAL",
+        "fa": "ویال اگزالی‌پلاتین ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "01915",
+        "en": "OXALIPLATIN 50MG VIAL",
+        "fa": "ویال اگزالی‌پلاتین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "07041",
+        "en": "OXALIPLATIN 50MG/10ML VIAL",
+        "fa": "ویال اگزالی‌پلاتین ۵۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1043/Oxaliplatin",
+        "url": "https://www.darooyab.ir/G-1043/Oxaliplatin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-oxaliplatin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA207325"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207325",
+      "label": "ANDA207325"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6f89dc3-a594-4b5b-8728-272e20c1ecb5",
+      "label": "FDA Oxaliplatin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607035.html",
+      "label": "Oxaliplatin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01XA03",
+      "label": "L01XA03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1043/Oxaliplatin",
+      "label": "Oxaliplatin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on its direct interaction with DNA, oxaliplatin can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants, advise women not to breastfeed during treatment with oxaliplatin and for 3 months after the final dose.",
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of oxaliplatin in pediatrics have not been established.",
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in effectiveness were observed between these patients and younger adults.",
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Oxaliplatin can cause embryo-fetal harm when administered to a pregnant woman [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-oxaliplatin",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

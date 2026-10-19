@@ -1,0 +1,248 @@
+{
+  "id": "molnupiravir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "مولنوپیراویر",
+    "en": "Molnupiravir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "آنالوگ نوکلئوزید ضد SARS-CoV-2",
+    "en": "Nucleoside analogue (SARS-CoV-2)"
+  },
+  "brands": [
+    {
+      "name": "Lagevrio",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "lagevrio",
+    "لاگوریو",
+    "مولنوپیراویر"
+  ],
+  "formulations": [
+    {
+      "id": "cap-200",
+      "form": "capsule",
+      "route": "oral",
+      "label": "200 mg capsule",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-lagevrio",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "covid",
+      "disease": "covid-19",
+      "label": {
+        "fa": "کووید-۱۹ خفیف تا متوسط پرخطر بزرگسال (مجوز اضطراری) — ۸۰۰ mg هر ۱۲ ساعت، ۵ روز",
+        "en": "Mild-to-moderate COVID-19 at high risk, adults (EUA) — 800 mg every 12 h for 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 800,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-lagevrio",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "هرچه زودتر و ظرف ۵ روز از شروع علائم. تنظیم کلیوی یا کبدی ندارد. فقط با مجوز استفاده اضطراری (EUA).",
+            "en": "As soon as possible and within 5 days of symptom onset. No renal or hepatic adjustment. Emergency Use Authorization only."
+          },
+          "refs": [
+            {
+              "source": "fda-lagevrio",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-lagevrio",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سمیت جنینی (در بارداری توصیه نمی‌شود؛ پیشگیری حین درمان و ۴ روز بعد)؛ حساسیت؛ سمیت استخوان و غضروف (زیر ۱۸ سال نه).",
+        "en": "Embryo-fetal toxicity (not recommended in pregnancy; contraception during and 4 days after); hypersensitivity; bone and cartilage toxicity (not under 18)."
+      },
+      "refs": [
+        {
+          "source": "fda-lagevrio",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "covid",
+      "formulation": "cap-200",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 75
+      },
+      "expect": {
+        "perDose": 800,
+        "tabletsPerDoseRounded": 4
+      }
+    }
+  ],
+  "atc": [
+    "J05AB18"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52942",
+        "en": "MOLNUPIRAVIR CAPSULE ORAL 200 mg",
+        "fa": "کپسول مولنوپیراویر ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4311/Molnupiravir",
+        "url": "https://www.darooyab.ir/G-4311/Molnupiravir"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1b0da643-ab23-4a0b-a9ec-a434522446d0",
+      "label": "FDA Lagevrio (EUA)"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a622027.html",
+      "label": "Molnupiravir"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AB18",
+      "label": "J05AB18"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4311/Molnupiravir",
+      "label": "Molnupiravir"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Based on findings from animal reproduction studies, LAGEVRIO may cause fetal harm when administered to pregnant individuals.",
+      "refs": [
+        {
+          "source": "fda-lagevrio",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Based on the potential for adverse reactions in the infant from LAGEVRIO, breastfeeding is not recommended during treatment with LAGEVRIO and for 4 days after the final dose.",
+      "refs": [
+        {
+          "source": "fda-lagevrio",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and efficacy of LAGEVRIO have not been established in pediatric patients [see Warnings and Precautions (5.3) and Nonclinical Toxicology (13.2) ] .",
+      "refs": [
+        {
+          "source": "fda-lagevrio",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dosage adjustment is recommended based on age.",
+      "refs": [
+        {
+          "source": "fda-lagevrio",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise individuals of childbearing potential to use a reliable method of contraception correctly and consistently, as applicable for the duration of treatment and for 4 days after the last dose of LAGEVRIO [see Warnings and Precautions (5.1) ].",
+      "refs": [
+        {
+          "source": "fda-lagevrio",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "id": "peramivir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "پرامیویر",
+    "en": "Peramivir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده نورآمینیداز (وریدی)",
+    "en": "IV neuraminidase inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Rapivab",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "rapivab",
+    "راپیواب",
+    "پرامیویر"
+  ],
+  "formulations": [
+    {
+      "id": "vial-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "200 mg/20 mL (10 mg/mL) vial",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rapivab",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "influenza",
+      "label": {
+        "fa": "آنفلوانزای حاد بدون عارضه (۱۳ سال به بالا) — ۶۰۰ mg وریدی یک دوز ظرف ۲ روز از شروع علائم",
+        "en": "Acute uncomplicated influenza (≥13 y) — 600 mg IV single dose within 2 days of symptom onset"
+      },
+      "population": {
+        "minAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rapivab",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "انفوزیون دست‌کم ۱۵ دقیقه.",
+            "en": "Infuse over at least 15 min."
+          },
+          "refs": [
+            {
+              "source": "fda-rapivab",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "influenza",
+      "label": {
+        "fa": "کودک ۶ ماه تا ۱۲ سال — ۱۲ mg/kg وریدی یک دوز (حداکثر ۶۰۰ mg)",
+        "en": "Children 6 months–12 y — 12 mg/kg IV single dose (max 600 mg)"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 13,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 12,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-rapivab",
+          "section": "2.1"
+        }
+      ],
+      "limits": {
+        "maxPerDose": 600,
+        "refs": [
+          {
+            "source": "fda-rapivab",
+            "section": "2.1"
+          }
+        ]
+      },
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی یا آنافیلاکسی به پرامیویر.",
+        "en": "Serious hypersensitivity or anaphylaxis to peramivir."
+      },
+      "refs": [
+        {
+          "source": "fda-rapivab",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش پوستی و حساسیتی شدید (SJS)؛ رویدادهای عصبی-روانی (به‌ویژه کودکان)؛ عفونت باکتریایی همزمان.",
+        "en": "Serious skin/hypersensitivity reactions (SJS); neuropsychiatric events (especially children); bacterial co-infection."
+      },
+      "refs": [
+        {
+          "source": "fda-rapivab",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 50,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۵۰: کاهش دوز طبق جداول ۱ و ۲؛ همودیالیز پس از دیالیز.",
+        "en": "CrCl <50: reduce per Tables 1 and 2; haemodialysis — give after dialysis."
+      },
+      "refs": [
+        {
+          "source": "fda-rapivab",
+          "section": "2.2"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600,
+        "mlPerDose": 60
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 240,
+        "mlPerDose": 24
+      }
+    }
+  ],
+  "atc": [
+    "J05AH03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Peramivir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-rapivab",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA206426"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206426",
+      "label": "NDA206426"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fe04f6cd-e71c-4bd4-abac-97720bba2a0d",
+      "label": "FDA Rapivab"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a614062.html",
+      "label": "Peramivir Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AH03",
+      "label": "J05AH03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited available data with RAPIVAB use in pregnant women are insufficient to determine a drug-associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-rapivab",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of RAPIVAB in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-rapivab",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of RAPIVAB for the treatment of influenza has been established in pediatric patients 6 months to 17 years of age.",
+      "refs": [
+        {
+          "source": "fda-rapivab",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical trials of RAPIVAB did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-rapivab",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

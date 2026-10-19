@@ -1,0 +1,490 @@
+{
+  "id": "gemcitabine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "جمسیتابین",
+    "en": "Gemcitabine"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتی‌متابولیت نوکلئوزید",
+    "en": "Nucleoside antimetabolite"
+  },
+  "brands": [
+    {
+      "name": "Gemzar",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "gemzar",
+    "جمزار",
+    "جمسیتابین",
+    "gemcitabine"
+  ],
+  "formulations": [
+    {
+      "id": "vial-1g",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1 g vial",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-200",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "200 mg vial",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pancreas",
+      "disease": "pancreatic-cancer",
+      "label": {
+        "fa": "سرطان پانکراس — ۱۰۰۰ mg/m² طی ۳۰ دقیقه هفتگی ۷ هفته، یک هفته استراحت، سپس ۳ هفته از هر ۴",
+        "en": "Pancreatic cancer — 1000 mg/m² over 30 min weekly for 7 weeks, 1 week rest, then 3 of every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 1000,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-gemcitabine",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nsclc",
+      "disease": "lung-cancer",
+      "label": {
+        "fa": "NSCLC — ۱۰۰۰ mg/m² روزهای ۱، ۸ و ۱۵ هر ۲۸ روز (یا ۱۲۵۰ mg/m² روز ۱ و ۸ هر ۲۱ روز)",
+        "en": "NSCLC — 1000 mg/m² on days 1, 8 and 15 every 28 days (or 1250 mg/m² days 1 and 8 every 21 days)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 1000,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "ovary",
+      "disease": "ovarian-cancer",
+      "label": {
+        "fa": "سرطان تخمدان — ۱۰۰۰ mg/m² روز ۱ و ۸ هر ۲۱ روز",
+        "en": "Ovarian cancer — 1000 mg/m² on days 1 and 8 every 21 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 1000,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "breast",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان — ۱۲۵۰ mg/m² روز ۱ و ۸ هر ۲۱ روز",
+        "en": "Breast cancer — 1250 mg/m² on days 1 and 8 every 21 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 1250,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به جمسیتابین.",
+        "en": "Hypersensitivity to gemcitabine."
+      },
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سمیت وابسته به برنامه (انفوزیون طولانی‌تر از ۶۰ دقیقه یا بیش از هفتگی سمیت بیشتر)؛ سرکوب مغز استخوان؛ واکنش پوستی شدید؛ سمیت ریوی؛ HUS؛ سمیت کبد؛ نشت مویرگی؛ PRES.",
+        "en": "Schedule-dependent toxicity (infusion >60 min or more than weekly is more toxic); myelosuppression; severe skin reactions; pulmonary toxicity; HUS; hepatotoxicity; capillary leak; PRES."
+      },
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pancreas",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 2000
+      }
+    },
+    {
+      "regimen": "nsclc",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 2000
+      }
+    },
+    {
+      "regimen": "ovary",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 2000
+      }
+    },
+    {
+      "regimen": "breast",
+      "formulation": "vial-1g",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 2500
+      }
+    }
+  ],
+  "atc": [
+    "L01BC05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "18664",
+        "en": "GEMCITABINE 1G/100ML VIAL",
+        "fa": "ویال جم‌سیتابین ۱ گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "21887",
+        "en": "GEMCITABINE 1G/10ML VIAL",
+        "fa": "ویال جم‌سیتابین ۱ گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "18665",
+        "en": "GEMCITABINE 200MG/20ML VIAL",
+        "fa": "ویال جم‌سیتابین ۲۰۰ میلی‌گرم / ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "21888",
+        "en": "GEMCITABINE 200MG/2ML VIAL",
+        "fa": "ویال جم‌سیتابین ۲۰۰ میلی‌گرم / ۲ میلی‌لیتر"
+      },
+      {
+        "code": "20488",
+        "en": "GEMCITABINE 2G SOLUTION FOR INJ",
+        "fa": "فرآورده تزریقی جم‌سیتابین ۲ گرم"
+      },
+      {
+        "code": "02135",
+        "en": "GEMCITABINE HCl 1 G VIAL",
+        "fa": "ویال جم‌سیتابین هیدروکلراید ۱ گرم"
+      },
+      {
+        "code": "02136",
+        "en": "GEMCITABINE HCl 200MG VIAL",
+        "fa": "ویال جم‌سیتابین هیدروکلراید ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "52335",
+        "en": "GEMCITABINE HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 10 mg/1mL 100 mL",
+        "fa": "کنسانتره محلول تزریقی جم‌سیتابین هیدروکلراید ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "52338",
+        "en": "GEMCITABINE HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 100 mg/1mL 10 mL",
+        "fa": "کنسانتره محلول تزریقی جم‌سیتابین هیدروکلراید ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "52336",
+        "en": "GEMCITABINE HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 100 mg/1mL 2 mL",
+        "fa": "کنسانتره محلول تزریقی جم‌سیتابین هیدروکلراید ۱۰۰ میلی‌گرم / ۱ میلی‌لیتر ۲ میلی‌لیتر"
+      },
+      {
+        "code": "52337",
+        "en": "GEMCITABINE HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 10 mg/1mL 20 mL",
+        "fa": "کنسانتره محلول تزریقی جم‌سیتابین هیدروکلراید ۱۰ میلی‌گرم / ۱ میلی‌لیتر ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "50294",
+        "en": "GEMCITABINE HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 38 mg/1 mL 5.26 mL",
+        "fa": "کنسانتره محلول تزریقی جم‌سیتابین هیدروکلراید ۳۸ میلی‌گرم / ۱ میلی‌لیتر ۵٫۲۶ میلی‌لیتر"
+      },
+      {
+        "code": "50295",
+        "en": "GEMCITABINE HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 38 mg/1 mL 26.3 mL",
+        "fa": "کنسانتره محلول تزریقی جم‌سیتابین هیدروکلراید ۳۸ میلی‌گرم / ۱ میلی‌لیتر ۲۶٫۳ میلی‌لیتر"
+      },
+      {
+        "code": "50296",
+        "en": "GEMCITABINE HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 38 mg/1 mL 52.6 mL",
+        "fa": "کنسانتره محلول تزریقی جم‌سیتابین هیدروکلراید ۳۸ میلی‌گرم / ۱ میلی‌لیتر ۵۲٫۶ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1009/Gemcitabine",
+        "url": "https://www.darooyab.ir/G-1009/Gemcitabine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-gemcitabine",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA202485"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202485",
+      "label": "ANDA202485"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44bcc16c-341d-49e8-a1c6-95d084667aca",
+      "label": "FDA Gemcitabine"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a696019.html",
+      "label": "Gemcitabine Injection"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a625100.html",
+      "label": "Gemcitabine Intravesical System"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01BC05",
+      "label": "L01BC05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1009/Gemcitabine",
+      "label": "Gemcitabine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on animal data and its mechanism of action, Gemcitabine for Injection can cause fetal harm when administered to a pregnant woman [see Clinical Pharmacology ( 12.1 )] .",
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Due to the potential for serious adverse reactions in breastfed infants from Gemcitabine for Injection, advise women not to breastfeed during treatment with Gemcitabine for Injection and for at least one week following the last dose.",
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Gemcitabine for Injection have not been established in pediatric patients.",
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "In clinical studies which enrolled 979 patients with various malignancies who received single agent Gemcitabine for Injection, no overall differences in safety were observed between patients aged 65 and older and younger patients, with the exception of a higher rate of Grade 3 or 4 thrombocytopenia in older patients …",
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Gemcitabine for Injection can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations ( 8.1 )].",
+      "refs": [
+        {
+          "source": "fda-gemcitabine",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "id": "doxorubicin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "دوکسوروبیسین",
+    "en": "Doxorubicin"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "آنتراسایکلین",
+    "en": "Anthracycline"
+  },
+  "brands": [
+    {
+      "name": "Adriamycin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "adriamycin",
+    "آدریامایسین",
+    "دوکسوروبیسین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-2",
+      "form": "injection",
+      "route": "iv",
+      "label": "2 mg/mL (10/20/50/150/200 mg)",
+      "concentration": {
+        "amount": 2,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-doxorubicin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "breast",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان کمکی (AC) — ۶۰ mg/m² بولوس وریدی روز ۱ هر ۲۱ روز، ۴ دوره",
+        "en": "Adjuvant breast cancer (AC) — 60 mg/m² IV bolus on day 1 every 21 days for 4 cycles"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 60,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-doxorubicin",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-doxorubicin",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mono",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سایر سرطان‌ها (تک‌دارو) — ۶۰ تا ۷۵ mg/m² هر ۲۱ روز",
+        "en": "Other cancers (single agent) — 60–75 mg/m² every 21 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 60,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-doxorubicin",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "ترکیبی: ۴۰ تا ۷۵ mg/m² هر ۲۱ تا ۲۸ روز. دوز تجمعی بالای ۵۵۰ mg/m² خطر کاردیومیوپاتی دارد. بیلی‌روبین ۱٫۲ تا ۳: ۵۰٪؛ ۳٫۱ تا ۵: ۲۵٪ دوز.",
+            "en": "Combination: 40–75 mg/m² every 21–28 days. Cumulative >550 mg/m² carries cardiomyopathy risk. Bilirubin 1.2–3: 50%; 3.1–5: 25% of dose."
+          },
+          "refs": [
+            {
+              "source": "fda-doxorubicin",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-doxorubicin",
+              "section": "2.4, Table 1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی شدید میوکارد؛ MI در ۴ تا ۶ هفته اخیر؛ سرکوب شدید و پایدار مغز استخوان؛ نارسایی شدید کبد (Child-Pugh C یا بیلی‌روبین >۵)؛ حساسیت شدید.",
+        "en": "Severe myocardial insufficiency; MI within 4–6 weeks; severe persistent myelosuppression; severe hepatic impairment (Child-Pugh C or bilirubin >5); severe hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-doxorubicin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: کاردیومیوپاتی وابسته به دوز تجمعی (LVEF پیش و حین درمان)؛ بدخیمی ثانویه (AML/MDS)؛ نشت و نکروز بافتی؛ سرکوب شدید مغز استخوان.",
+        "en": "Boxed warning: cumulative-dose cardiomyopathy (LVEF before and during); secondary malignancy (AML/MDS); extravasation and tissue necrosis; severe myelosuppression."
+      },
+      "refs": [
+        {
+          "source": "fda-doxorubicin",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "breast",
+      "formulation": "vial-2",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 120,
+        "mlPerDose": 60
+      }
+    },
+    {
+      "regimen": "mono",
+      "formulation": "vial-2",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 120,
+        "mlPerDose": 60
+      }
+    }
+  ],
+  "atc": [
+    "L01DB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "15971",
+        "en": "DOXORUBICIN 2MG/ML 25ML VIAL",
+        "fa": "ویال دوکسوروبیسین ۲ میلی‌گرم / میلی‌لیتر ۲۵ میلی‌لیتر"
+      },
+      {
+        "code": "15970",
+        "en": "DOXORUBICIN 2MG/ML 5ML VIAL",
+        "fa": "ویال دوکسوروبیسین ۲ میلی‌گرم / میلی‌لیتر ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00473",
+        "en": "DOXORUBICIN HCL 10MG VIAL",
+        "fa": "ویال دوکسوروبیسین هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "00472",
+        "en": "DOXORUBICIN HCL 50MG VIAL",
+        "fa": "ویال دوکسوروبیسین هیدروکلراید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "05845",
+        "en": "DOXORUBICIN LIPOSOMAL 20MG/10ML VIAL",
+        "fa": "ویال دوکسوروبیسین لیپوزومال ۲۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "07682",
+        "en": "DOXORUBICIN LIPOSOMAL 50MG VIAL",
+        "fa": "ویال دوکسوروبیسین لیپوزومال ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52280",
+        "en": "DOXORUBICIN HYDROCHLORIDE INJECTION, POWDER, FOR SOLUTION PARENTERAL 50 mg",
+        "fa": "پودر برای تهیه محلول تزریقی دوکسوروبیسین هیدروکلراید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "52279",
+        "en": "DOXORUBICIN HYDROCHLORIDE INJECTION, POWDER, FOR SOLUTION PARENTERAL 10 mg",
+        "fa": "پودر برای تهیه محلول تزریقی دوکسوروبیسین هیدروکلراید ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "50610",
+        "en": "DOXORUBICIN HYDROCHLORIDE (PEGYLATED) INJECTABLE, LIPOSOMAL PARENTERAL 2 mg/1mL 10 mL",
+        "fa": "فرآورده تزریقی دوکسوروبیسین هیدروکلراید (پجیلاتد) اینجکتابل لیپوزومال ۲ میلی‌گرم / ۱ میلی‌لیتر ۱۰ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-986/Doxorubicin",
+        "url": "https://www.darooyab.ir/G-986/Doxorubicin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-doxorubicin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA050629"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050629",
+      "label": "NDA050629"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fd148fb-0fbc-4b6f-b790-23546fb46a71",
+      "label": "FDA Doxorubicin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682221.html",
+      "label": "Doxorubicin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01DB01",
+      "label": "L01DB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-986/Doxorubicin",
+      "label": "Doxorubicin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings in animals and its mechanism of action, Doxorubicin Hydrochloride Injection can cause fetal harm when administered to a pregnant woman; avoid the use of Doxorubicin Hydrochloride Injection during the 1 st trimester.",
+      "refs": [
+        {
+          "source": "fda-doxorubicin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in the breastfed child, advise women not to breastfeed during treatment with Doxorubicin Hydrochloride Injection and for 10 days after the final dose.",
+      "refs": [
+        {
+          "source": "fda-doxorubicin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Based on postmarketing reports, pediatric patients treated with doxorubicin hydrochloride are at risk for developing late cardiovascular dysfunction.",
+      "refs": [
+        {
+          "source": "fda-doxorubicin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "Clinical experience in patients who were 65 years of age and older who received doxorubicin hydrochloride-based chemotherapy regimens for metastatic breast cancer showed no overall differences in safety and effectiveness compared with younger patients.",
+      "refs": [
+        {
+          "source": "fda-doxorubicin",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Doxorubicin Hydrochloride Injection can cause fetal harm when administered to pregnant women [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-doxorubicin",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

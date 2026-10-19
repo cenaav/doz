@@ -1,0 +1,256 @@
+{
+  "id": "exemestane",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اگزمستان",
+    "en": "Exemestane"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده آروماتاز استروئیدی",
+    "en": "Steroidal aromatase inactivator"
+  },
+  "brands": [
+    {
+      "name": "Aromasin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "aromasin",
+    "آروماسین",
+    "اگزمستان"
+  ],
+  "formulations": [
+    {
+      "id": "tab-25",
+      "form": "tablet",
+      "route": "oral",
+      "label": "25 mg tablet",
+      "concentration": {
+        "amount": 25,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-aromasin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bc",
+      "disease": "breast-cancer",
+      "label": {
+        "fa": "سرطان پستان ER مثبت در یائسگی (کمکی پس از تاموکسیفن یا پیشرفته) — ۲۵ mg یک بار پس از غذا",
+        "en": "ER-positive breast cancer after menopause (adjuvant after tamoxifen or advanced) — 25 mg once daily after a meal"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 25,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-aromasin",
+          "section": "2.1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با القاگر قوی CYP3A4 (ریفامپین، فنی‌توئین): ۵۰ mg.",
+            "en": "With strong CYP3A4 inducers (rifampin, phenytoin): 50 mg."
+          },
+          "refs": [
+            {
+              "source": "fda-aromasin",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به اگزمستان.",
+        "en": "Hypersensitivity to exemestane."
+      },
+      "refs": [
+        {
+          "source": "fda-aromasin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کاهش تراکم استخوان؛ ویتامین D پایش؛ همراه استروژن نه؛ در پیش از یائسگی نه؛ سمیت جنینی.",
+        "en": "Reduced bone mineral density; check vitamin D; not with oestrogens; not for premenopausal women; embryo-fetal toxicity."
+      },
+      "refs": [
+        {
+          "source": "fda-aromasin",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bc",
+      "formulation": "tab-25",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 25,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "L02BG06"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "02962",
+        "en": "EXEMESTANE 25MG TAB",
+        "fa": "قرص اکسمستان ۲۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-997/Exemestane",
+        "url": "https://www.darooyab.ir/G-997/Exemestane"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-aromasin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA020753"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020753",
+      "label": "NDA020753"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cf066b7a-032a-416c-8d40-15ba581423e3",
+      "label": "FDA Aromasin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607006.html",
+      "label": "Exemestane"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BG06",
+      "label": "L02BG06"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-997/Exemestane",
+      "label": "Exemestane"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings in animal studies and its mechanism of action , AROMASIN can cause fetal harm when administered to a pregnant woman [see Clinical Pharmacology (12.1) ] .",
+      "refs": [
+        {
+          "source": "fda-aromasin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information on the presence of exemestane in human milk, or on its effects on the breastfed infant or milk production.",
+      "refs": [
+        {
+          "source": "fda-aromasin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-aromasin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females AROMASIN can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations (8.1) ] .",
+      "refs": [
+        {
+          "source": "fda-aromasin",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

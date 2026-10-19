@@ -1,0 +1,347 @@
+{
+  "id": "etoposide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اتوپوزید",
+    "en": "Etoposide"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "مهارکننده توپوایزومراز II",
+    "en": "Topoisomerase II inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Toposar",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "vepesid",
+    "toposar",
+    "وپسید",
+    "اتوپوزاید",
+    "اتوپوزید"
+  ],
+  "formulations": [
+    {
+      "id": "vial-20",
+      "form": "injection",
+      "route": "iv",
+      "label": "20 mg/mL (100 mg/5 mL, 500 mg, 1 g)",
+      "concentration": {
+        "amount": 20,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-etoposide",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "testis",
+      "disease": "testicular-cancer",
+      "label": {
+        "fa": "سرطان بیضه (ترکیبی) — ۵۰ تا ۱۰۰ mg/m²/روز روزهای ۱ تا ۵",
+        "en": "Testicular cancer (combination) — 50–100 mg/m²/day on days 1–5"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 50,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-etoposide",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۱۰۰ mg/m²/روز روزهای ۱، ۳ و ۵. دوره‌ها هر ۳ تا ۴ هفته پس از بهبود سمیت. نارسایی کلیه طبق احتیاطات.",
+            "en": "Or 100 mg/m²/day on days 1, 3 and 5. Repeat courses every 3–4 weeks after recovery. Renal impairment per Precautions."
+          },
+          "refs": [
+            {
+              "source": "fda-etoposide",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-etoposide",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sclc",
+      "disease": "lung-cancer",
+      "label": {
+        "fa": "سرطان ریه سلول کوچک (ترکیبی) — ۳۵ mg/m²/روز ۴ روز تا ۵۰ mg/m²/روز ۵ روز",
+        "en": "Small-cell lung cancer (combination) — 35 mg/m²/day for 4 days to 50 mg/m²/day for 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 35,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-etoposide",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 4,
+        "max": 5
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه حساسیت به اتوپوزید یا اجزای فرآورده.",
+        "en": "Previous hypersensitivity to etoposide or any component."
+      },
+      "refs": [
+        {
+          "source": "fda-etoposide",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سرکوب شدید مغز استخوان با عفونت یا خونریزی.",
+        "en": "Boxed warning: severe myelosuppression with infection or bleeding."
+      },
+      "refs": [
+        {
+          "source": "fda-etoposide",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "testis",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 100,
+        "mlPerDose": 5
+      }
+    },
+    {
+      "regimen": "sclc",
+      "formulation": "vial-20",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 70,
+        "mlPerDose": 3.5
+      }
+    }
+  ],
+  "atc": [
+    "L01CB01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00517",
+        "en": "ETOPOSIDE 100MG CAP",
+        "fa": "کپسول اتوپوزاید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00518",
+        "en": "ETOPOSIDE 100MG/5ML AMP",
+        "fa": "آمپول اتوپوزاید ۱۰۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "18934",
+        "en": "ETOPOSIDE 200MG/10ML VIAL",
+        "fa": "ویال اتوپوزاید ۲۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "00519",
+        "en": "ETOPOSIDE 25MG CAP",
+        "fa": "کپسول اتوپوزاید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "18730",
+        "en": "ETOPOSIDE 50MG  VIAL",
+        "fa": "ویال اتوپوزاید ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00520",
+        "en": "ETOPOSIDE 50MG CAP",
+        "fa": "کپسول اتوپوزاید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-996/Etoposide",
+        "url": "https://www.darooyab.ir/G-996/Etoposide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-etoposide",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA074983"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=074983",
+      "label": "ANDA074983"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fe870629-104d-4d67-a7c6-f53bc588121e",
+      "label": "FDA Etoposide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a684055.html",
+      "label": "Etoposide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a697011.html",
+      "label": "Etoposide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01CB01",
+      "label": "L01CB01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-996/Etoposide",
+      "label": "Etoposide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Etoposide can cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-etoposide",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants from etoposide, a decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-etoposide",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-etoposide",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function (see PRECAUTIONS , Renal Impairment for recommended dosing adjustments in patients with renal impairment).",
+      "refs": [
+        {
+          "source": "fda-etoposide",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

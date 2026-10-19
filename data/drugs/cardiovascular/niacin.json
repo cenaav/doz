@@ -1,0 +1,304 @@
+{
+  "id": "niacin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "نیاسین (آهسته‌رهش)",
+    "en": "Niacin (extended-release)"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "کاهنده چربی خون (اسید نیکوتینیک)",
+    "en": "Lipid-modifying agent (nicotinic acid)"
+  },
+  "brands": [
+    {
+      "name": "Niaspan",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "niaspan",
+    "نیاسپان",
+    "nicotinic acid",
+    "اسید نیکوتینیک",
+    "نیاسین"
+  ],
+  "formulations": [
+    {
+      "id": "er-500",
+      "form": "tablet",
+      "route": "oral",
+      "label": "500 mg ER tablet (do not break)",
+      "concentration": {
+        "amount": 500,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-niacin-er",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "er-1000",
+      "form": "tablet",
+      "route": "oral",
+      "label": "1000 mg ER tablet (do not break)",
+      "concentration": {
+        "amount": 1000,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-niacin-er",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "lip",
+      "disease": "hyperlipidemia",
+      "label": {
+        "fa": "دیس‌لیپیدمی — شروع ۵۰۰ mg هنگام خواب؛ نگهدارنده ۱۰۰۰ تا ۲۰۰۰ mg یک بار",
+        "en": "Dyslipidaemia — start 500 mg at bedtime; maintenance 1000–2000 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 500,
+        "perDoseMax": 2000,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-niacin-er",
+          "section": "2.1"
+        },
+        {
+          "source": "fda-niacin-er",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "با میان‌وعده کم‌چرب هنگام خواب. در هر ۴ هفته بیش از ۵۰۰ mg افزایش نه. بیش از ۲۰۰۰ mg/روز توصیه نمی‌شود.",
+            "en": "At bedtime after a low-fat snack. Do not increase by more than 500 mg in any 4 weeks. Above 2000 mg/day not recommended."
+          },
+          "refs": [
+            {
+              "source": "fda-niacin-er",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-niacin-er",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "بیماری فعال کبد یا افزایش بی‌علت ترانس‌آمینازها؛ زخم پپتیک فعال؛ خونریزی شریانی؛ حساسیت.",
+        "en": "Active liver disease or unexplained transaminase elevation; active peptic ulcer; arterial bleeding; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-niacin-er",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "بدون کاهش رویداد قلبی؛ میوپاتی (به‌ویژه با استاتین)؛ آسیب کبد؛ افزایش قند و اسید اوریک؛ گرگرفتگی.",
+        "en": "No reduction in cardiovascular events; myopathy (especially with statins); liver injury; raised glucose and uric acid; flushing."
+      },
+      "refs": [
+        {
+          "source": "fda-niacin-er",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "lip",
+      "formulation": "er-500",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 500,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 2000
+      }
+    }
+  ],
+  "atc": [
+    "C10AD02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09226",
+        "en": "NICOTINIC ACID 1000MG TAB",
+        "fa": "قرص نیکوتینیک اسید ۱۰۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00898",
+        "en": "NICOTINIC ACID 100MG TAB",
+        "fa": "قرص نیکوتینیک اسید ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00899",
+        "en": "NICOTINIC ACID 25MG TAB",
+        "fa": "قرص نیکوتینیک اسید ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "00900",
+        "en": "NICOTINIC ACID 500MG TAB",
+        "fa": "قرص نیکوتینیک اسید ۵۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2915/Nicotinic-Acid",
+        "url": "https://www.darooyab.ir/G-2915/Nicotinic-Acid"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203578",
+      "label": "ANDA203578"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6e604319-e164-4056-ab80-b78b98c519c7",
+      "label": "FDA Niacin ER"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682518.html",
+      "label": "Niacin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AD02",
+      "label": "C10AD02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2915/Nicotinic-Acid",
+      "label": "Nicotinic-Acid"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Discontinue niacin extended-release when pregnancy is recognized in patients receiving the drug for the treatment of hyperlipidemia.",
+      "refs": [
+        {
+          "source": "fda-niacin-er",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfeeding infants, including hepatotoxicity, advise patients not to breastfeed during treatment with niacin extended-release.",
+      "refs": [
+        {
+          "source": "fda-niacin-er",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of niacin therapy in pediatric patients (≤ 16 years) have not been established.",
+      "refs": [
+        {
+          "source": "fda-niacin-er",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of 979 patients in clinical studies of niacin extended-release, 21% of the patients were age 65 and over.",
+      "refs": [
+        {
+          "source": "fda-niacin-er",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-niacin-er",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA203578"
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "id": "rifabutin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریفابوتین",
+    "en": "Rifabutin"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ریفامایسین",
+    "en": "Rifamycin"
+  },
+  "brands": [
+    {
+      "name": "Mycobutin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mycobutin",
+    "مایکوبوتین",
+    "ریفابوتین"
+  ],
+  "formulations": [
+    {
+      "id": "cap-150",
+      "form": "capsule",
+      "route": "oral",
+      "label": "150 mg capsule",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "capsule",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-rifabutin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mac",
+      "disease": "mac-infection",
+      "label": {
+        "fa": "پیشگیری MAC منتشر در HIV پیشرفته — ۳۰۰ mg یک بار در روز",
+        "en": "Prevention of disseminated MAC in advanced HIV — 300 mg once daily"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-rifabutin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "در تهوع: ۱۵۰ mg دو بار با غذا. در سل فعال تک‌دارویی نه (مقاومت). با لوپیناویر/ریتوناویر دست‌کم ۷۵٪ کاهش.",
+            "en": "If nausea: 150 mg twice daily with food. Never alone in active TB (resistance). With lopinavir/ritonavir reduce by at least 75%."
+          },
+          "refs": [
+            {
+              "source": "fda-rifabutin",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-rifabutin",
+              "section": "Warnings"
+            },
+            {
+              "source": "fda-rifabutin",
+              "section": "Precautions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ریفابوتین یا سایر ریفامایسین‌ها؛ کابوتگراویر/ریلپیویرین تزریقی.",
+        "en": "Hypersensitivity to rifabutin or other rifamycins; cabotegravir/rilpivirine injectable."
+      },
+      "refs": [
+        {
+          "source": "fda-rifabutin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "در سل فعال نباید برای پیشگیری MAC داده شود؛ اسهال C. difficile؛ تغییر رنگ ادرار و اشک؛ یووئیت.",
+        "en": "Must not be used for MAC prophylaxis in active TB; C. difficile diarrhoea; discoloured urine and tears; uveitis."
+      },
+      "refs": [
+        {
+          "source": "fda-rifabutin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr زیر ۳۰: دوز ۵۰٪ کم شود.",
+        "en": "CrCl <30: consider reducing the dose by 50%."
+      },
+      "refs": [
+        {
+          "source": "fda-rifabutin",
+          "section": "Dosage and Administration"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mac",
+      "formulation": "cap-150",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 2
+      }
+    }
+  ],
+  "atc": [
+    "J04AB04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "03016",
+        "en": "RIFABUTIN 150MG CAP",
+        "fa": "کپسول ریفابوتین ۱۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-491/Rifabutin",
+        "url": "https://www.darooyab.ir/G-491/Rifabutin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-rifabutin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA215041"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215041",
+      "label": "ANDA215041"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=baf8ec98-bd0c-4b87-a7ee-813335431b89",
+      "label": "FDA Rifabutin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a693009.html",
+      "label": "Rifabutin"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J04AB04",
+      "label": "J04AB04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-491/Rifabutin",
+      "label": "Rifabutin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Rifabutin should be used in pregnant women only if the potential benefit justifies the potential risk to the fetus.",
+      "refs": [
+        {
+          "source": "fda-rifabutin",
+          "section": "PREGNANCY"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk and because of the potential for serious adverse reactions in nursing infants, a decision should be made whether to discontinue nursing or discontinue the drug, taking into account the importance of the drug to the mother.",
+      "refs": [
+        {
+          "source": "fda-rifabutin",
+          "section": "NURSING MOTHERS"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness of rifabutin for prophylaxis of MAC in children have not been established.",
+      "refs": [
+        {
+          "source": "fda-rifabutin",
+          "section": "PEDIATRIC USE"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy (see CLINICAL PHARMACOLOGY ).",
+      "refs": [
+        {
+          "source": "fda-rifabutin",
+          "section": "GERIATRIC USE"
+        }
+      ]
+    }
+  }
+}

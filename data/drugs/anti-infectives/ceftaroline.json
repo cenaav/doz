@@ -1,0 +1,424 @@
+{
+  "id": "ceftaroline",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سفتارولین",
+    "en": "Ceftaroline fosamil"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "سفالوسپورین نسل پنجم (فعال علیه MRSA)",
+    "en": "Fifth-generation cephalosporin (anti-MRSA)"
+  },
+  "brands": [
+    {
+      "name": "Teflaro",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "teflaro",
+    "zinforo",
+    "تفلارو",
+    "سفتارولین"
+  ],
+  "formulations": [
+    {
+      "id": "vial-600",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "600 mg vial",
+      "concentration": {
+        "amount": 600,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-400",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "400 mg vial",
+      "concentration": {
+        "amount": 400,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "adult",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "عفونت حاد پوست (۵ تا ۱۴ روز) یا پنومونی اکتسابی (۵ تا ۷ روز) — بزرگسال ۶۰۰ mg هر ۱۲ ساعت",
+        "en": "ABSSSI (5–14 days) or CABP (5–7 days) — adult 600 mg every 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "allowedFormulations": [
+        "vial-600"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "انفوزیون ۵ تا ۶۰ دقیقه.",
+            "en": "Infuse over 5–60 min."
+          },
+          "refs": [
+            {
+              "source": "fda-teflaro",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cap",
+      "disease": "community-acquired-pneumonia",
+      "label": {
+        "fa": "پنومونی اکتسابی از جامعه — بزرگسال ۶۰۰ mg هر ۱۲ ساعت، ۵ تا ۷ روز",
+        "en": "Community-acquired pneumonia — adult 600 mg every 12 h for 5–7 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "2.1, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 7
+      },
+      "allowedFormulations": [
+        "vial-600"
+      ]
+    },
+    {
+      "id": "inf",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "کودک ۲ ماه تا <۲ سال — ۸ mg/kg هر ۸ ساعت",
+        "en": "Children 2 months–<2 y — 8 mg/kg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "month"
+        },
+        "maxAge": {
+          "value": 2,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 8,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "allowedFormulations": [
+        "vial-400"
+      ]
+    },
+    {
+      "id": "child",
+      "disease": "skin-soft-tissue-infection",
+      "label": {
+        "fa": "کودک ۲ تا <۱۸ سال و ≤۳۳ kg — ۱۲ mg/kg هر ۸ ساعت",
+        "en": "Children 2–<18 y and ≤33 kg — 12 mg/kg every 8 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "maxWeightKg": 33
+      },
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 12,
+        "intervalHours": 8
+      },
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "2.2, Table 2"
+        }
+      ],
+      "allowedFormulations": [
+        "vial-400"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "بالای ۳۳ kg: ۴۰۰ mg هر ۸ ساعت یا ۶۰۰ mg هر ۱۲ ساعت. زیر ۲ ماه فقط برای عفونت پوست طبق جدول ۳.",
+            "en": ">33 kg: 400 mg every 8 h or 600 mg every 12 h. Under 2 months only for ABSSSI per Table 3."
+          },
+          "refs": [
+            {
+              "source": "fda-teflaro",
+              "section": "2.2, Table 2"
+            },
+            {
+              "source": "fda-teflaro",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت جدی به سفتارولین یا سایر سفالوسپورین‌ها.",
+        "en": "Serious hypersensitivity to ceftaroline or other cephalosporins."
+      },
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "واکنش حساسیتی (حساسیت متقاطع با بتالاکتام‌ها)؛ اسهال C. difficile؛ عوارض عصبی (انسفالوپاتی، تشنج) به‌ویژه در نارسایی کلیه؛ تست کومبس مثبت.",
+        "en": "Hypersensitivity (beta-lactam cross-reactivity); C. difficile diarrhoea; neurological reactions (encephalopathy, seizures) especially in renal impairment; positive Coombs test."
+      },
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 51,
+      "severity": "warn",
+      "text": {
+        "fa": "ClCr ۵۰ و کمتر: کاهش دوز طبق جدول برچسب.",
+        "en": "CrCl ≤50: reduce dose per label table."
+      },
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "2.3"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "adult",
+      "formulation": "vial-600",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600,
+        "dosesPerDay": 2
+      }
+    },
+    {
+      "regimen": "cap",
+      "formulation": "vial-600",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600
+      }
+    },
+    {
+      "regimen": "inf",
+      "formulation": "vial-400",
+      "input": {
+        "ageMonths": 10,
+        "weightKg": 10
+      },
+      "expect": {
+        "perDose": 80
+      }
+    },
+    {
+      "regimen": "child",
+      "formulation": "vial-400",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 240
+      }
+    }
+  ],
+  "atc": [
+    "J01DI02"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4896/Ceftaroline",
+        "url": "https://www.darooyab.ir/G-4896/Ceftaroline"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=200327",
+      "label": "NDA200327"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3ecde48b-75a2-4beb-9999-369f3f61bb8a",
+      "label": "FDA Teflaro"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611014.html",
+      "label": "Ceftaroline Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J01DI02",
+      "label": "J01DI02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4896/Ceftaroline",
+      "label": "Ceftaroline"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no adequate studies with Teflaro in pregnant women that informed any drug associated risks.",
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "8.1"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Teflaro in the treatment of ABSSSI have been established in pediatric patients (at least 34 weeks gestational age and 12 days postnatal age).",
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection in this age group and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-teflaro",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-teflaro",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA200327"
+  }
+}

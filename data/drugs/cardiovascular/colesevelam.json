@@ -1,0 +1,299 @@
+{
+  "id": "colesevelam",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کولسولام",
+    "en": "Colesevelam"
+  },
+  "category": "cardiovascular",
+  "class": {
+    "fa": "جاذب اسید صفراوی",
+    "en": "Bile acid sequestrant"
+  },
+  "brands": [
+    {
+      "name": "Welchol",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "welchol",
+    "ولکول",
+    "کولسولام"
+  ],
+  "formulations": [
+    {
+      "id": "tab-625",
+      "form": "tablet",
+      "route": "oral",
+      "label": "625 mg tablet",
+      "concentration": {
+        "amount": 625,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-welchol",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pkt-3750",
+      "form": "sachet",
+      "route": "oral",
+      "label": "3.75 g packet for oral suspension",
+      "concentration": {
+        "amount": 3750,
+        "unit": "mg",
+        "perUnit": "sachet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-welchol",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "lip",
+      "disease": "hyperlipidemia",
+      "label": {
+        "fa": "هیپرلیپیدمی اولیه (بزرگسال و ۱۰ تا ۱۷ سال) یا دیابت نوع ۲ — ۳٫۷۵ g/روز (۶ قرص یک بار یا ۳ قرص دو بار) با غذا",
+        "en": "Primary hyperlipidaemia (adults and 10–17 y) or type 2 diabetes — 3.75 g/day (6 tablets once or 3 twice daily) with a meal"
+      },
+      "population": {
+        "minAge": {
+          "value": 10,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 3750,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-welchol",
+          "section": "2.2"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "یا یک بسته ۳٫۷۵ g روزانه. پیش از شروع تری‌گلیسرید؛ داروهای دیگر طبق برچسب با فاصله.",
+            "en": "Or one 3.75 g packet daily. Check triglycerides first; separate other drugs per label."
+          },
+          "refs": [
+            {
+              "source": "fda-welchol",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-welchol",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "تری‌گلیسرید بالای ۵۰۰ mg/dL؛ سابقه پانکراتیت ناشی از تری‌گلیسرید؛ سابقه انسداد روده.",
+        "en": "Triglycerides >500 mg/dL; history of hypertriglyceridaemia-induced pancreatitis; history of bowel obstruction."
+      },
+      "refs": [
+        {
+          "source": "fda-welchol",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "افزایش تری‌گلیسرید و پانکراتیت؛ انسداد گوارش؛ کمبود ویتامین‌های محلول در چربی؛ تداخل جذب داروها؛ فنیل‌کتونوری (سوسپانسیون).",
+        "en": "Raised triglycerides and pancreatitis; GI obstruction; fat-soluble vitamin deficiency; drug absorption interactions; PKU (suspension)."
+      },
+      "refs": [
+        {
+          "source": "fda-welchol",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "lip",
+      "formulation": "tab-625",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 3750,
+        "tabletsPerDoseRounded": 6
+      }
+    },
+    {
+      "regimen": "lip",
+      "formulation": "pkt-3750",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 3750,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "C10AC04"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1608/Colesevelam",
+        "url": "https://www.darooyab.ir/G-1608/Colesevelam"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021176",
+      "label": "NDA021176"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89cbd0a3-2d1b-41db-8c97-35ec67b7b09f",
+      "label": "FDA Welchol"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a699050.html",
+      "label": "Colesevelam"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AC04",
+      "label": "C10AC04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1608/Colesevelam",
+      "label": "Colesevelam"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: جذب سیستمیک ناچیز؛ مواجهه جنین انتظار نمی‌رود.",
+        "en": "Label: minimal systemic absorption; fetal exposure not expected."
+      },
+      "quote": "Risk Summary WELCHOL is not absorbed systemically following oral administration, and maternal use is not expected to result in fetal exposure to the drug.",
+      "refs": [
+        {
+          "source": "fda-welchol",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: مواجهه شیرخوار انتظار نمی‌رود.",
+        "en": "Label: infant exposure not expected."
+      },
+      "quote": "Risk Summary WELCHOL is not absorbed systemically by the mother following oral administration, and breastfeeding is not expected to result in exposure of the child to WELCHOL.",
+      "refs": [
+        {
+          "source": "fda-welchol",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Primary Hyperlipidemia The safety and effectiveness of WELCHOL to reduce LDL-C levels in boys and postmenarchal girls 10 to 17 years of age with HeFH who are unable to reach LDL-C target levels despite an adequate trial of dietary therapy and lifestyle modification have been established.",
+      "refs": [
+        {
+          "source": "fda-welchol",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Primary Hyperlipidemia Of the 1350 patients enrolled in the hyperlipidemia clinical studies, 349 (26%) were ≥65 years old, and 58 (4%) were ≥75 years old.",
+      "refs": [
+        {
+          "source": "fda-welchol",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Use of WELCHOL may reduce the efficacy of oral contraceptives.",
+      "refs": [
+        {
+          "source": "fda-welchol",
+          "section": "8.3"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-welchol",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021176"
+  }
+}

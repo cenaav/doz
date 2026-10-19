@@ -1,0 +1,416 @@
+{
+  "id": "cisplatin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیس‌پلاتین",
+    "en": "Cisplatin"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "ترکیب پلاتین",
+    "en": "Platinum compound"
+  },
+  "brands": [
+    {
+      "name": "Cisplatin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "platinol",
+    "سیسپلاتین",
+    "cisplatin"
+  ],
+  "formulations": [
+    {
+      "id": "vial-50",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "50 mg vial",
+      "concentration": {
+        "amount": 50,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "testis",
+      "disease": "testicular-cancer",
+      "label": {
+        "fa": "سرطان پیشرفته بیضه — ۲۰ mg/m² وریدی روزانه ۵ روز در هر دوره",
+        "en": "Advanced testicular cancer — 20 mg/m² IV daily for 5 days per cycle"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 20,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "2.2"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-cisplatin",
+              "section": "2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ovary",
+      "disease": "ovarian-cancer",
+      "label": {
+        "fa": "سرطان پیشرفته تخمدان — ۷۵ تا ۱۰۰ mg/m² روز ۱ هر ۳ تا ۴ هفته",
+        "en": "Advanced ovarian cancer — 75–100 mg/m² on day 1 every 3–4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 75,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "2.3"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عدد ماشین‌حساب حد پایین (۷۵ mg/m²) است.",
+            "en": "Calculator gives the lower bound (75 mg/m²)."
+          },
+          "refs": [
+            {
+              "source": "fda-cisplatin",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bladder",
+      "disease": "bladder-cancer",
+      "label": {
+        "fa": "سرطان پیشرفته مثانه — ۵۰ تا ۷۰ mg/m² هر ۳ تا ۴ هفته (درمان‌شده قبلی: ۵۰ mg/m² هر ۴ هفته)",
+        "en": "Advanced bladder cancer — 50–70 mg/m² every 3–4 weeks (heavily pretreated: 50 mg/m² every 4 weeks)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 50,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "2.4"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شدید به سیس‌پلاتین.",
+        "en": "Severe hypersensitivity to cisplatin."
+      },
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: نفروتوکسیسیتی شدید (هیدراتاسیون کافی و پایش کلیه و الکترولیت)، نوروپاتی محیطی، تهوع و استفراغ شدید (ضدتهوع پیش و پس)، سرکوب مغز استخوان.",
+        "en": "Boxed warning: severe nephrotoxicity (adequate hydration; monitor renal function and electrolytes), peripheral neuropathy, severe nausea/vomiting (antiemetics before and after), myelosuppression."
+      },
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "Boxed Warning"
+        },
+        {
+          "source": "fda-cisplatin",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "سمیت شنوایی؛ سمیت چشمی؛ حساسیت؛ بدخیمی ثانویه؛ سمیت جنینی. با وسایل آلومینیومی تماس نیابد.",
+        "en": "Ototoxicity; ocular toxicity; hypersensitivity; secondary malignancy; embryo-fetal toxicity. Avoid aluminium equipment."
+      },
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "5"
+        },
+        {
+          "source": "fda-cisplatin",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "testis",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 40
+      }
+    },
+    {
+      "regimen": "ovary",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 150
+      }
+    },
+    {
+      "regimen": "bladder",
+      "formulation": "vial-50",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 100
+      }
+    }
+  ],
+  "atc": [
+    "L01XA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00302",
+        "en": "CISPLATIN 0.5MG/ML 100ML INF",
+        "fa": "محلول انفوزیون سیس‌پلاتین ۰٫۵ میلی‌گرم / میلی‌لیتر ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "00301",
+        "en": "CISPLATIN 0.5MG/ML 20ML INF",
+        "fa": "محلول انفوزیون سیس‌پلاتین ۰٫۵ میلی‌گرم / میلی‌لیتر ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "11867",
+        "en": "CISPLATIN 10MG VIAL",
+        "fa": "ویال سیس‌پلاتین ۱۰ میلی‌گرم"
+      },
+      {
+        "code": "11868",
+        "en": "CISPLATIN 50MG VIAL",
+        "fa": "ویال سیس‌پلاتین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "22226",
+        "en": "CISPLATIN 50MG/50ML SOLUTION FOR INJ",
+        "fa": "فرآورده تزریقی سیس‌پلاتین ۵۰ میلی‌گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "52347",
+        "en": "CISPLATIN INJECTION, POWDER, FOR SOLUTION INTRAVENOUS 10 mg",
+        "fa": "پودر تزریقی سیس‌پلاتین ۱۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-970/Cisplatin",
+        "url": "https://www.darooyab.ir/G-970/Cisplatin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-cisplatin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA018057"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=018057",
+      "label": "NDA018057"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=508496cb-3441-46b3-a4fe-e0d440e6adc6",
+      "label": "FDA Cisplatin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a684036.html",
+      "label": "Cisplatin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01XA01",
+      "label": "L01XA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-970/Cisplatin",
+      "label": "Cisplatin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on human data from published literature, cisplatin for injection can cause fetal harm when administered to pregnant women.",
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions from cisplatin for injection in a breastfed child and because of the potential for tumorigenicity shown for cisplatin for injection, advise lactating women not to breastfeed during treatment with cisplatin for injection.",
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "Ototoxic effects may be more severe and detrimental in pediatric patients receiving cisplatin for injection, particularly in patients less than 5 years of age.",
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "… ptible to nephrotoxicity, myelosuppression, and infectious complications than are younger patients [see Warnings and Precautions ( 5.1 , 5.2 , 5.4 )].",
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Cisplatin for injection can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations ( 8.1 )] .",
+      "refs": [
+        {
+          "source": "fda-cisplatin",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

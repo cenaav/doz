@@ -1,0 +1,243 @@
+{
+  "id": "urokinase",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "اوروکیناز",
+    "en": "Urokinase"
+  },
+  "category": "blood",
+  "class": {
+    "fa": "ترومبولیتیک",
+    "en": "Thrombolytic"
+  },
+  "brands": [
+    {
+      "name": "Kinlytic",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "kinlytic",
+    "abbokinase",
+    "اوروکیناز"
+  ],
+  "formulations": [
+    {
+      "id": "vial-250k",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "250,000 IU vial",
+      "concentration": {
+        "amount": 250000,
+        "unit": "unit",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kinlytic",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "pe",
+      "disease": "pulmonary-embolism",
+      "label": {
+        "fa": "آمبولی ریه حاد — بارگذاری ۴۴۰۰ واحد/kg طی ۱۰ دقیقه، سپس ۴۴۰۰ واحد/kg/ساعت ۱۲ ساعت",
+        "en": "Acute pulmonary embolism — loading 4,400 IU/kg over 10 min, then 4,400 IU/kg/h for 12 h"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "weightBased",
+      "unit": "unit",
+      "dose": {
+        "perKgPerDose": 4400,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-kinlytic",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "عدد ماشین‌حساب دوز بارگذاری است؛ انفوزیون نگهدارنده همان مقدار در هر ساعت به مدت ۱۲ ساعت. هرچه زودتر پس از شروع آمبولی. پس از پایان، هپارین بدون بولوس.",
+            "en": "The calculator gives the loading dose; the maintenance infusion is the same amount per hour for 12 h. Start as soon as possible after PE onset. Afterwards, heparin without a bolus."
+          },
+          "refs": [
+            {
+              "source": "fda-kinlytic",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "خونریزی داخلی فعال؛ سکته مغزی، جراحی داخل جمجمه یا نخاع در ۲ ماه اخیر؛ ترومای اخیر از جمله CPR؛ تومور، AVM یا آنوریسم داخل جمجمه؛ اختلال خونریزی‌دهنده؛ فشار خون شدید کنترل‌نشده؛ حساسیت.",
+        "en": "Active internal bleeding; stroke, intracranial or intraspinal surgery within 2 months; recent trauma including CPR; intracranial neoplasm, AVM or aneurysm; bleeding diathesis; severe uncontrolled hypertension; hypersensitivity."
+      },
+      "refs": [
+        {
+          "source": "fda-kinlytic",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "خونریزی جدی و کشنده (داخل جمجمه، رتروپریتوئن)؛ با سایر ضدانعقادها خطر بیشتر.",
+        "en": "Serious and fatal bleeding (intracranial, retroperitoneal); higher with other anticoagulants."
+      },
+      "refs": [
+        {
+          "source": "fda-kinlytic",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "pe",
+      "formulation": "vial-250k",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 308000
+      }
+    }
+  ],
+  "atc": [
+    "B01AD04"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "01271",
+        "en": "UROKINASE 250,000U VIAL",
+        "fa": "ویال اوروکیناس ۲۵۰ ۰۰۰ واحد"
+      },
+      {
+        "code": "01272",
+        "en": "UROKINASE 75,000U VIAL",
+        "fa": "ویال اوروکیناس ۷۵ ۰۰۰ واحد"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-1928/Urokinase",
+        "url": "https://www.darooyab.ir/G-1928/Urokinase"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfe5cfb9-591d-4df8-12a3-6555cde3185d",
+      "label": "FDA Kinlytic"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AD04",
+      "label": "B01AD04"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-1928/Urokinase",
+      "label": "Urokinase"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Pregnancy Category B: Reproduction studies have been performed in mice and rats at doses up to 1,000 times the human dose and have revealed no evidence of impaired fertility or harm to the fetus due to Kinlytic™.",
+      "refs": [
+        {
+          "source": "fda-kinlytic",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when Kinlytic™ is administered to a nursing woman.",
+      "refs": [
+        {
+          "source": "fda-kinlytic",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-kinlytic",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Kinlytic™ should be used with caution in elderly patients.",
+      "refs": [
+        {
+          "source": "fda-kinlytic",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

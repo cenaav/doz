@@ -1,0 +1,340 @@
+{
+  "id": "carboplatin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "کربوپلاتین",
+    "en": "Carboplatin"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "ترکیب پلاتین",
+    "en": "Platinum compound"
+  },
+  "brands": [
+    {
+      "name": "Paraplatin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "paraplatin",
+    "کربوپلاتین",
+    "carboplatin"
+  ],
+  "formulations": [
+    {
+      "id": "vial-10",
+      "form": "injection",
+      "route": "iv",
+      "label": "10 mg/mL (50/150/450/600 mg)",
+      "concentration": {
+        "amount": 10,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-carboplatin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mono",
+      "disease": "ovarian-cancer",
+      "label": {
+        "fa": "سرطان عودکننده تخمدان (تک‌دارو) — ۳۶۰ mg/m² روز ۱ هر ۴ هفته",
+        "en": "Recurrent ovarian cancer (single agent) — 360 mg/m² on day 1 every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 360,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-carboplatin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "جایگزین: دوز بر اساس فرمول (Calvert: AUC × [GFR + ۲۵]). تا نوتروفیل ≥۲۰۰۰ و پلاکت ≥۱۰۰ هزار تکرار نشود.",
+            "en": "Alternative: formula dosing (Calvert: AUC × [GFR + 25]). Do not repeat until neutrophils ≥2,000 and platelets ≥100,000."
+          },
+          "refs": [
+            {
+              "source": "fda-carboplatin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص شیمی‌درمانی و در مرکز مجهز. عدد ماشین‌حساب = mg/m² برچسب × سطح بدن (Mosteller)؛ پروتکل، فاصله دوره‌ها، تنظیم بر اساس CBC و عملکرد کلیه/کبد با تیم انکولوژی.",
+            "en": "Only under an oncologist in an equipped centre. Calculator = label mg/m² × BSA (Mosteller); protocol, cycle interval and adjustment for CBC and renal/hepatic function rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-carboplatin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combo",
+      "disease": "ovarian-cancer",
+      "label": {
+        "fa": "سرطان پیشرفته تخمدان (با سیکلوفسفامید) — ۳۰۰ mg/m² روز ۱ هر ۴ هفته، ۶ دوره",
+        "en": "Advanced ovarian cancer (with cyclophosphamide) — 300 mg/m² on day 1 every 4 weeks for 6 cycles"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 300,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-carboplatin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه آلرژی شدید به سیس‌پلاتین یا سایر ترکیبات پلاتین؛ سرکوب شدید مغز استخوان یا خونریزی قابل‌توجه.",
+        "en": "History of severe allergy to cisplatin or other platinum compounds; severe bone-marrow depression or significant bleeding."
+      },
+      "refs": [
+        {
+          "source": "fda-carboplatin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: سرکوب مغز استخوان (عفونت، خونریزی)، استفراغ، واکنش شبه‌آنافیلاکسی ظرف چند دقیقه.",
+        "en": "Boxed warning: bone-marrow suppression (infection, bleeding), vomiting, anaphylactic-like reactions within minutes."
+      },
+      "refs": [
+        {
+          "source": "fda-carboplatin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mono",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 720,
+        "mlPerDose": 72
+      }
+    },
+    {
+      "regimen": "combo",
+      "formulation": "vial-10",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 600,
+        "mlPerDose": 60
+      }
+    }
+  ],
+  "atc": [
+    "L01XA02"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "00214",
+        "en": "CARBOPLATIN 150MG VIAL",
+        "fa": "ویال کربوپلاتین ۱۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02376",
+        "en": "CARBOPLATIN 150MG/15ML AMP",
+        "fa": "آمپول کربوپلاتین ۱۵۰ میلی‌گرم / ۱۵ میلی‌لیتر"
+      },
+      {
+        "code": "13830",
+        "en": "CARBOPLATIN 450MG/45ML VIAL",
+        "fa": "ویال کربوپلاتین ۴۵۰ میلی‌گرم / ۴۵ میلی‌لیتر"
+      },
+      {
+        "code": "13458",
+        "en": "CARBOPLATIN 50MG AMP",
+        "fa": "آمپول کربوپلاتین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "00215",
+        "en": "CARBOPLATIN 50MG VIAL",
+        "fa": "ویال کربوپلاتین ۵۰ میلی‌گرم"
+      },
+      {
+        "code": "02375",
+        "en": "CARBOPLATIN 50MG/5ML VIAL",
+        "fa": "ویال کربوپلاتین ۵۰ میلی‌گرم / ۵ میلی‌لیتر"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-962/Carboplatin",
+        "url": "https://www.darooyab.ir/G-962/Carboplatin"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-carboplatin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA077861"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=077861",
+      "label": "ANDA077861"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4c89cedc-e48b-445c-ad05-54dbe60e4fb0",
+      "label": "FDA Carboplatin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a695017.html",
+      "label": "Carboplatin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01XA02",
+      "label": "L01XA02"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-962/Carboplatin",
+      "label": "Carboplatin"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Pregnancy Category D See WARNINGS.",
+      "refs": [
+        {
+          "source": "fda-carboplatin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because there is a possibility of toxicity in nursing infants secondary to carboplatin treatment of the mother, it is recommended that breast-feeding be discontinued if the mother is treated with carboplatin injection.",
+      "refs": [
+        {
+          "source": "fda-carboplatin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "Safety and effectiveness in pediatric patients have not been established (see WARNINGS : \"audiologic toxicity\").",
+      "refs": [
+        {
+          "source": "fda-carboplatin",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Of the 789 patients in initial treatment combination therapy studies (NCIC and SWOG), 395 patients were treated with carboplatin in combination with cyclophosphamide.",
+      "refs": [
+        {
+          "source": "fda-carboplatin",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  }
+}

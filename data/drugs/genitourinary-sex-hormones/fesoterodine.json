@@ -1,0 +1,318 @@
+{
+  "id": "fesoterodine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "فزوترودین",
+    "en": "Fesoterodine"
+  },
+  "category": "genitourinary-sex-hormones",
+  "class": {
+    "fa": "آنتی‌موسکارینی",
+    "en": "Antimuscarinic"
+  },
+  "brands": [
+    {
+      "name": "Toviaz",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "toviaz",
+    "توویاز",
+    "فزوترودین"
+  ],
+  "formulations": [
+    {
+      "id": "er-4",
+      "form": "tablet",
+      "route": "oral",
+      "label": "4 mg ER tablet",
+      "concentration": {
+        "amount": 4,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "er-8",
+      "form": "tablet",
+      "route": "oral",
+      "label": "8 mg ER tablet",
+      "concentration": {
+        "amount": 8,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "oab",
+      "disease": "overactive-bladder",
+      "label": {
+        "fa": "مثانه بیش‌فعال بزرگسال — ۴ mg یک بار؛ تا ۸ mg",
+        "en": "Overactive bladder, adults — 4 mg once daily; up to 8 mg"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4,
+        "perDoseMax": 8,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "ndo",
+      "disease": "neurogenic-bladder",
+      "label": {
+        "fa": "بیش‌فعالی دترسور نوروژنیک کودک ۶ سال به بالا و >۲۵ kg — ۴ mg یک بار؛ بالای ۳۵ kg پس از یک هفته ۸ mg",
+        "en": "Neurogenic detrusor overactivity, children ≥6 y and >25 kg — 4 mg once daily; >35 kg increase to 8 mg after one week"
+      },
+      "population": {
+        "minAge": {
+          "value": 6,
+          "unit": "year"
+        },
+        "maxAge": {
+          "value": 18,
+          "unit": "year"
+        },
+        "minWeightKg": 25.01
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 4,
+        "perDoseMax": 8,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "2"
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به فزوترودین یا تولترودین؛ احتباس ادرار؛ احتباس معده؛ گلوکوم زاویه بسته کنترل‌نشده.",
+        "en": "Hypersensitivity to fesoterodine or tolterodine; urinary retention; gastric retention; uncontrolled narrow-angle glaucoma."
+      },
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "آنژیوادم؛ احتباس ادرار؛ کاهش حرکات گوارش؛ عوارض CNS؛ تشدید میاستنی گراو.",
+        "en": "Angioedema; urinary retention; decreased GI motility; CNS effects; worsening myasthenia gravis."
+      },
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "egfrBelow": 30,
+      "severity": "warn",
+      "text": {
+        "fa": "بزرگسال ClCr ۱۵ تا ۲۹: حداکثر ۴ mg؛ کمتر طبق جدول ۱.",
+        "en": "Adults CrCl 15–29: max 4 mg; lower per Table 1."
+      },
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "2.3, Table 1"
+        }
+      ]
+    }
+  ],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "oab",
+      "formulation": "er-4",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 4,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 8
+      }
+    },
+    {
+      "regimen": "ndo",
+      "formulation": "er-4",
+      "input": {
+        "ageYears": 10,
+        "weightKg": 40
+      },
+      "expect": {
+        "perDose": 4,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 8
+      }
+    }
+  ],
+  "atc": [
+    "G04BD11"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-4916/Fesoterodine",
+        "url": "https://www.darooyab.ir/G-4916/Fesoterodine"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022030",
+      "label": "NDA022030"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5be745f0-8ae7-4c3c-9962-37d6263326f1",
+      "label": "FDA Toviaz"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609021.html",
+      "label": "Fesoterodine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G04BD11",
+      "label": "G04BD11"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-4916/Fesoterodine",
+      "label": "Fesoterodine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data with the use of Toviaz in pregnant women and adolescents to evaluate for a drug-associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There is no information on the presence of fesoterodine in human milk, the effects on the breastfed child, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Toviaz have been established for the treatment of neurogenic detrusor overactivity (NDO) in pediatric patients aged 6 years and older and weighing greater than 25 kg.",
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dose adjustment is recommended for the elderly.",
+      "refs": [
+        {
+          "source": "fda-toviaz",
+          "section": "8.5"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-toviaz",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022030"
+  }
+}

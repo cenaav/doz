@@ -1,0 +1,293 @@
+{
+  "id": "rasburicase",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "راسبوریکاز",
+    "en": "Rasburicase"
+  },
+  "category": "various",
+  "class": {
+    "fa": "اوریکاز نوترکیب",
+    "en": "Recombinant urate oxidase"
+  },
+  "brands": [
+    {
+      "name": "Elitek",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "elitek",
+    "fasturtec",
+    "الیتک",
+    "راسبوریکاز"
+  ],
+  "formulations": [
+    {
+      "id": "vial-7-5",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "7.5 mg vial",
+      "concentration": {
+        "amount": 7.5,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-elitek",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "vial-1-5",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "1.5 mg vial",
+      "concentration": {
+        "amount": 1.5,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-elitek",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "tls",
+      "disease": "tumor-lysis-syndrome",
+      "label": {
+        "fa": "کنترل اسید اوریک در شیمی‌درمانی لوسمی، لنفوم و تومور جامد — ۰٫۲ mg/kg انفوزیون ۳۰ دقیقه روزانه، تا ۵ روز",
+        "en": "Uric acid control in chemotherapy for leukaemia, lymphoma and solid tumours — 0.2 mg/kg 30-min infusion daily for up to 5 days"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 0.2,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-elitek",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "بیش از ۵ روز یا بیش از یک دوره توصیه نمی‌شود. بولوس نه؛ رقیق تا ۵۰ mL. پیش از شروع تست G6PD.",
+            "en": "Not beyond 5 days or more than one course. Never bolus; dilute to 50 mL. Screen G6PD first."
+          },
+          "refs": [
+            {
+              "source": "fda-elitek",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-elitek",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-elitek",
+              "section": "Boxed Warning"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "سابقه آنافیلاکسی یا حساسیت شدید، همولیز یا مت‌هموگلوبینمی با راسبوریکاز؛ کمبود G6PD.",
+        "en": "History of anaphylaxis or severe hypersensitivity, haemolysis or methaemoglobinaemia with rasburicase; G6PD deficiency."
+      },
+      "refs": [
+        {
+          "source": "fda-elitek",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: آنافیلاکسی، همولیز (G6PD)، مت‌هموگلوبینمی و تداخل با اندازه‌گیری اسید اوریک (نمونه روی یخ).",
+        "en": "Boxed warning: anaphylaxis, haemolysis (G6PD), methaemoglobinaemia and interference with uric acid measurement (sample on ice)."
+      },
+      "refs": [
+        {
+          "source": "fda-elitek",
+          "section": "Boxed Warning"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "tls",
+      "formulation": "vial-7-5",
+      "input": {
+        "ageYears": 40,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 14
+      }
+    },
+    {
+      "regimen": "tls",
+      "formulation": "vial-1-5",
+      "input": {
+        "ageYears": 6,
+        "weightKg": 20
+      },
+      "expect": {
+        "perDose": 4
+      }
+    }
+  ],
+  "atc": [
+    "V03AF07"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "12102",
+        "en": "RASBURICASE 1.5MG VIAL",
+        "fa": "ویال راسبوریکاس ۱٫۵ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-763/Rasburicase",
+        "url": "https://www.darooyab.ir/G-763/Rasburicase"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "BLA",
+    "refs": [
+      {
+        "source": "fda-elitek",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "BLA103946"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103946",
+      "label": "BLA103946"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0ae10bc4-6b65-402f-9db5-2d7753054922",
+      "label": "FDA Elitek"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a610008.html",
+      "label": "Rasburicase Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AF07",
+      "label": "V03AF07"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-763/Rasburicase",
+      "label": "Rasburicase"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on findings in animals, Elitek may cause fetal harm when administered to pregnant women.",
+      "refs": [
+        {
+          "source": "fda-elitek",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in the breastfed child, advise patients that breastfeeding is not recommended during treatment with Elitek, and for 2 weeks after the last dose.",
+      "refs": [
+        {
+          "source": "fda-elitek",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of Elitek have been established in pediatric patients ages 1 month to 17 years for initial management of plasma uric acid levels in patients with leukemia, lymphoma, and solid tumor malignancies who are receiving anticancer therapy expected to result in tumor lysis and subsequent elevation …",
+      "refs": [
+        {
+          "source": "fda-elitek",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No overall differences in pharmacokinetics, safety, and effectiveness were observed between the elderly and younger patients.",
+      "refs": [
+        {
+          "source": "fda-elitek",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

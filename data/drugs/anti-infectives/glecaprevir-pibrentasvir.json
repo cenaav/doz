@@ -1,0 +1,266 @@
+{
+  "id": "glecaprevir-pibrentasvir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "گلکاپرویر/پیبرنتاسویر",
+    "en": "Glecaprevir/pibrentasvir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ضد ویروس مستقیم HCV (پان‌ژنوتیپ)",
+    "en": "Pangenotypic HCV direct-acting antiviral"
+  },
+  "brands": [
+    {
+      "name": "Mavyret",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "mavyret",
+    "maviret",
+    "ماویرت",
+    "glecaprevir",
+    "گلکاپرویر"
+  ],
+  "formulations": [
+    {
+      "id": "tab-100",
+      "form": "tablet",
+      "route": "oral",
+      "label": "100 mg glecaprevir / 40 mg pibrentasvir tablet",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-mavyret",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "hcv",
+      "disease": "hepatitis-c",
+      "label": {
+        "fa": "هپاتیت C همه ژنوتیپ‌ها (بزرگسال و ≥۱۲ سال یا ≥۴۵ kg) — ۳ قرص با هم یک بار با غذا؛ درمان‌نشده ۸ هفته",
+        "en": "Hepatitis C, all genotypes (adults and ≥12 y or ≥45 kg) — 3 tablets together once daily with food; treatment-naive 8 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 3,
+          "unit": "year"
+        },
+        "minWeightKg": 45
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 300,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-mavyret",
+          "section": "2.3"
+        },
+        {
+          "source": "fda-mavyret",
+          "section": "2.4"
+        }
+      ],
+      "doseComponent": "glecaprevir",
+      "notes": [
+        {
+          "text": {
+            "fa": "مدت طبق جداول ۱ و ۲ (درمان‌شده قبلی یا پیوند ۱۲ تا ۱۶ هفته). ۳ تا <۱۲ سال و زیر ۴۵ kg: پلت بر اساس وزن. هر درجه نارسایی کلیه تنظیم ندارد.",
+            "en": "Duration per Tables 1–2 (experienced or transplant 12–16 weeks). 3–<12 y and <45 kg: weight-based pellets. No adjustment for any renal impairment."
+          },
+          "refs": [
+            {
+              "source": "fda-mavyret",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-mavyret",
+              "section": "2.6"
+            },
+            {
+              "source": "fda-mavyret",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "نارسایی متوسط یا شدید کبد (Child-Pugh B/C) یا سابقه جبران‌نشدن کبد؛ آتازاناویر یا ریفامپین همزمان.",
+        "en": "Moderate or severe hepatic impairment (Child-Pugh B/C) or prior hepatic decompensation; concomitant atazanavir or rifampin."
+      },
+      "refs": [
+        {
+          "source": "fda-mavyret",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "هشدار جعبه‌ای: فعال شدن مجدد HBV در عفونت همزمان (گاه نارسایی کبد و مرگ) — پیش از شروع HBsAg و anti-HBc.",
+        "en": "Boxed warning: HBV reactivation in HCV/HBV co-infection (sometimes fulminant hepatitis and death) — test HBsAg and anti-HBc first."
+      },
+      "refs": [
+        {
+          "source": "fda-mavyret",
+          "section": "Boxed Warning"
+        }
+      ]
+    },
+    {
+      "text": {
+        "fa": "جبران‌نشدن یا نارسایی کبد در سیروز پیشرفته.",
+        "en": "Hepatic decompensation/failure in advanced cirrhosis."
+      },
+      "refs": [
+        {
+          "source": "fda-mavyret",
+          "section": "5.2"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "hcv",
+      "formulation": "tab-100",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 300,
+        "tabletsPerDoseRounded": 3
+      }
+    }
+  ],
+  "atc": [
+    "J05AP57"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Glecaprevir/pibrentasvir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-mavyret",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA209394"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209394",
+      "label": "NDA209394"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bf99777-0401-9095-8645-16c6e907fcc0",
+      "label": "FDA Mavyret"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AP57",
+      "label": "J05AP57"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary No adequate human data are available to establish whether or not MAVYRET poses a risk to pregnancy outcomes.",
+      "refs": [
+        {
+          "source": "fda-mavyret",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "When administered to lactating rodents, the components of MAVYRET were present in milk, without effect on growth and development observed in the nursing pups (see Data ) .",
+      "refs": [
+        {
+          "source": "fda-mavyret",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "No dosage adjustment of MAVYRET is required in pediatric patients 12 years and older or weighing at least 45 kg.",
+      "refs": [
+        {
+          "source": "fda-mavyret",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "ok",
+      "text": {
+        "fa": "برچسب: در سالمندان تفاوت یا تنظیم دوز خاصی ذکر نشده.",
+        "en": "Label: no specific difference or dose adjustment stated for older adults."
+      },
+      "quote": "No dosage adjustment of MAVYRET is warranted in geriatric patients [see Clinical Pharmacology ( 12.3 ) ] .",
+      "refs": [
+        {
+          "source": "fda-mavyret",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

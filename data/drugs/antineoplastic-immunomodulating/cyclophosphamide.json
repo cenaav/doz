@@ -1,0 +1,312 @@
+{
+  "id": "cyclophosphamide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیکلوفسفامید",
+    "en": "Cyclophosphamide"
+  },
+  "category": "antineoplastic-immunomodulating",
+  "class": {
+    "fa": "عامل آلکیله‌کننده",
+    "en": "Alkylating agent"
+  },
+  "brands": [
+    {
+      "name": "Cyclophosphamide",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "cytoxan",
+    "endoxan",
+    "اندوکسان",
+    "سیکلوفسفامید"
+  ],
+  "formulations": [
+    {
+      "id": "vial-200",
+      "form": "injection",
+      "route": "iv",
+      "label": "200 mg/mL (500 mg/2.5 mL, 1 g/5 mL)",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-cyclophosphamide-inj",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "repeat",
+      "disease": "b-cell-lymphoma",
+      "label": {
+        "fa": "بدخیمی‌ها (بزرگسال و کودک) — ۱۰ تا ۱۵ mg/kg وریدی هر ۷ تا ۱۰ روز",
+        "en": "Malignant diseases (adults and children) — 10–15 mg/kg IV every 7–10 days"
+      },
+      "population": {},
+      "type": "weightBased",
+      "unit": "mg",
+      "dose": {
+        "perKgPerDose": 10,
+        "perKgPerDoseMax": 15,
+        "intervalHours": 24
+      },
+      "refs": [
+        {
+          "source": "fda-cyclophosphamide-inj",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "دوره اول بدون نقص خونی: ۴۰ تا ۵۰ mg/kg تقسیم طی ۲ تا ۵ روز؛ یا ۳ تا ۵ mg/kg دو بار در هفته. مایعات فراوان و صبح تجویز (سمیت مثانه).",
+            "en": "Initial course without haematological deficit: 40–50 mg/kg divided over 2–5 days; or 3–5 mg/kg twice weekly. Ample fluids and morning dosing (bladder toxicity)."
+          },
+          "refs": [
+            {
+              "source": "fda-cyclophosphamide-inj",
+              "section": "2"
+            },
+            {
+              "source": "fda-cyclophosphamide-inj",
+              "section": "2.1"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر متخصص شیمی‌درمانی؛ پروتکل و تنظیم با تیم انکولوژی.",
+            "en": "Only under an oncologist; protocol and adjustment rest with the oncology team."
+          },
+          "refs": [
+            {
+              "source": "fda-cyclophosphamide-inj",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت شدید به سیکلوفسفامید یا متابولیت‌ها؛ انسداد خروجی ادرار.",
+        "en": "Severe hypersensitivity to cyclophosphamide or its metabolites; urinary outflow obstruction."
+      },
+      "refs": [
+        {
+          "source": "fda-cyclophosphamide-inj",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سرکوب مغز استخوان و ایمنی؛ سمیت ادراری (سیستیت هموراژیک) و کلیه؛ سمیت قلب و ریه؛ بدخیمی ثانویه؛ بیماری انسدادی ورید کبد؛ ناباروری؛ سمیت جنینی؛ هیپوناترمی.",
+        "en": "Myelosuppression and immunosuppression; urinary (haemorrhagic cystitis) and renal toxicity; cardiac and pulmonary toxicity; secondary malignancy; hepatic veno-occlusive disease; infertility; embryo-fetal toxicity; hyponatraemia."
+      },
+      "refs": [
+        {
+          "source": "fda-cyclophosphamide-inj",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "repeat",
+      "formulation": "vial-200",
+      "input": {
+        "ageYears": 50,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 800,
+        "mlPerDose": 4,
+        "upperPerDose": 1200
+      }
+    }
+  ],
+  "atc": [
+    "L01AA01"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "09391",
+        "en": "CYCLOPHOSPHAMIDE 1000MG VIAL",
+        "fa": "ویال سیکلوفسفامید ۱۰۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00368",
+        "en": "CYCLOPHOSPHAMIDE 200MG VIAL",
+        "fa": "ویال سیکلوفسفامید ۲۰۰ میلی‌گرم"
+      },
+      {
+        "code": "11434",
+        "en": "CYCLOPHOSPHAMIDE 30MG/5ML VIAL",
+        "fa": "ویال سیکلوفسفامید ۳۰ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00370",
+        "en": "CYCLOPHOSPHAMIDE 500MG VIAL",
+        "fa": "ویال سیکلوفسفامید ۵۰۰ میلی‌گرم"
+      },
+      {
+        "code": "00369",
+        "en": "CYCLOPHOSPHAMIDE 50MG TAB",
+        "fa": "قرص سیکلوفسفامید ۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-975/Cyclophosphamide",
+        "url": "https://www.darooyab.ir/G-975/Cyclophosphamide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-cyclophosphamide-inj",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA216783"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216783",
+      "label": "ANDA216783"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c961a1ac-6705-4756-9abc-9d84a6fcb5c8",
+      "label": "FDA Cyclophosphamide inj"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682080.html",
+      "label": "Cyclophosphamide"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a611044.html",
+      "label": "Cyclophosphamide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01AA01",
+      "label": "L01AA01"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-975/Cyclophosphamide",
+      "label": "Cyclophosphamide"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on its mechanism of action and published reports of effects in pregnant patients or animals, Cyclophosphamide Injection can cause fetal harm when administered to a pregnant woman [see Clinical Pharmacology ( 12.1 ) and Nonclinical Toxicology ( 13.1 )].",
+      "refs": [
+        {
+          "source": "fda-cyclophosphamide-inj",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in a breastfed child from Cyclophosphamide Injection, advise lactating women not to breastfeed during the treatment and for 1 week after the last dose.",
+      "refs": [
+        {
+          "source": "fda-cyclophosphamide-inj",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of cyclophosphamide have been established in pediatric patients and information on this use is discussed throughout the labeling.",
+      "refs": [
+        {
+          "source": "fda-cyclophosphamide-inj",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac functioning, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-cyclophosphamide-inj",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Females Advise females of reproductive potential to use effective contraception during treatment with Cyclophosphamide Injection and for up to 1 year after completion of therapy.",
+      "refs": [
+        {
+          "source": "fda-cyclophosphamide-inj",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

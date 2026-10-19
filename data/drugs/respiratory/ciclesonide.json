@@ -1,0 +1,274 @@
+{
+  "id": "ciclesonide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "سیکلزونید",
+    "en": "Ciclesonide"
+  },
+  "category": "respiratory",
+  "class": {
+    "fa": "کورتیکواستروئید استنشاقی",
+    "en": "Inhaled corticosteroid"
+  },
+  "brands": [
+    {
+      "name": "Alvesco",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "alvesco",
+    "آلوسکو",
+    "سیکلزونید"
+  ],
+  "formulations": [
+    {
+      "id": "hfa-80",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "80 mcg per actuation",
+      "concentration": {
+        "amount": 80,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-alvesco",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "hfa-160",
+      "form": "inhaler",
+      "route": "inhaled",
+      "label": "160 mcg per actuation",
+      "concentration": {
+        "amount": 160,
+        "unit": "mcg",
+        "perUnit": "actuation"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-alvesco",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "asthma",
+      "disease": "asthma",
+      "label": {
+        "fa": "نگهدارنده آسم (۱۲ سال به بالا) — ۸۰ mcg دو بار (حداکثر ۱۶۰ یا ۳۲۰ mcg دو بار بر اساس درمان قبلی)",
+        "en": "Asthma maintenance (≥12 y) — 80 mcg twice daily (max 160 or 320 mcg twice daily by prior therapy)"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mcg",
+      "dose": {
+        "perDose": 80,
+        "perDoseMax": 320,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-alvesco",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط برونکودیلاتور قبلی: حداکثر ۱۶۰ mcg دو بار؛ ICS قبلی: تا ۳۲۰؛ کورتیکواستروئید خوراکی: ۳۲۰ mcg دو بار. پس از مصرف دهان شسته شود.",
+            "en": "Bronchodilators alone before: max 160 mcg twice; prior ICS: up to 320; oral steroids: 320 mcg twice. Rinse mouth after use."
+          },
+          "refs": [
+            {
+              "source": "fda-alvesco",
+              "section": "2.2, Table 1"
+            },
+            {
+              "source": "fda-alvesco",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "درمان اولیه استاتوس آسماتیکوس یا حمله حاد؛ حساسیت به سیکلزونید.",
+        "en": "Primary treatment of status asthmaticus or acute episodes; hypersensitivity to ciclesonide."
+      },
+      "refs": [
+        {
+          "source": "fda-alvesco",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "کاندیدیاز دهان؛ برای حمله حاد نیست؛ سرکوب ایمنی؛ سرکوب آدرنال هنگام قطع استروئید خوراکی؛ کاهش تراکم استخوان؛ اثر بر رشد؛ گلوکوم و آب مروارید.",
+        "en": "Oral candidiasis; not for acute episodes; immunosuppression; adrenal suppression when switching from oral steroids; reduced bone density; effect on growth; glaucoma and cataract."
+      },
+      "refs": [
+        {
+          "source": "fda-alvesco",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "asthma",
+      "formulation": "hfa-80",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 80,
+        "tabletsPerDoseRounded": 1,
+        "upperPerDose": 320
+      }
+    }
+  ],
+  "atc": [
+    "R03BA08"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Ciclesonide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-alvesco",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021658"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021658",
+      "label": "NDA021658"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f6112fb-78ef-43cf-8ae3-36370eb45468",
+      "label": "FDA Alvesco"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a607008.html",
+      "label": "Ciclesonide Nasal Spray"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a609004.html",
+      "label": "Ciclesonide Oral Inhalation"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03BA08",
+      "label": "R03BA08"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary There are no available data on ALVESCO use in pregnant women to assess a drug associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+      "refs": [
+        {
+          "source": "fda-alvesco",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of ciclesonide or its metabolite in human milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-alvesco",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of ALVESCO for the maintenance treatment of asthma as prophylactic therapy have been established in pediatric patients aged 12 years and older.",
+      "refs": [
+        {
+          "source": "fda-alvesco",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range reflecting the greater frequency of decreased hepatic, renal, or cardiac function and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-alvesco",
+          "section": "8.5"
+        }
+      ]
+    }
+  }
+}

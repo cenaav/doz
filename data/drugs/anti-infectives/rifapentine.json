@@ -1,0 +1,377 @@
+{
+  "id": "rifapentine",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "ریفاپنتین",
+    "en": "Rifapentine"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "ریفامایسین",
+    "en": "Rifamycin"
+  },
+  "brands": [
+    {
+      "name": "Priftin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "priftin",
+    "پریفتین",
+    "ریفاپنتین"
+  ],
+  "formulations": [
+    {
+      "id": "tab-150",
+      "form": "tablet",
+      "route": "oral",
+      "label": "150 mg tablet",
+      "concentration": {
+        "amount": 150,
+        "unit": "mg",
+        "perUnit": "tablet",
+        "scored": false
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-priftin",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "ltbi",
+      "disease": "latent-tuberculosis",
+      "label": {
+        "fa": "سل نهفته (۲ سال به بالا) — هفته‌ای یک بار بر اساس وزن همراه ایزونیازید، ۱۲ هفته (DOT)",
+        "en": "Latent TB (≥2 y) — once weekly by weight with isoniazid for 12 weeks (DOT)"
+      },
+      "population": {
+        "minAge": {
+          "value": 2,
+          "unit": "year"
+        },
+        "minWeightKg": 10
+      },
+      "type": "weightBand",
+      "unit": "mg",
+      "dose": {
+        "weightBands": [
+          {
+            "minWeightKg": 9.99,
+            "maxWeightKg": 14,
+            "perDose": 300,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 14,
+            "maxWeightKg": 25,
+            "perDose": 450,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 25,
+            "maxWeightKg": 32,
+            "perDose": 600,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 32,
+            "maxWeightKg": 50,
+            "perDose": 750,
+            "dosesPerDay": 1
+          },
+          {
+            "minWeightKg": 50,
+            "maxWeightKg": null,
+            "perDose": 900,
+            "dosesPerDay": 1
+          }
+        ]
+      },
+      "refs": [
+        {
+          "source": "fda-priftin",
+          "section": "2.2, Table 1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "ایزونیازید هفتگی ۱۵ mg/kg (۱۲ سال به بالا) یا ۲۵ mg/kg (۲ تا ۱۱ سال)، حداکثر ۹۰۰ mg. با غذا.",
+            "en": "Weekly isoniazid 15 mg/kg (≥12 y) or 25 mg/kg (2–11 y), max 900 mg. With meals."
+          },
+          "refs": [
+            {
+              "source": "fda-priftin",
+              "section": "2.2"
+            },
+            {
+              "source": "fda-priftin",
+              "section": "2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tb",
+      "disease": "tuberculosis",
+      "label": {
+        "fa": "سل ریوی فعال حساس — ۶۰۰ mg دو بار در هفته ۲ ماه، سپس یک بار در هفته ۴ ماه (DOT)",
+        "en": "Active drug-susceptible pulmonary TB — 600 mg twice weekly for 2 months, then once weekly for 4 months (DOT)"
+      },
+      "population": {
+        "minAge": {
+          "value": 12,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 600,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-priftin",
+          "section": "2.1"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "همراه سایر داروهای ضدسل؛ دست‌کم ۷۲ ساعت بین دوزهای مرحله اول. در سویه مقاوم به ریفامپین نه.",
+            "en": "With other antituberculosis drugs; at least 72 h between initial-phase doses. Not for rifampin-resistant strains."
+          },
+          "refs": [
+            {
+              "source": "fda-priftin",
+              "section": "2.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به ریفامایسین‌ها.",
+        "en": "Hypersensitivity to rifamycins."
+      },
+      "refs": [
+        {
+          "source": "fda-priftin",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سمیت کبدی؛ واکنش حساسیتی و پوستی شدید؛ عود سل؛ تداخلات دارویی زیاد (القاگر CYP3A)؛ تغییر رنگ مایعات بدن؛ پورفیری.",
+        "en": "Hepatotoxicity; hypersensitivity and severe skin reactions; TB relapse; many drug interactions (CYP3A inducer); body-fluid discoloration; porphyria."
+      },
+      "refs": [
+        {
+          "source": "fda-priftin",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "ltbi",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 900,
+        "tabletsPerDoseRounded": 6
+      }
+    },
+    {
+      "regimen": "ltbi",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 5,
+        "weightKg": 18
+      },
+      "expect": {
+        "perDose": 450,
+        "tabletsPerDoseRounded": 3
+      }
+    },
+    {
+      "regimen": "tb",
+      "formulation": "tab-150",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 600,
+        "tabletsPerDoseRounded": 4
+      }
+    }
+  ],
+  "atc": [
+    "J04AB05"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "52163",
+        "en": "RIFAPENTINE TABLET ORAL 150 mg",
+        "fa": "قرص ریفاپنتین ۱۵۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-494/Rifapentine",
+        "url": "https://www.darooyab.ir/G-494/Rifapentine"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-priftin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021024"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021024",
+      "label": "NDA021024"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a64fb70-b85e-43d9-8bcd-7e893f568ae1",
+      "label": "FDA Priftin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a616011.html",
+      "label": "Rifapentine"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J04AB05",
+      "label": "J04AB05"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-494/Rifapentine",
+      "label": "Rifapentine"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: می‌تواند به جنین آسیب بزند. در بارداری خطرناک است.",
+        "en": "Label: can cause fetal harm. Dangerous in pregnancy."
+      },
+      "quote": "Risk Summary Based on animal data, PRIFTIN may cause fetal harm when administered to a pregnant woman.",
+      "refs": [
+        {
+          "source": "fda-priftin",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary There are no data on the presence of rifapentine or its metabolite in human or animal milk, the effects on the breastfed infant, or the effects on milk production.",
+      "refs": [
+        {
+          "source": "fda-priftin",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety and effectiveness of PRIFTIN in the treatment of active pulmonary tuberculosis have not been established in pediatric patients under the age of 12.",
+      "refs": [
+        {
+          "source": "fda-priftin",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Clinical studies with PRIFTIN did not include sufficient numbers of subjects aged 65 years and over to determine whether they respond differently from younger subjects.",
+      "refs": [
+        {
+          "source": "fda-priftin",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Use of PRIFTIN may reduce the efficacy of hormonal contraceptives.",
+      "refs": [
+        {
+          "source": "fda-priftin",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

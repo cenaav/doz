@@ -1,0 +1,353 @@
+{
+  "id": "lanreotide",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لانرئوتاید",
+    "en": "Lanreotide"
+  },
+  "category": "systemic-hormones",
+  "class": {
+    "fa": "آنالوگ سوماتوستاتین",
+    "en": "Somatostatin analogue"
+  },
+  "brands": [
+    {
+      "name": "Somatuline Depot",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "somatuline",
+    "سوماتولین",
+    "لانرئوتید"
+  ],
+  "formulations": [
+    {
+      "id": "pfs-90",
+      "form": "injection",
+      "route": "sc",
+      "label": "90 mg/0.3 mL prefilled syringe (deep SC)",
+      "concentration": {
+        "amount": 90,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-120",
+      "form": "injection",
+      "route": "sc",
+      "label": "120 mg/0.5 mL prefilled syringe (deep SC)",
+      "concentration": {
+        "amount": 120,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "pfs-60",
+      "form": "injection",
+      "route": "sc",
+      "label": "60 mg/0.2 mL prefilled syringe (deep SC)",
+      "concentration": {
+        "amount": 60,
+        "unit": "mg",
+        "perUnit": "application"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "acro",
+      "disease": "acromegaly",
+      "label": {
+        "fa": "آکرومگالی — ۹۰ mg زیرجلدی عمقی هر ۴ هفته به مدت ۳ ماه، سپس تنظیم با GH/IGF-1",
+        "en": "Acromegaly — 90 mg deep SC every 4 weeks for 3 months, then adjust by GH/IGF-1"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 90,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-90"
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "فقط توسط کادر درمان در ربع خارجی فوقانی باسن؛ محل عوض شود. نارسایی متوسط/شدید کلیه یا کبد: تنظیم طبق برچسب.",
+            "en": "Healthcare provider only, superior outer buttock quadrant; alternate sites. Moderate/severe renal or hepatic impairment: adjust per label."
+          },
+          "refs": [
+            {
+              "source": "fda-somatuline",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-somatuline",
+              "section": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "net",
+      "disease": "carcinoid-tumors",
+      "label": {
+        "fa": "تومورهای نوروآندوکرین گوارشی-پانکراسی یا سندرم کارسینوئید — ۱۲۰ mg هر ۴ هفته",
+        "en": "GEP-NETs or carcinoid syndrome — 120 mg every 4 weeks"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 120,
+        "dosesPerDay": 1
+      },
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "2"
+        }
+      ],
+      "durationDays": {
+        "min": 1,
+        "max": 1
+      },
+      "allowedFormulations": [
+        "pfs-120"
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "hyper",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت به لانرئوتاید.",
+        "en": "Hypersensitivity to lanreotide."
+      },
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "سنگ صفرا؛ هیپر/هیپوگلیسمی؛ برادیکاردی؛ اختلال تیروئید؛ استئاتوره.",
+        "en": "Cholelithiasis; hyper/hypoglycaemia; bradycardia; thyroid abnormalities; steatorrhoea."
+      },
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "acro",
+      "formulation": "pfs-90",
+      "input": {
+        "ageYears": 45,
+        "weightKg": 80
+      },
+      "expect": {
+        "perDose": 90,
+        "tabletsPerDoseRounded": 1
+      }
+    },
+    {
+      "regimen": "net",
+      "formulation": "pfs-120",
+      "input": {
+        "ageYears": 60,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 120,
+        "tabletsPerDoseRounded": 1
+      }
+    }
+  ],
+  "atc": [
+    "H01CB03"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Lanreotide"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-somatuline",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA022074"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022074",
+      "label": "NDA022074"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6e4a41fd-a753-4362-87ee-8cc56ed3660d",
+      "label": "FDA Somatuline Depot"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a615007.html",
+      "label": "Lanreotide Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=H01CB03",
+      "label": "H01CB03"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Risk Summary Limited available data based on postmarketing case reports with SOMATULINE DEPOT use in pregnant women are not sufficient to determine a drug-associated risk of adverse developmental outcomes.",
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "avoid",
+      "text": {
+        "fa": "برچسب: شیردهی توصیه نمی‌شود یا باید بین دارو و شیردهی یکی انتخاب شود.",
+        "en": "Label: breastfeeding not recommended, or choose between the drug and breastfeeding."
+      },
+      "quote": "Because of the potential for serious adverse reactions in breastfed infants from SOMATULINE DEPOT, including effects on glucose metabolism and bradycardia, advise women not to breastfeed during treatment with SOMATULINE DEPOT and for 6 months (6 half-lives) following the last dose.",
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "not-established",
+      "text": {
+        "fa": "برچسب: ایمنی و اثربخشی در کودکان ثابت نشده است.",
+        "en": "Label: safety and effectiveness in children have not been established."
+      },
+      "quote": "The safety and effectiveness of SOMATULINE DEPOT in pediatric patients have not been established.",
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Infertility Females Based on results from animal studies conducted in female rats, SOMATULINE DEPOT may reduce fertility in females of reproductive potential [see Nonclinical Toxicology (13.1) ].",
+      "refs": [
+        {
+          "source": "fda-somatuline",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

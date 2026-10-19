@@ -1,0 +1,299 @@
+{
+  "id": "lopinavir-ritonavir",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لوپیناویر/ریتوناویر",
+    "en": "Lopinavir/ritonavir"
+  },
+  "category": "anti-infectives",
+  "class": {
+    "fa": "مهارکننده پروتئاز (تقویت‌شده با ریتوناویر)",
+    "en": "Ritonavir-boosted protease inhibitor"
+  },
+  "brands": [
+    {
+      "name": "Kaletra",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "kaletra",
+    "کالترا",
+    "aluvia",
+    "lopinavir",
+    "لوپیناویر"
+  ],
+  "formulations": [
+    {
+      "id": "tab-200",
+      "form": "tablet",
+      "route": "oral",
+      "label": "200 mg lopinavir / 50 mg ritonavir tablet",
+      "concentration": {
+        "amount": 200,
+        "unit": "mg",
+        "perUnit": "tablet"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kaletra",
+          "section": "3"
+        }
+      ]
+    },
+    {
+      "id": "sol-80",
+      "form": "solution",
+      "route": "oral",
+      "label": "80 mg lopinavir / 20 mg ritonavir per mL oral solution",
+      "concentration": {
+        "amount": 80,
+        "unit": "mg",
+        "perVolumeMl": 1
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-kaletra",
+          "section": "3"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "bid",
+      "disease": "hiv",
+      "label": {
+        "fa": "HIV-1 بزرگسال — ۴۰۰/۱۰۰ mg دو بار (یا ۸۰۰/۲۰۰ mg یک بار در موارد مناسب)",
+        "en": "HIV-1, adults — 400/100 mg twice daily (or 800/200 mg once daily when suitable)"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 400,
+        "dosesPerDay": 2
+      },
+      "refs": [
+        {
+          "source": "fda-kaletra",
+          "section": "2.3, Table 2"
+        }
+      ],
+      "doseComponent": "lopinavir",
+      "notes": [
+        {
+          "text": {
+            "fa": "یک بار در روز نه: با ۳ جهش مقاومت یا بیشتر، کاربامازپین/فنوباربیتال/فنی‌توئین، یا بارداری. بارداری: ۴۰۰/۱۰۰ دو بار. قرص کامل بلعیده؛ محلول با غذا. کودک: طبق جداول وزن/BSA.",
+            "en": "Not once daily: with ≥3 resistance substitutions, carbamazepine/phenobarbital/phenytoin, or pregnancy. Pregnancy: 400/100 twice daily. Swallow tablets whole; solution with food. Children: per weight/BSA tables."
+          },
+          "refs": [
+            {
+              "source": "fda-kaletra",
+              "section": "2.3"
+            },
+            {
+              "source": "fda-kaletra",
+              "section": "2.5"
+            },
+            {
+              "source": "fda-kaletra",
+              "section": "2.1"
+            },
+            {
+              "source": "fda-kaletra",
+              "section": "2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "حساسیت قبلی جدی (TEN، SJS، آنژیوادم) به اجزا؛ داروهای وابسته به CYP3A با دامنه باریک و القاگرهای قوی CYP3A (طبق جدول برچسب).",
+        "en": "Prior serious hypersensitivity (TEN, SJS, angioedema) to any ingredient; CYP3A-dependent narrow-index drugs and potent CYP3A inducers (per label table)."
+      },
+      "refs": [
+        {
+          "source": "fda-kaletra",
+          "section": "4"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "تداخلات دارویی جدی؛ سمیت در نوزاد نارس (محلول: الکل و پروپیلن‌گلیکول)؛ پانکراتیت؛ سمیت کبد؛ طولانی شدن QT و PR؛ دیابت؛ افزایش چربی خون.",
+        "en": "Serious drug interactions; toxicity in preterm neonates (solution: ethanol and propylene glycol); pancreatitis; hepatotoxicity; QT and PR prolongation; diabetes; lipid elevations."
+      },
+      "refs": [
+        {
+          "source": "fda-kaletra",
+          "section": "5"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "bid",
+      "formulation": "tab-200",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 400,
+        "tabletsPerDoseRounded": 2
+      }
+    },
+    {
+      "regimen": "bid",
+      "formulation": "sol-80",
+      "input": {
+        "ageYears": 35,
+        "weightKg": 65
+      },
+      "expect": {
+        "perDose": 400,
+        "mlPerDose": 5
+      }
+    }
+  ],
+  "atc": [
+    "J05AR10"
+  ],
+  "iran": {
+    "status": "not-found",
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "search",
+        "url": "https://www.darooyab.ir/Search?q=Lopinavir/ritonavir"
+      }
+    ]
+  },
+  "usApproval": {
+    "kind": "NDA",
+    "refs": [
+      {
+        "source": "fda-kaletra",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "NDA021251"
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021251",
+      "label": "NDA021251"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8290add3-4449-4e58-6c97-8fe1eec972e3",
+      "label": "FDA Kaletra"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=J05AR10",
+      "label": "J05AR10"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: داده‌های رجیستری تفاوتی با میزان زمینه‌ای نقص مادرزادی نشان نمی‌دهد؛ در بارداری قرص ۴۰۰/۱۰۰ mg دو بار؛ محلول خوراکی (الکل) پرهیز شود.",
+        "en": "Label: registry data show no difference from the background rate; in pregnancy use tablets 400/100 mg twice daily; avoid the oral solution (ethanol)."
+      },
+      "quote": "Available data from the Antiretroviral Pregnancy Registry show no difference in the risk of overall major birth defects compared to the background rate for major birth defects of 2.7% in the U.S. reference population of the Metropolitan Atlanta Congenital Defects Program (MACDP).",
+      "refs": [
+        {
+          "source": "fda-kaletra",
+          "section": "8.1"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Risk Summary The Centers for Disease Control and Prevention recommend that HIV-1 infected mothers not breastfeed their infants to avoid risking postnatal transmission of HIV-1.",
+      "refs": [
+        {
+          "source": "fda-kaletra",
+          "section": "8.2"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "The safety, efficacy, and pharmacokinetic profiles of KALETRA in pediatric patients below the age of 14 days have not been established.",
+      "refs": [
+        {
+          "source": "fda-kaletra",
+          "section": "8.4"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "In general, appropriate caution should be exercised in the administration and monitoring of KALETRA in elderly patients reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy.",
+      "refs": [
+        {
+          "source": "fda-kaletra",
+          "section": "8.5"
+        }
+      ]
+    },
+    "reproductive": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب نکته‌ای درباره بارداری، پیشگیری یا باروری زنان و مردان دارد.",
+        "en": "Label has advice on pregnancy testing, contraception or fertility for females and males."
+      },
+      "quote": "Contraception Use of KALETRA may reduce the efficacy of combined hormonal contraceptives.",
+      "refs": [
+        {
+          "source": "fda-kaletra",
+          "section": "8.3"
+        }
+      ]
+    }
+  }
+}

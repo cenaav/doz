@@ -1,0 +1,433 @@
+{
+  "id": "leucovorin",
+  "schemaVersion": 1,
+  "name": {
+    "fa": "لکوورین (فولینیک اسید)",
+    "en": "Leucovorin (folinic acid)"
+  },
+  "category": "various",
+  "class": {
+    "fa": "آنالوگ فولات (نجات‌دهنده)",
+    "en": "Folate analogue (rescue agent)"
+  },
+  "brands": [
+    {
+      "name": "Leucovorin",
+      "market": "US"
+    }
+  ],
+  "synonyms": [
+    "folinic acid",
+    "calcium folinate",
+    "فولینیک اسید",
+    "لکوورین",
+    "کلسیم فولینات"
+  ],
+  "formulations": [
+    {
+      "id": "vial-100",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "100 mg vial",
+      "concentration": {
+        "amount": 100,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-leucovorin",
+          "section": "How Supplied"
+        }
+      ]
+    },
+    {
+      "id": "vial-350",
+      "form": "powder-for-injection",
+      "route": "iv",
+      "label": "350 mg vial",
+      "concentration": {
+        "amount": 350,
+        "unit": "mg",
+        "perUnit": "vial"
+      },
+      "markets": [
+        "US"
+      ],
+      "refs": [
+        {
+          "source": "fda-leucovorin",
+          "section": "How Supplied"
+        }
+      ]
+    }
+  ],
+  "regimens": [
+    {
+      "id": "mtx",
+      "disease": "methotrexate-toxicity",
+      "label": {
+        "fa": "نجات پس از متوترکسات با دوز بالا — ۱۵ mg (حدود ۱۰ mg/m²) هر ۶ ساعت، ۱۰ دوز از ۲۴ ساعت پس از شروع متوترکسات",
+        "en": "Rescue after high-dose methotrexate — 15 mg (about 10 mg/m²) every 6 h for 10 doses from 24 h after methotrexate start"
+      },
+      "population": {},
+      "type": "fixed",
+      "unit": "mg",
+      "dose": {
+        "perDose": 15,
+        "dosesPerDay": 4
+      },
+      "refs": [
+        {
+          "source": "fda-leucovorin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "notes": [
+        {
+          "text": {
+            "fa": "تنظیم بر اساس کراتینین و سطح متوترکسات (جدول برچسب). هرگز داخل نخاعی. وریدی حداکثر ۱۶۰ mg/دقیقه (کلسیم).",
+            "en": "Adjust by creatinine and methotrexate levels (label table). Never intrathecal. IV no faster than 160 mg/min (calcium)."
+          },
+          "refs": [
+            {
+              "source": "fda-leucovorin",
+              "section": "Dosage and Administration"
+            },
+            {
+              "source": "fda-leucovorin",
+              "section": "Warnings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crc",
+      "disease": "colorectal-cancer",
+      "label": {
+        "fa": "سرطان کولورکتال پیشرفته — ۲۰۰ mg/m² وریدی آهسته، سپس فلوئورویوراسیل ۳۷۰ mg/m²، روزانه ۵ روز",
+        "en": "Advanced colorectal cancer — 200 mg/m² slow IV, then fluorouracil 370 mg/m², daily for 5 days"
+      },
+      "population": {
+        "minAge": {
+          "value": 18,
+          "unit": "year"
+        }
+      },
+      "type": "bsa",
+      "unit": "mg",
+      "dose": {
+        "perM2PerDay": 200,
+        "dividedDoses": 1
+      },
+      "refs": [
+        {
+          "source": "fda-leucovorin",
+          "section": "Dosage and Administration"
+        }
+      ],
+      "durationDays": {
+        "min": 5,
+        "max": 5
+      },
+      "notes": [
+        {
+          "text": {
+            "fa": "یا ۲۰ mg/m² سپس فلوئورویوراسیل ۴۲۵ mg/m². در یک انفوزیون با فلوئورویوراسیل مخلوط نشود.",
+            "en": "Or 20 mg/m² then fluorouracil 425 mg/m². Do not mix with fluorouracil in one infusion."
+          },
+          "refs": [
+            {
+              "source": "fda-leucovorin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        },
+        {
+          "text": {
+            "fa": "فقط زیر نظر پزشک متخصص انکولوژی؛ پروتکل، فاصله دوره‌ها و تنظیم با تیم درمان.",
+            "en": "Only under an oncologist; protocol, cycle interval and adjustment rest with the treating team."
+          },
+          "refs": [
+            {
+              "source": "fda-leucovorin",
+              "section": "Dosage and Administration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contraindications": [
+    {
+      "id": "ci",
+      "severity": "block",
+      "text": {
+        "fa": "کم‌خونی پرنیشیوز و سایر کم‌خونی‌های مگالوبلاستیک ناشی از کمبود B12.",
+        "en": "Pernicious anaemia and other megaloblastic anaemias from vitamin B12 deficiency."
+      },
+      "refs": [
+        {
+          "source": "fda-leucovorin",
+          "section": "Contraindications"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "text": {
+        "fa": "داخل نخاعی کشنده است؛ هرچه زودتر پس از مسمومیت ضدفولات؛ با فلوئورویوراسیل سمیت بیشتر (به‌ویژه سالمند).",
+        "en": "Fatal if given intrathecally; give as soon as possible after antifolate overdose; enhances fluorouracil toxicity (especially elderly)."
+      },
+      "refs": [
+        {
+          "source": "fda-leucovorin",
+          "section": "Warnings"
+        }
+      ]
+    }
+  ],
+  "renal": [],
+  "monitoring": [],
+  "interactions": [],
+  "review": {
+    "status": "unverified",
+    "reviewer": null,
+    "date": null
+  },
+  "examples": [
+    {
+      "regimen": "mtx",
+      "formulation": "vial-100",
+      "input": {
+        "ageYears": 30,
+        "weightKg": 70
+      },
+      "expect": {
+        "perDose": 15
+      }
+    },
+    {
+      "regimen": "crc",
+      "formulation": "vial-350",
+      "input": {
+        "ageYears": 55,
+        "weightKg": 80,
+        "heightCm": 180
+      },
+      "expect": {
+        "perDose": 400
+      }
+    }
+  ],
+  "atc": [
+    "V03AF03"
+  ],
+  "iran": {
+    "status": "registered",
+    "forms": [
+      {
+        "code": "21945",
+        "en": "CALCIUM FOLINATE 1000MG/100ML VIAL",
+        "fa": "ویال کلسیم فولینات ۱۰۰۰ میلی‌گرم / ۱۰۰ میلی‌لیتر"
+      },
+      {
+        "code": "16766",
+        "en": "CALCIUM FOLINATE 100MG VIAL",
+        "fa": "ویال کلسیم فولینات ۱۰۰ میلی‌گرم"
+      },
+      {
+        "code": "09570",
+        "en": "CALCIUM FOLINATE 100MG/10ML VIAL",
+        "fa": "ویال کلسیم فولینات ۱۰۰ میلی‌گرم / ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "11886",
+        "en": "CALCIUM FOLINATE 10MG/ML 10ML AMP",
+        "fa": "آمپول کلسیم فولینات ۱۰ میلی‌گرم / میلی‌لیتر ۱۰ میلی‌لیتر"
+      },
+      {
+        "code": "11889",
+        "en": "CALCIUM FOLINATE 10MG/ML 5ML AMP",
+        "fa": "آمپول کلسیم فولینات ۱۰ میلی‌گرم / میلی‌لیتر ۵ میلی‌لیتر"
+      },
+      {
+        "code": "00738",
+        "en": "CALCIUM FOLINATE 15MG TAB",
+        "fa": "قرص کلسیم فولینات ۱۵ میلی‌گرم"
+      },
+      {
+        "code": "09572",
+        "en": "CALCIUM FOLINATE 200MG/20ML VIAL",
+        "fa": "ویال کلسیم فولینات ۲۰۰ میلی‌گرم / ۲۰ میلی‌لیتر"
+      },
+      {
+        "code": "00739",
+        "en": "CALCIUM FOLINATE 25MG TAB",
+        "fa": "قرص کلسیم فولینات ۲۵ میلی‌گرم"
+      },
+      {
+        "code": "01567",
+        "en": "CALCIUM FOLINATE 25MG/5ML AMP",
+        "fa": "آمپول کلسیم فولینات ۲۵ میلی‌گرم / ۵ میلی‌لیتر"
+      },
+      {
+        "code": "02382",
+        "en": "CALCIUM FOLINATE 30MG FOR INJ",
+        "fa": "فرآورده تزریقی کلسیم فولینات ۳۰ میلی‌گرم"
+      },
+      {
+        "code": "10521",
+        "en": "CALCIUM FOLINATE 30MG TAB",
+        "fa": "قرص کلسیم فولینات ۳۰ میلی‌گرم"
+      },
+      {
+        "code": "00736",
+        "en": "CALCIUM FOLINATE 30MG/3ML AMP",
+        "fa": "آمپول کلسیم فولینات ۳۰ میلی‌گرم / ۳ میلی‌لیتر"
+      },
+      {
+        "code": "00737",
+        "en": "CALCIUM FOLINATE 3MG/ML AMP",
+        "fa": "آمپول کلسیم فولینات ۳ میلی‌گرم / میلی‌لیتر"
+      },
+      {
+        "code": "09573",
+        "en": "CALCIUM FOLINATE 400MG/40ML VIAL",
+        "fa": "ویال کلسیم فولینات ۴۰۰ میلی‌گرم / ۴۰ میلی‌لیتر"
+      },
+      {
+        "code": "19476",
+        "en": "CALCIUM FOLINATE 500MG/50ML VIAL",
+        "fa": "ویال کلسیم فولینات ۵۰۰ میلی‌گرم / ۵۰ میلی‌لیتر"
+      },
+      {
+        "code": "00740",
+        "en": "CALCIUM FOLINATE 5MG TAB",
+        "fa": "قرص کلسیم فولینات ۵ میلی‌گرم"
+      },
+      {
+        "code": "21946",
+        "en": "CALCIUM FOLINATE 800MG/80ML VIAL",
+        "fa": "ویال کلسیم فولینات ۸۰۰ میلی‌گرم / ۸۰ میلی‌لیتر"
+      },
+      {
+        "code": "52936",
+        "en": "CALCIUM FOLINATE INJECTION, POWDER PARENTERAL 200 mg",
+        "fa": "پودر تزریقی کلسیم فولینات ۲۰۰ میلی‌گرم"
+      }
+    ],
+    "refs": [
+      {
+        "source": "darooyab-generic",
+        "section": "G-2883/Calcium-Folinate",
+        "url": "https://www.darooyab.ir/G-2883/Calcium-Folinate"
+      }
+    ]
+  },
+  "links": [
+    {
+      "kind": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=200753",
+      "label": "ANDA200753"
+    },
+    {
+      "kind": "dailymed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9d0e5356-ff39-4a8e-944c-e808a21ef4b2",
+      "label": "FDA Leucovorin inj"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a682336.html",
+      "label": "Leucovorin"
+    },
+    {
+      "kind": "medlineplus",
+      "url": "https://medlineplus.gov/druginfo/meds/a608038.html",
+      "label": "Leucovorin Injection"
+    },
+    {
+      "kind": "who-atc",
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=V03AF03",
+      "label": "V03AF03"
+    },
+    {
+      "kind": "darooyab",
+      "url": "https://www.darooyab.ir/G-2883/Calcium-Folinate",
+      "label": "Calcium-Folinate"
+    }
+  ],
+  "populations": {
+    "pregnancy": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب خطر مشخصی برای بارداری ذکر نکرده یا داده کافی ندارد؛ فقط در صورت لزوم و با نظر پزشک.",
+        "en": "Label states no clear risk or has limited data; use only if needed, under medical advice."
+      },
+      "quote": "Teratogenic Effects Pregnancy Category C Adequate animal reproduction studies have not been conducted with leucovorin.",
+      "refs": [
+        {
+          "source": "fda-leucovorin",
+          "section": "Pregnancy"
+        }
+      ]
+    },
+    "lactation": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در شیردهی با احتیاط؛ متن برچسب را ببینید.",
+        "en": "Label: use with caution while breastfeeding; see the label text."
+      },
+      "quote": "Because many drugs are excreted in human milk, caution should be exercised when leucovorin is administered to a nursing mother.",
+      "refs": [
+        {
+          "source": "fda-leucovorin",
+          "section": "Nursing Mothers"
+        }
+      ]
+    },
+    "pediatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب برای کودکان شرط، محدودیت سنی یا نکته دارد؛ جمله برچسب در زیر آمده است.",
+        "en": "The label has conditions, age limits or notes for children; the label sentence is quoted below."
+      },
+      "quote": "See PRECAUTIONS, Drug Interactions .",
+      "refs": [
+        {
+          "source": "fda-leucovorin",
+          "section": "Pediatric Use"
+        }
+      ]
+    },
+    "geriatric": {
+      "level": "caution",
+      "text": {
+        "fa": "برچسب: در سالمندان با احتیاط و معمولاً از دوز پایین شروع شود.",
+        "en": "Label: use with caution in older adults, usually starting at the low end of the dose range."
+      },
+      "quote": "Because elder patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+      "refs": [
+        {
+          "source": "fda-leucovorin",
+          "section": "Geriatric Use"
+        }
+      ]
+    }
+  },
+  "usApproval": {
+    "kind": "ANDA",
+    "refs": [
+      {
+        "source": "fda-leucovorin",
+        "section": "SPL approval / marketing category"
+      }
+    ],
+    "id": "ANDA200753"
+  }
+}
